@@ -1120,6 +1120,28 @@ function normalizarSuperscriptUnicodeParaColchetes(frase) {
   );
 }
 
+/**
+ * Classifica a Intenção Discursiva da Citação (Citation Intent Analysis - Inspirado no onecite / SciCite):
+ * Identifica se a citação tem papel metodológico, comprobatório/apoio, contrapositivo/crítica ou conceitual.
+ */
+function classificarIntencaoCitacao(frase, autor) {
+  const f = String(frase || '').toLowerCase();
+
+  if (/\b(?:m[eé]todo|metodologia|procedimento|protocolo|t[eé]cnica|escala|question[aá]rio|instrumento|algoritmo|software|utiliz(?:ou|ado|aram|am-se)|aplic(?:ou|ado|aram|a-se)|propost[oa]|adaptad[oa]|adotad[oa]|com\s+base\s+n[oa]|segundo\s+o\s+modelo)\b/i.test(f)) {
+    return { categoria: 'metodologica', rotulo: '🔬 Uso Metodológico / Instrumental' };
+  }
+  if (/\b(?:em\s+contrapartida|ao\s+contr[aá]rio|diverg(?:e|em|indo)|em\s+contraste|diferente\s+d[eo]|discord(?:a|am)|contesta|apesar\s+de|embora\s+o\s+estudo|lacuna|diverg[eê]ncia)\b/i.test(f)) {
+    return { categoria: 'contrapositiva', rotulo: '⚡ Contraposição / Achados Divergentes' };
+  }
+  if (/\b(?:confirm(?:a|am|ando|ado)|corrobor(?:a|am|ando|ado)|em\s+conson[aâ]ncia|em\s+acordo|conforme\s+demonstrad[oa]|sustentad[oa]|achados\s+semelhantes|resultados\s+convergentes|evidenci(?:a|am|ado)|comprov(?:a|am|ado)|refor[cç](?:a|am|ado))\b/i.test(f)) {
+    return { categoria: 'comprobatoria', rotulo: '✅ Apoio Comprobatório / Resultados Convergentes' };
+  }
+  if (/\b(?:conceitu(?:a|am|ado)|defin(?:e|em|ido)|teoria|conceito|marco\s+te[oó]rico|entende-se|compreende-se|na\s+vis[aã]o\s+de|concep[cç][aã]o|fundament(?:a|am|ado))\b/i.test(f)) {
+    return { categoria: 'conceitual', rotulo: '📖 Definição Conceitual / Teórica' };
+  }
+  return { categoria: 'mencao_geral', rotulo: '📌 Menção Contextual / Informativa' };
+}
+
 // ---------- 4. Extração de Citações no Corpo do Texto (ABNT + Vancouver Numérico) e Alertas de Forma ----------
 function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
   const citacoes = [];
@@ -1192,6 +1214,9 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         const chaveDedup = `${itemCit.chave}::${objPar.numParagrafo}::${idxFrase}`;
         if (chavesJaRegistradasNaFrase.has(chaveDedup)) return;
         chavesJaRegistradasNaFrase.add(chaveDedup);
+        if (!itemCit.intencao) {
+          itemCit.intencao = classificarIntencaoCitacao(frase, itemCit.autor);
+        }
         citacoes.push(itemCit);
       };
       const mAspas = frase.match(/[“"]([^”"]{12,400})[”"]/);
@@ -3010,6 +3035,25 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     };
   });
 
+  /**
+   * Decompõe uma sentença complexa em Proposições Atômicas Verificáveis (Inspirado no RefChecker - Amazon Science).
+   * Permite isolar exatamente qual alegação é sustentada pela literatura e qual premissa carece de evidência.
+   */
+  function decomporEmProposicoesAtomicas(frase) {
+    const f = String(frase || '')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (f.length < 35) return [f];
+
+    // Divide por conjunções adversativas/aditivas, ponto e vírgula e orações subordinadas
+    const rawParts = f
+      .split(/(?:;\s*|,\s*(?:onde|enquanto|mas|por[eé]m|contudo|todavia|embora|al[eé]m\s+de|com\s+a\s+finalidade\s+de|promovendo|resultando\s+em)\s+|\s+e\s+(?=[a-zà-ÿ]{4,}\s+[a-zà-ÿ]{4,}))/i)
+      .map((p) => p.trim())
+      .filter((p) => p.length >= 22);
+
+    return rawParts.length > 0 ? rawParts : [f];
+  }
+
   for (const rm of refsMapeadas) {
     // Regra R35: Verificação de prescrição sistêmica em fontes normativas e protocolos locais
     const ehProtocoloLocal =
@@ -3096,6 +3140,40 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       const scoreFinal = Math.max(verBilingue.score, Math.round(scoreCossenoEfetivo * 100));
       oc.compatibilidadeTexto = scoreFinal;
       oc.scoreCosseno = scoreCossenoEfetivo;
+
+      // Decomposição Atômica de Proposições estilo RefChecker (Amazon Science)
+      const props = decomporEmProposicoesAtomicas(oc.fraseContexto || oc.trechoDireto || '');
+      const proposicoesAuditadas = [];
+      for (const prop of props) {
+        const scoreProp = calcularSimilaridadeCossenoRadicais(prop, textoAlvoArtigo);
+        const verProp = verificarCompatibilidadeBilingue(prop, textoAlvoArtigo);
+        const sustentada = verProp.compativel || scoreProp >= 0.12;
+        proposicoesAuditadas.push({
+          proposicao: prop,
+          sustentada,
+          score: Math.max(verProp.score, Math.round(scoreProp * 100)),
+        });
+      }
+      oc.proposicoesAtomicas = proposicoesAuditadas;
+
+      const propsNaoSustentadas = proposicoesAuditadas.filter((p) => !p.sustentada);
+      if (
+        proposicoesAuditadas.length >= 2 &&
+        propsNaoSustentadas.length > 0 &&
+        propsNaoSustentadas.length < proposicoesAuditadas.length &&
+        scoreCossenoEfetivo >= 0.10
+      ) {
+        const detalheProps = propsNaoSustentadas.map((p) => `"${p.proposicao.slice(0, 70)}…"`).join('; ');
+        alertasPrecisao.push({
+          tipo: 'afirmacao_parcialmente_sustentada',
+          numParagrafo: oc.numParagrafo,
+          numLinha: oc.numLinha,
+          secao: oc.secao,
+          autorCitado: `${rm.primeiroSobrenome} (${rm.ano})`,
+          fraseWord: oc.fraseContexto,
+          mensagem: `⚠️ Afirmação Parcialmente Sustentada (${rm.primeiroSobrenome}, ${rm.ano}): No Parágrafo §${oc.numParagrafo}, parte da afirmação possui respaldo na fonte, mas a seguinte proposição atômica não foi confirmada no documento citado: ${detalheProps}`,
+        });
+      }
 
       if (!verBilingue.compativel && scoreCossenoEfetivo < 0.10 && (scoreOnnx === null || scoreOnnx < 0.35)) {
         const msg = `🚨 ALERTA DE ATRIBUIÇÃO FALSA / CITAÇÃO DESCONECTADA (${Math.round(scoreCossenoEfetivo * 100)}% de correspondência temática): No Parágrafo §${oc.numParagrafo} (Linha ${oc.numLinha}), a afirmação atribuída a ${rm.primeiroSobrenome} (${rm.ano}) não guarda correlação temática com o conteúdo do estudo original. Verifique se esta afirmação pertence a outro estudo ou se foi gerada por alucinação da IA.`;
@@ -3184,25 +3262,41 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     let motivo = 'Sem fonte aberta ou DOI disponível';
 
     if (refMapeada?.infoRepositorio) {
-      statusObra = 'verificada_repositorio';
+      statusObra = 'conteudo_confirmado';
       motivo = `${refMapeada.infoRepositorio.repositorio} — PDF e errata auditados (${refMapeada.infoRepositorio.detalhesErrata || 'sem errata'})`;
       totalVerificadas++;
     } else if (refMapeada?.natureza === 'norma_livro_institucional') {
-      statusObra = 'norma_livro_sem_abstract';
-      motivo = 'Documento normativo / livro sem abstract indexado (conferência via texto legal)';
-      totalVerificadas++;
-    } else if (refMapeada?.statusAutenticidade?.startsWith('autenticada')) {
-      const art = corpusArtigos.find((a) => a.id === refMapeada.refBibId);
-      if (art?.resumoLimpo || art?.textoTotal?.length >= 100) {
-        statusObra = 'verificada_artigo';
-        motivo = 'Resumo oficial e texto do artigo auditados';
+      const artNorma = corpusArtigos.find((a) => a.id === refMapeada.refBibId);
+      if (artNorma?.textoTotal?.length >= 100) {
+        statusObra = 'conteudo_confirmado';
+        motivo = 'Texto integral do documento normativo/institucional auditado';
         totalVerificadas++;
       } else {
-        statusObra = 'parcialmente_verificada';
-        motivo = 'DOI autenticado; texto completo pendente de download';
+        statusObra = 'nao_verificavel';
+        motivo = 'Ato/norma autêntica, mas texto integral pendente de anexo para conferência de conteúdo';
+        totalNaoVerificadas++;
+      }
+    } else if (refMapeada?.statusAutenticidade?.startsWith('autenticada')) {
+      const art = corpusArtigos.find((a) => a.id === refMapeada.refBibId);
+      const temPdfIntegral = (art?.textoTotal?.length || 0) >= 200 && refMapeada.temPdf;
+      const temResumo = Boolean(art?.resumoLimpo);
+
+      if (temPdfIntegral) {
+        statusObra = 'conteudo_confirmado';
+        motivo = 'Texto integral do PDF e resumo oficial auditados';
         totalVerificadas++;
+      } else if (temResumo) {
+        statusObra = 'conteudo_confirmado';
+        motivo = 'Resumo oficial autenticado auditado (PDF sob paywall/restrito)';
+        totalVerificadas++;
+      } else {
+        statusObra = 'nao_verificavel';
+        motivo = 'Fonte existe nas bases oficiais, mas sem resumo ou PDF disponível para verificação';
+        totalNaoVerificadas++;
       }
     } else {
+      statusObra = 'inexistente_alucinada';
+      motivo = 'Obra não localizada nas bases (suspeita de alucinação)';
       totalNaoVerificadas++;
     }
 
