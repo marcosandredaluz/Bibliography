@@ -1171,7 +1171,7 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         });
       }
 
-      // 1) Parentéticas ABNT: (AUTOR..., 2020a, p. 12) ou (BRASIL, [20--b])
+      // 1) Parentéticas ABNT: (AUTOR..., 2020a, p. 12) ou (ENTIDADE, [20--?])
       const rePar = /\(([^()]{2,220}?(?:\[?(?:19\d\d|20\d\d|20--)[a-z]?\]?|\[?s\.d\.\]?)[^()]{0,40})\)/gi;
       let m;
       while ((m = rePar.exec(frase)) !== null) {
@@ -1220,7 +1220,7 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         }
       }
 
-      // 2) Narrativas ABNT/Vancouver: Mendes (2011), Victora et al. (1997), Wang et al. (2025), Brasil ([20--b])
+      // 2) Narrativas ABNT/Vancouver: Mendes (2011), Victora et al. (1997), Wang et al. (2025), Entidade ([20--?])
       const reNar =
         /\b([A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+(?:(?:\s+(?:de|da|do|dos|das|van|von|del|e|&|and)\s+|\s*,\s*|\s+)[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*(?:\s+et\s+al\.?)?)\s*\(\s*(\[?(?:19\d\d|20\d\d|20--)[a-z]?\]?|\[?s\.d\.\]?)(?:\s*,\s*(?:p\.?|p[aá]g\.?|pp\.?)\s*(\d+(?:-\d+)?))?\s*\)/gi;
       while ((m = reNar.exec(frase)) !== null) {
