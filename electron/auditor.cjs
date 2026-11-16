@@ -15,6 +15,8 @@ const { calcularSimilaridadeSemanticaOnnx } = require('./semantic_onnx.cjs');
 const path = require('path');
 const os = require('os');
 const DiffMatchPatch = require('diff-match-patch');
+const { IndiceWinnowing } = require('./similarity_winnowing.cjs');
+const { executarGreedyStringTiling } = require('./similarity_tiling.cjs');
 
 // Mapa CSL-JSON extraído do último arquivo .docx aberto (Mendeley / Zotero / EndNote)
 let ultimoMapaCslEmbutidoDocx = null;
@@ -1766,6 +1768,9 @@ async function analisarPlagioComDiffMatchPatch(paragrafosCorpo, corpusArtigos) {
     }
   }
 
+  // Constrói o Índice Invertido Winnowing (MOSS) para triagem em O(1) com garantia matemática
+  const indiceWinnowing = IndiceWinnowing.construirDoCorpus(corpusOtimizado, 4, 7);
+
   for (let pIdx = 0; pIdx < paragrafosCorpo.length; pIdx++) {
     // Cede tempo para o Event Loop do Node.js a cada 5 parágrafos (mantém a interface responsiva)
     if (pIdx % 5 === 0) {
@@ -1788,53 +1793,53 @@ async function analisarPlagioComDiffMatchPatch(paragrafosCorpo, corpusArtigos) {
       const frasePalavras = fraseNorm.split(/\s+/).filter((w) => w.length >= 2);
       if (frasePalavras.length < minPalavrasIdenticas) continue;
 
-      // Gera os 4-shingles da frase (passo 2) com garantia matemática (zero falsos negativos)
-      const shingles4 = [];
-      for (let s = 0; s <= frasePalavras.length - 4; s += 2) {
-        shingles4.push(`${frasePalavras[s]} ${frasePalavras[s + 1]} ${frasePalavras[s + 2]} ${frasePalavras[s + 3]}`);
-      }
+      // Consulta candidatos via Winnowing (MOSS) em tempo constante O(1)
+      const candidatosWinnowing = indiceWinnowing.consultarCandidatos(frasePalavras);
+      if (!candidatosWinnowing || candidatosWinnowing.size === 0) continue;
 
       let detectouParaEstaFrase = false;
 
-      for (const art of corpusOtimizado) {
+      for (const [, cand] of candidatosWinnowing) {
         if (detectouParaEstaFrase) break;
+        const art = corpusOtimizado[cand.docId];
+        const sent = art?.sentencas?.[cand.sentId];
+        if (!sent) continue;
+        const sentArtNorm = sent.norm;
 
-        for (const sent of art.sentencas) {
-          const sentArtNorm = sent.norm;
+        // Executa Diff Match Patch para correspondência contígua e destaques de UI
+        const diffs = dmp.diff_main(fraseNorm, sentArtNorm);
+        dmp.diff_cleanupSemantic(diffs);
 
-          // FILTRO RÁPIDO SHINGLE (Boyer-Moore em C++):
-          // Se nenhum bloco contíguo de 4 palavras coincidir, é matematicamente impossível haver 7 palavras consecutivas!
-          let podeConterPlagio = false;
-          for (let k = 0; k < shingles4.length; k++) {
-            if (sentArtNorm.includes(shingles4[k])) {
-              podeConterPlagio = true;
-              break;
-            }
-          }
-          if (!podeConterPlagio) continue; // Pula instantaneamente 99.9% dos pares sem travar o Node.js!
+        let maiorBlocoIdentico = '';
+        let totalPalavrasIguais = 0;
+        let blocosIguais = 0;
 
-          // Executa Diff Match Patch apenas para os candidatos reais
-          const diffs = dmp.diff_main(fraseNorm, sentArtNorm);
-          dmp.diff_cleanupSemantic(diffs);
-
-          let maiorBlocoIdentico = '';
-          let totalPalavrasIguais = 0;
-          let blocosIguais = 0;
-
-          for (const [op, data] of diffs) {
-            if (op === 0) {
-              const palavrasBloco = data.trim().split(/\s+/).filter((w) => w.length >= 3);
-              if (palavrasBloco.length >= minPalavrasIdenticas) {
-                if (data.length > maiorBlocoIdentico.length) {
-                  maiorBlocoIdentico = data.trim();
-                }
-                totalPalavrasIguais += palavrasBloco.length;
-                blocosIguais++;
+        for (const [op, data] of diffs) {
+          if (op === 0) {
+            const palavrasBloco = data.trim().split(/\s+/).filter((w) => w.length >= 3);
+            if (palavrasBloco.length >= minPalavrasIdenticas) {
+              if (data.length > maiorBlocoIdentico.length) {
+                maiorBlocoIdentico = data.trim();
               }
+              totalPalavrasIguais += palavrasBloco.length;
+              blocosIguais++;
             }
           }
+        }
 
-          if (maiorBlocoIdentico.length >= 32) {
+        // Avaliação complementar com Greedy String Tiling (RKR-GST / JPlag) para captura de fragmentos transpostos/mosaico
+        const resGst = executarGreedyStringTiling(fraseNorm, sentArtNorm, minPalavrasIdenticas);
+        if (resGst.maiorBlocoIdentico && resGst.maiorBlocoIdentico.length > maiorBlocoIdentico.length) {
+          maiorBlocoIdentico = resGst.maiorBlocoIdentico;
+        }
+        if (resGst.totalCoincidentWords > totalPalavrasIguais) {
+          totalPalavrasIguais = resGst.totalCoincidentWords;
+        }
+        if (resGst.isMosaic) {
+          blocosIguais = Math.max(blocosIguais, resGst.tilesCount);
+        }
+
+        if (maiorBlocoIdentico.length >= 32) {
             // Isenta nomes próprios de sociedades e entidades (ex: International Society for Human and Animal Mycology)
             const ehEntidadePropria = /^(?:international\s+society\s+for\s+human\s+and\s+animal\s+mycology|world\s+health\s+organization|centers\s+for\s+disease\s+control|instituto\s+brasileiro\s+de\s+geografia|sistema\s+[uú]nico\s+de\s+sa[uú]de|rede\s+nacional\s+de\s+dados\s+em\s+sa[uú]de|conselho\s+nacional\s+de\s+sa[uú]de)\b/i.test(maiorBlocoIdentico.trim());
             if (ehEntidadePropria) continue;
@@ -1892,7 +1897,6 @@ async function analisarPlagioComDiffMatchPatch(paragrafosCorpo, corpusArtigos) {
         }
       }
     }
-  }
   return alertas;
 }
 
@@ -2675,6 +2679,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
             divergenciaMetadados = alertaAutenticidade;
           }
         }
+      }
 
         if (csl && !refBib && statusAutenticidade === 'autenticada') {
           refBib =
