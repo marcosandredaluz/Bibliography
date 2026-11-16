@@ -95,6 +95,18 @@ function ConteudoApp() {
   const [menuAcoesRapidas, setMenuAcoesRapidas] = useState(false);
   const barraAbasRef = useRef(null);
 
+  // Controle de execução da Auditoria Reversa em segundo plano (evita interrupção acidental)
+  const [auditoriaEmExecucao, setAuditoriaEmExecucao] = useState(false);
+
+  const confirmarSePodeTrocarProjeto = () => {
+    if (auditoriaEmExecucao) {
+      return window.confirm(
+        '⚠️ ATENÇÃO: Auditoria em andamento!\n\nUma verificação forense de manuscrito está em execução neste projeto.\nSe você trocar ou criar outro projeto agora, a auditoria atual será interrompida.\n\nDeseja realmente trocar de projeto?'
+      );
+    }
+    return true;
+  };
+
   // Cockpit de Início Rápido na Tela Inicial (persistência de estado recolhido/expandido)
   const [mostrarCockpit, setMostrarCockpit] = useState(() => {
     try {
@@ -263,6 +275,7 @@ function ConteudoApp() {
   };
 
   const alternarParaProjeto = async (caminho, nome) => {
+    if (!confirmarSePodeTrocarProjeto()) return;
     try {
       setMenuProjetosAberto(false);
       const estado = await window.api.config.alternarProjeto(caminho, nome);
@@ -287,6 +300,7 @@ function ConteudoApp() {
 
   const criarNovoProjeto = async () => {
     if (!nomeNovoProjeto.trim()) return;
+    if (!confirmarSePodeTrocarProjeto()) return;
     try {
       const estado = await window.api.config.criarNovoProjeto(nomeNovoProjeto.trim());
       setBib(estado);
@@ -313,6 +327,7 @@ function ConteudoApp() {
   };
 
   const escolherOutroProjeto = async () => {
+    if (!confirmarSePodeTrocarProjeto()) return;
     try {
       const p = await window.api.dialogo.escolherPasta();
       if (p) {
@@ -1610,6 +1625,30 @@ function ConteudoApp() {
       )}
 
       {/* 4. CORPO PRINCIPAL: OU UMA ABA DE PDF/FERRAMENTA, OU OS 3 PAINÉIS CLÁSSICOS DO ZOTERO/MENDELEY */}
+      {/* ReverseAuditView mantido vivo em memória para continuar executando mesmo ao trocar de aba */}
+      <div style={{ display: !refPdfAba && abaSuperior === 'auditoria' ? 'block' : 'none', height: '100%' }}>
+        <ReverseAuditView
+          refs={refs}
+          bib={bib}
+          estadoAuditoria={estadoAuditoria}
+          setEstadoAuditoria={setEstadoAuditoria}
+          aoMudarRodando={setAuditoriaEmExecucao}
+          onImportarCsl={importarCsl}
+          onRecarregar={recarregarBiblioteca}
+          onAbrirPdfNaPagina={(r, pag) => abrirPdfEmAba(r, pag)}
+          onIrParaBiblioteca={(termoOuId) => {
+            setAbaSuperior('biblioteca');
+            if (termoOuId) {
+              setVisao('todas');
+              setBusca(termoOuId);
+              if (refs.some((x) => x.id === termoOuId)) {
+                setSelecionadas([termoOuId]);
+              }
+            }
+          }}
+        />
+      </div>
+
       {refPdfAba ? (
         <PdfReaderModal
           emAba
@@ -1631,27 +1670,7 @@ function ConteudoApp() {
           onAtualizarRef={atualizarRef}
           onRecarregar={recarregarBiblioteca}
         />
-      ) : abaSuperior === 'auditoria' ? (
-        <ReverseAuditView
-          refs={refs}
-          bib={bib}
-          estadoAuditoria={estadoAuditoria}
-          setEstadoAuditoria={setEstadoAuditoria}
-          onImportarCsl={importarCsl}
-          onRecarregar={recarregarBiblioteca}
-          onAbrirPdfNaPagina={(r, pag) => abrirPdfEmAba(r, pag)}
-          onIrParaBiblioteca={(termoOuId) => {
-            setAbaSuperior('biblioteca');
-            if (termoOuId) {
-              setVisao('todas');
-              setBusca(termoOuId);
-              if (refs.some((x) => x.id === termoOuId)) {
-                setSelecionadas([termoOuId]);
-              }
-            }
-          }}
-        />
-      ) : abaSuperior === 'prisma' ? (
+      ) : abaSuperior === 'auditoria' ? null : abaSuperior === 'prisma' ? (
         <PrismaAndScreeningView refs={refs} onAtualizarRef={atualizarRef} onRecarregar={recarregarBiblioteca} />
       ) : abaSuperior === 'mendeley' ? (
         <MendeleyExtras refs={refs} onImportarCsl={importarCsl} onImportarPdfs={importarPdfs} />

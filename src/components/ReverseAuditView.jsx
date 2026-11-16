@@ -227,6 +227,7 @@ export default function ReverseAuditView({
   bib,
   estadoAuditoria,
   setEstadoAuditoria,
+  aoMudarRodando,
   onImportarCsl,
   onRecarregar,
   onAbrirPdfNaPagina,
@@ -308,6 +309,12 @@ export default function ReverseAuditView({
     }));
 
   const [rodando, setRodando] = useState(false);
+  const atualizarRodando = (valor) => {
+    setRodando(valor);
+    if (typeof aoMudarRodando === 'function') {
+      aoMudarRodando(valor);
+    }
+  };
   const [etapa, setEtapa] = useState('');
   const [progresso, setProgresso] = useState({
     ativo: false,
@@ -784,7 +791,7 @@ export default function ReverseAuditView({
       return;
     }
     const moduloExec = typeof moduloSobrescrito === 'string' ? moduloSobrescrito : moduloAuditoria;
-    setRodando(true);
+    atualizarRodando(true);
     setProgresso({
       ativo: true,
       porcentagem: 4,
@@ -997,7 +1004,7 @@ export default function ReverseAuditView({
     } catch (e) {
       avisar('Falha na auditoria: ' + e.message, 'erro');
     } finally {
-      setRodando(false);
+      atualizarRodando(false);
       setEtapa('');
       setTimeout(() => {
         setProgresso((ant) => ({ ...ant, ativo: false }));
