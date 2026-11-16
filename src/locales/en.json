@@ -1,0 +1,33 @@
+{
+  "app": {
+    "title": "Bibliography",
+    "subtitle": "Reference Management & Forensic Citation Auditing"
+  },
+  "menu": {
+    "library": "Library",
+    "searchers": "Search Hub",
+    "manuscript": "Manuscript",
+    "auditing": "Forensic Audit",
+    "prisma": "PRISMA 2020",
+    "graph": "Citation Graph",
+    "tutorial": "Tutorial",
+    "version": "v1.2",
+    "diagnostics": "System Diagnostics"
+  },
+  "actions": {
+    "search": "Count & compare databases",
+    "openSearch": "Open search",
+    "importHere": "Import here",
+    "copyCitation": "Copy Citation",
+    "createBibliography": "Generate Bibliography",
+    "exportDocx": "Export to .DOCX",
+    "auditManuscript": "Audit Manuscript",
+    "blindScreening": "Double-Blind Screening"
+  },
+  "status": {
+    "loading": "Querying scientific databases...",
+    "openAccess": "Open access",
+    "institutional": "Institutional / Federated Login",
+    "subscription": "Subscription"
+  }
+}

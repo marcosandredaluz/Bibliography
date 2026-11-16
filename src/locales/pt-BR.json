@@ -1,0 +1,33 @@
+{
+  "app": {
+    "title": "Bibliografia",
+    "subtitle": "Gestão Bibliográfica e Auditoria Forense de Citações"
+  },
+  "menu": {
+    "library": "Biblioteca",
+    "searchers": "Buscadores",
+    "manuscript": "Manuscrito",
+    "auditing": "Auditoria",
+    "prisma": "PRISMA 2020",
+    "graph": "Grafo",
+    "tutorial": "Tutorial",
+    "version": "v1.2",
+    "diagnostics": "Diagnóstico do Sistema"
+  },
+  "actions": {
+    "search": "Contar e comparar nas bases",
+    "openSearch": "Abrir busca",
+    "importHere": "Importar aqui",
+    "copyCitation": "Copiar Citação",
+    "createBibliography": "Criar Bibliografia",
+    "exportDocx": "Exportar para .DOCX",
+    "auditManuscript": "Auditar Manuscrito",
+    "blindScreening": "Triagem em Duplo-Cego"
+  },
+  "status": {
+    "loading": "Consultando bases de dados...",
+    "openAccess": "Acesso livre",
+    "institutional": "CAPES / CAFe / Instituição",
+    "subscription": "Assinatura"
+  }
+}

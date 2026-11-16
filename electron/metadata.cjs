@@ -1,0 +1,187 @@
+// Busca de metadados: DOI (Crossref/DataCite), ISBN (Google Books/Open Library)
+// e busca por título (Crossref). Tudo é convertido para CSL-JSON.
+const UA = 'Bibliografia/0.1 (gerenciador de referencias pessoal)';
+
+const CAMPOS_CSL = new Set([
+  'type', 'title', 'title-short', 'container-title', 'container-title-short', 'collection-title',
+  'author', 'editor', 'translator', 'issued', 'accessed', 'volume', 'issue', 'page', 'number-of-pages',
+  'publisher', 'publisher-place', 'edition', 'DOI', 'URL', 'ISBN', 'ISSN', 'PMID', 'PMCID',
+  'abstract', 'language', 'genre', 'number', 'event-title', 'event-place', 'section', 'medium', 'note',
+]);
+
+function semTags(s) {
+  return String(s).replace(/<\/?(jats:)?[a-z][^>]*>/gi, (t) => (/^<\/?(i|b|sup|sub)>$/i.test(t) ? t : ' '))
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function limparCsl(bruto) {
+  const csl = {};
+  for (const [k, v] of Object.entries(bruto || {})) {
+    if (!CAMPOS_CSL.has(k) || v == null || v === '') continue;
+    let valor = Array.isArray(v) && !['author', 'editor', 'translator'].includes(k) ? v[0] : v;
+    if (typeof valor === 'string') valor = k === 'abstract' ? semTags(valor).replace(/<\/?[a-z]+>/gi, '') : semTags(valor);
+    if (valor == null || valor === '') continue;
+    csl[k] = valor;
+  }
+  for (const k of ['author', 'editor', 'translator']) {
+    if (Array.isArray(csl[k])) {
+      csl[k] = csl[k]
+        .map((n) => {
+          const o = {};
+          if (n.family) o.family = n.family;
+          if (n.given) o.given = n.given;
+          if (n.literal || n.name) o.literal = n.literal || n.name;
+          if (n.suffix) o.suffix = n.suffix;
+          if (n['non-dropping-particle']) o['non-dropping-particle'] = n['non-dropping-particle'];
+          return o;
+        })
+        .filter((o) => Object.keys(o).length);
+      if (!csl[k].length) delete csl[k];
+    }
+  }
+  if (csl.type === 'journal-article') csl.type = 'article-journal';
+  if (csl.type === 'book-chapter') csl.type = 'chapter';
+  if (csl.type === 'proceedings-article') csl.type = 'paper-conference';
+  for (const k of ['volume', 'issue', 'page', 'edition', 'number', 'number-of-pages']) {
+    if (csl[k] != null) csl[k] = String(csl[k]);
+  }
+  return csl;
+}
+
+function normalizarDoi(texto) {
+  const m = String(texto || '').match(/10\.\d{4,9}\/[^\s"'<>]+/i);
+  return m ? m[0].replace(/[.,;:)\]}]+$/, '') : null;
+}
+
+async function buscarJson(url, headers = {}) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), 20000);
+  try {
+    const res = await fetch(url, { headers: { 'User-Agent': UA, ...headers }, signal: ctrl.signal, redirect: 'follow' });
+    if (!res.ok) {
+      const err = new Error(`HTTP ${res.status}`);
+      err.status = res.status;
+      throw err;
+    }
+    return await res.json();
+  } catch (e) {
+    if (e.name === 'AbortError') throw new Error('Tempo esgotado ao consultar o servidor. Verifique a internet.');
+    throw e;
+  } finally {
+    clearTimeout(t);
+  }
+}
+
+async function porDoi(entrada) {
+  const doi = normalizarDoi(entrada);
+  if (!doi) throw new Error('DOI inválido. Exemplo: 10.1038/nature12373');
+  try {
+    const bruto = await buscarJson(`https://doi.org/${encodeURI(doi)}`, { Accept: 'application/vnd.citationstyles.csl+json' });
+    const csl = limparCsl(bruto);
+    csl.DOI = doi;
+    return csl;
+  } catch (e) {
+    if (e.status === 404) throw new Error(`DOI não encontrado: ${doi}`);
+    throw new Error(`Não foi possível obter o DOI ${doi}: ${e.message}`);
+  }
+}
+
+const SUFIXOS = /^(filho|filha|neto|neta|junior|júnior|jr\.?|sobrinho|segundo|terceiro)$/i;
+
+/** PubMed ID -> CSL-JSON (serviço oficial de citações da NCBI). */
+async function porPmid(entrada) {
+  const pmid = String(entrada || '').match(/\d{1,9}/)?.[0];
+  if (!pmid) throw new Error('PMID inválido.');
+  let bruto;
+  try {
+    bruto = await buscarJson(`https://api.ncbi.nlm.nih.gov/lit/ctxp/v1/pubmed/?format=csl&id=${pmid}`);
+  } catch (e) {
+    throw new Error(`Não foi possível obter o PMID ${pmid}: ${e.message}`);
+  }
+  if (Array.isArray(bruto)) bruto = bruto[0];
+  if (!bruto?.title) throw new Error(`PMID não encontrado: ${pmid}`);
+  const csl = limparCsl(bruto);
+  delete csl.accessed; // a NCBI preenche "acessado em" com a data de hoje; não faz sentido para artigos
+  csl.PMID = pmid;
+  if (bruto.PMCID) csl.PMCID = bruto.PMCID;
+  if (csl.DOI) csl.DOI = normalizarDoi(csl.DOI) || csl.DOI;
+  if (csl['container-title-short'] && !csl['container-title']) csl['container-title'] = csl['container-title-short'];
+  return csl;
+}
+
+/** "João da Silva Filho" -> { family: "Silva Filho", given: "João da" }; "Silva, João" também. */
+function separarNome(nome) {
+  const s = String(nome || '').trim().replace(/\s+/g, ' ');
+  if (!s) return null;
+  if (s.includes(',')) {
+    const [family, ...resto] = s.split(',');
+    return { family: family.trim(), given: resto.join(',').trim() || undefined };
+  }
+  const partes = s.split(' ');
+  if (partes.length === 1) return { family: partes[0] };
+  let corte = partes.length - 1;
+  if (SUFIXOS.test(partes[corte]) && corte > 1) corte--;
+  return { family: partes.slice(corte).join(' '), given: partes.slice(0, corte).join(' ') };
+}
+
+function dataParaCsl(texto) {
+  const m = String(texto || '').match(/(\d{4})(?:-(\d{1,2}))?(?:-(\d{1,2}))?/);
+  if (!m) return undefined;
+  return { 'date-parts': [[m[1], m[2], m[3]].filter(Boolean).map(Number)] };
+}
+
+async function porIsbn(entrada) {
+  const isbn = String(entrada || '').replace(/[^0-9Xx]/g, '').toUpperCase();
+  if (![10, 13].includes(isbn.length)) throw new Error('ISBN inválido (precisa ter 10 ou 13 dígitos).');
+  const csl = { type: 'book', ISBN: isbn };
+
+  try {
+    const g = await buscarJson(`https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`);
+    const v = g.items?.[0]?.volumeInfo;
+    if (v) {
+      csl.title = v.subtitle ? `${v.title}: ${v.subtitle}` : v.title;
+      if (v.authors?.length) csl.author = v.authors.map(separarNome).filter(Boolean);
+      if (v.publisher) csl.publisher = v.publisher;
+      if (v.publishedDate) csl.issued = dataParaCsl(v.publishedDate);
+      if (v.pageCount) csl['number-of-pages'] = String(v.pageCount);
+      if (v.language) csl.language = v.language;
+      if (v.description) csl.abstract = semTags(v.description);
+    }
+  } catch { /* tenta a próxima fonte */ }
+
+  try {
+    const o = await buscarJson(`https://openlibrary.org/api/books?bibkeys=ISBN:${isbn}&format=json&jscmd=data`);
+    const b = o[`ISBN:${isbn}`];
+    if (b) {
+      csl.title ||= b.subtitle ? `${b.title}: ${b.subtitle}` : b.title;
+      if (!csl.author && b.authors?.length) csl.author = b.authors.map((a) => separarNome(a.name)).filter(Boolean);
+      csl.publisher ||= b.publishers?.[0]?.name;
+      csl['publisher-place'] ||= b.publish_places?.[0]?.name?.replace(/[[\]]/g, '').replace(/,\s*(Brazil|Brasil)$/i, '');
+      csl.issued ||= dataParaCsl(b.publish_date);
+      csl['number-of-pages'] ||= b.number_of_pages ? String(b.number_of_pages) : undefined;
+    }
+  } catch { /* sem dados */ }
+
+  if (!csl.title) throw new Error(`Nenhum livro encontrado para o ISBN ${isbn}.`);
+  return limparCsl(csl);
+}
+
+async function buscarTitulo(consulta) {
+  const q = String(consulta || '').trim();
+  if (q.length < 3) throw new Error('Digite pelo menos 3 caracteres.');
+  const url = `https://api.crossref.org/works?rows=10&query.bibliographic=${encodeURIComponent(q)}` +
+    '&select=DOI,title,author,issued,container-title,type,publisher';
+  const dados = await buscarJson(url);
+  return (dados.message?.items || []).map((it) => ({
+    doi: it.DOI,
+    titulo: semTags(it.title?.[0] || '(sem título)'),
+    autores: (it.author || []).map((a) => a.family || a.name).filter(Boolean).slice(0, 4).join(', ') +
+      ((it.author || []).length > 4 ? ' et al.' : ''),
+    ano: it.issued?.['date-parts']?.[0]?.[0] || '',
+    fonte: semTags(it['container-title']?.[0] || it.publisher || ''),
+    tipo: it.type,
+  }));
+}
+
+module.exports = { porDoi, porPmid, porIsbn, buscarTitulo, normalizarDoi, separarNome };

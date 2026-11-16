@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+authors:
+  - family-names: "da Luz"
+    given-names: "Marcos André"
+    affiliation: "Doctoral Researcher in Health Technology & Clinical Informatics"
+title: "Bibliography: Open-Source Academic Writing Assistant & Forensic Citation Verification Engine"
+version: 1.0.0
+date-released: 2026-11-16
+url: "https://github.com/marcosandredaluz/Bibliography"
+repository-code: "https://github.com/marcosandredaluz/Bibliography"
+license: Apache-2.0
+keywords:
+  - "academic writing"
+  - "reference management"
+  - "systematic review"
+  - "PRISMA 2020"
+  - "citation audit"
+  - "anti-hallucination"
+  - "citation chaining"
+  - "reproducible science"

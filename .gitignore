@@ -1,0 +1,84 @@
+# --- Ambientes Virtuais e Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Ferramentas de Teste e Cobertura ---
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# --- Linters e Formatadores ---
+.mypy_cache/
+.ruff_cache/
+
+# --- Node / Frontend ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+dist-ssr/
+*.local
+
+# --- Compilação e Binários Electron / Distribuição ---
+release/
+*.exe
+*.blockmap
+*.asar
+
+# --- Arquivos Temporários de Processadores de Texto e Documentos ---
+~$*
+*.tmp
+*.dotm.backup
+
+# --- Bancos de Dados Locais e Chaves ---
+*.db
+*.sqlite3
+data/*.db
+.env
+.env.*
+!.env.example
+secrets.json
+*.pem
+*.key
+
+# --- IDEs e Sistemas Operacionais ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+boot.log

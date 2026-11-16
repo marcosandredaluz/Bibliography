@@ -1,0 +1,33 @@
+{
+  "app": {
+    "title": "Bibliographie",
+    "subtitle": "Gestion Bibliographique et Audit Médico-Légal des Citations"
+  },
+  "menu": {
+    "library": "Bibliothèque",
+    "searchers": "Moteurs de Recherche",
+    "manuscript": "Manuscrit",
+    "auditing": "Audit Forensique",
+    "prisma": "PRISMA 2020",
+    "graph": "Graphe de Citations",
+    "tutorial": "Tutoriel",
+    "version": "v1.2",
+    "diagnostics": "Diagnostic Système"
+  },
+  "actions": {
+    "search": "Compter et comparer les bases",
+    "openSearch": "Ouvrir la recherche",
+    "importHere": "Importer ici",
+    "copyCitation": "Copier la Citation",
+    "createBibliography": "Générer la Bibliographie",
+    "exportDocx": "Exporter vers .DOCX",
+    "auditManuscript": "Auditer le Manuscrit",
+    "blindScreening": "Sélection en Double Aveugle"
+  },
+  "status": {
+    "loading": "Interrogation des bases scientifiques...",
+    "openAccess": "Accès libre",
+    "institutional": "Accès Institutionnel",
+    "subscription": "Abonnement"
+  }
+}

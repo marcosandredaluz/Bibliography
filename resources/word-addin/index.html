@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bibliografia — Painel do Word</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 12px; background: #f8fafc; color: #1e293b; font-size: 13px; }
+    h3 { margin: 0 0 8px 0; font-size: 15px; color: #1e3a8a; }
+    .caixa { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; margin-bottom: 10px; }
+    input, select { width: 100%; padding: 6px 8px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; margin-bottom: 6px; }
+    button { padding: 6px 10px; border-radius: 6px; border: 1px solid transparent; cursor: pointer; font-weight: 600; font-size: 12px; }
+    .primario { background: #2563eb; color: #fff; }
+    .secundario { background: #fff; border-color: #cbd5e1; color: #1e293b; }
+    .item { padding: 7px 0; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+    .item:last-child { border-bottom: none; }
+    .meta { font-size: 11px; color: #64748b; }
+    .status { font-size: 10.5px; padding: 1px 6px; border-radius: 99px; background: #e2e8f0; }
+    .msg { font-size: 12px; color: #15803d; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <h3>Bibliografia — Word</h3>
+  <div class="caixa">
+    <label>Norma de formatação:</label>
+    <select id="estilo"></select>
+    <input id="pagina" placeholder="Página opcional (ex.: p. 45)" />
+    <input id="busca" placeholder="Buscar autor, título ou ano…" />
+  </div>
+
+  <div class="caixa" style="display:flex; gap:6px; flex-wrap:wrap;">
+    <button class="primario" onclick="atualizarBibliografia(false)">Atualizar Referências Citadas</button>
+    <button class="secundario" onclick="atualizarBibliografia(true)" title="Adiciona também a lista separada de obras Consultadas (lidas mas não citadas)">+ Bibliografia Consultada</button>
+  </div>
+  <div id="msg" class="msg"></div>
+
+  <div class="caixa" id="lista">Carregando biblioteca…</div>
+
+  <script>
+    let refs = [];
+    let officePronto = false;
+    if (window.Office) {
+      Office.onReady(() => { officePronto = true; });
+    }
+
+    async function carregar() {
+      const st = await fetch('/api/status').then(r => r.json());
+      const sel = document.getElementById('estilo');
+      sel.innerHTML = st.estilos.map(e => `<option value="${e.id}" ${e.id === st.estiloAtivo ? 'selected' : ''}>${e.nome}</option>`).join('');
+      refs = st.refs || [];
+      renderizar();
+    }
+
+    function renderizar() {
+      const q = (document.getElementById('busca').value || '').toLowerCase();
+      const filtradas = refs.filter(r => !q || (r.busca || '').includes(q)).slice(0, 40);
+      const el = document.getElementById('lista');
+      if (!filtradas.length) { el.innerHTML = '<em>Nenhuma referência encontrada.</em>'; return; }
+      el.innerHTML = filtradas.map(r => `
+        <div class="item">
+          <div>
+            <strong>${r.titulo}</strong>
+            <div class="meta">${r.autorAno} · <span class="status">${r.status}</span></div>
+          </div>
+          <button class="primario" onclick="citar('${r.id}')">Citar</button>
+        </div>
+      `).join('');
+    }
+
+    document.getElementById('busca').addEventListener('input', renderizar);
+
+    async function citar(id) {
+      const estilo = document.getElementById('estilo').value;
+      const pagina = document.getElementById('pagina').value.trim();
+      const res = await fetch('/api/citar', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ids: [id], estilo, pagina })
+      }).then(r => r.json());
+
+      if (officePronto && window.Word) {
+        await Word.run(async (ctx) => {
+          const sel = ctx.document.getSelection();
+          const cc = sel.insertContentControl();
+          cc.tag = `BIB_REF:${id}`;
+          cc.title = 'Citação Bibliografia';
+          cc.insertHtml(res.citacaoHtml, Word.InsertLocation.replace);
+          await ctx.sync();
+        });
+        mostrar('Citação inserida no documento e marcada como Citada!');
+      } else {
+        await navigator.clipboard.writeText(res.citacaoTexto);
+        mostrar('Citação copiada e referência marcada como Citada!');
+      }
+      carregar();
+    }
+
+    async function atualizarBibliografia(incluirConsultadas) {
+      const estilo = document.getElementById('estilo').value;
+      let idsNoDoc = [];
+      if (officePronto && window.Word) {
+        await Word.run(async (ctx) => {
+          const controles = ctx.document.contentControls;
+          controles.load('items/tag');
+          await ctx.sync();
+          for (const c of controles.items) {
+            if (c.tag && c.tag.startsWith('BIB_REF:')) {
+              idsNoDoc.push(...c.tag.slice(8).split(',').filter(Boolean));
+            }
+          }
+        });
+      }
+      const res = await fetch('/api/sincronizar-word', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ docId: 'documento-word-ativo', estilo, citadasIds: idsNoDoc, incluirConsultadas })
+      }).then(r => r.json());
+
+      if (officePronto && window.Word) {
+        await Word.run(async (ctx) => {
+          const corpo = ctx.document.body;
+          corpo.insertHtml(res.htmlCompleto, Word.InsertLocation.end);
+          await ctx.sync();
+        });
+        mostrar(`Bibliografia inserida (${res.totalCitadas} citadas)!`);
+      } else {
+        mostrar(`Sincronizado (${res.totalCitadas} citadas)!`);
+      }
+      carregar();
+    }
+
+    function mostrar(t) {
+      const el = document.getElementById('msg');
+      el.textContent = t;
+      setTimeout(() => { el.textContent = ''; }, 4000);
+    }
+
+    carregar();
+  </script>
+</body>
+</html>

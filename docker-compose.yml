@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  # Servidor Backend FastAPI (Motor Local de Auditoria Forense e Word)
+  bibliografia-backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: bibliografia-backend
+    restart: unless-stopped
+    ports:
+      - "23119:23119"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DATABASE_PATH=/app/data/bibliografia_local.db
+    volumes:
+      - bibliografia-data:/app/data
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:23119/health')\" || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    networks:
+      - bibliografia-net
+
+  # Interface Web SPA (React 19 / Vite / Nginx)
+  bibliografia-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bibliografia-web
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - bibliografia-backend
+    networks:
+      - bibliografia-net
+
+volumes:
+  bibliografia-data:
+    driver: local
+
+networks:
+  bibliografia-net:
+    driver: bridge

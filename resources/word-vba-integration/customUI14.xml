@@ -1,0 +1,80 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+  <ribbon>
+    <tabs>
+      <tab id="tabBibliografia" label="Bibliografia Forense" insertAfterMso="TabReferences">
+        
+        <!-- Grupo 1: Gestão de Citações e Obras -->
+        <group id="grpCitacoes" label="Citações &amp; Referências">
+          <button id="btnInserirCitacao"
+                  label="Adicionar / Editar Citação"
+                  size="large"
+                  imageMso="CitationInsert"
+                  screentip="Adicionar Citação ABNT / Vancouver"
+                  supertip="Abre a busca da sua biblioteca local para inserir a chamada de citação (como Campo ou Bookmark)."
+                  onAction="Ribbon_InserirCitacao" />
+                  
+          <button id="btnInserirBibliografia"
+                  label="Inserir Referências"
+                  size="large"
+                  imageMso="BibliographyInsertGallery"
+                  screentip="Gerar Lista de Referências Final"
+                  supertip="Gera a lista final de referências no final do documento, padronizada segundo a NBR 6023 ou Vancouver."
+                  onAction="Ribbon_InserirBibliografia" />
+                  
+          <button id="btnAlternarModo"
+                  label="Formato (Campos vs Bookmarks)"
+                  size="normal"
+                  imageMso="FieldCodesToggle"
+                  screentip="Alternar Formato de Citação"
+                  supertip="Alterna entre Campos Nativos do Word (Zotero) e Texto com Bookmarks (Mendeley)."
+                  onAction="Ribbon_AlternarModoCitacao" />
+        </group>
+
+        <!-- Grupo 2: Auditoria Forense Anti-IA & Anti-Plágio -->
+        <group id="grpAuditoria" label="Auditoria Forense &amp; Anti-IA">
+          <button id="btnAuditarDocumento"
+                  label="Auditar Manuscrito Completo"
+                  size="large"
+                  imageMso="ReviewAcceptChangeAndMoveToNext"
+                  screentip="Auditoria Forense (Grifos no Word + Painel)"
+                  supertip="Grifa no Word e abre o painel lateral com diagnóstico de fontes fantasmas de IA, DOIs falsos e plágio."
+                  onAction="Ribbon_AuditarManuscrito" />
+                  
+          <button id="btnVerificarMarcadoresIa"
+                  label="Checar Redação por IA"
+                  size="normal"
+                  imageMso="SmartArtChangeColorGallery"
+                  screentip="Open-Detector: Clichês de LLM"
+                  supertip="Verifica e destaca parágrafos com jargões e cadência típica de redação artificial por IA."
+                  onAction="Ribbon_ChecarEstiloIa" />
+
+          <button id="btnChecarOrfas"
+                  label="Citações Órfãs &amp; Sobrando"
+                  size="normal"
+                  imageMso="GroupSmartArtQuickStyles"
+                  screentip="Checagem Instantânea de Chamadas (< 1s)"
+                  onAction="Ribbon_ChecarCitacoesOrfas" />
+                  
+          <button id="btnLimparGrifosAuditoria"
+                  label="Limpar Destaques &amp; Comentários"
+                  size="normal"
+                  imageMso="ReviewDeleteComment"
+                  screentip="Remover marcas visuais e comentários de auditoria do texto"
+                  onAction="Ribbon_LimparDestaques" />
+        </group>
+
+        <!-- Grupo 3: Sincronização & Status do Motor -->
+        <group id="grpStatus" label="Conexão Local">
+          <button id="btnTestarConexao"
+                  label="Verificar Motor Local"
+                  size="large"
+                  imageMso="ServerRefresh"
+                  screentip="Testar Conexão com o Motor Local"
+                  supertip="Verifica se o serviço em segundo plano está ativo na porta 23119."
+                  onAction="Ribbon_TestarConexao" />
+        </group>
+        
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
