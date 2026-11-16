@@ -42,7 +42,7 @@ const REGEX_LENER_ORGANIZACAO =
 
 // Domínios Oficiais Governamentais, Educacionais e de Organismos Multilaterais
 const REGEX_DOMINIOS_OFICIAIS =
-  /(?:\.gov\.br|\.edu\.br|\.leg\.br|\.jus\.br|\.mp\.br|\.mil\.br|\.def\.br|\bwho\.int|\biris\.who\.int|\bpaho\.org|\bopas\.org\.br|\bbvsms\.saude\.gov\.br|\bin\.gov\.br|\bsaude\.gov\.br|\bibge\.gov\.br|\bfiocruz\.br|\bunicef\.org|\bcdc\.gov|\bnih\.gov)/i;
+  /(?:\.gov(?:\.[a-z]{2})?|\.edu(?:\.[a-z]{2})?|\.ac\.[a-z]{2}|\.leg\.br|\.jus\.br|\.mp\.br|\.mil\.br|\.def\.br|\.int\b|\b(?:who|iris\.who|paho|opas|unicef|cdc|nih|snomed|w3|hl7|ihe|iso|cancer|fapesp|capes|cnpq)\.org|\bbvsms\.saude\.gov\.br|\bin\.gov\.br|\bsaude\.gov\.br|\bibge\.gov\.br|\bfiocruz\.br)/i;
 
 // Detecta se a linha tem estrutura típica de artigo de periódico científico (ex.: "2020;38(2):482-488" ou periódicos científicos consagrados)
 const REGEX_ASSINATURA_PERIODICO_CIENTIFICO =
@@ -103,12 +103,19 @@ function classificarReferenciaHarmonizada(linha, doi, metadadoCslEmbutido = null
     };
   }
 
-  // 4. Se não possui DOI de artigo científico e pertence a Domínio Oficial (.gov.br, .edu.br, who.int) ou ORGANIZACAO LeNER-Br
-  if (!doi && (REGEX_DOMINIOS_OFICIAIS.test(s) || REGEX_LENER_ORGANIZACAO.test(s))) {
+  // 4. Se não possui DOI de artigo científico e pertence a Domínio Oficial (.gov, .edu, .org, .int) ou ORGANIZACAO LeNER-Br
+  const ehUrlOficialOuInstitucional =
+    !doi &&
+    !temAssinaturaPeriodico &&
+    (/\bDispon[ií]vel\s+em:\s*https?:\/\/[^\s]+/i.test(s) &&
+      (/(?:\.gov|\.edu|\.org|\.int|\.ac\.[a-z]{2})\b/i.test(s) ||
+       /\b(?:members|about|licensing|portal|standards|normas|documentos|relatorios)\b/i.test(s)));
+
+  if (!doi && (REGEX_DOMINIOS_OFICIAIS.test(s) || REGEX_LENER_ORGANIZACAO.test(s) || ehUrlOficialOuInstitucional)) {
     return {
       natureza: 'norma_livro_institucional',
       subtipoLener: 'ORGANIZACAO_PUBLICA',
-      rotuloAutenticidade: '🏛 Publicação Institucional / Governamental Oficial (.gov.br / .edu.br / OMS)',
+      rotuloAutenticidade: '🏛 Publicação Institucional / Documento Oficial (.gov / .edu / .org / OMS)',
     };
   }
 

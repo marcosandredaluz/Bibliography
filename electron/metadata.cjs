@@ -133,6 +133,40 @@ async function porPmid(entrada) {
   return csl;
 }
 
+/** PMCID (PubMed Central) -> CSL-JSON via NCBI E-utilities. */
+async function porPmc(entrada) {
+  const pmcid = String(entrada || '').replace(/[^0-9]/g, '');
+  if (!pmcid) throw new Error('PMCID inválido.');
+  const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pmc&id=${pmcid}&retmode=json`;
+  const dados = await buscarJson(url);
+  const doc = dados.result?.[pmcid];
+  if (!doc || !doc.title) throw new Error(`PMC${pmcid} não encontrado.`);
+
+  const csl = {
+    type: 'article-journal',
+    title: semTags(doc.title),
+    PMCID: `PMC${pmcid}`,
+    'container-title': doc.source || doc.fulljournalname || '',
+    volume: doc.volume || undefined,
+    issue: doc.issue || undefined,
+    page: doc.pages || undefined,
+  };
+  if (doc.authors?.length) {
+    csl.author = doc.authors.map((a) => separarNome(a.name)).filter(Boolean);
+  }
+  if (doc.pubdate) {
+    const m = doc.pubdate.match(/(\d{4})/);
+    if (m) csl.issued = { 'date-parts': [[Number(m[1])]] };
+  }
+  if (doc.articleids?.length) {
+    const doiObj = doc.articleids.find((i) => i.idtype === 'doi');
+    if (doiObj?.value) csl.DOI = normalizarDoi(doiObj.value);
+    const pmidObj = doc.articleids.find((i) => i.idtype === 'pmid');
+    if (pmidObj?.value) csl.PMID = pmidObj.value;
+  }
+  return limparCsl(csl);
+}
+
 /** "João da Silva Filho" -> { family: "Silva Filho", given: "João da" }; "Silva, João" também. */
 function separarNome(nome) {
   const s = String(nome || '').trim().replace(/\s+/g, ' ');
@@ -207,4 +241,4 @@ async function buscarTitulo(consulta) {
   }));
 }
 
-module.exports = { porDoi, porPmid, porIsbn, buscarTitulo, normalizarDoi, separarNome };
+module.exports = { porDoi, porPmid, porPmc, porIsbn, buscarTitulo, normalizarDoi, separarNome };

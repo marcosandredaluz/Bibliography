@@ -7,7 +7,7 @@
 // 6. Valida DOIs (detectando DOI inexistente e DOI trocado), recupera resumos bilíngues (PubMed XML + OpenAlex) e faz verificação semântica bilíngue PT↔EN + numérica.
 const fs = require('fs');
 const zlib = require('zlib');
-const { porDoi, buscarTitulo, normalizarDoi } = require('./metadata.cjs');
+const { porDoi, porPmid, porPmc, buscarTitulo, normalizarDoi } = require('./metadata.cjs');
 const { localizarUrlPdfAberto, baixarPdfParaArquivo } = require('./importers.cjs');
 const { extrairMetadadosCslEmbutidosNoXml } = require('./csl_mendeley_parser.cjs');
 const { classificarReferenciaHarmonizada } = require('./lener_br_classifier.cjs');
@@ -379,6 +379,11 @@ function extrairChavesAutorDeCitacao(trechoAutorBruto) {
     .replace(/\([^)]*\)/g, '')
     .trim();
 
+  // Ignora termos de autoautoria em figuras/quadros (ex.: "Elaborado pela autora", "Autoria própria")
+  if (/\b(?:elaborad[oa]|produzid[oa]|organizad[oa]|autoria\s+pr[oó]pria|adaptad[oa]|modificad[oa])\b/i.test(limpo)) {
+    return { chavePrincipal: '', chavesAlias: [], autorExibicao: '' };
+  }
+
   // Verifica se é entidade corporativa/institucional
   const ehCorporativo =
     /\b(instituto|international|college|organization|organizacao|ministerio|secretaria|departamento|associacao|association|society|sociedade|brasil|curitiba|world|mundial|hl7|ihe|iso|inca|oms|who|conass|conasems|anvisa|ibge|fiocruz|opas|paho|cdc|centers\s+for\s+disease|conitec|ipea|unicef|unesco|united\s+nations|european\s+medicines|food\s+and\s+drug|fundacao|funda[cç][aã]o|agencia|ag[eê]ncia|tribunal|conselho\s+nacional)\b/i.test(
@@ -684,6 +689,7 @@ function compararCamposDoiOficial(refDoc, csl) {
     textoRef.match(/\((\d+)\):/);
   const fasciculoDeclarado = mFasciculoDeclarado ? mFasciculoDeclarado[1] : null;
   const fasciculoOficial = csl.issue ? String(csl.issue) : null;
+  const normFasc = (val) => String(val || '').replace(/^0+/, '').trim();
 
   if (fasciculoDeclarado && !fasciculoOficial) {
     divergencias.push({
@@ -692,7 +698,11 @@ function compararCamposDoiOficial(refDoc, csl) {
       oficial: 'sem fascículo (publicação contínua)',
       mensagem: `A referência declarou "n. ${fasciculoDeclarado}", mas o registro oficial da revista (Crossref/SciELO) não possui número de fascículo (publicação contínua em volume). Recomenda-se suprimir "n. ${fasciculoDeclarado}".`,
     });
-  } else if (fasciculoDeclarado && fasciculoOficial && fasciculoDeclarado !== fasciculoOficial) {
+  } else if (
+    fasciculoDeclarado &&
+    fasciculoOficial &&
+    normFasc(fasciculoDeclarado) !== normFasc(fasciculoOficial)
+  ) {
     divergencias.push({
       campo: 'fasciculo',
       declarado: `n. ${fasciculoDeclarado}`,
@@ -714,12 +724,14 @@ function compararCamposDoiOficial(refDoc, csl) {
     });
   }
 
-  // 3. Ano de Publicação (com tolerância para Epub ahead of print vs. Volume impresso quando o DOI ou o registro online confirma o ano declarado)
+  // 3. Ano de Publicação (com tolerância de ±1 ano para Epub ahead of print vs. Volume impresso)
   const anoDeclarado = refDoc.anoBase;
   const anoOficial = String(csl.issued?.['date-parts']?.[0]?.[0] || '');
   const anoOnline = String(
     csl['published-online']?.['date-parts']?.[0]?.[0] ||
+      csl['published-print']?.['date-parts']?.[0]?.[0] ||
       csl.created?.['date-parts']?.[0]?.[0] ||
+      csl.deposited?.['date-parts']?.[0]?.[0] ||
       ''
   );
   const diffAno = anoDeclarado && anoOficial ? Math.abs(Number(anoDeclarado) - Number(anoOficial)) : 0;
@@ -728,7 +740,7 @@ function compararCamposDoiOficial(refDoc, csl) {
   const textoContemAmbosAnos =
     anoDeclarado && anoOficial && textoRef.includes(anoDeclarado) && textoRef.includes(anoOficial);
   const ehEpubAheadOfPrintValido =
-    diffAno === 1 && (doiContemAnoDeclarado || textoContemAmbosAnos || anoOnline === anoDeclarado);
+    diffAno === 1 && (doiContemAnoDeclarado || textoContemAmbosAnos || anoOnline === anoDeclarado || Math.abs(Number(anoDeclarado) - Number(anoOnline || anoOficial)) <= 1);
 
   if (anoDeclarado && anoOficial && diffAno > 0 && !ehEpubAheadOfPrintValido) {
     divergencias.push({
@@ -757,11 +769,12 @@ function extrairAnoPublicacaoReferencia(linha) {
   s = s.replace(/\[\s*(?:cited|citado|acesso|acessado|accessed)\b[^\]]*\]/gi, ' ');
   // 2. Remove todo o bloco final de "Disponível em: ... Acesso em: 12 out. 2026.", "Available from:", "Acessado novembro 14, 2026."
   s = s.replace(/\b(?:Dispon[ií]vel\s+em|Available\s+from|Acesso\s+em|Acessado(?:\s+em)?|Accessed(?:\s+on)?)\s*:?[\s\S]*$/gi, ' ');
-  // 3. Remove URLs (com http/https ou www.), PMIDs, PMCIDs e DOIs (pois contêm números de anos e códigos)
+  // 3. Remove URLs (com http/https ou www.), PMIDs, PMCIDs e DOIs (pois contêm números de anos e códigos como 8746 em PMC3248746)
   s = s.replace(/https?:\/\/\S+/gi, ' ');
   s = s.replace(/\bwww\.\S+/gi, ' ');
-  s = s.replace(/\bPMID\s*:?\s*\d+/gi, ' ');
-  s = s.replace(/\bPMCID\s*:?\s*PMC\d+/gi, ' ');
+  s = s.replace(/\bPMCID\s*:?\s*(?:PMC)?\d+\b/gi, ' ');
+  s = s.replace(/\bPMID\s*:?\s*\d+\b/gi, ' ');
+  s = s.replace(/\bPMC\d+\b/gi, ' ');
   s = s.replace(/\bDOI\s*:?\s*10\.\d{4,9}\/\S+/gi, ' ');
   s = s.replace(/10\.\d{4,9}\/\S+/g, ' ');
   // 4. Remove códigos de elocation como "e20240171", "e2022563", "e2022567", "ISO 13940:2015" (mantendo o ano final)
@@ -1087,6 +1100,11 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
     'lei', 'decreto', 'portaria', 'anexo', 'apendice', 'fonte', 'nota', 'p', 'pp', 'v', 'n',
     'resolucao', 'inciso', 'paragrafo',
     'autora', 'autor', 'autores', 'autoria', 'pesquisador', 'pesquisadora',
+    'elaborado', 'elaborada', 'elaborados', 'elaboradas',
+    'produzido', 'produzida', 'organizado', 'organizada',
+    'adaptado', 'adaptada', 'modificado', 'modificada',
+    'elaboradoautora', 'elaboradoautor', 'elaboradaautora', 'elaboradopelaautora', 'elaboradopeloautor',
+    'autoriapropria',
   ]);
 
   // Mapa rápido de referências numeradas (Vancouver: 1 -> refDoc)
@@ -1227,6 +1245,9 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         const autLimpo = m[1]
           .replace(/^(?:segundo|conforme|como|para|de\s+acordo\s+com|em|no\s+estudo\s+de|nos\s+estudos\s+de|consoante)\s+(?:o|a|os|as)?\s*/i, '')
           .trim();
+        if (/\b(?:elaborad[oa]|produzid[oa]|organizad[oa]|autoria|adaptad[oa]|modificad[oa])\s+(?:pel[oa]|pelos|pelas)?\s*(?:autor[ae]s?|pesquisador(?:a|es)?|pr[oó]pri[oa])\b/i.test(autLimpo)) {
+          continue;
+        }
         const infoAutor = extrairChavesAutorDeCitacao(autLimpo);
         if (!infoAutor.chavePrincipal || infoAutor.chavePrincipal.length < 2 || ignorarSobrenomes.has(infoAutor.chavePrincipal)) {
           continue;
@@ -1347,6 +1368,10 @@ function analisarLinhasReferencias(linhas, mapaCslEmbutido = ultimoMapaCslEmbuti
     if (!ehLinhaReferenciaValida(l)) continue;
 
     let doi = normalizarDoi(l);
+    const mPmc = l.match(/(?:pmc\.ncbi\.nlm\.nih\.gov\/articles\/|PMCID\s*:?\s*|PMC)\s*(PMC\d+|\d{5,9})/i);
+    const pmcid = mPmc ? mPmc[1].toUpperCase().replace(/^PMC/, '') : null;
+    const mPmid = l.match(/(?:pubmed\.ncbi\.nlm\.nih\.gov\/|PMID\s*:?\s*)(\d{5,9})/i);
+    const pmid = mPmid ? mPmid[1] : null;
     const { anoCompleto, anoBase, sufixoAno } = extrairAnoPublicacaoReferencia(l);
     const {
       numeroRef,
@@ -1363,6 +1388,8 @@ function analisarLinhasReferencias(linhas, mapaCslEmbutido = ultimoMapaCslEmbuti
       ? mapaCslEmbutido.buscarParaReferencia({
           numeroRef,
           doi,
+      pmcid,
+      pmid,
           tituloBuscado: tituloExtraido,
           textoOriginal: l,
         })
@@ -1384,6 +1411,8 @@ function analisarLinhasReferencias(linhas, mapaCslEmbutido = ultimoMapaCslEmbuti
       numeroRef,
       textoOriginal: l,
       doi,
+      pmcid,
+      pmid,
       ano: anoCompleto,
       anoBase,
       sufixoAno,
@@ -2602,8 +2631,26 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
             refBib = null;
           }
         } else if (!refBib) {
-          // Sem DOI explícito: busca pelo título extraído, mas EXIGE correspondência estrita de Autor + Ano + Título!
-          const candidatos = await buscarTitulo(refDoc.tituloBuscado || refDoc.textoOriginal.slice(0, 140));
+          // Se tiver PMCID ou PMID explícito, autentica diretamente no PubMed Central / NCBI!
+          if (refDoc.pmcid || refDoc.pmid) {
+            try {
+              if (refDoc.pmid) {
+                csl = await porPmid(refDoc.pmid);
+              } else if (refDoc.pmcid) {
+                csl = await porPmc(refDoc.pmcid);
+              }
+              if (csl?.title) {
+                statusAutenticidade = 'autenticada';
+                alertaAutenticidade = `✅ Fonte Real Autenticada no PubMed/PMC (${refDoc.pmcid ? ('PMC' + refDoc.pmcid) : ('PMID ' + refDoc.pmid)})`;
+              }
+            } catch {
+              /* continua para busca por título */
+            }
+          }
+
+          if (!csl) {
+            // Sem DOI explícito: busca pelo título extraído, mas EXIGE correspondência estrita de Autor + Ano + Título!
+            const candidatos = await buscarTitulo(refDoc.tituloBuscado || refDoc.textoOriginal.slice(0, 140));
           const palavrasTituloRef = normalizarChave(refDoc.tituloBuscado)
             .match(/[a-z0-9]{4,}/g) || [];
           const melhor = (candidatos || []).find((cand) => {

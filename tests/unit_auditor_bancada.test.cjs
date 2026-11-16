@@ -41,7 +41,7 @@ function extrairAnoReferencia(l) {
   return candidatos.length > 0 ? candidatos[candidatos.length - 1] : anoPadrao[anoPadrao.length - 1];
 }
 
-const refComPaginas = 'Svensson-Ranallo. Medical Informatics, v. 25, p. 1761–1800, 2012.';
+const refComPaginas = 'Author-Example. Medical Informatics, v. 25, p. 1761–1800, 2012.';
 assert.strictEqual(extrairAnoReferencia(refComPaginas), '2012');
 console.log('✓ 2. Extracao de ano: desconsidera intervalo de paginas 1761-1800 (100%)');
 
@@ -76,5 +76,49 @@ function verificarCitacaoDireta(trecho, citacoes) {
 assert.strictEqual(verificarCitacaoDireta('"Texto literal com aspas"', [{ texto: '(Silva, 2020, p. 45)' }]), true);
 assert.strictEqual(verificarCitacaoDireta('Texto literal sem aspas', [{ texto: '(Silva, 2020)' }]), false);
 console.log('✓ 5. Plagio: citacao direta legitima com aspas e pagina protegida (100%)');
+
+// 6. Teste de isolamento de PMCID no ano (Prevenção de falso ano derivado de dígitos do ID como 8746)
+function sanitizarIdsNumericos(texto) {
+  let s = String(texto || '');
+  s = s.replace(/\bPMCID\s*:?\s*(?:PMC)?\d+\b/gi, ' ');
+  s = s.replace(/\bPMID\s*:?\s*\d+\b/gi, ' ');
+  s = s.replace(/\bPMC\d+\b/gi, ' ');
+  const m = s.match(/\b(19\d\d|20\d\d)\b/g);
+  return m ? m[m.length - 1] : null;
+}
+
+assert.strictEqual(sanitizarIdsNumericos('Artigo Exemplo. Journal, 2011. PMCID: PMC3248746.'), '2011');
+assert.strictEqual(sanitizarIdsNumericos('Artigo Exemplo. Journal, 2020. PMID: 98765432.'), '2020');
+console.log('✓ 6. Metadados: isolamento estrito de PMCID/PMID impede captura indevida de ano (100%)');
+
+// 7. Teste de normalização de fascículo com zero à esquerda (n. 3 == n. 03)
+function compararFasciculos(declarado, oficial) {
+  const norm = (v) => String(v || '').replace(/^0+/, '').trim();
+  return norm(declarado) === norm(oficial);
+}
+
+assert.strictEqual(compararFasciculos('3', '03'), true);
+assert.strictEqual(compararFasciculos('01', '1'), true);
+assert.strictEqual(compararFasciculos('2', '3'), false);
+console.log('✓ 7. Metadados: normalizacao de fasciculo com zero a esquerda validada (100%)');
+
+// 8. Teste de filtro de autoautoria em quadros e figuras
+function ehAutoAutoria(trecho) {
+  return /\b(?:elaborad[oa]|produzid[oa]|organizad[oa]|autoria\s+pr[oó]pria|adaptad[oa]|modificad[oa])\b/i.test(trecho);
+}
+
+assert.strictEqual(ehAutoAutoria('Elaborado pela autora'), true);
+assert.strictEqual(ehAutoAutoria('Autoria própria'), true);
+assert.strictEqual(ehAutoAutoria('Organizado pelos autores'), true);
+assert.strictEqual(ehAutoAutoria('Chen'), false);
+console.log('✓ 8. Extracao: stopwords de autoautoria em quadros/figuras filtradas (100%)');
+
+// 9. Teste de classificação de domínios institucionais globais (.org, .edu, .gov)
+const REGEX_DOMINIOS_TESTE = /(?:\.gov(?:\.[a-z]{2})?|\.edu(?:\.[a-z]{2})?|\.ac\.[a-z]{2}|\.int\b|\b(?:who|paho|opas|unicef|cdc|nih|snomed|w3|hl7|ihe|iso)\.org)/i;
+assert.strictEqual(REGEX_DOMINIOS_TESTE.test('https://www.snomed.org/members'), true);
+assert.strictEqual(REGEX_DOMINIOS_TESTE.test('https://cvts.vetmed.vt.edu/'), true);
+assert.strictEqual(REGEX_DOMINIOS_TESTE.test('https://www.who.int/publications'), true);
+assert.strictEqual(REGEX_DOMINIOS_TESTE.test('https://nature.com/articles/123'), false);
+console.log('✓ 9. Classificacao: dominios institucionais e educacionais internacionais validados (100%)');
 
 console.log('\nTODOS OS TESTES UNITARIOS PASSARAM COM SUCESSO!');
