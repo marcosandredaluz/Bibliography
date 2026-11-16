@@ -1209,7 +1209,8 @@ function ConteudoApp() {
       </div>
 
       {/* 2. BARRA DE FERRAMENTAS REFINADA (AGRUPADA, SEM EMPILHAMENTO) */}
-      <div className="toolbar-zotero">
+      {!refPdfAba && (
+        <div className="toolbar-zotero">
         <div className="grupo-toolbar-esq">
           {/* Menu Consolidado: "+ Adicionar" */}
           <div style={{ position: 'relative' }} onClick={(e) => e.stopPropagation()}>
@@ -1333,6 +1334,7 @@ function ConteudoApp() {
           )}
         </div>
       </div>
+      )}
 
       {/* 3. FAIXA DE TUTORIAL PASSO A PASSO CONTEXTUAL DE CADA ETAPA */}
       {refPdfAba && (
@@ -1626,7 +1628,15 @@ function ConteudoApp() {
 
       {/* 4. CORPO PRINCIPAL: OU UMA ABA DE PDF/FERRAMENTA, OU OS 3 PAINÉIS CLÁSSICOS DO ZOTERO/MENDELEY */}
       {/* ReverseAuditView mantido vivo em memória para continuar executando mesmo ao trocar de aba */}
-      <div style={{ display: !refPdfAba && abaSuperior === 'auditoria' ? 'block' : 'none', height: '100%' }}>
+      <div
+        style={{
+          display: !refPdfAba && abaSuperior === 'auditoria' ? 'flex' : 'none',
+          flex: 1,
+          minHeight: 0,
+          flexDirection: 'column',
+          overflow: 'hidden',
+        }}
+      >
         <ReverseAuditView
           refs={refs}
           bib={bib}

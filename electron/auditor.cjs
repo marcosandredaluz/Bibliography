@@ -867,8 +867,8 @@ function ehInicioNovaReferencia(linha, bufferAnterior) {
 
   // Início de nova referência ABNT / Vancouver
   if (/^[A-ZÀ-Ú0-9][A-Za-zÀ-ÿ0-9'.-]+(?:\s+[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*,\s+[A-ZÀ-Ú]/.test(s)) return true;
-  if (/^(?:BRASIL|MINIST[EÉ]RIO DA SA[UÚ]DE|SECRETARIA MUNICIPAL|SECRETARIA DE ESTADO|INSTITUTO NACIONAL|INSTITUTO FEDERAL|ORGANIZA[CÇ][AÃ]O MUNDIAL|CONASS|CONASEMS|WORLD HEALTH|HL7 INTERNATIONAL|IHE INTERNATIONAL|CURITIBA|GOI[AÁ]S|WHO)\b/i.test(s)) return true;
-  if (/^[A-ZÀ-Ú0-9\s]{5,70}\.\s+[A-ZÀ-Ú]/.test(s)) return true;
+  if (/^(?:BRASIL|MINIST[EÉ]RIO DA SA[UÚ]DE|SECRETARIA MUNICIPAL|SECRETARIA DE ESTADO|INSTITUTO NACIONAL|INSTITUTO FEDERAL|ORGANIZA[CÇ][AÃ]O MUNDIAL|CONASS|CONASEMS|WORLD HEALTH|HL7 INTERNATIONAL|IHE INTERNATIONAL|CURITIBA|GOI[AÁ]S|WHO|S[AÃ]O PAULO|PARAN[AÁ]|SANTA CATARINA|CONSELHO NACIONAL|NATIONAL LIBRARY|VIRGINIA-MARYLAND|SNOMED INTERNATIONAL|INTERNATIONAL ORGANIZATION)\b/i.test(s)) return true;
+  if (/^[A-ZÀ-Ú0-9\s/._-]{3,80}(?:\s*\([^)]+\))?\.\s+[A-Za-zÀ-ÿ0-9“"']/.test(s)) return true;
   return false;
 }
 
@@ -1086,6 +1086,7 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
     'figura', 'tabela', 'quadro', 'grafico', 'secao', 'capitulo', 'item', 'artigo',
     'lei', 'decreto', 'portaria', 'anexo', 'apendice', 'fonte', 'nota', 'p', 'pp', 'v', 'n',
     'resolucao', 'inciso', 'paragrafo',
+    'autora', 'autor', 'autores', 'autoria', 'pesquisador', 'pesquisadora',
   ]);
 
   // Mapa rápido de referências numeradas (Vancouver: 1 -> refDoc)
@@ -1136,6 +1137,9 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
     const frases = dividirEmFrasesSemQuebrarAbreviaturas(par);
     for (let idxFrase = 0; idxFrase < frases.length; idxFrase++) {
       const frase = frases[idxFrase];
+      if (/^\s*(?:fonte|nota)\s*:\s*(?:elaborad[oa]|produzid[oa]|organizad[oa]|autoria\s+pr[oó]pria)/i.test(frase)) {
+        continue;
+      }
       const chavesJaRegistradasNaFrase = new Set();
       const registrarCitacaoUnicaNaFrase = (itemCit) => {
         const chaveDedup = `${itemCit.chave}::${objPar.numParagrafo}::${idxFrase}`;
@@ -1802,6 +1806,10 @@ async function analisarPlagioComDiffMatchPatch(paragrafosCorpo, corpusArtigos) {
           }
 
           if (maiorBlocoIdentico.length >= 32) {
+            // Isenta nomes próprios de sociedades e entidades (ex: International Society for Human and Animal Mycology)
+            const ehEntidadePropria = /^(?:international\s+society\s+for\s+human\s+and\s+animal\s+mycology|world\s+health\s+organization|centers\s+for\s+disease\s+control|instituto\s+brasileiro\s+de\s+geografia|sistema\s+[uú]nico\s+de\s+sa[uú]de|rede\s+nacional\s+de\s+dados\s+em\s+sa[uú]de|conselho\s+nacional\s+de\s+sa[uú]de)\b/i.test(maiorBlocoIdentico.trim());
+            if (ehEntidadePropria) continue;
+
             const citouAutorNoParagrafo =
               (art.chaveAutor && normalizarChave(par.texto).includes(art.chaveAutor)) ||
               /\[\d+(?:\s*[,;–—-]\s*\d+)*\]|\(\s*[A-ZÀ-Ú][^)]*\d{4}/.test(par.texto);
@@ -2076,6 +2084,10 @@ function localizarPdfNoAcervoLocal({ refBib, refDoc, bibliotecaRaiz }) {
   const tituloNorm = normalizarChave(refDoc?.tituloBuscado || refBib?.csl?.title || '');
   const palavrasTitulo = tituloNorm.match(/[a-z0-9]{4,}/g) || [];
 
+  const ehAutorGenerico = /^(brasil|ministerio|saude|parana|saopaulo|oms|who|cdc|governo|secretaria)$/i.test(autNorm);
+  const mAto = (refDoc?.textoOriginal || '').match(/\b(?:lei|decreto|portaria|nota\s*t[eé]cnica|resolu[cç][aã]o)\s*(?:n[º°.]?\s*)?(\d+)/i);
+  const numAto = mAto ? mAto[1] : null;
+
   let melhorCaminho = null;
   let melhorScore = 0;
 
@@ -2089,18 +2101,24 @@ function localizarPdfNoAcervoLocal({ refBib, refDoc, bibliotecaRaiz }) {
         const camCompleto = path.join(pasta, arq);
 
         let score = 0;
-        if (anoStr && arqNorm.includes(anoStr)) score += 3;
-        if (autNorm && autNorm.length >= 3 && arqNorm.includes(autNorm.slice(0, 7))) score += 4;
+        if (numAto && arqNorm.includes(numAto)) score += 8;
+        if (anoStr && arqNorm.includes(anoStr)) score += ehAutorGenerico ? 2 : 3;
+        if (autNorm && autNorm.length >= 3 && arqNorm.includes(autNorm.slice(0, 7))) {
+          score += ehAutorGenerico ? 1 : 4;
+        }
 
+        let palavrasEncontradas = 0;
         for (const p of palavrasTitulo) {
           if (p.length >= 5 && arqNorm.includes(p)) {
-            score += 2;
+            score += 3;
+            palavrasEncontradas++;
           }
         }
 
-        if (refDoc?.doi && arqNorm.includes(normalizarChave(refDoc.doi).slice(-6))) score += 5;
+        if (refDoc?.doi && arqNorm.includes(normalizarChave(refDoc.doi).slice(-6))) score += 6;
 
-        if (score >= 6 && score > melhorScore) {
+        const thresholdMinimo = ehAutorGenerico ? 7 : 6;
+        if (score >= thresholdMinimo && score > melhorScore) {
           try {
             const st = fs.statSync(camCompleto);
             if (st.size > 1000) {
@@ -2521,6 +2539,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
 
     // 3. Autenticação forense online contra Crossref / DOI.org / OpenAlex
     if (buscarEBaixar && !ehNormaLivroOuInstitucional && !ehPeriodicoRegionalSemDoi && !infoHandle) {
+      await new Promise((r) => setTimeout(r, 120));
       try {
         let csl = null;
         if (refDoc.doi) {
@@ -2570,9 +2589,15 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
                 alertaAutenticidade = `✅ Fonte Real Autenticada via DOI (${refDoc.doi})`;
               }
             }
-          } catch {
-            statusAutenticidade = 'ia_doi_inexistente';
-            alertaAutenticidade = `🚨 REFERÊNCIA NÃO LOCALIZÁVEL / DOI INEXISTENTE: O DOI "${refDoc.doi}" retorna "DOI Not Found" na International DOI Foundation e a obra (${refDoc.primeiroSobrenome}, ${refDoc.ano}) não consta no PubMed/Crossref/SciELO!`;
+          } catch (errDoi) {
+            const eh404 = errDoi?.status === 404 || /não encontrado|404/i.test(errDoi?.message || '');
+            if (eh404) {
+              statusAutenticidade = 'ia_doi_inexistente';
+              alertaAutenticidade = `🚨 REFERÊNCIA NÃO LOCALIZÁVEL / DOI INEXISTENTE: O DOI "${refDoc.doi}" retorna "DOI Not Found" na International DOI Foundation e a obra (${refDoc.primeiroSobrenome}, ${refDoc.ano}) não consta no PubMed/Crossref/SciELO!`;
+            } else {
+              statusAutenticidade = 'autenticacao_indisponivel';
+              alertaAutenticidade = `⏳ Consulta online temporariamente instável para o DOI "${refDoc.doi}" (${errDoi?.message || 'timeout'}).`;
+            }
             divergenciaMetadados = alertaAutenticidade;
             refBib = null;
           }

@@ -1,6 +1,6 @@
 // Busca de metadados: DOI (Crossref/DataCite), ISBN (Google Books/Open Library)
 // e busca por título (Crossref). Tudo é convertido para CSL-JSON.
-const UA = 'Bibliografia/0.1 (gerenciador de referencias pessoal)';
+const UA = 'Bibliografia/1.0.0 (https://github.com/marcosandredaluz/Bibliography; mailto:pesquisa@bibliografia.local)';
 
 const CAMPOS_CSL = new Set([
   'type', 'title', 'title-short', 'container-title', 'container-title-short', 'collection-title',
@@ -54,22 +54,41 @@ function normalizarDoi(texto) {
   return m ? m[0].replace(/[.,;:)\]}]+$/, '') : null;
 }
 
-async function buscarJson(url, headers = {}) {
-  const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), 20000);
-  try {
-    const res = await fetch(url, { headers: { 'User-Agent': UA, ...headers }, signal: ctrl.signal, redirect: 'follow' });
-    if (!res.ok) {
-      const err = new Error(`HTTP ${res.status}`);
-      err.status = res.status;
-      throw err;
+async function buscarJson(url, headers = {}, retries = 3) {
+  for (let tentativa = 1; tentativa <= retries; tentativa++) {
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 15000);
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': UA, ...headers }, signal: ctrl.signal, redirect: 'follow' });
+      if (res.status === 429 || (res.status >= 502 && res.status <= 504)) {
+        if (tentativa === retries) {
+          const err = new Error(`HTTP ${res.status}`);
+          err.status = res.status;
+          throw err;
+        }
+        const delay = 600 * Math.pow(2, tentativa - 1) + Math.random() * 200;
+        await new Promise((r) => setTimeout(r, delay));
+        continue;
+      }
+      if (!res.ok) {
+        const err = new Error(`HTTP ${res.status}`);
+        err.status = res.status;
+        throw err;
+      }
+      return await res.json();
+    } catch (e) {
+      if (tentativa === retries) {
+        if (e.name === 'AbortError') {
+          const err = new Error('Tempo esgotado ao consultar o servidor.');
+          err.status = 408;
+          throw err;
+        }
+        throw e;
+      }
+      await new Promise((r) => setTimeout(r, 400 * tentativa));
+    } finally {
+      clearTimeout(t);
     }
-    return await res.json();
-  } catch (e) {
-    if (e.name === 'AbortError') throw new Error('Tempo esgotado ao consultar o servidor. Verifique a internet.');
-    throw e;
-  } finally {
-    clearTimeout(t);
   }
 }
 
@@ -82,7 +101,11 @@ async function porDoi(entrada) {
     csl.DOI = doi;
     return csl;
   } catch (e) {
-    if (e.status === 404) throw new Error(`DOI não encontrado: ${doi}`);
+    if (e.status === 404) {
+      const err404 = new Error(`DOI não encontrado: ${doi}`);
+      err404.status = 404;
+      throw err404;
+    }
     throw new Error(`Não foi possível obter o DOI ${doi}: ${e.message}`);
   }
 }

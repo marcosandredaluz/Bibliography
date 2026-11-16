@@ -1548,7 +1548,15 @@ export default function ReverseAuditView({
   };
 
   return (
-    <div className="central-buscadores">
+    <div
+      className="central-buscadores"
+      style={{
+        flex: 1,
+        minHeight: 0,
+        height: '100%',
+        overflowY: 'auto',
+      }}
+    >
       <div className="topo-buscadores">
         <div>
           <h2>Auditoria Forense de Manuscrito (.DOCX/PDF): Anti-IA, Anti-Plágio, Citações Falsas &amp; Páginas</h2>
