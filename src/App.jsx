@@ -95,6 +95,23 @@ function ConteudoApp() {
   const [menuAcoesRapidas, setMenuAcoesRapidas] = useState(false);
   const barraAbasRef = useRef(null);
 
+  // Cockpit de Início Rápido na Tela Inicial (persistência de estado recolhido/expandido)
+  const [mostrarCockpit, setMostrarCockpit] = useState(() => {
+    try {
+      const s = localStorage.getItem('bib_mostrar_cockpit');
+      return s !== '0';
+    } catch {
+      return true;
+    }
+  });
+  const alternarCockpit = () => {
+    setMostrarCockpit((v) => {
+      const novo = !v;
+      try { localStorage.setItem('bib_mostrar_cockpit', novo ? '1' : '0'); } catch {}
+      return novo;
+    });
+  };
+
   // Estado persistente da última Auditoria Reversa (não se perde ao abrir PDFs ou trocar de aba!)
   const [estadoAuditoria, setEstadoAuditoriaState] = useState(() => {
     try {
@@ -273,6 +290,18 @@ function ConteudoApp() {
       }
     } catch (e) {
       avisar(`Erro ao escolher pasta: ${e.message}`, 'erro');
+    }
+  };
+
+  const importarRisOuBib = async () => {
+    try {
+      const res = await window.api.imp.escolherEImportar('a_ler');
+      if (res?.importadas > 0) {
+        avisar(`${res.importadas} referências importadas com sucesso!`, 'ok');
+        await recarregarBiblioteca();
+      }
+    } catch (err) {
+      avisar('Erro ao importar arquivo: ' + err.message, 'erro');
     }
   };
 
@@ -996,10 +1025,10 @@ function ConteudoApp() {
           <button
             className="rail-item-rodape"
             onClick={() => setModalVersaoAberto(true)}
-            title="Sobre o Bibliografia, Versão 1.2.0 & Diagnóstico do Sistema"
+            title="Sobre o Bibliografia, Versão 1.0.0 & Diagnóstico do Sistema"
             style={{ fontWeight: 800, fontSize: '11px', letterSpacing: '0.2px' }}
           >
-            v1.2
+            v1.0.0
           </button>
           <button
             className="rail-item-rodape"
@@ -1023,7 +1052,7 @@ function ConteudoApp() {
               atualizarProjetosRecentes();
               setMenuProjetosAberto((v) => !v);
             }}
-            title="Clique para alternar entre seus projetos acadêmicos ou abrir outra pasta no OneDrive/PC"
+            title={`Projeto ativo: ${bib?.raiz || 'Pasta de trabalho'}\nClique para alternar entre pastas de projetos ou abrir outro diretório.`}
           >
             <span className="icone-pasta-proj">📁</span>
             <div className="badge-projeto-meta">
@@ -1032,11 +1061,9 @@ function ConteudoApp() {
                 {bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : 'Minha Biblioteca'}
               </span>
             </div>
-            {refs?.length > 0 && (
-              <span className="badge-contador-obras-proj" title={`${refs.length} obras cadastradas neste projeto`}>
-                {refs.length} {refs.length === 1 ? 'obra' : 'obras'}
-              </span>
-            )}
+            <span className="badge-contador-obras-proj" title={`${refs.length} obras cadastradas neste projeto`}>
+              {refs.length} {refs.length === 1 ? 'obra' : 'obras'}
+            </span>
             <span className="caret-proj-topo">▾ Alternar</span>
           </button>
           {menuProjetosAberto && (
@@ -1279,6 +1306,108 @@ function ConteudoApp() {
       )}
 
       {!refPdfAba && abaSuperior === 'biblioteca' && (
+        <div className="banner-cockpit-projeto">
+          <div className="cockpit-linha-superior">
+            <div className="cockpit-bloco-identificacao">
+              <div className="cockpit-tag-com-caminho">
+                <span className="cockpit-badge-status">PROJETO ATIVO</span>
+                <span className="cockpit-caminho-projeto" title={bib?.raiz}>
+                  📍 <code>{bib?.raiz || 'Pasta de trabalho'}</code>
+                </span>
+                <button
+                  type="button"
+                  className="btn-abrir-pasta-mini"
+                  onClick={() => window.api.bib.abrirPasta()}
+                  title="Abrir esta pasta no Windows Explorer"
+                >
+                  Abrir pasta ↗
+                </button>
+              </div>
+              <h2 className="cockpit-titulo-projeto">
+                📁 {bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : 'Minha Biblioteca'}
+              </h2>
+            </div>
+
+            <div className="cockpit-bloco-metricas">
+              <div className="cockpit-metrica-card">
+                <span className="cockpit-metrica-num">{refs.length}</span>
+                <span className="cockpit-metrica-legenda">Obras</span>
+              </div>
+              <div className="cockpit-metrica-card">
+                <span className="cockpit-metrica-num">
+                  {refs.filter((r) => r.anexos?.some((a) => a.tipo === 'pdf')).length}
+                </span>
+                <span className="cockpit-metrica-legenda">Com PDF</span>
+              </div>
+              <div className="cockpit-metrica-card">
+                <span className="cockpit-metrica-num">{contagens.citada || 0}</span>
+                <span className="cockpit-metrica-legenda">Citadas</span>
+              </div>
+              <button
+                type="button"
+                className="btn-cockpit-alternar"
+                onClick={() => {
+                  atualizarProjetosRecentes();
+                  setMenuProjetosAberto(true);
+                }}
+                title="Trocar para outro projeto acadêmico ou pasta"
+              >
+                ⇄ Alternar Projeto
+              </button>
+              <button
+                type="button"
+                className="btn-cockpit-recolher"
+                onClick={alternarCockpit}
+                title={mostrarCockpit ? 'Recolher Central de Início Rápido' : 'Expandir Central de Início Rápido'}
+              >
+                {mostrarCockpit ? '▲ Recolher Ações' : '▼ Ações Rápidas'}
+              </button>
+            </div>
+          </div>
+
+          {mostrarCockpit && (
+            <div className="cockpit-grid-acoes">
+              <div className="cockpit-card-acao" onClick={() => setAbaSuperior('buscadores')}>
+                <div className="cockpit-card-icone">🔍</div>
+                <div className="cockpit-card-conteudo">
+                  <strong>1. Buscadores de Literatura</strong>
+                  <p>PubMed, Europe PMC, SciELO, OpenAlex, Cochrane. Importe com 1 clique.</p>
+                </div>
+                <span className="cockpit-card-seta">→</span>
+              </div>
+
+              <div className="cockpit-card-acao" onClick={() => setVarinhaAberta(true)}>
+                <div className="cockpit-card-icone">🪄</div>
+                <div className="cockpit-card-conteudo">
+                  <strong>2. Inserir via DOI / PMID</strong>
+                  <p>Cole DOI/PMID para preenchimento de metadados e download de PDF.</p>
+                </div>
+                <span className="cockpit-card-seta">→</span>
+              </div>
+
+              <div className="cockpit-card-acao" onClick={() => setAbaSuperior('prisma')}>
+                <div className="cockpit-card-icone">📊</div>
+                <div className="cockpit-card-conteudo">
+                  <strong>3. Triagem PRISMA 2020</strong>
+                  <p>Seleção duplo-cega de artigos, desduplicação e diagrama de fluxo.</p>
+                </div>
+                <span className="cockpit-card-seta">→</span>
+              </div>
+
+              <div className="cockpit-card-acao" onClick={() => setModalExportarWord(true)}>
+                <div className="cockpit-card-icone">📝</div>
+                <div className="cockpit-card-conteudo">
+                  <strong>4. Citar no Manuscrito .DOCX</strong>
+                  <p>Exportar normas ABNT/Vancouver e auditar referências contra alucinações.</p>
+                </div>
+                <span className="cockpit-card-seta">→</span>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {!refPdfAba && abaSuperior === 'biblioteca' && (
         <TutorialEtapa
           idEtapa="biblioteca"
           abertoPorPadrao={true}
@@ -1512,6 +1641,39 @@ function ConteudoApp() {
           {/* PAINEL 1 (ESQUERDA): Árvore de Coleções em cima + Seletor de Tags/Autores embaixo */}
           <aside className="painel-esquerdo-zotero">
             <div className="arvore-colecoes-zotero">
+              {/* Card de Identificação em Destaque do Projeto Ativo */}
+              <div className="card-projeto-ativo-sidebar">
+                <div className="card-proj-topo-linha">
+                  <span className="card-proj-etiqueta">PROJETO ATIVO</span>
+                  <button
+                    type="button"
+                    className="btn-trocar-proj-sidebar"
+                    onClick={() => {
+                      atualizarProjetosRecentes();
+                      setMenuProjetosAberto(true);
+                    }}
+                    title="Alternar entre pastas de projetos ou criar novo"
+                  >
+                    ⇄ Alternar
+                  </button>
+                </div>
+                <div className="card-proj-nome-linha" title={bib?.raiz || 'Pasta do projeto'}>
+                  <span className="icone-pasta-sidebar">📁</span>
+                  <strong className="nome-pasta-sidebar">
+                    {bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : 'Minha Biblioteca'}
+                  </strong>
+                </div>
+                <div className="card-proj-caminho-linha" title={bib?.raiz}>
+                  📍 {bib?.raiz ? (bib.raiz.length > 28 ? '…' + bib.raiz.slice(-25) : bib.raiz) : 'Pasta local'}
+                </div>
+                <div className="card-proj-meta-linha">
+                  <span className="badge-obras-sidebar">📚 {refs.length} {refs.length === 1 ? 'obra' : 'obras'}</span>
+                  {contagens.citada > 0 && (
+                    <span className="badge-citadas-sidebar">✅ {contagens.citada} citadas</span>
+                  )}
+                </div>
+              </div>
+
               <div className="cabecalho-secao-zotero">MINHA BIBLIOTECA</div>
 
               <button
@@ -1710,11 +1872,66 @@ function ConteudoApp() {
           {/* PAINEL 2 (CENTRO): TABELA MULTICOLUNAS CLÁSSICA DO ZOTERO & MENDELEY */}
           <section className="painel-tabela-zotero">
             {refsFiltradas.length === 0 ? (
-              <Vazio icone="book" titulo="Nenhum item nesta coleção ou filtro">
-                <p>
-                  Use <strong>🪄 Colar DOI / PMID / ISBN</strong> na barra superior, arraste arquivos PDF para esta tabela ou pesquise na aba <strong>🔍 Buscadores Saúde</strong>.
-                </p>
-              </Vazio>
+              refs.length === 0 ? (
+                <div className="estado-vazio-projeto-novo">
+                  <div className="icone-grande-vazio">📚</div>
+                  <h3>Esta pasta de projeto está pronta para sua pesquisa!</h3>
+                  <p className="texto-apoio-vazio">
+                    Você está trabalhando no projeto: <strong>{bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : 'Minha Biblioteca'}</strong>
+                    <br />
+                    <code className="caminho-vazio-code">{bib?.raiz}</code>
+                  </p>
+                  <p className="subtexto-vazio">
+                    Escolha por onde deseja começar a adicionar artigos nesta biblioteca:
+                  </p>
+                  <div className="botoes-acao-vazio-grid">
+                    <button className="btn-vazio-card" onClick={() => setAbaSuperior('buscadores')}>
+                      <span className="icone-vazio-card">🔍</span>
+                      <div className="info-vazio-card">
+                        <strong>Buscar nas Bases Científicas</strong>
+                        <span>PubMed, Europe PMC, SciELO, OpenAlex, Cochrane…</span>
+                      </div>
+                      <span className="seta-vazio-card">→</span>
+                    </button>
+                    <button className="btn-vazio-card" onClick={() => setVarinhaAberta(true)}>
+                      <span className="icone-vazio-card">🪄</span>
+                      <div className="info-vazio-card">
+                        <strong>Inserir via DOI / PMID</strong>
+                        <span>Metadados automáticos e download de PDF</span>
+                      </div>
+                      <span className="seta-vazio-card">→</span>
+                    </button>
+                    <button className="btn-vazio-card" onClick={async () => {
+                      const p = await window.api.dialogo.escolherPdfs();
+                      if (p?.length) await importarPdfs(p, 'a_ler');
+                    }}>
+                      <span className="icone-vazio-card">📎</span>
+                      <div className="info-vazio-card">
+                        <strong>Adicionar PDFs do Computador</strong>
+                        <span>Importe arquivos PDF já salvos no seu disco</span>
+                      </div>
+                      <span className="seta-vazio-card">→</span>
+                    </button>
+                    <button className="btn-vazio-card" onClick={importarRisOuBib}>
+                      <span className="icone-vazio-card">📄</span>
+                      <div className="info-vazio-card">
+                        <strong>Importar RIS / BibTeX</strong>
+                        <span>Traga referências do Zotero, Mendeley ou EndNote</span>
+                      </div>
+                      <span className="seta-vazio-card">→</span>
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <Vazio icone="book" titulo="Nenhum item nesta coleção ou filtro">
+                  <p>
+                    Nenhuma obra corresponde aos filtros ativos nesta coleção ou busca.
+                  </p>
+                  <button className="btn pequeno fantasma" onClick={() => setVisao('todas')}>
+                    Ver todas as {refs.length} obras da biblioteca
+                  </button>
+                </Vazio>
+              )
             ) : (
               <div className="wrap-tabela-zotero">
                 <table className="tabela-itens-zotero">

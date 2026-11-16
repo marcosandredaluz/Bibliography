@@ -16,7 +16,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
         setInfoSistema(window.api.versao.obterInfo());
       } else {
         setInfoSistema({
-          app: '1.2.0',
+          app: '1.0.0',
           electron: '44.9.2',
           node: '20.x',
           chrome: '124.x',
@@ -25,7 +25,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
         });
       }
     } catch {
-      setInfoSistema({ app: '1.2.0', electron: 'N/D', node: 'N/D' });
+      setInfoSistema({ app: '1.0.0', electron: 'N/D', node: 'N/D' });
     }
 
     // Consulta status do servidor Word
@@ -125,7 +125,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
                   borderRadius: 99,
                 }}
               >
-                v1.2.0 LTS
+                v1.0.0 LTS
               </span>
               <span
                 style={{

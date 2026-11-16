@@ -43,6 +43,10 @@ async function abrirBiblioteca(caminho, nomeCustomizado) {
   const lista = config.registrarProjetoRecente(caminho, nomeCustomizado);
   cfg.projetosRecentes = lista;
   config.salvar(cfg);
+  if (janela && !janela.isDestroyed()) {
+    const nome = nomeCustomizado || path.basename(caminho) || 'Biblioteca';
+    janela.setTitle(`Bibliografia — 📁 [${nome}] — ${caminho}`);
+  }
   return b.estado();
 }
 
@@ -52,12 +56,16 @@ function exigirBiblioteca() {
 }
 
 function criarJanela() {
+  const tituloInicial = cfg?.libraryPath
+    ? `Bibliografia — 📁 [${path.basename(cfg.libraryPath)}] — ${cfg.libraryPath}`
+    : 'Bibliografia';
+
   janela = new BrowserWindow({
     width: 1400,
     height: 860,
     minWidth: 1000,
     minHeight: 600,
-    title: 'Bibliografia',
+    title: tituloInicial,
     backgroundColor: '#f6f7f9',
     autoHideMenuBar: true,
     show: true,

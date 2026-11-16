@@ -3180,21 +3180,22 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #f8fafc;
-  border: 1px solid #cbd5e1;
-  border-radius: 7px;
+  background: #ffffff;
+  border: 1.5px solid #a81c24;
+  border-radius: 8px;
   padding: 4px 12px;
   font-size: 12px;
   font-weight: 600;
   color: #0f172a;
   cursor: pointer;
   transition: all 0.15s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 4px rgba(168, 28, 36, 0.12);
 }
 [data-tema="escuro"] .btn-projeto-atual {
   background: #1e293b;
-  border-color: #334155;
+  border-color: #f87171;
   color: #f8fafc;
+  box-shadow: 0 1px 4px rgba(248, 113, 113, 0.15);
 }
 .btn-projeto-atual:hover {
   background: #f1f5f9;
@@ -3879,6 +3880,496 @@ textarea {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
   }
+}
+
+/* ========================================================
+   IDENTIFICAÇÃO DE PROJETO ATIVO & CENTRAL DE INÍCIO RÁPIDO
+   ======================================================== */
+
+/* Card de Projeto Ativo no topo da Barra Lateral Esquerda */
+.card-projeto-ativo-sidebar {
+  background: rgba(168, 28, 36, 0.04);
+  border: 1px solid rgba(168, 28, 36, 0.2);
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin: 8px 8px 12px 8px;
+  transition: all 0.2s ease;
+}
+[data-tema="escuro"] .card-projeto-ativo-sidebar {
+  background: rgba(248, 113, 113, 0.08);
+  border-color: rgba(248, 113, 113, 0.25);
+}
+.card-proj-topo-linha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.card-proj-etiqueta {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  color: #a81c24;
+  text-transform: uppercase;
+}
+[data-tema="escuro"] .card-proj-etiqueta {
+  color: #f87171;
+}
+.btn-trocar-proj-sidebar {
+  background: none;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #475569;
+  padding: 1px 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.btn-trocar-proj-sidebar:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-color: #94a3b8;
+}
+[data-tema="escuro"] .btn-trocar-proj-sidebar {
+  border-color: #475569;
+  color: #cbd5e1;
+}
+[data-tema="escuro"] .btn-trocar-proj-sidebar:hover {
+  background: #334155;
+  color: #ffffff;
+}
+.card-proj-nome-linha {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+[data-tema="escuro"] .card-proj-nome-linha {
+  color: #f8fafc;
+}
+.nome-pasta-sidebar {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-proj-caminho-linha {
+  font-size: 10px;
+  color: #64748b;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+[data-tema="escuro"] .card-proj-caminho-linha {
+  color: #94a3b8;
+}
+.card-proj-meta-linha {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 10.5px;
+}
+.badge-obras-sidebar {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #334155;
+}
+[data-tema="escuro"] .badge-obras-sidebar {
+  background: rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+}
+.badge-citadas-sidebar {
+  background: rgba(22, 163, 74, 0.12);
+  color: #16a34a;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+[data-tema="escuro"] .badge-citadas-sidebar {
+  background: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+}
+
+/* Banner Cockpit de Início Rápido na Tela da Biblioteca */
+.banner-cockpit-projeto {
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.85) 100%);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+}
+[data-tema="escuro"] .banner-cockpit-projeto {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.85) 100%);
+  border-bottom-color: #334155;
+}
+.cockpit-linha-superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.cockpit-bloco-identificacao {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.cockpit-tag-com-caminho {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+.cockpit-badge-status {
+  background: #a81c24;
+  color: #ffffff;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.cockpit-caminho-projeto {
+  color: #64748b;
+  font-size: 11px;
+  max-width: 480px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cockpit-caminho-projeto code {
+  font-family: inherit;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+[data-tema="escuro"] .cockpit-caminho-projeto code {
+  background: rgba(255, 255, 255, 0.06);
+  color: #cbd5e1;
+}
+.btn-abrir-pasta-mini {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+.btn-abrir-pasta-mini:hover {
+  color: #1d4ed8;
+}
+[data-tema="escuro"] .btn-abrir-pasta-mini {
+  color: #60a5fa;
+}
+.cockpit-titulo-projeto {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+}
+[data-tema="escuro"] .cockpit-titulo-projeto {
+  color: #f8fafc;
+}
+.cockpit-bloco-metricas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cockpit-metrica-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 4px 12px;
+  min-width: 65px;
+}
+[data-tema="escuro"] .cockpit-metrica-card {
+  background: #0f172a;
+  border-color: #334155;
+}
+.cockpit-metrica-num {
+  font-size: 14px;
+  font-weight: 800;
+  color: #a81c24;
+  line-height: 1;
+}
+[data-tema="escuro"] .cockpit-metrica-num {
+  color: #f87171;
+}
+.cockpit-metrica-legenda {
+  font-size: 9.5px;
+  color: #64748b;
+  font-weight: 600;
+  margin-top: 2px;
+}
+[data-tema="escuro"] .cockpit-metrica-legenda {
+  color: #94a3b8;
+}
+.btn-cockpit-alternar {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #0f172a;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.btn-cockpit-alternar:hover {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+}
+[data-tema="escuro"] .btn-cockpit-alternar {
+  background: #1e293b;
+  border-color: #475569;
+  color: #f8fafc;
+}
+[data-tema="escuro"] .btn-cockpit-alternar:hover {
+  background: #334155;
+}
+.btn-cockpit-recolher {
+  background: none;
+  border: 1px dashed #cbd5e1;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.btn-cockpit-recolher:hover {
+  background: rgba(0, 0, 0, 0.03);
+  color: #0f172a;
+  border-style: solid;
+}
+[data-tema="escuro"] .btn-cockpit-recolher {
+  border-color: #475569;
+  color: #94a3b8;
+}
+[data-tema="escuro"] .btn-cockpit-recolher:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+/* Grid de 4 Ações Rápidas do Cockpit */
+.cockpit-grid-acoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+.cockpit-card-acao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+[data-tema="escuro"] .cockpit-card-acao {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.cockpit-card-acao:hover {
+  transform: translateY(-1.5px);
+  border-color: #a81c24;
+  box-shadow: 0 4px 10px rgba(168, 28, 36, 0.12);
+}
+[data-tema="escuro"] .cockpit-card-acao:hover {
+  border-color: #f87171;
+  box-shadow: 0 4px 10px rgba(248, 113, 113, 0.15);
+}
+.cockpit-card-icone {
+  font-size: 22px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.cockpit-card-conteudo {
+  flex: 1;
+  min-width: 0;
+}
+.cockpit-card-conteudo strong {
+  display: block;
+  font-size: 12px;
+  color: #0f172a;
+  line-height: 1.25;
+}
+[data-tema="escuro"] .cockpit-card-conteudo strong {
+  color: #f8fafc;
+}
+.cockpit-card-conteudo p {
+  margin: 2px 0 0 0;
+  font-size: 10.5px;
+  color: #64748b;
+  line-height: 1.2;
+}
+[data-tema="escuro"] .cockpit-card-conteudo p {
+  color: #94a3b8;
+}
+.cockpit-card-seta {
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 700;
+  transition: transform 0.15s ease;
+}
+.cockpit-card-acao:hover .cockpit-card-seta {
+  color: #a81c24;
+  transform: translateX(3px);
+}
+[data-tema="escuro"] .cockpit-card-acao:hover .cockpit-card-seta {
+  color: #f87171;
+}
+
+/* Estado Vazio de Projeto Novo (Cockpit Central) */
+.estado-vazio-projeto-novo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto;
+}
+.icone-grande-vazio {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.estado-vazio-projeto-novo h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+[data-tema="escuro"] .estado-vazio-projeto-novo h3 {
+  color: #f8fafc;
+}
+.texto-apoio-vazio {
+  font-size: 13.5px;
+  color: #475569;
+  margin: 0 0 6px 0;
+  line-height: 1.45;
+}
+[data-tema="escuro"] .texto-apoio-vazio {
+  color: #cbd5e1;
+}
+.caminho-vazio-code {
+  display: inline-block;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #0f172a;
+  margin-top: 4px;
+  word-break: break-all;
+}
+[data-tema="escuro"] .caminho-vazio-code {
+  background: #0f172a;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+.subtexto-vazio {
+  font-size: 12.5px;
+  color: #64748b;
+  margin: 16px 0 16px 0;
+  font-weight: 600;
+}
+[data-tema="escuro"] .subtexto-vazio {
+  color: #94a3b8;
+}
+.botoes-acao-vazio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  width: 100%;
+}
+.btn-vazio-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 14px 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+[data-tema="escuro"] .btn-vazio-card {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.btn-vazio-card:hover {
+  transform: translateY(-2px);
+  border-color: #a81c24;
+  box-shadow: 0 6px 16px rgba(168, 28, 36, 0.15);
+}
+[data-tema="escuro"] .btn-vazio-card:hover {
+  border-color: #f87171;
+  box-shadow: 0 6px 16px rgba(248, 113, 113, 0.2);
+}
+.icone-vazio-card {
+  font-size: 26px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.info-vazio-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.info-vazio-card strong {
+  font-size: 13.5px;
+  color: #0f172a;
+}
+[data-tema="escuro"] .info-vazio-card strong {
+  color: #f8fafc;
+}
+.info-vazio-card span {
+  font-size: 11.5px;
+  color: #64748b;
+  line-height: 1.25;
+}
+[data-tema="escuro"] .info-vazio-card span {
+  color: #94a3b8;
+}
+.seta-vazio-card {
+  font-size: 16px;
+  color: #94a3b8;
+  font-weight: 700;
+  transition: transform 0.15s ease;
+}
+.btn-vazio-card:hover .seta-vazio-card {
+  color: #a81c24;
+  transform: translateX(4px);
+}
+[data-tema="escuro"] .btn-vazio-card:hover .seta-vazio-card {
+  color: #f87171;
 }
 
 
