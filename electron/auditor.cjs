@@ -248,6 +248,7 @@ function xmlParaTextoLimpo(xmlStr) {
         return `\uE000${t}\uE001`;
       }
     )
+    .replace(/<\/w:tc>/g, '\uE002\n')
     .replace(/<\/w:p>/g, '\n')
     .replace(/<w:tab\/>/g, ' ')
     .replace(/<w:br[^/>]*\/>/g, '\n')
@@ -947,16 +948,21 @@ function dividirCorpoEReferencias(textoCompleto) {
   const fatiaCorpo = indiceRef === -1 ? itensComLinha : itensComLinha.slice(0, indiceRef);
   const fatiaAposCabecalhoRef = indiceRef === -1 ? [] : itensComLinha.slice(indiceRef + 1);
 
-  // 1. Agrupa linhas do corpo em parágrafos reais (evitando quebras de citações por quebras de linha em PDF)
+  // 1. Agrupa linhas do corpo em parágrafos reais (evitando quebras de citações por quebras de linha em PDF e isolando células de tabelas)
   let secaoAtual = 'Corpo do Texto';
   let contadorParagrafo = 0;
   let contadorParagrafoCap1 = 0;
   const paragrafosCorpo = [];
   let bufferPar = '';
   let linhaInicioPar = 1;
+  let celulaAnteriorTerminou = false;
 
   for (const item of fatiaCorpo) {
-    if (ehTituloSecao(item.texto)) {
+    const ehFimDeCelula = item.texto.includes('\uE002');
+    const textoLimpo = item.texto.replace(/\uE002/g, '').trim();
+    if (!textoLimpo) continue;
+
+    if (ehTituloSecao(textoLimpo)) {
       if (bufferPar.trim()) {
         contadorParagrafo++;
         contadorParagrafoCap1++;
@@ -969,15 +975,16 @@ function dividirCorpoEReferencias(textoCompleto) {
         });
         bufferPar = '';
       }
-      secaoAtual = item.texto;
+      secaoAtual = textoLimpo;
       contadorParagrafoCap1 = 0;
+      celulaAnteriorTerminou = false;
       continue;
     }
 
-    if (bufferPar && !/[.!?:]$/.test(bufferPar)) {
-      bufferPar += ' ' + item.texto;
-    } else if (bufferPar && item.texto.length > 0 && /^[a-zà-ÿ0-9]/.test(item.texto)) {
-      bufferPar += ' ' + item.texto;
+    if (bufferPar && !celulaAnteriorTerminou && !/[.!?:]$/.test(bufferPar)) {
+      bufferPar += ' ' + textoLimpo;
+    } else if (bufferPar && !celulaAnteriorTerminou && textoLimpo.length > 0 && /^[a-zà-ÿ0-9]/.test(textoLimpo)) {
+      bufferPar += ' ' + textoLimpo;
     } else {
       if (bufferPar.trim()) {
         contadorParagrafo++;
@@ -990,8 +997,26 @@ function dividirCorpoEReferencias(textoCompleto) {
           secao: secaoAtual,
         });
       }
-      bufferPar = item.texto;
+      bufferPar = textoLimpo;
       linhaInicioPar = item.numLinha;
+    }
+
+    if (ehFimDeCelula) {
+      if (bufferPar.trim()) {
+        contadorParagrafo++;
+        contadorParagrafoCap1++;
+        paragrafosCorpo.push({
+          texto: bufferPar.trim(),
+          numParagrafo: contadorParagrafo,
+          numParagrafoNaSecao: contadorParagrafoCap1,
+          numLinha: linhaInicioPar,
+          secao: secaoAtual,
+        });
+        bufferPar = '';
+      }
+      celulaAnteriorTerminou = true;
+    } else {
+      celulaAnteriorTerminou = false;
     }
   }
   if (bufferPar.trim()) {
@@ -1012,13 +1037,15 @@ function dividirCorpoEReferencias(textoCompleto) {
   let entrouPosReferencias = false;
 
   for (const item of fatiaAposCabecalhoRef) {
-    if (!entrouPosReferencias && ehInicioSecaoPosReferencias(item.texto)) {
+    const textoLimpo = item.texto.replace(/\uE002/g, '').trim();
+    if (!textoLimpo) continue;
+    if (!entrouPosReferencias && ehInicioSecaoPosReferencias(textoLimpo)) {
       entrouPosReferencias = true;
     }
     if (entrouPosReferencias) {
-      linhasPosReferencias.push(item);
+      linhasPosReferencias.push({ texto: textoLimpo, numLinha: item.numLinha });
     } else {
-      fatiaRef.push(item.texto);
+      fatiaRef.push(textoLimpo);
     }
   }
 
@@ -2134,7 +2161,15 @@ function localizarPdfNoAcervoLocal({ refBib, refDoc, bibliotecaRaiz }) {
         const camCompleto = path.join(pasta, arq);
 
         let score = 0;
-        if (numAto && arqNorm.includes(numAto)) score += 8;
+        if (numAto) {
+          if (arqNorm.includes(numAto)) {
+            score += 12;
+          } else {
+            // Se a obra declara um número de ato específico (ex: Lei 14.534, Decreto 12.007, Portaria 3.232, NT 13),
+            // desqualifica arquivos de outros atos ou documentos genéricos do mesmo órgão/ano
+            score -= 10;
+          }
+        }
         if (anoStr && arqNorm.includes(anoStr)) score += ehAutorGenerico ? 2 : 3;
         if (autNorm && autNorm.length >= 3 && arqNorm.includes(autNorm.slice(0, 7))) {
           score += ehAutorGenerico ? 1 : 4;
@@ -2150,7 +2185,13 @@ function localizarPdfNoAcervoLocal({ refBib, refDoc, bibliotecaRaiz }) {
 
         if (refDoc?.doi && arqNorm.includes(normalizarChave(refDoc.doi).slice(-6))) score += 6;
 
-        const thresholdMinimo = ehAutorGenerico ? 7 : 6;
+        // Para entes federativos e órgãos genéricos (Brasil, Santa Catarina, Paraná, etc.),
+        // impede colisão entre documentos distintos do mesmo ano (ex.: SC 2025a vs 2025b)
+        if (ehAutorGenerico && !numAto && palavrasEncontradas === 0) {
+          continue;
+        }
+
+        const thresholdMinimo = ehAutorGenerico ? 8 : 6;
         if (score >= thresholdMinimo && score > melhorScore) {
           try {
             const st = fs.statSync(camCompleto);
@@ -3175,17 +3216,24 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     });
   }
 
-  // Se detectou texto pós-referências (ex.: "NOTA PARA A ORIENTAÇÃO"), adiciona aviso preventivo
+  // Se detectou texto pós-referências (ex.: "NOTA PARA A ORIENTAÇÃO"), verifica se é elemento pós-textual legítimo da NBR 14724 (Apêndices/Anexos)
   if (linhasPosReferencias.length > 0) {
-    alertasPrecisao.push({
-      tipo: 'secao_pos_referencias',
-      numParagrafo: linhasPosReferencias[0].numLinha,
-      numLinha: linhasPosReferencias[0].numLinha,
-      secao: linhasPosReferencias[0].texto.slice(0, 60),
-      autorCitado: 'Estrutura do Manuscrito',
-      fraseWord: linhasPosReferencias[0].texto,
-      mensagem: `📌 Aviso de Submissão Formal: Foram detectados ${linhasPosReferencias.length} parágrafo(s) após o término da seção de REFERÊNCIAS (iniciando em "${linhasPosReferencias[0].texto.slice(0, 55)}"). O auditor isolou essa seção automaticamente para não confundi-la com entradas bibliográficas — lembre-se de desanexá-la antes da submissão final.`,
-    });
+    const primeiroTexto = String(linhasPosReferencias[0].texto || '').trim();
+    const ehElementoPosTextualLegitimoNbr14724 =
+      /^(?:\d+(?:\.\d+)*\.?\s*)?(?:ap[eê]ndices?|anexos?|gloss[aá]rio)\b/i.test(primeiroTexto) ||
+      /^(?:anexo|ap[eê]ndice)\s+[a-z0-9]/i.test(primeiroTexto);
+
+    if (!ehElementoPosTextualLegitimoNbr14724) {
+      alertasPrecisao.push({
+        tipo: 'secao_pos_referencias',
+        numParagrafo: linhasPosReferencias[0].numLinha,
+        numLinha: linhasPosReferencias[0].numLinha,
+        secao: primeiroTexto.slice(0, 60),
+        autorCitado: 'Estrutura do Manuscrito',
+        fraseWord: primeiroTexto,
+        mensagem: `📌 Aviso de Submissão Formal: Foram detectados ${linhasPosReferencias.length} parágrafo(s) após o término da seção de REFERÊNCIAS (iniciando em "${primeiroTexto.slice(0, 55)}"). O auditor isolou essa seção automaticamente para não confundi-la com entradas bibliográficas — lembre-se de desanexá-la antes da submissão final caso se trate de notas internas de orientação.`,
+      });
+    }
   }
 
   // Compila resumo explícito de Obras em Conformidade Adicionadas ao Rol de Trabalho
