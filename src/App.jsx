@@ -112,37 +112,48 @@ function ConteudoApp() {
     });
   };
 
-  // Estado persistente da última Auditoria Reversa (não se perde ao abrir PDFs ou trocar de aba!)
-  const [estadoAuditoria, setEstadoAuditoriaState] = useState(() => {
-    try {
-      const salvo = JSON.parse(localStorage.getItem('bib_ultima_auditoria_v2') || 'null');
-      return (
-        salvo || {
-          nomeArquivo: '',
-          textoManuscrito: '',
-          buscarEBaixar: true,
-          resultado: null,
-          dataHora: null,
-          mostrarCaixaTexto: true,
-        }
-      );
-    } catch {
-      return {
-        nomeArquivo: '',
-        textoManuscrito: '',
-        buscarEBaixar: true,
-        resultado: null,
-        dataHora: null,
-        mostrarCaixaTexto: true,
-      };
+  // Definição e isolamento do estado da Auditoria Reversa por projeto
+  const ESTADO_AUDITORIA_LIMPO = {
+    nomeArquivo: '',
+    textoManuscrito: '',
+    buscarEBaixar: true,
+    resultado: null,
+    dataHora: null,
+    mostrarCaixaTexto: true,
+  };
+
+  const obterChaveAuditoriaProjeto = (raiz) => {
+    if (!raiz) return 'bib_auditoria_sessao_temp';
+    let hash = 0;
+    for (let i = 0; i < raiz.length; i++) {
+      hash = ((hash << 5) - hash) + raiz.charCodeAt(i);
+      hash |= 0;
     }
-  });
+    return `bib_auditoria_proj_${Math.abs(hash)}`;
+  };
+
+  const carregarAuditoriaDoProjeto = (raiz) => {
+    try {
+      if (!raiz) return { ...ESTADO_AUDITORIA_LIMPO };
+      const chave = obterChaveAuditoriaProjeto(raiz);
+      const salvo = JSON.parse(localStorage.getItem(chave) || 'null');
+      return salvo || { ...ESTADO_AUDITORIA_LIMPO };
+    } catch {
+      return { ...ESTADO_AUDITORIA_LIMPO };
+    }
+  };
+
+  // Estado da Auditoria Reversa: isolado por projeto (ao criar novo projeto, nasce 100% limpo!)
+  const [estadoAuditoria, setEstadoAuditoriaState] = useState(() => ({ ...ESTADO_AUDITORIA_LIMPO }));
 
   const setEstadoAuditoria = (atualizador) => {
     setEstadoAuditoriaState((ant) => {
       const prox = typeof atualizador === 'function' ? atualizador(ant) : { ...ant, ...atualizador };
       try {
-        localStorage.setItem('bib_ultima_auditoria_v2', JSON.stringify(prox));
+        if (bib?.raiz) {
+          const chave = obterChaveAuditoriaProjeto(bib.raiz);
+          localStorage.setItem(chave, JSON.stringify(prox));
+        }
       } catch {
         /* caso exceda quota do localStorage, mantém em memória */
       }
@@ -258,6 +269,14 @@ function ConteudoApp() {
       setBib(estado);
       setCfg(await window.api.config.obter());
       setAbasPdf([]);
+      setSelecionadas([]);
+      setVisao('todas');
+      setBusca('');
+      setBuscaTagAutor('');
+      setExpandidas({});
+      // Carrega exclusivamente a auditoria salva deste projeto (se for novo/sem auditoria, 100% limpo!)
+      const aud = carregarAuditoriaDoProjeto(caminho);
+      setEstadoAuditoriaState(aud);
       setAbaSuperior('biblioteca');
       await atualizarProjetosRecentes();
       avisar(`Projeto "${nome || caminho.split(/[\\/]/).pop()}" carregado!`, 'ok');
@@ -273,10 +292,21 @@ function ConteudoApp() {
       setBib(estado);
       setCfg(await window.api.config.obter());
       setAbasPdf([]);
+      setSelecionadas([]);
+      setVisao('todas');
+      setBusca('');
+      setBuscaTagAutor('');
+      setExpandidas({});
+      // Projeto novo: Zera completamente todas as telas e a auditoria reversa!
+      try {
+        localStorage.removeItem(obterChaveAuditoriaProjeto(estado?.raiz));
+      } catch {}
+      setEstadoAuditoriaState({ ...ESTADO_AUDITORIA_LIMPO });
       setModalNovoProjeto(false);
       setNomeNovoProjeto('');
+      setAbaSuperior('biblioteca');
       await atualizarProjetosRecentes();
-      avisar(`Novo projeto "${nomeNovoProjeto}" criado com sucesso!`, 'ok');
+      avisar(`Novo projeto "${nomeNovoProjeto}" criado com sucesso! Telas limpas e prontas.`, 'ok');
     } catch (e) {
       avisar(`Erro ao criar projeto: ${e.message}`, 'erro');
     }
@@ -313,6 +343,14 @@ function ConteudoApp() {
         try {
           const estado = await window.api.bib.estado();
           setBib(estado);
+          if (estado?.raiz) {
+            setEstadoAuditoriaState(carregarAuditoriaDoProjeto(estado.raiz));
+          }
+          // Limpa chaves legadas globais que não eram isoladas por projeto
+          try {
+            localStorage.removeItem('bib_ultima_auditoria_v2');
+            localStorage.removeItem('bib_ultima_auditoria');
+          } catch {}
           const ests = await window.api.cit.estilos();
           setEstilos(ests || []);
           await atualizarProjetosRecentes();

@@ -235,12 +235,10 @@ export default function ReverseAuditView({
   const avisar = useAviso();
 
   const pastaPadraoPdfs = bib?.raiz ? `${bib.raiz}${bib.raiz.includes('/') ? '/' : '\\'}pdfs` : '';
-  const [pastaDestino, setPastaDestino] = useState(() => {
-    return localStorage.getItem('bib_pasta_download_pdfs') || pastaPadraoPdfs;
-  });
+  const [pastaDestino, setPastaDestino] = useState(pastaPadraoPdfs);
 
   useEffect(() => {
-    if (!pastaDestino && pastaPadraoPdfs) {
+    if (pastaPadraoPdfs) {
       setPastaDestino(pastaPadraoPdfs);
     }
   }, [pastaPadraoPdfs]);
