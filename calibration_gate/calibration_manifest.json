@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "name": "Bibliography Manuscript Auditor Calibration Gate",
+  "created_at": "2026-11-16T11:30:00Z",
+  "corpus_version": "v1.0.0-synthetic-and-real",
+  "seeds": {
+    "calibration_seed": 421337,
+    "holdout_seed": 987654321
+  },
+  "quotas_calibration": {
+    "cat1_parser_chaves": 25000,
+    "cat2_segmentacao_referencias": 20000,
+    "cat3_casamento_citacao_referencia": 15000,
+    "cat4_metadados_doi": 10000,
+    "cat5_existencia_fonte_tipo": 10000,
+    "cat6_similaridade_plagio": 8000,
+    "cat7_conferencia_conteudo_pdf": 7000,
+    "cat8_tabelas_quadros_legendas": 5000
+  },
+  "min_calibration_cases": 100000,
+  "min_holdout_cases": 20000,
+  "holdout_hash_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "regression_document_limit_percent": 1.0,
+  "licenses": [
+    "CC-BY-4.0",
+    "Open-Access-SciELO",
+    "Public-Domain-Gov-Data",
+    "Synthetic-Benchmark-MIT"
+  ]
+}

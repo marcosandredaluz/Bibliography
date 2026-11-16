@@ -1,0 +1,53 @@
+# Literais Proibidos (Regra de Ouro da Calibração)
+# É expressamente proibido inserir no código de produção ou testes de calibração
+# qualquer literal proveniente deste documento específico de regressão.
+
+Michele Brugnerotto
+Brugnerotto
+TCC_Michele_Brugnerotto_versao_completa_v19.docx
+Aline Silva Dejosi Nery
+Dejosi Nery
+Svensson-Ranallo
+German et al., 2001
+Cavanaugh et al., 2025
+10.3201/eid2907.230155
+10.1093/mmy/myu061
+10.1093/jamia/ocv008
+10.1111/myc.13363
+10.1007/s42770-021-00658-1
+10.1111/tmi.14065
+10.1160/ME5001
+Brasil, [20--b]
+Brasil ([20--b])
+Brasil, [20--a]
+Brasil ([20--a])
+Brasil, [20--c]
+Brasil ([20--c])
+ESPOROTRICOSECE
+DIC_DADOS_EPIZOO_NET_v5.pdf
+Nota Técnica nº 60/2023-CGZV
+Nota Técnica Conjunta nº 10/2026
+Resolução SESA nº 093
+Resolução nº 510, de 7 de abril de 2016
+Resolução nº 588, de 12 de julho de 2018
+Portaria GM/MS nº 6.734
+Portaria GM/MS nº 12.301
+Portaria SES nº 1.336
+Nota técnica nº 004/2025-GEZOO
+2023-brasil-lei-n-14.pdf
+2023-brasil-ministerio-saude.pdf
+2026-cano-escobar-setting-basis-natural.pdf
+2020-canto-completude-registros-tuberculose.pdf
+2021-coelho-neto-afinal-quantos-sistemas.pdf
+2016-cognialli-rising-incidence-sporothrix.pdf
+2014-correia-metodos-avaliar-completitude.pdf
+2018-destoumieux-garzon-one-health-concept.pdf
+2010-goossen-detailed-clinical-models.pdf
+2020-gremiao-geographic-expansion-sporotrichosis.pdf
+2026-humphries-natural-language-processing.pdf
+2019-lehne-why-digital-medicine.pdf
+2025-prohaska-batista-neglected-notable-growing.pdf
+2016-rodrigues-sporothrix-species-causing.pdf
+2006-romero-avaliacao-qualidade-variaveis.pdf
+2026-tornimbene-data-standards-interoperability.pdf
+2022-one-health-high-leve-one-health-new.pdf

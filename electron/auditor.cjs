@@ -548,6 +548,20 @@ function extrairAutorETituloDeReferencia(linha) {
     aliasesBase.push('brasil', 'ms', 'ministeriodasaude');
   }
 
+  // Extrai coautores adicionais da entrada bibliográfica e adiciona seus sobrenomes aos aliases
+  const blocoAutoresBruto = semNum.split(/\.\s+[A-ZÀ-Ú“"']/)[0] || '';
+  const coautoresLinha = blocoAutoresBruto.split(/\s*;\s*|\s+(?:e|&|and)\s+/i);
+  for (const ca of coautoresLinha) {
+    const caPartes = ca.split(/[,;(]/)[0].trim().split(/\s+/).filter(Boolean);
+    const caSemPart = caPartes.filter((p) => !PARTICULAS_NOME.has(normalizarChave(p)));
+    if (caSemPart.length > 0) {
+      const k = normalizarChave(caSemPart[caSemPart.length - 1]);
+      if (k.length >= 3 && !SIGLAS_CONTEXTO_NAO_AUTOR.has(k)) aliasesBase.push(k);
+      const kInt = normalizarChave(caSemPart.join(''));
+      if (kInt.length >= 3 && !SIGLAS_CONTEXTO_NAO_AUTOR.has(kInt)) aliasesBase.push(kInt);
+    }
+  }
+
   const chavesAlias = expandirAliasesAutor(aliasesBase);
 
   // Extrai o título real da obra removendo o bloco de autores (suporta ABNT e Vancouver com ou sem "et al." e apóstrofos curvos/retos)
@@ -756,22 +770,26 @@ function extrairAnoPublicacaoReferencia(linha) {
   s = s.replace(/\b(?:entre|de|from|between)\s+(19\d\d|20\d\d)\s*(?:[-–—/]|a|e|to|and)\s*(19\d\d|20\d\d)\b/gi, ' ');
   s = s.replace(/\b(19\d\d|20\d\d)\s*(?:[-–—/]|a|e|to|and)\s*(19\d\d|20\d\d)\b/gi, ' ');
 
-  // 6. Procura todos os anos candidatos (com sufixo opcional a-f, ex.: 2023a, 2023b, [2021], 2023 Spring)
-  const todosAnos = [...s.matchAll(/\b(19\d\d|20\d\d)([a-f])?(?=[\s.,;):\]!]|$)/g)];
+  // 6. Procura todos os anos candidatos (inclui colchetes, sufixos a-f, e formatos especiais como [20--a], [s.d.])
+  const todosAnos = [
+    ...s.matchAll(/(?:\[(19\d\d|20\d\d|20--)([a-z])?\]|\b(19\d\d|20\d\d)([a-z])?\b|\[?(s\.d\.)\]?)(?=[\s.,;):\]!]|$)/gi)
+  ];
   if (!todosAnos.length) {
-    // Fallback na linha bruta se necessário
-    const mFallback = String(linha || '').match(/\b(19\d\d|20\d\d)([a-f])?\b/);
+    // Fallback na linha bruta se necessário (suporta [20--b] e [s.d.])
+    const mFallback = String(linha || '').match(/(?:\[(19\d\d|20\d\d|20--)([a-z])?\]|\b(19\d\d|20\d\d)([a-z])?\b|\[?(s\.d\.)\]?)/i);
+    const bAno = mFallback ? (mFallback[1] || mFallback[3] || mFallback[5] || '') : '';
+    const bSuf = mFallback ? (mFallback[2] || mFallback[4] || '') : '';
     return {
-      anoCompleto: mFallback ? `${mFallback[1]}${mFallback[2] || ''}` : '',
-      anoBase: mFallback ? mFallback[1] : '',
-      sufixoAno: mFallback?.[2] || '',
+      anoCompleto: bAno ? `${bAno.toLowerCase()}${bSuf.toLowerCase()}` : '',
+      anoBase: bAno ? bAno.toLowerCase() : '',
+      sufixoAno: bSuf ? bSuf.toLowerCase() : '',
     };
   }
 
   // O ano de publicação na ABNT e em Vancouver fica no final da referência (após periódico/editora/local)
   const ultimo = todosAnos[todosAnos.length - 1];
-  const anoBase = ultimo[1];
-  const sufixoAno = (ultimo[2] || '').toLowerCase();
+  const anoBase = (ultimo[1] || ultimo[3] || ultimo[5] || '').toLowerCase();
+  const sufixoAno = (ultimo[2] || ultimo[4] || '').toLowerCase();
   return {
     anoCompleto: `${anoBase}${sufixoAno}`,
     anoBase,
@@ -1149,8 +1167,8 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         });
       }
 
-      // 1) Parentéticas ABNT: (AUTOR..., 2020a, p. 12) — divide por ";" apenas quando separa outra obra que tem seu próprio ano!
-      const rePar = /\(([^()]{3,180}?\b(?:19\d\d|20\d\d)[a-f]?[^()]{0,40})\)/g;
+      // 1) Parentéticas ABNT: (AUTOR..., 2020a, p. 12) ou (BRASIL, [20--b])
+      const rePar = /\(([^()]{2,220}?(?:\[?(?:19\d\d|20\d\d|20--)[a-z]?\]?|\[?s\.d\.\]?)[^()]{0,40})\)/gi;
       let m;
       while ((m = rePar.exec(frase)) !== null) {
         const interior = m[1];
@@ -1158,7 +1176,7 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         let buffer = '';
         for (const fatia of interior.split(';')) {
           buffer = buffer ? `${buffer}; ${fatia}` : fatia;
-          if (/\b(?:19\d\d|20\d\d)[a-f]?\b/.test(buffer)) {
+          if (/(?:\[?(?:19\d\d|20\d\d|20--)[a-z]?\]?|\[?s\.d\.\]?)/i.test(buffer)) {
             partes.push(buffer.trim());
             buffer = '';
           }
@@ -1167,14 +1185,14 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
 
         for (const parte of partes) {
           const mItem = parte.match(
-            /^([A-ZÀ-Ú0-9][A-Za-zÀ-ÿ0-9\s.,;&'-]{1,85}?)\s*,\s*((?:19\d\d|20\d\d)[a-f]?)(?:\s*,\s*(?:p\.?|p[aá]g\.?|pp\.?)\s*(\d+(?:-\d+)?))?$/i
+            /^([A-ZÀ-Ú0-9][A-Za-zÀ-ÿ0-9\s.,;&'-]{1,95}?)\s*,\s*(\[?(?:19\d\d|20\d\d|20--)[a-z]?\]?|\[?s\.d\.\]?)(?:\s*,\s*(?:p\.?|p[aá]g\.?|pp\.?)\s*(\d+(?:-\d+)?))?$/i
           );
           if (!mItem) continue;
           const infoAutor = extrairChavesAutorDeCitacao(mItem[1]);
           if (!infoAutor.chavePrincipal || infoAutor.chavePrincipal.length < 2 || ignorarSobrenomes.has(infoAutor.chavePrincipal)) {
             continue;
           }
-          const anoCompleto = mItem[2].toLowerCase();
+          const anoCompleto = mItem[2].replace(/[\[\]]/g, '').toLowerCase();
           const anoBase = anoCompleto.slice(0, 4);
           const paginaDeclarada = mItem[3] || null;
           registrarCitacaoUnicaNaFrase({
@@ -1198,9 +1216,9 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         }
       }
 
-      // 2) Narrativas ABNT/Vancouver: Mendes (2011), Victora et al. (1997), Wang et al. (2025)
+      // 2) Narrativas ABNT/Vancouver: Mendes (2011), Victora et al. (1997), Wang et al. (2025), Brasil ([20--b])
       const reNar =
-        /\b([A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+(?:(?:\s+(?:de|da|do|dos|das|van|von|del|e|&|and)\s+|\s*,\s*|\s+)[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*(?:\s+et\s+al\.?)?)\s*\(\s*((?:19\d\d|20\d\d)[a-f]?)(?:\s*,\s*(?:p\.?|p[aá]g\.?|pp\.?)\s*(\d+(?:-\d+)?))?\s*\)/g;
+        /\b([A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+(?:(?:\s+(?:de|da|do|dos|das|van|von|del|e|&|and)\s+|\s*,\s*|\s+)[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*(?:\s+et\s+al\.?)?)\s*\(\s*(\[?(?:19\d\d|20\d\d|20--)[a-z]?\]?|\[?s\.d\.\]?)(?:\s*,\s*(?:p\.?|p[aá]g\.?|pp\.?)\s*(\d+(?:-\d+)?))?\s*\)/gi;
       while ((m = reNar.exec(frase)) !== null) {
         const autLimpo = m[1]
           .replace(/^(?:segundo|conforme|como|para|de\s+acordo\s+com|em|no\s+estudo\s+de|nos\s+estudos\s+de|consoante)\s+(?:o|a|os|as)?\s*/i, '')
@@ -1209,7 +1227,7 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         if (!infoAutor.chavePrincipal || infoAutor.chavePrincipal.length < 2 || ignorarSobrenomes.has(infoAutor.chavePrincipal)) {
           continue;
         }
-        const anoCompleto = m[2].toLowerCase();
+        const anoCompleto = m[2].replace(/[\[\]]/g, '').toLowerCase();
         const anoBase = anoCompleto.slice(0, 4);
         const paginaDeclarada = m[3] || null;
 
