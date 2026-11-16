@@ -1,0 +1,661 @@
+{
+ "id": "treino_vancouver_pt-PT_perturbado",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "pt-PT",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Le TH, Esteves K, Coelho Í. Minus dolorem deserunt fuga tenetur consequatur alias repudiandae nulla deleniti fugit ullam error accusamus qui. BMC Public Health. 1986;8(10):557–76. doi:10.99999/teste.treino.68895",
+   "item": "it005"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Melo L. Mollitia quia deleniti sed distinctio architecto dicta. Medical Mycology. 1978;17(7):684–704.",
+   "item": "it025"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Müller Í, Lima L, Henriques W. At quas a minima officia natus illo optio repudiandae. Abrantes: Moura; 1993.",
+   "item": "it006"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Ministerio de Sanidad (España). Debitis in consectetur vitae excepturi [Internet]. 2994. 2015. Disponível em: https://leis-treino.gov/914",
+   "item": "it018"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Pinho V, Ramos T, Moura L, Morais A, Almeida Â, Henriques F. Veritatis distinctio tempore id. Das Gesundheitswesen. 2011;1(9):521–36. doi:10.99999/teste.treino.62728",
+   "item": "it012"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Gomes F, Garcia P, Costa V, Antunes D. Ullam et ullam architecto delectus neque dicta sint aliquam dolor libero. Medical Mycology. 2000;42(7):446–66. doi:10.99999/teste.treino.42601",
+   "item": "it013"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Brito S, Magalhães L. Vel perspiciatis nam sit est excepturi magnam. Gaceta Sanitaria. 2022;48(8):180–93. doi:10.99999/teste.treino.47820",
+   "item": "it016"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Machado Â, Baptista D, Andrade S, Pacheco X, Moreira T, Almeida N. Fuga sequi aliquid asperiores facere maxime consequatur fuga. Medical Mycology. 2020;71(9):599–616.",
+   "item": "it015"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Abreu L. Tenetur quis repudiandae odio vel ex nesciunt ipsum. Torres Vedras: Moreira; 1989.",
+   "item": "it011"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Simões-Campos M, Mendes D, Mendes J. Fugit saepe deserunt neque facere repudiandae provident enim error dolores deleniti sed libero suscipit illum. Câmara de Lobos: Figueiredo Santos e Filhos; 2011.",
+   "item": "it000"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Simões M. Velit ducimus eaque nesciunt cumque quas maiores. Epidemiologia e Serviços de Saúde. 75(2):205–13.",
+   "item": "it027"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Henriques M, Andrade L, Mota C, Moura R, Domingues P, Azevedo S. A nemo occaecati commodi sapiente atque amet omnis. Epidemiologia e Serviços de Saúde. 1986;3(1):408–18. doi:10.99999/teste.treino.72753",
+   "item": "it017"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Araújo B, Vieira E. Reiciendis numquam eveniet dolor doloremque praesentium possimus. Em: Oliveira C, editor. Esse quaerat totam nulla. Montijo: Santos; 1976. p. 187–202.",
+   "item": "it026"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Kim M jun, Ferreira É, Mendes I. Nihil perspiciatis dignissimos corporis praesentium eveniet. Revue d’Épidémiologie et de Santé Publique. 2002;80(5):433–45.",
+   "item": "it004"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Haute Autorité de Santé (France). Expedita porro iusto eveniet minima numquam voluptatum architecto quam voluptas. Sacavém: Loureiro Miranda S.A.; 1997.",
+   "item": "it008"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Liu W. Ipsum praesentium id esse at sint. Journal of the American Medical Informatics Association. 2013;63(12):406–25.",
+   "item": "it003"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Virginia-Maryland College of Veterinary Medicine. Adipisci sunt expedita ipsa nihil nesciunt [Internet]. 9975. 2013. Disponível em: https://leis-treino.gov/2364",
+   "item": "it007"
+  },
+  {
+   "indice": 17,
+   "texto": "18. National Library of Medicine (Estados Unidos). Sit similique inventore fuga expedita sunt esse nesciunt quod neque [Internet]. 5567. 1978. Disponível em: https://leis-treino.gov/2585",
+   "item": "it023"
+  },
+  {
+   "indice": 18,
+   "texto": "19. van der Azevedo L. Officiis pariatur velit possimus neque rem voluptatibus alias impedit quasi omnis. [Santa Cruz]: Machado; 2023.",
+   "item": "it001"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Virginia-Maryland College of Veterinary Medicine. Reprehenderit corporis cumque excepturi debitis accusantium id deserunt. Em: Anjos M, editor. Recusandae sed iusto nulla autem debitis tempora doloremque eveniet pariatur. Évora: Miranda; 2014. p. 101–16.",
+   "item": "it009"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Correia A, Castro M. Veniam ipsum repudiandae suscipit occaecati quidem incidunt cum. Medical Mycology. 1977;39(7):164–75. doi:10.99999/teste.treino.80117",
+   "item": "it014"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Haute Autorité de Santé (France). Quod dolorum dolores delectus distinctio natus officiis cupiditate culpa [Internet]. 9975. 1980. Disponível em: https://leis-treino.gov/3462",
+   "item": "it022"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Guerreiro R. At molestiae facilis error nisi ullam aliquid fuga [Internet]. 10450. 1988. Disponível em: https://leis-treino.gov/6947",
+   "item": "it029"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Ferreira L. Debitis quibusdam hic aliquam natus. Gaceta Sanitaria. 1984;80(12):569–85. doi:10.99999/teste.treino.40656",
+   "item": "it020"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Conselho Nacional de Saúde (Brasil). Cumque quaerat illum officia rem possimus [Internet]. 2004 [citado 16 de novembro de 2026]. Disponível em: https://exemplo-treino.org/5587",
+   "item": "it024"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Pérez Ros C, Antunes K, Nunes L, Moreira L. Velit sit rerum corporis cumque quia et voluptate eveniet. Revista de Saúde Pública. 2023;51(7):328–36. doi:10.99999/teste.treino.70078",
+   "item": "it002"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Guerreiro R. Repellendus repellendus non tempore ipsam soluta labore voluptatibus. Epidemiologia & Prevenzione. 1988;37(12):207–23. doi:10.99999/teste.treino.80172",
+   "item": "it028"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Pereira A. Fuga quae dolor corporis necessitatibus quas eum omnis commodi officiis eos. Viseu: Silva Costa e Filhos; 1993.",
+   "item": "it021"
+  },
+  {
+   "indice": 28,
+   "texto": "29. Campos M, Guerreiro J, Mota S, Pinho M. Corrupti corporis laborum voluptatem laborum error eos magnam officiis nihil. Medical Mycology. 1996;60(3):890–5. doi:10.99999/teste.treino.21098",
+   "item": "it019"
+  },
+  {
+   "indice": 29,
+   "texto": "30. Neves N, Marques C, Esteves M, Pacheco D, Nogueira M, Silva G. Assumenda suscipit voluptatibus natus corporis numquam nam eaque doloremque. BMC Public Health. 1984;23(4):368–84. doi:10.99999/teste.treino.49177",
+   "item": "it010"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1,2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it025"
+   ],
+   "referencias": [
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it013"
+   ],
+   "referencias": [
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,8,9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it015",
+    "it011"
+   ],
+   "referencias": [
+    4,
+    7,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6,10,11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it027",
+    "it013"
+   ],
+   "referencias": [
+    9,
+    10,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9,13,14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it004",
+    "it011"
+   ],
+   "referencias": [
+    12,
+    13,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14,16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it004"
+   ],
+   "referencias": [
+    15,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11,17,18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it007",
+    "it027"
+   ],
+   "referencias": [
+    17,
+    16,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Machado et al. (8)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ministerio de Sanidad (España) (4)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ministerio de Sanidad (España) (4)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (17)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4,24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it018"
+   ],
+   "referencias": [
+    23,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1,13,26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it002",
+    "it005"
+   ],
+   "referencias": [
+    12,
+    25,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it020"
+   ],
+   "referencias": [
+    4,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Müller et al. (3)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,29,30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it015",
+    "it010"
+   ],
+   "referencias": [
+    28,
+    7,
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Guerreiro (23)",
+   "tipo": "narrativa",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Ipsam dolorum sit quaerat architecto maxime ipsa iusto"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

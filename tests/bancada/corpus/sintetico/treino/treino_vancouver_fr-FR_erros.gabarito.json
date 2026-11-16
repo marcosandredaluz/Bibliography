@@ -1,0 +1,604 @@
+{
+ "id": "treino_vancouver_fr-FR_erros",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. São Paulo (Estado). Glace neuf pur salle prier paupière partie rien flot deviner occuper contraire juste manier madame [Internet]. 6467. 2005. Disponible sur: https://leis-treino.gov/5904",
+   "item": "it008"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Nguyen TH, Costa P, Georges N. Attention reposer après affirmer. Preventive Veterinary Medicine. 1992;6(11):158‑78. doi:10.99999/teste.treino.42493",
+   "item": "it005"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Gremião A, Gaudin T, Robert R, Olivier A. Mieux puissance regard rôle quand capable. [Texier]: Brun; 2000.",
+   "item": "it006"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Chauvin A, Julien G, Gilbert G, Pinto C. Second pied haute ordre sous où face maintenir renoncer endormir. Laporte: Morvan; 1992.",
+   "item": "it013"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Andre J. Énergie fou secret village siège désespoir ville deviner élément construire temps. Epidemiologia & Prevenzione. 2007;38(1):458‑67. doi:10.99999/teste.treino.69757",
+   "item": "it014"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Chrétien A, Cohen L, Charles É, Blanchet A. Être vêtement environ remarquer conseil lourd tenter nuit retourner gauche geste métier entourer sens jeune confier. Revista de Saúde Pública. 2009;71(12):733‑43. doi:10.99999/teste.treino.83148",
+   "item": "it012"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Lamy F. Briller cruel rejoindre doucement prix salle cri réveiller religion vingt papa l’une heure. BMC Public Health. 2022;45(10):241‑55. doi:10.99999/teste.treino.80223",
+   "item": "it020"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Marin F. Chose occasion comprendre noir plan fixe très. Dubois: Menard S.A.; 2018.",
+   "item": "it018"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Liu H, Adam M, Rey D, Raynaud A. Ruine instinct poser fatiguer. Medical Mycology. 2006;14(7):593‑602. doi:10.99999/teste.treino.71409",
+   "item": "it003"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Ministerio de Sanidad (España). Risquer croix voilà paysage ouvert. MercierBourg: Nguyen S.A.R.L.; 2015.",
+   "item": "it011"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Robin C, Carre J, Fournier S, Boucher C. Autorité souvenir portier recherche assister mois considérer regretter vingt défaut auquel papa doigt [Internet]. [cité 10 nov 2026]. Disponible sur: https://exemplo-treino.org/6958",
+   "item": "it024"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Schmitt M, Martinez C, Lévy H, Buisson B, Gay F, Dufour A. Passion conseil revoir saisir petit événement fermer perdre vide pourquoi croire. BMC Public Health. 2017;59(1):196‑205.",
+   "item": "it016"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Le Gall M, Dupuis J, Pineau C, Mace I. Plus recevoir vaste image attacher heure où décrire. Bourgeois: Bonnet; 2002.",
+   "item": "it025"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Le Gall M, Dupuis J, Pineau C, Mace I. Prononcer cuisine heure charge heureux pénétrer satisfaire renverser naissance combien plusieurs. In: Le Roux É, éditeur. Fumée machine minute seconde dominer devoir repousser. Carrenec: Renaud; 2002. p. 272‑87.",
+   "item": "it026"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Marie M, Turpin D, Joubert I, Denis A, Albert C, Alves I. Importer bras après fil fou entrée assurer pauvre. Preventive Veterinary Medicine. 1990;77(6):306‑18.",
+   "item": "it015"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Mascaró Corral C, Bazin E. Amuser tour éviter devant huit douter solitude premier. Epidemiologia e Serviços de Saúde. 1980;77(6):98‑112. doi:10.99999/teste.treino.71785",
+   "item": "it002"
+  },
+  {
+   "indice": 16,
+   "texto": "18. Park J ho, Lévy T, Collin D. Observer ennemi pierre paraître chiffre malheur caresser. One Health. 1992;13(3):841‑61. doi:10.99999/teste.treino.70839",
+   "item": "it004"
+  },
+  {
+   "indice": 17,
+   "texto": "19. Fouquet É, Garnier É. Parvenir près accomplir lier battre. BMC Public Health. 2008;11(7):86‑103. doi:10.99999/teste.treino.52293",
+   "item": "it021"
+  },
+  {
+   "indice": 18,
+   "texto": "20. Ministerio de Sanidad (España). Honneur lequel image affirmer. [Pelletier-sur-Léger]: Perrin Fouquet et Fils; 1976.",
+   "item": "it009"
+  },
+  {
+   "indice": 19,
+   "texto": "21. Toussaint S. Fou idée détruire auteur regarder agiter présent doucement fort depuis. Medical Mycology. 2024;54(8):641‑53. doi:10.99999/teste.treino.58207",
+   "item": "it022"
+  },
+  {
+   "indice": 20,
+   "texto": "22. Robert Koch-Institut. Rire confier y ordre protéger accepter. Journal of the American Medical Informatics Association. 2005;61(12):177‑87.",
+   "item": "it007"
+  },
+  {
+   "indice": 21,
+   "texto": "23. Meyer S, Chrétien L, Gimenez G, Michel P. Notre seigneur ah envie ciel politique souffrir plonger salle. Pereira: Maillet; 2017.",
+   "item": "it019"
+  },
+  {
+   "indice": 22,
+   "texto": "24. Cordier G, Bouchet M, Guyot C. Bête politique douceur satisfaire pays employer appel accomplir foi. Leconte-sur-Guilbert: Barbe Morvan S.A.R.L.; 2026.",
+   "item": "it023"
+  },
+  {
+   "indice": 23,
+   "texto": "25. Conselho Nacional de Saúde (Brasil). Neuf pousser toujours nom seulement beau réserver feu combat jour trop aide monsieur [Internet]. 1992 [cité 3 nov 2026]. Disponible sur: https://exemplo-treino.org/4515",
+   "item": "it017"
+  },
+  {
+   "indice": 24,
+   "texto": "26. Istituto Superiore di Sanità. Trop accompagner paysage personnage oui agiter condamner gouvernement sentier pitié [Internet]. 2003 [cité 6 nov 2026]. Disponible sur: https://exemplo-treino.org/6586",
+   "item": "it010"
+  },
+  {
+   "indice": 25,
+   "texto": "28. Germain-Vallée L, Laine A, Berger N, Chevallier S. Commencement salut rose courir observer bande âme poser. Revue d’Épidémiologie et de Santé Publique. 1981;31(6):642‑55.",
+   "item": "extra0"
+  },
+  {
+   "indice": 26,
+   "texto": "29. di Goncalves G, Hoareau M, Gautier O. Animal esprit goutte mince succès faute oh réel personnage verre ennemi mer bon. Cadernos de Saúde Pública. 1991;6(1):8‑16. doi:10.99999/teste.treino.63405",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8–10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it003",
+    "it011"
+   ],
+   "referencias": [
+    7,
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,7,11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it024",
+    "it005"
+   ],
+   "referencias": [
+    6,
+    10,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7,9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it020"
+   ],
+   "referencias": [
+    8,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it005"
+   ],
+   "referencias": [
+    12,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it018"
+   ],
+   "referencias": [
+    14,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11,15,16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it015",
+    "it002"
+   ],
+   "referencias": [
+    10,
+    14,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6,17,18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it004",
+    "it012"
+   ],
+   "referencias": [
+    null,
+    16,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fouquet (19)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robert Koch-Institut (22)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it005"
+   ],
+   "referencias": [
+    21,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11,13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it025"
+   ],
+   "referencias": [
+    10,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Robin et al. (11)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(6,17,18)",
+   "item": "it001"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(27)",
+   "item": "it000"
+  },
+  {
+   "ponto": "E",
+   "referencia": 25,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 26,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Résoudre hiver résistance aspect revenir or poète terre seulement corps trop"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

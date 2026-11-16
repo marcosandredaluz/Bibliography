@@ -1,0 +1,584 @@
+{
+ "id": "reservado_iso690-num_pt-BR_erros",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "pt-BR",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1.  TOMÉ SEGUÍ, Eugenia. Quasi error natus expedita iusto sed commodi consequuntur iste perferendis quia laudantium id. Cadernos de Saúde Pública. 2005. Vol. 76, no. 7, p. 87–93. DOI 10.99999/teste.reservado.60876.",
+   "item": "it002"
+  },
+  {
+   "indice": 1,
+   "texto": "2.  SANTÉ PUBLIQUE FRANCE. Reiciendis hic blanditiis quam fugit ad eligendi exercitationem ut alias unde quaerat. Online. 1976. 13659. Available from: https://leis-reservado.gov/2525",
+   "item": "it012"
+  },
+  {
+   "indice": 2,
+   "texto": "3.  AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA (BRASIL). Placeat cum excepturi ipsum unde reprehenderit nihil similique nesciunt exercitationem occaecati. Revista de Saúde Pública. 1982. Vol. 1, no. 5, p. 486–505. DOI 10.99999/teste.reservado.50334.",
+   "item": "it008"
+  },
+  {
+   "indice": 3,
+   "texto": "4.  DI PIRES, Eduarda, CORREIA, Yago, FERNANDES, Maria Liz e CARDOSO, Lívia. Inventore nemo eum temporibus nobis at odio recusandae commodi expedita perferendis autem accusamus sapiente. . da Mata : Rodrigues, 2018.",
+   "item": "it001"
+  },
+  {
+   "indice": 4,
+   "texto": "5.  AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA (BRASIL). Iure veritatis dolores aliquid ratione officiis. In : MOREIRA, Ryan (org.), Vel officia quasi doloribus cumque officiis saepe. Câmara : Costa, 1995. p. 230–245.",
+   "item": "it021"
+  },
+  {
+   "indice": 5,
+   "texto": "6.  AUSTRALIAN INSTITUTE OF HEALTH AND WELFARE (AUSTRALIA). Facilis nobis vitae possimus dolores perspiciatis architecto temporibus atque accusamus nesciunt. Revue d’Épidémiologie et de Santé Publique. 1981. Vol. 23, no. 2, p. 122–126. DOI 10.99999/teste.reservado.13722.",
+   "item": "it007"
+  },
+  {
+   "indice": 6,
+   "texto": "7.  TRAN, Thi Hoa, CÂMARA, Sabrina e SOUZA, Ravy. Non error est officiis vero voluptatibus voluptas error ab. da Conceição : Lima Porto - EI, 1992.",
+   "item": "it005"
+  },
+  {
+   "indice": 7,
+   "texto": "8.  NOGUEIRA, Luiz Miguel, LOPES, Isabella, FONSECA, Luiz Fernando e FERREIRA, Maitê. A accusamus mollitia earum aliquid facere perferendis doloribus officia quis. Online. 2019. 12667. Available from: https://leis-reservado.gov/2756",
+   "item": "it013"
+  },
+  {
+   "indice": 8,
+   "texto": "9.  FONSECA, Larissa, GOMES, Levi, DUARTE, Henrique e MENDONÇA, Henry. Temporibus alias quasi vero expedita tempora unde ratione dicta magnam provident. Gaceta Sanitaria. 1993. Vol. 5, no. 4, p. 455–465. DOI 10.99999/teste.reservado.32235.",
+   "item": "it014"
+  },
+  {
+   "indice": 9,
+   "texto": "10.  PINTO, Manuela, SOUZA, Ana Laura, DA CONCEIÇÃO, Caio, DA LUZ, Milena, CIRINO, Ana Clara e ANDRADE, Isis. Quo ipsam consequuntur voluptatem corrupti vel soluta facere. Epidemiologia e Serviços de Saúde. 2016. Vol. 30, no. 5, p. 419–432.",
+   "item": "it011"
+  },
+  {
+   "indice": 10,
+   "texto": "12.  ZHANG, Xiaoming, CAVALCANTI, Henry e CAMPOS, Bento. Aut dolorem quis officia nulla. Online. 1981. [Accessed 4 novembro 2026]. Available from: https://exemplo-reservado.org/8708",
+   "item": "it003"
+  },
+  {
+   "indice": 11,
+   "texto": "13.  CASSIANO, Maitê. Laudantium odit voluptatibus quo id quasi cum. . Mendes : Fonseca da Paz - EI, 2011.",
+   "item": "it010"
+  },
+  {
+   "indice": 12,
+   "texto": "14.  ORGANIZACIÓN MUNDIAL DE LA SALUD. Eveniet incidunt in necessitatibus. Online. 2012. [Accessed 10 novembro 2026]. Available from: https://exemplo-reservado.org/4411",
+   "item": "it016"
+  },
+  {
+   "indice": 13,
+   "texto": "15.  BUNDESINSTITUT FÜR RISIKOBEWERTUNG. Voluptatibus autem autem ad repellat reprehenderit incidunt et asperiores numquam. Online. 2022. 4991. Available from: https://leis-reservado.gov/128",
+   "item": "it009"
+  },
+  {
+   "indice": 14,
+   "texto": "16.  FREITAS, Emilly, BARROS, Raul, BORGES, Nathan e REZENDE, Ana Lívia. Quam maiores quibusdam beatae similique animi ex reiciendis harum laborum ipsa. Epidemiologia & Prevenzione. Vol. 16, no. 8, p. 319–332. DOI 10.99999/teste.reservado.28538.",
+   "item": "it020"
+  },
+  {
+   "indice": 15,
+   "texto": "17.  AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA (BRASIL). Provident fuga voluptas sapiente natus repellendus. Silva : Novaes, 1995.",
+   "item": "it022"
+  },
+  {
+   "indice": 16,
+   "texto": "18.  SILVEIRA, Vitor. Fuga aperiam voluptatum tempore similique nemo similique. In : ALVES, Beatriz (org.), Rerum cum illo nesciunt quidem maiores perspiciatis voluptas perferendis enim quis nobis eligendi eum. Fernandes do Norte : Brito Cassiano e Filhos, 2016. p. 158–173.",
+   "item": "it018"
+  },
+  {
+   "indice": 17,
+   "texto": "19.  SOUSA, Ana Liz, PINTO, Elisa, ABREU, Rodrigo, MELO, Cecília, VARGAS, Felipe e LIMA, Rafael. Voluptas corrupti provident voluptatum quod fuga incidunt earum. . Novais de Minas : Silva, 2022.",
+   "item": "it019"
+  },
+  {
+   "indice": 18,
+   "texto": "21.  GREMIÃO, Camila, RODRIGUES, Alexandre, TEIXEIRA, Lucca e VASCONCELOS, Emanuella. Illum reprehenderit officiis placeat distinctio incidunt tempore sequi. Epidemiologia & Prevenzione. 1984. Vol. 51, no. 1, p. 848–856. DOI 10.99999/teste.reservado.39742.",
+   "item": "it006"
+  },
+  {
+   "indice": 19,
+   "texto": "22.  MARQUES-DA LUZ, Laís. Minus consequatur laboriosam aliquid occaecati. . Brito : Teixeira Marques - EI, 1984.",
+   "item": "it000"
+  },
+  {
+   "indice": 20,
+   "texto": "23.  SOUSA, Heloísa e SOUZA, Maria Laura. Dignissimos eveniet ad autem assumenda quaerat ratione earum laborum nihil repellendus quasi natus cupiditate. Revue d’Épidémiologie et de Santé Publique. 1982. Vol. 41, no. 11, p. 78–95. DOI 10.99999/teste.reservado.65494.",
+   "item": "it017"
+  },
+  {
+   "indice": 21,
+   "texto": "24.  GOMES-VIANA, Vitor Hugo. Officiis perspiciatis vero doloremque fugit saepe fugit sint officia architecto. . Abreu : Nunes Moreira S/A, 1999.",
+   "item": "extra0"
+  },
+  {
+   "indice": 22,
+   "texto": "25.  VAN DER CAVALCANTI, Josué, DA CONCEIÇÃO, Yuri e ARAGÃO, Sabrina. Sunt nesciunt exercitationem veniam temporibus beatae nihil. Das Gesundheitswesen. 1988. Vol. 76, no. 11, p. 244–249. DOI 10.99999/teste.reservado.81187.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1, 2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it012"
+   ],
+   "referencias": [
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "di Pires et al. (4)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it007"
+   ],
+   "referencias": [
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2, 7, 8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it013",
+    "it012"
+   ],
+   "referencias": [
+    6,
+    7,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8, 11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it015"
+   ],
+   "referencias": [
+    7,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7, 15, 16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it009",
+    "it020"
+   ],
+   "referencias": [
+    6,
+    13,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10, 12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it011"
+   ],
+   "referencias": [
+    10,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it018"
+   ],
+   "referencias": [
+    15,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7, 8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it013"
+   ],
+   "referencias": [
+    6,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 14, 16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it020",
+    "it021"
+   ],
+   "referencias": [
+    12,
+    14,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 6, 8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it013",
+    "it007"
+   ],
+   "referencias": [
+    0,
+    7,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2, 18, 23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it012",
+    "it017"
+   ],
+   "referencias": [
+    16,
+    1,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Organización Mundial de la Salud (14)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10, p. 171)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Fonseca et al. (9)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(11)",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(8, 11)",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(20)",
+   "item": "it004"
+  },
+  {
+   "ponto": "E",
+   "referencia": 21,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 22,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Beatae soluta possimus qui tenetur libero ducimus voluptatem occaecati tempore ut eius totam"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

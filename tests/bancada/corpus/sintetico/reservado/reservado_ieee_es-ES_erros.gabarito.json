@@ -1,0 +1,695 @@
+{
+ "id": "reservado_ieee_es-ES_erros",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "es-ES",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] V. A. Nguyen, E. Pedraza, M. P. Peñalver, y F. Alcolea, «Señora tuvo diferentes derecha aun iglesia sus ahí hombres negro permite», Preventive Veterinary Medicine, vol. 59, n.o 6, pp. 103-117, 1982.",
+   "item": "it005"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] Agenzia Italiana del Farmaco, A sentido mayor movimiento diferencia entonces dicen sala médico nuevos especie gobierno políticas busca algunos. 1996. [En línea]. Disponible en: https://leis-reservado.gov/426",
+   "item": "it008"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] J. Medina, D. Guillén, y C. Figueroa, Visita mundo yo todavía dónde informe donde militares duda sentido decir mujer. 1988. [En línea]. Disponible en: https://leis-reservado.gov/9147",
+   "item": "it014"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] M. Acuña-Gutierrez, B. Bárcena, y M. Tomé, Bastante visto millones buscar asociación. 2005. [En línea]. Disponible en: https://leis-reservado.gov/78",
+   "item": "it000"
+  },
+  {
+   "indice": 4,
+   "texto": "[7] Agenzia Italiana del Farmaco, Ii país dónde real hacía libro sean lópez. 2006. [En línea]. Disponible en: https://leis-reservado.gov/7601",
+   "item": "it017"
+  },
+  {
+   "indice": 5,
+   "texto": "[8] H. Heras, J. Mendoza, D. Tovar, y J. L. Jara, «Especial allí toda consumo acerca suficiente mesa particular pregunta cuenta», Consultoría ASAG S.A., Álava, 2023.",
+   "item": "it013"
+  },
+  {
+   "indice": 6,
+   "texto": "[9] S. Ferrando, «Españoles proyectos bueno salir mundo llegado modo toma resto interés lo cabo», Manufacturas Alberdi S.L., Barcelona, 1978.",
+   "item": "it021"
+  },
+  {
+   "indice": 7,
+   "texto": "[10] N. Font Revilla y D. Manzanares, «Fuerza cosa tomar barcelona», Giménez & Asociados S.L.L., Segovia, 2026.",
+   "item": "it002"
+  },
+  {
+   "indice": 8,
+   "texto": "[11] P. Villena, «Primeros operación sido resto otros el estar esfuerzo chile junio pesar», Epidemiologia e Serviços de Saúde, vol. 77, n.o 12, pp. 250-269, 1994, doi: 10.99999/teste.reservado.21156.",
+   "item": "it016"
+  },
+  {
+   "indice": 9,
+   "texto": "[12] Agenzia Italiana del Farmaco, La banco todos espacio resultado modelo américa permite dice g recursos mar seis. 2023. [En línea]. Disponible en: https://leis-reservado.gov/8329",
+   "item": "it007"
+  },
+  {
+   "indice": 10,
+   "texto": "[13] Bundesinstitut für Risikobewertung, «Pasó suelo color tú por ahí centro podía así». Accedido: 6 de noviembre de 2026. [En línea]. Disponible en: https://exemplo-reservado.org/8923",
+   "item": "it010"
+  },
+  {
+   "indice": 11,
+   "texto": "[14] S. Choi, A. Revilla, y A. Viñas, Yo efecto edad menos iba ve cada mundial problemas debía pensar campaña. 2016. [En línea]. Disponible en: https://leis-reservado.gov/8420",
+   "item": "it004"
+  },
+  {
+   "indice": 12,
+   "texto": "[15] I. Nebot y V. Mur, «Decir señora cama primer», Cadernos de Saúde Pública, vol. 34, n.o 3, pp. 456-470.",
+   "item": "it023"
+  },
+  {
+   "indice": 13,
+   "texto": "[16] T. di Gascón, «Nuestras pablo alguien parecía industria». Accedido: 16 de noviembre de 2026. [En línea]. Disponible en: https://exemplo-reservado.org/9824",
+   "item": "it001"
+  },
+  {
+   "indice": 14,
+   "texto": "[17] J. Liu, M. Badía, y G. Calderon, «Hubo blanco siete capital nivel régimen mujer», Cadernos de Saúde Pública, vol. 47, n.o 4, pp. 197-208, 1995, doi: 10.99999/teste.reservado.41156.",
+   "item": "it003"
+  },
+  {
+   "indice": 15,
+   "texto": "[18] E. Coloma, Y. Meléndez, J. Benavent, y D. Calderón, «Ciudad últimos estamos blanca pasar acerca», Revue d’Épidémiologie et de Santé Publique, vol. 57, n.o 2, pp. 895-905, 1995, doi: 10.99999/teste.reservado.55332.",
+   "item": "it011"
+  },
+  {
+   "indice": 16,
+   "texto": "[19] A. Diaz, «Alta camino pocos mayoría te zonas maría creo libro cuestión», en Cabeza g alguien mal todo veces propio libro tema dice, A. Ferrán, Ed., Santa Cruz de Tenerife: Despacho Cardona y asociados S.A.U, 2009, pp. 60-75.",
+   "item": "it015"
+  },
+  {
+   "indice": 17,
+   "texto": "[20] H. Carrillo, S. Manjón, N. Santos, y P. Pedrosa, «Visto unidad necesidad aún medio historia apoyo historia militares son nuevos», Carmela Milla Jara S.Com., Jaén, 1991.",
+   "item": "it025"
+  },
+  {
+   "indice": 18,
+   "texto": "[21] Public Health Agency of Canada, «Ambos noviembre actividad cultura personal persona hija esa control plan», One Health, vol. 47, n.o 3, pp. 386-390, 2013, doi: 10.99999/teste.reservado.20872.",
+   "item": "it009"
+  },
+  {
+   "indice": 19,
+   "texto": "[22] H. Carrillo, S. Manjón, N. Santos, y P. Pedrosa, «Jorge sino haciendo pequeño asimismo público española ciudad hubiera puede primeros esa lugar antes decía», Gaceta Sanitaria, vol. 15, n.o 8, pp. 298-307, 1991, doi: 10.99999/teste.reservado.98101.",
+   "item": "it024"
+  },
+  {
+   "indice": 20,
+   "texto": "[23] F. Pou y N. Tamarit, «Principal su largo los precisamente juicio obra datos fiscal asimismo muy larga», Cadernos de Saúde Pública, vol. 8, n.o 1, pp. 179-188, 1998, doi: 10.99999/teste.reservado.35056.",
+   "item": "it020"
+  },
+  {
+   "indice": 21,
+   "texto": "[24] E. Carpio, «Al instituto aun hoy trata buscar», Consultoría del Norte S.C.P, La Rioja, 1979.",
+   "item": "it012"
+  },
+  {
+   "indice": 22,
+   "texto": "[25] M. Jaén, L. Ordóñez, Á. Prats, y P. Capdevila, Importantes presenta tres socialista ir futuro sector largo llamado república otro consejo teoría. Barcelona: Supermercados Moll S.L., 2004.",
+   "item": "it018"
+  },
+  {
+   "indice": 23,
+   "texto": "[26] Agenzia Italiana del Farmaco, Teatro al cambios sabe nada más destino señaló r octubre. 2022. [En línea]. Disponible en: https://leis-reservado.gov/1214",
+   "item": "it022"
+  },
+  {
+   "indice": 24,
+   "texto": "[27] M. Beltran-Perales y M. Company, Número precio francisco expresión. Palencia: Milagros Roda Arnaiz S.L., 2021.",
+   "item": "extra0"
+  },
+  {
+   "indice": 25,
+   "texto": "[28] L. di Peral y N. Araujo, «Público estaba expresión sin», Epidemiologia e Serviços de Saúde, vol. 68, n.o 11, pp. 543-552, 1977.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Agenzia Italiana del Farmaco [2]",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nguyen et al. [1]",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [6], [7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it006",
+    "it017"
+   ],
+   "referencias": [
+    null,
+    null,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it021"
+   ],
+   "referencias": [
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6], [13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it006"
+   ],
+   "referencias": [
+    10,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6], [15], [16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it006",
+    "it001"
+   ],
+   "referencias": [
+    12,
+    null,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [7], [17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it019",
+    "it017"
+   ],
+   "referencias": [
+    14,
+    null,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[17], [18], [19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it015",
+    "it003"
+   ],
+   "referencias": [
+    15,
+    16,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16], [18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it001"
+   ],
+   "referencias": [
+    15,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it019"
+   ],
+   "referencias": [
+    17,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19], [21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it009"
+   ],
+   "referencias": [
+    16,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4], [7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it017"
+   ],
+   "referencias": [
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carrillo et al. [22]",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4], [13], [25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it010",
+    "it000"
+   ],
+   "referencias": [
+    22,
+    10,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[26]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it023"
+   ],
+   "referencias": [
+    0,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [22], [25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it018",
+    "it024"
+   ],
+   "referencias": [
+    2,
+    22,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2], [4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it000"
+   ],
+   "referencias": [
+    1,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it000"
+   ],
+   "referencias": [
+    0,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13, p. 7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Choi et al. [14]",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "[5], [6], [7]",
+   "item": "it019"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[5], [6], [7]",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[6], [13]",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[6], [15], [16]",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[5], [7], [17]",
+   "item": "it019"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[5], [20]",
+   "item": "it019"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[6]",
+   "item": "it006"
+  },
+  {
+   "ponto": "E",
+   "referencia": 24,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 25,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Embargo administración club suelo aun mercado plazo mirada seguridad puede algún hubiera conjunto quiero"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

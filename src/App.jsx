@@ -927,15 +927,15 @@ function ConteudoApp() {
           <div className="logo-boas-vindas">
             <Icone nome="book" tam={36} />
             <div>
-              <h1>Bibliografia (Zotero + Mendeley)</h1>
-              <p>Interface clássica de 3 painéis com sincronização segura no seu OneDrive ou Google Drive</p>
+              <h1>Bibliografia</h1>
+              <p>Gerenciador Científico &amp; Auditoria Forense de Manuscritos</p>
             </div>
           </div>
           <p className="explicacao">
-            Escolha a pasta onde sua biblioteca ficará salva. Cada artigo e PDF fica organizado na sua nuvem pessoal.
+            Escolha a pasta onde sua biblioteca ficará salva. Seus artigos, fichamentos e PDFs ficarão sincronizados com segurança na sua nuvem pessoal.
           </p>
           <div className="opcoes-pastas">
-            {(cfg.sugestoes || []).map((s) => (
+            {(cfg.sugestoes || []).map((s, idx) => (
               <button
                 key={s.caminho}
                 className="botao-pasta-sugerida"
@@ -943,7 +943,7 @@ function ConteudoApp() {
               >
                 <Icone nome="folder" tam={22} />
                 <div>
-                  <strong>Usar {s.nome} (Recomendado)</strong>
+                  <strong>{s.nome} {idx === 0 ? '(Recomendado)' : ''}</strong>
                   <span>{s.caminho}</span>
                 </div>
               </button>

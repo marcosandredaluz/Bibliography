@@ -1,0 +1,537 @@
+{
+ "id": "treino_ama_de-DE_perturbado",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Johann J. Bett vorbei Boden krank. In: Grein Groth M, Hrsg. Ein sieht Essen Himmel gehören scheinen laufen fährt bauen stehen sich natürlich. Löffler GmbH & Co. KG; 1988:8–23.",
+   "item": "it016"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Keudel T. Leben Garten erklären beim letzte Zug Tier wissen verlieren eigentlich. Journal of the American Medical Informatics Association. 1977;47(9):312–330. doi:10.99999/teste.treino.23158",
+   "item": "it014"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Haute Autorité de Santé (France). Gesicht Erde traurig zurück Stück Fahrrad dazu heiß neu zum dein. Schomber Briemer e.V.; 2025.",
+   "item": "it008"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Koch II L, Jacob R, Dehmel C. Ruhig Berg See Wohnung klettern Essen uns ich. Hermighausen GmbH; 1982.",
+   "item": "it022"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Renner FJ, Holsten D, Lindau T, Reinhardt HW, van der Dussen U, Hellwig B. Bild schnell haben den Stelle jetzt acht ihn Nacht nah hin wirklich. 1976. Zugegriffen 3. November 2026. https://exemplo-treino.org/7332",
+   "item": "it013"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Margraf M, Jäntsch L. Heißen über Geburtstag acht Wohnung hin Finger heraus offen Wort brauchen sechs schon dauern Sache. Das Gesundheitswesen. 2011;8(9):709–713. doi:10.99999/teste.treino.87124",
+   "item": "it018"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Wang W, Dörschner R, Boucsein W, Dobes P. Eigentlich nimmt Hase lieb plötzlich Hund waschen gleich. Das Gesundheitswesen. 1986;61(6):48–66. doi:10.99999/teste.treino.91226",
+   "item": "it003"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Le M, Heser R, Köhler J. Wenig Schiff ich Monate sich Winter suchen Eltern letzte. Rogge; 2025.",
+   "item": "it005"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Mude M, Trubin A. Acht bei einfach Ding Jahr fiel Winter. Preventive Veterinary Medicine. 2008;71(5):649–661.",
+   "item": "it011"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Beckmann R, Langern C, Rudolph M, Mude D. Freuen heißen doch Kind Kopf wünschen Boden Apfel oft. Revue d’Épidémiologie et de Santé Publique. 1984;14(3):220–235.",
+   "item": "it017"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Robert Koch-Institut. Besser Gesicht müssen Wald Weihnachten wenn. In: Mans A, Hrsg. Tragen lieb kochen Gott weg stellen danach besser. Heinz Tlustek GbR; 2000:220–235.",
+   "item": "it007"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Organização Pan-Americana da Saúde. Bauer schlimm schaffen wieder schön Oma versuchen Pferd früh verkaufen Beispiel dem Vater Ball. Revista de Saúde Pública. 1997;44(9):746–764. doi:10.99999/teste.treino.29893",
+   "item": "it009"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Kühnert-Wilmsen W, Hahn K, Herrmann V. Sind zusammen nicht schon Meer treffen schauen. Hethur; 2009.",
+   "item": "it000"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Øster E, Adler S, Wernecke O, Sölzer M. Stehen neben tot Mama Rad nass Seite fragen. 2001. https://leis-treino.gov/1168",
+   "item": "it006"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Kim S yeon. Genau packen Loch spät aber See fünf ging Hunger sagen gehören Zeit gleich sein. BMC Public Health. 1977;15(2):418–437.",
+   "item": "it004"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Stey H, Hein J, Kühnert E. Müssen leben unten endlich das weiter erklären. 2002. https://leis-treino.gov/3883",
+   "item": "it010"
+  },
+  {
+   "indice": 16,
+   "texto": "17. von Bähr H, Kruschwitz T, Mülichen M, Bien T. Klettern baden glücklich weil Dorf dich. Graf KG; 2016.",
+   "item": "it001"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Gotthard HD. Platz Glas laut wünschen Oma anfangen Stadt ihn wird. 1993. https://leis-treino.gov/2282",
+   "item": "it019"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Milla Castejón M, Müller J, Henk R. Lesen Ball wohl Mädchen Berg. Cadernos de Saúde Pública. 1992;46(4):471–476.",
+   "item": "it002"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Fiebig M, Jessel K, Blümel S. Durch früher traurig besser Wasser. Gaceta Sanitaria. 2006;33(12):869–873. doi:10.99999/teste.treino.13525",
+   "item": "it015"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Koch II L, Jacob R, Dehmel C. Der sonst Weg stellen Ferien an. Revue d’Épidémiologie et de Santé Publique. 1982;79(9):8–13. doi:10.99999/teste.treino.30440",
+   "item": "it021"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Robert Koch-Institut. Neun lustig kochen reiten her zum Wasser sechs See weg Hilfe gerade mein Licht. 2009. Zugegriffen 9. November 2026. https://exemplo-treino.org/9025",
+   "item": "it012"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Lindner N, Schulz V, Stahr J. Aus andere heute möglich nie Haare Erde Milch. Revista de Saúde Pública. 34(4):474–482. doi:10.99999/teste.treino.18179",
+   "item": "it020"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1,2",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it014"
+   ],
+   "referencias": [
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,3",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it008"
+   ],
+   "referencias": [
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margraf 6",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "10,11",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it007"
+   ],
+   "referencias": [
+    9,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,12",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it009"
+   ],
+   "referencias": [
+    0,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Haute Autorité de Santé (France) 3",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12,15,16",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it010",
+    "it009"
+   ],
+   "referencias": [
+    14,
+    15,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,19,20",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it015",
+    "it014"
+   ],
+   "referencias": [
+    18,
+    19,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "22",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Haute Autorité de Santé (France) 3",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,6",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it014"
+   ],
+   "referencias": [
+    5,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,19,20",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it015",
+    "it002"
+   ],
+   "referencias": [
+    5,
+    19,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Beckmann et al. 10",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7(S212)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "6",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Kim 15",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Gesund offen war Baum rot Schuh wieder kam sicher zur"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

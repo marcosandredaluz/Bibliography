@@ -1,0 +1,1306 @@
+{
+ "id": "elife-00047_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00047.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Ablasser A, Bauernfeind F, Hartmann G, Latz E, Fitzgerald KA, Hornung V. 2009. RIG-I-dependent sensing of poly(dA:dT) through the induction of an RNA polymerase III-transcribed RNA intermediate. Nat Immunol 10:1065–1072.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Akira S, Uematsu S, Takeuchi O. 2006. Pathogen recognition and innate immunity. Cell 124:783–801.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Balazs AB, Chen J, Hong CM, Rao DS, Yang L, Baltimore D. 2012. Antibody-based protection against HIV infection by vectored immunoprophylaxis. Nature 481:81–84.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Barber GN. 2011. Cytoplasmic DNA innate immune pathways. Immunol Rev 243:99–108.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Bardoel BW, Strijp JA. 2011. Molecular battle between host and bacterium: recognition in innate immunity. J Mol Recognit 24:1077–1086. doi: 10.1002/jmr.1156",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Blunt T, Gell D, Fox M, Taccioli GE, Lehmann AR, Jackson SP, et al.. 1996. Identification of a nonsense mutation in the carboxyl-terminal region of DNA-dependent protein kinase catalytic subunit in the scid mouse. Proc Natl Acad Sci USA 93:10285–10290.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Brill A, Fuchs TA, Savchenko AS, Thomas GM, Martinod K, De Meyer SF, et al.. 2012. Neutrophil extracellular traps promote deep vein thrombosis in mice. J Thromb Haemost 10:136–144.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Brinkmann V, Reichard U, Goosmann C, Fauler B, Uhlemann Y, Weiss DS, et al.. 2004. Neutrophil extracellular traps kill bacteria. Science 303:1532–1535.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Cavazzana I, Ceribelli A, Quinzanini M, Scarsi M, Airo P, Cattaneo R, et al.. 2008. Prevalence and clinical associations of anti-Ku antibodies in systemic autoimmune diseases. Lupus 17:727–732.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Cavazzana I, Angela C, Paolo A, Stefania Z, Angela T, Franco F. 2009. Anti-RNA polymerase III antibodies: a marker of systemic sclerosis with rapid onset and skin thickening progression. Autoimmun Rev 8:580–584.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Chiu YH, Macmillan JB, Chen ZJ. 2009. RNA polymerase III detects cytosolic DNA and induces type I interferons through the RIG-I pathway. Cell 138:576–591.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Delaloye J, Roger T, Steiner-Tardivel QG, Le Roy D, Knaup Reymond M, Akira S, et al.. 2009. Innate immune sensing of modified vaccinia virus Ankara (MVA) is mediated by TLR2-TLR6, MDA-5 and the NALP3 inflammasome. PLoS Pathog 5:e1000480.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Fuchs TA, Abed U, Goosmann C, Hurwitz R, Schulze I, Wahn V, et al.. 2007. Novel cell death program leads to neutrophil extracellular traps. J Cell Biol 176:231–241.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Gall A, Treuting P, Elkon KB, Loo YM, Gale M, Barber GN, et al.. 2012. Autoimmunity initiates in nonhematopoietic cells and progresses via lymphocytes in an interferon-dependent autoimmune disease. Immunity 36:120–131.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Gao Y, Chaudhuri J, Zhu C, Davidson L, Weaver DT, Alt FW. 1998. A targeted DNA-PKcs-null mutation reveals DNA-PK-independent functions for KU in V(D)J recombination. Immunity 9:367–376.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Gu Y, Jin S, Gao Y, Weaver DT, Alt FW. 1997. Ku70-deficient embryonic stem cells have increased ionizing radiosensitivity, defective DNA end-binding activity, and inability to support V(D)J recombination. Proc Natl Acad Sci USA 94:8076–8081.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Guimarães-Costa AB, Nascimento MT, Froment GS, Soares RP, Morgado FN, Conceição-Silva F, et al.. 2009. Leishmania amazonensis promastigotes induce and are killed by neutrophil extracellular traps. Proc Natl Acad Sci USA 106:6748–6753.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Hakkim A, Furnrohr BG, Amann K, Laube B, Abed UA, Brinkmann V, et al.. 2010. Impairment of neutrophil extracellular trap degradation is associated with lupus nephritis. Proc Natl Acad Sci USA 107:9813–9818.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Hammarsten O, Chu G. 1998. DNA-dependent protein kinase: DNA binding and activation in the absence of Ku. Proc Natl Acad Sci USA 95:525–530.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Hornung V, Latz E. 2010. Intracellular DNA recognition. Nat Rev Immunol 10:123–130.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Huston E, Lynch MJ, Mohamed A, Collins DM, Hill EV, MacLeod R, et al.. 2008. EPAC and PKA allow cAMP dual control over DNA-PK nuclear translocation. Proc Natl Acad Sci USA 105:12791–12796.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Ishii KJ, Coban C, Kato H, Takahashi K, Torii Y, Takeshita F, et al.. 2006. A Toll-like receptor-independent antiviral response induced by double-stranded B-form DNA. Nat Immunol 7:40–48.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Ishii KJ, Kawagoe T, Koyama S, Matsui K, Kumar H, Kawai T, et al.. 2008. TANK-binding kinase-1 delineates innate and adaptive immune responses to DNA vaccines. Nature 451:725–729.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Ishikawa H, Ma Z, Barber GN. 2009. STING regulates intracellular DNA-mediated, type I interferon-dependent innate immunity. Nature 461:788–792.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Karayel E, Bürckstümmer T, Bilban M, Dürnberger G, Weitzer S, Martinez J, et al.. 2009. The TLR-independent DNA recognition pathway in murine macrophages: Ligand features and molecular signature. Eur J Immunol 39:1929–1936.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Karpova AY, Trost M, Murray JM, Cantley LC, Howley PM. 2002. Interferon regulatory factor-3 is an in vivo target of DNA-PK. Proc Natl Acad Sci USA 99:2818–2823.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Kawane K, Ohtani M, Miwa K, Kizawa T, Kanbara Y, Yoshioka Y, et al.. 2006. Chronic polyarthritis caused by mammalian DNA that escapes from degradation in macrophages. Nature 443:998–1002.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Kimkong I, Avihingsanon Y, Hirankarn N. 2009. Expression profile of HIN200 in leukocytes and renal biopsy of SLE patients by real-time RT-PCR. Lupus 18:1066–1072.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Kumar H, Kawai T, Kato H, Sato S, Takahashi K, Coban C, et al.. 2006. Essential role of IPS-1 in innate immune responses against RNA viruses. J Exp Med 203:1795–1803.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Law M, Carter GC, Roberts KL, Hollinshead M, Smith GL. 2006. Ligand-induced and nonfusogenic dissolution of a viral membrane. Proc Natl Acad Sci USA 103:5989–5994.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Lee-Kirsch MA, Chowdhury D, Harvey S, Gong M, Senenko L, Engel K, et al.. 2007a. A mutation in TREX1 that impairs susceptibility to granzyme A-mediated cell death underlies familial chilblain lupus. J Mol Med (Berl) 85:531–537.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Lee-Kirsch MA, Gong M, Chowdhury D, Senenko L, Engel K, Lee YA, et al.. 2007b. Mutations in the gene encoding the 3'-5' DNA exonuclease TREX1 are associated with systemic lupus erythematosus. Nat Genet 39:1065–1067.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Lieber MR, Ma Y, Pannicke U, Schwarz K. 2003. Mechanism and regulation of human non-homologous DNA end-joining. Nat Rev Mol Cell Biol 4:712–720.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Medzhitov R. 2007. Recognition of microorganisms and activation of the immune response. Nature 449:819–826.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Moll U, Lau R, Sypes MA, Gupta MM, Anderson CW. 1999. DNA-PK, the DNA-activated protein kinase, is differentially expressed in normal and malignant human tissues. Oncogene 18:3114–3126.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Moss B. 2007. Poxviridae: the viruses and their replication. Fields Virology:2905–2946.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Navarro L, Mowen K, Rodems S, Weaver B, Reich N, Spector D, et al.. 1998. Cytomegalovirus activates interferon immediate-early response gene expression and an interferon regulatory factor 3-containing interferon-stimulated response element-binding complex. Mol Cell Biol 18:3796–3802.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Nussenzweig A, Chen C, da Costa Soares V, Sanchez M, Sokol K, Nussenzweig MC, et al.. 1996. Requirement for Ku80 in growth and immunoglobulin V(D)J recombination. Nature 382:551–555.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Oka T, Hikoso S, Yamaguchi O, Taneike M, Takeda T, Tamai T, et al.. 2012. Mitochondrial DNA that escapes from autophagy causes inflammation and heart failure. Nature 10:251–255. doi: 10.1038/nature10992",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Okabe Y, Kawane K, Nagata S. 2008. IFN regulatory factor (IRF) 3/7-dependent and -independent gene induction by mammalian DNA that escapes degradation. Eur J Immunol 38:3150–3158.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Paludan SR, Bowie AG, Horan KA, Fitzgerald KA. 2011. Recognition of herpesviruses by the innate immune system. Nat Rev Immunol 11:143–154.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Pichlmair A, Reis e Sousa C. 2007. Innate recognition of viruses. Immunity 27:370–383.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Rioux JD, Abbas AK. 2005. Paths to understanding the genetic basis of autoimmune disease. Nature 435:584–589.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Roberts TL, Idris A, Dunn JA, Kelly GM, Burnton CM, Hodgson S, et al.. 2009. HIN-200 proteins regulate caspase activation in response to foreign cytoplasmic DNA. Science 323:1057–1060.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Rupec RA, Poujol D, Grosgeorge J, Carle GF, Livolsi A, Peyron JF, et al.. 1999. Structural analysis, expression, and chromosomal localization of the mouse ikba gene. Immunogenetics 49:395–403.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Schattgen SA, Fitzgerald KA. 2011. The PYHIN protein family as mediators of host defenses. Immunol Rev 243:109–108.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Sharma S, DeOliveira RB, Kalantari P, Parroche P, Goutagny N, Jiang Z, et al.. 2011. Innate immune recognition of an AT-rich stem-loop DNA motif in the Plasmodium falciparum genome. Immunity 35:194–207.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Spurrell JC, Wiehler S, Zaheer RS, Sanders SP, Proud D. 2005. Human airway epithelial cells produce IP-10 (CXCL10) in vitro and in vivo upon rhinovirus infection. Am J Physiol Lung Cell Mol Physiol 289:L85–L95.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Stetson DB, Medzhitov R. 2006. Recognition of cytosolic DNA activates an IRF3-dependent innate immune response. Immunity 24:93–103.",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Stetson DB, Ko JS, Heidmann T, Medzhitov R. 2008. Trex1 prevents cell-intrinsic initiation of autoimmunity. Cell 134:587–598.",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Takaoka A, Wang Z, Choi MK, Yanai H, Negishi H, Ban T, et al.. 2007. DAI (DLM-1/ZBP1) is a cytosolic DNA sensor and an activator of innate immune response. Nature 448:501–505.",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Unterholzner L, Keating SE, Baran M, Horan KA, Jensen SB, Sharma S, et al.. 2010. IFI16 is an innate immune sensor for intracellular DNA. Nat Immunol 11:997–1004.",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "Upton JW, Kaiser WJ, Mocarski ES. 2012. DAI/ZBP1/DLM-1 complexes with RIP3 to mediate virus-induced programmed necrosis that is targeted by murine cytomegalovirus vIRA. Cell Host Microbe 11:290–297.",
+   "item": "bib53"
+  },
+  {
+   "indice": 53,
+   "texto": "Versteeg GA, García-Sastre A. 2010. Viral tricks to grid-lock the type I interferon system. Curr Opin Microbiol 13:508–516.",
+   "item": "bib54"
+  },
+  {
+   "indice": 54,
+   "texto": "Veuger SJ, Curtin NJ, Richardson CJ, Smith GC, Durkacz BW. 2003. Radiosensitization and DNA repair inhibition by the combined use of novel inhibitors of DNA-dependent protein kinase and poly(ADP-ribose) polymerase-1. Cancer Res 63:6008–6015.",
+   "item": "bib55"
+  },
+  {
+   "indice": 55,
+   "texto": "Walker JR, Corpina RA, Goldberg J. 2001. Structure of the Ku heterodimer bound to DNA and its implications for double-strand break repair. Nature 412:607–614.",
+   "item": "bib56"
+  },
+  {
+   "indice": 56,
+   "texto": "Wang Z, Choi MK, Ban T, Yanai H, Negishi H, Lu Y, et al.. 2008. Regulation of innate immune responses by DAI (DLM-1/ZBP1) and other DNA-sensing molecules. Proc Natl Acad Sci USA 105:5477–5482.",
+   "item": "bib57"
+  },
+  {
+   "indice": 57,
+   "texto": "Yaneva M, Kowalewski T, Lieber MR. 1997. Interaction of DNA-dependent protein kinase with DNA and with Ku: biochemical and atomic-force microscopy studies. EMBO J 16:5098–5112.",
+   "item": "bib58"
+  },
+  {
+   "indice": 58,
+   "texto": "Zhang X, Brann TW, Zhou M, Yang J, Oguariri RM, Lidie KB, et al.. 2011a. Cutting edge: Ku70 is a novel cytosolic DNA sensor that induces type III rather than type I IFN. J Immunol 186:4541–4545.",
+   "item": "bib59"
+  },
+  {
+   "indice": 59,
+   "texto": "Zhang Z, Yuan B, Bao M, Lu N, Kim T, Liu YJ. 2011b. The helicase DDX41 senses intracellular DNA mediated by the adaptor STING in dendritic cells. Nat Immunol 12:959–965.",
+   "item": "bib60"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Akira et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Medzhitov, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pichlmair and Reis e Sousa, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pichlmair and Reis e Sousa, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stetson and Medzhitov, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ishii et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2008",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ishikawa et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takaoka et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ablasser et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chiu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Unterholzner et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2011b",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ishii et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sharma et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Paludan et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barber, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nussenzweig et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Walker et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hammarsten and Chu, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yaneva et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lieber et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Huston et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Balazs et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stetson and Medzhitov, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Huston et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Balazs et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Karayel et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Unterholzner et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ishii et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Spurrell et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stetson and Medzhitov, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Navarro et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stetson and Medzhitov, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ishii et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ishikawa et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ishii et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kumar et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kumar et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ablasser et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chiu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ishii et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Navarro et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rupec et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Karpova et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Karpova et al. (2002)",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Karpova et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blunt et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guimarães-Costa et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Veuger et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Delaloye et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moss, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stetson and Medzhitov, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2011a",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moll et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blunt et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Karpova et al. (2002)",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ishii et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2011b",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fuchs et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brinkmann et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Oka et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brill et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rioux and Abbas, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kawane et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stetson et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Okabe et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kawane et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Okabe et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee-Kirsch et al., 2007a",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2007b",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stetson et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gall et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hakkim et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roberts et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kimkong et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cavazzana et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2009",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hornung and Latz, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Versteeg and García-Sastre, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bardoel and Strijp, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schattgen and Fitzgerald, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Upton et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Paludan et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barber, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gao et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Law et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

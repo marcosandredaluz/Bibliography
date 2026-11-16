@@ -1,0 +1,767 @@
+{
+ "id": "treino_ama_fr-FR_erros",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Gremião A, Da Silva V, Maurice V. Réveiller moins attitude imaginer madame conscience grain étage fuir depuis pourquoi oh étendue. 2018. https://leis-treino.gov/477",
+   "item": "it006"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Lerma Ros H, Roger A, Ruiz M, Leconte B. Hauteur minute fixe choix écouter autant forme titre. Epidemiologia e Serviços de Saúde. 1997;43(9):164‑181. doi:10.99999/teste.treino.52777",
+   "item": "it002"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Rodrigues J. Sourd justice ciel commun maladie immense. 1988. Consulté le 9 novembre 2026. https://exemplo-treino.org/7797",
+   "item": "it025"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Maurice M, Dumont R, Hebert N. Robe aspect courage jeunesse creuser vingt conclure lire voiture auteur planche ouvert. 1994. Consulté le 15 novembre 2026. https://exemplo-treino.org/8088",
+   "item": "it021"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Chevallier-Nicolas R, Hamel M, Garcia G. Nature qualité étonner exprimer entraîner pouvoir même tour dos problème alors naissance. Picard; 2023.",
+   "item": "it000"
+  },
+  {
+   "indice": 5,
+   "texto": "6. van der Gilbert G, Picard T, Bouvier A. Escalier circonstance grandir abri instinct aide. Revista de Saúde Pública. 2020;4(6):593‑609. doi:10.99999/teste.treino.96095",
+   "item": "it001"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Ruiz J, Marion J, Legros S, Vallée Y. Vivre remonter as dominer colon. Epidemiologia & Prevenzione. 1999;24(12):437‑442. doi:10.99999/teste.treino.63768",
+   "item": "it016"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Payet H, Guyon C, Merle A. Maison manquer couche haine rester genou intérêt horizon. Das Gesundheitswesen. 2023;41(8):800‑813. doi:10.99999/teste.treino.17331",
+   "item": "it019"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Martineau C, Lopes J, Costa C. Médecin installer empêcher membre obliger placer. One Health. 1979;33(11):142‑151.",
+   "item": "it024"
+  },
+  {
+   "indice": 9,
+   "texto": "11. Nguyen TH. Fier interrompre vide paysan couvrir celui possible lit connaissance arme. Ferreira; 1978.",
+   "item": "it005"
+  },
+  {
+   "indice": 10,
+   "texto": "12. Tessier M, Royer L, Pons F, Dupont S, Pages S, Dijoux Z. Siège garde sauter retomber contre inutile. Das Gesundheitswesen. 1978;49(4):587‑595. doi:10.99999/teste.treino.87716",
+   "item": "it013"
+  },
+  {
+   "indice": 11,
+   "texto": "13. Vallet P, Poulain P, Rousseau H, Pages C. Objet moindre habitant silence prouver. In: Ramos D, éd. Ministre te elle saint considérer pluie. Gilbert; 2005:177‑192.",
+   "item": "it017"
+  },
+  {
+   "indice": 12,
+   "texto": "14. Lee M jun, Leblanc P, Poulain O. Hôtel odeur bas appel prince honneur. In: Pons B, éd. Haut promettre cabinet vert fumer imaginer direction profondément continuer. Turpin SARL; 2011:36‑51.",
+   "item": "it004"
+  },
+  {
+   "indice": 13,
+   "texto": "15. Robert Koch-Institut. Nourrir côté recueillir ligne choix réveiller chaque hier près. 2001. Consulté le 4 novembre 2026. https://exemplo-treino.org/1614",
+   "item": "it009"
+  },
+  {
+   "indice": 14,
+   "texto": "16. Texier H, Hernandez É. Former joue officier table. In: Becker O, éd. Tourner meilleur village chat relation oser lueur là vieillard violent profond. Mathieu et Fils; 2026:289‑304.",
+   "item": "it015"
+  },
+  {
+   "indice": 15,
+   "texto": "17. Lambert A, Mahe M. Table affirmer énorme projet puis métier livre. Gaceta Sanitaria. 1995;27(9):757‑766.",
+   "item": "it026"
+  },
+  {
+   "indice": 16,
+   "texto": "18. Valette T. Exécuter folie passion intérêt blanc ne. Barthelemy et Fils; 1984.",
+   "item": "it022"
+  },
+  {
+   "indice": 17,
+   "texto": "19. Laurent M. Vêtement accuser saison permettre soumettre retourner pas étendue profond inconnu autant précéder. Gilles SARL; 1991.",
+   "item": "it027"
+  },
+  {
+   "indice": 18,
+   "texto": "20. São Paulo (Estado). Oeil pendre quoi juge inquiéter fenêtre certes fumée content oncle chemise non. Preventive Veterinary Medicine. 2003;7(10):711‑720.",
+   "item": "it008"
+  },
+  {
+   "indice": 19,
+   "texto": "21. Traore L, Gay C, Leduc M. Plaire distance français tout fine falloir roman grâce puissant cause. BMC Public Health. 2015;20(10):57‑67. doi:10.99999/teste.treino.76092",
+   "item": "it023"
+  },
+  {
+   "indice": 20,
+   "texto": "22. Mary H, Bertrand J, Fabre V, Lenoir H. Résister classe réalité âme quart. Aubry.",
+   "item": "it029"
+  },
+  {
+   "indice": 21,
+   "texto": "23. Brunet A, Bonnin R, Lebrun J, Schneider I. Commander proposer île profiter. Preventive Veterinary Medicine. 1984;12(9):43‑61. doi:10.99999/teste.treino.57973",
+   "item": "it010"
+  },
+  {
+   "indice": 22,
+   "texto": "24. Li J, Charles M, Da Silva S. Baisser santé salle exemple robe pays risquer cercle saint. In: Rousseau A, éd. Leur supérieur gros ligne vivant donc hasard prouver poste art papier réduire. Colas Chauvin S.A.S.; 1977:235‑250.",
+   "item": "it003"
+  },
+  {
+   "indice": 23,
+   "texto": "25. Launay R, Lelièvre R, Cohen E, Pereira É. Roi tirer cas intention finir même action éteindre. Vallet; 2015.",
+   "item": "it018"
+  },
+  {
+   "indice": 24,
+   "texto": "26. Cordier M. Colline camarade peur preuve aider étouffer projet justice sûr. In: Maillard Z, éd. Prétendre cuisine coup étudier tuer seuil appel désirer poste. Brun SARL; 2008:69‑84.",
+   "item": "it030"
+  },
+  {
+   "indice": 25,
+   "texto": "27. Cordier M. Papier marquer journée divers noire angoisse sur. 2008. Consulté le 16 novembre 2026. https://exemplo-treino.org/3716",
+   "item": "it031"
+  },
+  {
+   "indice": 26,
+   "texto": "28. Marchal Y, Mathieu M, De Sousa A. Étrange odeur battre tempête. Da Costa et Fils; 2026.",
+   "item": "it020"
+  },
+  {
+   "indice": 27,
+   "texto": "29. Robert Koch-Institut. Autant puissant enlever instant hasard écrire nombreux frère claire jour. Gaceta Sanitaria. 2020;19(7):517‑522.",
+   "item": "it007"
+  },
+  {
+   "indice": 28,
+   "texto": "31. Mathieu V, Cousin M, Roussel A. Si dehors courant quarante risquer quinze poussière prochain. Cadernos de Saúde Pública. 2004;44(7):422‑440. doi:10.99999/teste.treino.35084",
+   "item": "it011"
+  },
+  {
+   "indice": 29,
+   "texto": "32. Seguin B. Continuer te chien élément terminer espace représenter cuisine nombre. Berger; 1980.",
+   "item": "it012"
+  },
+  {
+   "indice": 30,
+   "texto": "33. Garcia-Perret R, Dupré A, Vasseur A. Énergie avenir tout inutile tombe revenir. BMC Public Health. 1986;58(11):704‑719.",
+   "item": "extra0"
+  },
+  {
+   "indice": 31,
+   "texto": "34. del Vasseur M. Demi promener avec social mode pitié honte sens. In: Besson A, éd. Plutôt rester propre tard leur haine sommeil. Meunier Merle S.A.; 2020:290‑305.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1,2",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it002"
+   ],
+   "referencias": [
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4–6",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it000",
+    "it001"
+   ],
+   "referencias": [
+    3,
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7–9",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it019",
+    "it024"
+   ],
+   "referencias": [
+    6,
+    7,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "10–12",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it005",
+    "it013"
+   ],
+   "referencias": [
+    null,
+    9,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,7,13",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it016",
+    "it017"
+   ],
+   "referencias": [
+    4,
+    6,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,8,11",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it019",
+    "it000"
+   ],
+   "referencias": [
+    9,
+    7,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11,14",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it005"
+   ],
+   "referencias": [
+    12,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Texier 16",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vallet et al. 13",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18–20",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it027",
+    "it008"
+   ],
+   "referencias": [
+    16,
+    17,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "22",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,24",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it003"
+   ],
+   "referencias": [
+    8,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25,26",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it030"
+   ],
+   "referencias": [
+    23,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "27",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4,17",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it021"
+   ],
+   "referencias": [
+    15,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "24",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,24",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it003"
+   ],
+   "referencias": [
+    5,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16,24",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it003"
+   ],
+   "referencias": [
+    14,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,12",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it013"
+   ],
+   "referencias": [
+    5,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "28",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13,14,20",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it008",
+    "it017"
+   ],
+   "referencias": [
+    12,
+    18,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,4,20",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it008",
+    "it021"
+   ],
+   "referencias": [
+    0,
+    18,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "29",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,9,21",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it024",
+    "it023"
+   ],
+   "referencias": [
+    0,
+    8,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "20",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "24,30",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it028"
+   ],
+   "referencias": [
+    22,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mathieu et al. 31",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "32",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "29(p293)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "25",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "3",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Cordier 27",
+   "tipo": "narrativa",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "10–12",
+   "item": "it014"
+  },
+  {
+   "ponto": "D",
+   "citacao": "24,30",
+   "item": "it028"
+  },
+  {
+   "ponto": "E",
+   "referencia": 30,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 31,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Service machine cour rien fonction enfant quinze parvenir deviner endormir"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

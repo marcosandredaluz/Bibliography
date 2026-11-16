@@ -1,0 +1,573 @@
+{
+ "id": "treino_chicago-ad_pt-PT_perturbado",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "pt-PT",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Barbosa, Micael, Diego Neto, e Micael Loureiro. 1979. «Facilis voluptatem labore repellat odio aut culpa possimus dolorum». Revista de Saúde Pública 65 (12): 586–601.",
+   "item": "it018"
+  },
+  {
+   "indice": 1,
+   "texto": "Barros, Mateus da, Flor Valente, Valentim Mendes, e Lisandro Tavares. 1993. «Non quae ipsam corporis». Ramos Lda.",
+   "item": "it001"
+  },
+  {
+   "indice": 2,
+   "texto": "Carvalho, Alícia, Daniela Sousa, Lúcia Mota, e David Morais. 2006. «Fuga nesciunt ipsum esse voluptatum». Revue d’Épidémiologie et de Santé Publique 16 (5): 602–20. https://doi.org/10.99999/teste.treino.59335.",
+   "item": "it014"
+  },
+  {
+   "indice": 3,
+   "texto": "Carvalho, Débora. s.d. «Delectus ipsum natus sit nulla eaque illo». One Health 38 (6): 59–63. https://doi.org/10.99999/teste.treino.50062.",
+   "item": "it020"
+  },
+  {
+   "indice": 4,
+   "texto": "Fugiat officiis tempore occaecati nihil officia placeat tempora eum, Legislação N. 13728 (1980). https://leis-treino.gov/8027.",
+   "item": "it022"
+  },
+  {
+   "indice": 5,
+   "texto": "Garcia, Dinis, César Faria, e Mélanie Esteves. 1985. «Ipsa ea fugit maiores quis in dolor». Das Gesundheitswesen 80 (5): 888–92. https://doi.org/10.99999/teste.treino.12614.",
+   "item": "it013"
+  },
+  {
+   "indice": 6,
+   "texto": "Guerreiro, Alice. 2013. «Perspiciatis laudantium accusantium doloribus consectetur eius provident doloremque blanditiis eveniet». Preventive Veterinary Medicine 73 (5): 56–69.",
+   "item": "it015"
+  },
+  {
+   "indice": 7,
+   "texto": "Hic neque voluptatum et culpa voluptatem similique perferendis, Legislação N. 3312 (2008). https://leis-treino.gov/1578.",
+   "item": "it007"
+  },
+  {
+   "indice": 8,
+   "texto": "Instituto Nacional de Câncer (Brasil). 2012. «Sint accusamus ipsum ullam et ut». BMC Public Health 59 (1): 866–73. https://doi.org/10.99999/teste.treino.51395.",
+   "item": "it008"
+  },
+  {
+   "indice": 9,
+   "texto": "Instituto Nacional de Câncer (Brasil). 2016. «Harum totam veritatis quod quisquam enim». Gaceta Sanitaria 58 (10): 533–37. https://doi.org/10.99999/teste.treino.98023.",
+   "item": "it009"
+  },
+  {
+   "indice": 10,
+   "texto": "Le, Thi Hoa, Salvador Moura, e Artur Amorim. 1990. Unde eveniet odit voluptatem doloribus voluptatem neque tenetur mollitia ullam asperiores. Magalhães.",
+   "item": "it005"
+  },
+  {
+   "indice": 11,
+   "texto": "Liu, Jing, e Emília Cunha. 2026. «Mollitia soluta repellendus animi magnam saepe». https://exemplo-treino.org/1069.",
+   "item": "it003"
+  },
+  {
+   "indice": 12,
+   "texto": "Marques, José, Bruno Mota, César Valente, e Nelson Pinho. 2013. Nobis natus voluptas velit alias. Andrade.",
+   "item": "it012"
+  },
+  {
+   "indice": 13,
+   "texto": "Marques, Lúcia, Cristiano Andrade, Mia Henriques, Joaquim Nogueira, Larissa Campos, e Álvaro Maia. 1980. «Fuga eos expedita soluta vel reiciendis vero voluptatibus tempora illo debitis accusantium». Em Error molestiae impedit veniam illo occaecati enim, editado por Emanuel Amorim. Pires e Filhos.",
+   "item": "it021"
+  },
+  {
+   "indice": 14,
+   "texto": "Morais, Nicole. 2009. «At et fugit similique corrupti qui voluptatum quae perspiciatis voluptatibus voluptatem». Journal of the American Medical Informatics Association 67 (9): 213–17.",
+   "item": "it016"
+  },
+  {
+   "indice": 15,
+   "texto": "Neto, Érica. 2006. «Sunt vero provident cupiditate maxime aperiam quod recusandae quae totam». One Health 33 (3): 436–42.",
+   "item": "it011"
+  },
+  {
+   "indice": 16,
+   "texto": "Neto-Morais, Ricardo. 1976. In a ullam rerum assumenda eaque cupiditate. Correia Lda.",
+   "item": "it000"
+  },
+  {
+   "indice": 17,
+   "texto": "Neves, Diego, Cláudio Cunha, e Igor Santos. 1990. «Repellat iste adipisci quam commodi». Esteves.",
+   "item": "it017"
+  },
+  {
+   "indice": 18,
+   "texto": "O’Connor, Larissa, e Rafaela Azevedo. 1996. «Laudantium non quibusdam neque reprehenderit consectetur officiis delectus sunt». https://exemplo-treino.org/1965.",
+   "item": "it006"
+  },
+  {
+   "indice": 19,
+   "texto": "Pacheco, Brian, Anita Carvalho, e Petra Fonseca. 2025. «Cum ipsum officiis vitae officiis ab ullam inventore». Preventive Veterinary Medicine 67 (8): 780–97. https://doi.org/10.99999/teste.treino.78737.",
+   "item": "it019"
+  },
+  {
+   "indice": 20,
+   "texto": "Placeat pariatur odit deserunt distinctio natus praesentium unde, Legislação N. 9215 (1976). https://leis-treino.gov/982.",
+   "item": "it004"
+  },
+  {
+   "indice": 21,
+   "texto": "Toledo Arjona, Victoria, e Xavier Pires. 1978. «Cum quia sed nostrum sunt ea animi recusandae veniam quo reprehenderit possimus ipsam». Preventive Veterinary Medicine 6 (2): 620–34. https://doi.org/10.99999/teste.treino.29369.",
+   "item": "it002"
+  },
+  {
+   "indice": 22,
+   "texto": "Vieira, Isabela. 2008. «Ab fugiat quibusdam vero neque eveniet». One Health 49 (7): 347–57. https://doi.org/10.99999/teste.treino.89868.",
+   "item": "it010"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "A. Carvalho et al. (2006)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Neves et al. 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vieira 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fugiat officiis tempore occaecati nihil officia placeat tempora eum 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(A. Carvalho et al. 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(O’Connor e Azevedo 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Morais 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Garcia et al. (1985)",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Liu e Cunha 2026; D. Carvalho, s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it020"
+   ],
+   "referencias": [
+    11,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Neves et al. 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Toledo Arjona e Pires 1978; Neto 2006; Instituto Nacional de Câncer (Brasil) 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it011",
+    "it008"
+   ],
+   "referencias": [
+    21,
+    15,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Neto-Morais 1976; Morais 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it016"
+   ],
+   "referencias": [
+    16,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Barros et al. 1993; Le et al. 1990; Garcia et al. 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it005",
+    "it013"
+   ],
+   "referencias": [
+    1,
+    10,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le et al. 1990; A. Carvalho et al. 2006; J. Marques et al. 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it014",
+    "it012"
+   ],
+   "referencias": [
+    10,
+    2,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Guerreiro 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Garcia et al. 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Neves et al. 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Toledo Arjona e Pires 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hic neque voluptatum et culpa voluptatem similique perferendis 2008; Instituto Nacional de Câncer (Brasil) 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it009"
+   ],
+   "referencias": [
+    7,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Morais 2009; Fugiat officiis tempore occaecati nihil officia placeat tempora eum 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it022"
+   ],
+   "referencias": [
+    14,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil) 2016; Fugiat officiis tempore occaecati nihil officia placeat tempora eum 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it022"
+   ],
+   "referencias": [
+    9,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Barros et al. 1993; Liu e Cunha 2026; Vieira 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it003",
+    "it010"
+   ],
+   "referencias": [
+    1,
+    11,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(D. Carvalho, s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil) 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Barbosa et al. 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(L. Marques et al. 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Neto-Morais 1976; Garcia et al. 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it013"
+   ],
+   "referencias": [
+    16,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(J. Marques et al. 2013; Instituto Nacional de Câncer (Brasil) 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it008"
+   ],
+   "referencias": [
+    12,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Neto-Morais 1976; Placeat pariatur odit deserunt distinctio natus praesentium unde 1976; Toledo Arjona e Pires 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it004",
+    "it002"
+   ],
+   "referencias": [
+    16,
+    20,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pacheco et al. 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil) 2016; D. Carvalho, s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it020"
+   ],
+   "referencias": [
+    9,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil) 2012, 264)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(O’Connor e Azevedo 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Barbosa et al. 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil) 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Morais (2009)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Nostrum totam perferendis nobis dolore molestias voluptates quibusdam tempore nostrum voluptatum culpa repudiandae natus nostrum dolorum"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,1285 @@
+{
+ "id": "elife-00308_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00308.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Bays NW, Wilhovsky SK, Goradia A, Hodgkiss-Harlow K, Hampton RY. 2001. HRD4/NPL4 is required for the proteasomal processing of ubiquitinated ER proteins. Mol Biol Cell 12:4114–4128.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Becker T, Armache JP, Jarasch A, Anger AM, Villa E, Sieber H, et al.. 2011. Structure of the no-go mRNA decay complex Dom34-Hbs1 bound to a stalled 80S ribosome. Nat Struct Mol Biol 18:715–720.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Bengtson MH, Joazeiro CA. 2010. Role of a ribosome-associated E3 ubiquitin ligase in protein quality control. Nature 467:470–473.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Brandman O, Stewart-Ornstein J, Wong D, Larson A, Williams CC, Li GW, et al.. 2012. A ribosome-bound quality control complex triggers degradation of nascent peptides and signals translation stress. Cell 151:1042–1054.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Bukau B, Weissman J, Horwich A. 2006. Molecular chaperones and protein quality control. Cell 125:443–451.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Carter AP, Clemons WM, Brodersen DE, Morgan-Warren RJ, Wimberly BT, Ramakrishnan V. 2000. Functional insights from the structure of the 30S ribosomal subunit and its interactions with antibiotics. Nature 407:340–348.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Chu J, Hong NA, Masuda CA, Jenkins BV, Nelms KA, Goodnow CC, et al.. 2009. A mouse forward genetics screen identifies LISTERIN as an E3 ubiquitin ligase involved in neurodegeneration. Proc Natl Acad Sci USA 106:2097–2103.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Dennissen FJ, Kholod N, van Leeuwen FW. 2012. The ubiquitin proteasome system in neurodegenerative diseases: culprit, accomplice or victim?. Prog Neurobiol 96:190–207.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Deshaies RJ, Joazeiro CA. 2009. RING domain E3 ubiquitin ligases. Annu Rev Biochem 78:399–434.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Dimitrova LN, Kuroha K, Tatematsu T, Inada T. 2009. Nascent peptide-dependent translation arrest leads to Not4p-mediated protein degradation by the proteasome. J Biol Chem 284:10343–10352.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Doma MK, Parker R. 2006. Endonucleolytic cleavage of eukaryotic mRNAs with stalls in translation elongation. Nature 440:561–564.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Finley D. 2009. Recognition and processing of ubiquitin-protein conjugates by the proteasome. Annu Rev Biochem 78:477–513.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Frischmeyer PA, van Hoof A, O'Donnell K, Guerrerio AL, Parker R, Dietz HC. 2002. An mRNA surveillance mechanism that eliminates transcripts lacking termination codons. Science 295:2258–2261.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Gautschi M, Just S, Mun A, Ross S, Rucknagel P, Dubaquie Y, et al.. 2003. The yeast N(alpha)-acetyltransferase NatA is quantitatively anchored to the ribosome and interacts with nascent polypeptides. Mol Cell Biol 23:7403–7414.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Halbeisen RE, Gerber AP. 2009. Stress-dependent coordination of transcriptome and translatome in yeast. PLoS Biol 7:e1000105.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Halbeisen RE, Scherrer T, Gerber AP. 2009. Affinity purification of ribosomes to access the translatome. Methods 48:306–310.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Hartl FU, Bracher A, Hayer-Hartl M. 2011. Molecular chaperones in protein folding and proteostasis. Nature 475:324–332.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Heck JW, Cheung SK, Hampton RY. 2010. Cytoplasmic protein quality control degradation mediated by parallel actions of the E3 ubiquitin ligases Ubr1 and San1. Proc Natl Acad Sci USA 107:1106–1111.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Hobden AN, Cundliffe E. 1978. Mode of action of alpha-sarcin and a novel assay of puromycin reaction. Biochem J 170:57–61.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Hwang CS, Shemorry A, Varshavsky A. 2010. N-terminal acetylation of cellular proteins creates specific degradation signals. Science 327:973–977.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Hwang CS, Sukalo M, Batygin O, Addor MC, Brunner H, Aytes AP, et al.. 2011. Ubiquitin ligases of the N-end rule pathway: assessment of mutations in UBR1 that cause the Johanson-Blizzard syndrome. PLoS One 6:e24925.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Ingolia NT, Lareau LF, Weissman JS. 2011. Ribosome profiling of mouse embryonic stem cells reveals the complexity and dynamics of mammalian proteomes. Cell 147:789–802.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Ito-Harashima S, Kuroha K, Tatematsu T, Inada T. 2007. Translation of the poly(A) tail plays crucial roles in nonstop mRNA surveillance via translation repression and protein destabilization by proteasome in yeast. Genes Dev 21:519–524.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Jentsch S, Rumpf S. 2007. Cdc48 (p97): a “molecular gearbox” in the ubiquitin pathway?. Trends Biochem Sci 32:6–11.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Johnson JO, Mandrioli J, Benatar M, Abramzon Y, Van Deerlin VM, Trojanowski JQ, et al.. 2010. Exome sequencing reveals VCP mutations as a cause of familial ALS. Neuron 68:857–864.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Ju JS, Fuentealba RA, Miller SE, Jackson E, Piwnica-Worms D, Baloh RH, et al.. 2009. Valosin-containing protein (VCP) is required for autophagy and is disrupted in VCP disease. J Cell Biol 187:875–888.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Kim SY, Craig EA. 2005. Broad sensitivity of Saccharomyces cerevisiae lacking ribosome-associated chaperone ssb or zuo1 to cations, including aminoglycosides. Eukaryot Cell 4:82–89.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Koga H, Kaushik S, Cuervo AM. 2011. Protein homeostasis and aging: the importance of exquisite quality control. Ageing Res Rev 10:205–215.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Kramer G, Boehringer D, Ban N, Bukau B. 2009. The ribosome as a platform for co-translational processing, folding and targeting of newly synthesized proteins. Nat Struct Mol Biol 16:589–597.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Kuroha K, Tatematsu T, Inada T. 2009. Upf1 stimulates degradation of the product derived from aberrant messenger RNA containing a specific nonsense mutation by the proteasome. EMBO Rep 10:1265–1271.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Lu J, Deutsch C. 2008. Electrostatics in the ribosomal tunnel modulate chain elongation rates. J Mol Biol 384:73–86.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Manno A, Noguchi M, Fukushi J, Motohashi Y, Kakizuka A. 2010. Enhanced ATPase activities as a primary defect of mutant valosin-containing proteins that cause inclusion body myopathy associated with Paget disease of bone and frontotemporal dementia. Genes Cells 15:911–922.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Mariappan M, Li XZ, Stefanovic S, Sharma A, Mateja A, Keenan RJ, et al.. 2010. A ribosome-associating factor chaperones tail-anchored membrane proteins. Nature 466:1120–1138.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Meyer H, Bug M, Bremer S. 2012. Emerging functions of the VCP/p97 AAA-ATPase in the ubiquitin system. Nat Cell Biol 14:117–123.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Nathans D. 1964. Puromycin inhibition of protein Synthesis: incorporation of puromycin into peptide chains. Proc Natl Acad Sci USA 51:585–592.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Oeffinger M, Wei KE, Rogers R, DeGrasse JA, Chait BT, Aitchison JD, et al.. 2007. Comprehensive analysis of diverse ribonucleoprotein complexes. Nat Methods 4:951–956.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Parker R. 2012. RNA degradation in Saccharomyces cerevisae. Genetics 191:671–702.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Pisareva VP, Skabkin MA, Hellen CU, Pestova TV, Pisarev AV. 2011. Dissociation by Pelota, Hbs1 and ABCE1 of mammalian vacant 80S ribosomes and stalled elongation complexes. EMBO J 30:1804–1817.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Polevoda B, Brown S, Cardillo TS, Rigby S, Sherman F. 2008. Yeast N(alpha)-terminal acetyltransferases are associated with ribosomes. J Cell Biochem 103:492–508.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Powers ET, Morimoto RI, Dillin A, Kelly JW, Balch WE. 2009. Biological and chemical approaches to diseases of proteostasis deficiency. Annu Rev Biochem 78:959–991.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Ritz D, Vuk M, Kirchner P, Bug M, Schutz S, Hayer A, et al.. 2011. Endolysosomal sorting of ubiquitylated caveolin-1 is regulated by VCP and UBXD1 and impaired by VCP disease mutations. Nat Cell Biol 13:1116–1123.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Rosas-Sandoval G, Ambrogelly A, Rinehart J, Wei D, Cruz-Vera LR, Graham DE, et al.. 2002. Orthologs of a novel archaeal and of the bacterial peptidyl-tRNA hydrolase are nonessential in yeast. Proc Natl Acad Sci USA 99:16707–16712.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Segref A, Hoppe T. 2009. Think locally: control of ubiquitin-dependent protein degradation in neurons. EMBO Rep 10:44–50.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Sha Z, Brill LM, Cabrera R, Kleifeld O, Scheliga JS, Glickman MH, et al.. 2009. The eIF3 interactome reveals the translasome, a supercomplex linking protein synthesis and degradation machineries. Mol Cell 36:141–152.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Shoemaker CJ, Eyler DE, Green R. 2010. Dom34:Hbs1 promotes subunit dissociation and peptidyl-tRNA drop-off to initiate no-go decay. Science 330:369–372.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Shoemaker CJ, Green R. 2011. Kinetic analysis reveals the ordered coupling of translation termination and ribosome recycling in yeast. Proc Natl Acad Sci USA 108:E1392–E1398.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Shoemaker CJ, Green R. 2012. Translation drives mRNA quality control. Nat Struct Mol Biol 19:594–601.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Smith MH, Ploegh HL, Weissman JS. 2011. Road to ruin: targeting proteins for degradation in the endoplasmic reticulum. Science 334:1086–1090.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Takahashi S, Araki Y, Ohya Y, Sakuno T, Hoshino S, Kontani K, et al.. 2008. Upf1 potentially serves as a RING-related E3 ubiquitin ligase via its association with Upf3 in yeast. RNA 14:1950–1958.",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Tresse E, Salomons FA, Vesa J, Bott LC, Kimonis V, Yao TP, et al.. 2010. VCP/p97 is essential for maturation of ubiquitin-containing autophagosomes and this function is impaired by mutations that cause IBMPFD. Autophagy 6:217–227.",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Tsuboi T, Kuroha K, Kudo K, Makino S, Inoue E, Kashima I, et al.. 2012. Dom34:hbs1 plays a general role in quality-control systems by dissociation of a stalled ribosome at the 3′ end of aberrant mRNA. Mol Cell 46:518–529.",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Turner GC, Varshavsky A. 2000. Detecting and measuring cotranslational protein degradation in vivo. Science 289:2117–2120.",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "van Hoof A, Frischmeyer PA, Dietz HC, Parker R. 2002. Exosome-mediated recognition and degradation of mRNAs lacking a termination codon. Science 295:2262–2264.",
+   "item": "bib53"
+  },
+  {
+   "indice": 53,
+   "texto": "Verma R, Oania R, Fang R, Smith GT, Deshaies RJ. 2011. Cdc48/p97 mediates UV-dependent turnover of RNA Pol II. Mol Cell 41:82–92.",
+   "item": "bib54"
+  },
+  {
+   "indice": 54,
+   "texto": "Watts GD, Wymer J, Kovach MJ, Mehta SG, Mumm S, Darvish D, et al.. 2004. Inclusion body myopathy associated with Paget disease of bone and frontotemporal dementia is caused by mutant valosin-containing protein. Nat Genet 36:377–381.",
+   "item": "bib55"
+  },
+  {
+   "indice": 55,
+   "texto": "Wilson MA, Meaux S, van Hoof A. 2007. A genomic screen in yeast reveals novel aspects of nonstop mRNA metabolism. Genetics 177:773–784.",
+   "item": "bib56"
+  },
+  {
+   "indice": 56,
+   "texto": "Ye Y. 2006. Diverse functions with a common regulator: ubiquitin takes command of an AAA ATPase. J Struct Biol 156:29–40.",
+   "item": "bib57"
+  },
+  {
+   "indice": 57,
+   "texto": "Ye Y, Meyer HH, Rapoport TA. 2003. Function of the p97-Ufd1-Npl4 complex in retrotranslocation from the ER to the cytosol: dual recognition of nonubiquitinated polypeptide segments and polyubiquitin chains. J Cell Biol 162:71–84.",
+   "item": "bib58"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Koga et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bukau et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smith et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Powers et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hartl et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dennissen et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hwang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gautschi et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Polevoda et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turner and Varshavsky, 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lu and Deutsch, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kramer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ingolia et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Parker, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shoemaker and Green, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takahashi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuroha et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ito-Harashima et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dimitrova et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frischmeyer et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Doma and Parker, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Becker et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tsuboi et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pisareva et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shoemaker et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shoemaker and Green, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van Hoof et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deshaies and Joazeiro, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Finley, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ye, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Meyer et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jentsch and Rumpf, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carter et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim and Craig, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Oeffinger et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halbeisen and Gerber, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halbeisen et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halbeisen and Gerber, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bays et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ye et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nathans, 1964",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hobden and Cundliffe, 1978",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mariappan et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dimitrova et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turner and Varshavsky, 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wilson et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Verma et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Heck et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takahashi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuroha et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wilson et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rosas-Sandoval et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brandman et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brandman et al. (2012)",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brandman et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bengtson and Joazeiro, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turner and Varshavsky, 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ingolia et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ito-Harashima et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tsuboi et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sha et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Segref and Hoppe, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hwang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Johnson et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Watts et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Manno et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ritz et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ju et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tresse et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halbeisen and Gerber, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halbeisen et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Oeffinger et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tsuboi et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hobden and Cundliffe, 1978",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mariappan et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

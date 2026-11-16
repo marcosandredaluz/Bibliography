@@ -1,0 +1,155 @@
+{
+ "id": "elife-00301_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00301.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Chisari FV, Isogawa M, Wieland SF. 2010. Pathogenesis of hepatitis B virus infection. Pathol Biol (Paris) 58:258–266.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Glebe D, Urban S. 2007. Viral and cellular determinants involved in hepadnaviral entry. World J Gastroenterol 13:22–38.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Hagenbuch B, Meier PJ. 1994. Molecular cloning, chromosomal localization, and functional characterization of a human liver Na+/bile acid cotransporter. J Clin Invest 93:1326–1331.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Kwon H, Lok AS. 2011. Hepatitis B therapy. Nat Rev Gastroenterol Hepatol 8:275–284.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Makino S, Chang MF, Shieh CK, Kamahora T, Vannier DM, Govindarajan S, et al.. 1987. Molecular cloning and sequencing of a human hepatitis delta (delta) virus RNA. Nature 329:343–346.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Suchanek M, Radzikowska A, Thiele C. 2005. Photo-leucine and photo-methionine allow identification of protein-protein interactions in living cells. Nat Methods 2:261–267.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Wieland SF, Chisari FV. 2005. Stealth and cunning: hepatitis B and hepatitis C viruses. J Virol 79:9369–9380.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Yan H, Zhong G, Xu G, He W, Jing Z, Gao Z, et al.. 2012. Sodium taurocholate cotransporting polypeptide is a functional receptor for human hepatitis B and D virus. eLife 1:e00049.",
+   "item": "bib8"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Chisari et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Makino et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kwon and Lok, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yan et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chisari et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Glebe and Urban, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Suchanek et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hagenbuch and Meier, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wieland and Chisari, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

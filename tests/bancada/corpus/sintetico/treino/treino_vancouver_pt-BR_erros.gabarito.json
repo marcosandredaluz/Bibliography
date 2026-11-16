@@ -1,0 +1,686 @@
+{
+ "id": "treino_vancouver_pt-BR_erros",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "pt-BR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Moreira-Sales B, Costa C, Moreira AB, Barros C. Voluptate suscipit eos dolore illo ipsa occaecati. Revue d’Épidémiologie et de Santé Publique. 1994;59(11):58–78. doi:10.99999/teste.treino.36573",
+   "item": "it000"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Leão E, Albuquerque VH, Borges A, Alves M, da Rocha L, Melo J. Aspernatur quae quo quis maxime corporis ipsum facilis quia ducimus veniam provident saepe. Em: Almeida C, organizador. Enim sit inventore quasi amet animi illo pariatur quo sed voluptates tenetur. Rios: Correia e Filhos; 1996. p. 34–49.",
+   "item": "it030"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Organização Pan-Americana da Saúde. Unde voluptatum praesentium nesciunt quia illum. Gaceta Sanitaria. 1994;31(8):788–800.",
+   "item": "it007"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Park M jun, Montenegro B, Carvalho VH. Nemo expedita eos sit magni velit iusto. Preventive Veterinary Medicine. 2019;7(3):415–32.",
+   "item": "it004"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Jesus JM. Rerum repellat mollitia praesentium aperiam ipsam saepe rem dolore quasi occaecati minima dolorum quisquam culpa. Pacheco de Minas: Novais; 1978.",
+   "item": "it032"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Cirino J. Nostrum quas repudiandae laudantium quasi quam aliquam necessitatibus fugit ullam dolorem eos ipsa. Journal of the American Medical Informatics Association. 2026;30(3):251–64.",
+   "item": "it017"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Rocha L, Pereira R, Sampaio M. Similique vel omnis velit omnis vitae. Preventive Veterinary Medicine. 2015;8(10):458–69.",
+   "item": "it014"
+  },
+  {
+   "indice": 7,
+   "texto": "8. del da Rosa A, da Costa E, Moreira L. Officia natus saepe minus quae voluptatum ut. One Health. 2012;18(11):146–56. doi:10.99999/teste.treino.12306",
+   "item": "it001"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Gomes M. Fuga eveniet sint maiores doloremque rerum. Preventive Veterinary Medicine. 2022;49(11):532–44. doi:10.99999/teste.treino.42264",
+   "item": "it013"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Łukasz ML. Repellendus sunt fuga quas eum. One Health. 1994;61(9):44–52.",
+   "item": "it006"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Pinto AC, Mendes L, Caldeira I, Duarte JV. Quasi sapiente quos praesentium laboriosam laboriosam atque suscipit est accusantium. Em: Camargo I, organizador. Commodi laudantium corrupti eveniet perspiciatis. Cassiano: Novaes Ltda.; 1986. p. 248–63.",
+   "item": "it018"
+  },
+  {
+   "indice": 11,
+   "texto": "12. da Rosa G, Ribeiro L, da Mota L, da Costa G, Camargo M, Sá C. Odio aliquid suscipit quod odit cum cum. [Oliveira do Campo]: Rodrigues; 1984.",
+   "item": "it028"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Cerro Roldan R, Machado H, da Rocha L, Rodrigues A. Quae deleniti facilis hic maxime autem perferendis odit libero dolor recusandae. BMC Public Health. 1995;67(4):377–93. doi:10.99999/teste.treino.24251",
+   "item": "it002"
+  },
+  {
+   "indice": 13,
+   "texto": "15. Mendonça N, Aragão L, Pimenta C, Nascimento MJ, Fogaça E, Câmara H. Suscipit consequatur commodi illum consequatur. Medical Mycology. 1985;57(10):157–77.",
+   "item": "it024"
+  },
+  {
+   "indice": 14,
+   "texto": "16. Instituto Nacional de Câncer (Brasil). Sint doloremque corporis cupiditate pariatur pariatur [Internet]. 2008 [citado 7 de novembro de 2026]. Disponível em: https://exemplo-treino.org/2953",
+   "item": "it020"
+  },
+  {
+   "indice": 15,
+   "texto": "17. Aparecida L. Rem numquam laboriosam quia quod repellendus nihil magnam mollitia facere voluptas. Das Gesundheitswesen. 2023;55(12):171–7. doi:10.99999/teste.treino.89285",
+   "item": "it011"
+  },
+  {
+   "indice": 16,
+   "texto": "18. Lima O, Vargas AJ, Rios B. Laborum eveniet dolorem officiis aperiam delectus ducimus unde eligendi rerum. Epidemiologia e Serviços de Saúde. 1979;69(4):357–65. doi:10.99999/teste.treino.41028",
+   "item": "it015"
+  },
+  {
+   "indice": 17,
+   "texto": "19. Conselho Nacional de Saúde (Brasil). Ab qui voluptatum aliquam incidunt ut architecto. Em: da Mota AJ, organizador. Quidem ipsum similique quo animi itaque illo quas asperiores optio officiis maxime. Cirino: Melo; 1982. p. 256–71.",
+   "item": "it008"
+  },
+  {
+   "indice": 18,
+   "texto": "20. Conselho Nacional de Saúde (Brasil). Rem soluta animi ipsum temporibus provident. Em: da Cunha T, organizador. Iusto velit sapiente suscipit. Câmara: Ferreira Casa Grande Ltda.; 2019. p. 166–81.",
+   "item": "it009"
+  },
+  {
+   "indice": 19,
+   "texto": "21. Li X, Nogueira N, Montenegro LG, Sales I. Dolor vitae amet illo odio odit tenetur in laboriosam [Internet]. 10216. 2016. Disponível em: https://leis-treino.gov/6315",
+   "item": "it003"
+  },
+  {
+   "indice": 20,
+   "texto": "22. Instituto Nacional de Câncer (Brasil). Nam accusamus quam necessitatibus ipsa unde perspiciatis [Internet]. 4764. Disponível em: https://leis-treino.gov/9196",
+   "item": "it031"
+  },
+  {
+   "indice": 21,
+   "texto": "23. Novaes D, Melo R, Sampaio GH. A aspernatur aut rem dolore tenetur fugit sit odio odit impedit. Moreira de Souza: Castro; 1995.",
+   "item": "it019"
+  },
+  {
+   "indice": 22,
+   "texto": "24. Jesus JM. Aliquid molestiae dolorum quam perspiciatis pariatur molestias occaecati. Medical Mycology. 1978;17(10):599–615. doi:10.99999/teste.treino.79307",
+   "item": "it033"
+  },
+  {
+   "indice": 23,
+   "texto": "25. Lopes S. Maxime quibusdam veniam id natus exercitationem optio ipsam fugit doloribus. Em: Aparecida Y, organizador. Autem consequuntur unde voluptatum sequi ipsa vel corporis ducimus eum nostrum. Oliveira Paulista: Nogueira Ltda.; 1990. p. 235–50.",
+   "item": "it012"
+  },
+  {
+   "indice": 24,
+   "texto": "26. Cardoso MJ. Aspernatur explicabo ullam sequi voluptatum fugiat. Preventive Veterinary Medicine. 1999;66(3):238–51.",
+   "item": "it026"
+  },
+  {
+   "indice": 25,
+   "texto": "27. Abreu P, Rocha T, Pinto V. Dolores facere natus temporibus hic sed occaecati molestias adipisci quibusdam. One Health. 2018;15(1):141–60. doi:10.99999/teste.treino.34941",
+   "item": "it016"
+  },
+  {
+   "indice": 26,
+   "texto": "28. Correia B. Esse odio tenetur fuga quidem excepturi dignissimos iusto beatae iusto illum quam explicabo exercitationem nulla. Câmara de Andrade: Cassiano; 2005.",
+   "item": "it027"
+  },
+  {
+   "indice": 27,
+   "texto": "29. Barros AL, da Conceição JV, da Cruz AL, Souza A, Melo H, Castro AL. Odit beatae consequuntur laudantium nesciunt voluptatem animi voluptatum optio. Gaceta Sanitaria. 1998;75(6):761–71. doi:10.99999/teste.treino.26077",
+   "item": "it010"
+  },
+  {
+   "indice": 28,
+   "texto": "31. Ministerio de Sanidad (España). Veniam enim recusandae quod [Internet]. 2010 [citado 15 de novembro de 2026]. Disponível em: https://exemplo-treino.org/9467",
+   "item": "it023"
+  },
+  {
+   "indice": 29,
+   "texto": "32. Robert Koch-Institut. Praesentium pariatur debitis accusamus dolorem [Internet]. 12388. 2014. Disponível em: https://leis-treino.gov/7412",
+   "item": "it029"
+  },
+  {
+   "indice": 30,
+   "texto": "33. Moura L. Temporibus ut quidem harum necessitatibus mollitia deserunt deleniti mollitia. Revue d’Épidémiologie et de Santé Publique. 1990;52(9):579–90. doi:10.99999/teste.treino.96425",
+   "item": "it021"
+  },
+  {
+   "indice": 31,
+   "texto": "34. Alves L. Eveniet laboriosam dolor voluptas ullam ullam recusandae culpa. [Sá Grande]: Teixeira; 1995.",
+   "item": "it025"
+  },
+  {
+   "indice": 32,
+   "texto": "35. Campos-Vasconcelos MH, Almeida A, Siqueira E, Viana T. Quibusdam officiis quidem alias quibusdam. Epidemiologia e Serviços de Saúde. 1982;61(10):312–23. doi:10.99999/teste.treino.54030",
+   "item": "extra0"
+  },
+  {
+   "indice": 33,
+   "texto": "36. de Aragão JG, Pastor J. Esse quod autem officiis omnis sint ab. Das Gesundheitswesen. 2024;15(12):480–97. doi:10.99999/teste.treino.81934",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Moreira-Sales et al. (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2–4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it007",
+    "it004"
+   ],
+   "referencias": [
+    1,
+    2,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jesus (5)",
+   "tipo": "narrativa",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,11,12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it030",
+    "it028"
+   ],
+   "referencias": [
+    10,
+    1,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rocha et al. (7)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Instituto Nacional de Câncer (Brasil) (16)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it030"
+   ],
+   "referencias": [
+    19,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Instituto Nacional de Câncer (Brasil) (22)",
+   "tipo": "narrativa",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jesus (5)",
+   "tipo": "narrativa",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lopes (25)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(26,27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it016"
+   ],
+   "referencias": [
+    24,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24,28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it033",
+    "it027"
+   ],
+   "referencias": [
+    22,
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1,11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it018"
+   ],
+   "referencias": [
+    0,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lopes (25)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barros et al. (29)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(31)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(32)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,33)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it030"
+   ],
+   "referencias": [
+    30,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(34)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(33)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Conselho Nacional de Saúde (Brasil) (20)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(14)",
+   "item": "it022"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(30)",
+   "item": "it005"
+  },
+  {
+   "ponto": "E",
+   "referencia": 32,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 33,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Nihil ullam quo labore laudantium exercitationem quae cupiditate quo amet error"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

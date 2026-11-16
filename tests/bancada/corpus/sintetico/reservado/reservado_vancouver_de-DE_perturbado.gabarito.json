@@ -1,0 +1,574 @@
+{
+ "id": "reservado_vancouver_de-DE_perturbado",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "de-DE",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Australian Institute of Health and Welfare (Australia). Garten ein erklären Rad heute Auto Essen wahr nächste [Internet]. 2018 [zitiert 16. November 2026]. Verfügbar unter: https://exemplo-reservado.org/1581",
+   "item": "it030"
+  },
+  {
+   "indice": 1,
+   "texto": "2. D’Ávila E. Bleiben Zeit später danach Tier nass bekommen las Zeit Kind [Internet]. 10253. 1997. Verfügbar unter: https://leis-reservado.gov/1233",
+   "item": "it006"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Albers M. Beispiel Mensch schon her dunkel. Das Gesundheitswesen. 1980;4(1):499–511.",
+   "item": "it016"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Hendriks H, Lindau R, Nerger O. Warten bis draußen drehen gibt. In: Linke C, Herausgeber. Stück drei kurz reich fehlen dein lachen Feuer sollen ging war. Hofgeismar: Jacob e.V.; 2024. S. 159–74.",
+   "item": "it013"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Santé publique France. Liegen fehlen Winter gelb können als hat stark öffnen bin später. Königs Wusterhausen: Wiek GmbH & Co. KGaA; 1983.",
+   "item": "it025"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Pedrosa Fuente D, Pechel J, Gnatz G. Denken legen Ende wichtig doch hart Leben Sohn zum Name uns Jahr schreiben sprechen [Internet]. 14707. 2013. Verfügbar unter: https://leis-reservado.gov/9424",
+   "item": "it002"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Nguyen TH. Unter Weg Geschenk Hand lustig treffen Essen dunkel heraus unser dazu Buch nehmen weinen sollen. Preventive Veterinary Medicine. 2002;74(10):686–701. doi:10.99999/teste.reservado.84149",
+   "item": "it005"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Organización Mundial de la Salud. Baum vergessen vielleicht Land langsam groß Affe letzte war Zeit nicht rennen her schwer [Internet]. 4355. 2008. Verfügbar unter: https://leis-reservado.gov/1218",
+   "item": "it026"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Li W, Staude P, Schweitzer C. Opa von einmal Papa Sommer braun nach. Gaceta Sanitaria. 2007;64(9):778–83.",
+   "item": "it003"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Public Health Agency of Canada. Name nennen Hase Tier tun heißen dick. Demmin: Kuhl Kraus Stiftung & Co. KG; 1976.",
+   "item": "it022"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Jungfer KD, Bolander B, auch Schlauchin G, Geisel S, Mentzel M, Jüttner H. Mutter Abend jung Schnee unten laut hinein. Epidemiologia & Prevenzione. 1992;80(5):574–85. doi:10.99999/teste.reservado.71396",
+   "item": "it012"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Organización Mundial de la Salud. Vater Schuh oft braun. Journal of the American Medical Informatics Association. 1992;39(1):497–501. doi:10.99999/teste.reservado.87879",
+   "item": "it007"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Heß-Klingelhöfer M. Weg unter natürlich Schwester böse klettern sitzen. Medical Mycology. 2016;59(6):771–83. doi:10.99999/teste.reservado.31682",
+   "item": "it000"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Jopich M, Scholl K, Trupp J, Mälzer G, Schwital M, Gorlitz T. Weiß war Loch Abend gut. Gaceta Sanitaria. 2002;41(3):707–26. doi:10.99999/teste.reservado.97418",
+   "item": "it021"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Aumann B, Kuhl H. Beispiel sicher Feuer andere laufen Weihnachten. Das Gesundheitswesen. 1981;15(1):867–72. doi:10.99999/teste.reservado.16504",
+   "item": "it011"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Agência Nacional de Vigilância Sanitária (Brasil). Wissen er Woche Essen erst anfangen wenig weiß erst Sohn Brot langsam. Iserlohn: Börner GmbH & Co. OHG; 2000.",
+   "item": "it028"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Siering D, Beier T, Schenk V, Täsche A. Laufen Nase gut nicht singen. Lübben: Hornich; 1994.",
+   "item": "it018"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Kallert L. Neun nie natürlich der rund letzte bauen Wohnung. One Health. 1980;49(11):804–15. doi:10.99999/teste.reservado.42587",
+   "item": "it023"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Hölzenbecher F. Besser Katze Lehrerin. Gaceta Sanitaria. 2013;51(1):137–42. doi:10.99999/teste.reservado.81376",
+   "item": "it027"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Agência Nacional de Vigilância Sanitária (Brasil). Angst war drehen spät Auge drei [Internet]. 4749. 2013. Verfügbar unter: https://leis-reservado.gov/4216",
+   "item": "it024"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Minas Gerais (Estado). Geschenk versuchen Lehrerin also ihm sprechen spielen bauen Wohnung. [Moers]: Dobes; 2006.",
+   "item": "it009"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Sölzer A, Söding HW, Wernecke K. Ziehen leise fahren wohl dafür stellen um. One Health. 75(6):735–46. doi:10.99999/teste.reservado.75374",
+   "item": "it029"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Ortmann D, Lindau R, Bohnbach A, Beyer H. Eltern ist nah schön Monate. Cadernos de Saúde Pública. 2001;1(3):446–59. doi:10.99999/teste.reservado.73956",
+   "item": "it017"
+  },
+  {
+   "indice": 23,
+   "texto": "24. da Dobes E. Lernen fressen Mutter schön. [Jessen]: Sauer; 1992.",
+   "item": "it001"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Henschel J. Selbst Familie stellen Tier Uhr Hase warm sicher. Gaceta Sanitaria. 1982;1(8):93–100. doi:10.99999/teste.reservado.86863",
+   "item": "it010"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Ritter R, Hermann A. Die unser essen haben Lehrer gab. Gaceta Sanitaria. 2004;1(7):88–97. doi:10.99999/teste.reservado.53179",
+   "item": "it019"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Barth FM. Minutenmir Weg Frau Straße alle sprechen auch sehr. Gaceta Sanitaria. 2005;61(12):854–64. doi:10.99999/teste.reservado.42056",
+   "item": "it015"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Dobes M, Junck R, Römer A. Mutter sitzen der Sonne zehn anfangen. In: Reising R, Herausgeber. Selbst ich merken kennen groß. Bautzen: Graf; 1987. S. 129–44.",
+   "item": "it020"
+  },
+  {
+   "indice": 28,
+   "texto": "29. Australian Institute of Health and Welfare (Australia). Dann damit dafür tot Zimmer Tante ins. Cuxhaven: Kuhl; 2018.",
+   "item": "it031"
+  },
+  {
+   "indice": 29,
+   "texto": "30. Kim J ho, Bärer E, Scheibe D. Schiff Glas Land daran Berg dauern zu Glück geben gegen Auto [Internet]. 1991 [zitiert 6. November 2026]. Verfügbar unter: https://exemplo-reservado.org/4002",
+   "item": "it004"
+  },
+  {
+   "indice": 30,
+   "texto": "31. Public Health Agency of Canada. Singen dürfen fragen vielleicht Luft fünf Tante. Medical Mycology. 2015;13(6):544–64. doi:10.99999/teste.reservado.38307",
+   "item": "it008"
+  },
+  {
+   "indice": 31,
+   "texto": "32. Gerlach R, Schäfer C, Beyer K, Hertrampf I. Die schlagen her Zeit Ferien Wissen packen. Lüdinghausen: Drub; 1996.",
+   "item": "it014"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Albers (3)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6–8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it005",
+    "it026"
+   ],
+   "referencias": [
+    5,
+    6,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10,11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it012"
+   ],
+   "referencias": [
+    9,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,12,13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it007",
+    "it000"
+   ],
+   "referencias": [
+    4,
+    11,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15,16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it028"
+   ],
+   "referencias": [
+    14,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17–19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it023",
+    "it027"
+   ],
+   "referencias": [
+    16,
+    17,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14,20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it021"
+   ],
+   "referencias": [
+    19,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20–22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it009",
+    "it029"
+   ],
+   "referencias": [
+    19,
+    20,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14,23,24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it017",
+    "it001"
+   ],
+   "referencias": [
+    13,
+    22,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Henschel (25)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1,26,27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it015",
+    "it030"
+   ],
+   "referencias": [
+    25,
+    26,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nguyen (7)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16,20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it028"
+   ],
+   "referencias": [
+    19,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Minas Gerais (Estado) (21)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18,23,29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031",
+    "it017",
+    "it023"
+   ],
+   "referencias": [
+    28,
+    22,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nguyen (7)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(31)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(32)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Kim et al. (30)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Fertig schreien Jahr wenn packen Leute war"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

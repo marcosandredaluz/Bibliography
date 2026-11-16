@@ -1,0 +1,1658 @@
+{
+ "id": "elife-00220_perturbado",
+ "estilo": "jats-elife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00220.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Akaaboune M, Allinquant B, Farza H, Roy K, Magoul R, Fiszman M, et al.. 2000. Developmental regulation of amyloid precursor protein at the neuromuscular junction in mouse skeletal muscle. Mol Cell Neurosci 15:355–367. doi: 10.1006/mcne.2000.0834",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Andersen OM, Reiche J, Schmidt V, Gotthardt M, Spoelgen R, Behlke J, et al.. 2005. Neuronal sorting protein-related receptor sorLA/LR11 regulates processing of the amyloid precursor protein. Proc Natl Acad Sci USA 102:13461–13466. doi: 10.1073/pnas.0503689102",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Beffert U, Weeber EJ, Durudas A, Qiu S, Masiulis I, Sweatt JD, et al.. 2005. Modulation of synaptic plasticity and memory by Reelin involves differential splicing of the lipoprotein receptor Apoer2. Neuron 47:567–579. doi: 10.1016/j.neuron.2005.07.007",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Bogdanik LP, Burgess RW. 2011. A valid mouse model of AGRIN-associated congenital myasthenic syndrome. Hum Mol Genet 20:4617–4633. doi: 10.1093/hmg/ddr396",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Bromann PA, Zhou H, Sanes JR. 2004. Kinase- and rapsyn-independent activities of the muscle-specific kinase (MuSK). Neuroscience 125:417–426. doi: 10.1016/j.neuroscience.2003.12.031",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Burgess RW, Skarnes WC, Sanes JR. 2000. Agrin isoforms with distinct amino termini: differential expression, localization, and function. J Cell Biol 151:41–52. doi: 10.1083/jcb.151.1.41",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Chen F, Liu Y, Sugiura Y, Allen PD, Gregg RG, Lin W. 2011. Neuromuscular synaptic patterning requires the function of skeletal muscle dihydropyridine receptors. Nat Neurosci 14:570–577. doi: 10.1038/nn.2792",
+   "item": "bib69"
+  },
+  {
+   "indice": 7,
+   "texto": "Chen F, Sugiura Y, Myers KG, Liu Y, Lin W. 2010a. Ubiquitin carboxyl-terminal hydrolase L1 is required for maintaining the structure and function of the neuromuscular junction. Proc Natl Acad Sci USA 107:1636–1641. doi: 10.1073/pnas.0911516107",
+   "item": "bib7"
+  },
+  {
+   "indice": 8,
+   "texto": "Chen Y, Durakoglugil MS, Xian X, Herz J. 2010b. ApoE4 reduces glutamate receptor function and synaptic plasticity by selectively impairing ApoE receptor recycling. Proc Natl Acad Sci USA 107:12011–12016. doi: 10.1073/pnas.0914984107",
+   "item": "bib8"
+  },
+  {
+   "indice": 9,
+   "texto": "Corder EH, Saunders AM, Strittmatter WJ, Schmechel DE, Gaskell PC, Small GW, et al.. 1993. Gene dose of apolipoprotein E type 4 allele and the risk of Alzheimer’s disease in late onset families. Science 261:921–923. doi: 10.1126/science.8346443",
+   "item": "bib9"
+  },
+  {
+   "indice": 10,
+   "texto": "Deane R, Sagare A, Hamm K, Parisi M, Lane S, Finn MB, et al.. 2008. apoE isoform-specific disruption of amyloid β peptide clearance from mouse brain. J Clin Invest 118:4002–4013. doi: 10.1172/JCI36663",
+   "item": "bib10"
+  },
+  {
+   "indice": 11,
+   "texto": "DeChiara TM, Bowen DC, Valenzuela DM, Simmons MV, Poueymirou WT, Thomas S, et al.. 1996. The receptor tyrosine kinase MuSK is required for neuromuscular junction formation in vivo. Cell 85:501–512. doi: 10.1016/S0092-8674(00)81251-9",
+   "item": "bib11"
+  },
+  {
+   "indice": 12,
+   "texto": "Dieckmann M, Dietrich MF, Herz J. 2010. Lipoprotein receptors–an evolutionarily ancient multifunctional receptor family. Biol Chem 391:1341–1363. doi: 10.1515/BC.2010.129",
+   "item": "bib12"
+  },
+  {
+   "indice": 13,
+   "texto": "Dietrich MF, van der Weyden L, Prosser HM, Bradley A, Herz J, Adams DJ. 2010. Ectodomains of the LDL receptor-related proteins LRP1b and LRP4 have anchorage independent functions in vivo. PLOS ONE 5:e9960. doi: 10.1371/journal.pone.0009960",
+   "item": "bib13"
+  },
+  {
+   "indice": 14,
+   "texto": "Durakoglugil MS, Chen Y, White CL, Kavalali ET, Herz J. 2009. Reelin signaling antagonizes β-amyloid at the synapse. Proc Natl Acad Sci USA 106:15938–15943. doi: 10.1073/pnas.0908176106",
+   "item": "bib14"
+  },
+  {
+   "indice": 15,
+   "texto": "Ferns M, Hoch W, Campanelli JT, Rupp F, Hall ZW, Scheller RH. 1992. RNA splicing regulates agrin-mediated acetylcholine receptor clustering activity on cultured myotubes. Neuron 8:1079–1086. doi: 10.1016/0896-6273(92)90129-2",
+   "item": "bib15"
+  },
+  {
+   "indice": 16,
+   "texto": "Ferns MJ, Campanelli JT, Hoch W, Scheller RH, Hall Z. 1993. The ability of agrin to cluster AChRs depends on alternative splicing and on cell surface proteoglycans. Neuron 11:491–502. doi: 10.1016/0896-6273(93)90153-I",
+   "item": "bib16"
+  },
+  {
+   "indice": 17,
+   "texto": "Fisher C, Beglova N, Blacklow SC. 2006. Structure of an LDLR-RAP complex reveals a general mode for ligand recognition by lipoprotein receptors. Mol Cell 22:277–283. doi: 10.1016/j.molcel.2006.02.021",
+   "item": "bib17"
+  },
+  {
+   "indice": 18,
+   "texto": "Garcia-Osta A, Tsokas P, Pollonini G, Landau EM, Blitzer R, Alberini CM. 2006. MuSK expressed in the brain mediates cholinergic responses, synaptic plasticity, and memory formation. J Neurosci 26:7919–7932. doi: 10.1523/JNEUROSCI.1674-06.2006",
+   "item": "bib18"
+  },
+  {
+   "indice": 19,
+   "texto": "Gautam M, Noakes PG, Moscoso L, Rupp F, Scheller RH, Merlie JP, et al.. 1996. Defective neuromuscular synaptogenesis in agrin-deficient mutant mice. Cell 85:525–535. doi: 10.1016/S0092-8674(00)81253-2",
+   "item": "bib19"
+  },
+  {
+   "indice": 20,
+   "texto": "Goate A, Chartier-Harlin MC, Mullan M, Brown J, Crawford F, Fidani L, et al.. 1991. Segregation of a missense mutation in the amyloid precursor protein gene with familial Alzheimer’s disease. Nature 349:704–706. doi: 10.1038/349704a0",
+   "item": "bib20"
+  },
+  {
+   "indice": 21,
+   "texto": "Gomez AM, Burden SJ. 2011. The extracellular region of Lrp4 is sufficient to mediate neuromuscular synapse formation. Dev Dyn 240:2626–2633. doi: 10.1002/dvdy.22772",
+   "item": "bib21"
+  },
+  {
+   "indice": 22,
+   "texto": "Gotthardt M, Trommsdorff M, Nevitt MF, Shelton J, Richardson JA, Stockinger W, et al.. 2000. Interactions of the low density lipoprotein receptor gene family with cytosolic adaptor and scaffold proteins suggest diverse biological functions in cellular communication and signal transduction. J Biol Chem 275:25616–25624. doi: 10.1074/jbc.M000955200",
+   "item": "bib22"
+  },
+  {
+   "indice": 23,
+   "texto": "Grow WA, Ferns M, Gordon H. 1999a. Agrin-independent activation of the agrin signal transduction pathway. J Neurobiol 40:356–365. doi: 10.1002/(SICI)1097-4695(19990905)40:3<356::AID-NEU7>3.0.CO;2-F",
+   "item": "bib23"
+  },
+  {
+   "indice": 24,
+   "texto": "Grow WA, Ferns M, Gordon H. 1999b. A mechanism for acetylcholine receptor clustering distinct from agrin signaling. Dev Neurosci 21:436–443. doi: 10.1159/000017411",
+   "item": "bib24"
+  },
+  {
+   "indice": 25,
+   "texto": "Hall ZW, Sanes JR. 1993. Synaptic structure and development: the neuromuscular junction. Cell 72:99–121.",
+   "item": "bib25"
+  },
+  {
+   "indice": 26,
+   "texto": "Herz J, Beffert U. 2000. Apolipoprotein E receptors: linking brain development and Alzheimer’s disease. Nat Rev Neurosci 1:51–58. doi: 10.1038/35036221",
+   "item": "bib26"
+  },
+  {
+   "indice": 27,
+   "texto": "Herz J, Chen Y. 2006. Reelin, lipoprotein receptors and synaptic plasticity. Nat Rev Neurosci 7:850–859. doi: 10.1038/nrn2009",
+   "item": "bib27"
+  },
+  {
+   "indice": 28,
+   "texto": "Herz J, Goldstein JL, Strickland DK, Ho YK, Brown MS. 1991. 39-kDa protein modulates binding of ligands to low density lipoprotein receptor-related protein/alpha 2-macroglobulin receptor. J Biol Chem 266:21232–21238.",
+   "item": "bib28"
+  },
+  {
+   "indice": 29,
+   "texto": "Hesser BA, Henschel O, Witzemann V. 2006. Synapse disassembly and formation of new synapses in postnatal muscle upon conditional inactivation of MuSK. Mol Cell Neurosci 31:470–480. doi: 10.1016/j.mcn.2005.10.020",
+   "item": "bib29"
+  },
+  {
+   "indice": 30,
+   "texto": "Hoe HS, Wessner D, Beffert U, Becker AG, Matsuoka Y, Rebeck GW. 2005. F-spondin interaction with the apolipoprotein E receptor ApoEr2 affects processing of amyloid precursor protein. Mol Cell Biol 25:9259–9268. doi: 10.1128/MCB.25.21.9259-9268.2005",
+   "item": "bib30"
+  },
+  {
+   "indice": 31,
+   "texto": "Johnson EB, Hammer RE, Herz J. 2005. Abnormal development of the apical ectodermal ridge and polysyndactyly in Megf7-deficient mice. Hum Mol Genet 14:3523–3538. doi: 10.1093/hmg/ddi381",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Johnson EB, Steffen DJ, Lynch KW, Herz J. 2006. Defective splicing of Megf7/Lrp4, a regulator of distal limb development, in autosomal recessive mulefoot disease. Genomics 88:600–609. doi: 10.1016/j.ygeno.2006.08.005",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Karner CM, Dietrich MF, Johnson EB, Kappesser N, Tennert C, Percin F, et al.. 2010. Lrp4 regulates initiation of ureteric budding and is crucial for kidney formation–a mouse model for Cenani-Lenz syndrome. PLOS ONE 5:e10418. doi: 10.1371/journal.pone.0010418",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Kim ML, Chandrasekharan K, Glass M, Shi S, Stahl MC, Kaspar B, et al.. 2008a. O-fucosylation of muscle agrin determines its ability to cluster acetylcholine receptors. Mol Cell Neurosci 39:452–464. doi: 10.1016/j.mcn.2008.07.026",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Kim N, Stiegler AL, Cameron TO, Hallock PT, Gomez AM, Huang JH, et al.. 2008b. Lrp4 is a receptor for agrin and forms a complex with MuSK. Cell 135:334–342. doi: 10.1016/j.cell.2008.10.002",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Kounnas MZ, Moir RD, Rebeck GW, Bush AI, Argraves WS, Tanzi RE, et al.. 1995. LDL receptor-related protein, a multifunctional ApoE receptor, binds secreted beta-amyloid precursor protein and mediates its degradation. Cell 82:331–340. doi: 10.1016/0092-8674(95)90320-8",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Ksiazek I, Burkhardt C, Lin S, Seddik R, Maj M, Bezakova G, et al.. 2007. Synapse loss in cortex of agrin-deficient mice after genetic rescue of perinatal death. J Neurosci 27:7183–7195. doi: 10.1523/JNEUROSCI.1609-07.2007",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Li H, Wang Z, Wang B, Guo Q, Dolios G, Tabuchi K, et al.. 2010. Genetic dissection of the amyloid precursor protein in developmental function and amyloid pathogenesis. J Biol Chem 285:30598–30605. doi: 10.1074/jbc.M110.137729",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Lin W, Burgess RW, Dominguez B, Pfaff SL, Sanes JR, Lee KF. 2001. Distinct roles of nerve and muscle in postsynaptic differentiation of the neuromuscular synapse. Nature 410:1057–1064. doi: 10.1038/35074025",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Liu Y, Oppenheim RW, Sugiura Y, Lin W. 2009. Abnormal development of the neuromuscular junction in Nedd4-deficient mice. Dev Biol 330:153–166. doi: 10.1016/j.ydbio.2009.03.023",
+   "item": "bib70"
+  },
+  {
+   "indice": 41,
+   "texto": "Liu Y, Padgett D, Takahashi M, Li H, Sayeed A, Teichert RW, et al.. 2008. Essential roles of the acetylcholine receptor ɣ-subunit in neuromuscular synaptic patterning. Development 135:1957–1967. doi: 10.1242/dev.018119",
+   "item": "bib41"
+  },
+  {
+   "indice": 42,
+   "texto": "Martin PT, Sanes JR. 1995. Role for a synapse-specific carbohydrate in agrin-induced clustering of acetylcholine receptors. Neuron 14:743–754. doi: 10.1016/0896-6273(95)90218-X",
+   "item": "bib42"
+  },
+  {
+   "indice": 43,
+   "texto": "Marzolo MP, Bu G. 2009. Lipoprotein receptors and cholesterol in APP trafficking and proteolytic processing, implications for Alzheimer’s disease. Semin Cell Dev Biol 20:191–200. doi: 10.1016/j.semcdb.2008.10.005",
+   "item": "bib43"
+  },
+  {
+   "indice": 44,
+   "texto": "McCroskery S, Bailey A, Lin L, Daniels MP. 2009. Transmembrane agrin regulates dendritic filopodia and synapse formation in mature hippocampal neuron cultures. Neuroscience 163:168–179. doi: 10.1016/j.neuroscience.2009.06.012",
+   "item": "bib44"
+  },
+  {
+   "indice": 45,
+   "texto": "McMahan UJ, Horton SE, Werle MJ, Honig LS, Kröger S, Ruegg MA, Escher G. 1992. Agrin isoforms and their role in synaptogenesis. Curr Opin Cell Biol 4:869–874.",
+   "item": "bib71"
+  },
+  {
+   "indice": 46,
+   "texto": "O’Connor LT, Lauterborn JC, Gall CM, Smith MA. 1994. Localization and alternative splicing of agrin mRNA in adult rat brain: transcripts encoding isoforms that aggregate acetylcholine receptors are not restricted to cholinergic regions. J Neurosci 14:1141–1152.",
+   "item": "bib45"
+  },
+  {
+   "indice": 47,
+   "texto": "Ohazama A, Johnson EB, Ota MS, Choi HY, Porntaveetus T, Oommen S, et al.. 2008. Lrp4 modulates extracellular integration of cell signaling pathways in development. PLOS ONE 3:e4092. doi: 10.1371/journal.pone.0004092",
+   "item": "bib46"
+  },
+  {
+   "indice": 48,
+   "texto": "Pietrzik CU, Busse T, Merriam DE, Weggen S, Koo EH. 2002. The cytoplasmic domain of the LDL receptor-related protein regulates multiple steps in APP processing. EMBO J 21:5691–5700. doi: 10.1093/emboj/cdf568",
+   "item": "bib47"
+  },
+  {
+   "indice": 49,
+   "texto": "Pietrzik CU, Jaeger S. 2008. Functional role of lipoprotein receptors in Alzheimer’s disease. Curr Alzheimer Res 5:15–25. doi: 10.2174/156720508783884675",
+   "item": "bib31"
+  },
+  {
+   "indice": 50,
+   "texto": "Sanes JR, Lichtman JW. 1999. Development of the vertebrate neuromuscular junction. Annu Rev Neurosci 22:389–442. doi: 10.1146/annurev.neuro.22.1.389",
+   "item": "bib48"
+  },
+  {
+   "indice": 51,
+   "texto": "Sanes JR, Lichtman JW. 2001. Induction, assembly, maturation and maintenance of a postsynaptic apparatus. Nat Rev Neurosci 2:791–805. doi: 10.1038/35097557",
+   "item": "bib49"
+  },
+  {
+   "indice": 52,
+   "texto": "Schmechel DE, Saunders AM, Strittmatter WJ, Crain BJ, Hulette CM, Joo SH, et al.. 1993. Increased amyloid beta-peptide deposition in cerebral cortex as a consequence of apolipoprotein E genotype in late-onset Alzheimer disease. Proc Natl Acad Sci USA 90:9649–9653. doi: 10.1073/pnas.90.20.9649",
+   "item": "bib50"
+  },
+  {
+   "indice": 53,
+   "texto": "Soba P, Eggert S, Wagner K, Zentgraf H, Siehl K, Kreger S, et al.. 2005. Homo- and heterodimerization of APP family members promotes intercellular adhesion. EMBO J 24:3624–3634. doi: 10.1038/sj.emboj.7600824",
+   "item": "bib51"
+  },
+  {
+   "indice": 54,
+   "texto": "Stone DM, Nikolics K. 1995. Tissue- and age-specific expression patterns of alternatively spliced agrin mRNA transcripts in embryonic rat suggest novel developmental roles. J Neurosci 15:6767–6778.",
+   "item": "bib52"
+  },
+  {
+   "indice": 55,
+   "texto": "Torroja L, Packard M, Gorczyca M, White K, Budnik V. 1999. The Drosophila beta-amyloid precursor protein homolog promotes synapse differentiation at the neuromuscular junction. J Neurosci 19:7793–7803.",
+   "item": "bib53"
+  },
+  {
+   "indice": 56,
+   "texto": "Trommsdorff M, Borg JP, Margolis B, Herz J. 1998. Interaction of cytosolic adaptor proteins with neuronal apolipoprotein E receptors and the amyloid precursor protein. J Biol Chem 273:33556–33560. doi: 10.1074/jbc.273.50.33556",
+   "item": "bib54"
+  },
+  {
+   "indice": 57,
+   "texto": "Trommsdorff M, Gotthardt M, Hiesberger T, Shelton J, Stockinger W, Nimpf J, et al.. 1999. Reeler/Disabled-like disruption of neuronal migration in knockout mice lacking the VLDL receptor and ApoE receptor 2. Cell 97:689–701. doi: 10.1016/S0092-8674(00)80782-5",
+   "item": "bib55"
+  },
+  {
+   "indice": 58,
+   "texto": "Ulery PG, Beers J, Mikhailenko I, Tanzi RE, Rebeck GW, Hyman BT, et al.. 2000. Modulation of ß-amyloid precursor protein processing by the low density lipoprotein receptor-related protein (LRP). Evidence that LRP contributes to the pathogenesis of Alzheimer’s disease. J Biol Chem 275:7410–7415. doi: 10.1074/jbc.275.10.7410",
+   "item": "bib56"
+  },
+  {
+   "indice": 59,
+   "texto": "Wang P, Yang G, Mosier DR, Chang P, Zaidi T, Gong YD, et al.. 2005. Defective neuromuscular synapses in mice lacking amyloid precursor protein (APP) and APP-like protein 2. J Neurosci 25:1219–1225. doi: 10.1523/JNEUROSCI.4660-04.2005",
+   "item": "bib57"
+  },
+  {
+   "indice": 60,
+   "texto": "Wang Z, Wang B, Yang L, Guo Q, Aithmitti N, Songyang Z, et al.. 2009. Presynaptic and postsynaptic interaction of the amyloid precursor protein promotes peripheral and central synaptogenesis. J Neurosci 29:10788–10801. doi: 10.1523/JNEUROSCI.2132-09.2009",
+   "item": "bib58"
+  },
+  {
+   "indice": 61,
+   "texto": "Weatherbee SD, Anderson KV, Niswander LA. 2006. LDL-receptor-related protein 4 is crucial for formation of the neuromuscular junction. Development 133:4993–5000. doi: 10.1242/dev.02696",
+   "item": "bib59"
+  },
+  {
+   "indice": 62,
+   "texto": "Weeber EJ, Beffert U, Jones C, Christian JM, Forster E, Sweatt JD, et al.. 2002. Reelin and ApoE receptors cooperate to enhance hippocampal synaptic plasticity and learning. J Biol Chem 277:39944–39952. doi: 10.1074/jbc.M205147200",
+   "item": "bib60"
+  },
+  {
+   "indice": 63,
+   "texto": "Weyer SW, Klevanski M, Delekate A, Voikar V, Aydin D, Hick M, et al.. 2011. APP and APLP2 are essential at PNS and CNS synapses for transmission, spatial learning and LTP. EMBO J 30:2266–2280. doi: 10.1038/emboj.2011.119",
+   "item": "bib61"
+  },
+  {
+   "indice": 64,
+   "texto": "Wu H, Lu Y, Shen C, Patel N, Gan L, Xiong WC, et al.. 2012. Distinct roles of muscle and motoneuron LRP4 in neuromuscular junction formation. Neuron 75:94–107. doi: 10.1016/j.neuron.2012.04.033",
+   "item": "bib62"
+  },
+  {
+   "indice": 65,
+   "texto": "Wu H, Xiong WC, Mei L. 2010. To build a synapse: signaling pathways in neuromuscular junction assembly. Development 137:1017–1033. doi: 10.1242/dev.038711",
+   "item": "bib63"
+  },
+  {
+   "indice": 66,
+   "texto": "Yang X, Arber S, William C, Li L, Tanabe Y, Jessell TM, et al.. 2001. Patterning of muscle acetylcholine receptor gene expression in the absence of motor innervation. Neuron 30:399–410. doi: 10.1016/S0896-6273(01)00287-2",
+   "item": "bib64"
+  },
+  {
+   "indice": 67,
+   "texto": "Yumoto N, Kim N, Burden SJ. 2012. Lrp4 is a retrograde signal for presynaptic differentiation at neuromuscular synapses. Nature 489:438–442. doi: 10.1038/nature11348",
+   "item": "bib65"
+  },
+  {
+   "indice": 68,
+   "texto": "Zhang B, Luo S, Wang Q, Suzuki T, Xiong WC, Mei L. 2008. LRP4 serves as a coreceptor of agrin. Neuron 60:285–297. doi: 10.1016/j.neuron.2008.10.006",
+   "item": "bib66"
+  },
+  {
+   "indice": 69,
+   "texto": "Zheng H, Jiang M, Trumbauer ME, Sirinathsinghji DJ, Hopkins R, Smith DW, et al.. 1995. ß-Amyloid precursor protein-deficient mice show reactive gliosis and decreased locomotor activity. Cell 81:525–531. doi: 10.1016/0092-8674(95)90073-X",
+   "item": "bib67"
+  },
+  {
+   "indice": 70,
+   "texto": "Zong Y, Zhang B, Gu S, Lee K, Zhou J, Yao G, et al.. 2012. Structural basis of agrin-LRP4-MuSK signaling. Genes Dev 26:247–258. doi: 10.1101/gad.180885.111",
+   "item": "bib68"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Corder et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmechel et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weeber et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Beffert et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Herz and Chen, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weatherbee et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib66"
+   ],
+   "referencias": [
+    68
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2008b",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goate et al., 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kounnas et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ulery et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pietrzik et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Andersen et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hoe et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pietrzik and Jaeger, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marzolo and Bu, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Andersen et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deane et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Durakoglugil et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Akaaboune et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Torroja et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2009",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weyer et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    63
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Corder et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmechel et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Herz and Beffert, 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Herz and Chen, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dieckmann et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hall and Sanes, 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sanes and Lichtman, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    65
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burgess et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "O’Connor et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stone and Nikolics, 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ksiazek et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Garcia-Osta et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "McCroskery et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ksiazek et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trommsdorff et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1999",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gotthardt et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weatherbee et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Johnson et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dietrich et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gomez and Burden, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Johnson et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sanes and Lichtman, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    65
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Johnson et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hesser et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib66"
+   ],
+   "referencias": [
+    68
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2008b",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kounnas et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ulery et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pietrzik et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Andersen et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hoe et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pietrzik and Jaeger, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marzolo and Bu, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kounnas et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hoe et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Soba et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fisher et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ohazama et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Herz et al., 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bromann et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "McMahan et al., 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib71"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ferns et al., 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1993",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burgess et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lin et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib69"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Soba et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Torroja et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Akaaboune et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Soba et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lin et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib64"
+   ],
+   "referencias": [
+    66
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gautam et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "DeChiara et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weatherbee et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bromann et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martin and Sanes, 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Grow et al., 1999a",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "b",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2008a",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Soba et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2008a",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dietrich et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Karner et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yumoto et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    67
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zong et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib68"
+   ],
+   "referencias": [
+    70
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Herz and Chen, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2010b",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Durakoglugil et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Johnson et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Karner et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zheng et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Johnson et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Johnson et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burgess et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bogdanik and Burgess, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib70"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2010a",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

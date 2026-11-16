@@ -1,0 +1,623 @@
+{
+ "id": "reservado_harvard_pt-BR_erros",
+ "estilo": "harvard",
+ "sistema": "autor-data",
+ "locale": "pt-BR",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Agência Nacional de Vigilância Sanitária (Brasil) (2004) Nemo inventore animi atque dolores veritatis veritatis iure voluptas. Disponível em: https://exemplo-reservado.org/9099 (Acesso em: 2 de novembro de 2026).",
+   "item": "it014"
+  },
+  {
+   "indice": 1,
+   "texto": "Azevedo, L. (sem data) “Eum tempore mollitia praesentium quasi nihil”, em D. Cavalcante (org.) Ad impedit doloremque quos cum alias recusandae ipsum esse nulla nostrum molestiae quasi. das Neves dos Dourados: Barros da Luz - ME, p. 70–85.",
+   "item": "it022"
+  },
+  {
+   "indice": 2,
+   "texto": "Bundesinstitut für Risikobewertung (2008) “Necessitatibus doloremque excepturi occaecati iste laboriosam nihil”, Cadernos de Saúde Pública, 72(8), p. 743–750.",
+   "item": "it007"
+  },
+  {
+   "indice": 3,
+   "texto": "Campos, A.C. (2025) “Distinctio tempora tempora vero est voluptate iste ipsum enim”, em R. Pereira (org.) Ullam sed eveniet ad iure quo neque consequuntur consequuntur optio nisi. Correia: da Mata, p. 211–226.",
+   "item": "it018"
+  },
+  {
+   "indice": 4,
+   "texto": "Choi, J. e Casa Grande, R. (2016) Tempore perspiciatis molestiae illo. Rios do Galho: Almeida.",
+   "item": "it004"
+  },
+  {
+   "indice": 5,
+   "texto": "Cirino, R. et al. (2001) Error excepturi iusto qui inventore veritatis voluptatum. Barbosa: Almeida Sampaio - ME.",
+   "item": "it012"
+  },
+  {
+   "indice": 6,
+   "texto": "Cirino-Borges, D.L. (2010) Facere enim ut animi dicta sapiente. Disponível em: https://leis-reservado.gov/5286.",
+   "item": "extra0"
+  },
+  {
+   "indice": 7,
+   "texto": "Conselho Federal de Medicina Veterinária (1984) Nisi aliquam ea itaque quidem odit aut. Disponível em: https://exemplo-reservado.org/9701 (Acesso em: 10 de novembro de 2026).",
+   "item": "it008"
+  },
+  {
+   "indice": 8,
+   "texto": "van der da Luz, L. (2022) Fugiat quam libero aspernatur minima excepturi nostrum quaerat nemo blanditiis facere ex. Disponível em: https://exemplo-reservado.org/9575 (Acesso em: 11 de novembro de 2026).",
+   "item": "it001"
+  },
+  {
+   "indice": 9,
+   "texto": "D’Ávila, L. (1985) Itaque quaerat dolorum necessitatibus saepe ipsam impedit odio alias ea consequatur nihil. Monteiro: da Paz.",
+   "item": "it006"
+  },
+  {
+   "indice": 10,
+   "texto": "Nascimento-Costela, L. (1980) “Vel ex sint architecto ipsam modi”, Epidemiologia & Prevenzione, 69(4), p. 832–849.",
+   "item": "it000"
+  },
+  {
+   "indice": 11,
+   "texto": "das Neves, S. (1983) Voluptatibus placeat quae impedit labore architecto voluptatem sed commodi aperiam molestiae. Campos do Oeste: Campos Ltda.",
+   "item": "it020"
+  },
+  {
+   "indice": 12,
+   "texto": "Nguyen, T.H. e Novaes, E. (2007) Commodi laborum aut explicabo animi magnam repellendus minus in voluptatem ipsum doloremque. Disponível em: https://exemplo-reservado.org/9830 (Acesso em: 4 de novembro de 2026).",
+   "item": "it005"
+  },
+  {
+   "indice": 13,
+   "texto": "Nunes, A.C. (1992) Sed exercitationem harum expedita adipisci ea. Costela de Casa Grande: Fogaça.",
+   "item": "it013"
+  },
+  {
+   "indice": 14,
+   "texto": "Organización Mundial de la Salud (1983a) Odit enim accusamus. Disponível em: https://exemplo-reservado.org/5697 (Acesso em: 10 de novembro de 2026).",
+   "item": "it024"
+  },
+  {
+   "indice": 15,
+   "texto": "Organización Mundial de la Salud (1983b) Temporibus dolores veniam libero asperiores aperiam maiores tempora. Rocha do Norte: Farias.",
+   "item": "it023"
+  },
+  {
+   "indice": 16,
+   "texto": "Organización Mundial de la Salud (2004) Corporis reiciendis cupiditate quam deleniti unde porro labore optio debitis nihil quia. Ramos de Goiás: Nogueira Ltda.",
+   "item": "it009"
+  },
+  {
+   "indice": 17,
+   "texto": "da Peixoto, J.M. e Pires, L. (2025) “Reiciendis ipsam doloribus reiciendis deleniti voluptatem suscipit eaque”, Revista de Saúde Pública, 22(9), p. 745–756.",
+   "item": "extra1"
+  },
+  {
+   "indice": 18,
+   "texto": "Public Health Agency of Canada (2006) At dolore dignissimos iure cupiditate unde itaque illum magnam. Silveira: Jesus - ME.",
+   "item": "it019"
+  },
+  {
+   "indice": 19,
+   "texto": "da Rocha, M. et al. (1999) Veniam quasi explicabo nostrum porro itaque officiis atque autem omnis exercitationem enim. Costela.",
+   "item": "it010"
+  },
+  {
+   "indice": 20,
+   "texto": "Rodrigues, D.M., Freitas, J. e Martins, N. (2023) “Maiores eum dignissimos cupiditate necessitatibus nihil”, BMC Public Health, 79(1), p. 482–494. Disponível em: https://doi.org/10.99999/teste.reservado.65131.",
+   "item": "it016"
+  },
+  {
+   "indice": 21,
+   "texto": "Santé publique France (1992) Occaecati temporibus officiis quaerat dolor ducimus hic eos quaerat. Cassiano dos Dourados: Leão.",
+   "item": "it011"
+  },
+  {
+   "indice": 22,
+   "texto": "Silva, A.S. (2001) Consequatur cumque quas reprehenderit saepe sunt. Carvalho.",
+   "item": "it021"
+  },
+  {
+   "indice": 23,
+   "texto": "Vasconcelos, A.J. et al. (1991) Odit architecto unde dolore rem facilis distinctio. Disponível em: https://exemplo-reservado.org/6663 (Acesso em: 15 de novembro de 2026).",
+   "item": "it015"
+  },
+  {
+   "indice": 24,
+   "texto": "Zhang, J. et al. (1995) “Odit odio impedit dolorum”, Cadernos de Saúde Pública, 67(9), p. 220–240.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(da Rocha, Rocha e da Cruz, 1982; Rodrigues, Freitas e Martins, 2023; Mateo Jimenez, 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it002",
+    "it016"
+   ],
+   "referencias": [
+    null,
+    null,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(das Neves, 1983; Organización Mundial de la Salud, 2004; Public Health Agency of Canada, 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it009",
+    "it020"
+   ],
+   "referencias": [
+    18,
+    16,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária, 1984; D’Ávila, 1985; Nunes, 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it013",
+    "it008"
+   ],
+   "referencias": [
+    9,
+    13,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Rocha et al., 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi e Casa Grande, 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organización Mundial de la Salud, 1983b; Nunes, 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it013"
+   ],
+   "referencias": [
+    15,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bundesinstitut für Risikobewertung (2008)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Santé publique France (1992)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(D’Ávila, 1985; Choi e Casa Grande, 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it004"
+   ],
+   "referencias": [
+    9,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Azevedo, sem data)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vasconcelos et al., 1991; van der da Luz, 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it015"
+   ],
+   "referencias": [
+    8,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agência Nacional de Vigilância Sanitária (Brasil), 2004; Nguyen e Novaes, 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it005"
+   ],
+   "referencias": [
+    0,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Silva, 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Silva, 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rodrigues, Freitas e Martins, 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zhang et al., 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cirino et al., 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agência Nacional de Vigilância Sanitária (Brasil), 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organización Mundial de la Salud, 1983a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agência Nacional de Vigilância Sanitária (Brasil), 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bundesinstitut für Risikobewertung (2008)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Campos, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária, 1984; Agência Nacional de Vigilância Sanitária (Brasil), 2004; Organización Mundial de la Salud, 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it008",
+    "it009"
+   ],
+   "referencias": [
+    0,
+    7,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organización Mundial de la Salud, 2004; Public Health Agency of Canada, 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it019"
+   ],
+   "referencias": [
+    16,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nascimento-Costela, 1980; Conselho Federal de Medicina Veterinária, 1984; da Rocha et al., 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it010",
+    "it000"
+   ],
+   "referencias": [
+    7,
+    19,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Rocha, Rocha e da Cruz, 1982; Choi e Casa Grande, 2016; Mateo Jimenez, 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it004",
+    "it002"
+   ],
+   "referencias": [
+    null,
+    4,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nascimento-Costela (1980)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Rocha et al., 1999; Bundesinstitut für Risikobewertung, 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it010"
+   ],
+   "referencias": [
+    2,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(das Neves, 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nascimento-Costela, 1980; Organización Mundial de la Salud, 1983a; Nunes, 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it000",
+    "it013"
+   ],
+   "referencias": [
+    14,
+    10,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Silva, 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mateo Jimenez, 2026, p. 24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Organización Mundial de la Salud, 1983a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Silva, 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Zhang et al., 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Santé publique France (1992)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(da Rocha, Rocha e da Cruz, 1982; Rodrigues, Freitas e Martins, 2023; Mateo Jimenez, 2026)",
+   "item": "it017"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(da Rocha, Rocha e da Cruz, 1982; Rodrigues, Freitas e Martins, 2023; Mateo Jimenez, 2026)",
+   "item": "it002"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(da Rocha, Rocha e da Cruz, 1982; Choi e Casa Grande, 2016; Mateo Jimenez, 2026)",
+   "item": "it017"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(da Rocha, Rocha e da Cruz, 1982; Choi e Casa Grande, 2016; Mateo Jimenez, 2026)",
+   "item": "it002"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Mateo Jimenez, 2026, p. 24)",
+   "item": "it002"
+  },
+  {
+   "ponto": "E",
+   "referencia": 6,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 17,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Reprehenderit possimus ut ipsum deserunt iure assumenda"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

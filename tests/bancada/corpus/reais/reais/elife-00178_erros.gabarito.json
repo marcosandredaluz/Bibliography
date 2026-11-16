@@ -1,0 +1,2033 @@
+{
+ "id": "elife-00178_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00178.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Blainey PC, van Oijen AM, Banerjee A, Verdine GL, Xie XS. 2006. A base-excision DNA-repair protein finds intrahelical lesion bases by fast sliding in contact with DNA. Proc Natl Acad Sci USA 103:5752–5757.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Boutz PL, Stoilov P, Li Q, Lin CH, Chawla G, Ostrow K, et al.. 2007. A post-transcriptional regulatory switch in polypyrimidine tract-binding proteins reprograms alternative splicing in developing neurons. Genes Dev 21:1636–1652.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Brennan CM, Steitz JA. 2001. HuR and mRNA stability. Cell Mol Life Sci 58:266–277.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Buckanovich RJ, Darnell RB. 1997. The neuronal RNA binding protein Nova-1 recognizes specific RNA targets in vitro and in vivo. Mol Cell Biol 17:3194–3201.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Buckanovich RJ, Posner JB, Darnell RB. 1993. Nova, the paraneoplastic Ri antigen, is homologous to an RNA-binding protein and is specifically expressed in the developing motor system. Neuron 11:657–672.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Chao JA, Patskovsky Y, Patel V, Levy M, Almo SC, Singer RH. 2010. ZBP1 recognition of beta-actin zipcode induces RNA looping. Genes Dev 24:148–158.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Cooper TA, Wan L, Dreyfuss G. 2009. RNA and disease. Cell 136:777–793.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Crittenden SL, Bernstein DS, Bachorik JL, Thompson BE, Gallegos M, Petcherski AG, et al.. 2002. A conserved RNA-binding protein controls germline stem cells in Caenorhabditis elegans. Nature 417:660–663.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Darnell RB. 2004. Paraneoplastic neurologic disorders: windows into neuronal function and tumor immunity. Arch Neurol 61:30–32.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Darnell RB. 2006. Developing global insight into RNA regulation. Cold Spring Harb Symp Quant Biol 71:321–327.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Darnell RB, Posner JB. 2006. Paraneoplastic syndromes affecting the nervous system. Semin Oncol 33:270–298.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Darnell RB. 1996. Onconeural antigens and the paraneoplastic neurologic disorders: at the intersection of cancer, immunity, and the brain. Proc Natl Acad Sci USA 93:4529–4536.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Darnell RB. 2010. HITS-CLIP: panoramic views of protein-RNA regulation in living cells. Wiley Interdiscip Rev RNA 1:266–286.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Darnell RB, Posner JB. 2011. Paraneoplastic syndromes (contemporary neurology series).",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Dennis G, Sherman BT, Hosack DA, Yang J, Gao W, Lane HC, et al.. 2003. DAVID: Database for Annotation, Visualization, and Integrated Discovery. Genome Biol 4:P3.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Dredge BK, Darnell RB. 2003. Nova regulates GABA(A) receptor gamma2 alternative splicing via a distal downstream UCAU-rich intronic splicing enhancer. Mol Cell Biol 23:4687–4700.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Dredge BK, Stefani G, Engelhard CC, Darnell RB. 2005. Nova autoregulation reveals dual functions in neuronal splicing. EMBO J 24:1608–1620.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Dredge BK, Jensen KB. 2011. NeuN/Rbfox3 nuclear and cytoplasmic isoforms differentially regulate alternative splicing and nonsense-mediated decay of Rbfox2. PLoS One 6:e21585.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Eom T, Antar LN, Singer RH, Bassell GJ. 2003. Localization of a beta-actin messenger ribonucleoprotein complex with zipcode-binding protein modulates the density of dendritic filopodia and filopodial synapses. J Neurosci 23:10433–10444.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Fabian MR, Sonenberg N, Filipowicz W. 2010. Regulation of mRNA translation and stability by microRNAs. Annu Rev Biochem 79:351–379.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Giorgi C, Yeo GW, Stone ME, Katz DB, Burge C, Turrigiano G, et al.. 2007. The EJC factor eIF4AIII modulates synaptic strength and neuronal protein expression. Cell 130:179–191.",
+   "item": "bib22"
+  },
+  {
+   "indice": 21,
+   "texto": "Goina E, Skoko N, Pagani F. 2008. Binding of DAZAP1 and hnRNPA1/A2 to an exonic splicing silencer in a natural BRCA1 exon 18 mutant. Mol Cell Biol 28:3850–3860.",
+   "item": "bib23"
+  },
+  {
+   "indice": 22,
+   "texto": "Goodrich JS, Clouse KN, Schupbach T. 2004. Hrb27C, Sqd and Otu cooperatively regulate gurken RNA localization and mediate nurse cell chromosome dispersion in Drosophila oogenesis. Development 131:1949–1958.",
+   "item": "bib24"
+  },
+  {
+   "indice": 23,
+   "texto": "Gu W, Pan F, Zhang H, Bassell GJ, Singer RH. 2002. A predominantly nuclear protein affecting cytoplasmic localization of beta-actin mRNA in fibroblasts and neurons. J Cell Biol 156:41–51.",
+   "item": "bib25"
+  },
+  {
+   "indice": 24,
+   "texto": "Guan Q, Zheng W, Tang S, Liu X, Zinkel RA, Tsui KW, et al.. 2006. Impact of nonsense-mediated mRNA decay on the global expression profile of budding yeast. PLoS Genet 2:e203.",
+   "item": "bib26"
+  },
+  {
+   "indice": 25,
+   "texto": "Gurnett CA, Veile R, Zempel J, Blackburn L, Lovett M, Bowcock A. 2008. Disruption of sodium bicarbonate transporter SLC4A10 in a patient with complex partial epilepsy and mental retardation. Arch Neurol 65:550–553.",
+   "item": "bib27"
+  },
+  {
+   "indice": 26,
+   "texto": "Hachet O, Ephrussi A. 2004. Splicing of oskar RNA in the nucleus is coupled to its cytoplasmic localization. Nature 428:959–963.",
+   "item": "bib28"
+  },
+  {
+   "indice": 27,
+   "texto": "Huang DW, Sherman BT, Lempicki RA. 2009. Systematic and integrative analysis of large gene lists using DAVID bioinformatics resources. Nat Protoc 4:44–57.",
+   "item": "bib29"
+  },
+  {
+   "indice": 28,
+   "texto": "Huang L, Wilkinson MF. 2012. Regulation of nonsense-mediated mRNA decay. Wiley Interdiscip Rev RNA 3:807–828. doi: 10.1002/wrna.1137",
+   "item": "bib30"
+  },
+  {
+   "indice": 29,
+   "texto": "Huang Y, Steitz JA. 2005. SRprises along a messenger's journey. Mol Cell 17:613–615.",
+   "item": "bib31"
+  },
+  {
+   "indice": 30,
+   "texto": "Hur EM, Zhou FQ. 2010. GSK3 signalling in neural development. Nat Rev Neurosci 11:539–551.",
+   "item": "bib32"
+  },
+  {
+   "indice": 31,
+   "texto": "Hyvönen MT, Uimari A, Keinänen TA, Heikkinen S, Pellinen R, Wahlfors T, et al.. 2006. Polyamine-regulated unproductive splicing and translation of spermidine/spermine N1-acetyltransferase. RNA 12:1569–1582.",
+   "item": "bib33"
+  },
+  {
+   "indice": 32,
+   "texto": "Ince-Dunn G, Okano HJ, Jensen KB, Park WY, Zhong R, Ule J, et al.. 2012. Neuronal Elav-like (Hu) proteins regulate RNA splicing and abundance to control glutamate levels and neuronal excitability. Neuron 75:1067–1080. doi: 10.1016/j.neuron.2012.07.009",
+   "item": "bib34"
+  },
+  {
+   "indice": 33,
+   "texto": "Jensen KB, Musunuru K, Lewis HA, Burley SK, Darnell RB. 2000a. The tetranucleotide UCAY directs the specific recognition of RNA by the Nova K-homology 3 domain. Proc Natl Acad Sci USA 97:5740–5745.",
+   "item": "bib35"
+  },
+  {
+   "indice": 34,
+   "texto": "Jensen KB, Darnell RB. 2008. CLIP: crosslinking and immunoprecipitation of in vivo RNA targets of RNA-binding proteins. Methods Mol Biol 488:85–98.",
+   "item": "bib36"
+  },
+  {
+   "indice": 35,
+   "texto": "Jensen KB, Dredge BK, Stefani G, Zhong R, Buckanovich RJ, Okano HJ, et al.. 2000b. Nova-1 regulates neuron-specific alternative splicing and is essential for neuronal viability. Neuron 25:359–371.",
+   "item": "bib37"
+  },
+  {
+   "indice": 36,
+   "texto": "Kennedy MJ, Ehlers MD. 2011. Mechanisms and function of dendritic exocytosis. Neuron 69:856–875.",
+   "item": "bib38"
+  },
+  {
+   "indice": 37,
+   "texto": "Khabar KS. 2010. Post-transcriptional control during chronic inflammation and cancer: a focus on AU-rich elements. Cell Mol Life Sci 67:2937–2955.",
+   "item": "bib39"
+  },
+  {
+   "indice": 38,
+   "texto": "Kim KK, Adelstein RS, Kawamoto S. 2009. Identification of neuronal nuclei (NeuN) as Fox-3, a new member of the Fox-1 gene family of splicing factors. J Biol Chem 284:31052–31061.",
+   "item": "bib40"
+  },
+  {
+   "indice": 39,
+   "texto": "Kishore S, Luber S, Zavolan M. 2010. Deciphering the role of RNA-binding proteins in the post-transcriptional control of gene expression. Brief Funct Genomics 9:391–404.",
+   "item": "bib41"
+  },
+  {
+   "indice": 40,
+   "texto": "Krol J, Loedige I, Filipowicz W. 2010. The widespread regulation of microRNA biogenesis, function and decay. Nat Rev Genet 11:597–610.",
+   "item": "bib42"
+  },
+  {
+   "indice": 41,
+   "texto": "Lewis BP, Green RE, Brenner SE. 2003. Evidence for the widespread coupling of alternative splicing and nonsense-mediated mRNA decay in humans. Proc Natl Acad Sci USA 100:189–192.",
+   "item": "bib44"
+  },
+  {
+   "indice": 42,
+   "texto": "Lewis HA, Musunuru K, Jensen KB, Edo C, Chen H, Darnell RB, et al.. 2000. Sequence-specific RNA binding by a Nova KH domain: implications for paraneoplastic disease and the fragile X syndrome. Cell 100:323–332.",
+   "item": "bib45"
+  },
+  {
+   "indice": 43,
+   "texto": "Licatalosi DD, Darnell RB. 2006. Splicing regulation in neurologic disease. Neuron 52:93–101.",
+   "item": "bib46"
+  },
+  {
+   "indice": 44,
+   "texto": "Licatalosi DD, Darnell RB. 2010. RNA processing and its regulation: global insights into biological networks. Nat Rev Genet 11:75–87.",
+   "item": "bib47"
+  },
+  {
+   "indice": 45,
+   "texto": "Licatalosi DD, Mele A, Fak JJ, Ule J, Kayikci M, Chi SW, et al.. 2008. HITS-CLIP yields genome-wide insights into brain alternative RNA processing. Nature 456:464–469.",
+   "item": "bib48"
+  },
+  {
+   "indice": 46,
+   "texto": "Licatalosi DD, Yano M, Fak JJ, Mele A, Grabinski SE, Zhang C, et al.. 2012. Ptbp2 represses adult-specific splicing to regulate the generation of neuronal precursors in the embryonic brain. Genes Dev 26:1626–1642.",
+   "item": "bib49"
+  },
+  {
+   "indice": 47,
+   "texto": "Makeyev EV, Zhang J, Carrasco MA, Maniatis T. 2007. The MicroRNA miR-124 promotes neuronal differentiation by triggering brain-specific alternative pre-mRNA splicing. Mol Cell 27:435–448.",
+   "item": "bib50"
+  },
+  {
+   "indice": 48,
+   "texto": "Maniatis T, Reed R. 2002. An extensive network of coupling among gene expression machines. Nature 416:499–506.",
+   "item": "bib51"
+  },
+  {
+   "indice": 49,
+   "texto": "Markovtsov V, Nikolic JM, Goldman JA, Turck CW, Chou MY, Black DL. 2000. Cooperative assembly of an hnRNP complex induced by a tissue-specific homolog of polypyrimidine tract binding protein. Mol Cell Biol 20:7463–7479.",
+   "item": "bib52"
+  },
+  {
+   "indice": 50,
+   "texto": "Martin KC, Ephrussi A. 2009. mRNA localization: gene expression in the spatial dimension. Cell 136:719–730.",
+   "item": "bib53"
+  },
+  {
+   "indice": 51,
+   "texto": "Matsuda D, Sato H, Maquat LE. 2008. Chapter 9. Studying nonsense-mediated mRNA decay in mammalian cells. Methods Enzymol 449:177–201.",
+   "item": "bib54"
+  },
+  {
+   "indice": 52,
+   "texto": "Meisler MH, O'Brien JE, Sharkey LM. 2010. Sodium channel gene family: epilepsy mutations, gene interactions and modifier effects. J Physiol 588:1841–1848.",
+   "item": "bib55"
+  },
+  {
+   "indice": 53,
+   "texto": "Meisner NC, Filipowicz W. 2011. Properties of the Regulatory RNA-Binding Protein HuR and its Role in Controlling miRNA Repression. Adv Exp Med Biol 700:106–123.",
+   "item": "bib56"
+  },
+  {
+   "indice": 54,
+   "texto": "Mendell JT, ap Rhys CM, Dietz HC. 2002. Separable roles for rent1/hUpf1 in altered splicing and decay of nonsense transcripts. Science 298:419–422.",
+   "item": "bib57"
+  },
+  {
+   "indice": 55,
+   "texto": "Myer VE, Fan XC, Steitz JA. 1997. Identification of HuR as a protein implicated in AUUUA-mediated mRNA decay. EMBO J 16:2130–2139.",
+   "item": "bib58"
+  },
+  {
+   "indice": 56,
+   "texto": "Ni JZ, Grate L, Donohue JP, Preston C, Nobida N, O'Brien G, et al.. 2007. Ultraconserved elements are associated with homeostatic control of splicing regulators by alternative splicing and nonsense-mediated decay. Genes Dev 21:708–718.",
+   "item": "bib59"
+  },
+  {
+   "indice": 57,
+   "texto": "Okano HJ, Darnell RB. 1997. A hierarchy of Hu RNA binding proteins in developing and adult neurons. J Neurosci 17:3024–3037.",
+   "item": "bib60"
+  },
+  {
+   "indice": 58,
+   "texto": "Pan F, Hüttelmaier S, Singer RH, Gu W. 2007. ZBP2 facilitates binding of ZBP1 to beta-actin mRNA during transcription. Mol Cell Biol 27:8340–8351.",
+   "item": "bib61"
+  },
+  {
+   "indice": 59,
+   "texto": "Peng SS, Chen CY, Xu N, Shyu AB. 1998. RNA stabilization by the AU-rich element binding protein, HuR, an ELAV protein. EMBO J 17:3461–3470.",
+   "item": "bib62"
+  },
+  {
+   "indice": 60,
+   "texto": "Polydorides AD, Okano HJ, Yang YY, Stefani G, Darnell RB. 2000. A brain-enriched polypyrimidine tract-binding protein antagonizes the ability of Nova to regulate neuron-specific alternative splicing. Proc Natl Acad Sci USA 97:6350–6355.",
+   "item": "bib63"
+  },
+  {
+   "indice": 61,
+   "texto": "Poulos MG, Batra R, Charizanis K, Swanson MS. 2011. Developments in RNA splicing and disease. Cold Spring Harb Perspect Biol 3:a000778. doi: 10.1101/cshperspect.a000778",
+   "item": "bib64"
+  },
+  {
+   "indice": 62,
+   "texto": "Qu M, Aronica E, Boer K, Fallmar D, Kumlien E, Nister M, et al.. 2009. DLG3/SAP102 protein expression in malformations of cortical development: a study of human epileptic cortex by tissue microarray. Epilepsy Res 84:33–41.",
+   "item": "bib65"
+  },
+  {
+   "indice": 63,
+   "texto": "Quenault T, Lithgow T, Traven A. 2011. PUF proteins: repression, activation and mRNA localization. Trends Cell Biol 21:104–112.",
+   "item": "bib66"
+  },
+  {
+   "indice": 64,
+   "texto": "Racca C, Gardiol A, Eom T, Ule J, Triller A, Darnell RB. 2010. The neuronal splicing factor Nova co-localizes with target RNAs in the dendrite. Front Neural Circuits 4:5.",
+   "item": "bib67"
+  },
+  {
+   "indice": 65,
+   "texto": "Richter JD, Klann E. 2009. Making synaptic plasticity and memory last: mechanisms of translational regulation. Genes Dev 23:1–11.",
+   "item": "bib68"
+  },
+  {
+   "indice": 66,
+   "texto": "Ruggiu M, Herbst R, Kim N, Jevsek M, Fak JJ, Mann MA, et al.. 2009. Rescuing Z+ agrin splicing in Nova null mice restores synapse formation and unmasks a physiologic defect in motor neuron firing. Proc Natl Acad Sci USA 106:3513–3518.",
+   "item": "bib69"
+  },
+  {
+   "indice": 67,
+   "texto": "Saltzman AL, Kim YK, Pan Q, Fagnani MM, Maquat LE, Blencowe BJ. 2008. Regulation of multiple core spliceosomal proteins by alternative splicing-coupled nonsense-mediated mRNA decay. Mol Cell Biol 28:4320–4330.",
+   "item": "bib70"
+  },
+  {
+   "indice": 68,
+   "texto": "Sander T, Toliat MR, Heils A, Leschik G, Becker C, Ruschendorf F, et al.. 2002. Association of the 867Asp variant of the human anion exchanger 3 gene with common subtypes of idiopathic generalized epilepsy. Epilepsy Res 51:249–255.",
+   "item": "bib71"
+  },
+  {
+   "indice": 69,
+   "texto": "Schoenberg DR, Maquat LE. 2012. Regulation of cytoplasmic mRNA decay. Nat Rev Genet 13:246–259. doi: 10.1038/nrg3160",
+   "item": "bib72"
+  },
+  {
+   "indice": 70,
+   "texto": "Singh NA, Pappas C, Dahle EJ, Claes LR, Pruess TH, De Jonghe P, et al.. 2009. A role of SCN9A in human epilepsies, as a cause of febrile seizures and as a potential modifier of Dravet syndrome. PLoS Genet 5:e1000649.",
+   "item": "bib73"
+  },
+  {
+   "indice": 71,
+   "texto": "Szabo A, Dalmau J, Manley G, Rosenfeld M, Wong E, Henson J, et al.. 1991. HuD, a paraneoplastic encephalomyelitis antigen contains RNA-binding domains and is homologous to Elav and sex lethal. Cell 67:325–333.",
+   "item": "bib74"
+  },
+  {
+   "indice": 72,
+   "texto": "Tarpey PS, Raymond FL, Nguyen LS, Rodriguez J, Hackett A, Vandeleur L, et al.. 2007. Mutations in UPF3B, a member of the nonsense-mediated mRNA decay complex, cause syndromic and nonsyndromic mental retardation. Nat Genet 39:1127–1133.",
+   "item": "bib75"
+  },
+  {
+   "indice": 73,
+   "texto": "Turski L, Cavalheiro EA, Sieklucka-Dziuba M, Ikonomidou-Turski C, Czuczwar SJ, Turski WA. 1986. Seizures produced by pilocarpine: neuropathological sequelae and activity of glutamate decarboxylase in the rat forebrain. Brain Res 398:37–48.",
+   "item": "bib76"
+  },
+  {
+   "indice": 74,
+   "texto": "Ule J, Darnell RB. 2006. RNA binding proteins and the regulation of neuronal synaptic plasticity. Curr Opin Neurobiol 16:102–110.",
+   "item": "bib77"
+  },
+  {
+   "indice": 75,
+   "texto": "Ule J, Jensen K, Mele A, Darnell RB. 2005a. CLIP: a method for identifying protein-RNA interaction sites in living cells. Methods 37:376–386.",
+   "item": "bib78"
+  },
+  {
+   "indice": 76,
+   "texto": "Ule J, Jensen KB, Ruggiu M, Mele A, Ule A, Darnell RB. 2003. CLIP identifies Nova-regulated RNA networks in the brain. Science 302:1212–1215.",
+   "item": "bib79"
+  },
+  {
+   "indice": 77,
+   "texto": "Ule J, Stefani G, Mele A, Ruggiu M, Wang X, Taneri B, et al.. 2006. An RNA map predicting Nova-dependent splicing regulation. Nature 444:580–586.",
+   "item": "bib80"
+  },
+  {
+   "indice": 78,
+   "texto": "Ule J, Ule A, Spencer J, Williams A, Hu JS, Cline M, et al.. 2005b. Nova regulates brain-specific splicing to shape the synapse. Nat Genet 37:844–852.",
+   "item": "bib81"
+  },
+  {
+   "indice": 79,
+   "texto": "Wang F, Greene EC. 2011. Single-molecule studies of transcription: from one RNA polymerase at a time to the gene expression profile of a cell. J Mol Biol 412:814–831.",
+   "item": "bib82"
+  },
+  {
+   "indice": 80,
+   "texto": "Wollerton MC, Gooding C, Wagner EJ, Garcia-Blanco MA, Smith CW. 2004. Autoregulation of polypyrimidine tract binding protein by alternative splicing leading to nonsense-mediated decay. Mol Cell 13:91–100.",
+   "item": "bib83"
+  },
+  {
+   "indice": 81,
+   "texto": "Yang E, van Nimwegen E, Zavolan M, Rajewsky N, Schroeder M, Magnasco M, et al.. 2003. Decay rates of human mRNAs: correlation with functional characteristics and sequence attributes. Genome Res 13:1863–1872.",
+   "item": "bib84"
+  },
+  {
+   "indice": 82,
+   "texto": "Yang YY, Yin GL, Darnell RB. 1998. The neuronal RNA-binding protein Nova-2 is implicated as the autoantigen targeted in POMA patients with dementia. Proc Natl Acad Sci USA 95:13254–13259.",
+   "item": "bib85"
+  },
+  {
+   "indice": 83,
+   "texto": "Yano M, Hayakawa-Yano Y, Mele A, Darnell RB. 2010. Nova2 regulates neuronal migration through an RNA switch in disabled-1 signaling. Neuron 66:848–858.",
+   "item": "bib86"
+  },
+  {
+   "indice": 84,
+   "texto": "Yap K, Lim ZQ, Khandelia P, Friedman B, Makeyev EV. 2012. Coordinated regulation of neuronal mRNA steady-state levels through developmentally controlled intron retention. Genes Dev 26:1209–1223.",
+   "item": "bib87"
+  },
+  {
+   "indice": 85,
+   "texto": "Ying Z, Bingaman W, Najm IM. 2004. Increased numbers of coassembled PSD-95 to NMDA-receptor subunits NR2B and NR1 in human epileptic cortical dysplasia. Epilepsia 45:314–321.",
+   "item": "bib88"
+  },
+  {
+   "indice": 86,
+   "texto": "Yoshii A, Constantine-Paton M. 2010. Postsynaptic BDNF-TrkB signaling in synapse maturation, plasticity, and disease. Dev Neurobiol 70:304–322.",
+   "item": "bib89"
+  },
+  {
+   "indice": 87,
+   "texto": "Zhang C, Frias MA, Mele A, Ruggiu M, Eom T, Marney CB, et al.. 2010. Integrative modeling defines the Nova splicing-regulatory network and its combinatorial controls. Science 329:439–443.",
+   "item": "bib90"
+  },
+  {
+   "indice": 88,
+   "texto": "Zheng S, Gray EE, Chawla G, Porse BT, O'Dell TJ, Black DL. 2012. PSD-95 is post-transcriptionally repressed during early neural development by PTBP1 and PTBP2. Nat Neurosci 15:381–388. doi: 10.1038/nn.3026",
+   "item": "bib91"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Licatalosi and Darnell, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cooper et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Poulos et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib64"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Darnell, 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2004",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Darnell and Posner, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Szabo et al., 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib74"
+   ],
+   "referencias": [
+    71
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Buckanovich et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Okano and Darnell, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dredge and Jensen, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dredge and Jensen, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Markovtsov et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Polydorides et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Darnell, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Buckanovich et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib85"
+   ],
+   "referencias": [
+    82
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Darnell, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Buckanovich and Darnell, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jensen et al., 2000a",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lewis et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ule et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib80"
+   ],
+   "referencias": [
+    77
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Polydorides et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jensen et al., 2000b",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dredge and Darnell, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dredge et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ule et al., 2005b",
+   "tipo": "xref",
+   "itens": [
+    "bib81"
+   ],
+   "referencias": [
+    78
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Racca et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ruggiu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib69"
+   ],
+   "referencias": [
+    66
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib90"
+   ],
+   "referencias": [
+    87
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Huang and Steitz, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Racca et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maniatis and Reed, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Huang and Steitz, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martin and Ephrussi, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Darnell, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Levine et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Myer et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Peng et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brennan and Steitz, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kishore et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chao et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Racca et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Darnell, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ule et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib79"
+   ],
+   "referencias": [
+    76
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ule et al., 2005b",
+   "tipo": "xref",
+   "itens": [
+    "bib81"
+   ],
+   "referencias": [
+    78
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2006",
+   "tipo": "xref",
+   "itens": [
+    "bib80"
+   ],
+   "referencias": [
+    77
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi and Darnell, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib90"
+   ],
+   "referencias": [
+    87
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Racca et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Racca et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib90"
+   ],
+   "referencias": [
+    87
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Racca et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Racca et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fabian et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brennan and Steitz, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib84"
+   ],
+   "referencias": [
+    81
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Khabar, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib90"
+   ],
+   "referencias": [
+    87
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dredge et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ule and Darnell, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib77"
+   ],
+   "referencias": [
+    74
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib90"
+   ],
+   "referencias": [
+    87
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi and Darnell, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schoenberg and Maquat, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib72"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Matsuda et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ni et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schoenberg and Maquat, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib72"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mendell et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi and Darnell, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turski et al., 1986",
+   "tipo": "xref",
+   "itens": [
+    "bib76"
+   ],
+   "referencias": [
+    73
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turski et al., 1986",
+   "tipo": "xref",
+   "itens": [
+    "bib76"
+   ],
+   "referencias": [
+    73
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ule et al., 2005b",
+   "tipo": "xref",
+   "itens": [
+    "bib81"
+   ],
+   "referencias": [
+    78
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yoshii and Constantine-Paton, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib89"
+   ],
+   "referencias": [
+    86
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kennedy and Ehlers, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib90"
+   ],
+   "referencias": [
+    87
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ule et al., 2005b",
+   "tipo": "xref",
+   "itens": [
+    "bib81"
+   ],
+   "referencias": [
+    78
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Racca et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Meisner and Filipowicz, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Crittenden et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Quenault et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib66"
+   ],
+   "referencias": [
+    63
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Krol et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yano et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib86"
+   ],
+   "referencias": [
+    83
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schoenberg and Maquat, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib72"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Huang and Wilkinson, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tarpey et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib75"
+   ],
+   "referencias": [
+    72
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lewis et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Saltzman et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib70"
+   ],
+   "referencias": [
+    67
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Giorgi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zheng et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib91"
+   ],
+   "referencias": [
+    88
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hyvönen et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lewis et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guan et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wollerton et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib83"
+   ],
+   "referencias": [
+    80
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Boutz et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Makeyev et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yap et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib87"
+   ],
+   "referencias": [
+    84
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yano et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib86"
+   ],
+   "referencias": [
+    83
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dredge et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hur and Zhou, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Richter and Klann, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib68"
+   ],
+   "referencias": [
+    65
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gehman et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib90"
+   ],
+   "referencias": [
+    87
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ying et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib88"
+   ],
+   "referencias": [
+    85
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Qu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Meisler et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Buckanovich et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Singh et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib73"
+   ],
+   "referencias": [
+    70
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gurnett et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sander et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib71"
+   ],
+   "referencias": [
+    68
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ince-Dunn et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ule et al., 2005b",
+   "tipo": "xref",
+   "itens": [
+    "bib81"
+   ],
+   "referencias": [
+    78
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hachet and Ephrussi, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goina et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goodrich et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pan et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Racca et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blainey et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang and Greene, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib82"
+   ],
+   "referencias": [
+    79
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ule et al., 2005b",
+   "tipo": "xref",
+   "itens": [
+    "bib81"
+   ],
+   "referencias": [
+    78
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ince-Dunn et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ule et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib79"
+   ],
+   "referencias": [
+    76
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2005a",
+   "tipo": "xref",
+   "itens": [
+    "bib78"
+   ],
+   "referencias": [
+    75
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jensen and Darnell, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Licatalosi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib90"
+   ],
+   "referencias": [
+    87
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Eom et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Racca et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Levine et al., 1993",
+   "item": "bib43"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Gehman et al., 2011",
+   "item": "bib21"
+  },
+  {
+   "ponto": "E",
+   "referencia": 14,
+   "item": "bib15"
+  },
+  {
+   "ponto": "E",
+   "referencia": 27,
+   "item": "bib29"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

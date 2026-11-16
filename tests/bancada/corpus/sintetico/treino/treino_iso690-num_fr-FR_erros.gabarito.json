@@ -1,0 +1,727 @@
+{
+ "id": "treino_iso690-num_fr-FR_erros",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "2.  WAGNER, David. Pauvre discours préparer en effet par employer. Techer : Leroy, 2006.",
+   "item": "it020"
+  },
+  {
+   "indice": 1,
+   "texto": "3.  VIRGINIA-MARYLAND COLLEGE OF VETERINARY MEDICINE. Vague quarante précieux art prévoir prononcer comment. In : GERMAIN, Juliette (éd.), Humide rôle humain loi fou. Sainte Louis-la-Forêt : Berthelot Duval SA, 1979. p. 61‑76.",
+   "item": "it008"
+  },
+  {
+   "indice": 2,
+   "texto": "4.  MINISTERIO DE SANIDAD (ESPAÑA). Simplement printemps pareil place hésiter effet prouver. Preventive Veterinary Medicine. 2015. Vol. 44, no. 2, p. 471‑487. DOI 10.99999/teste.treino.48965.",
+   "item": "it007"
+  },
+  {
+   "indice": 3,
+   "texto": "5.  BOULAY, Clémence. Respect puis ami vérité race inconnu système clair. Epidemiologia & Prevenzione. 1977. Vol. 19, no. 9, p. 787‑802. DOI 10.99999/teste.treino.22400.",
+   "item": "it010"
+  },
+  {
+   "indice": 4,
+   "texto": "6.  DE DAVID, Jérôme. Seuil moitié brûler inquiétude. Online. 2022. 7711. Available from: https://leis-treino.gov/530",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "7.  ROUSSET, Paul et RIOU, Dorothée. Propos terme approcher précieux quelque davantage pensée réclamer forcer craindre sec trop matière tu prévoir. Medical Mycology. 1981. Vol. 79, no. 5, p. 74‑82. DOI 10.99999/teste.treino.51396.",
+   "item": "it014"
+  },
+  {
+   "indice": 6,
+   "texto": "8.  POTTIER, Marcel, GOSSELIN, Marianne, ALLARD, Matthieu et PAGES, Clémence. Commander compte fuir pièce genou fait dieu suivant. Preventive Veterinary Medicine. 1991. Vol. 42, no. 1, p. 17‑25. DOI 10.99999/teste.treino.21079.",
+   "item": "it026"
+  },
+  {
+   "indice": 7,
+   "texto": "9.  MULLER, Michelle et VIDAL, Sabine. Renverser vieux nouveau parmi meilleur peine drame représenter toujours. . Lamy : Alexandre, 1984.",
+   "item": "it018"
+  },
+  {
+   "indice": 8,
+   "texto": "10.  ROBERT KOCH-INSTITUT. Saison roi repas fin gouvernement grave. Online. 9573. Available from: https://leis-treino.gov/7659",
+   "item": "it025"
+  },
+  {
+   "indice": 9,
+   "texto": "11.  COURTOIS, Sébastien. Doigt tranquille droite appuyer écraser éteindre fixe. Gaceta Sanitaria. 2020. Vol. 47, no. 7, p. 10‑20.",
+   "item": "it023"
+  },
+  {
+   "indice": 10,
+   "texto": "12.  AUGER, Élodie, MENDÈS, Stéphane et MATHIEU, Guy. Doigt suite cinq carte maître vers noir. Epidemiologia e Serviços de Saúde. 1986. Vol. 64, no. 2, p. 285‑293. DOI 10.99999/teste.treino.95610.",
+   "item": "it017"
+  },
+  {
+   "indice": 11,
+   "texto": "13.  PARK, Min-jun, FERNANDEZ, Gabrielle, RICHARD, Marcel et JULIEN, Susanne. Effort complètement brûler moitié ennemi rire art son éclater le. . Raymond-sur-Lesage : Deschamps, 1980.",
+   "item": "it004"
+  },
+  {
+   "indice": 12,
+   "texto": "14.  FAIVRE, Marie. Fonder vingt vert ni apporter il ignorer écraser. Revue d’Épidémiologie et de Santé Publique. 2018. Vol. 64, no. 12, p. 438‑447.",
+   "item": "it012"
+  },
+  {
+   "indice": 13,
+   "texto": "15.  INSTITUTO NACIONAL DE CÂNCER (BRASIL). Autre oser enfoncer retenir ce lune quart mieux son avouer regard. Klein : Pasquier, 2007.",
+   "item": "it009"
+  },
+  {
+   "indice": 14,
+   "texto": "16.  GREMIÃO, Philippine, GAUTHIER, Grégoire et POIRIER, Élisabeth. Révéler midi départ charger regard porter. Das Gesundheitswesen. 2006. Vol. 17, no. 2, p. 575‑579. DOI 10.99999/teste.treino.68713.",
+   "item": "it006"
+  },
+  {
+   "indice": 15,
+   "texto": "17.  WEISS, Margaux, MAHE, Maryse, DELAHAYE, Lucy, VALLET, Marthe, HOAREAU, Auguste et LACROIX, Aurélie. Désigner naissance parvenir quant à rêver vide ça renoncer parti forêt long pourtant pays. Medical Mycology. 2009. Vol. 32, no. 11, p. 536‑548. DOI 10.99999/teste.treino.91208.",
+   "item": "it024"
+  },
+  {
+   "indice": 16,
+   "texto": "18.  TRAN, Thi Hoa, ALLARD, Lucie et ALVES, Alexandrie. Avouer fond allumer humide assurer début discours précieux journée. Journal of the American Medical Informatics Association. 1983. Vol. 8, no. 3, p. 130‑137. DOI 10.99999/teste.treino.30945.",
+   "item": "it005"
+  },
+  {
+   "indice": 17,
+   "texto": "19.  BOUCHER, Gilles, FAURE, Gérard et MAILLOT, Luc. Douleur révéler prier bon penser. Preventive Veterinary Medicine. 2010. Vol. 63, no. 8, p. 866‑879. DOI 10.99999/teste.treino.35001.",
+   "item": "it011"
+  },
+  {
+   "indice": 18,
+   "texto": "20.  WEISS, Emmanuelle, LOPEZ, Capucine, TECHER, Anne et PICARD, Lucas. Il rencontre rappeler toute exister. Revista de Saúde Pública. 2001. Vol. 6, no. 1, p. 466‑484.",
+   "item": "it019"
+  },
+  {
+   "indice": 19,
+   "texto": "21.  HERNÁNDEZ ARRANZ, Catalina, LELIÈVRE, Élisabeth, DA SILVA, Denis et PETIT, Jeannine. Chambre arriver gagner avant relation étoile rapidement recommencer chute île après désigner vaincre. Journal of the American Medical Informatics Association. 2008. Vol. 10, no. 6, p. 791‑806.",
+   "item": "it002"
+  },
+  {
+   "indice": 20,
+   "texto": "22.  THOMAS, Alfred, BRUNET, Alexandria, PERRET, Émile et CARRE, Patricia. Faim ouvrir achever ligne hors instinct dernier honneur théâtre y entendre. Cadernos de Saúde Pública. 1984. Vol. 72, no. 4, p. 895‑908. DOI 10.99999/teste.treino.75244.",
+   "item": "it015"
+  },
+  {
+   "indice": 21,
+   "texto": "23.  POTTIER, Marcel, GOSSELIN, Marianne, ALLARD, Matthieu et PAGES, Clémence. Révolution professeur jeune souvenir appel réduire non inventer preuve valoir mener complètement arrière plan herbe. Epidemiologia e Serviços de Saúde. 1991. Vol. 11, no. 10, p. 224‑242. DOI 10.99999/teste.treino.15788.",
+   "item": "it027"
+  },
+  {
+   "indice": 22,
+   "texto": "24.  BOULANGER, Sylvie, LACOMBE, Michèle, AUBRY, Margaud, LAPORTE, Maryse, DELANNOY, Daniel et BOURGEOIS, Lucie. Général ouvrir aventure d’abord père approcher riche vue. In : ROUSSEAU, Célina (éd.), Condition résultat doigt celui colon mille troisième. Parent-sur-Laine : Boulanger Le Goff S.A., 1997. p. 47‑62.",
+   "item": "it016"
+  },
+  {
+   "indice": 23,
+   "texto": "25.  AUBERT, Stéphanie, PIERRE, Capucine, PINEAU, Geneviève, DESCAMPS, Bernard, GUILLON, Mathilde et SAUVAGE, Claudine. Muet plan y retirer. In : ADAM, Christine (éd.), Horizon enfin secret page renoncer noir. Leblanc : Chrétien, 1979. p. 169‑184.",
+   "item": "it022"
+  },
+  {
+   "indice": 24,
+   "texto": "27.  LI, Jing, NOËL, Noémi, MULLER, Michelle et OLIVIER, Xavier. Tapis rompre prison bois ouvrage avant choisir. Epidemiologia & Prevenzione. 2005. Vol. 5, no. 2, p. 10‑26.",
+   "item": "it003"
+  },
+  {
+   "indice": 25,
+   "texto": "28.  GEORGES-BLONDEL, Margot. Certes immobile société protéger angoisse tranquille grand miser pour. BMC Public Health. 2005. Vol. 41, no. 7, p. 665‑673. DOI 10.99999/teste.treino.77725.",
+   "item": "it000"
+  },
+  {
+   "indice": 26,
+   "texto": "29.  GRENIER-LÉVY, Benjamin, GAILLARD, Chantal, COUSIN, Bernard et MORVAN, Laurent. Pensée suite assister guerre environ bas d’abord songer qui fenêtre. Revue d’Épidémiologie et de Santé Publique. 2019. Vol. 78, no. 4, p. 337‑356. DOI 10.99999/teste.treino.99644.",
+   "item": "extra0"
+  },
+  {
+   "indice": 27,
+   "texto": "30.  VON FONTAINE, Jacqueline, HARDY, Matthieu et GEORGES, Christiane. Pourquoi saison entre mouvement tenir. Online. 2021. [Accessed 15 novembre 2026]. Available from: https://exemplo-treino.org/6433",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wagner (2)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (3)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it010"
+   ],
+   "referencias": [
+    2,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 6, 7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it014",
+    "it021"
+   ],
+   "referencias": [
+    4,
+    5,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pottier et al. (8)",
+   "tipo": "narrativa",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Muller (9)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10, 11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it023"
+   ],
+   "referencias": [
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it010"
+   ],
+   "referencias": [
+    10,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it021"
+   ],
+   "referencias": [
+    12,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gremião et al. (16)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15, 17, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it024",
+    "it005"
+   ],
+   "referencias": [
+    13,
+    15,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Boucher et al. (19)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weiss et al. (20)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 6, 9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it001",
+    "it018"
+   ],
+   "referencias": [
+    null,
+    4,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it015"
+   ],
+   "referencias": [
+    3,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12, 23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it017"
+   ],
+   "referencias": [
+    21,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Boulanger et al. (24)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10, 25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it025"
+   ],
+   "referencias": [
+    23,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8, 14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it012"
+   ],
+   "referencias": [
+    6,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18, 22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it005"
+   ],
+   "referencias": [
+    20,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 14, 26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it012",
+    "it013"
+   ],
+   "referencias": [
+    null,
+    12,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10, 28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it025"
+   ],
+   "referencias": [
+    25,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9, 10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it025"
+   ],
+   "referencias": [
+    7,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3, 6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it001"
+   ],
+   "referencias": [
+    1,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17, 25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it022"
+   ],
+   "referencias": [
+    15,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20, p. 28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Rousset (7)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(1)",
+   "item": "it021"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(1, 6, 7)",
+   "item": "it021"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(1, 14)",
+   "item": "it021"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(1, 6, 9)",
+   "item": "it021"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(1, 14, 26)",
+   "item": "it021"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(1, 14, 26)",
+   "item": "it013"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(1)",
+   "item": "it021"
+  },
+  {
+   "ponto": "E",
+   "referencia": 26,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 27,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Confiance y dimanche commander somme user chaîne"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

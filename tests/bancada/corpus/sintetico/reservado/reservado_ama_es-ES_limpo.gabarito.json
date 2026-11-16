@@ -1,0 +1,697 @@
+{
+ "id": "reservado_ama_es-ES_limpo",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "es-ES",
+ "conjunto": "reservado",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. dos Múgica F, Rosado A, Izaguirre M, Araujo F. Cuadro internacional libre sistema dar en fueron. 1991. https://leis-reservado.gov/2151",
+   "item": "it001"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Nadal A, Gras G. Derecha económico nombre vivir cultura tu. Farmaceútica Samper & Asociados S.Coop.; 1993.",
+   "item": "it014"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Australian Institute of Health and Welfare (Australia). Torno tres pasa s largo principales mayor nueva fue has fondo cuarto ellos. 2025. https://leis-reservado.gov/7975",
+   "item": "it013"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Conselho Federal de Medicina Veterinária. Llegado viene nuevos serie media. 2025. Accedido 16 de noviembre de 2026. https://exemplo-reservado.org/6839",
+   "item": "it018"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Villalobos E. Iglesia interés república revolución hijo da joven puerta económica siempre. Cadernos de Saúde Pública. 2006;11(9):344-349. doi:10.99999/teste.reservado.14096",
+   "item": "it030"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Caballero P, Santana V. Humana b tener fuego autoridades pueblo libros dolor a precio. 2002. Accedido 9 de noviembre de 2026. https://exemplo-reservado.org/4960",
+   "item": "it027"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Heredia-Torrijos D, Suarez F, Castro C. Uso han problema defensa nuevos tema cantidad riesgo términos. Das Gesundheitswesen. 1982;70(6):488-504. doi:10.99999/teste.reservado.50764",
+   "item": "it000"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Choi M jun. Primer capital como capital material servicio. En: Almeida S, ed. Acciones razones algunas allí única tales hubo ideas cuatro aun anterior. Supermercados Peñalver S.Com.; 1978:160-175.",
+   "item": "it004"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Farré A. Abril socialista mira pensar. Revista de Saúde Pública. 2022;8(1):846-863. doi:10.99999/teste.reservado.14283",
+   "item": "it015"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Conselho Federal de Medicina Veterinária. Zona algún programa nuevas cómo distintos. One Health. 1993;41(4):486-503.",
+   "item": "it009"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Secretaria Municipal da Saúde (Curitiba). Vez violencia evitar posible. 1985. Accedido 15 de noviembre de 2026. https://exemplo-reservado.org/8271",
+   "item": "it025"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Benet R, Alvarez F, Águila A, Arranz T. Del esos mayo conseguir volver juez última única existencia partidos. Revista de Saúde Pública. 1979;61(5):340-357.",
+   "item": "it028"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Abella Arnal A. Tendrá recursos sobre actividad tampoco época hecho pregunta. Inmobiliaria Segarra y asociados S.Coop.; 1985.",
+   "item": "it002"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Benito P, Jurado JA. Efectos mayores poner resultados a carácter casos sector me. Manufacturas Alfonso S.Com.; 1979.",
+   "item": "it011"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Sebastián O. Campaña sociales madre eran deben revolución. Epidemiologia e Serviços de Saúde. 1980;44(12):898-902. doi:10.99999/teste.reservado.90651",
+   "item": "it026"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Cruz I, Toledo L, Martinez V, Diéguez E. Mal marco francisco formación razón arriba sería soy año en. One Health. 1990;34(3):782-800. doi:10.99999/teste.reservado.71651",
+   "item": "it033"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Bastida N, Gracia G. Según él aquí cara seguridad estos suficiente importante amor partir unos hubo. Servicios Dominguez S.L.; 2008.",
+   "item": "it029"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Jordán L. Servicios niños empresa marzo sean. One Health. 2003;76(9):577-587. doi:10.99999/teste.reservado.72260",
+   "item": "it021"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Córdoba V, Caparrós D, Benavente R, Comas M. Siquiera visita personal cine difícil estado. Das Gesundheitswesen. 1997;62(9):725-738. doi:10.99999/teste.reservado.27294",
+   "item": "it023"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Bundesinstitut für Risikobewertung. Casa sabía resto segundo buen civil clase médico consejo lugar zona fecha hombre aspecto. Soluciones SHRE S.L.N.E; 2011.",
+   "item": "it024"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Aramburu V, Cifuentes F, Pont C. Sola carlos prueba mediante contenido razón cuales mayores tarde parecía. Revue d’Épidémiologie et de Santé Publique. 78(2):103-108. doi:10.99999/teste.reservado.93140",
+   "item": "it031"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Cruz I, Toledo L, Martinez V, Diéguez E. Éste necesario ser dice carrera encima niveles varios punto. En: Chaves R, ed. Arriba político voluntad corazón haciendo pedro apoyo. Diaz & Asociados S.Com.; 1990:120-135.",
+   "item": "it032"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Rios R, Ramón A, Silva A, Luján N, Osuna P, Teruel M. Hija izquierda nosotros vez p cuando exterior mercado. Das Gesundheitswesen. 1983;9(3):260-274.",
+   "item": "it012"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Vidal N. Exterior energía concepto hermano crisis cuya mira. Villanueva & Asociados S.A.; 1994.",
+   "item": "it020"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Feijoo D. Llegar ideas puede final nivel n buenos realidad vuelve no español técnica mi ve. Cadernos de Saúde Pública. 2018;31(11):832-848. doi:10.99999/teste.reservado.82779",
+   "item": "it022"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Espejo S. Comenzó debe últimos lópez quién cuando. En: Godoy R, ed. Hecho tuvo cultural número pasado mayor he prueba mayo entre juan régimen efecto quienes mitad aspecto. Ángeles Romero Cifuentes S.Com.; 1999:109-124.",
+   "item": "it017"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Pham TH, Fortuny R, Terrón B. Arte entrar dejó sueño relaciones. Infraestructuras Nogués S.L.N.E; 1993.",
+   "item": "it005"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Li H, Julián C, Ibañez J. Diez pacientes políticas mujer equipo dónde sistema muerto figura alto. Epidemiologia e Serviços de Saúde. 1993;56(1):260-273. doi:10.99999/teste.reservado.22692",
+   "item": "it003"
+  },
+  {
+   "indice": 28,
+   "texto": "29. Santé publique France. Tipos acto tiempos habla atrás economía mirada diciembre atención tengo dentro dolor. Journal of the American Medical Informatics Association. 1978;3(1):429-444.",
+   "item": "it007"
+  },
+  {
+   "indice": 29,
+   "texto": "30. Zapata V, Tirado A, Mendizábal R. Contrario propuesta formas buena hacía llamado zona historia eran habla tanto rosa diversas cual de. Epidemiologia & Prevenzione. 2017;49(6):839-857. doi:10.99999/teste.reservado.12871",
+   "item": "it010"
+  },
+  {
+   "indice": 30,
+   "texto": "31. Alcántara G, Rius B, Benavent J, Grande E, Collado B, Higueras A. Hecho pie derecho análisis siete julio alto cultura. Epidemiologia e Serviços de Saúde. 1988;60(3):513-518.",
+   "item": "it016"
+  },
+  {
+   "indice": 31,
+   "texto": "32. Secretaria Municipal da Saúde (Curitiba). Izquierda características santiago persona francia necesidad final buenos. Farmaceútica LGGQ S.L.N.E; 2002.",
+   "item": "it008"
+  },
+  {
+   "indice": 32,
+   "texto": "33. Rosado A, Jiménez P, Sobrino S, Velázquez A, Luque M, Pol A. Sectores adelante martín. Epidemiologia e Serviços de Saúde. 2016;78(4):570-578. doi:10.99999/teste.reservado.84781",
+   "item": "it019"
+  },
+  {
+   "indice": 33,
+   "texto": "34. Łukasz L, Antúnez E. Puso oro etapa hacen misma muerte usted debido les buenos club mira posición. Revista de Saúde Pública. 2019;42(8):110-128. doi:10.99999/teste.reservado.83633",
+   "item": "it006"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "dos Múgica et al. 1",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,7",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it000"
+   ],
+   "referencias": [
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,9",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it015"
+   ],
+   "referencias": [
+    7,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Conselho Federal de Medicina Veterinária 10",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13,14",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it011"
+   ],
+   "referencias": [
+    12,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7,17",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it029"
+   ],
+   "referencias": [
+    6,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "19",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bundesinstitut für Risikobewertung 20",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aramburu et al. 21",
+   "tipo": "narrativa",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17,22",
+   "tipo": "parentetica",
+   "itens": [
+    "it032",
+    "it029"
+   ],
+   "referencias": [
+    21,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18,22,24",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it032",
+    "it021"
+   ],
+   "referencias": [
+    23,
+    21,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Benito 14",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,25",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it022"
+   ],
+   "referencias": [
+    7,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "26",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,23,27",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it015",
+    "it005"
+   ],
+   "referencias": [
+    22,
+    8,
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "28",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Santé publique France 29",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "30",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,22,29",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it032",
+    "it014"
+   ],
+   "referencias": [
+    28,
+    21,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,20",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it015"
+   ],
+   "referencias": [
+    19,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "31,32",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it008"
+   ],
+   "referencias": [
+    30,
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "33",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "34",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2(p88)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "19",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "22",
+   "tipo": "parentetica",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Cruz et al. 22",
+   "tipo": "narrativa",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "B puedo doctor concepto tales derecho sobre a productos larga"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

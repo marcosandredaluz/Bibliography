@@ -1,0 +1,1675 @@
+{
+ "id": "elife-00013_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00013.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Agosta WC. 1992. Chemical communication.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Ahmed I, Yokota A, Fujiwara T. 2007. Chimaereicella boritolerans sp nov., a boron-tolerant and alkaliphilic bacterium of the family Flavobacteriaceae isolated from soil. Int J Syst Evol Microbiol 57:986–992.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Alegado RA, Grabenstatter JD, Zuzow R, Morris A, Huang SY, Summons RE, King N. 2012. Algoriphagus machipongonensis sp. nov. co-isolated with a colonial choanoflagellate. Int J Syst Evol Microbiol.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "An D, Na C, Bielawski J, Hannun YA, Kasper DL. 2011. Membrane sphingolipids as essential molecular signals for Bacteroides survival in the intestine. Proc Natl Acad Sci U S A 1:4666–4671.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Anton J, Oren A, Benlloch S, Rodriguez-Valera F, Amann R, Rossello-Mora R. 2002. Salinibacter ruber gen. nov., sp nov., a novel, extremely halophilic member of the bacteria from saltern crystallizer ponds. Int J Syst Evol Microbiol 52:485–491.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Apicella MA. 2008. Isolation and characterization of lipopolysaccharides. Methods Mol Biol 431:3–13.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Atlas RM. 2004. Handbook of microbiological media:2051.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Barbeyron T, L’Haridon S, Corre E, Kloareg B, Potin P. 2001. Zobellia galactanovorans gen. nov., sp. nov., a marine species of Flavobacteriaceae isolated from a red alga, and classification of [Cytophaga] uliginosa (ZoBell and Upham 1944) Reichenbach 1989 as Zobellia uliginosa gen. nov., comb. nov. Int J Syst Evol Microbiol 51:985–997.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Bernardet J, Segers P, Vancanneyt M, Berthe F, Kersters K, Vandamme P. 1996. Cutting a Gordian knot: Emended classification and description of the genus Flavobacterium, emended description of the family Flavobacteriaceae, and proposal of Flavobacterium hydatis nom nov (basonym, Cytophaga aquatilis Strohl and Tait 1978). Int J Syst Bacteriol 46:128–148.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Blattner FR, Plankett G, Bloch CA, Perna N, Burland V, Riley M, Collado-Vides J, Glasner JD, Rode CK, Mayhew GF, et al.. 1997. The complete genome sequence of Escherichia coli K-12. Science 277:1453–1462.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Bligh EG, Dyer WJ. 1959. A rapid method of total lipid extraction and purification. Can J Biochem Physiol 37:911–917.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Bowman JP, Nichols CM, Gibson JAE. 2003. Algoriphagus ratkowskyi gen. nov., sp. nov., Brumimicrobium glaciale gen. nov., sp. nov., Cryomorpha ignava gen. nov., sp. nov. and Crocinitomix catalasitica gen. nov., sp. nov., novel flavobacteria isolated from various polar habitats. Int J Syst Evol Microbiol 53:1343–1355.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Bradley RK, Roberts A, Smoot M, Juvekar S, Do J, Dewey C, Holmes I, Pachter L. 2009. Fast statistical alignment. PLoS Comput Biol 5:e1000392.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Brettar I, Christen R, Hofle M. 2004a. Aquiflexum balticum gen. nov., sp nov., a novel marine bacterium of the Cytophaga-Flavobacterium-Bacteroides group isolated from surface water of the central Baltic Sea. Int J Syst Evol Microbiol 54:2335–2341.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Brettar I, Christen R, Hofle MG. 2004b. Belliella baltica gen. nov., sp. nov., a novel marine bacterium of the Cytophaga-Flavobacterium-Bacteroides group isolated from surface water of the central Baltic Sea. Int J Syst Evol Microbiol 54:65–70.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Burkholder PR, Giles NH. 1947. Induced biochemical mutations in Bacillus subtilis. Am J Bot 34:345–348.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Butenandt A, Beckmann R, Hecker E. 1961. On the sex attractant of silk-moths. I. The biological test and the isolation of the pure sex-attractant bombykol. Hoppe-Seylers Z Physiol Chem 324:71–83.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Carlucci AF, Pramer D. 1957. Factors influencing the plate method for determining abundance of bacteria in sea water. Proc Soc Exp Biol Med 96:392–394.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Carr M, Leadbeater BSC, Hassan R, Nelson M, Baldauf SL. 2008. Molecular phylogeny of choanoflagellates, the sister group to Metazoa. Proc Natl Acad Sci U S A 105:16641–16646.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Castresana J. 2000. Selection of conserved blocks from multiple alignments for their use in phylogenetic analysis. Mol Biol Evol 17:540–552.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Cerdeno-Tarraga AM, Patrick S, Crossman L, Blakely GW, Abratt V, Lennard N, Poxton I, Duerden B, Harris B, Quail MA, et al.. 2005. Extensive DNA inversions in the B. fragilis genome control variable gene expression. Science 307:1463–1465.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Chelius M, Triplett E. 2000. Dyadobacter fermentans gen. nov., sp nov., a novel gram-negative bacterium isolated from surface-sterilized Zea mays stems. Int J Syst Evol Microbiol 50:751–758.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Cho J-C, Giovannoni SJ. 2003. Croceibacter atlanticus gen. nov., sp. nov., a novel marine bacterium in the family Flavobacteriaceae. Syst Appl Microbiol 26:76–83.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Cho J-C, Giovannoni SJ. 2004. Robiginitalea biformata gen. nov., sp. nov., a novel marine bacterium in the family Flavobacteriaceae with a higher G+C content. Int J Syst Evol Microbiol 54:1101–1106.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Cohn ZA, Morse SI. 1960. Functional and metabolic properties of polymorphonuclear leucocytes. II. The influence of a lipopolysaccharide endotoxin. J Exp Med 111:689–704.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Dayel MJ, Alegado RA, Fairclough SR, Levin TC, Nichols SA, McDonald K, King N. 2011. Cell differentiation and morphogenesis in the colony-forming choanoflagellate Salpingoeca rosetta. Dev Biol 357:73–82.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "DeSantis TZ, Hugenholtz P, Larsen N, Rojas M, Brodie EL, Keller K, Huber T, Dalevi D, Hu P, Andersen GL. 2006. Greengenes, a chimera-checked 16S rRNA gene database and workbench compatible with ARB. Appl Environ Microbiol 72:5069–5072.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Desbrosses GJ, Stougaard J. 2011. Root nodulation: A paradigm for how plant-microbe symbiosis influences host developmental pathways. Cell Host Microbe 10:348–358.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Drijber R, McGill W. 1994. Sulfonolipid content of Cytophaga and Flexibacter species isolated from soil and cultured under different nutrient and temperature regimes. Can J Microbiol 40:132–139.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Edman DC, Pollock MB, Hall ER. 1968. Listeria monocytogenes L forms. I. Induction maintenance, and biological characteristics. J Bacteriol 96:352–357.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Fairclough SR, Dayel MJ, King N. 2010. Multicellular development in a choanoflagellate. Curr Biol 20:R875–R876.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Falenstein J. 1989. PHYLIP—Phylogeny inference packages (version 3.2). Cladistics 5:164–166.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Falke JJ, Bass RB, Butler SL, Chervitz SA, Danielson MA. 1997. The two-component signaling pathway of bacterial chemotaxis: A molecular view of signal transduction by receptors, kinases, and adaptation enzymes. Annu Rev Cell Dev Biol 13:457–512.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Falkow S. 2006. Is persistent bacterial infection good for your health?. Cell 124:699–702.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Garrity GM. 2010. Bergey’s manual of systematic bacteriology: Bacteroidetes, spirochetes, tenericutes (mollicutes), acidobacteria, fibrobacteres, fusobacteria, dictyoglomi, gemmatimonadetes, lentisphaerae, verrucomicrobia, chlamydiae, and planctomycetes:949.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Godchaux W, Leadbetter ER. 1980. Capnocytophaga spp. contain sulfonolipids that are novel in procaryotes. J Bacteriol 144:592–602.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Godchaux W, Leadbetter ER. 1983. Unusual sulfonolipids are characteristic of the Cytophaga-Flexibacter group. J Bacteriol 153:1238–1246.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Godchaux W, Leadbetter ER. 1984. Sulfonolipids of gliding bacteria. Structure of the N-acylaminosulfonates. J Biol Chem 259:2982–2990.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Hannich JT, Umebayashi K, Riezman H. 2011. Distribution and functions of sterols and sphingolipids. Cold Spring Harb Perspect Biol 3.",
+   "item": "bib40"
+  },
+  {
+   "indice": 39,
+   "texto": "Hannun YA, Luberto C, Argraves KM. 2001. Enzymes of sphingolipid metabolism: From modular to integrative signaling. Biochemistry 40:4893–4903.",
+   "item": "bib41"
+  },
+  {
+   "indice": 40,
+   "texto": "Herr DR, Fyrst H, Phan V, Heinecke K, Georges R, Harris GL, Saba JD. 2003. Sply regulation of sphingolipid signaling molecules is essential for Drosophila development. Development 130:2443–2453.",
+   "item": "bib42"
+  },
+  {
+   "indice": 41,
+   "texto": "Hibberd DJ. 1975. Observations on the ultrastructure of the choanoflagellate Codosiga botrytis (Ehr.) Saville-Kent with special reference to the flagellar apparatus. J Cell Sci 17:191–219.",
+   "item": "bib43"
+  },
+  {
+   "indice": 42,
+   "texto": "Hoffmann JA, Kafatos FC, Janeway CA, Ezekowitz RA. 1999. Phylogenetic perspectives in innate immunity. Science 284:1313–1318.",
+   "item": "bib44"
+  },
+  {
+   "indice": 43,
+   "texto": "Hughes DT, Sperandio V. 2008. Inter-kingdom signalling: Communication between bacteria and their hosts. Nat Rev Microbiol 6:111–120.",
+   "item": "bib45"
+  },
+  {
+   "indice": 44,
+   "texto": "James-Clark H. 1867. On the spongiae ciliatae as infusoria flagellata; or observations on the structure, animality, and relationship of Leucosolenia botryoides, Bowerbank. Memoirs Boston Soc. Of Nat. Hist.",
+   "item": "bib46"
+  },
+  {
+   "indice": 45,
+   "texto": "de Jonge BL, Chang YS, Gage D, Tomasz A. 1992. Peptidoglycan composition in heterogeneous Tn551 mutants of a methicillin-resistant Staphylococcus aureus strain. J Biol Chem 267:11255–11259.",
+   "item": "bib47"
+  },
+  {
+   "indice": 46,
+   "texto": "Kamiyama T, Umino T, Itezono Y, Nakamura Y, Satoh T, Yokose K. 1995a. Sulfobacins A and B, novel von Willebrand factor receptor antagonists. II. Structural elucidation. J Antibiot 48:929–936.",
+   "item": "bib48"
+  },
+  {
+   "indice": 47,
+   "texto": "Kamiyama T, Umino T, Satoh T, Sawairi S, Shirane M, Ohshima S, Yokose K. 1995b. Sulfobacins A and B, novel von Willebrand factor receptor antagonists. I. Production, isolation, characterization and biological activities. J. Antibiot 48:924–928.",
+   "item": "bib49"
+  },
+  {
+   "indice": 48,
+   "texto": "Karpov SA, Coupe SJ. 1998. A revision of choanoflagellate genera Kentrosiga, Schiller, 1953 and Desmarella, Kent, 1880. Acta Protozoologica 37:23–27.",
+   "item": "bib50"
+  },
+  {
+   "indice": 49,
+   "texto": "Kimbrell DA, Beutler B. 2001. The evolution and genetics of innate immunity. Nat Rev Genet 2:256–267.",
+   "item": "bib51"
+  },
+  {
+   "indice": 50,
+   "texto": "King N. 2004. The unicellular ancestry of animal development. Dev Cell 7:313–325.",
+   "item": "bib52"
+  },
+  {
+   "indice": 51,
+   "texto": "King N, Carroll SB. 2001. A receptor tyrosine kinase from choanoflagellates: Molecular insights into early animal evolution. Proc Natl Acad Sci U S A 98:15032–15037.",
+   "item": "bib53"
+  },
+  {
+   "indice": 52,
+   "texto": "King N, Hittinger CT, Carroll SB. 2003. Evolution of key cell signaling and adhesion protein families predates animal origins. Science 301:361–363.",
+   "item": "bib54"
+  },
+  {
+   "indice": 53,
+   "texto": "King N, Young SL, Abedin M, Carr M, Leadbeater BSC. 2009. Starting and maintaining Monosiga brevicollis cultures. Cold Spring Harb Protoc.",
+   "item": "bib56"
+  },
+  {
+   "indice": 54,
+   "texto": "Kobayashi J, Mikami S, Shigemori H, Takao TYS, Izuta S, Yoshida S. 1995. Flavocristamides A and B, new DNA polymerase α inhibitors from a marine bacterium sp. Tetrahedron 51:10487–10490.",
+   "item": "bib57"
+  },
+  {
+   "indice": 55,
+   "texto": "Kopp EB, Medzhitov R. 1999. The Toll-receptor family and control of innate immunity. Curr Opin Immunol 11:13–18.",
+   "item": "bib58"
+  },
+  {
+   "indice": 56,
+   "texto": "Koropatnick TA, Engle JT, Apicella MA, Stabb EV, Goldman WE, Mcfall-Ngai MJ. 2004. Microbial factor-mediated development in a host-bacterial mutualism. Science 306:1186–1188.",
+   "item": "bib59"
+  },
+  {
+   "indice": 57,
+   "texto": "Kreft JM. 2010. Effects of forming multicellular colonies or attaching to surfaces on feeding rates of the choanoflagellate Salpingoeca rosetta. Thesis (M.A. in Integrative Biology).",
+   "item": "bib60"
+  },
+  {
+   "indice": 58,
+   "texto": "Kunst F, Ogasawara N, Moszer I, Albertini AM, Alloni G, Azevedo V, Bertero MG, Bessières P, Bolotin A, Borchert S, et al.. 1997. The complete genome sequence of the gram-positive bacterium Bacillus subtilis. Nature 390:249–256.",
+   "item": "bib61"
+  },
+  {
+   "indice": 59,
+   "texto": "Leadbeater BSC. 1983. Life-history and ultrastructure of a new marine species of Proterospongia (Choanoflagellida). J Mar Biol Assoc UK 63:135–160.",
+   "item": "bib62"
+  },
+  {
+   "indice": 60,
+   "texto": "Lee YK, Mazmanian SK. 2010. Has the microbiota played a critical role in the evolution of the adaptive immune system?. Science 330:1768–1773.",
+   "item": "bib63"
+  },
+  {
+   "indice": 61,
+   "texto": "Lewin R. 1969. A classification of flexibacteria. J Gen Microbiol 58:189–206.",
+   "item": "bib64"
+  },
+  {
+   "indice": 62,
+   "texto": "Matsunaga T, Okamura Y, Fukuda Y, Wahyudi AT, Murase Y, Takeyama H. 2005. Complete genome sequence of the facultative anaerobic magnetotactic bacterium Magnetospirillum sp. strain AMB-1. DNA Res 12:157–166.",
+   "item": "bib65"
+  },
+  {
+   "indice": 63,
+   "texto": "Matsuo Y, Suzuki M, Kasai H, Shizuri Y, Harayama S. 2003. Isolation and phylogenetic characterization of bacteria capable of inducing differentiation in the green alga Monostroma oxyspermum. Environ Microbiol 5:25–35.",
+   "item": "bib66"
+  },
+  {
+   "indice": 64,
+   "texto": "Matsuo Y, Imagawa H, Nishizawa M, Shizuri Y. 2005. Isolation of an algal morphogenesis inducer from a marine bacterium. Science 307:1598.",
+   "item": "bib67"
+  },
+  {
+   "indice": 65,
+   "texto": "Mazmanian SK, Liu CH, Tzianabos AO, Kasper DL. 2005. An immunomodulatory molecule of symbiotic bacteria directs maturation of the host immune system. Cell 122:107–118.",
+   "item": "bib68"
+  },
+  {
+   "indice": 66,
+   "texto": "Mazmanian SK, Round JL, Kasper DL. 2008. A microbial symbiosis factor prevents intestinal inflammatory disease. Nature 453:620–625.",
+   "item": "bib69"
+  },
+  {
+   "indice": 67,
+   "texto": "McFall-Ngai M. 1999. Consequences of evolving with bacterial symbionts: Insights from the squid-vibrio associations. Ann Rev Ecol Syst 30:235–256.",
+   "item": "bib70"
+  },
+  {
+   "indice": 68,
+   "texto": "Medzhitov R, Janeway C. 2000. Innate immune recognition: Mechanisms and pathways. Immunol Rev 173:89–97.",
+   "item": "bib71"
+  },
+  {
+   "indice": 69,
+   "texto": "Merrill AH, Sullards MC, Wang E, Voss KA, Riley RT. 2001. Sphingolipid metabolism: Roles in signal transduction and disruption by fumonisins. Environ Health Perspect 2:283–289.",
+   "item": "bib72"
+  },
+  {
+   "indice": 70,
+   "texto": "Miller TR, Delcher AL, Salzberg SL, Saunders E, Detter JC, Halden RU. 2010. Genome sequence of the dioxin-mineralizing bacterium Sphingomonas wittichii RW1. J Bacteriol 192:6101–6102.",
+   "item": "bib73"
+  },
+  {
+   "indice": 71,
+   "texto": "Møller JD, Barnes AC, Dalsgaard I, Ellis AE. 2005. Characterisation of surface blebbing and membrane vesicles produced by Flavobacterium psychrophilum. Dis Aquat Organ 64:201–209.",
+   "item": "bib74"
+  },
+  {
+   "indice": 72,
+   "texto": "Nedashkovskaya OI, Vancanneyt M, Van Trappen S, Vandemeulebroecke K, Lysenko AM, Rohde M, Falsen E, Frolova GM, Mikhailov VV, Swings J. 2004. Description of Algoriphagus aquimarinus sp. nov., Algoriphagus chordae sp. nov. and Algoriphagus winogradskyi sp. nov., from sea water and algae, transfer of Hongiella halophila Yi and Chun 2004 to the genus Algoriphagus as Algoriphagus halophilus comb. nov. and emended descriptions of the genera Algoriphagus Bowman,. Int J Syst Evol Microbiol 54:1757–1764.",
+   "item": "bib75"
+  },
+  {
+   "indice": 73,
+   "texto": "Nedashkovskaya O, Kim S, Vancanneyt M, Lysenko A, Shin D, Park M, Lee KH, Jung WJ, Kalinovskaya NI, Mikhailov VV, et al.. 2006. Echinicola pacifica gen. nov., sp nov., a novel flexibacterium isolated from the sea urchin Strongylocentrotus intermedius. Int J Syst Evol Microbiol 56:953–958.",
+   "item": "bib76"
+  },
+  {
+   "indice": 74,
+   "texto": "Nierman WC, Feldblyum TV, Laub MT, Paulsen IT, Nelson KE, Eisen JA, Heidelberg JF, Alley MR, Ohta N, Maddock JR, et al.. 2001. Complete genome sequence of Caulobacter crescentus. Proc Natl Acad Sci U S A 98:4136–4141.",
+   "item": "bib77"
+  },
+  {
+   "indice": 75,
+   "texto": "Oh H-M, Kang I, Yang S-J, Jang Y, Vergin KL, Giovannoni SJ, Cho JC. 2011. Complete genome sequence of strain HTCC2170, a novel member of the genus Maribacter in the family Flavobacteriaceae. J Bacteriol 193:303–304.",
+   "item": "bib78"
+  },
+  {
+   "indice": 76,
+   "texto": "Olsen I, Jantzen E. 2001. Sphingolipids in bacteria and fungi. Anaerobe 7:103–112.",
+   "item": "bib79"
+  },
+  {
+   "indice": 77,
+   "texto": "Prieschl EE, Baumruker T. 2000. Sphingolipids: Second messengers, mediators and raft constituents in signaling. Immunol Today 21:555–560.",
+   "item": "bib80"
+  },
+  {
+   "indice": 78,
+   "texto": "Provasoli L, Pintner I. 1980. Bacteria induced polymorphism in an axenic laboratory strain of Ulva lactuca (Chlorophyceae). J Phycol 16:196–201.",
+   "item": "bib81"
+  },
+  {
+   "indice": 79,
+   "texto": "Pyne S, Pyne NJ. 2000. Sphingosine 1-phosphate signalling in mammalian cells. Biochem J 349:385–402.",
+   "item": "bib82"
+  },
+  {
+   "indice": 80,
+   "texto": "Raj H, Maloy S. 1990. Proposal of Cyclobacterium-Marinus gen-nov, comb-nov for a marine bacterium previously assigned to the genus Flectobacillus. Int J Syst Bacteriol 40:337–347.",
+   "item": "bib83"
+  },
+  {
+   "indice": 81,
+   "texto": "Roelofs WL. 1995. Chemistry of sex attraction. Proc Natl Acad Sci U S A 92:44–49.",
+   "item": "bib84"
+  },
+  {
+   "indice": 82,
+   "texto": "Ruby EG, Urbanowski M, Campbell J, Dunn A, Faini M, Gunsalus R, Lostroh P, Lupp C, McCann J, Millikan D, et al.. 2005. Complete genome sequence of Vibrio fischeri: A symbiotic bacterium with pathogenic congeners. Proc Natl Acad Sci U S A 102:3004–3009.",
+   "item": "bib85"
+  },
+  {
+   "indice": 83,
+   "texto": "Ruiz-Trillo I, Roger AJ, Burger G, Gray MW, Lang BF. 2008. A phylogenomic investigation into the origin of metazoa. Mol Biol Evol 25:664–672.",
+   "item": "bib86"
+  },
+  {
+   "indice": 84,
+   "texto": "Saville Kent W. 1880. A manual of the infusoria.",
+   "item": "bib87"
+  },
+  {
+   "indice": 85,
+   "texto": "Schaefer AL, Hanzelka BL, Eberhard A, Greenberg EP. 1996. Quorum sensing in Vibrio fischeri: Probing autoinducer-LuxR interactions with autoinducer analogs. J Bacteriol 178:2897–2901.",
+   "item": "bib88"
+  },
+  {
+   "indice": 86,
+   "texto": "Spiegel S, Milstien S. 2000. Sphingosine-1-phosphate: Signaling inside and out. FEBS Lett 476:55–57.",
+   "item": "bib89"
+  },
+  {
+   "indice": 87,
+   "texto": "Spizizen J. 1958. Transformation of biochemically deficient strains of Bacillus subtilis by deoxyribonucleate. Proc Natl Acad Sci USA 44:1072–1078.",
+   "item": "bib90"
+  },
+  {
+   "indice": 88,
+   "texto": "Takeuchi O, Hoshino K, Kawai T, Sanjo H, Takada H, Ogawa T, Takeda K, Akira S. 1999. Differential roles of TLR2 and TLR4 in recognition of gram-negative and gram-positive bacterial cell wall components. Immunity 11:443–451.",
+   "item": "bib91"
+  },
+  {
+   "indice": 89,
+   "texto": "Talavera G, Castresana J. 2007. Improvement of phylogenies after removing divergent and ambiguously aligned blocks from protein sequence alignments. Syst Biol 56:564–577.",
+   "item": "bib92"
+  },
+  {
+   "indice": 90,
+   "texto": "Tiago I, Mendes V, Pires C, Morais PV, Veríssimo A. 2006. Chimaereicella alkaliphila gen. nov., sp. nov., a Gram-negative alkaliphilic bacterium isolated from a nonsaline alkaline groundwater. Syst Appl Microbiol 29:100–108.",
+   "item": "bib93"
+  },
+  {
+   "indice": 91,
+   "texto": "Van Trappen S, Vandecandelaere I, Mergaert J, Swings J. 2004. Algoriphagus antarcticus sp. nov., a novel psychrophile from microbial mats in Antarctic lakes. Int J Syst Evol Microbiol 54:1969–1973.",
+   "item": "bib94"
+  },
+  {
+   "indice": 92,
+   "texto": "Webster NS, Smith LD, Heyward AJ, Watts JEM, Webb RI, Blackall LL, Negri AP. 2004. Metamorphosis of a scleractinian coral in response to microbial biofilms. Appl Environ Microbiol 70:1213–1221.",
+   "item": "bib95"
+  },
+  {
+   "indice": 93,
+   "texto": "Weisburg WG, Barns SM, Pelletier DA, Lane DJ. 1991. 16S ribosomal DNA amplification for phylogenetic study. J Bacteriol 173:697–703.",
+   "item": "bib96"
+  },
+  {
+   "indice": 94,
+   "texto": "Wexler HM. 2007. Bacteroides: The good, the bad, and the nitty-gritty. Clin Microbiol Rev 20:593–621.",
+   "item": "bib97"
+  },
+  {
+   "indice": 95,
+   "texto": "Wood DW, Setubal JC, Kaul R, Monks DE, Kitajima JP, Okura VK, Zhou Y, Chen L, Wood GE, Almeida NF, et al.. 2001. The genome of the natural genetic engineer Agrobacterium tumefaciens C58. Science 294:2317–2323.",
+   "item": "bib98"
+  },
+  {
+   "indice": 96,
+   "texto": "Yi H, Chun J. 2004. Hongiella mannitolivorans gen. nov., sp. nov., Hongiella halophila sp. nov. and Hongiella ornithinivorans sp. nov., isolated from tidal flat sediment. Int J Syst Evol Microbiol 54:157–162.",
+   "item": "bib99"
+  },
+  {
+   "indice": 97,
+   "texto": "Yoon J-H, Yeo S-H, Oh TK. 2004. Hongiella marincola sp. nov., isolated from sea water of the East Sea in Korea. Int J Syst Evol Microbiol 54:1845–1848.",
+   "item": "bib100"
+  },
+  {
+   "indice": 98,
+   "texto": "Yoon J-H, Kang S-J, Oh TK. 2005a. Algoriphagus locisalis sp. nov., isolated from a marine solar saltern. Int J Syst Evol Microbiol 55:1635–1639.",
+   "item": "bib101"
+  },
+  {
+   "indice": 99,
+   "texto": "Yoon J-H, Kang S-J, Jung S-Y, Lee C-H, Oh TK. 2005b. Algoriphagus yeomjeoni sp. nov., isolated from a marine solar saltern in the Yellow Sea, Korea. Int J Syst Evol Microbiol 55:865–870.",
+   "item": "bib102"
+  },
+  {
+   "indice": 100,
+   "texto": "Yoon J-H, Lee M-H, Kang S-J, Oh TK. 2006. Algoriphagus terrigena sp. nov., isolated from soil. Int J Syst Evol Microbiol 56:777–780.",
+   "item": "bib103"
+  },
+  {
+   "indice": 101,
+   "texto": "Zhou L, Srisatjaluk R, Justus DE, Doyle RJ. 1998. On the origin of membrane vesicles in gram-negative bacteria. FEMS Microbiol Lett 163:223–228.",
+   "item": "bib104"
+  },
+  {
+   "indice": 102,
+   "texto": "Ziegler TA, Forward RB. 2007. Larval release behaviors in the Caribbean spiny lobster, Panulirus argus: Role of peptide pheromones. J Chem Ecol 33:1795–1805.",
+   "item": "bib105"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "McFall-Ngai 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib70"
+   ],
+   "referencias": [
+    67
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Koropatnick et al. 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mazmanian et al. 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib68"
+   ],
+   "referencias": [
+    65
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Falkow 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hughes and Sperandio 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Desbrosses and Stougaard 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "James-Clark 1868",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Saville Kent 1880",
+   "tipo": "xref",
+   "itens": [
+    "bib87"
+   ],
+   "referencias": [
+    84
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hibberd 1975",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carr et al. 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "King et al. 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ruiz-Trillo et al. 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib86"
+   ],
+   "referencias": [
+    83
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leadbeater 1983",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Karpov and Coupe 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dayel et al. 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fairclough et al. 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dayel et al. 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dayel et al. 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Alegado et al. 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Provasoli and Pintner 1980",
+   "tipo": "xref",
+   "itens": [
+    "bib81"
+   ],
+   "referencias": [
+    78
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Matsuo et al. 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mazmanian et al. 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib68"
+   ],
+   "referencias": [
+    65
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cohn and Morse 1960",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hoffmann et al. 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kopp and Medzhitov 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takeuchi et al. 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib91"
+   ],
+   "referencias": [
+    88
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Medzhitov and Janeway 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib71"
+   ],
+   "referencias": [
+    68
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kimbrell and Beutler 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Koropatnick et al. 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Prieschl and Baumruker 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib80"
+   ],
+   "referencias": [
+    77
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pyne and Pyne 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib82"
+   ],
+   "referencias": [
+    79
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Spiegel and Milstien 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib89"
+   ],
+   "referencias": [
+    86
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hannun et al. 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Merrill et al. 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib72"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Herr et al. 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hannich et al. 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Olsen and Jantzen 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib79"
+   ],
+   "referencias": [
+    76
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "An et al. 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schaefer et al. 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib88"
+   ],
+   "referencias": [
+    85
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ziegler and Forward 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib105"
+   ],
+   "referencias": [
+    102
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Butenandt et al. 1961",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Agosta 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roelofs 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib84"
+   ],
+   "referencias": [
+    81
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Godchaux and Leadbetter 1980",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1983",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1984",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1988",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Drijber and McGill 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kamiyama et al. 1995a",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1995b",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kobayashi et al. 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kreft 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Falke et al. 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhou et al. 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib104"
+   ],
+   "referencias": [
+    101
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Møller et al. 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib74"
+   ],
+   "referencias": [
+    71
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Falkow 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mazmanian et al. 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib69"
+   ],
+   "referencias": [
+    66
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee and Mazmanian 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "An et al. 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kamiyama et al. 1995a",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kobayashi et al. 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Webster et al. 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib95"
+   ],
+   "referencias": [
+    92
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wexler 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib97"
+   ],
+   "referencias": [
+    94
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "King and Carroll 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "King 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "King et al. 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ruiz-Trillo et al. 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib86"
+   ],
+   "referencias": [
+    83
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "McFall-Ngai 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib70"
+   ],
+   "referencias": [
+    67
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "King et al. 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fairclough et al. 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dayel et al. 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "King et al. 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dayel et al. 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carlucci and Pramer 1957",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weisburg et al. 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib96"
+   ],
+   "referencias": [
+    93
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "DeSantis et al. 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bradley et al. 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bradley et al. 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Castresana 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Talavera and Castresana 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib92"
+   ],
+   "referencias": [
+    89
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Falenstein 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Atlas 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bligh and Dyer 1959",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Apicella (2008)",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "de Jonge et al. (1992)",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "King et al. 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "King et al. 2008",
+   "item": "bib55"
+  },
+  {
+   "ponto": "D",
+   "citacao": "1988",
+   "item": "bib39"
+  },
+  {
+   "ponto": "D",
+   "citacao": "King et al. 2008",
+   "item": "bib55"
+  },
+  {
+   "ponto": "ANO",
+   "citacao": "James-Clark 1868",
+   "item": "bib46",
+   "ano_referencia": "1867",
+   "nota": "divergência existente no artigo publicado"
+  },
+  {
+   "ponto": "E",
+   "referencia": 1,
+   "item": "bib2"
+  },
+  {
+   "ponto": "E",
+   "referencia": 4,
+   "item": "bib5"
+  },
+  {
+   "ponto": "E",
+   "referencia": 7,
+   "item": "bib8"
+  },
+  {
+   "ponto": "E",
+   "referencia": 8,
+   "item": "bib9"
+  },
+  {
+   "ponto": "E",
+   "referencia": 9,
+   "item": "bib10"
+  },
+  {
+   "ponto": "E",
+   "referencia": 11,
+   "item": "bib12"
+  },
+  {
+   "ponto": "E",
+   "referencia": 13,
+   "item": "bib14"
+  },
+  {
+   "ponto": "E",
+   "referencia": 14,
+   "item": "bib15"
+  },
+  {
+   "ponto": "E",
+   "referencia": 15,
+   "item": "bib16"
+  },
+  {
+   "ponto": "E",
+   "referencia": 20,
+   "item": "bib21"
+  },
+  {
+   "ponto": "E",
+   "referencia": 21,
+   "item": "bib22"
+  },
+  {
+   "ponto": "E",
+   "referencia": 22,
+   "item": "bib23"
+  },
+  {
+   "ponto": "E",
+   "referencia": 23,
+   "item": "bib24"
+  },
+  {
+   "ponto": "E",
+   "referencia": 29,
+   "item": "bib30"
+  },
+  {
+   "ponto": "E",
+   "referencia": 34,
+   "item": "bib35"
+  },
+  {
+   "ponto": "E",
+   "referencia": 58,
+   "item": "bib61"
+  },
+  {
+   "ponto": "E",
+   "referencia": 61,
+   "item": "bib64"
+  },
+  {
+   "ponto": "E",
+   "referencia": 62,
+   "item": "bib65"
+  },
+  {
+   "ponto": "E",
+   "referencia": 63,
+   "item": "bib66"
+  },
+  {
+   "ponto": "E",
+   "referencia": 70,
+   "item": "bib73"
+  },
+  {
+   "ponto": "E",
+   "referencia": 72,
+   "item": "bib75"
+  },
+  {
+   "ponto": "E",
+   "referencia": 73,
+   "item": "bib76"
+  },
+  {
+   "ponto": "E",
+   "referencia": 74,
+   "item": "bib77"
+  },
+  {
+   "ponto": "E",
+   "referencia": 75,
+   "item": "bib78"
+  },
+  {
+   "ponto": "E",
+   "referencia": 80,
+   "item": "bib83"
+  },
+  {
+   "ponto": "E",
+   "referencia": 82,
+   "item": "bib85"
+  },
+  {
+   "ponto": "E",
+   "referencia": 87,
+   "item": "bib90"
+  },
+  {
+   "ponto": "E",
+   "referencia": 90,
+   "item": "bib93"
+  },
+  {
+   "ponto": "E",
+   "referencia": 91,
+   "item": "bib94"
+  },
+  {
+   "ponto": "E",
+   "referencia": 95,
+   "item": "bib98"
+  },
+  {
+   "ponto": "E",
+   "referencia": 96,
+   "item": "bib99"
+  },
+  {
+   "ponto": "E",
+   "referencia": 97,
+   "item": "bib100"
+  },
+  {
+   "ponto": "E",
+   "referencia": 98,
+   "item": "bib101"
+  },
+  {
+   "ponto": "E",
+   "referencia": 99,
+   "item": "bib102"
+  },
+  {
+   "ponto": "E",
+   "referencia": 100,
+   "item": "bib103"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

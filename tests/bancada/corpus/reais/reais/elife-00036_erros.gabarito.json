@@ -1,0 +1,1646 @@
+{
+ "id": "elife-00036_erros",
+ "estilo": "jats-elife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00036.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Agate RJ, Scott BB, Haripal B, Lois C, Nottebohm F. 2009. Transgenic songbirds offer an opportunity to develop a genetic model for vocal learning. Proc Natl Acad Sci USA 106:17963–17967. doi: 10.1073/pnas.0909139106",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Akimenko MA, Johnson SL, Westerfield M, Ekker M. 1995. Differential induction of four msx homeobox genes during fin development and regeneration in zebrafish. Development 121:347–357.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Arendt D. 2008. The evolution of cell types in animals: emerging principles from molecular studies. Nat Rev Genet 9:868–882. doi: 10.1038/nrg2416",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Badylak SF, Weiss DJ, Caplan A, Macchiarini P. 2012. Engineered whole organs and complex tissues. Lancet 379:943–952. doi: 10.1016/S0140-6736(12)60073-7",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Borwompinyo S, Brake J, Mozdziak PE, Petitte JN. 2005. Culture of chicken embryos in surrogate eggshells. Poult Sci 84:1477–1482.",
+   "item": "bib6"
+  },
+  {
+   "indice": 5,
+   "texto": "Bustin SA, Benes V, Garson JA, Hellemans J, Huggett J, Kubista M, et al.. 2009. The MIQE guidelines: minimum information for publication of quantitative real-time PCR experiments. Clin Chem 55:611–622. doi: 10.1373/clinchem.2008.112797",
+   "item": "bib7"
+  },
+  {
+   "indice": 6,
+   "texto": "Butler H, Juurlink BHJ. 1987. An Atlas for Staging Mammalian and Chick Embryos.",
+   "item": "bib8"
+  },
+  {
+   "indice": 7,
+   "texto": "Camp E, Sánchez-Sánchez AV, García-España A, Desalle R, Odqvist L, O’Connor JE, et al.. 2009. Nanog regulates proliferation during early fish development. Stem Cells 27:2081–2091. doi: 10.1002/stem.133",
+   "item": "bib9"
+  },
+  {
+   "indice": 8,
+   "texto": "Chambers I, Tomlinson SR. 2009. The transcriptional foundation of pluripotency. Development 136:2311–2322. doi: 10.1242/dev.024398",
+   "item": "bib10"
+  },
+  {
+   "indice": 9,
+   "texto": "Chan YS, Yang L, Ng HH. 2011. Transcriptional regulatory networks in embryonic stem cells. Prog Drug Res 67:239–252.",
+   "item": "bib11"
+  },
+  {
+   "indice": 10,
+   "texto": "Chen J, Liu J, Yang J, Chen Y, Ni S, Song H, et al.. 2011. BMPs functionally replace Klf4 and support efficient reprogramming of mouse fibroblasts by Oct4 alone. Cell Res 21:205–212. doi: 10.1038/cr.2010.172",
+   "item": "bib12"
+  },
+  {
+   "indice": 11,
+   "texto": "Cockrell AS, Kafri T. 2007. Gene delivery by lentivirus vectors. Mol Biotechnol 36:184–204. doi: 10.1007/s12033-007-0010-8",
+   "item": "bib13"
+  },
+  {
+   "indice": 12,
+   "texto": "Collas P, Noer A, Timoskainen S. 2007. Programming the genome in embryonic and somatic stem cells. J Cell Mol Med 11:602–620. doi: 10.1111/j.1582-4934.2007.00079.x",
+   "item": "bib14"
+  },
+  {
+   "indice": 13,
+   "texto": "Colman A, Dreesen O. 2009. Pluripotent stem cells and disease modeling. Cell Stem Cell 5:244–247. doi: 10.1016/j.stem.2009.08.010",
+   "item": "bib15"
+  },
+  {
+   "indice": 14,
+   "texto": "Dejosez M, Zwaka TP. 2012. Pluripotency and Nuclear reprogramming. Annu Rev Biochem 81:737–765. doi: 10.1146/annurev-biochem-052709-104948",
+   "item": "bib17"
+  },
+  {
+   "indice": 15,
+   "texto": "Draper JS, Moore HD, Ruban LN, Gokhale PJ, Andrews PW. 2004. Culture and characterization of human embryonic stem cells. Stem Cells Dev 13:325–336. doi: 10.1089/1547328041797525",
+   "item": "bib19"
+  },
+  {
+   "indice": 16,
+   "texto": "Enard W, Gehre S, Hammerschmidt K, Holter SM, Blass T, Somel M, et al.. 2009. A humanized version of Foxp2 affects cortico-basal ganglia circuits in mice. Cell 137:961–971. doi: 10.1016/j.cell.2009.03.041",
+   "item": "bib20"
+  },
+  {
+   "indice": 17,
+   "texto": "Fetcho JR, Higashijima S, McLean DL. 2008. Zebrafish and motor control over the last decade. Brain Res Rev 57:86–93. doi: 10.1016/j.brainresrev.2007.06.018",
+   "item": "bib21"
+  },
+  {
+   "indice": 18,
+   "texto": "Gartel AL, Shchors K. 2003. Mechanisms of c-myc-mediated transcriptional repression of growth arrest genes. Exp Cell Res 283:17–21. doi: 10.1016/S0014-4827(02)00020-4",
+   "item": "bib22"
+  },
+  {
+   "indice": 19,
+   "texto": "Gomes NM, Shay JW, Wright WE. 2010. Telomere biology in Metazoa. FEBS Lett 584:3741–3751. doi: 10.1016/j.febslet.2010.07.031",
+   "item": "bib23"
+  },
+  {
+   "indice": 20,
+   "texto": "Hailesellasse Sene K, Porter CJ, Palidwor G, Perez-Iratxeta C, Muro EM, Campbell PA, et al.. 2007. Gene function in early mouse embryonic stem cell differentiation. BMC Genomics 8:85. doi: 10.1186/1471-2164-8-85",
+   "item": "bib24"
+  },
+  {
+   "indice": 21,
+   "texto": "Hwang DH, Jeong SR, Kim BG. 2011. Gene transfer mediated by stem cell grafts to treat CNS injury. Expert Opin Biol Ther 11:1599–1610. doi: 10.1517/14712598.2011.631908",
+   "item": "bib25"
+  },
+  {
+   "indice": 22,
+   "texto": "Jarvis ED. 2004. Learned birdsong and the neurobiology of human language. Ann N Y Acad Sci 1016:749–777. doi: 10.1196/annals.1298.038",
+   "item": "bib26"
+  },
+  {
+   "indice": 23,
+   "texto": "Jarvis ED. 2007. Neural systems for vocal learning in birds and humans: a synopsis. J Ornithol 148:35–44. doi: 10.1007/s10336-007-0243-0",
+   "item": "bib27"
+  },
+  {
+   "indice": 24,
+   "texto": "Jarvis ED, Gunturkun O, Bruce L, Csillag A, Karten H, Kuenzel W, et al.. 2005. Avian brains and a new understanding of vertebrate brain evolution. Nat Rev Neurosci 6:151–159. doi: 10.1038/nrn1606",
+   "item": "bib28"
+  },
+  {
+   "indice": 25,
+   "texto": "Jiang J, Chan YS, Loh YH, Cai J, Tong GQ, Lim CA, et al.. 2008. A core Klf circuitry regulates self-renewal of embryonic stem cells. Nat Cell Biol 10:353–360. doi: 10.1038/ncb1698",
+   "item": "bib29"
+  },
+  {
+   "indice": 26,
+   "texto": "Joyner AL. 1999. Production of targeted embryonic stem cell clones. Gene Targeting:101–131.",
+   "item": "bib30"
+  },
+  {
+   "indice": 27,
+   "texto": "Kaslin J, Ganz J, Brand M. 2008. Proliferation, neurogenesis and regeneration in the non-mammalian vertebrate brain. Philos Trans R Soc Lond B Biol Sci 363:101–122. doi: 10.1098/rstb.2006.2015",
+   "item": "bib31"
+  },
+  {
+   "indice": 28,
+   "texto": "Keller GM. 1995. In vitro differentiation of embryonic stem cells. Curr Opin Cell Biol 7:862–869. doi: 10.1016/0955-0674(95)80071-9",
+   "item": "bib32"
+  },
+  {
+   "indice": 29,
+   "texto": "Kim PG, Daley GQ. 2009. Application of induced pluripotent stem cells to hematologic disease. Cytotherapy 11:980–989. doi: 10.3109/14653240903348319",
+   "item": "bib33"
+  },
+  {
+   "indice": 30,
+   "texto": "Kim JB, Greber B, Araúzo-Bravo MJ, Meyer J, Park KI, Zaehres H, et al.. 2009. Direct reprogramming of human neural stem cells by OCT4. Nature 461:649–643. doi: 10.1038/nature08436",
+   "item": "bib34"
+  },
+  {
+   "indice": 31,
+   "texto": "Kuo CT, Zhu S, Younger S, Jan LY, Jan YN. 2006. Identification of E2/E3 ubiquitinating enzymes and caspase activity regulating Drosophila sensory neuron dendrite pruning. Neuron 51:283–290. doi: 10.1016/j.neuron.2006.07.014",
+   "item": "bib35"
+  },
+  {
+   "indice": 32,
+   "texto": "Langer RS, Vacanti JP. 1999. Tissue engineering: the challenges ahead. Sci Am 280:86–89. doi: 10.1038/scientificamerican0499-86",
+   "item": "bib36"
+  },
+  {
+   "indice": 33,
+   "texto": "Lavial F, Acloque H, Bertocchini F, Macleod DJ, Boast S, Bachelard E, et al.. 2007. The Oct4 homologue PouV and Nanog regulate pluripotency in chicken embryonic stem cells. Development 134:3549–3563. doi: 10.1242/dev.006569",
+   "item": "bib37"
+  },
+  {
+   "indice": 34,
+   "texto": "Lavial F, Pain B. 2010. Chicken embryonic stem cells as a non-mammalian embryonic stem cell model. Dev Growth Differ 52:101–114. doi: 10.1111/j.1440-169X.2009.01152.x",
+   "item": "bib38"
+  },
+  {
+   "indice": 35,
+   "texto": "Leahy A, Xiong JW, Kuhnert F, Stuhlmann H. 1999. Use of developmental marker genes to define temporal and spatial patterns of differentiation during embryoid body formation. J Exp Zool 284:67–81. doi: 10.1002/(SICI)1097-010X(19990615)284:13.0.CO;2-O",
+   "item": "bib39"
+  },
+  {
+   "indice": 36,
+   "texto": "Li W, Ding S. 2010. Generation of novel rat and human pluripotent stem cells by reprogramming and chemical approaches. Methods Mol Biol 636:293–300. doi: 10.1007/978-1-60761-691-7_18",
+   "item": "bib40"
+  },
+  {
+   "indice": 37,
+   "texto": "Lin Z, Perez P, Lei D, Xu J, Gao X, Bao J. 2011. Two-phase analysis of molecular pathways underlying induced pluripotent stem cell induction. Stem Cells 29:1963–1974. doi: 10.1002/stem.752",
+   "item": "bib41"
+  },
+  {
+   "indice": 38,
+   "texto": "Lo B, Parham L. 2009. Ethical issues in stem cell research. Endocr Rev 30:204–213. doi: 10.1210/er.2008-0031",
+   "item": "bib42"
+  },
+  {
+   "indice": 39,
+   "texto": "Maekawa M, Yamaguchi K, Nakamura T, Shibukawa R, Kodanaka I, Ichisaka T, et al.. 2011. Direct reprogramming of somatic cells is promoted by maternal transcription factor Glis1. Nature 474:225–229. doi: 10.1038/nature10106",
+   "item": "bib44"
+  },
+  {
+   "indice": 40,
+   "texto": "Maherali N, Hochedlinger K. 2008. Guidelines and techniques for the generation of induced pluripotent stem cells. Cell Stem Cell 3:595–605. doi: 10.1016/j.stem.2008.11.008",
+   "item": "bib45"
+  },
+  {
+   "indice": 41,
+   "texto": "Mavrakis M, Rikhy R, Lippincott-Schwartz J. 2009. Plasma membrane polarity and compartmentalization are established before cellularization in the fly embryo. Dev Cell 16:93–104. doi: 10.1016/j.devcel.2008.11.003",
+   "item": "bib46"
+  },
+  {
+   "indice": 42,
+   "texto": "Meyne J, Ratliff RL, Moyzis RK. 1989. Conservation of the human telomere sequence (TTAGGG)n among vertebrates. Proc Natl Acad Sci USA 86:7049–7053. doi: 10.1073/pnas.86.18.7049",
+   "item": "bib47"
+  },
+  {
+   "indice": 43,
+   "texto": "Moutinho-Pereira S, Matos I, Maiato H. 2010. Drosophila S2 cells as a model system to investigate mitotic spindle dynamics, architecture, and function. Methods Cell Biol 97:243–257. doi: 10.1016/S0091-679X(10)97014-3",
+   "item": "bib48"
+  },
+  {
+   "indice": 44,
+   "texto": "Murakami A, Shen H, Ishida S, Dickson C. 2004. SOX7 and GATA-4 are competitive activators of Fgf-3 transcription. J Biol Chem 279:28564–28573. doi: 10.1074/jbc.M313814200",
+   "item": "bib49"
+  },
+  {
+   "indice": 45,
+   "texto": "Nagy A, Rossant J, Nagy R, Abramow-Newerly W, Roder JC. 1993. Derivation of completely cell culture-derived mice from early-passage embryonic stem cells. Proc Natl Acad Sci USA 90:8424–8428. doi: 10.1073/pnas.90.18.8424",
+   "item": "bib50"
+  },
+  {
+   "indice": 46,
+   "texto": "Nanda I, Shan Z, Schartl M, Burt DW, Koehler M, Nothwang H, et al.. 1999. 300 million years of conserved synteny between chicken Z and human chromosome 9. Nat Genet 21:258–259. doi: 10.1038/6769",
+   "item": "bib51"
+  },
+  {
+   "indice": 47,
+   "texto": "Nichols J, Silva J, Roode M, Smith A. 2009. Suppression of Erk signalling promotes ground state pluripotency in the mouse embryo. Development 136:3215–3222. doi: 10.1242/dev.038893",
+   "item": "bib52"
+  },
+  {
+   "indice": 48,
+   "texto": "Nichols J, Smith A. 2009. Naive and primed pluripotent states. Cell Stem Cell 4:487–492. doi: 10.1016/j.stem.2009.05.015",
+   "item": "bib53"
+  },
+  {
+   "indice": 49,
+   "texto": "Nottebohm F. 2002. Birdsong’s clockwork. Nat Neurosci 5:925–926. doi: 10.1038/nn1002-925",
+   "item": "bib54"
+  },
+  {
+   "indice": 50,
+   "texto": "O’Connor MD, Kardel MD, Iosfina I, Youssef D, Lu M, Li MM, et al.. 2008. Alkaline phosphatase-positive colony formation is a sensitive, specific, and quantitative indicator of undifferentiated human embryonic stem cells. Stem Cells 26:1109–1116. doi: 10.1634/stemcells.2007-0801",
+   "item": "bib55"
+  },
+  {
+   "indice": 51,
+   "texto": "Onichtchouk D, Geier F, Polok B, Messerschmidt DM, Mossner R, Wendik B, et al.. 2010. Zebrafish Pou5f1-dependent transcriptional networks in temporal control of early development. Mol Syst Biol 6:354. doi: 10.1038/msb.2010.9",
+   "item": "bib56"
+  },
+  {
+   "indice": 52,
+   "texto": "Pain B, Clark ME, Shen M, Nakazawa H, Sakurai M, Samarut J, et al.. 1996. Long-term in vitro culture and characterisation of avian embryonic stem cells with multiple morphogenetic potentialities. Development 122:2339–2348.",
+   "item": "bib57"
+  },
+  {
+   "indice": 53,
+   "texto": "Palasz A, Kaminski M. 2009. Stem cell niche in the Drosophila ovary and testis; a valuable model of the intercellular signalling relationships. Adv Med Sci 54:143–149. doi: 10.2478/v10039-009-0032-5",
+   "item": "bib58"
+  },
+  {
+   "indice": 54,
+   "texto": "Parikh A, Miranda ER, Katoh-Kurasawa M, Fuller D, Rot G, Zagar L, et al.. 2010. Conserved developmental transcriptomes in evolutionarily divergent species. Genome Biol 11:R35. doi: 10.1186/gb-2010-11-3-r35",
+   "item": "bib59"
+  },
+  {
+   "indice": 55,
+   "texto": "Poss KD, Wilson LG, Keating MT. 2002. Heart regeneration in zebrafish. Science 298:2188–2190. doi: 10.1126/science.1077857",
+   "item": "bib60"
+  },
+  {
+   "indice": 56,
+   "texto": "Remenyi A, Lins K, Nissen LJ, Reinbold R, Scholer HR, Wilmanns M. 2003. Crystal structure of a POU/HMG/DNA ternary complex suggests differential assembly of Oct4 and Sox2 on two enhancers. Genes Dev 17:2048–2059. doi: 10.1101/gad.269303",
+   "item": "bib61"
+  },
+  {
+   "indice": 57,
+   "texto": "Roberts RM, Telugu BP, Ezashi T. 2009. Induced pluripotent stem cells from swine (Sus scrofa): why they may prove to be important. Cell Cycle 8:3078–3081. doi: 10.4161/cc.8.19.9589",
+   "item": "bib62"
+  },
+  {
+   "indice": 58,
+   "texto": "Rosselló RA, Wang Z, Kizana E, Krebsbach PH, Kohn DH. 2009. Connexin 43 as a signaling platform for increasing the volume and spatial distribution of regenerated tissue. Proc Natl Acad Sci USA 106:13219–13224. doi: 10.1073/pnas.0902622106",
+   "item": "bib63"
+  },
+  {
+   "indice": 59,
+   "texto": "Santos MG, Jorge SA, Brillet K, Pereira CA. 2007. Improving heterologous protein expression in transfected Drosophila S2 cells as assessed by EGFP expression. Cytotechnology 54:15–24. doi: 10.1007/s10616-007-9060-9",
+   "item": "bib64"
+  },
+  {
+   "indice": 60,
+   "texto": "Shi G, Jin Y. 2010. Role of Oct4 in maintaining and regaining stem cell pluripotency. Stem Cell Res Ther 1:39. doi: 10.1186/scrt39",
+   "item": "bib65"
+  },
+  {
+   "indice": 61,
+   "texto": "Silva J, Nichols J, Theunissen TW, Guo G, van Oosten AL, Barrandon O, et al.. 2009. Nanog is the gateway to the pluripotent ground state. Cell 138:722–737. doi: 10.1016/j.cell.2009.07.039",
+   "item": "bib66"
+  },
+  {
+   "indice": 62,
+   "texto": "Soldner F, Hockemeyer D, Beard C, Gao Q, Bell GW, Cook EG, et al.. 2009. Parkinson’s disease patient-derived induced pluripotent stem cells free of viral reprogramming factors. Cell 136:964–977. doi: 10.1016/j.cell.2009.02.013",
+   "item": "bib67"
+  },
+  {
+   "indice": 63,
+   "texto": "Sommer CA, Stadtfeld M, Murphy GJ, Hochedlinger K, Kotton DN, Mostoslavsky G. 2009. Induced pluripotent stem cell generation using a single lentiviral stem cell cassette. Stem Cells 27:543–549. doi: 10.1634/stemcells.2008-1075",
+   "item": "bib68"
+  },
+  {
+   "indice": 64,
+   "texto": "Stadtfeld M, Nagaya M, Utikal J, Weir G, Hochedlinger K. 2008. Induced pluripotent stem cells generated without viral integration. Science 322:945–949. doi: 10.1126/science.1162494",
+   "item": "bib69"
+  },
+  {
+   "indice": 65,
+   "texto": "Sterneckert J, Höing S, Schöler HR. 2011. Oct4 and more: the reprogramming expressway. Stem Cells 30:15–21. doi: 10.1002/stem.765",
+   "item": "bib70"
+  },
+  {
+   "indice": 66,
+   "texto": "Stoletov K, Klemke R. 2008. Catch of the day: zebrafish as a human cancer model. Oncogene 27:4509–4520. doi: 10.1038/onc.2008.95",
+   "item": "bib71"
+  },
+  {
+   "indice": 67,
+   "texto": "Sullivan JC, Reitzel AM, Finnerty JR. 2006. A high percentage of introns in human genes were present early in animal evolution: evidence from the basal metazoan Nematostella vectensis. Genome Inform 17:219–229.",
+   "item": "bib72"
+  },
+  {
+   "indice": 68,
+   "texto": "Swamynathan SK, Davis J, Piatigorsky J. 2008. Identification of candidate Klf4 target genes reveals the molecular basis of the diverse regulatory roles of Klf4 in the mouse cornea. Invest Ophthalmol Vis Sci 49:3360–3370. doi: 10.1167/iovs.08-1811",
+   "item": "bib73"
+  },
+  {
+   "indice": 69,
+   "texto": "Takahashi K, Tanabe K, Ohnuki M, Narita M, Ichisaka T, Tomoda K, et al.. 2007. Induction of pluripotent stem cells from adult human fibroblasts by defined factors. Cell 131:861–872. doi: 10.1016/j.cell.2007.11.019",
+   "item": "bib74"
+  },
+  {
+   "indice": 70,
+   "texto": "Takahashi K, Yamanaka S. 2006. Induction of pluripotent stem cells from mouse embryonic and adult fibroblast cultures by defined factors. Cell 126:663–676. doi: 10.1016/j.cell.2006.07.024",
+   "item": "bib75"
+  },
+  {
+   "indice": 71,
+   "texto": "Takashima S, Gold D, Hartenstein V. 2013. Stem cells and lineages of the intestine: a developmental and evolutionary perspective. Dev Genes Evol 223:85–102. doi: 10.1007/s00427-012-0422-8",
+   "item": "bib76"
+  },
+  {
+   "indice": 72,
+   "texto": "Thomson JA, Itskovitz-Eldor J, Shapiro SS, Waknitz MA, Swiergiel JJ, Marshall VS, et al.. 1998. Embryonic stem cell lines derived from human blastocysts. Science 282:1145–1147. doi: 10.1126/science.282.5391.1145",
+   "item": "bib77"
+  },
+  {
+   "indice": 73,
+   "texto": "Tomioka M, Nishimoto M, Miyagi S, Katayanagi T, Fukui N, Niwa H, et al.. 2002. Identification of Sox-2 regulatory region which is under the control of Oct-3/4-Sox-2 complex. Nucleic Acids Res 30:3202–3213. doi: 10.1093/nar/gkf435",
+   "item": "bib78"
+  },
+  {
+   "indice": 74,
+   "texto": "Ui-Tei K, Nagano M, Sato S, Miyata Y. 2000. Calmodulin-dependent and -independent apoptosis in cell of a Drosophila neuronal cell line. Apoptosis 5:133–140. doi: 10.1023/A:1009676528805",
+   "item": "bib79"
+  },
+  {
+   "indice": 75,
+   "texto": "van Ham TJ, Breitling R, Swertz MA, Nollen EA. 2009. Neurodegenerative diseases: lessons from genome-wide screens in small model organisms. EMBO Mol Med 1:360–370. doi: 10.1002/emmm.200900051",
+   "item": "bib80"
+  },
+  {
+   "indice": 76,
+   "texto": "Wilson MJ, Dearden PK. 2008. Evolution of the insect Sox genes. BMC Evol Biol 8:120. doi: 10.1186/1471-2148-8-120",
+   "item": "bib81"
+  },
+  {
+   "indice": 77,
+   "texto": "Wu Z, Chen J, Ren J, Bao L, Liao J, Cui C, et al.. 2009. Generation of pig induced pluripotent stem cells with a drug-inducible system. J Mol Cell Biol 1:46–54. doi: 10.1093/jmcb/mjp003",
+   "item": "bib82"
+  },
+  {
+   "indice": 78,
+   "texto": "Yaqoob N, Schwerte T. 2010. Cardiovascular and respiratory developmental plasticity under oxygen depleted environment and in genetically hypoxic zebrafish (Danio rerio). Comp Biochem Physiol A Mol Integr Physiol 156:475–484. doi: 10.1016/j.cbpa.2010.03.033",
+   "item": "bib83"
+  },
+  {
+   "indice": 79,
+   "texto": "Ye Z, Cheng L. 2010. Potential of human induced pluripotent stem cells derived from blood and other postnatal cell types. Regen Med 5:521–530. doi: 10.2217/rme.10.38",
+   "item": "bib84"
+  },
+  {
+   "indice": 80,
+   "texto": "Ying QL, Wray J, Nichols J, Batlle-Morera L, Doble B, Woodgett J, et al.. 2008. The ground state of embryonic stem cell self-renewal. Nature 453:519–523. doi: 10.1038/nature06968",
+   "item": "bib85"
+  },
+  {
+   "indice": 81,
+   "texto": "Yu F, Kuo CT, Jan YN. 2006. Drosophila neuroblast asymmetric cell division: recent advances and implications for stem cell biology. Neuron 51:13–20. doi: 10.1016/j.neuron.2006.06.016",
+   "item": "bib86"
+  },
+  {
+   "indice": 82,
+   "texto": "Yu J, Vodyanik MA, Smuga-Otto K, Antosiewicz-Bourget J, Frane JL, Tian S, et al.. 2007. Induced pluripotent stem cell lines derived from human somatic cells. Science 318:1917–1920. doi: 10.1126/science.1151526",
+   "item": "bib87"
+  },
+  {
+   "indice": 83,
+   "texto": "Zwaka TP. 2008. What comes after iPS?. Nature Reports Stem Cells. doi: 10.1038/stemcells.2008.54",
+   "item": "bib88"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Badylak et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Arendt, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Langer and Vacanti, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rosselló et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Colman and Dreesen, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hwang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Collas et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Thomson et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib77"
+   ],
+   "referencias": [
+    72
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takahashi and Yamanaka, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib75"
+   ],
+   "referencias": [
+    70
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takahashi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib74"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yu et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib87"
+   ],
+   "referencias": [
+    82
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maherali and Hochedlinger, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stadtfeld et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib69"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lo and Parham, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takahashi and Yamanaka, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib75"
+   ],
+   "referencias": [
+    70
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takahashi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib74"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yu et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib87"
+   ],
+   "referencias": [
+    82
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sommer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib68"
+   ],
+   "referencias": [
+    63
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li and Ding, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib82"
+   ],
+   "referencias": [
+    77
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jarvis, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2007",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jarvis et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fetcho et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuo et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yu et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib86"
+   ],
+   "referencias": [
+    81
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jarvis, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nottebohm, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaslin et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Poss et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stoletov and Klemke, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib71"
+   ],
+   "referencias": [
+    66
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yaqoob and Schwerte, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib83"
+   ],
+   "referencias": [
+    78
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van Ham et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib80"
+   ],
+   "referencias": [
+    75
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lavial and Pain, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sullivan et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib72"
+   ],
+   "referencias": [
+    67
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zwaka, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib88"
+   ],
+   "referencias": [
+    83
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lavial and Pain, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Agate et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jarvis, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sommer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib68"
+   ],
+   "referencias": [
+    63
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nagy et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pain et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maherali and Hochedlinger, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim and Daley, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "O’Connor et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nichols and Smith, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Onichtchouk et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sullivan et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib72"
+   ],
+   "referencias": [
+    67
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wilson and Dearden, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib81"
+   ],
+   "referencias": [
+    76
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Palasz and Kaminski, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moutinho-Pereira et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ui-Tei et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib79"
+   ],
+   "referencias": [
+    74
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pain et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li and Ding, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Thomson et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib77"
+   ],
+   "referencias": [
+    72
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gomes et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nanda et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takahashi and Yamanaka, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib75"
+   ],
+   "referencias": [
+    70
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leahy et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Murakami et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hailesellasse Sene et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mavrakis et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maherali and Hochedlinger, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takahashi and Yamanaka, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib75"
+   ],
+   "referencias": [
+    70
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lavial et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lu et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Draper et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Soldner et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takahashi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib74"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nichols et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Silva et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib66"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chambers and Tomlinson, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Camp et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roberts et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Swamynathan et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib73"
+   ],
+   "referencias": [
+    68
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chan et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Remenyi et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shi and Jin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tomioka et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib78"
+   ],
+   "referencias": [
+    73
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sterneckert et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib70"
+   ],
+   "referencias": [
+    65
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gartel and Shchors, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maekawa et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lin et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maherali and Hochedlinger, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moutinho-Pereira et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Enard et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lavial et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Onichtchouk et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Parikh et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ye and Cheng, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib84"
+   ],
+   "referencias": [
+    79
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dejosez and Zwaka, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takashima et al., 2013",
+   "tipo": "xref",
+   "itens": [
+    "bib76"
+   ],
+   "referencias": [
+    71
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Butler and Juurlink, 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nagy et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Joyner, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lavial et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cockrell and Kafri, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ying et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib85"
+   ],
+   "referencias": [
+    80
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pain et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Santos et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib64"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bustin et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Meyne et al., 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bangs and Donlon, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Keller, 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Borwompinyo et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Akimenko et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Lu et al., 2012",
+   "item": "bib43"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Bangs and Donlon, 2005",
+   "item": "bib18"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

@@ -1,0 +1,112 @@
+{
+ "id": "elife-00302_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00302.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Anand P, Cermelli S, Li Z, Kassan A, Bosch M, Sigua R, et al.. 2012. A novel role for lipid droplets in the organismal antibacterial response. eLife 1:e00003.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Beller M, Riedel D, Jänsch L, Dieterich G, Wehland J, Jäckle H, et al.. 2006. Characterization of the Drosophila lipid droplet subproteome. Mol Cell Proteomics 5:1082–1094.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Cho JH, Park IY, Kim HS, Lee WT, Kim MS, Kim SC. 2002. Cathepsin D produces antimicrobial peptide parasin I from histone H2A in the skin mucosa of fish. FASEB J 16:429–431.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Li Z, Thiel K, Thul PJ, Beller M, Kühnlein RP, Welte MA. 2012. Lipid droplets control the maternal histone supply of Drosophila embryos. Curr Biol.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Walther T, Farese RV. 2012. Lipid droplets and cellular lipid metabolism. Ann Rev Biochem 81:687–714.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Weissmann G. 2010. Pattern recognition and gestalt psychology: the day Nüsslein-Volhard shouted “Toll!”. FASEB J 24:2137–2141.",
+   "item": "bib6"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Anand et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Walther and Farese, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Beller et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cho et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weissmann, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

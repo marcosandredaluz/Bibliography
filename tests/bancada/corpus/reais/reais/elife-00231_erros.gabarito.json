@@ -1,0 +1,1514 @@
+{
+ "id": "elife-00231_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00231.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Akay T, Acharya HJ, Fouad K, Pearson KG. 2006. Behavioral and electromyographic characterization of mice lacking EphA4 receptors. J Neurophysiol 96:642–651. doi: 10.1152/jn.00174.2006",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Akay T, Bassler U, Gerharz P, Büschges A. 2001. The role of sensory signals from the insect coxa-trochanteral joint in controlling motor activity of the femur-tibia joint. J Neurophysiol 85:594–604.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Baek M, Mann RS. 2009. Lineage and birth date specify motor neuron targeting and dendritic architecture in adult Drosophila. J Neurosci 29:6904–6916. doi: 10.1523/JNEUROSCI.1585-09.2009",
+   "item": "bib4"
+  },
+  {
+   "indice": 3,
+   "texto": "Bässler U. 1977. Sensory control of leg movement in the stick insect Carausius morosus. Biol Cybern 25:61–72.",
+   "item": "bib5"
+  },
+  {
+   "indice": 4,
+   "texto": "Bässler U, Büschges A. 1998. Pattern generation for stick insect walking movements–multisensory control of a locomotor program. Brain Res Brain Res Rev 27:65–88.",
+   "item": "bib6"
+  },
+  {
+   "indice": 5,
+   "texto": "Bender JA, Simpson EM, Tietz BR, Daltorio KA, et al.. 2011. Kinematic and behavioral evidence for a distinction between trotting and ambling gaits in the cockroach Blaberus discoidalis. J Exp Biol 214:2057–2064. doi: 10.1242/jeb.056481",
+   "item": "bib7"
+  },
+  {
+   "indice": 6,
+   "texto": "Borgmann A, Hooper SL, Büschges A. 2009. Sensory feedback induced by front-leg stepping entrains the activity of central pattern generators in caudal segments of the stick insect walking system. J Neurosci 29:2972–2983. doi: 10.1523/jneurosci.3155-08.2009",
+   "item": "bib8"
+  },
+  {
+   "indice": 7,
+   "texto": "Branson K, Robie AA, Bender J, Perona P, Dickinson MH. 2009. High-throughput ethomics in large groups of Drosophila. Nat Methods 6:451–457. doi: 10.1038/nmeth.1328",
+   "item": "bib9"
+  },
+  {
+   "indice": 8,
+   "texto": "Brunn DE. 1998. Cooperative mechanisms between leg joints of Carausius morosus I. Nonspiking interneurons that contributue to interjoint coordination. J Neurophysiol 79:2964–2976.",
+   "item": "bib10"
+  },
+  {
+   "indice": 9,
+   "texto": "Brunn DE, Dean J. 1994. Intersegmental and local interneurons in the metathorax of the stick insect Carausius morosus that monitor middle leg position. J Neurophysiol 72:1208–1219.",
+   "item": "bib11"
+  },
+  {
+   "indice": 10,
+   "texto": "Burrows M. 1992. Local circuits for the control of leg movements in an insect. Trends Neurosci 15:226–232.",
+   "item": "bib12"
+  },
+  {
+   "indice": 11,
+   "texto": "Büschges A, Akay T, Gabriel JP, Schmidt J. 2008. Organizing network action for locomotion: insights from studying insect walking. Brain Res Rev 57:162–171.",
+   "item": "bib13"
+  },
+  {
+   "indice": 12,
+   "texto": "Büschges A, Scholz H, El Manira A. 2011. New moves in motor control. Curr Biol 21:R513–R524. doi: 10.1016/j.cub.2011.05.029",
+   "item": "bib14"
+  },
+  {
+   "indice": 13,
+   "texto": "Cruse H. 1976. The function of the legs in the free walking stick insect, Carausius morosus. Journal of Comparative Physiology 112:235–262. doi: 10.1007/bf00606541",
+   "item": "bib15"
+  },
+  {
+   "indice": 14,
+   "texto": "Cruse H. 1990. What mechanisms coordinate leg movement in walking arthropods?. Trends Neurosci 13:15–21.",
+   "item": "bib16"
+  },
+  {
+   "indice": 15,
+   "texto": "Cruse H, Bartling C. 1995. Movement of Joint Angles in the Legs of a Walking Insect, Carausius morosus. J Insecr Physiol 41:761–771.",
+   "item": "bib17"
+  },
+  {
+   "indice": 16,
+   "texto": "Cruse H, Dean J, Suilmann M. 1984. The contributions of diverse sense organs to the control of leg movement by a walking insect. J Comp Physiol A 154:695–705. doi: 10.1007/bf01350223",
+   "item": "bib18"
+  },
+  {
+   "indice": 17,
+   "texto": "Cruse H, Durr V, Schmitz J. 2007. Insect walking is based on a decentralized architecture revealing a simple and robust controller. Philos Transact A Math Phys Eng Sci 365:221–250.",
+   "item": "bib19"
+  },
+  {
+   "indice": 18,
+   "texto": "Dean J, Wendler G. 1983. Stick insect locomotion on a walking wheel: interleg coordination of leg position. J Exp Biol 103:75–94.",
+   "item": "bib20"
+  },
+  {
+   "indice": 19,
+   "texto": "Dickinson MH, Farley CT, Full RJ, Koehl MA, et al.. 2000. How animals move: an integrative view. Science 288:100–106.",
+   "item": "bib21"
+  },
+  {
+   "indice": 20,
+   "texto": "Frye MA. 2010. Multisensory systems integration for high-performance motor control in flies. Current opinion in neurobiology 20:347–352. doi: 10.1016/j.conb.2010.02.002",
+   "item": "bib22"
+  },
+  {
+   "indice": 21,
+   "texto": "Ganetzky B, Flanagan JR. 1978. On the relationship between senescence and age-related changes in two wild-type strains of Drosophila melanogaster. Exp Gerontol 13:189–196.",
+   "item": "bib23"
+  },
+  {
+   "indice": 22,
+   "texto": "Giorgianni MW, Mann RS. 2011. Establishment of medial fates along the proximodistal axis of the Drosophila leg through direct activation of dachshund by Distalless. Dev Cell 20:455–468. doi: 10.1016/j.devcel.2011.03.017",
+   "item": "bib24"
+  },
+  {
+   "indice": 23,
+   "texto": "Gorb SN, Sinha M, Peressadko A, Daltorio KA, Quinn RD. 2007. Insects did it first: a micropatterned adhesive tape for robotic applications. Bioinspir Biomim 2:S117–S125. doi: 10.1088/1748-3182/2/4/s01",
+   "item": "bib25"
+  },
+  {
+   "indice": 24,
+   "texto": "Graham D. 1972. A behavioural analysis of the temporal organisation of walking movements in the 1st instar and adult stick insect (Carausius morosus). Journal of Comparative Physiology 81:23–52. doi: 10.1007/bf00693548",
+   "item": "bib26"
+  },
+  {
+   "indice": 25,
+   "texto": "Graham D. 1985. Pattern and Control of Walking in Insects. Advances in Insect Physiology:31–140.",
+   "item": "bib27"
+  },
+  {
+   "indice": 26,
+   "texto": "Hoyt DF, Taylor R. 1981. Gait and the energetics of locomotion in horses. Nature 292:239–240.",
+   "item": "bib28"
+  },
+  {
+   "indice": 27,
+   "texto": "Hughes CL, Thomas JB. 2007. A sensory feedback circuit coordinates muscle activity in Drosophila. Mol Cell Neurosci 35:383–396.",
+   "item": "bib29"
+  },
+  {
+   "indice": 28,
+   "texto": "Jenett A, Rubin GM, Ngo TT, Shepherd D, et al.. 2012. A GAL4-Driver Line Resource for Drosophila Neurobiology. Cell Rep 2:991–1001. doi: 10.1016/j.celrep.2012.09.011",
+   "item": "bib30"
+  },
+  {
+   "indice": 29,
+   "texto": "Jory A, Estella C, Giorgianni MW, Slattery M, et al.. 2012. A Survey of 6,300 Genomic Fragments for cis-Regulatory Activity in the Imaginal Discs of Drosophila melanogaster. Cell Rep 2:1014–1024. doi: 10.1016/j.celrep.2012.09.010",
+   "item": "bib31"
+  },
+  {
+   "indice": 30,
+   "texto": "Kamikouchi A, Inagaki HK, Effertz T, Hendrich O, et al.. 2009. The neural basis of Drosophila gravity-sensing and hearing. Nature 458:165–171. doi: 10.1038/nature07810",
+   "item": "bib32"
+  },
+  {
+   "indice": 31,
+   "texto": "Katz M. 2002. Introduction to geometrical optics.",
+   "item": "bib33"
+  },
+  {
+   "indice": 32,
+   "texto": "Kiehn O. 2011. Development and functional organization of spinal locomotor circuits. Curr Opin Neurobiol 21:100–109. doi: 10.1016/j.conb.2010.09.004",
+   "item": "bib34"
+  },
+  {
+   "indice": 33,
+   "texto": "Kim J, Chung YD, Park DY, Choi S, et al.. 2003. A TRPV family ion channel required for hearing in Drosophila. Nature 424:81–84.",
+   "item": "bib35"
+  },
+  {
+   "indice": 34,
+   "texto": "Liu L, Li Y, Wang R, Yin C, et al.. 2007. Drosophila hygrosensation requires the TRP channels water witch and nanchung. Nature 450:294–298. doi: 10.1038/nature06223",
+   "item": "bib36"
+  },
+  {
+   "indice": 35,
+   "texto": "MacKay-Lyons M. 2002. Central pattern generation of locomotion: a review of the evidence. Phys Ther 82:69–83.",
+   "item": "bib37"
+  },
+  {
+   "indice": 36,
+   "texto": "Manning L, Heckscher ES, Purice MD, Roberts J, et al.. 2012. A Resource for Manipulating Gene Expression and Analyzing cis-Regulatory Modules in the Drosophila CNS. Cell Rep 2:1002–1013. doi: 10.1016/j.celrep.2012.09.009",
+   "item": "bib38"
+  },
+  {
+   "indice": 37,
+   "texto": "Matheson T. 2002. Metathoracic neurons integrating intersegmental sensory information in the locust. J Comp Neurol 444:95–114.",
+   "item": "bib39"
+  },
+  {
+   "indice": 38,
+   "texto": "Pearson KG. 1993. Common principles of motor control in vertebrates and invertebrates. Annu Rev Neurosci 16:265–297. doi: 10.1146/annurev.ne.16.030193.001405",
+   "item": "bib40"
+  },
+  {
+   "indice": 39,
+   "texto": "Pfeiffer BD, Jenett A, Hammonds AS, Ngo TT, et al.. 2008. Tools for neuroanatomy and neurogenetics in Drosophila. Proc Natl Acad Sci USA 105:9715–9720.",
+   "item": "bib41"
+  },
+  {
+   "indice": 40,
+   "texto": "Pulver SR, Pashkovski SL, Hornstein NJ, Garrity PA, Griffith LC. 2009. Temporal dynamics of neuronal activation by Channelrhodopsin-2 and TRPA1 determine behavioral output in Drosophila larvae. J Neurophysiol 101:3075–3088. doi: 10.1152/jn.00071.2009",
+   "item": "bib42"
+  },
+  {
+   "indice": 41,
+   "texto": "Ritzmann RE, Büschges A. 2007. Adaptive motor behavior in insects. Curr Opin Neurobiol 17:629–636. doi: 10.1016/j.conb.2008.01.001",
+   "item": "bib43"
+  },
+  {
+   "indice": 42,
+   "texto": "Robie AA, Straw AD, Dickinson MH. 2010. Object preference by walking fruit flies, Drosophila melanogaster, is mediated by vision and graviperception. J Exp Biol 213:2494–2506. doi: 10.1242/jeb.041749",
+   "item": "bib44"
+  },
+  {
+   "indice": 43,
+   "texto": "Seelig JD, Chiappe ME, Lott GK, Dutta A, et al.. 2010. Two-photon calcium imaging from head-fixed Drosophila during optomotor walking behavior. Nat Methods 7:535–540. doi: 10.1038/nmeth.1468",
+   "item": "bib45"
+  },
+  {
+   "indice": 44,
+   "texto": "Shanbhag SR, Singh K, Naresh Singh R. 1992. Ultrastructure of the femoral chordotonal organs and their novel synaptic organization in the legs of Drosophila melanogaster Meigen (Diptera: Drosophilidae). Int J Insect Morphol Embryol 21:311–322. doi: 10.1016/0020-7322(92)90026-j",
+   "item": "bib46"
+  },
+  {
+   "indice": 45,
+   "texto": "Slawson JB, Kim EZ, Griffith LC. 2009. High-resolution video tracking of locomotion in adult Drosophila melanogaster. J Vis Exp:e1096. doi: 10.3791/1096",
+   "item": "bib47"
+  },
+  {
+   "indice": 46,
+   "texto": "Song SM, Choi BS. 1989. A study on continuous follow-the-leader (FTL) gaits: an effective walking algorithm over rough terrain. Math Biosci 97:199–233.",
+   "item": "bib48"
+  },
+  {
+   "indice": 47,
+   "texto": "Sponberg S, Full RJ. 2008. Neuromechanical response of musculo-skeletal structures in cockroaches during rapid running on rough terrain. J Exp Biol 211:433–446. doi: 10.1242/jeb.012385",
+   "item": "bib49"
+  },
+  {
+   "indice": 48,
+   "texto": "Stockinger P, Kvitsiani D, Rotkopf S, Tirian L, Dickson BJ. 2005. Neural circuitry that governs Drosophila male courtship behavior. Cell 121:795–807. doi: 10.1016/j.cell.2005.04.026",
+   "item": "bib50"
+  },
+  {
+   "indice": 49,
+   "texto": "Strauss R. 2002. The central complex and the genetic dissection of locomotor behaviour. Curr Opin Neurobiol 12:633–638.",
+   "item": "bib51"
+  },
+  {
+   "indice": 50,
+   "texto": "Strauss R, Heisenberg M. 1990. Coordination of legs during straight walking and turning in Drosophila melanogaster. J Comp Physiol A 167:403–412.",
+   "item": "bib52"
+  },
+  {
+   "indice": 51,
+   "texto": "Strauss R, Heisenberg M. 1993. A higher control center of locomotor behavior in the Drosophila brain. J Neurosci 13:1852–1861.",
+   "item": "bib53"
+  },
+  {
+   "indice": 52,
+   "texto": "Sumriddetchkajorn S, Amarit R. 2006. Ultra-high-contrast low-leakage-light optical touch device structures using light scattering and total internal reflection concepts. Sens Actuators A 126:68–72.",
+   "item": "bib54"
+  },
+  {
+   "indice": 53,
+   "texto": "Sun Y, Liu L, Ben-Shahar Y, Jacobs JS, et al.. 2009. TRPA channels distinguish gravity sensing from hearing in Johnston's organ. Proc Natl Acad Sci USA 106:13606–13611. doi: 10.1073/pnas.0906377106",
+   "item": "bib55"
+  },
+  {
+   "indice": 54,
+   "texto": "Usherwood PNR, Runion HI, Campbell JI. 1968. Structure and Physiology of a Chordotonal Organ in the Locust Leg. J. exp. Biol 48:305–323.",
+   "item": "bib56"
+  },
+  {
+   "indice": 55,
+   "texto": "Venken KJT, Simpson JH, Bellen HJ. 2011. Genetic Manipulation of Genes and Cells in the Nervous System of the Fruit Fly. Neuron 72:202–230.",
+   "item": "bib57"
+  },
+  {
+   "indice": 56,
+   "texto": "Vrinten DH, Hamers FF. 2003. 'CatWalk' automated quantitative gait analysis as a novel method to assess mechanical allodynia in the rat; a comparison with von Frey testing. Pain 102:203–209.",
+   "item": "bib58"
+  },
+  {
+   "indice": 57,
+   "texto": "Watson JT, Ritzmann RE, Pollack AJ. 2002. Control of climbing behavior in the cockroach, Blaberus discoidalis. II. Motor activities associated with joint movement. J Comp Physiol A Neuroethol Sens Neural Behav Physiol 188:55–69. doi: 10.1007/s00359-002-0278-x",
+   "item": "bib59"
+  },
+  {
+   "indice": 58,
+   "texto": "Wilson DM. 1966. Insect walking. Annu Rev Entomol 11:103–122. doi: 10.1146/annurev.en.11.010166.000535",
+   "item": "bib60"
+  },
+  {
+   "indice": 59,
+   "texto": "Wosnitza A, Bockemuhl T, Dubbert M, Scholz H, Buschges A. 2012. Inter-leg coordination in the control of walking speed in Drosophila. J Exp Biol. doi: 10.1242/jeb.078139",
+   "item": "bib61"
+  },
+  {
+   "indice": 60,
+   "texto": "Zhu S, Yu AW, Hawley D, Roy R. 1986. Frustrated total internal reflection: A demonstration and review. Am J Phys 54:601–607. doi: 10.1119/1.14514",
+   "item": "bib62"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Dickinson et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "MacKay-Lyons, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bässler, 1977",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strauss, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Borgmann et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Büschges et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bässler, 1977",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Borgmann et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frye, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pearson, 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Graham et al., 1985",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burrows, 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zill et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ritzmann and Büschges, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Büschges et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Graham et al., 1985",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bender et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Graham et al., 1985",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strauss and Heisenberg, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bässler, 1977",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Borgmann et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Usherwood et al., 1968",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cruse et al., 1984",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pfeiffer et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Venken et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ganetzky and Flanagan, 1978",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Branson et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Slawson et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robie et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strauss and Heisenberg, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1993",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wosnitza et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vrinten and Hamers, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Akay et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhu et al., 1986",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Katz, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sumriddetchkajorn and Amarit, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robie et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hoyt and Taylor, 1981",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wilson, 1966",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Graham, 1972",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strauss and Heisenberg, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Graham, 1972",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Graham, 1972",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Graham, 1972",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Akay et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bässler and Büschges, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cruse, 1976",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cruse, 1976",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Graham, 1972",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Graham, 1972",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strauss and Heisenberg, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wosnitza et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wosnitza et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dean and Wendler, 1983",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cruse et al., 1984",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Song and Choi, 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brunn and Dean, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sponberg and Full, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brunn and Dean, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Song and Choi, 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Graham, 1972",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bässler, 1977",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brunn and Dean, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shanbhag et al., 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zill et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kamikouchi et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sun et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stockinger et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hughes and Thomas, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Giorgianni and Mann, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cruse, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cruse et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ritzmann and Büschges, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sponberg and Full, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pfeiffer et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jenett et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jory et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Manning et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pulver et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Seelig et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strauss and Heisenberg, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1993",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wosnitza et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hoyt and Taylor, 1981",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Watson et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sponberg and Full, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baek and Mann, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Usherwood et al., 1968",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cruse et al., 1984",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Akay et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Borgmann et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Borgmann et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Büschges et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kiehn, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brunn and Dean, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brunn, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Matheson, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wosnitza et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gorb et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cruse and Bartling, 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hughes and Thomas, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stockinger et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Giorgianni and Mann, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strauss and Heisenberg 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Zill et al., 2004",
+   "item": "bib63"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Akay et al., 2007",
+   "item": "bib3"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Zill et al., 2004",
+   "item": "bib63"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

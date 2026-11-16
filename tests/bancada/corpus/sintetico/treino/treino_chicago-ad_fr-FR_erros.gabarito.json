@@ -1,0 +1,629 @@
+{
+ "id": "treino_chicago-ad_fr-FR_erros",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Barbier, Thibault, Gilles Le Roux, Astrid Muller, et Auguste Joubert. 2025. « Accord combien asseoir venir contenir nommer occuper rester marche après l’un serrer ». Medical Mycology 16 (2): 621‑27. https://doi.org/10.99999/teste.treino.97408.",
+   "item": "it014"
+  },
+  {
+   "indice": 1,
+   "texto": "Berger, Thomas, et Margaret Coulon. 2006. « Certainement fidèle fait propos éviter chat veiller ». Buisson.",
+   "item": "it017"
+  },
+  {
+   "indice": 2,
+   "texto": "Cabeza Cabo, Chus, Isabelle Delattre, Jacques Bonnet, et Pauline Lefort. 1988. « Dehors habitude important million bientôt interroger couler droite pauvre départ ». Epidemiologia e Serviços de Saúde 79 (8): 368‑80. https://doi.org/10.99999/teste.treino.58466.",
+   "item": "it002"
+  },
+  {
+   "indice": 3,
+   "texto": "Choi, Min-jun. 2020. « Air secrétaire là animer garde prière animal confiance rôle ». Preventive Veterinary Medicine 1 (10): 491‑504. https://doi.org/10.99999/teste.treino.16956.",
+   "item": "it004"
+  },
+  {
+   "indice": 4,
+   "texto": "Conselho Nacional de Saúde (Brasil). 1979. « Retourner verser françois monter comme haine sang traîner besoin ». https://exemplo-treino.org/5659.",
+   "item": "it018"
+  },
+  {
+   "indice": 5,
+   "texto": "Conselho Nacional de Saúde (Brasil). 1990. Cercle fou course avis exprimer amuser rendre bête autorité. Mercier.",
+   "item": "it020"
+  },
+  {
+   "indice": 6,
+   "texto": "Conselho Nacional de Saúde (Brasil). 2017. Douceur chair entre creuser protéger miser. Barthelemy Marchal SARL.",
+   "item": "it012"
+  },
+  {
+   "indice": 7,
+   "texto": "Dupré, Juliette. 2015. « Soutenir également plaire goût bruit ». Cadernos de Saúde Pública 39 (11): 146‑53.",
+   "item": "it023"
+  },
+  {
+   "indice": 8,
+   "texto": "Haute Autorité de Santé (France). 1983. « Vous gagner tracer dernier puis parler tout mais agir ». BMC Public Health 42 (5): 17‑23.",
+   "item": "it007"
+  },
+  {
+   "indice": 9,
+   "texto": "Hoareau, Frédéric, et Grégoire Reynaud. s. d. Verre ferme fenêtre ensemble instinct. Lombard Meyer S.A.R.L.",
+   "item": "it027"
+  },
+  {
+   "indice": 10,
+   "texto": "Istituto Superiore di Sanità. 2015. « Réserver saluer taille mariage matin apporter rue ». https://exemplo-treino.org/3304.",
+   "item": "it011"
+  },
+  {
+   "indice": 11,
+   "texto": "Joseph, Pénélope. 2020. « Promener entrer âge fait âme presser facile durant lever ». In Pousser composer travail tâche baisser calme succès quart dix sang supérieur musique sol assister je, édité par Chantal Lebreton. Tessier Dijoux S.A.S.",
+   "item": "it022"
+  },
+  {
+   "indice": 12,
+   "texto": "Lebrun, Agathe, Émile Bazin, et Laure Dufour. 1989. « Imposer choisir examiner détacher queue passé justice puissant disposer prince souffrance ». Revue d’Épidémiologie et de Santé Publique 48 (4): 629‑38.",
+   "item": "it021"
+  },
+  {
+   "indice": 13,
+   "texto": "Lemoine-Pages, Victor, Élodie Sanchez, et Léon Delahaye. 1981. « Personne ramener vague scène digne coeur son terre sommet direction briser chaleur claire marché ». Medical Mycology 3 (1): 378‑82.",
+   "item": "extra0"
+  },
+  {
+   "indice": 14,
+   "texto": "Maury, Éléonore, William Duval, Émile Bruneau, et Auguste Hardy. 1998. Empire répondre jeu non parole réserver travailler. Hebert.",
+   "item": "it024"
+  },
+  {
+   "indice": 15,
+   "texto": "Muller, Chantal. 2010. « Horizon compter peau règle bureau mille nouveau ». Dos Santos.",
+   "item": "it026"
+  },
+  {
+   "indice": 16,
+   "texto": "Nguyen, Thi Hoa, Gabriel Perrot, Guy Moreno, et Nathalie Hoarau. 2005. Rejoindre sujet vivant effet peine signe obtenir vers. Gilles Daniel SA.",
+   "item": "it005"
+  },
+  {
+   "indice": 17,
+   "texto": "O’Connor, Françoise, et Margot Bernard. 2020. « Déchirer trait chemise souffrir poche matin caresser oeuvre ». Epidemiologia e Serviços de Saúde 54 (10): 64‑73. https://doi.org/10.99999/teste.treino.90048.",
+   "item": "it006"
+  },
+  {
+   "indice": 18,
+   "texto": "Perez, Henriette, Éric Vidal, Augustin Lévy, et Zacharie Gilles. 1999a. « Direction troisième juste avouer route assister mur dresser claire ». In Prix discuter humide gauche goût rose l’une cou étudier, édité par Susanne Julien. Bousquet S.A.S.",
+   "item": "it028"
+  },
+  {
+   "indice": 19,
+   "texto": "Pinto, Alain. 1977. « Fête course nombreux installer franchir répéter ». Cordier S.A.",
+   "item": "it016"
+  },
+  {
+   "indice": 20,
+   "texto": "Revenir plein droite journal impossible inviter président soin avant membre, Acte jurid. No 13574 (1994). https://leis-treino.gov/7779.",
+   "item": "it000"
+  },
+  {
+   "indice": 21,
+   "texto": "Reynaud, Suzanne von, Thibault Brunet, et Camille Jacquot. 2009. « Soutenir crier précieux dominer rassurer rappeler ». https://exemplo-treino.org/3890.",
+   "item": "extra1"
+  },
+  {
+   "indice": 22,
+   "texto": "Robert Koch-Institut. 1977. « Ceci poursuivre jambe ouvrage deux ». In Lequel parfaitement ruine droite surveiller ajouter grandir déposer suivant, édité par Lucie Garcia. Hubert.",
+   "item": "it008"
+  },
+  {
+   "indice": 23,
+   "texto": "Roussel, Aimée de, Catherine Raynaud, et Stéphanie Maillard. 2018. « Or réserver exister rayon raconter moment aimer famille ». In Île oeil cas tache courir quand seulement répondre ferme printemps, édité par Théodore Dupré. David.",
+   "item": "it001"
+  },
+  {
+   "indice": 24,
+   "texto": "Roy, Chantal, Adèle Coste, et Emmanuel Meunier. 2002. « Commun arbre échapper jamais deux art creuser ». Gaceta Sanitaria 71 (12): 450‑60.",
+   "item": "it015"
+  },
+  {
+   "indice": 25,
+   "texto": "São Paulo (Estado). 1994. « Maintenir courage etc plutôt chaleur armer vaste anglais livrer ». https://exemplo-treino.org/3033.",
+   "item": "it025"
+  },
+  {
+   "indice": 26,
+   "texto": "São Paulo (Estado). 2021. Calme soulever front résister oreille. Goncalves.",
+   "item": "it009"
+  },
+  {
+   "indice": 27,
+   "texto": "Soutenir lutter connaissance vent véritable neuf parole toile fuir cerveau vendre, Acte jurid. No 3818 (2019). https://leis-treino.gov/3837.",
+   "item": "it013"
+  },
+  {
+   "indice": 28,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. 1999. « Conduire calmer fuir visage donner jusque briller ». https://exemplo-treino.org/6796.",
+   "item": "it019"
+  },
+  {
+   "indice": 29,
+   "texto": "Zhang, Hao, et Célina Rocher. 2014. « Seigneur fait ruine peine mine si roi entier un afin de aucun ». BMC Public Health 16 (7): 620‑30. https://doi.org/10.99999/teste.treino.12648.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Perez et al. (1999b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cabeza Cabo et al. 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Revenir plein droite journal impossible inviter président soin avant membre 1994; Robert Koch-Institut 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it008"
+   ],
+   "referencias": [
+    20,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(O’Connor et Bernard 2020; J. Dupré 2015; Conselho Nacional de Saúde (Brasil) 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it023",
+    "it018"
+   ],
+   "referencias": [
+    17,
+    7,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Berger et Coulon 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "de Roussel et al. (2018)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Roussel et al. 2018; Robert Koch-Institut 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it008"
+   ],
+   "referencias": [
+    23,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "J. Dupré (2015)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Perez et al. 1999a; Conselho Nacional de Saúde (Brasil) 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it012"
+   ],
+   "referencias": [
+    18,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France) 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lebrun et al. 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Joseph 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Berger et Coulon (2006)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinto 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 1990; Maury et al. 1998; Barbier et al. 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it024",
+    "it014"
+   ],
+   "referencias": [
+    5,
+    14,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 1994; Soutenir lutter connaissance vent véritable neuf parole toile fuir cerveau vendre 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it013"
+   ],
+   "referencias": [
+    25,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(O’Connor et Bernard 2020; Nguyen et al. 2005; São Paulo (Estado) 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it005",
+    "it025"
+   ],
+   "referencias": [
+    17,
+    16,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Perez et al. 1999b; Roy et al. 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it015"
+   ],
+   "referencias": [
+    null,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Muller 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Perez et al. 1999b; Zhang et Rocher 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it003"
+   ],
+   "referencias": [
+    null,
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Klein 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen et al. 2005; O’Connor et Bernard 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it006"
+   ],
+   "referencias": [
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Joseph (2020)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hoareau et Reynaud, s. d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "São Paulo (Estado) (2021)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barbier et al. (2025)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 2017, 138)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Maury et al. 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Joseph 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Berger et Coulon 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Perez et al. (1999a)",
+   "tipo": "narrativa",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Perez et al. (1999b)",
+   "item": "it029"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Perez et al. 1999b; Roy et al. 2002)",
+   "item": "it029"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Perez et al. 1999b; Zhang et Rocher 2014)",
+   "item": "it029"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Klein 2022)",
+   "item": "it010"
+  },
+  {
+   "ponto": "E",
+   "referencia": 13,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 21,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Masse rocher bouche oreille sou peuple école occasion durer tenir"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

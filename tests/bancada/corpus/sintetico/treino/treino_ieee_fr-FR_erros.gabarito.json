@@ -1,0 +1,675 @@
+{
+ "id": "treino_ieee_fr-FR_erros",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] National Library of Medicine (Estados Unidos), « Camarade révéler lever mémoire juger titre retour pourquoi soi lequel ». Consulté le: 10 novembre 2026. [En ligne]. Disponible sur: https://exemplo-treino.org/8389",
+   "item": "it024"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] J. Dupuis, M. Charles, et P. Lagarde, Intelligence inquiétude rare soleil scène cruel renoncer sauter observer milieu. Saint Patrick-les-Bains: Faivre, 1987.",
+   "item": "it015"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] V. Georges et É. Bodin, « Poursuivre servir enfoncer prononcer enfermer », Neveu Perrier et Fils, Gonzalez, 2004.",
+   "item": "it011"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] V. A. Nguyen et N. Marchand, « Haut départ époque oser blond moitié », Epidemiologia e Serviços de Saúde, vol. 19, no 10, p. 653‑659, 1982, doi: 10.99999/teste.treino.83223.",
+   "item": "it005"
+  },
+  {
+   "indice": 4,
+   "texto": "[5] D. Dumas, B. Lenoir, A. Dupré, V. Rey, L. Lebon, et M. Michel, « Changement tomber sembler confondre discussion avis compagnie », Gauthier, Perrot, 1985.",
+   "item": "it022"
+  },
+  {
+   "indice": 5,
+   "texto": "[6] Haute Autorité de Santé (France), « Envelopper brusquement prochain là défendre eh naître action », Bonnin, Langlois.",
+   "item": "it027"
+  },
+  {
+   "indice": 6,
+   "texto": "[7] J. Devaux, V. Marques, T. Daniel, A. Dupuis, A. Bouvet, et D. Seguin, « Toute besoin douleur franc blond public », Revista de Saúde Pública, vol. 31, no 6, p. 20‑26, 1993, doi: 10.99999/teste.treino.93837.",
+   "item": "it019"
+  },
+  {
+   "indice": 7,
+   "texto": "[8] L. Gaudin et V. Mary, « Circonstance jour blanc oreille nombreux votre lueur », Das Gesundheitswesen, vol. 47, no 4, p. 676‑691, 2007, doi: 10.99999/teste.treino.99884.",
+   "item": "it020"
+  },
+  {
+   "indice": 8,
+   "texto": "[9] Istituto Superiore di Sanità, « Cela guère chez petit larme dehors », Epidemiologia e Serviços de Saúde, vol. 50, no 8, p. 430‑436, 2001, doi: 10.99999/teste.treino.32304.",
+   "item": "it007"
+  },
+  {
+   "indice": 9,
+   "texto": "[10] G. Müller et D. Bouvet, « Avancer trop nul honte mesure dessiner », Revista de Saúde Pública, vol. 79, no 11, p. 515‑535, 1986.",
+   "item": "it006"
+  },
+  {
+   "indice": 10,
+   "texto": "[11] G. Barthelemy, V. Guillot, R. Peron, et M. Collin, « Fille aide maison haine été vieil nous reconnaître quartier écraser apercevoir abandonner plonger », in Oeuvre machine sombre réserver profiter malheur, C. Wagner, Éd., Leclercqdan: Ramos Hoareau S.A., 2015, p. 279‑294.",
+   "item": "it016"
+  },
+  {
+   "indice": 11,
+   "texto": "[12] M. Le Goff, D. Poulain, et A. Parent, « Ouvrir même confier question composer nécessaire ordre », in Reposer vouloir voie davantage tellement finir quart douceur dieu, B. Ramos, Éd., Germainnec: Cordier, 1987, p. 3‑18.",
+   "item": "it018"
+  },
+  {
+   "indice": 12,
+   "texto": "[13] C. Guibert, A. Schneider, V. Bruneau, G. Lecomte, L. Henry, et S. Bourgeois, « Enfermer enfance existence nombreux contenter police naître fine désirer précis perdu résoudre », Epidemiologia e Serviços de Saúde, vol. 30, no 12, p. 199‑205, 1982.",
+   "item": "it012"
+  },
+  {
+   "indice": 13,
+   "texto": "[14] G. Mace et É. Lebrun, « Froid enfant instinct terrible pourquoi expérience », Medical Mycology, vol. 46, no 10, p. 444‑454, 2009, doi: 10.99999/teste.treino.69472.",
+   "item": "it023"
+  },
+  {
+   "indice": 14,
+   "texto": "[15] A. Fouquet et C. Martin, « Peine souffrir dent oreille repousser couleur briller brûler recherche inconnu demande malade lumière », Revue d’Épidémiologie et de Santé Publique, vol. 76, no 4, p. 706‑720, 1984, doi: 10.99999/teste.treino.56831.",
+   "item": "it029"
+  },
+  {
+   "indice": 15,
+   "texto": "[16] Organização Pan-Americana da Saúde, « Absence devant entrée nom quart suite jeunesse », Jourdan Weber S.A.R.L., Thomasboeuf, 2011.",
+   "item": "it009"
+  },
+  {
+   "indice": 16,
+   "texto": "[17] J. Feliu Uría, M. Richard, S. Laroche, et D. Martinez, « Vieil mesure soumettre ou groupe existence ». Consulté le: 9 novembre 2026. [En ligne]. Disponible sur: https://exemplo-treino.org/4029",
+   "item": "it002"
+  },
+  {
+   "indice": 17,
+   "texto": "[18] S. Chevalier et N. Gaudin, « Moitié émotion droite honte professeur écouter pièce arrivée frapper », Journal of the American Medical Informatics Association, vol. 1, no 5, p. 363‑377, 1994, doi: 10.99999/teste.treino.34522.",
+   "item": "it017"
+  },
+  {
+   "indice": 18,
+   "texto": "[19] P. Vallet, G. Philippe, G. Lefort, et E. Benard, « Armer pur second sens poser objet vert », Cadernos de Saúde Pública, vol. 33, no 2, p. 125‑145, 1993.",
+   "item": "it013"
+  },
+  {
+   "indice": 19,
+   "texto": "[20] T. Menard, V. Sauvage, C. Fournier, A. Leleu, M. Simon, et M. Ramos, Secrétaire disparaître tour aide autrement sortir. Léger-les-Bains: Da Silva Camus et Fils, 1989.",
+   "item": "it025"
+  },
+  {
+   "indice": 20,
+   "texto": "[21] A. Fouquet et C. Martin, « Charge penser premier difficile voyager bois léger risquer militaire jeune lequel saison élever », Das Gesundheitswesen, vol. 77, no 8, p. 739‑747, 1984, doi: 10.99999/teste.treino.59757.",
+   "item": "it028"
+  },
+  {
+   "indice": 21,
+   "texto": "[22] W. Li, T. Bourgeois, M. Renard, et P. Mathieu, « Sable plutôt mort avenir ou », in Oreille parmi traîner sauter mais, P. Perret, Éd., Maréchal: Fontaine, 1979, p. 12‑27.",
+   "item": "it003"
+  },
+  {
+   "indice": 22,
+   "texto": "[23] T. di Simon, M. Alexandre, et N. Pires, « Bois près moitié conscience hors attaquer heure clef non saison intéresser ». Consulté le: 14 novembre 2026. [En ligne]. Disponible sur: https://exemplo-treino.org/8802",
+   "item": "it001"
+  },
+  {
+   "indice": 23,
+   "texto": "[25] H. Dubois, A. Charrier, H. Guillon, R. Vallée, A. Courtois, et I. Jean, « Nommer sentier chat pensée ville établir pourquoi marier table état », Journal of the American Medical Informatics Association, vol. 78, no 10, p. 706‑724, 1984, doi: 10.99999/teste.treino.68706.",
+   "item": "it026"
+  },
+  {
+   "indice": 24,
+   "texto": "[26] A. Riou, C. Duhamel, J. Maillet, B. Barre, M. Alves, et A. Delmas, « Doigt conscience six pleurer semaine agiter léger », Revista de Saúde Pública, vol. 20, no 12, p. 867‑876, 2019, doi: 10.99999/teste.treino.38107.",
+   "item": "it010"
+  },
+  {
+   "indice": 25,
+   "texto": "[27] Instituto Nacional de Câncer (Brasil), « Rôle flot condition douleur lendemain secret ouvrir non mesure membre », Jacquet, Fournier-la-Forêt, 1983.",
+   "item": "it008"
+  },
+  {
+   "indice": 26,
+   "texto": "[29] E. Humbert-Blin, « Cinq vent arriver absolu attacher étrange feuille d’abord social retenir lettre se expérience », Epidemiologia & Prevenzione, vol. 8, no 4, p. 358‑374, 1990, doi: 10.99999/teste.treino.45303.",
+   "item": "it000"
+  },
+  {
+   "indice": 27,
+   "texto": "[30] S. Kim, Z. Brunet, C. Mace, et I. Chrétien, Réalité fille gens but commencement ni chaleur entre dieu matière question absolu point accuser qualité. Mendès: Poulain, 2025.",
+   "item": "it004"
+  },
+  {
+   "indice": 28,
+   "texto": "[31] B. Verdier-Boyer, « Complet consulter désert discours réalité vivant précis soumettre chacun minute monsieur état », Medical Mycology, vol. 70, no 8, p. 119‑139, 1988, doi: 10.99999/teste.treino.81686.",
+   "item": "extra0"
+  },
+  {
+   "indice": 29,
+   "texto": "[32] A. del Gay, D. Weber, F. Charpentier, et S. Roussel, Juger foi en leur malgré bande de juste. 1995. [En ligne]. Disponible sur: https://leis-treino.gov/290",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nguyen [4]",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gaudin [8]",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10], [11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it016"
+   ],
+   "referencias": [
+    9,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it002"
+   ],
+   "referencias": [
+    7,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chevalier [18]",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it019"
+   ],
+   "referencias": [
+    11,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fouquet [21]",
+   "tipo": "narrativa",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[22], [23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it001"
+   ],
+   "referencias": [
+    21,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[26]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al. [22]",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [8], [11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it016",
+    "it020"
+   ],
+   "referencias": [
+    6,
+    10,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [27], [28]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it008",
+    "it021"
+   ],
+   "referencias": [
+    6,
+    25,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al. [22]",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[29]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gaudin [8]",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[30]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3, p. 114]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[26]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "di Simon et al. [23]",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "[24]",
+   "item": "it014"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[7], [27], [28]",
+   "item": "it021"
+  },
+  {
+   "ponto": "E",
+   "referencia": 28,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 29,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Mais fidèle mot épais tenir front début elle véritable violence pont abandonner frapper chien profond moi"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

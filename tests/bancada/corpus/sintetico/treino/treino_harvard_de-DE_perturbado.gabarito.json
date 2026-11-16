@@ -1,0 +1,592 @@
+{
+ "id": "treino_harvard_de-DE_perturbado",
+ "estilo": "harvard",
+ "sistema": "autor-data",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "van der Bohnbach, C., Heuser, H. und Birnbaum, W. (2011) Möglich Minute erst Tag gelb Minute vier. Stade: Hornich GmbH.",
+   "item": "it001"
+  },
+  {
+   "indice": 1,
+   "texto": "Conselho Nacional de Saúde (Brasil) (2009) Lesen Blume vor werden müssen Pferd hier. Verfügbar unter: https://leis-treino.gov/1661.",
+   "item": "it015"
+  },
+  {
+   "indice": 2,
+   "texto": "Conselho Nacional de Saúde (Brasil) (2015) Brot vorbei rufen Papa scheinen. Verfügbar unter: https://exemplo-treino.org/1006 (Zugegriffen: 3. November 2026).",
+   "item": "it008"
+  },
+  {
+   "indice": 3,
+   "texto": "Drub, V. u. a. (1989) „Jetzt gesund Luft halten Dorf Hunger Stein dabei heiß steigen denken Wiese aus“, Das Gesundheitswesen, 78(4), S. 157–162. Verfügbar unter: https://doi.org/10.99999/teste.treino.33448.",
+   "item": "it018"
+  },
+  {
+   "indice": 4,
+   "texto": "Estrada Donoso, Ú. u. a. (1980) Versuchen Wetter Glas machen. Stadtsteinach: Neureuther AG & Co. OHG.",
+   "item": "it002"
+  },
+  {
+   "indice": 5,
+   "texto": "Flantz, K. (2002) Lehrerin Baum schnell heißen Monat Angst sonst ganz Junge schenken. Coburg: Hertrampf.",
+   "item": "it012"
+  },
+  {
+   "indice": 6,
+   "texto": "Fliegner, A. u. a. (1997) „Für Schüler packen wünschen Dorf Sache Straße arbeiten erklären Name Lehrerin sofort“, Journal of the American Medical Informatics Association, 64(4), S. 107–113. Verfügbar unter: https://doi.org/10.99999/teste.treino.98847.",
+   "item": "it011"
+  },
+  {
+   "indice": 7,
+   "texto": "Harloff, I. (1995) „Ob Zahl früher groß Wetter ganz beißen Sonntag Rad darauf bringen“, Revista de Saúde Pública, 60(8), S. 361–366. Verfügbar unter: https://doi.org/10.99999/teste.treino.13147.",
+   "item": "it019"
+  },
+  {
+   "indice": 8,
+   "texto": "Haute Autorité de Santé (France) (2009) Hängen fröhlich kurz noch Luft unten zu schlecht Luft der rechnen. Dieburg: Mies.",
+   "item": "it009"
+  },
+  {
+   "indice": 9,
+   "texto": "Hering, R.-M. (2000) „Schwarz Klasse Ding sie dazu mein alle halbe Sonntag Lehrer“, One Health, 9(11), S. 471–476. Verfügbar unter: https://doi.org/10.99999/teste.treino.96409.",
+   "item": "it014"
+  },
+  {
+   "indice": 10,
+   "texto": "Heß-Reichmann, C. (1994) „Einige ganz im sitzen“, Epidemiologia & Prevenzione, 34(9), S. 591–607. Verfügbar unter: https://doi.org/10.99999/teste.treino.82453.",
+   "item": "it000"
+  },
+  {
+   "indice": 11,
+   "texto": "Istituto Superiore di Sanità (1980) Sohn Rad Loch sagen neben führen bis anfangen weil wie nehmen. Verfügbar unter: https://exemplo-treino.org/4859 (Zugegriffen: 6. November 2026).",
+   "item": "it010"
+  },
+  {
+   "indice": 12,
+   "texto": "Istituto Superiore di Sanità (1993) Spiel sprechen rechnen See hoch. Verfügbar unter: https://leis-treino.gov/7078.",
+   "item": "it017"
+  },
+  {
+   "indice": 13,
+   "texto": "Klotz, Z. (1981) „Kann oft wo Rad viel oder ruhig um dem schon“, Epidemiologia & Prevenzione, 76(8), S. 295–306.",
+   "item": "it016"
+  },
+  {
+   "indice": 14,
+   "texto": "Lange, R.-M. und Girschner, P. (1983a) „Dunkel selbst ja durch erschrecken“, Das Gesundheitswesen, 56(9), S. 52–62. Verfügbar unter: https://doi.org/10.99999/teste.treino.93578.",
+   "item": "it022"
+  },
+  {
+   "indice": 15,
+   "texto": "Lange, R.-M. und Girschner, P. (1983b) „Immer alt Monate packen als weil besser steigen möglich suchen hinter wichtig“, Medical Mycology, 6(6), S. 844–854.",
+   "item": "it023"
+  },
+  {
+   "indice": 16,
+   "texto": "Lee, J. und Mühle, E. (2017) „Erklären sich wieder Tisch Eltern können da Leben beide“, Epidemiologia e Serviços de Saúde, 52(12), S. 242–254. Verfügbar unter: https://doi.org/10.99999/teste.treino.40801.",
+   "item": "it004"
+  },
+  {
+   "indice": 17,
+   "texto": "Mies, E. (ohne Datum) „Hin beißen Nacht selbst sicher schlagen richtig geben das erklären gehören“, Epidemiologia e Serviços de Saúde, 1(9), S. 568–572. Verfügbar unter: https://doi.org/10.99999/teste.treino.21319.",
+   "item": "it021"
+  },
+  {
+   "indice": 18,
+   "texto": "Øster, A. u. a. (2007) „Nass Angst suchen Uhr“, Cadernos de Saúde Pública, 67(11), S. 749–759. Verfügbar unter: https://doi.org/10.99999/teste.treino.33307.",
+   "item": "it006"
+  },
+  {
+   "indice": 19,
+   "texto": "Sölzer, Z. u. a. (2011) „Packen her alle weg gibt früher allein rufen schauen schwer bringen“, Journal of the American Medical Informatics Association, 1(8), S. 394–407. Verfügbar unter: https://doi.org/10.99999/teste.treino.98597.",
+   "item": "it020"
+  },
+  {
+   "indice": 20,
+   "texto": "Tran, M. und Misicher, F. (1980) Oft müde eigentlich wird dürfen verstehen schwarz etwas verstehen gelb kann weiter. Verfügbar unter: https://exemplo-treino.org/4190 (Zugegriffen: 16. November 2026).",
+   "item": "it005"
+  },
+  {
+   "indice": 21,
+   "texto": "Virginia-Maryland College of Veterinary Medicine (2001) „Über Loch nicht rechnen Sonntag noch Ferien früh gleich Blume zu legen“, Gaceta Sanitaria, 40(3), S. 454–470. Verfügbar unter: https://doi.org/10.99999/teste.treino.29931.",
+   "item": "it007"
+  },
+  {
+   "indice": 22,
+   "texto": "Wagenknecht, D. u. a. (2015) „Groß ein Wetter wenig Stein andere wichtig“, in A. Matthäi (Hrsg.) Hin packen Geschichte dafür Spiel halbe Hand wird schlecht. Olpe: Geisel Hesse GmbH & Co. KG, S. 256–271.",
+   "item": "it013"
+  },
+  {
+   "indice": 23,
+   "texto": "Wang, J., Rosemann, C. und Hettner, W. (1995) „Sich Eltern holen Ferien frei später nimmt“, Epidemiologia & Prevenzione, 10(2), S. 123–138. Verfügbar unter: https://doi.org/10.99999/teste.treino.73742.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Istituto Superiore di Sanità, 1993; Hering, 2000; Conselho Nacional de Saúde (Brasil), 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it017",
+    "it008"
+   ],
+   "referencias": [
+    9,
+    12,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran und Misicher, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fliegner u. a., 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster u. a., 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Drub u. a., 1989; Sölzer u. a., 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it018"
+   ],
+   "referencias": [
+    19,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lange und Girschner, 1983a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sölzer u. a., 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mies (ohne Datum)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wagenknecht u. a., 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 1993; Conselho Nacional de Saúde (Brasil), 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it015"
+   ],
+   "referencias": [
+    12,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Klotz, 1981; Fliegner u. a., 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it011"
+   ],
+   "referencias": [
+    13,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lange und Girschner (1983a)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Heß-Reichmann, 1994; Conselho Nacional de Saúde (Brasil), 2009; Sölzer u. a., 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it000",
+    "it020"
+   ],
+   "referencias": [
+    1,
+    10,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Harloff, 1995; Øster u. a., 2007; Conselho Nacional de Saúde (Brasil), 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it008",
+    "it006"
+   ],
+   "referencias": [
+    7,
+    2,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Estrada Donoso u. a., 1980; Lange und Girschner, 1983a; Haute Autorité de Santé (France), 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it002",
+    "it022"
+   ],
+   "referencias": [
+    8,
+    4,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lange und Girschner, 1983b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hering, 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lange und Girschner, 1983a; Haute Autorité de Santé (France), 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it009"
+   ],
+   "referencias": [
+    14,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Klotz, 1981; Mies, ohne Datum)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it021"
+   ],
+   "referencias": [
+    13,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Flantz, 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster u. a., 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lange und Girschner, 1983a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Conselho Nacional de Saúde (Brasil) (2009)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lange und Girschner (1983b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Drub u. a., 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Estrada Donoso u. a. (1980)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(van der Bohnbach, Heuser und Birnbaum, 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 1993; Wang, Rosemann und Hettner, 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it017"
+   ],
+   "referencias": [
+    23,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee und Mühle, 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), 2015, S. 167)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Lee und Mühle, 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Øster u. a., 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Tran und Misicher, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (2001)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Arzt sechs sind freuen Arbeit Wort draußen Uhr Mann"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

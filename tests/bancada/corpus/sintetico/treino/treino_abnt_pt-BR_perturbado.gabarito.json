@@ -1,0 +1,581 @@
+{
+ "id": "treino_abnt_pt-BR_perturbado",
+ "estilo": "abnt",
+ "sistema": "autor-data",
+ "locale": "pt-BR",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "AZEVEDO, Caleb et al. Harum sit alias ab ipsam eligendi officiis molestiae doloremque. Preventive Veterinary Medicine, v. 22, n. 7, p. 211–231, 2021.",
+   "item": "it015"
+  },
+  {
+   "indice": 1,
+   "texto": "BRITO, Olívia; FERNANDES, Ana Beatriz. Nemo esse fuga sint animi expedita accusamus sit omnis ad id. In: LOPES, Isaac (Org.). Cumque ducimus quasi veritatis modi numquam hic quisquam quasi expedita. Sousa Grande: Fernandes, 2004. p. 255–270.",
+   "item": "it021"
+  },
+  {
+   "indice": 2,
+   "texto": "CIRINO, Vinícius; NUNES, Thiago; SIQUEIRA, Antônio. Repellendus nulla dolor unde quis necessitatibus corporis ab. Leão: Lima Vasconcelos - ME, 2019.",
+   "item": "it014"
+  },
+  {
+   "indice": 3,
+   "texto": "DA LUZ, Mateus et al. Debitis deserunt facilis quaerat deserunt facere nihil consequuntur ipsum. Epidemiologia & Prevenzione, v. 67, n. 8, p. 162–166, 1989.",
+   "item": "it016"
+  },
+  {
+   "indice": 4,
+   "texto": "DOS DA PAZ, Ana Julia et al. Repellendus consequatur tempore perferendis labore. Dias: Ferreira, 2013.",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "FERREIRA, Gustavo; DA MOTA, Augusto. Nam odio iure corrupti iste maxime illo quisquam illum blanditiis. In: DAS NEVES, Gael (Org.). Officiis dicta suscipit iure asperiores. da Rosa de Castro: Campos Ltda., 1998. p. 182–197.",
+   "item": "it013"
+  },
+  {
+   "indice": 6,
+   "texto": "FOGAÇA, Asafe; MACEDO, Guilherme. Nostrum ut sequi esse harum cum velit dignissimos. Journal of the American Medical Informatics Association, v. 25, n. 7, p. 235–250, 1984.",
+   "item": "it012"
+  },
+  {
+   "indice": 7,
+   "texto": "FREITAS, Brenda et al. Praesentium voluptas veritatis molestiae veniam repudiandae porro veritatis. Gaceta Sanitaria, v. 30, n. 11, p. 518–531, 1985a.",
+   "item": "it026"
+  },
+  {
+   "indice": 8,
+   "texto": "FREITAS, Brenda et al. Recusandae inventore deleniti error officia provident similique neque reiciendis blanditiis sequi nobis. Epidemiologia & Prevenzione, v. 15, n. 12, p. 630–650, 1985b.",
+   "item": "it025"
+  },
+  {
+   "indice": 9,
+   "texto": "GREMIÃO, Benicio. Beatae sed mollitia soluta nesciunt maxime culpa. Castro de Vieira: Rodrigues, 1996.",
+   "item": "it006"
+  },
+  {
+   "indice": 10,
+   "texto": "INSTITUTO NACIONAL DE CÂNCER (BRASIL). Vitae modi molestiae ab. , 1993. Disponível em: <https://leis-treino.gov/9706>",
+   "item": "it020"
+  },
+  {
+   "indice": 11,
+   "texto": "INSTITUTO NACIONAL DE CÂNCER (BRASIL). Vero nobis placeat eius repellendus reprehenderit quibusdam. In: ROCHA, Agatha (Org.). Ipsum ipsum facilis ex dicta recusandae voluptatem voluptas occaecati praesentium numquam eum. Souza: Jesus S.A., 2018. p. 94–109.",
+   "item": "it009"
+  },
+  {
+   "indice": 12,
+   "texto": "ISTITUTO SUPERIORE DI SANITÀ. Ipsum maxime ea asperiores harum. , 1988. Disponível em: <https://leis-treino.gov/4907>",
+   "item": "it008"
+  },
+  {
+   "indice": 13,
+   "texto": "ISTITUTO SUPERIORE DI SANITÀ. Nobis tempore itaque ipsum tempora eaque quibusdam fuga itaque. Epidemiologia & Prevenzione, v. 62, n. 8, p. 376–387, 1999.",
+   "item": "it007"
+  },
+  {
+   "indice": 14,
+   "texto": "LOPES, Stephany. Ad enim quod illum atque temporibus debitis. Revista de Saúde Pública, v. 61, n. 11, p. 286–298, [S.d.].",
+   "item": "it024"
+  },
+  {
+   "indice": 15,
+   "texto": "MACHADO, Yuri. Velit mollitia numquam consectetur beatae officia voluptatibus. BMC Public Health, v. 16, n. 7, p. 469–489, 2021.",
+   "item": "it017"
+  },
+  {
+   "indice": 16,
+   "texto": "MENDONÇA, Marcelo; CAVALCANTI, Arthur Miguel; SÁ, José. Odio exercitationem eos possimus perferendis voluptatibus ea accusantium hic error impedit tempore officiis officia accusantium. Journal of the American Medical Informatics Association, v. 58, n. 3, p. 532–544, 1995.",
+   "item": "it018"
+  },
+  {
+   "indice": 17,
+   "texto": "MONTENEGRO, Isadora et al. Eum saepe sapiente officiis libero qui harum. Pimenta: Gomes Correia - EI, 2010.",
+   "item": "it019"
+  },
+  {
+   "indice": 18,
+   "texto": "NATIONAL LIBRARY OF MEDICINE (ESTADOS UNIDOS). Quo esse soluta sint eligendi velit voluptatum vel quibusdam. da Luz de Goiás: Ramos, 1986.",
+   "item": "it010"
+  },
+  {
+   "indice": 19,
+   "texto": "NOGUERA VARA, Dulce; RIOS, Théo. Dolorum voluptates earum sunt molestiae incidunt eos corporis placeat temporibus voluptates eveniet. Cadernos de Saúde Pública, v. 38, n. 8, p. 46–59, 1983.",
+   "item": "it002"
+  },
+  {
+   "indice": 20,
+   "texto": "PARK, Seo-yeon; CIRINO, Lucas Gabriel; SAMPAIO, Mateus. Nesciunt sint laborum reprehenderit alias veniam ex. Lopes: Jesus Novais e Filhos, 1993.",
+   "item": "it004"
+  },
+  {
+   "indice": 21,
+   "texto": "PHAM, Thi Hoa; GUERRA, Raul. Dolor atque tenetur ducimus. In: COSTELA, Natália (Org.). Perferendis itaque saepe recusandae ipsum facilis explicabo quisquam natus hic expedita. Gonçalves: Viana Silveira e Filhos, 2019. p. 132–147.",
+   "item": "it005"
+  },
+  {
+   "indice": 22,
+   "texto": "SAMPAIO-JESUS, Yago et al. Eligendi reprehenderit commodi harum saepe fuga corporis nostrum ut. Cadernos de Saúde Pública, v. 48, n. 3, p. 163–180, 2019.",
+   "item": "it000"
+  },
+  {
+   "indice": 23,
+   "texto": "SOUSA, Liz; MONTENEGRO, Bento. Beatae veniam iusto deserunt nesciunt ullam commodi laboriosam vel. Cadernos de Saúde Pública, v. 40, n. 1, p. 896–913, 2019.",
+   "item": "it023"
+  },
+  {
+   "indice": 24,
+   "texto": "SOUZA, Luiz Gustavo. Cupiditate quas iste suscipit sed doloremque esse. One Health, v. 80, n. 6, p. 327–332, 2026.",
+   "item": "it022"
+  },
+  {
+   "indice": 25,
+   "texto": "SOUZA, Sara; DA CRUZ, Isis; VIEIRA, Leonardo. Libero voluptate minima saepe mollitia blanditiis. da Conceição: Casa Grande da Cruz e Filhos, 2017.",
+   "item": "it011"
+  },
+  {
+   "indice": 26,
+   "texto": "ZHANG, Wei; ALVES, Benjamin; CORREIA, Esther. Repellat sequi accusantium eius vitae maxime nostrum laboriosam facilis error. , 2006. Disponível em: <https://leis-treino.gov/4061>",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Dos Da Paz et al. (2013)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Azevedo et al., 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Machado, 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fogaça; Macedo, 1984; Freitas et al., 1985a; Zhang; Alves; Correia, 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it012",
+    "it026"
+   ],
+   "referencias": [
+    26,
+    6,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Freitas et al., 1985b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sampaio-Jesus et al., 2019; Sousa; Montenegro, 2019; Souza, 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it000",
+    "it023"
+   ],
+   "referencias": [
+    24,
+    22,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cirino; Nunes; Siqueira, 2019; Da Luz et al., 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it014"
+   ],
+   "referencias": [
+    3,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zhang; Alves; Correia, 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Instituto Nacional de Câncer (Brasil) (2018)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Noguera Vara; Rios, 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sampaio-Jesus et al. (2019)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sousa; Montenegro (2019)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brito; Fernandes, 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião, 1996; Machado, 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it006"
+   ],
+   "referencias": [
+    15,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dos Da Paz et al., 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Souza, 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham; Guerra, 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião, 1996; National Library of Medicine (Estados Unidos), 1986; Park; Cirino; Sampaio, 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it004",
+    "it010"
+   ],
+   "referencias": [
+    9,
+    20,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Da Luz et al. (1989)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Noguera Vara; Rios, 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mendonça; Cavalcanti; Sá, 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "National Library of Medicine (Estados Unidos) (1986)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cirino; Nunes; Siqueira (2019)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião, 1996; Instituto Nacional de Câncer (Brasil), 2018; Souza, 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it006",
+    "it022"
+   ],
+   "referencias": [
+    11,
+    9,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Souza; Da Cruz; Vieira, 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Montenegro et al., 2010; Pham; Guerra, 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it005"
+   ],
+   "referencias": [
+    17,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lopes, [S.d.])",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ferreira; Da Mota, 1998; National Library of Medicine (Estados Unidos), 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it013"
+   ],
+   "referencias": [
+    18,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fogaça; Macedo, 1984, p. 273)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Zhang; Alves; Correia, 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Ferreira; Da Mota, 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Montenegro et al., 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Cirino; Nunes; Siqueira (2019)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Recusandae maxime quasi deserunt labore dolore mollitia soluta tempore"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

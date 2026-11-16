@@ -1,0 +1,1395 @@
+{
+ "id": "elife-00190_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00190.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Blumstein J, Faundez V, Nakatsu F, Saito T, Ohno H, Kelly RB. 2001. The neuronal form of adaptor protein-3 is required for synaptic vesicle formation from endosomes. J Neurosci 21:8034–8042.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Cardona A, Saalfeld S, Schindelin J, Arganda-Carreras I, Preibisch S, Longair M, et al.. 2012. TrakEM2 software for neural circuit reconstruction. PLoS One 7:e38011.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Collins BM, McCoy AJ, Kent HM, Evans PR, Owen DJ. 2002. Molecular architecture and functional model of the endocytic AP2 complex. Cell 109:523–535.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Dell'Angelica EC, Klumperman J, Stoorvogel W, Bonifacino JS. 1998. Association of the AP-3 adaptor complex with clathrin. Science 280:431–434.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Dittman J, Ryan TA. 2009. Molecular circuitry of endocytosis at nerve terminals. Annu Rev Cell Dev Biol 25:133–160.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Doray B, Lee I, Knisely J, Bu G, Kornfeld S. 2007. The gamma/sigma1 and alpha/sigma2 hemicomplexes of clathrin adaptors AP-1 and AP-2 harbor the dileucine recognition site. Mol Biol Cell 18:1887–1896.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Feinberg EH, Vanhoven MK, Bendesky A, Wang G, Fetter RD, Shen K, et al.. 2008. GFP Reconstitution across Synaptic Partners (GRASP) defines cell contacts and synapses in living nervous systems. Neuron 57:353–363.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Fergestad T, Davis WS, Broadie K. 1999. The stoned proteins regulate synaptic vesicle recycling in the presynaptic terminal. J Neurosci 19:5847–5860.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Ford MG, Pearse BM, Higgins MK, Vallis Y, Owen DJ, Gibson A, et al.. 2001. Simultaneous binding of PtdIns(4,5)P2 and clathrin by AP180 in the nucleation of clathrin lattices on membranes. Science 291:1051–1055.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Frokjaer-Jensen C, Davis MW, Hopkins CE, Newman BJ, Thummel JM, Olesen SP, et al.. 2008. Single-copy insertion of transgenes in Caenorhabditis elegans. Nat Genet 40:1375–1383.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Frost A, Elgort MG, Brandman O, Ives C, Collins SR, Miller-Vedam L, et al.. 2012. Functional repurposing revealed by comparing S. pombe and S. cerevisiae genetic interactions. Cell 149:1339–1352.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Glyvuk N, Tsytsyura Y, Geumann C, D'Hooge R, Huve J, Kratzke M, et al.. 2010. AP-1/sigma1B-adaptin mediates endosomal synaptic vesicle recycling, learning and memory. EMBO J 29:1318–1330.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Gonzalez-Gaitan M, Jackle H. 1997. Role of Drosophila alpha-adaptin in presynaptic vesicle recycling. Cell 88:767–776.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Grant B, Hirsh D. 1999. Receptor-mediated endocytosis in the Caenorhabditis elegans oocyte. Mol Biol Cell 10:4311–4326.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Gu M, Schuske K, Watanabe S, Liu Q, Baum P, Garriga G, et al.. 2008. Mu2 adaptin facilitates but is not essential for synaptic vesicle recycling in Caenorhabditis elegans. J Cell Biol 183:881–892.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Hammarlund M, Palfreyman MT, Watanabe S, Olsen S, Jorgensen EM. 2007. Open syntaxin docks synaptic vesicles. PLoS Biol. 5:e198.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Hao W, Luo Z, Zheng L, Prasad K, Lafer EM. 1999. AP180 and AP-2 interact directly in a complex that cooperatively assembles clathrin. J Biol Chem 274:22785–22794.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Haucke V, Wenk MR, Chapman ER, Farsad K, De Camilli P. 2000. Dual interaction of synaptotagmin with mu2- and alpha-adaptin facilitates clathrin-coated pit nucleation. EMBO J 19:6011–6019.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Heuser JE, Reese TS. 1973. Evidence for recycling of synaptic vesicle membrane during transmitter release at the frog neuromuscular junction. J Cell Biol 57:315–344.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Holmes A, Flett A, Coudreuse D, Korswagen HC, Pettitt J. 2007. C. elegans disabled is required for cell-type specific endocytosis and is essential in animals lacking the AP-3 adaptor complex. J Cell Sci 120:2741–2751.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Jackson LP, Kelly BT, McCoy AJ, Gaffry T, James LC, Collins BM, et al.. 2010. A large-scale conformational change couples membrane recruitment to cargo binding in the AP2 clathrin adaptor complex. Cell 141:1220–1229.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Jeong H, Mason SP, Barabasi AL, Oltvai ZN. 2001. Lethality and centrality in protein networks. Nature 411:41–42.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Johnstone IL, Barry JD. 1996. Temporal reiteration of a precise gene expression pattern during nematode development. EMBO J 15:3633–3639.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Jorgensen EM, Hartwieg E, Schuske K, Nonet ML, Jin Y, Horvitz HR. 1995. Defective recycling of synaptic vesicles in synaptotagmin mutants of Caenorhabditis elegans. Nature 378:196–199.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Jung N, Wienisch M, Gu M, Rand JB, Muller SL, Krause G, et al.. 2007. Molecular basis of synaptic vesicle cargo recognition by the endocytic sorting adaptor stonin 2. J Cell Biol 179:1497–1510.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Kantheti P, Qiao X, Diaz ME, Peden AA, Meyer GE, Carskadon SL, et al.. 1998. Mutation in AP-3 delta in the mocha mouse links endosomal transport to storage deficiency in platelets, melanosomes, and synaptic vesicles. Neuron 21:111–122.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Kastning K, Kukhtina V, Kittler JT, Chen G, Pechstein A, Enders S, et al.. 2007. Molecular determinants for the interaction between AMPA receptors and the clathrin adaptor complex AP-2. Proc Natl Acad Sci USA 104:2991–2996.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Kelly BT, McCoy AJ, Spate K, Miller SE, Evans PR, Honing S, et al.. 2008. A structural explanation for the binding of endocytic dileucine motifs by the AP2 complex. Nature 456:976–979.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Kim SH, Ryan TA. 2009. Synaptic vesicle recycling at CNS snapses without AP-2. J Neurosci 29:3865–3874.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Kittler JT, Chen G, Honing S, Bogdanov Y, McAinsh K, Arancibia-Carcamo IL, et al.. 2005. Phospho-dependent binding of the clathrin AP2 adaptor complex to GABAA receptors regulates the efficacy of inhibitory synaptic transmission. Proc Natl Acad Sci USA 102:14871–14876.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Liu Q, Chen B, Ge Q, Wang ZW. 2007. Presynaptic Ca2+/calmodulin-dependent protein kinase II modulates neurotransmitter release by activating BK channels at Caenorhabditis elegans neuromuscular junction. J Neurosci 27:10404–10413.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Mahaffey DT, Peeler JS, Brodsky FM, Anderson RG. 1990. Clathrin-coated pits contain an integral membrane protein that binds the AP-2 subunit with high affinity. J Biol Chem 265:16514–16520.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Maritzen T, Podufall J, Haucke V. 2010. Stonins–specialized adaptors for synaptic vesicle recycling and beyond?. Traffic 11:8–15.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Mashl RJ, Bruinsma RF. 1998. Spontaneous-curvature theory of clathrin-coated membranes. Biophys J 74:2862–2875.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Matsui W, Kirchhausen T. 1990. Stabilization of clathrin coats by the core of the clathrin-associated protein complex AP-2. Biochemistry 29:10791–10798.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Miller SE, Sahlender DA, Graham SC, Honing S, Robinson MS, Peden AA, et al.. 2011. The molecular basis for the endocytosis of small R-SNAREs by the clathrin adaptor CALM. Cell 147:1118–1131.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Mishra SK, Hawryluk MJ, Brett TJ, Keyel PA, Dupin AL, Jha A, et al.. 2004. Dual engagement regulation of protein interactions with the AP-2 adaptor alpha appendage. J Biol Chem 279:46191–46203.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Mitsunari T, Nakatsu F, Shioda N, Love PE, Grinberg A, Bonifacino JS, et al.. 2005. Clathrin adaptor AP-2 is essential for early embryonal development. Mol Cell Biol 25:9318–9323.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Motley A, Bright NA, Seaman MN, Robinson MS. 2003. Clathrin-mediated endocytosis in AP-2-depleted cells. J Cell Biol 162:909–918.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Mullen GP, Grundahl KM, Gu M, Watanabe S, Hobson RJ, Crowell JA, et al.. 2012. UNC-41/stonin functions with AP2 to recycle synaptic vesicles in Caenorhabditis elegans. PLoS One 7:e40095.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Nonet ML, Holgado AM, Brewer F, Serpe CJ, Norbeck BA, Holleran J, et al.. 1999. UNC-11, a Caenorhabditis elegans AP180 homologue, regulates the size and protein composition of synaptic vesicles. Mol Biol Cell 10:2343–2360.",
+   "item": "bib42"
+  },
+  {
+   "indice": 41,
+   "texto": "Owen DJ, Vallis Y, Pearse BM, McMahon HT, Evans PR. 2000. The structure and function of the beta 2-adaptin appendage domain. EMBO J 19:4216–4227.",
+   "item": "bib43"
+  },
+  {
+   "indice": 42,
+   "texto": "Pan CL, Baum PD, Gu M, Jorgensen EM, Clark SG, Garriga G. 2008. C. elegans AP-2 and retromer control Wnt signaling by regulating mig-14/Wntless. Dev Cell 14:132–139.",
+   "item": "bib44"
+  },
+  {
+   "indice": 43,
+   "texto": "Poskanzer KE, Fetter RD, Davis GW. 2006. Discrete residues in the c(2)b domain of synaptotagmin I independently specify endocytic rate and synaptic vesicle size. Neuron 50:49–62.",
+   "item": "bib45"
+  },
+  {
+   "indice": 44,
+   "texto": "Praefcke GJ, Ford MG, Schmid EM, Olesen LE, Gallop JL, Peak-Chew SY, et al.. 2004. Evolving nature of the AP2 alpha-appendage hub during clathrin-coated vesicle endocytosis. EMBO J 23:4371–4383.",
+   "item": "bib46"
+  },
+  {
+   "indice": 45,
+   "texto": "Richmond JE, Davis WS, Jorgensen EM. 1999. UNC-13 is required for synaptic vesicle fusion in C. elegans. Nat Neurosci 2:959–964.",
+   "item": "bib47"
+  },
+  {
+   "indice": 46,
+   "texto": "Robinson MS. 2004. Adaptable adaptors for coated vesicles. Trends Cell Biol 14:167–174.",
+   "item": "bib48"
+  },
+  {
+   "indice": 47,
+   "texto": "Royle SJ. 2006. The cellular functions of clathrin. Cell Mol Life Sci 63:1823–1832.",
+   "item": "bib49"
+  },
+  {
+   "indice": 48,
+   "texto": "Santolini E, Puri C, Salcini AE, Gagliani MC, Pelicci PG, Tacchetti C, et al.. 2000. Numb is an endocytic protein. J Cell Biol 151:1345–1352.",
+   "item": "bib50"
+  },
+  {
+   "indice": 49,
+   "texto": "Sato K, Ernstrom GG, Watanabe S, Weimer RM, Chen CH, Sato M, et al.. 2009. Differential requirements for clathrin in receptor-mediated endocytosis and maintenance of synaptic vesicle pools. Proc Natl Acad Sci USA 106:1139–1144.",
+   "item": "bib51"
+  },
+  {
+   "indice": 50,
+   "texto": "Sato M, Sato K, Fonarev P, Huang CJ, Liou W, Grant BD. 2005. Caenorhabditis elegans RME-6 is a novel regulator of RAB-5 at the clathrin-coated pit. Nat Cell Biol 7:559–569.",
+   "item": "bib52"
+  },
+  {
+   "indice": 51,
+   "texto": "Schmid EM, Ford MG, Burtey A, Praefcke GJ, Peak-Chew SY, Mills IG, et al.. 2006. Role of the AP2 beta-appendage hub in recruiting partners for clathrin-coated vesicle assembly. PLoS Biol 4:e262.",
+   "item": "bib53"
+  },
+  {
+   "indice": 52,
+   "texto": "Schuske K, Palfreyman MT, Watanabe S, Jorgensen EM. 2007. UNC-46 is required for trafficking of the vesicular GABA transporter. Nat Neurosci 10:846–853.",
+   "item": "bib54"
+  },
+  {
+   "indice": 53,
+   "texto": "Shih W, Gallusser A, Kirchhausen T. 1995. A clathrin-binding site in the hinge of the beta 2 chain of mammalian AP-2 complexes. J Biol Chem 270:31083–31090.",
+   "item": "bib55"
+  },
+  {
+   "indice": 54,
+   "texto": "Traub LM. 2003. Sorting it out: AP-2 and alternate clathrin adaptors in endocytic cargo selection. J Cell Biol 163:203–208.",
+   "item": "bib56"
+  },
+  {
+   "indice": 55,
+   "texto": "Vithlani M, Moss SJ. 2009. The role of GABAAR phosphorylation in the construction of inhibitory synapses and the efficacy of neuronal inhibition. Biochem Soc Trans 37:1355–1358.",
+   "item": "bib57"
+  },
+  {
+   "indice": 56,
+   "texto": "Zhang JZ, Davletov BA, Sudhof BA, Anderson RG. 1994. Synaptotagmin I is a high affinity receptor for clathrin AP-2: implications for membrane recycling. Cell 78:751–760.",
+   "item": "bib59"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Mahaffey et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Traub, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mashl and Bruinsma, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dittman and Ryan, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Matsui and Kirchhausen, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dell'Angelica et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kantheti et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Collins et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Motley et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Traub, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nakatsu et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mitsunari et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim and Ryan, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Traub, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robinson, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gonzalez-Gaitan and Jackle, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Grant and Hirsh, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim and Ryan, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim and Ryan, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gonzalez-Gaitan and Jackle, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Grant and Hirsh, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sato et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Holmes et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kelly et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Doray et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pan et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Collins et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jackson et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jackson et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pan et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Johnstone and Barry, 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nonet et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schuske et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maritzen et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mullen et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kittler et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kastning et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vithlani and Moss, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Matsui and Kirchhausen, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Collins et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jackson et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jackson et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jackson et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Owen et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Santolini et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Praefcke et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jung et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shih et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Owen et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmid et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Owen et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mishra et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Royle, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmid et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jeong et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Doray et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frost et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim and Ryan 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jorgensen et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Poskanzer et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fergestad et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mullen et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Haucke et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jung et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mullen et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim and Ryan, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Glyvuk et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blumstein et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Voglmaier et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hao et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ford et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nonet et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Miller et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nonet et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Heuser and Reese, 1973",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gonzalez-Gaitan and Jackle, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frokjaer-Jensen et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frokjaer-Jensen et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sato et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hammarlund et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cardona et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Richmond et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Nakatsu et al., 2004",
+   "item": "bib41"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Voglmaier et al., 2006",
+   "item": "bib58"
+  },
+  {
+   "ponto": "E",
+   "referencia": 6,
+   "item": "bib7"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

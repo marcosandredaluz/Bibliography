@@ -1,0 +1,649 @@
+{
+ "id": "treino_iso690-num_pt-BR_erros",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "pt-BR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1.  ROBERT KOCH-INSTITUT. Laboriosam reiciendis illo quaerat expedita deleniti perspiciatis earum aut aliquid. Preventive Veterinary Medicine. 1980. Vol. 39, no. 8, p. 616–636.",
+   "item": "it008"
+  },
+  {
+   "indice": 1,
+   "texto": "2.  HAUTE AUTORITÉ DE SANTÉ (FRANCE). Tempore officia sint dolor veritatis perferendis alias perspiciatis quam ab in eaque consequatur. Online. 2025. 14669. Available from: https://leis-treino.gov/7585",
+   "item": "it007"
+  },
+  {
+   "indice": 2,
+   "texto": "3.  ROBERT KOCH-INSTITUT. Iure quia laboriosam ad accusamus. Online. 2025. 6909. Available from: https://leis-treino.gov/9436",
+   "item": "it017"
+  },
+  {
+   "indice": 3,
+   "texto": "4.  ÇELIK, Pietra, SILVEIRA, Luísa e LEÃO, Maria Sophia. Asperiores minima corporis sint dolorum nobis magni eligendi voluptas quibusdam. Das Gesundheitswesen. 2001. Vol. 15, no. 1, p. 692–707. DOI 10.99999/teste.treino.37767.",
+   "item": "it006"
+  },
+  {
+   "indice": 4,
+   "texto": "5.  NOVAES, Isis, NOVAIS, Allana, CAVALCANTE, Vinicius e ARAGÃO, Allana. Impedit aperiam ratione vitae porro eos voluptatibus mollitia. In : MENDES, Raul (org.), Reiciendis dolores qui commodi sequi perspiciatis. Freitas do Amparo : Pastor e Filhos, 1976. p. 233–248.",
+   "item": "it010"
+  },
+  {
+   "indice": 5,
+   "texto": "6.  LE, Thi Hoa, MELO, Emanuel, GOMES, Maria Alice e DA CONCEIÇÃO, Antônio. Magni ipsa labore quos architecto repellat. Epidemiologia & Prevenzione. 2020. Vol. 74, no. 10, p. 484–496. DOI 10.99999/teste.treino.85347.",
+   "item": "it005"
+  },
+  {
+   "indice": 6,
+   "texto": "7.  ANDRADE, Ana Cecília. Dolor cumque optio molestiae saepe occaecati doloremque quos illum aliquid et fuga. Das Gesundheitswesen. 1982. Vol. 60, no. 4, p. 683–694. DOI 10.99999/teste.treino.69813.",
+   "item": "it016"
+  },
+  {
+   "indice": 7,
+   "texto": "8.  ROBERT KOCH-INSTITUT. Iure pariatur deserunt itaque doloremque beatae officia impedit sint. Cadernos de Saúde Pública. 2008. Vol. 2, no. 2, p. 96–112. DOI 10.99999/teste.treino.61002.",
+   "item": "it009"
+  },
+  {
+   "indice": 8,
+   "texto": "9.  DA SANTOS, Eloah, CAVALCANTE, Isaac, DA LUZ, Evelyn e DA ROCHA, Mariane. Dolore non nihil accusamus saepe autem excepturi aperiam temporibus at magni. . Guerra de Pinto : Montenegro Freitas e Filhos, 2017.",
+   "item": "it001"
+  },
+  {
+   "indice": 9,
+   "texto": "10.  ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE. Ab optio consequuntur totam dolor cum fuga ratione voluptatem. Caldeira : Monteiro Ltda., 2007.",
+   "item": "it026"
+  },
+  {
+   "indice": 10,
+   "texto": "11.  ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE. Iure quo consequuntur fugiat aspernatur mollitia sequi quam id aperiam temporibus voluptatibus et commodi. . Leão de Minas : Nascimento - ME, 2007.",
+   "item": "it025"
+  },
+  {
+   "indice": 11,
+   "texto": "12.  COSTELA, Nathan. Fugiat voluptatibus dignissimos debitis sed excepturi molestias corrupti molestias totam dignissimos culpa enim. Alves : Farias, 2018.",
+   "item": "it013"
+  },
+  {
+   "indice": 12,
+   "texto": "13.  NOVAES, Sophia, VARGAS, Isaque, MONTENEGRO, Evelyn, FERREIRA, Maria Vitória, PINTO, Valentim e FONSECA, Emanuella. Tempora optio assumenda neque labore eos placeat. . da Cunha : da Cunha Pastor S.A., 1985.",
+   "item": "it011"
+  },
+  {
+   "indice": 13,
+   "texto": "15.  PARK, Min-jun, DA ROSA, Manuela, PEIXOTO, Milena e ALMEIDA, Ryan. Hic distinctio odio quo aliquid suscipit aliquam architecto alias ipsam. Online. 2004. 4977. Available from: https://leis-treino.gov/8305",
+   "item": "it004"
+  },
+  {
+   "indice": 14,
+   "texto": "16.  NASCIMENTO, Emanuelly, MELO, Eloá, RAMOS, Benjamim e CASSIANO, Vinícius. Sed officia magni porro odit optio deserunt magni voluptas recusandae. In : ANDRADE, Daniel (org.), Vero doloremque quae dicta corrupti beatae neque quis quia ducimus porro. da Rocha : da Costa Ltda., [no date]. p. 62–77.",
+   "item": "it024"
+  },
+  {
+   "indice": 15,
+   "texto": "17.  FERREIRA, Brayan e MACHADO, Letícia. Vel quos incidunt ipsam ipsa pariatur. . Almeida do Campo : Oliveira, 2011.",
+   "item": "it020"
+  },
+  {
+   "indice": 16,
+   "texto": "18.  CAMARGO, Ravi e LEÃO, Lunna. Sed fugit enim delectus neque aspernatur nisi ducimus nisi sit ipsa dicta in. Revue d’Épidémiologie et de Santé Publique. 2018. Vol. 56, no. 4, p. 780–795. DOI 10.99999/teste.treino.98784.",
+   "item": "it021"
+  },
+  {
+   "indice": 17,
+   "texto": "19.  MACEDO, Luiz Henrique, PORTO, Maria Isis e DA CRUZ, Yago. Adipisci quasi temporibus eaque fugiat corrupti dicta. Cadernos de Saúde Pública. 1984. Vol. 8, no. 6, p. 157–167. DOI 10.99999/teste.treino.11383.",
+   "item": "it015"
+  },
+  {
+   "indice": 18,
+   "texto": "20.  ZHANG, Wei. Ex vel delectus dolorem itaque optio beatae amet perferendis. Journal of the American Medical Informatics Association. 1996. Vol. 48, no. 5, p. 504–524. DOI 10.99999/teste.treino.58348.",
+   "item": "it003"
+  },
+  {
+   "indice": 19,
+   "texto": "21.  RIOS, Felipe, ABREU, Gustavo, SÁ, Marcelo e APARECIDA, Rael. Totam quibusdam officia provident unde possimus officia aspernatur. . Machado do Amparo : Borges, 1984.",
+   "item": "it018"
+  },
+  {
+   "indice": 20,
+   "texto": "23.  LORENZO FRANCO, Lucas. Eveniet maxime error consequuntur possimus dolorum facere reiciendis modi non eius corporis. Online. 2013. [Accessed 6 novembro 2026]. Available from: https://exemplo-treino.org/6507",
+   "item": "it002"
+  },
+  {
+   "indice": 21,
+   "texto": "24.  ALMEIDA, Pietra, PORTO, Bernardo, PEREIRA, Liz, CORREIA, Raul, FERNANDES, Clarice e COSTA, Zoe. Molestiae eos ex iusto ab ut. One Health. 2019. Vol. 2, no. 12, p. 433–445. DOI 10.99999/teste.treino.22893.",
+   "item": "it014"
+  },
+  {
+   "indice": 22,
+   "texto": "25.  DA CONCEIÇÃO, José Miguel. Eaque voluptatibus facere ipsum nihil. Journal of the American Medical Informatics Association. 2014. Vol. 32, no. 9, p. 852–870. DOI 10.99999/teste.treino.71744.",
+   "item": "it012"
+  },
+  {
+   "indice": 23,
+   "texto": "26.  MARQUES-REZENDE, Ravy. Soluta blanditiis aut provident sit nam quibusdam amet rem sapiente. Cadernos de Saúde Pública. 1982. Vol. 72, no. 12, p. 143–148. DOI 10.99999/teste.treino.75194.",
+   "item": "it000"
+  },
+  {
+   "indice": 24,
+   "texto": "27.  SÃO PAULO (ESTADO). Exercitationem tempore in. Rezende de Minas : Andrade Abreu - EI, 1994.",
+   "item": "it019"
+  },
+  {
+   "indice": 25,
+   "texto": "28.  CASSIANO-MACEDO, Melina, BARROS, Kamilly, COSTELA, Alana e GUERRA, Brenda. Ullam exercitationem neque ipsum. One Health. 1980. Vol. 70, no. 3, p. 671–689. DOI 10.99999/teste.treino.63242.",
+   "item": "extra0"
+  },
+  {
+   "indice": 26,
+   "texto": "29.  DA MOURA, Renan, SÁ, Ana Clara e TEIXEIRA, Mateus. Amet mollitia ipsum culpa quisquam repudiandae tenetur. Journal of the American Medical Informatics Association. 1979. Vol. 42, no. 1, p. 518–533. DOI 10.99999/teste.treino.70167.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robert Koch-Institut (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1–3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it007",
+    "it017"
+   ],
+   "referencias": [
+    0,
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4–6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it010",
+    "it005"
+   ],
+   "referencias": [
+    3,
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 6, 8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it005",
+    "it006"
+   ],
+   "referencias": [
+    7,
+    5,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2, 8, 9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it009",
+    "it007"
+   ],
+   "referencias": [
+    8,
+    7,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10–12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it025",
+    "it013"
+   ],
+   "referencias": [
+    9,
+    10,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Novaes et al. (13)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robert Koch-Institut (14)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 15, 16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it024",
+    "it006"
+   ],
+   "referencias": [
+    13,
+    14,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Camargo (18)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Costela (12)",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rios et al. (21)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18, 23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it002"
+   ],
+   "referencias": [
+    16,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 23, 24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it002",
+    "it014"
+   ],
+   "referencias": [
+    4,
+    20,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "da Santos et al. (9)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18, 20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it003"
+   ],
+   "referencias": [
+    16,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9, 14, 16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it023",
+    "it001"
+   ],
+   "referencias": [
+    14,
+    null,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3, 5, 16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it024",
+    "it010"
+   ],
+   "referencias": [
+    2,
+    14,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11, 25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it012"
+   ],
+   "referencias": [
+    10,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23, 26, 27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it002",
+    "it019"
+   ],
+   "referencias": [
+    23,
+    20,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6, 12, 25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it005",
+    "it013"
+   ],
+   "referencias": [
+    22,
+    5,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20, p. 251)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "da Rocha et al. (22)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Robert Koch-Institut (14)",
+   "item": "it023"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(22)",
+   "item": "it022"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(9, 14, 16)",
+   "item": "it023"
+  },
+  {
+   "ponto": "D",
+   "citacao": "da Rocha et al. (22)",
+   "item": "it022"
+  },
+  {
+   "ponto": "E",
+   "referencia": 25,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 26,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Alias illum non natus eligendi soluta distinctio repellendus aliquam repudiandae voluptatum expedita animi nulla"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

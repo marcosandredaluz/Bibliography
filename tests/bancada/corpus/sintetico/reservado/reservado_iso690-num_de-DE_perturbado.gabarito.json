@@ -1,0 +1,714 @@
+{
+ "id": "reservado_iso690-num_de-DE_perturbado",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "de-DE",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1.  KLINGELHÖFER, Edeltraut. Merken Mann vergessen Stelle. Revue d’Épidémiologie et de Santé Publique. 2007. Vol. 15, no. 6, p. 337–356. DOI 10.99999/teste.reservado.30406.",
+   "item": "it012"
+  },
+  {
+   "indice": 1,
+   "texto": "2.  HOLZAPFEL, Karl-Ludwig, CICHORIUS, Melanie und MÜHLE, Ioannis. Uns gehen noch mehr. Preventive Veterinary Medicine. 2007. Vol. 80, no. 10, p. 882–887.",
+   "item": "it022"
+  },
+  {
+   "indice": 2,
+   "texto": "3.  BOLANDER, Dieter, FRITSCH, Ioannis, BINNER, Annamaria und HANDE, Marek. Stunde jetzt fallen Leute hoch daran werfen. One Health. 1993. Vol. 4, no. 2, p. 89–104.",
+   "item": "it013"
+  },
+  {
+   "indice": 3,
+   "texto": "4.  KITZMANN, Hüseyin, HÖFIG, Ernst-Otto, ACKERMANN, Hans-Henning und HENDRIKS, Kathi. Tag fiel Wetter leben krank dabei Kind Meer jetzt verkaufen gehen. . Aschaffenburg : Bolander Tröst GbR, 2000.",
+   "item": "it019"
+  },
+  {
+   "indice": 4,
+   "texto": "5.  CONSELHO FEDERAL DE MEDICINA VETERINÁRIA. Berg hören beißen viel traurig hinter. Online. 1979. [Accessed 7 November 2026]. Available from: https://exemplo-reservado.org/1818",
+   "item": "it025"
+  },
+  {
+   "indice": 5,
+   "texto": "6.  AUSTRALIAN INSTITUTE OF HEALTH AND WELFARE (AUSTRALIA). Küche Erde verkaufen lachen fröhlich dazu schauen andere blau. Journal of the American Medical Informatics Association. 1985. Vol. 15, no. 8, p. 398–405. DOI 10.99999/teste.reservado.40455.",
+   "item": "it008"
+  },
+  {
+   "indice": 6,
+   "texto": "7.  SCHOMBER, Annegret. Was das laufen wenig zehn oben viel zehn. Preventive Veterinary Medicine. 1996. Vol. 2, no. 12, p. 725–742.",
+   "item": "it011"
+  },
+  {
+   "indice": 7,
+   "texto": "8.  LEE, Min-jun und SCHENK, Ilja. Gehören her beim merken. Journal of the American Medical Informatics Association. 2004. Vol. 36, no. 5, p. 704–721.",
+   "item": "it004"
+  },
+  {
+   "indice": 8,
+   "texto": "9.  WANG, Wei und KÜHNERT, Nadeschda. Beispiel hängen lassen Sommer davon Beispiel lustig. Online. 1994. [Accessed 12 November 2026]. Available from: https://exemplo-reservado.org/3411",
+   "item": "it003"
+  },
+  {
+   "indice": 9,
+   "texto": "10.  AUSTERMÜHLE, Friedrich-Karl und SÖDING, Leopold. Tier braun draußen er wenig Schnee sonst stark hoch unter. Revista de Saúde Pública. 2024. Vol. 70, no. 6, p. 6–10. DOI 10.99999/teste.reservado.57493.",
+   "item": "it020"
+  },
+  {
+   "indice": 10,
+   "texto": "11.  OTTO, Adina. Lehrer bei lernen letzte See. In : KÖSTER, Julius (Hrsg.), Wo nämlich leben trinken fressen mehr sitzen aber. Marienberg : Meister GmbH, 2014. p. 196–211.",
+   "item": "it010"
+  },
+  {
+   "indice": 11,
+   "texto": "12.  BUDIG, Jose, HEUSER, Karl-Jürgen und BECKMANN, Emmi. Geburtstag wenn kaufen an Tisch bin. Gaceta Sanitaria. 2014. Vol. 55, no. 9, p. 276–292.",
+   "item": "it024"
+  },
+  {
+   "indice": 12,
+   "texto": "13.  BUNDESINSTITUT FÜR RISIKOBEWERTUNG. Ihm Welt setzen hart wir beide nie Zimmer allein. Monschau : Hethur Stiftung & Co. KGaA, 1994.",
+   "item": "it028"
+  },
+  {
+   "indice": 13,
+   "texto": "14.  JÄHN, Ottomar, ERNST, Hedwig, SCHOTTIN, Hans-Albert und HENTSCHEL, Randolf. Fünf Haus Kopf Sommer Ende Tag. In : KARZ, Zehra (Hrsg.), Als Wald Stadt Berg Mann überall Kind Schnee Klasse. Rosenheim : Speer Juncken GmbH & Co. KG, 1978. p. 184–199.",
+   "item": "it016"
+  },
+  {
+   "indice": 14,
+   "texto": "15.  GUDE, Janette. Heraus Fahrrad seit springen Zahl dort. BMC Public Health. 1977. Vol. 20, no. 1, p. 191–195.",
+   "item": "it015"
+  },
+  {
+   "indice": 15,
+   "texto": "16.  NGUYEN, Van Anh. Aber dick Straße gegen dafür Wasser Hilfe plötzlich dann gut krank. . Klötze : Hübel, 1987.",
+   "item": "it005"
+  },
+  {
+   "indice": 16,
+   "texto": "17.  DE HEINTZE, Cosimo und SCHEUERMANN, Ismet. Fehlen schon erklären sich fliegen kennen. Preventive Veterinary Medicine. 1984. Vol. 24, no. 6, p. 505–510. DOI 10.99999/teste.reservado.79406.",
+   "item": "it001"
+  },
+  {
+   "indice": 17,
+   "texto": "18.  LINDNER, Grit. Werden Hand Finger dauern weiter fahren gibt klettern. BMC Public Health. 1983. Vol. 1, no. 1, p. 711–730. DOI 10.99999/teste.reservado.81729.",
+   "item": "it026"
+  },
+  {
+   "indice": 18,
+   "texto": "19.  PUBLIC HEALTH AGENCY OF CANADA. Werden bleiben legen dort zurück heute spielen Glas. Journal of the American Medical Informatics Association. 2009. Vol. 49, no. 2, p. 774–781. DOI 10.99999/teste.reservado.50909.",
+   "item": "it007"
+  },
+  {
+   "indice": 19,
+   "texto": "20.  SPIESS-BOHNBACH, Hans Peter, ULLMANN, Ulla, GOTTHARD, Lydia und JUNGFER, Aenne. Erklären Mutter verkaufen klein nicht ob fehlen das. In : WEIHMANN, Agnieszka (Hrsg.), Ferien mal zur Sonne seit. Finsterwalde : Schinke OHG mbH, 2012. p. 291–306.",
+   "item": "it000"
+  },
+  {
+   "indice": 20,
+   "texto": "21.  TRÜB, Kurt, TRAPP, Lea und DÖRSCHNER, Mario. Vorbei Frage den Apfel gelb immer Seite los halbe. One Health. 2011. Vol. 20, no. 11, p. 306–325. DOI 10.99999/teste.reservado.89822.",
+   "item": "it017"
+  },
+  {
+   "indice": 21,
+   "texto": "22.  JUNCKEN, Bernadette und BOUCSEIN, Mohammed. Rechnen zusammen nichts an Mensch Lehrer. Gaceta Sanitaria. 1981. Vol. 33, no. 8, p. 408–424.",
+   "item": "it014"
+  },
+  {
+   "indice": 22,
+   "texto": "23.  SCHAAF, Gunther. Vier Land Onkel Monate dann tragen. Preventive Veterinary Medicine. 1988. Vol. 27, no. 4, p. 682–691.",
+   "item": "it027"
+  },
+  {
+   "indice": 23,
+   "texto": "24.  ÑÚÑEZ, Ralph, JÜTTNER, Theobald, JUNK, Mattias und GRÖTTNER, Monica. Öffnen Bild nichts warm warten fallen. . Wittenberg : Zänker Stiftung & Co. KG, 2023.",
+   "item": "it006"
+  },
+  {
+   "indice": 24,
+   "texto": "25.  SANTÉ PUBLIQUE FRANCE. Kalt Auto Freund Fenster Sonntag wie. In : SCHUSTER, Gerold (Hrsg.), Herz nicht Geschenk Tag an Stein dich einige überall können aber Milch müde halten. Kyritz : Köster KG, 2008. p. 71–86.",
+   "item": "it009"
+  },
+  {
+   "indice": 25,
+   "texto": "26.  SCHOMBER, Chantal und SCHÄFER, Nick. Von Tag gerade beißen Glück grün überall beide danach. Medical Mycology. Vol. 18, no. 11, p. 643–652. DOI 10.99999/teste.reservado.40046.",
+   "item": "it029"
+  },
+  {
+   "indice": 26,
+   "texto": "27.  COBO ESCOLANO, Enrique. Doch wohl früher schlagen Straße vor. . Tirschenreuth : Zobel Girschner GmbH, 2024.",
+   "item": "it002"
+  },
+  {
+   "indice": 27,
+   "texto": "28.  KRANZ, Wolfgang, ECKBAUER, Lucia, RENNER, Ulrich und BIGGEN, Kordula. Onkel bin lachen nächste Meer Mädchen Wohnung lieb gab Küche den. In : EIMER, Helmtrud (Hrsg.), Zehn Schüler Bett Herr sollen öffnen. Tübingen : Schinke, 1996. p. 240–255.",
+   "item": "it031"
+  },
+  {
+   "indice": 28,
+   "texto": "29.  AGENZIA ITALIANA DEL FARMACO. Fangen ins Leute also fragen Stadt schreiben schon sechs ruhig Tier holen fünf. Online. 1976. 5683. Available from: https://leis-reservado.gov/354",
+   "item": "it023"
+  },
+  {
+   "indice": 29,
+   "texto": "30.  KRANZ, Wolfgang, ECKBAUER, Lucia, RENNER, Ulrich und BIGGEN, Kordula. Hinter zum andere darauf denken warum liegen Wasser dann waschen. Preventive Veterinary Medicine. 1996. Vol. 69, no. 9, p. 465–482. DOI 10.99999/teste.reservado.69486.",
+   "item": "it030"
+  },
+  {
+   "indice": 30,
+   "texto": "31.  SECRETARIA MUNICIPAL DA SAÚDE (CURITIBA). Finden waschen nennen aus. Online. 2003. 14732. Available from: https://leis-reservado.gov/4418",
+   "item": "it021"
+  },
+  {
+   "indice": 31,
+   "texto": "32.  KÖHLER, Kuno, KABUS, Gregor, EBERT, Regine und HAHN, Ottokar. Plötzlich hinein nimmt wahr später sechs Beispiel Abend kein merken. . Greiz : Schomber, 2008.",
+   "item": "it018"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2–4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it013",
+    "it019"
+   ],
+   "referencias": [
+    1,
+    2,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Otto (11)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13–15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it016",
+    "it015"
+   ],
+   "referencias": [
+    12,
+    13,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bundesinstitut für Risikobewertung (13)",
+   "tipo": "narrativa",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Klingelhöfer (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it026"
+   ],
+   "referencias": [
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Public Health Agency of Canada (19)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trüb et al. (21)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 22, 23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it012",
+    "it027"
+   ],
+   "referencias": [
+    21,
+    0,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bundesinstitut für Risikobewertung (13)",
+   "tipo": "narrativa",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Agenzia Italiana del Farmaco (29)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it002"
+   ],
+   "referencias": [
+    0,
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3, 11, 19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it007",
+    "it010"
+   ],
+   "referencias": [
+    2,
+    18,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(31)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(29, 32)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it023"
+   ],
+   "referencias": [
+    31,
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13, S. 217)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Wang (9)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Fuß danach schnell Rad werfen besser setzen selbst leben bei"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

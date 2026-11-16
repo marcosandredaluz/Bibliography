@@ -1,0 +1,802 @@
+{
+ "id": "reservado_vancouver_fr-FR_erros",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "fr-FR",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Navarro S, Legros M, Lambert P, Breton M. Voisin rapide jeunesse voyager habitude montrer réveiller chaque grâce maladie scène entourer. [Tessier-sur-Rey]: Fleury et Fils; 2000.",
+   "item": "it024"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Colin A, Pages B, Sauvage A. Victime habiter également souffrir. Sainte SusanBourg: Jacquot Blin SARL; 2018.",
+   "item": "it020"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Étienne J. Affaire patron lune. Sainte Susannec: Leroux; 2001.",
+   "item": "it025"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Santé publique France. Fruit petit mais marquer crise compter lendemain. [Toussaint]: Delannoy; 2019.",
+   "item": "it007"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Minas Gerais (Estado). Manger aventure fermer court jeune briller naître aucun quinze projet delà désert. [Verdier-sur-Maillet]: Perrier et Fils; 2003.",
+   "item": "it009"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Guillaume R, Albert C, Toussaint D. Ville dix glace élever. Chauveau-sur-Rossi: Lemonnier Ribeiro S.A.; 1987.",
+   "item": "it018"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Nguyen M, Godard Z. Selon élever réduire possible âge étonner chez appeler système désert. Journal of the American Medical Informatics Association. 2026;58(12):31‑42. doi:10.99999/teste.reservado.43064",
+   "item": "it005"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Gérard A, Pineau A, Guibert J. Ressembler couche avoir depuis justice mais offrir parfaitement perte personne condition an venir tel six. [ReynaudBourg]: Regnier; 2002.",
+   "item": "it011"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Ñúñez X, Peron Z. Lettre là montrer relation dos camarade recommencer important attaquer. Medical Mycology. 1997;31(8):317‑33. doi:10.99999/teste.reservado.37649",
+   "item": "it006"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Noël C, Charles A, Da Costa A, Brunet M, Martel A, Leroux P. Changement objet facile devant par ailleurs rouge [Internet]. 5759. 2021. Disponible sur: https://leis-reservado.gov/4574",
+   "item": "it022"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Public Health Agency of Canada. Réveiller siècle gris faux étude examiner mois élever vin fils entraîner douleur. Lefortnec: Dupuis S.A.R.L.; 1977.",
+   "item": "it015"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Public Health Agency of Canada. Trésor et recevoir moyen froid lire route essuyer sombre recherche lentement heureux [Internet]. [cité 2 nov 2026]. Disponible sur: https://exemplo-reservado.org/2070",
+   "item": "it030"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Foucher C, Samson M, Da Costa A. Soutenir papa toit donner ah exemple. In: Michaud D, éditeur. Si note encore route malade question retirer ensemble hasard afin de. Delahaye-sur-Peron: Dupré; 1984. p. 55‑70.",
+   "item": "it026"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Ollivier A, Clément S. Importer rappeler risquer corde moi parvenir pointe gagner. Gaceta Sanitaria. 1997;11(10):249‑68.",
+   "item": "it029"
+  },
+  {
+   "indice": 14,
+   "texto": "16. Coste-Delaunay Z, Huet H. Garder relever tourner roi ouvrir douleur crier amour lieu rassurer. In: Petitjean T, éditeur. Précipiter compte convenir combien bout hôtel quitter. Pires: Marie; 2020. p. 187‑202.",
+   "item": "it000"
+  },
+  {
+   "indice": 15,
+   "texto": "17. Charpentier J, Morvan M, Leroy G. Plaindre celui nuage temps unique groupe dos faible autorité cacher [Internet]. 5977. 2020. Disponible sur: https://leis-reservado.gov/9953",
+   "item": "it031"
+  },
+  {
+   "indice": 16,
+   "texto": "18. Da Silva C, Pichon N. Roche jeune tout militaire tant trésor. [Raymond-sur-Nicolas]: Leleu Regnier S.A.; 2025.",
+   "item": "it017"
+  },
+  {
+   "indice": 17,
+   "texto": "19. Zhang J, Weiss A, Paris J. Relation lueur honte gros grand lit résister durer. Daniel-la-Forêt: Bourdon SA; 1995.",
+   "item": "it003"
+  },
+  {
+   "indice": 18,
+   "texto": "20. Boyer F. Ton détruire façon inquiétude note cheveu courir salle. Das Gesundheitswesen. 1997;48(9):400‑8. doi:10.99999/teste.reservado.79876",
+   "item": "it012"
+  },
+  {
+   "indice": 19,
+   "texto": "22. Muller M, Marchal S, Henry M, Delaunay I, Gimenez J, Clément F. Dur quelque idée rôle chasse parcourir beaucoup. Medical Mycology. 1998;39(3):855‑61. doi:10.99999/teste.reservado.47286",
+   "item": "it014"
+  },
+  {
+   "indice": 20,
+   "texto": "23. Chrétien G, Pineau Y. Militaire absence général [Internet]. 2021 [cité 12 nov 2026]. Disponible sur: https://exemplo-reservado.org/5916",
+   "item": "it010"
+  },
+  {
+   "indice": 21,
+   "texto": "24. Germain É, Humbert N, Rodrigues C, Didier C, Gilbert B, Courtois F. Ombre rose minute décider angoisse. Revista de Saúde Pública. 2022;72(5):4‑21.",
+   "item": "it028"
+  },
+  {
+   "indice": 22,
+   "texto": "25. Lelièvre M. Queue jouer malgré réclamer croiser as. Vaillant-sur-Mer: Barre; 1997.",
+   "item": "it019"
+  },
+  {
+   "indice": 23,
+   "texto": "26. Baudry R, Grégoire G, Bourgeois A, Gonzalez S. Manger chien repas neuf fine année. Epidemiologia & Prevenzione. 1976;20(11):253‑65.",
+   "item": "it023"
+  },
+  {
+   "indice": 24,
+   "texto": "27. Reynaud F, Hardy A, Le Roux J, Launay S, Barthelemy M, Salmon N. Complètement droite asseoir curieux silence vieillard chien. Medical Mycology. 1989;16(4):275‑86.",
+   "item": "it027"
+  },
+  {
+   "indice": 25,
+   "texto": "28. Morel F. Rouler problème prier oeil violent armée scène inquiétude rouge lire nombre. Gaceta Sanitaria. 1978;77(6):652‑65. doi:10.99999/teste.reservado.74381",
+   "item": "it016"
+  },
+  {
+   "indice": 26,
+   "texto": "29. Brun É, Techer W, Gros C, Guillot T. Maître front ensemble intérieur pièce tôt demi. [Sainte Brigitte]: Guilbert Lacombe SA; 1987.",
+   "item": "it021"
+  },
+  {
+   "indice": 27,
+   "texto": "30. di Lévêque A, Blanchard A, Perrin G, Rodrigues R. Distinguer carte étendre long quinze calmer nommer soleil. Gaceta Sanitaria. 1989;20(12):119‑28.",
+   "item": "it001"
+  },
+  {
+   "indice": 28,
+   "texto": "31. Paris T, Weber M, Martineau S. Attaquer saint bas travailler sens résister arracher finir tout toile surprendre. Gomes-sur-Carlier: Cohen S.A.; 1977.",
+   "item": "it013"
+  },
+  {
+   "indice": 29,
+   "texto": "32. Secretaria Municipal da Saúde (Curitiba). Douter objet quarante mais lors parmi doigt rejeter mais. Briand-sur-Mercier: Gérard; 1995.",
+   "item": "it008"
+  },
+  {
+   "indice": 30,
+   "texto": "33. Charpentier J, Morvan M, Leroy G. Genre leur grâce vendre ressembler fixe marquer très supérieur île aucun. One Health. 2020;78(2):163‑75. doi:10.99999/teste.reservado.57829",
+   "item": "it032"
+  },
+  {
+   "indice": 31,
+   "texto": "34. Mahe-Peltier C, Turpin S, Buisson M, Payet J. Commencer répéter convenir engager détacher renoncer journée prévenir profond nerveux fou chambre dieu joie. One Health. 2004;74(11):752‑68. doi:10.99999/teste.reservado.32974",
+   "item": "extra0"
+  },
+  {
+   "indice": 32,
+   "texto": "35. von Lopez H. Intérieur lisser femme adresser rien créer voyager terrain fait. [Ribeiro]: Seguin Lévy S.A.R.L.; 1979.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Navarro et al. (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Étienne (3)",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it018"
+   ],
+   "referencias": [
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nguyen (7)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7–9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it005",
+    "it006"
+   ],
+   "referencias": [
+    7,
+    6,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Noël et al. (10)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4,11,12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it015",
+    "it030"
+   ],
+   "referencias": [
+    3,
+    10,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9,15,16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it006",
+    "it000"
+   ],
+   "referencias": [
+    null,
+    8,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031",
+    "it020"
+   ],
+   "referencias": [
+    15,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al. (19)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it026"
+   ],
+   "referencias": [
+    7,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it022"
+   ],
+   "referencias": [
+    4,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,4,21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it020",
+    "it004"
+   ],
+   "referencias": [
+    3,
+    1,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11,23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it010"
+   ],
+   "referencias": [
+    10,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,24,25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it028",
+    "it019"
+   ],
+   "referencias": [
+    1,
+    21,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18,26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it023"
+   ],
+   "referencias": [
+    16,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15,18,30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it001",
+    "it017"
+   ],
+   "referencias": [
+    null,
+    27,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it009"
+   ],
+   "referencias": [
+    26,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,8,18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it017",
+    "it020"
+   ],
+   "referencias": [
+    7,
+    16,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Paris et al. (31)",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Étienne (3)",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,13,32)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it026",
+    "it008"
+   ],
+   "referencias": [
+    1,
+    12,
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Da Silva (18)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(33)",
+   "tipo": "parentetica",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Nguyen (7)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(9,15,16)",
+   "item": "it002"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(2,4,21)",
+   "item": "it004"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(15,18,30)",
+   "item": "it002"
+  },
+  {
+   "ponto": "E",
+   "referencia": 31,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 32,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Question demain briser proposer mille plus nature croire défendre quinze creuser"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

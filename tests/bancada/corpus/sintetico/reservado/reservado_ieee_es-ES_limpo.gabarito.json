@@ -1,0 +1,664 @@
+{
+ "id": "reservado_ieee_es-ES_limpo",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "es-ES",
+ "conjunto": "reservado",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] A. Luís, B. Blanes, I. Sanmiguel, y E. Larrea, «Ello qué pequeña siguiente popular bastante buena cabeza», Epidemiologia & Prevenzione, vol. 78, n.o 3, pp. 527-531, 1996, doi: 10.99999/teste.reservado.38584.",
+   "item": "it018"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] R. Galvez, J. C. Cerro, N. Goicoechea, S. Gonzalez, G. Valero, y E. Pou, Había aún deseo estoy cambio volver texto menor términos. 2018. [En línea]. Disponible en: https://leis-reservado.gov/3837",
+   "item": "it014"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] B. Gremião y Á. Mascaró, Estados buscar área cierto posible podía todas tuvo república pasa según. 1993. [En línea]. Disponible en: https://leis-reservado.gov/3038",
+   "item": "it006"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] A. Mateo-Varela, M. Cortés, G. Manrique, y E. Tejedor, «Social luz cuanto resultados existencia mejores septiembre», Preventive Veterinary Medicine, vol. 43, n.o 12, pp. 632-645, 1987, doi: 10.99999/teste.reservado.30381.",
+   "item": "it000"
+  },
+  {
+   "indice": 4,
+   "texto": "[5] M. Aramburu, E. Osorio, y J. Torrijos, «Debido solo personas nuestro desarrollo asunto queda usted pie», Das Gesundheitswesen, vol. 79, n.o 4, pp. 500-508, 2012, doi: 10.99999/teste.reservado.33122.",
+   "item": "it024"
+  },
+  {
+   "indice": 5,
+   "texto": "[6] F. Fiol y L. Gámez, Imagen marcha torno falta fecha. Madrid: Hermanos Torrent S.Coop., 1990.",
+   "item": "it011"
+  },
+  {
+   "indice": 6,
+   "texto": "[7] Public Health Agency of Canada, «Saber teoría hacerlo central datos temas», Logística Verdú & Asociados S.Coop., Valladolid, 2010.",
+   "item": "it008"
+  },
+  {
+   "indice": 7,
+   "texto": "[8] D. dos Céspedes, M. J. Briones, y F. Olmedo, «Empresa socialista argentina española tiene unidos economía cultura misma presente», Medical Mycology, vol. 2, n.o 11, pp. 70-85, 1994.",
+   "item": "it001"
+  },
+  {
+   "indice": 8,
+   "texto": "[9] Agência Nacional de Vigilância Sanitária (Brasil), «Plaza segunda propios buscar aire alta alta ahora ejército elementos final hombres militar da». Accedido: 3 de noviembre de 2026. [En línea]. Disponible en: https://exemplo-reservado.org/7722",
+   "item": "it007"
+  },
+  {
+   "indice": 9,
+   "texto": "[10] Secretaria Municipal da Saúde (Curitiba), «Sabe miedo película rey ocasiones generales espacio». Accedido: 8 de noviembre de 2026. [En línea]. Disponible en: https://exemplo-reservado.org/5915",
+   "item": "it012"
+  },
+  {
+   "indice": 10,
+   "texto": "[11] A. Coello, «Ambiente juan acuerdo enero», Jesús Sáez Estévez S.Com., Sevilla, 1989.",
+   "item": "it019"
+  },
+  {
+   "indice": 11,
+   "texto": "[12] A. Campoy y A. Aranda, «Distintos aquellas queda pequeño idea», Hotel Diez S.Com., Valencia, 2003.",
+   "item": "it016"
+  },
+  {
+   "indice": 12,
+   "texto": "[13] M. Elías, «Pesetas sabía menos éxito hermano domingo tierra yo pesetas favor puntos», Medical Mycology, vol. 36, n.o 11, pp. 139-157, 2010.",
+   "item": "it022"
+  },
+  {
+   "indice": 13,
+   "texto": "[14] M. Aramburu, E. Osorio, y J. Torrijos, «Veces ello socialista manera persona través una domingo». Accedido: 10 de noviembre de 2026. [En línea]. Disponible en: https://exemplo-reservado.org/5404",
+   "item": "it025"
+  },
+  {
+   "indice": 14,
+   "texto": "[15] T. H. Nguyen, «Sectores encontrar punto padre m pública», Medical Mycology, vol. 6, n.o 3, pp. 722-731, 2008.",
+   "item": "it005"
+  },
+  {
+   "indice": 15,
+   "texto": "[16] X. Chen, O. Mayoral, y M. M. Amor, «Jamás pie servicios meses popular fuera fin autor», Epidemiologia e Serviços de Saúde, vol. 75, n.o 4, pp. 682-694, 2010.",
+   "item": "it003"
+  },
+  {
+   "indice": 16,
+   "texto": "[17] D. Mulet, R. Gomis, J. C. Pelayo, C. Escobar, G. Amorós, y J. Villar, «Decisión embargo conseguir campaña salir primeros», One Health, vol. 71, n.o 5, pp. 102-107, 1985, doi: 10.99999/teste.reservado.84728.",
+   "item": "it013"
+  },
+  {
+   "indice": 17,
+   "texto": "[18] M. F. Maestre, M. Cuevas, y F. Amaya, «Contra formas sistemas nivel fuerzas vamos enero palabra cara suelo respuesta momentos», Revue d’Épidémiologie et de Santé Publique, vol. 58, n.o 5, pp. 896-912, 2013.",
+   "item": "it017"
+  },
+  {
+   "indice": 18,
+   "texto": "[19] Agência Nacional de Vigilância Sanitária (Brasil), «Generales ha ayuda momento ellos pone esta tres sólo». Accedido: 8 de noviembre de 2026. [En línea]. Disponible en: https://exemplo-reservado.org/4967",
+   "item": "it009"
+  },
+  {
+   "indice": 19,
+   "texto": "[20] J. Kim, S. Gutiérrez, y M. B. Garrido, «Parecía eso aparece agua oposición grupo tenían realizar libre fernando santiago», Das Gesundheitswesen, vol. 37, n.o 10, pp. 50-63, 1999.",
+   "item": "it004"
+  },
+  {
+   "indice": 20,
+   "texto": "[21] Ú. Domínguez Fonseca, L. Asensio, M. Pomares, y A. Martinez, Desarrollo mañana ningún para acción pesetas deben una siguientes nuevos. Teruel: Hnos Benavides S.Com., 1994.",
+   "item": "it002"
+  },
+  {
+   "indice": 21,
+   "texto": "[22] V. Botella, «Sabía juan dar cosas derecha», Revue d’Épidémiologie et de Santé Publique, vol. 7, n.o 10, pp. 102-116, 2021.",
+   "item": "it020"
+  },
+  {
+   "indice": 22,
+   "texto": "[23] R. Flores, Según imágenes industria final hombres mientras político permite dice. Cuenca: Andreu & Asociados S.A., 2024.",
+   "item": "it010"
+  },
+  {
+   "indice": 23,
+   "texto": "[24] Australian Institute of Health and Welfare (Australia), «Niño tenía fue mejor club crecimiento conseguir mil pesetas país hoy sólo cara muerte salir». Accedido: 8 de noviembre de 2026. [En línea]. Disponible en: https://exemplo-reservado.org/9279",
+   "item": "it015"
+  },
+  {
+   "indice": 24,
+   "texto": "[25] B. Amor, D. Moles, I. Santamaria, y S. Fuente, «París sol servicio diario número gonzález acerca necesidad junio negro nombre ese». Accedido: 6 de noviembre de 2026. [En línea]. Disponible en: https://exemplo-reservado.org/4250",
+   "item": "it023"
+  },
+  {
+   "indice": 25,
+   "texto": "[26] V. Sáenz, «Metros ideas título española primeros», Medical Mycology, vol. 23, n.o 11, pp. 791-801, 1992.",
+   "item": "it021"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1], [2], [3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it014",
+    "it006"
+   ],
+   "referencias": [
+    0,
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [6], [7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it011",
+    "it008"
+   ],
+   "referencias": [
+    4,
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it007"
+   ],
+   "referencias": [
+    7,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [10], [11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it019",
+    "it006"
+   ],
+   "referencias": [
+    9,
+    10,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9], [13], [14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it007",
+    "it025"
+   ],
+   "referencias": [
+    12,
+    8,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10], [15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it012"
+   ],
+   "referencias": [
+    14,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10], [15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it012"
+   ],
+   "referencias": [
+    14,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mulet et al. [17]",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13], [17], [19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it022",
+    "it013"
+   ],
+   "referencias": [
+    18,
+    12,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Domínguez Fonseca et al. [21]",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[21], [22], [23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it002",
+    "it010"
+   ],
+   "referencias": [
+    21,
+    20,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [11], [25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it008",
+    "it019"
+   ],
+   "referencias": [
+    24,
+    6,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Galvez et al. [2]",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Australian Institute of Health and Welfare (Australia) [24]",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Luís et al. [1]",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19], [25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it023"
+   ],
+   "referencias": [
+    18,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19], [23], [24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it009",
+    "it010"
+   ],
+   "referencias": [
+    23,
+    18,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6], [13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it011"
+   ],
+   "referencias": [
+    12,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10], [11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it012"
+   ],
+   "referencias": [
+    10,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [26]",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it006"
+   ],
+   "referencias": [
+    25,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8, p. 88]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Kim et al. [20]",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Propios buenos necesidad pone premio ocasiones ii materia aspecto ciencia podía"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

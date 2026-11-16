@@ -1,0 +1,638 @@
+{
+ "id": "treino_chicago-ad_en-US_limpo",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "en-US",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Adadia Arroyo, Sol, Dawn Henry, Walter Mason, and Mindy Bryant. 2017. “Attorney Style Pretty Region Matter Nothing Program.” Parrish Inc.",
+   "item": "it002"
+  },
+  {
+   "indice": 1,
+   "texto": "Adams, Cassandra, Michael Williams, Ronald Compton, and James Washington. n.d. Piece Someone Certain Behavior Else Method Friend Any. Richards, Robinson and Johns.",
+   "item": "it022"
+  },
+  {
+   "indice": 2,
+   "texto": "Anderson, Michael, Jennifer Ayala, Aaron Morales, and Andrew Le. 1997. “Different Simple Leave Leader without Just New.” Das Gesundheitswesen 67 (1): 459–71. https://doi.org/10.99999/teste.treino.50339.",
+   "item": "it013"
+  },
+  {
+   "indice": 3,
+   "texto": "Çelik, Holly, Ernest Evans, and Paul Perez. 1998. “From Fight Smile Just Might Large Account Film.” BMC Public Health 65 (11): 516–30. https://doi.org/10.99999/teste.treino.76683.",
+   "item": "it006"
+  },
+  {
+   "indice": 4,
+   "texto": "Chase, Michael, Jeremy Brown, Brianna Johnson, and Jason Tucker. 2005. “I You Interesting Him Weight Recent Analysis Much Food.” Epidemiologia & Prevenzione 7 (2): 24–33. https://doi.org/10.99999/teste.treino.18334.",
+   "item": "it017"
+  },
+  {
+   "indice": 5,
+   "texto": "Choi, Min-jun. 2007. Without Represent Maintain Past Short. Cox, Smith and Hutchinson.",
+   "item": "it004"
+  },
+  {
+   "indice": 6,
+   "texto": "Conselho Nacional de Saúde (Brasil). 2008. “Break Outside Evening Chair Agreement Question Bit Quality.” Ray and Sons.",
+   "item": "it009"
+  },
+  {
+   "indice": 7,
+   "texto": "Davis, Cody, Michael Higgins, Matthew Mckee, and Meredith Martinez. 1977. “Cost Teach People Structure Student Reality Born Evidence.” Cadernos de Saúde Pública 20 (11): 612–19. https://doi.org/10.99999/teste.treino.32325.",
+   "item": "it020"
+  },
+  {
+   "indice": 8,
+   "texto": "Giles, Nicole, James Dorsey, and Mary Schmidt. 2019. “Give Center Fine Material Medical Serve.” BMC Public Health 74 (5): 470–75. https://doi.org/10.99999/teste.treino.45850.",
+   "item": "it016"
+  },
+  {
+   "indice": 9,
+   "texto": "Guerra, April, Steven English, Peter Munoz, Brooke Baker, Donald King, and Danielle Hernandez. 2022. Medical Market Others Television. Lewis-Stewart.",
+   "item": "it015"
+  },
+  {
+   "indice": 10,
+   "texto": "Johnson, Charles dos. 2011. “Stop Fine Thousand Right Trip.” Gaceta Sanitaria 73 (6): 343–56. https://doi.org/10.99999/teste.treino.16646.",
+   "item": "it001"
+  },
+  {
+   "indice": 11,
+   "texto": "Johnson, Sandra, Kristen Guerrero, Kenneth Wood, and Dwayne Fleming. 2024. Produce Wait Sport the Money Read Feel Congress. Shelton, Hamilton and Cruz.",
+   "item": "it021"
+  },
+  {
+   "indice": 12,
+   "texto": "Nguyen, Van Anh, Danielle Wright, Andre Smith, and Samantha Burke. 2005. “Meeting Beautiful Computer Future Hotel Never Body.” Brown-Woods.",
+   "item": "it005"
+  },
+  {
+   "indice": 13,
+   "texto": "Perry, Mary. 2001. “Get Member Hour Product Agree Day Very Person Now Ok People Technology.” Cadernos de Saúde Pública 13 (4): 291–308. https://doi.org/10.99999/teste.treino.12279.",
+   "item": "it011"
+  },
+  {
+   "indice": 14,
+   "texto": "Purpose Hope Investment Happen of Interview Hand, Pub. L. No. 13015 (2000). https://leis-treino.gov/9399.",
+   "item": "it000"
+  },
+  {
+   "indice": 15,
+   "texto": "Robert Koch-Institut. 2007a. “Character Keep Property Share Design Drop Development Activity Official.” Revista de Saúde Pública 2 (5): 502–21.",
+   "item": "it023"
+  },
+  {
+   "indice": 16,
+   "texto": "Robert Koch-Institut. 2007b. For Gun PM Detail without Push. Ramirez, Williams and Cox.",
+   "item": "it024"
+  },
+  {
+   "indice": 17,
+   "texto": "São Paulo (Estado). 1999. Ago End Letter Else Meet Budget Close Condition Page Occur Care Station Could Suffer. Aguilar-Lara.",
+   "item": "it008"
+  },
+  {
+   "indice": 18,
+   "texto": "Savage, Julie, Stephanie Porter, Crystal Martin, Mitchell Norton, Robert Hester, and Marc Hayes. 1981. “Safe Wrong Either Head Source Bring Add Majority.” Goodwin, Lloyd and White.",
+   "item": "it010"
+  },
+  {
+   "indice": 19,
+   "texto": "Taylor, Michael. 1989. “Interest Mind Example Seat Give Meet Opportunity.” Gaceta Sanitaria 60 (7): 755–72.",
+   "item": "it014"
+  },
+  {
+   "indice": 20,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. 2012. “Travel so Area by Already Modern Subject Medical Condition Professional Possible Soon Teach Represent.” https://exemplo-treino.org/4083.",
+   "item": "it018"
+  },
+  {
+   "indice": 21,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. 2013. “Team Treatment Bring Return My Analysis Quality There Perform Energy Learn.” Journal of the American Medical Informatics Association 80 (4): 729–42. https://doi.org/10.99999/teste.treino.90629.",
+   "item": "it007"
+  },
+  {
+   "indice": 22,
+   "texto": "Wang, Hao, Sherri Schultz, and William Watts. 2023. Drug Usually Expect Professor. Vargas Group.",
+   "item": "it003"
+  },
+  {
+   "indice": 23,
+   "texto": "Williams, Emily, Wendy Mckee, and Emily Rojas. 1977. “Teacher Medical Believe North Wish While Outside Success Institution.” Revista de Saúde Pública 79 (8): 515–22. https://doi.org/10.99999/teste.treino.99810.",
+   "item": "it012"
+  },
+  {
+   "indice": 24,
+   "texto": "Wood, Latoya, Francis Bell, and Reginald Bowman. 2013. “Else Customer Provide Probably Give Explain Determine Themselves Mr.” Medical Mycology 13 (9): 646–53. https://doi.org/10.99999/teste.treino.34453.",
+   "item": "it019"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Nguyen et al. 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Savage et al. 1981; Anderson et al. 1997; Robert Koch-Institut 2007b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it013",
+    "it024"
+   ],
+   "referencias": [
+    18,
+    2,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Çelik et al. 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Adadia Arroyo et al. 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut 2007a; Williams et al. 1977; Anderson et al. 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it012",
+    "it013"
+   ],
+   "referencias": [
+    15,
+    23,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Giles et al. 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Perry 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Davis et al. 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guerra et al. (2022)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Guerra et al. 2022; Taylor 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it014"
+   ],
+   "referencias": [
+    9,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Anderson et al. 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Savage et al. 1981; Giles et al. 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it016"
+   ],
+   "referencias": [
+    18,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Perry 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Giles et al. 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Giles et al. 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Williams et al. 1977; Anderson et al. 1997; São Paulo (Estado) 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it013",
+    "it008"
+   ],
+   "referencias": [
+    23,
+    2,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wang et al. 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Savage et al. 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 1999; Giles et al. 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it016"
+   ],
+   "referencias": [
+    17,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Williams et al. 1977; Virginia-Maryland College of Veterinary Medicine 2012; Çelik et al. 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it018",
+    "it006"
+   ],
+   "referencias": [
+    23,
+    20,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Anderson et al. 1997; Williams et al. 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it012"
+   ],
+   "referencias": [
+    2,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Chase et al. 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2013; Purpose Hope Investment Happen of Interview Hand 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it000"
+   ],
+   "referencias": [
+    21,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Çelik et al. 1998; Adadia Arroyo et al. 2017; Taylor 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it002",
+    "it014"
+   ],
+   "referencias": [
+    3,
+    0,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen et al. 2005; Wood et al. 2013; S. Johnson et al. 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it019",
+    "it021"
+   ],
+   "referencias": [
+    12,
+    24,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Adams et al. (n.d.)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Çelik et al. 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(C. dos Johnson 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Chase et al. 2005; Nguyen et al. 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it005"
+   ],
+   "referencias": [
+    4,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Adams et al., n.d., 144)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Wang et al. 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Chase et al. 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Wang et al. 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Adams et al. (n.d.)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Prepared by the author (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Special pressure program perform effect ask increase sort look"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

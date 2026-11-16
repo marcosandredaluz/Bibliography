@@ -1,0 +1,632 @@
+{
+ "id": "reservado_iso690-num_en-US_erros",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "en-US",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "2.  HART-OLSEN, Tiffany and CHURCH, Debra. Too leader cut check speech catch main analysis he. Online. 2011. [Accessed 5 November 2026]. Available from: https://exemplo-reservado.org/2812",
+   "item": "it000"
+  },
+  {
+   "indice": 1,
+   "texto": "3.  MCLAUGHLIN, Michael, GALLEGOS, Timothy, ANDERSON, Christopher, PINEDA, Kelly, SHERMAN, Allison and HARRINGTON, Dana. Himself PM put challenge. Revue d’Épidémiologie et de Santé Publique. 2008. Vol. 21, no. 10, p. 658–669. DOI 10.99999/teste.reservado.50079.",
+   "item": "it018"
+  },
+  {
+   "indice": 2,
+   "texto": "4.  CONSELHO FEDERAL DE MEDICINA VETERINÁRIA. Just fight once science why determine meeting by item pattern three dinner increase. Journal of the American Medical Informatics Association. 2012. Vol. 79, no. 1, p. 179–189. DOI 10.99999/teste.reservado.38891.",
+   "item": "it007"
+  },
+  {
+   "indice": 3,
+   "texto": "6.  PHAM, Thi Hoa and HARRIS, Christina. Force school director statement size threat half stock. BMC Public Health. 1993. Vol. 31, no. 9, p. 622–638. DOI 10.99999/teste.reservado.71195.",
+   "item": "it005"
+  },
+  {
+   "indice": 4,
+   "texto": "7.  SINGH, Jody, MORTON, Matthew, JACOBS, Crystal and HILL, Angela. Stuff seem meeting member big media set live window writer amount. Revista de Saúde Pública. 2020. Vol. 52, no. 10, p. 54–62. DOI 10.99999/teste.reservado.76445.",
+   "item": "it012"
+  },
+  {
+   "indice": 5,
+   "texto": "8.  LEE, Seo-yeon, MARTINEZ, Caleb, SIMMONS, John and PITTMAN, Eric. Himself nice she food assume election top wish fight whom most pretty perhaps. Online. 1986. 623. Available from: https://leis-reservado.gov/5434",
+   "item": "it004"
+  },
+  {
+   "indice": 6,
+   "texto": "9.  VAN DER HIGGINS, Donna and RIOS, Gary. Scientist technology industry give reveal kind money have. In : HUNT, Timothy (ed.), Rest data evening allow court everybody north paper marriage down official. Davidborough : Lawson, Hunt and Owens, 1978. p. 96–111.",
+   "item": "it001"
+  },
+  {
+   "indice": 7,
+   "texto": "10.  WRIGHT, William. Six eye issue war government almost. . Lake Alexanderfort : Chase Ltd, 1991.",
+   "item": "it013"
+  },
+  {
+   "indice": 8,
+   "texto": "11.  AGENZIA ITALIANA DEL FARMACO. Doctor throughout say something at several the. Journal of the American Medical Informatics Association. 2024. Vol. 68, no. 3, p. 5–23.",
+   "item": "it008"
+  },
+  {
+   "indice": 9,
+   "texto": "12.  AUSTRALIAN INSTITUTE OF HEALTH AND WELFARE (AUSTRALIA). Year suffer down often. Preventive Veterinary Medicine. 1979. Vol. 62, no. 1, p. 177–185. DOI 10.99999/teste.reservado.31977.",
+   "item": "it009"
+  },
+  {
+   "indice": 10,
+   "texto": "13.  MILLÁN SOSA, Eliana, ROBINSON, Veronica, WALTON, Daniel and GREEN, Alyssa. Throughout most require rule street everyone past across outside tonight decide listen. Online. 1989. 5990. Available from: https://leis-reservado.gov/5720",
+   "item": "it002"
+  },
+  {
+   "indice": 11,
+   "texto": "14.  AGENZIA ITALIANA DEL FARMACO. May much that Congress sea worker. Online. 1994. 4210. Available from: https://leis-reservado.gov/7697",
+   "item": "it026"
+  },
+  {
+   "indice": 12,
+   "texto": "15.  CHANEY, Kristin, ANDERSON, Eric, HILL, Marc and KELLY, Dwayne. Onto debate throughout popular thousand. Das Gesundheitswesen. 1980. Vol. 32, no. 3, p. 289–307. DOI 10.99999/teste.reservado.83355.",
+   "item": "it010"
+  },
+  {
+   "indice": 13,
+   "texto": "16.  AGENZIA ITALIANA DEL FARMACO. Someone work source none yes state director live different culture none know. . East Stephanie : Johnson-Mullen, 1994.",
+   "item": "it025"
+  },
+  {
+   "indice": 14,
+   "texto": "17.  PHAM, Jeremiah, MOORE, Kevin, LONG, Anthony and PETERSEN, Dennis. Attorney attorney form sign so like special. One Health. Vol. 28, no. 2, p. 528–544.",
+   "item": "it024"
+  },
+  {
+   "indice": 15,
+   "texto": "18.  WRIGHT, Mark. Party cup standard thing hour plan different I. Medical Mycology. 1988. Vol. 32, no. 3, p. 474–482. DOI 10.99999/teste.reservado.56482.",
+   "item": "it021"
+  },
+  {
+   "indice": 16,
+   "texto": "19.  O’CONNOR, Deborah and KENNEDY, Harold. Firm someone see fear life white attorney car. Online. 1983. 8029. Available from: https://leis-reservado.gov/9475",
+   "item": "it006"
+  },
+  {
+   "indice": 17,
+   "texto": "20.  PEREZ, Colton and SMITH, Laura. Star capital science magazine call. Cadernos de Saúde Pública. 1998. Vol. 43, no. 6, p. 40–52. DOI 10.99999/teste.reservado.79516.",
+   "item": "it022"
+  },
+  {
+   "indice": 18,
+   "texto": "21.  JONES, Christopher, DAY, Amanda, TYLER, Katie, DUNN, Greg, BOWEN, Danielle and RODRIGUEZ, Mark. Administration reality still effect risk. . Miketon : Kaufman Group, 1989.",
+   "item": "it019"
+  },
+  {
+   "indice": 19,
+   "texto": "22.  GARRETT, Veronica. Science sea may act smile seek political safe give director civil election probably. Gaceta Sanitaria. 1987. Vol. 31, no. 11, p. 593–604. DOI 10.99999/teste.reservado.39363.",
+   "item": "it020"
+  },
+  {
+   "indice": 20,
+   "texto": "23.  ERICKSON, Robert, NELSON, Teresa, WHEELER, Erik, SMITH, Lauren, PERKINS, Julie and DUNCAN, Morgan. Top camera truth consider change different be station. Epidemiologia & Prevenzione. 1985. Vol. 30, no. 4, p. 844–848.",
+   "item": "it014"
+  },
+  {
+   "indice": 21,
+   "texto": "24.  BENSON, Kevin and BAILEY, Jennifer. Forward although family recognize hotel. . New Amyshire : Mason-Miranda, 1998.",
+   "item": "it011"
+  },
+  {
+   "indice": 22,
+   "texto": "25.  PENA, Laura and COLEMAN, Jason. Yeah board yeah decision hold may the product. In : MITCHELL, Michael (ed.), Have product sister rise heavy rather book ready despite space present character education not. Gibsonville : Williamson, Alvarez and Harvey, 1995. p. 199–214.",
+   "item": "it017"
+  },
+  {
+   "indice": 23,
+   "texto": "26.  ARMSTRONG, Victoria. Authority fine my cause fire picture area character reality young senior tonight let population. BMC Public Health. 2005. Vol. 17, no. 11, p. 393–412. DOI 10.99999/teste.reservado.83786.",
+   "item": "it016"
+  },
+  {
+   "indice": 24,
+   "texto": "27.  ZHANG, Xiaoming, WEBER, Zoe, JOHNSON, Douglas and HARRIS, Matthew. Represent need trade ground the management sit. Sanchezport : Jones PLC, 2004.",
+   "item": "it003"
+  },
+  {
+   "indice": 25,
+   "texto": "28.  JONES-MALDONADO, James. Total policy lay back the yeah color soldier sign tell. Online. 1999. [Accessed 15 November 2026]. Available from: https://exemplo-reservado.org/7844",
+   "item": "extra0"
+  },
+  {
+   "indice": 26,
+   "texto": "29.  VON JOHNSON, Christina and ESCOBAR, Stacey. Movement summer issue cut social capital rest. . New Christopher : Clark, White and Carey, 1976.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pham et al. (5)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6–8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it012",
+    "it004"
+   ],
+   "referencias": [
+    3,
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2, 10, 11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it000",
+    "it008"
+   ],
+   "referencias": [
+    7,
+    0,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 3, 5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it023",
+    "it015"
+   ],
+   "referencias": [
+    1,
+    null,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Millán Sosa et al. (13)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13–15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it026",
+    "it010"
+   ],
+   "referencias": [
+    10,
+    11,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10, 15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it013"
+   ],
+   "referencias": [
+    12,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Steele et al. (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6, 17, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it024",
+    "it021"
+   ],
+   "referencias": [
+    3,
+    14,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19, 20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it022"
+   ],
+   "referencias": [
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pham et al. (17)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17, 21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it024"
+   ],
+   "referencias": [
+    18,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8, 23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it004"
+   ],
+   "referencias": [
+    20,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12, 24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it011"
+   ],
+   "referencias": [
+    9,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Armstrong (26)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 6, 12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it005",
+    "it015"
+   ],
+   "referencias": [
+    9,
+    3,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(27, p. 168)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Erickson et al. (23)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(1)",
+   "item": "it023"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Pham et al. (5)",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(1, 3, 5)",
+   "item": "it023"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(1, 3, 5)",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Steele et al. (1)",
+   "item": "it023"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(5, 6, 12)",
+   "item": "it015"
+  },
+  {
+   "ponto": "E",
+   "referencia": 25,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 26,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Prepared by the author (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "With career field others investment test education realize"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

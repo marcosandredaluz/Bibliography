@@ -1,0 +1,710 @@
+{
+ "id": "treino_vancouver_de-DE_limpo",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Virginia-Maryland College of Veterinary Medicine. Hund klettern die man erschrecken Maus Schwester lange schwer treffen. [Pasewalk]: Neureuther; 2015.",
+   "item": "it007"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Chen X, Siering L, Klemt E, Tschentscher K. Daran bringen sagen neu Auto reiten schlagen essen [Internet]. 2008 [zitiert 9. November 2026]. Verfügbar unter: https://exemplo-treino.org/3140",
+   "item": "it003"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Heinz A. Zahl Glas Tisch letzte Pferd Berg rot nächste warum nennen bringen zwei lieb. Medical Mycology. 2021;36(2):180–92.",
+   "item": "it033"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Lamas Lerma M. Her dann einigen Hase kaufen vier. [Niesky]: Mangold AG & Co. KG; 2003.",
+   "item": "it002"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Herrmann A, Weller L. Schnee gelb er scheinen andere stehen Gott Papa Wiese schwimmen Geld frei Mädchen. Cadernos de Saúde Pública. 2017;8(6):367–85.",
+   "item": "it025"
+  },
+  {
+   "indice": 5,
+   "texto": "6. da Wieloch A, Renner C, Löwer K. Spiel Sommer richtig Schluss Brot. Revista de Saúde Pública. 1977;55(11):98–107. doi:10.99999/teste.treino.78600",
+   "item": "it001"
+  },
+  {
+   "indice": 6,
+   "texto": "7. National Library of Medicine (Estados Unidos). Lachen Sonntag nimmt zu jeder Bein Wissen [Internet]. 8077. 2001. Verfügbar unter: https://leis-treino.gov/9899",
+   "item": "it020"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Zirme I, Hiller B, Jessel F, Sontag A, Flantz H, Schweitzer S. Mal oft Flasche frei wünschen blau möglich sagen uns halten sich. Epidemiologia & Prevenzione. 1984;76(1):553–67. doi:10.99999/teste.treino.54484",
+   "item": "it026"
+  },
+  {
+   "indice": 8,
+   "texto": "9. van der Dussen E, Buchholz G, Rogner B, Pieper S, Weller A, Heintze H. Suchen daran gefährlich mit schwer traurig los. Augsburg: Geisel KG; 1993.",
+   "item": "it010"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Metz-Barkholz G, Weitzel H, Rudolph J. Nah Dorf Erde dann bis oder Weg sofort fragen. Cadernos de Saúde Pública. 1986;12(7):639–43.",
+   "item": "it000"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Höfig H, Gehringer S, Dussen van E, Trapp E. Lange viel Seite ihm wie Loch laufen nächste letzte Leute. Revista de Saúde Pública. 16(1):499–511. doi:10.99999/teste.treino.59426",
+   "item": "it031"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Le M, Kroker I, Pergande C. Klein stark Zahl Polizei Kopf schreiben reich mögen. Großenhain: Pieper; 1989.",
+   "item": "it005"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Ministerio de Sanidad (España). Küche Kopf Ende antworten werfen heute wird leben Uhr zehn Klasse Tante [Internet]. 9470. 1977. Verfügbar unter: https://leis-treino.gov/4182",
+   "item": "it030"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Täsche T. Rund neben fünf erst haben ruhig Hilfe mein grün Kopf essen dürfen tot eigentlich vergessen Herz. [Schweinfurt]: Hornig Gerlach GmbH; 1976.",
+   "item": "it023"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Park J ho. Mann ganz Minute ob holen Schnee Mensch leben bei in. In: Austermühle C, Herausgeber. Jahr Dorf braun sehen hinein Weg Mann spielen. Mainburg: Adler; 1983. S. 136–51.",
+   "item": "it004"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Ackermann Z, Finke D. Stück Schuh mögen ihm mal drei Musik Schuh aber kein [Internet]. 1976 [zitiert 16. November 2026]. Verfügbar unter: https://exemplo-treino.org/9566",
+   "item": "it018"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Wieloch E, Rosenow T, Bohnbach J, Bärer I. Gott Hase ich Bein. [Strasburg]: Röhricht e.G.; 2005.",
+   "item": "it027"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Ullrich R. Mädchen Glück tief auf gegen Mama Name Nase. BMC Public Health. 1980;52(12):858–68.",
+   "item": "it014"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Haute Autorité de Santé (France). Finger verstecken Beispiel Affe Papa schicken machen haben Uhr fest oft Meer drei gibt sich Berg [Internet]. 2013 [zitiert 2. November 2026]. Verfügbar unter: https://exemplo-treino.org/8444",
+   "item": "it028"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Plath M, Trubin G. Bekommen es reich ihr gefährlich ins. BMC Public Health. 2019;64(8):24–32. doi:10.99999/teste.treino.47353",
+   "item": "it021"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Bolander M. Verkaufen anfangen Minute hat fliegen. Preventive Veterinary Medicine. 2017;8(10):269–85. doi:10.99999/teste.treino.85166",
+   "item": "it012"
+  },
+  {
+   "indice": 21,
+   "texto": "22. São Paulo (Estado). Halten nämlich schreiben freuen Polizei ließ weil machen neben als [Internet]. 1989 [zitiert 13. November 2026]. Verfügbar unter: https://exemplo-treino.org/9581",
+   "item": "it013"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Łukasz B, Kostolzin R, Krebs L. Bruder Stelle Luft alt Tante Opa Arbeit um Stelle und reich weiß dürfen. Peine: Fröhlich Pechel AG; 2004.",
+   "item": "it006"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Albers G, Ladeck Z. Haare Garten los Sache Wetter Minute unser. Epidemiologia e Serviços de Saúde. 1983;43(11):402–11.",
+   "item": "it019"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Werner C, Bähr E. Langsam Arzt laufen sicher blau packen schnell. Cadernos de Saúde Pública. 1981;29(9):193–206.",
+   "item": "it024"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Istituto Superiore di Sanità. Frage spät fahren einigen [Internet]. 1994 [zitiert 15. November 2026]. Verfügbar unter: https://exemplo-treino.org/2200",
+   "item": "it011"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Hornig M. Teller doch sonst Arzt Maus durch nämlich Affe. Bad Brückenau: Gerlach GmbH & Co. KGaA; 2010.",
+   "item": "it029"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Ministerio de Sanidad (España). Brief alle geben Lehrerin an wichtig Nacht. Preventive Veterinary Medicine. 2003;21(6):101–19.",
+   "item": "it009"
+  },
+  {
+   "indice": 28,
+   "texto": "29. Heinz A. Tun draußen gestern Bein beim mal so Tante gar er vier. Das Gesundheitswesen. 2021;35(9):682–6. doi:10.99999/teste.treino.36362",
+   "item": "it032"
+  },
+  {
+   "indice": 29,
+   "texto": "30. Baum HU. Scheinen lesen früh ruhig an Sonne einfach Schwester. [Rathenow]: Höfig Dussen van AG & Co. KGaA; 1996.",
+   "item": "it016"
+  },
+  {
+   "indice": 30,
+   "texto": "31. Hein T, Zimmer M, Neuschäfer T, Fechner E, Graf G, Girschner A. Baum Teller Wagen Frau Schule fahren Schwester Schwester erschrecken jeder plötzlich holen sehr. One Health. 1995;67(2):743–9. doi:10.99999/teste.treino.17075",
+   "item": "it022"
+  },
+  {
+   "indice": 31,
+   "texto": "32. Kobelt R, Nerger F, Heinrich HF, Radisch N, Mies F, Säuberlich H. Vater drei bald darin sechs rufen. [Hofgeismar]: Scheel Krein Stiftung & Co. KG; 1989.",
+   "item": "it017"
+  },
+  {
+   "indice": 32,
+   "texto": "33. Haute Autorité de Santé (France). Hase gerade gewinnen hin schwer rufen. Schleiz: Bohnbach Keudel AG & Co. KGaA; 2010.",
+   "item": "it008"
+  },
+  {
+   "indice": 33,
+   "texto": "34. Hiller A, Dowerg P, Bolnbach D. Zeitung Bauer Schnee Mutter um Polizei an weit ihr Spiel dick singen Ferien Baum auf. Das Gesundheitswesen. 2011;21(9):78–93.",
+   "item": "it015"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5–7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it001",
+    "it020"
+   ],
+   "referencias": [
+    4,
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3,8,9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it010",
+    "it033"
+   ],
+   "referencias": [
+    7,
+    8,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10,11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it031"
+   ],
+   "referencias": [
+    9,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12,13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it030"
+   ],
+   "referencias": [
+    11,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it026"
+   ],
+   "referencias": [
+    14,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zirme et al. (8)",
+   "tipo": "narrativa",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zirme et al. (8)",
+   "tipo": "narrativa",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wieloch et al. (17)",
+   "tipo": "narrativa",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18–20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it028",
+    "it021"
+   ],
+   "referencias": [
+    17,
+    18,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9,16,19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it018",
+    "it010"
+   ],
+   "referencias": [
+    18,
+    15,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it013"
+   ],
+   "referencias": [
+    4,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7,28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it009"
+   ],
+   "referencias": [
+    6,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bolander (21)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10,16,30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it016",
+    "it000"
+   ],
+   "referencias": [
+    15,
+    29,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(31)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baum (30)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kobelt et al. (32)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zirme et al. (8)",
+   "tipo": "narrativa",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(33)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(34)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(34)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Ackermann (16)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Steigen Luft wir finden Mama essen verlieren schön dumm Wiese wirklich sich arbeiten"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

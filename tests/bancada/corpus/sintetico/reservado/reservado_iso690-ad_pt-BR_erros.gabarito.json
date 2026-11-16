@@ -1,0 +1,684 @@
+{
+ "id": "reservado_iso690-ad_pt-BR_erros",
+ "estilo": "iso690-ad",
+ "sistema": "autor-data",
+ "locale": "pt-BR",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "AGENZIA ITALIANA DEL FARMACO, 1983. Similique consectetur quidem aspernatur. Costela do Norte: Correia.",
+   "item": "it009"
+  },
+  {
+   "indice": 1,
+   "texto": "BORGES, Otávio, 2008. Eveniet quasi rerum illum beatae reiciendis assumenda repudiandae facilis eveniet. BMC Public Health. 2008. Vol. 39, no. 2, p. 496–504. DOI 10.99999/teste.reservado.73551.",
+   "item": "it010"
+  },
+  {
+   "indice": 2,
+   "texto": "BUNDESINSTITUT FÜR RISIKOBEWERTUNG, 2002. Aliquam mollitia quisquam deserunt ea. Journal of the American Medical Informatics Association. 2002. Vol. 65, no. 8, p. 264–270. DOI 10.99999/teste.reservado.45215.",
+   "item": "it007"
+  },
+  {
+   "indice": 3,
+   "texto": "BUNDESINSTITUT FÜR RISIKOBEWERTUNG, 2010. Laborum consequuntur alias reiciendis ex totam neque cupiditate earum perspiciatis beatae nam quo. . Online. 2010. Available from: https://exemplo-reservado.org/1001 [Accessed 2 novembro 2026].",
+   "item": "it012"
+  },
+  {
+   "indice": 4,
+   "texto": "CARVALHO, Ayla, MACEDO, Natália, MARQUES, Davi Lucca e DA CONCEIÇÃO, Luna, 2006a. Quisquam exercitationem autem impedit minus quas consectetur repudiandae modi omnis ad dolore architecto. Preventive Veterinary Medicine. 2006. Vol. 80, no. 12, p. 7–14.",
+   "item": "it024"
+  },
+  {
+   "indice": 5,
+   "texto": "CARVALHO, Ayla, MACEDO, Natália, MARQUES, Davi Lucca e DA CONCEIÇÃO, Luna, 2006b. Occaecati perferendis iste ex quaerat sit.. Online. 2006. 7143. Available from: https://leis-reservado.gov/7769",
+   "item": "it023"
+  },
+  {
+   "indice": 6,
+   "texto": "CARVALHO-FONSECA, Gael Henrique, BARBOSA, João Guilherme, DA ROCHA, Daniel e PEIXOTO, Erick, 2006. Ullam nostrum assumenda ipsa sed temporibus ducimus. Cadernos de Saúde Pública. 2006. Vol. 70, no. 6, p. 787–800.",
+   "item": "extra0"
+  },
+  {
+   "indice": 7,
+   "texto": "CASSIANO, Juan, 1983. Maxime aliquid velit corrupti deserunt doloribus magni quis sunt nobis atque ipsum quibusdam. Vieira do Sul: Rezende.",
+   "item": "it018"
+  },
+  {
+   "indice": 8,
+   "texto": "CAVALCANTE-MENDONÇA, Mateus, MONTENEGRO, Leandro e CÂMARA, Olívia, 2002. Numquam voluptates in impedit esse consequuntur iste magnam ipsam. . Online. 2002. Available from: https://exemplo-reservado.org/3254 [Accessed 15 novembro 2026].",
+   "item": "it000"
+  },
+  {
+   "indice": 9,
+   "texto": "CHEN, Hao e LEÃO, Bella, 1983. Tenetur consequuntur sint officiis minus cupiditate minus neque adipisci quod eum. Medical Mycology. 1983. Vol. 35, no. 6, p. 300–311. DOI 10.99999/teste.reservado.50315.",
+   "item": "it003"
+  },
+  {
+   "indice": 10,
+   "texto": "CIRINO, Gael, 2002. Non accusamus facere voluptate reiciendis quos nam cum. Cadernos de Saúde Pública. 2002. Vol. 6, no. 1, p. 568–578. DOI 10.99999/teste.reservado.43902.",
+   "item": "it014"
+  },
+  {
+   "indice": 11,
+   "texto": "DA CRUZ, Maria Liz, ABREU, Vitor Gabriel, REZENDE, Ana Luiza, COSTA, Manuela, FARIAS, Isabel e RODRIGUES, Sabrina, 2017. Similique possimus eaque praesentium commodi sit voluptatum expedita. In: DA COSTA, Alexia (org.), Ratione placeat est odio inventore adipisci labore tenetur sed provident quam. Pereira Grande: Silva e Filhos. p. 214–229.",
+   "item": "it011"
+  },
+  {
+   "indice": 12,
+   "texto": "DA DA MATA, Ana Liz, CAMARGO, Luiz Otávio, FARIAS, Thales e CAVALCANTE, Júlia, 2006. Quos in beatae itaque nam dicta ratione temporibus eos minus dolores.. Online. 2006. 10421. Available from: https://leis-reservado.gov/3123",
+   "item": "it001"
+  },
+  {
+   "indice": 13,
+   "texto": "DI CAMPOS, Clarice, 2004. Odit illum debitis corrupti tempore veritatis reiciendis deleniti. Araújo: Sales Cassiano S.A.",
+   "item": "extra1"
+  },
+  {
+   "indice": 14,
+   "texto": "DUARTE, Eloah, 1988. Natus provident quam doloribus officia iusto culpa. BMC Public Health. 1988. Vol. 43, no. 5, p. 751–758.",
+   "item": "it017"
+  },
+  {
+   "indice": 15,
+   "texto": "GREMIÃO, Rafaela, DA CRUZ, Julia, SILVA, Thales e SÁ, Gael Henrique, 2026. Laborum tempora reiciendis perferendis quia unde. Epidemiologia & Prevenzione. 2026. Vol. 62, no. 3, p. 673–685. DOI 10.99999/teste.reservado.91699.",
+   "item": "it006"
+  },
+  {
+   "indice": 16,
+   "texto": "LEE, Seo-yeon, COSTELA, Josué e VASCONCELOS, Luísa, 1987. Suscipit vel enim laudantium assumenda quaerat cupiditate minima magni suscipit eos nam veniam reprehenderit. Epidemiologia & Prevenzione. 1987. Vol. 40, no. 5, p. 460–467. DOI 10.99999/teste.reservado.20989.",
+   "item": "it004"
+  },
+  {
+   "indice": 17,
+   "texto": "LIMA, Hellena, AZEVEDO, Luísa, REZENDE, Olívia e MARTINS, Mariah, [no date]. At excepturi nostrum vitae quasi id ipsam odit atque perferendis corrupti vitae.. Online. 13027. Available from: https://leis-reservado.gov/6025",
+   "item": "it022"
+  },
+  {
+   "indice": 18,
+   "texto": "MONTEIRO, Mariane, RAMOS, Diego e MENDES, Sophia, 1988. Possimus inventore corrupti magni.. Online. 1988. 5532. Available from: https://leis-reservado.gov/6445",
+   "item": "it021"
+  },
+  {
+   "indice": 19,
+   "texto": "MOURA, José Miguel, 2023. Illum consectetur quos. In: SAMPAIO, Maysa (org.), Impedit optio modi quidem sint odit. Pastor de Minas: Moraes S.A. p. 239–254.",
+   "item": "it016"
+  },
+  {
+   "indice": 20,
+   "texto": "NOGUEIRA, Yasmin, VASCONCELOS, Ana Laura e REZENDE, Ana Clara, 1985. Ut laboriosam atque porro sequi odio occaecati. In: DA PAZ, Pietro (org.), Consequuntur illum est quis voluptatibus. Câmara do Oeste: Gomes. p. 154–169.",
+   "item": "it015"
+  },
+  {
+   "indice": 21,
+   "texto": "PHAM, Thi Hoa, 2022. Ex soluta doloribus ab natus quis aperiam consequuntur corrupti laudantium omnis. Marques do Sul: Rodrigues Marques - ME.",
+   "item": "it005"
+  },
+  {
+   "indice": 22,
+   "texto": "SANTÉ PUBLIQUE FRANCE, 2009. Corrupti veritatis alias laudantium. Medical Mycology. 2009. Vol. 38, no. 1, p. 572–591.",
+   "item": "it008"
+  },
+  {
+   "indice": 23,
+   "texto": "VARGAS, João, ARAGÃO, Matteo, ANDRADE, Ana Beatriz, ALBUQUERQUE, Gabriel, CIRINO, Renan e DA MATA, Ana Clara, 1980. Porro nam veniam non quod aliquid voluptatem quas consequuntur non blanditiis dolorem dolore fugit in. In: PACHECO, José Miguel (org.), Accusantium reprehenderit minima dolore nihil perspiciatis sunt. Cirino: Moraes Silva S/A. p. 266–281.",
+   "item": "it013"
+  },
+  {
+   "indice": 24,
+   "texto": "VÉLEZ CORNEJO, Julie, PIMENTA, Enzo, LOPES, Larissa e SIQUEIRA, Ana Lívia, 1990. Nam quae voluptatem est ipsum possimus aut. Caldeira: Mendonça.",
+   "item": "it002"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Vargas, Aragão, Andrade, Albuquerque, Cirino, da Mata 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Chen, Leão 1983; Borges 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it010"
+   ],
+   "referencias": [
+    9,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Cruz, Abreu, Rezende, Costa, Farias, Rodrigues 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Monteiro, Ramos, Mendes (1988)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Moura 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião, da Cruz, Silva, Sá 2026; Carvalho, Macedo, Marques, da Conceição 2006a; 2006b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it024",
+    "it023"
+   ],
+   "referencias": [
+    15,
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bundesinstitut für Risikobewertung 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carvalho, Macedo, Marques, da Conceição (2006a)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carvalho, Macedo, Marques, da Conceição (2006b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee, Costela, Vasconcelos (1987)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Monteiro, Ramos, Mendes (1988)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee, Costela, Vasconcelos 1987; Chen, Leão 1983; Sá 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it003",
+    "it019"
+   ],
+   "referencias": [
+    16,
+    9,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cirino 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nogueira, Vasconcelos, Rezende 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Monteiro, Ramos, Mendes 1988; Chen, Leão 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it003"
+   ],
+   "referencias": [
+    18,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Duarte 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee, Costela, Vasconcelos 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Borges 2008; Sá 1999; Lima, Azevedo, Rezende, Martins [no date])",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it019",
+    "it022"
+   ],
+   "referencias": [
+    1,
+    null,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cassiano 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bundesinstitut für Risikobewertung 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vargas, Aragão, Andrade, Albuquerque, Cirino, da Mata 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vargas, Aragão, Andrade, Albuquerque, Cirino, da Mata (1980)",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agenzia Italiana del Farmaco 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lima, Azevedo, Rezende, Martins [no date])",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cavalcante-Mendonça, Montenegro, Câmara 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Carvalho, Macedo, Marques, da Conceição 2006b; da da Mata, Camargo, Farias, Cavalcante 2006; Bundesinstitut für Risikobewertung 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it001",
+    "it007"
+   ],
+   "referencias": [
+    5,
+    12,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bundesinstitut für Risikobewertung 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da da Mata, Camargo, Farias, Cavalcante 2006; Chen, Leão 1983; Santé publique France 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it003",
+    "it008"
+   ],
+   "referencias": [
+    12,
+    9,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cassiano, Rezende 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião, da Cruz, Silva, Sá 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cirino 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santé publique France 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Duarte (1988)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Moura 2023; Bundesinstitut für Risikobewertung 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it012"
+   ],
+   "referencias": [
+    19,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Moura 2023; Gremião, da Cruz, Silva, Sá 2026; Vélez Cornejo, Pimenta, Lopes, Siqueira 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it006",
+    "it002"
+   ],
+   "referencias": [
+    19,
+    15,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Carvalho, Macedo, Marques, da Conceição 2006a; Lee, Costela, Vasconcelos 1987; Monteiro, Ramos, Mendes 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it004",
+    "it021"
+   ],
+   "referencias": [
+    4,
+    16,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Duarte (1988)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cavalcante-Mendonça, Montenegro, Câmara 2002, p. 78)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Moura 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Agenzia Italiana del Farmaco 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Nogueira, Vasconcelos, Rezende 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Nogueira, Vasconcelos, Rezende (1985)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Lee, Costela, Vasconcelos 1987; Chen, Leão 1983; Sá 1999)",
+   "item": "it019"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Borges 2008; Sá 1999; Lima, Azevedo, Rezende, Martins [no date])",
+   "item": "it019"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Cassiano, Rezende 2025)",
+   "item": "it020"
+  },
+  {
+   "ponto": "E",
+   "referencia": 6,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 13,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Quaerat est perferendis ut commodi eum perspiciatis architecto quibusdam"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

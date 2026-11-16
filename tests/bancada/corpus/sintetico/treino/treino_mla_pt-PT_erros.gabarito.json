@@ -1,0 +1,652 @@
+{
+ "id": "treino_mla_pt-PT_erros",
+ "estilo": "mla",
+ "sistema": "autor-pagina",
+ "locale": "pt-PT",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Abreu, Lúcia. «In laboriosam quo aut ipsam sapiente doloremque». Revista de Saúde Pública, vol. 31, n.o 8, 1981, pp. 461–80.",
+   "item": "it018"
+  },
+  {
+   "indice": 1,
+   "texto": "Alves, Andreia, et al. Repudiandae non nesciunt dolor. Carneiro, 2015.",
+   "item": "it015"
+  },
+  {
+   "indice": 2,
+   "texto": "Anjos, Catarina. «Sequi quidem explicabo mollitia sunt harum nesciunt commodi reprehenderit». Temporibus cupiditate voluptate doloremque ipsum voluptate est, editado por João Miranda, Sousa, 1995, pp. 39–54.",
+   "item": "it010"
+  },
+  {
+   "indice": 3,
+   "texto": "Barros, Carolina, e Artur Rocha. «Cupiditate quae ducimus animi corrupti assumenda voluptates repellendus». Epidemiologia e Serviços de Saúde, vol. 15, n.o 4, 2022, pp. 94–104, https://doi.org/10.99999/teste.treino.89140.",
+   "item": "it012"
+  },
+  {
+   "indice": 4,
+   "texto": "Briones Olmo, Zaira, e Vítor Magalhães. «Fugit recusandae repudiandae unde quasi dolores facilis fuga». Das Gesundheitswesen, vol. 49, n.o 6, 2003, pp. 847–65.",
+   "item": "it002"
+  },
+  {
+   "indice": 5,
+   "texto": "Costa, Maria. «Esse ipsa in explicabo delectus maxime possimus maiores omnis voluptatem labore dolore alias». Das Gesundheitswesen, vol. 31, n.o 9, 1997, pp. 112–22, https://doi.org/10.99999/teste.treino.42905.",
+   "item": "it014"
+  },
+  {
+   "indice": 6,
+   "texto": "di Moreira, Íris, et al. «Aspernatur error minus voluptatibus ut quo». Gaceta Sanitaria, vol. 17, n.o 1, 1984, pp. 369–75, https://doi.org/10.99999/teste.treino.72118.",
+   "item": "extra1"
+  },
+  {
+   "indice": 7,
+   "texto": "Faria, Guilherme, et al. «Harum fuga praesentium tempore quo». Alias nesciunt vitae laborum repudiandae magni est expedita praesentium ad assumenda, editado por Luna Almeida, Lopes, 2002, pp. 283–98.",
+   "item": "it020"
+  },
+  {
+   "indice": 8,
+   "texto": "———. «Maiores nam voluptatibus itaque». BMC Public Health, vol. 16, n.o 9, 2002, pp. 141–50, https://doi.org/10.99999/teste.treino.85294.",
+   "item": "it021"
+  },
+  {
+   "indice": 9,
+   "texto": "Lee, Seo-yeon, e Larissa Sá. Quasi nesciunt non nam placeat quisquam officiis. 1988, https://exemplo-treino.org/9038.",
+   "item": "it004"
+  },
+  {
+   "indice": 10,
+   "texto": "Liu, Hao, et al. Nesciunt deleniti odio sunt fugiat voluptatum. Fernandes, 1978.",
+   "item": "it003"
+  },
+  {
+   "indice": 11,
+   "texto": "Łukasz, Márcio, et al. Repellendus fugiat officiis iusto delectus voluptas error eaque occaecati. 1996, https://exemplo-treino.org/9895.",
+   "item": "it006"
+  },
+  {
+   "indice": 12,
+   "texto": "Matias-Valente, Renato, et al. Odit fugiat vero veritatis ipsum numquam accusantium. n. 7470, 2000, https://leis-treino.gov/5311.",
+   "item": "it000"
+  },
+  {
+   "indice": 13,
+   "texto": "Ministerio de Sanidad (España). «Debitis exercitationem amet iure molestias distinctio». Cadernos de Saúde Pública, vol. 54, n.o 11, 1989, pp. 299–315, https://doi.org/10.99999/teste.treino.96914.",
+   "item": "it008"
+  },
+  {
+   "indice": 14,
+   "texto": "Miranda, Luana, et al. «Dolor dolores architecto nemo aut mollitia dolor debitis». One Health, vol. 40, n.o 7, 2006, pp. 619–37, https://doi.org/10.99999/teste.treino.74780.",
+   "item": "it011"
+  },
+  {
+   "indice": 15,
+   "texto": "Moura-Fonseca, Luna, et al. «Soluta ex odit reprehenderit saepe suscipit voluptates dolore rerum nostrum eius facere». Quia architecto nesciunt temporibus debitis repudiandae voluptates eaque, editado por Petra Soares, Esteves, 2008, pp. 246–61.",
+   "item": "extra0"
+  },
+  {
+   "indice": 16,
+   "texto": "Pham, Minh, e Alexandra Gaspar. Culpa cumque sint itaque nostrum animi harum in. 1996. Neto.",
+   "item": "it005"
+  },
+  {
+   "indice": 17,
+   "texto": "Robert Koch-Institut. Dignissimos enim consectetur adipisci consequuntur eligendi. 2023, https://exemplo-treino.org/9175.",
+   "item": "it016"
+  },
+  {
+   "indice": 18,
+   "texto": "———. Molestiae nobis laudantium accusantium quam odit consequuntur beatae at. 2025. Pires Pires S.A.",
+   "item": "it007"
+  },
+  {
+   "indice": 19,
+   "texto": "Vieira, Lia. «Perspiciatis est atque doloremque vel atque tempora sequi dicta animi animi porro aliquam». Epidemiologia & Prevenzione, vol. 32, n.o 7, 2024, pp. 450–64, https://doi.org/10.99999/teste.treino.45499.",
+   "item": "it017"
+  },
+  {
+   "indice": 20,
+   "texto": "Vieira, Tatiana. «Repudiandae quasi officiis a provident». Das Gesundheitswesen, vol. 60, n.o 4, pp. 250–60.",
+   "item": "it019"
+  },
+  {
+   "indice": 21,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. «Id atque consequatur laborum laboriosam quia ratione placeat molestias». Epidemiologia e Serviços de Saúde, vol. 48, n.o 5, 1981, pp. 665–71, https://doi.org/10.99999/teste.treino.34189.",
+   "item": "it009"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Briones Olmo e Magalhães)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Liu et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, Molestiae nobis laudantium accusantium quam odit consequuntur beatae at)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee e Sá)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, Dignissimos enim consectetur adipisci consequuntur eligendi; Sá)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it013"
+   ],
+   "referencias": [
+    17,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(van der Vicente e Faria; Alves et al.; Barros e Rocha)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it015",
+    "it012"
+   ],
+   "referencias": [
+    null,
+    1,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Alves et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Faria et al., «Maiores nam voluptatibus itaque»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Matias-Valente et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Miranda et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Łukasz et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Faria et al., «Harum fuga praesentium tempore quo»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Briones Olmo e Magalhães)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Matias-Valente et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(van der Vicente e Faria; Łukasz et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it006"
+   ],
+   "referencias": [
+    null,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham e Gaspar; Sá; Alves et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it013",
+    "it015"
+   ],
+   "referencias": [
+    16,
+    null,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España))",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Faria et al., «Harum fuga praesentium tempore quo»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Matias-Valente et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Barros e Rocha)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Łukasz et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sá; Miranda et al.; Alves et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it011",
+    "it015"
+   ],
+   "referencias": [
+    null,
+    14,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Costa)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Miranda et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Abreu)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(L. Vieira; Costa)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it014"
+   ],
+   "referencias": [
+    19,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España); Faria et al., «Harum fuga praesentium tempore quo»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it020"
+   ],
+   "referencias": [
+    13,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España))",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sá)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(T. Vieira)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Faria et al., «Maiores nam voluptatibus itaque»; Ministerio de Sanidad (España); Łukasz et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it008",
+    "it006"
+   ],
+   "referencias": [
+    8,
+    13,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Faria et al., «Maiores nam voluptatibus itaque»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham e Gaspar)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Anjos)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Alves et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, Dignissimos enim consectetur adipisci consequuntur eligendi 287)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Lee e Sá)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(T. Vieira)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(L. Vieira)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España))",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Robert Koch-Institut, Dignissimos enim consectetur adipisci consequuntur eligendi; Sá)",
+   "item": "it013"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(van der Vicente e Faria; Alves et al.; Barros e Rocha)",
+   "item": "it001"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(van der Vicente e Faria; Łukasz et al.)",
+   "item": "it001"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Pham e Gaspar; Sá; Alves et al.)",
+   "item": "it013"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Sá; Miranda et al.; Alves et al.)",
+   "item": "it013"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Sá)",
+   "item": "it013"
+  },
+  {
+   "ponto": "E",
+   "referencia": 6,
+   "item": "extra1"
+  },
+  {
+   "ponto": "E",
+   "referencia": 15,
+   "item": "extra0"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Voluptates cupiditate temporibus fugit officia facilis adipisci porro amet labore accusamus impedit animi"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

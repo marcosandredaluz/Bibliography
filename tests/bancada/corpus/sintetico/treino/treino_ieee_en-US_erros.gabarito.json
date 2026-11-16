@@ -1,0 +1,607 @@
+{
+ "id": "treino_ieee_en-US_erros",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "en-US",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] B. Plana Higueras, J. Arellano, and B. Brown, “Thousand our later despite develop behavior not because there purpose another,” Journal of the American Medical Informatics Association, vol. 58, no. 1, pp. 612–624, 2005, doi: 10.99999/teste.treino.38652.",
+   "item": "it002"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] B. Johnson, A. Powell, and C. Wolfe, “Institution perform role whatever this too far mouth ago every blue buy somebody truth,” Epidemiologia e Serviços de Saúde, vol. 48, no. 7, pp. 351–365, 1984, doi: 10.99999/teste.treino.91876.",
+   "item": "it017"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] R. Dixon, M. Soto, S. Brown, and L. Schmidt, “Above possible sit,” Epidemiologia e Serviços de Saúde, vol. 40, no. 11, pp. 446–463, 2019.",
+   "item": "it010"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] X. Wang, T. Ponce, and R. Torres, “Soon vote study second outside box break write,” Revista de Saúde Pública, vol. 11, no. 12, pp. 579–584, 1981, doi: 10.99999/teste.treino.27283.",
+   "item": "it003"
+  },
+  {
+   "indice": 4,
+   "texto": "[5] São Paulo (Estado), “Beautiful star somebody wrong close accept since close key anyone possible care,” Kennedy-Singh, Ryanmouth, 1996.",
+   "item": "it011"
+  },
+  {
+   "indice": 5,
+   "texto": "[6] Conselho Nacional de Saúde (Brasil), Bed blood little case before own stock table agreement us money. 2016. [Online]. Available: https://leis-treino.gov/2842",
+   "item": "it021"
+  },
+  {
+   "indice": 6,
+   "texto": "[7] J. Müller and J. Williams, “Hour today old couple simply,” Revista de Saúde Pública, vol. 35, no. 9, pp. 630–642, 1993, doi: 10.99999/teste.treino.37893.",
+   "item": "it006"
+  },
+  {
+   "indice": 7,
+   "texto": "[8] Conselho Nacional de Saúde (Brasil), “Field here ask reflect executive me,” Revue d’Épidémiologie et de Santé Publique, vol. 25, no. 7, pp. 505–514, 2016.",
+   "item": "it020"
+  },
+  {
+   "indice": 8,
+   "texto": "[10] C. Walters, “Also course manage consumer alone throw including pick,” Garrett-Gross, Port Jasonberg, 2007.",
+   "item": "it013"
+  },
+  {
+   "indice": 9,
+   "texto": "[11] Organização Pan-Americana da Saúde, Speak box herself fish. [Online]. Available: https://leis-treino.gov/3393",
+   "item": "it019"
+  },
+  {
+   "indice": 10,
+   "texto": "[12] A. Williams, “Law staff possible too address paper over threat perform activity soldier similar during appear trip,” Revue d’Épidémiologie et de Santé Publique, vol. 22, no. 9, pp. 7–16, 2026, doi: 10.99999/teste.treino.16601.",
+   "item": "it016"
+  },
+  {
+   "indice": 11,
+   "texto": "[13] S. da Mcgee, “Standard event particular war.” Accessed: Nov. 09, 2026. [Online]. Available: https://exemplo-treino.org/2483",
+   "item": "it001"
+  },
+  {
+   "indice": 12,
+   "texto": "[14] H. Chandler and N. Warner, “Civil remain away sister between civil after expect recognize.” Accessed: Nov. 05, 2026. [Online]. Available: https://exemplo-treino.org/2646",
+   "item": "it018"
+  },
+  {
+   "indice": 13,
+   "texto": "[15] National Library of Medicine (Estados Unidos), “Develop by only manager study next maintain relate,” Journal of the American Medical Informatics Association, vol. 79, no. 5, pp. 124–129, 2022, doi: 10.99999/teste.treino.54074.",
+   "item": "it009"
+  },
+  {
+   "indice": 14,
+   "texto": "[16] C. Jones, J. Parker, and C. Robinson, “Raise without discussion stock side beyond charge,” Medical Mycology, vol. 29, no. 12, pp. 129–148, 1980, doi: 10.99999/teste.treino.62575.",
+   "item": "it012"
+  },
+  {
+   "indice": 15,
+   "texto": "[17] Ministerio de Sanidad (España), “Concern pressure itself including man prevent fly provide end authority student similar,” BMC Public Health, vol. 80, no. 4, pp. 822–841, 1982.",
+   "item": "it008"
+  },
+  {
+   "indice": 16,
+   "texto": "[18] S. Zimmerman-Fields, J. Bradley, and A. Smith, “Teach stop culture every yeah those stage,” Journal of the American Medical Informatics Association, vol. 62, no. 7, pp. 838–843, 1995, doi: 10.99999/teste.treino.15212.",
+   "item": "it000"
+  },
+  {
+   "indice": 17,
+   "texto": "[19] T. H. Nguyen and J. Garner, “Plan should other world station purpose life player enjoy indicate strategy son.” Accessed: Nov. 13, 2026. [Online]. Available: https://exemplo-treino.org/8463",
+   "item": "it005"
+  },
+  {
+   "indice": 18,
+   "texto": "[20] M. Kim, “Job third skin ago throw side seem lay thousand against evidence and become window environmental,” Das Gesundheitswesen, vol. 77, no. 5, pp. 812–829, 1994.",
+   "item": "it004"
+  },
+  {
+   "indice": 19,
+   "texto": "[21] National Library of Medicine (Estados Unidos), “Phone chance region particular threat allow plan benefit rate,” Journal of the American Medical Informatics Association, vol. 54, no. 12, pp. 853–858, 1997.",
+   "item": "it007"
+  },
+  {
+   "indice": 20,
+   "texto": "[23] A. Wilkins-Anderson and A. Schmidt, “Single north series size worry never coach president,” in Hand fire star really operation ground ever program her charge factor point, L. Hoover, Ed., West Michael: Smith Group, 2020, pp. 29–44.",
+   "item": "extra0"
+  },
+  {
+   "indice": 21,
+   "texto": "[24] M. dos Bradford, T. Spencer, and L. Owens, “Court program likely probably water production provide current.” Accessed: Nov. 05, 2026. [Online]. Available: https://exemplo-treino.org/9533",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2], [4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it003"
+   ],
+   "referencias": [
+    1,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2], [5], [6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it017",
+    "it021"
+   ],
+   "referencias": [
+    4,
+    1,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it020"
+   ],
+   "referencias": [
+    0,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it015"
+   ],
+   "referencias": [
+    0,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Williams [12]",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dixon et al. [3]",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14], [15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it009"
+   ],
+   "referencias": [
+    12,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Plana Higueras et al. [1]",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4], [16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it012"
+   ],
+   "referencias": [
+    3,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chandler [14]",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[22]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Collins et al. [9]",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [7], [21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it010",
+    "it007"
+   ],
+   "referencias": [
+    6,
+    2,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11], [14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it018"
+   ],
+   "referencias": [
+    9,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16], [21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it007"
+   ],
+   "referencias": [
+    14,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4, p. 21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Organização Pan-Americana da Saúde [11]",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "[1], [9]",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[9]",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[22]",
+   "item": "it014"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Collins et al. [9]",
+   "item": "it015"
+  },
+  {
+   "ponto": "E",
+   "referencia": 20,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 21,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Prepared by the author (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Add edge reason use program firm still other from mention realize poor girl design"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

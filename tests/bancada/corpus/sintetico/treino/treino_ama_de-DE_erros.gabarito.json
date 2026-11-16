@@ -1,0 +1,649 @@
+{
+ "id": "treino_ama_de-DE_erros",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Park S yeon, Ackermann CP. Sehen viel sein Angst denken. Epidemiologia e Serviços de Saúde. 2013;35(10):870–876.",
+   "item": "it004"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Rudolph-Geißler M, Huhn A, Heidrich G, Beier L. Mädchen fliegen viel zur Wohnung also wenn. Revista de Saúde Pública. 1992;3(11):29–38. doi:10.99999/teste.treino.48914",
+   "item": "it000"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Conselho Nacional de Saúde (Brasil). Herr alt Geburtstag Wiese sollen Auge das denn Bauer klein Schüler Straße Buch nun Berg zu. Cadernos de Saúde Pública. 1977;56(1):48–64. doi:10.99999/teste.treino.68985",
+   "item": "it007"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Organização Pan-Americana da Saúde. Leben Wetter nennen bauen sie nur Erde nämlich heiß. 2010. Zugegriffen 2. November 2026. https://exemplo-treino.org/1476",
+   "item": "it010"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Uribe Colom D, Tlustek J. Dumm vom neben für gleich los weiter Spiel wird. Journal of the American Medical Informatics Association. 1992;57(12):143–156. doi:10.99999/teste.treino.96769",
+   "item": "it002"
+  },
+  {
+   "indice": 5,
+   "texto": "6. von Jessel C, Mülichen G, auch Schlauchin T, Hentschel A. Klettern Loch früher also den Uhr Vogel schon. Baum Meyer KG; 2018.",
+   "item": "it001"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Karz E, Kranz R. Tisch bringen Woche schenken schon leise warum Maus dabei. Das Gesundheitswesen. 2000;4(2):490–499. doi:10.99999/teste.treino.61207",
+   "item": "it030"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Instituto Nacional de Câncer (Brasil). Land Schüler ziehen schwimmen arbeiten bald liegen Sohn neben verkaufen Mann. 2001. Zugegriffen 6. November 2026. https://exemplo-treino.org/9645",
+   "item": "it008"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Müller KW. Wetter wir heiß mit endlich mehr legen ruhig gibt. Das Gesundheitswesen. 1996;73(12):52–70. doi:10.99999/teste.treino.90241",
+   "item": "it011"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Conselho Nacional de Saúde (Brasil). Vier groß Tisch dem antworten fiel bekommen acht her hinter Jahr immer Zug spielen ich. 1981. Zugegriffen 4. November 2026. https://exemplo-treino.org/8943",
+   "item": "it023"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Fröhlich A. Besser laufen ins merken ziehen und traurig gehören tot Minute. Journal of the American Medical Informatics Association. 2011;1(6):59–69. doi:10.99999/teste.treino.71252",
+   "item": "it019"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Kostolzin C, Hermann M, Eberhardt E. Geben Sonntag freuen Luft können. One Health. 2010;60(6):638–657. doi:10.99999/teste.treino.95163",
+   "item": "it018"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Köster G, Reuter L, Caspar C. Schenken wohnen nennen frei seit reich Fuß verkaufen vier um Woche zu schön. Cadernos de Saúde Pública. 2021;59(7):23–31. doi:10.99999/teste.treino.55266",
+   "item": "it029"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Scheuermann T. Fußball tot böse davon einmal Straße Schnee zwischen nämlich war verstehen. Linke Scheel e.G.; 2022.",
+   "item": "it025"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Scheel C. Kommen klettern am also Stadt fest zusammen. Medical Mycology. 2009;63(4):611–616.",
+   "item": "it016"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Robert Koch-Institut. Dir überall lassen Auge Stein Garten laufen Wetter Beispiel ließ Tür. Das Gesundheitswesen. 2021;74(2):550–562. doi:10.99999/teste.treino.94243",
+   "item": "it009"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Müller H. Glas dumm rennen Schule Zeitung kann vergessen bis schlimm kann. 1977. https://leis-treino.gov/5199",
+   "item": "it006"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Le M. Heiß Wort Klasse waschen Auge jung aus am kennen jeder. 1986. https://leis-treino.gov/8940",
+   "item": "it005"
+  },
+  {
+   "indice": 18,
+   "texto": "20. Henk I. Gehören unser langsam überall Angst kaufen dem Arzt weg Gott sicher. In: Tröst B, Hrsg. Sprechen wissen gar so Glas wohnen gegen. Grein Groth Freudenberger AG & Co. KG; 1978:249–264.",
+   "item": "it015"
+  },
+  {
+   "indice": 19,
+   "texto": "21. São Paulo (Estado). Kochen lachen tragen allein um Nase denn kann bauen. 2004. https://leis-treino.gov/6808",
+   "item": "it021"
+  },
+  {
+   "indice": 20,
+   "texto": "22. Wang H. Vergessen Beispiel schnell Uhr sagen dort dazu Milch warum. 1976. Zugegriffen 10. November 2026. https://exemplo-treino.org/5117",
+   "item": "it003"
+  },
+  {
+   "indice": 21,
+   "texto": "23. Rose HG. Durch Straße vorbei Arbeit verstecken Angst böse schön. Journal of the American Medical Informatics Association. 1988;3(9):482–496. doi:10.99999/teste.treino.42799",
+   "item": "it033"
+  },
+  {
+   "indice": 22,
+   "texto": "24. Schuster I, Roskoth T, Säuberlich S, Blümel A. Jahr sehr danach unten Stadt. Revista de Saúde Pública. 2009;69(9):798–813. doi:10.99999/teste.treino.52299",
+   "item": "it014"
+  },
+  {
+   "indice": 23,
+   "texto": "25. Renner V, Mosemann V, Säuberlich N, Keudel C, Matthäi E, Hein N. Rad schreien Junge auf wird heiß versuchen. 1999. Zugegriffen 9. November 2026. https://exemplo-treino.org/8802",
+   "item": "it012"
+  },
+  {
+   "indice": 24,
+   "texto": "26. Hauffer M, Bähr A. Die blau finden los nur müde. Das Gesundheitswesen. 2019;39(1):319–329. doi:10.99999/teste.treino.65582",
+   "item": "it028"
+  },
+  {
+   "indice": 25,
+   "texto": "27. Becker N, Striebitz G, Bloch KA. Ruhig Flasche Wiese besser. In: Schüler HG, Hrsg. Winter vier ich nicht einige Spaß nämlich fangen schreien. Wilmsen Gutknecht e.V.; 2021:256–271.",
+   "item": "it022"
+  },
+  {
+   "indice": 26,
+   "texto": "28. Rose HG. Sieht schön etwas steigen neben ist aus kommen lachen denken gar nämlich schon. In: Hoffmann S, Hrsg. Sagen auf rot jetzt fehlen Kind Wagen. Bien Gorlitz Stiftung & Co. KGaA; 1988:47–62.",
+   "item": "it032"
+  },
+  {
+   "indice": 27,
+   "texto": "30. Haase J. Unten Fisch Tisch Beispiel Zeitung schreiben zurück vielleicht tief setzen dich. Heydrich; 1984.",
+   "item": "it026"
+  },
+  {
+   "indice": 28,
+   "texto": "31. Geißler A, Scholl I, Mangold D, Carsten V. Tag andere lange ob hin See Garten wenn kommen. Epidemiologia & Prevenzione. 2010;48(6):785–803. doi:10.99999/teste.treino.83027",
+   "item": "it017"
+  },
+  {
+   "indice": 29,
+   "texto": "32. Ministerio de Sanidad (España). Trinken sind Schnee richtig was erzählen Seite an im Wissen dauern Schiff erschrecken. Stumpf GbR.",
+   "item": "it031"
+  },
+  {
+   "indice": 30,
+   "texto": "33. Beier G. Kam gerade stark lassen lange schreien Bein schwer Lehrerin verlieren zeigen Musik. Wiek Weimer KG; 2021.",
+   "item": "it013"
+  },
+  {
+   "indice": 31,
+   "texto": "34. Girschner P. Kurz hören Mutter danach wirklich Schluss weiß vergessen vergessen Wort braun sind ihr. In: Walter H, Hrsg. Weinen dir Platz Milch. Hänel Gieß AG & Co. KGaA; 1998:178–193.",
+   "item": "it020"
+  },
+  {
+   "indice": 32,
+   "texto": "35. Schuster-Rohleder M. Kommen kochen rechnen müssen einigen ein stark. 1992. Zugegriffen 8. November 2026. https://exemplo-treino.org/5536",
+   "item": "extra0"
+  },
+  {
+   "indice": 33,
+   "texto": "36. dos Gotthard A, Heintze HP, Hande P. Kann hören Sache Eis Woche baden müssen noch Angst sie. Epidemiologia e Serviços de Saúde. 1982;70(2):577–589. doi:10.99999/teste.treino.12058",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3–5",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it010",
+    "it002"
+   ],
+   "referencias": [
+    2,
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,6",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it007"
+   ],
+   "referencias": [
+    5,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,10",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it023"
+   ],
+   "referencias": [
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fröhlich 11",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13,14",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it025"
+   ],
+   "referencias": [
+    12,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15–17",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it009",
+    "it006"
+   ],
+   "referencias": [
+    14,
+    15,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15,18,19",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it016",
+    "it024"
+   ],
+   "referencias": [
+    17,
+    14,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "20",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang 22",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,18,24",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it011",
+    "it014"
+   ],
+   "referencias": [
+    17,
+    8,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "26–28",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it022",
+    "it032"
+   ],
+   "referencias": [
+    24,
+    25,
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "29,30",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it026"
+   ],
+   "referencias": [
+    null,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14,27,31",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it022",
+    "it025"
+   ],
+   "referencias": [
+    28,
+    25,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "27,30",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it022"
+   ],
+   "referencias": [
+    27,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Geißler et al. 31",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,26",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it028"
+   ],
+   "referencias": [
+    2,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "32",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Beier 33",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "34",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23(S269)",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "26",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "6",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "24",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "von Jessel et al. 6",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "15,18,19",
+   "item": "it024"
+  },
+  {
+   "ponto": "D",
+   "citacao": "29,30",
+   "item": "it027"
+  },
+  {
+   "ponto": "E",
+   "referencia": 32,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 33,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Monat gerade ihm neben sitzen kennen nie bauen"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

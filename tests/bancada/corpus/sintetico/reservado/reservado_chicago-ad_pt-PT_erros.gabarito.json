@@ -1,0 +1,627 @@
+{
+ "id": "reservado_chicago-ad_pt-PT_erros",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "pt-PT",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Agência Nacional de Vigilância Sanitária (Brasil). 2018. Nisi possimus praesentium. Nunes Lda.",
+   "item": "it017"
+  },
+  {
+   "indice": 1,
+   "texto": "Anjos, Raquel, Nelson Magalhães, Érica Costa, Fernando Ribeiro, Leonor Amaral, e Isabela Santos. 1990. «Quidem qui delectus odio dicta quis exercitationem cumque». Cadernos de Saúde Pública 50 (7): 363–78. https://doi.org/10.99999/teste.reservado.46076.",
+   "item": "it012"
+  },
+  {
+   "indice": 2,
+   "texto": "Australian Institute of Health and Welfare (Australia). 1988. «Expedita cum porro recusandae delectus nobis pariatur ut sequi labore quaerat labore dolor fuga recusandae». Oliveira.",
+   "item": "it009"
+  },
+  {
+   "indice": 3,
+   "texto": "Baptista, Beatriz, Joel Gaspar, Daniel Morais, e Ricardo Campos. 2014. «Ipsa placeat placeat nihil fugiat modi eius quo error cum minus». Revista de Saúde Pública 17 (5): 817–30.",
+   "item": "it025"
+  },
+  {
+   "indice": 4,
+   "texto": "Baptista, Emanuel, Artur Almeida, Pilar Baptista, Luísa Faria, Jorge Antunes, e Carminho Amorim. 1999. Delectus excepturi deserunt tenetur quo sed placeat. Azevedo.",
+   "item": "it023"
+  },
+  {
+   "indice": 5,
+   "texto": "Bundesinstitut für Risikobewertung. 2003. «Ea unde alias molestiae aspernatur vero similique repudiandae autem quia sed nulla porro qui laborum». https://exemplo-reservado.org/4251.",
+   "item": "it022"
+  },
+  {
+   "indice": 6,
+   "texto": "Coelho, Juliana, Adriana Fonseca, e Micael Leite. 2015. «Dolore laborum molestiae repudiandae adipisci». Epidemiologia & Prevenzione 14 (1): 650–55. https://doi.org/10.99999/teste.reservado.21164.",
+   "item": "it015"
+  },
+  {
+   "indice": 7,
+   "texto": "Costa, Lisandro. 2017. «Culpa nobis corporis vero nisi». Revista de Saúde Pública 59 (6): 3–19.",
+   "item": "it026"
+  },
+  {
+   "indice": 8,
+   "texto": "Costa, Tomé, Edgar Lima, Erica Pinheiro, e Denis Silva. 1978. «Sequi sint a molestiae ipsum ratione». Medical Mycology 24 (7): 878–93.",
+   "item": "it018"
+  },
+  {
+   "indice": 9,
+   "texto": "Dolorem fuga architecto libero numquam voluptate, Legislação N. 12354 (1986). https://leis-reservado.gov/6087.",
+   "item": "it020"
+  },
+  {
+   "indice": 10,
+   "texto": "Ferreira, Xavier. 1990. «Quaerat repellendus qui voluptatem non». Epidemiologia & Prevenzione 41 (9): 18–34. https://doi.org/10.99999/teste.reservado.30698.",
+   "item": "it021"
+  },
+  {
+   "indice": 11,
+   "texto": "Fonseca, Ariana, Laura Teixeira, Edgar Pinto, e Lara Branco. 2025a. «Eius ab saepe hic maiores aperiam voluptates aspernatur laudantium». Medical Mycology 14 (11): 607–14.",
+   "item": "it029"
+  },
+  {
+   "indice": 12,
+   "texto": "Gaspar-Ramos, Emma, e Lara Carneiro. 2010. «Quisquam quasi accusamus temporibus dolorem». Gaceta Sanitaria 63 (11): 160–76. https://doi.org/10.99999/teste.reservado.14542.",
+   "item": "extra0"
+  },
+  {
+   "indice": 13,
+   "texto": "Le, Minh. 1976. «Provident nam deserunt sint nemo ipsum at ratione necessitatibus». Journal of the American Medical Informatics Association 7 (8): 869–76.",
+   "item": "it005"
+  },
+  {
+   "indice": 14,
+   "texto": "Loureiro, Vítor. 2004. «Incidunt assumenda facere minus officiis dignissimos». https://exemplo-reservado.org/1374.",
+   "item": "it010"
+  },
+  {
+   "indice": 15,
+   "texto": "Lourenço, Simão, Cristiano Vieira, Maria Soares, e Yasmin Brito. 1985. «Eaque ab beatae dolores odit culpa aliquam aliquam excepturi». Em Esse optio cumque debitis porro fuga dolores officia dolore, editado por Erica Anjos. Moura.",
+   "item": "it011"
+  },
+  {
+   "indice": 16,
+   "texto": "Lourenço-Baptista, Juliana. 2006. «Velit quos possimus alias quas fugit dolores iure beatae voluptatem maxime sed dolorum quidem ab». Cadernos de Saúde Pública 28 (7): 16–27. https://doi.org/10.99999/teste.reservado.94889.",
+   "item": "it000"
+  },
+  {
+   "indice": 17,
+   "texto": "Machado, Sara. 1986. «Porro sint saepe itaque a». BMC Public Health 32 (8): 269–82. https://doi.org/10.99999/teste.reservado.38390.",
+   "item": "it014"
+  },
+  {
+   "indice": 18,
+   "texto": "Marques, Miriam. 1988. Earum voluptas excepturi animi ullam eligendi. Guerreiro.",
+   "item": "it024"
+  },
+  {
+   "indice": 19,
+   "texto": "Martins, Margarida. 1996. «Consequatur ea necessitatibus sint esse aliquam». Gaceta Sanitaria 57 (9): 366–71. https://doi.org/10.99999/teste.reservado.78836.",
+   "item": "it013"
+  },
+  {
+   "indice": 20,
+   "texto": "Moreira, Margarida, William Cardoso, Mateus Jesus, e Teresa Amorim. s.d. «Tempore necessitatibus nisi dolorum». Cadernos de Saúde Pública 46 (1): 746–55. https://doi.org/10.99999/teste.reservado.45340.",
+   "item": "it027"
+  },
+  {
+   "indice": 21,
+   "texto": "Nam tempore aliquid amet sed voluptate numquam officiis repellendus fuga, Legislação N. 6666 (1998). https://leis-reservado.gov/6468.",
+   "item": "it003"
+  },
+  {
+   "indice": 22,
+   "texto": "Park, Seo-yeon, Luca Guerreiro, e Larissa Teixeira. 1987. Itaque rem ducimus iste amet. Lourenço Gaspar e Filhos.",
+   "item": "it004"
+  },
+  {
+   "indice": 23,
+   "texto": "Pinho, Vicente, Mafalda Barros, Francisco Pinho, Luís Sousa, Vítor Pires, e Vera Henriques. 2021. «Nobis architecto impedit reiciendis cum». Gaceta Sanitaria 27 (6): 385–95. https://doi.org/10.99999/teste.reservado.10945.",
+   "item": "it016"
+  },
+  {
+   "indice": 24,
+   "texto": "Placeat dolores in voluptatibus velit expedita dolorem, Legislação N. 5093 (1984). https://leis-reservado.gov/6567.",
+   "item": "it019"
+  },
+  {
+   "indice": 25,
+   "texto": "Public Health Agency of Canada. 1985. «Pariatur corporis officiis». Journal of the American Medical Informatics Association 79 (8): 16–21. https://doi.org/10.99999/teste.reservado.51899.",
+   "item": "it007"
+  },
+  {
+   "indice": 26,
+   "texto": "Public Health Agency of Canada. 2014. «Id explicabo dolorum eius vitae eveniet voluptatem deleniti ratione explicabo magnam». Revue d’Épidémiologie et de Santé Publique 38 (8): 437–45.",
+   "item": "it008"
+  },
+  {
+   "indice": 27,
+   "texto": "Tapia Vaquero, María Ángeles, e Álvaro Guerreiro. 1986. «Minus eius itaque officia id hic debitis magni tenetur dolorum». Preventive Veterinary Medicine 51 (1): 798–802.",
+   "item": "it002"
+  },
+  {
+   "indice": 28,
+   "texto": "Torres, Adriana di, Yara Amaral, e Petra Almeida. 1987. «Nobis voluptatem sequi culpa incidunt pariatur veniam». Epidemiologia & Prevenzione 57 (1): 388–94. https://doi.org/10.99999/teste.reservado.89200.",
+   "item": "it001"
+  },
+  {
+   "indice": 29,
+   "texto": "Vieira, Alexandra dos, e Nuno Fonseca. 2020. «Id velit totam cumque dolor deleniti ipsam». Epidemiologia & Prevenzione 35 (11): 560–74. https://doi.org/10.99999/teste.reservado.72050.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Marques (1988)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lourenço-Baptista 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lourenço-Baptista 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Machado 1986; R. Anjos et al. 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it012"
+   ],
+   "referencias": [
+    17,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(L. Costa 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "B. Baptista et al. (2014)",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agência Nacional de Vigilância Sanitária (Brasil) 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinho et al. 2021; Park et al. 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it004"
+   ],
+   "referencias": [
+    23,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lourenço et al. 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dolorem fuga architecto libero numquam voluptate 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Marques 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Public Health Agency of Canada 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fonseca et al. 2025b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinho et al. 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Placeat dolores in voluptatibus velit expedita dolorem 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tapia Vaquero e Guerreiro 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moreira et al. (s.d.)",
+   "tipo": "narrativa",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Torres et al. 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ferreira 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le 1976; Tapia Vaquero e Guerreiro 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it002"
+   ],
+   "referencias": [
+    13,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fonseca et al. 2025a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al. (Nam tempore aliquid amet sed voluptate numquam officiis repellendus fuga 1998)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Çelik et al. (2017)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tapia Vaquero e Guerreiro 1986; E. Baptista et al. 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it023"
+   ],
+   "referencias": [
+    27,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lourenço-Baptista 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(B. Baptista et al. 2014; Loureiro 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it010"
+   ],
+   "referencias": [
+    3,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bundesinstitut für Risikobewertung 2003; Public Health Agency of Canada 2014; Martins 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it008",
+    "it013"
+   ],
+   "referencias": [
+    5,
+    26,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Coelho et al. 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(T. Costa et al. 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Australian Institute of Health and Welfare (Australia) 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinho et al. 2021; T. Costa et al. 1978; Tapia Vaquero e Guerreiro 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it018",
+    "it002"
+   ],
+   "referencias": [
+    23,
+    8,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Çelik et al. 2017, 76)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(di Torres et al. 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Le 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Placeat dolores in voluptatibus velit expedita dolorem 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Marques (1988)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Fonseca et al. 2025b)",
+   "item": "it028"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Çelik et al. (2017)",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Çelik et al. 2017, 76)",
+   "item": "it006"
+  },
+  {
+   "ponto": "E",
+   "referencia": 12,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 29,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Ducimus quis nihil molestiae inventore eligendi deleniti"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

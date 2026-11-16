@@ -1,0 +1,666 @@
+{
+ "id": "treino_apa_de-DE_perturbado",
+ "estilo": "apa",
+ "sistema": "autor-data",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Adolph, A., Trommler, D., Budig, M., Kallert, K., Reichmann, M., & Ortmann, M. (1979a). Hin gelb vielleicht Kind fallen erschrecken ab etwas rund. One Health, 72(7), 216–224. https://doi.org/10.99999/teste.treino.65698",
+   "item": "it021"
+  },
+  {
+   "indice": 1,
+   "texto": "Adolph, A., Trommler, D., Budig, M., Kallert, K., Reichmann, M., & Ortmann, M. (1979b). Hinein steigen Wagen arbeiten. Das Gesundheitswesen, 50(7), 65–72.",
+   "item": "it022"
+  },
+  {
+   "indice": 2,
+   "texto": "Bolnbach, P., Dörr, S., Adolph, S., Löchel, E., Beyer, G., & Mies, R. (2021). Aber arbeiten Onkel Himmel. Medical Mycology, 77(12), 653–663. https://doi.org/10.99999/teste.treino.27866",
+   "item": "it011"
+  },
+  {
+   "indice": 3,
+   "texto": "Conradi, A., Lübs, A., Biggen, L., Rosemann, K., Steckel, H. J., & Jockel, A. (2010). Nacht dürfen denn ziehen Frau warten. Zobel.",
+   "item": "it012"
+  },
+  {
+   "indice": 4,
+   "texto": "de Heydrich, R., Niemeier, L., Schacht, H., & Niemeier, R. (1992). Freund anfangen oft los später Mann Teller. Revue d’Épidémiologie et de Santé Publique, 35(10), 28–34. https://doi.org/10.99999/teste.treino.78340",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "Geißler, A. (1979). Antworten ruhig Arzt bringen. Revista de Saúde Pública, 5(8), 136–156.",
+   "item": "it019"
+  },
+  {
+   "indice": 6,
+   "texto": "Haute Autorité de Santé (France). (2004). Damit reiten weg weg gewinnen wohl baden lieb zusammen. Beer GmbH & Co. KGaA.",
+   "item": "it008"
+  },
+  {
+   "indice": 7,
+   "texto": "Kambs, L. (2011). Sind Brot schwarz Minute gewinnen und Sonne wohnen Boden heiß Maus. One Health, 25(1), 94–106.",
+   "item": "it016"
+  },
+  {
+   "indice": 8,
+   "texto": "Kim, M., & Stiebitz, C. (1995). Werden eigentlich Stelle See Meer Bein bauen Stadt spielen Straße Klasse Ball einigen Sohn. In F.-X. Täsche (Hrsg.), Kennen zur Weihnachten gefährlich Schule nass gerade warum packen warum (S. 215–230). Stolze.",
+   "item": "it004"
+  },
+  {
+   "indice": 9,
+   "texto": "Köhler, S., Wähner, H.-L., Börner, D., & Winkler, H. (1998). Nicht steigen ich jung Affe zwei steigen Hunger fliegen Kind dick. Das Gesundheitswesen, 29(3), 775–780. https://doi.org/10.99999/teste.treino.18564",
+   "item": "it017"
+  },
+  {
+   "indice": 10,
+   "texto": "Laguna Juan, L., Henck, L., & Hande, T. (2001). Leben wahr fast schwimmen lachen Tür kann heraus. https://exemplo-treino.org/7649",
+   "item": "it002"
+  },
+  {
+   "indice": 11,
+   "texto": "Liu, J., & Lange, A. (2007). Nacht wenn dürfen will Hunger Hunger alt weit bekommen können rund bin. https://exemplo-treino.org/1601",
+   "item": "it003"
+  },
+  {
+   "indice": 12,
+   "texto": "Martin, H. (1983). Ruhig Wiese aus dann. In S. Albers (Hrsg.), Zwischen helfen wissen Opa Wald rechnen es Wagen wenn ließ Tag (S. 169–184). Hermighausen AG.",
+   "item": "it018"
+  },
+  {
+   "indice": 13,
+   "texto": "Müller, R., Reinhardt, N., Klemm, B., & Kuhl, W. (1986). Garten erschrecken Leben Schuh heute sieht. Stiffel.",
+   "item": "it006"
+  },
+  {
+   "indice": 14,
+   "texto": "National Library of Medicine (Estados Unidos). (2005). Seit Sache ein noch werfen spielen ohne Eltern Blume Wohnung erklären groß Tag Klasse fahren sofort. Heß.",
+   "item": "it007"
+  },
+  {
+   "indice": 15,
+   "texto": "Nehmen warten las Ball fünf auch, Gesetz Nr. 3183. Abgerufen https://leis-treino.gov/653",
+   "item": "it020"
+  },
+  {
+   "indice": 16,
+   "texto": "Pham, M., Weiß, H., Kusch, H.-G., & Trapp, R. (1976). Herz am Papa nur gegen mit wenn. https://exemplo-treino.org/1300",
+   "item": "it005"
+  },
+  {
+   "indice": 17,
+   "texto": "Plath, A., Caspar, I., Karge, J., & Hörle, K.-E. (2026). Singen Papa Ende danach will Tag. Preventive Veterinary Medicine, 52(4), 838–854. https://doi.org/10.99999/teste.treino.67914",
+   "item": "it013"
+  },
+  {
+   "indice": 18,
+   "texto": "Robert Koch-Institut. (1979). Stellen fallen Klasse will einigen auch sein endlich. Gaceta Sanitaria, 59(7), 55–65. https://doi.org/10.99999/teste.treino.56428",
+   "item": "it009"
+  },
+  {
+   "indice": 19,
+   "texto": "Ruppersberger, K.-P. (2007). An beide neben aus Zeitung. Revue d’Épidémiologie et de Santé Publique, 17(12), 726–743. https://doi.org/10.99999/teste.treino.56723",
+   "item": "it014"
+  },
+  {
+   "indice": 20,
+   "texto": "Schiff beim einfach unser öffnen Erde dazu, Gesetz Nr. 13890 (1980). https://leis-treino.gov/1660",
+   "item": "it000"
+  },
+  {
+   "indice": 21,
+   "texto": "Weitzel, V., Rädel, B., Girschner, R., Wohlgemut, I., Kabus, G., & Neuschäfer, G. (2006). Wagen laufen Haare treffen zusammen fiel Weihnachten langsam heißen lange. Das Gesundheitswesen, 31(10), 750–764. https://doi.org/10.99999/teste.treino.33995",
+   "item": "it015"
+  },
+  {
+   "indice": 22,
+   "texto": "Wir später zwei richtig Hunger nehmen Frau warum, Gesetz Nr. 14872 (2006). https://leis-treino.gov/6731",
+   "item": "it010"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Conradi et al., 2010; Laguna Juan et al., 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it002"
+   ],
+   "referencias": [
+    3,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim & Stiebitz (1995)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Köhler et al., 1998; Laguna Juan et al., 2001; Plath et al., 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it017",
+    "it013"
+   ],
+   "referencias": [
+    10,
+    9,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Köhler et al., 1998; Müller et al., 1986; Nehmen warten las Ball fünf auch, o. J.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it017",
+    "it006"
+   ],
+   "referencias": [
+    15,
+    9,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Schiff beim einfach unser öffnen Erde dazu, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robert Koch-Institut (1979)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Heydrich et al., 1992; Kambs, 2011; Wir später zwei richtig Hunger nehmen Frau warum, 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it001",
+    "it016"
+   ],
+   "referencias": [
+    22,
+    4,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bolnbach et al., 2021; Geißler, 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it011"
+   ],
+   "referencias": [
+    5,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bolnbach et al., 2021; National Library of Medicine (Estados Unidos), 2005; Weitzel et al., 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it007",
+    "it011"
+   ],
+   "referencias": [
+    21,
+    14,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Heydrich et al., 1992; Kambs, 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it001"
+   ],
+   "referencias": [
+    7,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kim & Stiebitz, 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Adolph et al., 1979b; National Library of Medicine (Estados Unidos), 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it007"
+   ],
+   "referencias": [
+    1,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Geißler (1979)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nehmen warten las Ball fünf auch, o. J.; Schiff beim einfach unser öffnen Erde dazu, 1980; Plath et al., 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it013",
+    "it020"
+   ],
+   "referencias": [
+    20,
+    17,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kim & Stiebitz, 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Geißler, 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Heydrich et al., 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Schiff beim einfach unser öffnen Erde dazu, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nehmen warten las Ball fünf auch, o. J.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Plath et al. (2026)",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "de Heydrich et al. (1992)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conradi et al., 2010; de Heydrich et al., 1992; Pham et al., 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it005",
+    "it012"
+   ],
+   "referencias": [
+    4,
+    16,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), 2005; Nehmen warten las Ball fünf auch, o. J.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it007"
+   ],
+   "referencias": [
+    15,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Heydrich et al., 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Schiff beim einfach unser öffnen Erde dazu, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Adolph et al., 1979a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Heydrich et al., 1992; Ruppersberger, 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it014"
+   ],
+   "referencias": [
+    4,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Laguna Juan et al. (2001)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Heydrich et al., 1992; Liu & Lange, 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it003"
+   ],
+   "referencias": [
+    4,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Müller et al., 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), 2004; Pham et al., 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it008"
+   ],
+   "referencias": [
+    16,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Adolph et al., 1979b; Kim & Stiebitz, 1995; Plath et al., 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it022",
+    "it004"
+   ],
+   "referencias": [
+    17,
+    1,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Heydrich et al., 1992; Kim & Stiebitz, 1995; Robert Koch-Institut, 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it004",
+    "it009"
+   ],
+   "referencias": [
+    4,
+    8,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Laguna Juan et al., 2001; Müller et al., 1986; Ruppersberger, 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it014",
+    "it006"
+   ],
+   "referencias": [
+    10,
+    19,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Martin, 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Liu & Lange, 2007, S. 57)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Geißler, 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Liu & Lange, 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Bolnbach et al., 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Plath et al. (2026)",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Schiff reiten Haus alle schnell und heraus einmal halten aber und"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

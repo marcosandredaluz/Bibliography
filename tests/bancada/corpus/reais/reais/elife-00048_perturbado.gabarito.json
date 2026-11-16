@@ -1,0 +1,1117 @@
+{
+ "id": "elife-00048_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00048.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Anderson JS, Parker RP. 1998. The 3' to 5' degradation of yeast mRNAs is a general mechanism for mRNA turnover that requires the SKI2 DEVH box protein and 3' to 5' exonucleases of the exosome complex. EMBO J 17:1497–1506.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Bernasconi R, Galli C, Noack J, Bianchi S, de Haan CA, Reggiori F, et al.. 2012. Role of the SEL1L: LC3-I complex as an ERAD tuning receptor in the mammalian ER. Mol Cell 46:809–819.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Calfon M, Zeng H, Urano F, Till JH, Hubbard SR, Harding HP, et al.. 2002. IRE1 couples endoplasmic reticulum load to secretory capacity by processing the XBP-1 mRNA. Nature 415:92–96.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Cox JS, Walter P. 1996. A novel mechanism for regulating activity of a transcription factor that controls the unfolded protein response. Cell 87:391–404.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Cox JS, Shamu CE, Walter P. 1993. Transcriptional induction of genes encoding endoplasmic reticulum resident proteins requires a transmembrane protein kinase. Cell 73:1197–1206.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Cross BC, Bond PJ, Sadowski PG, Jha BK, Zak J, Goodman JM, et al.. 2012. The molecular basis for selective inhibition of unconventional mRNA splicing by an IRE1-binding small molecule. Proc Natl Acad Sci U S A 109:E869–E878.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "D'Alessio C, Fernandez F, Trombetta ES, Parodi AJ. 1999. Genetic evidence for the heterodimeric structure of glucosidase II. The effect of disrupting the subunit-encoding genes on glycoprotein folding. J Biol Chem 274:25899–25905.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Feng B, Yao PM, Li Y, Devlin CM, Zhang D, Harding HP, et al.. 2003. The endoplasmic reticulum is the site of cholesterol-induced cytotoxicity in macrophages. Nat Cell Biol 5:781–792.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Frost A, Elgort MG, Brandman O, Ives C, Collins SR, Miller-Vedam L, et al.. 2012. Functional repurposing revealed by comparing S. pombe and S. cerevisiae genetic interactions. Cell 149:1339–1352.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Gardner BM, Walter P. 2011. Unfolded proteins are Ire1-activating ligands that directly induce the unfolded protein response. Science 333:1891–1894.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Garneau NL, Wilusz J, Wilusz CJ. 2007. The highways and byways of mRNA decay. Nat Rev Mol Cell Biol 8:113–126.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Gatfield D, Izaurralde E. 2004. Nonsense-mediated messenger RNA decay is initiated by endonucleolytic cleavage in Drosophila. Nature 429:575–578.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Gonzalez TN, Sidrauski C, Dorfler S, Walter P. 1999. Mechanism of non-spliceosomal mRNA splicing in the unfolded protein response pathway. EMBO J 18:3119–3132.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Gulow K, Bienert D, Haas IG. 2002. BiP is feed-back regulated by control of protein translation efficiency. J Cell Sci 115:2443–2452.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Guthrie C, Fink GR. 2004. Guide to yeast genetics and molecular biology, Part A, Methods Enzymol 194.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Han D, Lerner AG, Vande Walle L, Upton JP, Xu W, Hagen A, et al.. 2009. IRE1alpha kinase activation modes control alternate endoribonuclease outputs to determine divergent cell fates. Cell 138:562–575.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Hetz C. 2012. The unfolded protein response: Controlling cell fate decisions under ER stress and beyond. Nat Rev Mol Cell Biol 13:89–102.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Hollien J, Weissman JS. 2006. Decay of endoplasmic reticulum-localized mRNAs during the unfolded protein response. Science 313:104–107.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Hollien J, Lin JH, Li H, Stevens N, Walter P, Weissman JS. 2009. Regulated Ire1-dependent decay of messenger RNAs in mammalian cells. J Cell Biol 186:323–331.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Hooks KB, Griffiths-Jones S. 2011. Conserved RNA structures in the non-canonical Hac1/Xbp1 intron. RNA Biol 8:552–556.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Hur KY, So JS, Ruda V, Frank-Kamenetsky M, Fitzgerald K, Koteliansky V, et al.. 2012. IRE1alpha activation protects mice against acetaminophen-induced hepatotoxicity. J Exp Med 209:307–318.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Ingolia NT, Ghaemmaghami S, Newman JR, Weissman JS. 2009. Genome-wide analysis in vivo of translation with nucleotide resolution using ribosome profiling. Science 324:218–223.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Ingolia NT, Lareau LF, Weissman JS. 2011. Ribosome profiling of mouse embryonic stem cells reveals the complexity and dynamics of mammalian proteomes. Cell 147:789–802.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Kohrer K, Domdey H. 1991. Preparation of high molecular weight RNA. Methods Enzymol 194:398–405.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Korennykh AV, Egea PF, Korostelev AA, Finer-Moore J, Zhang C, Shokat KM, et al.. 2009. The unfolded protein response signals through high-order assembly of Ire1. Nature 457:687–693.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Korennykh AV, Korostelev AA, Egea PF, Finer-Moore J, Stroud RM, Zhang C, et al.. 2011. Structural and functional basis for RNA cleavage by Ire1. BMC Biol 9:47.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Lee AH, Heidtman K, Hotamisligil GS, Glimcher LH. 2011. Dual and opposing roles of the unfolded protein response regulated by IRE1alpha and XBP1 in proinsulin processing and insulin secretion. Proc Natl Acad Sci U S A 108:8885–8890.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Li R, Yu C, Li Y, Lam TW, Yiu SM, Kristiansen K, et al.. 2009. SOAP2: An improved ultrafast tool for short read alignment. Bioinformatics 25:1966–1967.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Lipson KL, Ghosh R, Urano F. 2008. The role of IRE1alpha in the degradation of insulin mRNA in pancreatic beta-cells. PLoS One 3:e1648.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Marzluff WF, Wagner EJ, Duronio RJ. 2008. Metabolism and regulation of canonical histone mRNAs: Life without a poly(A) tail. Nat Rev Genet 9:843–854.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Maundrell K. 1990. nmt1 of fission yeast. A highly transcribed gene completely repressed by thiamine. J Biol Chem 265:10857–10864.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Moreno S, Klar A, Nurse P. 1991. Molecular genetic analysis of fission yeast Schizosaccharomyces pombe. Methods Enzymol 194:795–823.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Mori K, Ma W, Gething MJ, Sambrook J. 1993. A transmembrane protein with a cdc2+/CDC28-related kinase activity is required for signaling from the ER to the nucleus. Cell 74:743–756.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Nilsson I, Ohvo-Rekila H, Slotte JP, Johnson AE, von Heijne G. 2001. Inhibition of protein translocation across the endoplasmic reticulum membrane by sterols. J Biol Chem 276:41748–41754.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Niwa M, Sidrauski C, Kaufman RJ, Walter P. 1999. A role for presenilin-1 in nuclear accumulation of Ire1 fragments and induction of the mammalian unfolded protein response. Cell 99:691–702.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Niwa M, Patil CK, DeRisi J, Walter P. 2005. Genome-scale approaches for discovering novel nonconventional splicing substrates of the Ire1 nuclease. Genome Biol 6:R3.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Oikawa D, Tokuda M, Hosoda A, Iwawaki T. 2010. Identification of a consensus element recognized and cleaved by IRE1 alpha. Nucleic Acids Res 38:6265–6273.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Pavitt GD, Ron D. 2012. New insights into translational regulation in the endoplasmic reticulum unfolded protein response. Cold Spring Harb Perspect Biol 4:pii: a012278.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Pidoux AL, Armstrong J. 1992. Analysis of the BiP gene and identification of an ER retention signal in Schizosaccharomyces pombe. EMBO J 11:1583–1591.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Pidoux AL, Armstrong J. 1993. The BiP protein and the endoplasmic reticulum of Schizosaccharomyces pombe: fate of the nuclear envelope during cell division. J Cell Sci 105:1115–1120.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Robinson MD, Oshlack A. 2010. A scaling normalization method for differential expression analysis of RNA-seq data. Genome Biol 11:R25.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Ron D. 2006. Cell biology. Stressed cells cope with protein overload. Science 313:52–53.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Ruegsegger U, Leber JH, Walter P. 2001. Block of HAC1 mRNA translation by long-range base pairing is released by cytoplasmic splicing upon induction of the unfolded protein response. Cell 107:103–114.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Sanchez R, Marzluff WF. 2002. The stem-loop binding protein is required for efficient translation of histone mRNA in vivo and in vitro. Mol Cell Biol 22:7093–7104.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Schuldiner M, Collins SR, Thompson NJ, Denic V, Bhamidipati A, Punna T, et al.. 2005. Exploration of the function and organization of the yeast early secretory pathway through an epistatic miniarray profile. Cell 123:507–519.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Schutz K, Hesselberth JR, Fields S. 2010. Capture and sequence analysis of RNAs with terminal 2',3'-cyclic phosphates. RNA 16:621–631.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Scotto-Lavino E, Du G, Frohman MA. 2006. 3' end cDNA amplification using classic RACE. Nature Protoc 1:2742–2745.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Shore GC, Papa FR, Oakes SA. 2011. Signaling cell death from the endoplasmic reticulum stress response. Curr Opin Cell Biol 23:143–149.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Sidrauski C, Cox JS, Walter P. 1996. tRNA ligase is required for regulated mRNA splicing in the unfolded protein response. Cell 87:405–413.",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Tabas I, Ron D. 2011. Integrating the mechanisms of apoptosis induced by endoplasmic reticulum stress. Nat Cell Biol 13:184–190.",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Walter P, Ron D. 2011. The unfolded protein response: from stress pathway to homeostatic regulation. Science 334:1081–1086.",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Yoshida H, Matsui T, Yamamoto A, Okada T, Mori K. 2001. XBP1 mRNA is induced by ATF6 and spliced by IRE1 in response to ER stress to produce a highly active transcription factor. Cell 107:881–891.",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "Yu B, Yang Z, Li J, Minakhina S, Yang M, Padgett RW, et al.. 2005. Methylation as a crucial step in plant microRNA biogenesis. Science 307:932–935.",
+   "item": "bib53"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Walter and Ron, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shore et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tabas and Ron, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hetz, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Walter and Ron, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Korennykh et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gardner and Walter, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yoshida et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Calfon et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cox et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mori et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cox and Walter, 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sidrauski et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pavitt and Ron, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hollien and Weissman (2006)",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Niwa et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Han et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hollien et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Han et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hollien et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cross et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hollien and Weissman, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Garneau et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gonzalez et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cross et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lipson et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hur et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Han et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gonzalez et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hooks and Griffiths-Jones, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frost et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schutz et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hollien and Weissman, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ron, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nilsson et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Feng et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bernasconi et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Han et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hollien et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cross et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Korennykh et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Niwa et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gonzalez et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Niwa et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gonzalez et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hur et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Oikawa et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Anderson and Parker, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gatfield and Izaurralde, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pidoux and Armstrong, 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "D'Alessio et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marzluff et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sanchez and Marzluff, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yu et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gulow et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pidoux and Armstrong, 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frost et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schuldiner et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bernasconi et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lipson et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Han et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moreno et al., 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guthrie, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kohrer and Domdey, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ruegsegger et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ingolia et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Scotto-Lavino et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maundrell, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kohrer and Domdey, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schutz et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ingolia et al. (2009)",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ingolia et al. (2009)",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ingolia et al. (2011)",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robinson and Oshlack, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

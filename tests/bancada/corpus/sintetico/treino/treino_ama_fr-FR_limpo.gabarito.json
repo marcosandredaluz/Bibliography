@@ -1,0 +1,739 @@
+{
+ "id": "treino_ama_fr-FR_limpo",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Istituto Superiore di Sanità. Jeune éternel général lisser propre gens conduire émotion valeur disparaître taille. 2026. https://leis-treino.gov/9480",
+   "item": "it031"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Rousset D. Achever salut vieillard glisser tracer monter etc siège escalier séparer comme brûler. BMC Public Health. 2003;41(12):310‑318. doi:10.99999/teste.treino.80756",
+   "item": "it015"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Pires T, Lebon H, Jacquot A, Bernard P. Dormir jeune fixe descendre pitié. Cadernos de Saúde Pública. 1998;2(6):650‑664.",
+   "item": "it027"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Park J ho, Arnaud E. Trop dernier discuter rapport impossible. Becker De Sousa SARL; 2017.",
+   "item": "it004"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Blot G, Launay M, Chauvet T, Hoareau T. De ici problème avenir crier robe personnage. Fischer; 1985.",
+   "item": "it024"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Wang J, Charles A, Lopez F. Direction lever devoir fois victime assister image obliger lettre loin toucher. Navarro Gay S.A.R.L.; 1987.",
+   "item": "it003"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Virginia-Maryland College of Veterinary Medicine. Protéger devant suite rue auprès relever. Epidemiologia & Prevenzione. 1981;35(8):473‑493.",
+   "item": "it008"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Albert M. Tracer abri depuis toile ordre exposer plein humide jusque bon commun. In: Carre H, éd. Nouveau chaleur éclairer ci armer pendre journal portier état. Bonnin et Fils; 2025:92‑107.",
+   "item": "it020"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Dias A, Peron S. Souhaiter retour beaucoup froid occasion morceau mieux eaux poche. Das Gesundheitswesen. 16(4):244‑250.",
+   "item": "it030"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Pham TH, Schmitt É, Lecoq T. Genou guerre fermer vous port rapide. In: Lecomte C, éd. Port beau bras content violent nation moi tout tapis. Roger S.A.; 2021:256‑271.",
+   "item": "it005"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Bertin G, Perrin N, Fischer P. Rideau action barbe ordre chien instinct déclarer intéresser noir oeuvre terreur enfant paquet abattre. Alexandre; 1997.",
+   "item": "it021"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Rodrigues T, Vallet L, Durand L. Juste face rouler vouloir corde rond chiffre sens occasion aujourd’hui accorder parti reprendre remplir. Meyer SA; 2003.",
+   "item": "it011"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Hoarau R. Gris taille apprendre quelque entourer nouveau etc jeune étranger surveiller prévoir début demeurer autorité. 2024. https://leis-treino.gov/5260",
+   "item": "it012"
+  },
+  {
+   "indice": 13,
+   "texto": "14. São Paulo (Estado). Courage soi simple céder classe masse haute fait diriger rire. One Health. 1999;71(3):450‑467.",
+   "item": "it007"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Abad Barba L, Roussel É, Guyon B. Construire causer ancien voile rayon mentir rêve mémoire en titre précis continuer art un. Epidemiologia & Prevenzione. 2012;75(1):103‑115.",
+   "item": "it002"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Instituto Nacional de Câncer (Brasil). Ni enfoncer simplement gros y voiture courant conclure rompre cela. Lenoir; 1989.",
+   "item": "it009"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Blanchard G. Vous musique voici jeunesse rêve forêt art apporter. 1996. https://leis-treino.gov/422",
+   "item": "it028"
+  },
+  {
+   "indice": 17,
+   "texto": "18. de Gros L, Guillon B, Roussel G, Da Costa S. Perdre immense simplement arriver sec parce que à exister. Journal of the American Medical Informatics Association. 2024;15(11):161‑179. doi:10.99999/teste.treino.47816",
+   "item": "it001"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Roux A. Armer droit retirer d’autres un saison mari que près réponse. Gaceta Sanitaria. 1988;49(10):486‑500.",
+   "item": "it019"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Mercier G, Allain N, Verdier M. Consulter hésiter interroger l’une prévoir. Epidemiologia e Serviços de Saúde. 1990;32(1):497‑511. doi:10.99999/teste.treino.88101",
+   "item": "it029"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Hamel A. Ajouter sentir défaut sourire pointe peau un complet l’une bête tenter donner. In: Da Silva O, éd. Respect terme dominer rapport armée argent ministre. Muller; 1988:64‑79.",
+   "item": "it017"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Leclercq A. Fatiguer ceci venir assister voisin. Revue d’Épidémiologie et de Santé Publique. 1989;63(5):79‑87. doi:10.99999/teste.treino.10803",
+   "item": "it023"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Bousquet J, Boyer M, Schmitt L, Royer É, Rousseau J, Noël A. Possible minute sein avenir faux alors. Epidemiologia e Serviços de Saúde. 2013;12(3):228‑235. doi:10.99999/teste.treino.12954",
+   "item": "it014"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Ledoux D. Achever choix falloir grâce odeur hors. Medical Mycology. 2010;34(4):828‑833.",
+   "item": "it018"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Virginia-Maryland College of Veterinary Medicine. Carte auprès écrire visage corde voile sans que moindre. 1977. https://leis-treino.gov/9778",
+   "item": "it025"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Lemonnier-Albert P, Bertin V. Sentier faire demande public chercher entourer guerre retour quelqu’un tête réduire réunir. Preventive Veterinary Medicine. 1999;62(3):432‑446. doi:10.99999/teste.treino.68376",
+   "item": "it000"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Guillot A, Leduc L, Ferrand E, Pereira A, Vaillant C, Dupont A. Souvent voisin serrer cou cesser signifier approcher chanter prison an prétendre en vouloir besoin note. In: Blondel A, éd. Arrivée projet digne tant car valeur habitant figurer cri juge arracher travailler. Bègue; 1999:100‑115.",
+   "item": "it026"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Istituto Superiore di Sanità. Terrain examiner nom décider l’un épaule rencontrer musique. 2026. Consulté le 4 novembre 2026. https://exemplo-treino.org/3445",
+   "item": "it032"
+  },
+  {
+   "indice": 28,
+   "texto": "29. Fernandes S, Raynaud R, Lecomte S, Muller A, Reynaud J, Masse H. Observer journée eh chez branche renverser froid silencieux souffrance ressembler. Ferrand Letellier S.A.R.L.; 2003.",
+   "item": "it022"
+  },
+  {
+   "indice": 29,
+   "texto": "30. Godard A, Robert É, Thierry H. Court armée voici juger dimanche avant. Perrin S.A.R.L.; 1994.",
+   "item": "it010"
+  },
+  {
+   "indice": 30,
+   "texto": "31. Boyer J, Briand A. Assurer salle vue moitié traîner image plante. Ferreira; 2009.",
+   "item": "it016"
+  },
+  {
+   "indice": 31,
+   "texto": "32. Gremião F, Dijoux J, Lebrun C. Point vieux chat enfin éloigner public capable matin sans. Das Gesundheitswesen. 1978;64(10):507‑526. doi:10.99999/teste.treino.89431",
+   "item": "it006"
+  },
+  {
+   "indice": 32,
+   "texto": "33. Lacroix P. Mal chute sans parce que où réserver jeunesse cher calme toile corde apprendre curiosité guère chef. In: Voisin É, éd. Supérieur déposer pied paysage habiter haïr figure discours obliger monter fier. Guyot S.A.; 1996:98‑113.",
+   "item": "it013"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pires et al. 3",
+   "tipo": "narrativa",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4–6",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it024",
+    "it003"
+   ],
+   "referencias": [
+    3,
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9–11",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it005",
+    "it021"
+   ],
+   "referencias": [
+    8,
+    9,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,12,13",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it011",
+    "it012"
+   ],
+   "referencias": [
+    5,
+    11,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "São Paulo (Estado) 14",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bertin et al. 11",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Instituto Nacional de Câncer (Brasil) 16",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,17",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it028"
+   ],
+   "referencias": [
+    5,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "19",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,20,21",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it017",
+    "it003"
+   ],
+   "referencias": [
+    19,
+    20,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14,22,23",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it007",
+    "it014"
+   ],
+   "referencias": [
+    21,
+    13,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "24",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rodrigues et al. 12",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "10",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4,20,25",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it025",
+    "it004"
+   ],
+   "referencias": [
+    19,
+    24,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lemonnier-Albert 26",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12,17",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it028"
+   ],
+   "referencias": [
+    11,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "24",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,27",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it031"
+   ],
+   "referencias": [
+    26,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "28",
+   "tipo": "parentetica",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "29",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rodrigues et al. 12",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7,22,30",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it008",
+    "it010"
+   ],
+   "referencias": [
+    21,
+    6,
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "24",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fernandes et al. 29",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,17",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it030"
+   ],
+   "referencias": [
+    16,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Boyer 31",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Instituto Nacional de Câncer (Brasil) 16",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16,23,32",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it014",
+    "it006"
+   ],
+   "referencias": [
+    15,
+    22,
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "20,31",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it016"
+   ],
+   "referencias": [
+    19,
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "33",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9(p294)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "16",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Abad Barba et al. 15",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Âme révéler droite satisfaire classe nord impossible je circonstance fortune tôt taire chair action parmi"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

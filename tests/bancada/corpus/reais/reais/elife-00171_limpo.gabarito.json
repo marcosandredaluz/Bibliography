@@ -1,0 +1,1158 @@
+{
+ "id": "elife-00171_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00171.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Abhiman S, Iyer LM, Aravind L. 2008. BEN: a novel domain in chromatin factors and DNA viral proteins. Bioinformatics 24:458–461.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Aoki T, Schweinsberg S, Manasson J, Schedl P. 2008. A stage-specific factor confers Fab-7 boundary activity during early embryogenesis in Drosophila. Mol Cell Biol 28:1047–1060.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Bell AC, Felsenfeld G. 2000. Methylation of a CTCF-dependent boundary controls imprinted expression of the Igf2 gene. Nature 405:482–485.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Bern M, Goldberg D, McDonald WH, Yates JR. 2004. Automatic quality assessment of peptide tandem mass spectra. Bioinformatics 20:i49–i54.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Burgess-Beusse B, Farrell C, Gaszner M, Litt M, Mutskov V, Recillas-Targa F, et al.. 2002. The insulation of genes from external enhancers and silencing chromatin. Proc Natl Acad Sci USA 99:16433–16437.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Cai HN, Shen P. 2001. Effects of cis arrangement of chromatin insulators on enhancer-blocking activity. Science 291:493–495.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Cha XY, Pierce RC, Kalivas PW, Mackler SA. 1997. NAC-1, a rat brain mRNA, is increased in the nucleus accumbens three weeks after chronic cocaine self-administration. J Neurosci 17:6864–6871.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Chattopadhyay S, Kaul R, Charest A, Housman D, Chen J. 2000. SMAR1, a novel, alternatively spliced gene product, binds the Scaffold/Matrix-associated region at the T cell receptor beta locus. Genomics 68:93–96.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Chung JH, Whiteley M, Felsenfeld G. 1993. A 5' element of the chicken beta-globin domain serves as an insulator in human erythroid cells and protects against position effect in Drosophila. Cell 74:505–514.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Duan H, Dai Q, Kavaler J, Bejarano F, Medranda G, Negre N, et al.. 2011. Insensitive is a corepressor for Suppressor of Hairless and regulates Notch signalling during neural development. EMBO J 30:3120–3133.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Filippova GN, Fagerlie S, Klenova EM, Myers C, Dehner Y, Goodwin G, et al.. 1996. An exceptionally conserved transcriptional repressor, CTCF, employs different combinations of zinc fingers to bind diverged promoter sequences of avian and mammalian c-myc oncogenes. Mol Cell Biol 16:2802–2813.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Galloni M, Gyurkovics H, Schedl P, Karch F. 1993. The bluetail transposon: evidence for independent cis-regulatory domains and domain boundaries in the bithorax complex. EMBO J 12:1087–1097.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Gaszner M, Felsenfeld G. 2006. Insulators: exploiting transcriptional and epigenetic mechanisms. Nat Rev Genet 7:703–713.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Gohl D, Aoki T, Blanton J, Shanower G, Kappes G, Schedl P. 2011. Mechanism of chromosomal boundary action: roadblock, sink, or loop?. Genetics 187:731–748.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Gomes NP, Espinosa JM. 2010. Gene-specific repression of the p53 target gene PUMA via intragenic CTCF-Cohesin binding. Genes Dev 24:1022–1034.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Guo C, Yoon HS, Franklin A, Jain S, Ebert A, Cheng HL, et al.. 2011. CTCF-binding elements mediate control of V(D)J recombination. Nature 477:424–430.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Gyurkovics H, Gausz J, Kummer J, Karch F. 1990. A new homeotic mutation in the Drosophila bithorax complex removes a boundary separating two domains of regulation. EMBO J 9:2579–2585.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Hagstrom K, Muller M, Schedl P. 1996. Fab-7 functions as a chromatin domain boundary to ensure proper segment specification by the Drosophila bithorax complex. Genes Dev 10:3202–3215.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Hark AT, Schoenherr CJ, Katz DJ, Ingram RS, Levorse JM, Tilghman SM. 2000. CTCF mediates methylation-sensitive enhancer-blocking activity at the H19/Igf2 locus. Nature 405:486–489.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Hogga I, Mihaly J, Barges S, Karch F. 2001. Replacement of Fab-7 by the gypsy or scs insulator disrupts long-distance regulatory interactions in the Abd-B gene of the bithorax complex. Mol Cell 8:1145–1151.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Holdridge C, Dorsett D. 1991. Repression of hsp70 heat shock gene transcription by the suppressor of hairy-wing protein of Drosophila melanogaster. Mol Cell Biol 11:1894–1900.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Holohan EE, Kwong C, Adryan B, Bartkuhn M, Herold M, Renkawitz R, et al.. 2007. CTCF genomic binding sites in Drosophila and the organisation of the bithorax complex. PLoS Genet 3:e112.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Iampietro C, Cleard F, Gyurkovics H, Maeda RK, Karch F. 2008. Boundary swapping in the Drosophila Bithorax complex. Development 135:3983–3987.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Kappes G, Deshpande G, Mulvey BB, Horabin JI, Schedl P. 2011. The Drosophila Myc gene, diminutive, is a positive regulator of the Sex-lethal establishment promoter, Sxl-Pe. Proc Natl Acad Sci USA 108:1543–1548.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Keefe AD, Wilson DS, Seelig B, Szostak JW. 2001. One-step purification of recombinant proteins using a nanomolar-affinity streptavidin-binding peptide, the SBP-Tag. Protein Expr Purif 23:440–446.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Kellum R, Schedl P. 1991. A position-effect assay for boundaries of higher order chromosomal domains. Cell 64:941–950.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Kennerdell JR, Carthew RW. 1998. Use of dsRNA-mediated genetic interference to demonstrate that frizzled and frizzled 2 act in the wingless pathway. Cell 95:1017–1026.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Korutla L, Wang P, Jackson TG, Mackler SA. 2009. NAC1, a POZ/BTB protein that functions as a corepressor. Neurochem Int 54:245–252.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Kyrchanova O, Chetverina D, Maksimenko O, Kullyev A, Georgiev P. 2008a. Orientation-dependent interaction between Drosophila insulators is a property of this class of regulatory elements. Nucleic Acids Res 36:7019–7028.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Kyrchanova O, Toshchakov S, Podstreshnaya Y, Parshikov A, Georgiev P. 2008b. Functional interaction between the Fab-7 and Fab-8 boundaries and the upstream promoter region in the Drosophila Abd-B gene. Mol Cell Biol 28:4188–4195.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Kyrchanova O, Ivlieva T, Toshchakov S, Parshikov A, Maksimenko O, Georgiev P. 2011. Selective interactions of boundaries with upstream region of Abd-B promoter in Drosophila bithorax complex and role of dCTCF in this process. Nucleic Acids Res 39:3042–3052.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Mackler SA, Korutla L, Cha XY, Koebbe MJ, Fournier KM, Bowers MS, et al.. 2000. NAC-1 is a brain POZ/BTB protein that can prevent cocaine-induced sensitization in the rat. J Neurosci 20:6210–6217.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Maeda RK, Karch F. 2006. The ABC of the BX-C: the bithorax complex explained. Development 133:1413–1422.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Maeda RK, Karch F. 2010. Cis-regulation in the Drosophila Bithorax Complex. Adv Exp Med Biol 689:17–40.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Maksimenko O, Golovnin A, Georgiev P. 2008. Enhancer-promoter communication is regulated by insulator pairing in a Drosophila model bigenic locus. Mol Cell Biol 28:5469–5477.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Mihaly J, Hogga I, Gausz J, Gyurkovics H, Karch F. 1997. In situ dissection of the Fab-7 region of the bithorax complex into a chromatin domain boundary and a Polycomb-response element. Development 124:1809–1820.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Monahan K, Rudnick ND, Kehayova PD, Pauli F, Newberry KM, Myers RM, et al.. 2012. Role of CCCTC binding factor (CTCF) and cohesin in the generation of single-cell diversity of Protocadherin-alpha gene expression. Proc Natl Acad Sci USA 109:9125–9130.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Muravyova E, Golovnin A, Gracheva E, Parshikov A, Belenkaya T, Pirrotta V, et al.. 2001. Loss of insulator activity by paired Su(Hw) chromatin insulators. Science 291:495–498.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Noma K, Allis CD, Grewal SI. 2001. Transitions in distinct histone H3 methylation patterns at the heterochromatin domain boundaries. Science 293:1150–1155.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Nowak DE, Tian B, Brasier AR. 2005. Two-step cross-linking method for identification of NF-kappaB gene network by chromatin immunoprecipitation. Biotechniques 39:715–725.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Ribeiro de Almeida C, Stadhouders R, de Bruijn MJ, Bergen IM, Thongjuea S, Lenhard B, et al.. 2011. The DNA-binding protein CTCF limits proximal Vkappa recombination and restricts kappa enhancer interactions to the immunoglobulin kappa light chain locus. Immunity 35:501–513.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Schweinsberg S, Schedl P. 2004. Developmental modulation of Fab-7 boundary function. Development 131:4743–4749.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Schweinsberg S, Hagstrom K, Gohl D, Schedl P, Kumar RP, Mishra R, et al.. 2004. The enhancer-blocking activity of the Fab-7 boundary from the Drosophila bithorax complex requires GAGA-factor-binding sites. Genetics 168:1371–1384.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Singer JB, Lengyel JA. 1997. Expression and sequence analysis of the Drosophila blastoderm-specific gene bsg25A. Gene 197:379–382.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Tabb DL, McDonald WH, Yates JR. 2002. DTASelect and Contrast: tools for assembling and comparing protein identifications from shotgun proteomics. J Proteome Res 1:21–26.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Wang J, Rao S, Chu J, Shen X, Levasseur DN, Theunissen TW, et al.. 2006. A protein interaction network for pluripotency of embryonic stem cells. Nature 444:364–368.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Washburn MP, Wolters D, Yates JR. 2001. Large-scale analysis of the yeast proteome by multidimensional protein identification technology. Nat Biotechnol 19:242–247.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Witcher M, Emerson BM. 2009. Epigenetic silencing of the p16(INK4a) tumor suppressor is associated with loss of CTCF binding and a chromatin boundary. Mol Cell 34:271–284.",
+   "item": "bib48"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Gaszner and Felsenfeld, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Holdridge and Dorsett, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kellum and Schedl, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chung et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kellum and Schedl, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chung et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burgess–Beusse et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cai and Shen, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Muravyova et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Noma et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maeda and Karch, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guo et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ribeiro de Almeida et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Monahan et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gyurkovics et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Holdridge and Dorsett, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kellum and Schedl, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chung et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bell and Felsenfeld, 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Witcher and Emerson, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gomes and Espinosa, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bell and Felsenfeld, 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hark et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schweinsberg and Schedl, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gyurkovics et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mihaly et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hagstrom et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schweinsberg et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schweinsberg and Schedl, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schweinsberg et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aoki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aoki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Abhiman et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Singer and Lengyel, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aoki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cha et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mackler et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Korutla et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Duan et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Duan et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aoki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Singer and Lengyel, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nowak et al. (2005)",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mihaly et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aoki et al. 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schweinsberg and Schedl, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Abhiman et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cai and Shen, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Muravyova et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gohl et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyrchanova et al., 2008a",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maksimenko et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gohl et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyrchanova et al., 2008b",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hogga et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Iampietro et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gohl et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyrchanova et al. (2011)",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyrchanova et al., 2008a",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Holohan et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyrchanova et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aoki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cha et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mackler et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Korutla et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Duan et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Filippova et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chattopadhyay et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aoki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aoki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Washburn et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bern et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tabb et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Keefe et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nowak et al. (2005)",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kappes et al. (2011)",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kennerdell and Carthew, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aoki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "E",
+   "referencia": 11,
+   "item": "bib12"
+  },
+  {
+   "ponto": "E",
+   "referencia": 33,
+   "item": "bib34"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

@@ -1,0 +1,897 @@
+{
+ "id": "elife-00078_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00078.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Altman-Price N, Mevarech M. 2009. Genetic evidence for the importance of protein acetylation and protein deacetylation in the halophilic archaeon Haloferax volcanii. J Bacteriol 191:1610–1617.",
+   "item": "bib2"
+  },
+  {
+   "indice": 1,
+   "texto": "Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ. 1990. Basic local alignment search tool. J Mol Biol 215:403–410.",
+   "item": "bib3"
+  },
+  {
+   "indice": 2,
+   "texto": "Bailey KA, Pereira SL, Widom J, Reeve JN. 2000. Archaeal histone selection of nucleosome positioning sequences and the procaryotic origin of histone-dependent genome evolution. J Mol Biol 303:25–34.",
+   "item": "bib4"
+  },
+  {
+   "indice": 3,
+   "texto": "Breuert S, Allers T, Spohn G, Soppa J. 2006. Regulated polyploidy in halophilic archaea. PloS One 1:e92.",
+   "item": "bib5"
+  },
+  {
+   "indice": 4,
+   "texto": "Chang GS, Noegel AA, Mavrich TN, Muller R, Tomsho LP, Ward E, et al.. 2012. Unusual combinatorial involvement of poly-A/T tracts in organizing genes and chromatin in Dictyostelium. Genome Res 22:1098–1106.",
+   "item": "bib6"
+  },
+  {
+   "indice": 5,
+   "texto": "Chung HR, Dunkel I, Heise F, Linke C, Krobitsch S, Ehrenhofer-Murray AE, et al.. 2010. The effect of micrococcal nuclease digestion on nucleosome positioning data. PloS One 5:e15754.",
+   "item": "bib7"
+  },
+  {
+   "indice": 6,
+   "texto": "David L, Huber W, Granovskaia M, Toedling J, Palm CJ, Bofkin L, et al.. 2006. A high-resolution map of transcription in the yeast genome. Proc Natl Acad Sci USA 103:5320–5325.",
+   "item": "bib8"
+  },
+  {
+   "indice": 7,
+   "texto": "DePristo MA, Banks E, Poplin R, Garimella KV, Maguire JR, Hartl C, et al.. 2011. A framework for variation discovery and genotyping using next-generation DNA sequencing data. Nat Genet 43:491–498.",
+   "item": "bib9"
+  },
+  {
+   "indice": 8,
+   "texto": "Du X, Takagi H. 2007. N-Acetyltransferase Mpr1 confers ethanol tolerance on Saccharomyces cerevisiae by reducing reactive oxygen species. Appl Microbiol Biotechnol 75:1343–1351.",
+   "item": "bib10"
+  },
+  {
+   "indice": 9,
+   "texto": "Fiume M, Williams V, Brook A, Brudno M. 2010. Savant: genome browser for high-throughput sequencing data. Bioinformatics 26:1938–1944.",
+   "item": "bib11"
+  },
+  {
+   "indice": 10,
+   "texto": "Forbes AJ, Patrie SM, Taylor GK, Kim YB, Jiang L, Kelleher NL. 2004. Targeted analysis and discovery of posttranslational modifications in proteins from methanogenic archaea by top-down MS. Proc Natl Acad Sci USA 101:2678–2683.",
+   "item": "bib12"
+  },
+  {
+   "indice": 11,
+   "texto": "Geer LY, Domrachev M, Lipman DJ, Bryant SH. 2002. CDART: protein homology by domain architecture. Genome Res 12:1619–1623.",
+   "item": "bib13"
+  },
+  {
+   "indice": 12,
+   "texto": "Hartman AL, Norais C, Badger JH, Delmas S, Haldenby S, Madupu R, et al.. 2010. The complete genome sequence of Haloferax volcanii DS2, a model archaeon. PloS One 5:e9605.",
+   "item": "bib14"
+  },
+  {
+   "indice": 13,
+   "texto": "He S, Wurtzel O, Singh K, Froula JL, Yilmaz S, Tringe SG, et al.. 2010. Validation of two ribosomal RNA removal methods for microbial metatranscriptomics. Nat Methods 7:807–812.",
+   "item": "bib15"
+  },
+  {
+   "indice": 14,
+   "texto": "Jiang C, Pugh BF. 2009. Nucleosome positioning and gene regulation: advances through genomics. Nat Rev Genet 10:161–172.",
+   "item": "bib16"
+  },
+  {
+   "indice": 15,
+   "texto": "Kaminska KH, Bujnicki JM. 2008. Bacteriophage Mu Mom protein responsible for DNA modification is a new member of the acyltransferase superfamily. Cell Cycle 7:120–121.",
+   "item": "bib17"
+  },
+  {
+   "indice": 16,
+   "texto": "Kaplan N, Moore IK, Fondufe-Mittendorf Y, Gossett AJ, Tillo D, Field Y, et al.. 2009. The DNA-encoded nucleosome organization of a eukaryotic genome. Nature 458:362–366.",
+   "item": "bib18"
+  },
+  {
+   "indice": 17,
+   "texto": "Langmead B, Salzberg SL. 2012. Fast gapped-read alignment with Bowtie 2. Nat Methods 9:357–359.",
+   "item": "bib19"
+  },
+  {
+   "indice": 18,
+   "texto": "Lee W, Tillo D, Bray N, Morse RH, Davis RW, Hughes TR, Nislow C. 2007. A high-resolution atlas of nucleosome occupancy in yeast. Nat Genet 39:1235–1244.",
+   "item": "bib20"
+  },
+  {
+   "indice": 19,
+   "texto": "Marchler-Bauer A, Lu S, Anderson JB, Chitsaz F, Derbyshire MK, Deweese-Scott C, et al.. 2011. CDD: a conserved domain database for the functional annotation of proteins. Nucleic Acids Res 39:D225–D229.",
+   "item": "bib21"
+  },
+  {
+   "indice": 20,
+   "texto": "Mckenna A, Hanna M, Banks E, Sivachenko A, Cibulskis K, Kernytsky A, et al.. 2010. The Genome Analysis Toolkit: a MapReduce framework for analyzing next-generation DNA sequencing data. Genome Res 20:1297–1303.",
+   "item": "bib22"
+  },
+  {
+   "indice": 21,
+   "texto": "Mullakhanbhai MF, Larsen H. 1975. Halobacterium volcanii spec. nov., a Dead Sea halobacterium with a moderate salt requirement. Arch Microbiol 104:207–214.",
+   "item": "bib23"
+  },
+  {
+   "indice": 22,
+   "texto": "Palmer JR, Daniels CJ. 1995. In vivo definition of an archaeal promoter. J Bacteriol 177:1844–1849.",
+   "item": "bib24"
+  },
+  {
+   "indice": 23,
+   "texto": "Pereira SL, Reeve JN. 1998. Histones and nucleosomes in Archaea and Eukarya: a comparative analysis. Extremophiles 2:141–148.",
+   "item": "bib25"
+  },
+  {
+   "indice": 24,
+   "texto": "Pereira SL, Grayling RA, Lurz R, Reeve JN. 1997. Archaeal nucleosomes. Proc Natl Acad Sci USA 94:12633–12637.",
+   "item": "bib26"
+  },
+  {
+   "indice": 25,
+   "texto": "Puerta C, Hernandez F, Gutierrez C, Pineiro M, Lopez-Alarcon L, Palacian E. 1993. Efficient transcription of a DNA template associated with histone (H3.H4)2 tetramers. J Biol Chem 268:26663–26667.",
+   "item": "bib27"
+  },
+  {
+   "indice": 26,
+   "texto": "Rizzo JM, Mieczkowski PA, Buck MJ. 2011. Tup1 stabilizes promoter nucleosome positioning and occupancy at transcriptionally plastic genes. Nucleic Acids Res 39:8803–8819.",
+   "item": "bib28"
+  },
+  {
+   "indice": 27,
+   "texto": "Sajan SA, Hawkins RD. 2012. Methods for identifying higher-order chromatin structure. Annu Rev Genomics Hum Genet 13:59–82.",
+   "item": "bib29"
+  },
+  {
+   "indice": 28,
+   "texto": "Sandman K, Reeve JN. 2006. Archaeal histones and the origin of the histone fold. Curr Opin Microbiol 9:520–525.",
+   "item": "bib30"
+  },
+  {
+   "indice": 29,
+   "texto": "Sartorius-Neef S, Pfeifer F. 2004. In vivo studies on putative Shine-Dalgarno sequences of the halophilic archaeon Halobacterium salinarum. Mol Microbiol 51:579–588.",
+   "item": "bib31"
+  },
+  {
+   "indice": 30,
+   "texto": "Satchwell SC, Drew HR, Travers AA. 1986. Sequence periodicities in chicken nucleosome core DNA. J Mol Biol 191:659–675.",
+   "item": "bib32"
+  },
+  {
+   "indice": 31,
+   "texto": "Shivaswamy S, Bhinge A, Zhao Y, Jones S, Hirst M, Iyer VR. 2008. Dynamic remodeling of individual nucleosomes across a eukaryotic genome in response to transcriptional perturbation. PLoS Biol 6:e65.",
+   "item": "bib33"
+  },
+  {
+   "indice": 32,
+   "texto": "Talbert PB, Henikoff S. 2010. Histone variants—ancient wrap artists of the epigenome. Nat Rev Mol Cell Biol 11:264–275.",
+   "item": "bib35"
+  },
+  {
+   "indice": 33,
+   "texto": "Trapnell C, Pachter L, Salzberg SL. 2009. TopHat: discovering splice junctions with RNA-Seq. Bioinformatics 25:1105–1111.",
+   "item": "bib36"
+  },
+  {
+   "indice": 34,
+   "texto": "Tsui K, Durbic T, Gebbia M, Nislow C. 2012. Genomic approaches for determining nucleosome occupancy in yeast. Methods Mol Biol 833:389–411.",
+   "item": "bib37"
+  },
+  {
+   "indice": 35,
+   "texto": "Valouev A, Johnson SM, Boyd SD, Smith CL, Fire AZ, Sidow A. 2011. Determinants of nucleosome organization in primary human cells. Nature 474:516–520.",
+   "item": "bib38"
+  },
+  {
+   "indice": 36,
+   "texto": "Wurtzel O, Sapra R, Chen F, Zhu Y, Simmons BA, Sorek R. 2010. A single-base resolution map of an archaeal transcriptome. Genome Res 20:133–141.",
+   "item": "bib39"
+  },
+  {
+   "indice": 37,
+   "texto": "Zhulidov PA, Bogdanova EA, Shcheglov AS, Vagner LL, Khaspekov GL, Kozhemyako VB, et al.. 2004. Simple cDNA normalization using kamchatka crab duplex-specific nuclease. Nucleic Acids Res 32:e37.",
+   "item": "bib40"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Pereira et al. (1997)",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pereira and Reeve, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Talbert and Henikoff, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sandman and Reeve, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Talbert and Henikoff, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mullakhanbhai and Larsen, 1975",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hartman et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Breuert et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Geer et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Talbert and Henikoff, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marchler-Bauer et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mullakhanbhai and Larsen, 1975",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tsui et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hartman et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chung et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smith, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Palmer and Daniels, 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pereira et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Valouev et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Satchwell et al., 1986",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bailey et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Albert et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hartman et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhulidov et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trapnell et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "McKenna et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wurtzel et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wurtzel et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "David et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Altschul et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marchler-Bauer et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Du and Takagi, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaminska and Bujnicki, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Forbes et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Altman-Price and Mevarech, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang and Pugh, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang and Pugh, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sartorius-Neef and Pfeifer, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Puerta et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Talbert and Henikoff, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sajan and Hawkins, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chung et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rizzo et al. (2011)",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tsui et al. (2012)",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Langmead and Salzberg, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "DePristo et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shivaswamy et al. (2008)",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaplan et al. (2009)",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smith, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smith, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "He et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhulidov et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wurtzel et al. (2010)",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trapnell et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hartman et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hartman et al. (2010)",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hartman et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Altschul et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marchler-Bauer et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Smith, 1997",
+   "item": "bib34"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Albert et al., 2007",
+   "item": "bib1"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Smith, 1997",
+   "item": "bib34"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Smith, 1997",
+   "item": "bib34"
+  },
+  {
+   "ponto": "E",
+   "referencia": 4,
+   "item": "bib6"
+  },
+  {
+   "ponto": "E",
+   "referencia": 9,
+   "item": "bib11"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

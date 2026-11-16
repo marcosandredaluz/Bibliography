@@ -1,0 +1,7575 @@
+{
+"fonte": "inukshuk/anystyle, res/parser/core.xml (licença BSD-2-Clause), sequências rotuladas manualmente",
+"itens": [
+{
+"linha": 0,
+"autor_principal": "Heidegger",
+"ano": "1927"
+},
+{
+"linha": 1,
+"autor_principal": "Romero",
+"ano": "2011"
+},
+{
+"linha": 2,
+"autor_principal": "Solon",
+"ano": "1999"
+},
+{
+"linha": 3,
+"autor_principal": "Pérez-Higueras JJ",
+"ano": "2014"
+},
+{
+"linha": 4,
+"autor_principal": "Fischer",
+"ano": "2000"
+},
+{
+"linha": 5,
+"autor_principal": "Brischoux",
+"ano": "2009"
+},
+{
+"linha": 6,
+"autor_principal": "Han",
+"ano": "2010"
+},
+{
+"linha": 7,
+"autor_principal": "Adams",
+"ano": "1930"
+},
+{
+"linha": 8,
+"autor_principal": "Lee",
+"ano": "1990"
+},
+{
+"linha": 9,
+"autor_principal": "Cau",
+"ano": "1992"
+},
+{
+"linha": 10,
+"autor_principal": "Kitsuregawa",
+"ano": "1983"
+},
+{
+"linha": 11,
+"autor_principal": null,
+"ano": "1993"
+},
+{
+"linha": 12,
+"autor_principal": null,
+"ano": "1997"
+},
+{
+"linha": 13,
+"autor_principal": "Landi",
+"ano": "1990"
+},
+{
+"linha": 14,
+"autor_principal": "Enright",
+"ano": "1978"
+},
+{
+"linha": 15,
+"autor_principal": "Gmytrasiewicz",
+"ano": "1991a"
+},
+{
+"linha": 16,
+"autor_principal": "Bookstein",
+"ano": "1995"
+},
+{
+"linha": 17,
+"autor_principal": "Dayal",
+"ano": "1993"
+},
+{
+"linha": 18,
+"autor_principal": "Qiao",
+"ano": "1995"
+},
+{
+"linha": 19,
+"autor_principal": "Ramadge",
+"ano": "1989"
+},
+{
+"linha": 20,
+"autor_principal": "Schaal",
+"ano": "1994"
+},
+{
+"linha": 21,
+"autor_principal": "Hinton",
+"ano": "1987"
+},
+{
+"linha": 22,
+"autor_principal": "Cameron-Jones",
+"ano": "1994"
+},
+{
+"linha": 23,
+"autor_principal": "Ourston",
+"ano": "1991"
+},
+{
+"linha": 24,
+"autor_principal": "Styer",
+"ano": "1992"
+},
+{
+"linha": 25,
+"autor_principal": "Pearl",
+"ano": "1988"
+},
+{
+"linha": 26,
+"autor_principal": "Larry",
+"ano": "1992"
+},
+{
+"linha": 27,
+"autor_principal": "Bylander",
+"ano": "1992"
+},
+{
+"linha": 28,
+"autor_principal": null,
+"ano": "1992"
+},
+{
+"linha": 29,
+"autor_principal": "Fahringer",
+"ano": "1992"
+},
+{
+"linha": 30,
+"autor_principal": "Kallis",
+"ano": "1991"
+},
+{
+"linha": 31,
+"autor_principal": "Fletcher",
+"ano": "1987"
+},
+{
+"linha": 32,
+"autor_principal": "Clark",
+"ano": "1978"
+},
+{
+"linha": 33,
+"autor_principal": "Gent",
+"ano": "1994a"
+},
+{
+"linha": 34,
+"autor_principal": "Alevizos",
+"ano": "1991"
+},
+{
+"linha": 35,
+"autor_principal": "Ancona",
+"ano": "1996"
+},
+{
+"linha": 36,
+"autor_principal": "Yang",
+"ano": "1993"
+},
+{
+"linha": 37,
+"autor_principal": "Gupta",
+"ano": "1991"
+},
+{
+"linha": 38,
+"autor_principal": null,
+"ano": "1986"
+},
+{
+"linha": 39,
+"autor_principal": "Ghezzi",
+"ano": "1990"
+},
+{
+"linha": 40,
+"autor_principal": "Cohen",
+"ano": "1992"
+},
+{
+"linha": 41,
+"autor_principal": "Winston",
+"ano": "1983"
+},
+{
+"linha": 42,
+"autor_principal": "Domingos",
+"ano": "1996b"
+},
+{
+"linha": 43,
+"autor_principal": "Harker",
+"ano": "1990"
+},
+{
+"linha": 44,
+"autor_principal": "Knopfmacher",
+"ano": "1995"
+},
+{
+"linha": 45,
+"autor_principal": "Feferman",
+"ano": "1962"
+},
+{
+"linha": 46,
+"autor_principal": "Gharachorloo",
+"ano": "1990"
+},
+{
+"linha": 47,
+"autor_principal": "Etzioni",
+"ano": "1994"
+},
+{
+"linha": 48,
+"autor_principal": "Hiranandani",
+"ano": "1991"
+},
+{
+"linha": 49,
+"autor_principal": "Chandra",
+"ano": "1994"
+},
+{
+"linha": 50,
+"autor_principal": "Zemel",
+"ano": "1990"
+},
+{
+"linha": 51,
+"autor_principal": "Corkill",
+"ano": "1979"
+},
+{
+"linha": 52,
+"autor_principal": "Callahan",
+"ano": "1990"
+},
+{
+"linha": 53,
+"autor_principal": "Forsyth",
+"ano": "1992"
+},
+{
+"linha": 54,
+"autor_principal": "Tromp",
+"ano": "1989"
+},
+{
+"linha": 55,
+"autor_principal": "Anderson",
+"ano": "1991"
+},
+{
+"linha": 56,
+"autor_principal": "Jahanian",
+"ano": "1986"
+},
+{
+"linha": 57,
+"autor_principal": "Hughes",
+"ano": "1968"
+},
+{
+"linha": 58,
+"autor_principal": "Ostroff",
+"ano": "1989"
+},
+{
+"linha": 59,
+"autor_principal": "Imielinski",
+"ano": "1994"
+},
+{
+"linha": 60,
+"autor_principal": "Pagallo",
+"ano": "1990"
+},
+{
+"linha": 61,
+"autor_principal": "Waltz",
+"ano": "1971"
+},
+{
+"linha": 62,
+"autor_principal": "Cheeseman",
+"ano": "1991"
+},
+{
+"linha": 63,
+"autor_principal": "Cleveland",
+"ano": "1994"
+},
+{
+"linha": 64,
+"autor_principal": "Sandholm",
+"ano": "1994"
+},
+{
+"linha": 65,
+"autor_principal": "Mozer",
+"ano": "1988"
+},
+{
+"linha": 66,
+"autor_principal": "Gupta",
+"ano": "1993"
+},
+{
+"linha": 67,
+"autor_principal": "Dietterich",
+"ano": "1995"
+},
+{
+"linha": 68,
+"autor_principal": "Witkin",
+"ano": "1983"
+},
+{
+"linha": 69,
+"autor_principal": "Fink",
+"ano": "1994"
+},
+{
+"linha": 70,
+"autor_principal": "Langley",
+"ano": "1995"
+},
+{
+"linha": 71,
+"autor_principal": "Kirkpatrick",
+"ano": "1983"
+},
+{
+"linha": 72,
+"autor_principal": "Rosene",
+"ano": "1990"
+},
+{
+"linha": 73,
+"autor_principal": "Michalski",
+"ano": "1983"
+},
+{
+"linha": 74,
+"autor_principal": "David",
+"ano": "1991"
+},
+{
+"linha": 75,
+"autor_principal": "Gmytrasiewicz",
+"ano": "1992"
+},
+{
+"linha": 76,
+"autor_principal": "Baader",
+"ano": "1991"
+},
+{
+"linha": 77,
+"autor_principal": "Dantsin",
+"ano": "1997"
+},
+{
+"linha": 78,
+"autor_principal": "Peot",
+"ano": "1993"
+},
+{
+"linha": 79,
+"autor_principal": "Burton",
+"ano": "1974"
+},
+{
+"linha": 80,
+"autor_principal": null,
+"ano": "1987"
+},
+{
+"linha": 81,
+"autor_principal": null,
+"ano": "1997"
+},
+{
+"linha": 82,
+"autor_principal": "Horn",
+"ano": "1986"
+},
+{
+"linha": 83,
+"autor_principal": "Dongarra",
+"ano": "1979"
+},
+{
+"linha": 84,
+"autor_principal": null,
+"ano": "1993"
+},
+{
+"linha": 85,
+"autor_principal": "Rivest",
+"ano": "1989"
+},
+{
+"linha": 86,
+"autor_principal": "Chiarulli",
+"ano": null
+},
+{
+"linha": 87,
+"autor_principal": "Sterling",
+"ano": "1995"
+},
+{
+"linha": 88,
+"autor_principal": "Salomons",
+"ano": "1994"
+},
+{
+"linha": 89,
+"autor_principal": "Woo",
+"ano": "1995"
+},
+{
+"linha": 90,
+"autor_principal": "Dennis",
+"ano": "1983"
+},
+{
+"linha": 91,
+"autor_principal": "Borenstein",
+"ano": "1988"
+},
+{
+"linha": 92,
+"autor_principal": "Lifschitz",
+"ano": "1987"
+},
+{
+"linha": 93,
+"autor_principal": "Li",
+"ano": "1993"
+},
+{
+"linha": 94,
+"autor_principal": "Moggi",
+"ano": "1989"
+},
+{
+"linha": 95,
+"autor_principal": "Smith",
+"ano": "1990"
+},
+{
+"linha": 96,
+"autor_principal": "Acampora",
+"ano": "1989"
+},
+{
+"linha": 97,
+"autor_principal": "Blumer",
+"ano": "1989"
+},
+{
+"linha": 98,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 99,
+"autor_principal": "Hermenegildo",
+"ano": "1986"
+},
+{
+"linha": 100,
+"autor_principal": "Valiant",
+"ano": "1990"
+},
+{
+"linha": 101,
+"autor_principal": "Ling",
+"ano": "1995"
+},
+{
+"linha": 102,
+"autor_principal": "Albert",
+"ano": "1985"
+},
+{
+"linha": 103,
+"autor_principal": "Conry",
+"ano": "1991"
+},
+{
+"linha": 104,
+"autor_principal": "Chernoff",
+"ano": "1952"
+},
+{
+"linha": 105,
+"autor_principal": "Flajolet",
+"ano": "1996"
+},
+{
+"linha": 106,
+"autor_principal": null,
+"ano": "1994"
+},
+{
+"linha": 107,
+"autor_principal": "Votta",
+"ano": "1995"
+},
+{
+"linha": 108,
+"autor_principal": "Kam",
+"ano": "1977"
+},
+{
+"linha": 109,
+"autor_principal": "Cooper",
+"ano": "1990"
+},
+{
+"linha": 110,
+"autor_principal": "Pedregal-Martin",
+"ano": "1995"
+},
+{
+"linha": 111,
+"autor_principal": "Cohen",
+"ano": "1990"
+},
+{
+"linha": 112,
+"autor_principal": "Reiman",
+"ano": "1988"
+},
+{
+"linha": 113,
+"autor_principal": "Herlihy",
+"ano": "1987"
+},
+{
+"linha": 114,
+"autor_principal": "Linden",
+"ano": "1993"
+},
+{
+"linha": 115,
+"autor_principal": "Holte",
+"ano": "1989"
+},
+{
+"linha": 116,
+"autor_principal": "Meilijson",
+"ano": "1977"
+},
+{
+"linha": 117,
+"autor_principal": "Hopcroft",
+"ano": "1979"
+},
+{
+"linha": 118,
+"autor_principal": "Aditya",
+"ano": "1994"
+},
+{
+"linha": 119,
+"autor_principal": "Arthur",
+"ano": "1994"
+},
+{
+"linha": 120,
+"autor_principal": "Zellweger",
+"ano": "1984"
+},
+{
+"linha": 121,
+"autor_principal": "Oliker",
+"ano": "1992"
+},
+{
+"linha": 122,
+"autor_principal": "Horn",
+"ano": "1986"
+},
+{
+"linha": 123,
+"autor_principal": "Feeley",
+"ano": "1992"
+},
+{
+"linha": 124,
+"autor_principal": "Gardenfors",
+"ano": "1988"
+},
+{
+"linha": 125,
+"autor_principal": "De Raedt",
+"ano": "1990"
+},
+{
+"linha": 126,
+"autor_principal": "Reilly",
+"ano": "1996"
+},
+{
+"linha": 127,
+"autor_principal": null,
+"ano": "1990"
+},
+{
+"linha": 128,
+"autor_principal": "Butcher",
+"ano": "1993"
+},
+{
+"linha": 129,
+"autor_principal": "Bederson",
+"ano": "1994"
+},
+{
+"linha": 130,
+"autor_principal": "Gmytrasiewicz",
+"ano": "1991b"
+},
+{
+"linha": 131,
+"autor_principal": "Gupta",
+"ano": "1995"
+},
+{
+"linha": 132,
+"autor_principal": null,
+"ano": "1995"
+},
+{
+"linha": 133,
+"autor_principal": "Deransart",
+"ano": "1988"
+},
+{
+"linha": 134,
+"autor_principal": "Mohr",
+"ano": "1990"
+},
+{
+"linha": 135,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 136,
+"autor_principal": "Scott",
+"ano": "1990"
+},
+{
+"linha": 137,
+"autor_principal": "Poole",
+"ano": "1988"
+},
+{
+"linha": 138,
+"autor_principal": "Eggers",
+"ano": "1990"
+},
+{
+"linha": 139,
+"autor_principal": "Abiteboul",
+"ano": "1991"
+},
+{
+"linha": 140,
+"autor_principal": "Lipsett",
+"ano": "1989"
+},
+{
+"linha": 141,
+"autor_principal": "Majumdar",
+"ano": "1988"
+},
+{
+"linha": 142,
+"autor_principal": "Carr",
+"ano": "1994"
+},
+{
+"linha": 143,
+"autor_principal": "Fikes",
+"ano": "1971"
+},
+{
+"linha": 144,
+"autor_principal": "Felleisen",
+"ano": null
+},
+{
+"linha": 145,
+"autor_principal": "Herlihy",
+"ano": "1990"
+},
+{
+"linha": 146,
+"autor_principal": "Wolfe",
+"ano": "1987"
+},
+{
+"linha": 147,
+"autor_principal": "Raab",
+"ano": "1977"
+},
+{
+"linha": 148,
+"autor_principal": null,
+"ano": "1995"
+},
+{
+"linha": 149,
+"autor_principal": "Snodgrass",
+"ano": "1987"
+},
+{
+"linha": 150,
+"autor_principal": "Vander Linden",
+"ano": "1992"
+},
+{
+"linha": 151,
+"autor_principal": "Witten",
+"ano": "1987"
+},
+{
+"linha": 152,
+"autor_principal": "Emihovich",
+"ano": "1988"
+},
+{
+"linha": 153,
+"autor_principal": "Harper",
+"ano": "1995"
+},
+{
+"linha": 154,
+"autor_principal": "Romanow",
+"ano": "1995"
+},
+{
+"linha": 155,
+"autor_principal": "Knopfmacher",
+"ano": "1996"
+},
+{
+"linha": 156,
+"autor_principal": "Amarasinghe",
+"ano": "1993"
+},
+{
+"linha": 157,
+"autor_principal": "Amza",
+"ano": "1996"
+},
+{
+"linha": 158,
+"autor_principal": "Srinivasan",
+"ano": "1996"
+},
+{
+"linha": 159,
+"autor_principal": "Berthomieu",
+"ano": "1991"
+},
+{
+"linha": 160,
+"autor_principal": "Agarwal",
+"ano": "1990"
+},
+{
+"linha": 161,
+"autor_principal": "Serra",
+"ano": "1982"
+},
+{
+"linha": 162,
+"autor_principal": null,
+"ano": "1991"
+},
+{
+"linha": 163,
+"autor_principal": "Catlett",
+"ano": "1991b"
+},
+{
+"linha": 164,
+"autor_principal": "Quinlan",
+"ano": "1990"
+},
+{
+"linha": 165,
+"autor_principal": "Felleisen",
+"ano": "1988"
+},
+{
+"linha": 166,
+"autor_principal": "Narayana",
+"ano": "1988"
+},
+{
+"linha": 167,
+"autor_principal": "Adorni",
+"ano": "1993"
+},
+{
+"linha": 168,
+"autor_principal": "Ripley",
+"ano": "1992"
+},
+{
+"linha": 169,
+"autor_principal": "Umrigar",
+"ano": "1985"
+},
+{
+"linha": 170,
+"autor_principal": null,
+"ano": "1990"
+},
+{
+"linha": 171,
+"autor_principal": "Eifrig",
+"ano": "1994"
+},
+{
+"linha": 172,
+"autor_principal": "MacWhinney",
+"ano": "1993"
+},
+{
+"linha": 173,
+"autor_principal": "Lovasz",
+"ano": "1991"
+},
+{
+"linha": 174,
+"autor_principal": null,
+"ano": "1996"
+},
+{
+"linha": 175,
+"autor_principal": "Bunke",
+"ano": "1983"
+},
+{
+"linha": 176,
+"autor_principal": "Kyriazis",
+"ano": null
+},
+{
+"linha": 177,
+"autor_principal": "Bricker",
+"ano": "1992"
+},
+{
+"linha": 178,
+"autor_principal": "Laird",
+"ano": "1994"
+},
+{
+"linha": 179,
+"autor_principal": "Peot",
+"ano": "1993"
+},
+{
+"linha": 180,
+"autor_principal": "Demmel",
+"ano": "1995"
+},
+{
+"linha": 181,
+"autor_principal": "Sarita",
+"ano": "1996"
+},
+{
+"linha": 182,
+"autor_principal": "Jia",
+"ano": "1993"
+},
+{
+"linha": 183,
+"autor_principal": null,
+"ano": "1986"
+},
+{
+"linha": 184,
+"autor_principal": "Wettschereck",
+"ano": "1995"
+},
+{
+"linha": 185,
+"autor_principal": "Williams",
+"ano": "1994"
+},
+{
+"linha": 186,
+"autor_principal": "Mostow",
+"ano": "1987"
+},
+{
+"linha": 187,
+"autor_principal": "Raiffa",
+"ano": "1982"
+},
+{
+"linha": 188,
+"autor_principal": "Plotkin",
+"ano": "1971a"
+},
+{
+"linha": 189,
+"autor_principal": "Hull",
+"ano": "1994"
+},
+{
+"linha": 190,
+"autor_principal": "Anoop Gupta",
+"ano": "1991"
+},
+{
+"linha": 191,
+"autor_principal": "Aaron Kershenbaum",
+"ano": "1988"
+},
+{
+"linha": 192,
+"autor_principal": "Card",
+"ano": "1991"
+},
+{
+"linha": 193,
+"autor_principal": "Wolfe",
+"ano": "1989"
+},
+{
+"linha": 194,
+"autor_principal": "Plunkett",
+"ano": "1991"
+},
+{
+"linha": 195,
+"autor_principal": "William",
+"ano": "1977"
+},
+{
+"linha": 196,
+"autor_principal": "Renals",
+"ano": "1989"
+},
+{
+"linha": 197,
+"autor_principal": "Selman",
+"ano": "1992"
+},
+{
+"linha": 198,
+"autor_principal": "Rivest",
+"ano": "1987"
+},
+{
+"linha": 199,
+"autor_principal": "McKinsey",
+"ano": "1943"
+},
+{
+"linha": 200,
+"autor_principal": "Schaffer",
+"ano": "1992"
+},
+{
+"linha": 201,
+"autor_principal": "Thekkath",
+"ano": "1993"
+},
+{
+"linha": 202,
+"autor_principal": "Mahadevan",
+"ano": "1991"
+},
+{
+"linha": 203,
+"autor_principal": "Robert",
+"ano": "1990"
+},
+{
+"linha": 204,
+"autor_principal": "Chang",
+"ano": "1992"
+},
+{
+"linha": 205,
+"autor_principal": "Daily",
+"ano": "1987"
+},
+{
+"linha": 206,
+"autor_principal": "Cousot",
+"ano": "1978"
+},
+{
+"linha": 207,
+"autor_principal": null,
+"ano": "1987"
+},
+{
+"linha": 208,
+"autor_principal": "Conklin",
+"ano": "1993a"
+},
+{
+"linha": 209,
+"autor_principal": "Huffman",
+"ano": "1952"
+},
+{
+"linha": 210,
+"autor_principal": "Baffes",
+"ano": "1993"
+},
+{
+"linha": 211,
+"autor_principal": "Lamaire",
+"ano": null
+},
+{
+"linha": 212,
+"autor_principal": "McCarthy",
+"ano": "1958"
+},
+{
+"linha": 213,
+"autor_principal": "Cooper",
+"ano": "1985"
+},
+{
+"linha": 214,
+"autor_principal": "Miller",
+"ano": "1995"
+},
+{
+"linha": 215,
+"autor_principal": "Louri",
+"ano": "1992"
+},
+{
+"linha": 216,
+"autor_principal": "Patnaik",
+"ano": "1995"
+},
+{
+"linha": 217,
+"autor_principal": "Kennedy",
+"ano": "1990"
+},
+{
+"linha": 218,
+"autor_principal": "Singh",
+"ano": "1991"
+},
+{
+"linha": 219,
+"autor_principal": "Burr",
+"ano": "1981"
+},
+{
+"linha": 220,
+"autor_principal": "Wermuth",
+"ano": "1983"
+},
+{
+"linha": 221,
+"autor_principal": "Lomet",
+"ano": "1995"
+},
+{
+"linha": 222,
+"autor_principal": "Aho",
+"ano": "1986"
+},
+{
+"linha": 223,
+"autor_principal": "Shneiderman",
+"ano": "1992"
+},
+{
+"linha": 224,
+"autor_principal": "Murthy",
+"ano": "1993"
+},
+{
+"linha": 225,
+"autor_principal": "Leroy",
+"ano": "1992"
+},
+{
+"linha": 226,
+"autor_principal": "Millroth",
+"ano": "1990"
+},
+{
+"linha": 227,
+"autor_principal": "Angrist",
+"ano": "1995"
+},
+{
+"linha": 228,
+"autor_principal": "Padua",
+"ano": "1986"
+},
+{
+"linha": 229,
+"autor_principal": "Wellman Kephart",
+"ano": "1989"
+},
+{
+"linha": 230,
+"autor_principal": "Jeffrey Kuskin",
+"ano": "1994"
+},
+{
+"linha": 231,
+"autor_principal": "Cook",
+"ano": "1994"
+},
+{
+"linha": 232,
+"autor_principal": "Yuille",
+"ano": "1991"
+},
+{
+"linha": 233,
+"autor_principal": "Facchinei",
+"ano": "1997"
+},
+{
+"linha": 234,
+"autor_principal": "Lorentzos",
+"ano": "1997"
+},
+{
+"linha": 235,
+"autor_principal": "Harrold",
+"ano": "1988"
+},
+{
+"linha": 236,
+"autor_principal": "Friedman",
+"ano": "1981"
+},
+{
+"linha": 237,
+"autor_principal": "Fikes",
+"ano": "1991"
+},
+{
+"linha": 238,
+"autor_principal": "Adams",
+"ano": "1992"
+},
+{
+"linha": 239,
+"autor_principal": null,
+"ano": "1984"
+},
+{
+"linha": 240,
+"autor_principal": null,
+"ano": "1990"
+},
+{
+"linha": 241,
+"autor_principal": "Dwork",
+"ano": "1984"
+},
+{
+"linha": 242,
+"autor_principal": null,
+"ano": "1990"
+},
+{
+"linha": 243,
+"autor_principal": "Rao",
+"ano": "1991"
+},
+{
+"linha": 244,
+"autor_principal": "Gentner",
+"ano": "1992"
+},
+{
+"linha": 245,
+"autor_principal": null,
+"ano": "1992"
+},
+{
+"linha": 246,
+"autor_principal": "Hill",
+"ano": "1994"
+},
+{
+"linha": 247,
+"autor_principal": "Shoham",
+"ano": "1988"
+},
+{
+"linha": 248,
+"autor_principal": "Sabin",
+"ano": "1997"
+},
+{
+"linha": 249,
+"autor_principal": null,
+"ano": "1994"
+},
+{
+"linha": 250,
+"autor_principal": "Evripidou",
+"ano": "1991"
+},
+{
+"linha": 251,
+"autor_principal": "Cherri",
+"ano": "1989"
+},
+{
+"linha": 252,
+"autor_principal": "Gupta",
+"ano": "1994"
+},
+{
+"linha": 253,
+"autor_principal": "Lu",
+"ano": "1995"
+},
+{
+"linha": 254,
+"autor_principal": "Garvey",
+"ano": "1993"
+},
+{
+"linha": 255,
+"autor_principal": "Gertz",
+"ano": "1993"
+},
+{
+"linha": 256,
+"autor_principal": "Bradlee",
+"ano": "1991"
+},
+{
+"linha": 257,
+"autor_principal": "Ryder",
+"ano": "1988"
+},
+{
+"linha": 258,
+"autor_principal": "Weiss",
+"ano": "1993a"
+},
+{
+"linha": 259,
+"autor_principal": "Sutherland",
+"ano": "1963"
+},
+{
+"linha": 260,
+"autor_principal": "Zhai",
+"ano": "1991"
+},
+{
+"linha": 261,
+"autor_principal": "Anderson",
+"ano": "1993"
+},
+{
+"linha": 262,
+"autor_principal": "Ventura",
+"ano": "1995"
+},
+{
+"linha": 263,
+"autor_principal": "Amdur",
+"ano": "1988"
+},
+{
+"linha": 264,
+"autor_principal": "Plunkett",
+"ano": "1991"
+},
+{
+"linha": 265,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 266,
+"autor_principal": "Keeton",
+"ano": "1993"
+},
+{
+"linha": 267,
+"autor_principal": "Parr",
+"ano": "1995"
+},
+{
+"linha": 268,
+"autor_principal": "Bennett",
+"ano": "1992"
+},
+{
+"linha": 269,
+"autor_principal": "Lalouel",
+"ano": "1979"
+},
+{
+"linha": 270,
+"autor_principal": "Cau",
+"ano": "1996"
+},
+{
+"linha": 271,
+"autor_principal": "Dempster",
+"ano": "1977"
+},
+{
+"linha": 272,
+"autor_principal": "Michalski",
+"ano": "1981"
+},
+{
+"linha": 273,
+"autor_principal": "Tambe",
+"ano": "1996"
+},
+{
+"linha": 274,
+"autor_principal": "Valiant",
+"ano": "1984"
+},
+{
+"linha": 275,
+"autor_principal": "Georgakopoulos",
+"ano": "1994"
+},
+{
+"linha": 276,
+"autor_principal": "Kim",
+"ano": "1992"
+},
+{
+"linha": 277,
+"autor_principal": null,
+"ano": "1992"
+},
+{
+"linha": 278,
+"autor_principal": "Verlinden",
+"ano": null
+},
+{
+"linha": 279,
+"autor_principal": "Lisa",
+"ano": "1991"
+},
+{
+"linha": 280,
+"autor_principal": "Norris",
+"ano": "1993"
+},
+{
+"linha": 281,
+"autor_principal": "Jeffay",
+"ano": "1992"
+},
+{
+"linha": 282,
+"autor_principal": "Demers",
+"ano": null
+},
+{
+"linha": 283,
+"autor_principal": "Fikes",
+"ano": "1972"
+},
+{
+"linha": 284,
+"autor_principal": "Zhang",
+"ano": "1992"
+},
+{
+"linha": 285,
+"autor_principal": "Hawley",
+"ano": "1983"
+},
+{
+"linha": 286,
+"autor_principal": "Kamath",
+"ano": "1995"
+},
+{
+"linha": 287,
+"autor_principal": "Harrold",
+"ano": "1988"
+},
+{
+"linha": 288,
+"autor_principal": "VanLehn",
+"ano": "1992"
+},
+{
+"linha": 289,
+"autor_principal": "Boddy",
+"ano": "1991"
+},
+{
+"linha": 290,
+"autor_principal": "Jurafsky",
+"ano": "1994a"
+},
+{
+"linha": 291,
+"autor_principal": "Alon",
+"ano": "1995"
+},
+{
+"linha": 292,
+"autor_principal": "Sussman",
+"ano": "1975"
+},
+{
+"linha": 293,
+"autor_principal": "Crawford",
+"ano": "1993"
+},
+{
+"linha": 294,
+"autor_principal": "Hermans",
+"ano": "1974"
+},
+{
+"linha": 295,
+"autor_principal": "Reichman",
+"ano": "1985"
+},
+{
+"linha": 296,
+"autor_principal": "Chandy",
+"ano": "1988"
+},
+{
+"linha": 297,
+"autor_principal": "Peyton",
+"ano": "1993"
+},
+{
+"linha": 298,
+"autor_principal": "Nishida",
+"ano": "1991"
+},
+{
+"linha": 299,
+"autor_principal": "Kosslyn",
+"ano": "1994"
+},
+{
+"linha": 300,
+"autor_principal": "Shoham",
+"ano": "1994"
+},
+{
+"linha": 301,
+"autor_principal": "Reiter",
+"ano": "1980"
+},
+{
+"linha": 302,
+"autor_principal": "Hernquist",
+"ano": "1990"
+},
+{
+"linha": 303,
+"autor_principal": "Kibler",
+"ano": "1987"
+},
+{
+"linha": 304,
+"autor_principal": "Kohonen",
+"ano": "1990"
+},
+{
+"linha": 305,
+"autor_principal": "Allen",
+"ano": "1987"
+},
+{
+"linha": 306,
+"autor_principal": "Burke",
+"ano": "1986"
+},
+{
+"linha": 307,
+"autor_principal": "Haussler",
+"ano": "1988"
+},
+{
+"linha": 308,
+"autor_principal": "Litman",
+"ano": "1990"
+},
+{
+"linha": 309,
+"autor_principal": null,
+"ano": "1992"
+},
+{
+"linha": 310,
+"autor_principal": "Forbus",
+"ano": "1989"
+},
+{
+"linha": 311,
+"autor_principal": "Rinard",
+"ano": "1992"
+},
+{
+"linha": 312,
+"autor_principal": "Webber",
+"ano": "1983"
+},
+{
+"linha": 313,
+"autor_principal": "Baru",
+"ano": "1987"
+},
+{
+"linha": 314,
+"autor_principal": "Pryor",
+"ano": "1993"
+},
+{
+"linha": 315,
+"autor_principal": "Harper",
+"ano": "1995b"
+},
+{
+"linha": 316,
+"autor_principal": "Mark Friedell",
+"ano": "1991"
+},
+{
+"linha": 317,
+"autor_principal": "Michael Stonebraker",
+"ano": "1990"
+},
+{
+"linha": 318,
+"autor_principal": null,
+"ano": "1995"
+},
+{
+"linha": 319,
+"autor_principal": "Koren",
+"ano": "1990"
+},
+{
+"linha": 320,
+"autor_principal": "Krogh",
+"ano": "1995"
+},
+{
+"linha": 321,
+"autor_principal": null,
+"ano": "1992"
+},
+{
+"linha": 322,
+"autor_principal": "Brieman",
+"ano": "1984"
+},
+{
+"linha": 323,
+"autor_principal": "Amarasinghe",
+"ano": "1996"
+},
+{
+"linha": 324,
+"autor_principal": "Breitbart",
+"ano": "1992"
+},
+{
+"linha": 325,
+"autor_principal": "Helman",
+"ano": "1996"
+},
+{
+"linha": 326,
+"autor_principal": "Frank Kappe",
+"ano": "1993"
+},
+{
+"linha": 327,
+"autor_principal": "Dyn",
+"ano": "1993"
+},
+{
+"linha": 328,
+"autor_principal": "Wiener",
+"ano": "1996"
+},
+{
+"linha": 329,
+"autor_principal": null,
+"ano": "1986"
+},
+{
+"linha": 330,
+"autor_principal": "Graham",
+"ano": "1969"
+},
+{
+"linha": 331,
+"autor_principal": "Holliday",
+"ano": "1992"
+},
+{
+"linha": 332,
+"autor_principal": "Forsyth",
+"ano": "1992"
+},
+{
+"linha": 333,
+"autor_principal": "Callan",
+"ano": "1996"
+},
+{
+"linha": 334,
+"autor_principal": "Deutsch",
+"ano": "1992"
+},
+{
+"linha": 335,
+"autor_principal": null,
+"ano": "1993"
+},
+{
+"linha": 336,
+"autor_principal": "Allen",
+"ano": "1979"
+},
+{
+"linha": 337,
+"autor_principal": "Danvy",
+"ano": "1991"
+},
+{
+"linha": 338,
+"autor_principal": "Allender",
+"ano": "1993"
+},
+{
+"linha": 339,
+"autor_principal": "Milgrom",
+"ano": "1991"
+},
+{
+"linha": 340,
+"autor_principal": "Lovejoy",
+"ano": "1991b"
+},
+{
+"linha": 341,
+"autor_principal": "Spirtes",
+"ano": "1993"
+},
+{
+"linha": 342,
+"autor_principal": "Hadzilacos",
+"ano": "1984"
+},
+{
+"linha": 343,
+"autor_principal": "Kieburtz",
+"ano": "1992"
+},
+{
+"linha": 344,
+"autor_principal": "Robert",
+"ano": "1990"
+},
+{
+"linha": 345,
+"autor_principal": "Halpern",
+"ano": "1990"
+},
+{
+"linha": 346,
+"autor_principal": "Buntine",
+"ano": "1994"
+},
+{
+"linha": 347,
+"autor_principal": "Bernstein",
+"ano": "1966"
+},
+{
+"linha": 348,
+"autor_principal": "Debray",
+"ano": "1988"
+},
+{
+"linha": 349,
+"autor_principal": "Whittaker",
+"ano": "1991"
+},
+{
+"linha": 350,
+"autor_principal": "Henderson",
+"ano": "1987"
+},
+{
+"linha": 351,
+"autor_principal": "Mooney",
+"ano": "1995"
+},
+{
+"linha": 352,
+"autor_principal": "Hooman",
+"ano": "1991"
+},
+{
+"linha": 353,
+"autor_principal": "Hauptman",
+"ano": "1953"
+},
+{
+"linha": 354,
+"autor_principal": "Patterson",
+"ano": "1994"
+},
+{
+"linha": 355,
+"autor_principal": "Mooney",
+"ano": "1990"
+},
+{
+"linha": 356,
+"autor_principal": "Hiranandani",
+"ano": "1992"
+},
+{
+"linha": 357,
+"autor_principal": "Rabiti",
+"ano": null
+},
+{
+"linha": 358,
+"autor_principal": "Crammond",
+"ano": "1990"
+},
+{
+"linha": 359,
+"autor_principal": "Aumann",
+"ano": "1995"
+},
+{
+"linha": 360,
+"autor_principal": "Nilsson",
+"ano": "1986"
+},
+{
+"linha": 361,
+"autor_principal": null,
+"ano": "1989"
+},
+{
+"linha": 362,
+"autor_principal": "Benvenuto",
+"ano": "1992"
+},
+{
+"linha": 363,
+"autor_principal": "Granston",
+"ano": "1991"
+},
+{
+"linha": 364,
+"autor_principal": "Guziec",
+"ano": "1992"
+},
+{
+"linha": 365,
+"autor_principal": "Havlak",
+"ano": "1991"
+},
+{
+"linha": 366,
+"autor_principal": "Berlekamp",
+"ano": "1968"
+},
+{
+"linha": 367,
+"autor_principal": "Milner",
+"ano": "1990"
+},
+{
+"linha": 368,
+"autor_principal": null,
+"ano": "1994"
+},
+{
+"linha": 369,
+"autor_principal": "Odlyzko",
+"ano": "1995"
+},
+{
+"linha": 370,
+"autor_principal": "Decker",
+"ano": "1994"
+},
+{
+"linha": 371,
+"autor_principal": "Choi",
+"ano": "1991"
+},
+{
+"linha": 372,
+"autor_principal": null,
+"ano": "1997"
+},
+{
+"linha": 373,
+"autor_principal": "Bourdoncle",
+"ano": "1993"
+},
+{
+"linha": 374,
+"autor_principal": "Callahan",
+"ano": "1986"
+},
+{
+"linha": 375,
+"autor_principal": "Bengio",
+"ano": "1994"
+},
+{
+"linha": 376,
+"autor_principal": "Bengio",
+"ano": "1995a"
+},
+{
+"linha": 377,
+"autor_principal": "Carpenter",
+"ano": "1994"
+},
+{
+"linha": 378,
+"autor_principal": "Zekauskas",
+"ano": "1994"
+},
+{
+"linha": 379,
+"autor_principal": "Ware",
+"ano": "1991"
+},
+{
+"linha": 380,
+"autor_principal": "David",
+"ano": "1993"
+},
+{
+"linha": 381,
+"autor_principal": "Morgenstern",
+"ano": "1990"
+},
+{
+"linha": 382,
+"autor_principal": "Bergamaschi",
+"ano": "1992"
+},
+{
+"linha": 383,
+"autor_principal": "Koenderink",
+"ano": "1984"
+},
+{
+"linha": 384,
+"autor_principal": "Guarna",
+"ano": "1988"
+},
+{
+"linha": 385,
+"autor_principal": "Thrun",
+"ano": "1995"
+},
+{
+"linha": 386,
+"autor_principal": "Rumelhart",
+"ano": "1986"
+},
+{
+"linha": 387,
+"autor_principal": "Tim Berners-Lee",
+"ano": "1992"
+},
+{
+"linha": 388,
+"autor_principal": "Georgeff",
+"ano": "1987"
+},
+{
+"linha": 389,
+"autor_principal": "Johnson",
+"ano": "1990"
+},
+{
+"linha": 390,
+"autor_principal": "Card",
+"ano": "1990"
+},
+{
+"linha": 391,
+"autor_principal": "Brady",
+"ano": "1984"
+},
+{
+"linha": 392,
+"autor_principal": "Peir",
+"ano": "1987"
+},
+{
+"linha": 393,
+"autor_principal": "Kambhampati",
+"ano": "1995"
+},
+{
+"linha": 394,
+"autor_principal": "Carlson",
+"ano": "1995"
+},
+{
+"linha": 395,
+"autor_principal": "Rosenbloom",
+"ano": "1988"
+},
+{
+"linha": 396,
+"autor_principal": "Genesereth",
+"ano": "1993"
+},
+{
+"linha": 397,
+"autor_principal": "Muggleton",
+"ano": "1994"
+},
+{
+"linha": 398,
+"autor_principal": null,
+"ano": "1987"
+},
+{
+"linha": 399,
+"autor_principal": "Reiter",
+"ano": "1987"
+},
+{
+"linha": 400,
+"autor_principal": "Hecht",
+"ano": "1993"
+},
+{
+"linha": 401,
+"autor_principal": "Strang",
+"ano": "1973"
+},
+{
+"linha": 402,
+"autor_principal": "Berlekamp",
+"ano": "1970"
+},
+{
+"linha": 403,
+"autor_principal": "Allen",
+"ano": "1983"
+},
+{
+"linha": 404,
+"autor_principal": "Terzopoulos",
+"ano": "1986"
+},
+{
+"linha": 405,
+"autor_principal": "Narendra",
+"ano": "1989"
+},
+{
+"linha": 406,
+"autor_principal": "Hafner",
+"ano": "1987"
+},
+{
+"linha": 407,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 408,
+"autor_principal": "Fortes",
+"ano": "1987"
+},
+{
+"linha": 409,
+"autor_principal": "Borgida",
+"ano": "1984"
+},
+{
+"linha": 410,
+"autor_principal": "De Schreye",
+"ano": "1992"
+},
+{
+"linha": 411,
+"autor_principal": "Warren",
+"ano": "1976"
+},
+{
+"linha": 412,
+"autor_principal": "McDermott",
+"ano": "1982"
+},
+{
+"linha": 413,
+"autor_principal": "Chapman",
+"ano": "1987"
+},
+{
+"linha": 414,
+"autor_principal": "Thomas von Eicken",
+"ano": "1992"
+},
+{
+"linha": 415,
+"autor_principal": "Li",
+"ano": "1989"
+},
+{
+"linha": 416,
+"autor_principal": "Quinlan",
+"ano": "1993"
+},
+{
+"linha": 417,
+"autor_principal": "Asahiro",
+"ano": "1993"
+},
+{
+"linha": 418,
+"autor_principal": "Leroy",
+"ano": "1997"
+},
+{
+"linha": 419,
+"autor_principal": "Thomas",
+"ano": "1993"
+},
+{
+"linha": 420,
+"autor_principal": "Kremer",
+"ano": "1988"
+},
+{
+"linha": 421,
+"autor_principal": "Huang",
+"ano": "1983"
+},
+{
+"linha": 422,
+"autor_principal": "Hume",
+"ano": "1991"
+},
+{
+"linha": 423,
+"autor_principal": "Baral",
+"ano": "1991"
+},
+{
+"linha": 424,
+"autor_principal": "Galles",
+"ano": "1994"
+},
+{
+"linha": 425,
+"autor_principal": "Deerwester",
+"ano": "1990"
+},
+{
+"linha": 426,
+"autor_principal": "Geddes",
+"ano": "1992"
+},
+{
+"linha": 427,
+"autor_principal": "Warren",
+"ano": "1996"
+},
+{
+"linha": 428,
+"autor_principal": "Puterman",
+"ano": "1994"
+},
+{
+"linha": 429,
+"autor_principal": "Hel-Or",
+"ano": "1992"
+},
+{
+"linha": 430,
+"autor_principal": "Foley",
+"ano": "1990"
+},
+{
+"linha": 431,
+"autor_principal": "Aho",
+"ano": "1974"
+},
+{
+"linha": 432,
+"autor_principal": "Panario",
+"ano": "1998"
+},
+{
+"linha": 433,
+"autor_principal": "McCarthy",
+"ano": "1980"
+},
+{
+"linha": 434,
+"autor_principal": "Kerber",
+"ano": "2007"
+},
+{
+"linha": 435,
+"autor_principal": "Shechory",
+"ano": "1995"
+},
+{
+"linha": 436,
+"autor_principal": "Jueneman",
+"ano": "1985"
+},
+{
+"linha": 437,
+"autor_principal": "Korf",
+"ano": "1985"
+},
+{
+"linha": 438,
+"autor_principal": "Michalski",
+"ano": "1983"
+},
+{
+"linha": 439,
+"autor_principal": "Gupta",
+"ano": "1994"
+},
+{
+"linha": 440,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 441,
+"autor_principal": "Golomb",
+"ano": "1965"
+},
+{
+"linha": 442,
+"autor_principal": "MacWhinney",
+"ano": "1990"
+},
+{
+"linha": 443,
+"autor_principal": "Sha",
+"ano": "1990"
+},
+{
+"linha": 444,
+"autor_principal": "Keleher",
+"ano": "1994"
+},
+{
+"linha": 445,
+"autor_principal": "De Raedt",
+"ano": "1993"
+},
+{
+"linha": 446,
+"autor_principal": "Whitley",
+"ano": "1993"
+},
+{
+"linha": 447,
+"autor_principal": "Wellman",
+"ano": "1985"
+},
+{
+"linha": 448,
+"autor_principal": "Soskin",
+"ano": "1963"
+},
+{
+"linha": 449,
+"autor_principal": "Hull",
+"ano": "1987"
+},
+{
+"linha": 450,
+"autor_principal": "Grosz",
+"ano": "1986"
+},
+{
+"linha": 451,
+"autor_principal": "Wilke",
+"ano": "1993"
+},
+{
+"linha": 452,
+"autor_principal": "Ponte",
+"ano": "1997"
+},
+{
+"linha": 453,
+"autor_principal": "McCarthy",
+"ano": "1995"
+},
+{
+"linha": 454,
+"autor_principal": "Dario Giarrizzo",
+"ano": "1989"
+},
+{
+"linha": 455,
+"autor_principal": "Abelson",
+"ano": "1985"
+},
+{
+"linha": 456,
+"autor_principal": "Blelloch",
+"ano": "1993"
+},
+{
+"linha": 457,
+"autor_principal": "Keshav",
+"ano": null
+},
+{
+"linha": 458,
+"autor_principal": "Lewis",
+"ano": "1973"
+},
+{
+"linha": 459,
+"autor_principal": "Lapedes",
+"ano": "1995"
+},
+{
+"linha": 460,
+"autor_principal": "Faber",
+"ano": "1993"
+},
+{
+"linha": 461,
+"autor_principal": "Marinari",
+"ano": "1992"
+},
+{
+"linha": 462,
+"autor_principal": "Chrysanthis",
+"ano": "1994"
+},
+{
+"linha": 463,
+"autor_principal": null,
+"ano": "1993"
+},
+{
+"linha": 464,
+"autor_principal": "White",
+"ano": "1997"
+},
+{
+"linha": 465,
+"autor_principal": "Wright",
+"ano": "1995"
+},
+{
+"linha": 466,
+"autor_principal": "Hirschberg",
+"ano": "1990"
+},
+{
+"linha": 467,
+"autor_principal": "Jennings",
+"ano": "1994"
+},
+{
+"linha": 468,
+"autor_principal": "Weigend",
+"ano": "1993"
+},
+{
+"linha": 469,
+"autor_principal": null,
+"ano": "1987"
+},
+{
+"linha": 470,
+"autor_principal": "Hsu",
+"ano": "1986"
+},
+{
+"linha": 471,
+"autor_principal": "LeBlanc",
+"ano": "1993"
+},
+{
+"linha": 472,
+"autor_principal": "Shin",
+"ano": "1992"
+},
+{
+"linha": 473,
+"autor_principal": "Rubinstein",
+"ano": "1982"
+},
+{
+"linha": 474,
+"autor_principal": "Selman",
+"ano": "1996"
+},
+{
+"linha": 475,
+"autor_principal": "Fisher",
+"ano": "1987"
+},
+{
+"linha": 476,
+"autor_principal": "Wolf",
+"ano": "1995"
+},
+{
+"linha": 477,
+"autor_principal": "Perez",
+"ano": "1992"
+},
+{
+"linha": 478,
+"autor_principal": "Fagin",
+"ano": "1991"
+},
+{
+"linha": 479,
+"autor_principal": "Enkelmann",
+"ano": "1991"
+},
+{
+"linha": 480,
+"autor_principal": "Callahan",
+"ano": "1988"
+},
+{
+"linha": 481,
+"autor_principal": "Remler",
+"ano": "1978"
+},
+{
+"linha": 482,
+"autor_principal": "Lakshmanan",
+"ano": "1993"
+},
+{
+"linha": 483,
+"autor_principal": "Butcher",
+"ano": "1985"
+},
+{
+"linha": 484,
+"autor_principal": "Speer",
+"ano": "1992"
+},
+{
+"linha": 485,
+"autor_principal": "Flanagan",
+"ano": "1996"
+},
+{
+"linha": 486,
+"autor_principal": "Marr",
+"ano": "1978"
+},
+{
+"linha": 487,
+"autor_principal": "Barendregt",
+"ano": "1984"
+},
+{
+"linha": 488,
+"autor_principal": "Dechter",
+"ano": "1992"
+},
+{
+"linha": 489,
+"autor_principal": "Beeri",
+"ano": "1990"
+},
+{
+"linha": 490,
+"autor_principal": "Sagiv",
+"ano": "1981"
+},
+{
+"linha": 491,
+"autor_principal": "Solodov",
+"ano": "1997"
+},
+{
+"linha": 492,
+"autor_principal": "Gannon",
+"ano": "1988"
+},
+{
+"linha": 493,
+"autor_principal": "Robinson",
+"ano": "1981"
+},
+{
+"linha": 494,
+"autor_principal": "Weiss",
+"ano": "1989"
+},
+{
+"linha": 495,
+"autor_principal": null,
+"ano": "1994"
+},
+{
+"linha": 496,
+"autor_principal": "DeWitt",
+"ano": "1979"
+},
+{
+"linha": 497,
+"autor_principal": "Lee",
+"ano": "1994"
+},
+{
+"linha": 498,
+"autor_principal": null,
+"ano": "1989"
+},
+{
+"linha": 499,
+"autor_principal": "Koppel",
+"ano": "1994b"
+},
+{
+"linha": 500,
+"autor_principal": "Webb",
+"ano": "1993"
+},
+{
+"linha": 501,
+"autor_principal": "Barklund",
+"ano": "1994"
+},
+{
+"linha": 502,
+"autor_principal": "Rosenfeld",
+"ano": "1988"
+},
+{
+"linha": 503,
+"autor_principal": "Accordino",
+"ano": "2001"
+},
+{
+"linha": 504,
+"autor_principal": "Aday",
+"ano": "2002"
+},
+{
+"linha": 505,
+"autor_principal": "Adomaitis",
+"ano": "2005"
+},
+{
+"linha": 506,
+"autor_principal": "Allen",
+"ano": "2004"
+},
+{
+"linha": 507,
+"autor_principal": "Amodeo",
+"ano": "2001"
+},
+{
+"linha": 508,
+"autor_principal": "Anderson",
+"ano": "2001"
+},
+{
+"linha": 509,
+"autor_principal": "Andrade-Ribeiro",
+"ano": "2000"
+},
+{
+"linha": 510,
+"autor_principal": "Angus",
+"ano": "2004"
+},
+{
+"linha": 511,
+"autor_principal": "Angus",
+"ano": "2002"
+},
+{
+"linha": 512,
+"autor_principal": "Angus",
+"ano": "2004"
+},
+{
+"linha": 513,
+"autor_principal": "Ansell",
+"ano": "2003"
+},
+{
+"linha": 514,
+"autor_principal": "Antunes",
+"ano": "2000"
+},
+{
+"linha": 515,
+"autor_principal": "Asendorpf",
+"ano": "2000"
+},
+{
+"linha": 516,
+"autor_principal": "Aspy",
+"ano": "2000"
+},
+{
+"linha": 517,
+"autor_principal": "Assumpcao",
+"ano": "2001"
+},
+{
+"linha": 518,
+"autor_principal": "Babel",
+"ano": "2004"
+},
+{
+"linha": 519,
+"autor_principal": "Baker",
+"ano": "2004"
+},
+{
+"linha": 520,
+"autor_principal": "Baldwin",
+"ano": "2004"
+},
+{
+"linha": 521,
+"autor_principal": null,
+"ano": "2000"
+},
+{
+"linha": 522,
+"autor_principal": "Baljon",
+"ano": "2002"
+},
+{
+"linha": 523,
+"autor_principal": "Balmforth",
+"ano": "2006"
+},
+{
+"linha": 524,
+"autor_principal": "Barfield",
+"ano": "2004"
+},
+{
+"linha": 525,
+"autor_principal": "Barfield",
+"ano": "2006"
+},
+{
+"linha": 526,
+"autor_principal": "Barker",
+"ano": "2001"
+},
+{
+"linha": 527,
+"autor_principal": "Barracato",
+"ano": "2002"
+},
+{
+"linha": 528,
+"autor_principal": "Barrett-Lennard",
+"ano": "2002"
+},
+{
+"linha": 529,
+"autor_principal": "Barrett-Lennard",
+"ano": "2002"
+},
+{
+"linha": 530,
+"autor_principal": "Barrett-Lennard",
+"ano": "2003"
+},
+{
+"linha": 531,
+"autor_principal": "Barrett-Lennard",
+"ano": "2005"
+},
+{
+"linha": 532,
+"autor_principal": "Battye",
+"ano": "2003"
+},
+{
+"linha": 533,
+"autor_principal": "Cheng",
+"ano": "2000"
+},
+{
+"linha": 534,
+"autor_principal": "Chou",
+"ano": "2000"
+},
+{
+"linha": 535,
+"autor_principal": "Elling",
+"ano": "2003"
+},
+{
+"linha": 536,
+"autor_principal": "Fitopoulos",
+"ano": "2005"
+},
+{
+"linha": 537,
+"autor_principal": "Greenberg",
+"ano": "2001"
+},
+{
+"linha": 538,
+"autor_principal": "Holowaty",
+"ano": "2005"
+},
+{
+"linha": 539,
+"autor_principal": "Nieuwenhuis",
+"ano": "2002"
+},
+{
+"linha": 540,
+"autor_principal": "Crease",
+"ano": "2004"
+},
+{
+"linha": 541,
+"autor_principal": "Purcell-Lee",
+"ano": "2000"
+},
+{
+"linha": 542,
+"autor_principal": "Wolford",
+"ano": "2000"
+},
+{
+"linha": 543,
+"autor_principal": "Hawthorne",
+"ano": "1982"
+},
+{
+"linha": 544,
+"autor_principal": "Kristeva",
+"ano": "1982"
+},
+{
+"linha": 545,
+"autor_principal": "Lakoff",
+"ano": "2003"
+},
+{
+"linha": 546,
+"autor_principal": null,
+"ano": "1997"
+},
+{
+"linha": 547,
+"autor_principal": "Lefebvre",
+"ano": "1991"
+},
+{
+"linha": 548,
+"autor_principal": "Lynch",
+"ano": "1960"
+},
+{
+"linha": 549,
+"autor_principal": "Nietzsche",
+"ano": "1999"
+},
+{
+"linha": 550,
+"autor_principal": "Parsons",
+"ano": "2000"
+},
+{
+"linha": 551,
+"autor_principal": "Milton",
+"ano": "2000"
+},
+{
+"linha": 552,
+"autor_principal": null,
+"ano": "1994"
+},
+{
+"linha": 553,
+"autor_principal": "Wordsworth",
+"ano": "1995"
+},
+{
+"linha": 554,
+"autor_principal": "Worthen",
+"ano": "1948"
+},
+{
+"linha": 555,
+"autor_principal": null,
+"ano": "1950"
+},
+{
+"linha": 556,
+"autor_principal": "Vaughan",
+"ano": "1843"
+},
+{
+"linha": 557,
+"autor_principal": "Veel",
+"ano": "2003"
+},
+{
+"linha": 558,
+"autor_principal": "Eco",
+"ano": "1986"
+},
+{
+"linha": 559,
+"autor_principal": null,
+"ano": "1903"
+},
+{
+"linha": 560,
+"autor_principal": "Kern",
+"ano": "1983"
+},
+{
+"linha": 561,
+"autor_principal": null,
+"ano": "1994"
+},
+{
+"linha": 562,
+"autor_principal": "John Lafferty",
+"ano": "2001"
+},
+{
+"linha": 563,
+"autor_principal": "Nataliya Sokolovska",
+"ano": "2010"
+},
+{
+"linha": 564,
+"autor_principal": "Bakhtin",
+"ano": "1982"
+},
+{
+"linha": 565,
+"autor_principal": "Catmull",
+"ano": "1974"
+},
+{
+"linha": 566,
+"autor_principal": "Boole",
+"ano": "1872"
+},
+{
+"linha": 567,
+"autor_principal": "Levy",
+"ano": "1992"
+},
+{
+"linha": 568,
+"autor_principal": "Flajolet",
+"ano": "1995"
+},
+{
+"linha": 569,
+"autor_principal": "Witten",
+"ano": "2010"
+},
+{
+"linha": 570,
+"autor_principal": "Davidson",
+"ano": "1998"
+},
+{
+"linha": 571,
+"autor_principal": "Green",
+"ano": "2009"
+},
+{
+"linha": 572,
+"autor_principal": "Hildebrand",
+"ano": "1987"
+},
+{
+"linha": 573,
+"autor_principal": "Fritsch",
+"ano": "1980"
+},
+{
+"linha": 574,
+"autor_principal": "Buhmann",
+"ano": "2003"
+},
+{
+"linha": 575,
+"autor_principal": "Press",
+"ano": "2007"
+},
+{
+"linha": 576,
+"autor_principal": "Yee",
+"ano": "2001"
+},
+{
+"linha": 577,
+"autor_principal": null,
+"ano": "1999"
+},
+{
+"linha": 578,
+"autor_principal": "John",
+"ano": "1995"
+},
+{
+"linha": 579,
+"autor_principal": "Allison",
+"ano": "2006"
+},
+{
+"linha": 580,
+"autor_principal": "Stephen",
+"ano": "1993"
+},
+{
+"linha": 581,
+"autor_principal": "Kyrtsou",
+"ano": "2005"
+},
+{
+"linha": 582,
+"autor_principal": null,
+"ano": "1978"
+},
+{
+"linha": 583,
+"autor_principal": "Omori",
+"ano": "1894"
+},
+{
+"linha": 584,
+"autor_principal": "Kolmogorov",
+"ano": "1941"
+},
+{
+"linha": 585,
+"autor_principal": null,
+"ano": "2001"
+},
+{
+"linha": 586,
+"autor_principal": null,
+"ano": "1927"
+},
+{
+"linha": 587,
+"autor_principal": "Chase",
+"ano": "1891"
+},
+{
+"linha": 588,
+"autor_principal": "Childs",
+"ano": "1961"
+},
+{
+"linha": 589,
+"autor_principal": "Lord",
+"ano": "1913"
+},
+{
+"linha": 590,
+"autor_principal": "Lawrence",
+"ano": "1994"
+},
+{
+"linha": 591,
+"autor_principal": null,
+"ano": "1988"
+},
+{
+"linha": 592,
+"autor_principal": null,
+"ano": "1988"
+},
+{
+"linha": 593,
+"autor_principal": null,
+"ano": "1988"
+},
+{
+"linha": 594,
+"autor_principal": null,
+"ano": "1997"
+},
+{
+"linha": 595,
+"autor_principal": "Lamm",
+"ano": "2013"
+},
+{
+"linha": 596,
+"autor_principal": "Rachlin",
+"ano": "2010"
+},
+{
+"linha": 597,
+"autor_principal": null,
+"ano": "1983"
+},
+{
+"linha": 598,
+"autor_principal": null,
+"ano": "1983"
+},
+{
+"linha": 599,
+"autor_principal": null,
+"ano": "1989"
+},
+{
+"linha": 600,
+"autor_principal": "Bordman",
+"ano": "2004"
+},
+{
+"linha": 601,
+"autor_principal": "Miller",
+"ano": "1987"
+},
+{
+"linha": 602,
+"autor_principal": null,
+"ano": "2013"
+},
+{
+"linha": 603,
+"autor_principal": "Kapr",
+"ano": "1995"
+},
+{
+"linha": 604,
+"autor_principal": null,
+"ano": "1999"
+},
+{
+"linha": 605,
+"autor_principal": null,
+"ano": "2010"
+},
+{
+"linha": 606,
+"autor_principal": "Karnadi",
+"ano": "2010"
+},
+{
+"linha": 607,
+"autor_principal": "Hartner",
+"ano": null
+},
+{
+"linha": 608,
+"autor_principal": "Linnaeus",
+"ano": "1744"
+},
+{
+"linha": 609,
+"autor_principal": "ADAM",
+"ano": "2000"
+},
+{
+"linha": 610,
+"autor_principal": "Jain",
+"ano": "1986"
+},
+{
+"linha": 611,
+"autor_principal": "Zetter",
+"ano": "2015"
+},
+{
+"linha": 612,
+"autor_principal": null,
+"ano": "2013"
+},
+{
+"linha": 613,
+"autor_principal": "Boyer",
+"ano": "2002"
+},
+{
+"linha": 614,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 615,
+"autor_principal": "Child",
+"ano": "1961"
+},
+{
+"linha": 616,
+"autor_principal": "Thomson",
+"ano": "1978"
+},
+{
+"linha": 617,
+"autor_principal": null,
+"ano": "2009"
+},
+{
+"linha": 618,
+"autor_principal": "Dunlavy",
+"ano": "2006"
+},
+{
+"linha": 619,
+"autor_principal": "Johnson",
+"ano": "2013"
+},
+{
+"linha": 620,
+"autor_principal": "Lindberg",
+"ano": "2008"
+},
+{
+"linha": 621,
+"autor_principal": "Marshall",
+"ano": "1999"
+},
+{
+"linha": 622,
+"autor_principal": "Marwell",
+"ano": "2007"
+},
+{
+"linha": 623,
+"autor_principal": "Marshall",
+"ano": "1985"
+},
+{
+"linha": 624,
+"autor_principal": "Neville",
+"ano": "2004"
+},
+{
+"linha": 625,
+"autor_principal": "Shakespeare",
+"ano": "2012"
+},
+{
+"linha": 626,
+"autor_principal": null,
+"ano": "2008"
+},
+{
+"linha": 627,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 628,
+"autor_principal": "Wandel",
+"ano": "1998"
+},
+{
+"linha": 629,
+"autor_principal": "Zukofsky",
+"ano": "1931"
+},
+{
+"linha": 630,
+"autor_principal": "Geller",
+"ano": "2007"
+},
+{
+"linha": 631,
+"autor_principal": null,
+"ano": "1999"
+},
+{
+"linha": 632,
+"autor_principal": null,
+"ano": "2005"
+},
+{
+"linha": 633,
+"autor_principal": null,
+"ano": "2008"
+},
+{
+"linha": 634,
+"autor_principal": null,
+"ano": "2009"
+},
+{
+"linha": 635,
+"autor_principal": null,
+"ano": "2003"
+},
+{
+"linha": 636,
+"autor_principal": "Ford-Martin",
+"ano": "2003"
+},
+{
+"linha": 637,
+"autor_principal": "Colclough",
+"ano": "1999"
+},
+{
+"linha": 638,
+"autor_principal": "Kubler-Ross",
+"ano": "1993a"
+},
+{
+"linha": 639,
+"autor_principal": "Kubler-Ross",
+"ano": "1993b"
+},
+{
+"linha": 640,
+"autor_principal": null,
+"ano": "1985"
+},
+{
+"linha": 641,
+"autor_principal": null,
+"ano": "1999"
+},
+{
+"linha": 642,
+"autor_principal": null,
+"ano": "1991"
+},
+{
+"linha": 643,
+"autor_principal": null,
+"ano": "1999"
+},
+{
+"linha": 644,
+"autor_principal": null,
+"ano": "1990"
+},
+{
+"linha": 645,
+"autor_principal": "Howitt",
+"ano": "2008"
+},
+{
+"linha": 646,
+"autor_principal": "Wilkinson",
+"ano": "1999"
+},
+{
+"linha": 647,
+"autor_principal": "Balakrishnan",
+"ano": "2006"
+},
+{
+"linha": 648,
+"autor_principal": "Brown",
+"ano": "2004"
+},
+{
+"linha": 649,
+"autor_principal": "Collier",
+"ano": "2011"
+},
+{
+"linha": 650,
+"autor_principal": null,
+"ano": "1990"
+},
+{
+"linha": 651,
+"autor_principal": "Eckes",
+"ano": "2000"
+},
+{
+"linha": 652,
+"autor_principal": "Jones",
+"ano": "2007"
+},
+{
+"linha": 653,
+"autor_principal": "Vogels",
+"ano": "2009"
+},
+{
+"linha": 654,
+"autor_principal": "Altobelli",
+"ano": "2009"
+},
+{
+"linha": 655,
+"autor_principal": "Murray",
+"ano": "2005"
+},
+{
+"linha": 656,
+"autor_principal": "Kissane",
+"ano": "1998"
+},
+{
+"linha": 657,
+"autor_principal": "O'Leary",
+"ano": "2006"
+},
+{
+"linha": 658,
+"autor_principal": "Bari",
+"ano": "2006"
+},
+{
+"linha": 659,
+"autor_principal": "Perec",
+"ano": "1995"
+},
+{
+"linha": 660,
+"autor_principal": null,
+"ano": "1999"
+},
+{
+"linha": 661,
+"autor_principal": "Gilbert",
+"ano": "2004"
+},
+{
+"linha": 662,
+"autor_principal": null,
+"ano": "2011"
+},
+{
+"linha": 663,
+"autor_principal": null,
+"ano": "2010"
+},
+{
+"linha": 664,
+"autor_principal": null,
+"ano": "2011"
+},
+{
+"linha": 665,
+"autor_principal": "Di Trocchio",
+"ano": "2011"
+},
+{
+"linha": 666,
+"autor_principal": null,
+"ano": "2003"
+},
+{
+"linha": 667,
+"autor_principal": "Hamp-Lyons",
+"ano": "1984"
+},
+{
+"linha": 668,
+"autor_principal": "Bagatto",
+"ano": "1995"
+},
+{
+"linha": 669,
+"autor_principal": "Andrade",
+"ano": "1984"
+},
+{
+"linha": 670,
+"autor_principal": null,
+"ano": "1996"
+},
+{
+"linha": 671,
+"autor_principal": "Atkins",
+"ano": "1996"
+},
+{
+"linha": 672,
+"autor_principal": null,
+"ano": "1989"
+},
+{
+"linha": 673,
+"autor_principal": "Missiuro",
+"ano": "2006"
+},
+{
+"linha": 674,
+"autor_principal": "Gonzalez",
+"ano": "2009"
+},
+{
+"linha": 675,
+"autor_principal": "LaValle",
+"ano": "2001"
+},
+{
+"linha": 676,
+"autor_principal": "Hobson",
+"ano": "2014"
+},
+{
+"linha": 677,
+"autor_principal": "Huang",
+"ano": "2001"
+},
+{
+"linha": 678,
+"autor_principal": "Minker",
+"ano": "2004"
+},
+{
+"linha": 679,
+"autor_principal": "Hofbauer",
+"ano": "2008"
+},
+{
+"linha": 680,
+"autor_principal": "Deller",
+"ano": "2000"
+},
+{
+"linha": 681,
+"autor_principal": "Allen",
+"ano": "1987"
+},
+{
+"linha": 682,
+"autor_principal": "Ting",
+"ano": "1996"
+},
+{
+"linha": 683,
+"autor_principal": "Tosco",
+"ano": "2017"
+},
+{
+"linha": 684,
+"autor_principal": "Sampson",
+"ano": "2015"
+},
+{
+"linha": 685,
+"autor_principal": "Hodgkins",
+"ano": "2016"
+},
+{
+"linha": 686,
+"autor_principal": "Trathan",
+"ano": "2003"
+},
+{
+"linha": 687,
+"autor_principal": "Brandon",
+"ano": "2000"
+},
+{
+"linha": 688,
+"autor_principal": "Brierley",
+"ano": "1998"
+},
+{
+"linha": 689,
+"autor_principal": "Sotgiu",
+"ano": "2012"
+},
+{
+"linha": 690,
+"autor_principal": "Fattorini",
+"ano": "2012"
+},
+{
+"linha": 691,
+"autor_principal": "Ballard",
+"ano": "1995"
+},
+{
+"linha": 692,
+"autor_principal": "Bramwell",
+"ano": "1985"
+},
+{
+"linha": 693,
+"autor_principal": "Baumgarten",
+"ano": "2005"
+},
+{
+"linha": 694,
+"autor_principal": null,
+"ano": "1938"
+},
+{
+"linha": 695,
+"autor_principal": "Bawer",
+"ano": "1998"
+},
+{
+"linha": 696,
+"autor_principal": "Berry",
+"ano": "1972"
+},
+{
+"linha": 697,
+"autor_principal": "Cage",
+"ano": "1994"
+},
+{
+"linha": 698,
+"autor_principal": "Caldwell",
+"ano": "1998"
+},
+{
+"linha": 699,
+"autor_principal": "Calvino",
+"ano": "1974"
+},
+{
+"linha": 700,
+"autor_principal": "Castel",
+"ano": "1991"
+},
+{
+"linha": 701,
+"autor_principal": null,
+"ano": "2006"
+},
+{
+"linha": 702,
+"autor_principal": null,
+"ano": "1999"
+},
+{
+"linha": 703,
+"autor_principal": "Deleuze",
+"ano": "1977"
+},
+{
+"linha": 704,
+"autor_principal": "Dirlik",
+"ano": null
+},
+{
+"linha": 705,
+"autor_principal": "Page",
+"ano": "1912"
+},
+{
+"linha": 706,
+"autor_principal": "Puente",
+"ano": "2014"
+},
+{
+"linha": 707,
+"autor_principal": "Rogoff",
+"ano": "2014"
+},
+{
+"linha": 708,
+"autor_principal": "Shull",
+"ano": "2005"
+},
+{
+"linha": 709,
+"autor_principal": "Stewart III",
+"ano": "2009"
+},
+{
+"linha": 710,
+"autor_principal": "Volcker",
+"ano": "1992"
+},
+{
+"linha": 711,
+"autor_principal": "Wachtel",
+"ano": "2011"
+},
+{
+"linha": 712,
+"autor_principal": "DeLillo",
+"ano": "1998"
+},
+{
+"linha": 713,
+"autor_principal": null,
+"ano": "1979"
+},
+{
+"linha": 714,
+"autor_principal": null,
+"ano": "1997"
+},
+{
+"linha": 715,
+"autor_principal": null,
+"ano": "1993"
+},
+{
+"linha": 716,
+"autor_principal": "Chang",
+"ano": "2004"
+},
+{
+"linha": 717,
+"autor_principal": "Deleuze",
+"ano": "1998"
+},
+{
+"linha": 718,
+"autor_principal": null,
+"ano": "2009"
+},
+{
+"linha": 719,
+"autor_principal": "Douglass",
+"ano": "1987"
+},
+{
+"linha": 720,
+"autor_principal": "Reynolds",
+"ano": "2000"
+},
+{
+"linha": 721,
+"autor_principal": "Fariello",
+"ano": "1973"
+},
+{
+"linha": 722,
+"autor_principal": "Crossette",
+"ano": "1997"
+},
+{
+"linha": 723,
+"autor_principal": "Smith",
+"ano": "2001"
+},
+{
+"linha": 724,
+"autor_principal": "Devlin",
+"ano": "2010"
+},
+{
+"linha": 725,
+"autor_principal": "Ratzsch",
+"ano": "2000"
+},
+{
+"linha": 726,
+"autor_principal": "Dempsey",
+"ano": "1990"
+},
+{
+"linha": 727,
+"autor_principal": "Stortz",
+"ano": "1994"
+},
+{
+"linha": 728,
+"autor_principal": "Couradeau",
+"ano": null
+},
+{
+"linha": 729,
+"autor_principal": "Abercrombie",
+"ano": "1984"
+},
+{
+"linha": 730,
+"autor_principal": null,
+"ano": "1968"
+},
+{
+"linha": 731,
+"autor_principal": "Bakshi",
+"ano": "1951"
+},
+{
+"linha": 732,
+"autor_principal": "Roberts",
+"ano": "2000"
+},
+{
+"linha": 733,
+"autor_principal": "SEDLÁK",
+"ano": "1915"
+},
+{
+"linha": 734,
+"autor_principal": "Robert",
+"ano": "1994"
+},
+{
+"linha": 735,
+"autor_principal": "Forsé",
+"ano": "1999"
+},
+{
+"linha": 736,
+"autor_principal": null,
+"ano": "2012"
+},
+{
+"linha": 737,
+"autor_principal": "Alcala-Fdez",
+"ano": "2011"
+},
+{
+"linha": 738,
+"autor_principal": "Neyrey",
+"ano": "1991"
+},
+{
+"linha": 739,
+"autor_principal": "Bozzano",
+"ano": "2014"
+},
+{
+"linha": 740,
+"autor_principal": "Ortmann",
+"ano": "2013"
+},
+{
+"linha": 741,
+"autor_principal": null,
+"ano": "1836"
+},
+{
+"linha": 742,
+"autor_principal": "Peterson",
+"ano": "2015"
+},
+{
+"linha": 743,
+"autor_principal": "Puente",
+"ano": "2013"
+},
+{
+"linha": 744,
+"autor_principal": "Hess",
+"ano": "1989"
+},
+{
+"linha": 745,
+"autor_principal": "Go",
+"ano": "2004"
+},
+{
+"linha": 746,
+"autor_principal": null,
+"ano": "1987"
+},
+{
+"linha": 747,
+"autor_principal": "LERCHE",
+"ano": "1987"
+},
+{
+"linha": 748,
+"autor_principal": null,
+"ano": "1954"
+},
+{
+"linha": 749,
+"autor_principal": "Coüasnon",
+"ano": "1995"
+},
+{
+"linha": 750,
+"autor_principal": "Diewald",
+"ano": "2002"
+},
+{
+"linha": 751,
+"autor_principal": null,
+"ano": "2000"
+},
+{
+"linha": 752,
+"autor_principal": null,
+"ano": "1991"
+},
+{
+"linha": 753,
+"autor_principal": "Lynch",
+"ano": "1982"
+},
+{
+"linha": 754,
+"autor_principal": "Anderson",
+"ano": "1976"
+},
+{
+"linha": 755,
+"autor_principal": "Ruin",
+"ano": "2004"
+},
+{
+"linha": 756,
+"autor_principal": "Scott",
+"ano": "1973"
+},
+{
+"linha": 757,
+"autor_principal": null,
+"ano": "2004"
+},
+{
+"linha": 758,
+"autor_principal": "Disch",
+"ano": "1974"
+},
+{
+"linha": 759,
+"autor_principal": "Burroughs",
+"ano": "1924"
+},
+{
+"linha": 760,
+"autor_principal": "Brandes",
+"ano": "1989"
+},
+{
+"linha": 761,
+"autor_principal": "Berthold-Bond",
+"ano": "2000"
+},
+{
+"linha": 762,
+"autor_principal": null,
+"ano": "2011"
+},
+{
+"linha": 763,
+"autor_principal": "Faulkner",
+"ano": "2013"
+},
+{
+"linha": 764,
+"autor_principal": "Walton",
+"ano": "2011"
+},
+{
+"linha": 765,
+"autor_principal": "Campbell",
+"ano": "2006"
+},
+{
+"linha": 766,
+"autor_principal": "Bowerman",
+"ano": "1985b"
+},
+{
+"linha": 767,
+"autor_principal": "Gelman",
+"ano": "1998a"
+},
+{
+"linha": 768,
+"autor_principal": "Vallari",
+"ano": "2011"
+},
+{
+"linha": 769,
+"autor_principal": "Baum",
+"ano": "2010"
+},
+{
+"linha": 770,
+"autor_principal": "Endsley",
+"ano": "1997"
+},
+{
+"linha": 771,
+"autor_principal": "Kimball",
+"ano": "2015"
+},
+{
+"linha": 772,
+"autor_principal": "Pekelsma",
+"ano": "1988"
+},
+{
+"linha": 773,
+"autor_principal": "Lundsten",
+"ano": "2010"
+},
+{
+"linha": 774,
+"autor_principal": "Steiner",
+"ano": "1995"
+},
+{
+"linha": 775,
+"autor_principal": "Vese",
+"ano": "2002"
+},
+{
+"linha": 776,
+"autor_principal": "Liu",
+"ano": "2009"
+},
+{
+"linha": 777,
+"autor_principal": "Di Michele",
+"ano": "2003"
+},
+{
+"linha": 778,
+"autor_principal": "Voyer",
+"ano": "2015"
+},
+{
+"linha": 779,
+"autor_principal": "Santos Otero",
+"ano": "1978"
+},
+{
+"linha": 780,
+"autor_principal": null,
+"ano": "1995"
+},
+{
+"linha": 781,
+"autor_principal": "Marco Gadola",
+"ano": "1996"
+},
+{
+"linha": 782,
+"autor_principal": "Johnson",
+"ano": "2013"
+},
+{
+"linha": 783,
+"autor_principal": "Stanger CA",
+"ano": null
+},
+{
+"linha": 784,
+"autor_principal": "Dabizha",
+"ano": "1977"
+},
+{
+"linha": 785,
+"autor_principal": "Thomas",
+"ano": "1992"
+},
+{
+"linha": 786,
+"autor_principal": null,
+"ano": "2003"
+},
+{
+"linha": 787,
+"autor_principal": "McCrum",
+"ano": "2006"
+},
+{
+"linha": 788,
+"autor_principal": "Lickint",
+"ano": "1935"
+},
+{
+"linha": 789,
+"autor_principal": "Wickham-Crowley",
+"ano": "1997"
+},
+{
+"linha": 790,
+"autor_principal": "BERTRAND",
+"ano": "1864"
+},
+{
+"linha": 791,
+"autor_principal": "Head",
+"ano": "1994"
+},
+{
+"linha": 792,
+"autor_principal": "Cheshire",
+"ano": "2011"
+},
+{
+"linha": 793,
+"autor_principal": "Ornan",
+"ano": "1983"
+},
+{
+"linha": 794,
+"autor_principal": "FLORIDI",
+"ano": "2014"
+},
+{
+"linha": 795,
+"autor_principal": null,
+"ano": "1994"
+},
+{
+"linha": 796,
+"autor_principal": "Saad ED",
+"ano": null
+},
+{
+"linha": 797,
+"autor_principal": "Lathan CE",
+"ano": null
+},
+{
+"linha": 798,
+"autor_principal": "BESSA",
+"ano": "2002"
+},
+{
+"linha": 799,
+"autor_principal": "BAZIN",
+"ano": "1931"
+},
+{
+"linha": 800,
+"autor_principal": "Liu",
+"ano": "2012"
+},
+{
+"linha": 801,
+"autor_principal": "Christopher Sterling",
+"ano": "2006"
+},
+{
+"linha": 802,
+"autor_principal": "Young",
+"ano": "2007"
+},
+{
+"linha": 803,
+"autor_principal": null,
+"ano": "2006"
+},
+{
+"linha": 804,
+"autor_principal": null,
+"ano": "2001"
+},
+{
+"linha": 805,
+"autor_principal": "Schouten",
+"ano": "1993"
+},
+{
+"linha": 806,
+"autor_principal": "Tavo",
+"ano": "2007"
+},
+{
+"linha": 807,
+"autor_principal": "Patel",
+"ano": "2010"
+},
+{
+"linha": 808,
+"autor_principal": "Héring",
+"ano": "1967"
+},
+{
+"linha": 809,
+"autor_principal": "Nazarov",
+"ano": "1992"
+},
+{
+"linha": 810,
+"autor_principal": null,
+"ano": "2001"
+},
+{
+"linha": 811,
+"autor_principal": null,
+"ano": "1999"
+},
+{
+"linha": 812,
+"autor_principal": "Dietz",
+"ano": "1968"
+},
+{
+"linha": 813,
+"autor_principal": null,
+"ano": "1986"
+},
+{
+"linha": 814,
+"autor_principal": "JAMES",
+"ano": "1980"
+},
+{
+"linha": 815,
+"autor_principal": null,
+"ano": "2003"
+},
+{
+"linha": 816,
+"autor_principal": null,
+"ano": "1866"
+},
+{
+"linha": 817,
+"autor_principal": "Bao",
+"ano": "2010"
+},
+{
+"linha": 818,
+"autor_principal": "Amossy",
+"ano": "2010"
+},
+{
+"linha": 819,
+"autor_principal": "Baker",
+"ano": "1972"
+},
+{
+"linha": 820,
+"autor_principal": "Arbea",
+"ano": "1991"
+},
+{
+"linha": 821,
+"autor_principal": "Jackson",
+"ano": "2007"
+},
+{
+"linha": 822,
+"autor_principal": "Johnson",
+"ano": "1993"
+},
+{
+"linha": 823,
+"autor_principal": null,
+"ano": "2015"
+},
+{
+"linha": 824,
+"autor_principal": "Jordan",
+"ano": "2006"
+},
+{
+"linha": 825,
+"autor_principal": "McAndrew PM",
+"ano": "2011"
+},
+{
+"linha": 826,
+"autor_principal": "Vaghefi",
+"ano": "2012"
+},
+{
+"linha": 827,
+"autor_principal": null,
+"ano": "1993"
+},
+{
+"linha": 828,
+"autor_principal": "Seber",
+"ano": "1982"
+},
+{
+"linha": 829,
+"autor_principal": "Caress",
+"ano": "1995"
+},
+{
+"linha": 830,
+"autor_principal": "Prevot",
+"ano": "2009"
+},
+{
+"linha": 831,
+"autor_principal": "Roy",
+"ano": "2000"
+},
+{
+"linha": 832,
+"autor_principal": null,
+"ano": "2008"
+},
+{
+"linha": 833,
+"autor_principal": "King Charles",
+"ano": "1998"
+},
+{
+"linha": 834,
+"autor_principal": "Gernet",
+"ano": "1963"
+},
+{
+"linha": 835,
+"autor_principal": "Schnackenburg",
+"ano": "1987"
+},
+{
+"linha": 836,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 837,
+"autor_principal": null,
+"ano": "2003"
+},
+{
+"linha": 838,
+"autor_principal": "Droettboom",
+"ano": "2002"
+},
+{
+"linha": 839,
+"autor_principal": "Hisakata",
+"ano": "2016"
+},
+{
+"linha": 840,
+"autor_principal": "Musk",
+"ano": "2006"
+},
+{
+"linha": 841,
+"autor_principal": "Thompson",
+"ano": "1996"
+},
+{
+"linha": 842,
+"autor_principal": "Renne",
+"ano": "2002"
+},
+{
+"linha": 843,
+"autor_principal": "Forsé",
+"ano": "2005"
+},
+{
+"linha": 844,
+"autor_principal": "Cédric Durand",
+"ano": "2015"
+},
+{
+"linha": 845,
+"autor_principal": "Erisman",
+"ano": "2008"
+},
+{
+"linha": 846,
+"autor_principal": "Axters",
+"ano": "1971"
+},
+{
+"linha": 847,
+"autor_principal": "FRIARD",
+"ano": "2010"
+},
+{
+"linha": 848,
+"autor_principal": "Cumming",
+"ano": "1962"
+},
+{
+"linha": 849,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 850,
+"autor_principal": "Fraassen",
+"ano": "1976"
+},
+{
+"linha": 851,
+"autor_principal": "Carporzen",
+"ano": "2005"
+},
+{
+"linha": 852,
+"autor_principal": "Gauthier",
+"ano": "1988"
+},
+{
+"linha": 853,
+"autor_principal": "Jones",
+"ano": "2011"
+},
+{
+"linha": 854,
+"autor_principal": null,
+"ano": "2008"
+},
+{
+"linha": 855,
+"autor_principal": "Wood",
+"ano": "1968"
+},
+{
+"linha": 856,
+"autor_principal": "Kinsland",
+"ano": "2000"
+},
+{
+"linha": 857,
+"autor_principal": "Boas",
+"ano": "1935"
+},
+{
+"linha": 858,
+"autor_principal": "Lindquist",
+"ano": "2009"
+},
+{
+"linha": 859,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 860,
+"autor_principal": "Hogue",
+"ano": "2001"
+},
+{
+"linha": 861,
+"autor_principal": "Calabresi",
+"ano": "2001"
+},
+{
+"linha": 862,
+"autor_principal": null,
+"ano": "1976"
+},
+{
+"linha": 863,
+"autor_principal": "Horn",
+"ano": "1980"
+},
+{
+"linha": 864,
+"autor_principal": "ANQUETIN",
+"ano": "2009"
+},
+{
+"linha": 865,
+"autor_principal": null,
+"ano": "1998"
+},
+{
+"linha": 866,
+"autor_principal": "Ferrière",
+"ano": "2010"
+},
+{
+"linha": 867,
+"autor_principal": "BEZES",
+"ano": "2009"
+},
+{
+"linha": 868,
+"autor_principal": null,
+"ano": "2007"
+},
+{
+"linha": 869,
+"autor_principal": "Robert",
+"ano": "1878"
+},
+{
+"linha": 870,
+"autor_principal": "Behrens",
+"ano": "2013"
+},
+{
+"linha": 871,
+"autor_principal": "Merleau-Ponty",
+"ano": "1973"
+},
+{
+"linha": 872,
+"autor_principal": "Bouchalová",
+"ano": "2016"
+},
+{
+"linha": 873,
+"autor_principal": null,
+"ano": "2005"
+},
+{
+"linha": 874,
+"autor_principal": "FOUQUET",
+"ano": "2007"
+},
+{
+"linha": 875,
+"autor_principal": "Fisher",
+"ano": "1990"
+},
+{
+"linha": 876,
+"autor_principal": "Wood",
+"ano": "1994"
+},
+{
+"linha": 877,
+"autor_principal": "Carruthers",
+"ano": "1998b"
+},
+{
+"linha": 878,
+"autor_principal": "ACKET Claude",
+"ano": "2014"
+},
+{
+"linha": 879,
+"autor_principal": null,
+"ano": "2011"
+},
+{
+"linha": 880,
+"autor_principal": "Hauser",
+"ano": "1982"
+},
+{
+"linha": 881,
+"autor_principal": "Sarver",
+"ano": "2015"
+},
+{
+"linha": 882,
+"autor_principal": "Bidar Myryam",
+"ano": "2010"
+},
+{
+"linha": 883,
+"autor_principal": "Hagenmeyer",
+"ano": "1973"
+},
+{
+"linha": 884,
+"autor_principal": "Sokol",
+"ano": "2003"
+},
+{
+"linha": 885,
+"autor_principal": "Ferguson",
+"ano": "2001"
+},
+{
+"linha": 886,
+"autor_principal": "Dressler",
+"ano": "1997"
+},
+{
+"linha": 887,
+"autor_principal": "Neddermann",
+"ano": "1996"
+},
+{
+"linha": 888,
+"autor_principal": "Sulloway",
+"ano": "1982"
+},
+{
+"linha": 889,
+"autor_principal": "Masaitis",
+"ano": "1980"
+},
+{
+"linha": 890,
+"autor_principal": "Hijmans",
+"ano": "1987"
+},
+{
+"linha": 891,
+"autor_principal": "BASLER",
+"ano": "1925"
+},
+{
+"linha": 892,
+"autor_principal": "Duranceau",
+"ano": "2004"
+},
+{
+"linha": 893,
+"autor_principal": "GENOVESE",
+"ano": "2014b"
+},
+{
+"linha": 894,
+"autor_principal": "Drury CG",
+"ano": "1982"
+},
+{
+"linha": 895,
+"autor_principal": null,
+"ano": "2016"
+},
+{
+"linha": 896,
+"autor_principal": null,
+"ano": "1989"
+},
+{
+"linha": 897,
+"autor_principal": "Staples",
+"ano": "2006"
+},
+{
+"linha": 898,
+"autor_principal": "Ouellett",
+"ano": "2004"
+},
+{
+"linha": 899,
+"autor_principal": null,
+"ano": "2017"
+},
+{
+"linha": 900,
+"autor_principal": null,
+"ano": "2013"
+},
+{
+"linha": 901,
+"autor_principal": "Kring",
+"ano": "2005"
+},
+{
+"linha": 902,
+"autor_principal": "Kamenetz",
+"ano": "2010"
+},
+{
+"linha": 903,
+"autor_principal": null,
+"ano": "1887"
+},
+{
+"linha": 904,
+"autor_principal": "Hazell",
+"ano": "2012"
+},
+{
+"linha": 905,
+"autor_principal": "Debelak",
+"ano": "2000"
+},
+{
+"linha": 906,
+"autor_principal": "Plivard",
+"ano": "2014"
+},
+{
+"linha": 907,
+"autor_principal": "Robles",
+"ano": "2012"
+},
+{
+"linha": 908,
+"autor_principal": "Taschereau",
+"ano": "2005"
+},
+{
+"linha": 909,
+"autor_principal": null,
+"ano": "2014"
+},
+{
+"linha": 910,
+"autor_principal": "Younan PM",
+"ano": null
+},
+{
+"linha": 911,
+"autor_principal": "Fensterheim",
+"ano": "1950"
+},
+{
+"linha": 912,
+"autor_principal": "Dawson",
+"ano": "2012"
+},
+{
+"linha": 913,
+"autor_principal": "Rowen",
+"ano": null
+},
+{
+"linha": 914,
+"autor_principal": null,
+"ano": "1969"
+},
+{
+"linha": 915,
+"autor_principal": "Moss",
+"ano": "1968"
+},
+{
+"linha": 916,
+"autor_principal": "Jacobs",
+"ano": "1957"
+},
+{
+"linha": 917,
+"autor_principal": null,
+"ano": "2010"
+},
+{
+"linha": 918,
+"autor_principal": "Benjamin",
+"ano": "1996"
+},
+{
+"linha": 919,
+"autor_principal": "Eyal",
+"ano": null
+},
+{
+"linha": 920,
+"autor_principal": "Hearn",
+"ano": "1904"
+},
+{
+"linha": 921,
+"autor_principal": "Ivy",
+"ano": "1995"
+},
+{
+"linha": 922,
+"autor_principal": "James",
+"ano": "1912"
+},
+{
+"linha": 923,
+"autor_principal": null,
+"ano": "2008"
+},
+{
+"linha": 924,
+"autor_principal": "Suntola",
+"ano": "1992"
+},
+{
+"linha": 925,
+"autor_principal": "Kim",
+"ano": "2005"
+},
+{
+"linha": 926,
+"autor_principal": "Ritala",
+"ano": "1999"
+},
+{
+"linha": 927,
+"autor_principal": "Cartier",
+"ano": "1993"
+},
+{
+"linha": 928,
+"autor_principal": "Bard",
+"ano": "2000"
+},
+{
+"linha": 929,
+"autor_principal": "Siu",
+"ano": "1979"
+},
+{
+"linha": 930,
+"autor_principal": null,
+"ano": "1960"
+},
+{
+"linha": 931,
+"autor_principal": null,
+"ano": "1970"
+},
+{
+"linha": 932,
+"autor_principal": "Yorke",
+"ano": "2008"
+},
+{
+"linha": 933,
+"autor_principal": "Camões",
+"ano": "1968"
+},
+{
+"linha": 934,
+"autor_principal": null,
+"ano": "1963"
+},
+{
+"linha": 935,
+"autor_principal": "Hesse",
+"ano": "1958"
+},
+{
+"linha": 936,
+"autor_principal": null,
+"ano": "1969"
+},
+{
+"linha": 937,
+"autor_principal": null,
+"ano": "1956"
+},
+{
+"linha": 938,
+"autor_principal": "Spengler",
+"ano": "1926"
+},
+{
+"linha": 939,
+"autor_principal": "Eisenstein",
+"ano": "1988"
+},
+{
+"linha": 940,
+"autor_principal": "Céline",
+"ano": "1952"
+},
+{
+"linha": 941,
+"autor_principal": "Bede",
+"ano": "2002"
+},
+{
+"linha": 942,
+"autor_principal": null,
+"ano": "1958"
+},
+{
+"linha": 943,
+"autor_principal": null,
+"ano": "1951"
+},
+{
+"linha": 944,
+"autor_principal": "Cheng Wang",
+"ano": "2007"
+},
+{
+"linha": 945,
+"autor_principal": null,
+"ano": "1996"
+},
+{
+"linha": 946,
+"autor_principal": null,
+"ano": "1992"
+},
+{
+"linha": 947,
+"autor_principal": "Grady",
+"ano": null
+},
+{
+"linha": 948,
+"autor_principal": null,
+"ano": "2011"
+},
+{
+"linha": 949,
+"autor_principal": "Miller",
+"ano": "1991"
+},
+{
+"linha": 950,
+"autor_principal": "Green",
+"ano": "2016"
+},
+{
+"linha": 951,
+"autor_principal": "DUPRAT",
+"ano": "1932"
+},
+{
+"linha": 952,
+"autor_principal": "FREUD",
+"ano": "2013"
+},
+{
+"linha": 953,
+"autor_principal": null,
+"ano": "2008"
+},
+{
+"linha": 954,
+"autor_principal": null,
+"ano": "1934"
+},
+{
+"linha": 955,
+"autor_principal": "D’SOUZA",
+"ano": "1987"
+},
+{
+"linha": 956,
+"autor_principal": "Crépeau",
+"ano": "1995"
+},
+{
+"linha": 957,
+"autor_principal": null,
+"ano": "2010"
+},
+{
+"linha": 958,
+"autor_principal": "Habermas",
+"ano": "1995"
+},
+{
+"linha": 959,
+"autor_principal": "Ingold",
+"ano": "1988"
+},
+{
+"linha": 960,
+"autor_principal": "Blanchon",
+"ano": "1999"
+},
+{
+"linha": 961,
+"autor_principal": "HOGGART",
+"ano": "1957"
+},
+{
+"linha": 962,
+"autor_principal": "FLORENNE",
+"ano": "1952"
+},
+{
+"linha": 963,
+"autor_principal": "DUCLERT",
+"ano": "2002"
+},
+{
+"linha": 964,
+"autor_principal": null,
+"ano": "1984"
+},
+{
+"linha": 965,
+"autor_principal": "Alanen",
+"ano": "2007"
+},
+{
+"linha": 966,
+"autor_principal": null,
+"ano": "2015"
+},
+{
+"linha": 967,
+"autor_principal": "Ferren",
+"ano": "1976"
+},
+{
+"linha": 968,
+"autor_principal": "Shijun Yoshida",
+"ano": "2010"
+},
+{
+"linha": 969,
+"autor_principal": "GORDON",
+"ano": null
+},
+{
+"linha": 970,
+"autor_principal": "Douglass",
+"ano": "2010"
+},
+{
+"linha": 971,
+"autor_principal": "Mair",
+"ano": "2006"
+},
+{
+"linha": 972,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 973,
+"autor_principal": null,
+"ano": "1997"
+},
+{
+"linha": 974,
+"autor_principal": "Frederick",
+"ano": "1999"
+},
+{
+"linha": 975,
+"autor_principal": "Yablonovitch",
+"ano": "1982"
+},
+{
+"linha": 976,
+"autor_principal": "Tilly",
+"ano": "2005b"
+},
+{
+"linha": 977,
+"autor_principal": null,
+"ano": "2015a"
+},
+{
+"linha": 978,
+"autor_principal": null,
+"ano": "1957"
+},
+{
+"linha": 979,
+"autor_principal": "Gumbrecht",
+"ano": "2011"
+},
+{
+"linha": 980,
+"autor_principal": "Abraham",
+"ano": "1989"
+},
+{
+"linha": 981,
+"autor_principal": "Andrews",
+"ano": "1964"
+},
+{
+"linha": 982,
+"autor_principal": null,
+"ano": "2000"
+},
+{
+"linha": 983,
+"autor_principal": "Levine",
+"ano": "1977"
+},
+{
+"linha": 984,
+"autor_principal": "Iwasaki",
+"ano": "2013"
+},
+{
+"linha": 985,
+"autor_principal": "Manetti",
+"ano": "1993"
+},
+{
+"linha": 986,
+"autor_principal": null,
+"ano": "2013"
+},
+{
+"linha": 987,
+"autor_principal": "Geismar",
+"ano": "2010"
+},
+{
+"linha": 988,
+"autor_principal": null,
+"ano": "1996"
+},
+{
+"linha": 989,
+"autor_principal": null,
+"ano": "1979"
+},
+{
+"linha": 990,
+"autor_principal": "Carroll",
+"ano": "2005"
+},
+{
+"linha": 991,
+"autor_principal": null,
+"ano": "2005"
+},
+{
+"linha": 992,
+"autor_principal": null,
+"ano": "2000"
+},
+{
+"linha": 993,
+"autor_principal": null,
+"ano": "2009"
+},
+{
+"linha": 994,
+"autor_principal": "Gates",
+"ano": "2008"
+},
+{
+"linha": 995,
+"autor_principal": null,
+"ano": "1967"
+},
+{
+"linha": 996,
+"autor_principal": null,
+"ano": "2008"
+},
+{
+"linha": 997,
+"autor_principal": null,
+"ano": "2010"
+},
+{
+"linha": 998,
+"autor_principal": "Snyder",
+"ano": "1996"
+},
+{
+"linha": 999,
+"autor_principal": "Sera",
+"ano": "2003"
+},
+{
+"linha": 1000,
+"autor_principal": "White",
+"ano": "1988"
+},
+{
+"linha": 1001,
+"autor_principal": "O'Connor",
+"ano": "2016"
+},
+{
+"linha": 1002,
+"autor_principal": "Derrida",
+"ano": "1967"
+},
+{
+"linha": 1003,
+"autor_principal": "Palmer",
+"ano": "2010"
+},
+{
+"linha": 1004,
+"autor_principal": "Sandilands",
+"ano": "2004"
+},
+{
+"linha": 1005,
+"autor_principal": "Woodman",
+"ano": "2001"
+},
+{
+"linha": 1006,
+"autor_principal": "Waller",
+"ano": "2011"
+},
+{
+"linha": 1007,
+"autor_principal": "Williams",
+"ano": "2014"
+},
+{
+"linha": 1008,
+"autor_principal": "Yglesias",
+"ano": "2014"
+},
+{
+"linha": 1009,
+"autor_principal": "Piegl",
+"ano": "1997"
+},
+{
+"linha": 1010,
+"autor_principal": null,
+"ano": "2004"
+},
+{
+"linha": 1011,
+"autor_principal": "McPhail",
+"ano": "2010"
+},
+{
+"linha": 1012,
+"autor_principal": "McEwen",
+"ano": "2001"
+},
+{
+"linha": 1013,
+"autor_principal": "Pietquin",
+"ano": "2006"
+},
+{
+"linha": 1014,
+"autor_principal": "Goure",
+"ano": "2012"
+},
+{
+"linha": 1015,
+"autor_principal": "Gibbs",
+"ano": "1985"
+},
+{
+"linha": 1016,
+"autor_principal": "Caspani",
+"ano": "2011"
+},
+{
+"linha": 1017,
+"autor_principal": "Louisell",
+"ano": "1962"
+},
+{
+"linha": 1018,
+"autor_principal": "Gerace",
+"ano": "2014"
+},
+{
+"linha": 1019,
+"autor_principal": "Luxmoore",
+"ano": "2011"
+},
+{
+"linha": 1020,
+"autor_principal": "Eberl",
+"ano": "1995"
+},
+{
+"linha": 1021,
+"autor_principal": "Buckley",
+"ano": "2014"
+},
+{
+"linha": 1022,
+"autor_principal": null,
+"ano": "2005"
+},
+{
+"linha": 1023,
+"autor_principal": "Steffen",
+"ano": "1993"
+},
+{
+"linha": 1024,
+"autor_principal": "Pierre Sermanet",
+"ano": "2014"
+},
+{
+"linha": 1025,
+"autor_principal": "Dean Baskin",
+"ano": "2012"
+},
+{
+"linha": 1026,
+"autor_principal": "Mihalis Dafermos",
+"ano": "2013"
+},
+{
+"linha": 1027,
+"autor_principal": null,
+"ano": "2007"
+},
+{
+"linha": 1028,
+"autor_principal": null,
+"ano": "2015"
+},
+{
+"linha": 1029,
+"autor_principal": "Christian Szegedy",
+"ano": "2016"
+},
+{
+"linha": 1030,
+"autor_principal": "Tsung-Yu Lin",
+"ano": null
+},
+{
+"linha": 1031,
+"autor_principal": "Adamson",
+"ano": "2008"
+},
+{
+"linha": 1032,
+"autor_principal": "Leftwich",
+"ano": "1960"
+},
+{
+"linha": 1033,
+"autor_principal": "Board",
+"ano": "1966"
+},
+{
+"linha": 1034,
+"autor_principal": "Gershick",
+"ano": "1947"
+},
+{
+"linha": 1035,
+"autor_principal": null,
+"ano": "1969"
+},
+{
+"linha": 1036,
+"autor_principal": null,
+"ano": "1967"
+},
+{
+"linha": 1037,
+"autor_principal": null,
+"ano": "1963"
+},
+{
+"linha": 1038,
+"autor_principal": "Allen",
+"ano": "1962"
+},
+{
+"linha": 1039,
+"autor_principal": "Ringbakk",
+"ano": "1968"
+},
+{
+"linha": 1040,
+"autor_principal": "Dunker",
+"ano": "1945"
+},
+{
+"linha": 1041,
+"autor_principal": "Warren",
+"ano": "1966"
+},
+{
+"linha": 1042,
+"autor_principal": null,
+"ano": "1967"
+},
+{
+"linha": 1043,
+"autor_principal": "Cleland",
+"ano": "1967"
+},
+{
+"linha": 1044,
+"autor_principal": "Bianco",
+"ano": "2013"
+},
+{
+"linha": 1045,
+"autor_principal": null,
+"ano": "1807"
+},
+{
+"linha": 1046,
+"autor_principal": "Cissé",
+"ano": "2006"
+},
+{
+"linha": 1047,
+"autor_principal": null,
+"ano": "1983"
+},
+{
+"linha": 1048,
+"autor_principal": "BRUECK",
+"ano": "2010"
+},
+{
+"linha": 1049,
+"autor_principal": "Mason",
+"ano": "1962"
+},
+{
+"linha": 1050,
+"autor_principal": "Warburg",
+"ano": "1914"
+},
+{
+"linha": 1051,
+"autor_principal": null,
+"ano": "1968"
+},
+{
+"linha": 1052,
+"autor_principal": "Wheelwright",
+"ano": "1969"
+},
+{
+"linha": 1053,
+"autor_principal": "Litwin",
+"ano": "1965"
+},
+{
+"linha": 1054,
+"autor_principal": null,
+"ano": "1820"
+},
+{
+"linha": 1055,
+"autor_principal": "Pearson",
+"ano": "2007"
+},
+{
+"linha": 1056,
+"autor_principal": null,
+"ano": "1791"
+},
+{
+"linha": 1057,
+"autor_principal": null,
+"ano": "1810"
+},
+{
+"linha": 1058,
+"autor_principal": "Hutchinson",
+"ano": "1778"
+},
+{
+"linha": 1059,
+"autor_principal": "Maneva",
+"ano": "2002"
+},
+{
+"linha": 1060,
+"autor_principal": "Shatz",
+"ano": "1983"
+},
+{
+"linha": 1061,
+"autor_principal": "Prince",
+"ano": "1981"
+},
+{
+"linha": 1062,
+"autor_principal": "Genesee",
+"ano": "2006"
+},
+{
+"linha": 1063,
+"autor_principal": null,
+"ano": "1991"
+},
+{
+"linha": 1064,
+"autor_principal": null,
+"ano": "2007"
+},
+{
+"linha": 1065,
+"autor_principal": "Ohman",
+"ano": "2002"
+},
+{
+"linha": 1066,
+"autor_principal": "Allen",
+"ano": "1981"
+},
+{
+"linha": 1067,
+"autor_principal": null,
+"ano": "1968"
+},
+{
+"linha": 1068,
+"autor_principal": "Marks",
+"ano": "1951"
+},
+{
+"linha": 1069,
+"autor_principal": "Stern",
+"ano": "1928"
+},
+{
+"linha": 1070,
+"autor_principal": "Boulding",
+"ano": "1966"
+},
+{
+"linha": 1071,
+"autor_principal": null,
+"ano": "2004"
+},
+{
+"linha": 1072,
+"autor_principal": "Bakhtin",
+"ano": "1981"
+},
+{
+"linha": 1073,
+"autor_principal": "Perloff",
+"ano": "1981"
+},
+{
+"linha": 1074,
+"autor_principal": "Christov-Bakargiev",
+"ano": "1998"
+},
+{
+"linha": 1075,
+"autor_principal": "McGuinness",
+"ano": "2000"
+},
+{
+"linha": 1076,
+"autor_principal": "Weber",
+"ano": "1992"
+},
+{
+"linha": 1077,
+"autor_principal": "Freyhan",
+"ano": "2009"
+},
+{
+"linha": 1078,
+"autor_principal": "Hadlock",
+"ano": "2004"
+},
+{
+"linha": 1079,
+"autor_principal": null,
+"ano": "1984"
+},
+{
+"linha": 1080,
+"autor_principal": "Debussy",
+"ano": "1985"
+},
+{
+"linha": 1081,
+"autor_principal": null,
+"ano": "1986"
+},
+{
+"linha": 1082,
+"autor_principal": "Schelling",
+"ano": "1989"
+},
+{
+"linha": 1083,
+"autor_principal": null,
+"ano": "1974"
+},
+{
+"linha": 1084,
+"autor_principal": "Durkheim",
+"ano": "1967"
+},
+{
+"linha": 1085,
+"autor_principal": null,
+"ano": "1906"
+},
+{
+"linha": 1086,
+"autor_principal": "Summerhill",
+"ano": "2007"
+},
+{
+"linha": 1087,
+"autor_principal": "Messiaen",
+"ano": "1988"
+},
+{
+"linha": 1088,
+"autor_principal": "Wagner",
+"ano": "1986"
+},
+{
+"linha": 1089,
+"autor_principal": "Mogensen",
+"ano": "2000"
+},
+{
+"linha": 1090,
+"autor_principal": "Laub",
+"ano": "2003"
+},
+{
+"linha": 1091,
+"autor_principal": "Forster",
+"ano": "2003"
+},
+{
+"linha": 1092,
+"autor_principal": "Buci-Glucksmann",
+"ano": "2003"
+},
+{
+"linha": 1093,
+"autor_principal": null,
+"ano": "2001"
+},
+{
+"linha": 1094,
+"autor_principal": "Lindau",
+"ano": "2003"
+},
+{
+"linha": 1095,
+"autor_principal": "Basevi",
+"ano": "2001"
+},
+{
+"linha": 1096,
+"autor_principal": "Levin",
+"ano": "2007"
+},
+{
+"linha": 1097,
+"autor_principal": null,
+"ano": "1986"
+},
+{
+"linha": 1098,
+"autor_principal": "Wordsworth",
+"ano": "1979"
+},
+{
+"linha": 1099,
+"autor_principal": "Baudelaire",
+"ano": "1951"
+},
+{
+"linha": 1100,
+"autor_principal": "Esty",
+"ano": "2012"
+},
+{
+"linha": 1101,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 1102,
+"autor_principal": "Araripe",
+"ano": "1960"
+},
+{
+"linha": 1103,
+"autor_principal": "Da Matta",
+"ano": "1991"
+},
+{
+"linha": 1104,
+"autor_principal": "Schneider",
+"ano": "2011"
+},
+{
+"linha": 1105,
+"autor_principal": "Steiner",
+"ano": "1921"
+},
+{
+"linha": 1106,
+"autor_principal": "Deitering",
+"ano": null
+},
+{
+"linha": 1107,
+"autor_principal": "Herder",
+"ano": "1985"
+},
+{
+"linha": 1108,
+"autor_principal": "Stein",
+"ano": "1957"
+},
+{
+"linha": 1109,
+"autor_principal": "Weber",
+"ano": "1992"
+},
+{
+"linha": 1110,
+"autor_principal": "Gunter",
+"ano": "1995"
+},
+{
+"linha": 1111,
+"autor_principal": "Clarke",
+"ano": "1983"
+},
+{
+"linha": 1112,
+"autor_principal": "Man Lan",
+"ano": "2006"
+},
+{
+"linha": 1113,
+"autor_principal": "Aditya Khosla",
+"ano": "2011"
+},
+{
+"linha": 1114,
+"autor_principal": "Golden",
+"ano": "1980"
+},
+{
+"linha": 1115,
+"autor_principal": "Jackson",
+"ano": "1998"
+},
+{
+"linha": 1116,
+"autor_principal": "Ashcroft",
+"ano": "1976"
+},
+{
+"linha": 1117,
+"autor_principal": "Taflove",
+"ano": "2005"
+},
+{
+"linha": 1118,
+"autor_principal": "Dweck",
+"ano": "2011"
+},
+{
+"linha": 1119,
+"autor_principal": "Mullin",
+"ano": "2012"
+},
+{
+"linha": 1120,
+"autor_principal": "Harlow",
+"ano": "2003"
+},
+{
+"linha": 1121,
+"autor_principal": "Kubik",
+"ano": "1982"
+},
+{
+"linha": 1122,
+"autor_principal": "Bourdieu",
+"ano": "1988"
+},
+{
+"linha": 1123,
+"autor_principal": null,
+"ano": "1963"
+},
+{
+"linha": 1124,
+"autor_principal": null,
+"ano": "1968"
+},
+{
+"linha": 1125,
+"autor_principal": null,
+"ano": "2015"
+},
+{
+"linha": 1126,
+"autor_principal": "Guelrud",
+"ano": null
+},
+{
+"linha": 1127,
+"autor_principal": "Rainey",
+"ano": "2008"
+},
+{
+"linha": 1128,
+"autor_principal": "Khirfan",
+"ano": "2008"
+},
+{
+"linha": 1129,
+"autor_principal": "Janet",
+"ano": "1996"
+},
+{
+"linha": 1130,
+"autor_principal": null,
+"ano": "1995"
+},
+{
+"linha": 1131,
+"autor_principal": null,
+"ano": "2015"
+},
+{
+"linha": 1132,
+"autor_principal": null,
+"ano": "2008"
+},
+{
+"linha": 1133,
+"autor_principal": "BARRÓN CRUZ",
+"ano": "2013"
+},
+{
+"linha": 1134,
+"autor_principal": "Contassot",
+"ano": null
+},
+{
+"linha": 1135,
+"autor_principal": null,
+"ano": "2011"
+},
+{
+"linha": 1136,
+"autor_principal": null,
+"ano": "2000"
+},
+{
+"linha": 1137,
+"autor_principal": "Cédric Durand",
+"ano": "2012"
+},
+{
+"linha": 1138,
+"autor_principal": "Rock",
+"ano": "2014"
+},
+{
+"linha": 1139,
+"autor_principal": null,
+"ano": "2001"
+},
+{
+"linha": 1140,
+"autor_principal": null,
+"ano": "2012"
+},
+{
+"linha": 1141,
+"autor_principal": "Groblacher",
+"ano": "2013"
+},
+{
+"linha": 1142,
+"autor_principal": null,
+"ano": "2007"
+},
+{
+"linha": 1143,
+"autor_principal": "Twain",
+"ano": "1977"
+},
+{
+"linha": 1144,
+"autor_principal": "Haselton",
+"ano": "2007"
+},
+{
+"linha": 1145,
+"autor_principal": null,
+"ano": "2006"
+},
+{
+"linha": 1146,
+"autor_principal": "Schwans",
+"ano": "2009"
+},
+{
+"linha": 1147,
+"autor_principal": "Kuntz",
+"ano": "1999"
+},
+{
+"linha": 1148,
+"autor_principal": "Adamo",
+"ano": "1990"
+},
+{
+"linha": 1149,
+"autor_principal": "Parent",
+"ano": "1995"
+},
+{
+"linha": 1150,
+"autor_principal": "National",
+"ano": "2015"
+},
+{
+"linha": 1151,
+"autor_principal": null,
+"ano": "2013"
+},
+{
+"linha": 1152,
+"autor_principal": "National",
+"ano": "2015"
+},
+{
+"linha": 1153,
+"autor_principal": "Brand",
+"ano": "1997"
+},
+{
+"linha": 1154,
+"autor_principal": "Wickens",
+"ano": "1997"
+},
+{
+"linha": 1155,
+"autor_principal": "Kolesnikova",
+"ano": "2009"
+},
+{
+"linha": 1156,
+"autor_principal": "Chopra",
+"ano": "2011"
+},
+{
+"linha": 1157,
+"autor_principal": null,
+"ano": "2010"
+},
+{
+"linha": 1158,
+"autor_principal": "Kiesling",
+"ano": "2006"
+},
+{
+"linha": 1159,
+"autor_principal": "Sells",
+"ano": "1983"
+},
+{
+"linha": 1160,
+"autor_principal": "Pitt",
+"ano": "2007"
+},
+{
+"linha": 1161,
+"autor_principal": "Wilder",
+"ano": "1997"
+},
+{
+"linha": 1162,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 1163,
+"autor_principal": null,
+"ano": "2008"
+},
+{
+"linha": 1164,
+"autor_principal": "Rosen",
+"ano": "1997"
+},
+{
+"linha": 1165,
+"autor_principal": "Shih",
+"ano": "2014"
+},
+{
+"linha": 1166,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 1167,
+"autor_principal": null,
+"ano": "2006"
+},
+{
+"linha": 1168,
+"autor_principal": "Taylor",
+"ano": "2012"
+},
+{
+"linha": 1169,
+"autor_principal": "Hwang",
+"ano": "2008"
+},
+{
+"linha": 1170,
+"autor_principal": "Tamminga",
+"ano": "2014"
+},
+{
+"linha": 1171,
+"autor_principal": "Seeger",
+"ano": "1972"
+},
+{
+"linha": 1172,
+"autor_principal": "Cross",
+"ano": "2005"
+},
+{
+"linha": 1173,
+"autor_principal": "Simpson",
+"ano": "1970"
+},
+{
+"linha": 1174,
+"autor_principal": "Dressler",
+"ano": "1997"
+},
+{
+"linha": 1175,
+"autor_principal": "Fukuyama",
+"ano": "1995"
+},
+{
+"linha": 1176,
+"autor_principal": "ARBOUET",
+"ano": "2013"
+},
+{
+"linha": 1177,
+"autor_principal": "Bloom",
+"ano": "1994"
+},
+{
+"linha": 1178,
+"autor_principal": null,
+"ano": "1991"
+},
+{
+"linha": 1179,
+"autor_principal": null,
+"ano": "1990"
+},
+{
+"linha": 1180,
+"autor_principal": "Hawthorne",
+"ano": "1982"
+},
+{
+"linha": 1181,
+"autor_principal": "Barnes",
+"ano": "1981"
+},
+{
+"linha": 1182,
+"autor_principal": null,
+"ano": "1995"
+},
+{
+"linha": 1183,
+"autor_principal": null,
+"ano": "1990"
+},
+{
+"linha": 1184,
+"autor_principal": "Mark",
+"ano": "1995"
+},
+{
+"linha": 1185,
+"autor_principal": "Teng",
+"ano": "1999"
+},
+{
+"linha": 1186,
+"autor_principal": null,
+"ano": "1994"
+},
+{
+"linha": 1187,
+"autor_principal": "Goss",
+"ano": "2004"
+},
+{
+"linha": 1188,
+"autor_principal": "Liu",
+"ano": "2002"
+},
+{
+"linha": 1189,
+"autor_principal": "Shepard",
+"ano": "2008"
+},
+{
+"linha": 1190,
+"autor_principal": null,
+"ano": "1977"
+},
+{
+"linha": 1191,
+"autor_principal": "Aaronfreed",
+"ano": "1994"
+},
+{
+"linha": 1192,
+"autor_principal": "Diamond",
+"ano": "1996"
+},
+{
+"linha": 1193,
+"autor_principal": null,
+"ano": "1974"
+},
+{
+"linha": 1194,
+"autor_principal": "Ackoff",
+"ano": "1962"
+},
+{
+"linha": 1195,
+"autor_principal": "Shmayenok",
+"ano": "1974"
+},
+{
+"linha": 1196,
+"autor_principal": "Yoshida",
+"ano": "2005"
+},
+{
+"linha": 1197,
+"autor_principal": "Cavell",
+"ano": "1979"
+},
+{
+"linha": 1198,
+"autor_principal": null,
+"ano": "1985"
+},
+{
+"linha": 1199,
+"autor_principal": "LEVASSEUR",
+"ano": "2009"
+},
+{
+"linha": 1200,
+"autor_principal": "Benecke",
+"ano": "2014"
+},
+{
+"linha": 1201,
+"autor_principal": null,
+"ano": "2014"
+},
+{
+"linha": 1202,
+"autor_principal": null,
+"ano": "2013"
+},
+{
+"linha": 1203,
+"autor_principal": null,
+"ano": "2013"
+},
+{
+"linha": 1204,
+"autor_principal": "Johannes",
+"ano": "1972"
+},
+{
+"linha": 1205,
+"autor_principal": null,
+"ano": "1971"
+},
+{
+"linha": 1206,
+"autor_principal": "Zhang",
+"ano": "2004"
+},
+{
+"linha": 1207,
+"autor_principal": "Aagaard",
+"ano": "2010"
+},
+{
+"linha": 1208,
+"autor_principal": "Petersen",
+"ano": "2008"
+},
+{
+"linha": 1209,
+"autor_principal": "Spencer",
+"ano": "1991"
+},
+{
+"linha": 1210,
+"autor_principal": "Kamerlin",
+"ano": "2010"
+},
+{
+"linha": 1211,
+"autor_principal": "Yu Zhang",
+"ano": "2015"
+},
+{
+"linha": 1212,
+"autor_principal": "McKinney",
+"ano": "1969"
+},
+{
+"linha": 1213,
+"autor_principal": null,
+"ano": "1997"
+},
+{
+"linha": 1214,
+"autor_principal": null,
+"ano": "1802"
+},
+{
+"linha": 1215,
+"autor_principal": null,
+"ano": "2000"
+},
+{
+"linha": 1216,
+"autor_principal": "Hankinson",
+"ano": "2013"
+},
+{
+"linha": 1217,
+"autor_principal": "Wolever",
+"ano": "2010"
+},
+{
+"linha": 1218,
+"autor_principal": "Carlin",
+"ano": "2001"
+},
+{
+"linha": 1219,
+"autor_principal": "Foster",
+"ano": "2012"
+},
+{
+"linha": 1220,
+"autor_principal": "Mace",
+"ano": "1965"
+},
+{
+"linha": 1221,
+"autor_principal": null,
+"ano": "1999"
+},
+{
+"linha": 1222,
+"autor_principal": "Goudie",
+"ano": "1956"
+},
+{
+"linha": 1223,
+"autor_principal": "Newell",
+"ano": "1958"
+},
+{
+"linha": 1224,
+"autor_principal": "Paolo Falcone",
+"ano": "2010"
+},
+{
+"linha": 1225,
+"autor_principal": "Wardle",
+"ano": "1949"
+},
+{
+"linha": 1226,
+"autor_principal": "Niebauer",
+"ano": "1994"
+},
+{
+"linha": 1227,
+"autor_principal": "Smithson",
+"ano": "1960"
+},
+{
+"linha": 1228,
+"autor_principal": "Uranaka",
+"ano": "2014"
+},
+{
+"linha": 1229,
+"autor_principal": "Feretti",
+"ano": "2008"
+},
+{
+"linha": 1230,
+"autor_principal": "Barsalou",
+"ano": "1993"
+},
+{
+"linha": 1231,
+"autor_principal": "Reiser",
+"ano": "2008"
+},
+{
+"linha": 1232,
+"autor_principal": "Blanc",
+"ano": "2012"
+},
+{
+"linha": 1233,
+"autor_principal": "Ko",
+"ano": "2012"
+},
+{
+"linha": 1234,
+"autor_principal": null,
+"ano": "2014"
+},
+{
+"linha": 1235,
+"autor_principal": "Schneider",
+"ano": "2015"
+},
+{
+"linha": 1236,
+"autor_principal": "Rawlinson",
+"ano": "2012"
+},
+{
+"linha": 1237,
+"autor_principal": "Snoad",
+"ano": "1969"
+},
+{
+"linha": 1238,
+"autor_principal": null,
+"ano": "2016"
+},
+{
+"linha": 1239,
+"autor_principal": "Schnell",
+"ano": "2008"
+},
+{
+"linha": 1240,
+"autor_principal": "Beetz",
+"ano": "1990"
+},
+{
+"linha": 1241,
+"autor_principal": null,
+"ano": "1893"
+},
+{
+"linha": 1242,
+"autor_principal": "Giovannini",
+"ano": "2002"
+},
+{
+"linha": 1243,
+"autor_principal": "Rice",
+"ano": "1973"
+},
+{
+"linha": 1244,
+"autor_principal": "Department",
+"ano": "2013"
+},
+{
+"linha": 1245,
+"autor_principal": "Hans",
+"ano": "2012"
+},
+{
+"linha": 1246,
+"autor_principal": "Balsamo",
+"ano": "2016"
+},
+{
+"linha": 1247,
+"autor_principal": null,
+"ano": "2011"
+},
+{
+"linha": 1248,
+"autor_principal": "Bahn",
+"ano": "1992"
+},
+{
+"linha": 1249,
+"autor_principal": null,
+"ano": "2002"
+},
+{
+"linha": 1250,
+"autor_principal": "Sharpton",
+"ano": "1996"
+},
+{
+"linha": 1251,
+"autor_principal": "Rotzoll",
+"ano": "2013"
+},
+{
+"linha": 1252,
+"autor_principal": null,
+"ano": "1970"
+},
+{
+"linha": 1253,
+"autor_principal": "BONNIN",
+"ano": "2014"
+},
+{
+"linha": 1254,
+"autor_principal": "Bicevskis",
+"ano": "2016"
+},
+{
+"linha": 1255,
+"autor_principal": null,
+"ano": "2003"
+},
+{
+"linha": 1256,
+"autor_principal": "Bajos Nathalie",
+"ano": "2002"
+},
+{
+"linha": 1257,
+"autor_principal": null,
+"ano": "2004"
+},
+{
+"linha": 1258,
+"autor_principal": null,
+"ano": "2017"
+},
+{
+"linha": 1259,
+"autor_principal": "Schulman JE",
+"ano": "2010"
+},
+{
+"linha": 1260,
+"autor_principal": "Gott",
+"ano": "2009"
+},
+{
+"linha": 1261,
+"autor_principal": "Godes",
+"ano": "2007"
+},
+{
+"linha": 1262,
+"autor_principal": "Jackson",
+"ano": "2011"
+},
+{
+"linha": 1263,
+"autor_principal": "Kim",
+"ano": "1998"
+},
+{
+"linha": 1264,
+"autor_principal": null,
+"ano": "2011"
+},
+{
+"linha": 1265,
+"autor_principal": null,
+"ano": "2006"
+},
+{
+"linha": 1266,
+"autor_principal": null,
+"ano": "2009"
+},
+{
+"linha": 1267,
+"autor_principal": null,
+"ano": "2007"
+},
+{
+"linha": 1268,
+"autor_principal": "Senici",
+"ano": "2003"
+},
+{
+"linha": 1269,
+"autor_principal": "GAUDICHAUD",
+"ano": "2009"
+},
+{
+"linha": 1270,
+"autor_principal": null,
+"ano": "2017"
+},
+{
+"linha": 1271,
+"autor_principal": "Hogue",
+"ano": "2001"
+},
+{
+"linha": 1272,
+"autor_principal": "Girard",
+"ano": "2006"
+},
+{
+"linha": 1273,
+"autor_principal": null,
+"ano": "2005"
+},
+{
+"linha": 1274,
+"autor_principal": "Barthes",
+"ano": "1988"
+},
+{
+"linha": 1275,
+"autor_principal": "Catherine Wah",
+"ano": null
+},
+{
+"linha": 1276,
+"autor_principal": "David Cline",
+"ano": "2009"
+},
+{
+"linha": 1277,
+"autor_principal": null,
+"ano": "1964"
+},
+{
+"linha": 1278,
+"autor_principal": "Van Mulken",
+"ano": "1996"
+},
+{
+"linha": 1279,
+"autor_principal": "Dickin",
+"ano": "1997"
+},
+{
+"linha": 1280,
+"autor_principal": "Koger",
+"ano": "1995"
+},
+{
+"linha": 1281,
+"autor_principal": "David Hoiem",
+"ano": "2008"
+},
+{
+"linha": 1282,
+"autor_principal": null,
+"ano": "1871"
+},
+{
+"linha": 1283,
+"autor_principal": "James",
+"ano": "2011"
+},
+{
+"linha": 1284,
+"autor_principal": "Bayley",
+"ano": "2012"
+},
+{
+"linha": 1285,
+"autor_principal": "Tunberg",
+"ano": "1984"
+},
+{
+"linha": 1286,
+"autor_principal": null,
+"ano": "1989"
+},
+{
+"linha": 1287,
+"autor_principal": "Barringer",
+"ano": "1905"
+},
+{
+"linha": 1288,
+"autor_principal": "DOTTI",
+"ano": "2002"
+},
+{
+"linha": 1289,
+"autor_principal": "Slyker JA",
+"ano": "2013"
+},
+{
+"linha": 1290,
+"autor_principal": "Dorcas",
+"ano": "2012"
+},
+{
+"linha": 1291,
+"autor_principal": "Narboux",
+"ano": "2000"
+},
+{
+"linha": 1292,
+"autor_principal": "COMMISSION",
+"ano": "2016"
+},
+{
+"linha": 1293,
+"autor_principal": "BALDERAS",
+"ano": "2016"
+},
+{
+"linha": 1294,
+"autor_principal": "Watson",
+"ano": "1986"
+},
+{
+"linha": 1295,
+"autor_principal": "Krawinkler",
+"ano": "2004"
+},
+{
+"linha": 1296,
+"autor_principal": "Gil",
+"ano": "2010"
+},
+{
+"linha": 1297,
+"autor_principal": null,
+"ano": "1993"
+},
+{
+"linha": 1298,
+"autor_principal": null,
+"ano": "1992"
+},
+{
+"linha": 1299,
+"autor_principal": "Ladner",
+"ano": "1952"
+},
+{
+"linha": 1300,
+"autor_principal": "Kolbe",
+"ano": "2011"
+},
+{
+"linha": 1301,
+"autor_principal": null,
+"ano": "2010"
+},
+{
+"linha": 1302,
+"autor_principal": "Levine",
+"ano": "1989"
+},
+{
+"linha": 1303,
+"autor_principal": "Auray",
+"ano": "2012"
+},
+{
+"linha": 1304,
+"autor_principal": "Childs",
+"ano": "2005"
+},
+{
+"linha": 1305,
+"autor_principal": "Marion",
+"ano": "2007"
+},
+{
+"linha": 1306,
+"autor_principal": null,
+"ano": "2006"
+},
+{
+"linha": 1307,
+"autor_principal": "Dypvik",
+"ano": "2010"
+},
+{
+"linha": 1308,
+"autor_principal": null,
+"ano": "2007"
+},
+{
+"linha": 1309,
+"autor_principal": "GUILMOTO",
+"ano": "1993"
+},
+{
+"linha": 1310,
+"autor_principal": "Harding",
+"ano": "2000"
+},
+{
+"linha": 1311,
+"autor_principal": null,
+"ano": "2004"
+},
+{
+"linha": 1312,
+"autor_principal": "Bell",
+"ano": "2015"
+},
+{
+"linha": 1313,
+"autor_principal": "Birk",
+"ano": "2003"
+},
+{
+"linha": 1314,
+"autor_principal": "Deschamps",
+"ano": "2003"
+},
+{
+"linha": 1315,
+"autor_principal": "Michael Rubinstein",
+"ano": "2013"
+},
+{
+"linha": 1316,
+"autor_principal": "Vali",
+"ano": "1972"
+},
+{
+"linha": 1317,
+"autor_principal": "LEDUC",
+"ano": "1990"
+},
+{
+"linha": 1318,
+"autor_principal": "Fan",
+"ano": "2012"
+},
+{
+"linha": 1319,
+"autor_principal": "Kornmann",
+"ano": "2006"
+},
+{
+"linha": 1320,
+"autor_principal": "Harrington",
+"ano": "1987"
+},
+{
+"linha": 1321,
+"autor_principal": "Farrington",
+"ano": "2012"
+},
+{
+"linha": 1322,
+"autor_principal": "Yann LeCun",
+"ano": "1998"
+},
+{
+"linha": 1323,
+"autor_principal": null,
+"ano": "2014"
+},
+{
+"linha": 1324,
+"autor_principal": "Trevor",
+"ano": "2016"
+},
+{
+"linha": 1325,
+"autor_principal": "Morency",
+"ano": "2007"
+},
+{
+"linha": 1326,
+"autor_principal": "Green",
+"ano": "2012"
+},
+{
+"linha": 1327,
+"autor_principal": "ABDELOUAHAB",
+"ano": "1998"
+},
+{
+"linha": 1328,
+"autor_principal": "Delorit",
+"ano": "1970"
+},
+{
+"linha": 1329,
+"autor_principal": "LISÝ",
+"ano": "2007"
+},
+{
+"linha": 1330,
+"autor_principal": null,
+"ano": "1988"
+},
+{
+"linha": 1331,
+"autor_principal": "Gerken",
+"ano": "2004"
+},
+{
+"linha": 1332,
+"autor_principal": null,
+"ano": "1999"
+},
+{
+"linha": 1333,
+"autor_principal": "Kocar BD",
+"ano": "2008"
+},
+{
+"linha": 1334,
+"autor_principal": null,
+"ano": "1957"
+},
+{
+"linha": 1335,
+"autor_principal": "Eary",
+"ano": "1990"
+},
+{
+"linha": 1336,
+"autor_principal": "Scott",
+"ano": "1995"
+},
+{
+"linha": 1337,
+"autor_principal": "Buchwitz",
+"ano": "1999"
+},
+{
+"linha": 1338,
+"autor_principal": "Gartenberg",
+"ano": "2009"
+},
+{
+"linha": 1339,
+"autor_principal": "Maldacena",
+"ano": "1998"
+},
+{
+"linha": 1340,
+"autor_principal": "Nixon",
+"ano": "2005"
+},
+{
+"linha": 1341,
+"autor_principal": "Patrick",
+"ano": "1987"
+},
+{
+"linha": 1342,
+"autor_principal": "Cammaerts",
+"ano": "2013"
+},
+{
+"linha": 1343,
+"autor_principal": "Galy",
+"ano": "1875"
+},
+{
+"linha": 1344,
+"autor_principal": null,
+"ano": "2009"
+},
+{
+"linha": 1345,
+"autor_principal": "Forsé",
+"ano": "2001"
+},
+{
+"linha": 1346,
+"autor_principal": "Aleni",
+"ano": "2002"
+},
+{
+"linha": 1347,
+"autor_principal": "Gubser",
+"ano": "1998"
+},
+{
+"linha": 1348,
+"autor_principal": "Kachru",
+"ano": "2010"
+},
+{
+"linha": 1349,
+"autor_principal": "Argurio",
+"ano": "2007"
+},
+{
+"linha": 1350,
+"autor_principal": "Randall",
+"ano": "1999"
+},
+{
+"linha": 1351,
+"autor_principal": "Benini",
+"ano": "2009"
+},
+{
+"linha": 1352,
+"autor_principal": "Polchinski",
+"ano": "2001"
+},
+{
+"linha": 1353,
+"autor_principal": "Kathryn Harriman",
+"ano": "2002"
+},
+{
+"linha": 1354,
+"autor_principal": "Schneider",
+"ano": null
+},
+{
+"linha": 1355,
+"autor_principal": "Metcalf",
+"ano": "1992"
+},
+{
+"linha": 1356,
+"autor_principal": null,
+"ano": "2001"
+},
+{
+"linha": 1357,
+"autor_principal": "Army",
+"ano": "2009"
+},
+{
+"linha": 1358,
+"autor_principal": "Gloeckler",
+"ano": "2007"
+},
+{
+"linha": 1359,
+"autor_principal": "Buarque de Holanda",
+"ano": "2012"
+},
+{
+"linha": 1360,
+"autor_principal": "Yoshikawa",
+"ano": "2000"
+},
+{
+"linha": 1361,
+"autor_principal": "Rainsford",
+"ano": "1997"
+},
+{
+"linha": 1362,
+"autor_principal": "Tillion",
+"ano": "1958"
+},
+{
+"linha": 1363,
+"autor_principal": "Arbel",
+"ano": "2009"
+},
+{
+"linha": 1364,
+"autor_principal": "Martin",
+"ano": "2008"
+},
+{
+"linha": 1365,
+"autor_principal": "Fan HD",
+"ano": "2016"
+},
+{
+"linha": 1366,
+"autor_principal": null,
+"ano": "2009"
+},
+{
+"linha": 1367,
+"autor_principal": "Kaës",
+"ano": "1998a"
+},
+{
+"linha": 1368,
+"autor_principal": "Stephen Boyd",
+"ano": "2011"
+},
+{
+"linha": 1369,
+"autor_principal": "Varga",
+"ano": "2004"
+},
+{
+"linha": 1370,
+"autor_principal": "Zhu",
+"ano": "2010"
+},
+{
+"linha": 1371,
+"autor_principal": "Deckman",
+"ano": "1983"
+},
+{
+"linha": 1372,
+"autor_principal": "Yablonovitch",
+"ano": "1982"
+},
+{
+"linha": 1373,
+"autor_principal": "Schropp",
+"ano": "2010"
+},
+{
+"linha": 1374,
+"autor_principal": null,
+"ano": "2007"
+},
+{
+"linha": 1375,
+"autor_principal": "Gledson",
+"ano": "1984"
+},
+{
+"linha": 1376,
+"autor_principal": null,
+"ano": "1999"
+},
+{
+"linha": 1377,
+"autor_principal": null,
+"ano": "1969"
+},
+{
+"linha": 1378,
+"autor_principal": null,
+"ano": "2013"
+},
+{
+"linha": 1379,
+"autor_principal": "Thomasset",
+"ano": "2008"
+},
+{
+"linha": 1380,
+"autor_principal": "Arnaud",
+"ano": "1996"
+},
+{
+"linha": 1381,
+"autor_principal": "Courtin",
+"ano": "2013"
+},
+{
+"linha": 1382,
+"autor_principal": "Boyles RE",
+"ano": "2005"
+},
+{
+"linha": 1383,
+"autor_principal": "Dias",
+"ano": "2015"
+},
+{
+"linha": 1384,
+"autor_principal": "Robinson",
+"ano": "2002"
+},
+{
+"linha": 1385,
+"autor_principal": "Ray",
+"ano": "2007"
+},
+{
+"linha": 1386,
+"autor_principal": "Fuhrer",
+"ano": "2000"
+},
+{
+"linha": 1387,
+"autor_principal": "Ericson",
+"ano": "2004"
+},
+{
+"linha": 1388,
+"autor_principal": "Garrett",
+"ano": null
+},
+{
+"linha": 1389,
+"autor_principal": "Janssen",
+"ano": "2002"
+},
+{
+"linha": 1390,
+"autor_principal": "Deleers",
+"ano": "1984"
+},
+{
+"linha": 1391,
+"autor_principal": "McCown",
+"ano": "2005"
+},
+{
+"linha": 1392,
+"autor_principal": "Bi",
+"ano": "2005"
+},
+{
+"linha": 1393,
+"autor_principal": "Timperlake",
+"ano": "1877"
+},
+{
+"linha": 1394,
+"autor_principal": null,
+"ano": "2010"
+},
+{
+"linha": 1395,
+"autor_principal": null,
+"ano": "1969"
+},
+{
+"linha": 1396,
+"autor_principal": "Buldum",
+"ano": "2001"
+},
+{
+"linha": 1397,
+"autor_principal": "Palay",
+"ano": "1974"
+},
+{
+"linha": 1398,
+"autor_principal": "Ascasibar",
+"ano": "2006"
+},
+{
+"linha": 1399,
+"autor_principal": "Balucinska-Church",
+"ano": "1992"
+},
+{
+"linha": 1400,
+"autor_principal": "Boschin",
+"ano": "2004"
+},
+{
+"linha": 1401,
+"autor_principal": "Durret",
+"ano": "2008"
+},
+{
+"linha": 1402,
+"autor_principal": "Giovannini",
+"ano": "2002"
+},
+{
+"linha": 1403,
+"autor_principal": "Gitti",
+"ano": "2007"
+},
+{
+"linha": 1404,
+"autor_principal": "Belsole",
+"ano": "2001"
+},
+{
+"linha": 1405,
+"autor_principal": "Kempner",
+"ano": "2004a"
+},
+{
+"linha": 1406,
+"autor_principal": "Kempner",
+"ano": "2004b"
+},
+{
+"linha": 1407,
+"autor_principal": "Komatsu",
+"ano": "2001"
+},
+{
+"linha": 1408,
+"autor_principal": "Last",
+"ano": "2010"
+},
+{
+"linha": 1409,
+"autor_principal": "Landau",
+"ano": "1959"
+},
+{
+"linha": 1410,
+"autor_principal": "Eccles",
+"ano": "1967"
+},
+{
+"linha": 1411,
+"autor_principal": null,
+"ano": "2014"
+},
+{
+"linha": 1412,
+"autor_principal": "Hussain",
+"ano": "2008"
+},
+{
+"linha": 1413,
+"autor_principal": null,
+"ano": "1809"
+},
+{
+"linha": 1414,
+"autor_principal": null,
+"ano": null
+},
+{
+"linha": 1415,
+"autor_principal": "Wormald",
+"ano": "1976"
+},
+{
+"linha": 1416,
+"autor_principal": null,
+"ano": "1962"
+},
+{
+"linha": 1417,
+"autor_principal": "Mas-y-Mas",
+"ano": "2016"
+},
+{
+"linha": 1418,
+"autor_principal": "Taylor",
+"ano": "2005"
+},
+{
+"linha": 1419,
+"autor_principal": "Kim",
+"ano": "2009"
+},
+{
+"linha": 1420,
+"autor_principal": null,
+"ano": "1918"
+},
+{
+"linha": 1421,
+"autor_principal": "Coetzee",
+"ano": "2011"
+},
+{
+"linha": 1422,
+"autor_principal": "Boekelheide",
+"ano": "2011"
+},
+{
+"linha": 1423,
+"autor_principal": "Holliday",
+"ano": "2005"
+},
+{
+"linha": 1424,
+"autor_principal": "Furhmann",
+"ano": null
+},
+{
+"linha": 1425,
+"autor_principal": "Janik",
+"ano": "1997"
+},
+{
+"linha": 1426,
+"autor_principal": "Romano",
+"ano": "2000"
+},
+{
+"linha": 1427,
+"autor_principal": "Damer",
+"ano": "1980"
+},
+{
+"linha": 1428,
+"autor_principal": null,
+"ano": "1928"
+},
+{
+"linha": 1429,
+"autor_principal": "Kawamura",
+"ano": "2012"
+},
+{
+"linha": 1430,
+"autor_principal": "Marx",
+"ano": "1998"
+},
+{
+"linha": 1431,
+"autor_principal": "Vary",
+"ano": "2007"
+},
+{
+"linha": 1432,
+"autor_principal": null,
+"ano": "1972"
+},
+{
+"linha": 1433,
+"autor_principal": "Puurunen",
+"ano": "2004"
+},
+{
+"linha": 1434,
+"autor_principal": null,
+"ano": "1913"
+},
+{
+"linha": 1435,
+"autor_principal": "Allen",
+"ano": "2003"
+},
+{
+"linha": 1436,
+"autor_principal": "Aksu-Koç",
+"ano": "1985"
+},
+{
+"linha": 1437,
+"autor_principal": "Schopenhauer",
+"ano": null
+},
+{
+"linha": 1438,
+"autor_principal": "Hume",
+"ano": "1956"
+},
+{
+"linha": 1439,
+"autor_principal": "Micah Hodosh",
+"ano": "2013"
+},
+{
+"linha": 1440,
+"autor_principal": "Cowman",
+"ano": "1995"
+},
+{
+"linha": 1441,
+"autor_principal": "Vieira",
+"ano": "2006"
+},
+{
+"linha": 1442,
+"autor_principal": "Gulhan",
+"ano": null
+},
+{
+"linha": 1443,
+"autor_principal": "Knödler",
+"ano": "2010"
+},
+{
+"linha": 1444,
+"autor_principal": "Westlake",
+"ano": "2011"
+},
+{
+"linha": 1445,
+"autor_principal": "Jennifer",
+"ano": "2007"
+},
+{
+"linha": 1446,
+"autor_principal": "Reinermann",
+"ano": "2004"
+},
+{
+"linha": 1447,
+"autor_principal": "Schöler",
+"ano": "1998"
+},
+{
+"linha": 1448,
+"autor_principal": "Boucher",
+"ano": "2004"
+},
+{
+"linha": 1449,
+"autor_principal": "Tofthagen",
+"ano": "2010"
+},
+{
+"linha": 1450,
+"autor_principal": "Hilton",
+"ano": "2010"
+},
+{
+"linha": 1451,
+"autor_principal": "Fulcher",
+"ano": "2007"
+},
+{
+"linha": 1452,
+"autor_principal": "Andy Chou",
+"ano": "2001"
+},
+{
+"linha": 1453,
+"autor_principal": "Adam",
+"ano": "2014"
+},
+{
+"linha": 1454,
+"autor_principal": "Jones",
+"ano": "2004"
+},
+{
+"linha": 1455,
+"autor_principal": "Blackwell AC",
+"ano": "2007"
+},
+{
+"linha": 1456,
+"autor_principal": null,
+"ano": "2006"
+},
+{
+"linha": 1457,
+"autor_principal": "Portelance",
+"ano": "2009"
+},
+{
+"linha": 1458,
+"autor_principal": "Thoufeeq",
+"ano": "2007"
+},
+{
+"linha": 1459,
+"autor_principal": "Breakell",
+"ano": "2008"
+},
+{
+"linha": 1460,
+"autor_principal": "Puchner",
+"ano": "2002"
+},
+{
+"linha": 1461,
+"autor_principal": "Webb",
+"ano": "1769"
+},
+{
+"linha": 1462,
+"autor_principal": "Reimold",
+"ano": "1990"
+},
+{
+"linha": 1463,
+"autor_principal": null,
+"ano": "2012"
+},
+{
+"linha": 1464,
+"autor_principal": "Department",
+"ano": null
+},
+{
+"linha": 1465,
+"autor_principal": "COARELLI",
+"ano": "1976"
+},
+{
+"linha": 1466,
+"autor_principal": null,
+"ano": "1999"
+},
+{
+"linha": 1467,
+"autor_principal": "ALTOMARE",
+"ano": "2015"
+},
+{
+"linha": 1468,
+"autor_principal": "MITTICA",
+"ano": "2018"
+},
+{
+"linha": 1469,
+"autor_principal": "Schropp",
+"ano": "1998"
+},
+{
+"linha": 1470,
+"autor_principal": "FURTWÄNGLER",
+"ano": "2002"
+},
+{
+"linha": 1471,
+"autor_principal": "Turing",
+"ano": "1950"
+},
+{
+"linha": 1472,
+"autor_principal": null,
+"ano": "2006"
+},
+{
+"linha": 1473,
+"autor_principal": "Pugin",
+"ano": "2014"
+},
+{
+"linha": 1474,
+"autor_principal": "Devitt",
+"ano": "2001"
+},
+{
+"linha": 1475,
+"autor_principal": "Devitt",
+"ano": "2001"
+},
+{
+"linha": 1476,
+"autor_principal": "Dove",
+"ano": "1998"
+},
+{
+"linha": 1477,
+"autor_principal": "Dove",
+"ano": "1998"
+},
+{
+"linha": 1478,
+"autor_principal": "Kalette",
+"ano": "1986"
+},
+{
+"linha": 1479,
+"autor_principal": "Kanfer",
+"ano": "1986"
+},
+{
+"linha": 1480,
+"autor_principal": "Lancashire",
+"ano": "2002"
+},
+{
+"linha": 1481,
+"autor_principal": "Levy",
+"ano": "2002"
+},
+{
+"linha": 1482,
+"autor_principal": "Pettingill",
+"ano": "1980"
+},
+{
+"linha": 1483,
+"autor_principal": "Pettingill",
+"ano": "1980"
+},
+{
+"linha": 1484,
+"autor_principal": "Tobias",
+"ano": "1991"
+},
+{
+"linha": 1485,
+"autor_principal": "Tobias",
+"ano": "1991"
+},
+{
+"linha": 1486,
+"autor_principal": "Trillin",
+"ano": "1993"
+},
+{
+"linha": 1487,
+"autor_principal": null,
+"ano": "1996"
+},
+{
+"linha": 1488,
+"autor_principal": null,
+"ano": "1993"
+},
+{
+"linha": 1489,
+"autor_principal": null,
+"ano": "2015"
+},
+{
+"linha": 1490,
+"autor_principal": "Screenplay",
+"ano": "1979"
+},
+{
+"linha": 1491,
+"autor_principal": "Rignall",
+"ano": "1989"
+},
+{
+"linha": 1492,
+"autor_principal": "Vortac",
+"ano": "1993"
+},
+{
+"linha": 1493,
+"autor_principal": null,
+"ano": "1961"
+},
+{
+"linha": 1494,
+"autor_principal": "BEARD",
+"ano": "2006"
+},
+{
+"linha": 1495,
+"autor_principal": null,
+"ano": "1984"
+},
+{
+"linha": 1496,
+"autor_principal": "Marin",
+"ano": "1984"
+},
+{
+"linha": 1497,
+"autor_principal": "Greene",
+"ano": "1980"
+},
+{
+"linha": 1498,
+"autor_principal": null,
+"ano": "1754"
+},
+{
+"linha": 1499,
+"autor_principal": null,
+"ano": "1889"
+},
+{
+"linha": 1500,
+"autor_principal": "Bing",
+"ano": "1893"
+},
+{
+"linha": 1501,
+"autor_principal": "Nelmes",
+"ano": "1952"
+},
+{
+"linha": 1502,
+"autor_principal": "WHITE",
+"ano": "2001"
+},
+{
+"linha": 1503,
+"autor_principal": null,
+"ano": "2009"
+},
+{
+"linha": 1504,
+"autor_principal": null,
+"ano": "1913"
+},
+{
+"linha": 1505,
+"autor_principal": "Key",
+"ano": "1964"
+},
+{
+"linha": 1506,
+"autor_principal": null,
+"ano": "1988"
+},
+{
+"linha": 1507,
+"autor_principal": "Tambiah",
+"ano": "1990"
+},
+{
+"linha": 1508,
+"autor_principal": "Menza",
+"ano": "1993"
+},
+{
+"linha": 1509,
+"autor_principal": null,
+"ano": "2011"
+},
+{
+"linha": 1510,
+"autor_principal": "Plüss-Sugrgeard",
+"ano": null
+},
+{
+"linha": 1511,
+"autor_principal": "Khoury CK",
+"ano": "2014"
+},
+{
+"linha": 1512,
+"autor_principal": null,
+"ano": "2014"
+},
+{
+"linha": 1513,
+"autor_principal": null,
+"ano": "1972"
+}
+]
+}

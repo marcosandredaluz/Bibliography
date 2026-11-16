@@ -1,0 +1,581 @@
+{
+ "id": "reservado_ama_de-DE_perturbado",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "de-DE",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Tran M. Dorf gar schlafen Junge Geburtstag ist Bruder Haus turnen ja. BMC Public Health. 2013;75(5):303–312. doi:10.99999/teste.reservado.31415",
+   "item": "it005"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Chen W. Mama aber Bauer sonst heißen im glauben. Journal of the American Medical Informatics Association. 1979;7(11):410–429.",
+   "item": "it003"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Santé publique France. Schreiben reich man lesen hängen Tag kann richtig treffen Eis reich. Eigenwillig; 2011.",
+   "item": "it007"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Minas Gerais (Estado). Überall Nacht stellen kurz gab trinken wenig Buch tragen Leben Berg jung Glück. 2023. Zugegriffen 2. November 2026. https://exemplo-reservado.org/8167",
+   "item": "it023"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Atzler JP, Krebs E. Geschenk gut schreiben Woche deshalb gibt trinken hoch Platz Luft. Revue d’Épidémiologie et de Santé Publique. 1993;1(8):529–549. doi:10.99999/teste.reservado.78904",
+   "item": "it027"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Guillén Buendía L, Aumann S. Land Sache den sieben Haare sieben sechs kaufen. Journal of the American Medical Informatics Association. 1996;70(8):154–158. doi:10.99999/teste.reservado.90954",
+   "item": "it002"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Holsten L. Kommen für anfangen aus natürlich dunkel man fiel Fuß Fuß. Das Gesundheitswesen. 2014;22(7):637–649.",
+   "item": "it013"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Agenzia Italiana del Farmaco. Wiese Name sie böse laut ging gern fast. Trommler AG; 2012.",
+   "item": "it009"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Gremião W, Köhler N, Lindau W. Kam heraus setzen Mutter leicht letzte uns setzen Nase sicher. Medical Mycology. 2019;55(12):108–123. doi:10.99999/teste.reservado.93394",
+   "item": "it006"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Steinberg M, Austermühle W, Scheel HH, Löwer H, Mende R, Drub D. Mama Woche Wohnung beim dich möglich lieb Schüler Baum vielleicht werden rund Milch. 2015. https://leis-reservado.gov/5257",
+   "item": "it011"
+  },
+  {
+   "indice": 10,
+   "texto": "11. van der Schüler S, Schmidtke HD. Hilfe erschrecken den so Geld gern überall dick vielleicht kalt alle halten Arbeit Baum wenn. Jockel OHG mbH; 1989.",
+   "item": "it001"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Kitzmann M. Fertig wohl sofort verkaufen Luft Fisch denn Hase fressen. Revista de Saúde Pública. 2006;2(2):357–373. doi:10.99999/teste.reservado.78765",
+   "item": "it017"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Kim S yeon. Ließ da Nacht warm dir. Epidemiologia & Prevenzione. 1985;69(2):5–10.",
+   "item": "it004"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Kramer H. Dick das unten Mama singen Beispiel kochen laufen sieht warum. Heinrich Kusch OHG mbH; 1976.",
+   "item": "it021"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Agenzia Italiana del Farmaco. Will Katze Junge Eltern von hören bis Sohn hinter. Epidemiologia & Prevenzione. 2003;1(3):756–761. doi:10.99999/teste.reservado.58735",
+   "item": "it008"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Otto S, Preiß M, Bähr WR, Thanel E, Rosenow H, Kensy L. Sie traurig fressen Vater. 1986. https://leis-reservado.gov/9045",
+   "item": "it020"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Biggen-Salz P, Ladeck M. Auge verlieren Ferien sechs Mann sprechen acht werden. Revista de Saúde Pública. 2020;71(8):49–66.",
+   "item": "it000"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Weimer A, Hertrampf D, Berger G, Zimmer A, Schmidt M, Eigenwillig P. Lieb drehen nach Küche es warum nächste. Cadernos de Saúde Pública. 1990;21(3):559–565. doi:10.99999/teste.reservado.47904",
+   "item": "it015"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Schinke R, Hethur I, Heß HW. Monate Brot aus suchen acht dein Geburtstag Monate ins. Revue d’Épidémiologie et de Santé Publique. 1991;1(12):459–464. doi:10.99999/teste.reservado.35723",
+   "item": "it024"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Jacob L, Schaaf HH, Bolzmann C, Ebert P. Beispiel Schwester Zimmer Seite Herr. Epidemiologia & Prevenzione. 2021;60(8):851–857.",
+   "item": "it018"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Eberth L, Ritter J, Rust S, Ullmann A. Weil warum ist erst brauchen singen Finger. Kusch AG.",
+   "item": "it028"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Schuster A. Wo setzen Kopf tief Junge aus sehr hoch Kopf. Meister; 2004.",
+   "item": "it012"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Gröttner J, Fechner B, Karge P. Tisch Apfel Frau gegen Abend dem danach vom. In: Gnatz B, Hrsg. Seit treffen über am fährt Garten oder. Stroh; 1994:284–299.",
+   "item": "it025"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Secretaria Municipal da Saúde (Curitiba). Luft draußen Familie heiß andere rot Luft auf. 2023. Zugegriffen 6. November 2026. https://exemplo-reservado.org/1672",
+   "item": "it030"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Nette M, Dowerg R, Grein Groth S, Salz P. Geld Frau hat heißen. Hethur Bohnbach OHG mbH; 2004.",
+   "item": "it022"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Werner R. Tag lassen Straße essen möglich erzählen Bruder rufen bei Stadt hören Auge. In: Trupp D, Hrsg. Glück Opa Auge allein grün reich. Pruschke; 1986:99–114.",
+   "item": "it010"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Zobel S, Rogge W. Sonntag legen Junge bauen merken Leute selbst. 1987. Zugegriffen 15. November 2026. https://exemplo-reservado.org/4994",
+   "item": "it026"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Secretaria Municipal da Saúde (Curitiba). Schreien wir wohnen trinken zwischen. Epidemiologia e Serviços de Saúde. 2023;43(10):37–56. doi:10.99999/teste.reservado.82407",
+   "item": "it029"
+  },
+  {
+   "indice": 28,
+   "texto": "29. Haering R, Drubin M, Tröst M, Graf R, Beckmann J, Geisel E. Zum lieb sprechen Tier Boden Erde wenn wieder. Bohlander AG & Co. KG; 1976.",
+   "item": "it019"
+  },
+  {
+   "indice": 29,
+   "texto": "30. Römer G, Hiller L, Henschel E. Ab liegen Sache mit lustig ab überall. 2023. Zugegriffen 14. November 2026. https://exemplo-reservado.org/6444",
+   "item": "it014"
+  },
+  {
+   "indice": 30,
+   "texto": "31. Davids A. Schiff darauf sehr Herz dem. Gaceta Sanitaria. 2012;40(1):804–821. doi:10.99999/teste.reservado.60692",
+   "item": "it016"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,4",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it023"
+   ],
+   "referencias": [
+    2,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "10",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van der Schüler 11",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15,16",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it020"
+   ],
+   "referencias": [
+    14,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,17,18",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it000",
+    "it015"
+   ],
+   "referencias": [
+    4,
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,19,20",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it024",
+    "it018"
+   ],
+   "referencias": [
+    5,
+    18,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,21,22",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it009",
+    "it012"
+   ],
+   "referencias": [
+    20,
+    7,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "24,25",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it022"
+   ],
+   "referencias": [
+    23,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15,22,26",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it010",
+    "it008"
+   ],
+   "referencias": [
+    21,
+    25,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "27",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "28,29",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it019"
+   ],
+   "referencias": [
+    27,
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Römer et al. 30",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "31",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,26",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it010"
+   ],
+   "referencias": [
+    8,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Agenzia Italiana del Farmaco 15",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7(S12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "29",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "22",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "15",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Minas Gerais (Estado) 4",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Das dumm wenig dazu mehr letzte einige weil weiter früh Oma im Pferd weiß ganz"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

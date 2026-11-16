@@ -1,0 +1,617 @@
+{
+ "id": "treino_harvard_it-IT_limpo",
+ "estilo": "harvard",
+ "sistema": "autor-data",
+ "locale": "it-IT",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Briccialdi, N. e Petrassi, M. (sine data) Fiume profondo posto prezzo sguardo paese questione. Coazze: Alonzi SPA.",
+   "item": "it028"
+  },
+  {
+   "indice": 1,
+   "texto": "Canil, G., Rienzo, O. e Montanelli, D. (2013) «Lato decisione atto costa comodo accettare istituto volta toccare oppure», in A. Morucci (a c. di) Intero fretta conto riunire descrivere nascondere rivedere. Lamon: Peruzzi, Lattuada e Cardano Group, pp. 53–68.",
+   "item": "it025"
+  },
+  {
+   "indice": 2,
+   "texto": "Caro Busquets, J.J. (2003) Giornata avvertire domandare intendere dubbio ultimo estero contro caro perché salvare rosso italiano. Neviano De’ Rossi: Sbarbaro-Bocca Group.",
+   "item": "it002"
+  },
+  {
+   "indice": 3,
+   "texto": "Catalano, P. (2025) «Indicare contare accogliere solo contenere veramente sorgere fretta principio compagno religioso dolce», in M. Nicoletti (a c. di) Vario perché bambina importare. Belluno: Rossi-Bonolis s.r.l., pp. 111–126.",
+   "item": "it016"
+  },
+  {
+   "indice": 4,
+   "texto": "Condoleo, E. et al. (1982) «Costa iniziare vasto facile recare casa stanza dirigere coprire», Medical Mycology, 80(10), pp. 208–217. Disponibile su: https://doi.org/10.99999/teste.treino.22868.",
+   "item": "it010"
+  },
+  {
+   "indice": 5,
+   "texto": "Conselho Nacional de Saúde (Brasil) (1991) Vista conto limite perdere linea noi orecchio. Cassine: Sibilia s.r.l.",
+   "item": "it027"
+  },
+  {
+   "indice": 6,
+   "texto": "Conselho Nacional de Saúde (Brasil) (2016) «Corpo massa ricordare questione», Journal of the American Medical Informatics Association, 64(10), pp. 236–241. Disponibile su: https://doi.org/10.99999/teste.treino.19741.",
+   "item": "it008"
+  },
+  {
+   "indice": 7,
+   "texto": "Greco, L. (1976) Diverso gusto bisognare articolo vicino stupido io ragazzo oggetto loro giornata piantare preoccupare parola punto idea. Marcacci-Beccaria SPA.",
+   "item": "it011"
+  },
+  {
+   "indice": 8,
+   "texto": "Haute Autorité de Santé (France) (1991) «Almeno diritto vicino molto gatto viso atto», One Health, 13(12), pp. 879–894.",
+   "item": "it007"
+  },
+  {
+   "indice": 9,
+   "texto": "Iacovelli, M. e Luria, L. (2015) Offendere braccio nascondere durante contro problema valle imparare entrare temere. Larderia: Leonetti-Cortese e figli.",
+   "item": "it024"
+  },
+  {
+   "indice": 10,
+   "texto": "Instituto Nacional de Câncer (Brasil) (1992) Adesso appartenere ripetere mostrare scena milione colore dipendere persona valore abbandonare nazione. Disponibile su: https://leis-treino.gov/6167.",
+   "item": "it019"
+  },
+  {
+   "indice": 11,
+   "texto": "Interminelli, M. (1999) «Celebrare concedere piazza fissare nemico comune regno li», Revue d’Épidémiologie et de Santé Publique, 1(4), pp. 679–698.",
+   "item": "it018"
+  },
+  {
+   "indice": 12,
+   "texto": "Istituto Superiore di Sanità (2006) Chi partito andare vestito importare amico dolore commercio. Santa Vittoria Di Libiola: Rubbia-Rienzo e figli.",
+   "item": "it015"
+  },
+  {
+   "indice": 13,
+   "texto": "Le, T.H., Fioravanti, F. e Agnesi, C. (1996) Contrario minuto giungere stato o. Sciolze: Andreozzi, Caccioppoli e Ferragni e figli.",
+   "item": "it005"
+  },
+  {
+   "indice": 14,
+   "texto": "Leone-Abba, S. e Castioni, I. (2017) «Completamente piano mantenere riva apparire brutto dopo entrare sostenere domanda sala suo», Revue d’Épidémiologie et de Santé Publique, 6(3), pp. 112–124.",
+   "item": "it000"
+  },
+  {
+   "indice": 15,
+   "texto": "von Majewski, A., Papafava, E. e Nadi, L. (1993) «Io amare regno insieme continuo addirittura fratello labbro», Revista de Saúde Pública, 63(2), pp. 291–297. Disponibile su: https://doi.org/10.99999/teste.treino.13897.",
+   "item": "it001"
+  },
+  {
+   "indice": 16,
+   "texto": "Ministerio de Sanidad (España) (1997) «Specie scena breve esistere passare nave successo qualità piuttosto mattina desiderare», Revue d’Épidémiologie et de Santé Publique, 74(3), pp. 403–412. Disponibile su: https://doi.org/10.99999/teste.treino.78755.",
+   "item": "it009"
+  },
+  {
+   "indice": 17,
+   "texto": "Ministerio de Sanidad (España) (1998) Soltanto latino parere rendere speranza politica normale calcio fondare scena cielo stagione mattino risultato parlare. Disponibile su: https://leis-treino.gov/1244.",
+   "item": "it021"
+  },
+  {
+   "indice": 18,
+   "texto": "Ministerio de Sanidad (España) (2015) Lavoro stupido metro prima necessario concedere assai. Disponibile su: https://leis-treino.gov/5003.",
+   "item": "it012"
+  },
+  {
+   "indice": 19,
+   "texto": "Mondadori, B. et al. (2019) «Politica intero trattare chiave ministro appunto», Cadernos de Saúde Pública, 52(6), pp. 535–539. Disponibile su: https://doi.org/10.99999/teste.treino.40321.",
+   "item": "it017"
+  },
+  {
+   "indice": 20,
+   "texto": "Ñúñez, I., Ceschi, G. e Bettoni, V. (1999) «Faccia ciascuno figlia aspettare continuare», in N. Pietrangeli (a c. di) Né sbagliare sapere gettare padre spiegare maestro risultare rispondere condurre. San Donato Di Ninea: Ajello e figli, pp. 252–267.",
+   "item": "it006"
+  },
+  {
+   "indice": 21,
+   "texto": "Ovadia, G. et al. (2017) Oro povero sorella avvertire madre pesare aria campo. Disponibile su: https://exemplo-treino.org/8972 (Consultato: 11 novembre 2026).",
+   "item": "it023"
+  },
+  {
+   "indice": 22,
+   "texto": "Park, S. e Montanari, T. (1993) Pelle patria antico mantenere organizzare signorina certamente attraversare nulla. Sant’Angelo In Formis: Pepe-Pennetta e figli.",
+   "item": "it004"
+  },
+  {
+   "indice": 23,
+   "texto": "Pininfarina, L. et al. (2012) Generale migliore disposizione ridere. Petrassi SPA.",
+   "item": "it014"
+  },
+  {
+   "indice": 24,
+   "texto": "Tedesco, A., Gregorio, I. e Beccaria, G. (1986) «Campo preferire esperienza rapido bene congresso carattere riprendere continuo», Preventive Veterinary Medicine, 75(6), pp. 487–495. Disponibile su: https://doi.org/10.99999/teste.treino.94856.",
+   "item": "it026"
+  },
+  {
+   "indice": 25,
+   "texto": "Trotta, L. (1985) «Economico ragazza secondo quello minimo scappare vivere dinanzi trattare sorprendere campo cultura signore dente», Preventive Veterinary Medicine, 26(10), pp. 720–728. Disponibile su: https://doi.org/10.99999/teste.treino.17521.",
+   "item": "it013"
+  },
+  {
+   "indice": 26,
+   "texto": "Tuzzolino, G. et al. (2011a) «Argomento angolo rifiutare duro onore prevedere comune», Das Gesundheitswesen, 47(9), pp. 842–851. Disponibile su: https://doi.org/10.99999/teste.treino.33476.",
+   "item": "it029"
+  },
+  {
+   "indice": 27,
+   "texto": "Tuzzolino, G. et al. (2011b) «Prendere università offendere divertire giardino spalla conoscenza», Revista de Saúde Pública, 72(12), pp. 535–547.",
+   "item": "it030"
+  },
+  {
+   "indice": 28,
+   "texto": "Vigliotti, G. et al. (1995) «Soffrire angolo nascondere dinanzi sentire natura leggere intendere provare ciascuno accadere meno accompagnare», Epidemiologia & Prevenzione, 55(12), pp. 518–538. Disponibile su: https://doi.org/10.99999/teste.treino.67982.",
+   "item": "it020"
+  },
+  {
+   "indice": 29,
+   "texto": "Vittadello, S. et al. (2023) «Ridurre sorridere futuro stazione verso estate piantare parte latte», Revista de Saúde Pública, 33(10), pp. 207–218. Disponibile su: https://doi.org/10.99999/teste.treino.28272.",
+   "item": "it022"
+  },
+  {
+   "indice": 30,
+   "texto": "Wang, H., Orsini, L. e Pareto, D. (2004) «Sguardo aumentare bambino oramai terreno presente», Medical Mycology, 57(7), pp. 630–636. Disponibile su: https://doi.org/10.99999/teste.treino.78162.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Wang, Orsini e Pareto (2004)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España), 1998; Tuzzolino et al., 2011b; Vittadello et al., 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it022",
+    "it021"
+   ],
+   "referencias": [
+    27,
+    29,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Trotta, 1985; Iacovelli e Luria, 2015; Conselho Nacional de Saúde (Brasil), 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it008",
+    "it024"
+   ],
+   "referencias": [
+    25,
+    6,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Caro Busquets (2003)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España), 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Catalano, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Trotta, 1985; Tuzzolino et al., 2011b; Canil, Rienzo e Montanelli, 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it013",
+    "it030"
+   ],
+   "referencias": [
+    1,
+    25,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Condoleo et al., 1982; Trotta, 1985; Ñúñez, Ceschi e Bettoni, 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it010",
+    "it006"
+   ],
+   "referencias": [
+    25,
+    4,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), 2016; Leone-Abba e Castioni, 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it000"
+   ],
+   "referencias": [
+    6,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vigliotti et al. (1995)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Caro Busquets, 2003; Istituto Superiore di Sanità, 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it015"
+   ],
+   "referencias": [
+    2,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pininfarina et al., 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park e Montanari, 1993; von Majewski, Papafava e Nadi, 1993; Ovadia et al., 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it001",
+    "it004"
+   ],
+   "referencias": [
+    21,
+    15,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le, Fioravanti e Agnesi, 1996; Catalano, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it005"
+   ],
+   "referencias": [
+    3,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le, Fioravanti e Agnesi, 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le, Fioravanti e Agnesi, 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tuzzolino et al., 2011a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Greco, 1976; Leone-Abba e Castioni, 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it011"
+   ],
+   "referencias": [
+    14,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Catalano, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tuzzolino et al., 2011b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Condoleo et al., 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mondadori et al., 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vittadello et al. (2023)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tedesco, Gregorio e Beccaria, 1986; Mondadori et al., 2019; Vittadello et al., 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it017",
+    "it022"
+   ],
+   "referencias": [
+    24,
+    19,
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España), 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Briccialdi e Petrassi, sine data)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), 1991; Ministerio de Sanidad (España), 1998; Interminelli, 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it027",
+    "it018"
+   ],
+   "referencias": [
+    17,
+    5,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Greco, 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), 1991; Instituto Nacional de Câncer (Brasil), 1992; Iacovelli e Luria, 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it019",
+    "it024"
+   ],
+   "referencias": [
+    8,
+    10,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Iacovelli e Luria, 2015, p. 19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España), 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Pininfarina et al., 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Canil, Rienzo e Montanelli (2013)",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Pensiero entro bianco veramente ufficio attesa situazione fondo ieri passo movimento popolazione avanzare"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

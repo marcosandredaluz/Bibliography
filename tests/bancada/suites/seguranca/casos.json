@@ -1,0 +1,20 @@
+[
+ {"id": "S01", "plataforma": "win32", "raiz": "C:\\Bib", "sub": "pdfs", "esperado": "permitir"},
+ {"id": "S02", "plataforma": "win32", "raiz": "C:\\Bib", "sub": "", "esperado": "permitir"},
+ {"id": "S03", "plataforma": "win32", "raiz": "C:\\Bib", "sub": "..\\Windows", "esperado": "negar"},
+ {"id": "S04", "plataforma": "win32", "raiz": "C:\\Bib", "sub": "pdfs\\..\\..\\Windows", "esperado": "negar"},
+ {"id": "S05", "plataforma": "win32", "raiz": "C:\\Bib", "sub": "pdfs\\..\\notas", "esperado": "permitir"},
+ {"id": "S06", "plataforma": "win32", "raiz": "C:\\Bib", "sub": "C:\\Windows\\System32", "esperado": "negar"},
+ {"id": "S07", "plataforma": "win32", "raiz": "C:\\Bib", "sub": "\\\\servidor\\compartilhado", "esperado": "negar"},
+ {"id": "S08", "plataforma": "win32", "raiz": "C:\\Bib", "sub": "..\\Bib2\\segredo", "esperado": "negar", "nota": "desvio por prefixo: startsWith('C:\\\\Bib') aceita C:\\\\Bib2"},
+ {"id": "S09", "plataforma": "win32", "raiz": "C:\\Bib", "sub": "c:\\bib\\pdfs", "esperado": "permitir", "nota": "Windows não diferencia maiúsculas"},
+ {"id": "S10", "plataforma": "win32", "raiz": "C:\\Bib", "sub": "pdfs/../../Bib/pdfs", "esperado": "permitir"},
+ {"id": "S11", "plataforma": "win32", "raiz": "C:\\Bib", "sub": "D:\\Bib", "esperado": "negar"},
+ {"id": "S12", "plataforma": "win32", "raiz": "C:\\Bib", "sub": "pdfs\u0000..\\..\\x", "esperado": "negar", "nota": "byte nulo"},
+ {"id": "S13", "plataforma": "posix", "raiz": "/home/u/bib", "sub": "pdfs", "esperado": "permitir"},
+ {"id": "S14", "plataforma": "posix", "raiz": "/home/u/bib", "sub": "../../../etc/passwd", "esperado": "negar"},
+ {"id": "S15", "plataforma": "posix", "raiz": "/home/u/bib", "sub": "../bib2/x", "esperado": "negar", "nota": "desvio por prefixo"},
+ {"id": "S16", "plataforma": "posix", "raiz": "/home/u/bib", "sub": "/etc", "esperado": "negar"},
+ {"id": "S17", "plataforma": "posix", "raiz": "/home/u/bib", "sub": "pdfs/./../notas", "esperado": "permitir"},
+ {"id": "S18", "plataforma": "win32", "raiz": "C:\\Bib\\", "sub": "pdfs", "esperado": "permitir", "nota": "raiz com barra final"}
+]

@@ -1,0 +1,705 @@
+{
+ "id": "treino_iso690-ad_pt-BR_perturbado",
+ "estilo": "iso690-ad",
+ "sistema": "autor-data",
+ "locale": "pt-BR",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "ARAÚJO, Heloisa, CASTRO, Noah, CIRINO, Ana Sophia, CAMARGO, Ana Julia, DA LUZ, Luiz Miguel e ALVES, Théo, 1991a. Ipsa quis ullam ut laudantium eveniet nulla deleniti. Epidemiologia e Serviços de Saúde. 1991. Vol. 36, no. 10, p. 404–412. DOI 10.99999/teste.treino.38117.",
+   "item": "it027"
+  },
+  {
+   "indice": 1,
+   "texto": "ARAÚJO, Heloisa, CASTRO, Noah, CIRINO, Ana Sophia, CAMARGO, Ana Julia, DA LUZ, Luiz Miguel e ALVES, Théo, 1991b. Odit delectus fuga quaerat reiciendis consequuntur consequatur autem animi reprehenderit tenetur consectetur labore cupiditate magnam delectus. Cadernos de Saúde Pública. 1991. Vol. 4, no. 9, p. 706–721. DOI 10.99999/teste.treino.79771.",
+   "item": "it028"
+  },
+  {
+   "indice": 2,
+   "texto": "ARJONA CASTRO, Celestino, NOVAIS, Renan e PINTO, João Vitor, 1976. Omnis itaque eos suscipit voluptate enim nulla. Das Gesundheitswesen. 1976. Vol. 33, no. 6, p. 362–370. DOI 10.99999/teste.treino.89325.",
+   "item": "it002"
+  },
+  {
+   "indice": 3,
+   "texto": "CAMARGO, João Guilherme, 1987. Nam dolore delectus reiciendis quaerat eligendi in modi inventore tempora optio et dolorum ut quae. One Health. 1987. Vol. 35, no. 12, p. 442–450.",
+   "item": "it023"
+  },
+  {
+   "indice": 4,
+   "texto": "CARDOSO, Vicente e REZENDE, Milena, 2024. Vel facere sed ratione vero maxime. Preventive Veterinary Medicine. 2024. Vol. 9, no. 12, p. 385–397.",
+   "item": "it017"
+  },
+  {
+   "indice": 5,
+   "texto": "CARVALHO, Vinícius, VIEIRA, Marina, DAS NEVES, Théo e DA CUNHA, Maria Liz, 2008. Asperiores quos magnam optio consequuntur quae nobis corrupti. Epidemiologia & Prevenzione. 2008. Vol. 53, no. 3, p. 855–873. DOI 10.99999/teste.treino.27247.",
+   "item": "it025"
+  },
+  {
+   "indice": 6,
+   "texto": "CASA GRANDE, Amanda, ABREU, Samuel, SANTOS, Gael Henrique, DUARTE, Noah, SANTOS, Vitor e FREITAS, Ana, 1988. Similique autem quaerat soluta omnis ratione molestiae. Medical Mycology. 1988. Vol. 18, no. 3, p. 760–769. DOI 10.99999/teste.treino.75688.",
+   "item": "it021"
+  },
+  {
+   "indice": 7,
+   "texto": "CASTRO, Yasmin, CASTRO, Maria Flor, VASCONCELOS, Melissa, VIANA, Pietra, SOUSA, Lívia e SOUSA, Francisco, 1994. Deserunt at omnis consequuntur. Viana: Vargas S.A.",
+   "item": "it010"
+  },
+  {
+   "indice": 8,
+   "texto": "CONSELHO NACIONAL DE SAÚDE (BRASIL), 1992. Nihil hic aliquid quia vitae voluptatibus quidem quam debitis numquam natus pariatur ab. Marques do Campo: Cunha.",
+   "item": "it009"
+  },
+  {
+   "indice": 9,
+   "texto": "CORREIA, Alice, SILVEIRA, Maya, CARVALHO, Isabella, JESUS, João Guilherme, RAMOS, Luiz Otávio e RODRIGUES, Agatha, 2024. Necessitatibus iure molestiae quasi ex sit veritatis quod soluta. Epidemiologia & Prevenzione. 2024. Vol. 24, no. 4, p. 63–82.",
+   "item": "it024"
+  },
+  {
+   "indice": 10,
+   "texto": "COSTA, Davi, MENDONÇA, Gustavo e ARAÚJO, Raul, 2022. Provident consequuntur quo voluptatem nam in quibusdam magnam. Revista de Saúde Pública. 2022. Vol. 46, no. 4, p. 500–519. DOI 10.99999/teste.treino.31160.",
+   "item": "it011"
+  },
+  {
+   "indice": 11,
+   "texto": "DA ROCHA-BORGES, Felipe, ABREU, Ana Sophia, ALMEIDA, Ravi e ALVES, Fernanda, 2010. Molestias modi alias neque molestiae error id dignissimos doloremque a ipsam dolorum ducimus explicabo. da Conceição do Campo: Nogueira S.A.",
+   "item": "it000"
+  },
+  {
+   "indice": 12,
+   "texto": "DIAS, Calebe, SILVA, Maria Flor, MARTINS, Cecilia, MACHADO, Maria Laura, GONÇALVES, Gael Henrique e MENDONÇA, Breno, 2000. Eligendi minus ab voluptatum enim numquam sed consectetur ipsum ipsam eveniet. da Costa: Pimenta.",
+   "item": "it019"
+  },
+  {
+   "indice": 13,
+   "texto": "ISTITUTO SUPERIORE DI SANITÀ, 1978. Excepturi explicabo ipsum molestiae nam inventore velit. In: GOMES, Ágatha (org.), Deserunt eos ut quidem iste. Silva Alegre: Silva - ME. p. 179–194.",
+   "item": "it008"
+  },
+  {
+   "indice": 14,
+   "texto": "MINISTERIO DE SANIDAD (ESPAÑA), 2016. Reprehenderit dolores illo nesciunt. . Online. 2016. Available from: https://exemplo-treino.org/8090 [Accessed 6 novembro 2026].",
+   "item": "it013"
+  },
+  {
+   "indice": 15,
+   "texto": "NASCIMENTO, Paulo, CUNHA, Samuel e SILVA, Laís, 2001. Culpa iure quae veritatis perferendis similique hic. Epidemiologia e Serviços de Saúde. 2001. Vol. 28, no. 6, p. 744–748.",
+   "item": "it014"
+  },
+  {
+   "indice": 16,
+   "texto": "NASCIMENTO, Théo, 2002. Ad porro numquam praesentium. Preventive Veterinary Medicine. 2002. Vol. 7, no. 8, p. 24–44.",
+   "item": "it015"
+  },
+  {
+   "indice": 17,
+   "texto": "NGUYEN, Thi Hoa, TEIXEIRA, Vinicius, MENDONÇA, Theodoro e PORTO, Maria Helena, 2013. Cum accusantium veniam saepe adipisci repudiandae doloribus repudiandae. . Online. 2013. Available from: https://exemplo-treino.org/5776 [Accessed 13 novembro 2026].",
+   "item": "it005"
+  },
+  {
+   "indice": 18,
+   "texto": "O’CONNOR, Luiz Miguel e CUNHA, Clarice, 2001. Inventore similique perspiciatis numquam alias hic id quidem. Leão: Montenegro S.A.",
+   "item": "it006"
+  },
+  {
+   "indice": 19,
+   "texto": "PARK, Min-jun, 1984. Aliquam dicta fugiat odit laudantium quibusdam laudantium aperiam deleniti iusto. Revista de Saúde Pública. 1984. Vol. 48, no. 8, p. 565–571. DOI 10.99999/teste.treino.13943.",
+   "item": "it004"
+  },
+  {
+   "indice": 20,
+   "texto": "PEIXOTO, Catarina, [no date]. Commodi deleniti doloremque excepturi sapiente quas hic officia sed saepe quaerat nesciunt. Preventive Veterinary Medicine. Vol. 31, no. 2, p. 412–431. DOI 10.99999/teste.treino.22937.",
+   "item": "it026"
+  },
+  {
+   "indice": 21,
+   "texto": "RIBEIRO, Mathias, RODRIGUES, Murilo, MORAES, Rebeca e RIOS, Ísis, 2015. Error distinctio a cumque quam. One Health. 2015. Vol. 1, no. 12, p. 524–543. DOI 10.99999/teste.treino.69634.",
+   "item": "it020"
+  },
+  {
+   "indice": 22,
+   "texto": "ROBERT KOCH-INSTITUT, 1998. Beatae provident suscipit ad neque veritatis. . Online. 1998. Available from: https://exemplo-treino.org/2445 [Accessed 13 novembro 2026].",
+   "item": "it007"
+  },
+  {
+   "indice": 23,
+   "texto": "SANTOS, Ana Luiza, 2019. Soluta sed pariatur quaerat culpa molestiae magni perferendis porro unde. Novaes: Guerra S/A.",
+   "item": "it022"
+  },
+  {
+   "indice": 24,
+   "texto": "SILVA, Davi Miguel e OLIVEIRA, Nicole, 1993. Debitis nisi illum tempore rerum ducimus consectetur. Revista de Saúde Pública. 1993. Vol. 62, no. 2, p. 251–263. DOI 10.99999/teste.treino.90203.",
+   "item": "it012"
+  },
+  {
+   "indice": 25,
+   "texto": "SILVA, Henrique, MENDONÇA, Thales, LIMA, Diego e CASTRO, Rhavi, 2021. Repellendus quisquam dicta quia placeat delectus nulla. Epidemiologia & Prevenzione. 2021. Vol. 76, no. 3, p. 405–410.",
+   "item": "it018"
+  },
+  {
+   "indice": 26,
+   "texto": "SIQUEIRA, Rael, PASTOR, Liz e DA MOTA, Paulo, 1991. Ipsam non quam ad officia odit quam est asperiores ratione. Das Gesundheitswesen. 1991. Vol. 70, no. 7, p. 574–580. DOI 10.99999/teste.treino.13284.",
+   "item": "it016"
+  },
+  {
+   "indice": 27,
+   "texto": "VON BARROS, Anna Liz, ALVES, Bella, PASTOR, Benicio e MARTINS, Bryan, 2010. Odit voluptatibus itaque. . Online. 2010. Available from: https://exemplo-treino.org/4410 [Accessed 3 novembro 2026].",
+   "item": "it001"
+  },
+  {
+   "indice": 28,
+   "texto": "ZHANG, Xiaoming e DA LUZ, Arthur Miguel, 2012. Debitis placeat velit veniam nihil rem quis aliquid repellat ipsam quaerat. . Online. 2012. Available from: https://exemplo-treino.org/1400 [Accessed 13 novembro 2026].",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Istituto Superiore di Sanità 1978; Camargo 1987; Costa, Mendonça, Araújo 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it023",
+    "it011"
+   ],
+   "referencias": [
+    13,
+    3,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Camargo 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Camargo 1987; Robert Koch-Institut 1998; Silva, Mendonça, Lima, Castro 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it007",
+    "it018"
+   ],
+   "referencias": [
+    3,
+    22,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Correia, Silveira, Carvalho, Jesus, Ramos, Rodrigues 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Siqueira, Pastor, da Mota 1991; Correia, Silveira, Carvalho, Jesus, Ramos, Rodrigues 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it024"
+   ],
+   "referencias": [
+    26,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nascimento, Cunha, Silva 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Araújo, Castro, Cirino, Camargo, da Luz, Alves 1991a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Correia, Silveira, Carvalho, Jesus, Ramos, Rodrigues (2024)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Arjona Castro, Novais, Pinto 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nascimento 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen, Teixeira, Mendonça, Porto 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ribeiro, Rodrigues, Moraes, Rios 2015; da Rocha-Borges, Abreu, Almeida, Alves 2010; Araújo, Castro, Cirino, Camargo, da Luz, Alves 1991b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it000",
+    "it028"
+   ],
+   "referencias": [
+    21,
+    11,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Araújo, Castro, Cirino, Camargo, da Luz, Alves 1991a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zhang, da Luz 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(von Barros, Alves, Pastor, Martins 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Silva, Oliveira 1993; Araújo, Castro, Cirino, Camargo, da Luz, Alves 1991a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it027"
+   ],
+   "referencias": [
+    24,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Costa, Mendonça, Araújo 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dias, Silva, Martins, Machado, Gonçalves, Mendonça 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ribeiro, Rodrigues, Moraes, Rios (2015)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Casa Grande, Abreu, Santos, Duarte, Santos, Freitas 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Araújo, Castro, Cirino, Camargo, da Luz, Alves 1991a; Correia, Silveira, Carvalho, Jesus, Ramos, Rodrigues 2024; Silva, Mendonça, Lima, Castro 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it024",
+    "it018"
+   ],
+   "referencias": [
+    0,
+    9,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Araújo, Castro, Cirino, Camargo, da Luz, Alves 1991b; Peixoto [no date]; Casa Grande, Abreu, Santos, Duarte, Santos, Freitas 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it026",
+    "it021"
+   ],
+   "referencias": [
+    1,
+    20,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Conselho Nacional de Saúde (Brasil) (1992)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Santos (2019)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Araújo, Castro, Cirino, Camargo, da Luz, Alves (1991b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Park (1984)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santos 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cardoso, Rezende 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robert Koch-Institut (1998)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España) 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(O’Connor, Cunha 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Park (1984)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Carvalho, Vieira, das Neves, da Cunha 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Castro, Castro, Vasconcelos, Viana, Sousa, Sousa 1994; von Barros, Alves, Pastor, Martins 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it001"
+   ],
+   "referencias": [
+    7,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Camargo 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ribeiro, Rodrigues, Moraes, Rios (2015)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(von Barros, Alves, Pastor, Martins 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park 1984; Istituto Superiore di Sanità 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it008"
+   ],
+   "referencias": [
+    19,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Araújo, Castro, Cirino, Camargo, da Luz, Alves (1991b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Camargo 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Arjona Castro, Novais, Pinto 1976, p. 195)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Nascimento 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Castro, Castro, Vasconcelos, Viana, Sousa, Sousa 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Castro, Castro, Vasconcelos, Viana, Sousa, Sousa 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Dias, Silva, Martins, Machado, Gonçalves, Mendonça (2000)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Architecto odit quo illo ad ad quam dolorem necessitatibus nostrum occaecati et"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

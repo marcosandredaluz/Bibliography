@@ -1,0 +1,733 @@
+{
+ "id": "reservado_iso690-num_es-ES_erros",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "es-ES",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1.  LI, Wei. Julio democracia creación cualquier mundo reforma sí siete política. One Health. 1977. Vol. 23, no. 10, p. 713-728. DOI 10.99999/teste.reservado.60838.",
+   "item": "it003"
+  },
+  {
+   "indice": 1,
+   "texto": "2.  DEL MOLINS, Saturnino, BOU, Catalina y LEON, Gema. Diario período acuerdo da supuesto grupos. Preventive Veterinary Medicine. 1994. Vol. 28, no. 5, p. 692-710. DOI 10.99999/teste.reservado.63481.",
+   "item": "it001"
+  },
+  {
+   "indice": 2,
+   "texto": "3.  SANTÉ PUBLIQUE FRANCE. Cómo plan mundial asociación agua llega muestra. Cuenca : Suministros Estrada y asociados S.Com., 2026.",
+   "item": "it016"
+  },
+  {
+   "indice": 3,
+   "texto": "4.  MANZANARES, Sabina, GALVEZ, Tecla, MARQUEZ, Carmela, FALCÓN, Rosalva, ESCOLANO, Amancio y CERRO, Adelaida. Ese semana cara sala obra deja estudios pocos octubre mayor. . Zaragoza : Grupo Bustamante S.L.N.E, 2023.",
+   "item": "it020"
+  },
+  {
+   "indice": 4,
+   "texto": "5.  GROSS, Marina y ZAMORA, Agustina. Único pública mismos jorge cada qué quizá corte. Medical Mycology. 1979. Vol. 29, no. 10, p. 116-121. DOI 10.99999/teste.reservado.70988.",
+   "item": "it006"
+  },
+  {
+   "indice": 5,
+   "texto": "6.  LOSADA, Teobaldo, LOSA, Isidoro, BARRIO, Nilo, AYUSO, Amparo, PEREIRA, Amarilis y GOMEZ, Florencio. Doctor visita son rosa diez. Epidemiologia e Serviços de Saúde. 1990. Vol. 47, no. 6, p. 410-423. DOI 10.99999/teste.reservado.52626.",
+   "item": "it017"
+  },
+  {
+   "indice": 6,
+   "texto": "7.  TÉLLEZ, Sabina. Elementos oposición película podía ser mira. Epidemiologia e Serviços de Saúde. 1985. Vol. 47, no. 9, p. 283-288. DOI 10.99999/teste.reservado.32736.",
+   "item": "it022"
+  },
+  {
+   "indice": 7,
+   "texto": "8.  TÉLLEZ, Sabina. Universidad sala marzo ex según dirección diversos medio. . Soria : Soluciones DSX S.A.U, 1985.",
+   "item": "it023"
+  },
+  {
+   "indice": 8,
+   "texto": "9.  MANRIQUE, León, PATIÑO, Yaiza, HIDALGO, Fortunato y MORANTE, Isabela. Muchos siendo tuvo maría clase policía suelo. In : CANO, Manolo (ed.), Primer cuba participación libros partir final. Cuenca : Finanzas Zaragoza S.L., 1990. p. 126-141.",
+   "item": "it015"
+  },
+  {
+   "indice": 9,
+   "texto": "10.  NICOLÁS, Teófila, MENENDEZ, Sosimo y RÍOS, Leire. Actividad técnica juez manuel capital teoría siempre. Cadernos de Saúde Pública. 1994. Vol. 46, no. 5, p. 609-616. DOI 10.99999/teste.reservado.72955.",
+   "item": "it014"
+  },
+  {
+   "indice": 10,
+   "texto": "11.  GUAL TAPIA, Áurea, DÍEZ, Marina y PEREA, José Luis. Bajo autoridades servicio mediante tanto concepto hacer la padre dijo. Gaceta Sanitaria. 2021. Vol. 46, no. 12, p. 707-723. DOI 10.99999/teste.reservado.31007.",
+   "item": "it002"
+  },
+  {
+   "indice": 11,
+   "texto": "12.  PUBLIC HEALTH AGENCY OF CANADA. Tipo les tenía torno hacía oro también todas tenían hecho ella. Alicante : Transportes Española S.Com., 2013.",
+   "item": "it018"
+  },
+  {
+   "indice": 12,
+   "texto": "13.  NIÑO, Graciana, JULIÁ, Maricruz, SANMARTÍN, Gilberto y JÁUREGUI, Juliana. Oficial alguien alto sabía tendrá tampoco hija. . León : Jódar y Baquero S.L., [no date].",
+   "item": "it021"
+  },
+  {
+   "indice": 13,
+   "texto": "14.  CONSELHO FEDERAL DE MEDICINA VETERINÁRIA. Sur desde gran contra alguien. Online. 2023. 6165. Available from: https://leis-reservado.gov/8817",
+   "item": "it013"
+  },
+  {
+   "indice": 14,
+   "texto": "15.  VENDRELL, Ofelia. Rodríguez aire hacer imágenes televisión deja. Das Gesundheitswesen. 2015. Vol. 46, no. 1, p. 244-251.",
+   "item": "it019"
+  },
+  {
+   "indice": 15,
+   "texto": "16.  BERNAL, Nazaret. Cine chile estuvo cualquier ni sola plazo. . Madrid : Celestina Aguado Albero S.A., 2009.",
+   "item": "it011"
+  },
+  {
+   "indice": 16,
+   "texto": "17.  SANTÉ PUBLIQUE FRANCE. Sigue difícil horas ellas sólo comercio. In : ANTÚNEZ, Jordán (ed.), Político una sentido hace aquí c prueba ciento este diversas. Huelva : Banco Suárez S.L.L., 2010. p. 269-284.",
+   "item": "it008"
+  },
+  {
+   "indice": 17,
+   "texto": "18.  VELASCO-ABELLÁN, Ariel, FLOR, Leocadio y MARTI, Ángel. Mira han mes igual instituto problema estudios. Journal of the American Medical Informatics Association. 2002. Vol. 72, no. 5, p. 600-620. DOI 10.99999/teste.reservado.77151.",
+   "item": "it000"
+  },
+  {
+   "indice": 18,
+   "texto": "20.  SECRETARIA MUNICIPAL DA SAÚDE (CURITIBA). Luz otro desde alto naturaleza ocasiones tras parís costa. Online. 2025. 3401. Available from: https://leis-reservado.gov/7870",
+   "item": "it012"
+  },
+  {
+   "indice": 19,
+   "texto": "22.  AUSTRALIAN INSTITUTE OF HEALTH AND WELFARE (AUSTRALIA). Términos arriba encuentra varias siete tratamiento diferencia llevar dice. In : CARREÑO, Elba (ed.), Abril trabajar seguir usted fútbol temas parís. Girona : Supermercados Giner y asociados S.A., 1981. p. 201-216.",
+   "item": "it007"
+  },
+  {
+   "indice": 20,
+   "texto": "23.  MINAS GERAIS (ESTADO). Muerto duda construcción quienes tema real administración entre. . Ávila : Miguela Catalán Pastor S.Coop., 2002.",
+   "item": "it009"
+  },
+  {
+   "indice": 21,
+   "texto": "24.  PHAM, Thi Hoa, SUÁREZ, Alondra y CORBACHO, Nazario. Hermano civil apenas efectos. Epidemiologia e Serviços de Saúde. 1995. Vol. 24, no. 7, p. 780-798.",
+   "item": "it005"
+  },
+  {
+   "indice": 22,
+   "texto": "25.  JÁUREGUI-LERMA, Esperanza, BARBA, Jacinto y MIR, Julián. Vivir compañía estas gran sería hubiera primeros toma hacen joven nosotros. In : MONTENEGRO, Rita (ed.), Unión palabras vivir millones santiago fecha precios música. Burgos : Talleres Iberia S.L.U., 1982. p. 43-58.",
+   "item": "extra0"
+  },
+  {
+   "indice": 23,
+   "texto": "26.  VAN DER JAUME, Benita. Desde estado meses capacidad nada crecimiento cambios mano mano sus. In : BAEZA, Horacio (ed.), Han niño tales ver muchas juicio solución. Tarragona : Úrsula Osorio Somoza S.L.L., 2013. p. 240-255.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2–4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it016",
+    "it020"
+   ],
+   "referencias": [
+    1,
+    2,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2, 4, 5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it001",
+    "it020"
+   ],
+   "referencias": [
+    4,
+    1,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6, 7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it022"
+   ],
+   "referencias": [
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Manrique et al. (9)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10–12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it002",
+    "it018"
+   ],
+   "referencias": [
+    9,
+    10,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it013"
+   ],
+   "referencias": [
+    4,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11, 15, 16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it002",
+    "it011"
+   ],
+   "referencias": [
+    14,
+    10,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bernal (16)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it008"
+   ],
+   "referencias": [
+    17,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it002"
+   ],
+   "referencias": [
+    4,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 6, 14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it020",
+    "it017"
+   ],
+   "referencias": [
+    13,
+    3,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Santé publique France (3)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9, 16, 22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it015",
+    "it007"
+   ],
+   "referencias": [
+    15,
+    8,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim (19)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Public Health Agency of Canada (12)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9, 11, 22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it015",
+    "it002"
+   ],
+   "referencias": [
+    19,
+    8,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3, 11, 21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it010",
+    "it002"
+   ],
+   "referencias": [
+    2,
+    null,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15, 23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it019"
+   ],
+   "referencias": [
+    20,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13, 15, 17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it008",
+    "it019"
+   ],
+   "referencias": [
+    12,
+    16,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7, 10, 21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it014",
+    "it022"
+   ],
+   "referencias": [
+    null,
+    9,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7, 24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it022"
+   ],
+   "referencias": [
+    21,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2, 17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it001"
+   ],
+   "referencias": [
+    16,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it019"
+   ],
+   "referencias": [
+    17,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Public Health Agency of Canada (12)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6, p. 16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Santé publique France (3)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(19)",
+   "item": "it004"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(21)",
+   "item": "it010"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Kim (19)",
+   "item": "it004"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(3, 11, 21)",
+   "item": "it010"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(7, 10, 21)",
+   "item": "it010"
+  },
+  {
+   "ponto": "E",
+   "referencia": 22,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 23,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Había su medidas unión popular democracia cuba alguna veces región dentro puedo sentido puedo puede"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

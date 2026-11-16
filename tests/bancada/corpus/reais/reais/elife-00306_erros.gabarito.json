@@ -1,0 +1,906 @@
+{
+ "id": "elife-00306_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00306.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Barja G. 2002. Endogenous oxidative stress: relationship to aging, longevity and caloric restriction. Ageing Res Rev 1:397–411.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Bondar RJ, Mead DC. 1974. Evaluation of glucose-6-phosphate dehydrogenase from Leuconostoc mesenteroides in the hexokinase method for determining glucose in serum. Clin Chem 20:586–590.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Brandes N, Reichmann D, Tienson H, Leichert LI, Jakob U. 2011. Using quantitative redox proteomics to dissect the yeast redoxome. J Biol Chem 286:41893–41903. doi: 10.1074/jbc.M111.296236",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Burtner CR, Murakami CJ, Kennedy BK, Kaeberlein M. 2009. A molecular mechanism of chronological aging in yeast. Cell Cycle 8:1256–1270.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Cho CG, Kim HJ, Chung SW, Jung KJ, Shim KH, Yu BP, et al.. 2003. Modulation of glutathione and thioredoxin systems by calorie restriction during the aging process. Exp Gerontol 38:539–548. doi: 10.1016/S0531-5565(03)00005-6",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Crooks GE, Hon G, Chandonia JM, Brenner SE. 2004. WebLogo: a sequence logo generator. Genome Res 14:1188–1190. doi: 10.1101/gr.849004",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Deere D, Shen J, Vesey G, Bell P, Bissinger P, Veal D. 1998. Flow cytometry and cell sorting for yeast viability assessment and cell selection. Yeast 14:147–160. doi: 10.1002/(SICI)1097-0061(19980130)14:2<147::AID-YEA207>3.0.CO;2-L",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Delarue M. 1995. Aminoacyl-tRNA synthetases. Curr Opin Struct Biol 5:48–55.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Fabrizio P, Liou LL, Moy VN, DIaspro A, Valentine JS, Gralla EB, et al.. 2003. SOD2 functions downstream of Sch9 to extend longevity in yeast. Genetics 163:35–46.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Fabrizio P, Longo VD. 2003. The chronological life span of Saccharomyces cerevisiae. Aging Cell 2:73–81.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Fabrizio P, Longo VD. 2007. The chronological life span of Saccharomyces cerevisiae. Methods Mol Biol 371:89–95.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Fourmy D, Meinnel T, Mechulam Y, Blanquet S. 1993. Mapping of the zinc binding domain of Escherichia coli methionyl-tRNA synthetase. J Mol Biol 231:1068–1077.",
+   "item": "bib13"
+  },
+  {
+   "indice": 12,
+   "texto": "Gallogly MM, Mieyal JJ. 2007. Mechanisms of reversible protein glutathionylation in redox signaling and oxidative stress. Curr Opin Pharmacol 7:381–391. doi: 10.1016/j.coph.2007.06.003",
+   "item": "bib14"
+  },
+  {
+   "indice": 13,
+   "texto": "Garg SK, Yan Z, Vitvitsky V, Banerjee R. 2010. Analysis of sulfur-containing metabolites involved in redox and methionine metabolism. Methods in Redox Signaling:7–11.",
+   "item": "bib15"
+  },
+  {
+   "indice": 14,
+   "texto": "Gasch AP, Spellman PT, Kao CM, Carmel-Harel O, Eisen MB, Storz G, et al.. 2000. Genomic expression programs in the response of yeast cells to environmental changes. Mol Biol Cell 11:4241–4257.",
+   "item": "bib16"
+  },
+  {
+   "indice": 15,
+   "texto": "Getz G, Levine E, Domany E. 2000. Coupled two-way clustering analysis of gene microarray data. Proc Natl Acad Sci USA 97:12079–12084.",
+   "item": "bib17"
+  },
+  {
+   "indice": 16,
+   "texto": "Goldberg AA, Bourque SD, Kyryakov P, Gregg C, Boukh-Viner T, Beach A, et al.. 2009. Effect of calorie restriction on the metabolic history of chronologically aging yeast. Exp Gerontol 44:555–571. doi: 10.1016/j.exger.2009.06.001",
+   "item": "bib18"
+  },
+  {
+   "indice": 17,
+   "texto": "Goldstein AL, McCusker JH. 1999. Three new dominant drug resistance cassettes for gene disruption in Saccharomyces cerevisiae. Yeast 15:1541–1553. doi: 10.1002/(SICI)1097-0061(199910)15:14<1541::AID-YEA476>3.0.CO;2-K",
+   "item": "bib19"
+  },
+  {
+   "indice": 18,
+   "texto": "Guthrie C, Fink G. 2002. Guide to Yeast Genetics and Molecular and Cell Biology, Part B. Methods in Enzymology.",
+   "item": "bib20"
+  },
+  {
+   "indice": 19,
+   "texto": "Hansen RE, Roth D, Winther JR. 2009. Quantifying the global cellular thiol-disulfide status. Proc Natl Acad Sci USA 106:422–427. doi: 10.1073/pnas.0812149106",
+   "item": "bib21"
+  },
+  {
+   "indice": 20,
+   "texto": "Harman D. 1956. Aging: a theory based on free radical and radiation chemistry. J Gerontol 11:298–300.",
+   "item": "bib22"
+  },
+  {
+   "indice": 21,
+   "texto": "Harris N, Costa V, Maclean M, Mollapour M, Moradas-Ferreira P, Piper PW. 2003. Mnsod overexpression extends the yeast chronological (G(0)) life span but acts independently of Sir2p histone deacetylase to shorten the replicative life span of dividing cells. Free Radic Biol Med 34:1599–1606.",
+   "item": "bib23"
+  },
+  {
+   "indice": 22,
+   "texto": "Holmgren A, Lu J. 2010. Thioredoxin and thioredoxin reductase: current research with special reference to human disease. Biochem Biophys Res Commun 396:120–124. doi: 10.1016/j.bbrc.2010.03.083",
+   "item": "bib24"
+  },
+  {
+   "indice": 23,
+   "texto": "Leichert LI, Gehrke F, Gudiseva HV, Blackwell T, Ilbert M, Walker AK, et al.. 2008. Quantifying changes in the thiol redox proteome upon oxidative stress in vivo. Proc Natl Acad Sci USA 105:8197–8202.",
+   "item": "bib25"
+  },
+  {
+   "indice": 24,
+   "texto": "Levine RL. 2002. Carbonyl modified proteins in cellular regulation, aging, and disease. Free Radic Biol Med 32:790–796.",
+   "item": "bib26"
+  },
+  {
+   "indice": 25,
+   "texto": "Lindahl M, Mata-Cabana A, Kieselbach T. 2011. The disulfide proteome and other reactive cysteine proteomes: analysis and functional significance. Antioxid Redox Signal 14:2581–2642. doi: 10.1089/ars.2010.3551",
+   "item": "bib27"
+  },
+  {
+   "indice": 26,
+   "texto": "Longo VD, Ellerby LM, Bredesen DE, Valentine JS, Gralla EB. 1997. Human Bcl-2 reverses survival defects in yeast lacking superoxide dismutase and delays death of wild-type yeast. J Cell Biol 137:1581–1588.",
+   "item": "bib28"
+  },
+  {
+   "indice": 27,
+   "texto": "Longo VD, Gralla EB, Valentine JS. 1996. Superoxide dismutase activity is essential for stationary phase survival in Saccharomyces cerevisiae. Mitochondrial production of toxic oxygen species in vivo. J Biol Chem 271:12275–12280.",
+   "item": "bib29"
+  },
+  {
+   "indice": 28,
+   "texto": "Magherini F, Carpentieri A, Amoresano A, Gamberi T, de filippo C, Rizzetto L, et al.. 2009. Different carbon sources affect lifespan and protein redox state during Saccharomyces cerevisiae chronological ageing. Cell Mol Life Sci 66:933–947.",
+   "item": "bib30"
+  },
+  {
+   "indice": 29,
+   "texto": "Martensson J, Meister A. 1989. Mitochondrial damage in muscle occurs after marked depletion of glutathione and is prevented by giving glutathione monoester. Proc Natl Acad Sci USA 86:471–475.",
+   "item": "bib31"
+  },
+  {
+   "indice": 30,
+   "texto": "Merad-Boudia M, Nicole A, Santiard-Baron D, Saille C, Ceballos-Picot I. 1998. Mitochondrial impairment as an early event in the process of apoptosis induced by glutathione depletion in neuronal cells: relevance to Parkinson's disease. Biochem Pharmacol 56:645–655.",
+   "item": "bib32"
+  },
+  {
+   "indice": 31,
+   "texto": "Muller FL, Lustgarten MS, Jang Y, Richardson A, Van Remmen H. 2007. Trends in oxidative aging theories. Free Radic Biol Med 43:477–503.",
+   "item": "bib33"
+  },
+  {
+   "indice": 32,
+   "texto": "Parihar MS, Kunz EA, Brewer GJ. 2008. Age-related decreases in NAD(P)H and glutathione cause redox declines before ATP loss during glutamate treatment of hippocampal neurons. J Neurosci Res 86:2339–2352. doi: 10.1002/Jnr.21679",
+   "item": "bib34"
+  },
+  {
+   "indice": 33,
+   "texto": "Perez VI, Bokov A, Van Remmen H, Mele J, Ran QT, Ikeno Y, et al.. 2009. Is the oxidative stress theory of aging dead?. Biochim Biophys Acta 1790:1005–1014. doi: 10.1016/j.bbagen.2009.06.003",
+   "item": "bib35"
+  },
+  {
+   "indice": 34,
+   "texto": "Rebrin I, Sohal RS. 2008. Pro-oxidant shift in glutathione redox state during aging. Adv Drug Deliv Rev 60:1545–1552. doi: 10.1016/j.addr.2008.06.001",
+   "item": "bib36"
+  },
+  {
+   "indice": 35,
+   "texto": "Rohrbach S, Gruenler S, Teschner M, Holtz J. 2006. The thioredoxin system in aging muscle: key role of mitochondrial thioredoxin reductase in the protective effects of caloric restriction?. Am J Physiol Regul Integr Comp Physiol 291:R927–R935. doi: 10.1152/ajpregu.00890.2005",
+   "item": "bib37"
+  },
+  {
+   "indice": 36,
+   "texto": "Saeed AI, Bhagabati NK, Braisted JC, Liang W, Sharov V, Howe EA, et al.. 2006. TM4 microarray software suite. Methods Enzymol 411:134–193.",
+   "item": "bib38"
+  },
+  {
+   "indice": 37,
+   "texto": "Salmon AB, Richardson A, Perez VI. 2010. Update on the oxidative stress theory of aging: does oxidative stress play a role in aging or healthy aging?. Free Radic Biol Med 48:642–655. doi: 10.1016/j.freeradbiomed.2009.12.015",
+   "item": "bib39"
+  },
+  {
+   "indice": 38,
+   "texto": "Sanchez R, Riddle M, Woo J, Momand J. 2008. Prediction of reversibly oxidized protein cysteine thiols using protein structure properties. Protein Sci 17:473–481. doi: 10.1110/ps.073252408",
+   "item": "bib40"
+  },
+  {
+   "indice": 39,
+   "texto": "Shacter E, Williams JA, Lim M, Levine RL. 1994. Differential susceptibility of plasma proteins to oxidative modification: examination by western blot immunoassay. Free Radic Biol Med 17:429–437.",
+   "item": "bib41"
+  },
+  {
+   "indice": 40,
+   "texto": "Someya S, Yu W, Hallows WC, Xu JZ, Vann JM, Leeuwenburgh C, et al.. 2010. Sirt3 mediates reduction of oxidative damage and prevention of age-related hearing loss under caloric restriction. Cell 143:802–812. doi: 10.1016/j.cell.2010.10.002",
+   "item": "bib42"
+  },
+  {
+   "indice": 41,
+   "texto": "Steffen KK, Mackay VL, Kerr EO, Tsuchiya M, Hu D, Fox LA, et al.. 2008. Yeast life span extension by depletion of 60s ribosomal subunits is mediated by Gcn4. Cell 133:292–302. doi: 10.1016/j.cell.2008.02.037",
+   "item": "bib43"
+  },
+  {
+   "indice": 42,
+   "texto": "Yang NC, Ho WM, Chen YH, Hu ML. 2002. A convenient one-step extraction of cellular ATP using boiling water for the luciferin-luciferase assay of ATP. Anal Biochem 306:323–327.",
+   "item": "bib45"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Harman, 1956",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Muller et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Perez et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Salmon et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shacter et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Levine, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leichert et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brandes et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fabrizio and Longo, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fontana et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Longo et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Harris et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fontana et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barja, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Longo et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fabrizio and Longo, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brandes et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fontana et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fabrizio and Longo, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fabrizio and Longo, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fabrizio et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brandes et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brandes et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brandes et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lindahl et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sun et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fabrizio et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fabrizio and Longo, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goldberg et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Saeed et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brandes et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Holmgren and Lu, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Holmgren and Lu, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martensson and Meister, 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Merad-Boudia et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Magherini et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gasch et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sanchez et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cho et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rohrbach et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rebrin and Sohal, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Parihar et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Someya et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burtner et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gallogly and Mieyal, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hansen et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Delarue, 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fourmy et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Steffen et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guthrie, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fabrizio and Longo, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deere et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goldstein and McCusker, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brandes et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Saeed et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Getz et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bondar and Mead, 1974",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Garg et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Fontana et al., 2010",
+   "item": "bib12"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Fontana et al., 2010",
+   "item": "bib12"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Fontana et al., 2010",
+   "item": "bib12"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Sun et al., 2012",
+   "item": "bib44"
+  },
+  {
+   "ponto": "E",
+   "referencia": 5,
+   "item": "bib6"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

@@ -1,0 +1,636 @@
+{
+ "id": "treino_vancouver_pt-BR_perturbado",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "pt-BR",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Castro-Ramos A. Quisquam quam incidunt reprehenderit ipsa rem sit ex. Revue d’Épidémiologie et de Santé Publique. 2016;74(4):892–906.",
+   "item": "it000"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Teixeira S, Rodrigues DL, da Rocha G, Caldeira LM. Reiciendis dolore minus ducimus veritatis. Revue d’Épidémiologie et de Santé Publique. 2012;49(1):162–82.",
+   "item": "it021"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Pereira AC, Castro K, Santos AV, Ferreira J, Brito O, Sampaio H. Quod deleniti nam necessitatibus. Farias de Melo: Cavalcanti; 2008.",
+   "item": "it015"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Teixeira S, Rodrigues DL, da Rocha G, Caldeira LM. Eveniet magnam et atque eius sit suscipit sit voluptatum impedit vel deleniti delectus natus molestias. Das Gesundheitswesen. 2012;50(8):672–91.",
+   "item": "it022"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Chen X, Monteiro Y, da Cunha MV. Molestiae unde numquam corporis quos porro illum ipsum corrupti. One Health. 2009;13(2):858–76.",
+   "item": "it003"
+  },
+  {
+   "indice": 5,
+   "texto": "6. del Cardoso C. Ut quibusdam autem doloremque eum nemo voluptatibus deleniti esse doloribus occaecati laboriosam officia [Internet]. 12396. 2021. Disponível em: https://leis-treino.gov/3812",
+   "item": "it001"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Istituto Superiore di Sanità. Impedit veniam placeat magnam omnis libero ducimus eum [Internet]. 6982. 1977. Disponível em: https://leis-treino.gov/587",
+   "item": "it017"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Conselho Nacional de Saúde (Brasil). Praesentium illum officiis accusantium fugit in ex [Internet]. 1983 [citado 6 de novembro de 2026]. Disponível em: https://exemplo-treino.org/6267",
+   "item": "it009"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Pereira ML. Quos ratione dicta itaque molestiae perspiciatis tempora recusandae officia optio. Em: Fernandes DL, organizador. Voluptates veniam totam voluptates dolore. da Cruz das Pedras: Ribeiro; 2006. p. 211–26.",
+   "item": "it016"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Nogueira B, da Cunha M, Andrade C, Fonseca E, Almeida LG, Moraes L. Laborum illum maxime occaecati accusantium harum incidunt. Epidemiologia & Prevenzione. 1992;23(6):723–41. doi:10.99999/teste.treino.51243",
+   "item": "it018"
+  },
+  {
+   "indice": 10,
+   "texto": "11. São Paulo (Estado). Porro laudantium rerum ex debitis corrupti sunt numquam ex magni incidunt unde ad quas qui. BMC Public Health. 1995;27(12):242–57. doi:10.99999/teste.treino.63042",
+   "item": "it007"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Istituto Superiore di Sanità. Doloribus perspiciatis aperiam quam exercitationem animi illum [Internet]. 11423. 1981. Disponível em: https://leis-treino.gov/5635",
+   "item": "it011"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Pacheco M. Adipisci harum possimus ab rem voluptates corporis veritatis earum. Em: Dias D, organizador. Repellendus omnis recusandae minus labore sapiente soluta quisquam accusantium. Nogueira do Amparo: da Rosa; 2011. p. 79–94.",
+   "item": "it012"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Haute Autorité de Santé (France). Enim nulla aut laborum exercitationem officia nisi quibusdam tempore est delectus eveniet magnam perspiciatis. Fonseca: Guerra; 1977.",
+   "item": "it014"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Łukasz M, Porto F, Barros A. Ex minima sint alias enim nobis at aut. BMC Public Health. 2006;1(5):704–12. doi:10.99999/teste.treino.43729",
+   "item": "it006"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Pham M, Siqueira C, Pinto I. Ut voluptas consectetur debitis tenetur pariatur animi quaerat placeat neque. Duarte: Aragão; 2004.",
+   "item": "it005"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Lee J ho. Laboriosam molestias earum repellat porro a voluptatem porro consequuntur enim animi est. [Freitas]: Pimenta S.A.; 2025.",
+   "item": "it004"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Ministerio de Sanidad (España). Magnam sit laborum iusto voluptate. One Health. 1987;30(1):605–14. doi:10.99999/teste.treino.16149",
+   "item": "it008"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Novaes B, Costa E. Quas magnam nulla quos ex doloremque [Internet]. [citado 2 de novembro de 2026]. Disponível em: https://exemplo-treino.org/2239",
+   "item": "it020"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Cardoso Y, Machado I. Reprehenderit occaecati rerum aliquam ipsum libero adipisci consequuntur officiis quidem unde dolore. Em: Lopes J, organizador. Iure minima cupiditate eius molestiae dolor. Nunes: Pinto Almeida - ME; 2015. p. 220–35.",
+   "item": "it013"
+  },
+  {
+   "indice": 20,
+   "texto": "21. da Mota T, Jesus A, da Mata LO. Consectetur officia cupiditate provident fugit et voluptatibus ad. Revista de Saúde Pública. 2009;37(7):617–23. doi:10.99999/teste.treino.75457",
+   "item": "it010"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Mínguez Prado J. Minima corporis nisi error atque saepe ipsa. Journal of the American Medical Informatics Association. 1978;32(11):555–74. doi:10.99999/teste.treino.26451",
+   "item": "it002"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Moraes EG, Souza L. Facere sequi mollitia officia nobis. Revue d’Épidémiologie et de Santé Publique. 1983;3(5):187–92. doi:10.99999/teste.treino.99027",
+   "item": "it019"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Teixeira et al. (2)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1,3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it000"
+   ],
+   "referencias": [
+    2,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it001"
+   ],
+   "referencias": [
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Istituto Superiore di Sanità (7)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it016"
+   ],
+   "referencias": [
+    7,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11,12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it011"
+   ],
+   "referencias": [
+    10,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pacheco (13)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7,15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it017"
+   ],
+   "referencias": [
+    14,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,16,17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it005",
+    "it004"
+   ],
+   "referencias": [
+    7,
+    15,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Conselho Nacional de Saúde (Brasil) (8)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Haute Autorité de Santé (France) (14)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18,19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it020"
+   ],
+   "referencias": [
+    17,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3,11,19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it020",
+    "it007"
+   ],
+   "referencias": [
+    2,
+    18,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11,20,21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it007",
+    "it010"
+   ],
+   "referencias": [
+    19,
+    10,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9,18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it008"
+   ],
+   "referencias": [
+    8,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18,20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it013"
+   ],
+   "referencias": [
+    17,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6,21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it010"
+   ],
+   "referencias": [
+    5,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Castro-Ramos (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7,16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it017"
+   ],
+   "referencias": [
+    15,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,9,22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it016",
+    "it002"
+   ],
+   "referencias": [
+    1,
+    8,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pereira (9)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6,12,15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it006",
+    "it011"
+   ],
+   "referencias": [
+    5,
+    14,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3,7,18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it008",
+    "it015"
+   ],
+   "referencias": [
+    6,
+    17,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Łukasz et al. (15)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Istituto Superiore di Sanità (7)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Adipisci rerum ipsa vero deserunt cum enim consequatur voluptas quam dolorem possimus"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

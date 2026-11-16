@@ -1,0 +1,43 @@
+{
+  "descricao": "TCC real (projeto de intervenção, ABNT NBR 10520:2023 e 6023:2018) em três versões. Gabarito por revisão humana. Arquivos de uso interno: não publicar.",
+  "versoes": {
+    "tcc_v18.docx": {
+      "n_referencias": 87, "D": 0, "E": 0,
+      "alertas_reais": [
+        {"ponto": "C", "ancora": "processo contínuo e sistemático de coleta", "motivo": "definição da PNVS quase literal sem aspas e sem página"},
+        {"ponto": "C", "ancora": "descarte incorreto da carcaça", "motivo": "frase quase literal da nota técnica estadual"},
+        {"ponto": "G", "ancora": "instituído em 2024, tem por objetivo promover a transformação digital", "motivo": "a fonte citada (tutorial do INMSD) não sustenta a afirmação"},
+        {"ponto": "G", "ancora": "zero ou um responsável, identificado pelo CPF", "motivo": "cardinalidade atribuída a uma lei que não a define"},
+        {"ponto": "G", "ancora": "dígitos verificadores", "motivo": "regra de negócio atribuída a uma lei que não a prevê"}
+      ]
+    },
+    "tcc_v19.docx": {
+      "n_referencias": 87, "D": 0, "E": 0,
+      "alertas_reais": [
+        {"ponto": "G", "ancora": "instituído em 2024, tem por objetivo promover a transformação digital", "motivo": "a fonte citada (tutorial do INMSD) não sustenta a afirmação"},
+        {"ponto": "G", "ancora": "zero ou um responsável, identificado pelo CPF", "motivo": "cardinalidade atribuída a uma lei que não a define"},
+        {"ponto": "G", "ancora": "dígitos verificadores", "motivo": "regra de negócio atribuída a uma lei que não a prevê"}
+      ]
+    },
+    "tcc_v22.docx": {"n_referencias": 87, "D": 0, "E": 0, "alertas_reais": []}
+  },
+  "alertas_proibidos": [
+    {"ponto": "A", "ancora": "German", "motivo": "existe no PubMed (PMID 18634202), sem DOI"},
+    {"ponto": "A", "ancora": "Svensson-Ranallo", "motivo": "existe no PubMed (PMID 22211180) e no PMC"},
+    {"ponto": "A", "ancora": "SNOMED International", "motivo": "página web institucional, não artigo"},
+    {"ponto": "A", "ancora": "National Library of Medicine", "motivo": "página web institucional"},
+    {"ponto": "A", "ancora": "Virginia-Maryland", "motivo": "página web institucional"},
+    {"ponto": "C", "ancora": "International Society for Human and Animal Mycology", "motivo": "nome próprio de entidade"},
+    {"ponto": "D", "ancora": "", "motivo": "todas as citações têm referência"},
+    {"ponto": "E", "ancora": "", "motivo": "todas as referências são citadas"},
+    {"ponto": "F", "ancora": "Gremião", "motivo": "ano do fascículo (2015) é o correto pela ABNT"},
+    {"ponto": "F", "ancora": "Poester", "motivo": "ano do fascículo (2022)"},
+    {"ponto": "F", "ancora": "Rabello", "motivo": "ano do fascículo (2022)"},
+    {"ponto": "F", "ancora": "Souza", "motivo": "ano do fascículo (2025)"},
+    {"ponto": "F", "ancora": "Garde", "motivo": "n. 3 e n. 03 são o mesmo fascículo"},
+    {"ponto": "F", "ancora": "Cognialli", "motivo": "ano 2023 correto"},
+    {"ponto": "F", "ancora": "Moreno-Conde", "motivo": "ano 2015 correto"},
+    {"ponto": "F", "ancora": "APÊNDICE", "motivo": "apêndice depois das referências é o previsto na NBR 14724"},
+    {"ponto": "G", "ancora": "Quadro 8", "motivo": "tabela deve ser avaliada célula por célula (na v22 a RN.03 já é regra da autora)", "so_versao": "tcc_v22.docx"}
+  ]
+}

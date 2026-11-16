@@ -1,0 +1,1813 @@
+{
+ "id": "elife-00007_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00007.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Allison JD, Hare JD. 2009. Learned and naïve natural enemy responses and the interpretation of volatile organic compounds as cues or signals. New Phytol 184:768–782.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Allmann S, Baldwin IT. 2010. Insects betray themselves in nature to predators by rapid isomerization of green leaf volatiles. Science 329:1075–1078.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Allmann S, Halitschke R, Schuurink RC, Baldwin IT. 2010. Oxylipin channelling in Nicotiana attenuata: Lipoxygenase 2 supplies substrates for green leaf volatile production. Plant Cell Environ 33:2028–2040.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Baldwin IT. 1998. Jasmonate-induced responses are costly but benefit plants under attack in native populations. Proc Natl Acad Sci U S A 95:8113–8118.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Benrey B, Denno RF. 1997. The slow-growth-high mortality hypothesis: A test using the cabbage butterfly. Ecology 78:987–999.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Bubner B, Gase K, Berger B, Link D, Baldwin IT. 2006. Occurrence of tetraploidy in Nicotiana attenuata plants after Agrobacterium-mediated transformation is genotype specific but independent of polysomaty of explant tissue. Plant Cell Rep 25:668–675.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "De Moraes CM, Mescher MC, Tumlinson JH. 2001. Caterpillar-induced nocturnal plant volatiles repel conspecific females. Nature 410:577–580.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Degenhardt J, Hiltpold I, Köllner TG, Frey M, Gierl A, Gershenzon J, et al.. 2009. Restoring a maize root signal that attracts insect-killing nematodes to control a major pest. Proc Natl Acad Sci U S A 106:13213–13218.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Dicke M, Baldwin IT. 2010. The evolutionary context for herbivore-induced plant volatiles: Beyond the ‘cry for help’. Trends Plant Sci 15:167–175.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Eubanks MD, Denno RF. 1999. The ecological consequences of variation in plants and prey for an omnivorous insect. Ecology 80:1253–1266.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Eubanks MD, Denno RF. 2000. Host plants mediate omnivore-herbivore interactions and influence prey suppression. Ecology 81:936–947.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Fragoso V, Goddard H, Baldwin IT, Kim S-G. 2011. A simple and efficient micrografting method for stably transformed Nicotiana attenuata plants to examine shoot-root signaling. Plant Methods 7:34.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Fraser AM, Mechaber WL, Hildebrand JG. 2003. Electroantennographic and behavioral responses of the sphinx moth Manduca sexta to host plant headspace volatiles. J Chem Ecol 29:1813–1833.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "García-Pérez RD, Houdt HV, Depicker A. 2004. Spreading of post-transcriptional gene silencing along the target gene promotes systemic silencing. Plant J 38:594–602.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Halitschke R, Baldwin IT. 2003. Antisense LOX expression increases herbivore performance by decreasing defense responses and inhibiting growth-related transcriptional reorganization in Nicotiana attenuata. Plant J 36:794–807.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Halitschke R, Kessler A., Kahl J, Lorenz A, Baldwin IT. 2000. Ecophysiological comparison of direct and indirect defenses in Nicotiana attenuata. Oecologia 124:408–417.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Halitschke R, Schittko U, Pohnert G, Boland W, Baldwin IT. 2001. Molecular interactions between the specialist herbivore Manduca sexta (Lepidoptera, Sphingidae) and its natural host Nicotiana attenuata. III. Fatty acid-amino acid conjugates in herbivore oral secretions are necessary and sufficient for herbivore-specific plant responses. Plant Physiol 125:711–717.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Halitschke R, Ziegler J, Keinänen M, Baldwin IT. 2004. Silencing of hydroperoxide lyase and allene oxide synthase reveals substrate and defense signaling crosstalk in Nicotiana attenuata. Plant J 40:35–46.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Halitschke R, Stenberg JA, Kessler D, Kessler A, Baldwin IT. 2008. Shared signals—‘alarm calls’ from plants increase apparency to herbivores and their enemies in nature. Ecol Lett 11:24–34.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Hartl M, Giri AP, Kaur H, Baldwin IT. 2011. The multiple functions of plant serine protease inhibitors: Defense against herbivores and beyond. Plant Signal Behav 6:1009–1011.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Heil M. 2008. Indirect defence via tritrophic interactions. New Phytol 178:41–61.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Hoballah MEF, Turlings TCJ. 2001. Experimental evidence that plants under caterpillar attack may benefit from attracting parasitoids. Evol Ecol Res 3:553–565.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Horne P., Page J. 2008. Integrated pest management for crops and pastures.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Kallenbach M, Alagna F, Baldwin IT, Bonaventure G. 2010. Nicotiana attenuata SIPK, WIPK, NPR1, and fatty acid-amino acid conjugates participate in the induction of jasmonic acid biosynthesis by affecting early enzymatic steps in the pathway. Plant Physiol 152:96–106.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Kaplan I. 2012. Attracting carnivorous arthropods with plant volatiles: The future of biocontrol or playing with fire?. Biol Control 60:77–89.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Kaplan I, Thaler JS. 2011. Do plant defenses enhance or diminish prey suppression by omnivorous Heteroptera?. Biol Control 59:53–60.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Kappers IF, Aharoni A, van Herpen TWJM, Luckerhoff LLP, Dicke M, Bouwmeester HJ. 2005. Genetic engineering of terpenoid metabolism attracts bodyguards to Arabidopsis. Science 309:2070–2072.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Karban R, Baldwin IT. 1997. Induced responses to herbivory.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Kessler A, Baldwin IT. 2001. Defensive function of herbivore-induced plant volatile emissions in nature. Science 291:2141–2144.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Kessler A, Baldwin IT. 2004. Herbivore-induced plant vaccination. Part I. The orchestration of plant defenses in nature and their fitness consequences in the wild tobacco Nicotiana attenuata. Plant J 38:639–649.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Kessler D, Baldwin IT. 2006. Making sense of nectar scents: The effects of nectar secondary metabolites on floral visitors of Nicotiana attenuata. Plant J 49:840–854.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Kessler A, Heil M. 2011. The multiple faces of indirect defences and their agents of natural selection. Funct Ecol 25:348–357.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Kessler A, Halitschke R, Baldwin IT. 2004. Silencing the jasmonate cascade: Induced plant defenses and insect populations. Science 305:665–668.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Kessler A, Halitschke R, Diezel C, Baldwin IT. 2006. Priming of plant defense responses in nature by airborne signaling between Artemisia tridentata and Nicotiana attenuata. Oecologia 148:280–292.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Kos M, van Loon JJA, Dicke M, Vet LEM. 2009. Transgenic plants as vital components of integrated pest management. Trends Biotechnol 27:621–627.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Krügel T, Lim M, Gase K, Halitschke R, Baldwin IT. 2002. Agrobacterium-mediated transformation of Nicotiana attenuata, a model ecological expression system. Chemoecology 12:177–183.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Liu F, Xu Z, Zhu YC, Huang F, Wang Y, Li H, et al.. 2010. Evidence of field-evolved resistance to Cry1Ac-expressing Bt cotton in Helicoverpa armigera (Lepidoptera: Noctuidae) in northern China. Pest Manag Sci 66:155–161.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Meldau S, Wu J, Baldwin IT. 2009. Silencing two herbivory-activated MAP kinases, SIPK and WIPK, does not increase Nicotiana attenuata's susceptibility to herbivores in the glasshouse and in nature. New Phytol 181:161–173.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Paschold A, Halitschke R, Baldwin IT. 2006. Using ‘mute’ plants to translate volatile signals. Plant J 45:275–291.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Price PW, Bouton CE, Gross P, McPheron BA, Thompson JN, Weis AE. 1980. Interactions among three trophic levels: Influence of plants on interactions between insect herbivores and natural enemies. Ann Rev Ecol Syst 11:41–65.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Rasmann S, Köllner TG, Degenhardt J, Hiltpold I, Toepfer S, Kuhlmann U, et al.. 2005. Recruitment of entomopathogenic nematodes by insect-damaged maize roots. Nature 434:732–737.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Schittko U, Preston CA, Baldwin IT. 2000. Eating the evidence? Manduca sexta larvae can not disrupt specific jasmonate induction in Nicotiana attenuata by rapid consumption. Planta 210:343–346.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Schittko U, Hermsmeier D, Baldwin IT. 2001. Molecular interactions between the specialist herbivore Manduca sexta (Lepidoptera, Sphingidae) and its natural host Nicotiana attenuata. II. Accumulation of plant mRNAs in response to insect-derived cues. Plant Physiol 125:701–710.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Schnee C, Köllner TG, Held M, Turlings TCJ, Gershenzon J, Degenhardt J. 2006. The products of a single maize sesquiterpene synthase form a volatile defense signal that attracts natural enemies of maize herbivores. Proc Natl Acad Sci U S A 103:1129–1134.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Schuman M, Heinzel N, Gaquerel E, Svatos A, Baldwin IT. 2009. Polymorphism in jasmonate signaling partially accounts for the variety of volatiles produced by Nicotiana attenuata plants in a native population. New Phytol 183:1134–1148.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Schuman M, Barthel K, Baldwin IT. 2012..",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Schwachtje J, Kutschbach S, Baldwin IT. 2008. Reverse genetics in ecological research. PLoS One 3:e1543.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Sime KR, Baldwin IT. 2003. Opportunistic out-crossing in Nicotiana attenuata (Solanaceae), a predominantly self-fertilizing native tobacco. BMC Ecol 3:6.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Skibbe M, Qu N, Galis I, Baldwin IT. 2008. Induced plant defenses in the natural environment: Nicotiana attenuata WRKY3 and WRKY6 coordinate responses to herbivory. Plant Cell 20:1984–2000.",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Steppuhn A, Baldwin IT. 2007. Resistance management in a native plant: Nicotine prevents herbivores from compensating for plant protease inhibitors. Ecol Lett 10:499–511.",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Stork WFJ, Weinhold A, Baldwin IT. 2011. Trichomes as dangerous lollipops: Do lizards also use caterpillar body and frass odor to optimize their foraging?. Plant Signal Behav 6:1893–1896.",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Travella S, Klimm TE., Keller B. 2006. RNA interference-based gene silencing as an efficient tool for functional genomics in hexaploid bread wheat. Plant Physiol 142:6–20.",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "Turlings TCJ, Wäckers FL. 2004. Recruitment of predators and parasitoids by herbivore-injured plants. Advances in insect chemical ecology:21–75.",
+   "item": "bib53"
+  },
+  {
+   "indice": 53,
+   "texto": "van Dam NM, Horn M, Mares M, Baldwin IT. 2001. Ontogeny constrains systemic protease inhibitor response in Nicotiana attenuata. J Chem Ecol 27:547–568.",
+   "item": "bib54"
+  },
+  {
+   "indice": 54,
+   "texto": "van Loon JJA, de Boer JG, Dicke M. 2000. Parasitoid-plant mutualism: Parasitoid attack of herbivore increases plant reproduction. Entomologia Experimentalis et Applicata 97:219–227.",
+   "item": "bib55"
+  },
+  {
+   "indice": 55,
+   "texto": "Weinhold A, Baldwin IT. 2011. Trichome-derived O-acyl sugars are a first meal for caterpillars that tags them for predation. Proc Natl Acad Sci U S A 108:7855–7859.",
+   "item": "bib56"
+  },
+  {
+   "indice": 56,
+   "texto": "Williams IS. 1999. Slow-growth, high-mortality—a general hypothesis, or is it?. Ecol Entomol 24:490–495.",
+   "item": "bib57"
+  },
+  {
+   "indice": 57,
+   "texto": "Wink M, Theile V. 2002. Alkaloid tolerance in Manduca sexta and phylogenetically related sphingids (Lepidoptera: Sphingidae). Chemoecology 46:29–46.",
+   "item": "bib58"
+  },
+  {
+   "indice": 58,
+   "texto": "Winterer J., Bergelson J. 2001. Diamondback moth compensatory consumption of protease inhibitor-transformed plants. Mol Ecol 10:1069–1074.",
+   "item": "bib59"
+  },
+  {
+   "indice": 59,
+   "texto": "Wu J, Hettenhausen C, Baldwin IT. 2006. Evolution of proteinase inhibitor defenses in North American allopolyploid species of Nicotiana. Planta 224:750–760.",
+   "item": "bib60"
+  },
+  {
+   "indice": 60,
+   "texto": "Zavala JA, Baldwin IT. 2004. Fitness benefits of trypsin proteinase inhibitor expression in Nicotiana attenuata are greater than their costs when plants are attacked. BMC Ecol 4:11.",
+   "item": "bib61"
+  },
+  {
+   "indice": 61,
+   "texto": "Zavala JA, Giri AP, Jongsma MA, Baldwin IT. 2008. Digestive duet: Midgut digestive proteinases of Manduca sexta ingesting Nicotiana attenuata with manipulated trypsin proteinase inhibitor expression. PLoS One 3:29–31.",
+   "item": "bib62"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Price et al., 1980",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turlings and Wäckers, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Heil, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rasmann et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Degenhardt et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann and Baldwin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Karban and Baldwin, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dicke and Baldwin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Heil, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rasmann et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Degenhardt et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann and Baldwin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van Loon et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hoballah and Turlings, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann and Baldwin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allison and Hare, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kos et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kappers et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schnee et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rasmann et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Degenhardt et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Skibbe et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Benrey and Denno, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Williams, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2004",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaplan and Thaler, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wink and Theile, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zavala and Baldwin, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zavala et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hartl et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zavala et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Winterer and Bergelson, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Steppuhn and Baldwin, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zavala et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zavala and Baldwin, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sime and Baldwin, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baldwin, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van Loon et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hoballah and Turlings, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Skibbe et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schuman et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann and Baldwin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann and Baldwin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Paschold et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2006",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "De Moraes et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fraser et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Meldau et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Steppuhn and Baldwin, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Steppuhn and Baldwin, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann and Baldwin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Steppuhn and Baldwin, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke and Baldwin, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Steppuhn and Baldwin, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Skibbe et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al. (2000)",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schwachtje et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann and Baldwin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann and Baldwin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Steppuhn and Baldwin, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stork et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weinhold and Baldwin, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaplan and Thaler, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaplan and Thaler, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Travella et al. (2006)",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "García-Pérez et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sime and Baldwin, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baldwin, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van Loon et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hoballah and Turlings, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Horne and Page, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Eubanks and Denno, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2000",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allison and Hare, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann and Baldwin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kos et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaplan, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Krügel et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Steppuhn and Baldwin, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bubner et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schittko et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "De Moraes et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fraser et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schittko et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van Dam et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kallenbach et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fragoso et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schuman et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Halitschke et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schuman et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schuman et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schuman et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schuman et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kessler and Baldwin, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann and Baldwin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "ANO",
+   "citacao": "Steppuhn and Baldwin, 2007",
+   "item": "bib40",
+   "ano_referencia": "1980",
+   "nota": "divergência existente no artigo publicado"
+  },
+  {
+   "ponto": "E",
+   "referencia": 45,
+   "item": "bib46"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

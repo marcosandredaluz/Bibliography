@@ -1,0 +1,139 @@
+{
+ "id": "elife-00240_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00240.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Allmann S, Baldwin IT. 2010. Insects betray themselves in nature to predators by rapid isomerization of green leaf volatiles. Science 329:1075–1078.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Price PW, Bouton CE, Gross P, McPheron BA, Thompson JN, Weiss AE. 1980. Interactions among three trophic levels: Influence of plants on interactions between insect herbivores and natural enemies. Annu Rev Ecol Syst 11:41–65.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Royal Society. 2009. Reaping the benefits: Science and the sustainable intensification of global agriculture.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Schuman M, Barthel K, Baldwin I. 2012. Herbivory-induced volatiles function as defences increasing fitness of the native plant Nicotiana attenuata in nature. eLife:e00007.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Tamiru A, Bruce TJ, Woodcock CM, Caulfield JC, Midega CA, Ogol CK, et al.. 2011. Maize landraces recruit egg and larval parasitoids in response to egg deposition by a herbivore. Ecol Lett 14:1075–1083.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Turlings TC, Tumlinson JH, Lewis WJ. 1990. Exploitation of herbivore-induced plant odors by host-seeking parasitic wasps. Science 250:1251–1253.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Turlings TCJ, Alborn HT, Loughrin JH, Tumlinson JH. 2000. Volicitin, an elicitor of maize volatiles in oral secretion of Spodoptera exigua: isolation and bioactivity. J Chem Ecol 26:189–202.",
+   "item": "bib7"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Price et al., 1980",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schuman et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Royal Society, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turlings et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turlings et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tamiru et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allmann and Baldwin, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tamiru et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

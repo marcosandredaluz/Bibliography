@@ -1,0 +1,612 @@
+{
+ "id": "treino_iso690-ad_fr-FR_perturbado",
+ "estilo": "iso690-ad",
+ "sistema": "autor-data",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "CLERC, Théophile, 1984a. Jusque sourire hasard conduire voilà. Baudry-sur-Mer: Salmon S.A.R.L.",
+   "item": "it022"
+  },
+  {
+   "indice": 1,
+   "texto": "CLERC, Théophile, 1984b. Absence appeler noir bon ligne propos haïr dépasser jardin intérêt. Saint Adrien: Lucas.",
+   "item": "it021"
+  },
+  {
+   "indice": 2,
+   "texto": "DIDIER-GOSSELIN, Hélène et GEORGES, Agnès, 1998. Français éternel essayer obliger. Roy: Auger Mallet S.A.S.",
+   "item": "it000"
+  },
+  {
+   "indice": 3,
+   "texto": "DI OLIVIER, Bernard et LAINE, Marcel, 2012. Notre arrêter roche bande précéder musique fatigue assez subir ne vivant. In: LE ROUX, Nathalie (éd.), Jeune auquel retourner ou mémoire mari cinquante et aujourd’hui tout. Saint Denise: Blondel Carre SARL. p. 193‑208.",
+   "item": "it001"
+  },
+  {
+   "indice": 4,
+   "texto": "DUPONT, Gilles, FOURNIER, Michelle et VALLÉE, Thibault, 2011. Sept essayer accepter droite souffler chant particulier. In: LE GOFF, Honoré (éd.), Voisin être fauteuil lèvre corps. Saint Aurélie: Ribeiro. p. 22‑37.",
+   "item": "it013"
+  },
+  {
+   "indice": 5,
+   "texto": "FERREIRA, Jules, PONS, Alphonse, MAILLET, Michelle et LÉVÊQUE, Monique, 2009. Suivant rêve prière saluer sujet dès. Laine: Maury S.A.R.L.",
+   "item": "it014"
+  },
+  {
+   "indice": 6,
+   "texto": "FOURNIER, Laurent, LELEU, Jeanne, LEFORT, Pierre et LAMY, Arnaude, 2005. Le respirer amour ouvert mort théâtre étudier mémoire couper révéler. In: HOAREAU, Jacqueline (éd.), Chemise demain religion rentrer tant confier signe expliquer face parole étage étranger. Weiss: Julien Moreau S.A. p. 26‑41.",
+   "item": "it017"
+  },
+  {
+   "indice": 7,
+   "texto": "FRANÇOIS, Alexandria et ALLARD, Olivier, 1988. Reconnaître gagner quelque acheter fin dominer. Benoit-les-Bains: Bouchet et Fils.",
+   "item": "it015"
+  },
+  {
+   "indice": 8,
+   "texto": "GAILLARD, Timothée, 2009. Frapper prouver plaindre fer matière important as. Epidemiologia e Serviços de Saúde. 2009. Vol. 73, no. 1, p. 78‑84. DOI 10.99999/teste.treino.48565.",
+   "item": "it012"
+  },
+  {
+   "indice": 9,
+   "texto": "GREMIÃO, Zacharie, DE OLIVEIRA, Thibaut et GOSSELIN, Augustin, 1994. Avancer révéler finir écouter roche mensonge. Preventive Veterinary Medicine. 1994. Vol. 45, no. 10, p. 697‑706. DOI 10.99999/teste.treino.34132.",
+   "item": "it006"
+  },
+  {
+   "indice": 10,
+   "texto": "ISTITUTO SUPERIORE DI SANITÀ, 2006. Minute fidèle beau malgré demande digne tout midi. Das Gesundheitswesen. 2006. Vol. 60, no. 12, p. 629‑637. DOI 10.99999/teste.treino.50618.",
+   "item": "it009"
+  },
+  {
+   "indice": 11,
+   "texto": "IZQUIERDO GIMENEZ, Anastasio, GRENIER, Anastasie, ALEXANDRE, René et CORDIER, Grégoire, 1986. Toucher poids comme monsieur santé doigt envoyer froid. . Online. 1986. Available from: https://exemplo-treino.org/2369 [Accessed 14 novembre 2026].",
+   "item": "it002"
+  },
+  {
+   "indice": 12,
+   "texto": "JEAN, Agnès, MARTINEAU, Anaïs, LESAGE, Bernadette, THIBAULT, Gilbert, MARCHAL, Laetitia et FERNANDES, Thibault, 2000. Également savoir nom point joue éternel nouveau aujourd’hui règle bord. Dupuis-sur-Duval: Pruvost et Fils.",
+   "item": "it019"
+  },
+  {
+   "indice": 13,
+   "texto": "LAGARDE, Benoît, BOUCHET, Éléonore, ROSSI, Juliette et LEGRAND, Laure, 2012. Hôtel considérer terminer saisir tour son rentrer roche vieux préférer conseil rare mesure. Revue d’Épidémiologie et de Santé Publique. 2012. Vol. 55, no. 6, p. 348‑353. DOI 10.99999/teste.treino.69682.",
+   "item": "it016"
+  },
+  {
+   "indice": 14,
+   "texto": "LAUNAY, Camille et PERROT, Joséphine, [no date]. Remercier égal charge suite abattre amuser abri médecin agiter. Couturier-les-Bains: Thibault.",
+   "item": "it020"
+  },
+  {
+   "indice": 15,
+   "texto": "LE, Minh et DUHAMEL, Véronique, 2008. Chasser atteindre noire étouffer lumière demain claire. Journal of the American Medical Informatics Association. 2008. Vol. 44, no. 8, p. 68‑82.",
+   "item": "it005"
+  },
+  {
+   "indice": 16,
+   "texto": "LEGRAND, Nathalie, 1979. Malheur long vieil groupe arme plaine son. Das Gesundheitswesen. 1979. Vol. 39, no. 3, p. 153‑158. DOI 10.99999/teste.treino.71902.",
+   "item": "it011"
+  },
+  {
+   "indice": 17,
+   "texto": "LÉVY, Charlotte, 2017. Aucun réduire service science souvenir franchir abandonner faible lumière remonter. Briand: Boucher SARL.",
+   "item": "it018"
+  },
+  {
+   "indice": 18,
+   "texto": "LI, Wei, RUIZ, Adrien, BONNEAU, Claudine et BARTHELEMY, Eugène, 1999. Différent joindre complet plan haut poste parti eaux. . Online. 1999. Available from: https://exemplo-treino.org/4154 [Accessed 2 novembre 2026].",
+   "item": "it003"
+  },
+  {
+   "indice": 19,
+   "texto": "MINISTERIO DE SANIDAD (ESPAÑA), 2006. Tenir tu mais poche falloir soulever coûter siège jusque.. Online. 2006. 4012. Available from: https://leis-treino.gov/6494",
+   "item": "it007"
+  },
+  {
+   "indice": 20,
+   "texto": "PARK, Seo-yeon et GUYOT, Bertrand, 2022. Tout que employer suivre plonger figure offrir. Pinto: Grondin.",
+   "item": "it004"
+  },
+  {
+   "indice": 21,
+   "texto": "THIERRY, Alexandrie, AUGER, Élodie et FOUQUET, Roland, 2007. Vers nourrir matière sauvage beaux bête ferme interroger. Preventive Veterinary Medicine. 2007. Vol. 40, no. 9, p. 11‑20. DOI 10.99999/teste.treino.89628.",
+   "item": "it010"
+  },
+  {
+   "indice": 22,
+   "texto": "VIRGINIA-MARYLAND COLLEGE OF VETERINARY MEDICINE, 2002. Franc étranger et combien recueillir je importance retrouver mode tu. Gallet: Weiss.",
+   "item": "it008"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Clerc 1984a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Li, Ruiz, Bonneau, Barthelemy 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lagarde, Bouchet, Rossi, Legrand 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Clerc 1984b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ferreira, Pons, Maillet, Lévêque 2009; Fournier, Leleu, Lefort, Lamy 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it017"
+   ],
+   "referencias": [
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le, Duhamel 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Olivier, Laine 2012; Park, Guyot 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it004"
+   ],
+   "referencias": [
+    3,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Izquierdo Gimenez, Grenier, Alexandre, Cordier 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità 2006; di Olivier, Laine 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it001"
+   ],
+   "referencias": [
+    10,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Olivier, Laine 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le, Duhamel 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lévy 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dupont, Fournier, Vallée 2011; Didier-Gosselin, Georges 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it000"
+   ],
+   "referencias": [
+    4,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fournier, Leleu, Lefort, Lamy 2005; Ministerio de Sanidad (España) 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it007"
+   ],
+   "referencias": [
+    6,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião, De Oliveira, Gosselin 1994; Park, Guyot 2022; Dupont, Fournier, Vallée 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it004",
+    "it013"
+   ],
+   "referencias": [
+    9,
+    20,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Launay, Perrot [no date])",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(François, Allard 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le, Duhamel 2008; Clerc 1984a; di Olivier, Laine 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it022",
+    "it001"
+   ],
+   "referencias": [
+    15,
+    0,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jean, Martineau, Lesage, Thibault, Marchal, Fernandes 2000; Izquierdo Gimenez, Grenier, Alexandre, Cordier 1986; François, Allard 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it002",
+    "it015"
+   ],
+   "referencias": [
+    12,
+    11,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jean, Martineau, Lesage, Thibault, Marchal, Fernandes 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Olivier, Laine 2012; Gremião, De Oliveira, Gosselin 1994; Lévy 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it006",
+    "it018"
+   ],
+   "referencias": [
+    3,
+    9,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ministerio de Sanidad (España) (2006)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Legrand 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Legrand 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Izquierdo Gimenez, Grenier, Alexandre, Cordier 1986; Park, Guyot 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it004"
+   ],
+   "referencias": [
+    11,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Legrand 1979; Virginia-Maryland College of Veterinary Medicine 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it008"
+   ],
+   "referencias": [
+    16,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(François, Allard 1988; Didier-Gosselin, Georges 1998; Virginia-Maryland College of Veterinary Medicine 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it000",
+    "it008"
+   ],
+   "referencias": [
+    7,
+    2,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gaillard 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jean, Martineau, Lesage, Thibault, Marchal, Fernandes 2000; Thierry, Auger, Fouquet 2007; Izquierdo Gimenez, Grenier, Alexandre, Cordier 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it010",
+    "it002"
+   ],
+   "referencias": [
+    12,
+    21,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Clerc (1984a)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park, Guyot 2022; Legrand 1979; Jean, Martineau, Lesage, Thibault, Marchal, Fernandes 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it011",
+    "it019"
+   ],
+   "referencias": [
+    20,
+    16,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lévy 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "di Olivier, Laine (2012)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Didier-Gosselin, Georges 1998, p. 104)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Didier-Gosselin, Georges 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Fournier, Leleu, Lefort, Lamy 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Gaillard 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Didier-Gosselin, Georges (1998)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Résultat loi surtout lentement envelopper brûler genou vous juste ah jeune honneur neuf paquet ministre humain"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,601 @@
+{
+ "id": "treino_apa_pt-PT_perturbado",
+ "estilo": "apa",
+ "sistema": "autor-data",
+ "locale": "pt-PT",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Andrade-Cruz, L., & Almeida, F. (2014). Fugiat non explicabo dolorum voluptatem voluptatem. Nunes.",
+   "item": "it000"
+  },
+  {
+   "indice": 1,
+   "texto": "Cardoso, D., Soares, S., Matos, C., Cruz, L., Domingues, L., & Cunha, V. (2024). Vero id minima fugit neque veniam. Das Gesundheitswesen, 79(12), 685–691. https://doi.org/10.99999/teste.treino.56798",
+   "item": "it017"
+  },
+  {
+   "indice": 2,
+   "texto": "Carneiro, C., Gaspar, Â., & Araújo, M. (s.d.). Quis odit ipsum voluptates omnis vitae. Cadernos de Saúde Pública, 36(4), 403–407. https://doi.org/10.99999/teste.treino.27983",
+   "item": "it019"
+  },
+  {
+   "indice": 3,
+   "texto": "Castro, L. (2003). Saepe explicabo error nihil consectetur ea ullam blanditiis alias iste libero. Epidemiologia e Serviços de Saúde, 19(9), 837–845.",
+   "item": "it015"
+  },
+  {
+   "indice": 4,
+   "texto": "de Neto, H. (1978). Unde architecto deserunt veniam deserunt a aut recusandae. https://exemplo-treino.org/8308",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "Exercitationem suscipit soluta quibusdam possimus magnam doloribus, Legislação N. 4365 (1996). https://leis-treino.gov/36",
+   "item": "it016"
+  },
+  {
+   "indice": 6,
+   "texto": "Galán Barba, J., Lourenço, L., & Almeida, M. (2013). Dolor occaecati maiores iste nobis sint doloribus maiores dignissimos in. Gaceta Sanitaria, 64(1), 96–103. https://doi.org/10.99999/teste.treino.78319",
+   "item": "it002"
+  },
+  {
+   "indice": 7,
+   "texto": "Haute Autorité de Santé (France). (2002). Ducimus inventore quisquam corporis consequuntur repellendus mollitia sit nulla quia tempore laborum laudantium. Figueiredo.",
+   "item": "it009"
+  },
+  {
+   "indice": 8,
+   "texto": "Haute Autorité de Santé (France). (2010). Inventore a fugiat maiores at velit facilis veritatis eius nostrum numquam. Das Gesundheitswesen, 48(2), 216–227. https://doi.org/10.99999/teste.treino.52689",
+   "item": "it008"
+  },
+  {
+   "indice": 9,
+   "texto": "Istituto Superiore di Sanità. (2009). Tenetur veritatis quisquam omnis deserunt autem placeat quibusdam at a qui eveniet est ea. Journal of the American Medical Informatics Association, 45(9), 806–821. https://doi.org/10.99999/teste.treino.11428",
+   "item": "it007"
+  },
+  {
+   "indice": 10,
+   "texto": "Kim, J., Faria, M., & Macedo, J. (2002). Sunt error ratione et voluptates occaecati iure aliquid qui sit. Revue d’Épidémiologie et de Santé Publique, 49(11), 197–208. https://doi.org/10.99999/teste.treino.44325",
+   "item": "it004"
+  },
+  {
+   "indice": 11,
+   "texto": "Li, W., Rodrigues, L., Henriques, C., & Sousa, M. (2020). Ipsa fugit deleniti ipsa ea architecto ex ea vero praesentium nostrum. Gaceta Sanitaria, 78(5), 884–903. https://doi.org/10.99999/teste.treino.77136",
+   "item": "it003"
+  },
+  {
+   "indice": 12,
+   "texto": "Loureiro, V., Cunha, N., & Moura, F. (2023). Doloremque adipisci saepe praesentium consequatur rem. Journal of the American Medical Informatics Association, 27(5), 621–640. https://doi.org/10.99999/teste.treino.10503",
+   "item": "it012"
+  },
+  {
+   "indice": 13,
+   "texto": "Machado, Y., Valente, T., Anjos, D., & Leal, V. (1999). Laborum aliquam aliquam soluta pariatur optio tenetur. Journal of the American Medical Informatics Association, 23(10), 693–713.",
+   "item": "it014"
+  },
+  {
+   "indice": 14,
+   "texto": "Martins, M. (2025). Repellendus modi dicta aperiam doloribus harum quasi architecto. Teixeira Mota e Filhos.",
+   "item": "it013"
+  },
+  {
+   "indice": 15,
+   "texto": "Øster, E., Neto, S., Sá, A., & Fonseca, L. (2026). Corrupti molestiae quos reiciendis fuga distinctio. Revista de Saúde Pública, 53(4), 675–691. https://doi.org/10.99999/teste.treino.44083",
+   "item": "it006"
+  },
+  {
+   "indice": 16,
+   "texto": "Reis, Á., Carneiro, J., Leal, A., & Assunção, D. (2015). Omnis veritatis porro corrupti necessitatibus ex ad. Revista de Saúde Pública, 60(8), 364–370.",
+   "item": "it018"
+  },
+  {
+   "indice": 17,
+   "texto": "Similique asperiores illo esse qui ipsa, Legislação N. 1561 (2005). https://leis-treino.gov/5391",
+   "item": "it011"
+  },
+  {
+   "indice": 18,
+   "texto": "Sousa, L., Moreira, P., Jesus, H., & Abreu, T. (2008a). Id vel reiciendis consequuntur eaque hic. Epidemiologia & Prevenzione, 50(4), 850–856. https://doi.org/10.99999/teste.treino.60436",
+   "item": "it021"
+  },
+  {
+   "indice": 19,
+   "texto": "Sousa, L., Moreira, P., Jesus, H., & Abreu, T. (2008b). Praesentium ratione id ab saepe id ipsam facilis. Domingues.",
+   "item": "it020"
+  },
+  {
+   "indice": 20,
+   "texto": "Tran, M., & Ferreira, A. (1997). Ea omnis adipisci neque expedita ratione vel. Medical Mycology, 60(11), 673–686.",
+   "item": "it005"
+  },
+  {
+   "indice": 21,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. (2000). Quis corrupti laudantium sequi pariatur at debitis dolorum. Barros S/A.",
+   "item": "it010"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Kim et al., 2002; Sousa et al., 2008b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it004"
+   ],
+   "referencias": [
+    19,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Galán Barba et al., 2013; Øster et al., 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it006"
+   ],
+   "referencias": [
+    6,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kim et al., 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Loureiro et al., 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Carneiro et al., s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Exercitationem suscipit soluta quibusdam possimus magnam doloribus, 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cardoso et al., 2024; Exercitationem suscipit soluta quibusdam possimus magnam doloribus, 1996; Kim et al., 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it004",
+    "it017"
+   ],
+   "referencias": [
+    5,
+    10,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Machado et al., 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Similique asperiores illo esse qui ipsa, 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Exercitationem suscipit soluta quibusdam possimus magnam doloribus, 1996; Sousa et al., 2008a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it021"
+   ],
+   "referencias": [
+    5,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Loureiro et al., 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), 2002; Kim et al., 2002; Sousa et al., 2008b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it009",
+    "it004"
+   ],
+   "referencias": [
+    19,
+    7,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Loureiro et al., 2023; Øster et al., 2026; Sousa et al., 2008b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it012",
+    "it020"
+   ],
+   "referencias": [
+    15,
+    12,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reis et al. (2015)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Castro, 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Andrade-Cruz & Almeida, 2014; Øster et al., 2026; Tran & Ferreira, 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it005",
+    "it006"
+   ],
+   "referencias": [
+    0,
+    20,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kim et al., 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran & Ferreira, 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Loureiro et al., 2023; Martins, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it013"
+   ],
+   "referencias": [
+    12,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Loureiro et al., 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster et al., 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Loureiro et al., 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al. (2002)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sousa et al., 2008a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Neto, 1978; Øster et al., 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it001"
+   ],
+   "referencias": [
+    15,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Li et al., 2020; Machado et al., 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it014"
+   ],
+   "referencias": [
+    11,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cardoso et al., 2024; Istituto Superiore di Sanità, 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it007"
+   ],
+   "referencias": [
+    1,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 2009; Reis et al., 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it007"
+   ],
+   "referencias": [
+    16,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cardoso et al., 2024; Loureiro et al., 2023; Reis et al., 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it012",
+    "it017"
+   ],
+   "referencias": [
+    16,
+    12,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Andrade-Cruz & Almeida, 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loureiro et al. (2023)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Neto, 1978, p. 111)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Tran & Ferreira, 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Istituto Superiore di Sanità (2009)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Quis distinctio eligendi ducimus dolores culpa animi impedit necessitatibus similique excepturi totam"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

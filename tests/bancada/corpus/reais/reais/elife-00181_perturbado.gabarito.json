@@ -1,0 +1,1037 @@
+{
+ "id": "elife-00181_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00181.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Alonso L, Fuchs E. 2006. The hair cycle. J Cell Sci 119:391–393.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Andrew D. 2010. Quantitative characterization of low-threshold mechanoreceptor inputs to lamina I spinoparabrachial neurons in the rat. J Physiol 588:117–124.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Badea TC, Wang Y, Nathans J. 2003. A noninvasive genetic/pharmacologic strategy for visualizing cell morphology and clonal relationships in the mouse. J Neurosci 23:2314–2322.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Badea TC, Nathans J. 2004. Quantitative analysis of neuronal morphologies in the mouse retina visualized by using a genetically directed reporter. J Comp Neurol 480:331–351.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Badea TC, Cahill H, Ecker J, Hattar S, Nathans J. 2009. Distinct roles of transcription factors brn3a and brn3b in controlling the development, morphology, and function of retinal ganglion cells. Neuron 61:852–864.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Badea TC, Williams J, Smallwood P, Shi M, Motajo O, Nathans J. 2012. Combinatorial expression of Brn3 transcription factors in somatosensory neurons: genetic and morphologic analysis. J Neurosci 32:995–1007.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Basbaum AI, Bautista DM, Scherrer G, Julius D. 2009. Cellular and molecular mechanisms of pain. Cell 139:267–284.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Briggman KL, Helmstaedter M, Denk W. 2011. Wiring specificity in the direction-selectivity circuit of the retina. Nature 471:183–188.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Casserly I, Thambipillai T, Macken M, FitzGerald MJ. 1994. Innervation of the tylotrich-touch dome complexes in rat skin: changing patterns during postnatal development. J Anat 185:553–563.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Eng SR, Lanier J, Fedtsova N, Turner EE. 2004. Coordinated regulation of gene expression by Brn3a in developing sensory ganglia. Development 131:3859–3870.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Erlanger J, Gasser HS, Bishop HG. 1924. The compound nature of the action current of nerve as disclosed by the cathode ray oscilloscope. Am J Physiol 70:624–666.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Fedtsova NG, Turner EE. 1995. Brn-3.0 expression identifies early post-mitotic CNS neurons and sensory neural precursors. Mech Dev 53:291–304.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Fundin BT, Arvidsson J, Aldskogius H, Johansson O, Rice SN, Rice FL. 1997. Comprehensive immunofluorescence and lectin binding analysis of intervibrissal fur innervation in the mystacial pad of the rat. J Comp Neurol 385:185–206.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Gallo G. 2011. The cytoskeletal and signaling mechanisms of axon collateral branching. Dev Neurobiol 71:201–220.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Gasser HS, Erlanger J. 1927. The role played by the sizes of the constituent fibers of a nerve trunk in determining the form of its action potential wave. Am J Physiol 80:522–547.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Gasser HS, Erlanger J. 1929. The role of fiber size in the establishment of a nerve block by pressure or cocaine. Am J Physiol 88:581–591.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Iggo A. 1982. Cutaneous sensory mechanisms. The senses:369–408.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Iggo A, Andres KH. 1982. Morphology of cutaneous receptors. Ann Rev Neurosci 5:1–31.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Jan YN, Jan LY. 2010. Branching out: mechanisms of dendritic arborization. Nat Rev Neurosci 11:316–328.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Johansson RS, Trulsson M, Olsson KA, Westberg KG. 1988. Mechanoreceptor activity from the human face and oral mucosa. Exp Brain Res 72:204–208.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Kong JH, Fish DR, Rockhill RL, Masland RH. 2005. Diversity of ganglion cells in the mouse retina: unsupervised morphological classification and its limits. J, Comp. Neurol 489:293–310.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Li L, Rutlin M, Abraira VE, Cassidy C, Kus L, Gong S, et al.. 2011. The functional organization of cutaneous low-threshold mechanosensory neurons. Cell 147:1615–1627.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Lin B, Masland RH. 2006. Populations of wide-field amacrine cells in the mouse retina. J Comp Neurol 499:797–809.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Liu Q, Vrontou S, Rice FL, Zylka MJ, Dong X, Anderson DJ. 2007. Molecular genetic visualization of a rare subset of unmyelinated sensory neurons that may detect gentle touch. Nat Neurosci 10:946–948.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Liu Q, Tang Z, Surdenikova L, Kim S, Patel KN, Kim A, et al.. 2009. Sensory neuron-specific GPCR Mrgprs are itch receptors mediating chloroquine-induced pruritus. Cell 139:1353–1365.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Löken LS, Wessberg J, Morrison I, McGlone F, Olausson H. 2009. Coding of pleasant touch by unmyelinated afferents in humans. Nat Neurosci 12:547–548.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Lu J, Tapia JC, White OL, Lichtman JW. 2009. The interscutularis muscle connectome. PLoS Biol 7:e32.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Marmigère F, Ernfors P. 2007. Specification and connectivity of neuronal subtypes in the sensory lineage. Nat Rev Neurosci 8:114–127.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Masland RH. 2001. The fundamental plan of the retina. Nat Neurosci 4:877–886.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Masland RH. 2011. Cell populations of the retina: the Proctor lecture. Invest Ophthalmol Vis Sci 52:4581–4591. doi: 10.1167/iovs.10-7083",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Müller-Röver S, Handjiski B, van der Veen C, Eichmüller S, Foitzik K, McKay IA, et al.. 2001. A comprehensive guide for the accurate classification of murine hair follicles in distinct hair cycle stages. J Invest Dermatol 117:3–15.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Norrsell U, Finger S, Lajonchere C. 1999. Cutaneous sensory spots and the “law of specific nerve energies”: history and development of ideas. Brain Res Bull 48:457–465.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Reed-Geaghan EG, Maricich SM. 2011. Peripheral somatosensation: a touch of genetics. Curr Opin Genet Dev 21:240–248.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Rodieck RW, Brening RK. 1983. Retinal ganglion cells: properties, types, genera, pathways and trans-species comparisons. Brain Behav Evol 23:121–164.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Rotolo T, Smallwood PM, Williams J, Nathans J. 2008. Genetically-directed, cell type-specific sparse labeling for the analysis of neuronal morphology. PLoS One 3:e4099.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Sun W, Li N, He S. 2002. Large-scale morphological survey of mouse retinal ganglion cells. J Comp Neurol 451:115–126.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Takahashi-Iwanaga H. 2000. Three-dimensional microanatomy of longitudinal lanceolate endings in rat vibrissae. J Comp Neurol 426:259–269.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Takemura SY, Lu Z, Meinertzhagen IA. 2008. Synaptic circuits of the Drosophila optic lobe: the input terminals to the medulla. J Comp Neurol 509:493–513.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Trieu M, Ma A, Eng SR, Fedtsova N, Turner EE. 2003. Direct autoregulation and gene dosage compensation by POU-domain transcription factor Brn3a. Development 130:111–121.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Turney SG, Lichtman JW. 2012. Reversing the outcome of synapse elimination at developing neuromuscular junctions in vivo: evidence for synaptic competition and its mechanism. PLoS Biol 10:e1001352. doi: 10.1371/journal.pbio.1001352",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Vallbo AB, Johansson RS. 1984. Properties of cutaneous mechanoreceptors in the human hand related to touch sensation. Hum Neurobiol 3:3–14.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Vallbo AB, Olsson KA, Westberg KG, Clark FJ. 1984. Microstimulation of single tactile afferents from the human hand. Sensory attributes related to unit type and properties of receptive fields. Brain 107:727–749.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Vaney DI, Sivyer B, Taylor WR. 2012. Direction selectivity in the retina: symmetry and asymmetry in structure and function. Nat Rev Neurosci 13:194–208. doi: 10.1038/nrn3165",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Wang Y, Chang H, Nathans J. 2010. When whorls collide: the development of hair patterns in frizzled 6 mutant mice. Development 137:4091–4099.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Woodbury CJ, Ritter AM, Koerber HR. 2001. Central anatomy of individual rapidly adapting low-threshold mechanoreceptors innervating the “hairy” skin of newborn mice: early maturation of hair follicle afferents. J Comp Neurol 436:304–323.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Woodbury CJ, Koerber HR. 2007. Central and peripheral anatomy of slowly adapting type I low-threshold mechanoreceptors innervating trunk skin of neonatal mice. J Comp Neurol 505:547–561.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Xiang M, Gan L, Zhou L, Klein WH, Nathans J. 1996. Targeted deletion of the mouse POU domain gene Brn-3a causes selective loss of neurons in the brainstem and trigeminal ganglion, uncoordinated limb movement, and impaired suckling. Proc Natl Acad Sci USA 93:11950–11955.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Zylka MJ, Rice FL, Anderson DJ. 2005. Topographically distinct epidermal nociceptive circuits revealed by axonal tracers targeted to Mrgprd. Neuron 45:17–25.",
+   "item": "bib48"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Iggo, 1982",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Norrsell et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Erlanger et al., 1924",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gasser and Erlanger, 1927",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1929",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Iggo, 1982",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Iggo and Andres, 1982",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Basbaum et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fundin et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marmigère and Ernfors, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reed-Geaghan and Maricich, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woodbury et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marmigère and Ernfors, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reed-Geaghan and Maricich, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rodieck and Brening, 1983",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Masland, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fedtsova and Turner, 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Badea et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rotolo et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Badea et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Xiang et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trieu et al. (2003)",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Eng et al. (2004)",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Müller-Röver et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Alonso and Fuchs, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Badea et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fundin et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woodbury and Koerber, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Badea et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Badea and Nathans, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fundin et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woodbury and Koerber, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fundin et al. (1997)",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fundin et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woodbury and Koerber, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vaney et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Andrew, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Johansson et al., 1988",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Löken et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Casserly et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takahashi-Iwanaga, 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al. (2011)",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Masland, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jan and Jan, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Casserly et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turney and Lichtman, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gallo, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vallbo and Johansson, 1984",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vallbo et al., 1984",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Löken et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fundin et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zylka et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sun et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Badea and Nathans, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kong et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lin and Masland, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takemura et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Briggman et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Badea et al. (2003)",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2012",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

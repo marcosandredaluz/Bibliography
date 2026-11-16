@@ -1,0 +1,700 @@
+{
+ "id": "treino_apa_fr-FR_limpo",
+ "estilo": "apa",
+ "sistema": "autor-data",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Bertin, S., & Marin, C. (1976). Remettre dessus regretter occuper sous prix soi circonstance guère ressembler. BMC Public Health, 9(11), 333‑351. https://doi.org/10.99999/teste.treino.13534",
+   "item": "it022"
+  },
+  {
+   "indice": 1,
+   "texto": "Besson, L. (1980). Près soleil joindre résister arbre simplement annoncer huit. Gaceta Sanitaria, 72(10), 434‑445.",
+   "item": "it016"
+  },
+  {
+   "indice": 2,
+   "texto": "Blondel, W., Barthelemy, P., Rivière, C., Ruiz, Z., Blanc, N., & Muller, G. (1997). Certainement demain gagner idée face son ton aventure. Medical Mycology, 31(9), 357‑361. https://doi.org/10.99999/teste.treino.35439",
+   "item": "it021"
+  },
+  {
+   "indice": 3,
+   "texto": "da Parent, N., Laurent, A., Da Costa, R., & Chrétien, R. (1983). Chemin mine enfance libre sept nation loup quand recevoir muet condamner. Imbert Leleu S.A.R.L.",
+   "item": "it001"
+  },
+  {
+   "indice": 4,
+   "texto": "David, D., Martinez, S., Gomes, A., & Salmon, G. (1978). Manquer représenter école tête rose suffire jeune. Das Gesundheitswesen, 42(10), 567‑576. https://doi.org/10.99999/teste.treino.12069",
+   "item": "it015"
+  },
+  {
+   "indice": 5,
+   "texto": "Diaz, D., Carlier, A., Gaudin, L., & Barbe, C. (2019). Jour serrer bas mourir ennemi neuf couper grand rester dur. Lévy SARL.",
+   "item": "it013"
+  },
+  {
+   "indice": 6,
+   "texto": "Germain, C. (1989). Croix conversation inquiétude maintenant doute aussitôt. Das Gesundheitswesen, 32(9), 813‑819.",
+   "item": "it011"
+  },
+  {
+   "indice": 7,
+   "texto": "Haute Autorité de Santé (France). (2007). Aimer garde feu chasser suivant seuil vêtement. https://exemplo-treino.org/5238",
+   "item": "it025"
+  },
+  {
+   "indice": 8,
+   "texto": "Instituto Nacional de Câncer (Brasil). (1981). Mêler fumer courant souffrir jour double membre. https://exemplo-treino.org/2124",
+   "item": "it018"
+  },
+  {
+   "indice": 9,
+   "texto": "Instituto Nacional de Câncer (Brasil). (1982). Compagnie secours signer soin sentir naissance. Journal of the American Medical Informatics Association, 65(2), 777‑788. https://doi.org/10.99999/teste.treino.50631",
+   "item": "it009"
+  },
+  {
+   "indice": 10,
+   "texto": "Istituto Superiore di Sanità. (2019). Naissance mensonge conseil accord accomplir anglais quand hôtel musique sien point dessiner tard désirer auprès ce. BMC Public Health, 37(7), 427‑433.",
+   "item": "it007"
+  },
+  {
+   "indice": 11,
+   "texto": "Lambert, A., Bernier, N., & Millet, J. (s. d.). Âme vin tout vingt nation saint tout capable. Consulté 1 novembre 2026, à l’adresse https://exemplo-treino.org/8176",
+   "item": "it029"
+  },
+  {
+   "indice": 12,
+   "texto": "Le Roux, C., Bonnet, N., & Chartier, D. (2013). Saluer rentrer refuser grand blond angoisse essuyer saluer sein changement dégager leur autour siège maître oeil. Epidemiologia & Prevenzione, 37(2), 653‑673. https://doi.org/10.99999/teste.treino.76015",
+   "item": "it024"
+  },
+  {
+   "indice": 13,
+   "texto": "Ledoux, F., Delattre, J., & Bonnet, M. (2016). Refuser contre pensée saison simplement élément verser nouveau épaule. In A. Maillet (Éd.), Rire étendue quart empêcher représenter nation mettre oh remplir vert erreur pauvre (p. 279‑294). Guyon S.A.S.",
+   "item": "it019"
+  },
+  {
+   "indice": 14,
+   "texto": "Lee, J. (1986). Battre dès précis encore peser toit musique absolument voilà faute secret colon. Pascal Arnaud S.A.S.",
+   "item": "it004"
+  },
+  {
+   "indice": 15,
+   "texto": "Lévy, V., Delahaye, E., Marques, L., Clément, P., Jean, J., & Allard, Z. (2019). Depuis observer accuser éprouver. Preventive Veterinary Medicine, 78(8), 328‑341. https://doi.org/10.99999/teste.treino.85163",
+   "item": "it023"
+  },
+  {
+   "indice": 16,
+   "texto": "Louis, H., Techer, G., Thibault, L., Mendès, N., Seguin, C., & Bouvet, G. (1995). Retomber doux exemple presque cause. Cadernos de Saúde Pública, 58(8), 541‑559. https://doi.org/10.99999/teste.treino.30209",
+   "item": "it026"
+  },
+  {
+   "indice": 17,
+   "texto": "Łukasz, S., & Delannoy, R. (1993). Sauver mieux condition oreille sombre. One Health, 64(11), 843‑854. https://doi.org/10.99999/teste.treino.92802",
+   "item": "it006"
+  },
+  {
+   "indice": 18,
+   "texto": "Montrer fort souvenir parler pour désigner après alors soin, Acte jurid. No 11714 (2015). https://leis-treino.gov/8532",
+   "item": "it031"
+  },
+  {
+   "indice": 19,
+   "texto": "National Library of Medicine (Estados Unidos). (1982). Mince goût témoin partir condition important or oh avenir verre. Epidemiologia e Serviços de Saúde, 39(7), 864‑870. https://doi.org/10.99999/teste.treino.98900",
+   "item": "it008"
+  },
+  {
+   "indice": 20,
+   "texto": "National Library of Medicine (Estados Unidos). (2015). Premier marche silencieux marier or je train tenter cercle observer claire. Medical Mycology, 56(7), 720‑725. https://doi.org/10.99999/teste.treino.76202",
+   "item": "it030"
+  },
+  {
+   "indice": 21,
+   "texto": "Perales Mendoza, H., Robin, M., Poirier, S., & Henry, F. (1994). Parole éprouver point pur moitié durer tache. Medical Mycology, 2(10), 585‑605. https://doi.org/10.99999/teste.treino.96464",
+   "item": "it002"
+  },
+  {
+   "indice": 22,
+   "texto": "Remplir victime retomber visible an éclat, Acte jurid. No 10125 (1987). https://leis-treino.gov/3261",
+   "item": "it017"
+  },
+  {
+   "indice": 23,
+   "texto": "Rey, C. (1987). Énergie le siècle voler beaux hôtel malade instinct songer rire toit représenter. Rivière.",
+   "item": "it014"
+  },
+  {
+   "indice": 24,
+   "texto": "Rocher, N. (1984). Ami rose arriver peine tard. Revue d’Épidémiologie et de Santé Publique, 3(9), 569‑578. https://doi.org/10.99999/teste.treino.20042",
+   "item": "it012"
+  },
+  {
+   "indice": 25,
+   "texto": "Roi claire chambre repas semblable fête poche travailler, Acte jurid. No 9266 (2018). https://leis-treino.gov/5132",
+   "item": "it003"
+  },
+  {
+   "indice": 26,
+   "texto": "Rolland-Texier, M., & Labbé, M. (1981). Mer tour y danger vite soudain saluer croiser chanter écrire marier moindre exiger nature résister. Lebreton.",
+   "item": "it000"
+  },
+  {
+   "indice": 27,
+   "texto": "Schneider, T. (2000). Douceur frapper as crise regarder souvent million demain voler amuser retenir armée juger. Das Gesundheitswesen, 5(9), 31‑45. https://doi.org/10.99999/teste.treino.83485",
+   "item": "it028"
+  },
+  {
+   "indice": 28,
+   "texto": "Teixeira, V., Schneider, A., & Hamon, L. (2026). Ligne tendre depuis verre ministre pencher. Revue d’Épidémiologie et de Santé Publique, 16(7), 589‑593. https://doi.org/10.99999/teste.treino.38402",
+   "item": "it027"
+  },
+  {
+   "indice": 29,
+   "texto": "Tran, T. H., & Boulay, A. (2024). Haute tu ressembler milieu raconter science. Joly.",
+   "item": "it005"
+  },
+  {
+   "indice": 30,
+   "texto": "Vaillant, A. (2012). Étendre décider devenir or précéder parfaitement éviter. Medical Mycology, 64(1), 171‑179.",
+   "item": "it010"
+  },
+  {
+   "indice": 31,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. (1981). Soir sombre conduire autre assurer éternel ressembler le pierre fond armée point chez grandir cesser. https://exemplo-treino.org/6114",
+   "item": "it020"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Tran & Boulay, 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ledoux et al., 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Louis et al., 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Germain, 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Remplir victime retomber visible an éclat, 1987; Vaillant, 2012; Virginia-Maryland College of Veterinary Medicine, 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it020",
+    "it010"
+   ],
+   "referencias": [
+    22,
+    31,
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Łukasz & Delannoy, 1993; Virginia-Maryland College of Veterinary Medicine, 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it020"
+   ],
+   "referencias": [
+    17,
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Germain, 1989; Lee, 1986; Teixeira et al., 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it011",
+    "it004"
+   ],
+   "referencias": [
+    28,
+    6,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), 2007; Montrer fort souvenir parler pour désigner après alors soin, 2015; Vaillant, 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031",
+    "it010",
+    "it025"
+   ],
+   "referencias": [
+    18,
+    30,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Perales Mendoza et al., 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Besson, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Parent et al., 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le Roux et al., 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran & Boulay, 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ledoux et al., 2016; Tran & Boulay, 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it005"
+   ],
+   "referencias": [
+    13,
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lévy et al. (2019)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Montrer fort souvenir parler pour désigner après alors soin, 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rolland-Texier & Labbé, 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rey, 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Teixeira et al., 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Parent et al., 1983; Lee, 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it001"
+   ],
+   "referencias": [
+    14,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Istituto Superiore di Sanità (2019)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Roi claire chambre repas semblable fête poche travailler, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), 2007; Remplir victime retomber visible an éclat, 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it025"
+   ],
+   "referencias": [
+    22,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lambert et al., s. d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 2019; Lee, 1986; Schneider, 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it007",
+    "it004"
+   ],
+   "referencias": [
+    27,
+    10,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(David et al., 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al. (Roi claire chambre repas semblable fête poche travailler, 2018)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Diaz et al., 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 2019; Teixeira et al., 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it007"
+   ],
+   "referencias": [
+    28,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rocher, 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bertin & Marin, 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Blondel et al., 1997; National Library of Medicine (Estados Unidos), 2015; Tran & Boulay, 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it005",
+    "it021"
+   ],
+   "referencias": [
+    20,
+    29,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1982, p. 242)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Remplir victime retomber visible an éclat, 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "David et al. (1978)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Dernier toi remonter histoire nouveau main conseil étage retomber prétendre retrouver plaindre"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

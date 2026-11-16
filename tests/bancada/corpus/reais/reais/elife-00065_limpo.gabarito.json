@@ -1,0 +1,899 @@
+{
+ "id": "elife-00065_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00065.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Ayala JE, Bracy DP, McGuinness OP, Wasserman DH. 2006. Considerations in the design of hyperinsulinemic-euglycemic clamps in the conscious mouse. Diabetes 55:390–397.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Barclay JL, Nelson CN, Ishikawa M, Murray LA, Kerr LM, McPhee TR, et al.. 2011. GH-dependent STAT5 signaling plays an important role in hepatic lipid metabolism. Endocrinology 152:181–192.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Bartke A, Brown-Borg H. 2004. Life extension in the dwarf mouse. Curr Top Dev Biol 63:189–225.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Barzilai N, Huffman DM, Muzumdar RH, Bartke A. 2012. The critical role of metabolic pathways in aging. Diabetes 61:1315–1322.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Berglund ED, Li CY, Bina HA, Lynes SE, Michael MD, Shanafelt AB, et al.. 2009. Fibroblast growth factor 21 controls glycemia via regulation of hepatic glucose flux and insulin sensitivity. Endocrinology 150:4084–4093.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Bishop NA, Guarente L. 2007. Genetic links between diet and lifespan: Shared mechanisms from yeast to humans. Nat Rev Genet 8:835–844.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Brown-Borg HM, Bartke A. 2012. GH and IGF1: Roles in energy metabolism of long-living GH mutant mice. J Gerontol A Biol Sci Med Sci 67:652–660.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Brown-Borg HM, Borg KE, Meliska CJ, Bartke A. 1996. Dwarf mice and the ageing process. Nature 384:33.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Chen W, Hoo RL, Konishi M, Itoh N, Lee PC, Ye HY, et al.. 2011. Growth hormone induces hepatic production of fibroblast growth factor 21 through a mechanism dependent on lipolysis in adipocytes. J Biol Chem 286:34559–34566.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Collett D. 2003. Modelling survival data in medical research.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Conover CA, Bale LK, Mader JR, Mason MA, Keenan KP, Marler RJ. 2010. Longevity and age-related pathology of mice deficient in pregnancy-associated plasma protein-A. J Gerontol A Biol Sci Med Sci 65:590–599.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Coschigano KT, Clemmons D, Bellush LL, Kopchick JJ. 2000. Assessment of growth parameters and life span of GHR/BP gene-disrupted mice. Endocrinology 141:2608–2613.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Dutchak PA, Katafuchi T, Bookout AL, Choi JH, Yu RT, Mangelsdorf DJ, et al.. 2012. Fibroblast growth factor-21 regulates PPARγ activity and the antidiabetic actions of thiazolidinediones. Cell 148:556–567.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Flurkey K, Papaconstantinou J, Harrison DE. 2002. The Snell dwarf mutation Pit1(dw) can increase life span in mice. Mech Ageing Dev 123:121–130.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Inagaki T, Dutchak P, Zhao G, Ding X, Gautron L, Parameswara V, et al.. 2007. Endocrine regulation of the fasting response by PPARalpha-mediated induction of fibroblast growth factor 21. Cell Metab 5:415–425.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Inagaki T, Lin VY, Goetz R, Mohammadi M, Mangelsdorf DJ, Kliewer SA. 2008. Inhibition of growth hormone signaling by the fasting-induced hormone FGF21. Cell Metab 8:77–83.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Kalaany NY, Gauthier KC, Zavacki AM, Mammen PP, Kitazume T, Peterson JA, et al.. 2005. LXRs regulate the balance between fat storage and oxidation. Cell Metab 1:231–244.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Kaplan EL, Meier P. 1958. Nonparametric estimation from incomplete observations. J Am Stat Assoc 53:457–481.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Kenyon CJ. 2010. The genetics of ageing. Nature 464:504–512.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Kharitonenkov A, Shiyanova TL, Koester A, Ford AM, Micanovic R, Galbreath EJ, et al.. 2005. FGF-21 as a novel metabolic regulator. J Clin Invest 115:1627–1635.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Kubicky RA, Wu S, Kharitonenkov A, De Luca F. 2012. Role of fibroblast growth factor 21 (FGF21) in undernutrition-related attenuation of growth in mice. Endocrinology 153:2287–2295.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Kurosu H, Yamamoto M, Clark JD, Pastor JV, Nandi A, Gurnani P, et al.. 2005. Suppression of aging in mice by the hormone Klotho. Science 309:1829–1833.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Liang H, Masoro EJ, Nelson JF, Strong R, McMahan CA, Richardson A. 2003. Genetic mouse models of extended lifespan. Exp Gerontol 38:1353–1364.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Masoro EJ. 2005. Overview of caloric restriction and ageing. Mech Ageing Dev 126:913–922.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Masternak MM, Bartke A, Wang F, Spong A, Gesing A, Fang Y, et al.. 2012. Metabolic effects of intra-abdominal fat in GHRKO mice. Aging Cell 11:73–81.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Potthoff MJ, Kliewer SA, Mangelsdorf DJ. 2012. Endocrine fibroblast growth factors 15/19 and 21: From feast to famine. Genes Dev 26:312–324.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Ramsey KM, Yoshino J, Brace CS, Abrassart D, Kobayashi Y, Marcheva B, et al.. 2009. Circadian clock feedback cycle through NAMPT-mediated NAD+ biosynthesis. Science 324:651–654.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Sahin E, Colla S, Liesa M, Moslehi J, Müller FL, Guo M, et al.. 2011. Telomere dysfunction induces metabolic and mitochondrial compromise. Nature 470:359–365.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Steele R, Wall JS, De Bodo RC, Altszuler N. 1956. Measurement of size and turnover rate of body glucose pool by the isotope dilution method. Am J Physiol 187:15–24.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Swindell WR. 2007. Gene expression profiling of long-lived dwarf mice: Longevity-associated genes and relationships with diet, gender and aging. BMC Genomics 8:353.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Tanner SJ, Hefferan TE, Rosen CJ, Conover CA. 2008. Impact of pregnancy-associated plasma protein-a deletion on the adult murine skeleton. J Bone Miner Res 23:655–662.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Turturro A, Witt WW, Lewis S, Hass BS, Lipman RD, Hart RW. 1999. Growth curves and survival characteristics of the animals used in the Biomarkers of Aging Program. J Gerontol A Biol Sci Med Sci 54:B492–B501.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Tusher VG, Tibshirani R, Chu G. 2001. Significance analysis of microarrays applied to the ionizing radiation response. Proc Natl Acad Sci U S A 98:5116–5121.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Waki H, Yamauchi T, Kamon J, Ito Y, Uchida S, Kita S, et al.. 2003. Impaired multimerization of human adiponectin mutants associated with diabetes. Molecular structure and multimer formation of adiponectin. J Biol Chem 278:40352–40363.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Wei W, Dutchak PA, Wang X, Ding X, Wang X, Bookout AL, et al.. 2012. Fibroblast growth factor 21 promotes bone loss by potentiating the effects of peroxisome proliferator-activated receptor gamma. Proc Natl Acad Sci U S A 109:3143–3148.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Wu S, Levenson A, Kharitonenkov A, De Luca F. 2012. Fibroblast growth factor 21 (FGF21) inhibits chondrocyte function and growth hormone (GH) action directly at the growth plate. J Biol Chem 287:26060–26067.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Xie Y, Wang X, Story M. 2009. Statistical methods of background correction for Illumina BeadArray data. Bioinformatics 25:751–757.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Yu J, Zhao L, Wang A, Eleswarapu S, Ge X, Chen D, et al.. 2012. Growth hormone stimulates transcription of the fibroblast growth factor 21 gene in the liver through the signal transducer and activator of transcription 5. Endocrinology 153:750–758.",
+   "item": "bib38"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Masoro, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bishop and Guarente, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kenyon, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bishop and Guarente, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kenyon, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barzilai et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Potthoff et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Potthoff et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Inagaki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kubicky et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Inagaki, et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liang et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bartke and Brown-Borg, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brown-Borg and Bartke, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Inagaki et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2008",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Inagaki et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2008",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kharitonenkov et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wei et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Swindell, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bishop and Guarente, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kenyon, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turturro et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brown-Borg et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Coschigano et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Flurkey et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Conover et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liang et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brown-Borg and Bartke, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Inagaki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Masternak et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Masoro, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bishop and Guarente, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kenyon, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Swindell (2007)",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Inagaki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barclay et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barclay et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yu et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Potthoff et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wei et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wei et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tanner et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kurosu et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Inagaki et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kalaany et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wei et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Waki et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ayala et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Berglund et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Steele et al., 1956",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kalaany et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Inagaki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dutchak et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sahin et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ramsey et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaplan and Meier, 1958",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Collett, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Xie et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tusher et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

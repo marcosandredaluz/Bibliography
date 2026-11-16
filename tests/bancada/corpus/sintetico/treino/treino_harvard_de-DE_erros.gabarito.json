@@ -1,0 +1,617 @@
+{
+ "id": "treino_harvard_de-DE_erros",
+ "estilo": "harvard",
+ "sistema": "autor-data",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Beckmann-Hermann, H., Käster, N. und Bender, T. (1981) „Dort zusammen Rad gut schlagen“, Epidemiologia & Prevenzione, 34(1), S. 258–272. Verfügbar unter: https://doi.org/10.99999/teste.treino.14907.",
+   "item": "it000"
+  },
+  {
+   "indice": 1,
+   "texto": "Choi, M. (1982) Daran auch lieb arbeiten müssen. Stadtroda: Weimer Siering GmbH & Co. OHG.",
+   "item": "it004"
+  },
+  {
+   "indice": 2,
+   "texto": "Ditschlerin, J. (1992) „Schön Kopf etwas schreien auf der Gesicht“, BMC Public Health, 16(10), S. 184–194. Verfügbar unter: https://doi.org/10.99999/teste.treino.14965.",
+   "item": "it019"
+  },
+  {
+   "indice": 3,
+   "texto": "Eigenwillig, G. und Plath, C. (1976) „Fenster acht Fenster setzen fliegen“, One Health, 63(5), S. 864–874. Verfügbar unter: https://doi.org/10.99999/teste.treino.27628.",
+   "item": "it017"
+  },
+  {
+   "indice": 4,
+   "texto": "Gieß, V. und Naser, T. (2004) „Leicht kann den steigen Mensch See neun kennen ihn schön“, Journal of the American Medical Informatics Association, 59(10), S. 432–449. Verfügbar unter: https://doi.org/10.99999/teste.treino.58374.",
+   "item": "it016"
+  },
+  {
+   "indice": 5,
+   "texto": "Haute Autorité de Santé (France) (2003) „Drehen noch schreiben vielleicht Winter dort tragen so“, Revista de Saúde Pública, 35(4), S. 122–134.",
+   "item": "it007"
+  },
+  {
+   "indice": 6,
+   "texto": "Heser, C. (2009) Vogel Zeitung dick wollen Weg Gesicht. Verfügbar unter: https://leis-treino.gov/3455.",
+   "item": "it010"
+  },
+  {
+   "indice": 7,
+   "texto": "Instituto Nacional de Câncer (Brasil) (1985) Ganz den mit schon lachen zurück. Staßfurt: Kensy AG & Co. OHG.",
+   "item": "it018"
+  },
+  {
+   "indice": 8,
+   "texto": "Jacobi Jäckel-Reising, B. u. a. (1993) Tief schlafen gerade neu Weg Schnee man fressen Ding wahr etwas. Gütersloh: Meyer OHG mbH.",
+   "item": "extra0"
+  },
+  {
+   "indice": 9,
+   "texto": "Meyer, H.D. u. a. (1992) „Bald Tante ich erschrecken wenig denken Geburtstag“, Journal of the American Medical Informatics Association, 39(10), S. 169–175.",
+   "item": "it013"
+  },
+  {
+   "indice": 10,
+   "texto": "Ministerio de Sanidad (España) (1990) Baden wissen man Baum fährt sicher sieht Schüler Zimmer gab. Linke.",
+   "item": "it008"
+  },
+  {
+   "indice": 11,
+   "texto": "Mude, T. u. a. (1985) Mal an durch Glas gerade werden Teller heraus finden später es. Verfügbar unter: https://exemplo-treino.org/4836 (Zugegriffen: 3. November 2026).",
+   "item": "it020"
+  },
+  {
+   "indice": 12,
+   "texto": "da Noack, S. u. a. (1997) „Hinter rennen erst Maus beim Wohnung nur nein“, BMC Public Health, 34(6), S. 877–886. Verfügbar unter: https://doi.org/10.99999/teste.treino.94329.",
+   "item": "extra1"
+  },
+  {
+   "indice": 13,
+   "texto": "Organização Pan-Americana da Saúde (1987) Dann danach eigentlich erklären. Verfügbar unter: https://leis-treino.gov/2982.",
+   "item": "it011"
+  },
+  {
+   "indice": 14,
+   "texto": "Øster, G. und Wende, G. (2025) „Straße deshalb erzählen als Maus fährt sieben Kopf wollen möglich gefährlich“, One Health, 20(2), S. 744–749. Verfügbar unter: https://doi.org/10.99999/teste.treino.14664.",
+   "item": "it006"
+  },
+  {
+   "indice": 15,
+   "texto": "Pedraza Bravo, C. u. a. (1985) Ferien was Wiese schwer dann für. Dehmel OHG mbH.",
+   "item": "it002"
+  },
+  {
+   "indice": 16,
+   "texto": "Pham, M. (1987) Fallen Freund setzen Zahl warten Familie richtig Herr groß müde Polizei. Verfügbar unter: https://leis-treino.gov/9879.",
+   "item": "it005"
+  },
+  {
+   "indice": 17,
+   "texto": "Pölitz, D. und Weihmann, U. (2018) „Neun dich fahren Fenster kam uns Bild“, in C. Harloff (Hrsg.) Tun Haus auf auch gesund vier. Badoberan: Heß e.V., S. 82–97.",
+   "item": "it012"
+  },
+  {
+   "indice": 18,
+   "texto": "Rohleder, D. (1981) „Tief zurück gibt Zeitung nie dumm erzählen unter schwarz war glücklich später“, in P. Rust (Hrsg.) Winter Wald Hund so sitzen heraus brauchen fröhlich Stein. Aue: Fiebig, S. 234–249.",
+   "item": "it021"
+  },
+  {
+   "indice": 19,
+   "texto": "Rosenow, E. u. a. (2018) Freuen Fisch davon Fenster denn Fußball nach. Verfügbar unter: https://leis-treino.gov/2222.",
+   "item": "it014"
+  },
+  {
+   "indice": 20,
+   "texto": "da Wagner, W. (2011) Brauchen neu dauern überall Loch der Junge. Ziegert Scholtz e.V.",
+   "item": "it001"
+  },
+  {
+   "indice": 21,
+   "texto": "Wang, X. und Seip, J. (2026) „Unser wenig wissen Stein ohne vor hart lesen Kopf zeigen können glücklich Spaß glücklich rufen“, Journal of the American Medical Informatics Association, 16(7), S. 295–311. Verfügbar unter: https://doi.org/10.99999/teste.treino.55569.",
+   "item": "it003"
+  },
+  {
+   "indice": 22,
+   "texto": "Wirth, J. u. a. (1979) Weihnachten davon hat einmal bis Vater Tür Hund Lehrer aber. Schenk GmbH & Co. OHG.",
+   "item": "it015"
+  },
+  {
+   "indice": 23,
+   "texto": "Zänker, L. u. a. (1994a) „Denken einige neun Gesicht verstecken ab“, in G. Haering (Hrsg.) Stehen also Kind schwimmen denken schwimmen Hunger gefährlich vorbei ganz Glück auf. Büsingen am Hochrhein: Steckel, S. 15–30.",
+   "item": "it023"
+  },
+  {
+   "indice": 24,
+   "texto": "Zänker, L. u. a. (1994b) „Sieht verlieren kochen heraus warum wirklich fährt schnell nie bringen Leute deshalb zeigen Fahrrad acht“, Revue d’Épidémiologie et de Santé Publique, 7(11), S. 827–844.",
+   "item": "it024"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Pham, 1987; Øster und Wende, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it006"
+   ],
+   "referencias": [
+    16,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wirth u. a., 1979; Pedraza Bravo u. a., 1985; Pölitz und Weihmann, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it015",
+    "it002"
+   ],
+   "referencias": [
+    17,
+    22,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mude u. a., 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pham (1987)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1985; Wang und Seip, 2026; Trubin, ohne Datum)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it003",
+    "it022"
+   ],
+   "referencias": [
+    7,
+    21,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Choi (1982)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pölitz und Weihmann, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España), 1990; Rosenow u. a., 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it008"
+   ],
+   "referencias": [
+    19,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Meyer u. a., 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ditschlerin, 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Wagner, 2011; Rosenow u. a., 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it014"
+   ],
+   "referencias": [
+    20,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Eigenwillig und Plath, 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wirth u. a., 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rohleder (1981)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rohleder, 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pedraza Bravo u. a., 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi, 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster und Wende, 2025; Wang und Seip, 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it006"
+   ],
+   "referencias": [
+    21,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Heser (2009)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Beckmann-Hermann, Käster und Bender, 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster und Wende, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wirth u. a., 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zänker u. a., 1994a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zänker u. a., 1994b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Wagner, 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde, 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi, 1982; Pham, 1987; Ditschlerin, 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it004",
+    "it005"
+   ],
+   "referencias": [
+    2,
+    1,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster und Wende, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gieß und Naser, 2004; Wang und Seip, 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it003"
+   ],
+   "referencias": [
+    4,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rohleder (1981)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Heser, 2009, S. 263)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Zänker u. a., 1994a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Wang und Seip, 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Pölitz und Weihmann, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Trubin (ohne Datum)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Robert Koch-Institut, 1998)",
+   "item": "it009"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Instituto Nacional de Câncer (Brasil), 1985; Wang und Seip, 2026; Trubin, ohne Datum)",
+   "item": "it022"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Trubin (ohne Datum)",
+   "item": "it022"
+  },
+  {
+   "ponto": "E",
+   "referencia": 8,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 12,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Monat schwimmen fährt weinen endlich dein suchen lernen kommen"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

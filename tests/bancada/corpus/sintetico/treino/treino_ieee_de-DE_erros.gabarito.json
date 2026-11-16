@@ -1,0 +1,749 @@
+{
+ "id": "treino_ieee_de-DE_erros",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] E. Heuser, „Fenster Weihnachten bauen sein laut dafür“, BMC Public Health, Bd. 64, Nr. 3, S. 132–142, 1991.",
+   "item": "it018"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] L. Karz, Vorbei ging Nase kam. Prenzlau: Hamann KGaA, 2006.",
+   "item": "it026"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] S. Dowerg, „Nur dir gestern zwischen verkaufen“, Köster, Rottweil, 2026.",
+   "item": "it010"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] Virginia-Maryland College of Veterinary Medicine, „Schüler tun Lehrer bekommen schlagen freuen acht seit bekommen eigentlich“. Zugegriffen: 1. November 2026. [Online]. Verfügbar unter: https://exemplo-treino.org/9733",
+   "item": "it015"
+  },
+  {
+   "indice": 4,
+   "texto": "[6] E. Jüttner und W. Söding, „Suchen der verstecken laut Onkel Lehrerin um Ding sprechen“, in Bauen Buch verstecken verstehen weil antworten mehr, E. Ditschlerin, Hrsg., Belzig: Weiß, 1982, S. 3–18.",
+   "item": "it029"
+  },
+  {
+   "indice": 5,
+   "texto": "[7] National Library of Medicine (Estados Unidos), „Hinter Eis vielleicht mein wo kennen es“, Preventive Veterinary Medicine, Bd. 14, Nr. 1, S. 479–486, 2014, doi: 10.99999/teste.treino.75486.",
+   "item": "it009"
+  },
+  {
+   "indice": 6,
+   "texto": "[8] V. Gumprich, „Eltern durch man Weg dauern weg bei das natürlich wohnen klettern“. Zugegriffen: 5. November 2026. [Online]. Verfügbar unter: https://exemplo-treino.org/1539",
+   "item": "it011"
+  },
+  {
+   "indice": 7,
+   "texto": "[9] M. Scholz, W. Henk, und T. Seip, „Wagen sagen nehmen jeder“, Gaceta Sanitaria, Bd. 71, Nr. 8, S. 557–575, 2003, doi: 10.99999/teste.treino.57955.",
+   "item": "it013"
+  },
+  {
+   "indice": 8,
+   "texto": "[10] Robert Koch-Institut, „Wasser erklären Hand hart fiel reiten wir nämlich an jeder Fenster Klasse Hase“, Hübel, Wetzlar, 2022.",
+   "item": "it022"
+  },
+  {
+   "indice": 9,
+   "texto": "[11] N. Herrmann, „Ferien Essen wird neun Leben das müde spät Hund“, Das Gesundheitswesen, Bd. 15, Nr. 11, S. 617–634, 1988, doi: 10.99999/teste.treino.10467.",
+   "item": "it012"
+  },
+  {
+   "indice": 10,
+   "texto": "[12] National Library of Medicine (Estados Unidos), „Acht warten sechs für Schiff“. Zugegriffen: 8. November 2026. [Online]. Verfügbar unter: https://exemplo-treino.org/2491",
+   "item": "it025"
+  },
+  {
+   "indice": 11,
+   "texto": "[13] E. Hölzenbecher und S. Scheel, „Zwischen fährt Baum Minutenmir an legen gehören“, Epidemiologia e Serviços de Saúde, Bd. 15, Nr. 1, S. 115–132, 1983, doi: 10.99999/teste.treino.18533.",
+   "item": "it014"
+  },
+  {
+   "indice": 12,
+   "texto": "[14] F. Comas Pérez, J. Anders, D. Hölzenbecher, und V. Rosemann, „Böse Schüler einige dem lernen fährt besser Rad besser“, Gaceta Sanitaria, Bd. 37, Nr. 8, S. 287–304, 2018, doi: 10.99999/teste.treino.94726.",
+   "item": "it002"
+  },
+  {
+   "indice": 13,
+   "texto": "[15] S. Kim, A. Aumann, und W. Scholz, „Geschichte einige öffnen gelb gab gerade Licht“, Cadernos de Saúde Pública, Bd. 73, Nr. 8, S. 399–408, 2017, doi: 10.99999/teste.treino.68265.",
+   "item": "it004"
+  },
+  {
+   "indice": 14,
+   "texto": "[16] M. Dobes, „Gestern Familie Stunde jung dein Seite unser“, Preventive Veterinary Medicine, Bd. 72, Nr. 1, S. 242–253, 2022, doi: 10.99999/teste.treino.32391.",
+   "item": "it032"
+  },
+  {
+   "indice": 15,
+   "texto": "[17] Z. Scheuermann, D. Kitzmann, S. Binner, F. Karz, W. Adolph, und W. Kruschwitz, „Schreien offen führen aber ist“, in Kochen Bett Vogel kann fest denken der, A. Roht, Hrsg., Ueckermünde: Gude, 2024, S. 39–54.",
+   "item": "it017"
+  },
+  {
+   "indice": 16,
+   "texto": "[18] M. Dobes, „Wahr nun so über Lehrerin“, Cadernos de Saúde Pública, Bd. 43, Nr. 5, S. 640–656, 2022, doi: 10.99999/teste.treino.91709.",
+   "item": "it033"
+  },
+  {
+   "indice": 17,
+   "texto": "[19] Haute Autorité de Santé (France), „Merken am Teller jeder trinken“. Zugegriffen: 16. November 2026. [Online]. Verfügbar unter: https://exemplo-treino.org/3482",
+   "item": "it023"
+  },
+  {
+   "indice": 18,
+   "texto": "[20] National Library of Medicine (Estados Unidos), Nase sicher man essen. 2011. [Online]. Verfügbar unter: https://leis-treino.gov/1722",
+   "item": "it027"
+  },
+  {
+   "indice": 19,
+   "texto": "[21] Ministerio de Sanidad (España), Gesicht laut oben fertig her mein. 1994. [Online]. Verfügbar unter: https://leis-treino.gov/9793",
+   "item": "it028"
+  },
+  {
+   "indice": 20,
+   "texto": "[22] V. Haase, Weihnachten mögen dabei her drehen Gott erklären hängen gleich Fisch werfen. Gunzenhausen: Oestrovsky KG.",
+   "item": "it031"
+  },
+  {
+   "indice": 21,
+   "texto": "[23] D. Weitzel, H.-H. Hellwig, E. Junitz, und K. Dehmel, Einigen Berg Wohnung schlecht sofort Ferien groß Kind Papa. 2003. [Online]. Verfügbar unter: https://leis-treino.gov/3987",
+   "item": "it020"
+  },
+  {
+   "indice": 22,
+   "texto": "[24] A. Hiller und H. Klingelhöfer, „Verstecken Weg turnen vier kochen dafür Nacht“, Revue d’Épidémiologie et de Santé Publique, Bd. 1, Nr. 5, S. 749–755, 1998.",
+   "item": "it024"
+  },
+  {
+   "indice": 23,
+   "texto": "[25] W. Li, R. Pölitz, und N. Gumprich, „Doch Kopf Katze einfach Musik nennen später Name vor wirklich Weihnachten“. Zugegriffen: 9. November 2026. [Online]. Verfügbar unter: https://exemplo-treino.org/3263",
+   "item": "it003"
+  },
+  {
+   "indice": 24,
+   "texto": "[26] H. D. Łukasz, J. Thies, und A. Döring, Andere wird acht können Licht schlafen. 1996. [Online]. Verfügbar unter: https://leis-treino.gov/5144",
+   "item": "it006"
+  },
+  {
+   "indice": 25,
+   "texto": "[27] S. van der Holt, L. Sauer, und E. Seidel, „Rufen Hilfe gleich darauf langsam Freund blau Geburtstag auch dick erst gab“, Cadernos de Saúde Pública, Bd. 17, Nr. 8, S. 765–777, 2018.",
+   "item": "it001"
+  },
+  {
+   "indice": 26,
+   "texto": "[28] S. Naser, Holen wünschen sitzen werden ich. Perleberg: Schüler AG & Co. KGaA, 1978.",
+   "item": "it016"
+  },
+  {
+   "indice": 27,
+   "texto": "[29] Istituto Superiore di Sanità, „Buch warum über draußen später früher erschrecken Platz Hilfe blau Apfel“, Conradi GmbH & Co. OHG, Grevesmühlen, 1981.",
+   "item": "it007"
+  },
+  {
+   "indice": 28,
+   "texto": "[30] I. Rosenow, E. Cichorius, und L. Nerger, Antworten oder Wasser einigen Pferd bleiben. Rathenow: Lindau AG & Co. KG, 1992.",
+   "item": "it019"
+  },
+  {
+   "indice": 29,
+   "texto": "[32] N. Vollbrecht und E. Nerger, Stark Mutter schaffen Fahrrad richtig Bein überall Oma Finger dann vor. 1983. [Online]. Verfügbar unter: https://leis-treino.gov/992",
+   "item": "it021"
+  },
+  {
+   "indice": 30,
+   "texto": "[33] W. Bolzmann-Schmidtke und M. Margraf, „Müde wird Jahr schwer doch Küche sich“, Das Gesundheitswesen, Bd. 23, Nr. 12, S. 744–750, 2020, doi: 10.99999/teste.treino.68019.",
+   "item": "it000"
+  },
+  {
+   "indice": 31,
+   "texto": "[34] Conselho Nacional de Saúde (Brasil), „Klein dabei nicht im Schuh Abend einmal“, Gaceta Sanitaria, Bd. 34, Nr. 7, S. 791–810, 2009, doi: 10.99999/teste.treino.69535.",
+   "item": "it008"
+  },
+  {
+   "indice": 32,
+   "texto": "[35] F.-P. Fröhlich-Rohleder, A. Schwital, B. Etzold, und T. Röhricht, „Böse halbe wohnen nimmt hart heißen“, Schüler, Bremervörde, 2007.",
+   "item": "extra0"
+  },
+  {
+   "indice": 33,
+   "texto": "[36] B. dos Fröhlich, N. Röhricht, und R. Eberth, „Wahr immer Wiese sieht“, Cadernos de Saúde Pública, Bd. 66, Nr. 11, S. 899–907, 1982, doi: 10.99999/teste.treino.11815.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Karz [2]",
+   "tipo": "narrativa",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine [4]",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "National Library of Medicine (Estados Unidos) [7]",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4], [9], [10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it015",
+    "it022"
+   ],
+   "referencias": [
+    7,
+    3,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6], [13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it029"
+   ],
+   "referencias": [
+    11,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [11], [14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it012",
+    "it002"
+   ],
+   "referencias": [
+    0,
+    9,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[17], [18], [19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it033",
+    "it023"
+   ],
+   "referencias": [
+    15,
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[22]",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [18], [23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it033",
+    "it020"
+   ],
+   "referencias": [
+    5,
+    16,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it005"
+   ],
+   "referencias": [
+    5,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[25], [26]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it006"
+   ],
+   "referencias": [
+    23,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[27]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[28]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [29]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it007"
+   ],
+   "referencias": [
+    null,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[30]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [21], [25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it018",
+    "it003"
+   ],
+   "referencias": [
+    19,
+    0,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19], [29], [31]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it030",
+    "it023"
+   ],
+   "referencias": [
+    27,
+    null,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[32]",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6], [9], [33]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it013",
+    "it029"
+   ],
+   "referencias": [
+    30,
+    7,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10], [34]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it008"
+   ],
+   "referencias": [
+    8,
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[25, S. 254]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "National Library of Medicine (Estados Unidos) [20]",
+   "tipo": "narrativa",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "[5]",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[5], [7]",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[5], [29]",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[19], [29], [31]",
+   "item": "it030"
+  },
+  {
+   "ponto": "E",
+   "referencia": 32,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 33,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Luft Bein wird schön wie sprechen schreiben fährt Junge las Name las Auge stellen glauben weinen"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

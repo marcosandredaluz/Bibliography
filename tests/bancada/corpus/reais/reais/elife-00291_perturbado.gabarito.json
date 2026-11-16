@@ -1,0 +1,1749 @@
+{
+ "id": "elife-00291_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00291.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Aguilar RC, Boehm M, Gorshkova I, Crouch RJ, Tomita K, Saito T, et al.. 2001. Signal-binding specificity of the mu4 subunit of the adaptor protein complex AP-4. J Biol Chem 276:13145–13152. doi: 10.1074/jbc.M010591200",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Alexopoulou L, Holt AC, Medzhitov R, Flavell RA. 2001. Recognition of double-stranded RNA and activation of NF-kappaB by Toll-like receptor 3. Nature 413:732–738.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Arpaia N, Godec J, Lau L, Sivick KE, McLaughlin LM, Jones MB, et al.. 2011. TLR signaling is required for salmonella typhimurium virulence. Cell 144:675–688. doi: 10.1016/j.cell.2011.01.031",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Barbalat R, Ewald SE, Mouchess ML, Barton GM. 2011. Nucleic acid recognition by the innate immune system. Annu Rev Immunol 29:185–214. doi: 10.1146/annurev-immunol-031210-101340",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Barois N, Bakke O. 2005. The adaptor protein AP-4 as a component of the clathrin coat machinery: a morphological study. Biochem J 385:503–510. doi: 10.1042/BJ20041010",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Barton GM, Kagan JC. 2009. A cell biological view of Toll-like receptor function: regulation through compartmentalization. Nat Rev Immunol 9:535–542.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Barton GM, Kagan JC, Medzhitov R. 2006. Intracellular localization of Toll-like receptor 9 prevents recognition of self DNA but facilitates access to viral DNA. Nat Immunol 7:49–56.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Blasi E, Mathieson BJ, Varesio L, Cleveland JL, Borchert PA, Rapp UR. 1985. Selective immortalization of murine macrophages from fresh bone marrow by a raf/myc recombinant murine retrovirus. Nature 318:667–670.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Blasius AL, Arnold CN, Georgel P, Rutschmann S, Xia Y, Lin P, et al.. 2010. Slc15a4, AP-3, and Hermansky-Pudlak syndrome proteins are required for Toll-like receptor signaling in plasmacytoid dendritic cells. Proc Natl Acad Sci USA 107:19973–19978. doi: 10.1073/pnas.1014051107",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Bonifacino JS, Traub LM. 2003. Signals for sorting of transmembrane proteins to endosomes and lysosomes. Annu Rev Biochem 72:395–447. doi: 10.1146/annurev.biochem.72.121801.161800",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Brinkmann MM, Spooner E, Hoebe K, Beutler B, Ploegh HL, Kim Y-M. 2007. The interaction between the ER membrane protein UNC93B and TLR3, 7, and 9 is crucial for TLR signaling. J Cell Biol 177:265–275.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Burgos PV, Mardones GA, Rojas AL, daSilva LL, Prabhu Y, Hurley JH, et al.. 2010. Sorting of the Alzheimer's disease amyloid precursor protein mediated by the AP-4 complex. Dev Cell 18:425–436. doi: 10.1016/j.devcel.2010.01.015",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Casrouge A, Zhang S-Y, Eidenschenk C, Jouanguy E, Puel A, Yang K, et al.. 2006. Herpes simplex virus encephalitis in human UNC-93B deficiency. Science 314:308–312. doi: 10.1126/science.1128346",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Cebrian I, Visentin G, Blanchard N, Jouve M, Bobard A, Moita C, et al.. 2011. Sec22b regulates phagosomal maturation and antigen crosspresentation by dendritic cells. Cell 147:1355–1368. doi: 10.1016/j.cell.2011.11.021",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Chiang CY, Engel A, Opaluch AM, Ramos I, Maestre AM, Secundino I, et al.. 2012. Cofactors required for TLR7- and TLR9-dependent innate immune responses. Cell Host Microbe 11:306–318. doi: 10.1016/j.chom.2012.02.002",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Christensen SR, Shlomchik MJ. 2007. Regulation of lupus-related autoantibody production and clinical disease by Toll-like receptors. Semin Immunol 19:11–23. doi: 10.1016/j.smim.2006.12.005",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Christensen SR, Shupe J, Nickerson K, Kashgarian M, Flavell RA, Shlomchik MJ. 2006. Toll-like receptor 7 and TLR9 dictate autoantibody specificity and have opposing inflammatory and regulatory roles in a murine model of lupus. Immunity 25:417–428.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Crump CM, Williams JL, Stephens DJ, Banting G. 1998. Inhibition of the interaction between tyrosine-based motifs and the medium chain subunit of the AP-2 adaptor complex by specific tyrphostins. J Biol Chem 273:28073–28077.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Deane JA, Pisitkun P, Barrett RS, Feigenbaum L, Town T, Ward JM, et al.. 2007. Control of toll-like receptor 7 expression is essential to restrict autoimmunity and dendritic cell proliferation. Immunity 27:801–810.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Dell'Angelica EC, Mullins C, Bonifacino JS. 1999. AP-4, a novel protein complex related to clathrin adaptors. J Biol Chem 274:7278–7285.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Ewald SE, Engel A, Lee J, Wang M, Bogyo M, Barton GM. 2011. Nucleic acid recognition by Toll-like receptors is coupled to stepwise processing by cathepsins and asparagine endopeptidase. J Exp Med 208:643–651. doi: 10.1084/jem.20100682",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Ewald SE, Lee BL, Lau L, Wickliffe KE, Shi G-P, Chapman HA, et al.. 2008. The ectodomain of Toll-like receptor 9 is cleaved to generate a functional receptor. Nature 456:658–662. doi: 10.1038/nature07405",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Fukui R, Saitoh S, Kanno A, Onji M, Shibata T, Ito A, et al.. 2011. Unc93B1 restricts systemic lethal inflammation by orchestrating Toll-like receptor 7 and 9 trafficking. Immunity 35:69–81. doi: 10.1016/j.immuni.2011.05.010",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Fukui R, Saitoh S-I, Matsumoto F, Kozuka-Hata H, Oyama M, Tabeta K, et al.. 2009. Unc93B1 biases Toll-like receptor responses to nucleic acid in dendritic cells toward DNA- but against RNA-sensing. J Exp Med 206:1339–1350. doi: 10.1084/jem.20082316",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Garcia-Cattaneo A, Gobert FX, Muller M, Toscano F, Flores M, Lescure A, et al.. 2012. Cleavage of Toll-like receptor 3 by cathepsins B and H is essential for signaling. Proc Natl Acad Sci USA 109:9053–9058. doi: 10.1073/pnas.1115091109",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Gough NR, Zweifel ME, Martinez-Augustin O, Aguilar RC, Bonifacino JS, Fambrough DM. 1999. Utilization of the indirect lysosome targeting pathway by lysosome-associated membrane proteins (LAMPs) is influenced largely by the C-terminal residue of their GYXXphi targeting signals. J Cell Sci 112:4257–4269.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Honda K, Ohba Y, Yanai H, Negishi H, Mizutani T, Takaoka A, et al.. 2005. Spatiotemporal regulation of MyD88-IRF-7 signalling for robust type-I interferon induction. Nature 434:1035–1040.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Itoh H, Tatematsu M, Watanabe A, Iwano K, Funami K, Seya T, et al.. 2011. UNC93B1 physically associates with human TLR8 and regulates TLR8-mediated signaling. PLoS One 6:e28500. doi: 10.1371/journal.pone.0028500",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Janvier K, Bonifacino JS. 2005. Role of the endocytic machinery in the sorting of lysosome-associated membrane proteins. Mol Biol Cell 16:4231–4242. doi: 10.1091/mbc.E05-03-0213",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Karlsson K, Carlsson SR. 1998. Sorting of lysosomal membrane glycoproteins lamp-1 and lamp-2 into vesicles distinct from mannose 6-phosphate receptor/gamma-adaptin vesicles at the trans-Golgi network. J Biol Chem 273:18966–18973.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Kim J, Hamamoto S, Ravazzola M, Orci L, Schekman R. 2005. Uncoupled packaging of amyloid precursor protein and presenilin 1 into coat protein complex II vesicles. J Biol Chem 280:7758–7768. doi: 10.1074/jbc.M411091200",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Kim YM, Brinkmann MM, Paquet ME, Ploegh HL. 2008. UNC93B1 delivers nucleotide-sensing toll-like receptors to endolysosomes. Nature 452:234–238.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Koblansky AA, Jankovic D, Oh H, Hieny S, Sungnak W, Mathur R, et al.. 2012. Recognition of Profilin by toll-like receptor 12 is critical for host resistance to Toxoplasma gondii. Immunity 38:119–130. doi: 10.1016/j.immuni.2012.09.016",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Lafaille FG, Pessach IM, Zhang SY, Ciancanelli MJ, Herman M, Abhyankar A, et al.. 2012. Impaired intrinsic immunity to HSV-1 in human iPSC-derived TLR3-deficient CNS cells. Nature 491:769–773. doi: 10.1038/nature11583",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Lee CC, Avalos AM, Ploegh HL. 2012. Accessory molecules for Toll-like receptors and their function. Nat Rev Immunol 12:168–179. doi: 10.1038/nri3151",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Li XD, Chen ZJ. 2012. Sequence specific detection of bacterial 23S ribosomal RNA by TLR13. eLife 1:e00102. doi: 10.7554/eLife.00102",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Marshak-Rothstein A. 2006. Toll-like receptors in systemic autoimmune disease. Nat Rev Immunol 6:823–835.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Mathur R, Oh H, Zhang D, Park SG, Seo J, Koblansky A, et al.. 2012. A mouse model of salmonella typhi infection. Cell 151:590–602. doi: 10.1016/j.cell.2012.08.042",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "McCormick PJ, Martina JA, Bonifacino JS. 2005. Involvement of clathrin and AP-2 in the trafficking of MHC class II molecules to antigen-processing compartments. Proc Natl Acad Sci USA 102:7910–7915. doi: 10.1073/pnas.0502206102",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Melo MB, Kasperkovitz P, Cerny A, Konen-Waisman S, Kurt-Jones EA, Lien E, et al.. 2010. UNC93B1 mediates host resistance to infection with Toxoplasma gondii. PLoS Pathog 6:e1001071. doi: 10.1371/journal.ppat.1001071",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Merte J, Jensen D, Wright K, Sarsfield S, Wang Y, Schekman R, et al.. 2010. Sec24b selectively sorts Vangl2 to regulate planar cell polarity during neural tube closure. Nat Cell Biol 12:41–48. doi: 10.1038/ncb2002",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Mouchess ML, Arpaia N, Souza G, Barbalat R, Ewald SE, Lau L, et al.. 2011. Transmembrane mutations in Toll-like receptor 9 bypass the requirement for ectodomain proteolysis and induce fatal inflammation. Immunity 35:721–732. doi: 10.1016/j.immuni.2011.10.009",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Nesterov A, Carter RE, Sorkina T, Gill GN, Sorkin A. 1999. Inhibition of the receptor-binding function of clathrin adaptor protein AP-2 by dominant-negative mutant mu2 subunit and its effects on endocytosis. EMBO J 18:2489–2499. doi: 10.1093/emboj/18.9.2489",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Ohno H. 2006. Clathrin-associated adaptor protein complexes. J Cell Sci 119:3719–3721. doi: 10.1242/jcs.03085",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Ohno H, Fournier MC, Poy G, Bonifacino JS. 1996. Structural determinants of interaction of tyrosine-based sorting signals with the adaptor medium chains. J Biol Chem 271:29009–29015.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Ohno H, Stewart J, Fournier MC, Bosshart H, Rhee I, Miyatake S, et al.. 1995. Interaction of tyrosine-based sorting signals with clathrin-associated proteins. Science 269:1872–1875.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Oldenburg M, Kruger A, Ferstl R, Kaufmann A, Nees G, Sigmund A, et al.. 2012. TLR13 recognizes bacterial 23S rRNA devoid of erythromycin resistance-forming modification. Science 337:1111–1115. doi: 10.1126/science.1220363",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Park B, Brinkmann MM, Spooner E, Lee CC, Kim Y-M, Ploegh HL. 2008. Proteolytic cleavage in an endolysosomal compartment is required for activation of Toll-like receptor 9. Nat Immunol 9:1407–1414.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Pifer R, Benson A, Sturge CR, Yarovinsky F. 2011. UNC93B1 is essential for TLR11 activation and IL-12-dependent host resistance to Toxoplasma gondii. J Biol Chem 286:3307–3314. doi: 10.1074/jbc.M110.171025",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Pisitkun P, Deane JA, Difilippantonio MJ, Tarasenko T, Satterthwaite AB, Bolland S. 2006. Autoreactive B cell responses to RNA-related antigens due to TLR7 gene duplication. Science 312:1669–1672.",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Pohar J, Pirher N, Bencina M, Mancek-Keber M, Jerala R. 2012. The role of UNC93B1 protein in surface localization of TLR3 receptor and in cell priming to nucleic acid agonists. J Biol Chem 288:442–454. doi: 10.1074/jbc.M112.413922",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Qi R, Hoose S, Schreiter J, Sawant KV, Lamb R, Ranjith-Kumar CT, et al.. 2010. Secretion of the human Toll-like receptor 3 ectodomain is affected by single nucleotide polymorphisms and regulated by Unc93b1. J Biol Chem 285:36635–36644. doi: 10.1074/jbc.M110.144402",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "Qi R, Singh D, Kao CC. 2012. Proteolytic processing regulates Toll-like receptor 3 stability and endosomal localization. J Biol Chem 287:32617–32629. doi: 10.1074/jbc.M112.387803",
+   "item": "bib53"
+  },
+  {
+   "indice": 53,
+   "texto": "Sasai M, Linehan MM, Iwasaki A. 2010. Bifurcation of Toll-like receptor 9 signaling by adaptor protein 3. Science 329:1530–1534. doi: 10.1126/science.1187029",
+   "item": "bib54"
+  },
+  {
+   "indice": 54,
+   "texto": "Shi Z, Cai Z, Sanchez A, Zhang T, Wen S, Wang J, et al.. 2011. A novel Toll-like receptor that recognizes vesicular stomatitis virus. J Biol Chem 286:4517–4524. doi: 10.1074/jbc.M110.159590",
+   "item": "bib55"
+  },
+  {
+   "indice": 55,
+   "texto": "Simmen T, Honing S, Icking A, Tikkanen R, Hunziker W. 2002. AP-4 binds basolateral signals and participates in basolateral sorting in epithelial MDCK cells. Nat Cell Biol 4:154–159. doi: 10.1038/ncb745",
+   "item": "bib56"
+  },
+  {
+   "indice": 56,
+   "texto": "Songyang Z, Shoelson SE, Chaudhuri M, Gish G, Pawson T, Haser WG, et al.. 1993. SH2 domains recognize specific phosphopeptide sequences. Cell 72:767–778.",
+   "item": "bib57"
+  },
+  {
+   "indice": 57,
+   "texto": "Subramanian S, Tus K, Li QZ, Wang A, Tian XH, Zhou J, et al.. 2006. A Tlr7 translocation accelerates systemic autoimmunity in murine lupus. Proc Natl Acad Sci USA 103:9970–9975.",
+   "item": "bib58"
+  },
+  {
+   "indice": 58,
+   "texto": "Tabeta K, Hoebe K, Janssen EM, Du X, Georgel P, Crozat K, et al.. 2006. The Unc93b1 mutation 3d disrupts exogenous antigen presentation and signaling via Toll-like receptors 3, 7 and 9. Nat Immunol 7:156–164.",
+   "item": "bib59"
+  },
+  {
+   "indice": 59,
+   "texto": "Takahashi K, Shibata T, Akashi-Takamura S, Kiyokawa T, Wakabayashi Y, Tanimura N, et al.. 2007. A protein associated with Toll-like receptor (TLR) 4 (PRAT4A) is required for TLR-dependent immune responses. J Exp Med 204:2963–2976. doi: 10.1084/jem.20071132",
+   "item": "bib60"
+  },
+  {
+   "indice": 60,
+   "texto": "Wang J, Shao Y, Bennett TA, Shankar RA, Wightman PD, Reddy LG. 2006. The functional effects of physical interactions among Toll-like receptors 7, 8, and 9. J Biol Chem 281:37427–37434. doi: 10.1074/jbc.M605311200",
+   "item": "bib61"
+  },
+  {
+   "indice": 61,
+   "texto": "Weber C, Muller C, Podszuweit A, Montino C, Vollmer J, Forsbach A.. 2012. Toll-like receptor (TLR) 3 immune modulation by unformulated small interfering RNA or DNA and the role of CD14 (in TLR-mediated effects). Immunology 136:64–77. doi: 10.1111/j.1365-2567.2012.03559.x",
+   "item": "bib62"
+  },
+  {
+   "indice": 62,
+   "texto": "Yang Y, Liu B, Dai J, Srivastava PK, Zammit DJ, Lefrançois L, et al.. 2007. Heat shock protein gp96 is a master chaperone for toll-like receptors and is important in the innate function of macrophages. Immunity 26:215–226. doi: 10.1016/j.immuni.2006.12.005",
+   "item": "bib63"
+  },
+  {
+   "indice": 63,
+   "texto": "Yarovinsky F, Zhang D, Andersen J, Bannenberg G, Serhan C, Hayden M, et al.. 2005. TLR11 activation of dendritic cells by a protozoan profilin-like protein. Science 308:1626–1629.",
+   "item": "bib64"
+  },
+  {
+   "indice": 64,
+   "texto": "Zanetti G, Pahuja KB, Studer S, Shim S, Schekman R. 2012. COPII and the regulation of protein sorting in mammals. Nat Cell Biol 14:20–28. doi: 10.1038/ncb2390",
+   "item": "bib65"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Barbalat et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marshak-Rothstein, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Christensen and Shlomchik, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barton and Kagan, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barton and Kagan, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ewald et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Park et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Garcia-Cattaneo et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mouchess et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pisitkun et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Subramanian et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deane et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brinkmann et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Casrouge et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tabeta et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lafaille et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pifer et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shi et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Koblansky et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Oldenburg et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tabeta et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brinkmann et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ewald et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fukui et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takahashi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chiang et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Honda et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blasius et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sasai et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sasai et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brinkmann et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ewald et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zanetti et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Merte et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ewald et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ewald et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brinkmann et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tabeta et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brinkmann et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Melo et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pifer et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brinkmann et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fukui et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fukui et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Songyang et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ohno et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1996",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Crump et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bonifacino and Traub, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bonifacino and Traub, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ohno, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ewald et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Park et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dell'Angelica et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aguilar et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Simmen et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barois and Bakke, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burgos et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Alexopoulou et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yarovinsky et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib64"
+   ],
+   "referencias": [
+    63
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mathur et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li and Chen, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Oldenburg et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yarovinsky et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib64"
+   ],
+   "referencias": [
+    63
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Koblansky et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Qi et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2012",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pohar et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weber et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fukui et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brinkmann et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brinkmann et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zanetti et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cebrian et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Itoh et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brinkmann et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Melo et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pifer et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Koblansky et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Oldenburg et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fukui et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fukui et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gough et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Janvier and Bonifacino, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "McCormick et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Karlsson and Carlsson, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barton et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mouchess et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ewald et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mouchess et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Honda et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blasius et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sasai et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Christensen et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Merte et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Oldenburg et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tabeta et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ewald et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mouchess et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ewald et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nesterov et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Arpaia et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blasi et al., 1985",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ewald et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ewald et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Merte et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

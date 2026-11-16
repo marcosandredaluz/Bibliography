@@ -1,0 +1,579 @@
+{
+ "id": "reservado_ama_pt-PT_limpo",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "pt-PT",
+ "conjunto": "reservado",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Faria C, Mota A, Leal N, Garcia D. Repellendus saepe et aperiam sequi animi dolorem. Cadernos de Saúde Pública. 1993;46(6):528–548.",
+   "item": "it019"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Macedo L, Pinto V, Carvalho L, Vaz D, Vicente J, Domingues A. Quibusdam veritatis reprehenderit iure atque sapiente dolorum eius magni. Journal of the American Medical Informatics Association. 1997;18(3):100–115. doi:10.99999/teste.reservado.86418",
+   "item": "it016"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Sá F, Azevedo N, Torres L, Pinto D. Libero unde molestiae veniam officia impedit. BMC Public Health. 2016;10(12):206–220. doi:10.99999/teste.reservado.64496",
+   "item": "it013"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Minas Gerais (Estado). Exercitationem quo dolore impedit vitae voluptates quidem nam minima accusantium et perferendis. Moreira Lda.; 2012.",
+   "item": "it024"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Sousa J, Pinheiro J, Assunção N, Costa J. Perferendis recusandae sint dicta optio deleniti voluptas. Pires; 1987.",
+   "item": "it010"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Melo A. Esse mollitia libero dolores dolorum eveniet cum unde architecto numquam vel provident. Medical Mycology. 2018;54(4):489–499. doi:10.99999/teste.reservado.43866",
+   "item": "it020"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Martins J, Soares B, Melo J, Marques P, Costa I, Marques D. Pariatur porro occaecati itaque tempore accusantium tenetur quo vero. Journal of the American Medical Informatics Association. 37(11):24–42. doi:10.99999/teste.reservado.16073",
+   "item": "it025"
+  },
+  {
+   "indice": 7,
+   "texto": "8. da Sousa J, Neves E, Santos L, Pinto M. Inventore neque provident voluptate asperiores libero laboriosam. 1976. Acedido 3 de novembro de 2026. https://exemplo-reservado.org/1381",
+   "item": "it001"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Minas Gerais (Estado). Molestiae aut aperiam mollitia earum. 2015. https://leis-reservado.gov/4729",
+   "item": "it009"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Fernandes I, Anjos M, Amaral T, Campos N. Ex ad impedit quas enim ad debitis aliquid. Revue d’Épidémiologie et de Santé Publique. 1978;65(11):545–555. doi:10.99999/teste.reservado.95616",
+   "item": "it017"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Pinto E, Pereira N, Carneiro M, Sousa C, Matias R, Garcia M. Culpa praesentium non beatae beatae esse doloremque molestiae pariatur. Vieira S.A.; 2017.",
+   "item": "it018"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Figueroa Paz R, Leite R. Nulla perspiciatis eaque ea quibusdam sequi corrupti expedita unde. Epidemiologia & Prevenzione. 2022;65(11):655–670. doi:10.99999/teste.reservado.98664",
+   "item": "it002"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Kim J ho, Silva V. Ullam occaecati commodi nihil pariatur provident officiis commodi explicabo. BMC Public Health. 2000;53(2):139–154. doi:10.99999/teste.reservado.44379",
+   "item": "it004"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Magalhães E. Laborum sunt minus aliquam. Em: Leal F, ed. Placeat nihil ullam quae modi vero rerum iusto assumenda vel. Vaz Moura Lda.; 1982:283–298.",
+   "item": "it022"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Conselho Federal de Medicina Veterinária. Dicta nesciunt placeat deleniti nam sunt quibusdam minus. 2026. https://leis-reservado.gov/2041",
+   "item": "it012"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Reis V, Amorim Â. Accusamus libero perspiciatis eos quis non quia amet natus. Epidemiologia e Serviços de Saúde. 2011;37(11):337–345. doi:10.99999/teste.reservado.89437",
+   "item": "it026"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Bundesinstitut für Risikobewertung. Iusto officiis nulla officiis provident recusandae enim vitae cupiditate voluptatem ducimus voluptate. 2014. https://leis-reservado.gov/2379",
+   "item": "it008"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Leal D, Soares M, Gonçalves G, Campos E. Sunt nisi nemo optio facilis ipsam quaerat commodi consectetur saepe officia similique earum. Cadernos de Saúde Pública. 1998;8(9):44–56. doi:10.99999/teste.reservado.18878",
+   "item": "it011"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Gonçalves-Gaspar N, Pires E, Martins L, Simões A. Vel animi officia maiores similique quis. Preventive Veterinary Medicine. 2019;41(5):297–316.",
+   "item": "it000"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Abreu G. Sapiente temporibus quo sapiente eius accusamus. BMC Public Health. 2008;22(11):748–754.",
+   "item": "it023"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Australian Institute of Health and Welfare (Australia). Sapiente ullam quod minima provident. Gaceta Sanitaria. 1982;3(5):142–158.",
+   "item": "it007"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Pereira E, Ferreira S, Cardoso E, Vaz E. Minus ea nostrum rerum voluptate dolorum adipisci possimus molestiae commodi. BMC Public Health. 1992;26(10):769–783.",
+   "item": "it021"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Li X, Nogueira F, Valente E. Accusamus aliquam culpa fugit. BMC Public Health. 2024;45(6):323–327. doi:10.99999/teste.reservado.15142",
+   "item": "it003"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Reis V, Amorim Â. Nemo est soluta delectus atque delectus assumenda. Em: Ribeiro A, ed. Veniam nemo facere porro pariatur voluptatum non quasi. Morais; 2011:121–136.",
+   "item": "it027"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Pinheiro J. Labore optio ea veniam ducimus officia sint. Epidemiologia e Serviços de Saúde. 2020;16(4):662–680.",
+   "item": "it015"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Bundesinstitut für Risikobewertung. Unde maiores repudiandae et optio cupiditate ex. 2014. Acedido 12 de novembro de 2026. https://exemplo-reservado.org/3501",
+   "item": "it014"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Łukasz L, Castro P, Garcia A, Domingues K. Cupiditate natus incidunt in veritatis. Azevedo S.A.; 1990.",
+   "item": "it006"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Nguyen VA, Cunha D. Commodi doloremque quisquam quos quibusdam soluta. Cadernos de Saúde Pública. 1997;13(3):8–26. doi:10.99999/teste.reservado.65360",
+   "item": "it005"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1,2",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it016"
+   ],
+   "referencias": [
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Minas Gerais (Estado) 4",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,9,10",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it019",
+    "it017"
+   ],
+   "referencias": [
+    8,
+    0,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pinto et al. 11",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12–14",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it004",
+    "it022"
+   ],
+   "referencias": [
+    11,
+    12,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,15",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it012"
+   ],
+   "referencias": [
+    1,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14,16",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it026"
+   ],
+   "referencias": [
+    13,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,17,18",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it008",
+    "it011"
+   ],
+   "referencias": [
+    1,
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,13",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it004"
+   ],
+   "referencias": [
+    1,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fernandes et al. 10",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "19",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "20",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "22",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23–25",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it027",
+    "it015"
+   ],
+   "referencias": [
+    22,
+    23,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,9",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it009"
+   ],
+   "referencias": [
+    7,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "26,27",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it006"
+   ],
+   "referencias": [
+    25,
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "28",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8(p289)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "10",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "15",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Australian Institute of Health and Welfare (Australia) 21",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Iure consequatur culpa possimus voluptatibus quidem ratione minus"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,668 @@
+{
+ "id": "treino_apa_it-IT_limpo",
+ "estilo": "apa",
+ "sistema": "autor-data",
+ "locale": "it-IT",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Aldobrandi, C., Casini, P., & Vergassola, A. (2019a). Prossimo fermo segretario dinanzi battere pieno difendere largo fiore persona divenire. Journal of the American Medical Informatics Association, 55(2), 179–195. https://doi.org/10.99999/teste.treino.12670",
+   "item": "it032"
+  },
+  {
+   "indice": 1,
+   "texto": "Aldobrandi, C., Casini, P., & Vergassola, A. (2019b). Pubblico luogo colpo completamente raggiungere allontanare figlio lontano portare vento affatto piangere. Cadernos de Saúde Pública, 16(11), 826–846.",
+   "item": "it033"
+  },
+  {
+   "indice": 2,
+   "texto": "Almagià, E. (1976). Presidente rosso ricordo trasformare matrimonio collina nome fratello russo. Epidemiologia & Prevenzione, 20(10), 730–750. https://doi.org/10.99999/teste.treino.43763",
+   "item": "it022"
+  },
+  {
+   "indice": 3,
+   "texto": "Angeli-Pisani, V., Pirelli, R., Borghese, A., & Borromeo, R. (1996). Oppure tirare giorno rispondere estremo portare costa sedere elettrico resto celebrare cosa giocare. https://exemplo-treino.org/2944",
+   "item": "it000"
+  },
+  {
+   "indice": 4,
+   "texto": "Babato, J. (1995). Pace bocca scusare caro vestire diffondere servizio succedere industria. Pizziol e figli.",
+   "item": "it019"
+  },
+  {
+   "indice": 5,
+   "texto": "Bevilacqua, P., Prada, I., & Prodi, G. (1990). Zia costruzione parte insegnare signora bambino dito verso. Das Gesundheitswesen, 49(8), 892–902.",
+   "item": "it015"
+  },
+  {
+   "indice": 6,
+   "texto": "Bou Cazorla, A. (2026). Qualcosa politico punta notizia atteggiamento parete croce voce pubblico passare peggio scegliere. Crispi-Magrassi e figli.",
+   "item": "it002"
+  },
+  {
+   "indice": 7,
+   "texto": "Brichese, S., Curci, U., Zaccagnini, L., Callegari, G., Mengolo, T., & Caironi, E. (1999). Ospedale dipendere anzi riva adesso scienza. Druso, Gulotta e Lippomano Group.",
+   "item": "it016"
+  },
+  {
+   "indice": 8,
+   "texto": "de Vespucci, M., Savorgnan, G., Trapani, A., & Nicolucci, L. (2018). Ieri attore nobile loro seguito riprendere dentro gente sbagliare immaginare. Journal of the American Medical Informatics Association, 42(3), 793–803. https://doi.org/10.99999/teste.treino.11800",
+   "item": "it001"
+  },
+  {
+   "indice": 9,
+   "texto": "Dibiasi, R., Longhena, G., & Ziani, C. (s.d.). Pace personale spazio lago levare loro domani gioia stupido riguardare tranquillo. Epidemiologia & Prevenzione, 51(6), 850–857. https://doi.org/10.99999/teste.treino.28311",
+   "item": "it031"
+  },
+  {
+   "indice": 10,
+   "texto": "Draghi, N., Gullotta, G., Aporti, G., Borghese, S., Borromeo, M., & Castioni, F. (2024). Stupido stanza procedere certo nemmeno giornale lui inoltre. Comolli, Callegaro e Monte s.r.l.",
+   "item": "it013"
+  },
+  {
+   "indice": 11,
+   "texto": "Garzoni, L., & Lombroso, L. (2017). Albergo atteggiamento brutto qualità ambiente appartenere gridare dormire neanche riuscire mondo. Tresoldi, Majorana e Vergerio SPA.",
+   "item": "it028"
+  },
+  {
+   "indice": 12,
+   "texto": "Iannucci, N. (1976). Storico libertà festa vivo commercio cucina libertà annunciare grave metà. Preventive Veterinary Medicine, 67(10), 609–627. https://doi.org/10.99999/teste.treino.37751",
+   "item": "it030"
+  },
+  {
+   "indice": 13,
+   "texto": "Istituto Superiore di Sanità. (1998). Contadino gridare stare corpo qualsiasi. Lanfranchi-Rusticucci SPA.",
+   "item": "it017"
+  },
+  {
+   "indice": 14,
+   "texto": "Lattuada, A., Cicala, M., & Mercadante, R. (1988). Popolazione sociale medesimo opporre ministro finché disporre conoscenza contatto. Paolucci, Guarato e Marini SPA.",
+   "item": "it010"
+  },
+  {
+   "indice": 15,
+   "texto": "Montalcini, G., & Dellucci, V. (1991). Puro fatto pace prima creare industria nemmeno qua oltre ci si cattolico stare. In P. Collodi (A c. Di), Rivolgere risultato capo animo giocare freddo fuoco (pp. 85–100). Tamburini, Cavalcanti e Burcardo s.r.l.",
+   "item": "it025"
+  },
+  {
+   "indice": 16,
+   "texto": "Morabito, M., Vecoli, G., & Silvestri, M. (1976). Gettare leggero mamma lettera film decisione straniero. Epidemiologia & Prevenzione, 4(8), 175–193. https://doi.org/10.99999/teste.treino.35420",
+   "item": "it021"
+  },
+  {
+   "indice": 17,
+   "texto": "Nguyen, M. (2010). Russo inglese pranzo se governo pieno aspettare. Cadernos de Saúde Pública, 79(11), 225–245.",
+   "item": "it005"
+  },
+  {
+   "indice": 18,
+   "texto": "Ñúñez, E., Ortolani, E., & Vento, G. (2015). Vita contrario preoccupare personaggio calcio lato nome rientrare aggiungere rivoluzione prevedere effetto. Tamburini, Stefanelli e Parisi s.r.l.",
+   "item": "it006"
+  },
+  {
+   "indice": 19,
+   "texto": "Organização Pan-Americana da Saúde. (2022). Peso duro osservare fatica costruire scherzare giungere esso ci. Gaceta Sanitaria, 44(10), 256–264.",
+   "item": "it008"
+  },
+  {
+   "indice": 20,
+   "texto": "Palombi, P., Basadonna, F., & Papetti, I. (2019). Buono fermare calcio malattia vero mestiere energia cominciare principe romano sposare discorso aggiungere conseguenza. Zamorani Group.",
+   "item": "it011"
+  },
+  {
+   "indice": 21,
+   "texto": "Park, J. (2011). Gente accadere tecnico signora sottile tavolo distruggere concedere esame. Paoletti e figli.",
+   "item": "it004"
+  },
+  {
+   "indice": 22,
+   "texto": "Qualsiasi istituto punto sotto necessario comunicazione fabbrica bagno peso congresso, Legislazione No. 14963 (1997). https://leis-treino.gov/5968",
+   "item": "it014"
+  },
+  {
+   "indice": 23,
+   "texto": "São Paulo (Estado). (1976). Europeo tavolo strano alto abitare popolazione inverno mattina massimo inutile cattivo contatto silenzio. Revue d’Épidémiologie et de Santé Publique, 34(12), 183–201. https://doi.org/10.99999/teste.treino.18494",
+   "item": "it009"
+  },
+  {
+   "indice": 24,
+   "texto": "Saraceno, P., Moneta, L., Franscini, C., Porzio, D., Grossi, O., & Viola, P. (1997). Nord buio signorina ieri ordinare zona epoca spalla vedere centro migliore ordine. BMC Public Health, 26(11), 722–729. https://doi.org/10.99999/teste.treino.23692",
+   "item": "it012"
+  },
+  {
+   "indice": 25,
+   "texto": "Scarpa, N. (2002). Centro gusto difficile impossibile inutile cantare serio pensare pietà bocca. Medical Mycology, 4(7), 726–746.",
+   "item": "it029"
+  },
+  {
+   "indice": 26,
+   "texto": "Serao, L., Bompiani, S., Nicolucci, A., & Boitani, B. (1982). Cadere mentre diffondere sviluppo soluzione lei eccellenza voce. Giusti SPA.",
+   "item": "it026"
+  },
+  {
+   "indice": 27,
+   "texto": "Serraglio, C. (1977). Segno università stampa eccetera volere fondo mese scorrere rivelare tirare portare sì. Medical Mycology, 56(1), 196–212.",
+   "item": "it027"
+  },
+  {
+   "indice": 28,
+   "texto": "Tasso, F., Benedetti, A., Ovadia, P., Curiel, C., Manunta, A., & Virgilio, I. (1988). Ricevere celebrare verde cui peggio realtà romano. Journal of the American Medical Informatics Association, 8(3), 342–356. https://doi.org/10.99999/teste.treino.59430",
+   "item": "it023"
+  },
+  {
+   "indice": 29,
+   "texto": "Treccani, M. (1995). Magari cucina rapido riconoscere trovare bambina qualunque concedere europeo tentare salvare capitare riprendere nascondere. Journal of the American Medical Informatics Association, 65(2), 700–714.",
+   "item": "it024"
+  },
+  {
+   "indice": 30,
+   "texto": "Trentini, I., & Pace, I. (1977). Consentire facile allora contadino restare fermo. Epidemiologia e Serviços de Saúde, 77(8), 329–339. https://doi.org/10.99999/teste.treino.83075",
+   "item": "it018"
+  },
+  {
+   "indice": 31,
+   "texto": "Tu città autorità abito eccellenza zio epoca, Legislazione No. 14720 (1996). https://leis-treino.gov/115",
+   "item": "it020"
+  },
+  {
+   "indice": 32,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. (1994). Posto funzione volare punto forma possibilità compiere semplice umano. https://exemplo-treino.org/8945",
+   "item": "it007"
+  },
+  {
+   "indice": 33,
+   "texto": "Wang, J., Greco, T., Zeffirelli, G., & Chindamo, S. (1997). Campagna silenzio periodo diventare venire finalmente. Epidemiologia e Serviços de Saúde, 39(4), 33–48. https://doi.org/10.99999/teste.treino.30432",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Lattuada et al., 1988; Serraglio, 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it027"
+   ],
+   "referencias": [
+    14,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Angeli-Pisani et al., 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Iannucci, 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Palombi et al., 2019; Tasso et al., 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it011"
+   ],
+   "referencias": [
+    28,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Palombi et al. (2019)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Draghi et al., 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brichese et al., 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen, 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bevilacqua et al., 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Morabito et al., 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Aldobrandi et al., 2019a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aldobrandi et al. (2019a)",
+   "tipo": "narrativa",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wang et al., 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Vespucci et al., 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bou Cazorla, 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Treccani, 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Draghi et al., 2024; Morabito et al., 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it013"
+   ],
+   "referencias": [
+    16,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Qualsiasi istituto punto sotto necessario comunicazione fabbrica bagno peso congresso, 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Garzoni & Lombroso, 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Saraceno et al., 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ñúñez et al., 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Aldobrandi et al., 2019b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trentini & Pace (1977)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Montalcini & Dellucci, 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Scarpa, 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Aldobrandi et al., 2019a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde, 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Babato, 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Medici (Tu città autorità abito eccellenza zio epoca, 1996)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado), 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Morabito et al., 1976; Serao et al., 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it021"
+   ],
+   "referencias": [
+    26,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Morabito et al., 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bevilacqua et al., 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Almagià, 1976; Park, 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it004"
+   ],
+   "referencias": [
+    2,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dibiasi et al., s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park, 2011, p. 98)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Nguyen, 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Nguyen, 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Palombi et al., 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Medici (Tu città autorità abito eccellenza zio epoca, 1996)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Comodo infine escludere sì costruire mangiare triste parlare nord testa trattare scorrere ministro intanto"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

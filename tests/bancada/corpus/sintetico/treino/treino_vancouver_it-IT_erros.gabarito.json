@@ -1,0 +1,797 @@
+{
+ "id": "treino_vancouver_it-IT_erros",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "it-IT",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Trentini R, Pugliese G, Rubbia G, Cuomo C, Paolini S, Pizzetti D. Effetto infatti forte inglese giro comunque muro speranza. BMC Public Health. 2021;28(10):397–412. doi:10.99999/teste.treino.31127",
+   "item": "it025"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Pasolini E, Scotti E, Morgagni S, Favata S, Contarini A, Cadorna E. Finché attuale speciale vendere bene figlio regno meritare. [Angiari]: Pizzo s.r.l.; 1981.",
+   "item": "it024"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Salvemini A, Armani E, Raurica D, Mazzeo I. Peggio frutto dentro luna quadro contare idea poeta. Epidemiologia & Prevenzione. 2012;27(8):207–16. doi:10.99999/teste.treino.91433",
+   "item": "it015"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Haute Autorité de Santé (France). Dipendere conto vita principale greco bambino però convincere. [Leuca]: Barzini-Scarpetta s.r.l.; 1978.",
+   "item": "it009"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Ciampi S, Scamarcio P. Leggero disposizione particolare assumere provare. Revista de Saúde Pública. 2012;76(11):363–79.",
+   "item": "it013"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Tran TH. Crescere salvare compagno capire parte. Bresega: Paolucci SPA; 2016.",
+   "item": "it005"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Benussi S, Sanudo A, Staglieno P, Novaro A, Jacuzzi P, Babato N. Principale appoggiare minimo niente vista proposta [Internet]. 4326. 1994. Disponibile su: https://leis-treino.gov/4235",
+   "item": "it030"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Camiscione E. Fabbrica esprimere paura altro. Preventive Veterinary Medicine. 2018;69(4):399–404.",
+   "item": "it028"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Haute Autorité de Santé (France). Sangue nazione interno valle straniero problema gesto comodo opera arrivare mandare. [Mariano Comense]: Trebbi SPA; 1991.",
+   "item": "it008"
+  },
+  {
+   "indice": 9,
+   "texto": "11. Organização Pan-Americana da Saúde. Valere unico storico don giovanotto noto movimento notte prezzo. Epidemiologia e Serviços de Saúde. 2025;69(1):872–87.",
+   "item": "it007"
+  },
+  {
+   "indice": 10,
+   "texto": "12. Guarato S, Tacchini S. Presto industriale prossimo nero grave. [Treiso]: Montanariello-Cocci SPA; 1993.",
+   "item": "it022"
+  },
+  {
+   "indice": 11,
+   "texto": "13. Aldobrandi A. Mio scuola vasto ringraziare raccogliere forte lui bere dirigere. Medical Mycology. 2004;49(1):452–64. doi:10.99999/teste.treino.42243",
+   "item": "it016"
+  },
+  {
+   "indice": 12,
+   "texto": "14. Choi M jun, Pennetta N. Mostrare linea sbagliare vecchio pietra tecnico sino presente preferire fame ammazzare consentire sogno. Medical Mycology. 2018;39(9):461–78. doi:10.99999/teste.treino.99296",
+   "item": "it004"
+  },
+  {
+   "indice": 13,
+   "texto": "15. di Salgari A. Ragione campagna convincere centrale decidere popolo oro maggio dente sostenere esporre. Epidemiologia & Prevenzione. 1995;21(7):220–5. doi:10.99999/teste.treino.28400",
+   "item": "it001"
+  },
+  {
+   "indice": 14,
+   "texto": "17. Vespucci F. Istituto modo dinanzi troppo. Gaceta Sanitaria. 1991;51(10):94–104. doi:10.99999/teste.treino.36373",
+   "item": "it019"
+  },
+  {
+   "indice": 15,
+   "texto": "18. Benussi S, Sanudo A, Staglieno P, Novaro A, Jacuzzi P, Babato N. Contare tecnico liberare voi roba triste lavoro cattolico. [Villanova Di Bagnacavallo]: Napolitano-Niscoromni s.r.l.; 1994.",
+   "item": "it031"
+  },
+  {
+   "indice": 16,
+   "texto": "19. São Paulo (Estado). Escludere luce insomma porta [Internet]. 2010 [citato 15 novembre 2026]. Disponibile su: https://exemplo-treino.org/8316",
+   "item": "it017"
+  },
+  {
+   "indice": 17,
+   "texto": "20. Ministerio de Sanidad (España). Un finalmente dunque merito realtà sinistro trasformare parlare [Internet]. 13664. 1992. Disponibile su: https://leis-treino.gov/1897",
+   "item": "it023"
+  },
+  {
+   "indice": 18,
+   "texto": "21. Carullo A, Redi C, Pignatti G, Conte P. Realtà affermare sedere lato sicurezza perfetto chiesa. Cadernos de Saúde Pública. 1999;8(12):504–18. doi:10.99999/teste.treino.78174",
+   "item": "it018"
+  },
+  {
+   "indice": 19,
+   "texto": "22. Gori F. Fretta seguire medesimo puro infine signorina piangere servizio morte pensiero frutto. Revue d’Épidémiologie et de Santé Publique. 1978;4(4):158–64. doi:10.99999/teste.treino.26244",
+   "item": "it011"
+  },
+  {
+   "indice": 20,
+   "texto": "23. Wang W, Comboni A, Gilardoni G. Paese operaio principe fiume maggiore caso riprendere ufficiale comunicazione movimento sogno fondo. BMC Public Health. 1982;77(2):380–90. doi:10.99999/teste.treino.65993",
+   "item": "it003"
+  },
+  {
+   "indice": 21,
+   "texto": "24. Iannucci G, Parmitano R, Carriera V, Brichese L, Montecchi I, Gagliano B. Signorina amore arrestare paura ampio lui soldato o importanza buono godere eccetera sorridere [Internet]. 2934. 1999. Disponibile su: https://leis-treino.gov/5188",
+   "item": "it010"
+  },
+  {
+   "indice": 22,
+   "texto": "25. Capdevila Reyes JL, Spallanzani A. Pregare raggiungere preoccupare improvviso attraversare buono. One Health. 1987;51(10):207–14.",
+   "item": "it002"
+  },
+  {
+   "indice": 23,
+   "texto": "26. Bonomo M, Endrizzi A, Mercadante V, Falcone C. Collo piazza lettera. Revista de Saúde Pública. 2008;58(8):242–50. doi:10.99999/teste.treino.64195",
+   "item": "it021"
+  },
+  {
+   "indice": 24,
+   "texto": "27. Benigni G. Molto riferire riunire famoso ambiente preferire accendere. Epidemiologia & Prevenzione. 54(10):227–43. doi:10.99999/teste.treino.82164",
+   "item": "it029"
+  },
+  {
+   "indice": 25,
+   "texto": "28. Taliani P, Surian N, Luzi V. Egli azione veramente chiudere idea. [Maracalagonis]: Tozzo, Iacobucci e Stucchi s.r.l.; 2022.",
+   "item": "it026"
+  },
+  {
+   "indice": 26,
+   "texto": "29. São Paulo (Estado). Scendere principio giovane ammazzare posare inizio qua stanza intenzione ricevere assai pietà [Internet]. 1989 [citato 10 novembre 2026]. Disponibile su: https://exemplo-treino.org/6715",
+   "item": "it014"
+  },
+  {
+   "indice": 27,
+   "texto": "30. Bergoglio-Veltroni L, Cimarosa F, Baresi F. Tutto o quello entro rosso comunque soldato esercito questione baciare nave in villa. In: Udinesi M, curatore. Memoria commercio grazia ospedale camera erba stupido bello. Villaregia: Canali SPA; 2012. p. 216–31.",
+   "item": "it000"
+  },
+  {
+   "indice": 28,
+   "texto": "31. Garibaldi M, Collina V, Prati A, Galvani O, Vigliotti E, Avogadro C. Figlio tuttavia sicurezza motivo già tardi vincere anzi cortile coscienza. Revista de Saúde Pública. 2019;6(3):191–204.",
+   "item": "it012"
+  },
+  {
+   "indice": 29,
+   "texto": "32. Almagià A, Rosselli E, Staglieno G, Stradivari E. Ottenere perché lingua tono piazza cambiare madre [Internet]. 9359. 1985. Disponibile su: https://leis-treino.gov/5927",
+   "item": "it027"
+  },
+  {
+   "indice": 30,
+   "texto": "33. Caetani-Endrizzi N, Tassoni G, Salvo M, Bonanno E. Qualunque regione fantasia oramai probabilmente don [Internet]. 12868. 2009. Disponibile su: https://leis-treino.gov/5233",
+   "item": "extra0"
+  },
+  {
+   "indice": 31,
+   "texto": "34. de Lamborghini G. Cristiano pelle mano energia. Gaceta Sanitaria. 1978;54(12):643–8. doi:10.99999/teste.treino.37614",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1,2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it024"
+   ],
+   "referencias": [
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3,4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it009"
+   ],
+   "referencias": [
+    2,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7,8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it028"
+   ],
+   "referencias": [
+    6,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9,10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it020"
+   ],
+   "referencias": [
+    8,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11,12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it022"
+   ],
+   "referencias": [
+    9,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "di Salgari (15)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4,16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it006"
+   ],
+   "referencias": [
+    3,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tran (6)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19,20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it023"
+   ],
+   "referencias": [
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13,19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it016"
+   ],
+   "referencias": [
+    16,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6,7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it005"
+   ],
+   "referencias": [
+    6,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1,13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it016"
+   ],
+   "referencias": [
+    0,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pasolini et al. (2)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3,27,28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it026",
+    "it015"
+   ],
+   "referencias": [
+    24,
+    25,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18,28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031",
+    "it026"
+   ],
+   "referencias": [
+    15,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(31)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(32)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "di Salgari (15)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(9,10)",
+   "item": "it020"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(4,16)",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(16)",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(16)",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(16)",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(16)",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(10)",
+   "item": "it020"
+  },
+  {
+   "ponto": "E",
+   "referencia": 30,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 31,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Confessare contrario insegnare programma limite legare onore mercato quale svolgere attendere"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,983 @@
+{
+ "id": "elife-00269_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00269.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Alonso JM, Stepanova AN, Leisse TJ, Kim CJ, Chen H, Shinn P, et al.. 2003. Genome-wide insertional mutagenesis of Arabidopsis thaliana. Science 301:653–657.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Ambros V. 2011. MicroRNAs and developmental timing. Curr Opin Genet Dev 21:511–517. doi: 10.1016/j.gde.2011.04.003",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Arciga-Reyes L, Wootton L, Kieffer M, Davies B. 2006. UPF1 is required for nonsense-mediated mRNA decay (NMD) and RNAi in Arabidopsis. Plant J 47:480–489. doi: 10.1111/j.1365-313X.2006.02802.x",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Axtell MJ, Bowman JL. 2008. Evolution of plant microRNAs and their targets. Trends Plant Sci 13:343–349. doi: 10.1016/j.tplants.2008.03.009",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Ayre BG. 2011. Membrane-transport systems for sucrose in relation to whole-plant carbon partitioning. Mol Plant 4:377–394. doi: 10.1093/mp/ssr014",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Bäurle I, Dean C. 2006. The timing of developmental transitions in plants. Cell 125:655–664. doi: 10.1016/j.cell.2006.05.005",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Bläsing OE, Gibon Y, Gunther M, Hohne M, Morcuende R, Osuna D, et al.. 2005. Sugars and circadian regulation make major contributions to the global regulation of diurnal gene expression in Arabidopsis. Plant Cell 17:3257–3281. doi: 10.1105/tpc.105.035261",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Chan MT, Yu SM. 1998. The 3' untranslated region of a rice alpha-amylase gene functions as a sugar-dependent mRNA stability determinant. Proc Natl Acad Sci USA 95:6543–6547.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Chen LQ, Qu XQ, Hou BH, Sosso D, Osorio S, Fernie AR, et al.. 2011. Sucrose efflux mediated by SWEET proteins as a key step for phloem transport. Science 335:207–211. doi: 10.1126/science.1213351",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Cho YH, Yoo SD, Sheen J. 2006. Regulatory functions of nuclear hexokinase1 complex in glucose signaling. Cell 127:579–589. doi: 10.1016/j.cell.2006.09.028",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Corbesier L, Lejeune P, Bernier G. 1998. The role of carbohydrates in the induction of flowering in Arabidopsis thaliana: comparison between the wild type and a starchless mutant. Planta 206:131–137.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Cove DJ, Perroud PF, Charron AJ, McDaniel SF, Khandelwal A, Quatrano RS. 2009. Culturing the moss Physcomitrella patens. Cold Spring Harb Protoc. doi: 10.1101/pdb.prot5136",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Espineda CE, Linford AS, Devine D, Brusslan JA. 1999. The AtCAO gene, encoding chlorophyll a oxygenase, is required for chlorophyll b synthesis in Arabidopsis thaliana. Proc Natl Acad Sci USA 96:10507–10511.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Franco-Zorrilla JM, Valli A, Todesco M, Mateos I, Puga MI, Rubio-Somoza I, et al.. 2007. Target mimicry provides a new mechanism for regulation of microRNA activity. Nat Genet 39:1033–1037. doi: 10.1038/ng2079",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Grigg SP, Canales C, Hay A, Tsiantis M. 2005. SERRATE coordinates shoot meristem function and leaf axial patterning in Arabidopsis. Nature 437:1022–1026. doi: 10.1038/nature04052",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Jung JH, Seo PJ, Kang SK, Park CM. 2011. miR172 signals are incorporated into the miR156 signaling pathway at the SPL3/4/5 genes in Arabidopsis developmental transitions. Plant Mol Biol 76:35–45. doi: 10.1007/s11103-011-9759-z",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Kuhn C, Grof CP. 2010. Sucrose transporters of higher plants. Curr Opin Plant Biol 13:288–298. doi: 10.1016/j.pbi.2010.02.001",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Kurihara Y, Matsui A, Hanada K, Kawashima M, Ishida J, Morosawa T, et al.. 2009. Genome-wide suppression of aberrant mRNA-like noncoding RNAs by NMD in Arabidopsis. Proc Natl Acad Sci USA 106:2453–2458. doi: 10.1073/pnas.0808902106",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Laubinger S, Sachsenberg T, Zeller G, Busch W, Lohmann JU, Ratsch G, et al.. 2008. Dual roles of the nuclear cap-binding complex and SERRATE in pre-mRNA splicing and microRNA processing in Arabidopsis thaliana. Proc Natl Acad Sci USA 105:8795–8800. doi: 10.1073/pnas.0802493105",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Lobbes D, Rallapalli G, Schmidt DD, Martin C, Clarke J. 2006. SERRATE: a new player on the plant microRNA scene. EMBO Rep 7:1052–1058. doi: 10.1038/sj.embor.7400806",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Moore B, Zhou L, Rolland F, Hall Q, Cheng WH, Liu YX, et al.. 2003. Role of the Arabidopsis glucose sensor HXK1 in nutrient, light, and hormonal signaling. Science 300:332–336. doi: 10.1126/science.1080585",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Moss EG. 2007. Heterochronic genes and the nature of developmental time. Curr Biol 17:R425–R434. doi: 10.1016/j.cub.2007.03.043",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Pasquinelli AE, Ruvkun G. 2002. Control of developmental timing by micrornas and their targets. Annu Rev Cell Dev Biol 18:495–513. doi: 10.1146/annurev.cellbio.18.012502.105832",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Poethig RS. 2010. The past, present, and future of vegetative phase change. Plant Physiol 154:541–544. doi: 10.1104/pp.110.161620",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Price J, Laxmi A, St Martin SK, Jang JC. 2004. Global transcription profiling reveals multiple sugar signal transduction mechanisms in Arabidopsis. Plant Cell 16:2128–2150. doi: 10.1105/tpc.104.022616",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Raven JA, Handley LL, Andrews M. 2004. Global aspects of C/N interactions determining plant-environment interactions. J Exp Bot 55:11–25. doi: 10.1093/jxb/erh011",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Reinhart BJ, Weinstein EG, Rhoades MW, Bartel B, Bartel DP. 2002. MicroRNAs in plants. Genes Dev 16:1616–1626. doi: 10.1101/gad.1004402",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Rolland F, Sheen J. 2005. Sugar sensing and signalling networks in plants. Biochem Soc Trans 33:269–271. doi: 10.1042/BST0330269",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Samson F, Brunaud V, Balzergue S, Dubreucq B, Lepiniec L, Pelletier G, et al.. 2002. FLAGdb/FST: a database of mapped flanking insertion sites (FSTs) of Arabidopsis thaliana T-DNA transformants. Nucleic Acids Res 30:94–97.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Seo PJ, Ryu J, Kang SK, Park CM. 2011. Modulation of sugar metabolism by an INDETERMINATE DOMAIN transcription factor contributes to photoperiodic flowering in Arabidopsis. Plant J 65:418–429. doi: 10.1111/j.1365-313X.2010.04432.x",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Sivitz AB, Reinders A, Johnson ME, Krentz AD, Grof CP, Perroux JM, et al.. 2007. Arabidopsis sucrose transporter AtSUC9. High-affinity transport activity, intragenic control of expression, and early flowering mutant phenotype. Plant Physiol 143:188–198.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Smeekens S, Ma J, Hanson J, Rolland F. 2010. Sugar signals and molecular networks controlling plant growth. Curr Opin Plant Biol 13:274–279. doi: 10.1016/j.pbi.2009.12.002",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Tan H, Yang X, Zhang F, Zheng X, Qu C, Mu J, et al.. 2011. Enhanced seed oil production in canola by conditional expression of Brassica napus LEAFY COTYLEDON1 and LEC1-LIKE in developing seeds. Plant Physiol 156:1577–1588. doi: 10.1104/pp.111.175000",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Todesco M, Rubio-Somoza I, Paz-Ares J, Weigel D. 2010. A collection of target mimics for comprehensive analysis of microRNA function in Arabidopsis thaliana. PLoS Genet 6:e1001031. doi: 10.1371/journal.pgen.1001031",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Truernit E. 2001. Plant physiology: the importance of sucrose transporters. Curr Biol 11:R169–R171.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Varkonyi-Gasic E, Wu R, Wood M, Walton EF, Hellens RP. 2007. Protocol: a highly sensitive RT-PCR method for detection and quantification of microRNAs. Plant Methods 3:12. doi: 10.1186/1746-4811-3-12",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Wang JW, Czech B, Weigel D. 2009. miR156-regulated SPL transcription factors define an endogenous flowering pathway in Arabidopsis thaliana. Cell 138:738–749. doi: 10.1016/j.cell.2009.06.014",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Wang JW, Schwab R, Czech B, Mica E, Weigel D. 2008. Dual effects of miR156-targeted SPL genes and CYP78A5/KLUH on plastochron length and organ size in Arabidopsis thaliana. Plant Cell 20:1231–1243. doi: 10.1105/tpc.108.058180",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Williams LE, Lemoine R, Sauer N. 2000. Sugar transporters in higher plants–a diversity of roles and complex regulation. Trends Plant Sci 5:283–290.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Wu G, Park MY, Conway SR, Wang JW, Weigel D, Poethig RS. 2009. The sequential action of miR156 and miR172 regulates developmental timing in Arabidopsis. Cell 138:750–759. doi: 10.1016/j.cell.2009.06.031",
+   "item": "bib41"
+  },
+  {
+   "indice": 40,
+   "texto": "Wu G, Poethig RS. 2006. Temporal regulation of shoot development in Arabidopsis thaliana by miR156 and its target SPL3. Development 133:3539–3547. doi: 10.1242/dev.02521",
+   "item": "bib42"
+  },
+  {
+   "indice": 41,
+   "texto": "Xiao W, Sheen J, Jang JC. 2000. The role of hexokinase in plant sugar signal transduction and growth and development. Plant Mol Biol 44:451–461.",
+   "item": "bib43"
+  },
+  {
+   "indice": 42,
+   "texto": "Yamaguchi A, Wu MF, Yang L, Wu G, Poethig RS, Wagner D. 2009. The microRNA-regulated SBP-Box transcription factor SPL3 is a direct upstream activator of LEAFY, FRUITFULL, and APETALA1. Dev Cell 17:268–278. doi: 10.1016/j.devcel.2009.06.007",
+   "item": "bib44"
+  },
+  {
+   "indice": 43,
+   "texto": "Yang L, Conway SR, Poethig RS. 2011. Vegetative phase change is mediated by a leaf-derived signal that represses the transcription of miR156. Development 138:245–249. doi: 10.1242/dev.058578",
+   "item": "bib45"
+  },
+  {
+   "indice": 44,
+   "texto": "Yang L, Liu Z, Lu F, Dong A, Huang H. 2006. SERRATE is a novel nuclear regulator in primary microRNA processing in Arabidopsis. Plant J 47:841–850. doi: 10.1111/j.1365-313X.2006.02835.x",
+   "item": "bib46"
+  },
+  {
+   "indice": 45,
+   "texto": "Yoine M, Ohto MA, Onai K, Mita S, Nakamura K. 2006. The lba1 mutation of UPF1 RNA helicase involved in nonsense-mediated mRNA decay causes pleiotropic phenotypic changes and altered sugar signalling in Arabidopsis. Plant J 47:49–62.",
+   "item": "bib47"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Bäurle and Dean, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Poethig, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Poethig, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu and Poethig, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu and Poethig, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yamaguchi et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al. 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolland and Sheen, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smeekens et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolland and Sheen, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moore et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cho et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Xiao et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reinhart et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Samson et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Alonso et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woody et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Franco-Zorrilla et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Todesco et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu and Poethig, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bläsing et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al. 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Truernit 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al. 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Espineda et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Axtell and Bowman, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Price et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Grigg et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lobbes et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Laubinger et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moore et al. 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Arciga-Reyes et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kurihara et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yoine et al. 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pasquinelli and Ruvkun, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moss, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ambros, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Raven et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zheng, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Corbesier et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sivitz et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Seo et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuhn and Grof, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ayre, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Williams et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chan and Yu, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moore et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cove et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Varkonyi-Gasic et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tan et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Woody et al., 2007",
+   "item": "bib40"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Zheng, 2009",
+   "item": "bib48"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

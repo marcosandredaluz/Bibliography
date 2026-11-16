@@ -1,0 +1,753 @@
+{
+ "id": "treino_chicago-ad_pt-PT_erros",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "pt-PT",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Andrade, Ema, Guilherme Machado, Núria Batista, e Margarida Neto. 2003. «Vel doloribus molestias vitae distinctio». Medical Mycology 27 (6): 444–62. https://doi.org/10.99999/teste.treino.56211.",
+   "item": "it011"
+  },
+  {
+   "indice": 1,
+   "texto": "Anjos, Bruno, Irina Torres, Helena Henriques, Eduardo Nascimento, Benjamim Carneiro, e João Ramos. 2006. «Quae maxime animi sapiente fuga nam». Das Gesundheitswesen 77 (12): 484–93. https://doi.org/10.99999/teste.treino.94349.",
+   "item": "it023"
+  },
+  {
+   "indice": 2,
+   "texto": "Araújo, Patrícia. 2001. Provident ab cumque nihil sunt quo expedita repellat est fugiat ab similique reiciendis quisquam doloribus. Batista Simões S.A.",
+   "item": "it020"
+  },
+  {
+   "indice": 3,
+   "texto": "Brito, Flor, Daniela Miranda, Joana Ferreira, e Emília Silva. 2002. Odio ipsa dolore cum rerum enim voluptatibus eaque. Neves Martins Lda.",
+   "item": "it018"
+  },
+  {
+   "indice": 4,
+   "texto": "Campos-Carvalho, Ana. 1997. «Itaque ex provident at architecto atque voluptatem aperiam aliquam nemo exercitationem modi». Em Voluptatibus dolore saepe rem cumque, editado por Lia Carvalho. Nogueira Lourenço S.A.",
+   "item": "it000"
+  },
+  {
+   "indice": 5,
+   "texto": "Costa, Marcos. 2016. Unde minus exercitationem autem culpa nostrum debitis. Campos.",
+   "item": "it019"
+  },
+  {
+   "indice": 6,
+   "texto": "Cunha, Soraia, e Fernando Barbosa. 1991. «Ipsum nostrum dignissimos pariatur». Epidemiologia e Serviços de Saúde 17 (5): 234–43. https://doi.org/10.99999/teste.treino.88411.",
+   "item": "it013"
+  },
+  {
+   "indice": 7,
+   "texto": "Eos quaerat adipisci officiis perspiciatis unde culpa, Legislação N. 11643. https://leis-treino.gov/4202.",
+   "item": "it025"
+  },
+  {
+   "indice": 8,
+   "texto": "Ferreira-Fernandes, Denis, Paulo Monteiro, Sandro Morais, e Débora Freitas. 1998. «Fuga ad optio repellendus mollitia». Cardoso Lourenço Lda.",
+   "item": "extra0"
+  },
+  {
+   "indice": 9,
+   "texto": "Gremião, Leonor, Marcos Fonseca, Nair Fernandes, e Mateus Campos. 2020. «Distinctio inventore alias explicabo illo magnam at praesentium autem quam». One Health 80 (5): 840–48. https://doi.org/10.99999/teste.treino.46753.",
+   "item": "it006"
+  },
+  {
+   "indice": 10,
+   "texto": "Itaque eum nam illum officia in recusandae, Legislação N. 6307 (2023). https://leis-treino.gov/7013.",
+   "item": "it022"
+  },
+  {
+   "indice": 11,
+   "texto": "Jesus, Dinis, Mafalda Coelho, e Rafael Rodrigues. 2005. Sed eaque eius sit enim quisquam ab. Melo e Filhos.",
+   "item": "it015"
+  },
+  {
+   "indice": 12,
+   "texto": "Leal, Ariana, Madalena Torres, Nelson Araújo, Flor Rocha, Luana Teixeira, e Eva Gaspar. 2008. «Qui minus consectetur incidunt assumenda vitae possimus vel provident porro». Preventive Veterinary Medicine 61 (2): 6–24.",
+   "item": "it012"
+  },
+  {
+   "indice": 13,
+   "texto": "Magalhães, Laura, Santiago Barros, Raquel Machado, e Ivan Machado. 2016. «Odio qui omnis officia iure». Journal of the American Medical Informatics Association 67 (1): 457–65. https://doi.org/10.99999/teste.treino.36864.",
+   "item": "it024"
+  },
+  {
+   "indice": 14,
+   "texto": "Marques, Wilson, e Alexandra Nogueira. 2016. Recusandae quam veritatis maiores quis inventore. Faria S/A.",
+   "item": "it010"
+  },
+  {
+   "indice": 15,
+   "texto": "Ministerio de Sanidad (España). 1986. Similique suscipit deserunt temporibus. Vieira.",
+   "item": "it017"
+  },
+  {
+   "indice": 16,
+   "texto": "Organização Pan-Americana da Saúde. 2026. «Voluptate repellat est in». https://exemplo-treino.org/4418.",
+   "item": "it009"
+  },
+  {
+   "indice": 17,
+   "texto": "Paiva, Diogo, Frederico Barros, e Luana Azevedo. 1988. «Ratione error et maxime sed nisi ipsam». Em Quisquam aliquid soluta provident dolores et itaque soluta, editado por Irina Baptista. Gonçalves S.A.",
+   "item": "it027"
+  },
+  {
+   "indice": 18,
+   "texto": "Park, Seo-yeon, Vera Ferreira, Amélia Martins, e Érica Moreira. 1982. «Quas impedit ut eum autem». Gaceta Sanitaria 28 (2): 241–46. https://doi.org/10.99999/teste.treino.78806.",
+   "item": "it004"
+  },
+  {
+   "indice": 19,
+   "texto": "Pineda Amor, Anastasio, e Emília Barros. 1986. «Doloremque modi numquam reiciendis eaque sint amet soluta». Epidemiologia & Prevenzione 72 (3): 596–606. https://doi.org/10.99999/teste.treino.35687.",
+   "item": "it002"
+  },
+  {
+   "indice": 20,
+   "texto": "Pinto, Nelson. 1991. «Provident ducimus error est repudiandae culpa id nesciunt necessitatibus laborum ad quae sapiente possimus». Revue d’Épidémiologie et de Santé Publique 62 (1): 461–76.",
+   "item": "it014"
+  },
+  {
+   "indice": 21,
+   "texto": "Ramos, Santiago. 2011. «Deserunt nostrum sint praesentium delectus debitis quis at tenetur». Gaceta Sanitaria 45 (1): 512–28. https://doi.org/10.99999/teste.treino.78463.",
+   "item": "it021"
+  },
+  {
+   "indice": 22,
+   "texto": "Robert Koch-Institut. 2024. «Accusantium fuga perferendis impedit iure similique esse reprehenderit aliquid». Epidemiologia & Prevenzione 49 (1): 353–64.",
+   "item": "it008"
+  },
+  {
+   "indice": 23,
+   "texto": "Rocha, Lisandro de. 1982. «Debitis aliquam distinctio atque nostrum eos laudantium». Cadernos de Saúde Pública 5 (4): 588–601. https://doi.org/10.99999/teste.treino.79943.",
+   "item": "it001"
+  },
+  {
+   "indice": 24,
+   "texto": "São Paulo (Estado). 2019. Consequatur dolorem omnis ducimus. Torres Faria Lda.",
+   "item": "it007"
+  },
+  {
+   "indice": 25,
+   "texto": "Sed inventore a repellendus reiciendis maxime quam eaque earum error praesentium, Legislação N. 3459 (1988). https://leis-treino.gov/6560.",
+   "item": "it026"
+  },
+  {
+   "indice": 26,
+   "texto": "Sousa, Mariana da. 1992. «Fugit laudantium repellat rerum veniam impedit quidem praesentium numquam alias». Cadernos de Saúde Pública 67 (6): 152–61. https://doi.org/10.99999/teste.treino.91471.",
+   "item": "extra1"
+  },
+  {
+   "indice": 27,
+   "texto": "Zhang, Wei. 2024. Quis laborum ullam officia explicabo ipsum maiores. Matias Lda.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Itaque eum nam illum officia in recusandae 2023; Sed inventore a repellendus reiciendis maxime quam eaque earum error praesentium 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it026"
+   ],
+   "referencias": [
+    10,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robert Koch-Institut (2024)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Campos-Carvalho 1997; Ramos 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it021"
+   ],
+   "referencias": [
+    4,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinto 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pineda Amor e Barros 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vicente 2014; Itaque eum nam illum officia in recusandae 2023; Pham et al. 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it022",
+    "it005"
+   ],
+   "referencias": [
+    null,
+    10,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Magalhães et al. (2016)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sed inventore a repellendus reiciendis maxime quam eaque earum error praesentium 1988; Organização Pan-Americana da Saúde 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it009"
+   ],
+   "referencias": [
+    25,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Araújo 2001; Zhang 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it003"
+   ],
+   "referencias": [
+    2,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham et al. 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España) 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vicente 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cunha e Barbosa 1991; Marques e Nogueira 2016; Pham et al. 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it010",
+    "it005"
+   ],
+   "referencias": [
+    6,
+    14,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham et al. 2024; Andrade et al. 2003; Gremião et al. 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it011",
+    "it006"
+   ],
+   "referencias": [
+    null,
+    0,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ramos 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pineda Amor e Barros (1986)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Leal et al. 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park et al. 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 2019; Itaque eum nam illum officia in recusandae 2023; Pineda Amor e Barros 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it022",
+    "it002"
+   ],
+   "referencias": [
+    24,
+    10,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ramos 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião et al. 2020; Vicente 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it016"
+   ],
+   "referencias": [
+    9,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Magalhães et al. 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jesus et al. 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Marques e Nogueira 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cunha e Barbosa 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Rocha 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Rocha 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brito et al. 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião et al. 2020; Pineda Amor e Barros 1986; Araújo 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it002",
+    "it020"
+   ],
+   "referencias": [
+    9,
+    19,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Anjos et al. 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Araújo 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zhang 2024; Marques e Nogueira 2016; Sed inventore a repellendus reiciendis maxime quam eaque earum error praesentium 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it010",
+    "it026"
+   ],
+   "referencias": [
+    27,
+    14,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marques e Nogueira (2016)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ramos 2011; Campos-Carvalho 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it000"
+   ],
+   "referencias": [
+    21,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cunha e Barbosa 1991; Campos-Carvalho 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it000"
+   ],
+   "referencias": [
+    6,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut 2024; Magalhães et al. 2016; Andrade et al. 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it024",
+    "it011"
+   ],
+   "referencias": [
+    22,
+    13,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Eos quaerat adipisci officiis perspiciatis unde culpa, s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park et al. 1982; Paiva et al. 1988; Campos-Carvalho 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it027",
+    "it000"
+   ],
+   "referencias": [
+    18,
+    17,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Costa (2016)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Rocha 1982, 294)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Anjos et al. 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Zhang 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Araújo (2001)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Vicente 2014; Itaque eum nam illum officia in recusandae 2023; Pham et al. 2024)",
+   "item": "it016"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Vicente 2014; Itaque eum nam illum officia in recusandae 2023; Pham et al. 2024)",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Pham et al. 2024)",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Vicente 2014)",
+   "item": "it016"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Cunha e Barbosa 1991; Marques e Nogueira 2016; Pham et al. 2024)",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Pham et al. 2024; Andrade et al. 2003; Gremião et al. 2020)",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Gremião et al. 2020; Vicente 2014)",
+   "item": "it016"
+  },
+  {
+   "ponto": "E",
+   "referencia": 8,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 26,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Accusantium nobis magnam pariatur deserunt iusto quisquam quidem doloremque"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

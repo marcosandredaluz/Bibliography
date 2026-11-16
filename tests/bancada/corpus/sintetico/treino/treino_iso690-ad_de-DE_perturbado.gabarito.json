@@ -1,0 +1,615 @@
+{
+ "id": "treino_iso690-ad_de-DE_perturbado",
+ "estilo": "iso690-ad",
+ "sistema": "autor-data",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "ADOLPH, Janet, 1988. See sieht Ende wirklich weiter immer schlecht Glück man nun schlimm Pferd Stein Teller. . Online. 1988. Available from: https://exemplo-treino.org/2284 [Accessed 6 November 2026].",
+   "item": "it017"
+  },
+  {
+   "indice": 1,
+   "texto": "BOHLANDER, Reinhild, 2001. Auge wird heraus das nun. Cadernos de Saúde Pública. 2001. Vol. 1, no. 12, p. 284–295. DOI 10.99999/teste.treino.15819.",
+   "item": "it021"
+  },
+  {
+   "indice": 2,
+   "texto": "BÖRNER, Stefanie, HAERING, Heinz-Josef, MÜLICHEN, Niels, NETTE, Enrico, GIESS, Nikolaj und REUTER, Cathleen, 2024. Nämlich verlieren schwarz gab Tür dem fressen öffnen leicht treffen Wissen denn spät. Schlüchtern: Klapp Beyer AG.",
+   "item": "it010"
+  },
+  {
+   "indice": 3,
+   "texto": "CONSELHO NACIONAL DE SAÚDE (BRASIL), 2019. Brief lustig suchen Ball besser mich fest Eis. Gelnhausen: Hande Köhler GmbH.",
+   "item": "it008"
+  },
+  {
+   "indice": 4,
+   "texto": "DI TEXTOR, Ehrhard, 1998. Las Tier Welt acht Spiel treffen Fußball Meer Opa dauern gut. Tübingen: Rogge e.G.",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "DITSCHLERIN, Miodrag, 1986. Brauchen Welt sieben am Zeit Hand her Fußball. Revue d’Épidémiologie et de Santé Publique. 1986. Vol. 79, no. 9, p. 712–727.",
+   "item": "it015"
+  },
+  {
+   "indice": 6,
+   "texto": "DÖRSCHNER, Wilhelm, 1976. Man früh arbeiten lange Blume dazu Zahl Tisch nächste Apfel zum Hunger ganz. Vilsbiburg: Bolzmann.",
+   "item": "it025"
+  },
+  {
+   "indice": 7,
+   "texto": "EBERHARDT, Anja, STUMPF, Wencke und STEY, Augustin, 2004. Sonst stellen später oder klein Bruder hat bringen. Neuss: Holt GmbH.",
+   "item": "it024"
+  },
+  {
+   "indice": 8,
+   "texto": "EIGENWILLIG, Domenico, 1984. Warten Arzt treffen Stelle wissen sehen denn. Journal of the American Medical Informatics Association. 1984. Vol. 64, no. 4, p. 382–398. DOI 10.99999/teste.treino.30739.",
+   "item": "it023"
+  },
+  {
+   "indice": 9,
+   "texto": "GIMÉNEZ COBOS, Antonio, 2021. Böse zwischen setzen schwimmen spät vor Zeit Flasche bleiben war hat heiß Essen jetzt. Beeskow: Stahr.",
+   "item": "it002"
+  },
+  {
+   "indice": 10,
+   "texto": "HAUTE AUTORITÉ DE SANTÉ (FRANCE), [no date]. Krank gehören böse Küche zehn den fünf haben Dorf führen warm. Arnstadt: Weihmann GmbH & Co. OHG.",
+   "item": "it027"
+  },
+  {
+   "indice": 11,
+   "texto": "HESER, Lydia, TRÖST, Emilia, BRIEMER, Helmar, STOLL, Victor, GREIN GROTH, Giuseppe und BEYER, Susi, 2019. Holen erschrecken wünschen acht Weg traurig um schaffen.. Online. 2019. 427. Available from: https://leis-treino.gov/3349",
+   "item": "it012"
+  },
+  {
+   "indice": 12,
+   "texto": "HUHN, Tibor, 2003. Luft nun Hase darauf haben wichtig Minutenmir Boden reich. Epidemiologia & Prevenzione. 2003. Vol. 13, no. 7, p. 539–553. DOI 10.99999/teste.treino.20242.",
+   "item": "it022"
+  },
+  {
+   "indice": 13,
+   "texto": "ISTITUTO SUPERIORE DI SANITÀ, 1984. Hilfe kalt den hinter ab laufen durch. Celle: Warmer Briemer KG.",
+   "item": "it009"
+  },
+  {
+   "indice": 14,
+   "texto": "KIM, Min-jun, RUPPERSBERGER, Mato und KRANZ, Edeltraud, 1984. Schluss dort gut Eis ihr Fenster schlafen ist am erklären.. Online. 1984. 11417. Available from: https://leis-treino.gov/9248",
+   "item": "it004"
+  },
+  {
+   "indice": 15,
+   "texto": "LE, Van Anh, RÖMER, Ernestine und KÖHLER, Kirsten, 2023. Geburtstag schön sieben Fisch Nase Sohn offen drei auf doch freuen Hilfe Zeitung wohnen. Medical Mycology. 2023. Vol. 12, no. 9, p. 375–390.",
+   "item": "it005"
+  },
+  {
+   "indice": 16,
+   "texto": "ŁUKASZ, Marie, 2012. Bauer waschen Rad sieben Luft nein von waschen bald durch. Wiedenbrück: Thies.",
+   "item": "it006"
+  },
+  {
+   "indice": 17,
+   "texto": "MÜLLER-KOBELT, Eleonora, BARKHOLZ, Damian und THANEL, Bernt, 2024. Immer sofort Brot Licht groß spät sprechen hängen schön. Rockenhausen: Kramer.",
+   "item": "it000"
+  },
+  {
+   "indice": 18,
+   "texto": "ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE, 2000. Fertig jetzt lassen schnell Essen. . Online. 2000. Available from: https://exemplo-treino.org/6348 [Accessed 8 November 2026].",
+   "item": "it013"
+  },
+  {
+   "indice": 19,
+   "texto": "ROBERT KOCH-INSTITUT, 2012. Gelb Teller ließ rechnen Baum sollen Eltern viel Opa hinein schreiben davon. Apolda: Carsten Mende AG.",
+   "item": "it019"
+  },
+  {
+   "indice": 20,
+   "texto": "SALZ, Marco, SCHULZ, Hans-Gerhard, KOSTOLZIN, Florian, HILLER, Maurizio, JÄHN, Sinaida und BAUER, Karolina, 1991. Kalt Dorf beißen nichts acht es nicht zu. . Online. 1991. Available from: https://exemplo-treino.org/3993 [Accessed 9 November 2026].",
+   "item": "it016"
+  },
+  {
+   "indice": 21,
+   "texto": "SEIP, Guido, HARTUNG, Hannes und WERNECKE, Hanife, 1989a. Maus oft verlieren neun Schuh reiten will Luft schnell hängen Angst dick zurück. Medical Mycology. 1989. Vol. 62, no. 2, p. 183–198.",
+   "item": "it029"
+  },
+  {
+   "indice": 22,
+   "texto": "SEIP, Guido, HARTUNG, Hannes und WERNECKE, Hanife, 1989b. Welt Nacht Loch gewinnen sieben vergessen schenken Pferd. Das Gesundheitswesen. 1989. Vol. 70, no. 11, p. 148–159.",
+   "item": "it028"
+  },
+  {
+   "indice": 23,
+   "texto": "VIRGINIA-MARYLAND COLLEGE OF VETERINARY MEDICINE, 1983. Dir Schule Mädchen Wetter Vogel Küche. In: FINKE, Nadeshda (Hrsg.), Reiten sitzen Tisch wichtig schicken früher hoch dauern böse Schwester finden dort. Leipziger Land: Renner GmbH & Co. KG. p. 189–204.",
+   "item": "it007"
+  },
+  {
+   "indice": 24,
+   "texto": "VIRGINIA-MARYLAND COLLEGE OF VETERINARY MEDICINE, 2017. Dein über dort verlieren Mensch Fuß sagen lieb. . Online. 2017. Available from: https://exemplo-treino.org/4894 [Accessed 4 November 2026].",
+   "item": "it020"
+  },
+  {
+   "indice": 25,
+   "texto": "VIRGINIA-MARYLAND COLLEGE OF VETERINARY MEDICINE, 2024. Dauern dann Feuer Dorf neun Junge fressen. . Online. 2024. Available from: https://exemplo-treino.org/3793 [Accessed 7 November 2026].",
+   "item": "it014"
+  },
+  {
+   "indice": 26,
+   "texto": "WIELOCH, Hans-Hinrich, 2001. Oft Frage tot beide packen Vater. BMC Public Health. 2001. Vol. 64, no. 2, p. 800–815.",
+   "item": "it026"
+  },
+  {
+   "indice": 27,
+   "texto": "WINKLER, Natalja und WARMER, Tony, 2010. Kopf und gern neun wollen früh Sohn braun zwischen Vater. . Online. 2010. Available from: https://exemplo-treino.org/1300 [Accessed 6 November 2026].",
+   "item": "it018"
+  },
+  {
+   "indice": 28,
+   "texto": "ZHANG, Jing, HAHN, Carmen, ROGGE, Anne-Kathrin und WELLER, Giorgio, 1979. Polizei denken schlagen waschen war oben zu einige Stein Weg ab kurz. Cadernos de Saúde Pública. 1979. Vol. 74, no. 4, p. 8–20. DOI 10.99999/teste.treino.41011.",
+   "item": "it003"
+  },
+  {
+   "indice": 29,
+   "texto": "ZORBACH, Wencke, 2020. Kann dazu unten nun ab nein. In: DAVIDS, Swetlana (Hrsg.), Kurz öffnen Bruder sprechen kam. Forchheim: Heintze Kensy AG & Co. KG. p. 213–228.",
+   "item": "it011"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Robert Koch-Institut (2012)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dörschner 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (2024)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zorbach 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Łukasz 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Seip, Hartung, Wernecke 1989a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wieloch (2001)",
+   "tipo": "narrativa",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dörschner 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le, Römer, Köhler 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France) [no date])",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 1983; Ditschlerin 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it015"
+   ],
+   "referencias": [
+    23,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Winkler, Warmer 2010; Conselho Nacional de Saúde (Brasil) 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it008"
+   ],
+   "referencias": [
+    27,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Müller-Kobelt, Barkholz, Thanel 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Eigenwillig 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Börner, Haering, Mülichen, Nette, Gieß, Reuter 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Huhn 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kim, Ruppersberger, Kranz 1984; Conselho Nacional de Saúde (Brasil) 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it008"
+   ],
+   "referencias": [
+    14,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Eberhardt, Stumpf, Stey 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Giménez Cobos 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Adolph 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2017; Dörschner 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it025"
+   ],
+   "referencias": [
+    24,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bohlander 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zhang, Hahn, Rogge, Weller 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Eigenwillig 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ditschlerin 1986; Istituto Superiore di Sanità 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it009"
+   ],
+   "referencias": [
+    5,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Textor 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (1983)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Salz, Schulz, Kostolzin, Hiller, Jähn, Bauer 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Heser, Tröst, Briemer, Stoll, Grein Groth, Beyer 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Seip, Hartung, Wernecke (1989b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Adolph 1988, S. 283)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Giménez Cobos 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Eigenwillig 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Giménez Cobos (2021)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Tier grün Schluss fiel Geschenk schnell Sommer helfen ihn Ding Minutenmir"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

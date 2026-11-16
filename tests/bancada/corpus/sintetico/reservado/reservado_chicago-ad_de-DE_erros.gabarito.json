@@ -1,0 +1,771 @@
+{
+ "id": "reservado_chicago-ad_de-DE_erros",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "de-DE",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Apfel zwei Meer Kind auch Bruder, Gesetz Nr. 12339 (1990). https://leis-reservado.gov/489.",
+   "item": "it025"
+  },
+  {
+   "indice": 1,
+   "texto": "Auf wünschen trinken dürfen fressen ein spät Freude fehlen, Gesetz Nr. 1819 (1992). https://leis-reservado.gov/7605.",
+   "item": "it018"
+  },
+  {
+   "indice": 2,
+   "texto": "Bruder, Patrik, Volker Mude, Stefania Roskoth, Benita Bonbach, Wolfhard Bolzmann, und Friedbert Ruppersberger. 2006. „Dorf krank Tag bleiben“. Preventive Veterinary Medicine 70 (11): 721–39.",
+   "item": "it020"
+  },
+  {
+   "indice": 3,
+   "texto": "Bundesinstitut für Risikobewertung. 1995. Offen haben dort schon Rad wissen das blau dafür. Siering Stiftung & Co. KGaA.",
+   "item": "it015"
+  },
+  {
+   "indice": 4,
+   "texto": "Conselho Federal de Medicina Veterinária. 2011. „Sonne später Minute Ding Tier Ding Fahrrad wo denn“. https://exemplo-reservado.org/6531.",
+   "item": "it019"
+  },
+  {
+   "indice": 5,
+   "texto": "D’Ávila, Wanda, Kirsten Otto, Lili Kohl, und Amalie Girschner. 1980. War kaufen natürlich war finden natürlich. Schacht AG.",
+   "item": "it006"
+  },
+  {
+   "indice": 6,
+   "texto": "Dehmel, Hilma. 1982. „Sieht waschen antworten Mensch Minutenmir Leute Bein sind“. Schmiedecke Hornig GmbH.",
+   "item": "it012"
+  },
+  {
+   "indice": 7,
+   "texto": "Denn Weg bald denken Lehrer, Gesetz Nr. 13902 (2007). https://leis-reservado.gov/6777.",
+   "item": "extra1"
+  },
+  {
+   "indice": 8,
+   "texto": "Dörr, Magdalena, Jana Sorgatz, und Josefa Peukert. 1979. „Sich die auch lernen zum Eltern“. One Health 15 (12): 472–81. https://doi.org/10.99999/teste.reservado.70119.",
+   "item": "it029"
+  },
+  {
+   "indice": 9,
+   "texto": "Gehören groß von Lehrerin gestern hin weil Erde sein schlagen Weg Vater, Gesetz Nr. 1018 (2010). https://leis-reservado.gov/7307.",
+   "item": "it011"
+  },
+  {
+   "indice": 10,
+   "texto": "Gewinnen gesund Himmel Baum turnen erklären Weg springen Glas Pferd Arzt uns, Gesetz Nr. 14395 (1995). https://leis-reservado.gov/6008.",
+   "item": "it023"
+  },
+  {
+   "indice": 11,
+   "texto": "Hein, Hans-Detlef, und Irmtraut Kostolzin. 2022. „Meer nächste Auto nun Loch sehr wenn Freude gefährlich nimmt Seite“. In Feuer Finger darin Fahrrad schlafen kalt nächste, herausgegeben von Uli Striebitz. Schlosser Hethur AG & Co. OHG.",
+   "item": "it030"
+  },
+  {
+   "indice": 12,
+   "texto": "Henk, Sieglinde, Stefani Nerger, Knut Eberth, Alena Jähn, Friedrich Rosemann, und Dimitrios Hölzenbecher. 2002. Beißen sie schlagen klein Wiese Bein. Kühnert Trüb GmbH.",
+   "item": "it010"
+  },
+  {
+   "indice": 13,
+   "texto": "Hornich-Cichorius, Rahel, Anto Thies, und Anneli Krein. 2018. „Schwester schicken Freude nimmt es Vogel schwer auf neben die Berg hier“. Gaceta Sanitaria 75 (6): 9–27. https://doi.org/10.99999/teste.reservado.59030.",
+   "item": "extra0"
+  },
+  {
+   "indice": 14,
+   "texto": "Johann, Lidwina, und Bernadette Lehmann. 1995. Langsam Spaß See wir verstecken Sache turnen Luft zusammen Kopf Platz bleiben schaffen. Ritter.",
+   "item": "it022"
+  },
+  {
+   "indice": 15,
+   "texto": "Jurado Coca, Félix. 2023. „Drehen Opa schlecht Ball setzen andere los durch Arzt Finger ein dir“. Das Gesundheitswesen 52 (5): 797–803. https://doi.org/10.99999/teste.reservado.19358.",
+   "item": "it002"
+  },
+  {
+   "indice": 16,
+   "texto": "Koch II-Ortmann, Cilly, Dino Beer, Petar Schmiedecke, und Andrew Zorbach. 2010. Zwischen Maus fiel denn langsam. Holsten AG & Co. KG.",
+   "item": "it000"
+  },
+  {
+   "indice": 17,
+   "texto": "Le, Van Anh, Hanne Seifert, und Sabine Tröst. 2002. Lassen stellen plötzlich wer Schule vergessen Spaß. Klemt.",
+   "item": "it005"
+  },
+  {
+   "indice": 18,
+   "texto": "Lee, Min-jun, Ditmar Caspar, Albert Naser, und Kenneth Beyer. 2023. „Mensch weit nein fliegen Schüler acht ziehen gegen plötzlich tragen“. Revista de Saúde Pública 3 (4): 149–58.",
+   "item": "it004"
+  },
+  {
+   "indice": 19,
+   "texto": "Liu, Wei, und Carlo Schuchhardt. 1983. „An er unten wird hat nicht ich Schüler Herr“. https://exemplo-reservado.org/2095.",
+   "item": "it003"
+  },
+  {
+   "indice": 20,
+   "texto": "Minas Gerais (Estado). 1980. „Schön überall Bett kommen Sohn für Loch Katze eigentlich viel dumm sitzen“. BMC Public Health 33 (4): 736–40.",
+   "item": "it007"
+  },
+  {
+   "indice": 21,
+   "texto": "Minas Gerais (Estado). 2014. „Kalt damit schon dürfen Seite vor ohne“. https://exemplo-reservado.org/2068.",
+   "item": "it014"
+  },
+  {
+   "indice": 22,
+   "texto": "Mitschke, Conny, Frank-Peter Weihmann, Pauline Schmiedecke, und Suzanne Metz. 2008. „Dann Vater darin laut warum las versuchen einige“. Epidemiologia & Prevenzione 57 (3): 597–606. https://doi.org/10.99999/teste.reservado.62152.",
+   "item": "it016"
+  },
+  {
+   "indice": 23,
+   "texto": "Public Health Agency of Canada. 2017. Werfen schnell ja Welt wo dein. Scholz Holzapfel KG.",
+   "item": "it008"
+  },
+  {
+   "indice": 24,
+   "texto": "Ring, Hans Jürgen. 1996. „Zusammen weit fertig ruhig“. In Oft Wald schon werden, herausgegeben von Marija Scheuermann. Naser AG & Co. OHG.",
+   "item": "it024"
+  },
+  {
+   "indice": 25,
+   "texto": "Rogge, Dagobert, und Stanislaus Kühnert. 2007a. „Gesund gefährlich nass Boden schön packen hier“. Schacht KG.",
+   "item": "it032"
+  },
+  {
+   "indice": 26,
+   "texto": "Rogge, Dagobert, und Stanislaus Kühnert. 2007b. „Klasse endlich also packen Baum springen Angst“. Das Gesundheitswesen 1 (10): 192–210. https://doi.org/10.99999/teste.reservado.27545.",
+   "item": "it033"
+  },
+  {
+   "indice": 27,
+   "texto": "Schüler, Susanna, Ingo Oestrovsky, und Jeannette Gierschner. 1991. „Nichts zwei ohne so dort man packen singen Rad für Fußball glauben öffnen“. Epidemiologia e Serviços de Saúde 38 (5): 510–18. https://doi.org/10.99999/teste.reservado.46993.",
+   "item": "it021"
+  },
+  {
+   "indice": 28,
+   "texto": "Secretaria Municipal da Saúde (Curitiba). 2006. „Weit schreiben ohne auf bekommen“. Epidemiologia & Prevenzione 62 (6): 815–32. https://doi.org/10.99999/teste.reservado.83744.",
+   "item": "it009"
+  },
+  {
+   "indice": 29,
+   "texto": "Sorgatz, Friederike von. 2006. „Tot andere Hund springen führen Schwester beißen Herz gibt“. Cadernos de Saúde Pública 79 (6): 812–16. https://doi.org/10.99999/teste.reservado.26993.",
+   "item": "it001"
+  },
+  {
+   "indice": 30,
+   "texto": "Steuer, Theresia, Muharrem Mude, Rebecca Hornig, Thies Höfig, Albin Pohl, und Lieschen Schüler. 1985. Unser neu ohne hier Licht krank rufen mögen alle Leben nächste Meer Tag Jahr schreien. Bolander.",
+   "item": "it017"
+  },
+  {
+   "indice": 31,
+   "texto": "Warmer, Cilly. o. J. „Stelle Stunde weg gelb nimmt Pferd Onkel unten freuen lernen plötzlich Stadt Zahl Schuh“. One Health 12 (3): 118–33. https://doi.org/10.99999/teste.reservado.16948.",
+   "item": "it031"
+  },
+  {
+   "indice": 32,
+   "texto": "Warmer, Milos. 2011. „Daran braun See aber Pferd fallen allein Haus kam Kind Leute“. Cadernos de Saúde Pública 5 (12): 518–25.",
+   "item": "it026"
+  },
+  {
+   "indice": 33,
+   "texto": "Wirth, Theodoros, Hans-Adolf Becker, und Burghard Säuberlich. 2008. „Apfel Hand arbeiten dort Zahl Onkel Garten hart“. https://exemplo-reservado.org/3963.",
+   "item": "it013"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Rogge und Kühnert 2007a; Dörr u. a. 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it032",
+    "it029"
+   ],
+   "referencias": [
+    25,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hein und Kostolzin 2022; Johann und Lehmann 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it022"
+   ],
+   "referencias": [
+    11,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu und Schuchhardt (1983)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee u. a. 2023; Gehören groß von Lehrerin gestern hin weil Erde sein schlagen Weg Vater 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it011"
+   ],
+   "referencias": [
+    18,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ring (1996)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Henk u. a. 2002; Minas Gerais (Estado) 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it007"
+   ],
+   "referencias": [
+    12,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Benthin 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Minas Gerais (Estado) 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Henk u. a. 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dörr u. a. 1979; Liu und Schuchhardt 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it003"
+   ],
+   "referencias": [
+    8,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Secretaria Municipal da Saúde (Curitiba) 2006; Adolph u. a. 1978; Henk u. a. 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it028",
+    "it010"
+   ],
+   "referencias": [
+    28,
+    null,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Koch II-Ortmann u. a. 2010; Adolph u. a. 1978; Auf wünschen trinken dürfen fressen ein spät Freude fehlen 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it028",
+    "it018"
+   ],
+   "referencias": [
+    16,
+    null,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(D’Ávila u. a. 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(M. Warmer 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(C. Warmer, o. J.; Bundesinstitut für Risikobewertung 1995; Gehören groß von Lehrerin gestern hin weil Erde sein schlagen Weg Vater 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031",
+    "it015",
+    "it011"
+   ],
+   "referencias": [
+    31,
+    3,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Steuer u. a. 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rogge und Kühnert 2007b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Steuer u. a. 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gewinnen gesund Himmel Baum turnen erklären Weg springen Glas Pferd Arzt uns 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wirth u. a. 2008; Schüler u. a. 1991; Bruder u. a. 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it021",
+    "it020"
+   ],
+   "referencias": [
+    33,
+    27,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bundesinstitut für Risikobewertung 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jurado Coca 2023; Apfel zwei Meer Kind auch Bruder 1990; Bruder u. a. 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it025",
+    "it020"
+   ],
+   "referencias": [
+    15,
+    0,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jurado Coca (2023)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le u. a. 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Henk u. a. 2002; Hein und Kostolzin 2022; Dehmel 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it030",
+    "it012"
+   ],
+   "referencias": [
+    12,
+    11,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jurado Coca 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jurado Coca 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Public Health Agency of Canada 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Koch II-Ortmann u. a. (2010)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rogge und Kühnert 2007a; Apfel zwei Meer Kind auch Bruder 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it032",
+    "it025"
+   ],
+   "referencias": [
+    25,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee u. a. 2023; Adolph u. a. 1978; Steuer u. a. 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it028",
+    "it017"
+   ],
+   "referencias": [
+    18,
+    null,
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Johann und Lehmann (1995)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Steuer u. a. 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Koch II-Ortmann u. a. 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Liu und Schuchhardt 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bruder u. a. (2006)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(von Sorgatz 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Liu und Schuchhardt 1983; Dörr u. a. 1979; Mitschke u. a. 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it029",
+    "it016"
+   ],
+   "referencias": [
+    19,
+    8,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Steuer u. a. 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bundesinstitut für Risikobewertung 1995, 103)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Public Health Agency of Canada 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Minas Gerais (Estado) 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Minas Gerais (Estado) 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Benthin (1997)",
+   "tipo": "narrativa",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Benthin 1997)",
+   "item": "it027"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Secretaria Municipal da Saúde (Curitiba) 2006; Adolph u. a. 1978; Henk u. a. 2002)",
+   "item": "it028"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Koch II-Ortmann u. a. 2010; Adolph u. a. 1978; Auf wünschen trinken dürfen fressen ein spät Freude fehlen 1992)",
+   "item": "it028"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Lee u. a. 2023; Adolph u. a. 1978; Steuer u. a. 1985)",
+   "item": "it028"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Benthin (1997)",
+   "item": "it027"
+  },
+  {
+   "ponto": "E",
+   "referencia": 7,
+   "item": "extra1"
+  },
+  {
+   "ponto": "E",
+   "referencia": 13,
+   "item": "extra0"
+  }
+ ],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Vom gar treffen klettern Welt leben Fenster letzte sitzen hinein Klasse erst der"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

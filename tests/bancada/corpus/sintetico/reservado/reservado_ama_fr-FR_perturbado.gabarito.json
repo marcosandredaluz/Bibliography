@@ -1,0 +1,549 @@
+{
+ "id": "reservado_ama_fr-FR_perturbado",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "fr-FR",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Reynaud P, Auger B, Didier N, Bazin M. On trésor cent véritable complètement sien. Epidemiologia e Serviços de Saúde. 1987;19(10):463‑467.",
+   "item": "it020"
+  },
+  {
+   "indice": 1,
+   "texto": "2. da Thibault A, Maillet N, François S, Fleury H. Nom tout pour surtout capable vol papa. 2013. https://leis-reservado.gov/3698",
+   "item": "it001"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Barbe J, Huet L, Rousset G, Brun C. Précipiter moment hauteur son acte prétendre. Perrier Collet SARL; 2004.",
+   "item": "it030"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Barbe J, Huet L, Rousset G, Brun C. Guère cesser écouter ciel famille asseoir. Descamps S.A.; 2004.",
+   "item": "it029"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Marqués Prat M. Femme donc vite construire conseil mode avec. 1985. Consulté le 13 novembre 2026. https://exemplo-reservado.org/9172",
+   "item": "it002"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Leblanc B, Meyer M, Gomes O, Simon T, Gimenez T, Maurice B. Déposer conscience ouvrage fer écarter rêver. In: Blanc A, éd. Haïr malgré jouer vieillard comme bruit longtemps. Garcia S.A.; 2019:27‑42.",
+   "item": "it014"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Müller G. Course remercier mettre ton parmi troubler envelopper danser beaux noire rendre problème aucun midi. Revista de Saúde Pública. 2023;25(1):452‑458.",
+   "item": "it006"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Pham VA. Pendant compagnie jour témoin siècle nu envie creuser article. 1976. https://leis-reservado.gov/662",
+   "item": "it005"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Guyon M, Blot H, Rivière N, Garcia C, Faivre L, Lemoine G. Mettre dimanche poser extraordinaire suffire écouter respirer déposer. Gaceta Sanitaria. 2000;46(7):353‑373. doi:10.99999/teste.reservado.39848",
+   "item": "it027"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Pages N, Maillet É, Rousseau R, Barthelemy É, Mary M, Charles M. Environ séparer toute paraître cou dépasser fidèle. Revue d’Épidémiologie et de Santé Publique. 2008;65(12):389‑400.",
+   "item": "it012"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Gonzalez É, Carpentier C, Vallée M, Léger R. Rare immense poche attendre d’autres visible prendre bas. One Health. 1995;20(5):415‑431. doi:10.99999/teste.reservado.10033",
+   "item": "it010"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Menard R. Bonheur pied réussir fille donc sembler pourquoi entier. Epidemiologia & Prevenzione. 1994;28(8):497‑508. doi:10.99999/teste.reservado.45338",
+   "item": "it015"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Martins C, Bigot A, Lefebvre J, Hamon B. Personne fin aider beau long elle. Revista de Saúde Pública. 1977;47(7):296‑316. doi:10.99999/teste.reservado.39368",
+   "item": "it023"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Conselho Federal de Medicina Veterinária. Arrivée en quelque voyage spectacle plusieurs diriger recevoir avis à. Das Gesundheitswesen. 2017;31(12):876‑890. doi:10.99999/teste.reservado.96534",
+   "item": "it007"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Santé publique France. Livre allumer rapide trait embrasser marché courant voyage empire souvenir premier service tromper. Epidemiologia & Prevenzione. 2012;66(11):646‑663.",
+   "item": "it008"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Samson F. Gloire champ détruire docteur comment enfant prince. Das Gesundheitswesen. 1996;55(6):868‑888.",
+   "item": "it017"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Chrétien D, Teixeira G, Leduc M, Pages R, Charpentier T, Chauveau X. Ramener ramasser distance confondre intéresser cerveau moins métier. Preventive Veterinary Medicine. 2024;55(6):84‑96.",
+   "item": "it013"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Park J ho, Bernard B, Lévy D, Bouchet A. Différent qui détruire vous an. Cadernos de Saúde Pública. 1976;75(8):459‑473. doi:10.99999/teste.reservado.90367",
+   "item": "it004"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Hubert A, Lelièvre S, Paul X, Duhamel D, Imbert I, Robin A. Porte devoir partie salle son. Revista de Saúde Pública. 1998;56(7):154‑166. doi:10.99999/teste.reservado.63900",
+   "item": "it025"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Australian Institute of Health and Welfare (Australia). Pouvoir dernier longtemps allumer continuer lune qualité présenter raconter événement siècle. BMC Public Health. 1990;9(5):567‑577. doi:10.99999/teste.reservado.58483",
+   "item": "it009"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Picard Y, Bonnet L. Tout obéir troisième ci rose dimanche instinct feu servir. In: Royer C, éd. Taire durant nord porte pour pousser avouer pain. Grenier:71‑86.",
+   "item": "it028"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Guichard L, Fernandes S, Dupré A, Peron É, Roy M, Berger A. Sens malheur devoir où aider vide conduire. Journal of the American Medical Informatics Association. 1985;38(5):748‑762. doi:10.99999/teste.reservado.40201",
+   "item": "it021"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Samson A, Perrot N, Laine M, Leblanc D. Soleil secrétaire clair séparer alors le chiffre. Epidemiologia e Serviços de Saúde. 1994;76(10):99‑103. doi:10.99999/teste.reservado.80503",
+   "item": "it024"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Didier-Mary P, Couturier J, Neveu C, Huet N. Exiger réserver reculer français boire dehors accorder moins. Revue d’Épidémiologie et de Santé Publique. 2026;13(3):238‑246. doi:10.99999/teste.reservado.83958",
+   "item": "it000"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Wang J, Sanchez J. Trois hésiter esprit sérieux plaire cou présent sauver réel subir résultat unique suivre. 1978. Consulté le 12 novembre 2026. https://exemplo-reservado.org/7507",
+   "item": "it003"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Leclercq J, Boutin M, Albert A, Richard R. Autorité classe colline livrer nul. Preventive Veterinary Medicine. 2026;34(11):877‑896.",
+   "item": "it019"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Carpentier É. Charge construire donner discussion semaine terme effort sous politique système année conversation inquiéter lien. Journal of the American Medical Informatics Association. 2015;33(6):845‑859. doi:10.99999/teste.reservado.40034",
+   "item": "it022"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Secretaria Municipal da Saúde (Curitiba). Pauvre léger revoir puis expliquer santé noir certain nez. Ledoux SARL; 1996.",
+   "item": "it026"
+  },
+  {
+   "indice": 28,
+   "texto": "29. Mary B, Gauthier C, Marchand S. Danser le courage beau douceur remplacer assez instinct. 1988. https://leis-reservado.gov/1572",
+   "item": "it018"
+  },
+  {
+   "indice": 29,
+   "texto": "30. Pierre É. Clef ensuite prétendre examiner étendre mêler décider paquet. Preventive Veterinary Medicine. 2011;69(4):840‑845.",
+   "item": "it016"
+  },
+  {
+   "indice": 30,
+   "texto": "31. Lopez C. Rire secrétaire midi morceau tuer marier rue répandre caresser seul oreille. Gaceta Sanitaria. 2022;39(5):546‑556. doi:10.99999/teste.reservado.23636",
+   "item": "it011"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2–4",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it030",
+    "it029"
+   ],
+   "referencias": [
+    1,
+    2,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6–8",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it006",
+    "it005"
+   ],
+   "referencias": [
+    5,
+    6,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,10",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it012"
+   ],
+   "referencias": [
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,9,11",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it010",
+    "it027"
+   ],
+   "referencias": [
+    7,
+    10,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12,13",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it023"
+   ],
+   "referencias": [
+    11,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14–16",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it008",
+    "it017"
+   ],
+   "referencias": [
+    13,
+    14,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,17",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it013"
+   ],
+   "referencias": [
+    7,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martins et al. 13",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7,18,19",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it025",
+    "it006"
+   ],
+   "referencias": [
+    17,
+    18,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11,20,21",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it010",
+    "it028"
+   ],
+   "referencias": [
+    19,
+    10,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "22",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23,24",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it000"
+   ],
+   "referencias": [
+    22,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Samson 16",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "26",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "27",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marqués Prat 5",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "28",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11,29,30",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it018",
+    "it016"
+   ],
+   "referencias": [
+    10,
+    28,
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,31",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it020"
+   ],
+   "referencias": [
+    30,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18(p150)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "30",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "16",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "29",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Wang 25",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Devoir précipiter bois empire cercle oui dernier sommet"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

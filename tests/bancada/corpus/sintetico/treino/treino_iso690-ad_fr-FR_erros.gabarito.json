@@ -1,0 +1,741 @@
+{
+ "id": "treino_iso690-ad_fr-FR_erros",
+ "estilo": "iso690-ad",
+ "sistema": "autor-data",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "ANTOINE, Théophile, 2015. Justice lever désormais toile coin. Medical Mycology. 2015. Vol. 72, no. 8, p. 547‑554. DOI 10.99999/teste.treino.22493.",
+   "item": "it023"
+  },
+  {
+   "indice": 1,
+   "texto": "BRUNEAU, Clémence, LAURENT, Alexandrie, ALVES, Alice, GUIBERT, Léon, COLAS, Alexandrie et LEBLANC, Constance, 1994. Rêver condition élément juste avant là heureux. In: LEBRUN, Alix (éd.), Violent détacher tout contenter humide pouvoir flamme tout amener hôtel vérité. Guilletdan: Verdier. p. 111‑126.",
+   "item": "it019"
+  },
+  {
+   "indice": 2,
+   "texto": "CHRÉTIEN, Matthieu, MOREL, Benoît et CLÉMENT, Thibault, 2006. Mille commun apparence on libre rester ah verre léger hôtel amener quart. In: DUVAL, Thérèse (éd.), Obtenir envie printemps prière rêver présenter terminer trait. Aubert-sur-Bousquet: Maillard. p. 203‑218.",
+   "item": "it017"
+  },
+  {
+   "indice": 3,
+   "texto": "CONSELHO NACIONAL DE SAÚDE (BRASIL), 2016. Avec brûler seuil plein énorme mieux. Faivre: Gillet Daniel et Fils.",
+   "item": "it007"
+  },
+  {
+   "indice": 4,
+   "texto": "DELANNOY-DEVAUX, René et PAGES, Louis, 1990. Convenir dangereux hasard chasse conscience établir unique. BMC Public Health. 1990. Vol. 24, no. 2, p. 348‑361.",
+   "item": "it000"
+  },
+  {
+   "indice": 5,
+   "texto": "DELATTRE, Stéphane, 1990. Maintenant bouche effacer fois sur phrase poche soi que arriver bas. Mercier: Leleu et Fils.",
+   "item": "it021"
+  },
+  {
+   "indice": 6,
+   "texto": "DI COHEN, Brigitte, PHILIPPE, Marine et GARNIER, Roland, 1988. Masse éloigner frère mois pouvoir naître rapidement pas mieux fusil. BMC Public Health. 1988. Vol. 53, no. 10, p. 579‑593. DOI 10.99999/teste.treino.68417.",
+   "item": "it001"
+  },
+  {
+   "indice": 7,
+   "texto": "DUPUIS, Matthieu, BOURDON, Nathalie, MICHEL, Auguste, ÉTIENNE, Gabrielle, PINTO, Élisabeth et GAUTHIER, Bertrand, 2013. Garde bien déjà pourquoi roche travail beaucoup. Medical Mycology. 2013. Vol. 41, no. 9, p. 806‑814.",
+   "item": "it012"
+  },
+  {
+   "indice": 8,
+   "texto": "GAUTIER, Auguste, 1997. Reculer silencieux réflexion souhaiter neuf seul quant à. Epidemiologia & Prevenzione. 1997. Vol. 6, no. 11, p. 434‑450. DOI 10.99999/teste.treino.35826.",
+   "item": "it013"
+  },
+  {
+   "indice": 9,
+   "texto": "GUILLAUME, Victor et GARNIER, Anastasie, 1986. Accord fille bien voyager prouver. Epidemiologia & Prevenzione. 1986. Vol. 54, no. 6, p. 97‑117. DOI 10.99999/teste.treino.21863.",
+   "item": "it022"
+  },
+  {
+   "indice": 10,
+   "texto": "LEBLANC, Joséphine, PINTO, Sylvie, MACE, Thibaut et GEORGES, Émile, 2024. Je y prêt envoyer endormir souvenir conduire beau conscience. Saint Noël: Leconte.",
+   "item": "it024"
+  },
+  {
+   "indice": 11,
+   "texto": "LÉVY, Édouard et ROY, Étienne, 1979. Pointe occuper entrer coin côte personne vite français. Blanchet: Pons.",
+   "item": "it014"
+  },
+  {
+   "indice": 12,
+   "texto": "LOPEZ, Hugues et HERNANDEZ, Thibaut, 2022. Rire baisser sou monsieur lisser police compte longtemps science inquiéter travailler. Revista de Saúde Pública. 2022. Vol. 72, no. 6, p. 138‑145. DOI 10.99999/teste.treino.18774.",
+   "item": "it018"
+  },
+  {
+   "indice": 13,
+   "texto": "ŁUKASZ, Édith, LEBRETON, Hortense, CHRÉTIEN, David et FOURNIER, Frédérique, 2010. Réalité tâche somme calmer il préférer sept miser gouvernement enfance mort. Medical Mycology. 2010. Vol. 33, no. 12, p. 341‑359. DOI 10.99999/teste.treino.10059.",
+   "item": "it006"
+  },
+  {
+   "indice": 14,
+   "texto": "MINISTERIO DE SANIDAD (ESPAÑA), 2006. Trop soi après subir fort distance lire attaquer cou. In: MERCIER, Luc (éd.), Comme mince mode chef silencieux ruine selon marchand voir dresser pluie cri. Dupuy-sur-Jacquot: Bouvier. p. 243‑258.",
+   "item": "it008"
+  },
+  {
+   "indice": 15,
+   "texto": "NATIONAL LIBRARY OF MEDICINE (ESTADOS UNIDOS), [no date]. Demeurer horizon homme nouveau signifier sommeil.. Online. 3311. Available from: https://leis-treino.gov/7822",
+   "item": "it026"
+  },
+  {
+   "indice": 16,
+   "texto": "NATIONAL LIBRARY OF MEDICINE (ESTADOS UNIDOS), 2014. Valoir pourtant sujet. . Online. 2014. Available from: https://exemplo-treino.org/4958 [Accessed 2 novembre 2026].",
+   "item": "it020"
+  },
+  {
+   "indice": 17,
+   "texto": "NAVARRO-BLANC, Laurent et MARY, Bernard, 1996. Aider membre pour courage peuple précipiter immense. Revue d’Épidémiologie et de Santé Publique. 1996. Vol. 6, no. 7, p. 53‑60. DOI 10.99999/teste.treino.16021.",
+   "item": "extra0"
+  },
+  {
+   "indice": 18,
+   "texto": "PARK, Seo-yeon et LE ROUX, Dominique, 1977. Sourire suite engager deviner été poursuivre.. Online. 1977. 14902. Available from: https://leis-treino.gov/767",
+   "item": "it004"
+  },
+  {
+   "indice": 19,
+   "texto": "PAUL, André, 2019. Montrer île gouvernement race silencieux guerre plaire premier. Journal of the American Medical Informatics Association. 2019. Vol. 41, no. 10, p. 828‑840. DOI 10.99999/teste.treino.36239.",
+   "item": "it016"
+  },
+  {
+   "indice": 20,
+   "texto": "SALES MARÍ, Héctor et LAUNAY, Adélaïde, 2020. Conversation dans ça deviner rocher. In: JOSEPH, Alphonse (éd.), Divers debout jouer coin. Saint Émilie: Meunier. p. 114‑129.",
+   "item": "it002"
+  },
+  {
+   "indice": 21,
+   "texto": "SÃO PAULO (ESTADO), 2009. Mince arriver cinquante suite. . Online. 2009. Available from: https://exemplo-treino.org/1660 [Accessed 1 novembre 2026].",
+   "item": "it011"
+  },
+  {
+   "indice": 22,
+   "texto": "SÃO PAULO (ESTADO), 2015. Traiter simplement sentiment fonction force descendre maintenant puis grand. Cadernos de Saúde Pública. 2015. Vol. 25, no. 8, p. 600‑616.",
+   "item": "it009"
+  },
+  {
+   "indice": 23,
+   "texto": "TESSIER, Margaux, FABRE, Henriette, GAUTIER, Josette et DUMONT, Alexandre, 2003. Milieu ensemble chacun jeu auprès monde. Albert-sur-Mer: Guillot Normand SA.",
+   "item": "it010"
+  },
+  {
+   "indice": 24,
+   "texto": "TRAN, Minh, PASQUIER, Odette, REYNAUD, Suzanne et AUBERT, Philippe, 2014. Inquiétude par qualité parler conduire image vision que jambe certain voyager tenir relever. Journal of the American Medical Informatics Association. 2014. Vol. 36, no. 5, p. 202‑214. DOI 10.99999/teste.treino.45046.",
+   "item": "it005"
+  },
+  {
+   "indice": 25,
+   "texto": "VERDIER, Édith, 2004a. Fermer présence importance monde attention noire résultat.. Online. 2004. 1396. Available from: https://leis-treino.gov/2764",
+   "item": "it027"
+  },
+  {
+   "indice": 26,
+   "texto": "VERDIER, Édith, 2004b. Agent affirmer nourrir recevoir après événement choix profiter répéter accorder couche. Gaceta Sanitaria. 2004. Vol. 16, no. 1, p. 527‑534. DOI 10.99999/teste.treino.57268.",
+   "item": "it028"
+  },
+  {
+   "indice": 27,
+   "texto": "VON DURAND, Capucine, 1983. Inspirer déposer indiquer premier point intention rapide pouvoir. . Online. 1983. Available from: https://exemplo-treino.org/8778 [Accessed 2 novembre 2026].",
+   "item": "extra1"
+  },
+  {
+   "indice": 28,
+   "texto": "WANG, Hao, PARIS, Eugène et TRAORE, René, 1979. Conversation foule douter dominer côté. . Online. 1979. Available from: https://exemplo-treino.org/1810 [Accessed 9 novembre 2026].",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Lopez, Hernandez 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Verdier 2004a; Łukasz, Lebreton, Chrétien, Fournier 2010; Gautier 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it006",
+    "it013"
+   ],
+   "referencias": [
+    25,
+    13,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Delannoy-Devaux, Pages 1990; Dupuis, Bourdon, Michel, Étienne, Pinto, Gauthier 2013; Chrétien, Morel, Clément 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it012",
+    "it017"
+   ],
+   "referencias": [
+    4,
+    7,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bruneau, Laurent, Alves, Guibert, Colas, Leblanc 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Duhamel 2011; Bruneau, Laurent, Alves, Guibert, Colas, Leblanc 1994; Lévy, Roy 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it019",
+    "it014"
+   ],
+   "referencias": [
+    null,
+    1,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Cohen, Philippe, Garnier 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bruneau, Laurent, Alves, Guibert, Colas, Leblanc 1994; Verdier 2004b; Tessier, Fabre, Gautier, Dumont 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it028",
+    "it010"
+   ],
+   "referencias": [
+    1,
+    26,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 2015; Verdier 2004b; Ministerio de Sanidad (España) 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it028",
+    "it008"
+   ],
+   "referencias": [
+    22,
+    26,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Seguin 2020; Verdier 2004a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it027"
+   ],
+   "referencias": [
+    null,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Paul 2019; Chrétien, Morel, Clément 2006; National Library of Medicine (Estados Unidos) [no date])",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it017",
+    "it026"
+   ],
+   "referencias": [
+    19,
+    2,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran, Pasquier, Reynaud, Aubert 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Seguin 2020; Sales Marí, Launay 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it002"
+   ],
+   "referencias": [
+    null,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Duhamel 2011; Delannoy-Devaux, Pages 1990; São Paulo (Estado) 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it000",
+    "it011"
+   ],
+   "referencias": [
+    null,
+    4,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lopez, Hernandez 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Łukasz, Lebreton, Chrétien, Fournier 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang, Paris, Traore (1979)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lopez, Hernandez 2022; Gautier 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it013"
+   ],
+   "referencias": [
+    12,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lévy, Roy 1979; Tessier, Fabre, Gautier, Dumont 2003; São Paulo (Estado) 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it010",
+    "it011"
+   ],
+   "referencias": [
+    11,
+    23,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Chrétien, Morel, Clément 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos) 2014; Verdier 2004b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it028"
+   ],
+   "referencias": [
+    16,
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Cohen, Philippe, Garnier 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Verdier (2004a)",
+   "tipo": "narrativa",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bruneau, Laurent, Alves, Guibert, Colas, Leblanc 1994; Wang, Paris, Traore 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it003"
+   ],
+   "referencias": [
+    1,
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tessier, Fabre, Gautier, Dumont (2003)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España) 2006; Conselho Nacional de Saúde (Brasil) 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it007"
+   ],
+   "referencias": [
+    14,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Leblanc, Pinto, Mace, Georges 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park, Le Roux 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Chrétien, Morel, Clément 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Verdier 2004a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Guillaume, Garnier 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Antoine 2015; Verdier 2004a; Gautier 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it027",
+    "it013"
+   ],
+   "referencias": [
+    0,
+    25,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Antoine 2015; Lopez, Hernandez 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it018"
+   ],
+   "referencias": [
+    0,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chrétien, Morel, Clément (2006)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Cohen, Philippe, Garnier 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Seguin 2020; Delannoy-Devaux, Pages 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it000"
+   ],
+   "referencias": [
+    null,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 2016; Delattre 1990; Seguin 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it021",
+    "it025"
+   ],
+   "referencias": [
+    3,
+    5,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran, Pasquier, Reynaud, Aubert 2014, p. 9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Sales Marí, Launay 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España) 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Sales Marí, Launay 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Delattre (1990)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Duhamel 2011; Bruneau, Laurent, Alves, Guibert, Colas, Leblanc 1994; Lévy, Roy 1979)",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Seguin 2020; Verdier 2004a)",
+   "item": "it025"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Seguin 2020; Sales Marí, Launay 2020)",
+   "item": "it025"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Duhamel 2011; Delannoy-Devaux, Pages 1990; São Paulo (Estado) 2009)",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Seguin 2020; Delannoy-Devaux, Pages 1990)",
+   "item": "it025"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Conselho Nacional de Saúde (Brasil) 2016; Delattre 1990; Seguin 2020)",
+   "item": "it025"
+  },
+  {
+   "ponto": "E",
+   "referencia": 17,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 27,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Compte fou delà beau détruire curieux parfaitement inconnu histoire appartenir nu recueillir réponse"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

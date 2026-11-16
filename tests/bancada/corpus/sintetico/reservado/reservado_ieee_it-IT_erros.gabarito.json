@@ -1,0 +1,743 @@
+{
+ "id": "reservado_ieee_it-IT_erros",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "it-IT",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] Secretaria Municipal da Saúde (Curitiba), «Capire occhio dinanzi matrimonio aria», in Momento già si eh io serio brutto proposta mancare, I. Spanevello, A c. di, Galliavola: Tedesco, Zola e Poerio e figli, 2022, pp. 68–83.",
+   "item": "it008"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] R. Boccaccio, A. Donini, A. Monaco, N. Gottardi, A. Bianchi, e V. Treccani, Programma colpire impossibile pranzo adesso sorgere nome né valere industriale. 1995. [Online]. Disponibile su: https://leis-reservado.gov/1221",
+   "item": "it025"
+  },
+  {
+   "indice": 2,
+   "texto": "[4] F. da Gualandi, T. Gigli, e A. Scotti, Prevedere amore cioè oltre bocca esprimere improvviso correre istituto togliere attore. 1997. [Online]. Disponibile su: https://leis-reservado.gov/1603",
+   "item": "it001"
+  },
+  {
+   "indice": 3,
+   "texto": "[6] X. Li, «Politico primo fermo medesimo scena giovane su», Journal of the American Medical Informatics Association, vol. 40, fasc. 11, pp. 427–437, 2020, doi: 10.99999/teste.reservado.85809.",
+   "item": "it003"
+  },
+  {
+   "indice": 4,
+   "texto": "[7] Agenzia Italiana del Farmaco, Giocare maestro esame disposizione naturalmente proporre discorso. 1996. [Online]. Disponibile su: https://leis-reservado.gov/4296",
+   "item": "it009"
+  },
+  {
+   "indice": 5,
+   "texto": "[8] M. Canevascini e L. Goldoni, Parlare tavola rapido mese volontà certo salutare domenica. Montioni: Giorgetti s.r.l., 1985.",
+   "item": "it021"
+  },
+  {
+   "indice": 6,
+   "texto": "[9] L. Pinamonte, «Gioco bosco animale attesa città prendere errore», Vergerio-Vigorelli s.r.l., Albaro, 2014.",
+   "item": "it013"
+  },
+  {
+   "indice": 7,
+   "texto": "[10] S. Choi, «Rifiutare crisi luna raccogliere battaglia notte caso», Gaceta Sanitaria, vol. 58, fasc. 2, pp. 399–406, 2017, doi: 10.99999/teste.reservado.70244.",
+   "item": "it004"
+  },
+  {
+   "indice": 8,
+   "texto": "[11] A. Malipiero, «Centrale certamente insegnare notte verità azione gusto centro diretto anzi», Ciani Group, Codaruina, 1979.",
+   "item": "it027"
+  },
+  {
+   "indice": 9,
+   "texto": "[12] B. Borrani, T. Cortese, R. Camilleri, M. Tacchini, N. Lucarelli, e A. Panicucci, Probabilmente mandare appena correre cosa cittadino pieno importante riunire piccolo. Gavirate: Telesio-Nicoletti e figli, 2005.",
+   "item": "it010"
+  },
+  {
+   "indice": 10,
+   "texto": "[13] G. Lucchesi, Importare soltanto futuro dinanzi pagina stagione distinguere per. Sant’Angelo In Pontano: Asmundo, Grimani e Pignatti s.r.l., 1994.",
+   "item": "it018"
+  },
+  {
+   "indice": 11,
+   "texto": "[14] Australian Institute of Health and Welfare (Australia), «Rivedere lontano notte villa meritare fabbrica escludere recare fondare regione», Agazzi-Riccardi e figli, Rovere’ Della Luna, 2003.",
+   "item": "it020"
+  },
+  {
+   "indice": 12,
+   "texto": "[15] Australian Institute of Health and Welfare (Australia), Scherzare gente alto verità compagno determinare proposta. 1994. [Online]. Disponibile su: https://leis-reservado.gov/503",
+   "item": "it016"
+  },
+  {
+   "indice": 13,
+   "texto": "[16] V. Barese-Bixio, R. Sermonti, e R. Visconti, «Naturalmente sociale atteggiamento pensare romano simile piccolo isola finire civile chiave figlio verso bene», Einaudi, Pigafetta e Cimini Group, Piazzola Sul Brenta, 1980.",
+   "item": "it000"
+  },
+  {
+   "indice": 14,
+   "texto": "[17] A. Carocci e D. Toscani, «Abito lontano bisogno difficile nobile popolazione pianura contare porre», Preventive Veterinary Medicine, vol. 53, fasc. 7, pp. 628–647, 2007.",
+   "item": "it015"
+  },
+  {
+   "indice": 15,
+   "texto": "[18] U. O’Connor, M. Greco, A. Druso, e P. Borroni, «Legare alzare vuoto periodo industriale prova», Benigni Group, La Croce, 1996.",
+   "item": "it006"
+  },
+  {
+   "indice": 16,
+   "texto": "[19] Conselho Federal de Medicina Veterinária, «Mare usare battaglia». Consultato: 13 novembre 2026. [Online]. Disponibile su: https://exemplo-reservado.org/3520",
+   "item": "it024"
+  },
+  {
+   "indice": 17,
+   "texto": "[20] M. Espada Bernal, A. Savorgnan, F. Golino, e M. Satta, «Sistema più assoluto campo scena», BMC Public Health, vol. 23, fasc. 12, pp. 412–420, 2009, doi: 10.99999/teste.reservado.76476.",
+   "item": "it002"
+  },
+  {
+   "indice": 18,
+   "texto": "[21] A. Leblanc, B. Cuzzocrea, F. Bottigliero, A. Tirabassi, A. Nibali, e R. Maspero, «Innamorare raccontare tenere affrontare confronto meglio», Gaceta Sanitaria, vol. 33, fasc. 5, pp. 734–744, 1979, doi: 10.99999/teste.reservado.74443.",
+   "item": "it023"
+  },
+  {
+   "indice": 19,
+   "texto": "[22] A. Malipiero, «Vino su sociale speciale mentre sacrificio se coloro», One Health, vol. 29, fasc. 3, pp. 680–694, 1979.",
+   "item": "it028"
+  },
+  {
+   "indice": 20,
+   "texto": "[23] M. Nguyen, «Usare fenomeno opera succedere in liberare contatto assai perfetto girare ne campo sforzo conseguenza ritrovare», Bellini SPA, San Michele Di Pratola Serra, 1991.",
+   "item": "it005"
+  },
+  {
+   "indice": 21,
+   "texto": "[24] Secretaria Municipal da Saúde (Curitiba), Sposare fiume il giorno marito bere risposta epoca pietà. Antonimina: Paruta, Baglioni e Stefanelli Group, 2024.",
+   "item": "it007"
+  },
+  {
+   "indice": 22,
+   "texto": "[25] E. Paruta, P. Briccialdi, M. Grisoni, e L. Conti, «Viaggio aprire autorità personaggio come popolazione settimana russo iniziare», Gaceta Sanitaria, vol. 16, fasc. 12, pp. 854–862, 2016, doi: 10.99999/teste.reservado.73341.",
+   "item": "it011"
+  },
+  {
+   "indice": 23,
+   "texto": "[26] F. Sordi, «Vicino enorme imporre proprio dare vita tutto noi attesa uguale ferro dopo rispetto indicare troppo», Borghese, Tosto e Bresciani SPA, San Biagio Saracinisco, 1980.",
+   "item": "it014"
+  },
+  {
+   "indice": 24,
+   "texto": "[27] M. Segni, «Tuo estendere battere successo qualsiasi liberare permettere stasera ricordo bisogno», in Spegnere finché poeta spiegare suo posare don comprare, P. Caboto, A c. di, Gremiasco: Antonetti s.r.l., 1998, pp. 295–310.",
+   "item": "it017"
+  },
+  {
+   "indice": 25,
+   "texto": "[28] G. Staglieno, «Servire rapido affrontare caratteristico arrestare solito trovare religioso unico», Das Gesundheitswesen, vol. 4, fasc. 2, pp. 813–830, 1979, doi: 10.99999/teste.reservado.59338.",
+   "item": "it012"
+  },
+  {
+   "indice": 26,
+   "texto": "[29] E. Casaleggio, A. Soprano, e E. Tedesco, «Nessuno improvviso solito sorgere peccato improvviso per finché», in Dolce nome straniero giustizia giocare, F. Moccia, A c. di, Montemerlo: Pagnotto Group, 1981, pp. 153–168.",
+   "item": "it022"
+  },
+  {
+   "indice": 27,
+   "texto": "[30] S. Branciforte-Modigliani, A. Guarato, e R. Palombi, «Assoluto vestito troppo corpo gesto assai qualità luce dormire crescere preciso», Epidemiologia & Prevenzione, vol. 16, fasc. 3, pp. 495–500, 1999, doi: 10.99999/teste.reservado.44461.",
+   "item": "extra0"
+  },
+  {
+   "indice": 28,
+   "texto": "[31] E. di Zeffirelli, E. Novaro, L. Barcella, e D. Delle, «Pace vendere inutile tirare brutto risultare neanche storico», Cadernos de Saúde Pública, vol. 49, fasc. 7, pp. 875–882, 2011, doi: 10.99999/teste.reservado.17258.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1], [2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it025"
+   ],
+   "referencias": [
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Andreozzi [3]",
+   "tipo": "narrativa",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "da Gualandi et al. [4]",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li [6]",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2], [3], [8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it026",
+    "it025"
+   ],
+   "referencias": [
+    5,
+    null,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [7], [9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it009",
+    "it013"
+   ],
+   "referencias": [
+    null,
+    4,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11], [12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it010"
+   ],
+   "referencias": [
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Australian Institute of Health and Welfare (Australia) [15]",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [16], [17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it009",
+    "it015"
+   ],
+   "referencias": [
+    13,
+    4,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [7], [20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it009",
+    "it008"
+   ],
+   "referencias": [
+    17,
+    4,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leblanc et al. [21]",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Conselho Federal de Medicina Veterinária [19]",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [11], [12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it021",
+    "it010"
+   ],
+   "referencias": [
+    8,
+    5,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [22], [23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it005",
+    "it021"
+   ],
+   "referencias": [
+    19,
+    20,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16], [22], [24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it028",
+    "it000"
+   ],
+   "referencias": [
+    21,
+    19,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[24], [25], [26]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it007",
+    "it014"
+   ],
+   "referencias": [
+    22,
+    21,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it020"
+   ],
+   "referencias": [
+    0,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [8], [11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it009",
+    "it021"
+   ],
+   "referencias": [
+    8,
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[21], [27]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it023"
+   ],
+   "referencias": [
+    24,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9], [11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it013"
+   ],
+   "referencias": [
+    8,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [28]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it019"
+   ],
+   "referencias": [
+    25,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9], [26]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it013"
+   ],
+   "referencias": [
+    23,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12], [15], [26]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it014",
+    "it010"
+   ],
+   "referencias": [
+    12,
+    23,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[29]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2], [10], [21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it023",
+    "it025"
+   ],
+   "referencias": [
+    7,
+    18,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15, p. 215]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Malipiero [11]",
+   "tipo": "narrativa",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Andreozzi [3]",
+   "item": "it026"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[5]",
+   "item": "it019"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[2], [3], [8]",
+   "item": "it026"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[3], [7], [9]",
+   "item": "it026"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[3]",
+   "item": "it026"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[5], [28]",
+   "item": "it019"
+  },
+  {
+   "ponto": "E",
+   "referencia": 27,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 28,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Sostenere arrestare anima bianco domenica enorme giorno conseguenza inglese diritto risposta attento vento freddo"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,644 @@
+{
+ "id": "reservado_vancouver_pt-PT_perturbado",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "pt-PT",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Secretaria Municipal da Saúde (Curitiba). Tempora ut excepturi modi minima [Internet]. 1989 [citado 7 de novembro de 2026]. Disponível em: https://exemplo-reservado.org/7940",
+   "item": "it017"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Public Health Agency of Canada. Temporibus debitis architecto qui eum optio debitis commodi perferendis ipsa quae. Em: Nunes M, editor. Nihil dolor repellendus incidunt accusantium suscipit quos modi nostrum exercitationem cum eveniet. Miranda do Douro: Ribeiro Maia Lda.; 2016. p. 299–314.",
+   "item": "it008"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Santé publique France. Iste eos architecto et ut quia nulla. Alcácer do Sal: Pires e Filhos; 1989.",
+   "item": "it012"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Silva H. Repellendus vitae consequuntur tempore nulla distinctio beatae rem. Em: Jesus V, editor. Doloribus consequatur qui repellat hic eos. Quarteira: Carneiro; 2011. p. 219–34.",
+   "item": "it010"
+  },
+  {
+   "indice": 4,
+   "texto": "5. von Almeida W, Oliveira F, Nogueira M, Lourenço M. Reprehenderit suscipit error exercitationem error sint excepturi eum placeat quidem ratione molestiae necessitatibus magnam officia delectus. Gaceta Sanitaria. 1985;63(5):772–85. doi:10.99999/teste.reservado.84357",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Moura G, Brito A. Corporis rerum sequi ipsa. Revista de Saúde Pública. 2016;35(9):854–8.",
+   "item": "it019"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Antunes E, Faria C, Fonseca B, Ferreira E. Eveniet possimus quis sunt eveniet saepe quia consequatur totam. Revue d’Épidémiologie et de Santé Publique. 1984;38(3):723–42. doi:10.99999/teste.reservado.60504",
+   "item": "it022"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Nunes R, Jesus V, Garcia B. Deserunt error iure adipisci illo quod incidunt dolorum cum aut quibusdam. Epidemiologia e Serviços de Saúde. 2000;54(3):504–10.",
+   "item": "it020"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Choi S yeon, Assunção S. Ipsum assumenda temporibus deserunt est impedit iure saepe harum qui dicta sit. [Ílhavo]: Moreira Rocha S.A.; 2013.",
+   "item": "it004"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Morais V, Leal M. Inventore enim esse beatae velit dolorum delectus. Revue d’Épidémiologie et de Santé Publique. 1980;39(3):757–64. doi:10.99999/teste.reservado.21414",
+   "item": "it015"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Freitas-Cardoso C, Freitas B. Magni labore quae quisquam repellat. [Montijo]: Esteves; 2006.",
+   "item": "it000"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Tavares J. Ducimus beatae placeat earum fugiat quis quos. Em: Correia L, editor. Debitis saepe magnam totam id. Loulé: Leal; 1986. p. 197–212.",
+   "item": "it014"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Martins V, Alves L, Mota M, Matias S. Provident ut reprehenderit inventore aliquam laborum odit beatae. BMC Public Health. 2014;79(6):823–32.",
+   "item": "it018"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Rodrigues D, Amaral E, Sousa M, Leal A. Deserunt veniam voluptatibus perspiciatis similique neque voluptates odit natus optio soluta dignissimos illo voluptate tempore. BMC Public Health. 40(1):720–8. doi:10.99999/teste.reservado.21110",
+   "item": "it023"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Ferreira J. Consequuntur quas eius ullam officia velit expedita magnam minus iste nemo sequi minima. Preventive Veterinary Medicine. 2026;79(7):77–96. doi:10.99999/teste.reservado.87941",
+   "item": "it024"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Santé publique France. Architecto laudantium neque optio at. Epidemiologia & Prevenzione. 1994;26(11):75–89.",
+   "item": "it007"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Gonçalves L, Fonseca F, Pinto A. Saepe nulla fugit eum ab necessitatibus nihil ducimus quia repudiandae. Espinho: Cardoso; 2021.",
+   "item": "it016"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Santos S, Miranda A, Pinho T. Tempora ratione earum cupiditate similique quidem explicabo non dolorum reiciendis. [Amora]: Pacheco Vicente S.A.; 1981.",
+   "item": "it013"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Public Health Agency of Canada. Sequi quidem iste fugit iste consequuntur in. Das Gesundheitswesen. 1999;1(11):749–59.",
+   "item": "it009"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Brito B. Ab expedita necessitatibus alias quae rem accusantium amet reiciendis optio reprehenderit. Das Gesundheitswesen. 2025;15(3):825–32. doi:10.99999/teste.reservado.58628",
+   "item": "it021"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Nguyen M. Sint fuga laborum cum laudantium [Internet]. 2000 [citado 11 de novembro de 2026]. Disponível em: https://exemplo-reservado.org/2908",
+   "item": "it005"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Organización Mundial de la Salud. Repudiandae nam nulla est praesentium [Internet]. 1635. 1988. Disponível em: https://leis-reservado.gov/7344",
+   "item": "it011"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Ferreira J. Cum excepturi ut dolorum iure odit ut facere reprehenderit exercitationem architecto autem. Medical Mycology. 2026;17(6):623–7. doi:10.99999/teste.reservado.79120",
+   "item": "it025"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Çelik S, Martins L. Dolor vel laudantium deleniti molestias autem deserunt incidunt commodi deserunt vel atque quibusdam. [Caniço]: Matias; 2004.",
+   "item": "it006"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Zhang H, Borges F, Guerreiro F. Illo doloribus dolores neque eum aliquid. Revue d’Épidémiologie et de Santé Publique. 2000;37(8):430–7. doi:10.99999/teste.reservado.23675",
+   "item": "it003"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Dávila Sabater M. Repellat laboriosam autem dolores quo vero voluptas sint. Epidemiologia & Prevenzione. 2018;7(10):796–816. doi:10.99999/teste.reservado.79555",
+   "item": "it002"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Public Health Agency of Canada (2)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3,4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it010"
+   ],
+   "referencias": [
+    2,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "von Almeida et al. (5)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,3,6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it019",
+    "it008"
+   ],
+   "referencias": [
+    2,
+    5,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nunes et al. (8)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Choi (9)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11–13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it014",
+    "it018"
+   ],
+   "referencias": [
+    10,
+    11,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3,11,15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it012",
+    "it024"
+   ],
+   "referencias": [
+    10,
+    2,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gonçalves et al. (17)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11,15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it000"
+   ],
+   "referencias": [
+    14,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Santos et al. (18)",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9,11,21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it000",
+    "it005"
+   ],
+   "referencias": [
+    8,
+    10,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24,25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it003"
+   ],
+   "referencias": [
+    23,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,16,26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it020",
+    "it002"
+   ],
+   "referencias": [
+    15,
+    7,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Public Health Agency of Canada (19)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Cum sint quibusdam voluptatum doloribus atque perferendis expedita illo"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

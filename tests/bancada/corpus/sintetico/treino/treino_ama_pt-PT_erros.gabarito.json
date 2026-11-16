@@ -1,0 +1,707 @@
+{
+ "id": "treino_ama_pt-PT_erros",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "pt-PT",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Vaz L. Possimus ipsa veniam hic aliquam enim voluptatibus excepturi praesentium doloremque. Das Gesundheitswesen. 1986;7(4):738–752. doi:10.99999/teste.treino.99416",
+   "item": "it023"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Ministerio de Sanidad (España). Maxime illum a sit praesentium quae ea. 1981. Acedido 11 de novembro de 2026. https://exemplo-treino.org/4636",
+   "item": "it020"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Øster E, Cunha Y, Cruz M. Officia dignissimos exercitationem neque deleniti assumenda fuga cupiditate. Journal of the American Medical Informatics Association. 1996;30(3):664–674. doi:10.99999/teste.treino.74370",
+   "item": "it006"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Instituto Nacional de Câncer (Brasil). Perspiciatis quis at veniam reprehenderit culpa error modi suscipit rem tempora. 1976. Acedido 15 de novembro de 2026. https://exemplo-treino.org/2313",
+   "item": "it018"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Conselho Nacional de Saúde (Brasil). Voluptas iste sed perferendis quibusdam magnam nemo ipsam occaecati. Magalhães Ferreira e Filhos; 1996.",
+   "item": "it014"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Vaz L. Nesciunt veritatis consectetur vitae asperiores voluptatem repellendus. Das Gesundheitswesen. 1986;29(1):160–178. doi:10.99999/teste.treino.63675",
+   "item": "it024"
+  },
+  {
+   "indice": 6,
+   "texto": "8. Robert Koch-Institut. Non vero laborum quos nesciunt voluptatem quasi distinctio. 2001. Acedido 13 de novembro de 2026. https://exemplo-treino.org/2198",
+   "item": "it013"
+  },
+  {
+   "indice": 7,
+   "texto": "9. Kim S yeon, Ramos H. Magni error ex aliquam enim expedita officia adipisci blanditiis. Medical Mycology. 2020;75(1):298–305. doi:10.99999/teste.treino.94327",
+   "item": "it004"
+  },
+  {
+   "indice": 8,
+   "texto": "10. Virginia-Maryland College of Veterinary Medicine. Labore temporibus quam nemo placeat nemo. Miranda Domingues S/A; 1986.",
+   "item": "it012"
+  },
+  {
+   "indice": 9,
+   "texto": "12. Cardoso-Nascimento I. Fugiat sequi deleniti nam occaecati. One Health. 2016;79(3):523–532. doi:10.99999/teste.treino.41161",
+   "item": "it000"
+  },
+  {
+   "indice": 10,
+   "texto": "13. Cruz L. Officia cumque distinctio laborum voluptas veniam quia distinctio maxime. Gaceta Sanitaria. 74(1):477–489. doi:10.99999/teste.treino.95696",
+   "item": "it022"
+  },
+  {
+   "indice": 11,
+   "texto": "14. Nascimento A. Soluta incidunt commodi soluta corporis. Mendes Pires e Filhos; 1985.",
+   "item": "it015"
+  },
+  {
+   "indice": 12,
+   "texto": "15. Haute Autorité de Santé (France). Rerum nobis molestias minus blanditiis praesentium nihil maiores ullam incidunt. 1988. Acedido 6 de novembro de 2026. https://exemplo-treino.org/7113",
+   "item": "it007"
+  },
+  {
+   "indice": 13,
+   "texto": "16. da Lourenço S, Ramos A, Vicente F, Soares C. Accusantium voluptas quo harum excepturi beatae rerum optio sit in vitae incidunt. Revue d’Épidémiologie et de Santé Publique. 1997;29(7):611–627. doi:10.99999/teste.treino.65657",
+   "item": "it001"
+  },
+  {
+   "indice": 14,
+   "texto": "17. Antunes R, Antunes V, Vieira V, Abreu C, Gaspar T, Torres D. Quidem distinctio nostrum accusamus qui corporis. Figueiredo; 2020.",
+   "item": "it017"
+  },
+  {
+   "indice": 15,
+   "texto": "18. Zhang H, Tavares H, Cardoso L, Tavares A. Hic distinctio nam et vitae. Cadernos de Saúde Pública. 1989;51(6):220–234. doi:10.99999/teste.treino.30060",
+   "item": "it003"
+  },
+  {
+   "indice": 16,
+   "texto": "19. Instituto Nacional de Câncer (Brasil). Sed modi repellat assumenda quod velit natus inventore praesentium cum fugit quod. Epidemiologia & Prevenzione. 1989;78(8):561–568. doi:10.99999/teste.treino.64907",
+   "item": "it008"
+  },
+  {
+   "indice": 17,
+   "texto": "20. Jesus L. Dolor odio numquam asperiores consequatur. Revue d’Épidémiologie et de Santé Publique. 1989;76(12):216–227. doi:10.99999/teste.treino.47340",
+   "item": "it021"
+  },
+  {
+   "indice": 18,
+   "texto": "21. Borges A, Lopes A, Moreira M. Minima odit provident quibusdam magni debitis ad exercitationem provident. Em: Vaz F, ed. Repellat deserunt nihil facere saepe eaque quam occaecati voluptatem quasi. Torres; 1999:86–101.",
+   "item": "it016"
+  },
+  {
+   "indice": 19,
+   "texto": "22. Domingues A, Cunha J. Repellendus voluptas quaerat doloremque accusamus dolore illo dignissimos. Miranda Lda.; 2012.",
+   "item": "it011"
+  },
+  {
+   "indice": 20,
+   "texto": "23. Azevedo C, Vaz N, Domingues P, Valente N. Non quasi consequuntur facere commodi debitis officia ipsa repellat inventore praesentium atque omnis nihil ab vel. Em: Borges E, ed. Necessitatibus at hic ratione voluptate dolore. Araújo; 1999:47–62.",
+   "item": "it010"
+  },
+  {
+   "indice": 21,
+   "texto": "24. Ministerio de Sanidad (España). Neque voluptates hic libero fugit modi. 2008. Acedido 9 de novembro de 2026. https://exemplo-treino.org/7960",
+   "item": "it009"
+  },
+  {
+   "indice": 22,
+   "texto": "25. Instituto Nacional de Câncer (Brasil). Id repellat unde aut dolorum natus repudiandae cupiditate at. Lima; 1990.",
+   "item": "it019"
+  },
+  {
+   "indice": 23,
+   "texto": "26. Machado-Loureiro M, Correia S. Maxime occaecati dolor odio pariatur debitis debitis quod sunt illo esse numquam iste. Cadernos de Saúde Pública. 2003;26(8):553–572. doi:10.99999/teste.treino.46301",
+   "item": "extra0"
+  },
+  {
+   "indice": 24,
+   "texto": "27. von Morais S, Cardoso D, Brito A, Tavares R. Aliquid eum atque perspiciatis numquam consequatur quis beatae veritatis laboriosam cum recusandae quos porro. Revue d’Épidémiologie et de Santé Publique. 2009;35(2):141–152. doi:10.99999/teste.treino.94566",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1–3",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it020",
+    "it006"
+   ],
+   "referencias": [
+    0,
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,4,5",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it014",
+    "it020"
+   ],
+   "referencias": [
+    3,
+    4,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,5,6",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it020",
+    "it014"
+   ],
+   "referencias": [
+    5,
+    1,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,7,8",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it006",
+    "it013"
+   ],
+   "referencias": [
+    null,
+    2,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim 9",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,10,11",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it002",
+    "it020"
+   ],
+   "referencias": [
+    8,
+    null,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,7,12",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it005",
+    "it000"
+   ],
+   "referencias": [
+    0,
+    null,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,13",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it013"
+   ],
+   "referencias": [
+    10,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14,15",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it007"
+   ],
+   "referencias": [
+    11,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7,19",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it005"
+   ],
+   "referencias": [
+    16,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13,20,21",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it021",
+    "it016"
+   ],
+   "referencias": [
+    10,
+    17,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "22",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,21,23",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it013",
+    "it010"
+   ],
+   "referencias": [
+    18,
+    6,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "19",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Conselho Nacional de Saúde (Brasil) 5",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Borges et al. 21",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "10",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21,24",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it009"
+   ],
+   "referencias": [
+    18,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,4",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it023"
+   ],
+   "referencias": [
+    3,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "24",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13(p223)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "23",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Vaz 1",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "3,7,8",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "2,10,11",
+   "item": "it002"
+  },
+  {
+   "ponto": "D",
+   "citacao": "1,7,12",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "11",
+   "item": "it002"
+  },
+  {
+   "ponto": "D",
+   "citacao": "7,19",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "11",
+   "item": "it002"
+  },
+  {
+   "ponto": "E",
+   "referencia": 23,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 24,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Commodi occaecati saepe quas assumenda maiores deleniti libero voluptatem debitis quasi non ut voluptatum nostrum"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,636 @@
+{
+ "id": "treino_mla_fr-FR_limpo",
+ "estilo": "mla",
+ "sistema": "autor-pagina",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Benoit, Océane. « Oncle montrer victime traverser éloigner pleurer fois retenir source apercevoir rappeler caractère ». Journal of the American Medical Informatics Association, vol. 45, no 12, 1983, p. 67‑76, https://doi.org/10.99999/teste.treino.36274.",
+   "item": "it025"
+  },
+  {
+   "indice": 1,
+   "texto": "Bernard, Maurice. « Inspirer pouvoir juste peser accuser cesser déclarer devant ». Revista de Saúde Pública, vol. 24, no 11, 1989, p. 362‑71, https://doi.org/10.99999/teste.treino.87970.",
+   "item": "it019"
+  },
+  {
+   "indice": 2,
+   "texto": "Brunel, Françoise. « Cependant mort savoir promettre face chair ». Epidemiologia e Serviços de Saúde, vol. 44, no 8, 1981, p. 721‑33, https://doi.org/10.99999/teste.treino.76322.",
+   "item": "it023"
+  },
+  {
+   "indice": 3,
+   "texto": "Conselho Nacional de Saúde (Brasil). Dix courant résultat gros. Bouvier SARL, 2004.",
+   "item": "it014"
+  },
+  {
+   "indice": 4,
+   "texto": "da Arnaud, Jeannine, et al. « Reculer couper pur vague tenter ça certain épaule tomber morceau ». Preventive Veterinary Medicine, vol. 38, no 2, 1988, p. 749‑57, https://doi.org/10.99999/teste.treino.84812.",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "Dufour, Gabrielle. Lier taire trouver mieux instant demande mettre manger soumettre. no 2270, 1980, https://leis-treino.gov/4122.",
+   "item": "it017"
+  },
+  {
+   "indice": 6,
+   "texto": "Gallet-Maréchal, Agnès. « Bien me scène longtemps servir terre trois commencement travers accompagner ». Preventive Veterinary Medicine, vol. 68, no 8, 2010, p. 174‑83, https://doi.org/10.99999/teste.treino.62484.",
+   "item": "it000"
+  },
+  {
+   "indice": 7,
+   "texto": "Gimenez, Augustin. Exposer il escalier tomber famille voiture. Perrier, 1987.",
+   "item": "it015"
+  },
+  {
+   "indice": 8,
+   "texto": "Girard, Benoît. « Sommet siècle rencontre d’abord claire doux danger distinguer ». Gaceta Sanitaria, vol. 71, no 11, p. 98‑117, https://doi.org/10.99999/teste.treino.46669.",
+   "item": "it026"
+  },
+  {
+   "indice": 9,
+   "texto": "Gremião, Alfred. Dessus toi éclat mode lendemain rêver cause énorme. Lefèvre SA, 2015.",
+   "item": "it006"
+  },
+  {
+   "indice": 10,
+   "texto": "Guyon, Margaret. « Cependant droit ensemble satisfaire aussi détruire dessiner ». BMC Public Health, vol. 31, no 5, 1980, p. 730‑36, https://doi.org/10.99999/teste.treino.59598.",
+   "item": "it012"
+  },
+  {
+   "indice": 11,
+   "texto": "Instituto Nacional de Câncer (Brasil). « Doux voler angoisse question tendre énergie caractère ». Selon passage quartier sommeil couvrir, édité par Arnaude Didier, Julien Leconte SA, 2026, p. 264‑79.",
+   "item": "it009"
+  },
+  {
+   "indice": 12,
+   "texto": "———. Éclater après amuser réalité éteindre embrasser enfoncer faible juste témoin. no 11667, 1980, https://leis-treino.gov/5011.",
+   "item": "it011"
+  },
+  {
+   "indice": 13,
+   "texto": "Le Goff, Éléonore, et Laure Bouvet. « François leur parler souffrir lever terme du ». Cadernos de Saúde Pública, vol. 2, no 9, 1987, p. 542‑53, https://doi.org/10.99999/teste.treino.48629.",
+   "item": "it028"
+  },
+  {
+   "indice": 14,
+   "texto": "———. Puissant mien baisser humide français même tourner article. Chevallier, 1987.",
+   "item": "it027"
+  },
+  {
+   "indice": 15,
+   "texto": "Li, Jing, et al. Émotion quartier ramasser révéler pied rencontre aile fuir planche puis quitter. 2008. Couturier.",
+   "item": "it003"
+  },
+  {
+   "indice": 16,
+   "texto": "Maillard, Valentine, et al. « Avant douleur sept offrir marche ». Compagnon tache contenter accompagner aussitôt suivant accepter temps ni monde, édité par Benjamin Prévost, Gay, 2021, p. 268‑83.",
+   "item": "it022"
+  },
+  {
+   "indice": 17,
+   "texto": "Meunier, Xavier, et al. Problème durer cou veiller conseil comprendre. Meunier Carlier S.A., 2020.",
+   "item": "it010"
+  },
+  {
+   "indice": 18,
+   "texto": "National Library of Medicine (Estados Unidos). Confondre phrase condamner tout précipiter voisin ciel hier prendre partager chair lisser. Guillaume et Fils, 1978.",
+   "item": "it008"
+  },
+  {
+   "indice": 19,
+   "texto": "———. Couche franc acte ici abandonner rejoindre avant réveiller notre près. no 10724, 2009, https://leis-treino.gov/397.",
+   "item": "it021"
+  },
+  {
+   "indice": 20,
+   "texto": "Nguyen, Minh, et Isabelle Imbert. Produire descendre voir tout bon ajouter sac fer compagnie rompre écouter prison. Bazin, 2025.",
+   "item": "it005"
+  },
+  {
+   "indice": 21,
+   "texto": "Park, Seo-yeon, et al. Lourd grandir premier crier police verser autant confier présence chaleur autre paupière moindre demande écouter. 1985. Bazin.",
+   "item": "it004"
+  },
+  {
+   "indice": 22,
+   "texto": "Pascal, Zoé, et al. « Bout un tenter personnage essayer même casser où ». Epidemiologia & Prevenzione, vol. 51, no 2, 2018, p. 287‑92, https://doi.org/10.99999/teste.treino.50201.",
+   "item": "it024"
+  },
+  {
+   "indice": 23,
+   "texto": "Petit, Roger. « Temps roman interroger vide ». Honneur différent ni attitude moment grâce, édité par Eugène Barbe, Baron, 1994, p. 63‑78.",
+   "item": "it018"
+  },
+  {
+   "indice": 24,
+   "texto": "Robert Koch-Institut. Conscience décider ce quitter baisser hésiter étendre voiture vieillard user petit. Schmitt, 2018.",
+   "item": "it007"
+  },
+  {
+   "indice": 25,
+   "texto": "Seguin, Agathe. « Poche drôle genou suffire centre oiseau rond sans vêtement moins mener trait ». Das Gesundheitswesen, vol. 67, no 6, 2023, p. 472‑79.",
+   "item": "it020"
+  },
+  {
+   "indice": 26,
+   "texto": "Teixeira, Éric, et al. « Gagner clair revoir devant disparaître mourir suivre dès plusieurs ». BMC Public Health, vol. 53, no 11, 2021, p. 884‑90.",
+   "item": "it016"
+  },
+  {
+   "indice": 27,
+   "texto": "Valbuena Álvarez, Jesusa. Lors crainte se mot dimanche milieu cheval quarante. 2014. Marin.",
+   "item": "it002"
+  },
+  {
+   "indice": 28,
+   "texto": "Vasseur, Lucie, et al. « Reste attirer apparaître ton objet sentiment parti salle durer mort se ». Preventive Veterinary Medicine, vol. 15, no 6, 1996, p. 739‑58, https://doi.org/10.99999/teste.treino.50636.",
+   "item": "it013"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Seguin)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Guyon)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le Goff et Bouvet, Puissant mien baisser humide français même tourner article)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pascal et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Benoit; Le Goff et Bouvet, « François leur parler souffrir lever terme du »)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it028"
+   ],
+   "referencias": [
+    0,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Valbuena Álvarez; Gremião)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it006"
+   ],
+   "referencias": [
+    27,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brunel; National Library of Medicine (Estados Unidos), Couche franc acte ici abandonner rejoindre avant réveiller notre près)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it021"
+   ],
+   "referencias": [
+    2,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gallet-Maréchal)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Seguin; Vasseur et al.; Girard)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it013",
+    "it026"
+   ],
+   "referencias": [
+    25,
+    28,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião; Li et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it003"
+   ],
+   "referencias": [
+    9,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Arnaud et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vasseur et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pascal et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Meunier et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dufour)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vasseur et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Petit; Bernard)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it019"
+   ],
+   "referencias": [
+    23,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Valbuena Álvarez; Instituto Nacional de Câncer (Brasil), Éclater après amuser réalité éteindre embrasser enfoncer faible juste témoin)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it011"
+   ],
+   "referencias": [
+    27,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Teixeira et al.; National Library of Medicine (Estados Unidos), Confondre phrase condamner tout précipiter voisin ciel hier prendre partager chair lisser; Le Goff et Bouvet, « François leur parler souffrir lever terme du »)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it008",
+    "it028"
+   ],
+   "referencias": [
+    26,
+    18,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), « Doux voler angoisse question tendre énergie caractère »)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Maillard et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Petit)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), Confondre phrase condamner tout précipiter voisin ciel hier prendre partager chair lisser; Conselho Nacional de Saúde (Brasil))",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it014"
+   ],
+   "referencias": [
+    18,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Seguin; Vasseur et al.; National Library of Medicine (Estados Unidos), Confondre phrase condamner tout précipiter voisin ciel hier prendre partager chair lisser)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it013",
+    "it008"
+   ],
+   "referencias": [
+    25,
+    28,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Li et al.; Instituto Nacional de Câncer (Brasil), Éclater après amuser réalité éteindre embrasser enfoncer faible juste témoin; Conselho Nacional de Saúde (Brasil))",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it011",
+    "it014"
+   ],
+   "referencias": [
+    15,
+    12,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), Couche franc acte ici abandonner rejoindre avant réveiller notre près; Gimenez)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it015"
+   ],
+   "referencias": [
+    19,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), Couche franc acte ici abandonner rejoindre avant réveiller notre près)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), Éclater après amuser réalité éteindre embrasser enfoncer faible juste témoin; Teixeira et al.; Gremião)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it016",
+    "it006"
+   ],
+   "referencias": [
+    12,
+    26,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gimenez)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Valbuena Álvarez)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Valbuena Álvarez)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen et Imbert)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Valbuena Álvarez 31)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Gallet-Maréchal)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Gallet-Maréchal)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Li et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Petit)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Côte rencontre toujours dimanche demande vouloir supérieur bout que pitié supporter enfin"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

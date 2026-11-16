@@ -1,0 +1,611 @@
+{
+ "id": "treino_ieee_it-IT_erros",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "it-IT",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] R. Ferrazzi, L. Colletti, D. Maccanelli, R. Ziani, S. Gozzi, e G. Salvo, «Opera dimenticare fronte rapido trasformare anzi buttare repubblica», Spanevello, Bernardi e Zacchia s.r.l., San Giovanni In Galilea, 1997.",
+   "item": "it017"
+  },
+  {
+   "indice": 1,
+   "texto": "[3] Organização Pan-Americana da Saúde, Affare bisognare giornale storico ordinare lungo campagna ottenere. 1988. [Online]. Disponibile su: https://leis-treino.gov/8497",
+   "item": "it007"
+  },
+  {
+   "indice": 2,
+   "texto": "[5] T. Garozzo, «Chiesa fantasia avvertire ricordo pezzo congresso ufficiale destro probabilmente teatro costituire», BMC Public Health, vol. 47, fasc. 4, pp. 76–82, 1983.",
+   "item": "it012"
+  },
+  {
+   "indice": 3,
+   "texto": "[6] G. Rossi, «Papà ospedale favore terreno», Das Gesundheitswesen, vol. 48, fasc. 1, pp. 651–667, 1994, doi: 10.99999/teste.treino.12123.",
+   "item": "it025"
+  },
+  {
+   "indice": 4,
+   "texto": "[7] Robert Koch-Institut, «Epoca importanza francese pagare necessario». Consultato: 3 novembre 2026. [Online]. Disponibile su: https://exemplo-treino.org/5923",
+   "item": "it014"
+  },
+  {
+   "indice": 5,
+   "texto": "[8] Haute Autorité de Santé (France), Probabilmente ridere interessare infatti muro capire importante quarto ringraziare grazie. 2026. [Online]. Disponibile su: https://leis-treino.gov/5128",
+   "item": "it020"
+  },
+  {
+   "indice": 6,
+   "texto": "[9] M. Pham, «Ogni sangue avanti minuto festa reale ragazzo». Consultato: 11 novembre 2026. [Online]. Disponibile su: https://exemplo-treino.org/8873",
+   "item": "it005"
+  },
+  {
+   "indice": 7,
+   "texto": "[10] S. Park, C. Combi, L. Angeli, e M. Salvini, «Fame condizione o volontà oltre capire dinanzi greco». Consultato: 8 novembre 2026. [Online]. Disponibile su: https://exemplo-treino.org/8714",
+   "item": "it004"
+  },
+  {
+   "indice": 8,
+   "texto": "[11] B. O’Connor, M. Micheletti, T. Tozzo, e R. Moretti, «Zio brutto facile accogliere esame», Schicchi, Parisi e Bixio SPA, Venafro, 2015.",
+   "item": "it006"
+  },
+  {
+   "indice": 9,
+   "texto": "[12] C. von Vergassola, R. Cuzzocrea, e P. Castioni, «Uguale uno chiamare qualcuno mantenere li annunciare bagno decisione che», in Guidare lungo libero cultura aumentare finalmente contro, D. Squarcione, A c. di, Salto Di Fondi: Saffi, Veneziano e Carullo s.r.l., 1982, pp. 33–48.",
+   "item": "it001"
+  },
+  {
+   "indice": 10,
+   "texto": "[13] M. Ungaretti, «Principe lato ufficiale tu merito meno battaglia», Revista de Saúde Pública, vol. 26, fasc. 7, pp. 27–32, 1996, doi: 10.99999/teste.treino.59559.",
+   "item": "it022"
+  },
+  {
+   "indice": 11,
+   "texto": "[14] P. Lombardi, «Preferire dire amico zia scopo sorprendere genere davanti», Villadicani-Greco Group, Banzano, 2013.",
+   "item": "it021"
+  },
+  {
+   "indice": 12,
+   "texto": "[15] G. Favata-Sollima e U. Boccaccio, «Rosso grande corsa procedere decidere religioso storico scappare». Consultato: 8 novembre 2026. [Online]. Disponibile su: https://exemplo-treino.org/4739",
+   "item": "it000"
+  },
+  {
+   "indice": 13,
+   "texto": "[16] V. Roldán Espada e G. Loredan, «Diffondere viso preciso controllo immagine scuola», Battelli, Legnante e Marenzio Group, Bionaz, 1993.",
+   "item": "it002"
+  },
+  {
+   "indice": 14,
+   "texto": "[17] W. Chen e F. Alfonsi, «Durante possibile minuto cuore qualcuno mantenere avvicinare», in Saltare affatto operaio noi autorità zona giardino, B. Zecchini, A c. di, Mazia: Ortolani e figli, 2013, pp. 280–295.",
+   "item": "it003"
+  },
+  {
+   "indice": 15,
+   "texto": "[18] Virginia-Maryland College of Veterinary Medicine, «Condurre fermo passo acqua qualità convincere allora minimo», Argan-Zampa Group, Santa Maria Degli Ammalati, 1990.",
+   "item": "it009"
+  },
+  {
+   "indice": 16,
+   "texto": "[19] Organização Pan-Americana da Saúde, «Salire riguardare voce prezzo settimana ragione dove secolo», Journal of the American Medical Informatics Association, vol. 33, fasc. 8, pp. 196–208, 2021, doi: 10.99999/teste.treino.72729.",
+   "item": "it008"
+  },
+  {
+   "indice": 17,
+   "texto": "[20] F. Palazzo e G. Traetta, «Futuro meritare lasciare dolce superiore costruzione», Revue d’Épidémiologie et de Santé Publique, vol. 2, fasc. 3, pp. 306–320, 2017.",
+   "item": "it016"
+  },
+  {
+   "indice": 18,
+   "texto": "[21] C. Fantini, T. Nordio, L. Acerbi, E. Interminei, P. Carfagna, e L. Ajello, «Titolo potenza palazzo correre», in Chilometro bello gente chilometro utile senza largo gamba pericoloso direzione volto affatto, M. Littizzetto, A c. di, Barengo: Armani-Valguarnera e figli, 1981, pp. 108–123.",
+   "item": "it010"
+  },
+  {
+   "indice": 19,
+   "texto": "[22] A. Majorana, A. Pigafetta, C. Casaleggio, F. Bersani, E. Cocci, e V. Caboto, «Terzo concludere conoscenza meritare allontanare immagine riva improvviso autorità strada», Guidone-Rienzo SPA, Baiso, 2003.",
+   "item": "it015"
+  },
+  {
+   "indice": 20,
+   "texto": "[23] S. Babbo, G. Gadda, L. Angiolello, e F. Visconti, «Destro ponte fumare città contro desiderare occhio necessario richiedere freddo solito sistema», Epidemiologia e Serviços de Saúde, vol. 17, fasc. 1, pp. 690–700, doi: 10.99999/teste.treino.87462.",
+   "item": "it023"
+  },
+  {
+   "indice": 21,
+   "texto": "[24] N. Donarelli, «Intendere spesa sottile rosso eh», Brunelleschi-Sokolov s.r.l., Biana, 2013.",
+   "item": "it011"
+  },
+  {
+   "indice": 22,
+   "texto": "[25] F. Foa e R. Casadei, «Quanto treno molto ponte smettere pelle», BMC Public Health, vol. 19, fasc. 8, pp. 665–672, 2000, doi: 10.99999/teste.treino.61291.",
+   "item": "it019"
+  },
+  {
+   "indice": 23,
+   "texto": "[26] G. Rossi, «Costa giungere preoccupare sinistro salutare segno figurare il», One Health, vol. 15, fasc. 7, pp. 6–21, 1994, doi: 10.99999/teste.treino.22701.",
+   "item": "it024"
+  },
+  {
+   "indice": 24,
+   "texto": "[27] A. Boitani-Chiaramonte e M. Cattaneo, «Inutile inglese ammazzare lei descrivere male fresco», Malatesta, Guarana e Aloisio SPA, Linguaglossa, 2025.",
+   "item": "extra0"
+  },
+  {
+   "indice": 25,
+   "texto": "[28] M. de Collina e S. Vitturi, «Pericolo problema cane notare mezzo villa diffondere», Revista de Saúde Pública, vol. 48, fasc. 4, pp. 232–237, 1998.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1], [2], [3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it018",
+    "it007"
+   ],
+   "referencias": [
+    0,
+    null,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Boito et al. [4]",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robert Koch-Institut [7]",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it005"
+   ],
+   "referencias": [
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Park et al. [10]",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "O'Connor et al. [11]",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9], [13], [14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it005",
+    "it022"
+   ],
+   "referencias": [
+    11,
+    6,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6], [16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it002"
+   ],
+   "referencias": [
+    3,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4], [18], [19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it008",
+    "it013"
+   ],
+   "referencias": [
+    15,
+    16,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Palazzo [20]",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[22]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11], [14], [23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it021",
+    "it006"
+   ],
+   "referencias": [
+    20,
+    11,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [11], [24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it006",
+    "it011"
+   ],
+   "referencias": [
+    4,
+    8,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ferrazzi et al. [1]",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Park et al. [10]",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11], [25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it019"
+   ],
+   "referencias": [
+    8,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [24], [26]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it014",
+    "it024"
+   ],
+   "referencias": [
+    21,
+    4,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9], [13], [14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it021",
+    "it022"
+   ],
+   "referencias": [
+    6,
+    11,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4, p. 218]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Foa [25]",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "[1], [2], [3]",
+   "item": "it018"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Boito et al. [4]",
+   "item": "it013"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[4], [18], [19]",
+   "item": "it013"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[4, p. 218]",
+   "item": "it013"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[4]",
+   "item": "it013"
+  },
+  {
+   "ponto": "E",
+   "referencia": 24,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 25,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Fenomeno piangere studiare letto particolare sonno secolo circa ammettere ieri divenire caldo buono"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

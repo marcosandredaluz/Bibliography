@@ -1,0 +1,1491 @@
+{
+ "id": "elife-00278_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00278.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Berg OG, von Hippel PH. 1985. Diffusion-controlled macromolecular interactions. Annu Rev Biophys Biophys Chem 14:131–160. doi: 10.1146/annurev.bb.14.060185.001023",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Bowman GD, O'Donnell M, Kuriyan J. 2004. Structural analysis of a eukaryotic sliding DNA clamp-clamp loader complex. Nature 429:724–730. doi: 10.1038/nature02585",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Burgers PM. 2009. Polymerase dynamics at the eukaryotic DNA replication fork. J Biol Chem 284:4041–4045. doi: 10.1074/jbc.R800062200",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Cai J, Gibbs E, Uhlmann F, Phillips B, Yao N, O'Donnell M, et al.. 1997. A complex consisting of human replication factor C p40, p37, and p36 subunits is a DNA-dependent ATPase and an intermediate in the assembly of the holoenzyme. J Biol Chem 272:18974–18981. doi: 10.1074/jbc.272.30.18974",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Cai J, Uhlmann F, Gibbs E, Flores-Rozas H, Lee CG, Phillips B, et al.. 1996. Reconstitution of human replication factor C from its five subunits in baculovirus-infected insect cells. Proc Natl Acad Sci USA 93:12896–12901. doi: 10.1073/pnas.93.23.12896",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Cann IK, Ishino S, Yuasa M, Daiyasu H, Toh H, Ishino Y. 2001. Biochemical analysis of replication factor C from the hyperthermophilic archaeon Pyrococcus furiosus. J Bacteriol 183:2614–2623. doi: 10.1128/JB.183.8.2614-2623.2001",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Downey CD, McHenry CS. 2010. Chaperoning of a replicative polymerase onto a newly assembled DNA-bound sliding clamp by the clamp loader. Mol Cell 37:481–491. doi: 10.1016/j.molcel.2010.01.013",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Gali H, Juhasz S, Morocz M, Hajdu I, Fatyol K, Szukacsov V, et al.. 2012. Role of SUMO modification of human PCNA at stalled replication fork. Nucleic Acids Res 40:6049–6059. doi: 10.1093/nar/gks256",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Gomes XV, Gary SL, Burgers PM. 2000. Overproduction in Escherichia coli and characterization of yeast replication factor C lacking the ligase homology domain. J Biol Chem 275:14541–14549. doi: 10.1074/jbc.275.19.14541",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Gulbis JM, Kelman Z, Hurwitz J, O'Donnell M, Kuriyan J. 1996. Structure of the C-terminal region of p21(WAF1/CIP1) complexed with human PCNA. Cell 87:297–306. doi: 10.1016/S0092-8674(00)81347-1",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Hedglin M, Kumar R, Benkovic SJ. n.d.. Replication clamps and clamp loaders. DNA replication:165–183.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Johnson A, Yao NY, Bowman GD, Kuriyan J, O'Donnell M. 2006. The replication factor C clamp loader requires arginine finger sensors to drive DNA binding and proliferating cell nuclear antigen loading. J Biol Chem 281:35531–35543. doi: 10.1074/jbc.M606090200",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Jonsson ZO, Podust VN, Podust LM, Hubscher U. 1995. Tyrosine 114 is essential for the trimeric structure and the functional activities of human proliferating cell nuclear antigen. EMBO J 14:5745–5751.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Kaboord BF, Benkovic SJ. 1996. Dual role of the 44/62 protein as a matchmaker protein and DNA polymerase chaperone during assembly of the bacteriophage T4 holoenzyme complex. Biochemistry 35:1084–1092. doi: 10.1021/bi9520747",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Kelch BA, Makino DL, O'Donnell M, Kuriyan J. 2011. How a DNA polymerase clamp loader opens a sliding clamp. Science 334:1675–1680. doi: 10.1126/science.1211884",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Kumar R, Nashine VC, Mishra PP, Benkovic SJ, Lee TH. 2010. Stepwise loading of yeast clamp revealed by ensemble and single-molecule studies. Proc Natl Acad Sci USA 107:19736–19741. doi: 10.1073/pnas.1014139107",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Lee SH, Hurwitz J. 1990. Mechanism of elongation of primed DNA by DNA polymerase delta, proliferating cell nuclear antigen, and activator 1. Proc Natl Acad Sci USA 87:5672–5676. doi: 10.1073/pnas.87.15.5672",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Lee SH, Kwong AD, Pan ZQ, Hurwitz J. 1991. Studies on the activator 1 protein complex, an accessory factor for proliferating cell nuclear antigen-dependent DNA polymerase delta. J Biol Chem 266:594–602.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Leu FP, Hingorani MM, Turner J, O'Donnell M. 2000. The delta subunit of DNA polymerase III holoenzyme serves as a sliding clamp unloader in Escherichia coli. J Biol Chem 275:34609–34618. doi: 10.1074/jbc.M005495200",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Masuda Y, Suzuki M, Piao J, Gu Y, Tsurimoto T, Kamiya K. 2007. Dynamics of human replication factors in the elongation phase of DNA replication. Nucleic Acids Res 35:6904–6916. doi: 10.1093/nar/gkm822",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Matsumiya S, Ishino S, Ishino Y, Morikawa K. 2003. Intermolecular ion pairs maintain the toroidal structure of Pyrococcus furiosus PCNA. Protein Sci 12:823–831. doi: 10.1110/ps.0234503",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Miyata T, Suzuki H, Oyama T, Mayanagi K, Ishino Y, Morikawa K. 2005. Open clamp structure in the clamp-loading complex visualized by electron microscopic image analysis. Proc Natl Acad Sci USA 102:13795–13800. doi: 10.1073/pnas.0506447102",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Moldovan GL, Dejsuphong D, Petalcorin MI, Hofmann K, Takeda S, Boulton SJ, et al.. 2012. Inhibition of homologous recombination by the PCNA-interacting protein PARI. Mol Cell 45:75–86. doi: 10.1016/j.molcel.2011.11.010",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Moldovan GL, Pfander B, Jentsch S. 2006. PCNA controls establishment of sister chromatid cohesion during S phase. Mol Cell 23:723–732. doi: 10.1016/j.molcel.2006.07.007",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Morris GF, Mathews MB. 1989. Regulation of proliferating cell nuclear antigen during the cell cycle. J Biol Chem 264:13856–13864.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Mossi R, Jonsson ZO, Allen BL, Hardin SH, Hubscher U. 1997. Replication factor C interacts with the C-terminal side of proliferating cell nuclear antigen. J Biol Chem 272:1769–1776. doi: 10.1074/jbc.272.3.1769",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Norby JG. 1988. Coupled assay of Na+, K+-ATPase activity. Methods Enzymol 156:116–119. doi: 10.1016/0076-6879(88)56014-7",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Overmeer RM, Gourdin AM, Giglia-Mari A, Kool H, Houtsmuller AB, Siegal G, et al.. 2010. Replication factor C recruits DNA polymerase delta to sites of nucleotide excision repair but is not required for PCNA recruitment. Mol Cell Biol 30:4828–4839. doi: 10.1128/MCB.00285-10",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Parnas O, Zipin-Roitman A, Pfander B, Liefshitz B, Mazor Y, Ben-Aroya S, et al.. 2010. Elg1, an alternative subunit of the RFC clamp loader, preferentially interacts with SUMOylated PCNA. EMBO J 29:2611–2622. doi: 10.1038/emboj.2010.128",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Paschall CO, Thompson JA, Marzahn MR, Chiraniya A, Hayner JN, O'Donnell M, et al.. 2011. The E. coli clamp loader can actively pry open the beta-sliding clamp. J Biol Chem 286:42704–42714. doi: 10.1074/jbc.M111.268169",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Perumal SK, Ren W, Lee TH, Benkovic SJ. 2012. How a holoenzyme for DNA replication is formed. Proc Natl Acad Sci USA 110:99–104. doi: 10.1073/pnas.1212748110",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Podust VN, Podust LM, Muller F, Hubscher U. 1995. DNA polymerase delta holoenzyme: action on single-stranded DNA and on double-stranded DNA in the presence of replicative DNA helicases. Biochemistry 34:5003–5010. doi: 10.1021/bi00015a011",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Podust VN, Tiwari N, Stephan S, Fanning E. 1998. Replication factor C disengages from proliferating cell nuclear antigen (PCNA) upon sliding clamp formation, and PCNA itself tethers DNA polymerase delta to DNA. J Biol Chem 273:31992–31999. doi: 10.1074/jbc.273.48.31992",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Sale JE, Lehmann AR, Woodgate R. 2012. Y-family DNA polymerases and their role in tolerance of cellular DNA damage. Nat Rev Mol Cell Biol 13:141–152. doi: 10.1038/nrm3289",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Schurtenberger P, Egelhaaf SU, Hindges R, Maga G, Jonsson ZO, May RP, et al.. 1998. The solution structure of functionally active human proliferating cell nuclear antigen determined by small-angle neutron scattering. J Mol Biol 275:123–132. doi: 10.1006/jmbi.1997.1435",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Seybert A, Wigley DB. 2004. Distinct roles for ATP binding and hydrolysis at individual subunits of an archaeal clamp loader. EMBO J 23:1360–1371. doi: 10.1038/sj.emboj.7600130",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Shibahara K, Stillman B. 1999. Replication-dependent marking of DNA by PCNA facilitates CAF-1-coupled inheritance of chromatin. Cell 96:575–585. doi: 10.1016/S0092-8674(00)80661-3",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Shiomi Y, Usukura J, Masamura Y, Takeyasu K, Nakayama Y, Obuse C, et al.. 2000. ATP-dependent structural change of the eukaryotic clamp-loader protein, replication factor C. Proc Natl Acad Sci USA 97:14127–14132. doi: 10.1073/pnas.97.26.14127",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Simonetta KR, Kazmirski SL, Goedken ER, Cantor AJ, Kelch BA, McNally R, et al.. 2009. The mechanism of ATP-dependent primer-template recognition by a clamp loader complex. Cell 137:659–671. doi: 10.1016/j.cell.2009.03.044",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Snyder AK, Williams CR, Johnson A, O'Donnell M, Bloom LB. 2004. Mechanism of loading the Escherichia coli DNA polymerase III sliding clamp: II. Uncoupling the beta and DNA binding activities of the gamma complex. J Biol Chem 279:4386–4393. doi: 10.1074/jbc.M310430200",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Soumillion P, Sexton DJ, Benkovic SJ. 1998. Clamp subunit dissociation dictates bacteriophage T4 DNA polymerase holoenzyme disassembly. Biochemistry 37:1819–1827. doi: 10.1021/bi972526a",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Tinker RL, Kassavetis GA, Geiduschek EP. 1994. Detecting the ability of viral, bacterial and eukaryotic replication proteins to track along DNA. EMBO J 13:5330–5337.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Tomida J, Masuda Y, Hiroaki H, Ishikawa T, Song I, Tsurimoto T, et al.. 2008. DNA damage-induced ubiquitylation of RFC2 subunit of replication factor C complex. J Biol Chem 283:9071–9079. doi: 10.1074/jbc.M709835200",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Trakselis MA, Berdis AJ, Benkovic SJ. 2003. Examination of the role of the clamp-loader and ATP hydrolysis in the formation of the bacteriophage T4 polymerase holoenzyme. J Mol Biol 326:435–451. doi: 10.1016/S0022-2836(02)01330-X",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Tsurimoto T, Stillman B. 1990. Functions of replication factor C and proliferating-cell nuclear antigen: functional similarity of DNA polymerase accessory proteins from human cells and bacteriophage T4. Proc Natl Acad Sci USA 87:1023–1027. doi: 10.1073/pnas.87.3.1023",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Tsurimoto T, Stillman B. 1991. Replication factors required for SV40 DNA replication in vitro. I. DNA structure-specific recognition of a primer-template junction by eukaryotic DNA polymerases and their accessory proteins. J Biol Chem 266:1950–1960.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Uhlmann F, Cai J, Gibbs E, O'Donnell M, Hurwitz J. 1997. Deletion analysis of the large subunit p140 in human replication factor C reveals regions required for complex formation and replication activities. J Biol Chem 272:10058–10064. doi: 10.1074/jbc.272.15.10058",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Yao N, Hurwitz J, O'Donnell M. 2000. Dynamics of beta and proliferating cell nuclear antigen sliding clamps in traversing DNA secondary structure. J Biol Chem 275:1421–1432. doi: 10.1074/jbc.275.2.1421",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Yao N, Turner J, Kelman Z, Stukenberg PT, Dean F, Shechter D, et al.. 1996. Clamp loading, unloading and intrinsic stability of the PCNA, beta and gp45 sliding clamps of human, E. coli and T4 replicases. Genes Cells 1:101–113. doi: 10.1046/j.1365-2443.1996.07007.x",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Yao NY, O'Donnell M. 2012. The RFC clamp loader: structure and function. Subcell Biochem 62:259–279. doi: 10.1007/978-94-007-4572-8_14",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Yuzhakov A, Kelman Z, Hurwitz J, O'Donnell M. 1999. Multiple competition reactions for RPA order the assembly of the DNA polymerase delta holoenzyme. EMBO J 18:6189–6199. doi: 10.1093/emboj/18.21.6189",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Zhang G, Gibbs E, Kelman Z, O'Donnell M, Hurwitz J. 1999. Studies on the interactions between human replication factor C and human proliferating cell nuclear antigen. Proc Natl Acad Sci USA 96:1869–1874. doi: 10.1073/pnas.96.5.1869",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "Zhuang Z, Yoder BL, Burgers PM, Benkovic SJ. 2006. The structure of a ring-opened proliferating cell nuclear antigen-replication factor C complex revealed by fluorescence energy transfer. Proc Natl Acad Sci USA 103:2546–2551. doi: 10.1073/pnas.0511263103",
+   "item": "bib53"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Hedglin et al., in press",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yao and O'Donnell, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yao et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schurtenberger et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Matsumiya et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhuang et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Paschall et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hedglin et al., in press",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yao and O'Donnell, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Simonetta et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kelch et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hedglin et al., in press",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yao and O'Donnell, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trakselis et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Perumal et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Downey and McHenry, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kumar et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yao et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leu et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yao et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cai et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cann et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Matsumiya et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kumar et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaboord and Benkovic, 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Soumillion et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Perumal et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tsurimoto and Stillman, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yao et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gulbis et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhuang et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kumar et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Uhlmann et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Podust et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gomes et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cai et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shiomi et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee and Hurwitz, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mossi et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shiomi et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cai et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shiomi et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jonsson et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Podust et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yao et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaboord and Benkovic, 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yao et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Soumillion et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kumar et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tsurimoto and Stillman, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shiomi et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee and Hurwitz, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shiomi et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tsurimoto and Stillman, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Berg and von Hippel, 1985",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bowman et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Simonetta et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Miyata et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kelch et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tsurimoto and Stillman, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bowman et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kelch et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Simonetta et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kelch et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee and Hurwitz, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tinker et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cai et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1997",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yao et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Uhlmann et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shiomi et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Snyder et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Seybert and Wigley, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Johnson et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kelch et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kumar et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cai et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1997",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yao et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Uhlmann et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Overmeer et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yuzhakov et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tsurimoto and Stillman, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gulbis et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hedglin et al., in press",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gulbis et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burgers, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kelch et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Morris and Mathews, 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yao et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leu et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shibahara and Stillman, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moldovan et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sale et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Parnas et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gali et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moldovan et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tomida et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Masuda et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jonsson et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kumar et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Norby, 1988",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kumar et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

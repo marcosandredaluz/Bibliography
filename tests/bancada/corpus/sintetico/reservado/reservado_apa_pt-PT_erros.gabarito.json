@@ -1,0 +1,701 @@
+{
+ "id": "reservado_apa_pt-PT_erros",
+ "estilo": "apa",
+ "sistema": "autor-data",
+ "locale": "pt-PT",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Abreu, P., Mendes, F., Borges, Y., & Barbosa, T. (1989). Eius porro maxime esse ut eum eligendi quia. BMC Public Health, 20(2), 389–400.",
+   "item": "it017"
+  },
+  {
+   "indice": 1,
+   "texto": "Antunes, W. (2007a). Fuga sit sit beatae ullam et. Journal of the American Medical Informatics Association, 32(11), 133–141. https://doi.org/10.99999/teste.reservado.89128",
+   "item": "it025"
+  },
+  {
+   "indice": 2,
+   "texto": "Antunes, W. (2007b). Harum quod beatae amet. BMC Public Health, 54(1), 266–276. https://doi.org/10.99999/teste.reservado.48463",
+   "item": "it026"
+  },
+  {
+   "indice": 3,
+   "texto": "Araújo-Leite, B., & Carvalho, G. (1982). Ut iure quas vitae voluptate adipisci porro neque consequatur consequatur qui non sequi. Lopes Esteves e Filhos.",
+   "item": "extra0"
+  },
+  {
+   "indice": 4,
+   "texto": "Australian Institute of Health and Welfare (Australia). (1994). Impedit quia necessitatibus aliquid eius officia ducimus et quasi quis quibusdam dicta impedit voluptate. Batista Fernandes Lda.",
+   "item": "it022"
+  },
+  {
+   "indice": 5,
+   "texto": "Australian Institute of Health and Welfare (Australia). (2009). Incidunt earum repellat commodi deserunt. https://exemplo-reservado.org/9797",
+   "item": "it009"
+  },
+  {
+   "indice": 6,
+   "texto": "Baptista, K., Paiva, V., & Ferreira, S. (2008). Animi eum harum rem recusandae non suscipit officia praesentium provident. BMC Public Health, 23(5), 193–205. https://doi.org/10.99999/teste.reservado.62863",
+   "item": "it010"
+  },
+  {
+   "indice": 7,
+   "texto": "Bundesinstitut für Risikobewertung. (2007). Laborum eum maxime assumenda dignissimos eveniet nulla at ea debitis non quisquam. Neves Vicente S/A.",
+   "item": "it019"
+  },
+  {
+   "indice": 8,
+   "texto": "Cardoso, P., & Soares, A. (2026). Soluta laborum asperiores incidunt mollitia ratione sit. Journal of the American Medical Informatics Association, 57(2), 474–484.",
+   "item": "it013"
+  },
+  {
+   "indice": 9,
+   "texto": "Conselho Federal de Medicina Veterinária. (1976). Omnis consectetur blanditiis nobis voluptatibus laborum sed repellat impedit. Vaz.",
+   "item": "it016"
+  },
+  {
+   "indice": 10,
+   "texto": "Costa, N., & Torres, C. (2002). Dolorum ipsum quia iure amet odit. Epidemiologia & Prevenzione, 70(8), 514–520. https://doi.org/10.99999/teste.reservado.82359",
+   "item": "it020"
+  },
+  {
+   "indice": 11,
+   "texto": "de Pinto, K., Miranda, D., & Melo, S. (1994). Numquam quaerat quas adipisci autem harum itaque labore dicta et cum. Neves Silva Lda.",
+   "item": "extra1"
+  },
+  {
+   "indice": 12,
+   "texto": "Figueiredo, L., Costa, N., Melo, D., Domingues, C., Mendes, E., & Moura, A. (2010). Magnam vitae assumenda consequatur debitis odit molestias nulla molestias nisi iure placeat. Revue d’Épidémiologie et de Santé Publique, 63(4), 481–496. https://doi.org/10.99999/teste.reservado.97583",
+   "item": "it021"
+  },
+  {
+   "indice": 13,
+   "texto": "Gonçalves, L., Andrade, T., Pinto, L., Lima, Y., Soares, L., & Guerreiro, I. (2012). Distinctio quas eos voluptate corporis autem sint ullam cumque id ipsa facilis. Epidemiologia e Serviços de Saúde, 53(12), 572–580. https://doi.org/10.99999/teste.reservado.61792",
+   "item": "it023"
+  },
+  {
+   "indice": 14,
+   "texto": "Liu, W. (2018). Optio ipsam sint ut perferendis nobis id. Cadernos de Saúde Pública, 25(3), 725–733. https://doi.org/10.99999/teste.reservado.41170",
+   "item": "it003"
+  },
+  {
+   "indice": 15,
+   "texto": "Llobet Bolaños, F., & Pinheiro, T. (1982). Veritatis esse dolor eum sequi exercitationem distinctio in. https://exemplo-reservado.org/7336",
+   "item": "it002"
+  },
+  {
+   "indice": 16,
+   "texto": "Melo, E., Freitas, Â., Morais, X., & Jesus, F. (2003). Tenetur repudiandae quos consectetur quisquam ea. Epidemiologia e Serviços de Saúde, 53(1), 438–449. https://doi.org/10.99999/teste.reservado.14850",
+   "item": "it012"
+  },
+  {
+   "indice": 17,
+   "texto": "Minas Gerais (Estado). (2008). Atque reiciendis adipisci inventore a error. https://exemplo-reservado.org/8371",
+   "item": "it018"
+  },
+  {
+   "indice": 18,
+   "texto": "Minas Gerais (Estado). (2018). Illo non accusantium est nemo inventore. Faria Lda.",
+   "item": "it007"
+  },
+  {
+   "indice": 19,
+   "texto": "Nguyen, M., Figueiredo, C., Henriques, L., & Machado, F. (2012). Vitae laudantium optio commodi ea perspiciatis blanditiis debitis at cum amet. Revue d’Épidémiologie et de Santé Publique, 55(5), 292–305. https://doi.org/10.99999/teste.reservado.64413",
+   "item": "it005"
+  },
+  {
+   "indice": 20,
+   "texto": "Occaecati consectetur ratione nam saepe quidem distinctio voluptatum, Legislação N. 11356. Obtido https://leis-reservado.gov/1945",
+   "item": "it024"
+  },
+  {
+   "indice": 21,
+   "texto": "Park, M., Cunha, I., & Ribeiro, A. (1989). Eligendi sunt accusamus repudiandae eaque ipsa labore. Revue d’Épidémiologie et de Santé Publique, 10(10), 769–773. https://doi.org/10.99999/teste.reservado.68000",
+   "item": "it004"
+  },
+  {
+   "indice": 22,
+   "texto": "Pinho-Andrade, I., Vieira, P., Moreira, M., & Lima, J. (2025). Ea temporibus fugit hic animi sapiente deserunt doloremque. BMC Public Health, 8(4), 866–876.",
+   "item": "it000"
+  },
+  {
+   "indice": 23,
+   "texto": "Public Health Agency of Canada. (1977). Quisquam quia tenetur incidunt dolores animi earum assumenda. Epidemiologia e Serviços de Saúde, 8(5), 468–482.",
+   "item": "it008"
+  },
+  {
+   "indice": 24,
+   "texto": "Ribeiro, J., & Garcia, E. (2022). A officia veritatis asperiores iure asperiores nulla neque blanditiis fugit sapiente dolore. Cadernos de Saúde Pública, 74(3), 439–443.",
+   "item": "it011"
+  },
+  {
+   "indice": 25,
+   "texto": "Secretaria Municipal da Saúde (Curitiba). (1988). Odit sequi rem beatae velit blanditiis. Magalhães Lda.",
+   "item": "it015"
+  },
+  {
+   "indice": 26,
+   "texto": "van der Pinheiro, A., Azevedo, J., Brito, P., & Brito, V. (1978). Alias earum numquam vitae corporis repellendus nemo odio harum dicta pariatur explicabo iusto. Gaceta Sanitaria, 46(10), 564–569. https://doi.org/10.99999/teste.reservado.32823",
+   "item": "it001"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Australian Institute of Health and Welfare (Australia), 2009; Cardoso & Soares, 2026; Public Health Agency of Canada, 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it009",
+    "it013"
+   ],
+   "referencias": [
+    23,
+    5,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bundesinstitut für Risikobewertung, 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Antunes, 2007a; Liu, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it025"
+   ],
+   "referencias": [
+    14,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Public Health Agency of Canada, 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park et al., 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Baptista et al., 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen et al., 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Figueiredo et al., 2010; Gonçalves et al., 2012; Liu, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it021",
+    "it003"
+   ],
+   "referencias": [
+    13,
+    12,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Public Health Agency of Canada (1977)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ribeiro & Garcia, 2022; van der Pinheiro et al., 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it001"
+   ],
+   "referencias": [
+    24,
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Melo et al., 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária, 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen et al., 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bundesinstitut für Risikobewertung, 2007; Gonçalves et al., 2012; Vieira & Assunção, 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it019",
+    "it014"
+   ],
+   "referencias": [
+    13,
+    7,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bundesinstitut für Risikobewertung (2007)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Costa & Torres, 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Public Health Agency of Canada (1977)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Correia (Occaecati consectetur ratione nam saepe quidem distinctio voluptatum, s.d.)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária, 1976; Figueiredo et al., 2010; Occaecati consectetur ratione nam saepe quidem distinctio voluptatum, s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it016",
+    "it021"
+   ],
+   "referencias": [
+    20,
+    9,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ribeiro & Garcia, 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Australian Institute of Health and Welfare (Australia), 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Antunes, 2007b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Australian Institute of Health and Welfare (Australia), 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen et al., 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Minas Gerais (Estado), 2018; Ribeiro & Garcia, 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it011"
+   ],
+   "referencias": [
+    18,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Occaecati consectetur ratione nam saepe quidem distinctio voluptatum, s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bundesinstitut für Risikobewertung, 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Abreu et al. (1989)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gonçalves et al. (2012)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinho-Andrade et al., 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Secretaria Municipal da Saúde (Curitiba), 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Baptista et al., 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Antunes, 2007a; Llobet Bolaños & Pinheiro, 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it002"
+   ],
+   "referencias": [
+    1,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Minas Gerais (Estado), 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bundesinstitut für Risikobewertung (2007)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park et al., 1989; van der Pinheiro et al., 1978; Vieira & Assunção, 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it004",
+    "it001"
+   ],
+   "referencias": [
+    null,
+    21,
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Australian Institute of Health and Welfare (Australia), 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ribeiro & Garcia, 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária, 1976; Łukasz & Figueiredo, 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it006"
+   ],
+   "referencias": [
+    9,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Minas Gerais (Estado), 2008, p. 147)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Liu, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Antunes, 2007b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Liu, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Bundesinstitut für Risikobewertung (2007)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Bundesinstitut für Risikobewertung, 2007; Gonçalves et al., 2012; Vieira & Assunção, 1996)",
+   "item": "it014"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Park et al., 1989; van der Pinheiro et al., 1978; Vieira & Assunção, 1996)",
+   "item": "it014"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Conselho Federal de Medicina Veterinária, 1976; Łukasz & Figueiredo, 2004)",
+   "item": "it006"
+  },
+  {
+   "ponto": "E",
+   "referencia": 3,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 11,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Placeat deserunt repudiandae iste sequi officiis asperiores dolorum minima rerum ratione ipsam dolores"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

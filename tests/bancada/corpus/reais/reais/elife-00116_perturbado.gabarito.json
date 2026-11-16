@@ -1,0 +1,941 @@
+{
+ "id": "elife-00116_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00116.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Al-Khayat HA, Kensler RW, Morris EP, Squire JM. 2010. Three-dimensional structure of the M-region (bare zone) of vertebrate striated muscle myosin filaments by single-particle analysis. J Mol Biol 403:763–776. doi: 10.1016/j.jmb.2010.09.025",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Arai Y, Yasuda R, Akashi K, Harada Y, Miyata H, Kinosita K. 1999. Tying a molecular knot with optical tweezers. Nature 399:446–448. doi: 10.1038/20894",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Backouche F, Haviv L, Groswasser D, Bernheim-Groswasser A. 2006. Active gels: dynamics of patterning and self-organization. Phys Biol 3:264–273. doi: 10.1088/1478-3975/3/4/004",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Beis I, Newsholme EA. 1975. The contents of adenine nucleotides, phosphagens and some glycolytic intermediates in resting muscles from vertebrates and invertebrates. Biochem J 152:23–32.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Bray D, White JG. 1988. Cortical flow in animal cells. Science 239:883–888.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Burgess DR. 2005. Cytokinesis: new roles for myosin. Curr Biol 15:R310–R311. doi: 10.1016/j.cub.2005.04.008",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Cramer LP, Mitchison TJ. 1995. Myosin is involved in postmitotic cell spreading. J Cell Biol 131:179–189.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "De Lozanne A, Spudich JA. 1987. Disruption of the Dictyostelium myosin heavy chain gene by homologous recombination. Science 236:1086–1091.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "DeBiasio RL, LaRocca GM, Post PL, Taylor DL. 1996. Myosin II transport, organization, and phosphorylation: evidence for cortical flood/solation-contraction coupling during cytokinesis and cell locomotion. Mol Biol Cell 7:1259–1282.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Diz-Muñoz A, Krieg M, Bergert M, Ibarlucea-Benitez I, Muller DJ, Paluch E. 2010. Control of directed cell migration in vivo by membrane-to-cortex attachment. PLoS Biol 8:e1000544. doi: 10.1371/journal.pbio.1000544",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Gordon D, Bernheim-Groswasser A, Keasar C, Farago O. 2012. Hierarchical self-organization of cytoskeletal active networks. Phys Biol 9:026005. doi: 10.1088/1478-3975/9/2/026005",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Guha M, Zhou M, Wang YL. 2005. Cortical actin turnover during cytokinesis requires myosin II. Curr Biol 15:732–736. doi: 10.1016/j.cub.2005.03.042",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Harris DE, Warshaw DM. 1993. Smooth and skeletal muscle myosin both exhibit low duty cycles at zero load in vitro. J Biol Chem 268:14764–14768.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Haviv L, Gillo D, Backouche F, Bernheim-Groswasser A. 2008. A cytoskeletal demolition worker: myosin II acts as an actin depolymerization agent. J Mol Biol 375:325–330. doi: 10.1016/j.jmb.2007.09.066",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Howard J. 2001. Mechanics of motor proteins and the cytoskeleton. Mechanics of Motor Proteins and the Cytoskeleton:213–262.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Humphrey D, Duggan C, Saha D, Smith D, Kas J. 2002. Active fluidization of polymer networks through molecular motors. Nature 416:413–416. doi: 10.1038/416413416413",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Imamura H, Nhat KP, Togawa H, Saito K, Iino R, Kato-Yamada Y. 2009. Visualization of ATP levels inside single living cells with fluorescence resonance energy transfer-based genetically encoded indicators. Proc Natl Acad Sci USA 106:15651–15656. doi: 10.1073/pnas.0904764106",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Kaya M, Higuchi H. 2010. Nonlinear elasticity and an 8-nm working stroke of single myosin molecules in myofilaments. Science 329:686–689. doi: 10.1126/science.1191484",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Kohler S, Schaller V, Bausch AR. 2011. Structure formation in active networks. Nat Mater 10:462–468. doi: 10.1038/nmat3009",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Loose M, Fischer-Friedrich E, Herold C, Kruse K, Schwille P. 2011. Min protein patterns emerge from rapid rebinding and membrane interaction of MinE. Nat Struct Mol Biol 18:577–583. doi: 10.1038/nsmb.2037",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Matsumura F, Totsukawa G, Yamakita Y, Yamashiro S. 2001. Role of myosin light chain phosphorylation in the regulation of cytokinesis. Cell Struct Funct 26:639–644.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Medeiros NA, Burnette DT, Forscher P. 2006. Myosin II functions in actin-bundle turnover in neuronal growth cones. Nat Cell Biol 8:215–226. doi: 10.1038/ncb1367",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Meijering E, Jacob M, Sarria JC, Steiner P, Hirling H, Unser M. 2004. Design and validation of a tool for neurite tracing and analysis in fluorescence microscopy images. Cytometry A 58:167–176. doi: 10.1002/cyto.a.20022",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Morone N, Fujiwara T, Murase K, Kasai RS, Ike H, Yuasa S. 2006. Three-dimensional reconstruction of the membrane skeleton at the plasma membrane interface by electron tomography. J Cell Biol 174:851–862. doi: 10.1083/jcb.200606007",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Murthy K, Wadsworth P. 2005. Myosin-II-dependent localization and dynamics of F-actin during cytokinesis. Curr Biol 15:724–731. doi: 10.1016/j.cub.2005.02.055",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Reymann AC, Boujemaa-Paterski R, Martiel JL, Guerin C, Cao W, Chin HF. 2012. Actin network architecture can determine myosin motor activity. Science 336:1310–1314. doi: 10.1126/science.1221708",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Rogers SS, Waigh TA, Zhao X, Lu JR. 2007. Precise particle tracking against a complicated background: polynomial fitting with Gaussian weight. Phys Biol 4:220–227. doi: 10.1088/1478-3975/4/3/008",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Schaller V, Weber C, Semmrich C, Frey E, Bausch AR. 2010. Polar patterns of driven filaments. Nature 467:73–77. doi: 10.1038/nature09312",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Sedzinski J, Biro M, Oswald A, Tinevez JY, Salbreux G, Paluch E. 2011. Polar actomyosin contractility destabilizes the position of the cytokinetic furrow. Nature 476:462–466. doi: 10.1038/nature10286",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Sellers JR, Kachar B. 1990. Polarity and velocity of sliding filaments: control of direction by actin and of speed by myosin. Science 249:406–408.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Smith D, Ziebert F, Humphrey D, Duggan C, Steinbeck M, Zimmermann W. 2007. Molecular motor-induced instabilities and cross linkers determine biopolymer organization. Biophys J 93:4445–4452. doi: 10.1529/biophysj.106.095919",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Soares e Silva M, Depken M, Stuhrmann B, Korsten M, MacKintosh FC, Koenderink GH. 2011. Active multistage coarsening of actin networks driven by myosin motors. Proc Natl Acad Sci USA 108:9408–9413. doi: 10.1073/pnas.1016616108",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Spudich JA, Kron SJ, Sheetz MP. 1985. Movement of myosin-coated beads on oriented filaments reconstituted from purified actin. Nature 315:584–586.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Tan JL, Ravid S, Spudich JA. 1992. Control of nonmuscle myosins by phosphorylation. Annu Rev Biochem 61:721–759. doi: 10.1146/annurev.bi.61.070192.003445",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Thoresen T, Lenz M, Gardel ML. 2011. Reconstitution of contractile actomyosin bundles. Biophys J 100:2698–2705. doi: 10.1016/j.bpj.2011.04.031",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Verkhovsky AB, Borisy GG. 1993. Non-sarcomeric mode of myosin II organization in the fibroblast lamellum. J Cell Biol 123:637–652.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Verkhovsky AB, Svitkina TM, Borisy GG. 1995. Myosin II filament assemblies in the active lamella of fibroblasts: their morphogenesis and role in the formation of actin filament bundles. J Cell Biol 131:989–1002.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Vogel SK, Schwille P. 2012. Minimal systems to study membrane-cytoskeleton interactions. Curr Opin Biotechnol 23:758–765. doi: 10.1016/j.copbio.2012.03.012",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Wang F, Kovacs M, Hu A, Limouze J, Harvey EV, Sellers JR. 2003. Kinetic mechanism of non-muscle myosin IIB: functional adaptations for tension generation and maintenance. J Biol Chem 278:27439–27448. doi: 10.1074/jbc.M302510200",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Wessells NK, Spooner BS, Ash JF, Bradley MO, Luduena MA, Taylor EL. 1971. Microfilaments in cellular and developmental processes. Science 171:135–143.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Woodhead JL, Zhao FQ, Craig R, Egelman EH, Alamo L, Padron R. 2005. Atomic model of a myosin filament in the relaxed state. Nature 436:1195–1199. doi: 10.1038/nature03920",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Yanagida T, Nakase M, Nishiyama K, Oosawa F. 1984. Direct observation of motion of single F-actin filaments in the presence of myosin. Nature 307:58–60.",
+   "item": "bib42"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Morone et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wessells et al., 1971",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bray and White, 1988",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Diz-Muñoz et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sedzinski et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "De Lozanne and Spudich, 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cramer and Mitchison, 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Verkhovsky and Borisy, 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Verkhovsky et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burgess, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guha et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Murthy and Wadsworth, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Backouche et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smith et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schaller et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kohler et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Soares e Silva et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gordon et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reymann et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vogel and Schwille, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smith et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Backouche et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Haviv et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Thoresen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rogers et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sellers and Kachar, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Al-Khayat et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Spudich et al., 1985",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sellers and Kachar, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Howard, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Howard, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yanagida et al., 1984",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaya and Higuchi, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woodhead et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Arai et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Imamura et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Beis and Newsholme, 1975",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Harris and Warshaw, 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Humphrey et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smith et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Soares e Silva et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tan et al., 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "DeBiasio et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Matsumura et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Backouche et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smith et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Soares e Silva et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gordon et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Medeiros et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Howard, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Howard, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rogers et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Howard, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Howard, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sellers and Kachar, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaya and Higuchi, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Al-Khayat et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woodhead et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yanagida et al., 1984",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Arai et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smith et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loose et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Meijering et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rogers et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

@@ -1,0 +1,696 @@
+{
+ "id": "reservado_ama_pt-PT_erros",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "pt-PT",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Henriques N, Faria Â, Campos F. Natus recusandae voluptatem sunt voluptas quaerat. Em: Moreira S, ed. Nesciunt animi neque reprehenderit ex facilis. Marques; 2015:47–62.",
+   "item": "it024"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Fonseca D, Santos S, Guerreiro L, Castro L. Dolorum facere nulla repellendus iusto minima ea quibusdam suscipit. Das Gesundheitswesen. 13(8):509–516. doi:10.99999/teste.reservado.48927",
+   "item": "it027"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Sá E. Temporibus modi rem consequuntur deleniti ducimus illo in sint blanditiis. Revista de Saúde Pública. 2023;54(6):584–603. doi:10.99999/teste.reservado.34917",
+   "item": "it023"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Minas Gerais (Estado). Amet eum eveniet tenetur quam. Moura; 1985.",
+   "item": "it009"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Teixeira L. Voluptatum voluptatibus expedita voluptatem eos error ipsa. Preventive Veterinary Medicine. 2004;37(10):843–858.",
+   "item": "it029"
+  },
+  {
+   "indice": 5,
+   "texto": "7. Leite R. Ut voluptas est dolores in distinctio quibusdam. Epidemiologia e Serviços de Saúde. 2025;43(1):611–615.",
+   "item": "it016"
+  },
+  {
+   "indice": 6,
+   "texto": "8. Vicente V. Voluptate nulla dolorum commodi voluptatum rerum assumenda. Das Gesundheitswesen. 1989;72(6):2–6.",
+   "item": "it022"
+  },
+  {
+   "indice": 7,
+   "texto": "9. Tran TH, Santos A. Molestias tempore blanditiis necessitatibus rerum nihil. Cardoso Rodrigues e Filhos; 2017.",
+   "item": "it005"
+  },
+  {
+   "indice": 8,
+   "texto": "10. Teixeira L. Illum repellendus voluptatum facere sit quia totam. 2004. Acedido 2 de novembro de 2026. https://exemplo-reservado.org/4435",
+   "item": "it028"
+  },
+  {
+   "indice": 9,
+   "texto": "12. Ferreira T. Minus in quod aspernatur id impedit dolores. Castro S.A.; 2008.",
+   "item": "it018"
+  },
+  {
+   "indice": 10,
+   "texto": "13. Gomes S, Batista D. Aliquid dignissimos autem laborum nam a tempore doloremque. Marques Lda.; 2018.",
+   "item": "it012"
+  },
+  {
+   "indice": 11,
+   "texto": "14. Conselho Federal de Medicina Veterinária. Magnam porro minus perspiciatis similique iusto fugit. 1987. Acedido 15 de novembro de 2026. https://exemplo-reservado.org/8992",
+   "item": "it010"
+  },
+  {
+   "indice": 12,
+   "texto": "15. van der Reis P, Vaz R, Pinto I. Incidunt odit harum placeat dolor voluptate eaque non temporibus nisi nisi repellendus voluptate. Pinheiro; 2022.",
+   "item": "it001"
+  },
+  {
+   "indice": 13,
+   "texto": "16. Agência Nacional de Vigilância Sanitária (Brasil). At quae quos unde aperiam exercitationem accusantium at quam et temporibus. 2006. https://leis-reservado.gov/9879",
+   "item": "it020"
+  },
+  {
+   "indice": 14,
+   "texto": "17. Secretaria Municipal da Saúde (Curitiba). Repellendus nobis corrupti explicabo est. Monteiro Lda.; 1999.",
+   "item": "it011"
+  },
+  {
+   "indice": 15,
+   "texto": "18. Lee M jun, Pinto N, Morais N. Voluptates vero distinctio suscipit quo exercitationem atque. One Health. 1982;53(6):450–454. doi:10.99999/teste.reservado.69009",
+   "item": "it004"
+  },
+  {
+   "indice": 16,
+   "texto": "19. Gaspar B, Ramos D, Pinheiro A, Pires S. Officia pariatur nulla placeat eaque possimus. Preventive Veterinary Medicine. 1998;6(8):306–324. doi:10.99999/teste.reservado.89191",
+   "item": "it021"
+  },
+  {
+   "indice": 17,
+   "texto": "20. Bundesinstitut für Risikobewertung. Minima quod architecto nobis natus sit corrupti ex nisi qui facere similique. BMC Public Health. 1983;76(1):667–683. doi:10.99999/teste.reservado.94107",
+   "item": "it008"
+  },
+  {
+   "indice": 18,
+   "texto": "21. Martins C. Sit quod tempore voluptatibus quia magni tenetur placeat ea sapiente optio. Medical Mycology. 2013;53(3):291–309. doi:10.99999/teste.reservado.51229",
+   "item": "it025"
+  },
+  {
+   "indice": 19,
+   "texto": "22. Santé publique France. Illo aperiam commodi ullam nostrum blanditiis error. Medical Mycology. 1989;41(2):424–443. doi:10.99999/teste.reservado.81823",
+   "item": "it007"
+  },
+  {
+   "indice": 20,
+   "texto": "23. Liu X, Assunção B, Gaspar L. Aliquam dicta nihil quo illum earum voluptates omnis asperiores tempore debitis quod maxime. Preventive Veterinary Medicine. 1994;77(3):389–399. doi:10.99999/teste.reservado.76309",
+   "item": "it003"
+  },
+  {
+   "indice": 21,
+   "texto": "24. Valente-Pacheco L, Melo M. Porro dolorum incidunt quos impedit quibusdam corporis excepturi eius soluta. 1991. https://leis-reservado.gov/6781",
+   "item": "it000"
+  },
+  {
+   "indice": 22,
+   "texto": "25. Santos A. Blanditiis itaque vero aliquam maiores nesciunt libero ipsa harum ab a autem odio. Preventive Veterinary Medicine. 2008;4(1):361–375. doi:10.99999/teste.reservado.11483",
+   "item": "it026"
+  },
+  {
+   "indice": 23,
+   "texto": "26. Mir Miranda C, Pacheco I, Alves L, Vieira C. Quasi ab autem repellendus dignissimos omnis occaecati quaerat voluptatibus facilis. Journal of the American Medical Informatics Association. 2025;62(7):139–155. doi:10.99999/teste.reservado.26137",
+   "item": "it002"
+  },
+  {
+   "indice": 24,
+   "texto": "27. Bundesinstitut für Risikobewertung. Sit quo provident eligendi reprehenderit explicabo quas doloremque animi quibusdam at. 1983. Acedido 3 de novembro de 2026. https://exemplo-reservado.org/9590",
+   "item": "it015"
+  },
+  {
+   "indice": 25,
+   "texto": "28. Leal M, Gomes N. Itaque voluptate quam reprehenderit voluptas possimus laboriosam molestias natus illo quo. Morais; 2020.",
+   "item": "it019"
+  },
+  {
+   "indice": 26,
+   "texto": "29. Guerreiro C. Numquam fuga consequuntur occaecati maiores. Em: Gomes B, ed. Magnam nam quaerat tenetur expedita excepturi provident dolorum suscipit rerum molestiae atque ipsum blanditiis reiciendis nulla. Cruz; 1997:92–107.",
+   "item": "it014"
+  },
+  {
+   "indice": 27,
+   "texto": "30. Nunes B. Et quas hic temporibus mollitia. Medical Mycology. 1985;62(6):617–632.",
+   "item": "it017"
+  },
+  {
+   "indice": 28,
+   "texto": "31. Vicente-Brito K, Lourenço L, Pereira F. Cupiditate sit corrupti nostrum nihil ipsa praesentium atque ipsam animi odio laudantium minus fugiat sit ipsum. Medical Mycology. 1984;52(4):677–694. doi:10.99999/teste.reservado.99177",
+   "item": "extra0"
+  },
+  {
+   "indice": 29,
+   "texto": "32. del Azevedo C. Incidunt ipsum possimus ut ut. Preventive Veterinary Medicine. 2011;40(10):179–192. doi:10.99999/teste.reservado.75832",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1,2",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it027"
+   ],
+   "referencias": [
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,4",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it009"
+   ],
+   "referencias": [
+    2,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,6",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it006"
+   ],
+   "referencias": [
+    4,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sá 3",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4,7",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it016"
+   ],
+   "referencias": [
+    3,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Teixeira 10",
+   "tipo": "narrativa",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sá 3",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11–13",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it018",
+    "it012"
+   ],
+   "referencias": [
+    null,
+    9,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "10,15",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it028"
+   ],
+   "referencias": [
+    12,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Agência Nacional de Vigilância Sanitária (Brasil) 16",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18–20",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it021",
+    "it008"
+   ],
+   "referencias": [
+    15,
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martins 21",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "22",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12,19",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it018"
+   ],
+   "referencias": [
+    16,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12,23",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it018"
+   ],
+   "referencias": [
+    20,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Valente-Pacheco 24",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,25",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it023"
+   ],
+   "referencias": [
+    22,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "26",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "27",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23,28",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it003"
+   ],
+   "referencias": [
+    25,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13,20",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it012"
+   ],
+   "referencias": [
+    17,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guerreiro 29",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "20",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4,20,25",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it008",
+    "it026"
+   ],
+   "referencias": [
+    3,
+    17,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "30",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14(p162)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "6",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Leal 28",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "5,6",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "11–13",
+   "item": "it013"
+  },
+  {
+   "ponto": "D",
+   "citacao": "6",
+   "item": "it006"
+  },
+  {
+   "ponto": "E",
+   "referencia": 28,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 29,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Amet sunt dolore libero facere vero est facilis"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

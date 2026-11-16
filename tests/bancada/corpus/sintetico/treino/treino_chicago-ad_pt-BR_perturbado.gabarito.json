@@ -1,0 +1,657 @@
+{
+ "id": "treino_chicago-ad_pt-BR_perturbado",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "pt-BR",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Alves, Miguel, Pedro Lucas Campos, e Heloisa da Rocha. 2006. Distinctio et voluptatum quidem fugit facilis doloribus. Aragão.",
+   "item": "it014"
+  },
+  {
+   "indice": 1,
+   "texto": "Aragão, Rodrigo, Daniel Cavalcanti, Lavínia Cassiano, Hellena Caldeira, Mariane da Mota, e Allana Andrade. 1999. Explicabo cum rem nostrum non expedita fugiat qui sequi. Mendes.",
+   "item": "it017"
+  },
+  {
+   "indice": 2,
+   "texto": "Araújo, Rebeca. 1985. “Veniam eos unde dolorem nisi sequi quam possimus”. Revista de Saúde Pública 64 (3): 792–808.",
+   "item": "it012"
+  },
+  {
+   "indice": 3,
+   "texto": "Araújo-Leão, Oliver, Mariana Viana, e Mariana Alves. 1979. “Natus amet ullam perspiciatis quaerat praesentium temporibus dolor labore”. https://exemplo-treino.org/4584.",
+   "item": "it000"
+  },
+  {
+   "indice": 4,
+   "texto": "Carvalho, Luana. 1987. Facere illum animi voluptatibus veniam minus. Viana Cavalcanti S/A.",
+   "item": "it015"
+  },
+  {
+   "indice": 5,
+   "texto": "Conselho Nacional de Saúde (Brasil). 2010. Veniam magnam reprehenderit aliquam ea eligendi. Da Cunha.",
+   "item": "it009"
+  },
+  {
+   "indice": 6,
+   "texto": "Gremião, Rael, Marcelo Sá, e Hadassa Freitas. 1979. “Id debitis eligendi nobis unde deleniti”. Medical Mycology 10 (11): 147–56.",
+   "item": "it006"
+  },
+  {
+   "indice": 7,
+   "texto": "Lee, Ji-ho. 2024. “In dignissimos deserunt ex tempore quo dicta quo”. Em Dicta repellat accusamus quos quo ipsam nam, organizado por Leandro da Costa. Gomes.",
+   "item": "it004"
+  },
+  {
+   "indice": 8,
+   "texto": "Luz, Lucas da, Bento Barros, Gustavo Henrique Marques, Alana Sá, Davi Lucca Cavalcante, e Alexia Lima. 2021. “Earum libero fugit esse numquam mollitia quas numquam distinctio deserunt”. BMC Public Health 11 (12): 869–87. https://doi.org/10.99999/teste.treino.65539.",
+   "item": "it013"
+  },
+  {
+   "indice": 9,
+   "texto": "Melo, Cauê dos, e Caroline Lopes. 1979. “Maxime et labore ut sunt occaecati beatae eaque debitis exercitationem”. Em Deleniti vitae odit voluptatibus mollitia iste eos deleniti similique quasi fugiat non cum voluptatem animi, organizado por João Gabriel Rodrigues. Novais da Cunha Ltda.",
+   "item": "it001"
+  },
+  {
+   "indice": 10,
+   "texto": "Ministerio de Sanidad (España). s.d. At aperiam nihil animi praesentium veniam nam minima at voluptatum cupiditate. Marques Ltda.",
+   "item": "it021"
+  },
+  {
+   "indice": 11,
+   "texto": "Monteiro, Emanuel, e Heloísa Cassiano. 2004. “Fugit accusantium in porro blanditiis tempora ipsam veritatis dolorum perspiciatis dolore alias”. Fogaça S/A.",
+   "item": "it010"
+  },
+  {
+   "indice": 12,
+   "texto": "Moreira, Léo, e Pedro Henrique Lima. 1989. Dicta dolore labore quae beatae aperiam labore voluptate. Borges - ME.",
+   "item": "it011"
+  },
+  {
+   "indice": 13,
+   "texto": "Nguyen, Minh, e Vinícius Martins. 1992. “Vel quo libero temporibus natus id dolorem nostrum delectus reiciendis provident non praesentium”. Lopes.",
+   "item": "it005"
+  },
+  {
+   "indice": 14,
+   "texto": "Novais, Kevin, Allana Borges, e Léo Barros. 2018. “Itaque dolorum minus illo ut est rerum excepturi minima”. Em Necessitatibus velit fugit tenetur deleniti nobis, organizado por Ísis Borges. Abreu.",
+   "item": "it018"
+  },
+  {
+   "indice": 15,
+   "texto": "Pereira, Ravi Lucca. 2021a. “Esse doloremque odio fugiat voluptate corporis necessitatibus”. Epidemiologia & Prevenzione 5 (8): 267–80. https://doi.org/10.99999/teste.treino.54122.",
+   "item": "it022"
+  },
+  {
+   "indice": 16,
+   "texto": "Pereira, Ravi Lucca. 2021b. “Quaerat facilis repellendus fuga soluta ad quas occaecati odio ducimus”. Revue d’Épidémiologie et de Santé Publique 49 (1): 674–91.",
+   "item": "it023"
+  },
+  {
+   "indice": 17,
+   "texto": "Pinto, Sofia, e Maria Julia Freitas. 2014. Praesentium omnis cum ipsum illum mollitia hic pariatur illum accusamus placeat. Silveira Rodrigues - ME.",
+   "item": "it019"
+  },
+  {
+   "indice": 18,
+   "texto": "Rocha, Letícia, Miguel Borges, Cauê Sales, Maitê Andrade, Nathan Vieira, e Maria Eduarda Pimenta. 1995. “Soluta numquam sint ad optio voluptatum vel vel libero aut hic autem”. Epidemiologia & Prevenzione 52 (1): 575–80. https://doi.org/10.99999/teste.treino.88375.",
+   "item": "it020"
+  },
+  {
+   "indice": 19,
+   "texto": "São Paulo (Estado). 2006. “Cupiditate voluptatibus ipsam pariatur sit harum illo”. Das Gesundheitswesen 38 (12): 686–704.",
+   "item": "it007"
+  },
+  {
+   "indice": 20,
+   "texto": "Serna Castrillo, Martirio, Maria Luísa Cardoso, e Davi Gomes. 2017. “Architecto odit voluptatem veniam eveniet quibusdam pariatur cupiditate assumenda”. Cadernos de Saúde Pública 62 (9): 512–21. https://doi.org/10.99999/teste.treino.45203.",
+   "item": "it002"
+  },
+  {
+   "indice": 21,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. 2009. “Doloribus eum dolore est repudiandae minima aliquid molestias ea nisi ipsa ab hic veniam eos quam”. Gaceta Sanitaria 43 (1): 790–800. https://doi.org/10.99999/teste.treino.51207.",
+   "item": "it008"
+  },
+  {
+   "indice": 22,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. 2020. “Possimus neque officiis impedit soluta explicabo omnis ipsam perferendis unde”. https://exemplo-treino.org/4056.",
+   "item": "it016"
+  },
+  {
+   "indice": 23,
+   "texto": "Wang, Hao, Maria Clara Pastor, e Alana Nogueira. 1990. “Ipsum quia omnis perspiciatis voluptatibus”. Epidemiologia & Prevenzione 24 (11): 365–71. https://doi.org/10.99999/teste.treino.48722.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Wang et al. 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 2006; Moreira e Lima 1989; dos Melo e Lopes 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it011",
+    "it001"
+   ],
+   "referencias": [
+    19,
+    12,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Araújo 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião et al. 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "dos Melo e Lopes (1979)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pereira 2021b, 2021a; Aragão et al. 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it022",
+    "it017"
+   ],
+   "referencias": [
+    16,
+    15,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pereira 2021b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(dos Melo e Lopes 1979; Pereira 2021b; Conselho Nacional de Saúde (Brasil) 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it023",
+    "it009"
+   ],
+   "referencias": [
+    9,
+    16,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (2009)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (2009)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Moreira e Lima 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Carvalho 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 2006; Araújo 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it012"
+   ],
+   "referencias": [
+    19,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "São Paulo (Estado) (2006)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 2010; Moreira e Lima 1989; Virginia-Maryland College of Veterinary Medicine 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it011",
+    "it016"
+   ],
+   "referencias": [
+    5,
+    12,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Moreira e Lima 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Araújo-Leão et al. 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pereira 2021a; Nguyen e Martins 1992; Novais et al. 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it005",
+    "it018"
+   ],
+   "referencias": [
+    15,
+    13,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Alves et al. 2006; Ministerio de Sanidad (España), s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it021"
+   ],
+   "referencias": [
+    0,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen e Martins 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Moreira e Lima 1989; Serna Castrillo et al. 2017; Araújo 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it002",
+    "it012"
+   ],
+   "referencias": [
+    12,
+    20,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(dos Melo e Lopes 1979; Rocha et al. 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it020"
+   ],
+   "referencias": [
+    9,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(dos Melo e Lopes 1979; Pinto e Freitas 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it019"
+   ],
+   "referencias": [
+    9,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España), s.d.; Aragão et al. 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it017"
+   ],
+   "referencias": [
+    10,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião et al. 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião et al. 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pereira 2021a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Novais et al. 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (2009)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Serna Castrillo et al. 2017; da Luz et al. 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it013"
+   ],
+   "referencias": [
+    20,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Araújo 1985; Ministerio de Sanidad (España), s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it021"
+   ],
+   "referencias": [
+    2,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinto e Freitas 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pereira 2021b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pereira 2021b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Monteiro e Cassiano 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Araújo-Leão et al. 1979, 164)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Carvalho 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Wang et al. 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Moreira e Lima (1989)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Rerum iste aut eum pariatur minima eum excepturi incidunt"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

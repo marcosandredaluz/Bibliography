@@ -1,0 +1,650 @@
+{
+ "id": "treino_chicago-ad_de-DE_erros",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Bohlander, Kathleen. 2024. „Dürfen neu offen lernen Brief zur nicht nehmen deshalb Nase wo“. In Essen Ende Lehrer hat wohl wir, herausgegeben von Ulla Biggen. Aumann GmbH & Co. KG.",
+   "item": "it010"
+  },
+  {
+   "indice": 1,
+   "texto": "Budig, Elfriede di, und Renate Gumprich. 2021. „Freude anfangen Teller nächste fest bin kommen wahr“. Klotz.",
+   "item": "it001"
+  },
+  {
+   "indice": 2,
+   "texto": "Casas Bayón, Berto. 2001. „Kochen Kopf gesund Hilfe Gesicht aus“. In Kam Monate stehen rot erzählen Licht erschrecken Ende Rad, herausgegeben von Stella Wulff. Söding Heser AG.",
+   "item": "it002"
+  },
+  {
+   "indice": 3,
+   "texto": "Darin Tür Sonne dem Meer machen wo glauben viel zwischen braun dürfen Ding, Gesetz Nr. 14162 (2021). https://leis-treino.gov/7402.",
+   "item": "it007"
+  },
+  {
+   "indice": 4,
+   "texto": "Dehmel, Edgar, Alice Mohaupt, und Roswitha Scheibe. 1992. „Deshalb erschrecken Blume plötzlich früh“. Epidemiologia e Serviços de Saúde 10 (5): 401–14. https://doi.org/10.99999/teste.treino.28961.",
+   "item": "it014"
+  },
+  {
+   "indice": 5,
+   "texto": "Gude, Aziz, Renato Langern, Undine Wieloch, Janett Kuhl, Burkard Gertz, und Giuseppe Wiek. o. J. Steigen drehen Meer Wissen es kalt braun finden später ich vier wo wieder. Meister Binner AG.",
+   "item": "it026"
+  },
+  {
+   "indice": 6,
+   "texto": "Gude, Saskia, Helma Mülichen, Frithjof Gutknecht, und Rosemarie Hermann. 2023. „Bis suchen vor geben lachen weil am heiß kein früh dein“. In Winter besser kochen kaufen Zimmer werfen Haus nein, herausgegeben von Priska Barkholz. Mohaupt.",
+   "item": "it024"
+  },
+  {
+   "indice": 7,
+   "texto": "Hermighausen, Carlo. 2024. „Hinein legen immer früh Geburtstag schauen verstehen genau“. Preventive Veterinary Medicine 80 (12): 25–40. https://doi.org/10.99999/teste.treino.96085.",
+   "item": "it023"
+  },
+  {
+   "indice": 8,
+   "texto": "Hettner, Flora. 2017. „Sofort nichts sie Schule groß gesund kam weit Schule nur ruhig fertig“. In Weg dunkel nehmen sieben viel Uhr mögen fährt, herausgegeben von Franz-Peter Wähner. Junck.",
+   "item": "it011"
+  },
+  {
+   "indice": 9,
+   "texto": "Heuser, Maurice, und Rochus Roht. 1992. „Eigentlich See schaffen Freude sollen schön gut Mama in arbeiten Tisch“. Epidemiologia e Serviços de Saúde 57 (10): 84–103.",
+   "item": "it025"
+  },
+  {
+   "indice": 10,
+   "texto": "Istituto Superiore di Sanità. 1997a. „Laut so kann lange ein Klasse fressen“. https://exemplo-treino.org/5745.",
+   "item": "it028"
+  },
+  {
+   "indice": 11,
+   "texto": "Istituto Superiore di Sanità. 1997b. „Packen schreien schreiben fahren lange zu beim es sprechen wollen blau Winter“. Epidemiologia e Serviços de Saúde 32 (1): 46–52.",
+   "item": "it027"
+  },
+  {
+   "indice": 12,
+   "texto": "Jacobi Jäckel, Karl-Josef da, und Mirjana Kuhl. 2020. „Verstecken gerade Junge lassen Junge bei“. Gaceta Sanitaria 71 (2): 341–48. https://doi.org/10.99999/teste.treino.61844.",
+   "item": "extra1"
+  },
+  {
+   "indice": 13,
+   "texto": "Jäntsch, Nuray, Telse Riehl, und Aloisia Hein. 1997. „Helfen allein ab Schiff sieht dann zur Zahl“. In Endlich ruhig da liegen Sonntag gab wünschen verstehen zur Himmel oft wir vergessen hat gehören, herausgegeben von Nick Werner. Rörricht Döhn AG.",
+   "item": "it015"
+  },
+  {
+   "indice": 14,
+   "texto": "Kabus, Monique, und Jeannette Hornig. 1987. „Nennen nein Feuer Gesicht Weg kein ihn Auge einigen und davon Tür Wort“. In Sprechen hier halbe Papa Tier Schule rennen Baum weiß Beispiel schwimmen Familie kommen Straße, herausgegeben von Dimitrios Scheibe. Gnatz KG.",
+   "item": "it019"
+  },
+  {
+   "indice": 15,
+   "texto": "Lübs, Frank-Michael, Rita Kitzmann, Gunhild Jähn, und Jana Lange. 1988. „Hinter nennen kein lassen Opa antworten damit steigen Fußball“. Medical Mycology 68 (6): 143–47. https://doi.org/10.99999/teste.treino.44716.",
+   "item": "it022"
+  },
+  {
+   "indice": 16,
+   "texto": "Łukasz, Gerhardt. 2025. „Maus Rad schenken dürfen stark Wissen zwischen ja“. Journal of the American Medical Informatics Association 73 (7): 792–805. https://doi.org/10.99999/teste.treino.55304.",
+   "item": "it006"
+  },
+  {
+   "indice": 17,
+   "texto": "Mentzel-Hölzenbecher, Utz, Rosina Köhler, Ilija Tröst, und Hanni Wesack. 1987. „Hart er tragen gegen der Blume sie gab“. Kraushaar e.V.",
+   "item": "extra0"
+  },
+  {
+   "indice": 18,
+   "texto": "Ministerio de Sanidad (España). 2002. „Familie da mit spielen beide gelb kaufen“. Revista de Saúde Pública 68 (2): 743–52. https://doi.org/10.99999/teste.treino.99691.",
+   "item": "it009"
+  },
+  {
+   "indice": 19,
+   "texto": "Mülichen, Hans-Martin. 2017. „Winter wünschen halten Teller Schiff“. Epidemiologia e Serviços de Saúde 12 (2): 828–42. https://doi.org/10.99999/teste.treino.39361.",
+   "item": "it017"
+  },
+  {
+   "indice": 20,
+   "texto": "National Library of Medicine (Estados Unidos). 2013. „Gerade am spät gehören schnell nehmen der Familie beißen da“. https://exemplo-treino.org/1378.",
+   "item": "it021"
+  },
+  {
+   "indice": 21,
+   "texto": "Nohlmans, Alwina, Henrike auch Schlauchin, Sandra Hauffer, Joachim Löchel, Else Bender, und Josef Beer. 2025. Einige stellen Stein doch Hilfe ließ merken. Otto.",
+   "item": "it016"
+  },
+  {
+   "indice": 22,
+   "texto": "Organização Pan-Americana da Saúde. 2006. „Stehen Leben bekommen hin Maus Uhr denn her“. In Tür der geben deshalb vom Schule hin wirklich halten also dem blau, herausgegeben von Traudl Hauffer. Kabus.",
+   "item": "it008"
+  },
+  {
+   "indice": 23,
+   "texto": "Park, Seo-yeon. 2023. „Langsam wohnen Minutenmir bleiben schön sie hinter aber lustig wer“. Das Gesundheitswesen 60 (6): 345–61. https://doi.org/10.99999/teste.treino.53355.",
+   "item": "it004"
+  },
+  {
+   "indice": 24,
+   "texto": "Renner, Ibrahim, Margot Kraushaar, Theres Beckmann, und Ioannis Scheuermann. 1984. „Jung tragen rechnen besser nicht turnen Zimmer dunkel Bruder“. Revista de Saúde Pública 44 (6): 882–89. https://doi.org/10.99999/teste.treino.98125.",
+   "item": "it013"
+  },
+  {
+   "indice": 25,
+   "texto": "Scheibe, Mathilde, Zlatko Schweitzer, Aynur Reuter, und Abdullah Kallert. 1983. „Natürlich wer Wissen mehr ein“. BMC Public Health 4 (2): 194–207.",
+   "item": "it018"
+  },
+  {
+   "indice": 26,
+   "texto": "Speer, Siegmar, und Kornelia Atzler. 1982. „Werden erklären Finger wahr fertig Baum lieb Minute stellen Tisch frei“. Oestrovsky.",
+   "item": "it020"
+  },
+  {
+   "indice": 27,
+   "texto": "Tran, Van Anh, und Metin Söding. 2004. „Hat Schiff Winter Sommer hängen fahren“. Gaceta Sanitaria 30 (4): 342–58. https://doi.org/10.99999/teste.treino.20253.",
+   "item": "it005"
+  },
+  {
+   "indice": 28,
+   "texto": "Weinhold-Weller, Zehra, Charlotte Bohnbach, Hans Jürgen Klingelhöfer, und Stephan Winkler. 1987. „Leute durch scheinen ziehen merken voll Freude später sofort kochen holen Wagen“. Bolander.",
+   "item": "it000"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(M. Scheibe u. a. 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(S. Gude u. a. 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tran und Söding (2004)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Weinhold-Weller u. a. 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(A. Gude u. a., o. J.; Park 2023; Ministerio de Sanidad (España) 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it004",
+    "it009"
+   ],
+   "referencias": [
+    5,
+    23,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Renner u. a. 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Darin Tür Sonne dem Meer machen wo glauben viel zwischen braun dürfen Ding 2021; Rust 2017; A. Gude u. a., o. J.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it012",
+    "it026"
+   ],
+   "referencias": [
+    3,
+    null,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "di Budig und Gumprich (2021)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hettner 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(A. Gude u. a., o. J.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Casas Bayón 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España) 2002; Hermighausen 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it023"
+   ],
+   "referencias": [
+    18,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(M. Scheibe u. a. 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mülichen (2017)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Organização Pan-Americana da Saúde (2006)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Budig und Gumprich 2021; Nohlmans u. a. 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it016"
+   ],
+   "referencias": [
+    1,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Heuser und Roht 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità 1997a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lübs u. a. 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos) 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mülichen 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mülichen 2017; Bohlander 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it010"
+   ],
+   "referencias": [
+    19,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(A. Gude u. a., o. J.; Darin Tür Sonne dem Meer machen wo glauben viel zwischen braun dürfen Ding 2021; Casas Bayón 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it007",
+    "it002"
+   ],
+   "referencias": [
+    5,
+    3,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dehmel u. a. 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kabus und Hornig 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hermighausen 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lübs u. a. 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bohlander 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran und Söding 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jäntsch u. a. (1997)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Liu und Mentzel 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità 1997b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Łukasz 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Speer und Atzler 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos) 2013, 217)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Weinhold-Weller u. a. 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(S. Gude u. a. 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Mülichen 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Jäntsch u. a. (1997)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Darin Tür Sonne dem Meer machen wo glauben viel zwischen braun dürfen Ding 2021; Rust 2017; A. Gude u. a., o. J.)",
+   "item": "it012"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Liu und Mentzel 2003)",
+   "item": "it003"
+  },
+  {
+   "ponto": "E",
+   "referencia": 12,
+   "item": "extra1"
+  },
+  {
+   "ponto": "E",
+   "referencia": 17,
+   "item": "extra0"
+  }
+ ],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Zahl gibt Mädchen lange es die weit dick werfen müde Luft es Gesicht sonst sonst"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,661 @@
+{
+ "id": "reservado_ieee_fr-FR_perturbado",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "fr-FR",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] R. Morvan, J. Dumas, M. Leduc, L. Torres, R. Michel, et O. Bourdon, « Ramasser entourer sujet donc long prêter franc vous triste celui », Cadernos de Saúde Pública, vol. 56, no 8, p. 513‑519, 1985.",
+   "item": "it019"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] É. Hervé-Bertrand, N. Pottier, et I. Vallée, « Engager voisin corde envie ouvrage beauté sembler bête », Medical Mycology, vol. 80, no 3, p. 94‑100, 1994, doi: 10.99999/teste.reservado.15770.",
+   "item": "it000"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] H. Schmitt, « Ici usage complet paysage art », Cadernos de Saúde Pública, vol. 68, no 7, p. 475‑495, 2026.",
+   "item": "it017"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] Public Health Agency of Canada, « Dix éviter longtemps sauter malade école changement importer chance eaux bout séparer elle ton haïr », Das Gesundheitswesen, vol. 5, no 2, p. 617‑622, 1979, doi: 10.99999/teste.reservado.21056.",
+   "item": "it007"
+  },
+  {
+   "indice": 4,
+   "texto": "[5] N. Pasquier, R. Couturier, et T. Launay, « Caractère désir gloire tranquille », Cadernos de Saúde Pública, vol. 46, no 3, p. 104‑110, doi: 10.99999/teste.reservado.41822.",
+   "item": "it026"
+  },
+  {
+   "indice": 5,
+   "texto": "[6] C. Perret, « Réel étaler habiter poussière saison », One Health, vol. 49, no 3, p. 116‑128, 2006, doi: 10.99999/teste.reservado.92962.",
+   "item": "it010"
+  },
+  {
+   "indice": 6,
+   "texto": "[7] A. Perez, A. Klein, C. Delmas, S. Arnaud, C. Olivier, et L. Robert, « Vêtement manger particulier rejeter appuyer révolution », in Épais appel trouver tourner intelligence ferme discours flot, F. Colin, Éd., Sanchez-les-Bains: Fischer, 2009, p. 126‑141.",
+   "item": "it028"
+  },
+  {
+   "indice": 7,
+   "texto": "[8] S. Leclerc et A. Durand, « Aller vie problème produire votre pensée absolument », Revista de Saúde Pública, vol. 68, no 10, p. 257‑270, 1988, doi: 10.99999/teste.reservado.48570.",
+   "item": "it022"
+  },
+  {
+   "indice": 8,
+   "texto": "[9] A. Thomas, « Ennemi élément terme pourtant militaire extraordinaire répandre moyen », One Health, vol. 72, no 4, p. 456‑460, 2018, doi: 10.99999/teste.reservado.43343.",
+   "item": "it018"
+  },
+  {
+   "indice": 9,
+   "texto": "[10] M. Perez et A. Rodriguez, « Avec vouloir ennemi payer dormir peser étaler », Lefort, Grenier, 2008.",
+   "item": "it011"
+  },
+  {
+   "indice": 10,
+   "texto": "[11] Australian Institute of Health and Welfare (Australia), « Encore tache auquel intérieur », Rémy Moreau S.A.R.L., Valentin, 2001.",
+   "item": "it016"
+  },
+  {
+   "indice": 11,
+   "texto": "[12] Organización Mundial de la Salud, « Trou cent musique force métier lentement », in Course tendre membre tôt air, R. Guyon, Éd., Gautier: Daniel, 1985, p. 188‑203.",
+   "item": "it008"
+  },
+  {
+   "indice": 12,
+   "texto": "[13] Santé publique France, « Quelqu’Un aussitôt revenir vouloir jeu entier vieillard professeur énergie soit plein prévenir ». Consulté le: 10 novembre 2026. [En ligne]. Disponible sur: https://exemplo-reservado.org/4100",
+   "item": "it025"
+  },
+  {
+   "indice": 13,
+   "texto": "[14] G. Pedrosa Santamaria et N. Carre, « Puissance vingt prison manquer note davantage abattre vivre », Journal of the American Medical Informatics Association, vol. 44, no 7, p. 99‑114, 2013, doi: 10.99999/teste.reservado.23144.",
+   "item": "it002"
+  },
+  {
+   "indice": 14,
+   "texto": "[15] Secretaria Municipal da Saúde (Curitiba), « Poitrine page autant cheval », in Regarder autre vieil choix mais terme regard nécessaire taille seigneur retour cuisine, A. Hamon, Éd., SalmonVille: Clerc Guilbert S.A., 2003, p. 202‑217.",
+   "item": "it009"
+  },
+  {
+   "indice": 15,
+   "texto": "[16] P. Carre et C. Marin, « Frais apparaître ligne mauvais ombre menacer absence roi respirer décrire vendre », Epidemiologia e Serviços de Saúde, vol. 14, no 12, p. 267‑272, 2022, doi: 10.99999/teste.reservado.91239.",
+   "item": "it015"
+  },
+  {
+   "indice": 16,
+   "texto": "[17] A. Cousin et M. Pereira, « Naissance révolution dehors jeter seconde compter fille », in Brusquement souffrance confiance pont oublier depuis parcourir froid véritable posséder toute, M. Moulin, Éd., Munoz: Evrard Poulain S.A.R.L., 1995, p. 130‑145.",
+   "item": "it014"
+  },
+  {
+   "indice": 17,
+   "texto": "[18] F. Maury, L. Evrard, H. Da Silva, et S. Blanc, Chair écarter mensonge penser résultat perte façon autant doigt soldat salut tandis que imaginer acte. Turpin-sur-Gomez: Rocher, 1985.",
+   "item": "it021"
+  },
+  {
+   "indice": 18,
+   "texto": "[19] V. A. Nguyen, V. Duval, C. Rodrigues, et B. Guichard, Groupe tendre barbe. 2012. [En ligne]. Disponible sur: https://leis-reservado.gov/2591",
+   "item": "it005"
+  },
+  {
+   "indice": 19,
+   "texto": "[20] A. Perez, A. Klein, C. Delmas, S. Arnaud, C. Olivier, et L. Robert, Début boire suivant mari pur pas affaire calme vert donner coûter clair ventre. Fournier-les-Bains: Bonneau Dubois et Fils, 2009.",
+   "item": "it027"
+  },
+  {
+   "indice": 20,
+   "texto": "[21] S. Benard, G. Dos Santos, C. Barbe, L. Julien, L. Potier, et F. Dijoux, « Côté enlever franc sortir », Journal of the American Medical Informatics Association, vol. 75, no 5, p. 825‑836, 2020.",
+   "item": "it024"
+  },
+  {
+   "indice": 21,
+   "texto": "[22] T. Nguyen, « Demi chaise vieillard employer front avis », Gaceta Sanitaria, vol. 52, no 10, p. 188‑194, 2023, doi: 10.99999/teste.reservado.84510.",
+   "item": "it023"
+  },
+  {
+   "indice": 22,
+   "texto": "[23] G. Groß et C. Guillet, « Jouer te voilà problème diriger fond », Laroche S.A.R.L., Marie, 2024.",
+   "item": "it006"
+  },
+  {
+   "indice": 23,
+   "texto": "[24] É. da Hoareau, G. Tessier, et S. Verdier, « Ce jardin coûter puissant secours début y ramasser avouer éloigner étage », Cadernos de Saúde Pública, vol. 11, no 8, p. 212‑226, 2023.",
+   "item": "it001"
+  },
+  {
+   "indice": 24,
+   "texto": "[25] X. Chen et A. Pereira, « Banc prévoir seulement divers chanter ci argent gagner couleur », Barbe Gauthier SA, Launay, 2016.",
+   "item": "it003"
+  },
+  {
+   "indice": 25,
+   "texto": "[26] S. Lee, « Centre poussière un cesser saint apparaître sou observer », Preventive Veterinary Medicine, vol. 63, no 10, p. 276‑284, 2018.",
+   "item": "it004"
+  },
+  {
+   "indice": 26,
+   "texto": "[27] M. Chauvin, « Moment banc enfance montagne aussi porter », Revue d’Épidémiologie et de Santé Publique, vol. 55, no 8, p. 131‑147, 1986, doi: 10.99999/teste.reservado.55867.",
+   "item": "it013"
+  },
+  {
+   "indice": 27,
+   "texto": "[28] C. Rossi, C. Delmas, T. Teixeira, A. Vincent, T. Peltier, et R. Gaudin, « Théâtre auteur travailler somme foule charger ou journée étaler lettre devant briser », Journal of the American Medical Informatics Association, vol. 44, no 2, p. 689‑697, 2017.",
+   "item": "it020"
+  },
+  {
+   "indice": 28,
+   "texto": "[29] J. Hernandez et T. Louis, Saluer vingt camarade relation rire rompre agiter mal paix. Lucas-sur-Mer: Philippe et Fils, 2005.",
+   "item": "it012"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1], [2], [3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it000",
+    "it017"
+   ],
+   "referencias": [
+    0,
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Perret [6]",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pasquier et al. [5]",
+   "tipo": "narrativa",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Perez et al. [7]",
+   "tipo": "narrativa",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9], [10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it011"
+   ],
+   "referencias": [
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leclerc [8]",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4], [12], [13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it025",
+    "it007"
+   ],
+   "referencias": [
+    11,
+    12,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [2], [12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it008",
+    "it019"
+   ],
+   "referencias": [
+    1,
+    11,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11], [12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it008"
+   ],
+   "referencias": [
+    10,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it028"
+   ],
+   "referencias": [
+    15,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10], [18], [19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it005",
+    "it011"
+   ],
+   "referencias": [
+    17,
+    18,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Perez et al. [20]",
+   "tipo": "narrativa",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pedrosa Santamaria [14]",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [22]",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it022"
+   ],
+   "referencias": [
+    21,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13], [23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it025"
+   ],
+   "referencias": [
+    22,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmitt [3]",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14], [24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it002"
+   ],
+   "referencias": [
+    23,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[26]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[27]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[28]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[29]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16, p. 117]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Perez et al. [7]",
+   "tipo": "narrativa",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Continuer chaleur race vieil demi soulever observer désespoir rester point parfois brusquement"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

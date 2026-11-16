@@ -1,0 +1,1681 @@
+{
+ "id": "elife-00109_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00109.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Aeffner S, Reusch T, Weinhausen B, Salditt T. 2012. Energetics of stalk intermediates in membrane fusion are controlled by lipid composition. Proc Natl Acad Sci USA 109:E1609–E1618.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Araç D, Chen XC, Khant HA, Ubach J, Ludtke SJ, Kikkawa M, et al.. 2006. Close membrane-membrane proximity induced by Ca2+-dependent multivalent binding of synaptotagmin-1 to phospholipids. Nat Struct Mol Biol 13:209–217.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Bowen ME, Weninger K, Brunger AT, Chu S. 2004. Single molecule observation of liposome-bilayer fusion thermally induced by soluble N-ethyl maleimide sensitive-factor attachment protein receptors (SNAREs). Biophys J 87:3569–3584.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Chan YH, van Lengerich B, Boxer SG. 2009. Effects of linker sequences on vesicle fusion mediated by lipid-anchored DNA oligonucleotides. Proc Natl Acad Sci USA 106:979–984.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Chernomordik LV, Kozlov MM. 2008. Mechanics of membrane fusion. Nat Struct Mol Biol 15:675–683.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Choi UB, McCann JJ, Weninger KR, Bowen ME. 2011. Beyond the random coil: stochastic conformational switching in intrinsically disordered proteins. Structure 19:566–576.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Choi UB, Strop P, Vrljic M, Chu S, Brunger AT, Weninger KR. 2010. Single-molecule FRET-derived model of the synaptotagmin 1-SNARE fusion complex. Nat Struct Mol Biol 17:318–324.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Collins RN, Holz RW, Zimmerberg J. 2012. Chapter 523-5.14: the biophysics of membrane fusion. Comprehensive Biophysics 5:273–289.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Cypionka A, Stein A, Hernandez JM, Hippchen H, Jahn R, Walla PJ. 2009. Discrimination between docking and fusion of liposomes reconstituted with neuronal SNARE-proteins using FCS. Proc Natl Acad Sci USA 106:18575–18580.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Dai H, Shen N, Araç D, Rizo J. 2007. A quaternary SNARE-synaptotagmin-Ca2+-phospholipid complex in neurotransmitter release. J Mol Biol 367:848–863.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Diao J, Ishitsuka Y, Lee H, Joo C, Su Z, Syed S, et al.. 2012. A single vesicle-vesicle fusion assay for in vitro studies of SNAREs and accessory proteins. Nat Protoc 7:921–934.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Dobrunz LE, Stevens CF. 1997. Heterogeneity of release probability, facilitation, and depletion at central synapses. Neuron 18:995–1008.",
+   "item": "bib13"
+  },
+  {
+   "indice": 12,
+   "texto": "Floyd DL, Ragains JR, Skehel JJ, Harrison SC, van Oijen AM. 2008. Single-particle kinetics of influenza virus membrane fusion. Proc Natl Acad Sci USA 105:15382–15387.",
+   "item": "bib14"
+  },
+  {
+   "indice": 13,
+   "texto": "Frank J, Radermacher M, Penczek P, Zhu J, Li Y, Ladjadj M, et al.. 1996. SPIDER and WEB: processing and visualization of images in 3D electron microscopy and related fields. J Struct Biol 116:190–199.",
+   "item": "bib15"
+  },
+  {
+   "indice": 14,
+   "texto": "Gao Y, Zorman S, Gundersen G, Xi Z, Ma L, Sirinakis G, et al.. 2012. Single reconstituted neuronal SNARE complexes zipper in three distinct stages. Science 337:1340–1343.",
+   "item": "bib16"
+  },
+  {
+   "indice": 15,
+   "texto": "Giraudo CG, Garcia-Diaz A, Eng WS, Chen YH, Hendrickson WA, Melia TJ, et al.. 2009. Alternative zippering as an on-off switch for SNARE-mediated fusion. Science 323:512–516.",
+   "item": "bib17"
+  },
+  {
+   "indice": 16,
+   "texto": "Harrison SC. 2008. Viral membrane fusion. Nat Struct Mol Biol 15:690–698.",
+   "item": "bib18"
+  },
+  {
+   "indice": 17,
+   "texto": "Heidelberger R, Heinemann C, Neher E, Matthews G. 1994. Calcium dependence of the rate of exocytosis in a synaptic terminal. Nature 371:513–515.",
+   "item": "bib19"
+  },
+  {
+   "indice": 18,
+   "texto": "Hernandez JM, Stein A, Behrmann E, Riedel D, Cypionka A, Farsi Z, et al.. 2012. Membrane fusion intermediates via directional and full assembly of the SNARE complex. Science 336:1581–1584.",
+   "item": "bib20"
+  },
+  {
+   "indice": 19,
+   "texto": "Hui EF, Johnson CP, Yao J, Dunning FM, Chapman ER. 2009. Synaptotagmin-mediated bending of the target membrane is a critical step in Ca(2+)-regulated fusion. Cell 138:709–721.",
+   "item": "bib21"
+  },
+  {
+   "indice": 20,
+   "texto": "Jackson MB, Chapman ER. 2006. Fusion pores and fusion machines in Ca2+-triggered exocytosis. Annu Rev Biophys Biomol Struct 35:135–160.",
+   "item": "bib22"
+  },
+  {
+   "indice": 21,
+   "texto": "Jackson MB, Chapman ER. 2008. The fusion pores of Ca2+-triggered exocytosis. Nat Struct Mol Biol 15:684–689.",
+   "item": "bib23"
+  },
+  {
+   "indice": 22,
+   "texto": "Jahn R, Lang T, Südhof TC. 2003. Membrane fusion. Cell 112:519–533.",
+   "item": "bib24"
+  },
+  {
+   "indice": 23,
+   "texto": "Jahn R, Scheller RH. 2006. SNAREs–engines for membrane fusion. Nat Rev Mol Cell Biol 7:631–643.",
+   "item": "bib25"
+  },
+  {
+   "indice": 24,
+   "texto": "Jun Y, Wickner W. 2007. Assays of vacuole fusion resolve the stages of docking, lipid mixing, and content mixing. Proc Natl Acad Sci USA 104:13010–13015.",
+   "item": "bib26"
+  },
+  {
+   "indice": 25,
+   "texto": "Karatekin E, Di Giovanni J, Iborra C, Coleman J, O'Shaughnessy B, Seagar M, et al.. 2010. A fast, single-vesicle fusion assay mimics physiological SNARE requirements. Proc Natl Acad Sci USA 107:3517–3521.",
+   "item": "bib27"
+  },
+  {
+   "indice": 26,
+   "texto": "Krishnakumar SS, Radoff DT, Kümmel D, Giraudo CG, Li F, Khandan L, et al.. 2011. A conformational switch in complexin is required for synaptotagmin to trigger synaptic fusion. Nat Struct Mol Biol 18:934–940.",
+   "item": "bib28"
+  },
+  {
+   "indice": 27,
+   "texto": "Kümmel D, Krishnakumar SS, Radoff DT, Li F, Giraudo CG, Pincet F, et al.. 2011. Complexin cross-links prefusion SNAREs into a zigzag array. Nat Struct Mol Biol 18:927–933.",
+   "item": "bib29"
+  },
+  {
+   "indice": 28,
+   "texto": "Kuzmin PI, Zimmerberg J, Chizmadzhev YA, Cohen FS. 2001. A quantitative model for membrane fusion based on low-energy intermediates. Proc Natl Acad Sci USA 98:7235–7240.",
+   "item": "bib30"
+  },
+  {
+   "indice": 29,
+   "texto": "Kyoung M, Srivastava A, Zhang YX, Diao JJ, Vrljic M, Grob P, et al.. 2011. In vitro system capable of differentiating fast Ca(2+)-triggered content mixing from lipid exchange for mechanistic studies of neurotransmitter release. Proc Natl Acad Sci USA 108:E304–E313.",
+   "item": "bib31"
+  },
+  {
+   "indice": 30,
+   "texto": "Kyoung M, Zhang Y, Diao J, Chu S, Brunger AT. 2012. Studying calcium triggered vesicle fusion in a single vesicle content/lipid mixing system. Nature Protocols 7.",
+   "item": "bib32"
+  },
+  {
+   "indice": 31,
+   "texto": "Lambert O, Gerke V, Bader MF, Porte F, Brisson A. 1997. Structural analysis of junctions formed between lipid membranes and several annexins by cryo-electron microscopy. J Mol Biol 272:42–55.",
+   "item": "bib33"
+  },
+  {
+   "indice": 32,
+   "texto": "Lee HK, Yang Y, Su ZL, Hyeon C, Lee TS, Lee HW, et al.. 2010. Dynamic Ca(2+)-dependent stimulation of vesicle fusion by membrane-anchored synaptotagmin 1. Science 328:760–763.",
+   "item": "bib34"
+  },
+  {
+   "indice": 33,
+   "texto": "Lindau M, Hall BA, Chetwynd A, Beckstein O, Sansom MS. 2012. Coarse-grain simulations reveal movement of the synaptobrevin C-terminus in response to piconewton forces. Biophys J 103:959–969.",
+   "item": "bib35"
+  },
+  {
+   "indice": 34,
+   "texto": "Liu T, Wang T, Chapman ER, Weisshaar JC. 2008. Productive hemifusion intermediates in fast vesicle fusion driven by neuronal SNAREs. Biophys J 94:1303–1314.",
+   "item": "bib36"
+  },
+  {
+   "indice": 35,
+   "texto": "Ludtke SJ, Baldwin PR, Chiu W. 1999. EMAN: semiautomated software for high-resolution single-particle reconstructions. J Struct Biol 128:82–97.",
+   "item": "bib37"
+  },
+  {
+   "indice": 36,
+   "texto": "Malsam J, Parisotto D, Bharat TAM, Scheutzow A, Krause JM, Briggs JAG, Süllner TH. 2012. Complexin arrests a pol of docked vesicles for fast Ca2+-dependent release. EMBO J 31:3270–3281.",
+   "item": "bib38"
+  },
+  {
+   "indice": 37,
+   "texto": "Maximov A, Tang J, Yang XF, Pang ZPP, Südhof TC. 2009. Complexin controls the force transfer from SNARE complexes to membranes in fusion. Science 323:516–521.",
+   "item": "bib39"
+  },
+  {
+   "indice": 38,
+   "texto": "McMahon HT, Kozlov MM, Martens S. 2010. Membrane curvature in synaptic vesicle fusion and beyond. Cell 140:601–605.",
+   "item": "bib40"
+  },
+  {
+   "indice": 39,
+   "texto": "Meinrenken CJ, Borst JG, Sakmann B. 2003. Local routes revisited: the space and time dependence of the Ca2+ signal for phasic transmitter release at the rat calyx of Held. J Physiol 547:665–689.",
+   "item": "bib41"
+  },
+  {
+   "indice": 40,
+   "texto": "Miroux B, Walker JE. 1996. Over-production of proteins in Escherichia coli: mutant hosts that allow synthesis of some membrane proteins and globular proteins at high levels. J Mol Biol 260:289–298.",
+   "item": "bib42"
+  },
+  {
+   "indice": 41,
+   "texto": "Moreau K, Ravikumar B, Renna M, Puri C, Rubinsztein DC. 2011. Autophagosome precursor maturation requires homotypic fusion. Cell 146:303–317.",
+   "item": "bib43"
+  },
+  {
+   "indice": 42,
+   "texto": "Ngatchou AN, Kisler K, Fang Q, Walter AM, Zhao Y, Bruns D, et al.. 2010. Role of the synaptobrevin C terminus in fusion pore formation. Proc Natl Acad Sci USA 107:18463–18468.",
+   "item": "bib44"
+  },
+  {
+   "indice": 43,
+   "texto": "Reese C, Mayer A. 2005. Transition from hemifusion to pore opening is rate limiting for vacuole membrane fusion. J Cell Biol 171:981–990.",
+   "item": "bib45"
+  },
+  {
+   "indice": 44,
+   "texto": "Risselada HJ, Kutzner C, Grubmüller H. 2011. Caught in the act: visualization of SNARE-mediated fusion events in molecular detail. Chembiochem 12:1049–1055.",
+   "item": "bib46"
+  },
+  {
+   "indice": 45,
+   "texto": "Rizo J, Rosenmund C. 2008. Synaptic vesicle fusion. Nat Struct Mol Biol 15:665–674.",
+   "item": "bib47"
+  },
+  {
+   "indice": 46,
+   "texto": "Rocco CJ, Dennison KL, Klenchin VA, Rayment I, Escalante-Semerena JC. 2008. Construction and use of new cloning vectors for the rapid isolation of recombinant proteins from Escherichia coli. Plasmid 59:231–237.",
+   "item": "bib48"
+  },
+  {
+   "indice": 47,
+   "texto": "Rothman JE. 1994. Mechanisms of intracellular protein transport. Nature 372:55–63.",
+   "item": "bib49"
+  },
+  {
+   "indice": 48,
+   "texto": "Schaub JR, Lu X, Doneske B, Shin YK, McNew JA. 2006. Hemifusion arrest by complexin is relieved by Ca2+-synaptotagmin I. Nat Struct Mol Biol 13:748–750.",
+   "item": "bib50"
+  },
+  {
+   "indice": 49,
+   "texto": "Schneggenburger R, Neher E. 2000. Intracellular calcium dependence of transmitter release rates at a fast central synapse. Nature 406:889–893.",
+   "item": "bib51"
+  },
+  {
+   "indice": 50,
+   "texto": "Söllner T, Whiteheart SW, Brunner M, Erdjument-Bromage H, Geromanos S, Tempst P, et al.. 1993. SNAP receptors implicated in vesicle targeting and fusion. Nature 362:318–324.",
+   "item": "bib52"
+  },
+  {
+   "indice": 51,
+   "texto": "Sørensen JB. 2009. Conflicting views on the membrane fusion machinery and the fusion pore. Annu Rev Cell Dev Biol 25:513–537.",
+   "item": "bib53"
+  },
+  {
+   "indice": 52,
+   "texto": "Studier FW. 2005. Protein production by auto-induction in high density shaking cultures. Protein Expr Purif 41:207–234.",
+   "item": "bib54"
+  },
+  {
+   "indice": 53,
+   "texto": "Südhof TC, Rothman JE. 2009. Membrane fusion: grappling with SNARE and SM Proteins. Science 323:474–477.",
+   "item": "bib55"
+  },
+  {
+   "indice": 54,
+   "texto": "Sun J, Pang ZP, Qin D, Fahim AT, Adachi R, Südhof TC. 2007. A dual-Ca2+-sensor model for neurotransmitter release in a central synapse. Nature 450:676–682.",
+   "item": "bib56"
+  },
+  {
+   "indice": 55,
+   "texto": "Sutton RB, Fasshauer D, Jahn R, Brunger AT. 1998. Crystal structure of a SNARE complex involved in synaptic exocytosis at 2.4 A resolution. Nature 395:347–353.",
+   "item": "bib57"
+  },
+  {
+   "indice": 56,
+   "texto": "Tahara Y, Fujiyoshi Y. 1994. A new method to measure bilayer thickness: cryo-electron microscopy of frozen hydrated liposomes and image simulation. Micron 25:141–149.",
+   "item": "bib58"
+  },
+  {
+   "indice": 57,
+   "texto": "Takamori S, Holt M, Stenius K, Lemke EA, Gronborg M, Riedel D, et al.. 2006. Molecular anatomy of a trafficking organelle. Cell 127:831–846.",
+   "item": "bib59"
+  },
+  {
+   "indice": 58,
+   "texto": "van den Bogaart G, Jahn R. 2011. Counting the SNAREs needed for membrane fusion. J Mol Cell Biol 3:204–205.",
+   "item": "bib60"
+  },
+  {
+   "indice": 59,
+   "texto": "van den Bogaart G, Meyenberg K, Risselada HJ, Amin H, Willig KI, Hubrich BE, et al.. 2011a. Membrane protein sequestering by ionic protein-lipid interactions. Nature 479:552–555.",
+   "item": "bib61"
+  },
+  {
+   "indice": 60,
+   "texto": "van den Bogaart G, Thutupalli S, Risselada JH, Meyenberg K, Holt M, Riedel D, et al.. 2011b. Synaptotagmin-1 may be a distance regulator acting upstream of SNARE nucleation. Nat Struct Mol Biol 18:805–812.",
+   "item": "bib62"
+  },
+  {
+   "indice": 61,
+   "texto": "Wang Z, Liu H, Gu Y, Chapman ER. 2011. Reconstituted synaptotagmin I mediates vesicle docking, priming, and fusion. J Cell Biol 195:1159–1170.",
+   "item": "bib64"
+  },
+  {
+   "indice": 62,
+   "texto": "Weber T, Zemelman BV, McNew JA, Westermann B, Gmachl M, Parlati F, et al.. 1998. SNAREpins: minimal machinery for membrane fusion. Cell 92:759–772.",
+   "item": "bib65"
+  },
+  {
+   "indice": 63,
+   "texto": "Xu Y, Seven AB, Su L, Jiang QX, Rizo J. 2011. Membrane bridging and hemifusion by denaturated Munc18. PLoS One 6:e22012.",
+   "item": "bib66"
+  },
+  {
+   "indice": 64,
+   "texto": "Xu Y, Zhang F, Su Z, McNew JA, Shin YK. 2005. Hemifusion in SNARE-mediated membrane fusion. Nat Struct Mol Biol 12:417–422.",
+   "item": "bib67"
+  },
+  {
+   "indice": 65,
+   "texto": "Yoon TY, Lu X, Diao JJ, Lee SM, Ha T, Shin YK. 2008. Complexin and Ca(2+) stimulate SNARE-mediated membrane fusion. Nat Struct Mol Biol 15:707–713.",
+   "item": "bib68"
+  },
+  {
+   "indice": 66,
+   "texto": "Yoon TY, Okumus B, Zhang F, Shin YK, Ha T. 2006. Multiple intermediates in SNARE-induced membrane fusion. Proc Natl Acad Sci USA 103:19731–19736.",
+   "item": "bib69"
+  },
+  {
+   "indice": 67,
+   "texto": "Zhang Q, Li YL, Tsien RW. 2009. The dynamic control of kiss-and-run and vesicular reuse probed with single nanoparticles. Science 323:1448–1453.",
+   "item": "bib70"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Rothman, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jahn et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jahn and Scheller, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Harrison, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rizo and Rosenmund, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moreau et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Meinrenken et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dobrunz and Stevens, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sørensen, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Collins et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chernomordik and Kozlov, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jackson and Chapman, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuzmin et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Söllner et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sutton et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jahn and Scheller, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rizo and Rosenmund, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Südhof and Rothman, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib70"
+   ],
+   "referencias": [
+    67
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jackson and Chapman, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ngatchou et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Risselada et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lindau et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weber et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reese and Mayer, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Xu et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schaub et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bowen et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Floyd et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jun and Wickner, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chan et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Heidelberger et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib64"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hernandez et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schneggenburger and Neher, 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sun et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Xu et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib66"
+   ],
+   "referencias": [
+    63
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hernandez et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aeffner et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Araç et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hernandez et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van den Bogaart et al., 2011b",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van den Bogaart and Jahn, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gao et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Choi et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dai et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Araç et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hui et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "McMahon et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Giraudo et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maximov et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gao et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vennekate et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Heidelberger et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bowen et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jun and Wickner, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Floyd et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chan et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maximov et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Malsam et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Krishnakumar et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kümmel et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hernandez et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rocco et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Studier, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rocco et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Studier, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Miroux and Walker, 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takamori et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van den Bogaart et al., 2011a",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weber et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sørensen, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cypionka et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weber et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yoon et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib68"
+   ],
+   "referencias": [
+    65
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Karatekin et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vennekate et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Diao et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yoon et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib69"
+   ],
+   "referencias": [
+    66
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Diao et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schneggenburger and Neher, 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sun et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Diao et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kyoung et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ludtke et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frank et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tahara and Fujiyoshi, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lambert et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ludtke et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frank et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ludtke et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frank et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Choi et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Vennekate et al., 2012",
+   "item": "bib63"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Vennekate et al., 2012",
+   "item": "bib63"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Diao et al., 2010",
+   "item": "bib12"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

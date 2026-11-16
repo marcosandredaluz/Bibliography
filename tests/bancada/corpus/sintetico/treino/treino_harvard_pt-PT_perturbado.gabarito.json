@@ -1,0 +1,605 @@
+{
+ "id": "treino_harvard_pt-PT_perturbado",
+ "estilo": "harvard",
+ "sistema": "autor-data",
+ "locale": "pt-PT",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Andrade, S. e Valente, M. (1998) «Cum laborum harum sit quod nostrum», Medical Mycology, 26(6), pp. 723–729.",
+   "item": "it018"
+  },
+  {
+   "indice": 1,
+   "texto": "Anjos-Moura, L., Faria, D. e Figueiredo, B. (2013) Nobis nihil doloribus cupiditate vero a. Disponível em: https://exemplo-treino.org/3868 (Acedido: 1 de novembro de 2026).",
+   "item": "it000"
+  },
+  {
+   "indice": 2,
+   "texto": "Baptista, C. (2014) Quia nam deserunt consequatur illo soluta error veritatis. Castro.",
+   "item": "it020"
+  },
+  {
+   "indice": 3,
+   "texto": "de Borges, M., Lourenço, M. e Cruz, E. (2008) Quaerat libero iure cum occaecati vel. Portimão: Faria Pinho Lda.",
+   "item": "it001"
+  },
+  {
+   "indice": 4,
+   "texto": "Branco, E. et al. (1982) «Hic excepturi voluptates provident dolore labore nemo», Preventive Veterinary Medicine, 21(9), pp. 496–506. Disponível em: https://doi.org/10.99999/teste.treino.73857.",
+   "item": "it019"
+  },
+  {
+   "indice": 5,
+   "texto": "Choi, J., Fonseca, B. e Moreira, T. (1980) «Explicabo reiciendis corrupti voluptates», Preventive Veterinary Medicine, 25(12), pp. 225–244. Disponível em: https://doi.org/10.99999/teste.treino.27071.",
+   "item": "it004"
+  },
+  {
+   "indice": 6,
+   "texto": "Costa, M. et al. (1995) «Molestias deleniti odio nam non voluptates alias», Cadernos de Saúde Pública, 2(2), pp. 867–875.",
+   "item": "it012"
+  },
+  {
+   "indice": 7,
+   "texto": "D’Ávila, Â. et al. (1992) «Blanditiis facere accusamus est explicabo commodi accusamus architecto consectetur sapiente», Journal of the American Medical Informatics Association, 75(9), pp. 246–261.",
+   "item": "it006"
+  },
+  {
+   "indice": 8,
+   "texto": "Galvez Samper, F. et al. (2021) «Architecto excepturi temporibus quibusdam quam provident», Preventive Veterinary Medicine, 21(11), pp. 893–904. Disponível em: https://doi.org/10.99999/teste.treino.40979.",
+   "item": "it002"
+  },
+  {
+   "indice": 9,
+   "texto": "Istituto Superiore di Sanità (2005) Voluptatum incidunt quo temporibus labore temporibus porro repellendus magni aliquid tempora. Disponível em: https://exemplo-treino.org/6166 (Acedido: 10 de novembro de 2026).",
+   "item": "it009"
+  },
+  {
+   "indice": 10,
+   "texto": "Le, M. et al. (1983) Accusamus ipsam in magnam quos et enim. Cantanhede: Maia Borges Lda.",
+   "item": "it005"
+  },
+  {
+   "indice": 11,
+   "texto": "Li, J., Cardoso, B. e Nascimento, C. (1989) Expedita nulla cumque ea quae laudantium saepe est nam fuga reiciendis inventore impedit. Leiria: Carvalho S/A.",
+   "item": "it003"
+  },
+  {
+   "indice": 12,
+   "texto": "Macedo, S. (2007) «Animi iure blanditiis occaecati optio incidunt nam aspernatur labore qui», BMC Public Health, 33(12), pp. 824–828.",
+   "item": "it013"
+  },
+  {
+   "indice": 13,
+   "texto": "Magalhães, N. e Simões, E. (1977a) Praesentium dolore harum a. Disponível em: https://exemplo-treino.org/8817 (Acedido: 5 de novembro de 2026).",
+   "item": "it024"
+  },
+  {
+   "indice": 14,
+   "texto": "Magalhães, N. e Simões, E. (1977b) «Sit harum labore iusto reiciendis eos libero error ipsa sint quaerat tempora sit culpa hic», Revue d’Épidémiologie et de Santé Publique, 43(12), pp. 856–872. Disponível em: https://doi.org/10.99999/teste.treino.31416.",
+   "item": "it023"
+  },
+  {
+   "indice": 15,
+   "texto": "Maia, A. et al. (1980) Reiciendis error ipsum distinctio et nulla saepe repellendus culpa officiis quis. Henriques.",
+   "item": "it010"
+  },
+  {
+   "indice": 16,
+   "texto": "Melo, M. et al. (2017) «Eum autem voluptatibus itaque amet asperiores», BMC Public Health, 51(11), pp. 118–125. Disponível em: https://doi.org/10.99999/teste.treino.88846.",
+   "item": "it021"
+  },
+  {
+   "indice": 17,
+   "texto": "Morais, S. et al. (sem data) «Voluptas explicabo vel dignissimos tempore maxime quasi», One Health, 4(11), pp. 812–829. Disponível em: https://doi.org/10.99999/teste.treino.70091.",
+   "item": "it022"
+  },
+  {
+   "indice": 18,
+   "texto": "Moreira, J. (1996) «Eum perferendis delectus adipisci magnam quasi quas unde at», Epidemiologia e Serviços de Saúde, 56(11), pp. 796–807. Disponível em: https://doi.org/10.99999/teste.treino.55022.",
+   "item": "it017"
+  },
+  {
+   "indice": 19,
+   "texto": "National Library of Medicine (Estados Unidos) (1981) «Similique placeat voluptate enim placeat», Das Gesundheitswesen, 66(8), pp. 58–67. Disponível em: https://doi.org/10.99999/teste.treino.20957.",
+   "item": "it007"
+  },
+  {
+   "indice": 20,
+   "texto": "National Library of Medicine (Estados Unidos) (1985) «Itaque repellat voluptatem tempore ipsam quisquam», Epidemiologia & Prevenzione, 35(1), pp. 497–502. Disponível em: https://doi.org/10.99999/teste.treino.68212.",
+   "item": "it008"
+  },
+  {
+   "indice": 21,
+   "texto": "Organização Pan-Americana da Saúde (2001) Aut cum animi quod sint suscipit quis. Disponível em: https://leis-treino.gov/1593.",
+   "item": "it014"
+  },
+  {
+   "indice": 22,
+   "texto": "Pinho, R. et al. (2009) «Consectetur voluptate architecto aliquam harum quos beatae eaque doloribus autem impedit nostrum dolor», Revue d’Épidémiologie et de Santé Publique, 55(5), pp. 789–808.",
+   "item": "it015"
+  },
+  {
+   "indice": 23,
+   "texto": "Silva, D. et al. (2005) «Aspernatur reiciendis voluptate temporibus voluptates aliquam ad praesentium», One Health, 7(7), pp. 672–688. Disponível em: https://doi.org/10.99999/teste.treino.68764.",
+   "item": "it016"
+  },
+  {
+   "indice": 24,
+   "texto": "Tavares, P. (2002) «Quisquam debitis autem rem», Journal of the American Medical Informatics Association, 53(2), pp. 291–298. Disponível em: https://doi.org/10.99999/teste.treino.98559.",
+   "item": "it011"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Costa et al. (1995)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "National Library of Medicine (Estados Unidos) (1981)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Magalhães e Simões, 1977a; Le et al., 1983; D’Ávila et al., 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it005",
+    "it024"
+   ],
+   "referencias": [
+    7,
+    10,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(D’Ávila et al., 1992; Tavares, 2002; Istituto Superiore di Sanità, 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it011",
+    "it006"
+   ],
+   "referencias": [
+    9,
+    24,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Magalhães e Simões, 1977b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde, 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(D’Ávila et al., 1992; de Borges, Lourenço e Cruz, 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it006"
+   ],
+   "referencias": [
+    3,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi, Fonseca e Moreira, 1980; Melo et al., 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it004"
+   ],
+   "referencias": [
+    16,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Magalhães e Simões, 1977b; Maia et al., 1980; Silva et al., 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it010",
+    "it023"
+   ],
+   "referencias": [
+    23,
+    15,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Macedo, 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Galvez Samper et al., 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi, Fonseca e Moreira, 1980; Costa et al., 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it012"
+   ],
+   "referencias": [
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Maia et al., 1980; National Library of Medicine (Estados Unidos), 1985; de Borges, Lourenço e Cruz, 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it001",
+    "it010"
+   ],
+   "referencias": [
+    20,
+    3,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Anjos-Moura, Faria e Figueiredo, 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi, Fonseca e Moreira, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Andrade e Valente (1998)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "National Library of Medicine (Estados Unidos) (1981)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Magalhães e Simões (1977b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi, Fonseca e Moreira, 1980; Pinho et al., 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it015"
+   ],
+   "referencias": [
+    5,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Baptista, 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Morais et al., sem data)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Galvez Samper et al., 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Galvez Samper et al., 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Branco et al., 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Silva et al., 2005; Pinho et al., 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it016"
+   ],
+   "referencias": [
+    22,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(D’Ávila et al., 1992; Organização Pan-Americana da Saúde, 2001; Galvez Samper et al., 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it002",
+    "it014"
+   ],
+   "referencias": [
+    7,
+    8,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinho et al., 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinho et al., 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Moreira, 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tavares, 2002; Pinho et al., 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it015"
+   ],
+   "referencias": [
+    24,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 2005; Galvez Samper et al., 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it009"
+   ],
+   "referencias": [
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Magalhães e Simões, 1977a; Choi, Fonseca e Moreira, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it004"
+   ],
+   "referencias": [
+    13,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Li, Cardoso e Nascimento, 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Costa et al., 1995, p. 88)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Anjos-Moura, Faria e Figueiredo, 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Silva et al., 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Costa et al., 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Morais et al. (sem data)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Dolores neque adipisci adipisci adipisci ducimus sapiente in quisquam"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

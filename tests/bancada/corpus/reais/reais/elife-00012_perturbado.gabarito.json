@@ -1,0 +1,1757 @@
+{
+ "id": "elife-00012_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00012.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Abraham WC. 2008. Metaplasticity: tuning synapses and networks for plasticity. Nat Rev Neurosci 9:387.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Artola A, Brocher S, Singer W. 1990. Different voltage-dependent thresholds for inducing long-term depression and long-term potentiation in slices of rat visual cortex. Nature 347:69–72.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Baddeley R, Abbott LF, Booth MC, Sengpiel F, Freeman T, Wakeman EA, et al.. 1997. Responses of neurons in primary and inferior temporal visual cortices to natural scenes. Proc Biol Sci 264:1775–1783.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Bair W, Koch C. 1996. Temporal precision of spike trains in extrastriate cortex of the behaving macaque monkey. Neural Comput 8:1185–1202.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Bi G, Poo M. 2001. Synaptic modification by correlated activity: Hebb's postulate revisited. Annu Rev Neurosci 24:139–166.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Bi GQ, Poo MM. 1998. Synaptic modifications in cultured hippocampal neurons: dependence on spike timing, synaptic strength, and postsynaptic cell type. J Neurosci 18:10464–10472.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Bohte SM, Mozer MC. 2007. Reducing the variability of neural responses: a computational theory of spike-timing-dependent plasticity. Neural Comput 19:371–403.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Celikel T, Szostak VA, Feldman DE. 2004. Modulation of spike timing by sensory deprivation during induction of cortical map plasticity. Nat Neurosci 7:534–541.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Clopath C, Busing L, Vasilaki E, Gerstner W. 2010. Connectivity reflects coding: a model of voltage-based STDP with homeostasis. Nat Neurosci 13:344–352.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Cowan RL, Wilson CJ. 1994. Spontaneous firing patterns and axonal projections of single corticostriatal neurons in the rat medial agranular cortex. J Neurophysiol 71:17–32.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Daw NW, Wyatt HJ. 1976. Kittens reared in a unidirectional environment: evidence for a critical period. J Physiol 257:155–170.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Fagiolini M, Pizzorusso T, Berardi N, Domenici L, Maffei L. 1994. Functional postnatal development of the rat primary visual cortex and the role of visual experience: dark rearing and monocular deprivation. Vision Res 34:709–720.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Feldman DE. 2012. The spike-timing dependence of plasticity. Neuron 75:556–571.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Ferster D. 1986. Orientation selectivity of synaptic potentials in neurons of cat primary visual cortex. J Neurosci 6:1284–1301.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Fregnac Y, Pananceau M, Rene A, Huguet N, Marre O, Levy M, et al.. 2010. A Re-examination of Hebbian-covariance rules and spike timing-dependent plasticity in cat visual cortex in vivo. Front Synaptic Neurosci 2:147.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Friedberg MH, Lee SM, Ebner FF. 1999. Modulation of receptive field properties of thalamic somatosensory neurons by the depth of anesthesia. J Neurophysiol 81:2243–2252.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Froemke RC, Poo MM, Dan Y. 2005. Spike-timing-dependent synaptic plasticity depends on dendritic location. Nature 434:221–225.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Fu YX, Djupsund K, Gao H, Hayden B, Shen K, Dan Y. 2002. Temporal specificity in the cortical plasticity of visual space representation. Science 296:1999–2003.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Gerstner W, Kempter R, van Hemmen JL, Wagner H. 1996. A neuronal learning rule for sub-millisecond temporal coding. Nature 383:76–81.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Gilbert CD. 1998. Adult cortical dynamics. Physiol Rev 78:467–485.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Gilbert CD, Wiesel TN. 1992. Receptive field dynamics in adult primary visual cortex. Nature 356:150–152.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Greenberg DS, Houweling AR, Kerr JN. 2008. Population imaging of ongoing neuronal activity in the visual cortex of awake rats. Nat Neurosci 11:749–751.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Grinvald A, Lieke E, Frostig RD, Gilbert CD, Wiesel TN. 1986. Functional architecture of cortex revealed by optical imaging of intrinsic signals. Nature 324:361–364.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Harris KD. 2005. Neural signatures of cell assembly organization. Nat Rev Neurosci 6:399–407.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Hasenstaub A, Sachdev RN, McCormick DA. 2007. State changes rapidly modulate cortical neuronal responsiveness. J Neurosci 27:9607–9622.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Hebb DO. 1949. The organization of behavior. A neuropsychological theory.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Hennequin G, Gerstner W, Pfister JP. 2010. STDP in adaptive neurons gives close-to-optimal information transmission. Front Comput Neurosci 4:143.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Hirsch JA, Alonso JM, Reid RC, Martinez LM. 1998. Synaptic integration in striate cortical simple cells. J Neurosci 18:9517–9528.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Hirsch JA, Martinez LM, Alonso JM, Desai K, Pillai C, Pierre C. 2002. Synaptic physiology of the flow of information in the cat's visual cortex in vivo. J Physiol 540:335–350.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Hubel DH, Wiesel TN. 1959. Receptive fields of single neurones in the cat's striate cortex. J Physiol 148:574–591.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Jacob V, Brasier DJ, Erchova I, Feldman D, Shulz DE. 2007. Spike timing-dependent synaptic depression in the in vivo barrel cortex of the rat. J Neurosci 27:1271–1284.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Jia H, Rochefort NL, Chen X, Konnerth A. 2010. Dendritic organization of sensory input to cortical neurons in vivo. Nature 464:1307–1312.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Kaas JH, Krubitzer LA, Chino YM, Langston AL, Polley EH, Blair N. 1990. Reorganization of retinotopic cortical maps in adult mammals after lesions of the retina. Science 248:229–231.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Kerr JN, Greenberg D, Helmchen F. 2005. Imaging input and output of neocortical networks in vivo. Proc Natl Acad Sci USA 102:14063–14068.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Kerr JN, Plenz D. 2002. Dendritic calcium encodes striatal neuron output during up-states. J Neurosci 22:1499–1512.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Kline J, Reid KH. 1984. Variability of bregma in 300 gram Long-Evans and Sprague-Dawley rats. Physiol Behav 33:301–303.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Kubicki S, Rieger H. 1968. The EEG during acute intoxication with hypnotics. Electroencephalogr Clin Neurophysiol 25:94.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Lee AK, Manns ID, Sakmann B, Brecht M. 2006. Whole-cell recordings in freely moving rats. Neuron 51:399–407.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Li Y, Van Hooser SD, Mazurek M, White LE, Fitzpatrick D. 2008. Experience with moving visual stimuli drives the early development of cortical direction selectivity. Nature 456:952–956.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Lin YW, Min MY, Chiu TH, Yang HW. 2003. Enhancement of associative long-term potentiation by activation of beta-adrenergic receptors at CA1 synapses in rat hippocampal slices. J Neurosci 23:4173–4181.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Lisman J, Spruston N. 2005. Postsynaptic depolarization requirements for LTP and LTD: a critique of spike timing-dependent plasticity. Nat Neurosci 8:839–841.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Lisman J, Spruston N. 2010. Questions about STDP as a general model of synaptic plasticity. Front Synaptic Neurosci 2:140.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Magee JC, Johnston D. 1997. A synaptically controlled, associative signal for Hebbian plasticity in hippocampal neurons. Science 275:209–213.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Mainen ZF, Sejnowski TJ. 1995. Reliability of spike timing in neocortical neurons. Science 268:1503–1506.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Margrie TW, Meyer AH, Caputi A, Monyer H, Hasan MT, Schaefer AT, et al.. 2003. Targeted whole-cell recordings in the mammalian brain in vivo. Neuron 39:911–918.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Markram H, Lubke J, Frotscher M, Sakmann B. 1997. Regulation of synaptic efficacy by coincidence of postsynaptic APs and EPSPs. Science 275:213–215.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Marsalek P, Koch C, Maunsell J. 1997. On the relationship between synaptic input and spike output jitter in individual neurons. Proc Natl Acad Sci USA 94:735–740.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Meliza CD, Dan Y. 2006. Receptive-field modification in rat visual cortex induced by paired visual stimulation and single-cell spiking. Neuron 49:183–189.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Niell CM, Stryker MP. 2008. Highly selective receptive fields in mouse visual cortex. J Neurosci 28:7520–7536.",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Nimmerjahn A, Kirchhoff F, Kerr JN, Helmchen F. 2004. Sulforhodamine 101 as a specific marker of astroglia in the neocortex in vivo. Nat Methods 1:31–37.",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Okun M, Lampl I. 2008. Instantaneous correlation of excitation and inhibition during ongoing and sensory-evoked activities. Nat Neurosci 11:535–537.",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Parra LC, Beck JM, Bell AJ. 2009. On the maximization of information flow between spiking neurons. Neural Comput 21:2991–3009.",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "Petersen CC, Hahn TT, Mehta M, Grinvald A, Sakmann B. 2003. Interaction of sensory responses with spontaneous depolarization in layer 2/3 barrel cortex. Proc Natl Acad Sci USA 100:13638–13643.",
+   "item": "bib53"
+  },
+  {
+   "indice": 53,
+   "texto": "Pfister JP, Toyoizumi T, Barber D, Gerstner W. 2006. Optimal spike-timing-dependent plasticity for precise action potential firing in supervised learning. Neural Comput 18:1318–1348.",
+   "item": "bib54"
+  },
+  {
+   "indice": 54,
+   "texto": "Pool RR, Mato G. 2011. Spike-timing-dependent plasticity and reliability optimization: the role of neuron dynamics. Neural Comput 23:1768–1789.",
+   "item": "bib55"
+  },
+  {
+   "indice": 55,
+   "texto": "Sachdev RN, Ebner FF, Wilson CJ. 2004. Effect of subthreshold up and down states on the whisker-evoked response in somatosensory cortex. J Neurophysiol 92:3511–3521.",
+   "item": "bib56"
+  },
+  {
+   "indice": 56,
+   "texto": "Sawinski J, Wallace DJ, Greenberg DS, Grossmann S, Denk W, Kerr JN. 2009. Visually evoked activity in cortical cells imaged in freely moving animals. Proc Natl Acad Sci USA 106:19557–19562.",
+   "item": "bib57"
+  },
+  {
+   "indice": 57,
+   "texto": "Shouval HZ, Wang SS, Wittenberg GM. 2010. Spike timing dependent plasticity: a consequence of more fundamental learning rules. Front Comput Neurosci 4:1–13.",
+   "item": "bib58"
+  },
+  {
+   "indice": 58,
+   "texto": "Shu Y, Duque A, Yu Y, Haider B, McCormick DA. 2007. Properties of action-potential initiation in neocortical pyramidal cells: evidence from whole cell axon recordings. J Neurophysiol 97:746–760.",
+   "item": "bib59"
+  },
+  {
+   "indice": 59,
+   "texto": "Sjostrom PJ, Turrigiano GG, Nelson SB. 2001. Rate, timing, and cooperativity jointly determine cortical synaptic plasticity. Neuron 32:1149–1164.",
+   "item": "bib60"
+  },
+  {
+   "indice": 60,
+   "texto": "Slotnick BM, Brown DL. 1980. Variability in the stereotaxic position of cerebral points in the albino rat. Brain Res Bull 5:135–139.",
+   "item": "bib61"
+  },
+  {
+   "indice": 61,
+   "texto": "Song S, Abbott LF. 2001. Cortical development and remapping through spike timing-dependent plasticity. Neuron 32:339–350.",
+   "item": "bib62"
+  },
+  {
+   "indice": 62,
+   "texto": "Song S, Miller KD, Abbott LF. 2000. Competitive Hebbian learning through spike-timing-dependent synaptic plasticity. Nat Neurosci 3:919–926.",
+   "item": "bib63"
+  },
+  {
+   "indice": 63,
+   "texto": "Tchumatchenko T, Malyshev A, Wolf F, Volgushev M. 2011. Ultrafast population encoding by cortical neurons. J Neurosci 31:12171–12179.",
+   "item": "bib64"
+  },
+  {
+   "indice": 64,
+   "texto": "Toyoizumi T, Pfister JP, Aihara K, Gerstner W. 2007. Optimality model of unsupervised spike-timing-dependent plasticity: synaptic memory and weight distribution. Neural Comput 19:639–671.",
+   "item": "bib65"
+  },
+  {
+   "indice": 65,
+   "texto": "Varga Z, Jia H, Sakmann B, Konnerth A. 2011. Dendritic coding of multiple sensory inputs in single cortical neurons in vivo. Proc Natl Acad Sci USA 108:15420–15425.",
+   "item": "bib66"
+  },
+  {
+   "indice": 66,
+   "texto": "Wallace DJ, Kerr JN. 2010. Chasing the cell assembly. Curr Opin Neurobiol 20:296–305.",
+   "item": "bib67"
+  },
+  {
+   "indice": 67,
+   "texto": "Waters J, Helmchen F. 2006. Background synaptic activity is sparse in neocortex. J Neurosci 26:8267–8277.",
+   "item": "bib68"
+  },
+  {
+   "indice": 68,
+   "texto": "Wiesel TN, Hubel DH. 1963. Single-cell responses in striate cortex of kittens deprived of vision in one eye. J Neurophysiol 26:1003–1017.",
+   "item": "bib69"
+  },
+  {
+   "indice": 69,
+   "texto": "Young JM, Waleszczyk WJ, Wang C, Calford MB, Dreher B, Obermayer K. 2007. Cortical reorganization consistent with spike timing-but not correlation-dependent plasticity. Nat Neurosci 10:887–895.",
+   "item": "bib70"
+  },
+  {
+   "indice": 70,
+   "texto": "Zhang JC, Lau PM, Bi GQ. 2009. Gain in sensitivity and loss in temporal contrast of STDP by dopaminergic modulation at hippocampal synapses. Proc Natl Acad Sci USA 106:13028–13033.",
+   "item": "bib71"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Hebb, 1949",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Harris, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Abraham, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Markram et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bi and Poo, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Feldman, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sawinski et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bair and Koch, 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marsalek et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tchumatchenko et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib64"
+   ],
+   "referencias": [
+    63
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Feldman, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gerstner et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Song and Abbott, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Young et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib70"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Meliza and Dan, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jacob et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lisman and Spruston, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2010",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fregnac et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shouval et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fu et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Celikel et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gilbert, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Daw and Wyatt, 1976",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wiesel and Hubel, 1963",
+   "tipo": "xref",
+   "itens": [
+    "bib69"
+   ],
+   "referencias": [
+    68
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaas et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gilbert and Wiesel, 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hubel and Wiesel, 1959",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ferster, 1986",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jia et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Meliza and Dan, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cowan and Wilson, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Petersen et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sachdev et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sjostrom et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margrie et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Slotnick and Brown, 1980",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kline and Reid, 1984",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Petersen et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sachdev et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Waters and Helmchen 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib68"
+   ],
+   "referencias": [
+    67
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fagiolini et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hirsch et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bi and Poo, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bi and Poo, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fregnac et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Young et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib70"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bi and Poo, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fagiolini et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Niell and Stryker, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Markram et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bi and Poo, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fagiolini et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Niell and Stryker, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gerstner et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Song et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lin et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Froemke et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib71"
+   ],
+   "referencias": [
+    70
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Meliza and Dan, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Meliza and Dan, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jacob et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wiesel and Hubel, 1963",
+   "tipo": "xref",
+   "itens": [
+    "bib69"
+   ],
+   "referencias": [
+    68
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kaas et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gilbert and Wiesel, 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Magee and Johnston, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Markram et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bi and Poo, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Meliza and Dan, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jacob et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Song and Abbott, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Young et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib70"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Greenberg et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sawinski et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hebb, 1949",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lisman and Spruston, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2010",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fregnac et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shouval et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Artola et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sjostrom et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Clopath et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pfister et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bohte and Mozer, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Toyoizumi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Parra et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hennequin et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pool and Mato, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pfister et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bohte and Mozer, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Toyoizumi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hennequin et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pool and Mato, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gerstner et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Song and Abbott, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bi and Poo, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fregnac et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hirsch et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Okun and Lampl, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Markram et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bi and Poo, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Froemke et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fagiolini et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Niell and Stryker, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shu et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hasenstaub et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Waters and Helmchen, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib68"
+   ],
+   "referencias": [
+    67
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Varga et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib66"
+   ],
+   "referencias": [
+    65
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mainen and Sejnowski, 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tchumatchenko et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib64"
+   ],
+   "referencias": [
+    63
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wallace and Kerr, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    66
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hebb, 1949",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kubicki and Rieger, 1968",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Friedberg et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kerr et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nimmerjahn et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Grinvald et al., 1986",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kerr et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kerr et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margrie et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kerr and Plenz, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gerstner et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Song et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baddeley et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

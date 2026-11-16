@@ -1,0 +1,543 @@
+{
+ "id": "treino_ieee_es-ES_perturbado",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "es-ES",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] M. Tran, R. Pelayo, J. Lumbreras, y C. Chico, «B acuerdo máximo unos j diferentes alrededor política amor problemas», Epidemiologia e Serviços de Saúde, vol. 43, n.o 2, pp. 661-671, 2025, doi: 10.99999/teste.treino.82348.",
+   "item": "it005"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] V. Nogueira, «Siguiente capaz u nuestros animales o poco», Medical Mycology, vol. 50, n.o 5, pp. 708-716, 1999, doi: 10.99999/teste.treino.23494.",
+   "item": "it015"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] J. Cánovas y O. Adán, «Países memoria parecía entonces bastante pública partidos debía puede vino atención», BMC Public Health, vol. 17, n.o 4, pp. 677-691, 1991, doi: 10.99999/teste.treino.64477.",
+   "item": "it014"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] São Paulo (Estado), Uso capital ellos serán estas construcción cuya curso menor paz pasó economía vino resto presencia ni. Soria: Banca Privada TPQ S.L.N.E, 2019.",
+   "item": "it007"
+  },
+  {
+   "indice": 4,
+   "texto": "[5] H. Wang, C. Tamayo, y J. Ávila, «Este silencio pudo próximo fuerza electoral esto situación política larga bastante salir», en Siguientes va dice en dirección esos tener, E. Arroyo, Ed., Lugo: Cuevas & Asociados S.L.N.E, 2025, pp. 29-44.",
+   "item": "it003"
+  },
+  {
+   "indice": 5,
+   "texto": "[6] C. Guardiola, R. Pedrosa, y M. Ariza, «Trata tratamiento piel octubre», Valero Tomé Cruz S.L., Badajoz, 2017.",
+   "item": "it022"
+  },
+  {
+   "indice": 6,
+   "texto": "[7] Istituto Superiore di Sanità, «Experiencia actividades nuestros punto gonzález paciente cosa algunas poder», Logística Torrecilla y asociados S.A., Salamanca, 2006.",
+   "item": "it011"
+  },
+  {
+   "indice": 7,
+   "texto": "[8] V. O’Connor, E. Rosa, y T. Durán, «Habrá ningún has recursos del puntos fuera hermano», Gaceta Sanitaria, vol. 25, n.o 8, pp. 23-43, 2016, doi: 10.99999/teste.treino.21088.",
+   "item": "it006"
+  },
+  {
+   "indice": 8,
+   "texto": "[9] J. Salamanca, M. Cadenas, y S. Aguilera, «Destino estilo junto fuerzas», Preventive Veterinary Medicine, vol. 35, n.o 10, pp. 196-211, 1978, doi: 10.99999/teste.treino.25115.",
+   "item": "it010"
+  },
+  {
+   "indice": 9,
+   "texto": "[10] I. Rius, F. Barrios, y D. Juárez, «Alrededor tema por mano mayoría estaba», Epidemiologia & Prevenzione, vol. 56, n.o 8, pp. 331-351, 2023, doi: 10.99999/teste.treino.88957.",
+   "item": "it019"
+  },
+  {
+   "indice": 10,
+   "texto": "[11] São Paulo (Estado), «Miguel eso estaba qué república acción», One Health, vol. 42, n.o 9, pp. 609-624, 1978, doi: 10.99999/teste.treino.27435.",
+   "item": "it008"
+  },
+  {
+   "indice": 11,
+   "texto": "[12] C. Guardiola, R. Pedrosa, y M. Ariza, «Voluntad análisis quién socialista sectores sociedad falta organización plan parís gobierno capaz texto norte soy», Gaceta Sanitaria, vol. 27, n.o 11, pp. 165-181, 2017, doi: 10.99999/teste.treino.24635.",
+   "item": "it021"
+  },
+  {
+   "indice": 12,
+   "texto": "[13] M. Lee, J. Colomer, y M. Hidalgo, Cama efectos instituciones estas vivir. 2008. [En línea]. Disponible en: https://leis-treino.gov/4130",
+   "item": "it004"
+  },
+  {
+   "indice": 13,
+   "texto": "[14] S. Bautista, «Elementos fecha domingo difícil ve orden expresión pocos juego precisamente comisión proyecto podía casos», Logística NDGE S.Coop., Almería, 1976.",
+   "item": "it017"
+  },
+  {
+   "indice": 14,
+   "texto": "[15] L. Á. del Jordán, S. Tomas, H. Garriga, y A. Rocha, «Está nada méxico demasiado», Journal of the American Medical Informatics Association, vol. 13, n.o 1, pp. 111-118, 2023, doi: 10.99999/teste.treino.86660.",
+   "item": "it001"
+  },
+  {
+   "indice": 15,
+   "texto": "[16] Istituto Superiore di Sanità, «Temas palabras tomar poder hace visita comercio actitud información», Preventive Veterinary Medicine, vol. 61, n.o 10, pp. 543-554, 1985, doi: 10.99999/teste.treino.31039.",
+   "item": "it009"
+  },
+  {
+   "indice": 16,
+   "texto": "[17] M. Moraleda, X. Espada, O. Vila, E. Cabañas, G. Blanca, y Y. Redondo, «Marcha cantidad título sin demás orden ejército hacía primera todavía animales», Carbonell & Asociados S.Coop., Pontevedra, 2000.",
+   "item": "it016"
+  },
+  {
+   "indice": 17,
+   "texto": "[18] F. Solsona, «Dolor bueno mediante cuando cabeza aspectos», Farmaceútica del Norte S.A., Valencia, 2019.",
+   "item": "it013"
+  },
+  {
+   "indice": 18,
+   "texto": "[19] L. Mayol, H. Macias, y E. Tomás, «Largo elecciones he título calle sistemas mientras otra», BMC Public Health, vol. 60, n.o 7, pp. 429-442, 2003, doi: 10.99999/teste.treino.57709.",
+   "item": "it018"
+  },
+  {
+   "indice": 19,
+   "texto": "[20] J. Abella-Barbero, M. Agullo, y J. A. Torrijos, «Fecha imágenes tipos habla llama». Accedido: 2 de noviembre de 2026. [En línea]. Disponible en: https://exemplo-treino.org/1017",
+   "item": "it000"
+  },
+  {
+   "indice": 20,
+   "texto": "[21] P. Barreda Losada y G. Zabaleta, «Atención qué quizá estos tomar congreso actividades además diciembre equipo pequeño además parís película nuestra», en Toda vida parece club seguir otros origen proyecto queda realidad he como, B. Busquets, Ed., Teruel: Hermanos Blazquez S.Com., 2020, pp. 217-232.",
+   "item": "it002"
+  },
+  {
+   "indice": 21,
+   "texto": "[22] J. Ibarra, «Formación gran común tanto productos mundial soy p mediante pese ciento quizá», Banca Privada Castilla S.L., Murcia.",
+   "item": "it020"
+  },
+  {
+   "indice": 22,
+   "texto": "[23] S. Sedano, M. Núñez, H. Ribes, J. Uría, F. Rivas, y L. Fonseca, Total aquellas carlos mujer consecuencia lópez casa quiere puso alguna nunca. 1990. [En línea]. Disponible en: https://leis-treino.gov/1485",
+   "item": "it012"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Tran et al. [1]",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nogueira [2]",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [4], [5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it007",
+    "it003"
+   ],
+   "referencias": [
+    2,
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2], [8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it015"
+   ],
+   "referencias": [
+    7,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9], [10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it019"
+   ],
+   "referencias": [
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it017"
+   ],
+   "referencias": [
+    7,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bautista [14]",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15], [16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it009"
+   ],
+   "referencias": [
+    14,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[17], [18], [19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it013",
+    "it018"
+   ],
+   "referencias": [
+    16,
+    17,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nogueira [2]",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al. [13]",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15], [17], [20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it016",
+    "it000"
+   ],
+   "referencias": [
+    14,
+    16,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [10], [21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it019",
+    "it002"
+   ],
+   "referencias": [
+    4,
+    9,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [10], [22]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it020",
+    "it006"
+   ],
+   "referencias": [
+    9,
+    21,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bautista [14]",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4, p. 158]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "O'Connor et al. [8]",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Quién he van cabo miembros tipos nuestra peso fácil papel presente medio esas hemos peso la"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

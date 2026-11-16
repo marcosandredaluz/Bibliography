@@ -1,0 +1,700 @@
+{
+ "id": "treino_ama_en-US_limpo",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "en-US",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Hill H, Reynolds E, Tran J, Jones S. By financial including behavior. Revue d’Épidémiologie et de Santé Publique. 1999;1(1):303-310. doi:10.99999/teste.treino.47401",
+   "item": "it014"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Holden C, Noble S. Special your term star throughout before party drug sister. Gaceta Sanitaria. 1989;32(12):326-337.",
+   "item": "it022"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Branch D, Miller A, Rice B, Callahan E, Vargas M, Malone S. Price Argue Personal Build but Well Financial Foreign Very Market. 2020. https://leis-treino.gov/6781",
+   "item": "it028"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Ortiz S, Robinson K. Somebody more good three table one less scene. Journal of the American Medical Informatics Association. 1984;74(11):266-278.",
+   "item": "it020"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Kim S yeon, Chan A. Someone myself start manager particularly. Medical Mycology. 2002;36(6):107-111.",
+   "item": "it004"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Hartman-Alvarez C, Sullivan K, Jimenez T, Garza J. Green would section success key together leader help situation culture plant would. Medical Mycology. 2023;59(7):387-400.",
+   "item": "it000"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Martinez D, Ramirez A, Young K, Stephenson A, Miles R, Smith A. Ok represent hard small area such. In: Hampton J, ed. Similar Happen Everyone down near Offer. Davis, Ward and Woodward; 2026:63-78.",
+   "item": "it026"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Smith C. Woman around Break Possible Push Good Build Condition Lot Cover Dog. 1991. https://leis-treino.gov/6221",
+   "item": "it019"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Browning J, Rodriguez A, Jackson T, Middleton J, Stone J, Mann K. Situation her call blood approach next skill loss industry. Epidemiologia e Serviços de Saúde. 1995;71(7):822-840. doi:10.99999/teste.treino.26659",
+   "item": "it021"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Anderson B. Condition into job look indeed. Gaceta Sanitaria. 2019;63(4):351-363. doi:10.99999/teste.treino.37326",
+   "item": "it025"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Trujillo A, Johns J. If Wait Recently Be Grow Yeah. Harper Group; 1994.",
+   "item": "it010"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Smith R, Best J. Enter risk environmental generation focus walk recently create miss. In: Rios S, ed. Goal about Television Late Join Guess Stay Analysis Surface Dream Pass Go Decade Age. Alexander, Parks and Patterson; 2003:106-121.",
+   "item": "it013"
+  },
+  {
+   "indice": 12,
+   "texto": "13. di Newman H, Snow E. Career maybe character part room. Das Gesundheitswesen. 2016;7(10):365-381. doi:10.99999/teste.treino.75281",
+   "item": "it001"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Brown K. Dog Large Key Have Case Yes Environmental Face Reach Eight Former. Marsh, Suarez and Spencer; 2013.",
+   "item": "it011"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Gremião M, Johnson J, Bailey D, Frazier M. Difficult off generation must religious list cultural suffer figure site able school daughter describe meeting. Epidemiologia & Prevenzione. 2010;29(10):341-356. doi:10.99999/teste.treino.16765",
+   "item": "it006"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Pham M. Step Civil the Nation Article since Affect. 1994. https://leis-treino.gov/2629",
+   "item": "it005"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Roig Soria L. Remain nearly general boy important. One Health. 2019;29(3):801-821. doi:10.99999/teste.treino.70846",
+   "item": "it002"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Downs K, Walker S. Price still ever everyone now might blue. Medical Mycology. 2022;42(7):715-725. doi:10.99999/teste.treino.10794",
+   "item": "it023"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Ministerio de Sanidad (España). Open within Notice Not Magazine Meet Society. Everett, Gibbs and Hogan; 2006.",
+   "item": "it007"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Roberts L, Martin V, Hess J, Stone R. Interesting reflect pick science begin blue power modern. Revue d’Épidémiologie et de Santé Publique. 2023;52(8):715-731. doi:10.99999/teste.treino.57067",
+   "item": "it017"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Instituto Nacional de Câncer (Brasil). Why day expect price wait inside along. Preventive Veterinary Medicine. 2026;22(4):775-785.",
+   "item": "it008"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Branch D, Miller A, Rice B, Callahan E, Vargas M, Malone S. Other Reveal Occur Right Ten Very. Davis, Sanchez and Allison; 2020.",
+   "item": "it029"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Wright T. Successful conference mother instead practice collection. Journal of the American Medical Informatics Association. 1985;20(7):832-846. doi:10.99999/teste.treino.37260",
+   "item": "it016"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Haute Autorité de Santé (France). Turn here bed economy easy fish movement. 2021. Accessed November 9, 2026. https://exemplo-treino.org/2737",
+   "item": "it012"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Miller J, Sullivan S, Diaz B, Walker A. Door college church site head not black. Medical Mycology. 1988;1(10):884-896. doi:10.99999/teste.treino.67309",
+   "item": "it024"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Romero C. Religious measure after common purpose call cold structure. Gaceta Sanitaria. 2026;10(9):841-860. doi:10.99999/teste.treino.25851",
+   "item": "it015"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Gonzalez R. Speech way recent city. One Health. 1983;26(10):110-129. doi:10.99999/teste.treino.33318",
+   "item": "it018"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Davis K. Main Fish Able System Personal Commercial Letter Suffer Try Room. Ryan PLC.",
+   "item": "it027"
+  },
+  {
+   "indice": 28,
+   "texto": "29. Organização Pan-Americana da Saúde. Believe today door skill service. In: Figueroa A, ed. Baby Star Reason Building Reflect If Claim Then. Kim LLC; 1999:179-194.",
+   "item": "it009"
+  },
+  {
+   "indice": 29,
+   "texto": "30. Liu H. Money build court thousand every billion step phone. 2022. Accessed November 12, 2026. https://exemplo-treino.org/6750",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1–3",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it022",
+    "it028"
+   ],
+   "referencias": [
+    0,
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6–8",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it026",
+    "it019"
+   ],
+   "referencias": [
+    5,
+    6,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Browning et al. 9",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,9",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it021"
+   ],
+   "referencias": [
+    1,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Anderson 10",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martinez et al. 7",
+   "tipo": "narrativa",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smith 12",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "di Newman 13",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,15",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it014"
+   ],
+   "referencias": [
+    14,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,10,16",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it005",
+    "it025"
+   ],
+   "referencias": [
+    8,
+    15,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17,18",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it023"
+   ],
+   "referencias": [
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15,19",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it006"
+   ],
+   "referencias": [
+    18,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,13",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it001"
+   ],
+   "referencias": [
+    4,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "10,20",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it025"
+   ],
+   "referencias": [
+    19,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21,22",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it029"
+   ],
+   "referencias": [
+    20,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "19,24",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it012"
+   ],
+   "referencias": [
+    18,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "20",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7,19,25",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it026",
+    "it024"
+   ],
+   "referencias": [
+    18,
+    6,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "26",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "27",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25,28",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it027"
+   ],
+   "referencias": [
+    24,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "29",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brown 14",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7,14,24",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it011",
+    "it012"
+   ],
+   "referencias": [
+    6,
+    13,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,16",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it004"
+   ],
+   "referencias": [
+    15,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "27",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "30",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "30",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1(p19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "23",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "6",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "25",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Gremião et al. 15",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Prepared by the author (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Standard cold administration candidate party floor rest simply room paper mother film hour"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

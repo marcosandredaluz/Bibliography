@@ -1,0 +1,619 @@
+{
+ "id": "treino_apa_pt-PT_erros",
+ "estilo": "apa",
+ "sistema": "autor-data",
+ "locale": "pt-PT",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Baptista, M., Pereira, S., Cruz, Â., Marques, M., Ribeiro, V., & Martins, H. (2024). Suscipit velit quas tenetur similique sequi culpa laboriosam. BMC Public Health, 65(7), 634–644. https://doi.org/10.99999/teste.treino.24037",
+   "item": "it011"
+  },
+  {
+   "indice": 1,
+   "texto": "Brito, A., Sá, É., Oliveira, M., Alves, J., Jesus, A., & Pereira, C. (2006). Aut nobis quia ullam necessitatibus vero aperiam quas facere sapiente. BMC Public Health, 43(4), 430–447. https://doi.org/10.99999/teste.treino.58191",
+   "item": "it018"
+  },
+  {
+   "indice": 2,
+   "texto": "Brito, C. (2005). Repellendus mollitia delectus voluptatum reprehenderit iusto. Journal of the American Medical Informatics Association, 33(5), 98–116. https://doi.org/10.99999/teste.treino.71911",
+   "item": "it010"
+  },
+  {
+   "indice": 3,
+   "texto": "Conselho Nacional de Saúde (Brasil). (2016). Deleniti et eveniet a nulla pariatur molestiae cupiditate tempore nihil. https://exemplo-treino.org/6019",
+   "item": "it009"
+  },
+  {
+   "indice": 4,
+   "texto": "Cunha, M., Ribeiro, V., & Pinto, A. (s.d.). Voluptatem exercitationem voluptatem ducimus cumque fuga. Lourenço Barros S/A.",
+   "item": "it020"
+  },
+  {
+   "indice": 5,
+   "texto": "di Guerreiro, V., Vieira, N., Mendes, E., & Monteiro, L. (2013). Adipisci architecto in quisquam rem maxime temporibus soluta maiores. https://exemplo-treino.org/6430",
+   "item": "extra1"
+  },
+  {
+   "indice": 6,
+   "texto": "Dicta officia autem fugiat delectus aut minima quasi, Legislação N. 6184 (2014). https://leis-treino.gov/8663",
+   "item": "it008"
+  },
+  {
+   "indice": 7,
+   "texto": "dos Reis, A., Magalhães, E., Pacheco, C., & Lourenço, V. (2018). Voluptates cum architecto doloribus repellat exercitationem reprehenderit unde. Revue d’Épidémiologie et de Santé Publique, 2(10), 10–21.",
+   "item": "it001"
+  },
+  {
+   "indice": 8,
+   "texto": "Gremião, J., Coelho, M., Ferreira, R., & Barbosa, B. (1984). Adipisci ad quod voluptatem dicta iure. Preventive Veterinary Medicine, 58(6), 473–478. https://doi.org/10.99999/teste.treino.36374",
+   "item": "it006"
+  },
+  {
+   "indice": 9,
+   "texto": "Istituto Superiore di Sanità. (2007). Saepe tempora officiis perferendis placeat quis fugit. Journal of the American Medical Informatics Association, 6(4), 551–562. https://doi.org/10.99999/teste.treino.37126",
+   "item": "it007"
+  },
+  {
+   "indice": 10,
+   "texto": "Istituto Superiore di Sanità. (2010). Odit dolor impedit omnis voluptas eos in facilis magni saepe culpa. https://exemplo-treino.org/9449",
+   "item": "it014"
+  },
+  {
+   "indice": 11,
+   "texto": "Kim, J., & Pinheiro, K. (2009). Facere perspiciatis vitae error aliquam modi dolorem. Epidemiologia & Prevenzione, 54(11), 198–204. https://doi.org/10.99999/teste.treino.97709",
+   "item": "it004"
+  },
+  {
+   "indice": 12,
+   "texto": "Lima, N., Sá, I., Matos, L., & Borges, F. (1987). Aperiam modi inventore culpa veniam quidem nobis aspernatur beatae officia. Andrade S.A.",
+   "item": "it012"
+  },
+  {
+   "indice": 13,
+   "texto": "Lopes, L., Castro, I., & Vieira, B. (2004). Quam tempora velit. Sá Lda.",
+   "item": "it017"
+  },
+  {
+   "indice": 14,
+   "texto": "Mota, S. (1991). Velit aliquid non fugiat ducimus accusamus est tempora voluptatem. https://exemplo-treino.org/1810",
+   "item": "it016"
+  },
+  {
+   "indice": 15,
+   "texto": "Oliveira-Gomes, B. (1976). Animi nesciunt dolorum laboriosam pariatur nostrum vitae deleniti ab temporibus. Epidemiologia & Prevenzione, 27(7), 745–761.",
+   "item": "extra0"
+  },
+  {
+   "indice": 16,
+   "texto": "Pacheco, J., & Magalhães, E. (2025). Sit earum hic ad enim repudiandae voluptatibus. Medical Mycology, 43(7), 2–13. https://doi.org/10.99999/teste.treino.97419",
+   "item": "it013"
+  },
+  {
+   "indice": 17,
+   "texto": "Pham, V. A. (2024). Nobis corporis fuga sunt nostrum unde. One Health, 76(9), 472–479. https://doi.org/10.99999/teste.treino.24109",
+   "item": "it005"
+  },
+  {
+   "indice": 18,
+   "texto": "Ramos, D., Torres, F., Lima, R., & Lopes, M. (1986). Quaerat maiores velit quas non debitis doloribus distinctio totam. Lima Lda.",
+   "item": "it015"
+  },
+  {
+   "indice": 19,
+   "texto": "São Paulo (Estado). (2011a). Culpa dolore reprehenderit alias qui animi magni omnis quisquam. Em C. Sá (Ed.), Maiores earum eos esse dolor modi (pp. 181–196). Amorim.",
+   "item": "it021"
+  },
+  {
+   "indice": 20,
+   "texto": "São Paulo (Estado). (2011b). Delectus sequi repellendus doloremque iure nostrum aperiam perferendis corrupti saepe odio. Oliveira S.A.",
+   "item": "it022"
+  },
+  {
+   "indice": 21,
+   "texto": "Silva-Tavares, B., Pacheco, L., Moreira, Â., & Almeida, L. (2006). Quam labore assumenda commodi. Reis S.A.",
+   "item": "it000"
+  },
+  {
+   "indice": 22,
+   "texto": "Zhang, X., Costa, V., & Correia, W. (1991). In cupiditate perferendis maiores repellat autem magni ad voluptate consectetur explicabo iusto ipsum itaque laboriosam similique. BMC Public Health, 53(7), 531–549.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(São Paulo (Estado), 2011a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dicta officia autem fugiat delectus aut minima quasi, 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lopes et al., 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cunha et al., s.d.; Lopes et al., 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it017"
+   ],
+   "referencias": [
+    4,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), 2016; Mota, 1991; Pham, 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it005",
+    "it009"
+   ],
+   "referencias": [
+    14,
+    17,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Baptista et al., 2024; Istituto Superiore di Sanità, 2007; Pham, 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it005",
+    "it007"
+   ],
+   "referencias": [
+    0,
+    17,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(C. Brito, 2005; Morais et al., 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it019"
+   ],
+   "referencias": [
+    2,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Baptista et al., 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dicta officia autem fugiat delectus aut minima quasi, 2014; Lima et al., 1987; Zhang et al., 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it012",
+    "it008"
+   ],
+   "referencias": [
+    22,
+    12,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ramos et al., 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Baptista et al., 2024; Morais et al., 1997; Pham, 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it019",
+    "it005"
+   ],
+   "referencias": [
+    0,
+    null,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mota, 1991; São Paulo (Estado), 2011b; Zhang et al., 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it003",
+    "it022"
+   ],
+   "referencias": [
+    14,
+    22,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham, 2024; Ramos et al., 1986; Zhang et al., 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it003",
+    "it005"
+   ],
+   "referencias": [
+    18,
+    22,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(A. Brito et al., 2006; Lima et al., 1987; Lopes et al., 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it017",
+    "it012"
+   ],
+   "referencias": [
+    1,
+    13,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baptista et al. (2024)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dicta officia autem fugiat delectus aut minima quasi, 2014; Lopes et al., 2004; Silva-Tavares et al., 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it008",
+    "it000"
+   ],
+   "referencias": [
+    13,
+    6,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim & Pinheiro (2009)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 2010; Ramos et al., 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it015"
+   ],
+   "referencias": [
+    10,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham, 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(C. Brito, 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ramos et al. (1986)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pacheco & Magalhães, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dominguez Guzmán et al., 1987; Gremião et al., 1984; Lima et al., 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it012",
+    "it006"
+   ],
+   "referencias": [
+    null,
+    12,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mota, 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião et al., 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dominguez Guzmán et al., 1987; dos Reis et al., 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it002"
+   ],
+   "referencias": [
+    7,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lima et al., 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dominguez Guzmán et al., 1987; dos Reis et al., 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it002"
+   ],
+   "referencias": [
+    7,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Baptista et al., 2024, p. 97)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(C. Brito, 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Silva-Tavares et al., 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Istituto Superiore di Sanità (2010)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(C. Brito, 2005; Morais et al., 1997)",
+   "item": "it019"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Baptista et al., 2024; Morais et al., 1997; Pham, 2024)",
+   "item": "it019"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Dominguez Guzmán et al., 1987; Gremião et al., 1984; Lima et al., 1987)",
+   "item": "it002"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Dominguez Guzmán et al., 1987; dos Reis et al., 2018)",
+   "item": "it002"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Dominguez Guzmán et al., 1987; dos Reis et al., 2018)",
+   "item": "it002"
+  },
+  {
+   "ponto": "E",
+   "referencia": 5,
+   "item": "extra1"
+  },
+  {
+   "ponto": "E",
+   "referencia": 15,
+   "item": "extra0"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Inventore quaerat error alias sed similique expedita aliquam eligendi rem sapiente in labore"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

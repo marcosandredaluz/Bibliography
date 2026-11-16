@@ -1,0 +1,574 @@
+{
+ "id": "treino_iso690-num_it-IT_perturbado",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "it-IT",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1.  ÑÚÑEZ, Umberto e MALENCHINI, Piermaria. Insomma ferire nascere rendere nero particolare porre persona. . Ferrera Erbognone : Odescalchi-Bataglia Group, 2025.",
+   "item": "it006"
+  },
+  {
+   "indice": 1,
+   "texto": "2.  SÃO PAULO (ESTADO). Sole fenomeno strano vario pericoloso tornare particolare dopo assistere camera nessuno scusare tono per zio. Das Gesundheitswesen. 1998. Vol. 37, no. 11, p. 26–43. DOI 10.99999/teste.treino.49475.",
+   "item": "it008"
+  },
+  {
+   "indice": 2,
+   "texto": "3.  PIRANDELLO-GRANATELLI, Rocco, TRAPANI, Roberta, CUTULI, Niccolò e LATTUADA, Jacopo. Famiglia nostro intero sud aprire svolgere contadino. Revista de Saúde Pública. 1998. Vol. 34, no. 7, p. 197–217. DOI 10.99999/teste.treino.42481.",
+   "item": "it000"
+  },
+  {
+   "indice": 3,
+   "texto": "4.  MENGOLO, Paolo, PERTINI, Federigo e GABBA, Liberto. Abbastanza buio periodo stupido corso fuoco popolo. Gaceta Sanitaria. 1986. Vol. 42, no. 5, p. 556–569.",
+   "item": "it011"
+  },
+  {
+   "indice": 4,
+   "texto": "5.  EMANUELLI, Arturo. Esso soldato vincere crisi. One Health. 2003. Vol. 60, no. 5, p. 563–569. DOI 10.99999/teste.treino.47287.",
+   "item": "it019"
+  },
+  {
+   "indice": 5,
+   "texto": "6.  NGUYEN, Thi Hoa, MOGHERINI, Nico e CUOMO, Leone. Passo lingua fatica ordine autore camera questione dunque produzione sotto sì. Epidemiologia & Prevenzione. 1989. Vol. 76, no. 11, p. 506–510.",
+   "item": "it005"
+  },
+  {
+   "indice": 6,
+   "texto": "7.  VIRGINIA-MARYLAND COLLEGE OF VETERINARY MEDICINE. Impossibile cucina bene segreto pericolo consentire rompere concedere principe. In : MAGLIO, Calogero (a c. di.), Antico servire adesso effetto argomento rimettere patria merito più successo. Tressanti : Bombieri-Lussu s.r.l., 2017. p. 105–120.",
+   "item": "it007"
+  },
+  {
+   "indice": 7,
+   "texto": "8.  COPPOLA, Angelina. Ritornare infatti rispondere aggiungere offrire morte decidere signora attraversare mercato ricordare. Cadernos de Saúde Pública. 1990. Vol. 23, no. 5, p. 710–722.",
+   "item": "it015"
+  },
+  {
+   "indice": 8,
+   "texto": "9.  DEL BRUNO, Ettore, LEONARDI, Giovanni e GINESIO, Ilaria. Caffè ogni caso speciale durante legge ragazzo espressione sera ritornare avere periodo. In : CRESPI, Napoleone (a c. di.), Studio autore gesto donna utile ministro. Marienberg : Comolli-Collodi SPA, 1986. p. 278–293.",
+   "item": "it001"
+  },
+  {
+   "indice": 9,
+   "texto": "10.  BARCELÓ MAESTRE, Simón, PACILLO, Mirko e CUNDARI, Mercedes. Cosa pregare pietà affatto fornire neanche volta maniera padre addosso ricchezza insistere. Preventive Veterinary Medicine. 2013. Vol. 59, no. 4, p. 755–768.",
+   "item": "it002"
+  },
+  {
+   "indice": 10,
+   "texto": "11.  ALOISIO, Silvia, ROSSINI, Ivan, POMETTA, Stella, FRANCESCHI, Francesco, DONATONI, Antonina e FITTIPALDI, Giorgio. Appunto relazione sembrare inizio onore realtà in volta. One Health. 1981. Vol. 36, no. 7, p. 718–736.",
+   "item": "it010"
+  },
+  {
+   "indice": 11,
+   "texto": "12.  PIZZETTI, Renata, ZAMENGO, Caterina, LIGORIO, Antonina, MORANDINI, Barbara, TRAPANI, Cassandra e FLAIANO, Aldo. Cadere ogni mercato che utile costituire notizia su minimo pomeriggio opporre mancare. Preventive Veterinary Medicine. Vol. 28, no. 1, p. 765–783.",
+   "item": "it020"
+  },
+  {
+   "indice": 12,
+   "texto": "13.  BORGHESE, Fabrizio e TUTINO, Cristina. Su puro pace ascoltare maniera impedire alto tecnico risultare scrivere tavolo. Online. 2009. 6937. Available from: https://leis-treino.gov/7231",
+   "item": "it013"
+  },
+  {
+   "indice": 13,
+   "texto": "14.  LERNER, Telemaco e BABBO, Stefani. Faccia medio libertà essa dinanzi dolore distinguere oro rapporto partecipare. Revista de Saúde Pública. 2022. Vol. 34, no. 4, p. 636–646. DOI 10.99999/teste.treino.95865.",
+   "item": "it016"
+  },
+  {
+   "indice": 14,
+   "texto": "15.  PARK, Ji-ho, VECOLI, Raffaella e BORROMINI, Antonella. Saltare numeroso industriale risultato esercito vestito mancare. BMC Public Health. 1999. Vol. 79, no. 3, p. 149–154. DOI 10.99999/teste.treino.30418.",
+   "item": "it004"
+  },
+  {
+   "indice": 15,
+   "texto": "16.  MALENCHINI, Giacomo, DOSSETTI, Antonello e PRAGA, Maria. Ringraziare davanti riprendere usare dubbio coraggio scienza treno bere. . San Maurizio : Tamborini-Giunti SPA, 2015.",
+   "item": "it012"
+  },
+  {
+   "indice": 16,
+   "texto": "17.  SÃO PAULO (ESTADO). Muro costruzione contenere don formare mio assumere niente nemico strumento. Fiondi : Errani s.r.l., 2002.",
+   "item": "it017"
+  },
+  {
+   "indice": 17,
+   "texto": "18.  CHEN, Xiaoming e LUCCIANO, Elisa. Rosso scrittore infine corrente corpo procedere io battere lei. Preventive Veterinary Medicine. 1986. Vol. 36, no. 5, p. 243–251.",
+   "item": "it003"
+  },
+  {
+   "indice": 18,
+   "texto": "19.  HAUTE AUTORITÉ DE SANTÉ (FRANCE). Ne attesa funzione bene peccato risultato. Cadernos de Saúde Pública. 2007. Vol. 73, no. 9, p. 636–644. DOI 10.99999/teste.treino.52102.",
+   "item": "it009"
+  },
+  {
+   "indice": 19,
+   "texto": "20.  GARZONI, Giulio, BELLÒ, Angelica e PERUZZI, Lilla. Esprimere aumentare riempire conto personale stesso forma davanti papà figura ragione chiesa piuttosto fine. . Pieve Di Soligo : Franzese s.r.l., 1976.",
+   "item": "it021"
+  },
+  {
+   "indice": 20,
+   "texto": "21.  MONTALTI, Fernanda, BARBARIGO, Giacobbe, MORLACCHI, Raffaello e PIOVANI, Gian. Congresso immaginare pubblico politica. Journal of the American Medical Informatics Association. 2015. Vol. 65, no. 11, p. 190–207. DOI 10.99999/teste.treino.52210.",
+   "item": "it014"
+  },
+  {
+   "indice": 21,
+   "texto": "22.  ROSSINI, Puccio, SERRAGLIO, Alfredo, PIZZO, Fernanda e MAGLIO, Cipriano. Interesse sistema disporre per vivo denaro lato abitare prezzo legge. Journal of the American Medical Informatics Association. 1985. Vol. 42, no. 4, p. 237–249.",
+   "item": "it018"
+  },
+  {
+   "indice": 22,
+   "texto": "23.  GARZONI, Giulio, BELLÒ, Angelica e PERUZZI, Lilla. Neanche attraversare verità rispetto appunto importante significare prendere mestiere vestito consentire simile prossimo. . Borgo San Martino Di Cerveteri : Modiano-Barcaccia SPA, 1976.",
+   "item": "it022"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1–3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it008",
+    "it000"
+   ],
+   "referencias": [
+    0,
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 4, 5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it011",
+    "it019"
+   ],
+   "referencias": [
+    0,
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it006"
+   ],
+   "referencias": [
+    5,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 8, 9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it006",
+    "it015"
+   ],
+   "referencias": [
+    8,
+    0,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9, 10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it002"
+   ],
+   "referencias": [
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11, 12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it020"
+   ],
+   "referencias": [
+    10,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15, 16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it012"
+   ],
+   "referencias": [
+    14,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 15, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it003",
+    "it004"
+   ],
+   "referencias": [
+    3,
+    17,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10, 19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it009"
+   ],
+   "referencias": [
+    9,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Coppola (8)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mengolo et al. (4)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15–17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it017",
+    "it012"
+   ],
+   "referencias": [
+    14,
+    16,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it014"
+   ],
+   "referencias": [
+    3,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 3, 21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it006",
+    "it000"
+   ],
+   "referencias": [
+    20,
+    0,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15, 18, 22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it004",
+    "it018"
+   ],
+   "referencias": [
+    17,
+    14,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it007"
+   ],
+   "referencias": [
+    0,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10, 20, 22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it021",
+    "it018"
+   ],
+   "referencias": [
+    9,
+    19,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17, 23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it017"
+   ],
+   "referencias": [
+    22,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22, p. 174)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Emanuelli (5)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Dove intorno ricevere salire minore accendere genere repubblica destino affermare vuoto regione"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

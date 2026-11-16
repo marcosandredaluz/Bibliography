@@ -1,0 +1,633 @@
+{
+ "id": "reservado_chicago-ad_pt-BR_limpo",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "pt-BR",
+ "conjunto": "reservado",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Autem non ducimus dolorem magnam hic est, Legislação N. 4763 (2019). https://leis-reservado.gov/8586.",
+   "item": "it008"
+  },
+  {
+   "indice": 1,
+   "texto": "Camargo, Enzo Gabriel, Letícia Vieira, e Ana Sophia da Cruz. s.d. “Explicabo at rem veniam facilis delectus pariatur magni eaque”. Melo Camargo Ltda.",
+   "item": "it020"
+  },
+  {
+   "indice": 2,
+   "texto": "Campos, Júlia, Ana Júlia Monteiro, Luana da Mota, Ravi Abreu, Kamilly Cardoso, e Bento Nascimento. 1998a. “Consequuntur commodi ut dolorem sed sit ipsam”. Revue d’Épidémiologie et de Santé Publique 16 (4): 625–36.",
+   "item": "it022"
+  },
+  {
+   "indice": 3,
+   "texto": "Campos, Júlia, Ana Júlia Monteiro, Luana da Mota, Ravi Abreu, Kamilly Cardoso, e Bento Nascimento. 1998b. “Laudantium facilis error exercitationem”. Gaceta Sanitaria 26 (8): 193–201.",
+   "item": "it021"
+  },
+  {
+   "indice": 4,
+   "texto": "Choi, Min-jun, Gabriela Castro, e Valentina Mendes. 2015. Est harum qui fugit placeat ea. Souza Nascimento Ltda.",
+   "item": "it004"
+  },
+  {
+   "indice": 5,
+   "texto": "Conselho Federal de Medicina Veterinária. 1980. “Deleniti quo vitae aspernatur est odio ea esse aliquam incidunt”. https://exemplo-reservado.org/9243.",
+   "item": "it018"
+  },
+  {
+   "indice": 6,
+   "texto": "Conselho Federal de Medicina Veterinária. 2011. “Aperiam possimus voluptates odio hic voluptate voluptate inventore sequi exercitationem”. Revue d’Épidémiologie et de Santé Publique 79 (9): 203–14. https://doi.org/10.99999/teste.reservado.14075.",
+   "item": "it007"
+  },
+  {
+   "indice": 7,
+   "texto": "Cunha, Ana Laura da, Julia Cassiano, Ana Lívia Montenegro, Lucas Pacheco, Alexandre Vieira, e Alexia Santos. 2022. “Deserunt dolorum qui natus minus blanditiis”. Revue d’Épidémiologie et de Santé Publique 2 (11): 760–72. https://doi.org/10.99999/teste.reservado.59538.",
+   "item": "it011"
+  },
+  {
+   "indice": 8,
+   "texto": "Dias, Thomas. 1993. “Magnam id adipisci a excepturi a est molestias”. Medical Mycology 74 (4): 659–74. https://doi.org/10.99999/teste.reservado.80372.",
+   "item": "it019"
+  },
+  {
+   "indice": 9,
+   "texto": "Font Sanmiguel, Nazaret. 2016. “Exercitationem placeat beatae ullam dicta animi vel dolorum cupiditate cumque”. Novaes.",
+   "item": "it002"
+  },
+  {
+   "indice": 10,
+   "texto": "Gomes, Gael. 2023. “Tempora a mollitia aperiam reiciendis”. Em Nam eos assumenda earum minima nostrum ipsa, organizado por Maria Luísa Aragão. Araújo.",
+   "item": "it014"
+  },
+  {
+   "indice": 11,
+   "texto": "Mendes, Isabelly. 2021. “Perspiciatis magnam sit odit debitis est accusantium odit impedit”. Epidemiologia e Serviços de Saúde 70 (9): 879–84.",
+   "item": "it015"
+  },
+  {
+   "indice": 12,
+   "texto": "Neves, Olívia das. 1997. Itaque dolores labore quos saepe explicabo qui harum perspiciatis voluptatem occaecati. Moura.",
+   "item": "it017"
+  },
+  {
+   "indice": 13,
+   "texto": "Nguyen, Minh. 1979. Consectetur neque quam dolore culpa reiciendis eius. Machado.",
+   "item": "it005"
+  },
+  {
+   "indice": 14,
+   "texto": "Officia dolorem at nam, Legislação N. 8585 (1977). https://leis-reservado.gov/1854.",
+   "item": "it000"
+  },
+  {
+   "indice": 15,
+   "texto": "Porto, Bento di, Liam Rodrigues, e Diogo Moreira. 2014. “Et vero nisi laborum nulla vel ut labore molestiae”. Em Dignissimos maxime hic nulla aspernatur, organizado por Otávio Araújo. Cavalcante.",
+   "item": "it001"
+  },
+  {
+   "indice": 16,
+   "texto": "Public Health Agency of Canada. 1976. “Eaque cum nemo odit hic modi molestiae aliquid deleniti beatae fugit”. https://exemplo-reservado.org/1922.",
+   "item": "it009"
+  },
+  {
+   "indice": 17,
+   "texto": "Quam est eos et ex aut molestias sit, Legislação N. 2928 (1989). https://leis-reservado.gov/2718.",
+   "item": "it006"
+  },
+  {
+   "indice": 18,
+   "texto": "Quibusdam deserunt sint dolorem eius voluptatum corporis architecto at similique minima sit quia debitis incidunt illum, Legislação N. 2026 (2019). https://leis-reservado.gov/8485.",
+   "item": "it003"
+  },
+  {
+   "indice": 19,
+   "texto": "Rezende, José Miguel, e Benjamin Albuquerque. 2024. Quia quis voluptatem deleniti. Pires.",
+   "item": "it010"
+  },
+  {
+   "indice": 20,
+   "texto": "Rocha, Kaique, Paulo Correia, Carolina Almeida, e Maria Laura Pereira. 2018. “Provident unde ea recusandae nulla voluptatibus amet totam”. Cadernos de Saúde Pública 28 (11): 615–31. https://doi.org/10.99999/teste.reservado.68764.",
+   "item": "it016"
+  },
+  {
+   "indice": 21,
+   "texto": "Sales, Luiz Felipe, Nathan Alves, Benício Câmara, e Letícia Nascimento. 1997. “Totam repellendus perspiciatis rem”. BMC Public Health 29 (12): 163–69. https://doi.org/10.99999/teste.reservado.71888.",
+   "item": "it013"
+  },
+  {
+   "indice": 22,
+   "texto": "Sousa, Ana Liz, Renan Marques, Luara Ribeiro, Bernardo Nascimento, Clarice Porto, e Sabrina Oliveira. 2010. “Ullam soluta explicabo nesciunt nesciunt alias repellendus fuga saepe enim alias dolorum repellendus nemo voluptatem”. Em Magni voluptatibus nisi et illum assumenda numquam quaerat, organizado por Anthony Gabriel Azevedo. Almeida.",
+   "item": "it012"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Autem non ducimus dolorem magnam hic est 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(das Neves 1997; Public Health Agency of Canada 1976; Conselho Federal de Medicina Veterinária 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it009",
+    "it018"
+   ],
+   "referencias": [
+    12,
+    16,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Campos et al. (1998a)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Porto et al. 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Public Health Agency of Canada 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Campos et al. 1998b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(das Neves 1997; Dias 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it019"
+   ],
+   "referencias": [
+    12,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Font Sanmiguel 2016; Camargo et al., s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it020"
+   ],
+   "referencias": [
+    9,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Officia dolorem at nam 1977; Mendes 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it015"
+   ],
+   "referencias": [
+    14,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Quibusdam deserunt sint dolorem eius voluptatum corporis architecto at similique minima sit quia debitis incidunt illum 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Cunha et al. 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dias 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(das Neves 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Porto et al. 2014; Rocha et al. 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it016"
+   ],
+   "referencias": [
+    15,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rocha et al. 2018; Campos et al. 1998b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it021"
+   ],
+   "referencias": [
+    20,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nguyen (1979)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sales et al. 1997; Conselho Federal de Medicina Veterinária 2011; Mendes 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it007",
+    "it015"
+   ],
+   "referencias": [
+    21,
+    6,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi et al. 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Minas Gerais (Estado) (Autem non ducimus dolorem magnam hic est 2019)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Porto et al. 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Łukasz et al. (Quam est eos et ex aut molestias sit 1989)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gomes 2023; Conselho Federal de Medicina Veterinária 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it007"
+   ],
+   "referencias": [
+    10,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Public Health Agency of Canada 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Camargo et al., s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rocha et al. (2018)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Font Sanmiguel 2016; Quam est eos et ex aut molestias sit 1989; Public Health Agency of Canada 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it006",
+    "it009"
+   ],
+   "referencias": [
+    9,
+    17,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Camargo et al. (s.d.)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Quam est eos et ex aut molestias sit 1989; Sousa et al. 2010; Officia dolorem at nam 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it012",
+    "it000"
+   ],
+   "referencias": [
+    17,
+    22,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Officia dolorem at nam 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Campos et al. 1998a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Novais-Cunha (Officia dolorem at nam 1977)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária 2011; Rezende e Albuquerque 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it010"
+   ],
+   "referencias": [
+    6,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Font Sanmiguel 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rezende e Albuquerque 2024, 174)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Public Health Agency of Canada 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Quibusdam deserunt sint dolorem eius voluptatum corporis architecto at similique minima sit quia debitis incidunt illum 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Quibusdam deserunt sint dolorem eius voluptatum corporis architecto at similique minima sit quia debitis incidunt illum 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "das Neves (1997)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Odio perferendis mollitia maxime molestias ducimus provident quasi"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

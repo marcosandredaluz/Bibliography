@@ -1,0 +1,695 @@
+{
+ "id": "treino_harvard_es-ES_erros",
+ "estilo": "harvard",
+ "sistema": "autor-data",
+ "locale": "es-ES",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Aller, J.F. et al. (1987a) «Gente has valores poner modelo europa buenos», Das Gesundheitswesen, 28(6), pp. 786-803. Disponible en: https://doi.org/10.99999/teste.treino.52514.",
+   "item": "it032"
+  },
+  {
+   "indice": 1,
+   "texto": "Aller, J.F. et al. (1987b) «Has diferentes carrera largo también vista quedó estoy mayor», en A. Ramis (ed.) Valor cara gente algo buena debido obra defensa hubiera encontrar piel partidos recuerdo septiembre lugar. Santa Cruz de Tenerife: Hotel Robles y asociados S.L., pp. 193-208.",
+   "item": "it033"
+  },
+  {
+   "indice": 2,
+   "texto": "Alvarez, P. y Pozo, T. (2012) «Música centros ideas todavía vía flores semana seguridad», Medical Mycology, 70(5), pp. 282-300.",
+   "item": "it025"
+  },
+  {
+   "indice": 3,
+   "texto": "Busquets-Asensio, M. y Bárcena, M. (1985) Edad etapa autor análisis más demás proceso partido está cuales electoral. Juárez & Asociados S.A.",
+   "item": "it000"
+  },
+  {
+   "indice": 4,
+   "texto": "von Caparrós, B. y Santiago, G. (1977) Lado superior padre finalmente mundo dice humanos policía enero. Disponible en: https://leis-treino.gov/2802.",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "Caro, M. y Coloma, G. (2021) Menos médico haber será hija tras participación aquí plazo primeras tarde. Almería: Transportes del Noroeste S.L.L.",
+   "item": "it020"
+  },
+  {
+   "indice": 6,
+   "texto": "Catalá, C. et al. (1983) «Premio ayuda señor santiago algo vista través costa serie humanos c fondo revolución atención fueron», en J. Marqués (ed.) Boca objetivo han alguna piel la. Valladolid: Hermanos Diego S.A., pp. 101-116.",
+   "item": "it012"
+  },
+  {
+   "indice": 7,
+   "texto": "Chen, W. (1996) «Debido segundo mayores favor características ayer juan nuestras joven ambos servicios proceso madre aquellas vamos», Gaceta Sanitaria, 75(12), pp. 384-399. Disponible en: https://doi.org/10.99999/teste.treino.52995.",
+   "item": "it003"
+  },
+  {
+   "indice": 8,
+   "texto": "Conselho Nacional de Saúde (Brasil) (1989) Blanca políticas temas. Disponible en: https://leis-treino.gov/4114.",
+   "item": "it023"
+  },
+  {
+   "indice": 9,
+   "texto": "Corominas-Aller, E. (2025) Buenos hecho sangre pesetas peor segundo cara estos cualquier. Disponible en: https://exemplo-treino.org/5507 (Accedido: 9 de noviembre de 2026).",
+   "item": "extra0"
+  },
+  {
+   "indice": 10,
+   "texto": "Cruz, M. et al. (2015) «Expresión tras se anterior presidente especialmente», Das Gesundheitswesen, 80(3), pp. 509-517.",
+   "item": "it014"
+  },
+  {
+   "indice": 11,
+   "texto": "Flor, M., Hernando, C. y Valverde, I. (1982) Imagen ocasiones sobre capacidad has josé negro nosotros saber amor asimismo nunca. Toledo: Familia Lledó S.Com.",
+   "item": "it030"
+  },
+  {
+   "indice": 12,
+   "texto": "Granados, E. y Romero, L. (1978) «Grupos ello habrá sé libre producción español luz único resto podía decisión», Das Gesundheitswesen, 51(5), pp. 691-705. Disponible en: https://doi.org/10.99999/teste.treino.56159.",
+   "item": "it017"
+  },
+  {
+   "indice": 13,
+   "texto": "Guardiola, E. et al. (1977) Rodríguez cambio quienes ni atención países cosas humano octubre obstante período mirada hermano hora. Minería TBQ S.L.",
+   "item": "it010"
+  },
+  {
+   "indice": 14,
+   "texto": "Guitart, V. et al. (2008) «Hablar ver consumo calidad interior capacidad grande usted estaban», Revue d’Épidémiologie et de Santé Publique, 31(5), pp. 337-342.",
+   "item": "it024"
+  },
+  {
+   "indice": 15,
+   "texto": "Instituto Nacional de Câncer (Brasil) (2002) Llegó bastante presente medida expresión bajo todas. Disponible en: https://leis-treino.gov/6659.",
+   "item": "it019"
+  },
+  {
+   "indice": 16,
+   "texto": "Kim, J. (2005) «Flores crecimiento idea españoles bajo parecía fin», Epidemiologia e Serviços de Saúde, 44(9), pp. 631-635. Disponible en: https://doi.org/10.99999/teste.treino.64851.",
+   "item": "it004"
+  },
+  {
+   "indice": 17,
+   "texto": "Mendoza, P. et al. (2016) «Éste otra medidas amigos», en A. Castejón (ed.) Octubre ellas película ambiente paso haya. Granada: Construcción WQGR S.A., pp. 31-46.",
+   "item": "it028"
+  },
+  {
+   "indice": 18,
+   "texto": "Noguera, L. et al. (1989) «J vio asunto condiciones tal estudio palabras grande electoral», Epidemiologia e Serviços de Saúde, 71(9), pp. 899-916. Disponible en: https://doi.org/10.99999/teste.treino.39842.",
+   "item": "it029"
+  },
+  {
+   "indice": 19,
+   "texto": "O’Connor, G., Perelló, B. y Álamo, V. (2003) Contrario primer grado otro queda común se tienen. Albacete: Transportes Cid S.L.L.",
+   "item": "it006"
+  },
+  {
+   "indice": 20,
+   "texto": "Organização Pan-Americana da Saúde (2007) Libros josé propia tras iba verdad don minutos partes marco cosas. Salamanca: Hermanos Expósito S.Coop.",
+   "item": "it009"
+  },
+  {
+   "indice": 21,
+   "texto": "Palomino, A. (1986) «Ii económica lucha dicen jóvenes desde quien contenido necesario», Cadernos de Saúde Pública, 24(9), pp. 380-384.",
+   "item": "it013"
+  },
+  {
+   "indice": 22,
+   "texto": "Pérez, I. et al. (2012) «Uso salud tenía corte», en N. Rodrigo (ed.) Demás tener haciendo cierto económica niveles ante les. Lleida: Logística STUS S.Com., pp. 169-184.",
+   "item": "it016"
+  },
+  {
+   "indice": 23,
+   "texto": "Ramón, H., Vila, S. y Llanos, R. (1998) «Ahora sentido hubiera capacidad piel único sociales poner señaló ciencia tu sin joven régimen», Medical Mycology, 73(5), pp. 881-893. Disponible en: https://doi.org/10.99999/teste.treino.85056.",
+   "item": "it022"
+  },
+  {
+   "indice": 24,
+   "texto": "Robert Koch-Institut (2025) Siquiera político solamente comercio pasa. Disponible en: https://exemplo-treino.org/9629 (Accedido: 4 de noviembre de 2026).",
+   "item": "it026"
+  },
+  {
+   "indice": 25,
+   "texto": "Ródenas, M. y Tur, C. (2003) Viene mañana pacientes sean energía encuentro material negro saber flores estos. Cantabria: Ferrán y Zaragoza S.A.",
+   "item": "it021"
+  },
+  {
+   "indice": 26,
+   "texto": "del Salas, V. et al. (2008) «Fuego miedo cambio propios campaña análisis todavía cuba fuego», en H. Barros (ed.) Curso partes soy investigación contenido miedo estructura hace. Jaén: Infraestructuras UWN S.L.N.E, pp. 59-74.",
+   "item": "extra1"
+  },
+  {
+   "indice": 27,
+   "texto": "Sanjuan Asenjo, A. (2011) «Movimiento dan cada pone demasiado tanto toda», Revista de Saúde Pública, 41(2), pp. 756-771. Disponible en: https://doi.org/10.99999/teste.treino.12209.",
+   "item": "it002"
+  },
+  {
+   "indice": 28,
+   "texto": "São Paulo (Estado) (2011) Diciembre actividad garcía produce pueblo vía período muy ideas imagen servicio pie persona. Muñoz y asociados S.L.N.E.",
+   "item": "it007"
+  },
+  {
+   "indice": 29,
+   "texto": "São Paulo (Estado) (sin fecha) Alto mayores horas precisamente tenían hablar haya puede sola gran ese. Disponible en: https://leis-treino.gov/2444.",
+   "item": "it031"
+  },
+  {
+   "indice": 30,
+   "texto": "Tran, V.A., Carnero, N. y Guijarro, G. (2025) Señora hacen pero finalmente antonio quizá presencia nuevos. Disponible en: https://exemplo-treino.org/8682 (Accedido: 5 de noviembre de 2026).",
+   "item": "it005"
+  },
+  {
+   "indice": 31,
+   "texto": "Vidal, A. y Sales, F. (2002) «Ley efecto siendo mar servicios vivir», Gaceta Sanitaria, 58(11), pp. 98-105. Disponible en: https://doi.org/10.99999/teste.treino.27698.",
+   "item": "it018"
+  },
+  {
+   "indice": 32,
+   "texto": "Virginia-Maryland College of Veterinary Medicine (1977) País francia desde mundial humano tuvo era luz españa mil. Guadalajara: Grupo Chico S.A.",
+   "item": "it015"
+  },
+  {
+   "indice": 33,
+   "texto": "Virginia-Maryland College of Veterinary Medicine (2002) Sangre elecciones presente ambiente escuela fecha unas hombre casi objeto cargo es. Castellón: Vicente y Talavera S.Com.",
+   "item": "it008"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Chen (1996)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado), sin fecha)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Chen, 1996; Sanjuan Asenjo, 2011; São Paulo (Estado), sin fecha)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031",
+    "it003",
+    "it002"
+   ],
+   "referencias": [
+    29,
+    7,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(von Caparrós y Santiago, 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pérez et al., 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Guitart et al., 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Flor, Hernando y Valverde, 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "São Paulo (Estado) (sin fecha)",
+   "tipo": "narrativa",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Marin y Garzón, 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sanjuan Asenjo, 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Guardiola et al., 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Palomino, 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vidal y Sales, 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Aller et al., 1987b; Mendoza et al., 2016; Robert Koch-Institut, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it033",
+    "it026"
+   ],
+   "referencias": [
+    17,
+    1,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Aller et al., 1987b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Aller et al., 1987a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (1977)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran, Carnero y Guijarro, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Aller et al., 1987a; Alvarez y Pozo, 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it032",
+    "it025"
+   ],
+   "referencias": [
+    0,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ramón, Vila y Llanos (1998)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Aller et al., 1987b; Instituto Nacional de Câncer (Brasil), 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it033"
+   ],
+   "referencias": [
+    15,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), 1989; São Paulo (Estado), 2011; Caro y Coloma, 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it020",
+    "it023"
+   ],
+   "referencias": [
+    28,
+    5,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Marin y Garzón, 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Catalá et al., 1983; Aller et al., 1987b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it033"
+   ],
+   "referencias": [
+    6,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Catalá et al., 1983; Aller et al., 1987b; Alvarez y Pozo, 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it025",
+    "it033"
+   ],
+   "referencias": [
+    6,
+    2,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ródenas y Tur, 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kim, 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Noguera et al., 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Busquets-Asensio y Bárcena, 1985; Cruz et al., 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it014"
+   ],
+   "referencias": [
+    3,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Marin y Garzón, 1983; O’Connor, Perelló y Álamo, 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it006"
+   ],
+   "referencias": [
+    null,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Granados y Romero, 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Aller et al., 1987a; Mendoza et al., 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it032",
+    "it028"
+   ],
+   "referencias": [
+    0,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde, 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Requena, 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Busquets-Asensio y Bárcena, 1985, p. 116)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(São Paulo (Estado), 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde, 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "São Paulo (Estado) (sin fecha)",
+   "tipo": "narrativa",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Marin y Garzón, 1983)",
+   "item": "it027"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Marin y Garzón, 1983)",
+   "item": "it027"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Marin y Garzón, 1983; O’Connor, Perelló y Álamo, 2003)",
+   "item": "it027"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Requena, 2015)",
+   "item": "it011"
+  },
+  {
+   "ponto": "E",
+   "referencia": 9,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 26,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Sí casi sido diversos haber todas industria ante programa marzo centros económico cuanto todo bueno"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

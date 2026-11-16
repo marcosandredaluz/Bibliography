@@ -1,0 +1,635 @@
+{
+ "id": "treino_iso690-ad_pt-PT_limpo",
+ "estilo": "iso690-ad",
+ "sistema": "autor-data",
+ "locale": "pt-PT",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "BARBOSA, Carolina, 1985. Nemo culpa maxime suscipit esse voluptatem esse. Revista de Saúde Pública. 1985. Vol. 9, no. 7, p. 223–238. DOI 10.99999/teste.treino.88709.",
+   "item": "it014"
+  },
+  {
+   "indice": 1,
+   "texto": "BARBOSA, Ema, 1982. Autem nemo debitis molestiae quaerat enim. In: LOUREIRO, Juliana (ed.), Esse dolores sapiente quis autem earum. Albufeira: Soares Macedo e Filhos. p. 150–165.",
+   "item": "it012"
+  },
+  {
+   "indice": 2,
+   "texto": "CAMPOS, Helena, MENDES, Ângela, BORGES, Marcos, FIGUEIREDO, Dinis, PIRES, Duarte e BARBOSA, Nelson, [no date]. Et ab cum quidem animi vel temporibus. Epidemiologia e Serviços de Saúde. Vol. 48, no. 9, p. 836–849. DOI 10.99999/teste.treino.20220.",
+   "item": "it025"
+  },
+  {
+   "indice": 3,
+   "texto": "CARNEIRO, Ana, 1992. Libero nostrum deserunt nisi ducimus earum molestiae. BMC Public Health. 1992. Vol. 47, no. 3, p. 377–392. DOI 10.99999/teste.treino.22572.",
+   "item": "it019"
+  },
+  {
+   "indice": 4,
+   "texto": "CARNEIRO, Igor, 1993. Quo dolore delectus officia dolore aperiam debitis placeat laudantium repellendus. In: LIMA, Cristiano (ed.), Dolorem inventore placeat et inventore mollitia recusandae doloribus laudantium commodi. Barreiro: Henriques Pinto S/A. p. 287–302.",
+   "item": "it020"
+  },
+  {
+   "indice": 5,
+   "texto": "CONSELHO NACIONAL DE SAÚDE (BRASIL), 2005. Blanditiis fugiat praesentium aperiam. Aveiro: Gaspar.",
+   "item": "it007"
+  },
+  {
+   "indice": 6,
+   "texto": "CUNHA, Mário e VICENTE, Noah, 2019. Doloribus ipsam vero ipsam fuga corrupti ea animi incidunt id deserunt quas occaecati voluptatem voluptatibus. Revue d’Épidémiologie et de Santé Publique. 2019. Vol. 20, no. 2, p. 401–415. DOI 10.99999/teste.treino.91274.",
+   "item": "it024"
+  },
+  {
+   "indice": 7,
+   "texto": "DEL COELHO, Margarida, PACHECO, Pedro, MACEDO, Flor e ARAÚJO, Rafael, 1993. Modi impedit labore facere repellendus molestias. Journal of the American Medical Informatics Association. 1993. Vol. 69, no. 7, p. 349–356. DOI 10.99999/teste.treino.68303.",
+   "item": "it001"
+  },
+  {
+   "indice": 8,
+   "texto": "FERREIRA, Adriana, CARDOSO, Frederico, MACHADO, Sebastião, LEITE, Lia, REIS, Samuel e PACHECO, Benedita, 1979. At dolore est accusantium maiores incidunt possimus voluptates odit veniam. Preventive Veterinary Medicine. 1979. Vol. 9, no. 5, p. 169–187. DOI 10.99999/teste.treino.49138.",
+   "item": "it013"
+  },
+  {
+   "indice": 9,
+   "texto": "FONSECA, Xavier, CUNHA, Cristiano e RAMOS, Érica, 1985a. Nam nulla ex eveniet excepturi possimus amet.. Online. 1985. 12594. Available from: https://leis-treino.gov/71",
+   "item": "it027"
+  },
+  {
+   "indice": 10,
+   "texto": "FONSECA, Xavier, CUNHA, Cristiano e RAMOS, Érica, 1985b. Repellendus aliquam temporibus perferendis ratione dolores itaque. Cadernos de Saúde Pública. 1985. Vol. 77, no. 10, p. 234–253. DOI 10.99999/teste.treino.37629.",
+   "item": "it026"
+  },
+  {
+   "indice": 11,
+   "texto": "GROSS, Margarida, 1995. A nihil excepturi eius earum iure reprehenderit nisi cumque quo quis cum distinctio.. Online. 1995. 13535. Available from: https://leis-treino.gov/3211",
+   "item": "it006"
+  },
+  {
+   "indice": 12,
+   "texto": "INSTITUTO NACIONAL DE CÂNCER (BRASIL), 1987. Fuga quaerat pariatur accusamus nihil perspiciatis.. Online. 1987. 9536. Available from: https://leis-treino.gov/9398",
+   "item": "it022"
+  },
+  {
+   "indice": 13,
+   "texto": "LE, Thi Hoa, 2019. Dolores quam adipisci delectus harum mollitia tenetur iste enim ducimus dolor aspernatur. Gaceta Sanitaria. 2019. Vol. 26, no. 12, p. 594–603.",
+   "item": "it005"
+  },
+  {
+   "indice": 14,
+   "texto": "LEITE, Leonor, TORRES, Íris, FERNANDES, Eva, OLIVEIRA, Matias, LOPES, Débora e CARDOSO, Emanuel, 2003. Natus incidunt consequatur nemo atque. In: AMORIM, Micael (ed.), Recusandae quibusdam nobis aliquid soluta odio nihil aspernatur rerum. Entroncamento: Sá. p. 60–75.",
+   "item": "it011"
+  },
+  {
+   "indice": 15,
+   "texto": "LOPES, Jéssica, 2012. Neque doloremque blanditiis suscipit. In: NUNES, Duarte (ed.), Veritatis ducimus fugiat esse tempora voluptatem quas error perspiciatis voluptas. Vale de Cambra: Pires Cunha S/A. p. 198–213.",
+   "item": "it021"
+  },
+  {
+   "indice": 16,
+   "texto": "MATOS-LEITE, Joana, 1990. Odio dolore et similique vel cum ex suscipit sequi fugiat modi excepturi autem.. Online. 1990. 14159. Available from: https://leis-treino.gov/4218",
+   "item": "it000"
+  },
+  {
+   "indice": 17,
+   "texto": "ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE, 2004. Quis error vero corporis accusamus ab architecto. Epidemiologia e Serviços de Saúde. 2004. Vol. 28, no. 2, p. 483–503. DOI 10.99999/teste.treino.87609.",
+   "item": "it009"
+  },
+  {
+   "indice": 18,
+   "texto": "PARK, Seo-yeon, 2013. Reprehenderit deserunt beatae labore animi aliquam labore. Revue d’Épidémiologie et de Santé Publique. 2013. Vol. 11, no. 4, p. 438–456. DOI 10.99999/teste.treino.75447.",
+   "item": "it004"
+  },
+  {
+   "indice": 19,
+   "texto": "PINHO, Nelson e TEIXEIRA, Vasco, 1993. Dolor repudiandae facere autem dolore accusantium perspiciatis. Das Gesundheitswesen. 1993. Vol. 62, no. 10, p. 322–331. DOI 10.99999/teste.treino.56730.",
+   "item": "it010"
+  },
+  {
+   "indice": 20,
+   "texto": "RIBEIRO, Mafalda e TORRES, Helena, 1990. Aperiam iste velit amet est ut suscipit non adipisci minima. Revista de Saúde Pública. 1990. Vol. 25, no. 9, p. 669–686. DOI 10.99999/teste.treino.83253.",
+   "item": "it023"
+  },
+  {
+   "indice": 21,
+   "texto": "ROBERT KOCH-INSTITUT, 2013. Facilis vitae esse iure aut pariatur corrupti et iste iusto nesciunt laudantium nihil.. Online. 2013. 11425. Available from: https://leis-treino.gov/6850",
+   "item": "it018"
+  },
+  {
+   "indice": 22,
+   "texto": "RODRIGUES, Tiago, 1980. Id a consequuntur nisi illum ea nemo ducimus quidem. Cadernos de Saúde Pública. 1980. Vol. 45, no. 10, p. 731–742. DOI 10.99999/teste.treino.81904.",
+   "item": "it016"
+  },
+  {
+   "indice": 23,
+   "texto": "SÁ, Vicente, 1999. Tenetur quaerat et sit porro repellat dignissimos unde cum. Cadernos de Saúde Pública. 1999. Vol. 72, no. 2, p. 767–772. DOI 10.99999/teste.treino.56642.",
+   "item": "it017"
+  },
+  {
+   "indice": 24,
+   "texto": "SOUSA, Alícia, CRUZ, Luna e BAPTISTA, Guilherme, 1977. Minus nisi ratione dolorem. BMC Public Health. 1977. Vol. 36, no. 12, p. 380–388. DOI 10.99999/teste.treino.65775.",
+   "item": "it015"
+  },
+  {
+   "indice": 25,
+   "texto": "VARA QUIRÓS, Daniela, 1993. Accusantium ut cupiditate repellat delectus dignissimos explicabo harum vitae vero incidunt ea unde. Das Gesundheitswesen. 1993. Vol. 39, no. 6, p. 896–908. DOI 10.99999/teste.treino.34354.",
+   "item": "it002"
+  },
+  {
+   "indice": 26,
+   "texto": "VIRGINIA-MARYLAND COLLEGE OF VETERINARY MEDICINE, 2006. Ut sapiente architecto cum odio. Epidemiologia & Prevenzione. 2006. Vol. 4, no. 2, p. 190–197. DOI 10.99999/teste.treino.82101.",
+   "item": "it008"
+  },
+  {
+   "indice": 27,
+   "texto": "ZHANG, Xiaoming, ROCHA, Rafael e PEREIRA, Xavier, 1995. Ab labore expedita tenetur enim itaque nisi sit dicta neque qui tenetur.. Online. 1995. 5249. Available from: https://leis-treino.gov/2879",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Robert Koch-Institut 2013; Matos-Leite 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it000"
+   ],
+   "referencias": [
+    21,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinho, Teixeira 1993; Virginia-Maryland College of Veterinary Medicine 2006; Fonseca, Cunha, Ramos 1985a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it008",
+    "it027"
+   ],
+   "referencias": [
+    19,
+    26,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ferreira, Cardoso, Machado, Leite, Reis, Pacheco 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sousa, Cruz, Baptista 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Leite, Torres, Fernandes, Oliveira, Lopes, Cardoso 2003; Rodrigues 1980; Organização Pan-Americana da Saúde 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it016",
+    "it009"
+   ],
+   "referencias": [
+    14,
+    22,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lopes 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zhang, Rocha, Pereira 1995; Barbosa 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it014"
+   ],
+   "referencias": [
+    27,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Carneiro 1993; Cunha, Vicente 2019; Sá 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it024",
+    "it017"
+   ],
+   "referencias": [
+    4,
+    6,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Groß 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ribeiro, Torres 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 2005; Barbosa 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it014"
+   ],
+   "referencias": [
+    5,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robert Koch-Institut (2013)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fonseca, Cunha, Ramos 1985b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ferreira, Cardoso, Machado, Leite, Reis, Pacheco 1979; Ribeiro, Torres 1990; Lopes 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it023",
+    "it021"
+   ],
+   "referencias": [
+    8,
+    20,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Campos, Mendes, Borges, Figueiredo, Pires, Barbosa [no date]; Organização Pan-Americana da Saúde 2004; Conselho Nacional de Saúde (Brasil) 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it009",
+    "it007"
+   ],
+   "referencias": [
+    2,
+    17,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barbosa (1985)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leite, Torres, Fernandes, Oliveira, Lopes, Cardoso (2003)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Carneiro 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Conselho Nacional de Saúde (Brasil) (2005)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang, Rocha, Pereira (1995)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vara Quirós 1993; Ribeiro, Torres 1990; Fonseca, Cunha, Ramos 1985b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it023",
+    "it026"
+   ],
+   "referencias": [
+    25,
+    20,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Matos-Leite (1990)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(del Coelho, Pacheco, Macedo, Araújo 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2006; Carneiro 1993; Instituto Nacional de Câncer (Brasil) 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it020",
+    "it022"
+   ],
+   "referencias": [
+    26,
+    4,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barbosa (1985)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Campos, Mendes, Borges, Figueiredo, Pires, Barbosa ([no date])",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Barbosa 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ferreira, Cardoso, Machado, Leite, Reis, Pacheco 1979; Groß 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it006"
+   ],
+   "referencias": [
+    8,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zhang, Rocha, Pereira 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "del Coelho, Pacheco, Macedo, Araújo (1993)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Barbosa 1985; Ferreira, Cardoso, Machado, Leite, Reis, Pacheco 1979; Zhang, Rocha, Pereira 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it013",
+    "it003"
+   ],
+   "referencias": [
+    0,
+    8,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Carneiro 1992, p. 46)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Zhang, Rocha, Pereira 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Zhang, Rocha, Pereira 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Fonseca, Cunha, Ramos (1985b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Animi eum ipsum aperiam praesentium culpa velit consequatur beatae voluptatum accusamus aliquid"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

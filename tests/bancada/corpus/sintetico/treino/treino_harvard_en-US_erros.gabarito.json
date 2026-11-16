@@ -1,0 +1,637 @@
+{
+ "id": "treino_harvard_en-US_erros",
+ "estilo": "harvard",
+ "sistema": "autor-data",
+ "locale": "en-US",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Amat Arnau, A. and Conrad, W. (2004) “Career south control from media and black message thus late,” Cadernos de Saúde Pública, 66(9), pp. 673–678.",
+   "item": "it002"
+  },
+  {
+   "indice": 1,
+   "texto": "Bell, K. et al. (no date) “Environmental second memory stuff sing money,” Revue d’Épidémiologie et de Santé Publique, 26(10), pp. 609–617. Available at: https://doi.org/10.99999/teste.treino.88331.",
+   "item": "it023"
+  },
+  {
+   "indice": 2,
+   "texto": "Evans, J. et al. (2024) “Ahead top ahead much office season spring so interesting where,” Medical Mycology, 52(2), pp. 740–757. Available at: https://doi.org/10.99999/teste.treino.84620.",
+   "item": "it022"
+  },
+  {
+   "indice": 3,
+   "texto": "Hart, A., Roberts, P. and Anderson, S. (2007) Our answer cause since theory his. Available at: https://exemplo-treino.org/4716 (Accessed: November 3, 2026).",
+   "item": "it013"
+  },
+  {
+   "indice": 4,
+   "texto": "Instituto Nacional de Câncer (Brasil) (1984a) Class draw information finally financial. Available at: https://exemplo-treino.org/2309 (Accessed: November 16, 2026).",
+   "item": "it025"
+  },
+  {
+   "indice": 5,
+   "texto": "Instituto Nacional de Câncer (Brasil) (1984b) “Party future build treatment the raise try game type,” Cadernos de Saúde Pública, 50(9), pp. 576–584. Available at: https://doi.org/10.99999/teste.treino.48091.",
+   "item": "it024"
+  },
+  {
+   "indice": 6,
+   "texto": "Jenkins, E. (2002) “Worry necessary above walk financial,” Gaceta Sanitaria, 53(12), pp. 754–761. Available at: https://doi.org/10.99999/teste.treino.66623.",
+   "item": "it020"
+  },
+  {
+   "indice": 7,
+   "texto": "Kim, M. (1997) “Mean think investment event quality music good either exist court her spring,” Das Gesundheitswesen, 36(4), pp. 523–528.",
+   "item": "it004"
+  },
+  {
+   "indice": 8,
+   "texto": "Lopez-Morrison, J. et al. (2002) Prove party increase television report far future challenge move. Available at: https://leis-treino.gov/4260.",
+   "item": "it000"
+  },
+  {
+   "indice": 9,
+   "texto": "Łukasz, C. et al. (2021) “School management west exactly suggest challenge water hotel man speech again,” Gaceta Sanitaria, 35(5), pp. 812–824. Available at: https://doi.org/10.99999/teste.treino.25183.",
+   "item": "it006"
+  },
+  {
+   "indice": 10,
+   "texto": "Mack, R. et al. (2025) “Price trial may key ready since sell member stage,” Gaceta Sanitaria, 28(11), pp. 246–255. Available at: https://doi.org/10.99999/teste.treino.86302.",
+   "item": "it018"
+  },
+  {
+   "indice": 11,
+   "texto": "del Miles, C., Gomez, L. and Rojas, D. (1981) “All along practice light free,” Gaceta Sanitaria, 37(10), pp. 775–786. Available at: https://doi.org/10.99999/teste.treino.25066.",
+   "item": "extra1"
+  },
+  {
+   "indice": 12,
+   "texto": "Murphy, R., Humphrey, T. and Quinn, D. (2020) “Feel room hard several training force bed plan rather win notice couple moment,” Revista de Saúde Pública, 55(2), pp. 731–744.",
+   "item": "it012"
+  },
+  {
+   "indice": 13,
+   "texto": "dos Norman, L. and Taylor, A. (1995) “Strong say those prevent wind movie,” BMC Public Health, 45(4), pp. 528–544.",
+   "item": "it001"
+  },
+  {
+   "indice": 14,
+   "texto": "Pennington, A. (1989) “Little mother family knowledge culture lot,” Epidemiologia & Prevenzione, 21(5), pp. 746–750. Available at: https://doi.org/10.99999/teste.treino.13039.",
+   "item": "it014"
+  },
+  {
+   "indice": 15,
+   "texto": "Phillips, C. and Lopez, W. (1978) “Must matter station ready whom,” in L. Sanders (ed.) Herself during stop anything listen. Whitemouth: Patterson, Saunders and Allen, pp. 34–49.",
+   "item": "it017"
+  },
+  {
+   "indice": 16,
+   "texto": "Robert Koch-Institut (1978) Week center certainly loss level director every. Port Mollychester: Steele-Rivera.",
+   "item": "it019"
+  },
+  {
+   "indice": 17,
+   "texto": "Robert Koch-Institut (1992) Wall assume power stand minute stop political. Available at: https://exemplo-treino.org/3954 (Accessed: November 16, 2026).",
+   "item": "it010"
+  },
+  {
+   "indice": 18,
+   "texto": "Robert Koch-Institut (1994) “Situation way yourself market weight social,” Epidemiologia & Prevenzione, 12(7), pp. 281–285. Available at: https://doi.org/10.99999/teste.treino.80827.",
+   "item": "it007"
+  },
+  {
+   "indice": 19,
+   "texto": "São Paulo (Estado) (2014) Somebody notice set road all everybody campaign establish. Available at: https://exemplo-treino.org/9893 (Accessed: November 9, 2026).",
+   "item": "it009"
+  },
+  {
+   "indice": 20,
+   "texto": "Small, J. et al. (2024) Beautiful discuss move talk. Available at: https://exemplo-treino.org/1509 (Accessed: November 9, 2026).",
+   "item": "it016"
+  },
+  {
+   "indice": 21,
+   "texto": "Tate-Wilson, J., Smith, E. and Robinson, M. (2015) Material ground yeah already within law near series recently increase state available computer. North Michael: Warren, Lee and Cannon.",
+   "item": "extra0"
+  },
+  {
+   "indice": 22,
+   "texto": "Tran, M. (1978) Treatment range difference business attack. Johnathanburgh: Daniels, Dominguez and Peck.",
+   "item": "it005"
+  },
+  {
+   "indice": 23,
+   "texto": "Valencia, T. et al. (1994) “Carry wait learn bit reduce fire special,” BMC Public Health, 74(1), pp. 394–404. Available at: https://doi.org/10.99999/teste.treino.96573.",
+   "item": "it015"
+  },
+  {
+   "indice": 24,
+   "texto": "Virginia-Maryland College of Veterinary Medicine (1992) “Citizen edge that deep too data material recent stuff while their why actually rate,” Journal of the American Medical Informatics Association, 49(2), pp. 835–855. Available at: https://doi.org/10.99999/teste.treino.99715.",
+   "item": "it008"
+  },
+  {
+   "indice": 25,
+   "texto": "Walsh, L. et al. (1993) “Sound manager throw trial rate baby nothing hand election image ask white management effort,” Revista de Saúde Pública, 58(6), pp. 136–149. Available at: https://doi.org/10.99999/teste.treino.47293.",
+   "item": "it021"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Lopez-Morrison et al., 2002; Łukasz et al., 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it000"
+   ],
+   "referencias": [
+    9,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim (1997)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Evans et al., 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Amat Arnau and Conrad, 2004; Evans et al., 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it002"
+   ],
+   "referencias": [
+    2,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Williams et al., 1993; Small et al., 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it011"
+   ],
+   "referencias": [
+    20,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robert Koch-Institut (1994)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1984a; Walsh et al., 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it021"
+   ],
+   "referencias": [
+    4,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Walsh et al., 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pennington (1989)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Murphy, Humphrey and Quinn, 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Evans et al., 2024; Mack et al., 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it022"
+   ],
+   "referencias": [
+    10,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, 1978; Bell et al., no date)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it023"
+   ],
+   "referencias": [
+    16,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(dos Norman and Taylor, 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kim, 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 1992; Robert Koch-Institut, 1994; Murphy, Humphrey and Quinn, 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it007",
+    "it012"
+   ],
+   "referencias": [
+    24,
+    18,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jenkins, 2002; Hart, Roberts and Anderson, 2007; Li and Porter, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it020",
+    "it013"
+   ],
+   "referencias": [
+    null,
+    6,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Valencia et al., 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran, 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Phillips and Lopez, 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 1992; Williams et al., 1993; Li and Porter, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it003",
+    "it008"
+   ],
+   "referencias": [
+    null,
+    null,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kim, 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Łukasz et al. (2021)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lopez-Morrison et al., 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mack et al., 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, 1994; São Paulo (Estado), 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it009"
+   ],
+   "referencias": [
+    18,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jenkins, 2002; São Paulo (Estado), 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it009"
+   ],
+   "referencias": [
+    6,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pennington (1989)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1984b; Murphy, Humphrey and Quinn, 2020; Evans et al., 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it012",
+    "it024"
+   ],
+   "referencias": [
+    2,
+    12,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1984b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Łukasz et al., 2021, p. 49)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1984a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Phillips and Lopez, 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Amat Arnau and Conrad, 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Kim (1997)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Williams et al., 1993; Small et al., 2024)",
+   "item": "it011"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Jenkins, 2002; Hart, Roberts and Anderson, 2007; Li and Porter, 2025)",
+   "item": "it003"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Virginia-Maryland College of Veterinary Medicine, 1992; Williams et al., 1993; Li and Porter, 2025)",
+   "item": "it011"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Virginia-Maryland College of Veterinary Medicine, 1992; Williams et al., 1993; Li and Porter, 2025)",
+   "item": "it003"
+  },
+  {
+   "ponto": "E",
+   "referencia": 11,
+   "item": "extra1"
+  },
+  {
+   "ponto": "E",
+   "referencia": 21,
+   "item": "extra0"
+  }
+ ],
+ "nao_citacoes": [
+  "Prepared by the author (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Per former maintain dream side board reason entire city fund particularly religious year candidate"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

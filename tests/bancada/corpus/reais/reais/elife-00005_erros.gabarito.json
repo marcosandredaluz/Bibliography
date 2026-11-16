@@ -1,0 +1,1148 @@
+{
+ "id": "elife-00005_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00005.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Baldwin PR, Penczek PA. 2007. The Transform Class in SPARX and EMAN2. J Struct Biol 157:250–261.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Boyer LA, Latek RR, Peterson CL. 2004. The SANT domain: a unique histone-tail-binding module?. Nat Rev Mol Cell Biol 5:158–163.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Cao R, Zhang Y. 2004a. The functions of E(Z)/EZH2-mediated methylation of lysine 27 in histone H3. Curr Opin Genet Dev 14:155–164.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Cao R, Zhang Y. 2004b. SUZ12 is required for both the histone methyltransferase activity and the silencing function of the EED-EZH2 complex. Mol Cell 15:57–67.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Cao R, Wang L, Wang H, Xia L, Erdjument-Bromage H, Tempst P, et al.. 2002. Role of histone H3 lysine 27 methylation in Polycomb-group silencing. Science 298:1039–1043.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Ciferri C, Pasqualato S, Screpanti E, Varetti G, Santaguida S, Dos Reis G, et al.. 2008. Implications for kinetochore-microtubule attachment from the structure of an engineered Ndc80 complex. Cell 133:427–439.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Czermin B, Melfi R, McCabe D, Seitz V, Imhof A, Pirrotta V. 2002. Drosophila enhancer of Zeste/ESC complexes have a histone H3 methyltransferase activity that marks chromosomal Polycomb sites. Cell 111:185–196.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Gingras AC, Gstaiger M, Raught B, Aebersold R. 2007. Analysis of protein complexes using mass spectrometry. Nat Rev Mol Cell Biol 8:645–654.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "He GP, Kim S, Ro HS. 1999. Cloning and characterization of a novel zinc finger transcriptional repressor. A direct role of the zinc finger motif in repression. J Biol Chem 274:14678–14684.",
+   "item": "bib10"
+  },
+  {
+   "indice": 9,
+   "texto": "Hansen KH, Bracken AP, Pasini D, Dietrich N, Gehani SS, Monrad A, et al.. 2008. A model for transmission of the H3K27me3 epigenetic mark. Nat Cell Biol 10:1291–1300.",
+   "item": "bib11"
+  },
+  {
+   "indice": 10,
+   "texto": "Ketel CS, Andersen EF, Vargas ML, Suh J, Strome S, Simon JA. 2005. Subunit contributions to histone methyltransferase activities of fly and worm polycomb group complexes. Mol Cell Biol 25:6857–6868.",
+   "item": "bib12"
+  },
+  {
+   "indice": 11,
+   "texto": "Kim H, Kang K, Kim J. 2009. AEBP2 as a potential targeting protein for Polycomb Repression Complex PRC2. Nucleic Acids Res 37:2940–2950.",
+   "item": "bib13"
+  },
+  {
+   "indice": 12,
+   "texto": "Kirmizis A, Bartley SM, Kuzmichev A, Margueron R, Reinberg D, Green R, et al.. 2004. Silencing of human polycomb target genes is associated with methylation of histone H3 Lys 27. Genes Dev 18:1592–1605.",
+   "item": "bib14"
+  },
+  {
+   "indice": 13,
+   "texto": "Kuzmichev A, Jenuwein T, Tempst P, Reinberg D. 2004. Different EZH2-containing complexes target methylation of histone H1 or nucleosomal histone H3. Mol Cell 14:183–193.",
+   "item": "bib15"
+  },
+  {
+   "indice": 14,
+   "texto": "Lander GC, Stagg SM, Voss NR, Cheng A, Fellmann D, Pulokas J, et al.. 2009. Appion: an integrated, database-driven pipeline to facilitate EM image processing. J Struct Biol 166:95–102.",
+   "item": "bib16"
+  },
+  {
+   "indice": 15,
+   "texto": "Maiolica A, Cittaro D, Borsotti D, Sennels L, Ciferri C, Tarricone C, et al.. 2007. Structural analysis of multiprotein complexes by cross-linking, mass spectrometry, and database searching. Mol Cell Proteomics 6:2200–2211.",
+   "item": "bib17"
+  },
+  {
+   "indice": 16,
+   "texto": "Mallick SP, Carragher B, Potter CS, Kriegman DJ. 2005. ACE: automated CTF estimation. Ultramicroscopy 104:8–29.",
+   "item": "bib18"
+  },
+  {
+   "indice": 17,
+   "texto": "Margueron R, Reinberg D. 2010. Chromatin structure and the inheritance of epigenetic information. Nat Rev Genet 11:285–296.",
+   "item": "bib19"
+  },
+  {
+   "indice": 18,
+   "texto": "Margueron R, Reinberg D. 2011. The Polycomb complex PRC2 and its mark in life. Nature 469:343–349.",
+   "item": "bib20"
+  },
+  {
+   "indice": 19,
+   "texto": "Margueron R, Justin N, Ohno K, Sharpe ML, Son J, Drury WJ, et al.. 2009. Role of the polycomb protein EED in the propagation of repressive histone marks. Nature 461:762–767.",
+   "item": "bib21"
+  },
+  {
+   "indice": 20,
+   "texto": "Margueron R, Li G, Sarma K, Blais A, Zavadil J, Woodcock CL, et al.. 2008. Ezh1 and Ezh2 maintain repressive chromatin through different mechanisms. Mol Cell 32:503–518.",
+   "item": "bib22"
+  },
+  {
+   "indice": 21,
+   "texto": "Martin C, Cao R, Zhang Y. 2006. Substrate preferences of the EZH2 histone methyltransferase complex. J Biol Chem 281:8365–8370.",
+   "item": "bib23"
+  },
+  {
+   "indice": 22,
+   "texto": "Mindell JA, Grigorieff N. 2003. Accurate determination of local defocus and specimen tilt in electron microscopy. J Struct Biol 142:334–347.",
+   "item": "bib24"
+  },
+  {
+   "indice": 23,
+   "texto": "Muller J, Hart CM, Francis NJ, Vargas ML, Sengupta A, Wild B, et al.. 2002. Histone methyltransferase activity of a Drosophila Polycomb group repressor complex. Cell 111:197–208.",
+   "item": "bib25"
+  },
+  {
+   "indice": 24,
+   "texto": "Nowak AJ, Alfieri C, Stirnimann CU, Rybin V, Baudin F, Ly-Hartig N, et al.. 2011. Chromatin-modifying complex component Nurf55/p55 associates with histones H3 and H4 and polycomb repressive complex 2 subunit Su(z)12 through partially overlapping binding sites. J Biol Chem 286:23388–23396.",
+   "item": "bib26"
+  },
+  {
+   "indice": 25,
+   "texto": "O'Carroll D, Erhardt S, Pagani M, Barton SC, Surani MA, Jenuwein T. 2001. The polycomb-group gene Ezh2 is required for early mouse development. Mol Cell Biol 21:4330–4336.",
+   "item": "bib27"
+  },
+  {
+   "indice": 26,
+   "texto": "Ogura T, Iwasaki K, Sato C. 2003. Topology representing network enables highly accurate classification of protein images taken by cryo electron-microscope without masking. J Struct Biol 143:185–200.",
+   "item": "bib28"
+  },
+  {
+   "indice": 27,
+   "texto": "Pasini D, Bracken AP, Helin K. 2004. Polycomb group proteins in cell cycle progression and cancer. Cell Cycle 3:396–400.",
+   "item": "bib29"
+  },
+  {
+   "indice": 28,
+   "texto": "Penczek PA, Grassucci RA, Frank J. 1994. The ribosome at improved resolution: new techniques for merging and orientation refinement in 3D cryo-electron microscopy of biological particles. Ultramicroscopy 53:251–270.",
+   "item": "bib30"
+  },
+  {
+   "indice": 29,
+   "texto": "Pettersen EF, Goddard TD, Huang CC, Couch GS, Greenblatt DM, Meng EC, et al.. 2004. UCSF Chimera—a visualization system for exploratory research and analysis. J Comput Chem 25:1605–1612.",
+   "item": "bib31"
+  },
+  {
+   "indice": 30,
+   "texto": "Radermacher M, Wagenknecht T, Verschoor A, Frank J. 1987. Three-dimensional reconstruction from a single-exposure, random conical tilt series applied to the 50S ribosomal subunit of Escherichia coli. J Microsc 146:113–136.",
+   "item": "bib32"
+  },
+  {
+   "indice": 31,
+   "texto": "Rappsilber J. 2011. The beginning of a beautiful friendship: cross-linking/mass spectrometry and modelling of proteins and multi-protein complexes. J Struct Biol 173:530–540.",
+   "item": "bib33"
+  },
+  {
+   "indice": 32,
+   "texto": "Rinner O, Seebacher J, Walzthoeni T, Mueller LN, Beck M, Schmidt A, et al.. 2008. Identification of cross-linked peptides from large sequence databases. Nat Methods 5:315–318.",
+   "item": "bib34"
+  },
+  {
+   "indice": 33,
+   "texto": "Scheres SH, Nunez-Ramirez R, Sorzano CO, Carazo JM, Marabini R. 2008. Image processing for electron microscopy single-particle analysis using XMIPP. Nat Protoc 3:977–990.",
+   "item": "bib35"
+  },
+  {
+   "indice": 34,
+   "texto": "Schmitges FW, Prusty AB, Faty M, Stutzer A, Lingaraju GM, Aiwazian J, et al.. 2011. Histone methylation by PRC2 is inhibited by active chromatin marks. Mol Cell 42:330–341.",
+   "item": "bib36"
+  },
+  {
+   "indice": 35,
+   "texto": "Schuettengruber B, Chourrout D, Vervoort M, Leblanc B, Cavalli G. 2007. Genome regulation by polycomb and trithorax proteins. Cell 128:735–745.",
+   "item": "bib37"
+  },
+  {
+   "indice": 36,
+   "texto": "Suloway C, Pulokas J, Fellmann D, Cheng A, Guerra F, Quispe J, et al.. 2005. Automated molecular microscopy: the new Leginon system. J Struct Biol 151:41–60.",
+   "item": "bib38"
+  },
+  {
+   "indice": 37,
+   "texto": "Tang G, Peng L, Baldwin PR, Mann DS, Jiang W, Rees I, et al.. 2007. EMAN2: an extensible image processing suite for electron microscopy. J Struct Biol 157:38–46.",
+   "item": "bib39"
+  },
+  {
+   "indice": 38,
+   "texto": "Tie F, Stratton CA, Kurzhals RL, Harte PJ. 2007. The N terminus of Drosophila ESC binds directly to histone H3 and is required for E(Z)-dependent trimethylation of H3 lysine 27. Mol Cell Biol 27:2014–2026.",
+   "item": "bib40"
+  },
+  {
+   "indice": 39,
+   "texto": "van Heel M, Schatz M. 2005. Fourier shell correlation threshold criteria. J Struct Biol 151:250–262.",
+   "item": "bib41"
+  },
+  {
+   "indice": 40,
+   "texto": "van Heel M, Harauz G, Orlova EV, Schmidt R, Schatz M. 1996. A new generation of the IMAGIC image processing system. J Struct Biol 116:17–24.",
+   "item": "bib42"
+  },
+  {
+   "indice": 41,
+   "texto": "Voss NR, Yoshioka CK, Radermacher M, Potter CS, Carragher B. 2009. DoG Picker and TiltPicker: software tools to facilitate particle selection in single particle electron microscopy. J Struct Biol 166:205–213.",
+   "item": "bib43"
+  },
+  {
+   "indice": 42,
+   "texto": "Xu C, Bian C, Yang W, Galka M, Ouyang H, Chen C, et al.. 2010. Binding of different histone marks differentially regulates the activity and specificity of polycomb repressive complex 2 (PRC2). Proc Natl Acad Sci U S A 107:19266–19271.",
+   "item": "bib44"
+  },
+  {
+   "indice": 43,
+   "texto": "Yoshioka C, Pulokas J, Fellmann D, Potter CS, Milligan RA, Carragher B. 2007. Automation of random conical tilt and orthogonal tilt data collection using feature-based correlation. J Struct Biol 159:335–346.",
+   "item": "bib46"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Schuettengruber et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Czermin et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Muller et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kirmizis et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "O'Carroll et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pasini et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margueron and Reinberg, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margueron et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao and Zhang, 2004a",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pasini et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yamamoto et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ketel et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margueron et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Xu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nowak et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmitges et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao and Zhang, 2004b",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "He et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margueron and Reinberg, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margueron et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nowak et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmitges et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Xu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pasini et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ketel et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margueron et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao and Zhang, 2004b",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Radermacher et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Penczek et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van Heel and Schatz, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gingras et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maiolica et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ciferri et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rappsilber, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Han et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nowak et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmitges et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao and Zhang, 2004b",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Han et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Han et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margueron et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nowak et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmitges et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pettersen et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nowak et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmitges et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margueron and Reinberg, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margueron et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Xu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hansen et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margueron et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmitges et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmitges et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmitges et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margueron et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmitges et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Boyer et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tie et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Margueron et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmitges et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao and Zhang, 2004a",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuzmichev et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martin et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rinner et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Suloway et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lander et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Voss et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mindell and Grigorieff, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mallick et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Scheres et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ogura et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van Heel et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yoshioka et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Voss et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Voss et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Scheres et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baldwin and Penczek, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tang et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Yamamoto et al., 2004",
+   "item": "bib45"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Han et al., 2007",
+   "item": "bib9"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Han et al., 2007",
+   "item": "bib9"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Han et al., 2007",
+   "item": "bib9"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

@@ -1,0 +1,598 @@
+{
+ "id": "reservado_chicago-ad_fr-FR_erros",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "fr-FR",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Agenzia Italiana del Farmaco. 1981a. « Lorsque geste feuille bleu coûter quelqu’un simplement arrêter faim créer nuage considérer ah gros avouer ». https://exemplo-reservado.org/7174.",
+   "item": "it021"
+  },
+  {
+   "indice": 1,
+   "texto": "Agenzia Italiana del Farmaco. 1981b. « Menacer casser confondre décrire ». In Lieu retenir disparaître que on sentier par bord dégager armer, édité par Françoise Labbé. Bernier SARL.",
+   "item": "it020"
+  },
+  {
+   "indice": 2,
+   "texto": "Arnaud-Gaillard, Hortense. 2017. « Inviter pendant hôtel vol pourtant ». In Dehors habiller toit livrer celui nombreux nécessaire près muet vers type dur tôt, édité par Bernadette Gillet. Jacquot.",
+   "item": "it000"
+  },
+  {
+   "indice": 3,
+   "texto": "Bouvet, Lucas. 2009. « Or vol debout souvent ci ». Revista de Saúde Pública 3 (1): 318‑36. https://doi.org/10.99999/teste.reservado.14711.",
+   "item": "it016"
+  },
+  {
+   "indice": 4,
+   "texto": "Chartier, Théophile. 2026. « Verser ni tache auteur seul soldat accompagner esprit genou ». In Également énorme hors couche souffrir céder, édité par Jérôme Grondin. Martinez et Fils.",
+   "item": "it014"
+  },
+  {
+   "indice": 5,
+   "texto": "Choi, Seo-yeon. 1985. « Commander beaucoup écraser terme prendre pierre ». Medical Mycology 25 (12): 711‑26.",
+   "item": "it004"
+  },
+  {
+   "indice": 6,
+   "texto": "Delattre, Jeannine dos, Clémence Roy, Lucas Clerc, et Maggie Launay. 2015. « Sombre honneur île chanter continuer supposer même venir maintenant pauvre ». https://exemplo-reservado.org/3921.",
+   "item": "extra1"
+  },
+  {
+   "indice": 7,
+   "texto": "Denis, Robert, Lucie Gomes, et Anastasie Menard. 1999. « Minute beauté jamais expression remercier court ». Journal of the American Medical Informatics Association 80 (11): 315‑29. https://doi.org/10.99999/teste.reservado.70178.",
+   "item": "it010"
+  },
+  {
+   "indice": 8,
+   "texto": "Durand, Anaïs, Léon Marchal, et Marie Hervé. 2003. « Quand parti ouvrir voiture parcourir printemps au français yeux calme demain fin ». Epidemiologia & Prevenzione 47 (12): 794‑800. https://doi.org/10.99999/teste.reservado.26276.",
+   "item": "it017"
+  },
+  {
+   "indice": 9,
+   "texto": "Garnier, Jean, Inès Seguin, Matthieu Briand, et Margaret Traore. 2016. « Expliquer carte goutte fidèle fin soulever réserver il précéder l’une ». Das Gesundheitswesen 27 (4): 115‑23. https://doi.org/10.99999/teste.reservado.23506.",
+   "item": "it018"
+  },
+  {
+   "indice": 10,
+   "texto": "Grondin, Théophile da, et Renée Mahe. 2012. « Entretenir nuit aile pencher lier hier désir chemin ». Revue d’Épidémiologie et de Santé Publique 16 (11): 521‑29. https://doi.org/10.99999/teste.reservado.59299.",
+   "item": "it001"
+  },
+  {
+   "indice": 11,
+   "texto": "Guerrero Mancebo, Teodoro, Juliette Caron, et Josette Clerc. 2021. « Apparaître continuer poursuivre roman situation frais ». https://exemplo-reservado.org/9621.",
+   "item": "it002"
+  },
+  {
+   "indice": 12,
+   "texto": "Legros, Éric, Grégoire Brun, Camille Guilbert, et Andrée Becker. 1995. « En ferme chanter bruit trente valeur renoncer hauteur jeune enfance ». One Health 43 (2): 897‑909. https://doi.org/10.99999/teste.reservado.98731.",
+   "item": "it012"
+  },
+  {
+   "indice": 13,
+   "texto": "Liu, Hao, Zacharie Guyot, et Grégoire Barthelemy. 2020. « Relever être offrir intéresser partie appel attendre milieu grave ». BMC Public Health 3 (5): 666‑86. https://doi.org/10.99999/teste.reservado.53396.",
+   "item": "it003"
+  },
+  {
+   "indice": 14,
+   "texto": "Maurice-David, Sébastien. 1980. « Surveiller branche lever paupière ». Fernandes Lesage SARL.",
+   "item": "extra0"
+  },
+  {
+   "indice": 15,
+   "texto": "Minas Gerais (Estado). 1976. Hauteur danger public mieux bord épais désert histoire contraire pont quelqu’un personne. Besnard S.A.",
+   "item": "it011"
+  },
+  {
+   "indice": 16,
+   "texto": "Minas Gerais (Estado). 1987. « Plan voilà espérer sorte partir occuper plusieurs sentir mur chant demain seul réussir vague léger ». One Health 38 (12): 95‑112.",
+   "item": "it007"
+  },
+  {
+   "indice": 17,
+   "texto": "Organización Mundial de la Salud. 2022. Naissance angoisse prêter système fauteuil mauvais type appartement spectacle. Ruiz S.A.R.L.",
+   "item": "it009"
+  },
+  {
+   "indice": 18,
+   "texto": "Øster, Paulette, Marie Jacques, Alain Guillet, et Hugues Picard. 2003. « Terrible obéir fruit ouvrage terrible emporter pensée perdre ». Fournier S.A.R.L.",
+   "item": "it006"
+  },
+  {
+   "indice": 19,
+   "texto": "Pham, Thi Hoa, Emmanuel Peron, et Richard Rémy. 1984. « Accent profond pauvre penser abandonner île plaire étaler mal tard ». BMC Public Health 20 (8): 3‑8. https://doi.org/10.99999/teste.reservado.15661.",
+   "item": "it005"
+  },
+  {
+   "indice": 20,
+   "texto": "Secretaria Municipal da Saúde (Curitiba). 2022. « Reprendre beau beau décrire bruit garde saint vous pleurer ». One Health 1 (10): 467‑75. https://doi.org/10.99999/teste.reservado.79021.",
+   "item": "it008"
+  },
+  {
+   "indice": 21,
+   "texto": "Voisin, Émile. s. d. « Demander adresser mort livre ciel ». Gaceta Sanitaria 60 (11): 763‑75. https://doi.org/10.99999/teste.reservado.10791.",
+   "item": "it019"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Chartier 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham et al. 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Arnaud-Gaillard 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham et al. 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Garnier et al. (2016)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Denis et al. (1999)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Minas Gerais (Estado) 1987; Garnier et al. 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it018"
+   ],
+   "referencias": [
+    16,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Minas Gerais (Estado) (1976)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Minas Gerais (Estado) (1987)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agenzia Italiana del Farmaco 1981b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Minas Gerais (Estado) 1976; Legros et al. 1995; Minas Gerais (Estado) 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it012",
+    "it007"
+   ],
+   "referencias": [
+    15,
+    12,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Denis et al. (1999)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dias (1977)",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(T. da Grondin et Mahe 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham et al. 1984; Øster et al. 2003; Bouvet 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it006",
+    "it016"
+   ],
+   "referencias": [
+    19,
+    18,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Secretaria Municipal da Saúde (Curitiba) 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dias 1977; Agenzia Italiana del Farmaco 1981b; Choi 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it020",
+    "it004"
+   ],
+   "referencias": [
+    null,
+    1,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Legros et al. (1995)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Legros et al. 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Minas Gerais (Estado) 1976; Liu et al. 2020; Chauvet et Poulain 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it003",
+    "it015"
+   ],
+   "referencias": [
+    15,
+    13,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agenzia Italiana del Farmaco 1981a; Chartier 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it014"
+   ],
+   "referencias": [
+    0,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organización Mundial de la Salud 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham et al. 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Minas Gerais (Estado) 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chauvet et Poulain (1979)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Voisin (s. d.)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Minas Gerais (Estado) 1976; Bouvet 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it016"
+   ],
+   "referencias": [
+    15,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agenzia Italiana del Farmaco 1981b; Durand et al. 2003; Liu et al. 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it017",
+    "it003"
+   ],
+   "referencias": [
+    1,
+    8,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Denis et al. (1999)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bouvet 2009; Dias 1977; Guerrero Mancebo et al. 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it013",
+    "it002"
+   ],
+   "referencias": [
+    3,
+    null,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster et al. 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster et al. 2003, 112)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Voisin, s. d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Pham et al. 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Pham et al. 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Arnaud-Gaillard (2017)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Dias (1977)",
+   "item": "it013"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Dias 1977; Agenzia Italiana del Farmaco 1981b; Choi 1985)",
+   "item": "it013"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Minas Gerais (Estado) 1976; Liu et al. 2020; Chauvet et Poulain 1979)",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Chauvet et Poulain (1979)",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Bouvet 2009; Dias 1977; Guerrero Mancebo et al. 2021)",
+   "item": "it013"
+  },
+  {
+   "ponto": "E",
+   "referencia": 6,
+   "item": "extra1"
+  },
+  {
+   "ponto": "E",
+   "referencia": 14,
+   "item": "extra0"
+  }
+ ],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Prière entraîner oncle si aujourd'hui lendemain chiffre ne autre taille quart fatigue fenêtre entendre quel"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,661 @@
+{
+ "id": "treino_mla_fr-FR_erros",
+ "estilo": "mla",
+ "sistema": "autor-pagina",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Badía Cobos, Rico, et Gabrielle Hubert. « Type confiance manquer espèce armer bas près ». Revue d’Épidémiologie et de Santé Publique, vol. 38, no 10, 2010, p. 76‑92, https://doi.org/10.99999/teste.treino.71864.",
+   "item": "it002"
+  },
+  {
+   "indice": 1,
+   "texto": "Bouchet, Laetitia. Au moyen froid oui forme voisin. no 9142, 2002, https://leis-treino.gov/4276.",
+   "item": "it021"
+  },
+  {
+   "indice": 2,
+   "texto": "———. « Ignorer huit remplir le police connaissance certes passage oncle ». Preventive Veterinary Medicine, vol. 80, no 9, 2002, p. 897‑915, https://doi.org/10.99999/teste.treino.68909.",
+   "item": "it022"
+  },
+  {
+   "indice": 3,
+   "texto": "Charrier, Jérôme. « Barbe mille vie honte quelque inquiéter ». Nez commun réveiller choisir matin vision, édité par Timothée Gomez, Bouchet Da Costa SARL, 1986, p. 226‑41.",
+   "item": "it017"
+  },
+  {
+   "indice": 4,
+   "texto": "Collet, Charlotte. Dépasser violent annoncer remplacer article surveiller ressembler empêcher saint autre. Delmas.",
+   "item": "it020"
+  },
+  {
+   "indice": 5,
+   "texto": "Courtois, Raymond, et al. « Peuple du expliquer secrétaire ». Revista de Saúde Pública, vol. 66, no 6, 1996, p. 773‑93, https://doi.org/10.99999/teste.treino.55460.",
+   "item": "it011"
+  },
+  {
+   "indice": 6,
+   "texto": "de Deschamps, Yves, et al. « Écraser naturellement fonder calmer réunir longtemps rire deviner répéter sens caractère saison ». BMC Public Health, vol. 24, no 3, 1987, p. 474‑85, https://doi.org/10.99999/teste.treino.99290.",
+   "item": "it001"
+  },
+  {
+   "indice": 7,
+   "texto": "di Martinez, Margaud. « Renverser présence puisque courage témoin fusil miser ». Gaceta Sanitaria, vol. 7, no 9, 2016, p. 469‑75, https://doi.org/10.99999/teste.treino.29989.",
+   "item": "extra1"
+  },
+  {
+   "indice": 8,
+   "texto": "Hardy, Suzanne, et Timothée Leroy. « Hôtel maître facile révéler hauteur sol chasser cas vaste ». Das Gesundheitswesen, vol. 60, no 5, 1976, p. 40‑54, https://doi.org/10.99999/teste.treino.98896.",
+   "item": "it012"
+  },
+  {
+   "indice": 9,
+   "texto": "Kim, Seo-yeon. « Glace extraordinaire résister signer situation monde perdu danger précis nuage ». One Health, vol. 21, no 4, 2010, p. 573‑79, https://doi.org/10.99999/teste.treino.55317.",
+   "item": "it004"
+  },
+  {
+   "indice": 10,
+   "texto": "Lecomte, Laure. Matin meilleur profond abri ça abattre tombe matin devant pénétrer. no 9493, 2022, https://leis-treino.gov/6353.",
+   "item": "it015"
+  },
+  {
+   "indice": 11,
+   "texto": "Leroy, Étienne. « Habitude avancer étage français ni précieux te ». Revista de Saúde Pública, vol. 1, no 4, 1997, p. 870‑82.",
+   "item": "it016"
+  },
+  {
+   "indice": 12,
+   "texto": "Louis-Seguin, Anouk. Éternel il trésor beau grain passé intérieur joie ce journal parfois. no 2998, 2007, https://leis-treino.gov/6440.",
+   "item": "extra0"
+  },
+  {
+   "indice": 13,
+   "texto": "Merle, Nath, et Camille Valette. Alors peau parfois pendant puis salle voisin an faute parcourir manier geste. no 9214, 2000, https://leis-treino.gov/9732.",
+   "item": "it010"
+  },
+  {
+   "indice": 14,
+   "texto": "Morin-Étienne, Inès, et al. Groupe chaîne signer essuyer posséder. Brunet S.A.S., 2025.",
+   "item": "it000"
+  },
+  {
+   "indice": 15,
+   "texto": "National Library of Medicine (Estados Unidos). « Genou somme rond soirée face content signer ». Preventive Veterinary Medicine, vol. 35, no 12, 2022, p. 389‑99, https://doi.org/10.99999/teste.treino.95682.",
+   "item": "it009"
+  },
+  {
+   "indice": 16,
+   "texto": "Pham, Minh. Prétendre entier rappeler l’un prix être social pur quoi oser répéter. 1979, https://exemplo-treino.org/8665.",
+   "item": "it005"
+  },
+  {
+   "indice": 17,
+   "texto": "Rodriguez, Michelle. « Rapporter exister payer marier bleu rendre mourir mine moitié cruel compagnon hors ». One Health, vol. 16, no 9, 1978, p. 256‑73.",
+   "item": "it019"
+  },
+  {
+   "indice": 18,
+   "texto": "Toussaint, Nicolas, et al. « Soi attendre circonstance erreur remonter recommencer ». One Health, vol. 68, no 9, 2023, p. 816‑33, https://doi.org/10.99999/teste.treino.85676.",
+   "item": "it013"
+  },
+  {
+   "indice": 19,
+   "texto": "Turpin, Olivier. « Sous mari million apparaître ne demi ensemble paix fin debout le réalité paix douze ». Cadernos de Saúde Pública, vol. 58, no 1, 1980, p. 449‑54, https://doi.org/10.99999/teste.treino.76448.",
+   "item": "it018"
+  },
+  {
+   "indice": 20,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. Armée voyager serrer donc sueur propre prévenir. 2017, https://exemplo-treino.org/6276.",
+   "item": "it008"
+  },
+  {
+   "indice": 21,
+   "texto": "———. « Vivre inspirer tempête espoir apprendre compte quelque chaleur personne secret midi fumée ». Musique veille aspect énorme poitrine oreille autrement, édité par Célina Breton, Rodrigues S.A.S., 1987, p. 163‑78.",
+   "item": "it007"
+  },
+  {
+   "indice": 22,
+   "texto": "Wang, Jing, et al. « Ombre éternel espoir étranger étonner souhaiter rompre ». Cadernos de Saúde Pública, vol. 62, no 8, 2020, p. 642‑57.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(National Library of Medicine (Estados Unidos); Kim)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it004"
+   ],
+   "referencias": [
+    15,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Morin-Étienne et al.; Merle et Valette; Bouchet, Au moyen froid oui forme voisin)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it010",
+    "it021"
+   ],
+   "referencias": [
+    14,
+    13,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dos Santos et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster et al.; Toussaint et al.; Morin-Étienne et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it013",
+    "it000"
+   ],
+   "referencias": [
+    null,
+    18,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Collet)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos))",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Charrier)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, Armée voyager serrer donc sueur propre prévenir)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Turpin)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bouchet, « Ignorer huit remplir le police connaissance certes passage oncle »)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Toussaint et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wang et al.; Bouchet, « Ignorer huit remplir le police connaissance certes passage oncle »; Bouchet, Au moyen froid oui forme voisin)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it022",
+    "it021"
+   ],
+   "referencias": [
+    22,
+    2,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Badía Cobos et Hubert)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Morin-Étienne et al.; Leroy)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it016"
+   ],
+   "referencias": [
+    14,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Courtois et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Toussaint et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, « Vivre inspirer tempête espoir apprendre compte quelque chaleur personne secret midi fumée »)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Morin-Étienne et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rodriguez)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos))",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Courtois et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Toussaint et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bouchet, « Ignorer huit remplir le police connaissance certes passage oncle »; Øster et al.; Dos Santos et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it006",
+    "it014"
+   ],
+   "referencias": [
+    2,
+    null,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, « Vivre inspirer tempête espoir apprendre compte quelque chaleur personne secret midi fumée »)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hardy et Leroy)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Merle et Valette)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bouchet, Au moyen froid oui forme voisin; Lecomte)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it015"
+   ],
+   "referencias": [
+    1,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dos Santos et al.; Toussaint et al.; Badía Cobos et Hubert)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it013",
+    "it002"
+   ],
+   "referencias": [
+    null,
+    18,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dos Santos et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster et al.; Toussaint et al.; Rodriguez)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it013",
+    "it019"
+   ],
+   "referencias": [
+    null,
+    18,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Toussaint et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lecomte; de Deschamps et al.; National Library of Medicine (Estados Unidos))",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it001",
+    "it009"
+   ],
+   "referencias": [
+    10,
+    6,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Deschamps et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bouchet, Au moyen froid oui forme voisin 147)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Hardy et Leroy)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Bouchet, Au moyen froid oui forme voisin)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Toussaint et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Pham)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Dos Santos et al.)",
+   "item": "it014"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Øster et al.; Toussaint et al.; Morin-Étienne et al.)",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Bouchet, « Ignorer huit remplir le police connaissance certes passage oncle »; Øster et al.; Dos Santos et al.)",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Bouchet, « Ignorer huit remplir le police connaissance certes passage oncle »; Øster et al.; Dos Santos et al.)",
+   "item": "it014"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Dos Santos et al.; Toussaint et al.; Badía Cobos et Hubert)",
+   "item": "it014"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Dos Santos et al.)",
+   "item": "it014"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Øster et al.; Toussaint et al.; Rodriguez)",
+   "item": "it006"
+  },
+  {
+   "ponto": "E",
+   "referencia": 7,
+   "item": "extra1"
+  },
+  {
+   "ponto": "E",
+   "referencia": 12,
+   "item": "extra0"
+  }
+ ],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Quelque accepter ignorer manier visible vraiment parfaitement douter caractère plusieurs gris paysan direction dominer relation"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

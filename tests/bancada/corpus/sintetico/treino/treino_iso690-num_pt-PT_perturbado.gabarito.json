@@ -1,0 +1,541 @@
+{
+ "id": "treino_iso690-num_pt-PT_perturbado",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "pt-PT",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1.  CERDÁ TORRALBA, Angélica, NOGUEIRA, Tomé e MARQUES, Diogo. Ipsam ipsa beatae quo explicabo officiis voluptates dicta quasi reprehenderit esse blanditiis omnis aspernatur quo. Revue d’Épidémiologie et de Santé Publique. 2016. Vol. 63, no. 11, p. 891–901. DOI 10.99999/teste.treino.88251.",
+   "item": "it002"
+  },
+  {
+   "indice": 1,
+   "texto": "2.  MIRANDA, Samuel, BAPTISTA, Lucas, MONTEIRO, Filipa, FREITAS, Rafael, LEAL, Lucas e PINTO, Nuno. Facere nobis eos modi debitis quisquam a animi sunt minima. Preventive Veterinary Medicine. 1993. Vol. 60, no. 12, p. 445–449. DOI 10.99999/teste.treino.90956.",
+   "item": "it022"
+  },
+  {
+   "indice": 2,
+   "texto": "3.  CARDOSO, Carminho, CARNEIRO, Flor, ALVES, Patrícia e AMORIM, Amélia. Dolores harum necessitatibus eveniet numquam doloremque porro rerum delectus. Epidemiologia e Serviços de Saúde. 1990. Vol. 57, no. 3, p. 415–423.",
+   "item": "it014"
+  },
+  {
+   "indice": 3,
+   "texto": "4.  CUNHA, Miguel, ABREU, Pilar, GARCIA, André e VICENTE, Patrícia. Consequuntur dolore dignissimos aspernatur. . Paredes : Tavares, 1985.",
+   "item": "it010"
+  },
+  {
+   "indice": 4,
+   "texto": "5.  VIRGINIA-MARYLAND COLLEGE OF VETERINARY MEDICINE. Culpa dignissimos excepturi ut est. Revista de Saúde Pública. 1983. Vol. 33, no. 6, p. 514–523. DOI 10.99999/teste.treino.37016.",
+   "item": "it008"
+  },
+  {
+   "indice": 5,
+   "texto": "6.  DE HENRIQUES, Gabriela. Accusamus reiciendis nemo consectetur sapiente earum eveniet quis. Revue d’Épidémiologie et de Santé Publique. 1984. Vol. 24, no. 3, p. 670–689. DOI 10.99999/teste.treino.94782.",
+   "item": "it001"
+  },
+  {
+   "indice": 6,
+   "texto": "7.  AMARAL, Erika, BARBOSA, Daniel, GOMES, Luna e SIMÕES, Duarte. Doloremque ab deserunt impedit sequi repudiandae delectus sunt reiciendis cum est consequuntur cupiditate iste et. In : MOREIRA, Daniel (ed.), Hic voluptates veniam sed id laborum repellendus laboriosam hic quidem animi iste omnis numquam. Fátima : Mota, 2002. p. 246–261.",
+   "item": "it013"
+  },
+  {
+   "indice": 7,
+   "texto": "8.  PARK, Seo-yeon e PINHEIRO, Teresa. Magni aperiam vitae nobis vel quaerat impedit reprehenderit deleniti nobis quos molestiae. Online. 1984. [Accessed 15 novembro 2026]. Available from: https://exemplo-treino.org/6333",
+   "item": "it004"
+  },
+  {
+   "indice": 8,
+   "texto": "9.  ALMEIDA, Diego, ROCHA, Anita, OLIVEIRA, Naiara e BORGES, Joaquim. Esse ex maiores repellat. Das Gesundheitswesen. 2003. Vol. 17, no. 1, p. 801–806. DOI 10.99999/teste.treino.36910.",
+   "item": "it017"
+  },
+  {
+   "indice": 9,
+   "texto": "10.  SÃO PAULO (ESTADO). Beatae optio esse possimus temporibus ratione. Rio Tinto : Neves, 1994.",
+   "item": "it018"
+  },
+  {
+   "indice": 10,
+   "texto": "11.  GUERREIRO, Victória, MACEDO, Erica, ESTEVES, Renato, MIRANDA, Erika, ANDRADE, Sofia e PAIVA, Catarina. Saepe quasi dolorem in beatae nulla repellat deserunt tempore. In : PIRES, Emília (ed.), Earum vero labore occaecati neque vero ad quas illum. Alcobaça : Faria S/A, 2010. p. 6–21.",
+   "item": "it024"
+  },
+  {
+   "indice": 11,
+   "texto": "12.  INSTITUTO NACIONAL DE CÂNCER (BRASIL). Laborum dolores et itaque dolor quisquam sequi harum fugiat consequuntur. Revue d’Épidémiologie et de Santé Publique. 2002. Vol. 11, no. 4, p. 824–828.",
+   "item": "it007"
+  },
+  {
+   "indice": 12,
+   "texto": "13.  MIRANDA, Teresa, SIMÕES, Matilde, MOTA, Helena e CARDOSO, Renata. Vitae minima quo sequi officia eaque quos harum eos quo facilis nesciunt voluptatem dicta distinctio possimus. . Lamego : Leite Lda., 2011.",
+   "item": "it012"
+  },
+  {
+   "indice": 13,
+   "texto": "14.  ANTUNES, Mário, AZEVEDO, Vasco, CARNEIRO, Salvador e DOMINGUES, Guilherme. At corporis optio repellendus voluptatem in sapiente perspiciatis doloribus. Das Gesundheitswesen. 2017. Vol. 65, no. 2, p. 885–891.",
+   "item": "it011"
+  },
+  {
+   "indice": 14,
+   "texto": "15.  GUERREIRO, Victória, MACEDO, Erica, ESTEVES, Renato, MIRANDA, Erika, ANDRADE, Sofia e PAIVA, Catarina. Dignissimos ut cupiditate fuga ratione consectetur itaque beatae iste occaecati molestias. Epidemiologia & Prevenzione. 2010. Vol. 21, no. 11, p. 78–93.",
+   "item": "it025"
+  },
+  {
+   "indice": 15,
+   "texto": "16.  LIU, Xiaoming, ANJOS, Pilar e ROCHA, Nair. Rem voluptates quisquam at sint commodi magni. In : TAVARES, Erica (ed.), Vel magnam porro dignissimos dolorum eum assumenda veniam repellendus mollitia corrupti. Funchal : Reis, 2002. p. 175–190.",
+   "item": "it003"
+  },
+  {
+   "indice": 16,
+   "texto": "17.  ÇELIK, Júlia. Dolorum dignissimos tenetur eos facere. Vila Nova de Gaia : Jesus Matos S.A., 1995.",
+   "item": "it006"
+  },
+  {
+   "indice": 17,
+   "texto": "18.  BAPTISTA, Raquel, CARDOSO, Gonçalo e LEITE, Mélanie. Nam impedit ullam sit delectus necessitatibus laudantium esse facilis autem exercitationem sunt delectus quia. Revue d’Épidémiologie et de Santé Publique. 1977. Vol. 18, no. 7, p. 308–317. DOI 10.99999/teste.treino.55664.",
+   "item": "it021"
+  },
+  {
+   "indice": 18,
+   "texto": "19.  LE, Van Anh, DOMINGUES, Luísa e MACHADO, Afonso. Error doloremque earum consequuntur consequuntur illo similique quo facere natus. In : ABREU, Yasmin (ed.), Incidunt totam temporibus eveniet est magni exercitationem architecto inventore. Esmoriz : Pacheco, 1983. p. 209–224.",
+   "item": "it005"
+  },
+  {
+   "indice": 19,
+   "texto": "20.  LOPES, Cristiano, CAMPOS, Gabriel, TORRES, Fábio e SILVA, Ivan. Nobis sed consectetur optio maiores repellendus recusandae assumenda fugiat necessitatibus esse id. BMC Public Health. 2003. Vol. 42, no. 5, p. 318–338. DOI 10.99999/teste.treino.75219.",
+   "item": "it016"
+  },
+  {
+   "indice": 20,
+   "texto": "21.  SÃO PAULO (ESTADO). Quaerat accusamus dolores quasi nulla doloribus perspiciatis perspiciatis iusto. In : GASPAR, Rúben (ed.), Voluptatem repudiandae quos laborum facere modi vel ab sed possimus earum pariatur cum odio pariatur. Oliveira do Bairro : Miranda, 2003. p. 253–268.",
+   "item": "it009"
+  },
+  {
+   "indice": 21,
+   "texto": "22.  COELHO-COELHO, Margarida. Tenetur ratione officiis nisi alias voluptate pariatur aspernatur consequatur molestiae blanditiis. In : CARNEIRO, Kelly (ed.), Asperiores tenetur officia occaecati neque fugiat exercitationem quis placeat dignissimos. Caldas da Rainha : Moreira, 1995. p. 195–210.",
+   "item": "it000"
+  },
+  {
+   "indice": 22,
+   "texto": "23.  MOREIRA, Martim. Nihil eum qui nesciunt aspernatur perferendis optio saepe odio. In : PINHO, Márcio (ed.), Necessitatibus iure doloremque recusandae consectetur odit qui dignissimos labore esse eos necessitatibus. Seixal : Nunes, 1991. p. 202–217.",
+   "item": "it015"
+  },
+  {
+   "indice": 23,
+   "texto": "24.  PINHO, Kyara, MONTEIRO, Pedro, GUERREIRO, Anita, PACHECO, Leonardo, VAZ, Luciana e LEAL, Mauro. Incidunt placeat odio at cumque soluta totam quo. Revue d’Épidémiologie et de Santé Publique. Vol. 61, no. 2, p. 563–578.",
+   "item": "it023"
+  },
+  {
+   "indice": 24,
+   "texto": "25.  BARROS, Larissa, JESUS, Sara e HENRIQUES, Juliana. Sint sed fugit commodi necessitatibus optio magni iusto. In : ANJOS, Érica (ed.), Ullam odio voluptates aperiam odio magnam neque commodi quasi cum neque doloremque rerum. Oliveira do Bairro : Abreu, 2026. p. 110–125.",
+   "item": "it020"
+  },
+  {
+   "indice": 25,
+   "texto": "26.  NATIONAL LIBRARY OF MEDICINE (ESTADOS UNIDOS). Magni deserunt eius tempore ut explicabo dicta maiores modi. Online. 1991. [Accessed 8 novembro 2026]. Available from: https://exemplo-treino.org/7361",
+   "item": "it019"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Cerdá Torralba et al. (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Miranda et al. (2)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it008"
+   ],
+   "referencias": [
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6–8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it013",
+    "it004"
+   ],
+   "referencias": [
+    5,
+    6,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Almeida et al. (9)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Instituto Nacional de Câncer (Brasil) (12)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13, 14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it011"
+   ],
+   "referencias": [
+    12,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Antunes et al. (14)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it021"
+   ],
+   "referencias": [
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19–21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it016",
+    "it009"
+   ],
+   "referencias": [
+    18,
+    19,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19, 21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it009"
+   ],
+   "referencias": [
+    18,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 9, 23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it015",
+    "it017"
+   ],
+   "referencias": [
+    3,
+    22,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2, 12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it022"
+   ],
+   "referencias": [
+    11,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "National Library of Medicine (Estados Unidos) (26)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, p. 54)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Barros et al. (25)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Consequuntur porro odio et dignissimos deleniti iste recusandae ipsa unde quos similique veniam fugit accusantium nostrum"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

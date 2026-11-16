@@ -1,0 +1,536 @@
+{
+ "id": "reservado_apa_fr-FR_erros",
+ "estilo": "apa",
+ "sistema": "autor-data",
+ "locale": "fr-FR",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Agenzia Italiana del Farmaco. (1994). Agir ton français frapper comprendre importance vers. Leroux SA.",
+   "item": "it019"
+  },
+  {
+   "indice": 1,
+   "texto": "Amador Arjona, L. (2021). Plaindre bureau trois fenêtre ruine nouveau fer. https://exemplo-reservado.org/1200",
+   "item": "it002"
+  },
+  {
+   "indice": 2,
+   "texto": "Aubry, V., Pichon, T., & Raynaud, C. (2011). Coup visage jamais trembler attendre dire maintenant volonté choisir franc cours espérer. Medical Mycology, 36(12), 301‑319. https://doi.org/10.99999/teste.reservado.31150",
+   "item": "it015"
+  },
+  {
+   "indice": 3,
+   "texto": "Bernard, E., Jourdan, A., Leroy, A., Blanchet, V., Gros, C., & Paul, O. (2007). Arrêter rose rayon clef général. One Health, 53(10), 421‑430.",
+   "item": "it020"
+  },
+  {
+   "indice": 4,
+   "texto": "Bonnet-Benard, R., & Salmon, P. (1997). Visible révéler général nouveau dessiner marier somme livre dès point secret beauté. Goncalves Ribeiro S.A.S.",
+   "item": "extra0"
+  },
+  {
+   "indice": 5,
+   "texto": "Chen, J., & Gérard, C. (2018). Mille nombreux devant enfermer lequel. https://exemplo-reservado.org/1101",
+   "item": "it003"
+  },
+  {
+   "indice": 6,
+   "texto": "Conselho Federal de Medicina Veterinária. (1982). Pendant rang poussière confondre public sentiment frère fuir regarder guerre. Denis.",
+   "item": "it017"
+  },
+  {
+   "indice": 7,
+   "texto": "Coulon, H., Bazin, N., Gaillard, C., Pasquier, C., Daniel, P., & Dumas, M. (1995). Même sous pont mille ailleurs sentir dès. Legrand.",
+   "item": "it018"
+  },
+  {
+   "indice": 8,
+   "texto": "Da Costa, H., Lacombe, G., & Reynaud, G. (1977). Au quand rêver rocher soudain chute table. Das Gesundheitswesen, 66(6), 189‑209.",
+   "item": "it011"
+  },
+  {
+   "indice": 9,
+   "texto": "Guillon, S., Ramos, A., Fabre, E., & Gautier, M. (1978a). Prix payer quant à interrompre. In V. Camus (Éd.), Énergie annoncer chez imaginer entretenir inquiéter puissant employer madame doute tomber étude route (p. 248‑263). Lefebvre et Fils.",
+   "item": "it022"
+  },
+  {
+   "indice": 10,
+   "texto": "Guillon, S., Ramos, A., Fabre, E., & Gautier, M. (1978b). Sang prix autour énorme ici bord ancien par appartenir tendre transformer. BMC Public Health, 19(2), 732‑744.",
+   "item": "it023"
+  },
+  {
+   "indice": 11,
+   "texto": "Labbé, M. (s. d.). Dégager été grand droite âge y confondre dix raison général. In N. Marques (Éd.), Révolution clef ni second (p. 27‑42). Barthelemy Pelletier S.A.",
+   "item": "it021"
+  },
+  {
+   "indice": 12,
+   "texto": "O’Connor, G., Valentin, A., & Martinez, L. (2011). Intelligence haut te signe produire. Medical Mycology, 41(9), 510‑529.",
+   "item": "it006"
+  },
+  {
+   "indice": 13,
+   "texto": "Park, J. (1991). Prouver tout douceur blanc souhaiter nuit compagnie tant théâtre point vrai. One Health, 67(12), 347‑355. https://doi.org/10.99999/teste.reservado.63965",
+   "item": "it004"
+  },
+  {
+   "indice": 14,
+   "texto": "Pires, L., Bazin, A., & Pruvost, A. (2004). Morceau point prier éclairer nerveux agiter large poursuivre. In J. Baudry (Éd.), Voie humain nécessaire affaire seulement baisser jour objet ramener (p. 196‑211). Huet.",
+   "item": "it010"
+  },
+  {
+   "indice": 15,
+   "texto": "Public Health Agency of Canada. (1998). Avant douze journée neuf d’autres lire. Revue d’Épidémiologie et de Santé Publique, 10(3), 228‑243. https://doi.org/10.99999/teste.reservado.50636",
+   "item": "it009"
+  },
+  {
+   "indice": 16,
+   "texto": "Public Health Agency of Canada. (2005). Colon un claire. BMC Public Health, 40(7), 698‑710.",
+   "item": "it008"
+  },
+  {
+   "indice": 17,
+   "texto": "Richard-Bruneau, C., Barre, N., & Bousquet, C. (1980). Jeune souffrir surveiller précieux enfoncer milieu. In P. Bègue (Éd.), Oeuvre après cours avancer y quant à mesure arracher midi facile homme branche magnifique (p. 285‑300). Guibert.",
+   "item": "it000"
+  },
+  {
+   "indice": 18,
+   "texto": "Samson, A., & Barbier, D. (2003). Amour poste froid difficile fixer comment autant où deviner camarade sept coeur dur courir. Clerc Bernier S.A.R.L.",
+   "item": "it016"
+  },
+  {
+   "indice": 19,
+   "texto": "Secretaria Municipal da Saúde (Curitiba). (2022). Tout histoire expliquer mal autrement voler chaleur village consentir. In C. Cousin (Éd.), Quarante conscience effacer longtemps accomplir ruine faim naître (p. 280‑295). Ruiz Lelièvre SARL.",
+   "item": "it007"
+  },
+  {
+   "indice": 20,
+   "texto": "Seguin, M. (2023). Faux moins manger puis fier battre calmer plein. https://exemplo-reservado.org/1980",
+   "item": "it012"
+  },
+  {
+   "indice": 21,
+   "texto": "van der Pottier, D., Traore, Y., Bonneau, G., & Langlois, L. (1976). Et train tombe mer appuyer marquer peu. https://exemplo-reservado.org/5508",
+   "item": "it001"
+  },
+  {
+   "indice": 22,
+   "texto": "Vasseur, R., Devaux, M., Martin, M., & Costa, G. (1987). Parce Que sourire loup partager musique garde résultat éprouver rêve soit coeur dieu. Bernier.",
+   "item": "it013"
+  },
+  {
+   "indice": 23,
+   "texto": "von Paul, F., & Lejeune, H. (1980). Mille crainte ennemi donc nous lequel dont monsieur queue propre. Pruvost.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Park, 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agenzia Italiana del Farmaco, 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Guillon et al., 1978b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Coulon et al., 1995; Samson & Barbier, 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it016"
+   ],
+   "referencias": [
+    7,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bernard et al., 2007; Coulon et al., 1995; Guillon et al., 1978a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it018",
+    "it020"
+   ],
+   "referencias": [
+    9,
+    7,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Coulon et al., 1995; Richard-Bruneau et al., 1980; Vasseur et al., 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it000",
+    "it013"
+   ],
+   "referencias": [
+    7,
+    17,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Secretaria Municipal da Saúde (Curitiba), 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Public Health Agency of Canada, 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Picard & Morel, 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Labbé, s. d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ancien sur siège habitude remonter rapporter voile voisin, 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(O’Connor et al., 2011; Richard-Bruneau et al., 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it006"
+   ],
+   "referencias": [
+    17,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Aubry et al., 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Amador Arjona, 2021; Park, 1991; Seguin, 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it012",
+    "it002"
+   ],
+   "referencias": [
+    13,
+    20,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Picard & Morel, 1976; Public Health Agency of Canada, 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it014"
+   ],
+   "referencias": [
+    16,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária, 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pires et al., 2004; Public Health Agency of Canada, 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it008"
+   ],
+   "referencias": [
+    14,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Aubry et al., 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(O’Connor et al., 2011; Public Health Agency of Canada, 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it009"
+   ],
+   "referencias": [
+    12,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Chen & Gérard, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Da Costa et al., 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Samson & Barbier, 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ancien sur siège habitude remonter rapporter voile voisin, 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(O’Connor et al., 2011; Vasseur et al., 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it013"
+   ],
+   "referencias": [
+    12,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(van der Pottier et al., 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Coulon et al., 1995, p. 127)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Aubry et al., 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Ancien sur siège habitude remonter rapporter voile voisin, 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Labbé, s. d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Guillon et al. (1978b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Picard & Morel, 1976)",
+   "item": "it014"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Ancien sur siège habitude remonter rapporter voile voisin, 1983)",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Picard & Morel, 1976; Public Health Agency of Canada, 2005)",
+   "item": "it014"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Ancien sur siège habitude remonter rapporter voile voisin, 1983)",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Ancien sur siège habitude remonter rapporter voile voisin, 1983)",
+   "item": "it005"
+  },
+  {
+   "ponto": "E",
+   "referencia": 4,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 23,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Faute prochain parti boire tirer dire dos fortune voisin ciel décider genou problème"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

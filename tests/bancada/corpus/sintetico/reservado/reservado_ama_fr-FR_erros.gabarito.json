@@ -1,0 +1,739 @@
+{
+ "id": "reservado_ama_fr-FR_erros",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "fr-FR",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Navarro N, Germain M, Leroy M. Nu ramasser son naissance société. Epidemiologia e Serviços de Saúde. 1997;76(10):892‑900. doi:10.99999/teste.reservado.66570",
+   "item": "it011"
+  },
+  {
+   "indice": 1,
+   "texto": "3. Da Costa-Garcia A, Marie D, Mathieu J, Lemonnier C. Lier victime sommet sang surveiller frapper parfois content tant taire. Guibert Le Goff S.A.R.L.; 1988.",
+   "item": "it000"
+  },
+  {
+   "indice": 2,
+   "texto": "4. Traore C, Gonzalez É. Voile rocher résister fer en rapport lourd poids. Das Gesundheitswesen. 2014;57(8):512‑522. doi:10.99999/teste.reservado.24450",
+   "item": "it021"
+  },
+  {
+   "indice": 3,
+   "texto": "5. Australian Institute of Health and Welfare (Australia). Ici surtout tempête nouveau très boire fête. Revista de Saúde Pública. 2015;11(7):882‑902. doi:10.99999/teste.reservado.36158",
+   "item": "it008"
+  },
+  {
+   "indice": 4,
+   "texto": "6. Beltran Baquero T, Bonnin A, Clément J. Y dix genou classe poche mari paysan. Gaceta Sanitaria. 1997;67(1):376‑382.",
+   "item": "it002"
+  },
+  {
+   "indice": 5,
+   "texto": "7. Sauvage G. Naturel signe bientôt vision suffire quand plan. 2022. https://leis-reservado.gov/2490",
+   "item": "it018"
+  },
+  {
+   "indice": 6,
+   "texto": "8. Benard D. Vraiment départ éteindre autant anglais arme étendre enfoncer lendemain abandonner passion cour journal pauvre. 2008. Consulté le 4 novembre 2026. https://exemplo-reservado.org/8527",
+   "item": "it022"
+  },
+  {
+   "indice": 7,
+   "texto": "9. Organización Mundial de la Salud. Rencontre partager certain point répéter. 1991. https://leis-reservado.gov/302",
+   "item": "it007"
+  },
+  {
+   "indice": 8,
+   "texto": "10. Lacroix I, Leclercq V, Valette F, Hamel H. Dormir effet absolument temps beaux hasard contre. In: Lemoine R, éd. Présent couvrir prouver mien déjà. Julien Cousin SARL; 1983:133‑148.",
+   "item": "it015"
+  },
+  {
+   "indice": 9,
+   "texto": "11. da Paul L, Petitjean A, Guilbert M. Accrocher avis travailler visite tout grandir placer payer voix verre main combat personne. Revista de Saúde Pública. 2022;2(2):73‑80. doi:10.99999/teste.reservado.73327",
+   "item": "it001"
+  },
+  {
+   "indice": 10,
+   "texto": "12. Léger C. Poste flamme fier dix casser possible sérieux franc. Epidemiologia e Serviços de Saúde. 1980;9(8):569‑584. doi:10.99999/teste.reservado.71000",
+   "item": "it017"
+  },
+  {
+   "indice": 11,
+   "texto": "13. Pierre D. Chat important milieu avenir inspirer jaune pur. Gaceta Sanitaria. 2020;11(8):489‑495.",
+   "item": "it010"
+  },
+  {
+   "indice": 12,
+   "texto": "14. O’Connor F. Charger genre mener joue préparer tendre. One Health. 1995;52(2):188‑198. doi:10.99999/teste.reservado.65228",
+   "item": "it006"
+  },
+  {
+   "indice": 13,
+   "texto": "15. Chen X, Bourdon T, Lagarde J, Rousseau É. Montrer glisser attendre bon étoile agent. Paul; 1987.",
+   "item": "it003"
+  },
+  {
+   "indice": 14,
+   "texto": "16. Lee J ho, Huet A, Grenier T. Compagnie avec expérience médecin cause prison maladie malgré. Philippe SA; 1986.",
+   "item": "it004"
+  },
+  {
+   "indice": 15,
+   "texto": "18. Weiss M, Becker M, Alexandre R. Présence fleur fumée tache profond seuil sou répondre tourner ensemble. Preventive Veterinary Medicine. 2013;28(2):257‑269. doi:10.99999/teste.reservado.27067",
+   "item": "it013"
+  },
+  {
+   "indice": 16,
+   "texto": "19. Duhamel C, Julien A, Bouchet F, Bonnet C, Rousset P, Mary V. Réveiller trou santé nom atteindre inconnu peuple as. Preventive Veterinary Medicine. 2000;48(11):201‑217. doi:10.99999/teste.reservado.41379",
+   "item": "it016"
+  },
+  {
+   "indice": 17,
+   "texto": "20. Clerc G, Gaillard B, Grenier E, Weber C. Contenter pareil rire table droit faveur étranger douter tenir toit pain propre écouter. Diaz; 1986.",
+   "item": "it026"
+  },
+  {
+   "indice": 18,
+   "texto": "21. Berger M, Lenoir É, Joly S. Parcourir réveiller épaule corde votre cri trembler fin. In: Barbe V, éd. Souffrance flamme fort noir volonté rocher début palais votre attendre quitter brûler connaître route marchand sous. Gilles Letellier S.A.R.L.:243‑258.",
+   "item": "it024"
+  },
+  {
+   "indice": 19,
+   "texto": "22. Clerc G, Gaillard B, Grenier E, Weber C. Quitter agir immobile port inquiéter fille. Medical Mycology. 1986;28(7):279‑299. doi:10.99999/teste.reservado.63423",
+   "item": "it025"
+  },
+  {
+   "indice": 20,
+   "texto": "23. Guibert J. Lien meilleur glace claire reste lit saint haut recherche mort partie renverser nommer demande. Jourdan et Fils; 2013.",
+   "item": "it014"
+  },
+  {
+   "indice": 21,
+   "texto": "24. Agenzia Italiana del Farmaco. Vie printemps faire corps âge départ accrocher apparaître. Cadernos de Saúde Pública. 1980;16(1):736‑756.",
+   "item": "it009"
+  },
+  {
+   "indice": 22,
+   "texto": "25. Public Health Agency of Canada. Fatigue action disparaître ouvrir silencieux fusil décrire réflexion vivant gloire. 2005. Consulté le 13 novembre 2026. https://exemplo-reservado.org/3527",
+   "item": "it023"
+  },
+  {
+   "indice": 23,
+   "texto": "26. Besnard C, Didier L. Cabinet léger animal vaincre devant visible plus distinguer. In: Brunet A, éd. Pas ou lors désormais vue. Bruneau S.A.R.L.; 2020:74‑89.",
+   "item": "it012"
+  },
+  {
+   "indice": 24,
+   "texto": "27. Guichard J, Benard A. Expérience vague feu montagne. 2024. Consulté le 15 novembre 2026. https://exemplo-reservado.org/7032",
+   "item": "it019"
+  },
+  {
+   "indice": 25,
+   "texto": "28. Payet-Mercier M, Monnier A, Gomez A. Mourir tandis que repousser fait grand feuille rejoindre poussière huit. In: Becker M, éd. Recevoir toile promettre rencontrer dès voiture. Raymond; 1994:144‑159.",
+   "item": "extra0"
+  },
+  {
+   "indice": 26,
+   "texto": "29. van der Langlois V. Depuis ceci femme asseoir. Hubert SARL; 2015.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1–3",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it020",
+    "it000"
+   ],
+   "referencias": [
+    0,
+    null,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,4",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it021"
+   ],
+   "referencias": [
+    null,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sauvage 7",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,8,9",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it008",
+    "it022"
+   ],
+   "referencias": [
+    7,
+    3,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "10",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11,12",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it001"
+   ],
+   "referencias": [
+    10,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7,8,13",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it018",
+    "it022"
+   ],
+   "referencias": [
+    11,
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,8",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it008"
+   ],
+   "referencias": [
+    6,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,14,15",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it011",
+    "it006"
+   ],
+   "referencias": [
+    13,
+    0,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11,16",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it001"
+   ],
+   "referencias": [
+    14,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,17,18",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it005",
+    "it013"
+   ],
+   "referencias": [
+    0,
+    null,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "19",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "20",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18,21",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it024"
+   ],
+   "referencias": [
+    15,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Clerc et al. 22",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "da Paul et al. 11",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "24",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,5",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it008"
+   ],
+   "referencias": [
+    1,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weiss et al. 18",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "19,25",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it023"
+   ],
+   "referencias": [
+    16,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13,14,21",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it024",
+    "it006"
+   ],
+   "referencias": [
+    11,
+    18,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13,26",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it010"
+   ],
+   "referencias": [
+    23,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16,19,22",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it004",
+    "it025"
+   ],
+   "referencias": [
+    16,
+    14,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,22,27",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it019",
+    "it007"
+   ],
+   "referencias": [
+    19,
+    24,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,16,25",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it004",
+    "it023"
+   ],
+   "referencias": [
+    null,
+    14,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11,20,25",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it023",
+    "it001"
+   ],
+   "referencias": [
+    17,
+    22,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,4",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it021"
+   ],
+   "referencias": [
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "20(p4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "10",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "14",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Clerc et al. 22",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "1–3",
+   "item": "it020"
+  },
+  {
+   "ponto": "D",
+   "citacao": "2,4",
+   "item": "it020"
+  },
+  {
+   "ponto": "D",
+   "citacao": "1,17,18",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "17",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "2,16,25",
+   "item": "it020"
+  },
+  {
+   "ponto": "E",
+   "referencia": 25,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 26,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Blanc d'autres étendue avis intérieur épaule direction étouffer état poser après fin"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,1196 @@
+{
+ "id": "elife-00260_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00260.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Allsopp A. 1953a. Experimental and analytical studies of pteridophytes XIX. Investigations on Marsilea 2. Induced reversion to juvenile stages. Ann Bot 17:37–55.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Allsopp A. 1953b. Experimental and analytical studies of pteridophytes XXI. Investigations on Marsilea 3. The effect of various sugars on development and morphology. Ann Bot 17:447–463.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Allsopp A. 1954. Juvenile stages of plants and the nutritional status of the shoot apex. Nature 173:1032–1035. doi: 10.1038/1731032a0",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Allsopp A. 1955. Experimental and analytical studies of the pteridophytes. XXVII. Investigations on Marsilea. 5. Cultural conditions and morphogenesis, with special reference to the origin of land and water forms. Ann Bot 19:247–264.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Allsopp A. 1967. Heteroblastic development in vascular plants. Adv Morphog 6:127–171.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Amasino R. 2010. Seasonal and developmental timing of flowering. Plant J 61:1001–1013. doi: 10.1111/j.1365-313X.2010.04148.x",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Asai K, Satoh N, Sasaki H, Satoh H, Nagato Y. 2002. A rice heterochronic mutant, mori1, is defective in the juvenile-adult phase change. Development 129:265–273.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Ashby A. 1948. Studies on the morphogenesis of leaves I. An essay on leaf shape. New Phytol 47:153–176. doi: 10.1111/j.1469-8137.1948.tb05098.x",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Ashton DH, Turner JS. 1979. Studies on the light compensation point of Eucalyptus regnans F. Muell. Aust. J. Bot 27:589–607. doi: 10.1071/BT9790589",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Axtell MJ, Bowman JL. 2008. Evolution of plant microRNAs and their targets. Trends Plant Sci 13:343–349. doi: 10.1016/j.tplants.2008.03.009",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Bernier G. 1988. The control of floral evocation and morphogenesis. Annu Rev Plant Physiol Plant Mol Biol 39:175–219. doi: 10.1146/annurev.pp.39.060188.001135",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Blasing OE, Gibon Y, Gunther M, Hohne M, Morcuende R, Osuna D, et al.. 2005. Sugars and circadian regulation make major contributions to the global regulation of diurnal gene expression in Arabidopsis. Plant Cell 17:3257–3281. doi: 10.1105/tpc.105.035261",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Brink RA. 1962. Phase change in higher plants and somatic cell heredity. Q Rev Biol 37:1–22. doi: 10.1086/403567",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Brodribb T, Hill RS. 1993. A physiological comparison of leaves and phyllodes in Acacia melanoxylon. Aust. J. Bot 41:293–305. doi: 10.1071/BT9930293",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Cameron RJ. 1970. Light intensity and the growth of Eucalyptus seedlings. Aust J Bot 18:29–43. doi: 10.1071/BT9700029",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Cho YH, Yoo SD, Sheen J. 2006. Regulatory functions of nuclear hexokinase1 complex in glucose signaling. Cell 127:579–589. doi: 10.1016/j.cell.2006.09.028",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Chuck G, Cigan AM, Saeteurn K, Hake S. 2007. The heterochronic maize mutant Corngrass1 results from overexpression of a tandem microRNA. Nat Genet 39:544–549. doi: 10.1038/ng2001",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Corbesier L, Bernier G, Perilleux C. 2002. C: N ratio increases in the phloem sap during floral transition of the long-day plants Sinapis alba and Arabidopsis thaliana. Plant Cell Physiol 43:684–688. doi: 10.1093/pcp/pcf071",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Day JS. 1998. Light conditions and the evolution of heteroblasty (and the divaricate form) in New Zealand. N Z J Ecol 22:43–54.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Espineda CE, Linford AS, Devine D, Brusslan JA. 1999. The AtCAO gene, encoding chlorophyll a oxygenase, is required for chlorophyll b synthesis in Arabidopsis thaliana. Proc Natl Acad Sci USA 96:10507–10511. doi: 10.1073/pnas.96.18.10507",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Feldman LJ, Cutter EG. 1970. Regulation of leaf form in Centaurea solstitialis L. I. Leaf development on whole plants in sterile culture. Bot Gaz 131:31–39. doi: 10.1086/336509",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Goebel K. 1889. Ueber die Jungendzustånde der Pflanzen. Flora 72:1–45.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Goebel K. 1900. Organography of plants Part I. General organography. (English translation by I. B. Balfour).",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Goebel K. 1908. Einleitung in die experimentelle morphologie der Pflanzen.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Gottlieb JE, Steeves TA. 1965. Experimental control of the shoot system in sporelings of Pteridium aquilinum. Am J Bot 52:359–368. doi: 10.2307/2440330",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Hummel I, Pantin F, Sulpice R, Piques M, Rolland G, Dauzat M, et al.. 2010. Arabidopsis plants acclimate to water deficit at low cost through changes of carbon usage: an integrated perspective using growth, metabolite, enzyme, and gene expression analysis. Plant Physiol 154:357–372. doi: 10.1104/pp.110.157008",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "James SA, Bell DT. 2000. Leaf orientation, light interception and stomatal conductance of Eucalyptus globulus ssp globulus leaves. Tree Physiol 20:815–823. doi: 10.1093/treephys/20.12.815",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Jones CS. 1995. Does shade prolong juvenile development? A morphological analysis of leaf shape changes in Cucurbita argyrosperma Subsp. Sororia (Cucurbitaceae). Am J Bot 82:346–359. doi: 10.2307/2445580",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Laubinger S, Sachsenberg T, Zeller G, Busch W, Lohmann JU, Ratsch G, et al.. 2008. Dual roles of the nuclear cap-binding complex and SERRATE in pre-mRNA splicing and microRNA processing in Arabidopsis thaliana. Proc Natl Acad Sci USA 105:8795–8800. doi: 10.1073/pnas.0802493105",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Layalle S, Arquier N, Leopold P. 2008. The TOR pathway couples nutrition and developmental timing in Drosophila. Dev Cell 15:568–577. doi: 10.1016/j.devcel.2008.08.003",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Lejeune P, Bernier G, Kinet JM. 1991. Sucrose levels in leaf exudate as a function of floral induction in the long day plant Sinapis alba. Plant Physiol Biochem 29:153–157.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Lejeune P, Bernier G, Requier MC, Kinet JM. 1993. Sucrose increase during floral induction in the phloem sap collected at the apical part of the shoot of the long-day plant Sinapis alba L. Planta 190:71–74. doi: 10.1007/BF00195677",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Lobbes D, Rallapalli G, Schmidt DD, Martin C, Clarke J. 2006. SERRATE: a new player on the plant microRNA scene. EMBO Rep 7:1052–1058. doi: 10.1038/sj.embor.7400806",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Moore B, Zhou L, Rolland F, Hall Q, Cheng WH, Liu YX, et al.. 2003. Role of the Arabidopsis glucose sensor HXK1 in nutrient, light, and hormonal signaling. Science 300:332–336. doi: 10.1126/science.1080585",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Njoku E. 1956. Studies in the morphogenesis of leaves XI. The effect of light intensity on leaf shape in Ipomea caerulea. New Phytol 55:91–110. doi: 10.1111/j.1469-8137.1956.tb05268.x",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Njoku E. 1971. Effect of sugars and applied chemicals on heteroblastic development in Ipomoea purpurea grown in aseptic culture. Am J Bot 58:61–64. doi: 10.2307/2441307",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Oster U, Tanaka R, Tanaka A, Rudiger W. 2000. Cloning and functional expression of the gene encoding the key enzyme for chlorophyll b biosynthesis (CAO) from Arabidopsis thaliana. Plant J 21:305–310. doi: 10.1046/j.1365-313x.2000.00672.x",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Perilleux C, Bernier G. 1997. Leaf carbohydrate status in Lolium temulentum during the induction of flowering. New Phytol 135:59–66. doi: 10.1046/j.1469-8137.1997.00629.x",
+   "item": "bib39"
+  },
+  {
+   "indice": 38,
+   "texto": "Poethig RS. 1990. Phase change and the regulation of shoot morphogenesis in plants. Science 250:923–930. doi: 10.1126/science.250.4983.923",
+   "item": "bib40"
+  },
+  {
+   "indice": 39,
+   "texto": "Röbbelen G. 1957. Uber Heterophyllie bei Arabidopsis thaliana (L.) Heynh. Ber Dtsch Bot Ges 70:39–44.",
+   "item": "bib41"
+  },
+  {
+   "indice": 40,
+   "texto": "Rolland F, Baena-Gonzalez E, Sheen J. 2006. Sugar sensing and signaling in plants: conserved and novel mechanisms. Annu Rev Plant Biol 57:675–709. doi: 10.1146/annurev.arplant.57.032905.105441",
+   "item": "bib42"
+  },
+  {
+   "indice": 41,
+   "texto": "Rolland F, Moore B, Sheen J. 2002. Sugar sensing and signaling in plants. Plant Cell 14:S185–S205.",
+   "item": "bib43"
+  },
+  {
+   "indice": 42,
+   "texto": "Rougvie AE. 2005. Intrinsic and extrinsic regulators of developmental timing: from miRNAs to nutritional cues. Development 132:3787–3798. doi: 10.1242/dev.01972",
+   "item": "bib44"
+  },
+  {
+   "indice": 43,
+   "texto": "Schaffalitzky de Muckadell M. 1954. Juvenile stages in woody plants. Physiol Plant 7:782–796. doi: 10.1111/j.1399-3054.1954.tb07739.x",
+   "item": "bib45"
+  },
+  {
+   "indice": 44,
+   "texto": "Schwab R, Palatnik JF, Riester M, Schommer C, Schmid M, Weigel D. 2005. Specific effects of microRNAs on the plant transcriptome. Dev Cell 8:517–527. doi: 10.1016/j.devcel.2005.01.018",
+   "item": "bib46"
+  },
+  {
+   "indice": 45,
+   "texto": "Smeekens S, Ma J, Hanson J, Rolland F. 2010. Sugar signals and molecular networks controlling plant growth. Curr Opin Plant Biol 13:274–279. doi: 10.1016/j.pbi.2009.12.002",
+   "item": "bib47"
+  },
+  {
+   "indice": 46,
+   "texto": "Steeves TA, Sussex IM. 1957. Studies on the development of excised leaves in sterile culture. Am J Bot 44:665–673. doi: 10.2307/2438631",
+   "item": "bib48"
+  },
+  {
+   "indice": 47,
+   "texto": "Sussex IM, Clutter ME. 1960. A study of the effect of externally supplied sucrose on the morphology of excised fern leaves in vitro. Phytomorphology 10:87–99.",
+   "item": "bib49"
+  },
+  {
+   "indice": 48,
+   "texto": "Telfer A, Bollman KM, Poethig RS. 1997. Phase change and the regulation of trichome distribution in Arabidopsis thaliana. Development 124:645–654.",
+   "item": "bib50"
+  },
+  {
+   "indice": 49,
+   "texto": "Thiagarajah MR, Hunt LA, Mahon JD. 1981. Effect of leaf position and age on leaf photosynthesis in corn (Zea mays). Can J Bot 59:28–33. doi: 10.1139/b81-005",
+   "item": "bib51"
+  },
+  {
+   "indice": 50,
+   "texto": "Tolson KP, Chappell PE. 2012. The changes they are a-timed: metabolism, endogenous clocks, and the timing of puberty. Front Endocrinol (Lausanne) 3:45. doi: 10.3389/fendo.2012.00045",
+   "item": "bib52"
+  },
+  {
+   "indice": 51,
+   "texto": "Wetmore RH. 1953. Carbohydrate supply and leaf development in sporeling ferns. Science 118:578–578.",
+   "item": "bib53"
+  },
+  {
+   "indice": 52,
+   "texto": "Willmann MR, Poethig RS. 2011. The effect of the floral repressor FLC on the timing and progression of vegetative phase change in Arabidopsis. Development 138:677–685. doi: 10.1242/dev.057448",
+   "item": "bib54"
+  },
+  {
+   "indice": 53,
+   "texto": "Wu G, Park MY, Conway SR, Wang JW, Weigel D, Poethig RS. 2009. The sequential action of miR156 and miR172 regulates developmental timing in Arabidopsis. Cell 138:750–759. doi: 10.1016/j.cell.2009.06.031",
+   "item": "bib55"
+  },
+  {
+   "indice": 54,
+   "texto": "Xie Z, Allen E, Fahlgren N, Calamar A, Givan SA, Carrington JC. 2005. Expression of Arabidopsis MIRNA genes. Plant Physiol 138:2145–2154. doi: 10.1104/pp.105.062943",
+   "item": "bib57"
+  },
+  {
+   "indice": 55,
+   "texto": "Yang L, Conway SR, Poethig RS. 2011. Vegetative phase change is mediated by a leaf-derived signal that represses the transcription of miR156. Development 138:245–249. doi: 10.1242/dev.058578",
+   "item": "bib58"
+  },
+  {
+   "indice": 56,
+   "texto": "Yang L, Liu Z, Lu F, Dong A, Huang H. 2006. SERRATE is a novel nuclear regulator in primary microRNA processing in Arabidopsis. Plant J 47:841–850. doi: 10.1111/j.1365-313X.2006.02835.x",
+   "item": "bib59"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Bernier, 1988",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rougvie, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Amasino, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tolson and Chappell, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Poethig, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu and Poethig, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chuck et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Axtell and Bowman, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schwab et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goebel, 1889",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1900",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goebel, 1908",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allsopp, 1953a",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1953b",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1955",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wetmore, 1953",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Steeves and Sussex, 1957",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sussex and Clutter, 1960",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gottlieb and Steeves, 1965",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Njoku, 1956",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1971",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Röbbelen, 1957",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Feldman and Cutter, 1970",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jones (1995)",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolland et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smeekens et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moore et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolland et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moore et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cho et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Telfer et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Röbbelen (1957)",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Espineda et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Oster et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu and Poethig, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lobbes et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Laubinger et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Xie et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moore et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cho et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moore et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cho et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rougvie, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Layalle et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tolson and Chappell, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goebel, 1908",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ashby, 1948",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allsopp, 1967",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolland et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cho et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cho et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smeekens et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lejeune et al., 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1993",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Perilleux and Bernier, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Corbesier et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Willmann and Poethig, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cameron, 1970",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Thiagarajah et al., 1981",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Asai et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brodribb and Hill, 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pasquet-Kok et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cameron, 1970",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ashton and Turner, 1979",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "James and Bell, 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Day, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blasing et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hummel et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schaffalitzky de Muckadell, 1954",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brink, 1962",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Allsopp, 1954",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu and Poethig, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu and Poethig, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Wu and Poethig, 2006",
+   "item": "bib56"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Wu and Poethig, 2006",
+   "item": "bib56"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Pasquet-Kok et al., 2010",
+   "item": "bib38"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Wu and Poethig, 2006",
+   "item": "bib56"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Wu and Poethig, 2006",
+   "item": "bib56"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

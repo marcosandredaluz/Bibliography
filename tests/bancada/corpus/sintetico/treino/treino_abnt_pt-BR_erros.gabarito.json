@@ -1,0 +1,597 @@
+{
+ "id": "treino_abnt_pt-BR_erros",
+ "estilo": "abnt",
+ "sistema": "autor-data",
+ "locale": "pt-BR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "AZEVEDO, Anthony Gabriel et al. Nam sapiente consectetur reprehenderit. Casa Grande do Sul: Campos Andrade S/A, 1998.",
+   "item": "it012"
+  },
+  {
+   "indice": 1,
+   "texto": "BARBOSA, Benício. Impedit aut sed itaque excepturi eos voluptatum facilis. Epidemiologia e Serviços de Saúde, v. 57, n. 5, p. 556–575, 2020.",
+   "item": "it018"
+  },
+  {
+   "indice": 2,
+   "texto": "BRITO, Léo. Repudiandae voluptates odio sequi commodi eos cupiditate doloremque. Medical Mycology, v. 39, n. 2, p. 378–398, 1999.",
+   "item": "it015"
+  },
+  {
+   "indice": 3,
+   "texto": "CALVET TRUJILLO, Custodia et al. Reiciendis rem facere perferendis magnam vero. Alves Grande: Ramos Vargas S/A, 2026.",
+   "item": "it002"
+  },
+  {
+   "indice": 4,
+   "texto": "CASTRO, Elisa; CAMPOS, Yuri; DIAS, Daniela. Iusto nihil dignissimos similique in soluta non dolores qui facere consequuntur molestias. BMC Public Health, v. 74, n. 5, p. 851–863, 2017.",
+   "item": "it019"
+  },
+  {
+   "indice": 5,
+   "texto": "DA MOTA, Enrico et al. Quas totam placeat qui hic vero labore accusantium atque voluptas labore et nisi iste. In: DA MOTA, Rael (Org.). Ipsa sapiente ducimus quaerat adipisci nostrum dolore dolor est voluptates porro ullam ea. das Neves Alegre: Moura, 1999. p. 276–291.",
+   "item": "it016"
+  },
+  {
+   "indice": 6,
+   "texto": "DOS SÁ, Isabel; RAMOS, Laís; DA PAZ, Valentina. Provident quasi pariatur qui occaecati tempore expedita. Rios: Castro, 1995.",
+   "item": "extra1"
+  },
+  {
+   "indice": 7,
+   "texto": "FOGAÇA-CAMPOS, Vitória. Maiores minima aut totam deserunt nemo accusantium optio ipsum rerum. Epidemiologia e Serviços de Saúde, v. 11, n. 11, p. 773–782, 1996.",
+   "item": "extra0"
+  },
+  {
+   "indice": 8,
+   "texto": "FREITAS, Luana; APARECIDA, Sofia. Neque in doloremque iusto rem corrupti quibusdam enim vero. Albuquerque dos Dourados: Santos, 2019.",
+   "item": "it017"
+  },
+  {
+   "indice": 9,
+   "texto": "INSTITUTO NACIONAL DE CÂNCER (BRASIL). Magni optio saepe voluptate perspiciatis unde accusantium omnis soluta ullam corporis ipsam molestiae quibusdam. Revue d’Épidémiologie et de Santé Publique, v. 65, n. 12, p. 229–240, 2025.",
+   "item": "it007"
+  },
+  {
+   "indice": 10,
+   "texto": "KIM, Seo-yeon. Mollitia aspernatur ullam unde mollitia minus nisi modi magnam corporis. Andrade: Guerra, 2006.",
+   "item": "it004"
+  },
+  {
+   "indice": 11,
+   "texto": "LEÃO, Maria Clara et al. Reiciendis occaecati dolor quo voluptatum reiciendis consectetur enim autem vero eaque aspernatur. Revista de Saúde Pública, v. 9, n. 8, p. 28–33, [S.d.].",
+   "item": "it021"
+  },
+  {
+   "indice": 12,
+   "texto": "LI, Hao. Voluptatem deleniti rem. Curitiba: Editora Exemplo, 1987.",
+   "item": "it003"
+  },
+  {
+   "indice": 13,
+   "texto": "MENDES, Manuela; PASTOR, Maya; MARQUES, Ana Vitória. Tempore quasi laborum dolore ratione dolorum est. Revista de Saúde Pública, v. 69, n. 9, p. 379–391, 1998.",
+   "item": "it014"
+  },
+  {
+   "indice": 14,
+   "texto": "ØSTER, Emilly; MOREIRA, Alexandre; MARQUES, Emilly. Nemo libero aliquid nam earum placeat facere vel odit aut voluptas voluptatem. Curitiba: Editora Exemplo, 2022.",
+   "item": "it006"
+  },
+  {
+   "indice": 15,
+   "texto": "PINTO-RAMOS, João Miguel; SIQUEIRA, Lucas Gabriel. Quasi asperiores eaque ipsum asperiores praesentium sunt. Garcia Verde: Viana, 1980.",
+   "item": "it000"
+  },
+  {
+   "indice": 16,
+   "texto": "ROBERT KOCH-INSTITUT. Iusto minus aperiam voluptatum fuga doloremque non quisquam beatae a quis. Nogueira das Flores: Fonseca Costa - EI, 1988.",
+   "item": "it013"
+  },
+  {
+   "indice": 17,
+   "texto": "SAMPAIO, Mariah et al. Assumenda cupiditate assumenda odio debitis cupiditate voluptatibus quas esse id expedita ipsum. Preventive Veterinary Medicine, v. 21, n. 10, p. 565–570, 2006.",
+   "item": "it020"
+  },
+  {
+   "indice": 18,
+   "texto": "SANTOS, Davi. Iste dolores voluptas rem facere libero porro corporis molestias rem. Preventive Veterinary Medicine, v. 37, n. 9, p. 645–649, 1993a.",
+   "item": "it022"
+  },
+  {
+   "indice": 19,
+   "texto": "SANTOS, Davi. Nemo ab exercitationem cupiditate rerum quidem possimus hic. Martins: Porto, 1993b.",
+   "item": "it023"
+  },
+  {
+   "indice": 20,
+   "texto": "SÃO PAULO (ESTADO). Illo ullam minima tenetur necessitatibus esse perferendis. Journal of the American Medical Informatics Association, v. 4, n. 3, p. 774–778, 1999.",
+   "item": "it008"
+  },
+  {
+   "indice": 21,
+   "texto": "SÃO PAULO (ESTADO). Quia distinctio quas culpa mollitia aliquid odit. Epidemiologia & Prevenzione, v. 71, n. 6, p. 546–566, 2013.",
+   "item": "it009"
+  },
+  {
+   "indice": 22,
+   "texto": "VIRGINIA-MARYLAND COLLEGE OF VETERINARY MEDICINE. Sit aliquid laborum amet voluptatibus facere repellat quam quidem esse. Curitiba: Editora Exemplo, 2001.",
+   "item": "it010"
+  },
+  {
+   "indice": 23,
+   "texto": "VON SOUSA, Gustavo Henrique; SAMPAIO, Cecília. Deleniti ea consectetur veritatis accusantium. In: MOREIRA, Evelyn (Org.). Minus at excepturi qui officiis perspiciatis culpa corrupti corrupti maiores voluptatum nemo vel. Lima Verde: Camargo Viana Ltda., 1980. p. 86–101.",
+   "item": "it001"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Freitas; Aparecida, 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Calvet Trujillo et al., 2026; Pinto-Ramos; Siqueira, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it000"
+   ],
+   "referencias": [
+    3,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santos, 1993a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "São Paulo (Estado) (2013)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brito, 1999; Da Mota et al., 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it016"
+   ],
+   "referencias": [
+    2,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Barbosa, 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Azevedo et al., 1998; Freitas; Aparecida, 2019; Virginia-Maryland College of Veterinary Medicine, 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it017",
+    "it012"
+   ],
+   "referencias": [
+    null,
+    8,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "São Paulo (Estado) (1999)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brito, 1999; Leão et al., [S.d.]; Mendes; Pastor; Marques, 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it014",
+    "it021"
+   ],
+   "referencias": [
+    2,
+    13,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Santos (1993b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li (1987)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Santos (1993b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Da Mota et al. (1999)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Castro; Campos; Dias, 2017; Instituto Nacional de Câncer (Brasil), 2025; Mendes; Pastor; Marques, 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it007",
+    "it014"
+   ],
+   "referencias": [
+    4,
+    9,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Azevedo et al. (1998)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Castro; Campos; Dias, 2017; São Paulo (Estado), 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it008"
+   ],
+   "referencias": [
+    4,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado), 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Von Sousa; Sampaio, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Da Mota et al., 1999; São Paulo (Estado), 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it009"
+   ],
+   "referencias": [
+    5,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kim, 2006; São Paulo (Estado), 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it004"
+   ],
+   "referencias": [
+    21,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mendes; Pastor; Marques, 1998; Pinto-Ramos; Siqueira, 1980; Virginia-Maryland College of Veterinary Medicine, 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it000",
+    "it014"
+   ],
+   "referencias": [
+    null,
+    15,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran; Azevedo; Cunha, 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Freitas; Aparecida, 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sampaio et al., 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Azevedo et al., 1998; Øster; Moreira; Marques, 2022; São Paulo (Estado), 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it008",
+    "it012"
+   ],
+   "referencias": [
+    14,
+    20,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 2020, p. 91)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Kim, 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Mendes; Pastor; Marques, 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Freitas; Aparecida, 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Castro; Campos; Dias (2017)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Azevedo et al., 1998; Freitas; Aparecida, 2019; Virginia-Maryland College of Veterinary Medicine, 2020)",
+   "item": "it011"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Virginia-Maryland College of Veterinary Medicine, 2020)",
+   "item": "it011"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Mendes; Pastor; Marques, 1998; Pinto-Ramos; Siqueira, 1980; Virginia-Maryland College of Veterinary Medicine, 2020)",
+   "item": "it011"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Tran; Azevedo; Cunha, 2019)",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Virginia-Maryland College of Veterinary Medicine, 2020, p. 91)",
+   "item": "it011"
+  },
+  {
+   "ponto": "E",
+   "referencia": 6,
+   "item": "extra1"
+  },
+  {
+   "ponto": "E",
+   "referencia": 7,
+   "item": "extra0"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Quas iure eligendi natus ipsa molestiae expedita explicabo pariatur similique perferendis officia consequatur blanditiis"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

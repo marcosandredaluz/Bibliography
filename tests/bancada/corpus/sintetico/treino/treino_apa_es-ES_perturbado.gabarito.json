@@ -1,0 +1,580 @@
+{
+ "id": "treino_apa_es-ES_perturbado",
+ "estilo": "apa",
+ "sistema": "autor-data",
+ "locale": "es-ES",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Adadia, J. M., Blazquez, E., Agudo, A., Durán, Á., Collado, C., & Escribano, M. Á. (1998). Verdad relación ésta amigo muchos cama educación hacia mí hora d. BMC Public Health, 20(3), 338-350. https://doi.org/10.99999/teste.treino.31498",
+   "item": "it017"
+  },
+  {
+   "indice": 1,
+   "texto": "Anglada, A., & Moreno, V. (1978). Nosotros expresión programa pregunta capacidad construcción julio siglo mayo próximo. Medical Mycology, 29(4), 442-447. https://doi.org/10.99999/teste.treino.17871",
+   "item": "it014"
+  },
+  {
+   "indice": 2,
+   "texto": "Ballester, A., Sedano, J., Ferrero, M., Cuevas, R., Vera, H., & Bilbao, P. (1998). Ella estudio cara ir otro elementos mayores aun costa pueda médico precios. En T. Ferrándiz (Ed.), Riesgo especial vez mismo millones diciembre (pp. 74-89). Suministros Giralt y asociados S.A.",
+   "item": "it013"
+  },
+  {
+   "indice": 3,
+   "texto": "Camino, R., Carrión, C., Flor, J. C., & Isern, J. (2026). Tienen público joven miembros principios hizo estado caso próximo quedó algún diversos. Baltasar Casares Lledó S.L.",
+   "item": "it015"
+  },
+  {
+   "indice": 4,
+   "texto": "Escudero-Amor, A., Ribas, P., Pastor, J., & Sola, C. (1990). Jamás dinero miembros fondo nuestra. Preventive Veterinary Medicine, 28(2), 186-190. https://doi.org/10.99999/teste.treino.85873",
+   "item": "it000"
+  },
+  {
+   "indice": 5,
+   "texto": "Feijoo, P., Diéguez, J. A., & Busquets, R. (2018). Pero día lópez final visto dos cuerpo. Epidemiologia & Prevenzione, 76(1), 776-782.",
+   "item": "it010"
+  },
+  {
+   "indice": 6,
+   "texto": "Herranz, M., & Valderrama, C. (2000). Mitad fueron podemos artículo informe. Infraestructuras Ibéricos S.L.N.E.",
+   "item": "it011"
+  },
+  {
+   "indice": 7,
+   "texto": "Jerez, A. (2005). Militar nosotros pasa voy vino tiene su fondo muerte. En A. Aguilera (Ed.), Siempre aún puerta marcha sé pie pública real información j peor d (pp. 207-222). José Herrera Cózar S.L.",
+   "item": "it012"
+  },
+  {
+   "indice": 8,
+   "texto": "Lobo, S. (2022). Cierto pacientes otros demás estilo trabajar mujeres etapa porque forma mediante nunca. Gaceta Sanitaria, 74(11), 874-893. https://doi.org/10.99999/teste.treino.79587",
+   "item": "it018"
+  },
+  {
+   "indice": 9,
+   "texto": "Moraleda Ariza, E., & Nuñez, P. (2017). Varios cuatro posible gente libre congreso. Revue d’Épidémiologie et de Santé Publique, 28(6), 253-260. https://doi.org/10.99999/teste.treino.67262",
+   "item": "it002"
+  },
+  {
+   "indice": 10,
+   "texto": "Ñúñez, I., Gallego, T., Barba, B., & Barreda, R. (1987). Zona recuerdo opinión otras llegado dos señor cinco pacientes vivir. Epidemiologia & Prevenzione, 78(3), 282-287. https://doi.org/10.99999/teste.treino.30287",
+   "item": "it006"
+  },
+  {
+   "indice": 11,
+   "texto": "Organização Pan-Americana da Saúde. (1981). Comenzó quedó cómo pese partidos adelante estaban. https://exemplo-treino.org/2897",
+   "item": "it009"
+  },
+  {
+   "indice": 12,
+   "texto": "Organização Pan-Americana da Saúde. (2004). Fiscal aunque jefe anterior destino uso demás explicó muy haber juicio. Cadernos de Saúde Pública, 9(3), 847-853. https://doi.org/10.99999/teste.treino.91484",
+   "item": "it007"
+  },
+  {
+   "indice": 13,
+   "texto": "Park, J., Noriega, R., & Julián, D. (2008). Idea juan tienen recursos importancia. https://exemplo-treino.org/4050",
+   "item": "it004"
+  },
+  {
+   "indice": 14,
+   "texto": "Pedrosa, C., Vigil, P., Aparicio, D., & Bou, E. (s. f.). Interior tres cuenta barcelona ciencia tenemos marcha pequeño mayo quienes varios seguridad cuatro dentro. Gaceta Sanitaria, 59(1), 59-71.",
+   "item": "it019"
+  },
+  {
+   "indice": 15,
+   "texto": "Pham, V. A., Mulet, C., Carretero, R., & Sarmiento, G. (1984). Sido pudo modo políticos energía alrededor vida. Tecnologías Gomez y asociados S.L.N.E.",
+   "item": "it005"
+  },
+  {
+   "indice": 16,
+   "texto": "São Paulo (Estado). (1979). Consecuencia últimos saber encuentro actividades decir parís los asunto. Gaceta Sanitaria, 51(2), 425-435. https://doi.org/10.99999/teste.treino.78514",
+   "item": "it008"
+  },
+  {
+   "indice": 17,
+   "texto": "Solana, A. (1995a). Él afirmó o cantidad igual paz méxico. Journal of the American Medical Informatics Association, 36(3), 6-24.",
+   "item": "it020"
+  },
+  {
+   "indice": 18,
+   "texto": "Solana, A. (1995b). Tenemos pacientes cual situación. Familia Espejo S.Com.",
+   "item": "it021"
+  },
+  {
+   "indice": 19,
+   "texto": "Torralba, A. (2005). Autor serán del campaña sala por. Revista de Saúde Pública, 73(4), 260-266.",
+   "item": "it016"
+  },
+  {
+   "indice": 20,
+   "texto": "von Garzón, R. (1999). Padre asociación tampoco tendrá blanco vía conseguir tener. Construcción Inteligentes S.A.",
+   "item": "it001"
+  },
+  {
+   "indice": 21,
+   "texto": "Wang, W., & Artigas, I. (1993). Luz este pregunta familia resultados movimiento siendo espacio mujer i pregunta hijos clase hora. En R. Gibert (Ed.), Bajo personal ocasión ellos días (pp. 65-80). Inmobiliaria VG S.L.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Camino et al., 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Escudero-Amor et al., 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Herranz & Valderrama, 2000; Moraleda Ariza & Nuñez, 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it002"
+   ],
+   "referencias": [
+    6,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Feijoo et al., 2018; Solana, 1995b; von Garzón, 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it010",
+    "it021"
+   ],
+   "referencias": [
+    20,
+    5,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado), 1979; Solana, 1995a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it020"
+   ],
+   "referencias": [
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Adadia et al., 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Anglada & Moreno, 1978; Ballester et al., 1998; Torralba, 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it016",
+    "it013"
+   ],
+   "referencias": [
+    1,
+    19,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ñúñez et al., 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Escudero-Amor et al., 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ñúñez et al., 1987; Torralba, 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it006"
+   ],
+   "referencias": [
+    19,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Adadia et al., 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pedrosa et al., s. f.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde, 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lobo, 2022; Pham et al., 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it018"
+   ],
+   "referencias": [
+    15,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ballester et al., 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Camino et al., 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado), 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(von Garzón, 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Feijoo et al., 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Feijoo et al., 2018; Organização Pan-Americana da Saúde, 2004; Solana, 1995b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it007",
+    "it021"
+   ],
+   "referencias": [
+    5,
+    12,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado), 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Solana, 1995b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Anglada & Moreno, 1978; Escudero-Amor et al., 1990; Pedrosa et al., s. f.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it000",
+    "it014"
+   ],
+   "referencias": [
+    14,
+    4,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Herranz & Valderrama (2000)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Herranz & Valderrama, 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde, 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park et al., 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wang & Artigas, 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado), 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wang & Artigas, 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Torralba, 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Solana, 1995b; Torralba, 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it016"
+   ],
+   "referencias": [
+    18,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jerez, 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Feijoo et al., 2018, p. 137)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Feijoo et al., 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Anglada & Moreno, 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Feijoo et al., 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Ballester et al. (1998)",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Cinco sí proyecto cualquier lenguaje bastante próximo existencia estado total"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

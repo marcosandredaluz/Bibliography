@@ -1,0 +1,546 @@
+{
+ "id": "reservado_ama_en-US_perturbado",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "en-US",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Santé publique France. Since Age Number out Letter over Kid Grow Listen Challenge Employee Continue Your. Evans, Kim and Santos; 2014.",
+   "item": "it007"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Scott T, Hampton S, Santos M. Find risk same trip win hand whose forward relate family. Journal of the American Medical Informatics Association. 2017;11(11):570-579. doi:10.99999/teste.reservado.49586",
+   "item": "it010"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Lindsey D, Roy B, Cook E, Rodriguez J. Scientist into Pretty Agreement Increase Let Question Figure Early Toward. Davis PLC; 2025.",
+   "item": "it020"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Australian Institute of Health and Welfare (Australia). Wear feeling myself food might guy body. 1998. Accessed November 7, 2026. https://exemplo-reservado.org/9517",
+   "item": "it012"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Organización Mundial de la Salud. Necessary next Region Another Because Compare Interview However Civil Second Past. Castillo Group; 2013.",
+   "item": "it008"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Kim J ho, Freeman L, Little H, Jones H. Discussion Clear Turn into Include. Bennett-Burgess; 2001.",
+   "item": "it004"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Lindsey D, Roy B, Cook E, Rodriguez J. When which will most order. One Health. 2025;54(12):452-456.",
+   "item": "it021"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Li X, Lee L, Bernard B. Successful lot education seek. Epidemiologia e Serviços de Saúde. 2000;20(1):329-336. doi:10.99999/teste.reservado.44025",
+   "item": "it003"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Webb S. Consumer Benefit Push Common Form Give East Relationship Order Push Piece Standard Car Thousand. Martinez, Charles and Flores; 1978.",
+   "item": "it011"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Moss T. Government face campaign social build. Epidemiologia & Prevenzione. 1988;39(7):745-750. doi:10.99999/teste.reservado.42818",
+   "item": "it016"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Müller E. Cultural Center Second Best Such Tree Mind. Hall-Madden; 2016.",
+   "item": "it006"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Torres M, Monroe W. Six focus far can husband piece. Das Gesundheitswesen. 2012;5(10):452-467. doi:10.99999/teste.reservado.29338",
+   "item": "it015"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Estevez Ortega O, Powell G. Together concern apply build effect employee toward. Gaceta Sanitaria. 2009;66(9):426-440. doi:10.99999/teste.reservado.87537",
+   "item": "it002"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Bundesinstitut für Risikobewertung. Country Wide Break Actually Operation Attack. 2004. https://leis-reservado.gov/7955",
+   "item": "it013"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Hughes M, Collins M. Author across When Leader Yeah Discussion Pressure Might. Gomez Inc; 2016.",
+   "item": "it014"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Pham VA, Donaldson A. Discover scene as thought knowledge base news new few. Journal of the American Medical Informatics Association. 1988;21(6):439-450. doi:10.99999/teste.reservado.73967",
+   "item": "it005"
+  },
+  {
+   "indice": 16,
+   "texto": "17. White J, Dean S, Montoya J. Open about Physical Here Attention Probably. Castillo, Armstrong and Lopez; 2011.",
+   "item": "it017"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Conselho Federal de Medicina Veterinária. Available Write Difficult Mission. Yates, Melendez and Alexander; 2000.",
+   "item": "it009"
+  },
+  {
+   "indice": 18,
+   "texto": "19. dos Perry K, Washington B. Nature Drug Wall Mission Represent Can Middle. Cruz and Sons; 1992.",
+   "item": "it001"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Carter-Brown H, Williams T. Current social good suddenly economic type learn. Journal of the American Medical Informatics Association. 2026;71(8):298-312. doi:10.99999/teste.reservado.33519",
+   "item": "it000"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Neal T. Live off Center Commercial Rock. Flores PLC; 1978.",
+   "item": "it018"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Kline N, Williams N, Gallagher S, Suarez A, Rodriguez A, Morgan C. Bill factor pass billion short either store rate. Epidemiologia e Serviços de Saúde. 5(12):130-139. doi:10.99999/teste.reservado.73158",
+   "item": "it019"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Organización Mundial de la Salud 5",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al. 6",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7,8",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it003"
+   ],
+   "referencias": [
+    6,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,10",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it016"
+   ],
+   "referencias": [
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,12,13",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it002",
+    "it003"
+   ],
+   "referencias": [
+    11,
+    12,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14,15",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it014"
+   ],
+   "referencias": [
+    13,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,16",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it011"
+   ],
+   "referencias": [
+    15,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "White et al. 17",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,12,18",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it004",
+    "it015"
+   ],
+   "referencias": [
+    17,
+    5,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12,15",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it014"
+   ],
+   "referencias": [
+    11,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,12,14",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it015",
+    "it008"
+   ],
+   "referencias": [
+    13,
+    11,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "19",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12,16,20",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it015",
+    "it000"
+   ],
+   "referencias": [
+    15,
+    11,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14,21",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it018"
+   ],
+   "referencias": [
+    13,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16,18,22",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it005",
+    "it009"
+   ],
+   "referencias": [
+    21,
+    15,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,7,14",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it013",
+    "it021"
+   ],
+   "referencias": [
+    4,
+    13,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9(p27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "20",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Li et al. 8",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Prepared by the author (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Should experience we when since cold quite size chair truth"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

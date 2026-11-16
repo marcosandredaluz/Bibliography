@@ -1,0 +1,1176 @@
+{
+ "id": "elife-00070_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00070.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Banaszynski LA, Allis CD, Lewis PW. 2010. Histone variants in metazoan development. Dev Cell 19:662–674.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Barski A, Cuddapah S, Cui K, Roh TY, Schones DE, Wang Z, et al.. 2007. High-resolution profiling of histone methylations in the human genome. Cell 129:823–837.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Benjamini Y, Hochberg Y. 1995. Controlling the false discovery rate—a practical and powerful approach to multiple testing. J Roy Stat Soc B Met 57:289–300.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Bozza T, Feinstein P, Zheng C, Mombaerts P. 2002. Odorant receptor expression defines functional units in the mouse olfactory system. J Neurosci 22:3033–3043.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Buck L, Axel R. 1991. A novel multigene family may encode odorant receptors: a molecular basis for odor recognition. Cell 65:175–187.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Buonomano DV, Merzenich MM. 1998. Cortical plasticity: from synapses to maps. Annu Rev Neurosci 21:149–186.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Cau E, Casarosa S, Guillemot F. 2002. Mash1 and Ngn1 control distinct steps of determination and differentiation in the olfactory sensory neuron lineage. Development 129:1871–1880.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Chandrasekharan MB, Huang F, Sun ZW. 2010. Histone H2B ubiquitination and beyond: Regulation of nucleosome stability, chromatin dynamics and the trans-histone H3 methylation. Epigenetics 5:460–468.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Chess A, Simon I, Cedar H, Axel R. 1994. Allelic inactivation regulates olfactory receptor gene expression. Cell 78:823–834.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Cheung WL, Ajiro K, Samejima K, Kloc M, Cheung P, Mizzen CA, et al.. 2003. Apoptotic phosphorylation of histone H2B is mediated by mammalian sterile twenty kinase. Cell 113:507–517.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Cho JY, Min N, Franzen L, Baker H. 1996. Rapid down-regulation of tyrosine hydroxylase expression in the olfactory bulb of naris-occluded adult rats. J Comp Neurol 369:264–276.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Collart D, Romain PL, Huebner K, Pockwinse S, Pilapil S, Cannizzaro LA, et al.. 1992. A human histone H2B.1 variant gene, located on chromosome 1, utilizes alternative 3' end processing. J Cell Biochem 50:374–385.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Coppola DM, Waggener CT. 2011. The effects of unilateral naris occlusion on gene expression profiles in mouse olfactory mucosa. J Mol Neurosci 47:604–618.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Danciger E, Mettling C, Vidal M, Morris R, Margolis F. 1989. Olfactory marker protein gene: its structure and olfactory neuron-specific expression in transgenic mice. Proc Natl Acad Sci USA 86:8565–8569.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Dulac C. 2010. Brain function and chromatin plasticity. Nature 465:728–735.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Eden E, Lipson D, Yogev S, Yakhini Z. 2007. Discovering motifs in ranked lists of DNA sequences. PLoS Comput Biol 3:e39.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Eden E, Navon R, Steinfeld I, Lipson D, Yakhini Z. 2009. GOrilla: a tool for discovery and visualization of enriched GO terms in ranked gene lists. BMC Bioinformatics 10:48.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Elsaesser SJ, Goldberg AD, Allis CD. 2010. New functions for an old variant: no substitute for histone H3.3. Curr Opin Genet Dev 20:110–117.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Hensch TK. 2004. Critical period regulation. Annu Rev Neurosci 27:549–579.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Holtmaat A, Svoboda K. 2009. Experience-dependent structural synaptic plasticity in the mammalian brain. Nat Rev Neurosci 10:647–658.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Hubel DH, Wiesel TN. 1977. Ferrier lecture. Functional architecture of macaque monkey visual cortex. Proc R Soc Lond B Biol Sci 198:1–59.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Hudson R. 1999. From molecule to mind: the role of experience in shaping olfactory function. J Comp Physiol A 185:297–304.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Imai T, Suzuki M, Sakano H. 2006. Odorant receptor-derived cAMP signals direct axonal targeting. Science 314:657–661.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Iwema CL, Schwob JE. 2003. Odorant receptor expression as a function of neuronal maturity in the adult rodent olfactory system. J Comp Neurol 459:209–222.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Jones SV, Choi DC, Davis M, Ressler KJ. 2008. Learning-dependent structural plasticity in the adult olfactory pathway. J Neurosci 28:13106–13111.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Kao CF, Osley MA. 2003. In vivo assays to study histone ubiquitylation. Methods 31:59–66.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Kauffmann A, Gentleman R, Huber W. 2009. arrayQualityMetrics–a bioconductor package for quality assessment of microarray data. Bioinformatics 25:415–416.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Kolterud A, Alenius M, Carlsson L, Bohm S. 2004. The Lim homeobox gene Lhx2 is required for olfactory sensory neuron identity. Development 131:5319–5326.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Kondo K, Suzukawa K, Sakamoto T, Watanabe K, Kanaya K, Ushio M, et al.. 2010. Age-related changes in cell dynamics of the postnatal mouse olfactory neuroepithelium: cell proliferation, neuronal differentiation, and cell death. J Comp Neurol 518:1962–1975.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Lee AC, Tian H, Grosmaitre X, Ma M. 2009. Expression patterns of odorant receptors and response properties of olfactory sensory neurons in aged mice. Chem Senses 34:695–703.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Lee TI, Johnstone SE, Young RA. 2006. Chromatin immunoprecipitation and microarray-based analysis of protein location. Nat Protoc 1:729–748.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Lyons MR, West AE. 2011. Mechanisms of specificity in neuronal activity-regulated gene transcription. Prog Neurobiol 94:259–295.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Magklara A, Yen A, Colquitt BM, Clowney EJ, Allen W, Markenscoff-Papadimitriou E, et al.. 2011. An epigenetic signature for monoallelic olfactory receptor expression. Cell 145:555–570.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Marzluff WF, Gongidi P, Woods KR, Jin J, Maltais LJ. 2002. The human and mouse replication-dependent histone genes. Genomics 80:487–498.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Mombaerts P, Wang F, Dulac C, Chao SK, Nemes A, Mendelsohn M, et al.. 1996. Visualizing an olfactory sensory map. Cell 87:675–686.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Mori K, Sakano H. 2011. How is the olfactory map formed and interpreted in the mammalian brain?. Annu Rev Neurosci 34:467–499.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Moseley GL, Flor H. 2012. Targeting cortical representations in the treatment of chronic pain: a review. Neurorehabil Neural Repair 26:646–652.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Oka Y, Katada S, Omura M, Suwa M, Yoshihara Y, Touhara K. 2006. Odorant receptor map in the mouse olfactory bulb: in vivo sensitivity and specificity of receptor-defined glomeruli. Neuron 52:857–869.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Oka Y, Omura M, Kataoka H, Touhara K. 2004. Olfactory receptor antagonism between odorants. EMBO J 23:120–126.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Okada M, Cheeseman IM, Hori T, Okawa K, McLeod IX, Yates JR, et al.. 2006. The CENP-H-I complex is required for the efficient incorporation of newly synthesized CENP-A into centromeres. Nat Cell Biol 8:446–457.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Okada M, Fukagawa T. 2006. Purification of a protein complex that associates with chromatin. Protocol Exchange.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Ramachandran VS, Hirstein W. 1998. The perception of phantom limbs. The D. O. Hebb lecture. Brain 121:1603–1630.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Riccio A. 2010. Dynamic epigenetic regulation in neurons: enzymes, stimuli and signaling pathways. Nat Neurosci 13:1330–1337.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Rimbault M, Robin S, Vaysse A, Galibert F. 2009. RNA profiles of rat olfactory epithelia: individual and age related variations. BMC Genomics 10:572.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Rodriguez-Gil DJ, Treloar HB, Zhang X, Miller AM, Two A, Iwema C, et al.. 2010. Chromosomal location-dependent nonstochastic onset of odor receptor expression. J Neurosci 30:10067–10075.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Sammeta N, Yu TT, Bose SC, McClintock TS. 2007. Mouse olfactory sensory neurons express 10,000 genes. J Comp Neurol 502:1138–1156.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Schaeren-Wiemers N, Gerfin-Moser A. 1993. A single protocol to detect transcripts of various types and expression levels in neural tissue and cultured cells: in situ hybridization using digoxigenin-labelled cRNA probes. Histochemistry 100:431–440.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Serizawa S, Miyamichi K, Takeuchi H, Yamagishi Y, Suzuki M, Sakano H. 2006. A neuronal identity code for the odorant receptor-specific and activity-dependent axon sorting. Cell 127:1057–1069.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Shykind BM, Rohani SC, O'Donnell S, Nemes A, Mendelsohn M, Sun Y, et al.. 2004. Gene switching and the stability of odorant receptor gene choice. Cell 117:801–815.",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Smyth GK. 2004. Linear models and empirical bayes methods for assessing differential expression in microarray experiments. Stat Appl Genet Mol Biol 3:Article3.",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Su AI, Wiltshire T, Batalov S, Lapp H, Ching KA, Block D, et al.. 2004. A gene atlas of the mouse and human protein-encoding transcriptomes. Proc Natl Acad Sci USA 101:6062–6067.",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Sullivan SL, Adamson MC, Ressler KJ, Kozak CA, Buck LB. 1996. The chromosomal distribution of mouse odorant receptor genes. Proc Natl Acad Sci USA 93:884–888.",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "Supek F, Bošnjak M, Škunca N, Šmuc T. 2011. REVIGO summarizes and visualizes long lists of gene ontology terms. PLoS One 6:e21800.",
+   "item": "bib53"
+  },
+  {
+   "indice": 53,
+   "texto": "Talbert PB, Henikoff S. 2010. Histone variants–ancient wrap artists of the epigenome. Nat Rev Mol Cell Biol 11:264–275.",
+   "item": "bib54"
+  },
+  {
+   "indice": 54,
+   "texto": "Touhara K, Sengoku S, Inaki K, Tsuboi A, Hirono J, Sato T, et al.. 1999. Functional identification and reconstitution of an odorant receptor in single olfactory neurons. Proc Natl Acad Sci USA 96:4040–4045.",
+   "item": "bib55"
+  },
+  {
+   "indice": 55,
+   "texto": "Uchida N, Mainen ZF. 2003. Speed and accuracy of olfactory discrimination in the rat. Nat Neurosci 6:1224–1229.",
+   "item": "bib56"
+  },
+  {
+   "indice": 56,
+   "texto": "Waggener CT, Coppola DM. 2007. Naris occlusion alters the electro-olfactogram: evidence for compensatory plasticity in the olfactory system. Neurosci Lett 427:112–116.",
+   "item": "bib57"
+  },
+  {
+   "indice": 57,
+   "texto": "Wang Z, Zang C, Rosenfeld JA, Schones DE, Barski A, Cuddapah S, et al.. 2008. Combinatorial patterns of histone acetylations and methylations in the human genome. Nat Genet 40:897–903.",
+   "item": "bib58"
+  },
+  {
+   "indice": 58,
+   "texto": "Waters JC. 2009. Accuracy and precision in quantitative fluorescence microscopy. J Cell Biol 185:1135–1148.",
+   "item": "bib59"
+  },
+  {
+   "indice": 59,
+   "texto": "Watt WC, Sakano H, Lee ZY, Reusch JE, Trinh K, Storm DR. 2004. Odorant stimulation enhances survival of olfactory sensory neurons via MAPK and CREB. Neuron 41:955–967.",
+   "item": "bib60"
+  },
+  {
+   "indice": 60,
+   "texto": "West AE, Greenberg ME. 2011. Neuronal activity-regulated gene transcription in synapse development and cognitive function. Cold Spring Harb Perspect Biol 3:a005744.",
+   "item": "bib61"
+  },
+  {
+   "indice": 61,
+   "texto": "Wettenhall JM, Simpson KM, Satterley K, Smyth GK. 2006. affylmGUI: a graphical user interface for linear modeling of single channel microarray data. Bioinformatics 22:897–899.",
+   "item": "bib62"
+  },
+  {
+   "indice": 62,
+   "texto": "Wong ST, Trinh K, Hacker B, Chan GC, Lowe G, Gaggar A, et al.. 2000. Disruption of the type III adenylyl cyclase gene leads to peripheral and behavioral anosmia in transgenic mice. Neuron 27:487–497.",
+   "item": "bib63"
+  },
+  {
+   "indice": 63,
+   "texto": "Yang XW, Model P, Heintz N. 1997. Homologous recombination based modification in Escherichia coli and germline transmission in transgenic mice of a bacterial artificial chromosome. Nat Biotechnol 15:859–865.",
+   "item": "bib64"
+  },
+  {
+   "indice": 64,
+   "texto": "Zhao H, Reed RR. 2001. X inactivation of the OCNC1 channel gene reveals a role for activity-dependent competition in the olfactory system. Cell 104:651–660.",
+   "item": "bib65"
+  },
+  {
+   "indice": 65,
+   "texto": "Zheng C, Feinstein P, Bozza T, Rodriguez I, Mombaerts P. 2000. Peripheral olfactory projections are differentially affected in mice deficient in a cyclic nucleotide-gated channel subunit. Neuron 26:81–91.",
+   "item": "bib66"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Hubel and Wiesel, 1977",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hensch, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Buonomano and Merzenich, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ramachandran and Hirstein, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moseley and Flor, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Holtmaat and Svoboda, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dulac, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Riccio, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "West and Greenberg, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Buck and Axel, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chess et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kondo et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marzluff et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Su et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Collart et al., 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kao and Osley, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Waters, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Danciger et al., 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cau et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Iwema and Schwob, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kolterud et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shykind et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bozza et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Touhara et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Oka et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Oka et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cho et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mori and Sakano, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lyons and West, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Coppola and Waggener, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rimbault et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rodriguez-Gil et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Magklara et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barski et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chandrasekharan et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mori and Sakano, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Watt et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kondo et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lyons and West, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "West and Greenberg, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Watt et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Imai et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mori and Sakano, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Imai et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Serizawa et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Elsaesser et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cheung et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hudson, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jones et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marzluff et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Banaszynski et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Talbert and Henikoff, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib64"
+   ],
+   "referencias": [
+    63
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Danciger et al., 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mombaerts et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhao and Reed, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wong et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schaeren-Wiemers and Gerfin-Moser, 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kondo et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Benjamini and Hochberg, 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kauffmann et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smyth, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wettenhall et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Eden et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Eden et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Supek et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Benjamini and Hochberg, 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Okada and Fukagawa, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Okada et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sammeta et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Uchida and Mainen, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "E",
+   "referencia": 51,
+   "item": "bib52"
+  },
+  {
+   "ponto": "E",
+   "referencia": 56,
+   "item": "bib57"
+  },
+  {
+   "ponto": "E",
+   "referencia": 65,
+   "item": "bib66"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

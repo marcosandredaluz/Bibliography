@@ -1,0 +1,629 @@
+{
+ "id": "treino_vancouver_de-DE_erros",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. van der Stolze G, Otto H, Scheibe T, Budig F. Genau dürfen Angst Mensch. In: Hamann G, Herausgeber. Haus wohnen ließ krank nehmen Glück ins zum heute. Rothenburg ob der Tauber: Mälzer AG & Co. KG; 1998. S. 99–114.",
+   "item": "it001"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Winkler RD. Ende Wagen Gesicht gar traurig heißen reich essen erklären so. Epidemiologia & Prevenzione. 2013;55(2):239–52.",
+   "item": "it015"
+  },
+  {
+   "indice": 2,
+   "texto": "3. National Library of Medicine (Estados Unidos). Fragen schön warten legen warum Uhr draußen Wagen es Jahr Fenster gelb [Internet]. 7994. 1990. Verfügbar unter: https://leis-treino.gov/6851",
+   "item": "it007"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Peukert W, Häring D, Hermighausen S. Geschichte nur wenig Opa Wetter Schüler Uhr brauchen aus suchen klein. In: Koch H, Herausgeber. Nämlich nah Kind singen schon Ball Auge treffen. Lüneburg: Jäkel; 2020. S. 11–26.",
+   "item": "it016"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Nguyen TH, Hornich I, Löffler R, Gotthard S. Aus rot ruhig weiß werden unser Stein Apfel drehen. Medical Mycology. 2010;9(7):425–36. doi:10.99999/teste.treino.26422",
+   "item": "it005"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Øster W, Nerger KF. Mit sicher Zimmer nicht genau ein Finger Mädchen. BMC Public Health. 1989;51(6):331–47. doi:10.99999/teste.treino.51389",
+   "item": "it006"
+  },
+  {
+   "indice": 6,
+   "texto": "8. Trubin D, Schenk L, Scheibe E. Wahr lachen nehmen früh jeder [Internet]. 635. 2026. Verfügbar unter: https://leis-treino.gov/4202",
+   "item": "it011"
+  },
+  {
+   "indice": 7,
+   "texto": "9. Steckel H, Wagner E, Drubin K. Nase später See sicher natürlich wenig andere heute. Epidemiologia e Serviços de Saúde. 1994;21(9):853–60.",
+   "item": "it012"
+  },
+  {
+   "indice": 8,
+   "texto": "10. Johann J. Meer auf Schiff selbst Freude werden Stein Straße schlafen Baum Schwester darin. Olpe: Roht KG; 2003.",
+   "item": "it022"
+  },
+  {
+   "indice": 9,
+   "texto": "11. Röhricht A. Nicht Herz beide schwer hin kalt Wohnung. [Donaueschingen]: Rudolph AG; 2014.",
+   "item": "it017"
+  },
+  {
+   "indice": 10,
+   "texto": "12. Dobes T, Beier J. Gestern kalt Baum aber dann gab. In: Neuschäfer O, Herausgeber. Früher Auge Glas möglich warm wird andere Schiff steigen. Grevenbroich: Gumprich AG & Co. OHG; 2013. S. 59–74.",
+   "item": "it020"
+  },
+  {
+   "indice": 11,
+   "texto": "13. Wang W, Hornig A, Seifert K. Wird kein sicher das im kein weinen Auge anfangen mein Brot verstecken. Epidemiologia e Serviços de Saúde. 1983;23(4):29–38.",
+   "item": "it003"
+  },
+  {
+   "indice": 12,
+   "texto": "14. Organização Pan-Americana da Saúde. Sich brauchen Rad Sohn sich ich Land ihn klein zehn Tür holen fast Finger einfach fest [Internet]. 2006 [zitiert 16. November 2026]. Verfügbar unter: https://exemplo-treino.org/8408",
+   "item": "it014"
+  },
+  {
+   "indice": 13,
+   "texto": "15. Dörschner H. Genau verkaufen fast Sonne [Internet]. 1996 [zitiert 12. November 2026]. Verfügbar unter: https://exemplo-treino.org/5048",
+   "item": "it013"
+  },
+  {
+   "indice": 14,
+   "texto": "16. Johann J. Einigen Berg letzte dazu dem Abend. BMC Public Health. 2003;15(11):611–26. doi:10.99999/teste.treino.95237",
+   "item": "it023"
+  },
+  {
+   "indice": 15,
+   "texto": "18. Kruschwitz H. Dich verkaufen Wasser blau. Neuss: Ullmann Jopich GmbH & Co. KG; 1978.",
+   "item": "it010"
+  },
+  {
+   "indice": 16,
+   "texto": "19. León Real M, Römer HG. Gut oben hoch haben was Schule. Preventive Veterinary Medicine. 2019;26(8):199–211. doi:10.99999/teste.treino.19667",
+   "item": "it002"
+  },
+  {
+   "indice": 17,
+   "texto": "20. Choi M jun, Ehlert S. Denken Spiel für Küche [Internet]. 14375. 2008. Verfügbar unter: https://leis-treino.gov/7185",
+   "item": "it004"
+  },
+  {
+   "indice": 18,
+   "texto": "21. Stiffel C, Löwer M, Jungfer I, Schomber L, Möchlichen C, Barkholz A. Finger Bein hören nie zum tun. Medical Mycology. 2001;54(4):497–508.",
+   "item": "it019"
+  },
+  {
+   "indice": 19,
+   "texto": "22. Heidrich M, Rust F, Otto B. Setzen Zeitung schwer vielleicht rund nicht Bruder Fuß durch versuchen sind bringen werfen. Cadernos de Saúde Pública. 1980;8(9):239–43. doi:10.99999/teste.treino.61645",
+   "item": "it018"
+  },
+  {
+   "indice": 20,
+   "texto": "23. National Library of Medicine (Estados Unidos). Schwester schlecht Katze Bauer leise Wiese. Revue d’Épidémiologie et de Santé Publique. 2017;72(5):573–92.",
+   "item": "it009"
+  },
+  {
+   "indice": 21,
+   "texto": "24. Klapp-Hoffmann R, Löffler JP, Gröttner J, Mühle R. Wagen hinein davon nächste bringen ziehen bis. In: Birnbaum A, Herausgeber. Davon die sitzen vergessen leben Maus. Schweinfurt: Briemer Kobelt e.V.; 1984. S. 164–79.",
+   "item": "it000"
+  },
+  {
+   "indice": 22,
+   "texto": "25. Kühnert-Wende F. Eltern vor fliegen Lehrerin Winter [Internet]. 2005 [zitiert 14. November 2026]. Verfügbar unter: https://exemplo-treino.org/2094",
+   "item": "extra0"
+  },
+  {
+   "indice": 23,
+   "texto": "26. di Beyer S, Seifert W, Meister A, Christoph G. Klasse den Hand versuchen schon Dorf. One Health. 1981;8(4):730–8.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1,2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it015"
+   ],
+   "referencias": [
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3–5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it016",
+    "it005"
+   ],
+   "referencias": [
+    2,
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6,7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it008"
+   ],
+   "referencias": [
+    5,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trubin et al. (8)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9–11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it022",
+    "it017"
+   ],
+   "referencias": [
+    7,
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it005"
+   ],
+   "referencias": [
+    11,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4,14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it016"
+   ],
+   "referencias": [
+    12,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,7,15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it013",
+    "it005"
+   ],
+   "referencias": [
+    null,
+    13,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16,17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it021"
+   ],
+   "referencias": [
+    14,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it021"
+   ],
+   "referencias": [
+    6,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3,10,19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it007",
+    "it022"
+   ],
+   "referencias": [
+    16,
+    2,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20,21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it019"
+   ],
+   "referencias": [
+    17,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10,13,17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it022",
+    "it021"
+   ],
+   "referencias": [
+    11,
+    8,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nguyen et al. (5)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3,5,19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it007",
+    "it002"
+   ],
+   "referencias": [
+    4,
+    2,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kruschwitz (18)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,12,24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it000",
+    "it011"
+   ],
+   "referencias": [
+    10,
+    21,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Øster (6)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Øster (6)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Reuter et al. (17)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(6,7)",
+   "item": "it008"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(5,7,15)",
+   "item": "it008"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(16,17)",
+   "item": "it021"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(8,17)",
+   "item": "it021"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(10,13,17)",
+   "item": "it021"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(17)",
+   "item": "it021"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(7)",
+   "item": "it008"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(7)",
+   "item": "it008"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Reuter et al. (17)",
+   "item": "it021"
+  },
+  {
+   "ponto": "E",
+   "referencia": 22,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 23,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Affe müssen nur was hinter fahren Ende arbeiten rot gibt Garten braun Tier"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

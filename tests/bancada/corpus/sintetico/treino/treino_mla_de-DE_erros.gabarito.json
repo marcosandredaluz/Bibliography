@@ -1,0 +1,673 @@
+{
+ "id": "treino_mla_de-DE_erros",
+ "estilo": "mla",
+ "sistema": "autor-pagina",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Bärer-Flantz, Ewald. Jeder Glas wird braun neben spielen. Mans GmbH & Co. KG, 1997.",
+   "item": "it000"
+  },
+  {
+   "indice": 1,
+   "texto": "de Eberth, Lore, und Ljubica Gotthard. „Sommer Katze Seite rechnen warten aber Eltern lustig stellen packen Auto“. Epidemiologia & Prevenzione, Bd. 77, Nr. 10, 2009, S. 63–83.",
+   "item": "extra1"
+  },
+  {
+   "indice": 2,
+   "texto": "de Kühnert, Isabelle, und Mijo Mosemann. Also gern dick nun ihm Straße mögen finden zeigen weil Wald tot. 2025, https://exemplo-treino.org/3010.",
+   "item": "it001"
+  },
+  {
+   "indice": 3,
+   "texto": "Fliegner, Almuth. „Wort wenn Haare lassen schnell“. Revue d’Épidémiologie et de Santé Publique, Bd. 77, Nr. 6, 2017, S. 427–34, https://doi.org/10.99999/teste.treino.16149.",
+   "item": "it016"
+  },
+  {
+   "indice": 4,
+   "texto": "Gehringer, Waltraud. „Singen nicht plötzlich gestern Tag also mich nach singen vorbei nein überall“. Cadernos de Saúde Pública, Bd. 47, Nr. 4, 2023, S. 655–67, https://doi.org/10.99999/teste.treino.36536.",
+   "item": "it014"
+  },
+  {
+   "indice": 5,
+   "texto": "Haute Autorité de Santé (France). Oben wie damit zusammen Opa bringen wenig neun Stelle Hand. 1995. Schüler Eberhardt KGaA.",
+   "item": "it008"
+  },
+  {
+   "indice": 6,
+   "texto": "Instituto Nacional de Câncer (Brasil). Hängen sieben klettern groß wir reiten nach gewinnen mein darin stark gesund lesen. Hahn.",
+   "item": "it020"
+  },
+  {
+   "indice": 7,
+   "texto": "Istituto Superiore di Sanità. Dorf der Blume fragen schlimm zwei krank Monate Spaß. Nr. 175, 1978, https://leis-treino.gov/2038.",
+   "item": "it018"
+  },
+  {
+   "indice": 8,
+   "texto": "———. Erde Flasche Fahrrad fehlen reiten arbeiten warten wird war dauern daran. 1999, https://exemplo-treino.org/4976.",
+   "item": "it007"
+  },
+  {
+   "indice": 9,
+   "texto": "Kusch, Thaddäus, u. a. „Dauern haben Flasche weil Tür“. Journal of the American Medical Informatics Association, Bd. 80, Nr. 3, 2018, S. 834–41, https://doi.org/10.99999/teste.treino.91627.",
+   "item": "it015"
+  },
+  {
+   "indice": 10,
+   "texto": "Lachmann-Zimmer, Horst. „Licht draußen Arzt gelb leben Affe um erschrecken“. Preventive Veterinary Medicine, Bd. 39, Nr. 8, 1977, S. 852–67, https://doi.org/10.99999/teste.treino.66829.",
+   "item": "extra0"
+  },
+  {
+   "indice": 11,
+   "texto": "Le, Thi Hoa, u. a. „Wo glauben dich ins Zeit ich schicken dauern sprechen tot fallen wenig zum“. Gaceta Sanitaria, Bd. 21, Nr. 3, 2017, S. 142–46.",
+   "item": "it005"
+  },
+  {
+   "indice": 12,
+   "texto": "Lee, Seo-yeon. „Gewinnen im Fenster der lassen zu halbe man lange dir jung“. Medical Mycology, Bd. 70, Nr. 9, 1997, S. 727–42, https://doi.org/10.99999/teste.treino.32456.",
+   "item": "it004"
+  },
+  {
+   "indice": 13,
+   "texto": "Linke, Karl-Heinz, u. a. Über böse mehr gar Loch Zeitung verlieren traurig. Kreusel, 2001.",
+   "item": "it013"
+  },
+  {
+   "indice": 14,
+   "texto": "Liu, Wei, und Kornelius Holt. „Neu heiß Wagen Seite fiel mein“. Das Gesundheitswesen, Bd. 53, Nr. 5, 2002, S. 132–44, https://doi.org/10.99999/teste.treino.71302.",
+   "item": "it003"
+  },
+  {
+   "indice": 15,
+   "texto": "O’Connor, Ulf. Überall nach Hund zur Ferien sie warm sieht. Zobel Stiftung & Co. KGaA, 2002.",
+   "item": "it006"
+  },
+  {
+   "indice": 16,
+   "texto": "Reuter, Serpil. „Krank da offen Kind müssen Land Wissen noch weil“. Gaceta Sanitaria, Bd. 15, Nr. 2, 2003, S. 330–49.",
+   "item": "it011"
+  },
+  {
+   "indice": 17,
+   "texto": "Robert Koch-Institut. „So wünschen Name Nase Oma steigen reiten“. Epidemiologia e Serviços de Saúde, Bd. 63, Nr. 1, 2002, S. 365–82, https://doi.org/10.99999/teste.treino.72608.",
+   "item": "it009"
+  },
+  {
+   "indice": 18,
+   "texto": "Ruppert, Dusan, u. a. „Letzte versuchen also Maus auf laufen Sohn wahr Meer“. Epidemiologia & Prevenzione, Bd. 75, Nr. 6, 2026, S. 647–52.",
+   "item": "it017"
+  },
+  {
+   "indice": 19,
+   "texto": "Sauer, Elwira, u. a. „Bis wird aber Zug See“. Medical Mycology, Bd. 20, Nr. 7, 2003, S. 691–706, https://doi.org/10.99999/teste.treino.99197.",
+   "item": "it010"
+  },
+  {
+   "indice": 20,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. Oben verkaufen Eltern sechs lange Herz Spaß fährt seit. Bolzmann GbR, 1978.",
+   "item": "it012"
+  },
+  {
+   "indice": 21,
+   "texto": "Zänker, Concetta, und Gaetano Kraus. „Nase dauern Sache gehören essen dich los fragen gestern Eis“. Medical Mycology, Bd. 49, Nr. 8, 1997, S. 589–600, https://doi.org/10.99999/teste.treino.18829.",
+   "item": "it021"
+  },
+  {
+   "indice": 22,
+   "texto": "———. Wo denken sich einigen merken zusammen öffnen neben. 1997, https://exemplo-treino.org/4172.",
+   "item": "it022"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Robert Koch-Institut; de Kühnert und Mosemann)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it001"
+   ],
+   "referencias": [
+    17,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kusch u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bärer-Flantz)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ruppert u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fliegner)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, Erde Flasche Fahrrad fehlen reiten arbeiten warten wird war dauern daran)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dörschner)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dörschner; Fliegner; Le u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it016",
+    "it005"
+   ],
+   "referencias": [
+    null,
+    3,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sauer u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zänker und Kraus, Wo denken sich einigen merken zusammen öffnen neben; Kusch u. a.; Lee)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it015",
+    "it004"
+   ],
+   "referencias": [
+    22,
+    9,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Linke u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gehringer)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Linke u. a.; Zänker und Kraus, Wo denken sich einigen merken zusammen öffnen neben)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it022"
+   ],
+   "referencias": [
+    13,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, Dorf der Blume fragen schlimm zwei krank Monate Spaß)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Reuter; Instituto Nacional de Câncer (Brasil))",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it020"
+   ],
+   "referencias": [
+    16,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil))",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sauer u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Liu und Holt)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, Dorf der Blume fragen schlimm zwei krank Monate Spaß; de Kühnert und Mosemann; Lee)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it001",
+    "it004"
+   ],
+   "referencias": [
+    7,
+    2,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(O’Connor)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(O’Connor; Istituto Superiore di Sanità, Dorf der Blume fragen schlimm zwei krank Monate Spaß; Virginia-Maryland College of Veterinary Medicine)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it018",
+    "it012"
+   ],
+   "referencias": [
+    15,
+    7,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kusch u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, Dorf der Blume fragen schlimm zwei krank Monate Spaß)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zänker und Kraus, Wo denken sich einigen merken zusammen öffnen neben; Virginia-Maryland College of Veterinary Medicine)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it012"
+   ],
+   "referencias": [
+    22,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee; Sauer u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it010"
+   ],
+   "referencias": [
+    12,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dörschner)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lucena Gual; Le u. a.; Zänker und Kraus, „Nase dauern Sache gehören essen dich los fragen gestern Eis“)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it005",
+    "it021"
+   ],
+   "referencias": [
+    null,
+    11,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sauer u. a.; Haute Autorité de Santé (France); Zänker und Kraus, Wo denken sich einigen merken zusammen öffnen neben)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it008",
+    "it022"
+   ],
+   "referencias": [
+    19,
+    5,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Liu und Holt 101)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Sauer u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Linke u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Lucena Gual)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Liu und Holt)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Dörschner)",
+   "item": "it019"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Dörschner; Fliegner; Le u. a.)",
+   "item": "it019"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Dörschner)",
+   "item": "it019"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Lucena Gual; Le u. a.; Zänker und Kraus, „Nase dauern Sache gehören essen dich los fragen gestern Eis“)",
+   "item": "it002"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Lucena Gual)",
+   "item": "it002"
+  },
+  {
+   "ponto": "E",
+   "referencia": 1,
+   "item": "extra1"
+  },
+  {
+   "ponto": "E",
+   "referencia": 10,
+   "item": "extra0"
+  }
+ ],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Schnell danach Name in dauern dauern hat also packen braun Zahl darauf"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

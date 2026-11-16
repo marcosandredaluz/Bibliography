@@ -1,0 +1,665 @@
+{
+ "id": "treino_iso690-num_es-ES_erros",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "es-ES",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1.  POMARES, Flor, BRIONES, Modesta y QUIROGA, Marta. Deja después sistemas estar partes. Das Gesundheitswesen. 2010. Vol. 45, no. 3, p. 727-734.",
+   "item": "it020"
+  },
+  {
+   "indice": 1,
+   "texto": "2.  LI, Hao. Sido oposición difícil sé minutos medida países. Revista de Saúde Pública. 1995. Vol. 14, no. 10, p. 821-827.",
+   "item": "it003"
+  },
+  {
+   "indice": 2,
+   "texto": "3.  ROBERT KOCH-INSTITUT. Encontrar arriba juez dicho aunque. One Health. 2020. Vol. 77, no. 6, p. 464-469. DOI 10.99999/teste.treino.58475.",
+   "item": "it008"
+  },
+  {
+   "indice": 3,
+   "texto": "4.  BUSTAMANTE, Flor, AZCONA, Silvio, RIPOLL, Fermín y SALOM, Natalia. Programa acciones seguro dentro pública puerta. Preventive Veterinary Medicine. 1985. Vol. 66, no. 3, p. 489-495. DOI 10.99999/teste.treino.38757.",
+   "item": "it016"
+  },
+  {
+   "indice": 4,
+   "texto": "5.  BARRANCO, Dionisia, PERAL, Paco y RIPOLL, Charo. Proyecto carlos función toma españa santa europa armas. BMC Public Health. 1978. Vol. 31, no. 5, p. 568-581. DOI 10.99999/teste.treino.42977.",
+   "item": "it028"
+  },
+  {
+   "indice": 5,
+   "texto": "6.  PONS, Cruz. Reforma oposición comercio vida pone efecto metros todas humano decir único autoridades fuera soy era. . Cantabria : Manufacturas del Noroeste S.L.N.E, 1998.",
+   "item": "it017"
+  },
+  {
+   "indice": 6,
+   "texto": "7.  CHOI, Ji-ho y ESPAÑOL, Flavio. Pasado pesar economía máximo tratamiento pesar vuelta donde único. . Badajoz : Supermercados Escamilla S.Com., 1986.",
+   "item": "it004"
+  },
+  {
+   "indice": 7,
+   "texto": "8.  QUINTANILLA-CAPARRÓS, Coral y MANCEBO, Salvador. Carta diciembre derechos militar carácter miembros explicó aquí tengo. Barcelona : Despacho Bayona S.L.N.E, 2026.",
+   "item": "it000"
+  },
+  {
+   "indice": 8,
+   "texto": "9.  PAZ, Ester. Mundial negro psoe hombre llamado francisco presente cultural. Preventive Veterinary Medicine. 1976. Vol. 30, no. 5, p. 153-161.",
+   "item": "it025"
+  },
+  {
+   "indice": 9,
+   "texto": "11.  MERCADER, Delfina. Voy etapa quiere oposición muchas tales papel mejores. Das Gesundheitswesen. 1998. Vol. 21, no. 3, p. 469-483. DOI 10.99999/teste.treino.87006.",
+   "item": "it021"
+  },
+  {
+   "indice": 10,
+   "texto": "12.  LE, Van Anh, MARTÍNEZ, Tadeo y ARAMBURU, Dionisia. Carrera seguridad permite tuvo. Journal of the American Medical Informatics Association. 1985. Vol. 55, no. 6, p. 102-109.",
+   "item": "it005"
+  },
+  {
+   "indice": 11,
+   "texto": "13.  FRUTOS, Valerio y SALGADO, Flavio. Mundial consejo europa luz carrera enfermedad social alto. Revue d’Épidémiologie et de Santé Publique. 2019. Vol. 5, no. 10, p. 853-868.",
+   "item": "it010"
+  },
+  {
+   "indice": 12,
+   "texto": "14.  ISTITUTO SUPERIORE DI SANITÀ. Libertad razón igual ver decía. . Ourense : Inmobiliaria Anguita S.Com., 2004.",
+   "item": "it007"
+  },
+  {
+   "indice": 13,
+   "texto": "15.  BARRANCO, Dionisia, PERAL, Paco y RIPOLL, Charo. Había martín sus también curso pues mayo españa. . Badajoz : Farmaceútica HBU S.A., 1978.",
+   "item": "it027"
+  },
+  {
+   "indice": 14,
+   "texto": "16.  GALLEGO, Roxana. Televisión exterior pues existen antonio propuesta. Granada : Familia Sarabia S.L.L., [no date].",
+   "item": "it026"
+  },
+  {
+   "indice": 15,
+   "texto": "17.  MINISTERIO DE SANIDAD (ESPAÑA). Mí todas siguientes crecimiento existencia su fútbol primeras arte veces acerca sus políticas nuevas mano palabra. Online. 1976. 9217. Available from: https://leis-treino.gov/5819",
+   "item": "it013"
+  },
+  {
+   "indice": 16,
+   "texto": "18.  GISBERT, Macario, VILLALONGA, Amanda y ARMAS, Araceli. Momento entrada don mayores encontrar libre tan figura análisis todos. In : ROCA, Jenaro (ed.), Millones e arte dolor hay gonzález siguiente humano. Albacete : Fuente y asociados S.Com., 2020. p. 149-164.",
+   "item": "it024"
+  },
+  {
+   "indice": 17,
+   "texto": "19.  ARENAS, Evaristo y BERMÚDEZ, Julián. Papel mundo color santa claro llegar partido nada aparece. . Santa Cruz de Tenerife : Industrias WPVU S.A.U, 1980.",
+   "item": "it023"
+  },
+  {
+   "indice": 18,
+   "texto": "20.  VIRGINIA-MARYLAND COLLEGE OF VETERINARY MEDICINE. Carrera ambos parecía etc ayer plaza concepto se fueron democracia. Teruel : Restauración UPFM S.L., 1988.",
+   "item": "it019"
+  },
+  {
+   "indice": 19,
+   "texto": "21.  ŁUKASZ, Dafne, RINCÓN, Diana, ZURITA, Sergio y ROYO, Genoveva. Escuela pesetas manos sector dinero claro piel usted lucha arte. Journal of the American Medical Informatics Association. 2021. Vol. 54, no. 2, p. 801-817. DOI 10.99999/teste.treino.52492.",
+   "item": "it006"
+  },
+  {
+   "indice": 20,
+   "texto": "22.  SOBRINO, Francisco Javier. Había hacerlo humanos va información partido ojos grande llegó hacerlo juicio diversos fuerzas meses producto. . Huesca : Inversiones LTI S.L., 1996.",
+   "item": "it015"
+  },
+  {
+   "indice": 21,
+   "texto": "23.  CUÉLLAR, Alondra. Pone era largo cámara. In : CASTAÑEDA, Martin (ed.), Apoyo asimismo quiero marcha j propio baja capacidad esa fuerte una análisis visto rey. Palencia : Gordillo y asociados S.Com., 2002. p. 78-93.",
+   "item": "it018"
+  },
+  {
+   "indice": 22,
+   "texto": "24.  HAUTE AUTORITÉ DE SANTÉ (FRANCE). Gente apenas comenzó personal asimismo tiene aire cabeza aun son todas relación. Online. 2002. [Accessed 14 noviembre 2026]. Available from: https://exemplo-treino.org/7741",
+   "item": "it012"
+  },
+  {
+   "indice": 23,
+   "texto": "25.  OLIVARES, Rogelio y ANDRADE, Donato. Sino cama centros realidad dos ayuda miedo rafael. Revista de Saúde Pública. 2015. Vol. 56, no. 7, p. 249-253.",
+   "item": "it014"
+  },
+  {
+   "indice": 24,
+   "texto": "26.  DUQUE, Amando, IRIARTE, Eli y PAREJO, África. Comunidad tienen elementos produce encuentran compañía llama tan mira cual septiembre comunicación él. Revue d’Épidémiologie et de Santé Publique. 1995. Vol. 43, no. 5, p. 679-689. DOI 10.99999/teste.treino.67922.",
+   "item": "it011"
+  },
+  {
+   "indice": 25,
+   "texto": "27.  BERTRÁN FOLCH, Nuria, TEJEDOR, Juan Manuel y TRUJILLO, Juanito. Aquel buena fútbol conciencia cabeza esas hacia línea ministerio. Revue d’Épidémiologie et de Santé Publique. 1983. Vol. 65, no. 3, p. 157-163.",
+   "item": "it002"
+  },
+  {
+   "indice": 26,
+   "texto": "29.  ESPADA, Miguel, TUR, Natanael, CUÉLLAR, Isabela y ROBLES, Xavier. Ver también m considera había favor hay principios desde actitud hechos un autoridades texto. Online. 1987. [Accessed 12 noviembre 2026]. Available from: https://exemplo-treino.org/5142",
+   "item": "it022"
+  },
+  {
+   "indice": 27,
+   "texto": "30.  ZAPATA-SALAZAR, Octavio. Septiembre también médico primeras siendo dejar capaz hospital c puedo. Soria : Murcia & Asociados S.Com., 2025.",
+   "item": "extra0"
+  },
+  {
+   "indice": 28,
+   "texto": "31.  DOS ARMAS, Edu. Rey humana mejores nuestro considera ministerio ministro nuestro. Epidemiologia e Serviços de Saúde. 2023. Vol. 67, no. 3, p. 328-347. DOI 10.99999/teste.treino.97729.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3, 4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it016"
+   ],
+   "referencias": [
+    2,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5–7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it017",
+    "it004"
+   ],
+   "referencias": [
+    4,
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6, 9, 10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it009",
+    "it017"
+   ],
+   "referencias": [
+    8,
+    null,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frutos (13)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pomares et al. (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7, 15, 16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it027",
+    "it026"
+   ],
+   "referencias": [
+    6,
+    13,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 16, 21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it028",
+    "it026"
+   ],
+   "referencias": [
+    19,
+    4,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robert Koch-Institut (3)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7, 23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it004"
+   ],
+   "referencias": [
+    21,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robert Koch-Institut (10)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15, 20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it019"
+   ],
+   "referencias": [
+    13,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13, 26, 27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it011",
+    "it002"
+   ],
+   "referencias": [
+    11,
+    24,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it028"
+   ],
+   "referencias": [
+    18,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (20)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17, p. 161)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Le et al. (12)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(6, 9, 10)",
+   "item": "it009"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Robert Koch-Institut (10)",
+   "item": "it009"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(28)",
+   "item": "it001"
+  },
+  {
+   "ponto": "E",
+   "referencia": 27,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 28,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Proceso yo posición diario no sala mayores grupos presente española imagen datos por m produce"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+  "documento": "node adaptador_auditor.cjs documento {arquivo}",
+  "referencias": "node adaptador_auditor.cjs referencias {arquivo}",
+  "afirmacoes": "node adaptador_auditor.cjs afirmacoes {arquivo}",
+  "plagio": "node adaptador_auditor.cjs plagio {arquivo}",
+  "caminho": "node adaptador_auditor.cjs caminho {arquivo}"
+}

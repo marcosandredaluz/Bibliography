@@ -1,0 +1,1399 @@
+{
+ "id": "elife-00170_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00170.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Akinloye O, Gromoll J, Callies C, Nieschlag E, Simoni M. 2007. Mutation analysis of the X-chromosome linked, testis-specific TAF7L gene in spermatogenic failure. Andrologia 39:190–195.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Armstrong JD, Coffey MT, Esbenshade KL, Campbell RM, Heimer EP. 1994. Concentrations of hormones and metabolites, estimates of metabolism, performance, and reproductive performance of sows actively immunized against growth hormone-releasing factor. J Anim Sci 72:1570–1577.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Boergesen M, Pedersen TA, Gross B, van Heeringen SJ, Hagenbeek D, Bindesboll C, et al.. 2012. Genome-wide profiling of liver X receptor, retinoid X receptor, and peroxisome proliferator-activated receptor alpha in mouse liver reveals extensive sharing of binding sites. Mol Cell Biol 32:852–867.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Bowers RR, Lane MD. 2008. Wnt signaling and adipocyte lineage commitment. Cell Cycle 7:1191–1196.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Brun RP, Kim JB, Hu E, Altiok S, Spiegelman BM. 1996. Adipocyte differentiation: a transcriptional regulatory cascade. Curr Opin Cell Biol 8:826–832.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Cheng Y, Buffone MG, Kouadio M, Goodheart M, Page DC, Gerton GL, et al.. 2007. Abnormal sperm in mice lacking the Taf7l gene. Mol Cell Biol 27:2582–2589.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Chowdhury AR, Mukherjee AK. 1976. Effect of exogenous testosterone propionate & progesterone on testicular ascorbic acid & cholesterol in relation to spermatogenesis. Indian J Exp Biol 14:701–703.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "D'Alessio JA, Wright KJ, Tjian R. 2009. Shifting players and paradigms in cell-specific transcription. Mol Cell 36:924–931.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Deato MD, Marr MT, Sottero T, Inouye C, Hu P, Tjian R. 2008. MyoD targets TAF3/TRF3 to activate myogenin transcription. Mol Cell 32:96–105.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Deato MD, Tjian R. 2007. Switching of the core transcription machinery during myogenesis. Genes Dev 21:2137–2149.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "DeLany JP, Floyd ZE, Zvonic S, Smith A, Gravois A, Reiners E, et al.. 2005. Proteomic analysis of primary cultures of human adipose-derived stem cells: modulation by Adipogenesis. Mol Cell Proteomics 4:731–740.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Ding N, Zhou H, Esteve PO, Chin HG, Kim S, Xu X, et al.. 2008. Mediator links epigenetic silencing of neuronal gene expression with x-linked mental retardation. Mol Cell 31:347–359.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Eguchi J, Yan QW, Schones DE, Kamal M, Hsu CH, Zhang MQ, et al.. 2008. Interferon regulatory factors are transcriptional regulators of adipogenesis. Cell Metab 7:86–94.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Feng J, Liu T, Zhang Y. 2011. Using MACS to identify peaks from ChIP-Seq data. Curr Protoc Bioinformatics Chapter 2:Unit 2.14.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Feve B. 2005. Adipogenesis: cellular and molecular aspects. Best Pract Res Clin Endocrinol Metab 19:483–499.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Fong YW, Inouye C, Yamaguchi T, Cattoglio C, Grubisic I, Tjian R. 2011. A DNA repair complex functions as an Oct4/Sox2 coactivator in embryonic stem cells. Cell 147:120–131.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Freiman RN, Albright SR, Zheng S, Sha WC, Hammer RE, Tjian R. 2001. Requirement of tissue-selective TBP-associated factor TAFII105 in ovarian development. Science 293:2084–2087.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Ge K, Cho YW, Guo H, Hong TB, Guermah M, Ito M, et al.. 2008. Alternative mechanisms by which mediator subunit MED1/TRAP220 regulates peroxisome proliferator-activated receptor gamma-stimulated adipogenesis and target gene expression. Mol Cell Biol 28:1081–1091.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Gerlach JC, Lin YC, Brayfield CA, Minteer DM, Li H, Rubin JP, et al.. 2012. Adipogenesis of human adipose-derived stem cells within three-dimensional hollow fiber-based bioreactors. Tissue Eng Part C Methods 18:54–61.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Gonzalez FJ. 2005. Getting fat: two new players in molecular adipogenesis. Cell Metab 1:85–86.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Gornostaeva SN, Rzhaninova AA, Gol'dstein DV. 2006. Myogenesis in hemopoietic tissue mesenchymal stem cell culture. Bull Exp Biol Med 141:493–499.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Grøntved L, Madsen MS, Boergesen M, Roeder RG, Mandrup S. 2010. MED14 tethers mediator to the N-terminal domain of peroxisome proliferator-activated receptor gamma and is required for full transcriptional activity and adipogenesis. Mol Cell Biol 30:2155–2169.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Guermah M, Ge K, Chiang CM, Roeder RG. 2003. The TBN protein, which is essential for early embryonic mouse development, is an inducible TAFII implicated in adipogenesis. Mol Cell 12:991–1001.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Gupta RK, Arany Z, Seale P, Mepani RJ, Ye L, Conroe HM, et al.. 2010. Transcriptional control of preadipocyte determination by Zfp423. Nature 464:619–623.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Gupta RK, Rosen ED, Spiegelman BM. 2011. Identifying novel transcriptional components controlling energy metabolism. Cell Metab 14:739–745.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Harrison MM, Li XY, Kaplan T, Botchan MR, Eisen MB. 2011. Zelda binding in the early Drosophila melanogaster embryo marks regions subsequently activated at the maternal-to-zygotic transition. PLoS Genet 7:e1002266.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Hart DO, Santra MK, Raha T, Green MR. 2009. Selective interaction between Trf3 and Taf3 required for early development and hematopoiesis. Dev Dyn 238:2540–2549.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Hashmi S, Zhang J, Siddiqui SS, Parhar RS, Bakheet R, Al-Mohanna F. 2011. Partner in fat metabolism: role of KLFs in fat burning and reproductive behavior. 3 Biotech 1:59–72.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Hollenberg AN, Susulic VS, Madura JP, Zhang B, Moller DE, Tontonoz P, et al.. 1997. Functional antagonism between CCAAT/Enhancer binding protein-alpha and peroxisome proliferator-activated receptor-gamma on the leptin promoter. J Biol Chem 272:5283–5290.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Hu E, Tontonoz P, Spiegelman BM. 1995. Transdifferentiation of myoblasts by the adipogenic transcription factors PPAR gamma and C/EBP alpha. Proc Natl Acad Sci USA 92:9856–9860.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Kajimura S, Seale P, Kubota K, Lunsford E, Frangioni JV, Gygi SP, et al.. 2009. Initiation of myoblast to brown fat switch by a PRDM16-C/EBP-beta transcriptional complex. Nature 460:1154–1158.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Kajimura S, Seale P, Spiegelman BM. 2010. Transcriptional control of brown fat development. Cell Metab 11:257–262.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Kajimura S, Seale P, Tomaru T, Erdjument-Bromage H, Cooper MP, Ruas JL, et al.. 2008. Regulation of the brown and white fat gene programs through a PRDM16/CtBP transcriptional complex. Genes Dev 22:1397–1409.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Langmead B, Trapnell C, Pop M, Salzberg SL. 2009. Ultrafast and memory-efficient alignment of short DNA sequences to the human genome. Genome Biol 10:R25.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Liu Z, Scannell DR, Eisen MB, Tjian R. 2011. Control of embryonic stem cell lineage commitment by core promoter factor, TAF3. Cell 146:720–731.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Mahmoud IY, Cyrus RV, Bennett TM, Woller MJ, Montag DM. 1985. Ultrastructural changes in testes of the snapping turtle, Chelydra serpentina in relation to plasma testosterone, delta 5-3 beta-hydroxysteroid dehydrogenase, and cholesterol. Gen Comp Endocrinol 57:454–464.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Mahony S, Benos PV. 2007. STAMP: a web tool for exploring DNA-binding motif similarities. Nucleic Acids Res 35:W253–W258.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Matsumoto K, Yu S, Jia Y, Ahmed MR, Viswakarma N, Sarkar J, et al.. 2007. Critical role for transcription coactivator peroxisome proliferator-activated receptor (PPAR)-binding protein/TRAP220 in liver regeneration and PPARalpha ligand-induced liver tumor development. J Biol Chem 282:17053–17060.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "May D, Blow MJ, Kaplan T, McCulley DJ, Jensen BC, Akiyama JA, et al.. 2012. Large-scale discovery of enhancers from human heart tissue. Nat Genet 44:89–93.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Mikkelsen TS, Xu Z, Zhang X, Wang L, Gimble JM, Lander ES, et al.. 2010. Comparative epigenomic analysis of murine and human adipogenesis. Cell 143:156–169.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Mori T, Sakaue H, Iguchi H, Gomi H, Okada Y, Takashima Y, et al.. 2005. Role of Kruppel-like factor 15 (KLF15) in transcriptional regulation of adipogenesis. J Biol Chem 280:12867–12875.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Pavesi G, Mauri G, Pesole G. 2004. In silico representation and discovery of transcription factor binding sites. Brief Bioinform 5:217–236.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Pei H, Yao Y, Yang Y, Liao K, Wu JR. 2011. Krüppel-like factor KLF9 regulates PPARgamma transactivation at the middle stage of adipogenesis. Cell Death Differ 18:315–327.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Pointud JC, Mengus G, Brancorsini S, Monaco L, Parvinen M, Sassone-Corsi P, et al.. 2003. The intracellular localisation of TAF7L, a paralogue of transcription factor TFIID subunit TAF7, is developmentally regulated during male germ-cell differentiation. J Cell Sci 116:1847–1858.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Rosen ED, MacDougald OA. 2006. Adipocyte differentiation from the inside out. Nat Rev Mol Cell Biol 7:885–896.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Rosen ED, Spiegelman BM. 2006. Adipocytes as regulators of energy balance and glucose homeostasis. Nature 444:847–853.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Schichnes D, Nemson J, Sohlberg L, Ruzin SE. 1998. Microwave protocols for paraffin microtechnique and in situ localization in plants. Microsc Microanal 4:491–496.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Schmidt SF, Jørgensen M, Chen Y, Nielsen R, Sandelin A, Mandrup S. 2011. Cross species comparison of C/EBPalpha and PPARgamma profiles in mouse and human adipocytes reveals interdependent retention of binding sites. BMC Genomics 12:152.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Seale P, Bjork B, Yang W, Kajimura S, Chin S, Kuang S, et al.. 2008. PRDM16 controls a brown fat/skeletal muscle switch. Nature 454:961–967.",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Tang QQ, Gronborg M, Huang H, Kim JW, Otto TC, Pandey A, et al.. 2005. Sequential phosphorylation of CCAAT enhancer-binding protein beta by MAPK and glycogen synthase kinase 3beta is required for adipogenesis. Proc Natl Acad Sci USA 102:9766–9771.",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Tang QQ, Otto TC, Lane MD. 2003. CCAAT/enhancer-binding protein beta is required for mitotic clonal expansion during adipogenesis. Proc Natl Acad Sci USA 100:850–855.",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Tang QQ, Otto TC, Lane MD. 2004. Commitment of C3H10T1/2 pluripotent stem cells to the adipocyte lineage. Proc Natl Acad Sci USA 101:9607–9611.",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "Tontonoz P, Hu E, Spiegelman BM. 1994b. Stimulation of adipogenesis in fibroblasts by PPAR gamma 2, a lipid-activated transcription factor. Cell 79:1147–1156.",
+   "item": "bib54"
+  },
+  {
+   "indice": 53,
+   "texto": "Tontonoz P, Spiegelman BM. 2008. Fat and beyond: the diverse biology of PPARgamma. Annu Rev Biochem 77:289–312.",
+   "item": "bib55"
+  },
+  {
+   "indice": 54,
+   "texto": "Trapnell C, Pachter L, Salzberg SL. 2009. TopHat: discovering splice junctions with RNA-Seq. Bioinformatics 25:1105–1111.",
+   "item": "bib56"
+  },
+  {
+   "indice": 55,
+   "texto": "Trapnell C, Williams BA, Pertea G, Mortazavi A, Kwan G, van Baren MJ, et al.. 2010. Transcript assembly and quantification by RNA-Seq reveals unannotated transcripts and isoform switching during cell differentiation. Nat Biotechnol 28:511–515.",
+   "item": "bib57"
+  },
+  {
+   "indice": 56,
+   "texto": "Voronina E, Lovasco LA, Gyuris A, Baumgartner RA, Parlow AF, Freiman RN. 2007. Ovarian granulosa cell survival and proliferation requires the gonad-selective TFIID subunit TAF4b. Dev Biol 303:715–726.",
+   "item": "bib59"
+  },
+  {
+   "indice": 57,
+   "texto": "Waki H, Nakamura M, Yamauchi T, Wakabayashi K, Yu J, Hirose-Yotsuya L, et al.. 2011. Global mapping of cell type-specific open chromatin by FAIRE-seq reveals the regulatory role of the NFI family in adipocyte differentiation. PLoS Genet 7:e1002311.",
+   "item": "bib60"
+  },
+  {
+   "indice": 58,
+   "texto": "Wang W, Huang L, Huang Y, Yin JW, Berk AJ, Friedman JM, et al.. 2009. Mediator MED23 links insulin signaling to the adipogenesis transcription cascade. Dev Cell 16:764–771.",
+   "item": "bib61"
+  },
+  {
+   "indice": 59,
+   "texto": "Zhang JW, Klemm DJ, Vinson C, Lane MD. 2004a. Role of CREB in transcriptional regulation of CCAAT/enhancer-binding protein beta gene during adipogenesis. J Biol Chem 279:4471–4478.",
+   "item": "bib62"
+  },
+  {
+   "indice": 60,
+   "texto": "Zhang JW, Tang QQ, Vinson C, Lane MD. 2004b. Dominant-negative C/EBP disrupts mitotic clonal expansion and differentiation of 3T3-L1 preadipocytes. Proc Natl Acad Sci USA 101:43–47.",
+   "item": "bib63"
+  },
+  {
+   "indice": 61,
+   "texto": "Zhang Y., Liu T, Meyer CA, Eeckhoute J, Johnson DS, Bernstein BE, et al.. 2008. Model-based analysis of ChIP-Seq (MACS). Genome Biol 9:R137.",
+   "item": "bib64"
+  },
+  {
+   "indice": 62,
+   "texto": "Zhou H, Kim S, Ishii S, Boyer TG. 2006. Mediator modulates Gli3-dependent Sonic hedgehog signaling. Mol Cell Biol 26:8667–8682.",
+   "item": "bib65"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Rosen and MacDougald, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rosen and Spiegelman, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rosen and MacDougald, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hollenberg et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tang et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2004a",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tang et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tontonoz and Spiegelman, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hu et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brun et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tang et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2004b",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guermah et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mori et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Matsumoto et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Grøntved et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pei et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gupta et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Waki et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Eguchi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mikkelsen et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmidt et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Waki et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Boergesen et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Freiman et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Voronina et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deato et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hart et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "D'Alessio et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guermah et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deato and Tjian, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guermah et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pointud et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cheng et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pointud et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Akinloye et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cheng et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Freiman et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deato et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "D'Alessio et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guermah et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ding et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cheng et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gupta et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tontonoz et al., 1994a",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1994b",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hu et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kajimura et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib64"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Feng et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Harrison et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ge et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mikkelsen et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmidt et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Waki et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pointud et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "DeLany et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Feve, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gonzalez, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gerlach et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gornostaeva et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bowers and Lane, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vernon et al., 1986",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Armstrong et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hashmi et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kajimura et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Seale et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vernon et al., 1986",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hashmi et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chowdhury and Mukherjee, 1976",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mahmoud et al., 1985",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kajimura et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kajimura et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ding et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tang et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhou et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ding et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cheng et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cheng et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schichnes et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kajimura et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gupta et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fong et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Langmead et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "May et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib64"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Harrison et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pavesi et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mahony and Benos, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trapnell et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trapnell et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Tontonoz et al., 1994a",
+   "item": "bib53"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Vernon et al., 1986",
+   "item": "bib58"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Vernon et al., 1986",
+   "item": "bib58"
+  },
+  {
+   "ponto": "ANO",
+   "citacao": "Liu et al., 2011",
+   "item": "bib36",
+   "ano_referencia": "1985",
+   "nota": "divergência existente no artigo publicado"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

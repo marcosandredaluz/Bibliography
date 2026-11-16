@@ -1,0 +1,144 @@
+{
+ "id": "elife-00286_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00286.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Colman RJ, Anderson RM, Johnson SC, Kastman EK, Kosmatka KJ, Beasley TM, et al.. 2009. Caloric restriction delays disease onset and mortality in rhesus monkeys. Science 325:201–204.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Coschigano KT, Clemmons D, Bellush LL, Kopchick JJ. 2000. Assessment of growth parameters and life span of GHR/BP gene-disrupted mice. Endocrinology 141:2608–2613.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Deelen J, Uh HW, Monajemi R, van Heemst D, Thijssen PE, Böhringer S, et al.. 2011. Gene set analysis of GWAS data for human longevity highlights the relevance of the insulin/IGF-1 signaling and telomere maintenance pathways. Age (Dordr).",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Honjoh S, Yamamoto T, Uno M, Nishida E. 2009. Signalling through RHEB-1 mediates intermittent fasting-induced longevity in C. elegans. Nature 457:726–730.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Inagaki T, Lin VY, Goetz R, Mohammadi M, Mangelsdorf DJ, Kliewer SA. 2008. Inhibition of growth hormone signaling by the fasting-induced hormone FGF21. Cell Metab 8:77–83.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Mattison JA, Roth GS, Beasley TM, Tilmont EM, Handy AM, Herbert RL, et al.. 2012. Impact of caloric restriction on health and survival in rhesus monkeys from the NIA study. Nature 489:318–321.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Suh Y, Atzmon G, Cho MO, Hwang D, Liu B, Leahy DJ, et al.. 2008. Functionally significant insulin-like growth factor I receptor mutations in centenarians. Proc Natl Acad Sci USA 105:3438–3442.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Zhang Y, Xie Y, Berglund ED, Coate KC, He TT, Katafuchi T, et al.. 2012. The starvation hormone, fibroblast growth factor-21, extends lifespan in mice. eLife 1:e00065.",
+   "item": "bib8"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Zhang et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Inagaki et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Coschigano et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Suh et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deelen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mattison et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Colman et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Honjoh et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

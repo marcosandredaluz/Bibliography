@@ -1,0 +1,827 @@
+{
+ "id": "elife-00290_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00290.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Brown KS, Blower MD, Maresca TJ, Grammer TC, Harland RM, Heald R. 2007. Xenopus tropicalis egg extracts provide insight into scaling of the mitotic spindle. J Cell Biol 176:765–770.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Brugues J, Nuzzo V, Mazur E, Needleman DJ. 2012. Nucleation and transport organize microtubules in metaphase spindles. Cell 149:554–564.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Carazo-Salas RE, Gruss OJ, Mattaj IW, Karsenti E. 2001. Ran-GTP coordinates regulation of microtubule nucleation and dynamics during mitotic-spindle assembly. Nat Cell Biol 3:228–234.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Courtois A, Schuh M, Ellenberg J, Hiiragi T. 2012. The transition from meiotic to mitotic spindle assembly is gradual during early mammalian development. J Cell Biol 198:357–370.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Gaetz J, Kapoor TM. 2004. Dynein/dynactin regulate metaphase spindle length by targeting depolymerizing activities to spindle poles. J Cell Biol 166:465–471.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Ganem NJ, Compton DA. 2004. The KinI kinesin Kif2a is required for bipolar spindle assembly through a functional relationship with MCAK. J Cell Biol 166:473–478.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Ganem NJ, Upton K, Compton DA. 2005. Efficient mitosis in human cells lacking poleward microtubule flux. Curr Biol 15:1827–1832.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Goehring NW, Hyman AA. 2012. Organelle growth control through limiting pools of cytoplasmic components. Curr Biol 22:R330–R339.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Greenan G, Brangwynne CP, Jaensch S, Gharakhani J, Julicher F, Hyman AA. 2010. Centrosome size sets mitotic spindle length in Caenorhabditis elegans embryos. Curr Biol 20:353–358.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Gruss OJ, Carazo-Salas RE, Schatz CA, Guarguaglini G, Kast J, Wilm M, et al.. 2001. Ran induces spindle assembly by reversing the inhibitory effect of importin alpha on TPX2 activity. Cell 104:83–93.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Hachet V, Kocher T, Wilm M, Mattaj IW. 2004. Importin alpha associates with membranes and participates in nuclear envelope assembly in vitro. EMBO J 23:1526–1535.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Jang CY, Coppinger JA, Seki A, Yates JR, Fang G. 2009. Plk1 and Aurora A regulate the depolymerase activity and the cellular localization of Kif2a. J Cell Sci 122:1334–1341.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Kalab P, Heald R. 2008. The RanGTP gradient—a GPS for the mitotic spindle. J Cell Sci 121:1577–1586.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Kalab P, Weis K, Heald R. 2002. Visualization of a Ran-GTP gradient in interphase and mitotic Xenopus egg extracts. Science 295:2452–2456.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Kalab P, Pralle A, Isacoff EY, Heald R, Weis K. 2006. Analysis of a RanGTP-regulated gradient in mitotic somatic cells. Nature 440:697–701.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Knowlton AL, Vorozhko VV, Lan W, Gorbsky GJ, Stukenberg PT. 2009. ICIS and Aurora B coregulate the microtubule depolymerase Kif2a. Curr Biol 19:758–763.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Levy DL, Heald R. 2010. Nuclear size is regulated by importin alpha and Ntf2 in Xenopus. Cell 143:288–298.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Levy DL, Heald R. 2012. Mechanisms of intracellular scaling. Annu Rev Cell Dev Biol 28:113–135.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Loughlin R, Heald R, Nedelec F. 2010. A computational model predicts Xenopus meiotic spindle organization. J Cell Biol 191:1239–1249.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Loughlin R, Wilbur JD, McNally FJ, Nedelec FJ, Heald R. 2011. Katanin contributes to interspecies spindle length scaling in Xenopus. Cell 147:1397–1407.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Maddox P, Straight A, Coughlin P, Mitchison TJ, Salmon ED. 2003. Direct observation of microtubule dynamics at kinetochores in Xenopus extract spindles: implications for spindle mechanics. J Cell Biol 162:377–382.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Maresca TJ, Heald R. 2006. Methods for studying spindle assembly and chromosome condensation in Xenopus egg extracts. Methods Mol Biol 322:459–474.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Mitchison TJ, Maddox P, Gaetz J, Groen A, Shirasu M, Desai A, et al.. 2005. Roles of polymerization dynamics, opposed motors, and a tensile element in governing the length of Xenopus extract meiotic spindles. Mol Biol Cell 16:3064–3076.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Mitchison T, Wuhr M, Nguyen P, Ishihara K, Groen A, Field CM. 2012. Growth, interaction, and positioning of microtubule asters in extremely large vertebrate embryo cells. Cytoskeleton (Hoboken) 69:738–750.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Nachury MV, Maresca TJ, Salmon WC, Waterman-Storer CM, Heald R, Weis K. 2001. Importin beta is a mitotic target of the small GTPase Ran in spindle assembly. Cell 104:95–106.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Newport J, Kirschner M. 1982. A major developmental transition in early Xenopus embryos: I. characterization and timing of cellular changes at the midblastula stage. Cell 30:675–686.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Ohi R, Burbank K, Liu Q, Mitchison TJ. 2007. Nonredundant functions of kinesin-13s during meiotic spindle assembly. Curr Biol 17:953–959.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Rape M, Reddy SK, Kirschner MW. 2006. The processivity of multiubiquitination by the APC determines the order of substrate degradation. Cell 124:89–103.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Sive HL, Grainger RM, Harland RM. 2000. Early development of Xenopus laevis: a laboratory manual.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Tirnauer JS, Salmon ED, Mitchison TJ. 2004. Microtubule plus-end dynamics in Xenopus egg extract spindles. Mol Biol Cell 15:1776–1784.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Tournebize R, Andersen SS, Verde F, Doree M, Karsenti E, Hyman AA. 1997. Distinct roles of PP1 and PP2A-like phosphatases in control of microtubule dynamics during mitosis. EMBO J 16:5537–5549.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Walczak CE, Heald R. 2008. Mechanisms of mitotic spindle assembly and function. Int Rev Cytol 265:111–158.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Wiese C, Wilde A, Moore MS, Adam SA, Merdes A, Zheng Y. 2001. Role of importin-beta in coupling Ran to downstream targets in microtubule assembly. Science 291:653–656.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Wilde A, Lizarraga SB, Zhang L, Wiese C, Gliksman NR, Walczak CE, Zheng Y. 2001. Ran stimulates spindle assembly by altering microtubule dynamics and the balance of motor activities. Nat Cell Biol 3:221–227.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Wuhr M, Obholzer ND, Megason SG, Detrich HW, Mitchison TJ. 2011. Live imaging of the cytoskeleton in early cleavage-stage zebrafish embryos. Methods Cell Biol 101:1–18.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Wuhr M, Tan ES, Parker SK, Detrich HW, Mitchison TJ. 2010. A model for cleavage plane determination in early amphibian and fish embryos. Curr Biol 20:2040–2045.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Wuhr M, Chen Y, Dumont S, Groen AC, Needleman DJ, Salic A, et al.. 2008. Evidence for an upper limit to mitotic spindle length. Curr Biol 18:1256–1261.",
+   "item": "bib37"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Walczak and Heald, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Levy and Heald, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wuhr et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wuhr et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mitchison et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wuhr et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loughlin et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loughlin et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brugues et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loughlin et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Greenan et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gruss et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kalab and Heald, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goehring and Hyman, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Courtois et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Newport and Kirschner, 1982",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maresca and Heald, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rape et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kalab et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loughlin et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loughlin et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loughlin et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maddox et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brown et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ohi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Levy and Heald, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gruss et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Levy and Heald, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wuhr et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loughlin et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nachury et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wiese et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kalab et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Courtois et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hachet et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Levy and Heald, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Walczak and Heald, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gaetz and Kapoor, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ohi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ohi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ganem and Compton, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ganem et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jang et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Knowlton et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mitchison et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wuhr et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maresca and Heald, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sive et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Levy and Heald, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loughlin et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loughlin et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Levy and Heald, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loughlin et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Loughlin et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "E",
+   "referencia": 2,
+   "item": "bib3"
+  },
+  {
+   "ponto": "E",
+   "referencia": 29,
+   "item": "bib30"
+  },
+  {
+   "ponto": "E",
+   "referencia": 30,
+   "item": "bib31"
+  },
+  {
+   "ponto": "E",
+   "referencia": 33,
+   "item": "bib34"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

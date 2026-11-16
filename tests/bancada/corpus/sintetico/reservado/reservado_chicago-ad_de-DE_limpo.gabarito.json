@@ -1,0 +1,605 @@
+{
+ "id": "reservado_chicago-ad_de-DE_limpo",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "de-DE",
+ "conjunto": "reservado",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Agência Nacional de Vigilância Sanitária (Brasil). 2007. „Tante will Schluss er sagen Stunde beim gab vorbei“. https://exemplo-reservado.org/1783.",
+   "item": "it020"
+  },
+  {
+   "indice": 1,
+   "texto": "Agência Nacional de Vigilância Sanitária (Brasil). 2008. „Neben tief halten zum plötzlich oft Blume Familie Essen“. Preventive Veterinary Medicine 38 (3): 388–99.",
+   "item": "it009"
+  },
+  {
+   "indice": 2,
+   "texto": "Australian Institute of Health and Welfare (Australia). 2004. „Finger sich unter her im her gefährlich wichtig tragen“. Das Gesundheitswesen 31 (6): 546–63. https://doi.org/10.99999/teste.reservado.26110.",
+   "item": "it007"
+  },
+  {
+   "indice": 3,
+   "texto": "Bas Palmer, Leonor, Melissa Wilmsen, Dino Speer, und Janos Nette. 2014. „Ins Wagen Wort sieht vorbei“. One Health 2 (1): 116–22.",
+   "item": "it002"
+  },
+  {
+   "indice": 4,
+   "texto": "Boden fährt Junge Glas er Stadt besser Flasche, Gesetz Nr. 2737 (2016). https://leis-reservado.gov/3531.",
+   "item": "it013"
+  },
+  {
+   "indice": 5,
+   "texto": "Bolnbach, Ildiko. 1976. „Erzählen Oma durch Monat kochen rund Sache schnell verkaufen Geburtstag“. Medical Mycology 6 (1): 830–49.",
+   "item": "it019"
+  },
+  {
+   "indice": 6,
+   "texto": "Boucsein, August, Mariana Schönland, Janos Hauffer, Cemil Koch II, Jo Hettner, und Hans D. Mülichen. o. J. „Dunkel scheinen Sache verkaufen Hunger zusammen lesen Zahl müssen“. One Health 18 (7): 559–71. https://doi.org/10.99999/teste.reservado.13751.",
+   "item": "it029"
+  },
+  {
+   "indice": 7,
+   "texto": "Briemer, Oliver. 2010. „Springen lange Geschichte acht Freude anfangen Platz ohne“. In Versuchen lange klettern Loch Stelle stehen geben viel Mutter Auge, herausgegeben von Annita Scholz. Köster Römer GmbH & Co. KGaA.",
+   "item": "it018"
+  },
+  {
+   "indice": 8,
+   "texto": "Chen, Xiaoming, Gerhart Jungfer, Dominik Austermühle, und Arno Zorbach. 1985. „Kann Wohnung tragen Oma bei spielen“. Journal of the American Medical Informatics Association 18 (8): 824–36.",
+   "item": "it003"
+  },
+  {
+   "indice": 9,
+   "texto": "Dippel, Francoise. 2012. Kam stellen Loch früher sprechen Essen Monate lassen Affe freuen. Schleich GmbH.",
+   "item": "it017"
+  },
+  {
+   "indice": 10,
+   "texto": "Eberhardt, Berta, und Anny Reichmann. 1979. „Dumm ein dir Arbeit heute verstecken ganz“. Epidemiologia e Serviços de Saúde 53 (4): 416–29. https://doi.org/10.99999/teste.reservado.82266.",
+   "item": "it027"
+  },
+  {
+   "indice": 11,
+   "texto": "Ganz schreien gibt Berg erklären sie groß haben baden Wohnung schlafen müssen er ließ laufen, Gesetz Nr. 1650 (1979). https://leis-reservado.gov/638.",
+   "item": "it004"
+  },
+  {
+   "indice": 12,
+   "texto": "Hettner, Barbara, Emin Neuschäfer, und Mijo Seifert. 2023. „Sagen Auto traurig kennen Monat lernen kochen Flasche“. Journal of the American Medical Informatics Association 54 (6): 755–68. https://doi.org/10.99999/teste.reservado.86590.",
+   "item": "it011"
+  },
+  {
+   "indice": 13,
+   "texto": "Im mich Ferien Zimmer Mama Weg, Gesetz Nr. 6606 (2023). https://leis-reservado.gov/2946.",
+   "item": "it022"
+  },
+  {
+   "indice": 14,
+   "texto": "Jacob, Robin, Sergei Bolander, und Fridolin Liebelt. 1991. „Schicken Platz warum bauen besser zwischen schenken Herr fressen Gesicht Angst fangen nass dafür“. Revista de Saúde Pública 29 (6): 464–74.",
+   "item": "it015"
+  },
+  {
+   "indice": 15,
+   "texto": "Lachmann, Kenan, Lisette Karz, und Rochus Rohleder. 2016. „Waschen erschrecken Monat wird frei lange wenig sehr schreien gleich sofort ihm“. Gaceta Sanitaria 15 (1): 713–21. https://doi.org/10.99999/teste.reservado.90118.",
+   "item": "it014"
+  },
+  {
+   "indice": 16,
+   "texto": "Ladeck, Meryem, und Aysel Schinke. 2000. „Fisch immer krank gut jetzt vor böse Nase“. Gaceta Sanitaria 71 (2): 135–47. https://doi.org/10.99999/teste.reservado.68530.",
+   "item": "it025"
+  },
+  {
+   "indice": 17,
+   "texto": "Loos, Nancy. 1999. „Mehr mal Vater wohnen jung“. In Natürlich wahr besser verstehen natürlich Zahl essen Stelle, herausgegeben von Uwe Bohnbach. Rogner.",
+   "item": "it026"
+  },
+  {
+   "indice": 18,
+   "texto": "Mohaupt, Nada, Dorota Mans, Ekaterina Tlustek, und Lena Seidel. 1990. „Wohnen Uhr darin in fressen sie acht zwei reiten“. Medical Mycology 35 (10): 137–52. https://doi.org/10.99999/teste.reservado.63598.",
+   "item": "it012"
+  },
+  {
+   "indice": 19,
+   "texto": "Müller, Alwina, Theres Adolph, Rosl Fröhlich, und Olivia Wirth. 1979. „Scheinen hat einige Buch liegen See alt Garten heraus zum kein“. BMC Public Health 26 (11): 531–40. https://doi.org/10.99999/teste.reservado.44575.",
+   "item": "it006"
+  },
+  {
+   "indice": 20,
+   "texto": "Nohlmans, Baldur. 2001a. „Kaufen Auge setzen Stelle schlafen reiten rufen“. Revue d’Épidémiologie et de Santé Publique 8 (7): 425–33.",
+   "item": "it030"
+  },
+  {
+   "indice": 21,
+   "texto": "Nohlmans, Baldur. 2001b. „Pferd kommen los sonst sie drehen wollen Blume beißen langsam mal“. Preventive Veterinary Medicine 40 (9): 548–65. https://doi.org/10.99999/teste.reservado.15839.",
+   "item": "it031"
+  },
+  {
+   "indice": 22,
+   "texto": "Nohlmans, Brigitta, Sabina Kraushaar, Ernest Förster, Frank-Peter Schleich, Anto Heinrich, und Winfried Ritter. 2015. „Haare nur erzählen Maus gut schön Geschichte“. https://exemplo-reservado.org/8711.",
+   "item": "it024"
+  },
+  {
+   "indice": 23,
+   "texto": "Organización Mundial de la Salud. 1987. „Fahren Monat lustig wohnen Stein“. https://exemplo-reservado.org/4042.",
+   "item": "it008"
+  },
+  {
+   "indice": 24,
+   "texto": "Pohl, Sieglinde, Sina Spieß, Jana Hiller, und Kathi Sager. 2026. „Kind aus vier rennen kein Mädchen Vater“. Das Gesundheitswesen 59 (2): 257–69. https://doi.org/10.99999/teste.reservado.24508.",
+   "item": "it021"
+  },
+  {
+   "indice": 25,
+   "texto": "Reinhardt-Hartung, Rudi. 2017. „Arbeiten reiten sie kochen Bein Fußball Stein haben Papa Platz nimmt Sonne nur machen“. Das Gesundheitswesen 80 (2): 527–39.",
+   "item": "it000"
+  },
+  {
+   "indice": 26,
+   "texto": "Schinke, Christoph, Jeannine Klotz, Lidija Tlustek, Heino Ritter, Elisabeth Mies, und Daniele Juncken. 2010. Richtig Hand uns Bett natürlich ging Land Stein Wagen gut Hund. Zirme Klemt Stiftung & Co. KGaA.",
+   "item": "it028"
+  },
+  {
+   "indice": 27,
+   "texto": "Stiebitz, Ehrenfried. 1979. „Fahren hinter wenig sonst Geld man Wissen grün Auge“. In Kind Arzt nächste trinken ohne Kopf Schuh, herausgegeben von Theodor Seidel. Gehringer Schüler KG.",
+   "item": "it016"
+  },
+  {
+   "indice": 28,
+   "texto": "Stiffel, Gudrun, Daniele Pruschke, Hulda Nerger, Victoria Eigenwillig, Gotthilf Scholl, und Aurelia Klemt. 2002. „Leise heraus Name alt hat Wohnung“. Das Gesundheitswesen 1 (8): 443–60. https://doi.org/10.99999/teste.reservado.67697.",
+   "item": "it023"
+  },
+  {
+   "indice": 29,
+   "texto": "Tlustek, Benjamin. 2008. „Und kommen da Schnee Minutenmir das noch Schule Monate in Wagen Haare Kind er ob“. In Gleich Boden hier müssen als Kind Mensch fallen etwas beißen wichtig als lieb traurig voll andere, herausgegeben von Gerta Jessel. Wieloch Ullmann KG.",
+   "item": "it010"
+  },
+  {
+   "indice": 30,
+   "texto": "Wieloch, Tillmann da. 2016. „Brot laut hängen kann als dabei“. Cadernos de Saúde Pública 79 (9): 566–77.",
+   "item": "it001"
+  },
+  {
+   "indice": 31,
+   "texto": "Wiese heiß sehen möglich Ferien wieder man, Gesetz Nr. 5760 (2024). https://leis-reservado.gov/8522.",
+   "item": "it005"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Im mich Ferien Zimmer Mama Weg 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agência Nacional de Vigilância Sanitária (Brasil) 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dippel 2012; Schinke u. a. 2010; Pohl u. a. 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it028",
+    "it021"
+   ],
+   "referencias": [
+    9,
+    26,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Park (Ganz schreien gibt Berg erklären sie groß haben baden Wohnung schlafen müssen er ließ laufen 1979)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dippel (2012)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Im mich Ferien Zimmer Mama Weg 2023; Jacob u. a. 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it015"
+   ],
+   "referencias": [
+    13,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Chen u. a. 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Stiebitz 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roskoth et al. (Im mich Ferien Zimmer Mama Weg 2023)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Müller u. a. 1979; Brigitta Nohlmans u. a. 2015; Briemer 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it024",
+    "it018"
+   ],
+   "referencias": [
+    19,
+    22,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roskoth et al. (Im mich Ferien Zimmer Mama Weg 2023)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ladeck und Schinke 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Boden fährt Junge Glas er Stadt besser Flasche 2016; Eberhardt und Reichmann 1979; Boucsein u. a., o. J.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it027",
+    "it029"
+   ],
+   "referencias": [
+    4,
+    10,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hettner u. a. 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Wieloch 2016; Bolnbach 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it019"
+   ],
+   "referencias": [
+    30,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mohaupt u. a. 1990; Eberhardt und Reichmann 1979; Reinhardt-Hartung 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it027",
+    "it000"
+   ],
+   "referencias": [
+    18,
+    10,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tlustek 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Stiffel u. a. 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bas Palmer u. a. (2014)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Boucsein u. a., o. J.; Dippel 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it017"
+   ],
+   "referencias": [
+    6,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Baldur Nohlmans 2001a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agência Nacional de Vigilância Sanitária (Brasil) 2008; Australian Institute of Health and Welfare (Australia) 2004; da Wieloch 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it007",
+    "it001"
+   ],
+   "referencias": [
+    1,
+    2,
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Eberhardt und Reichmann 1979; Stiebitz 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it016"
+   ],
+   "referencias": [
+    10,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wiese heiß sehen möglich Ferien wieder man 2024; Baldur Nohlmans 2001a; Organización Mundial de la Salud 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it030",
+    "it008"
+   ],
+   "referencias": [
+    31,
+    20,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roskoth et al. (Im mich Ferien Zimmer Mama Weg 2023)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lachmann u. a. 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Baldur Nohlmans 2001b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brigitta Nohlmans u. a. 2015; Agência Nacional de Vigilância Sanitária (Brasil) 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it009"
+   ],
+   "referencias": [
+    22,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bas Palmer u. a. 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Loos 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Eberhardt und Reichmann 1979, 36)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Stiffel u. a. 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Australian Institute of Health and Welfare (Australia) 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Lachmann u. a. 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Mohaupt u. a. (1990)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Dem Stück laut Tisch jetzt dem Wort Ferien treffen drehen Bett treffen Kind reich Küche"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

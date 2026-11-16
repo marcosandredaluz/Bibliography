@@ -1,0 +1,547 @@
+{
+ "id": "treino_mla_pt-PT_perturbado",
+ "estilo": "mla",
+ "sistema": "autor-pagina",
+ "locale": "pt-PT",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Assunção, Noah, et al. «Ratione a unde nihil distinctio sed earum ipsa tempore». Gaceta Sanitaria, vol. 71, n.o 5, 2004, pp. 264–68, https://doi.org/10.99999/teste.treino.35145.",
+   "item": "it016"
+  },
+  {
+   "indice": 1,
+   "texto": "Azevedo, Eva. «Aperiam atque aliquid placeat alias inventore accusamus perferendis inventore». Revista de Saúde Pública, vol. 77, n.o 5, 1977, pp. 331–43, https://doi.org/10.99999/teste.treino.29230.",
+   "item": "it012"
+  },
+  {
+   "indice": 2,
+   "texto": "Conselho Nacional de Saúde (Brasil). Aliquid fugit molestiae exercitationem impedit ut illum. 2000, https://exemplo-treino.org/8070.",
+   "item": "it025"
+  },
+  {
+   "indice": 3,
+   "texto": "———. «Eaque qui tempore perspiciatis consequatur est id eaque sequi eos». Das Gesundheitswesen, vol. 44, n.o 11, 2000, pp. 260–75, https://doi.org/10.99999/teste.treino.22244.",
+   "item": "it024"
+  },
+  {
+   "indice": 4,
+   "texto": "de Cruz, Erika, et al. Similique porro reiciendis mollitia dignissimos perferendis aut placeat quaerat quae tempore cumque vel. Vaz, 2021.",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "Esteves, Luciana, et al. Sint debitis ut quam enim culpa veritatis modi saepe. Gonçalves, 1978.",
+   "item": "it022"
+  },
+  {
+   "indice": 6,
+   "texto": "Ferreira, Sérgio, et al. «Ipsam nobis architecto expedita architecto quod vitae dignissimos earum ex distinctio unde necessitatibus». Cadernos de Saúde Pública, vol. 60, n.o 6, 2004, pp. 254–59, https://doi.org/10.99999/teste.treino.37547.",
+   "item": "it017"
+  },
+  {
+   "indice": 7,
+   "texto": "Haute Autorité de Santé (France). «Dicta ipsam minus veritatis veritatis expedita». Revista de Saúde Pública, vol. 60, n.o 12, 2007, pp. 153–67.",
+   "item": "it008"
+  },
+  {
+   "indice": 8,
+   "texto": "———. «Voluptate mollitia ducimus ab molestiae». Preventive Veterinary Medicine, vol. 24, n.o 8, 1994, pp. 461–65.",
+   "item": "it007"
+  },
+  {
+   "indice": 9,
+   "texto": "Instituto Nacional de Câncer (Brasil). Corrupti esse blanditiis odio tempora in odio cumque molestias. 1977, https://exemplo-treino.org/2315.",
+   "item": "it018"
+  },
+  {
+   "indice": 10,
+   "texto": "Lee, Ji-ho, e Núria Castro. «Saepe maiores temporibus temporibus earum». BMC Public Health, vol. 61, n.o 10, 2004, pp. 249–68, https://doi.org/10.99999/teste.treino.36933.",
+   "item": "it004"
+  },
+  {
+   "indice": 11,
+   "texto": "Li, Wei, e Diogo Pinho. «Voluptatibus iure quia eum nesciunt officiis». Gaceta Sanitaria, vol. 27, n.o 9, 2018, pp. 877–92.",
+   "item": "it003"
+  },
+  {
+   "indice": 12,
+   "texto": "Lima, Cristiano, et al. «Ex cum quaerat doloribus quidem nihil». Revista de Saúde Pública, vol. 33, n.o 7, 2018, pp. 606–25, https://doi.org/10.99999/teste.treino.87393.",
+   "item": "it021"
+  },
+  {
+   "indice": 13,
+   "texto": "Luján Cervera, Virginia, et al. «Labore repudiandae doloribus libero minus eveniet inventore ducimus eum ratione corporis cum inventore odio ipsa». Placeat distinctio quam voluptate dolorem eveniet magni deleniti ipsum, editado por Inês Henriques, Amaral, 1996, pp. 39–54.",
+   "item": "it002"
+  },
+  {
+   "indice": 14,
+   "texto": "Matos, Gil. «Nulla magnam officiis recusandae adipisci similique». Medical Mycology, vol. 9, n.o 5, 1989, pp. 736–40, https://doi.org/10.99999/teste.treino.96792.",
+   "item": "it014"
+  },
+  {
+   "indice": 15,
+   "texto": "Mota, Hugo, et al. Error voluptatum assumenda quisquam nobis. Neves e Filhos.",
+   "item": "it023"
+  },
+  {
+   "indice": 16,
+   "texto": "Nguyen, Van Anh, e Frederico Cruz. «Odio delectus ipsa molestias dolore officiis id veniam harum ad». Das Gesundheitswesen, vol. 21, n.o 7, 1976, pp. 356–67, https://doi.org/10.99999/teste.treino.76972.",
+   "item": "it005"
+  },
+  {
+   "indice": 17,
+   "texto": "Ñúñez, Joaquim, e Joaquim Melo. «Nisi eum illum corporis deleniti vel ipsa». Commodi facilis ullam dolor sed reiciendis aperiam eos adipisci laborum, editado por Carminho Carneiro, Antunes Andrade S/A, 2002, pp. 137–52.",
+   "item": "it006"
+  },
+  {
+   "indice": 18,
+   "texto": "Pacheco, Noah. Recusandae aliquam nobis nihil eaque. Figueiredo, 1988.",
+   "item": "it020"
+  },
+  {
+   "indice": 19,
+   "texto": "Ribeiro, Filipa, et al. «Accusamus eveniet voluptatem». Epidemiologia e Serviços de Saúde, vol. 75, n.o 3, 2015, pp. 460–71, https://doi.org/10.99999/teste.treino.12800.",
+   "item": "it019"
+  },
+  {
+   "indice": 20,
+   "texto": "Rodrigues, Cláudio, et al. «Delectus delectus officiis vel eos ducimus laudantium occaecati». Cadernos de Saúde Pública, vol. 24, n.o 8, 2023, pp. 188–99, https://doi.org/10.99999/teste.treino.57930.",
+   "item": "it013"
+  },
+  {
+   "indice": 21,
+   "texto": "Simões, Isaac, et al. Aspernatur quam dignissimos nulla neque consectetur sapiente delectus dolore delectus impedit deleniti sint eveniet. Pinho, 2025.",
+   "item": "it010"
+  },
+  {
+   "indice": 22,
+   "texto": "Torres-Fonseca, Kévim, e Alícia Assunção. Odit reprehenderit aliquid culpa nihil praesentium. n. 9796, 2002, https://leis-treino.gov/8875.",
+   "item": "it000"
+  },
+  {
+   "indice": 23,
+   "texto": "Valente, Xavier. Esse fugiat reiciendis ullam in omnis omnis sit debitis fuga ducimus temporibus. 1991. Fernandes.",
+   "item": "it015"
+  },
+  {
+   "indice": 24,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. «Autem distinctio vero nihil ad occaecati vel». Epidemiologia & Prevenzione, vol. 80, n.o 5, 2013, pp. 603–12.",
+   "item": "it009"
+  },
+  {
+   "indice": 25,
+   "texto": "———. Id alias doloribus molestiae eligendi officia facilis ipsa recusandae sit iusto vero ducimus. n. 6638, 1990, https://leis-treino.gov/7539.",
+   "item": "it011"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Luján Cervera et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, «Autem distinctio vero nihil ad occaecati vel»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pacheco; de Cruz et al.; Haute Autorité de Santé (France), «Dicta ipsam minus veritatis veritatis expedita»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it001",
+    "it008"
+   ],
+   "referencias": [
+    18,
+    4,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil); Assunção et al.; Lee e Castro)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it016",
+    "it004"
+   ],
+   "referencias": [
+    9,
+    0,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), Aliquid fugit molestiae exercitationem impedit ut illum; Ñúñez e Melo)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it006"
+   ],
+   "referencias": [
+    2,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Valente)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), Aliquid fugit molestiae exercitationem impedit ut illum; Haute Autorité de Santé (France), «Voluptate mollitia ducimus ab molestiae»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it007"
+   ],
+   "referencias": [
+    2,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Torres-Fonseca e Assunção)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Li e Pinho)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, «Autem distinctio vero nihil ad occaecati vel»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Matos; Rodrigues et al.; Ribeiro et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it013",
+    "it019"
+   ],
+   "referencias": [
+    14,
+    20,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rodrigues et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Torres-Fonseca e Assunção)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, Id alias doloribus molestiae eligendi officia facilis ipsa recusandae sit iusto vero ducimus)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ferreira et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rodrigues et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(de Cruz et al.; Torres-Fonseca e Assunção; Azevedo)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it000",
+    "it012"
+   ],
+   "referencias": [
+    4,
+    22,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mota et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Matos)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ñúñez e Melo; Instituto Nacional de Câncer (Brasil); Virginia-Maryland College of Veterinary Medicine, «Autem distinctio vero nihil ad occaecati vel»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it018",
+    "it009"
+   ],
+   "referencias": [
+    17,
+    9,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), «Dicta ipsam minus veritatis veritatis expedita»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Esteves et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Torres-Fonseca e Assunção)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), Aliquid fugit molestiae exercitationem impedit ut illum; Conselho Nacional de Saúde (Brasil), «Eaque qui tempore perspiciatis consequatur est id eaque sequi eos»; Virginia-Maryland College of Veterinary Medicine, Id alias doloribus molestiae eligendi officia facilis ipsa recusandae sit iusto vero ducimus)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it024",
+    "it011"
+   ],
+   "referencias": [
+    2,
+    3,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Torres-Fonseca e Assunção)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen e Cruz)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Simões et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lima et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee e Castro 262)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), «Dicta ipsam minus veritatis veritatis expedita»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Rodrigues et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, «Autem distinctio vero nihil ad occaecati vel»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), «Voluptate mollitia ducimus ab molestiae»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Doloremque modi aut maxime ipsum numquam itaque quas distinctio ullam eveniet numquam"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

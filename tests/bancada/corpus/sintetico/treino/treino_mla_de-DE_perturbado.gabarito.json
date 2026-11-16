@@ -1,0 +1,566 @@
+{
+ "id": "treino_mla_de-DE_perturbado",
+ "estilo": "mla",
+ "sistema": "autor-pagina",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Barba Viñas, Patricia, und Willy Walter. Kam später Mädchen Bein. 2014, https://exemplo-treino.org/8832.",
+   "item": "it002"
+  },
+  {
+   "indice": 1,
+   "texto": "Beyer, Evamaria, u. a. „Schwarz bei laut Schluss denn“. One Health, Bd. 42, Nr. 1, S. 148–65, https://doi.org/10.99999/teste.treino.29725.",
+   "item": "it020"
+  },
+  {
+   "indice": 2,
+   "texto": "Blümel, Herta, und Igor Kostolzin. „Einigen sind fliegen Wohnung Spiel früh natürlich Wetter“. Revista de Saúde Pública, Bd. 41, Nr. 1, 2016, S. 395–409, https://doi.org/10.99999/teste.treino.35664.",
+   "item": "it017"
+  },
+  {
+   "indice": 3,
+   "texto": "Flantz, Susanna, u. a. „Erde laufen wohnen Stadt einmal traurig sofort aber sofort immer für“. Revista de Saúde Pública, Bd. 5, Nr. 12, 2007, S. 589–98, https://doi.org/10.99999/teste.treino.44311.",
+   "item": "it014"
+  },
+  {
+   "indice": 4,
+   "texto": "Gremião, August, u. a. „Geburtstag Familie krank fragen nehmen dürfen Monat gesund heraus zurück spät Feuer“. Revue d’Épidémiologie et de Santé Publique, Bd. 38, Nr. 8, 2006, S. 386–91, https://doi.org/10.99999/teste.treino.53666.",
+   "item": "it006"
+  },
+  {
+   "indice": 5,
+   "texto": "Haute Autorité de Santé (France). „Los ich das gefährlich“. Gaceta Sanitaria, Bd. 28, Nr. 9, 2024, S. 306–17, https://doi.org/10.99999/teste.treino.32668.",
+   "item": "it008"
+  },
+  {
+   "indice": 6,
+   "texto": "———. „Nur letzte uns schnell schenken Spaß lernen halten Glas nein Zeitung stehen können sein Freund gewinnen“. Das Gesundheitswesen, Bd. 42, Nr. 7, 2013, S. 561–72, https://doi.org/10.99999/teste.treino.93399.",
+   "item": "it009"
+  },
+  {
+   "indice": 7,
+   "texto": "Hörle, Alban, u. a. „Mich später offen einfach reiten Stadt Katze sicher hart neu“. One Health, Bd. 38, Nr. 11, 1981, S. 170–78.",
+   "item": "it022"
+  },
+  {
+   "indice": 8,
+   "texto": "———. „Name langsam Fisch Nase Geld nichts wahr“. Revista de Saúde Pública, Bd. 74, Nr. 10, 1981, S. 798–805, https://doi.org/10.99999/teste.treino.26269.",
+   "item": "it021"
+  },
+  {
+   "indice": 9,
+   "texto": "Jäkel, Heidemarie, u. a. „Bauer mögen da nur arbeiten verkaufen er Schüler Garten draußen Sohn“. Revue d’Épidémiologie et de Santé Publique, Bd. 53, Nr. 6, 2023, S. 156–72, https://doi.org/10.99999/teste.treino.24675.",
+   "item": "it015"
+  },
+  {
+   "indice": 10,
+   "texto": "Klemm, Bertram. „Gott aber neben Küche sonst früh Vater Sonntag Schule sehr“. Revista de Saúde Pública, Bd. 67, Nr. 7, 2019, S. 184–92, https://doi.org/10.99999/teste.treino.26698.",
+   "item": "it011"
+  },
+  {
+   "indice": 11,
+   "texto": "Kruschwitz, Lutz, u. a. „Leben Tante Abend sehen arbeiten müssen drehen frei denn sich mal warm ich gestern“. Revista de Saúde Pública, Bd. 5, Nr. 12, 1986, S. 787–807.",
+   "item": "it010"
+  },
+  {
+   "indice": 12,
+   "texto": "Lehmann, Utz, u. a. „Zeit neun Junge verstecken Teller Fisch Auto Zahl Schuh Geburtstag schwer grün alle“. Epidemiologia e Serviços de Saúde, Bd. 56, Nr. 1, 1985, S. 546–56.",
+   "item": "it018"
+  },
+  {
+   "indice": 13,
+   "texto": "Mude-Gehringer, Violetta. Seit schwarz verlieren kennen schreien Tier Bett gar. Eimer Bender GmbH, 1980.",
+   "item": "it000"
+  },
+  {
+   "indice": 14,
+   "texto": "Nguyen, Thi Hoa. Tier laufen antworten packen ohne deshalb ging Hase. Preiß, 2002.",
+   "item": "it005"
+  },
+  {
+   "indice": 15,
+   "texto": "Organização Pan-Americana da Saúde. Alle wohnen Winter bekommen Ende fest wohnen deshalb damit dürfen. 2008, https://exemplo-treino.org/7891.",
+   "item": "it012"
+  },
+  {
+   "indice": 16,
+   "texto": "Park, Seo-yeon, u. a. Los lange finden sechs ich gar. Hornig Roht AG & Co. KGaA, 1998.",
+   "item": "it004"
+  },
+  {
+   "indice": 17,
+   "texto": "Schleich, Heide. „Wiese wichtig erklären Brot bis“. Epidemiologia e Serviços de Saúde, Bd. 61, Nr. 3, 2014, S. 747–60, https://doi.org/10.99999/teste.treino.52999.",
+   "item": "it013"
+  },
+  {
+   "indice": 18,
+   "texto": "Tschentscher, Götz. „Minutenmir ohne Rad Baum offen fehlen Tag Fenster rennen“. Das Gesundheitswesen, Bd. 76, Nr. 8, 2000, S. 485–502, https://doi.org/10.99999/teste.treino.64978.",
+   "item": "it016"
+  },
+  {
+   "indice": 19,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. „Arbeiten waschen sonst Loch krank Dorf schenken vier“. One Health, Bd. 63, Nr. 1, 2011, S. 138–49, https://doi.org/10.99999/teste.treino.29416.",
+   "item": "it007"
+  },
+  {
+   "indice": 20,
+   "texto": "———. Gelb gab Herr. 2014, https://exemplo-treino.org/6519.",
+   "item": "it019"
+  },
+  {
+   "indice": 21,
+   "texto": "von Müller, Benjamin, und Giorgio Linke. „Wiese müde nicht wieder wenn wohnen reiten“. Revista de Saúde Pública, Bd. 38, Nr. 2, 2004, S. 348–61.",
+   "item": "it001"
+  },
+  {
+   "indice": 22,
+   "texto": "Wang, Xiaoming. Acht durch gleich See hören Opa verkaufen. Drub, 1977.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Gremião u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(von Müller und Linke; Kruschwitz u. a.; Beyer u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it010",
+    "it020"
+   ],
+   "referencias": [
+    21,
+    11,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, „Arbeiten waschen sonst Loch krank Dorf schenken vier“)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, „Arbeiten waschen sonst Loch krank Dorf schenken vier“)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lehmann u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tschentscher)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Barba Viñas und Walter)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mude-Gehringer)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Klemm)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jäkel u. a.; Virginia-Maryland College of Veterinary Medicine, „Arbeiten waschen sonst Loch krank Dorf schenken vier“; Flantz u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it007",
+    "it014"
+   ],
+   "referencias": [
+    9,
+    19,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hörle u. a., „Name langsam Fisch Nase Geld nichts wahr“)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jäkel u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Beyer u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mude-Gehringer)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(von Müller und Linke; Haute Autorité de Santé (France), „Nur letzte uns schnell schenken Spaß lernen halten Glas nein Zeitung stehen können sein Freund gewinnen“; Virginia-Maryland College of Veterinary Medicine, Gelb gab Herr)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it009",
+    "it019"
+   ],
+   "referencias": [
+    21,
+    6,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, „Arbeiten waschen sonst Loch krank Dorf schenken vier“; Park u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it004"
+   ],
+   "referencias": [
+    19,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), „Nur letzte uns schnell schenken Spaß lernen halten Glas nein Zeitung stehen können sein Freund gewinnen“; Mude-Gehringer)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it000"
+   ],
+   "referencias": [
+    6,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Blümel und Kostolzin)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Schleich)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen; Jäkel u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it015"
+   ],
+   "referencias": [
+    14,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), „Los ich das gefährlich“)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Schleich)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kruschwitz u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(von Müller und Linke)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hörle u. a., „Name langsam Fisch Nase Geld nichts wahr“)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lehmann u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(von Müller und Linke)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wang)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hörle u. a., „Mich später offen einfach reiten Stadt Katze sicher hart neu“)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(von Müller und Linke 80)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Park u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Beyer u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Park u. a.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Blümel und Kostolzin)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Voll denken Frau immer tragen schon letzte acht weg ging Freude"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

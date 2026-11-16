@@ -1,0 +1,688 @@
+{
+ "id": "reservado_vancouver_it-IT_erros",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "it-IT",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Andreozzi A. Speciale produrre questo affatto proporre smettere risposta. Epidemiologia e Serviços de Saúde. 1999;11(3):144–55.",
+   "item": "it015"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Galilei C. Madre aria giocare osservare fenomeno corsa compagnia servizio fermare. Das Gesundheitswesen. 2020;45(8):2–12. doi:10.99999/teste.reservado.45126",
+   "item": "it032"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Zhang J, Sordi C, Balbi L. Pesare vedere partecipare sereno fame enorme [Internet]. 2000 [citato 5 novembre 2026]. Disponibile su: https://exemplo-reservado.org/1474",
+   "item": "it003"
+  },
+  {
+   "indice": 3,
+   "texto": "5. Casarin S. Stringere ci bere serie tirare vivo giovane. One Health. 2011;26(3):296–313.",
+   "item": "it017"
+  },
+  {
+   "indice": 4,
+   "texto": "6. Lee J ho, Campano C. Confronto attuale animo chi sud gettare mantenere presto occorrere colpa intero professore rispondere. Revue d’Épidémiologie et de Santé Publique. 2001;54(8):84–102. doi:10.99999/teste.reservado.28230",
+   "item": "it004"
+  },
+  {
+   "indice": 5,
+   "texto": "7. Lussu N, Tarchetti N, Rensi R, Marconi A. Assumere chiave completamente scoprire fortuna sinistro felice disposizione. Pavone D’Alessandria: Gemito-Tognazzi s.r.l.; 2026.",
+   "item": "it030"
+  },
+  {
+   "indice": 6,
+   "texto": "9. Passalacqua E, Pedersoli F, Branciforte V, Chechi B. Battaglia in preoccupare largo mercato coscienza. Das Gesundheitswesen. 2019;11(11):273–84. doi:10.99999/teste.reservado.87640",
+   "item": "it013"
+  },
+  {
+   "indice": 7,
+   "texto": "10. Santé publique France. Formare azione dentro fuori espressione contento autorità volontà. Varano Borghi: Pisaroni SPA; 1993.",
+   "item": "it009"
+  },
+  {
+   "indice": 8,
+   "texto": "11. Fuseli V, Gelli M, Comboni L, Maderna A, Riccati M, Sandi G. Ma spesa pelle italiano cielo nemmeno. Gravina Di Catania: Visconti Group; 2000.",
+   "item": "it021"
+  },
+  {
+   "indice": 9,
+   "texto": "12. Barcaccia A, Castelli L, Chigi F, Fracci I. Figura vendere avvertire dividere favore pianta. Sasso Morello: Gemito e figli; 2019.",
+   "item": "it023"
+  },
+  {
+   "indice": 10,
+   "texto": "13. Secretaria Municipal da Saúde (Curitiba). Mamma saltare massimo sangue energia volgere [Internet]. 1996 [citato 7 novembre 2026]. Disponibile su: https://exemplo-reservado.org/9371",
+   "item": "it028"
+  },
+  {
+   "indice": 11,
+   "texto": "14. Alboni G. Sonno capitare immaginare valore amore. BMC Public Health. 1995;30(6):321–30. doi:10.99999/teste.reservado.21282",
+   "item": "it014"
+  },
+  {
+   "indice": 12,
+   "texto": "15. Organización Mundial de la Salud. Cambiare provincia ragazza stesso servire. San Maiano: Columbo e figli; 2022.",
+   "item": "it026"
+  },
+  {
+   "indice": 13,
+   "texto": "16. Le TH, Bondumier V, Micheletti L. Scena albergo giocare comunicazione morale importante. BMC Public Health. 2017;62(2):33–52. doi:10.99999/teste.reservado.19851",
+   "item": "it005"
+  },
+  {
+   "indice": 14,
+   "texto": "17. Øster A, Agostini G, Bellò G. Triste fabbrica misura tirare dunque dio giornata perciò liberare profondo speranza programma fenomeno. Das Gesundheitswesen. 1985;64(12):412–6. doi:10.99999/teste.reservado.67555",
+   "item": "it006"
+  },
+  {
+   "indice": 15,
+   "texto": "18. Galilei C. Pubblico estate confronto scienza automobile [Internet]. 12814. 2020. Disponibile su: https://leis-reservado.gov/9044",
+   "item": "it033"
+  },
+  {
+   "indice": 16,
+   "texto": "19. Marinetti-Vismara L, Pisaroni E. Giudizio trarre arma da presto loro tirare possibile disporre dedicare meglio levare [Internet]. 973. 2000. Disponibile su: https://leis-reservado.gov/4680",
+   "item": "it000"
+  },
+  {
+   "indice": 17,
+   "texto": "20. Oliboni S. Bagno milione conseguenza posto limitare dichiarare sino bambino valle. Villetta Barrea: Piane, Folliero e Manacorda Group.",
+   "item": "it031"
+  },
+  {
+   "indice": 18,
+   "texto": "21. Bonet Checa C, Rossellini B, Santoro P, Cignaroli E. Permettere grave passato strano centrale pietà internazionale [Internet]. 2011 [citato 7 novembre 2026]. Disponibile su: https://exemplo-reservado.org/3581",
+   "item": "it002"
+  },
+  {
+   "indice": 19,
+   "texto": "22. Minas Gerais (Estado). Tentare sorriso sbagliare elettrico preferire caro richiedere segretario marito persona. BMC Public Health. 2009;57(1):562–78. doi:10.99999/teste.reservado.79986",
+   "item": "it007"
+  },
+  {
+   "indice": 20,
+   "texto": "23. Bundesinstitut für Risikobewertung. Massa occorrere compagnia nazione coscienza prendere completamente spingere scusare importare sangue luce suonare [Internet]. 14356. 2005. Disponibile su: https://leis-reservado.gov/4511",
+   "item": "it010"
+  },
+  {
+   "indice": 21,
+   "texto": "24. Agenzia Italiana del Farmaco. Gesto proposta almeno proposito domanda attorno finestra [Internet]. 1274. 1981. Disponibile su: https://leis-reservado.gov/3077",
+   "item": "it020"
+  },
+  {
+   "indice": 22,
+   "texto": "25. Borroni F, Scandone U, Binaghi N. Sperare gamba passare conoscere durante legge notizia diverso. BMC Public Health. 2013;5(2):7–24.",
+   "item": "it025"
+  },
+  {
+   "indice": 23,
+   "texto": "26. Secretaria Municipal da Saúde (Curitiba). Bruciare istante braccio pietra organizzare dinanzi pensare finestra assoluto discutere provare piazza prova chiave riportare [Internet]. 2008 [citato 9 novembre 2026]. Disponibile su: https://exemplo-reservado.org/6530",
+   "item": "it019"
+  },
+  {
+   "indice": 24,
+   "texto": "27. Minas Gerais (Estado). Accorgersi oramai europeo figurare dentro decidere età nero. Epidemiologia & Prevenzione. 2024;42(7):621–35.",
+   "item": "it008"
+  },
+  {
+   "indice": 25,
+   "texto": "28. Morucci T. Esperienza presente capitare gioco completamente che. In: Romano G, curatore. Libro mandare svegliare duro arma passare infine mese caffè dottore certamente. Vighizzolo: Cadorna, Saracino e Papafava SPA; 1980. p. 98–113.",
+   "item": "it029"
+  },
+  {
+   "indice": 26,
+   "texto": "29. Agência Nacional de Vigilância Sanitária (Brasil). Minuto utile ottenere medesimo nazionale piuttosto divenire signore ciò necessità. Bortigali: Raurica Group; 1990.",
+   "item": "it011"
+  },
+  {
+   "indice": 27,
+   "texto": "30. Emo R, Trebbi A, Toscani S. Qua donna preoccupare scomparire secolo preoccupare zona nascondere corso assumere tale attimo inverno. Revista de Saúde Pública. 1979;79(5):93–8. doi:10.99999/teste.reservado.87559",
+   "item": "it022"
+  },
+  {
+   "indice": 28,
+   "texto": "31. Zarlino A. Quanto origine permettere rapido addirittura accanto pesare diretto sguardo affrontare. Sismano: Volterra s.r.l.; 1998.",
+   "item": "it027"
+  },
+  {
+   "indice": 29,
+   "texto": "32. Santé publique France. Vestito principe né lo inoltre partire bambina [Internet]. 13173. 1990. Disponibile su: https://leis-reservado.gov/3562",
+   "item": "it012"
+  },
+  {
+   "indice": 30,
+   "texto": "33. Foscari G, Pratesi G, Faranda R, Barbarigo M. Serio gruppo minimo voglia avvocato paese piazza rendere lago segreto abbastanza [Internet]. 8695. 1994. Disponibile su: https://leis-reservado.gov/7006",
+   "item": "it018"
+  },
+  {
+   "indice": 31,
+   "texto": "34. Australian Institute of Health and Welfare (Australia). Facile rapido disposizione sino [Internet]. 2012 [citato 13 novembre 2026]. Disponibile su: https://exemplo-reservado.org/9153",
+   "item": "it016"
+  },
+  {
+   "indice": 32,
+   "texto": "35. Camilleri-Righi I, Branciforte V, Acerbi M. Salutare animale ricordo attività ragazza cittadino pietà addosso. Das Gesundheitswesen. 1985;63(12):289–99. doi:10.99999/teste.reservado.90938",
+   "item": "extra0"
+  },
+  {
+   "indice": 33,
+   "texto": "36. de Ruberto R, Infantino A, Emanuelli M, Lucchesi A. Principale dunque abito sede perciò. Lama Polesine: Bianchi-Druso s.r.l.; 1992.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Galilei (2)",
+   "tipo": "narrativa",
+   "itens": [
+    "it032"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4–6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it017",
+    "it004"
+   ],
+   "referencias": [
+    null,
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it013"
+   ],
+   "referencias": [
+    null,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12,13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it028"
+   ],
+   "referencias": [
+    9,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it024"
+   ],
+   "referencias": [
+    13,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it033"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,19,20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it032",
+    "it031"
+   ],
+   "referencias": [
+    16,
+    1,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bonet Checa et al. (21)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25,26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it019"
+   ],
+   "referencias": [
+    22,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Minas Gerais (Estado) (27)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14,16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it014"
+   ],
+   "referencias": [
+    13,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(31)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(32)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19,33,34)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it018",
+    "it016"
+   ],
+   "referencias": [
+    16,
+    30,
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14,21,25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it014",
+    "it025"
+   ],
+   "referencias": [
+    18,
+    11,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Zhang et al. (3)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(4–6)",
+   "item": "it001"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(8,9)",
+   "item": "it024"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(8,16)",
+   "item": "it024"
+  },
+  {
+   "ponto": "E",
+   "referencia": 32,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 33,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Fianco addosso fra affrontare solito romano vicino insomma tavola stampa attendere pace preparare qualunque"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

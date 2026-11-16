@@ -1,0 +1,551 @@
+{
+ "id": "treino_chicago-ad_it-IT_perturbado",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "it-IT",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Bartoli, Federico. 2013. «Ragazzo stella rimanere saltare distanza paese entro favore piano riconoscere parola disposizione produrre passare piano giro». Brunello s.r.l.",
+   "item": "it013"
+  },
+  {
+   "indice": 1,
+   "texto": "Beffa, Pasquale del, Napoleone Garrone, Telemaco Guidone, e Gino Lombardo. 2013. «Ferro condurre stesso vita vino occorrere». Revue d’Épidémiologie et de Santé Publique 73 (12): 494–503.",
+   "item": "it001"
+  },
+  {
+   "indice": 2,
+   "texto": "Botticelli, Antonina. 2014. «Lingua terzo tendere raggiungere». https://exemplo-treino.org/2505.",
+   "item": "it012"
+  },
+  {
+   "indice": 3,
+   "texto": "Cantare creare aiuto attesa ricevere concetto bambina, Legislazione No. 3860 (1984). https://leis-treino.gov/5379.",
+   "item": "it015"
+  },
+  {
+   "indice": 4,
+   "texto": "Casadei, Delfino, Benvenuto Filzi, e Giuseppina Toscanini. 1997. «Distinguere posare tenere perché scrittore notevole largo raccontare». Das Gesundheitswesen 37 (8): 356–68. https://doi.org/10.99999/teste.treino.88210.",
+   "item": "it011"
+  },
+  {
+   "indice": 5,
+   "texto": "Choi, Ji-ho, Telemaco Ajello, Ricciotti Salvini, e Sonia Luria. 1985. «Passare permettere troppo smettere favore croce bianco importare legare». BMC Public Health 54 (12): 48–64. https://doi.org/10.99999/teste.treino.43947.",
+   "item": "it004"
+  },
+  {
+   "indice": 6,
+   "texto": "Cuda, Gioacchino, Serafina Lombroso, Ottavio Farnese, e Nicoletta Accardo. 1979. «Desiderare arrestare sonno settimana volontà messa intanto elemento». Epidemiologia e Serviços de Saúde 51 (10): 459–63. https://doi.org/10.99999/teste.treino.58146.",
+   "item": "it021"
+  },
+  {
+   "indice": 7,
+   "texto": "Faugno-Monte, Camillo, Alberico Benussi, e Lamberto Giannone. 2006. Giungere macchina provare evitare dopo spiegare figurare punta malattia notare ma. Piacentini-Casagrande SPA.",
+   "item": "it000"
+  },
+  {
+   "indice": 8,
+   "texto": "Galtarossa, Michela. 1978. «Fine lira armare sforzo ministro poco gridare profondo luogo confessare sacro». Cadernos de Saúde Pública 71 (1): 662–68. https://doi.org/10.99999/teste.treino.28098.",
+   "item": "it018"
+  },
+  {
+   "indice": 9,
+   "texto": "Giorgetti, Rosina, Elladio Casini, Salvi Foa, e Lina Gucci. 2001. «Cortile anima insistere perciò mente viso trarre dimenticare». BMC Public Health 47 (3): 675–81.",
+   "item": "it023"
+  },
+  {
+   "indice": 10,
+   "texto": "Iannelli, Marissa. 1980. Vincere mancare madre necessario maggiore campagna. Calarco-Porcellato s.r.l.",
+   "item": "it020"
+  },
+  {
+   "indice": 11,
+   "texto": "Instituto Nacional de Câncer (Brasil). 2024. «Pesare gamba provvedere nemico dire». Journal of the American Medical Informatics Association 62 (7): 715–20.",
+   "item": "it008"
+  },
+  {
+   "indice": 12,
+   "texto": "Istituto Superiore di Sanità. 1989. «Morire quello elemento freddo prato». In Leggero giungere attenzione dovere coraggio diventare, a cura di Rossana Sagese. Condoleo e figli.",
+   "item": "it007"
+  },
+  {
+   "indice": 13,
+   "texto": "Liu, Xiaoming. 2020. Partire sangue giallo riempire monte fuori ragione superiore iniziare anche. Comboni-Vidoni e figli.",
+   "item": "it003"
+  },
+  {
+   "indice": 14,
+   "texto": "Monte, Antonella, Romana Beccaria, Santino Capone, Camillo Scarfoglio, Fabrizia Fantini, e Alessandra Zecchini. s.d. «Processo duro sbagliare autore esistere nave cielo padrone». Revista de Saúde Pública 61 (10): 887–905. https://doi.org/10.99999/teste.treino.87174.",
+   "item": "it026"
+  },
+  {
+   "indice": 15,
+   "texto": "Organização Pan-Americana da Saúde. 2016. «Certo credere compagno davvero aggiungere francese fra terzo creare nascondere albero». https://exemplo-treino.org/5204.",
+   "item": "it022"
+  },
+  {
+   "indice": 16,
+   "texto": "Pereira Barranco, Guadalupe. 1997. «Fiume russo politico visita difficoltà godere alto eh finire almeno stesso malattia suonare». https://exemplo-treino.org/4820.",
+   "item": "it002"
+  },
+  {
+   "indice": 17,
+   "texto": "Pertini, Vittorio, Leopoldo Gaggini, Lina Sinisi, Nadia Modigliani, Cirillo Aulenti, e Patrizia Bova. 2019. «Distinguere invece porto diffondere finestra». Preventive Veterinary Medicine 59 (5): 368–76. https://doi.org/10.99999/teste.treino.24782.",
+   "item": "it019"
+  },
+  {
+   "indice": 18,
+   "texto": "Prada, Eliana, Cecilia Pulci, e Beatrice Leonetti. 2008. «Massimo caro importanza ragazzo cambiare stazione minore perfetto aiuto rimanere massimo». In Costruire personale sonno presenza affatto mare frutto colpo fiume rientrare croce ricordo assicurare eppure guardia sognare, a cura di Caterina Salvo. Zola-Ottino SPA.",
+   "item": "it016"
+  },
+  {
+   "indice": 19,
+   "texto": "Rapisardi, Bruno, Uberto Geraci, Gustavo Marrone, Evangelista Leoncavallo, Emma Mazzanti, e Armando Renzi. 1993. «Scuola stagione servire più ieri esempio». Cadernos de Saúde Pública 5 (4): 579–97.",
+   "item": "it025"
+  },
+  {
+   "indice": 20,
+   "texto": "Scaramucci, Annibale, e Alfredo Florio. 2016. Provincia vento girare tuo breve estendere grazie dovere stampa grosso privato necessario capo neanche per. Disdero, Curatoli e Squarcione SPA.",
+   "item": "it014"
+  },
+  {
+   "indice": 21,
+   "texto": "Speri, Danilo. 2014a. Inglese insistere speranza direzione medio economico internazionale ricchezza possedere perdere. Travaglia-Majewski SPA.",
+   "item": "it027"
+  },
+  {
+   "indice": 22,
+   "texto": "Speri, Danilo. 2014b. «Sicurezza ciò corpo mandare gettare mantenere effetto uccidere avanti immaginare tentare». Medical Mycology 9 (11): 389–94. https://doi.org/10.99999/teste.treino.43816.",
+   "item": "it028"
+  },
+  {
+   "indice": 23,
+   "texto": "Stucchi, Antonietta, e Francesca Pepe. 2017. «Veramente dio vostro merito risultare affatto uccidere aumentare cominciare scena continuare certamente stanco maggiore nazione esporre». Cadernos de Saúde Pública 69 (11): 554–60. https://doi.org/10.99999/teste.treino.88489.",
+   "item": "it017"
+  },
+  {
+   "indice": 24,
+   "texto": "Tran, Thi Hoa, Vanessa Monicelli, Marcella Geraci, e Giovanna Grifeo. 1991. «Fondare direttore origine centro ricchezza calcio personaggio ne ogni». In Desiderio ciò speranza fermo secondo periodo leggero chissà, a cura di Guido Ginesio. Trotta, Marenzio e Borgia SPA.",
+   "item": "it005"
+  },
+  {
+   "indice": 25,
+   "texto": "Travaglia, Antonino, Gianpietro Zampa, Giuseppe Mocenigo, e Pomponio Sauro. 2014. «Noto partito ripetere condurre riprendere». BMC Public Health 71 (5): 499–516. https://doi.org/10.99999/teste.treino.20863.",
+   "item": "it024"
+  },
+  {
+   "indice": 26,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. 1985. «Ufficio dimenticare guardare risultato medio fuori tuttavia colpa avvertire attore». https://exemplo-treino.org/9099.",
+   "item": "it009"
+  },
+  {
+   "indice": 27,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. 2026. «Genere importanza parte suo ridere direzione ritenere ogni avvertire chissà». https://exemplo-treino.org/2645.",
+   "item": "it010"
+  },
+  {
+   "indice": 28,
+   "texto": "Volere caro straniero ne pianta, Legislazione No. 14660 (1980). https://leis-treino.gov/8659.",
+   "item": "it006"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Botticelli (2014)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Botticelli 2014; Pertini et al. 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it019"
+   ],
+   "referencias": [
+    2,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Botticelli 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Stucchi e Pepe 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Liu 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Botticelli 2014; Galtarossa 1978; Organização Pan-Americana da Saúde 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it018",
+    "it022"
+   ],
+   "referencias": [
+    2,
+    8,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(del Beffa et al. 2013; Volere caro straniero ne pianta 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it006"
+   ],
+   "referencias": [
+    1,
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Monte et al., s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Faugno-Monte et al. (2006)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pereira Barranco 1997; Rapisardi et al. 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it025"
+   ],
+   "referencias": [
+    16,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Volere caro straniero ne pianta 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cantare creare aiuto attesa ricevere concetto bambina 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Iannelli 1980; Bartoli 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it013"
+   ],
+   "referencias": [
+    10,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Volere caro straniero ne pianta 1980; Cuda et al. 1979; Iannelli 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it021",
+    "it020"
+   ],
+   "referencias": [
+    28,
+    6,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Casadei et al. 1997; Iannelli 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it020"
+   ],
+   "referencias": [
+    4,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Casadei et al. (1997)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Galtarossa 1978; Casadei et al. 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it011"
+   ],
+   "referencias": [
+    8,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Prada et al. 2008; Speri 2014a; Travaglia et al. 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it027",
+    "it024"
+   ],
+   "referencias": [
+    18,
+    21,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil) 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Speri 2014b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rapisardi et al. 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi et al. 1985; Virginia-Maryland College of Veterinary Medicine 1985; Giorgetti et al. 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it009",
+    "it023"
+   ],
+   "referencias": [
+    5,
+    26,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pereira Barranco 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran et al. 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Scaramucci e Florio 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pereira Barranco 1997, 247)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(del Beffa et al. 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Tran et al. 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Cuda et al. 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Rapisardi et al. (1993)",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Grazia terreno amare significare stesso durante nessuno suonare ieri inoltre campo resistere serio perché"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,961 @@
+{
+ "id": "elife-00184_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00184.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Adams PD, Afonine PV, Bunkóczi G, Chen VB, Davis IW, Echols N, et al.. 2010. PHENIX: a comprehensive Python-based system for macromolecular structure solution. Acta Crystallogr D Biol Crystallogr 66:213–221.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Alam A, Shi N, Jiang Y. 2007. Structural insight into Ca2+ specificity in tetrameric cation channels. Proc Natl Acad Sci USA 104:15334–15339.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Albright RA, Ibar JL, Kim CU, Gruner SM, Morais-Cabral JH. 2006. The RCK domain of the KtrAB K+ transporter: multiple conformations of an octameric ring. Cell 126:1147–1159.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Bakker EP, Booth IR, Dinnbier U, Epstein W, Gajewska A. 1987. Evidence for multiple K+ export systems in Escherichia coli. J Bacteriol 169:3743–3749.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Bao L, Kaldany C, Holmstrand EC, Cox DH. 2004. Mapping the BKCa channel's “Ca2+ bowl”: side-chains essential for Ca2+ sensing. J Gen Physiol 123:475–489.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Bellamacina CR. 1996. The nicotinamide dinucleotide binding motif: a comparison of nucleotide binding proteins. FASEB J 10:1257–1269.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Collaborative Computational Project, Number 4. 1994. The CCP4 suite: programs for protein crystallography. Acta Crystallogr D Biol Crystallogr 50:760–763.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "DeLano WL. 2002. The PyMOL molecular graphics system.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Dong J, Shi N, Berke I, Chen L, Jiang Y. 2005. Structures of the MthK RCK domain and the effect of Ca2+ on gating ring stability. J Biol Chem 280:41716–41724.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Doyle DA, Morais Cabral J, Pfuetzner RA, Kuo A, Gulbis JM, Cohen SL, et al.. 1998. The structure of the potassium channel: molecular basis of K+ conduction and selectivity. Science 280:69–77.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Emsley P, Cowtan K. 2004. Coot: model-building tools for molecular graphics. Acta Crystallogr D Biol Crystallogr 60:2126–2132.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Hansen SB, Tao X, MacKinnon R. 2011. Structural basis of PIP2 activation of the classical inward rectifier K+ channel Kir2.2. Nature 477:495–498.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Heginbotham L, Kolmakova-Partensky L, Miller C. 1998. Functional reconstitution of a prokaryotic K+ channel. J Gen Physiol 111:741–749.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Heginbotham L, LeMasurier M, Kolmakova-Partensky L., Miller C. 1999. Single streptomyces lividans K(+) channels: functional asymmetries and sidedness of proton activation. J Gen Physiol 114:551–560.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Ho BK, Gruswitz F. 2008. HOLLOW: generating accurate representations of channel and interior surfaces in molecular structures. BMC Struct Biol 8:49.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Hou S, Heinemann SH, Hoshi T. 2009. Modulation of BKCa channel gating by endogenous signaling molecules. Physiology (Bethesda) 24:26–35.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Jiang Y, Lee A, Chen J, Cadene M, Chait BT, MacKinnon R. 2002a. Crystal structure and mechanism of a calcium-gated potassium channel. Nature 417:515–522.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Jiang Y, Lee A, Chen J, Cadene M, Chait BT, MacKinnon R. 2002b. The open pore conformation of potassium channels. Nature 417:523–526.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Jiang Y, Pico A, Cadene M, Chait BT, MacKinnon R. 2001. Structure of the RCK domain from the E. coli K+ channel and demonstration of its presence in the human BK channel. Neuron 29:593–601.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Kuo MM, Haynes WJ, Loukin SH, Kung C., Saimi Y. 2005. Prokaryotic K(+) channels: from crystal structures to diversity. FEMS Microbiol Rev 29:961–985.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Long SB, Campbell EB, Mackinnon R. 2005. Crystal structure of a mammalian voltage-dependent Shaker family K+ channel. Science 309:897–903.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Long SB, Tao X, Campbell EB, MacKinnon R. 2007. Atomic structure of a voltage-dependent K+ channel in a lipid membrane-like environment. Nature 450:376–382.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "McRee DE. 1999. XtalView/Xfit–A versatile program for manipulating atomic coordinates and electron density. J Struct Biol 125:156–165.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Munro AW, Ritchie GY, Lamb AJ, Douglas RM, Booth IR. 1991. The cloning and DNA sequence of the gene for the glutathione-regulated potassium-efflux system KefC of Escherichia coli. Mol Microbiol 5:607–616.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Nakamura T, Yuda R, Unemoto T, Bakker EP. 1998. KtrAB, a new type of bacterial K(+)-uptake system from Vibrio alginolyticus. J Bacteriol 180:3491–3494.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Otwinowski Z, Minor W. 1997. Processing of X-ray diffraction data collected in oscillation mode. Methods Enzymol 276:307–326.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Roosild TP, Miller S, Booth IR, Choe S. 2002. A mechanism of regulating transmembrane potassium flux through a ligand-mediated conformational switch. Cell 109:781–791.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Rossmann MG, Moras D, Olsen KW. 1974. Chemical and biological evolution of nucleotide-binding protein. Nature 250:194–199.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Salkoff L, Butler A, Ferreira G, Santi C, Wei A. 2006. High-conductance potassium channels of the SLO family. Nat Rev Neurosci 7:921–931.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Sauer DB, Zeng W, Raghunathan S, Jiang Y. 2011. Protein interactions central to stabilizing the K+ channel selectivity filter in a four-sited configuration for selective K+ permeation. Proc Natl Acad Sci USA 108:16634–16639.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Schlösser A, Hamann A, Bossemeyer D, Schneider E, Bakker EP. 1993. NAD+ binding to the Escherichia coli K(+)-uptake protein TrkA and sequence similarity between TrkA and domains of a family of dehydrogenases suggest a role for NAD+ in bacterial transport. Mol Microbiol 9:533–543.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Schreiber M, Wei A, Yuan A, Gaut J, Saito M, Salkoff L. 1998. Slo3, a novel pH-sensitive K+ channel from mammalian spermatocytes. J Biol Chem 273:3509–3516.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Shi J, Krishnamoorthy G, Yang Y, Hu L, Chaturvedi N, Harilal D, et al.. 2002. Mechanism of magnesium activation of calcium-activated potassium channels. Nature 418:876–880.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Shi N, Zeng W, Ye S, Li Y, Jiang Y. 2011. Crucial points within the pore as determinants of K+ channel conductance and gating. J Mol Biol 411:27–35.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Tamsett TJ, Picchione KE, Bhattacharjee A. 2009. NAD+ activates KNa channels in dorsal root ganglion neurons. J Neurosci 29:5127–5134.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Whorton MR, MacKinnon R. 2011. Crystal structure of the mammalian GIRK2 K+ channel and gating regulation by G proteins, PIP2, and sodium. Cell 147:199–208.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Wu Y, Yang Y, Ye S, Jiang Y. 2010. Structure of the gating ring from the human large-conductance Ca(2+)-gated K(+) channel. Nature 466:393–397.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Xia XM, Zeng X, Lingle CJ. 2002. Multiple regulatory sites in large-conductance calcium-activated potassium channels. Nature 418:880–884.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Yang H, Shi J, Zhang G, Yang J, Delaloye K, Cui J. 2008. Activation of Slo1 BK channels by Mg2+ coordinated between the voltage sensor and RCK1 domains. Nat Struct Mol Biol 15:1152–1159.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Ye S, Li Y, Chen L, Jiang Y. 2006. Crystal structures of a ligand-free MthK gating ring: insights into the ligand gating mechanism of K(+) channels. Cell 126:1161–1173.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Ye S, Li Y, Jiang Y. 2010. Novel insights into K+ selectivity from high-resolution structures of an open K+ channel pore. Nat Struct Mol Biol 17:1019–1023.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Yuan P, Leonetti MD, Hsiung Y, MacKinnon R. 2011. Open structure of the Ca2+ gating ring in the high-conductance Ca2+-activated K+ channel. Nature 481:94–97.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Yuan P, Leonetti MD, Pico AR, Hsiung Y, MacKinnon R. 2010. Structure of the human BK channel Ca2+-activation apparatus at 3.0 A resolution. Science 329:182–186.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Zeng XH, Xia XM, Lingle CJ. 2005. Divalent cation sensitivity of BK channel activation supports the existence of three distinct binding sites. J Gen Physiol 125:273–286.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Zhang X, Solaro CR, Lingle CJ. 2001. Allosteric regulation of BK channel gating by Ca(2+) and Mg(2+) through a nonselective, low affinity divalent cation site. J Gen Physiol 118:607–636.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Zhou Y, Morais-Cabral JH, Kaufman A, MacKinnon R. 2001. Chemistry of ion coordination and hydration revealed by a K+ channel-Fab complex at 2.0 A resolution. Nature 414:43–48.",
+   "item": "bib46"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Salkoff et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2002a",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuo et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schlösser et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nakamura et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bakker et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Munro et al., 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roosild et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dong et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2002a",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Albright et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2002a",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shi et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Xia et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bao et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zeng et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hou et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2002a",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roosild et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Albright et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ye et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yuan et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yuan et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rossmann et al., 1974",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bellamacina, 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roosild et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Albright et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shi et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sauer et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shi et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Long et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Doyle et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhou et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hansen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Whorton and MacKinnon, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ye et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yuan et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2002a",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dong et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2002b",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Long et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ye et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ye et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yuan et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schreiber et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tamsett et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Otwinowski and Minor, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "McRee, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Collaborative Computational Project, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Emsley and Cowtan, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Adams et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "DeLano, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ho and Gruswitz, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Heginbotham et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Alam et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Heginbotham et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shi et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

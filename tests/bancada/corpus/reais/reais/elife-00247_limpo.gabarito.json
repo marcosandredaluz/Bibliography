@@ -1,0 +1,1165 @@
+{
+ "id": "elife-00247_limpo",
+ "estilo": "jats-elife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00247.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Castresana J. 2000. Selection of conserved blocks from multiple alignments for their use in phylogenetic analysis. Mol Biol Evol 17:540–552. doi: 10.1093/oxfordjournals.molbev.a026334",
+   "item": "bib42"
+  },
+  {
+   "indice": 1,
+   "texto": "Eisenhoffer GT, Kang H, Sánchez Alvarado A. 2008. Molecular analysis of stem cells and their descendants during cell turnover and regeneration in the planarian Schmidtea mediterranea. Cell Stem Cell 3:327–339. doi: 10.1016/j.stem.2008.07.002",
+   "item": "bib39"
+  },
+  {
+   "indice": 2,
+   "texto": "Gaviño MA, Reddien PW. 2011. A Bmp/Admp regulatory circuit controls maintenance and regeneration of dorsal-ventral polarity in planarians. Curr Biol 21:294–299. doi: 10.1016/j.cub.2011.01.017",
+   "item": "bib1"
+  },
+  {
+   "indice": 3,
+   "texto": "Gurley KA, Elliott SA, Simakov O, Schmidt HA, Holstein TW, Sánchez Alvarado A. 2010. Expression of secreted Wnt pathway components reveals unexpected complexity of the planarian amputation response. Dev Biol 347:24–39. doi: 10.1016/j.ydbio.2010.08.007",
+   "item": "bib2"
+  },
+  {
+   "indice": 4,
+   "texto": "Hayashi T, Asami M, Higuchi S, Shibata N, Agata K. 2006. Isolation of planarian X-ray-sensitive stem cells by fluorescence-activated cell sorting. Dev Growth Differ 48:371–380. doi: 10.1111/j.1440-169X.2006.00876.x",
+   "item": "bib3"
+  },
+  {
+   "indice": 5,
+   "texto": "Hemmati-Brivanlou A, Kelly OG, Melton DA. 1994. Follistatin, an antagonist of activin, is expressed in the Spemann organizer and displays direct neuralizing activity. Cell 77:283–295. doi: 10.1016/0092-8674(94)90320-4",
+   "item": "bib4"
+  },
+  {
+   "indice": 6,
+   "texto": "Higgins DG. 1994. CLUSTAL V: multiple alignment of DNA and protein sequences. Methods Mol Biol 25:307–318. doi: 10.1385/0-89603-276-0:307",
+   "item": "bib40"
+  },
+  {
+   "indice": 7,
+   "texto": "Ho DM, Whitman M. 2008. TGF-ß signaling is required for multiple processes during Xenopus tail regeneration. Dev Biol 315:203–216. doi: 10.1016/j.ydbio.2007.12.031",
+   "item": "bib5"
+  },
+  {
+   "indice": 8,
+   "texto": "Hübner G, Hu Q, Smola H, Werner S. 1996. Strong induction of activin expression after injury suggests an important role of activin in wound repair. Dev Biol 173:490–498. doi: 10.1006/dbio.1996.0042",
+   "item": "bib6"
+  },
+  {
+   "indice": 9,
+   "texto": "Huelsenbeck JP, Ronquist F. 2001. MRBAYES: Bayesian inference of phylogenetic trees. Bioinformatics 17:754–755. doi: 10.1093/bioinformatics/17.8.754",
+   "item": "bib43"
+  },
+  {
+   "indice": 10,
+   "texto": "Jaźwińska A, Badakov R, Keating MT. 2007. Activin-ßA signaling is required for zebrafish fin regeneration. Curr Biol 17:1390–1395. doi: 10.1016/j.cub.2007.07.019",
+   "item": "bib7"
+  },
+  {
+   "indice": 11,
+   "texto": "Kogure K, Omata W, Kanzaki M, Zhang YQ, Yasuda H, Mine T, et al.. 1995. A single intraportal administration of follistatin accelerates liver regeneration in partially hepatectomized rats. Gastroenterology 108:1136–1142. doi: 10.1016/0016-5085(95)90212-0",
+   "item": "bib8"
+  },
+  {
+   "indice": 12,
+   "texto": "Kojima I, Maeshima A, Zhang YQ. 2001. Role of the activin-follistatin system in the morphogenesis and regeneration of the renal tubules. Mol Cell Endocrinol 180:179–182. doi: 10.1016/S0303-7207(01)00511-1",
+   "item": "bib9"
+  },
+  {
+   "indice": 13,
+   "texto": "Lapan SW, Reddien PW. 2012. Transcriptome analysis of the planarian eye identifies ovo as a specific regulator of eye regeneration. Cell Rep 2:294–307. doi: 10.1016/j.celrep.2012.06.018",
+   "item": "bib10"
+  },
+  {
+   "indice": 14,
+   "texto": "Lévesque M, Gatien S, Finnson K, Desmeules S, Villiard E, Pilote M, et al.. 2007. Transforming growth factor: ß signaling is essential for limb regeneration in axolotls. PLOS ONE 2:e1227. doi: 10.1371/journal.pone.0001227",
+   "item": "bib11"
+  },
+  {
+   "indice": 15,
+   "texto": "Liu J, Johnson K, Li J, Piamonte V, Steffy BM, Hsieh MH, et al.. 2011. Regenerative phenotype in mice with a point mutation in transforming growth factor ß type I receptor (TGFBR1). Proc Natl Acad Sci USA 108:14560–14565. doi: 10.1073/pnas.1111056108",
+   "item": "bib12"
+  },
+  {
+   "indice": 16,
+   "texto": "Molina MD, Neto A, Maeso I, Gómez-Skarmeta JL, Saló E, Cebrià F. 2011. Noggin and noggin-like genes control dorsoventral axis regeneration in planarians. Curr Biol 21:300–305. doi: 10.1016/j.cub.2011.01.016",
+   "item": "bib14"
+  },
+  {
+   "indice": 17,
+   "texto": "Molina MD, Saló E, Cebrià F. 2007. The BMP pathway is essential for re-specification and maintenance of the dorsoventral axis in regenerating and intact planarians. Dev Biol 311:79–94. doi: 10.1016/j.ydbio.2007.08.019",
+   "item": "bib13"
+  },
+  {
+   "indice": 18,
+   "texto": "Morgan TH. 1901. Regeneration.",
+   "item": "bib15"
+  },
+  {
+   "indice": 19,
+   "texto": "Mustoe TA, Pierce GF, Thomason A, Gramates P, Sporn MB, Deuel TF. 1987. Accelerated healing of incisional wounds in rats induced by transforming growth factor-beta. Science 237:1333–1336. doi: 10.1126/science.2442813",
+   "item": "bib16"
+  },
+  {
+   "indice": 20,
+   "texto": "Nakamura T, Takio K, Eto Y, Shibai H, Titani K, Sugino H. 1990. Activin-binding protein from rat ovary is follistatin. Science 247:836–838. doi: 10.1126/science.2106159",
+   "item": "bib17"
+  },
+  {
+   "indice": 21,
+   "texto": "Newmark PA, Sánchez Alvarado A. 2002. Not your father’s planarian: a classic model enters the era of functional genomics. Nat Rev Genet 3:210–219. doi: 10.1038/nrg759",
+   "item": "bib18"
+  },
+  {
+   "indice": 22,
+   "texto": "Orii H, Watanabe K. 2007. Bone morphogenetic protein is required for dorso-ventral patterning in the planarian Dugesia japonica. Dev Growth Differ 49:345–349. doi: 10.1111/j.1440-169X.2007.00931.x",
+   "item": "bib19"
+  },
+  {
+   "indice": 23,
+   "texto": "Pearson BJ, Eisenhoffer GT, Gurley KA, Rink JC, Miller DE, Sánchez Alvarado A. 2009. Formaldehyde-based whole-mount in situ hybridization method for planarians. Dev Dyn 238:443–450. doi: 10.1002/dvdy.21849",
+   "item": "bib20"
+  },
+  {
+   "indice": 24,
+   "texto": "Pellettieri J, Fitzgerald P, Watanabe S, Mancuso J, Green DR, Sánchez Alvarado A. 2010. Cell death and tissue remodeling in planarian regeneration. Dev Biol 338:76–85. doi: 10.1016/j.ydbio.2009.09.015",
+   "item": "bib21"
+  },
+  {
+   "indice": 25,
+   "texto": "Petersen CP, Reddien PW. 2009. A wound-induced Wnt expression program controls planarian regeneration polarity. Proc Natl Acad Sci USA 106:17061–17066. doi: 10.1073/pnas.0906823106",
+   "item": "bib22"
+  },
+  {
+   "indice": 26,
+   "texto": "Reddien PW, Bermange AL, Kicza AM, Sánchez Alvarado A. 2007. BMP signaling regulates the dorsal planarian midline and is needed for asymmetric regeneration. Development 134:4043–4051. doi: 10.1242/dev.007138",
+   "item": "bib26"
+  },
+  {
+   "indice": 27,
+   "texto": "Reddien PW, Bermange AL, Murfitt KJ, Jennings JR, Sánchez Alvarado A. 2005. Identification of genes needed for regeneration, stem cell function, and tissue homeostasis by systematic gene perturbation in planaria. Dev Cell 8:635–649. doi: 10.1016/j.devcel.2005.02.014",
+   "item": "bib24"
+  },
+  {
+   "indice": 28,
+   "texto": "Reddien PW, Oviedo NJ, Jennings JR, Jenkin JC, Sánchez Alvarado A. 2005. SMEDWI-2 is a PIWI-like protein that regulates planarian stem cells. Science 310:1327–1330. doi: 10.1126/science.1116110",
+   "item": "bib25"
+  },
+  {
+   "indice": 29,
+   "texto": "Reddien PW, Sánchez Alvarado A. 2004. Fundamentals of planarian regeneration. Annu Rev Cell Dev Biol 20:725–757. doi: 10.1146/annurev.cellbio.20.010403.095114",
+   "item": "bib23"
+  },
+  {
+   "indice": 30,
+   "texto": "Roberts-Galbraith RH, Newmark PA. 2013. Follistatin antagonizes activin signaling and acts with Notum to direct planarian head regeneration. Proc Natl Acad Sci USA 110:1363–1368. doi: 10.1073/pnas.1214053110",
+   "item": "bib27"
+  },
+  {
+   "indice": 31,
+   "texto": "Romero-Gallo J, Sozmen EG, Chytil A, Russell WE, Whitehead R, Parks WT, et al.. 2005. Inactivation of TGF-ß signaling in hepatocytes results in an increased proliferative response after partial hepatectomy. Oncogene 24:3028–3041. doi: 10.1038/sj.onc.1208475",
+   "item": "bib28"
+  },
+  {
+   "indice": 32,
+   "texto": "Ronquist F, Huelsenbeck JP. 2003. MrBayes 3: Bayesian phylogenetic inference under mixed models. Bioinformatics 19:1572–1574. doi: 10.1093/bioinformatics/btg180",
+   "item": "bib44"
+  },
+  {
+   "indice": 33,
+   "texto": "Russell WE, Coffey RJ, Ouellette AJ, Moses HL. 1988. Type beta transforming growth factor reversibly inhibits the early proliferative response to partial hepatectomy in the rat. Proc Natl Acad Sci USA 85:5126–5130. doi: 10.1073/pnas.85.14.5126",
+   "item": "bib29"
+  },
+  {
+   "indice": 34,
+   "texto": "Sakami S, Etter P, Reh TA. 2008. Activin signaling limits the competence for retinal regeneration from the pigmented epithelium. Mech Dev 125:106–116. doi: 10.1016/j.mod.2007.10.001",
+   "item": "bib30"
+  },
+  {
+   "indice": 35,
+   "texto": "Sánchez Alvarado A. 2000. Regeneration in the metazoans: why does it happen?. Bioessays 22:578–590. doi: 10.1002/(SICI)1521-1878(200006)22:6<578::AID-BIES11>3.0.CO;2-#",
+   "item": "bib31"
+  },
+  {
+   "indice": 36,
+   "texto": "Sandmann T, Vogg MC, Owlarn S, Boutros M, Bartscherer K. 2011. The head-regeneration transcriptome of the planarian Schmidtea mediterranea. Genome Biol 12:R76. doi: 10.1186/gb-2011-12-8-r76",
+   "item": "bib32"
+  },
+  {
+   "indice": 37,
+   "texto": "Scimone ML, Srivastava M, Bell GW, Reddien PW. 2011. A regulatory program for excretory system regeneration in planarians. Development 138:4387–4398. doi: 10.1242/dev.068098",
+   "item": "bib33"
+  },
+  {
+   "indice": 38,
+   "texto": "Sulyok S, Wankell M, Alzheimer C, Werner S. 2004. Activin: an important regulator of wound repair, fibrosis, and neuroprotection. Mol Cell Endocrinol 225:127–132. doi: 10.1016/j.mce.2004.07.011",
+   "item": "bib34"
+  },
+  {
+   "indice": 39,
+   "texto": "Thompson JD, Higgins DG, Gibson TJ. 1994. CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through sequence weighting, position-specific gap penalties and weight matrix choice. Nucleic Acids Res 22:4673–4680. doi: 10.1093/nar/22.22.4673",
+   "item": "bib41"
+  },
+  {
+   "indice": 40,
+   "texto": "Wagner DE, Wang IE, Reddien PW. 2011. Clonogenic neoblasts are pluripotent adult stem cells that underlie planarian regeneration. Science 332:811–816. doi: 10.1126/science.1203983",
+   "item": "bib35"
+  },
+  {
+   "indice": 41,
+   "texto": "Wenemoser D, Lapan SW, Wilkinson AW, Bell GW, Reddien PW. 2012. A molecular wound response program associated with regeneration initiation in planarians. Genes Dev 26:988–1002. doi: 10.1101/gad.187377.112",
+   "item": "bib37"
+  },
+  {
+   "indice": 42,
+   "texto": "Wenemoser D, Reddien PW. 2010. Planarian regeneration involves distinct stem cell responses to wounds and tissue absence. Dev Biol 344:979–991. doi: 10.1016/j.ydbio.2010.06.017",
+   "item": "bib36"
+  },
+  {
+   "indice": 43,
+   "texto": "Zhu J, Li Y, Lu A, Gharaibeh B, Ma J, Kobayashi T, et al.. 2011. Follistatin improves skeletal muscle healing after injury and disease through an interaction with muscle regeneration, angiogenesis, and fibrosis. Am J Pathol 179:915–930. doi: 10.1016/j.ajpath.2011.04.008",
+   "item": "bib38"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Sánchez Alvarado, 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Newmark and Sánchez Alvarado, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Morgan, 1901",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reddien and Sánchez Alvarado, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reddien and Sánchez Alvarado, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wagner et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reddien and Sánchez Alvarado, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pellettieri et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser and Reddien, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sandmann et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser and Reddien, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser and Reddien, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser and Reddien, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roberts-Galbraith and Newmark, 2013",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reddien and Sánchez Alvarado, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reddien et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roberts-Galbraith and Newmark, 2013",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roberts-Galbraith and Newmark, 2013",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reddien et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hayashi et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser and Reddien, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser and Reddien, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser and Reddien, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lapan and Reddien, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pellettieri et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pellettieri et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pellettieri et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reddien and Sánchez Alvarado, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pellettieri et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pellettieri et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Morgan, 1901",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reddien and Sánchez Alvarado, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gurley et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Petersen and Reddien, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gurley et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gurley et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nakamura et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hemmati-Brivanlou et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Molina et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Orii and Watanabe, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reddien et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gaviño and Reddien, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Molina et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roberts-Galbraith and Newmark, 2013",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roberts-Galbraith and Newmark, 2013",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nakamura et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hemmati-Brivanlou et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roberts-Galbraith and Newmark, 2013",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roberts-Galbraith and Newmark, 2013",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pellettieri et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser and Reddien, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wenemoser et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Russell et al., 1988",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kogure et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Romero-Gallo et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sakami et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kojima et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhu et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lévesque et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ho and Whitman, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mustoe et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hübner et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sulyok et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jaźwińska et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reddien et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reddien et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pearson et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reddien et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pellettieri et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Scimone et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "ANO",
+   "citacao": "Roberts-Galbraith and Newmark, 2013",
+   "item": "bib23",
+   "ano_referencia": "2004",
+   "nota": "divergência existente no artigo publicado"
+  },
+  {
+   "ponto": "E",
+   "referencia": 0,
+   "item": "bib42"
+  },
+  {
+   "ponto": "E",
+   "referencia": 1,
+   "item": "bib39"
+  },
+  {
+   "ponto": "E",
+   "referencia": 6,
+   "item": "bib40"
+  },
+  {
+   "ponto": "E",
+   "referencia": 9,
+   "item": "bib43"
+  },
+  {
+   "ponto": "E",
+   "referencia": 32,
+   "item": "bib44"
+  },
+  {
+   "ponto": "E",
+   "referencia": 39,
+   "item": "bib41"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

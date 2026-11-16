@@ -1,0 +1,585 @@
+{
+ "id": "treino_ieee_de-DE_perturbado",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] K.-U. Wulff, W. Löwer, und R. Koch II, „Natürlich erst schlimm weiter wohl gibt gestern hin letzte Schüler Wagen fangen schlecht verlieren nach“, Epidemiologia & Prevenzione, Bd. 48, Nr. 7, S. 498–518, doi: 10.99999/teste.treino.86490.",
+   "item": "it019"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] H. Klingelhöfer, „Schlimm Himmel schlagen einfach nein nie letzte zusammen seit andere“, Epidemiologia e Serviços de Saúde, Bd. 61, Nr. 12, S. 18–27, 1981.",
+   "item": "it021"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] E. Häring-Heidrich und I. Zänker, „Nah Mutter Sonne öffnen“. Zugegriffen: 4. November 2026. [Online]. Verfügbar unter: https://exemplo-treino.org/4714",
+   "item": "it000"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] H. Klingelhöfer, Hier nach Milch auf steigen Apfel Tier Tür. Schrobenhausen: Bonbach Mielcarek AG & Co. KGaA, 1981.",
+   "item": "it020"
+  },
+  {
+   "indice": 4,
+   "texto": "[5] R. Conradi, T. Hamann, W. Gieß, S. Tschentscher, J. Bachmann, und P. Gierschner, „Heiß zwischen Teller jeder Name ihm Licht laufen ging“, Revista de Saúde Pública, Bd. 34, Nr. 12, S. 539–556, 2017, doi: 10.99999/teste.treino.42727.",
+   "item": "it011"
+  },
+  {
+   "indice": 5,
+   "texto": "[6] G. Adler und D. Tlustek, „Jahr fressen kein fehlen fragen Weg warum“, Pergande Kramer Stiftung & Co. KG, Halberstadt, 2024.",
+   "item": "it014"
+  },
+  {
+   "indice": 6,
+   "texto": "[7] S. Hornig, „Stellen selbst Eltern Spaß verkaufen rot Schwester“, Journal of the American Medical Informatics Association, Bd. 76, Nr. 9, S. 75–85, 2018, doi: 10.99999/teste.treino.87062.",
+   "item": "it018"
+  },
+  {
+   "indice": 7,
+   "texto": "[8] E. Gumprich und R. Beer, „Damit zeigen beide Wiese natürlich bekommen Schüler“, Dehmel, Mittweida, 1983.",
+   "item": "it010"
+  },
+  {
+   "indice": 8,
+   "texto": "[9] A. Weimer, S. Rosenow, V. Wiek, P. Meister, C. Huhn, und M. Juncken, „Sonst dann lassen fallen hart Ding hart lernen in uns klettern er überall“, Epidemiologia e Serviços de Saúde, Bd. 20, Nr. 10, S. 89–105, 1993.",
+   "item": "it013"
+  },
+  {
+   "indice": 9,
+   "texto": "[10] F. Budig, E. Sontag, M. Roht, und W. Wähner, „Fertig doch Sommer“, Preventive Veterinary Medicine, Bd. 20, Nr. 5, S. 694–714, 1986, doi: 10.99999/teste.treino.66213.",
+   "item": "it015"
+  },
+  {
+   "indice": 10,
+   "texto": "[11] Istituto Superiore di Sanità, „Um Stück damit Mama ging werfen Baum Woche braun ihr Frau Pferd Zeit“. Zugegriffen: 11. November 2026. [Online]. Verfügbar unter: https://exemplo-treino.org/4328",
+   "item": "it016"
+  },
+  {
+   "indice": 11,
+   "texto": "[12] E. Beckmann, B. Täsche, H. Kraus, und O. Ebert, „Geben am hinein nein dich gefährlich sieht Wissen Affe Schnee ob“, Epidemiologia e Serviços de Saúde, Bd. 35, Nr. 2, S. 330–348, 1990, doi: 10.99999/teste.treino.28040.",
+   "item": "it012"
+  },
+  {
+   "indice": 12,
+   "texto": "[13] Z. di Mielcarek, A. Anders, und S. Jacobi Jäckel, „Essen unser gab vom nur Fenster Licht“, Stadelmann Girschner AG, Wiedenbrück, 1989.",
+   "item": "it001"
+  },
+  {
+   "indice": 13,
+   "texto": "[14] X. Li, „Mit nächste Mensch Stein“, Preventive Veterinary Medicine, Bd. 25, Nr. 11, S. 470–477, 1995.",
+   "item": "it003"
+  },
+  {
+   "indice": 14,
+   "texto": "[15] Robert Koch-Institut, „Wiese nächste Stein früh unser ziehen leben“, Ruppersberger Vollbrecht GmbH & Co. KG, Rochlitz, 1976.",
+   "item": "it008"
+  },
+  {
+   "indice": 15,
+   "texto": "[16] J. Choi, G. Wagenknecht, B. Heydrich, und T. Stolze, „Nass Winter rot Sonne zum neben“, Cadernos de Saúde Pública, Bd. 72, Nr. 3, S. 631–648, 1996, doi: 10.99999/teste.treino.35447.",
+   "item": "it004"
+  },
+  {
+   "indice": 16,
+   "texto": "[17] P. D’Ávila und G. Ernst, „Aber Luft neun machen ohne etwas weiß Luft daran Sache“, Gaceta Sanitaria, Bd. 41, Nr. 10, S. 553–567, 2019.",
+   "item": "it006"
+  },
+  {
+   "indice": 17,
+   "texto": "[18] J. L. Cueto Mata und A. Ritter, „Polizei klettern will Frage gewinnen Tür tief was“. Zugegriffen: 16. November 2026. [Online]. Verfügbar unter: https://exemplo-treino.org/8515",
+   "item": "it002"
+  },
+  {
+   "indice": 18,
+   "texto": "[19] Virginia-Maryland College of Veterinary Medicine, „Selbst gleich rechnen waschen nächste Frage selbst erst nicht“. Zugegriffen: 13. November 2026. [Online]. Verfügbar unter: https://exemplo-treino.org/2348",
+   "item": "it009"
+  },
+  {
+   "indice": 19,
+   "texto": "[20] Haute Autorité de Santé (France), „Reich arbeiten setzen ja Bein sollen Arbeit zwei holen mich früh“, in Schlagen schon sie einige fährt allein dick möglich hinter nur, M. Adler, Hrsg., Berchtesgaden: Wende GmbH & Co. KG, 1998, S. 11–26.",
+   "item": "it007"
+  },
+  {
+   "indice": 20,
+   "texto": "[21] S. Buchholz, B. Köster, L. Tröst, und C. Hethur, „Tief warten Zeit acht davon dein Wohnung schlimm halten oft“, Journal of the American Medical Informatics Association, Bd. 38, Nr. 12, S. 820–830, 1991, doi: 10.99999/teste.treino.42025.",
+   "item": "it017"
+  },
+  {
+   "indice": 21,
+   "texto": "[22] M. Nguyen und T. Oestrovsky, Sitzen Kopf Fenster schlimm Zimmer Meer gibt aus. Ueckermünde: Mohaupt Röhrdanz GmbH & Co. OHG, 1980.",
+   "item": "it005"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1], [2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it021"
+   ],
+   "referencias": [
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Häring-Heidrich [3]",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it014"
+   ],
+   "referencias": [
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10], [11], [12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it016",
+    "it012"
+   ],
+   "referencias": [
+    9,
+    10,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "di Mielcarek et al. [13]",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11], [15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it016"
+   ],
+   "referencias": [
+    14,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16], [17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it006"
+   ],
+   "referencias": [
+    15,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10], [17], [18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it002",
+    "it006"
+   ],
+   "referencias": [
+    9,
+    17,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [6], [20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it000",
+    "it007"
+   ],
+   "referencias": [
+    5,
+    2,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [9], [19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it013",
+    "it011"
+   ],
+   "referencias": [
+    18,
+    8,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12], [18], [21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it017",
+    "it012"
+   ],
+   "referencias": [
+    17,
+    20,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6], [8], [13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it001",
+    "it014"
+   ],
+   "referencias": [
+    7,
+    12,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[22]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [2], [4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it019",
+    "it021"
+   ],
+   "referencias": [
+    3,
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2], [3], [5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it011",
+    "it021"
+   ],
+   "referencias": [
+    2,
+    4,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wulff et al. [1]",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it012"
+   ],
+   "referencias": [
+    7,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[20, S. 176]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "D'Ávila [17]",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Tun Bein Garten lustig reiten über Vogel gerade sehr gerade Haus Apfel Tür"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

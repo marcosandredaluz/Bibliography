@@ -1,0 +1,674 @@
+{
+ "id": "reservado_iso690-ad_pt-BR_perturbado",
+ "estilo": "iso690-ad",
+ "sistema": "autor-data",
+ "locale": "pt-BR",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA (BRASIL), 1981. Vitae quod quam maxime voluptates corrupti officiis hic adipisci optio vero maxime explicabo itaque dolorum impedit. Medical Mycology. 1981. Vol. 38, no. 6, p. 652–670. DOI 10.99999/teste.reservado.90625.",
+   "item": "it009"
+  },
+  {
+   "indice": 1,
+   "texto": "AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA (BRASIL), 2003. Velit fugit iste tempore qui exercitationem quis. . Online. 2003. Available from: https://exemplo-reservado.org/8916 [Accessed 6 novembro 2026].",
+   "item": "it013"
+  },
+  {
+   "indice": 2,
+   "texto": "AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA (BRASIL), 2016. Vero incidunt tempora vero consequatur officiis officia. . Online. 2016. Available from: https://exemplo-reservado.org/7224 [Accessed 9 novembro 2026].",
+   "item": "it011"
+  },
+  {
+   "indice": 3,
+   "texto": "AGENZIA ITALIANA DEL FARMACO, 2004. Ea iusto fugit sit cum architecto eveniet laborum adipisci rerum ab. Peixoto: das Neves e Filhos.",
+   "item": "it017"
+  },
+  {
+   "indice": 4,
+   "texto": "ANDRADE, Brenda, DA CONCEIÇÃO, Gabriel e TEIXEIRA, Maria Fernanda, 1978. Pariatur quasi ratione necessitatibus eveniet quaerat fuga. BMC Public Health. 1978. Vol. 40, no. 7, p. 72–80. DOI 10.99999/teste.reservado.42213.",
+   "item": "it024"
+  },
+  {
+   "indice": 5,
+   "texto": "AUSTRALIAN INSTITUTE OF HEALTH AND WELFARE (AUSTRALIA), 1983. Ab cumque quis tenetur atque aspernatur. Das Gesundheitswesen. 1983. Vol. 37, no. 4, p. 60–78.",
+   "item": "it007"
+  },
+  {
+   "indice": 6,
+   "texto": "BARBOSA, Laís, NUNES, Emanuel, CAMARGO, Stella, SANTOS, Gael, DA ROSA, Jade e PIMENTA, Sara, 2021. Porro unde harum facere doloremque repudiandae. Das Gesundheitswesen. 2021. Vol. 28, no. 2, p. 363–381. DOI 10.99999/teste.reservado.60002.",
+   "item": "it023"
+  },
+  {
+   "indice": 7,
+   "texto": "BRITO, Thomas, RODRIGUES, Mirella, MENDONÇA, Allana e SANTOS, Sophia, 2024. Commodi corporis eaque facere repellendus sunt quae. In: NOVAES, Maria Isis (org.), Inventore doloremque quae assumenda quis ipsa distinctio blanditiis ratione. Pacheco: Garcia Ltda. p. 141–156.",
+   "item": "it010"
+  },
+  {
+   "indice": 8,
+   "texto": "CASSIANO, Liz, DUARTE, Fernanda, ROCHA, Heloisa e ARAGÃO, Rafaela, 2008. Deserunt neque minima architecto.. Online. 2008. 14959. Available from: https://leis-reservado.gov/631",
+   "item": "it025"
+  },
+  {
+   "indice": 9,
+   "texto": "CHOI, Ji-ho, 1984. Cum blanditiis quae. Medical Mycology. 1984. Vol. 41, no. 8, p. 492–509. DOI 10.99999/teste.reservado.51421.",
+   "item": "it004"
+  },
+  {
+   "indice": 10,
+   "texto": "CONSELHO FEDERAL DE MEDICINA VETERINÁRIA, 1978. Repellat ut veniam ea ipsa a fugiat eos quos provident reiciendis.. Online. 1978. 14173. Available from: https://leis-reservado.gov/8716",
+   "item": "it026"
+  },
+  {
+   "indice": 11,
+   "texto": "DA ARAGÃO, Kamilly e DIAS, Danilo, 1994. Repudiandae omnis dicta qui fuga atque voluptatibus delectus consequuntur reiciendis incidunt quisquam exercitationem eum suscipit veniam.. Online. 1994. 6229. Available from: https://leis-reservado.gov/4154",
+   "item": "it001"
+  },
+  {
+   "indice": 12,
+   "texto": "DA PAZ, Maria Flor, CALDEIRA, Vicente, CASA GRANDE, Letícia e LOPES, Asafe, 1985. Hic voluptate quaerat sequi esse animi eveniet in recusandae culpa qui quibusdam amet. Araújo: Costela.",
+   "item": "it015"
+  },
+  {
+   "indice": 13,
+   "texto": "DA ROSA, Ana Carolina, DA CUNHA, Isabela, CÂMARA, Antônio e MORAES, Nicole, 1982. Est omnis nulla accusantium similique reprehenderit tenetur velit tempora amet laborum ab id. Pimenta: da Paz S.A.",
+   "item": "it014"
+  },
+  {
+   "indice": 14,
+   "texto": "FONSECA-RIBEIRO, Ana, PINTO, Juan, CORREIA, Evelyn e SILVEIRA, Thiago, 1982. Assumenda aut optio vel porro fugiat. In: BARBOSA, Igor (org.), Et ea vel consequuntur eum optio eum. da Mota do Oeste: Fogaça. p. 186–201.",
+   "item": "it000"
+  },
+  {
+   "indice": 15,
+   "texto": "GREMIÃO, Maysa, SANTOS, Liam, PASTOR, Lara e LIMA, Isadora, 1977. Voluptate dignissimos repellendus nisi nulla qui necessitatibus similique officia aliquam quibusdam earum. Gaceta Sanitaria. 1977. Vol. 27, no. 8, p. 740–746.",
+   "item": "it006"
+  },
+  {
+   "indice": 16,
+   "texto": "MARTINS, Hadassa, PEIXOTO, Maria Laura, CUNHA, Luara e DA COSTA, Maitê, 2018. Fugiat blanditiis a debitis maxime nesciunt expedita deleniti. Preventive Veterinary Medicine. 2018. Vol. 72, no. 12, p. 557–577. DOI 10.99999/teste.reservado.33879.",
+   "item": "it018"
+  },
+  {
+   "indice": 17,
+   "texto": "MELO, José, 2017. Quae reiciendis voluptatibus incidunt repellendus possimus atque delectus maiores iste ex corrupti delectus nostrum tenetur. Revista de Saúde Pública. 2017. Vol. 72, no. 3, p. 534–545. DOI 10.99999/teste.reservado.69844.",
+   "item": "it019"
+  },
+  {
+   "indice": 18,
+   "texto": "MONTEIRO, João, 2001. Laborum tempora repellat consequatur illum recusandae. Preventive Veterinary Medicine. 2001. Vol. 79, no. 2, p. 643–655. DOI 10.99999/teste.reservado.76167.",
+   "item": "it021"
+  },
+  {
+   "indice": 19,
+   "texto": "ORGANIZACIÓN MUNDIAL DE LA SALUD, 2000. Atque provident totam quas modi consectetur molestias quae quod dignissimos architecto. . Online. 2000. Available from: https://exemplo-reservado.org/2994 [Accessed 5 novembro 2026].",
+   "item": "it020"
+  },
+  {
+   "indice": 20,
+   "texto": "PIRES, Antônio, DA MATA, Ravi Lucca, PINTO, Lara, FOGAÇA, Alexandre, CAVALCANTE, Beatriz e ROCHA, Enzo Gabriel, 2021. Perspiciatis illum voluptas inventore vitae inventore facilis fuga libero. In: AZEVEDO, Igor (org.), Corporis deleniti rerum officiis vero consequatur dolores dignissimos porro. Cavalcanti do Oeste: Cardoso. p. 221–236.",
+   "item": "it022"
+  },
+  {
+   "indice": 21,
+   "texto": "PUBLIC HEALTH AGENCY OF CANADA, [no date]. Voluptate cumque dolor quaerat autem tempore temporibus maxime magnam fuga quis velit provident voluptate. Macedo de Minas: Azevedo.",
+   "item": "it029"
+  },
+  {
+   "indice": 22,
+   "texto": "REZENDE, Mateus, SANTOS, Maria Laura, DA LUZ, Carolina, MARQUES, Marcelo, CAVALCANTI, Stella e DA PAZ, Maria Luísa, 1981. Incidunt temporibus corrupti ratione ducimus veritatis reiciendis nihil iste. Almeida: Costela.",
+   "item": "it016"
+  },
+  {
+   "indice": 23,
+   "texto": "RIOS, Sophia, SALES, Olívia, GARCIA, Luiza e DA CONCEIÇÃO, Juliana, 2021. Magni corrupti tenetur aliquam quidem iste pariatur dolore. Machado Alegre: Lima.",
+   "item": "it012"
+  },
+  {
+   "indice": 24,
+   "texto": "SAMPER RECIO, Gervasio e LIMA, Cecilia, 1985. Quod veritatis ratione voluptatibus minus nihil hic asperiores velit. One Health. 1985. Vol. 42, no. 8, p. 678–687. DOI 10.99999/teste.reservado.71577.",
+   "item": "it002"
+  },
+  {
+   "indice": 25,
+   "texto": "SANTÉ PUBLIQUE FRANCE, 1983. Fugit corporis ad minima quod nulla officia maxime excepturi sit reprehenderit nam animi vitae. . Online. 1983. Available from: https://exemplo-reservado.org/9420 [Accessed 13 novembro 2026].",
+   "item": "it008"
+  },
+  {
+   "indice": 26,
+   "texto": "SANTÉ PUBLIQUE FRANCE, 2013. Illo alias pariatur facere aspernatur voluptatum facere ipsam accusantium officiis quod hic delectus saepe impedit. da Conceição de Minas: Farias.",
+   "item": "it027"
+  },
+  {
+   "indice": 27,
+   "texto": "TEIXEIRA, Heitor, ABREU, Luiza, CAMARGO, João Pedro, MONTEIRO, Luiz Henrique, SAMPAIO, Alana e FARIAS, Carlos Eduardo, 1977a. Et magnam molestiae officiis excepturi. . Online. 1977. Available from: https://exemplo-reservado.org/1885 [Accessed 12 novembro 2026].",
+   "item": "it031"
+  },
+  {
+   "indice": 28,
+   "texto": "TEIXEIRA, Heitor, ABREU, Luiza, CAMARGO, João Pedro, MONTEIRO, Luiz Henrique, SAMPAIO, Alana e FARIAS, Carlos Eduardo, 1977b. Maiores distinctio laudantium voluptatibus doloribus laborum voluptas fuga aliquam fuga suscipit consequuntur. Sá dos Dourados: das Neves.",
+   "item": "it030"
+  },
+  {
+   "indice": 29,
+   "texto": "TRAN, Minh, PORTO, Maria Flor e MONTEIRO, Emanuel, 2006. Libero dolorem quibusdam ratione nesciunt commodi ipsum maiores hic doloribus tempora soluta accusamus eos. Revue d’Épidémiologie et de Santé Publique. 2006. Vol. 76, no. 2, p. 38–55.",
+   "item": "it005"
+  },
+  {
+   "indice": 30,
+   "texto": "VIEIRA, Valentina, ROCHA, Pedro e RIBEIRO, Lorena, 1992. Harum dicta pariatur labore ipsa eius perspiciatis ut. BMC Public Health. 1992. Vol. 41, no. 3, p. 448–464.",
+   "item": "it028"
+  },
+  {
+   "indice": 31,
+   "texto": "WANG, Xiaoming e SILVEIRA, Francisco, 1993. Impedit eligendi voluptatum amet dolore tempora. One Health. 1993. Vol. 12, no. 6, p. 75–82. DOI 10.99999/teste.reservado.31329.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Martins, Peixoto, Cunha, da Costa (2018)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wang, Silveira 1993; Martins, Peixoto, Cunha, da Costa 2018; Agência Nacional de Vigilância Sanitária (Brasil) 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it018",
+    "it009"
+   ],
+   "referencias": [
+    31,
+    16,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cassiano, Duarte, Rocha, Aragão 2008; Teixeira, Abreu, Camargo, Monteiro, Sampaio, Farias 1977a; Melo 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it031",
+    "it019"
+   ],
+   "referencias": [
+    8,
+    27,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brito, Rodrigues, Mendonça, Santos 2024; Pires, da Mata, Pinto, Fogaça, Cavalcante, Rocha 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it022"
+   ],
+   "referencias": [
+    7,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Public Health Agency of Canada [no date])",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Aragão, Dias 1994; Monteiro 2001; Agência Nacional de Vigilância Sanitária (Brasil) 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it021",
+    "it013"
+   ],
+   "referencias": [
+    11,
+    18,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agência Nacional de Vigilância Sanitária (Brasil) 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Public Health Agency of Canada [no date]; Rios, Sales, Garcia, da Conceição 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it012"
+   ],
+   "referencias": [
+    21,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Public Health Agency of Canada ([no date])",
+   "tipo": "narrativa",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Martins, Peixoto, Cunha, da Costa 2018; Teixeira, Abreu, Camargo, Monteiro, Sampaio, Farias 1977b; Cassiano, Duarte, Rocha, Aragão 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it030",
+    "it025"
+   ],
+   "referencias": [
+    16,
+    28,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santé publique France 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organización Mundial de la Salud 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fonseca-Ribeiro, Pinto, Correia, Silveira (1982)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi 1984; Andrade, da Conceição, Teixeira 1978; Rezende, Santos, da Luz, Marques, Cavalcanti, da Paz 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it024",
+    "it016"
+   ],
+   "referencias": [
+    9,
+    4,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cassiano, Duarte, Rocha, Aragão 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Teixeira, Abreu, Camargo, Monteiro, Sampaio, Farias 1977b; Agência Nacional de Vigilância Sanitária (Brasil) 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it013"
+   ],
+   "referencias": [
+    28,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vieira, Rocha, Ribeiro 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santé publique France 2013; Vieira, Rocha, Ribeiro 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it028"
+   ],
+   "referencias": [
+    26,
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agência Nacional de Vigilância Sanitária (Brasil) 2016; Tran, Porto, Monteiro 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it005"
+   ],
+   "referencias": [
+    2,
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Samper Recio, Lima 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang, Silveira (1993)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Monteiro 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Rosa, da Cunha, Câmara, Moraes 1982; Santé publique France 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it008"
+   ],
+   "referencias": [
+    13,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santé publique France 2013; Agência Nacional de Vigilância Sanitária (Brasil) 2003; Choi 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it013",
+    "it004"
+   ],
+   "referencias": [
+    26,
+    1,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santé publique France 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agência Nacional de Vigilância Sanitária (Brasil) 1981; Conselho Federal de Medicina Veterinária 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it026"
+   ],
+   "referencias": [
+    0,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Barbosa, Nunes, Camargo, Santos, da Rosa, Pimenta 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cassiano, Duarte, Rocha, Aragão 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agência Nacional de Vigilância Sanitária (Brasil) 2003; Barbosa, Nunes, Camargo, Santos, da Rosa, Pimenta 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it023"
+   ],
+   "referencias": [
+    1,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santé publique France 1983; Organización Mundial de la Salud 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it020"
+   ],
+   "referencias": [
+    25,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agenzia Italiana del Farmaco 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pires, da Mata, Pinto, Fogaça, Cavalcante, Rocha 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Paz, Caldeira, Casa Grande, Lopes 1985; Barbosa, Nunes, Camargo, Santos, da Rosa, Pimenta 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it023"
+   ],
+   "referencias": [
+    12,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran, Porto, Monteiro 2006; Australian Institute of Health and Welfare (Australia) 1983; Gremião, Santos, Pastor, Lima 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it007",
+    "it006"
+   ],
+   "referencias": [
+    29,
+    5,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Samper Recio, Lima 1985, p. 288)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Fonseca-Ribeiro, Pinto, Correia, Silveira 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(da Rosa, da Cunha, Câmara, Moraes 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Tran, Porto, Monteiro 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Monteiro (2001)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Neque voluptates odio doloremque voluptatibus accusantium perferendis assumenda consequatur facere excepturi"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

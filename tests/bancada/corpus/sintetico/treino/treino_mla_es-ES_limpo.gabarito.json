@@ -1,0 +1,606 @@
+{
+ "id": "treino_mla_es-ES_limpo",
+ "estilo": "mla",
+ "sistema": "autor-pagina",
+ "locale": "es-ES",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Castelló, Zaira. «Carlos mujer tal teatro principales materia espera francisco busca». Journal of the American Medical Informatics Association, vol. 37, n.o 11, 1978, pp. 187-93, https://doi.org/10.99999/teste.treino.70333.",
+   "item": "it020"
+  },
+  {
+   "indice": 1,
+   "texto": "Castro, Germán, y Miguela Cuadrado. «Económica p objeto importante llegado». One Health, vol. 68, n.o 6, 1985, pp. 508-28.",
+   "item": "it024"
+  },
+  {
+   "indice": 2,
+   "texto": "Conselho Nacional de Saúde (Brasil). Cómo hacía tema flores estaba efectos sala jóvenes también papel. Paca Jaén Armas S.A.T., 1985.",
+   "item": "it019"
+  },
+  {
+   "indice": 3,
+   "texto": "———. «Objeto unidos ex contenido título quería méxico estados pronto diversas capaz hay». Gaceta Sanitaria, vol. 26, n.o 5, 2011, pp. 310-29, https://doi.org/10.99999/teste.treino.47549.",
+   "item": "it009"
+  },
+  {
+   "indice": 4,
+   "texto": "García, Pepito. Empresas volvió paz negro edad proyectos. Farmaceútica FJIU S.Com., 2006.",
+   "item": "it025"
+  },
+  {
+   "indice": 5,
+   "texto": "Giménez Giner, Faustino, et al. México precisamente trabajadores diario médico premio problemas aquellas podemos iglesia. Grupo Figueroa S.C.P, 2017.",
+   "item": "it002"
+  },
+  {
+   "indice": 6,
+   "texto": "Groß, Joaquín, et al. «Cuba suerte josé tanto tampoco formación prensa sangre». Epidemiologia e Serviços de Saúde, vol. 42, n.o 10, 1982, pp. 267-77.",
+   "item": "it006"
+  },
+  {
+   "indice": 7,
+   "texto": "Haute Autorité de Santé (France). «Puso tan corazón centros estaban nos peor seguridad». Preventive Veterinary Medicine, vol. 26, n.o 3, 2021, pp. 264-78.",
+   "item": "it008"
+  },
+  {
+   "indice": 8,
+   "texto": "Istituto Superiore di Sanità. Puerto menor salir algún nacional asimismo algún través volver otras julio. 1994, https://exemplo-treino.org/1710.",
+   "item": "it028"
+  },
+  {
+   "indice": 9,
+   "texto": "———. «S desde obra tener tenido santiago violencia algo toda pocos». Gaceta Sanitaria, vol. 8, n.o 4, 1994, pp. 754-68, https://doi.org/10.99999/teste.treino.73731.",
+   "item": "it027"
+  },
+  {
+   "indice": 10,
+   "texto": "Kim, Seo-yeon. «Hay horas cuba etapa ellos américa alguien media». Podrá salud hizo hombres posición informe fuego muestra cantidad memoria, editado por Carmelita Segarra, Pepito Torrents Martínez S.A., 2007, pp. 254-69.",
+   "item": "it004"
+  },
+  {
+   "indice": 11,
+   "texto": "Mendizábal, Edgardo, et al. «Agua cierta unidad estructura televisión diferentes cierta». Das Gesundheitswesen, vol. 71, n.o 10, 2001, pp. 475-90, https://doi.org/10.99999/teste.treino.14333.",
+   "item": "it016"
+  },
+  {
+   "indice": 12,
+   "texto": "Ministerio de Sanidad (España). «Europea relaciones elecciones español muchas mejor». Trata próximo necesidad propios has efectos, editado por Prudencia Anaya, Blanca Antón Albero S.L., 2017, pp. 155-70.",
+   "item": "it007"
+  },
+  {
+   "indice": 13,
+   "texto": "Mora, Reyes, et al. «Evitar había etc dio pone dirección muerto oposición nombre chile estos cuerpo haber dólares mundo». Das Gesundheitswesen, vol. 2, n.o 8, 1982, pp. 59-70, https://doi.org/10.99999/teste.treino.80418.",
+   "item": "it012"
+  },
+  {
+   "indice": 14,
+   "texto": "Noriega, Francisco, y Hipólito Hoz. «Generales pesetas antes partir ningún pequeña mil larga». Preventive Veterinary Medicine, vol. 22, n.o 10, 2025, pp. 105-23, https://doi.org/10.99999/teste.treino.73958.",
+   "item": "it015"
+  },
+  {
+   "indice": 15,
+   "texto": "Padilla, Cintia, et al. «Éxito alto personal dan buen». Epidemiologia e Serviços de Saúde, vol. 25, n.o 8, 1980, pp. 643-56, https://doi.org/10.99999/teste.treino.73207.",
+   "item": "it018"
+  },
+  {
+   "indice": 16,
+   "texto": "Pinto, Daniela. Hacer mar españa falta puesto tres sola muy nivel. Felipa Jordán Grau S.L.N.E, 2014.",
+   "item": "it023"
+  },
+  {
+   "indice": 17,
+   "texto": "Pons, Ligia. «Unión solo menos empresa torno». Ningún diversas intereses dinero humano mayor mar producto libertad, editado por Jose Carlos Amigó, Santos y asociados S.Coop., 2007, pp. 155-70.",
+   "item": "it017"
+  },
+  {
+   "indice": 18,
+   "texto": "Ribas-Feliu, Mireia, y Juana Paredes. Tribunal es plazo estar militares abril duda. Compañía Sáez y asociados S.Coop., 2026.",
+   "item": "it000"
+  },
+  {
+   "indice": 19,
+   "texto": "Ródenas, Isidora, et al. Valores éxito perdido de señora interés qué. Manufacturas Doménech S.Com.",
+   "item": "it026"
+  },
+  {
+   "indice": 20,
+   "texto": "Sevilla, Flor, et al. «Parecía sea diciembre favor partes relación varias i mis pueblo las largo donde mayoría». Journal of the American Medical Informatics Association, vol. 73, n.o 9, 1977, pp. 138-53, https://doi.org/10.99999/teste.treino.31535.",
+   "item": "it011"
+  },
+  {
+   "indice": 21,
+   "texto": "Toledo, Trini. «Marco mayores día necesidad esas fuerzas». Mi i nada violencia música falta, editado por Nico Bellido, Grupo Pinedo S.A., 2003, pp. 274-89.",
+   "item": "it022"
+  },
+  {
+   "indice": 22,
+   "texto": "Tormo, Melisa, et al. Presente ser tipos llega dónde trabajo hechos segundo. Consultoría Antúnez S.L.N.E, 2010.",
+   "item": "it010"
+  },
+  {
+   "indice": 23,
+   "texto": "Tran, Minh, y Candelario Matas. «Puntos c incluso técnica ya parece algunos lo». Militares felipe democracia términos historia única julio resultados, editado por Atilio López, Comercializadora Aragonés S.A., 2016, pp. 258-73.",
+   "item": "it005"
+  },
+  {
+   "indice": 24,
+   "texto": "Uriarte, Fausto, et al. Con nueva señor deja. 2018. Construcción Morcillo S.A.",
+   "item": "it013"
+  },
+  {
+   "indice": 25,
+   "texto": "Urrutia, Amelia, et al. «Carta haber diversos futuro dar resto reunión aun instituto somos empresas vino». Contenido cambio rosa suficiente paz conciencia volver, editado por África Costa, Santiago Requena Castelló S.A., 2009, pp. 113-28.",
+   "item": "it014"
+  },
+  {
+   "indice": 26,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. Atrás martín local zona vista proceso pese cosas. Consultoría Morell S.L.L., 2008.",
+   "item": "it021"
+  },
+  {
+   "indice": 27,
+   "texto": "von Bru, Amador, y Consuelo Estrada. «Figura gonzález construcción radio quiero si año teatro pasó has». Sociales señaló hacerlo vuelta dirección fin servicios lugar rey, editado por María Belén Mata, Construcción del Norte S.L.N.E, 2009, pp. 186-201.",
+   "item": "it001"
+  },
+  {
+   "indice": 28,
+   "texto": "Zhang, Xiaoming, et al. Unidos posibilidad carta recuerdo sí su nuestro segundo. 2008. Compañía Calzada S.L.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(von Bru y Estrada; García; Conselho Nacional de Saúde (Brasil), «Objeto unidos ex contenido título quería méxico estados pronto diversas capaz hay»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it025",
+    "it009"
+   ],
+   "referencias": [
+    27,
+    4,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Castelló)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Castro y Cuadrado; Sevilla et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it011"
+   ],
+   "referencias": [
+    1,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Castro y Cuadrado)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), Cómo hacía tema flores estaba efectos sala jóvenes también papel; Urrutia et al.; Tran y Matas)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it014",
+    "it005"
+   ],
+   "referencias": [
+    2,
+    25,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España); Toledo)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it022"
+   ],
+   "referencias": [
+    12,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France); Mora et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it012"
+   ],
+   "referencias": [
+    7,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Giménez Giner et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), «Objeto unidos ex contenido título quería méxico estados pronto diversas capaz hay»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tormo et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil), Cómo hacía tema flores estaba efectos sala jóvenes también papel; Padilla et al.; von Bru y Estrada)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it018",
+    "it001"
+   ],
+   "referencias": [
+    2,
+    15,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Castelló; Istituto Superiore di Sanità, «S desde obra tener tenido santiago violencia algo toda pocos»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it027"
+   ],
+   "referencias": [
+    0,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinto)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zhang et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Padilla et al.; Zhang et al.; Mendizábal et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it003",
+    "it016"
+   ],
+   "referencias": [
+    15,
+    28,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pons)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Toledo)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Noriega y Hoz)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kim)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, Puerto menor salir algún nacional asimismo algún través volver otras julio)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Giménez Giner et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Giménez Giner et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France); Istituto Superiore di Sanità, «S desde obra tener tenido santiago violencia algo toda pocos»)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it027"
+   ],
+   "referencias": [
+    7,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Uriarte et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran y Matas)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España))",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(García; Castro y Cuadrado)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it024"
+   ],
+   "referencias": [
+    4,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ribas-Feliu y Paredes)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(García)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Groß et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ródenas et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinto 278)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Mendizábal et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Uriarte et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Castro y Cuadrado)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Castro y Cuadrado)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Estaba naturaleza aquí va pueblo b democracia modo"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

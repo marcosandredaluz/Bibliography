@@ -1,0 +1,177 @@
+{
+ "id": "elife-00242_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00242.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Alegado RA, Brown LW, Cao S, Dermenjian RK, Zuzow R, Fairclough SR, et al.. 2012a. A bacterial sulfonolipid triggers multicellular development in the closest living relatives of animals. eLife 1:e00013.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Alegado RA, Grabenstatter JD, Zuzow R, Morris A, Huang SY, Summons RE, et al.. 2012b. Algoriphagus machipongonensis sp. nov. co-isolated with a colonial choanoflagellate. Int J Syst Evol Microbiol.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Carr M, Leadbeater BS, Hassan R, Nelson M, Baldauf SL. 2008. Molecular phylogeny of choanoflagellates, the sister group to Metazoa. Proc Natl Acad Sci USA 105:16641–16646.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Dayel MJ, Alegado RA, Fairclough SR, Levin TC, Nichols SA, McDonald K, et al.. 2011. Cell differentiation and morphogenesis in the colony-forming choanoflagellate. Salpingoeca rosetta. Dev Biol 357:73–82.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Fairclough SR, Dayel MJ, King N. 2010. Multicellular development in a choanoflagellate. Curr Biol 20:R875–R876.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "King N. 2004. The unicellular ancestry of animal development. Dev Cell 7:313–325.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Parfrey LW, Grant J, Tekle YI, Lasek-Nesselquist E, Morrison HG, Sogin ML, et al.. 2010. Broadly sampled multigene analyses yield a well-resolved eukaryotic tree of life. Syst Biol 59:518–533.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Thacker RW, Freeman CJ. 2012. Sponge-microbe symbioses: recent advances and new directions. Adv Mar Biol 62:57–111.",
+   "item": "bib8"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Parfrey et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carr et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "King, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fairclough et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Alegado et al., 2012b",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Alegado et al., 2012a",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fairclough et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dayel et al. 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dayel et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Alegado et al., 2012a",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Thacker and Freeman, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

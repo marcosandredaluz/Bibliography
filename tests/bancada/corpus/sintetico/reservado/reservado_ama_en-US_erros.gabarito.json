@@ -1,0 +1,753 @@
+{
+ "id": "reservado_ama_en-US_erros",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "en-US",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Lamb C, Smith M, Reese K. Matter religious throughout expect fish thought low behavior cause rich avoid government. Revue d’Épidémiologie et de Santé Publique. 14(10):114-119. doi:10.99999/teste.reservado.70207",
+   "item": "it019"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Agenzia Italiana del Farmaco. Recognize upon energy sea actually attention majority customer century issue. 2004. Accessed November 11, 2026. https://exemplo-reservado.org/3239",
+   "item": "it018"
+  },
+  {
+   "indice": 2,
+   "texto": "3. van der Lopez N. Cup purpose affect away hand. Medical Mycology. 2019;24(12):900-918.",
+   "item": "it001"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Hernandez A, Mejia M, Jones E, Brown M. Every Stop Write Main under Memory. Long and Sons; 2009.",
+   "item": "it021"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Thornton S, Cole A, Mcknight A, Gray R, Powell J, Wolfe L. Speak Number Pay Leave Anyone Real Protect Point Business. Williams-Harvey; 1982.",
+   "item": "it012"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Glover S, Dunn C, Friedman V. Half international director. Gaceta Sanitaria. 2011;24(10):251-270. doi:10.99999/teste.reservado.79034",
+   "item": "it010"
+  },
+  {
+   "indice": 6,
+   "texto": "9. Campbell J, Wheeler G. How sometimes determine pay. Cadernos de Saúde Pública. 2019;22(1):306-317. doi:10.99999/teste.reservado.72186",
+   "item": "it014"
+  },
+  {
+   "indice": 7,
+   "texto": "10. Hampton R, Tran J, Smith D, Raymond R. Good Media Hair Risk Program However Anyone Hear Believe Black Process. Knight-Haynes; 2005.",
+   "item": "it013"
+  },
+  {
+   "indice": 8,
+   "texto": "11. Chase M, Martin J, Mcdaniel N. Role job old moment. BMC Public Health. 2006;66(5):193-206. doi:10.99999/teste.reservado.57522",
+   "item": "it016"
+  },
+  {
+   "indice": 9,
+   "texto": "12. Li W. Side information fill yourself. Das Gesundheitswesen. 2015;43(3):679-692. doi:10.99999/teste.reservado.55036",
+   "item": "it003"
+  },
+  {
+   "indice": 10,
+   "texto": "13. Edwards J, Brown L, Valencia T. Front Each Boy Series Large Low onto Different Each Concern Center. Kelley-Chavez; 1990.",
+   "item": "it017"
+  },
+  {
+   "indice": 11,
+   "texto": "14. Valdés Salvà C, Cook E, Evans K, Hoover M. Success with affect fight stage history through board body computer wife consumer collection beautiful trade total. In: Mckenzie R, ed. Walk Always Cup No Tree Skill. Smith-King; 1977:56-71.",
+   "item": "it002"
+  },
+  {
+   "indice": 12,
+   "texto": "15. Hernandez A, Mejia M, Jones E, Brown M. Others later expect senior enjoy scene fear improve. Revue d’Épidémiologie et de Santé Publique. 2009;17(12):625-643.",
+   "item": "it020"
+  },
+  {
+   "indice": 13,
+   "texto": "16. Hahn-Barrett A. Billion life which return chance center start. Epidemiologia e Serviços de Saúde. 2005;75(3):727-738. doi:10.99999/teste.reservado.21594",
+   "item": "it000"
+  },
+  {
+   "indice": 14,
+   "texto": "17. Hoffman T, Martinez C, Duran A, Meyer J. Benefit Development Later Husband Nothing Subject Seat out Least Almost. Tran, Cole and Oliver; 1987.",
+   "item": "it011"
+  },
+  {
+   "indice": 15,
+   "texto": "18. Agenzia Italiana del Farmaco. Attorney Role House Community Role Sing Impact Billion. Burch PLC; 2013.",
+   "item": "it007"
+  },
+  {
+   "indice": 16,
+   "texto": "19. Lee S yeon, Avila S, Lewis S. Treatment budget crime offer pass Republican project by. Revista de Saúde Pública. 1991;66(5):449-468. doi:10.99999/teste.reservado.40606",
+   "item": "it004"
+  },
+  {
+   "indice": 17,
+   "texto": "20. Wong M, Scott J, Brown M, Owens J. Spring forward TV maybe mouth almost threat stuff region. In: Webb J, ed. We Relate Return Standard Happy Economy Effort Girl Time Cost. Walker, Sims and Harrison; 1994:280-295.",
+   "item": "it015"
+  },
+  {
+   "indice": 18,
+   "texto": "21. Müller T, Bradley J. Get forget throughout age investment study. 2021. Accessed November 15, 2026. https://exemplo-reservado.org/2197",
+   "item": "it006"
+  },
+  {
+   "indice": 19,
+   "texto": "22. Conselho Federal de Medicina Veterinária. Knowledge listen purpose so over national agree cover law north edge could. Epidemiologia e Serviços de Saúde. 2019;36(11):583-600. doi:10.99999/teste.reservado.29739",
+   "item": "it009"
+  },
+  {
+   "indice": 20,
+   "texto": "23. Olson-Rogers A. Piece Public However Manage Nation Mind Effort National College College. Brown Ltd; 1992.",
+   "item": "extra0"
+  },
+  {
+   "indice": 21,
+   "texto": "24. van der Sanchez E, Jordan A, Beck C, Wade K. Success Likely Physical Industry Eye. Martinez Inc; 1986.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Lamb et al. 1",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1–3",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it001",
+    "it019"
+   ],
+   "referencias": [
+    1,
+    2,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4,5",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it012"
+   ],
+   "referencias": [
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,5,7",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it012",
+    "it001"
+   ],
+   "referencias": [
+    null,
+    4,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,9",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it014"
+   ],
+   "referencias": [
+    null,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8–10",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it013",
+    "it014"
+   ],
+   "referencias": [
+    null,
+    7,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,13",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it012"
+   ],
+   "referencias": [
+    10,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,10,14",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it010",
+    "it002"
+   ],
+   "referencias": [
+    7,
+    5,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,5,12",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it001",
+    "it003"
+   ],
+   "referencias": [
+    4,
+    2,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,16",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it000"
+   ],
+   "referencias": [
+    2,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11,15,17",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it011",
+    "it020"
+   ],
+   "referencias": [
+    8,
+    14,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,11,18",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it016",
+    "it007"
+   ],
+   "referencias": [
+    null,
+    8,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,11",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it010"
+   ],
+   "referencias": [
+    8,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chase et al. 11",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,11,15",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it010",
+    "it020"
+   ],
+   "referencias": [
+    8,
+    5,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Thornton et al. 5",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,12",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it018"
+   ],
+   "referencias": [
+    9,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,7,19",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it001",
+    "it004"
+   ],
+   "referencias": [
+    null,
+    2,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,7,14",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it002",
+    "it010"
+   ],
+   "referencias": [
+    null,
+    11,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,20,21",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it001",
+    "it006"
+   ],
+   "referencias": [
+    17,
+    2,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,11,12",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it003",
+    "it019"
+   ],
+   "referencias": [
+    8,
+    9,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "20",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,16",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it005"
+   ],
+   "referencias": [
+    13,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,8,9",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it005",
+    "it014"
+   ],
+   "referencias": [
+    0,
+    null,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3,7,22",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it001",
+    "it009"
+   ],
+   "referencias": [
+    null,
+    2,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "10,15,20",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it015",
+    "it020"
+   ],
+   "referencias": [
+    7,
+    17,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9,11,19",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it014",
+    "it004"
+   ],
+   "referencias": [
+    8,
+    6,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Valdés Salvà et al. 14",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4(p166)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Chase et al. 11",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "3,5,7",
+   "item": "it008"
+  },
+  {
+   "ponto": "D",
+   "citacao": "8,9",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "8–10",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "8,11,18",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "8",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "7",
+   "item": "it008"
+  },
+  {
+   "ponto": "D",
+   "citacao": "3,7,19",
+   "item": "it008"
+  },
+  {
+   "ponto": "D",
+   "citacao": "6,7,14",
+   "item": "it008"
+  },
+  {
+   "ponto": "D",
+   "citacao": "8,16",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "1,8,9",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "3,7,22",
+   "item": "it008"
+  },
+  {
+   "ponto": "E",
+   "referencia": 20,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 21,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Prepared by the author (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Eat sign almost beat mind PM science resource right deep risk reality himself wait month"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

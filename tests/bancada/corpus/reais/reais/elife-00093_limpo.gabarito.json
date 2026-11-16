@@ -1,0 +1,1336 @@
+{
+ "id": "elife-00093_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00093.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Artzy-Randrup Y, Stone L. 2005. Generating uniformaly distributed networks. Physical Review E 72.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Barry AE, Leliwa-Syteck A, Tavul L, Imrie H, Migot-Nabias F, Brown SM, et al.. 2007. Population genomics of the immune evasion (var) genes of Plasmodium falciparum. PLoS Pathog 3:e34.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Brown AHD. 1975. Sample sizes required to detect linkage disequilibrium between two or three loci. Theor Popul Biol 8:184–201.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Bruce MC, Day KP. 2002. Cross-species regulation of malaria parasitaemia in the human host. Curr Opin Microbiol 5:431–437.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Bruce MC, Day KP. 2003. Cross-species regulation of Plasmodium parasitemia in semi-immune children from Papua New Guinea. Trends Parasitol 19:271–277.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Bruce MC, Donnelly CA, Alpers MP, Galinski MR, Barnwell JW, Walliker D, et al.. 2000a. Cross-species interactions between malaria parasites in humans. Science 287:845–848.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Bruce MC, Donnelly CA, Packer M, Lagog M, Gibson N, Narara A, et al.. 2000b. Age- and species-specific duration of infection in asymptomatic malaria infections in Papua New Guinea. Parasitology 121:247–256.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Buckee CO, Bull PC, Gupta S. 2009. Inferring malaria parasite population structure from serological networks. Proc Biol Sci 276:477–485.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Buckee CO, Gupta S, Kriz P, Maiden MC, Jolley KA. 2010. Long-term evolution of antigen repertoires among carried meningococci. Proc Biol Sci 277:1635–1641.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Buckee CO, Jolley KA, Recker M, Penman B, Kriz P, Gupta S, et al.. 2008. Role of selection in the ermergence of lineages and the evolution of virulence in Neisseria meningitidis. Proc Natl Acad Sci USA 105:15082–15087.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Buckee CO, Recker M, Watkins ER, Gupta S. 2011. Role of stochastic processes in maintaining discrete strain structure in antigenically diverse pathogen populations. Proc Natl Acad Sci USA 108:15504–15509.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Bull PC, Kyes S, Buckee CO, Montgomery J, Kortok MM, Newbold CI, Marsh K. 2007. An approach to classifying sequence tags sampled from Plasmodium falciparum var genes. Molecular Biochemistry Parasitology 154:98–102.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Bull PC, Lowe BS, Kortok M, Marsh K. 1999. Antibody recognition of plasmodium falciparum erythrocyte surface antigens in Kenya: evidence for rare and prevalent variants. Infect Immun 67:733–739.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Bull PC, Lowe BS, Kortok M, Molyneux CS, Newbold CI, Marsh K. 1998. Parasite antigens on the infected red cell surface are targets for naturally acquired immunity to malaria. Nat Med 4:358–360.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Chan JA, Howell KB, Reiling L, Ataide R, Mackintosh CL, Fowkes FJ, et al.. 2012. Targets of antibodies against Plasmodium falciparum-infected erythrocytes in malaria immunity. J Clin Invest 122:3227–3238.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Chen DS, Barry AE, Leliwa-Syteck A, Smith T, Peterson I, Brown SM, et al.. 2011. A molecular epidemiological study of var gene diversity to characterize the reservoir of Plasmodium falciparum in humans in Africa. PLoS One 6:e16629.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Claessens A, Adams Y, Ghumra A, Lindergard G, Buchan C, Andisi C, et al.. 2012. A subset of group A-like var genes encodes the malaria parasite ligands for binding to human brain endothelial cells. Proc Natl Acad Sci USA 109:E1772–E1781.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Conway DJ, Roper C, Oduola AMJ, Arnots DE, Kremsner PG, Grobusch MP, et al.. 1999. High recombination rate in natural populations of Plasmodium falciparum. Proc Natl Acad Sci USA 96:4506–4511.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Deitsch KW, Hviid L. 2004. Variant surface antigens, virulence genes and pathogenesis of malaria. Trends Parasitol 20:562–566.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Deitsch KW, Lukehart SA, Stringer JR. 2009. Common strategies for antigenic variation by bacterial, fungal and protozoan pathogens. Nat Rev Microbiol 7:493–503.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Dhingra N, Jha P, Sharma VP, Cohen AA, Jotkar RM, Rodriguez PS, et al.. 2010. Adult and child malaria mortality in India: a nationally representative mortality survey. Lancet 376:1768–1774.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Doolan DL, Dobaño C, Baird JK. 2009. Acquired immunity to malaria. Clin Microbiol Rev 22:13–36.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Ewers W. 1972. Robert Koch, his work in New Guinea and his contribution to malariology. PNG Med J 15:117–124.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Frank SA. 1999. A model for the sequential dominance of antigenic variants in African trypanosome infections. Proc Biol Sci 266:1397–1401.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Frank SA, Barbour AG. 2006. Within-host dynamics of antigenic variation. Infect Genet Evol 6:141–146.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Freitas-Junior LH, Bottius E, Pirrit LA, Deitsch KW, Scheidig C, Guinet F, et al.. 2000. Frequent ectopic recombination of virulence factor genes in telomeric chromosome clusters of P. falciparum. Nature 407:1018–1022.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Giha HA, Staalsoe T, Dodoo D, Roper C, Satti GM, Arnot DE, et al.. 2000. Antibodies to variable Plasmodium falciparum-infected erythrocyte surface antigens are associated with protection from novel malaria infections. Immunol Lett 71:117–126.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Gillespie DT. 1977. Exact stochastic simulation of coupled chemical reactions. Journal of Physical Chemistry 81:2340–2361.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Gupta S, Anderson RM. 1999. Population structure of pathogens: the role of immune selection. Parasitol Today 12:497–501.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Gupta S, Day KP. 1994a. A strain theory of malaria transmission. Parasitol Today 10:476–481.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Gupta S, Day KP. 1994b. A theoretical framework for the immunoepidemiology of Plasmodium falciparum malaria. Parasite Immunol 16:361–370.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Gupta S, Maiden MC, Feavers IM, Nee S, May RM, Anderson RM. 1996. The maintenance of strain structure in populations of recombining infectious agents. Nat Med 2:437–442.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Gupta S, Trenholme K, Anderson RM, Day KP. 1994. Antigenic diversity and the transmission dynamics of Plasmodium falciparum. Science 263:961–963.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Hedrick P, Jain S, Holden L. 1978. Multilocus systems in evolution. Evolutionary Biology 11:101–184.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Jiang H, Li N, Gopalan V, Zilversmit MM, Varma S, Nagarajan V, et al.. 2011. High recombination rates and hotspots in a Plasmodium falciparum genetic cross. Genome Biol 12:R33.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Jiang H, Yi M, Mu J, Zhang L, Ivens A, Klimczak L, et al.. 2008. Detection of genome-wide polymorphisms in the AT-rich Plasmodium falciparum genome using a high-density microarray. BMC Genomics 9:398.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Kyes SA, Kraemer SM, Smith JD. 2007. Antigenic variation in Plasmodium falciparum: gene organization and regulation of the var multigene family. Eukaryotic Cell 6:1511–1520.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Lavstsen T, Turner L, Saguti F, Magistrado P, Rask TS, Jespersen JS, et al.. 2012. Plasmodium falciparum erythrocyte membrane protein 1 domain cassettes 8 and 13 are associated with severe malaria in children. Proc Natl Acad Sci USA 109:E1791–E1800.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Miller LH, Baruch DI, Marsh K, Doumbo OK. 2002. The pathogenic basis of malaria. Nature 415:673–679.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Miller LH, Good MF, Milon G. 1994. Malaria pathogenesis. Science 264:1878–1883.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Mu J, Myers RA, Jiang H, Liu S, Ricklefs S, Waisberg M, et al.. 2010. Plasmodium falciparum genome-wide scans for positive selection, recombination hot spots and resistance to antimalarial drugs. Nat Genet 42:268–271.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Paul RE, Packer MJ, Walmsley M, Lagog M, Ranford-Cartwright LC, Paru R, et al.. 1995. Mating patterns in malaria parasite populations of Papua New Guinea. Science 269:1709–1711.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Recker M, Buckee CO, Serazin A, Kyes S, Pinches R, Christodoulou Z, et al.. 2011. Antigenic variation in Plasmodium falciparum malaria involves a highly structured switching pattern. PLoS Pathog 7:e1001306.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Recker M, Nee S, Bull PC, Kinyanjui S, Marsh K, Newbold C, et al.. 2004. Transient cross-reactive immune responses can orchestrate antigenic variation in malaria. Nature 429:555–558.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Scherf A, Lopez-Rubio JJ, Riviere L. 2008. Antigenic variation in Plasmodium falciparum. Annu. Rev. Microbiol 62:445–470.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Selander RK, Musser JM, Caugant DA, Gilmour MN, Whittam TS. 1987. Population genetics of pathogenic bacteria. Microb Pathog 3:1–7.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Severins M, Klinkenberg D, Heesterbeck H. 2012. How selection forces dictate the variant surface antigens used by malaria parasites. J R Soc Interface 9:246–260.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Smith M, Smith NH, O'Rourke M, Spratt BG. 1993. How clonal are bacteria?. Proc Natl Acad Sci USA 90:4384–4388.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Taylor HM, Kyes SA, Newbold CI. 2000. Var gene diversity in Plasmodium falciparum is generated by frequent recombination events. Mol Biochem Parasitol 110:391–397.",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Tibayrenc M. 1994. Antigenic diversity and the transmission dynamics of Plasmodium falciparum: the clonality/sexuality debate revisited. Parasitol Today 10:456–457.",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Tibayrenc M, Ayala FJ. 2002. The clonal theory of parasitic protozoa: 12 years on. Trends Parasitol 18:405–410.",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Tibayrenc M, Kjellberg F, Ayala FJ. 1990. A clonal theory of parasitic protozoa: the population structures of Entamoeba, Giardia, Leishmania, Naegleria, Plasmodium, Trichomonas, and Trypanosoma and their medical and taxonomical consequences. Proc Natl Acad Sci USA 87:2414–2418.",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "Volkman S, Sabeti PC, DeCaprio D, Neafsey DE, Schaffner SF, Milner J, et al.. 2006. A genome-wide map of diversity in Plasmodium falciparum. Nat Genet 39:113–119.",
+   "item": "bib53"
+  },
+  {
+   "indice": 53,
+   "texto": "Warimwe GM, Fegan G, Musyoki JN, Newton CR, Opiyo M, Githinji G, et al.. 2012. Prognostic indicators of life-threatening malaria are associated with distinct parasite variant antigen profiles. Sci Transl Med 4:129ra145. doi: 10.1126/scitranslmed.3003247",
+   "item": "bib54"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Tibayrenc et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gupta et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tibayrenc and Ayala, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Selander et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tibayrenc et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smith et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gupta and Day, 1994a",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1994b",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gupta et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tibayrenc, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tibayrenc et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tibayrenc and Ayala, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tibayrenc, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gupta et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gupta and Anderson, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Buckee et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Miller et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Scherf et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Miller et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Miller et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Scherf et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deitsch et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chan et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Claessens et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lavstsen et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Warimwe et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barry et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Scherf et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Freitas-Junior et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Taylor et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Paul et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Paul et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bruce et al., 2000a",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2000b",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barry et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Buckee et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barry et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hedrick et al., 1978",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brown, 1975",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dhingra et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gupta and Day, 1994a",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1994b",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bull et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Miller et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Scherf et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Buckee et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Claessens et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Severins et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al. (2011)",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deitsch et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barry et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Recker et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gupta et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Miller et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Scherf et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tibayrenc and Ayala, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bull et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Recker et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bruce et al., 2000a",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2000b",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Giha et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ewers, 1972",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Miller et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bull et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bruce et al., 2000a",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2000b",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Giha et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Buckee et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Doolan et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frank, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Recker et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frank and Barbour, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bruce et al., 2000a",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2000b",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bruce and Day, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2003",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gillespie, 1977",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Miller et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Freitas-Junior et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Taylor et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barry et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deitsch and Hviid, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deitsch and Hviid, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Conway et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Volkman et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "E",
+   "referencia": 0,
+   "item": "bib1"
+  },
+  {
+   "ponto": "E",
+   "referencia": 11,
+   "item": "bib12"
+  },
+  {
+   "ponto": "E",
+   "referencia": 36,
+   "item": "bib37"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

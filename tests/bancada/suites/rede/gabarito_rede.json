@@ -1,0 +1,79 @@
+{
+ "documento": "documento_rede.docx",
+ "estados_esperados": [
+  {
+   "referencia": 0,
+   "inicio": "ALVES, F. Obra com resposta co",
+   "estado": "consulta_falhou",
+   "motivo": "JSON inválido é falha de consulta"
+  },
+  {
+   "referencia": 1,
+   "inicio": "COSTA, D. Obra após erro do se",
+   "estado": "existe",
+   "motivo": "500 duas vezes e depois 200"
+  },
+  {
+   "referencia": 2,
+   "inicio": "GERMAN, R. R. et al. Updated g",
+   "estado": "existe",
+   "motivo": "sem DOI; Crossref não acha pelo título, PubMed acha (PMID 18634202)"
+  },
+  {
+   "referencia": 3,
+   "inicio": "INSTITUTO EXEMPLO. Página inst",
+   "estado": "existe",
+   "motivo": "página web: conferir pela URL, não por base de artigos"
+  },
+  {
+   "referencia": 4,
+   "inicio": "INSTITUTO SUMIDO. Página remov",
+   "estado": "nao_localizada",
+   "motivo": "URL responde 404"
+  },
+  {
+   "referencia": 5,
+   "inicio": "LIMA, C. Obra sob limite perma",
+   "estado": "consulta_falhou",
+   "motivo": "429 em todas as tentativas: falha de consulta, nunca \"não localizada\" ou \"alucinação\""
+  },
+  {
+   "referencia": 6,
+   "inicio": "PEREIRA, G. Obra inexistente. ",
+   "estado": "nao_localizada",
+   "motivo": "404 em todas as bases e nenhuma busca por título encontra: uso correto de \"não localizada\""
+  },
+  {
+   "referencia": 7,
+   "inicio": "ROCHA, E. Obra lenta. Revista ",
+   "estado": "consulta_falhou",
+   "motivo": "resposta só após 30 s: tempo esgotado é falha de consulta"
+  },
+  {
+   "referencia": 8,
+   "inicio": "SILVA, A. Obra disponível. Rev",
+   "estado": "existe",
+   "motivo": "DOI responde 200"
+  },
+  {
+   "referencia": 9,
+   "inicio": "SOUZA, B. Obra após limite de ",
+   "estado": "existe",
+   "motivo": "429 com Retry-After na primeira tentativa: o motor deve esperar e repetir"
+  }
+ ],
+ "limites_requisicoes": {
+  "429-sempre": [
+   2,
+   6
+  ],
+  "429-uma-vez": [
+   2,
+   3
+  ],
+  "500-duas-vezes": [
+   3,
+   5
+  ]
+ }
+}

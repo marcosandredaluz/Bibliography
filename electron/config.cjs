@@ -63,27 +63,43 @@ function sugestoesDePasta() {
   const home = os.homedir();
   const out = [];
   const oneDrive = process.env.OneDrive || process.env.OneDriveCommercial || path.join(home, 'OneDrive');
+
+  // 1. Sugestão prioritária oficial na nuvem OneDrive
+  if (oneDrive) {
+    const caminhoPadrao = path.join(oneDrive, 'Bibliografia');
+    out.push({
+      nome: 'Bibliografia Pessoal (OneDrive)',
+      caminho: caminhoPadrao,
+    });
+  }
+
+  // 2. Pastas em drives locais conhecidos (D:\BIBLIOGRAFIA, C:\BIBLIOGRAFIA)
+  for (const letra of ['D', 'C']) {
+    const p = `${letra}:\\BIBLIOGRAFIA`;
+    if (fs.existsSync(p)) {
+      out.push({ nome: `Pasta Local (${letra}:\\BIBLIOGRAFIA)`, caminho: p });
+    }
+  }
+
+  // 3. Pastas estritamente acadêmicas no OneDrive (apenas TCC, Mestrado, Esporotricose, etc.)
   if (oneDrive && fs.existsSync(oneDrive)) {
     try {
       const entradas = fs.readdirSync(oneDrive, { withFileTypes: true });
       for (const e of entradas) {
         if (e.isDirectory()) {
           const nome = e.name;
-          // Pastas acadêmicas ou de pesquisa do usuário no OneDrive
-          if (/tcc|bibliografia|sus|saude|ppg|fpp|puc|doutorado|nit|artigo/i.test(nome) || !/^\.|videos|music|fotos|imagens|camera/i.test(nome)) {
-            out.push({ nome, caminho: path.join(oneDrive, nome) });
+          if (/^(tcc|bibliografia|esporotricose|pesquisa|artigos|doutorado|mestrado)/i.test(nome)) {
+            const cam = path.join(oneDrive, nome);
+            if (!out.some((x) => x.caminho.toLowerCase() === cam.toLowerCase())) {
+              out.push({ nome, caminho: cam });
+            }
           }
         }
       }
     } catch {}
   }
-  for (const letra of ['C', 'D', 'E', 'G']) {
-    for (const sub of ['BIBLIOGRAFIA', 'Meu Drive\\Bibliografia']) {
-      const p = `${letra}:\\${sub}`;
-      if (fs.existsSync(p)) out.push({ nome: `${letra}: ${path.basename(p)}`, caminho: p });
-    }
-  }
-  return out;
+
+  return out.slice(0, 3);
 }
 
 function obterProjetosRecentes() {

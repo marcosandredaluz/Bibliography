@@ -1,0 +1,573 @@
+{
+ "id": "reservado_ieee_de-DE_perturbado",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "de-DE",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] Secretaria Municipal da Saúde (Curitiba), „Finden lesen oder fehlen“. Zugegriffen: 16. November 2026. [Online]. Verfügbar unter: https://exemplo-reservado.org/3125",
+   "item": "it008"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] M. Killer, „Wohl sieben früher das letzte legen“, Journal of the American Medical Informatics Association, Bd. 76, Nr. 3, S. 519–524, 1978.",
+   "item": "it014"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] V. A. Pham, „Etwas Hund legen am wünschen eigentlich Arbeit turnen waschen“, Anders AG, Tirschenreuth, 1987.",
+   "item": "it005"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] Minas Gerais (Estado), „Vom Minute fast Geburtstag stark“, Fechner Knappe AG, Vechta, 1986.",
+   "item": "it020"
+  },
+  {
+   "indice": 4,
+   "texto": "[5] R. Mühle, H. Pärtzelt, und M. Stadelmann, „Tier vier See gehen etwas“, Epidemiologia e Serviços de Saúde, Bd. 35, Nr. 8, S. 506–510, doi: 10.99999/teste.reservado.43102.",
+   "item": "it022"
+  },
+  {
+   "indice": 5,
+   "texto": "[6] L. dos Schenk, „Auch verlieren Wissen gleich Freund Hund“, Medical Mycology, Bd. 16, Nr. 6, S. 710–723, 2005, doi: 10.99999/teste.reservado.50741.",
+   "item": "it001"
+  },
+  {
+   "indice": 6,
+   "texto": "[7] E. Francisco Sanz, A. Mude, und A. Schwital, „Wald Bruder traurig hören“, Revista de Saúde Pública, Bd. 14, Nr. 8, S. 418–437, 1993, doi: 10.99999/teste.reservado.11278.",
+   "item": "it002"
+  },
+  {
+   "indice": 7,
+   "texto": "[8] A. Groß, D. Koch, G. Barkholz, und H. Langern, „Kennen zum neun warten anfangen sicher springen sagen sprechen vor“, Epidemiologia & Prevenzione, Bd. 4, Nr. 3, S. 759–776, 2019.",
+   "item": "it006"
+  },
+  {
+   "indice": 8,
+   "texto": "[9] J. Koch II, „Essen heißen Ende stellen Baum Nase“, BMC Public Health, Bd. 17, Nr. 3, S. 263–272, 1996, doi: 10.99999/teste.reservado.28423.",
+   "item": "it021"
+  },
+  {
+   "indice": 9,
+   "texto": "[10] J.-P. Bärer, „Kommen leicht weinen ging Apfel nichts“, Gaceta Sanitaria, Bd. 23, Nr. 9, S. 232–238, 1983, doi: 10.99999/teste.reservado.66401.",
+   "item": "it010"
+  },
+  {
+   "indice": 10,
+   "texto": "[11] H. Chen und H. J. Weitzel, „Hand vielleicht Loch gern mögen deshalb“, Gaceta Sanitaria, Bd. 29, Nr. 6, S. 59–70, 2005.",
+   "item": "it003"
+  },
+  {
+   "indice": 11,
+   "texto": "[12] Agenzia Italiana del Farmaco, „Lehrerin richtig Herr waschen bleiben daran fröhlich Ding nass tun endlich“, Säuberlich GmbH & Co. KG, Soest, 1993.",
+   "item": "it019"
+  },
+  {
+   "indice": 12,
+   "texto": "[13] J. Choi, S. Reising, und S. Putz, „Zurück weinen fast dein Himmel nächste wichtig“, Gaceta Sanitaria, Bd. 69, Nr. 7, S. 831–850, 2015.",
+   "item": "it004"
+  },
+  {
+   "indice": 13,
+   "texto": "[14] G. Linke und I. Ullrich, „Denn Ball kommen Luft Mensch zwei können den Uhr war“. Zugegriffen: 7. November 2026. [Online]. Verfügbar unter: https://exemplo-reservado.org/7831",
+   "item": "it011"
+  },
+  {
+   "indice": 14,
+   "texto": "[15] E. Etzler, L. Wagenknecht, S. Wähner, M. Walter, C. Ullrich, und U. Scholz, „Dabei dazu grün halbe Mann Vogel hin heiß grün“, Das Gesundheitswesen, Bd. 60, Nr. 5, S. 674–693, 2011.",
+   "item": "it024"
+  },
+  {
+   "indice": 15,
+   "texto": "[16] E. Etzler, L. Wagenknecht, S. Wähner, M. Walter, C. Ullrich, und U. Scholz, „Kaufen Sohn gerade einfach dabei“, Revue d’Épidémiologie et de Santé Publique, Bd. 13, Nr. 5, S. 397–402, 2011.",
+   "item": "it023"
+  },
+  {
+   "indice": 16,
+   "texto": "[17] Secretaria Municipal da Saúde (Curitiba), „Nächste Frau Stunde sitzen fragen im viel zwischen Auge kurz Buch gerade“, Klingelhöfer Ziegert GmbH & Co. KG, Senftenberg, 2002.",
+   "item": "it009"
+  },
+  {
+   "indice": 17,
+   "texto": "[18] N. Scheibe-Bolnbach, E. Walter, O. Ebert, und C. Süßebier, „Weil tragen Monate kein Mutter da fressen rennen Ferien schwimmen“, Journal of the American Medical Informatics Association, Bd. 73, Nr. 12, S. 114–129, 2000, doi: 10.99999/teste.reservado.96339.",
+   "item": "it000"
+  },
+  {
+   "indice": 18,
+   "texto": "[19] Australian Institute of Health and Welfare (Australia), „Ding von warm aus später wollen dick“. Zugegriffen: 5. November 2026. [Online]. Verfügbar unter: https://exemplo-reservado.org/8717",
+   "item": "it015"
+  },
+  {
+   "indice": 19,
+   "texto": "[20] O. Döring, „Ihr wohl zurück schicken nach stehen“, Medical Mycology, Bd. 39, Nr. 6, S. 803–820, 2005.",
+   "item": "it012"
+  },
+  {
+   "indice": 20,
+   "texto": "[21] A. Rosemann, K. Hein, J. Textor, H. Eberhardt, T. Weller, und L. Gumprich, „Zug draußen unter das wenn darauf Himmel dort zu legen“, Preventive Veterinary Medicine, Bd. 56, Nr. 7, S. 747–764, 2002.",
+   "item": "it016"
+  },
+  {
+   "indice": 21,
+   "texto": "[22] Santé publique France, Wichtig Uhr sollen Fußball. 2012. [Online]. Verfügbar unter: https://leis-reservado.gov/5851",
+   "item": "it017"
+  },
+  {
+   "indice": 22,
+   "texto": "[23] Conselho Federal de Medicina Veterinária, Waschen Teller zwischen Geschenk Wohnung möglich. 2005. [Online]. Verfügbar unter: https://leis-reservado.gov/9679",
+   "item": "it013"
+  },
+  {
+   "indice": 23,
+   "texto": "[24] Santé publique France, Das kurz Wissen setzen voll tragen danach dabei wissen. 2025. [Online]. Verfügbar unter: https://leis-reservado.gov/6033",
+   "item": "it007"
+  },
+  {
+   "indice": 24,
+   "texto": "[25] J. Mosemann und G. Sontag, „Müssen vor Sohn ins müssen warten wir“, One Health, Bd. 5, Nr. 10, S. 118–127, 2011.",
+   "item": "it018"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2], [3], [4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it005",
+    "it020"
+   ],
+   "referencias": [
+    1,
+    2,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it001"
+   ],
+   "referencias": [
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Francisco Sanz et al. [7]",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [9], [10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it021",
+    "it010"
+   ],
+   "referencias": [
+    7,
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it011"
+   ],
+   "referencias": [
+    2,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10], [16], [17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it009",
+    "it010"
+   ],
+   "referencias": [
+    15,
+    16,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it000"
+   ],
+   "referencias": [
+    7,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [10], [21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it016",
+    "it010"
+   ],
+   "referencias": [
+    6,
+    20,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[22]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mühle et al. [5]",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Choi et al. [13]",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2], [9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it021"
+   ],
+   "referencias": [
+    1,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Minas Gerais (Estado) [4]",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4], [18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it000"
+   ],
+   "referencias": [
+    3,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[22, S. 51]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Choi et al. [13]",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Also von Erde Land Sache dazu weg kurz auf Ding schlafen Haare anfangen so"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

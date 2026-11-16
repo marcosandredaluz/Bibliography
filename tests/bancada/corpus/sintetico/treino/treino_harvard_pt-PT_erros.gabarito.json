@@ -1,0 +1,677 @@
+{
+ "id": "treino_harvard_pt-PT_erros",
+ "estilo": "harvard",
+ "sistema": "autor-data",
+ "locale": "pt-PT",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Amorim-Paiva, R. (2006) Expedita unde autem pariatur nihil aperiam facilis nihil modi. Viana do Castelo: Ramos S/A.",
+   "item": "it000"
+  },
+  {
+   "indice": 1,
+   "texto": "Andrade-Machado, M. (2022) Nostrum optio error ipsam perferendis consequuntur. Disponível em: https://leis-treino.gov/9870.",
+   "item": "extra0"
+  },
+  {
+   "indice": 2,
+   "texto": "Brito, R. et al. (1991) Aliquid fugiat molestias veniam voluptas culpa illum. Aveiro: Tavares S/A.",
+   "item": "it019"
+  },
+  {
+   "indice": 3,
+   "texto": "Cardoso, I., Fonseca, M. e Miranda, R. (2021) «Quas a eos expedita quia tenetur commodi autem», BMC Public Health, 32(1), pp. 525–544. Disponível em: https://doi.org/10.99999/teste.treino.45014.",
+   "item": "it012"
+  },
+  {
+   "indice": 4,
+   "texto": "Carvalho, B., Barros, G. e Loureiro, V. (2018) «Eum amet similique non ea reiciendis earum perferendis hic», One Health, 3(6), pp. 661–678. Disponível em: https://doi.org/10.99999/teste.treino.28903.",
+   "item": "it016"
+  },
+  {
+   "indice": 5,
+   "texto": "Çelik, A. et al. (2004) «Ex quae dolorum sapiente neque ex facere ullam qui», Medical Mycology, 18(1), pp. 51–57. Disponível em: https://doi.org/10.99999/teste.treino.44797.",
+   "item": "it006"
+  },
+  {
+   "indice": 6,
+   "texto": "Cruz, S. e Branco, N. (1989) Veniam et sunt quam odio facilis. Mêda: Loureiro Lda.",
+   "item": "it015"
+  },
+  {
+   "indice": 7,
+   "texto": "Cunha, F. et al. (2008) Repellat pariatur eos fuga reiciendis itaque ullam asperiores neque quis facere corporis. Disponível em: https://exemplo-treino.org/7991 (Acedido: 8 de novembro de 2026).",
+   "item": "it017"
+  },
+  {
+   "indice": 8,
+   "texto": "Cunha, M. et al. (1999) «Exercitationem sint eos odit necessitatibus impedit», Epidemiologia & Prevenzione, 14(8), pp. 330–342.",
+   "item": "it028"
+  },
+  {
+   "indice": 9,
+   "texto": "von Garcia, K. e Moura, E. (2016) «Nostrum assumenda aspernatur praesentium voluptatem ex praesentium», Gaceta Sanitaria, 7(1), pp. 375–384.",
+   "item": "extra1"
+  },
+  {
+   "indice": 10,
+   "texto": "Garcia, L., Domingues, R. e Barros, A. (2011) «Eligendi praesentium autem hic», Medical Mycology, 64(10), pp. 162–177. Disponível em: https://doi.org/10.99999/teste.treino.54310.",
+   "item": "it027"
+  },
+  {
+   "indice": 11,
+   "texto": "Gomes, I. (1996a) «Explicabo accusantium eius deserunt aliquid vitae facilis quisquam facere mollitia porro laborum», Preventive Veterinary Medicine, 43(11), pp. 373–380. Disponível em: https://doi.org/10.99999/teste.treino.26518.",
+   "item": "it031"
+  },
+  {
+   "indice": 12,
+   "texto": "Gomes, I. (1996b) Hic repellat architecto assumenda itaque. Disponível em: https://leis-treino.gov/1055.",
+   "item": "it030"
+  },
+  {
+   "indice": 13,
+   "texto": "Guerreiro, V. (1977) «Ea libero amet dolor architecto nobis architecto neque», Das Gesundheitswesen, 69(9), pp. 48–59.",
+   "item": "it011"
+  },
+  {
+   "indice": 14,
+   "texto": "Istituto Superiore di Sanità (2025) «Eligendi officiis exercitationem quidem inventore expedita corporis repudiandae saepe», Gaceta Sanitaria, 50(9), pp. 78–89. Disponível em: https://doi.org/10.99999/teste.treino.96656.",
+   "item": "it007"
+  },
+  {
+   "indice": 15,
+   "texto": "Lopes, A. et al. (2003) «Nostrum odio placeat possimus et enim», Journal of the American Medical Informatics Association, 29(1), pp. 165–169. Disponível em: https://doi.org/10.99999/teste.treino.62702.",
+   "item": "it022"
+  },
+  {
+   "indice": 16,
+   "texto": "Maia, L., Tavares, L. e Almeida, D. (1979) Repellendus cum doloremque veniam cum molestias libero magnam officia. Peniche: Azevedo S/A.",
+   "item": "it010"
+  },
+  {
+   "indice": 17,
+   "texto": "Mateo Pedrosa, O. (1978) Itaque aut recusandae officiis in quod qui asperiores iste atque quod et. Anjos Anjos S/A.",
+   "item": "it002"
+  },
+  {
+   "indice": 18,
+   "texto": "Mendes, L. (1976) «Minima animi soluta quisquam», Preventive Veterinary Medicine, 43(12), pp. 760–771. Disponível em: https://doi.org/10.99999/teste.treino.75137.",
+   "item": "it024"
+  },
+  {
+   "indice": 19,
+   "texto": "National Library of Medicine (Estados Unidos) (1997) Nostrum nam dolores aspernatur cum consectetur quia placeat aperiam. Disponível em: https://exemplo-treino.org/2760 (Acedido: 12 de novembro de 2026).",
+   "item": "it014"
+  },
+  {
+   "indice": 20,
+   "texto": "National Library of Medicine (Estados Unidos) (2017) «Tenetur veritatis odio neque nam suscipit eligendi fugiat dolorum beatae architecto quo excepturi fugiat neque», Journal of the American Medical Informatics Association, 10(2), pp. 527–537. Disponível em: https://doi.org/10.99999/teste.treino.64548.",
+   "item": "it008"
+  },
+  {
+   "indice": 21,
+   "texto": "Park, J. et al. (2008) «Autem sint earum atque quam», em B. Moura (ed.) Quis explicabo iure reiciendis dolorem ex quam tempora libero nesciunt. Viana do Castelo: Monteiro S.A., pp. 52–67.",
+   "item": "it004"
+  },
+  {
+   "indice": 22,
+   "texto": "Pereira, N. et al. (2010) «Aut fuga temporibus modi cum», Epidemiologia & Prevenzione, 28(11), pp. 854–871. Disponível em: https://doi.org/10.99999/teste.treino.91918.",
+   "item": "it023"
+  },
+  {
+   "indice": 23,
+   "texto": "Robert Koch-Institut (sem data) Illo maxime voluptates ipsam aperiam quo omnis omnis. Disponível em: https://exemplo-treino.org/2304 (Acedido: 6 de novembro de 2026).",
+   "item": "it029"
+  },
+  {
+   "indice": 24,
+   "texto": "Rocha, M. (2006) «Dolore veritatis aut vitae accusamus unde reprehenderit», Revue d’Épidémiologie et de Santé Publique, 38(5), pp. 357–361. Disponível em: https://doi.org/10.99999/teste.treino.23889.",
+   "item": "it026"
+  },
+  {
+   "indice": 25,
+   "texto": "Santos, E., Barros, C. e Henriques, N. (1999) «Nulla expedita minima excepturi exercitationem fuga dolorum», Epidemiologia e Serviços de Saúde, 51(6), pp. 405–417. Disponível em: https://doi.org/10.99999/teste.treino.23830.",
+   "item": "it013"
+  },
+  {
+   "indice": 26,
+   "texto": "Simões, E. e Nunes, S. (1996) «Consequatur facere error soluta magnam assumenda suscipit amet culpa», em A. Carneiro (ed.) Nemo enim molestiae quos. Angra do Heroísmo: Araújo, pp. 167–182.",
+   "item": "it021"
+  },
+  {
+   "indice": 27,
+   "texto": "Tran, M. (1982) Quibusdam accusantium provident repudiandae neque animi voluptatibus necessitatibus eaque ab. Paiva.",
+   "item": "it005"
+  },
+  {
+   "indice": 28,
+   "texto": "del Vicente, M., Reis, J. e Pires, V. (2013) Occaecati nesciunt hic corrupti dolores accusantium optio nobis eum. Disponível em: https://leis-treino.gov/6155.",
+   "item": "it001"
+  },
+  {
+   "indice": 29,
+   "texto": "Vieira, P. e Teixeira, S. (2025) «Tempore sit illo pariatur in officia temporibus ea blanditiis», Medical Mycology, 75(8), pp. 452–465.",
+   "item": "it020"
+  },
+  {
+   "indice": 30,
+   "texto": "Virginia-Maryland College of Veterinary Medicine (1991) «Nesciunt sequi ipsum eum molestias ducimus dicta inventore maxime suscipit», Medical Mycology, 46(8), pp. 559–579. Disponível em: https://doi.org/10.99999/teste.treino.53799.",
+   "item": "it009"
+  },
+  {
+   "indice": 31,
+   "texto": "Zhang, H. e Silva, M. (2000) Et alias necessitatibus harum asperiores excepturi. Disponível em: https://exemplo-treino.org/5024 (Acedido: 8 de novembro de 2026).",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Garcia, Domingues e Barros, 2011; National Library of Medicine (Estados Unidos), 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it027"
+   ],
+   "referencias": [
+    null,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Carvalho, Barros e Loureiro, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cunha et al., 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Simões e Nunes (1996)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mendes (1976)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vieira e Teixeira, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 1991; Lopes et al., 2003; Rocha, 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it022",
+    "it009"
+   ],
+   "referencias": [
+    24,
+    15,
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (1991)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gomes, 1996b; Garcia, Domingues e Barros, 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it027"
+   ],
+   "referencias": [
+    12,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cruz e Branco, 1989; Santos, Barros e Henriques, 1999; Park et al., 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it004",
+    "it013"
+   ],
+   "referencias": [
+    6,
+    21,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mateo Pedrosa (1978)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(del Vicente, Reis e Pires, 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cunha et al., 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "National Library of Medicine (Estados Unidos) (1997)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gomes, 1996b; Zhang e Silva, 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it030"
+   ],
+   "referencias": [
+    31,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rocha, 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brito et al., 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Garcia, Domingues e Barros (2011)",
+   "tipo": "narrativa",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cardoso, Fonseca e Miranda, 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zhang e Silva, 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 1991; Simões e Nunes, 1996; Amorim-Paiva, 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it000",
+    "it009"
+   ],
+   "referencias": [
+    26,
+    0,
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maia, Tavares e Almeida (1979)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Antunes et al., 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santos, Barros e Henriques, 1999; Çelik et al., 2004; Pereira et al., 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it006",
+    "it023"
+   ],
+   "referencias": [
+    25,
+    5,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park et al., 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran, 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, sem data)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Amorim-Paiva, 2006; Rocha, 2006; Garcia, Domingues e Barros, 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it027",
+    "it026"
+   ],
+   "referencias": [
+    0,
+    10,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Guerreiro, 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gomes, 1996a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), 1997, p. 125)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(del Vicente, Reis e Pires, 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos), 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Amorim-Paiva, 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Çelik et al. (2004)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Garcia, Domingues e Barros, 2011; National Library of Medicine (Estados Unidos), 2011)",
+   "item": "it018"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(National Library of Medicine (Estados Unidos), 2011)",
+   "item": "it018"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Antunes et al., 1989)",
+   "item": "it025"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(National Library of Medicine (Estados Unidos), 2011)",
+   "item": "it018"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(National Library of Medicine (Estados Unidos), 2011)",
+   "item": "it018"
+  },
+  {
+   "ponto": "E",
+   "referencia": 1,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 9,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Deleniti optio odio quisquam dicta quo culpa maiores voluptatum consectetur dignissimos ipsam"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

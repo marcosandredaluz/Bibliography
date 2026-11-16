@@ -1,0 +1,621 @@
+{
+ "id": "treino_ama_it-IT_limpo",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "it-IT",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Trevisan G, Gozzano O, Correr L, Barcaccia S. Risultare appunto avanti ospedale decisione gamba uscire scegliere possibile. Epidemiologia e Serviços de Saúde. 1986;12(8):797–812.",
+   "item": "it022"
+  },
+  {
+   "indice": 1,
+   "texto": "2. National Library of Medicine (Estados Unidos). Stagione filo albero scoppiare. Revista de Saúde Pública. 1995;19(7):27–32. doi:10.99999/teste.treino.62246",
+   "item": "it028"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Badoer V. Problema termine civiltà grigio biondo stupido paura caso vicino spazio seguito capace disposizione greco avere gesto. Marazzi SPA; 2005.",
+   "item": "it017"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Istituto Superiore di Sanità. Speranza parere pranzo accompagnare legare maggiore improvviso dimostrare. 1995. Consultato 7 novembre 2026. https://exemplo-treino.org/6261",
+   "item": "it020"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Vecoli V. Verità desiderio pelle insomma croce sposare volontà oro stare forte crescere contatto. Revue d’Épidémiologie et de Santé Publique. 1983;69(6):155–162. doi:10.99999/teste.treino.95815",
+   "item": "it026"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Santorio D, Perozzo V, Petrucci S, Ruggeri A, Zoppetto E, Cugia A. Operaio centrale lontano funzione volare attaccare. BMC Public Health. 2009;79(12):415–434.",
+   "item": "it013"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Virginia-Maryland College of Veterinary Medicine. Sole pelle carta spingere direzione continuare preferire. 1976. https://leis-treino.gov/2725",
+   "item": "it024"
+  },
+  {
+   "indice": 7,
+   "texto": "8. São Paulo (Estado). Tacere giornata su osservare sperare cane domani. Bruno, Prada e Ferragni Group; 2023.",
+   "item": "it010"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Robert Koch-Institut. Leggero piede creare sonno mestiere. Manunta-Pirandello s.r.l.; 2012.",
+   "item": "it007"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Zhang X, Rossetti G, Rensi P. Cura nemico proprio commercio lo niente giro ordine sorprendere. Cadernos de Saúde Pública. 1980;61(10):430–436. doi:10.99999/teste.treino.29115",
+   "item": "it003"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Scarponi D, Zabarella G, Carullo C, Vigorelli L, Gotti M, Sabbatini C. Successo spalla risultato seguire sentimento abbandonare pericoloso figlio offendere. One Health. 1993;12(10):426–436. doi:10.99999/teste.treino.22393",
+   "item": "it018"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Pavanello S, Panatta S, Zeffirelli R, Praga A, Tafuri O, Curatoli L. Unire provvedere come fermo religioso affrontare aspetto importante domenica casa tirare diventare creare. Revista de Saúde Pública. 2007;64(11):253–262. doi:10.99999/teste.treino.99878",
+   "item": "it025"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Haute Autorité de Santé (France). Ricerca gamba massimo fatto alcuno pianta. 2020. https://leis-treino.gov/5549",
+   "item": "it014"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Gascón Codina D. Pianura buio ricchezza riprendere università europeo storico notizia valle elettrico lo tecnico indicare muovere. Revista de Saúde Pública. 2014;40(6):103–122. doi:10.99999/teste.treino.24397",
+   "item": "it002"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Lee S yeon, Magrassi S, Toselli M. Intendere entro realtà oltre rientrare guardare mattina lingua aprire croce. Epidemiologia & Prevenzione. 2011;20(7):379–397. doi:10.99999/teste.treino.56163",
+   "item": "it004"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Columbo L, Stoppani G, Majewski I, Barberini C, Ossola P, Ramazzotti A. Durare scoprire passare subito scienza sala orecchio. One Health. 1993;54(3):549–553. doi:10.99999/teste.treino.89623",
+   "item": "it019"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Beccaria B, Trobbiani S. Dunque dire contro storico comunque possedere riuscire impedire stazione profondo lira. Borromini s.r.l.; 2001.",
+   "item": "it021"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Pham TH, Pietrangeli T, Peranda V, Maffei M. Descrivere settimana lago abito levare ognuno comunque zia si corso storia. Garibaldi SPA; 1994.",
+   "item": "it005"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Conselho Nacional de Saúde (Brasil). Chiedere fede regione brutto chissà togliere cui posare. Gaceta Sanitaria. 2026;15(10):235–252. doi:10.99999/teste.treino.42128",
+   "item": "it009"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Ajello-Mondaini A, Trombetta D, Gilardoni G. Voce chiedere esistere fame probabilmente sociale presentare cortile durante. Epidemiologia e Serviços de Saúde. 2024;27(7):287–291. doi:10.99999/teste.treino.79076",
+   "item": "it000"
+  },
+  {
+   "indice": 20,
+   "texto": "21. van der Bajamonti L, Offredi C. Chiave prodotto esso stabilire fatica operaio sotto sangue gruppo crisi. Revista de Saúde Pública. 1991;13(5):52–66. doi:10.99999/teste.treino.20511",
+   "item": "it001"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Puccini A. Significare tu loro leggere pomeriggio dove almeno resistere signorina strada angolo. Gaceta Sanitaria. 1985;71(11):499–508.",
+   "item": "it016"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Łukasz B, Milanesi U, Casagrande N. Partire importanza unire sinistro ragazza luna nudo. In: Infantino D, a c. di. Fianco labbro vi raccontare abitare. Argan, Malenchini e Cocci s.r.l.; 1979:120–135.",
+   "item": "it006"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Monaco E, Zabarella M, Cagnotto M, Moresi F, Bernini G, Liguori A. Basso salutare favore camera regione stasera intendere principale. Cadernos de Saúde Pública. 1976;19(7):332–342.",
+   "item": "it015"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Mortati M, Montecchi L, Dallara B. Qualsiasi fatica controllo peggio europeo. Journal of the American Medical Informatics Association. 1985;35(2):27–45. doi:10.99999/teste.treino.38246",
+   "item": "it012"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Istituto Superiore di Sanità. Visita durante possibilità internazionale tra davanti abitare ciò. BMC Public Health. 2005;27(1):132–148. doi:10.99999/teste.treino.48245",
+   "item": "it008"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Pasolini L. Natura affare perdere riportare chiave affatto assicurare. Medical Mycology. 1983;44(8):730–750. doi:10.99999/teste.treino.92735",
+   "item": "it011"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Zanzi A. Interessare governo medico pregare duro forte tentare vuoto caro nudo questo ponte. Revue d’Épidémiologie et de Santé Publique. 2026;51(8):455–459. doi:10.99999/teste.treino.95205",
+   "item": "it023"
+  },
+  {
+   "indice": 28,
+   "texto": "29. National Library of Medicine (Estados Unidos). Tacere università lì modo eppure occhio fretta. 1995. https://leis-treino.gov/2516",
+   "item": "it029"
+  },
+  {
+   "indice": 29,
+   "texto": "30. Segrè E, Santi A, Cocci A, Fantini M, Vittadello L, Deledda P. Università sposare importante guardare. Revue d’Épidémiologie et de Santé Publique. 62(10):487–505. doi:10.99999/teste.treino.45636",
+   "item": "it027"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "National Library of Medicine (Estados Unidos) 2",
+   "tipo": "narrativa",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5–7",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it013",
+    "it024"
+   ],
+   "referencias": [
+    4,
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,9,10",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it026",
+    "it003"
+   ],
+   "referencias": [
+    8,
+    4,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12–14",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it014",
+    "it002"
+   ],
+   "referencias": [
+    11,
+    12,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,17,18",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it021",
+    "it005"
+   ],
+   "referencias": [
+    1,
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,18",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it013"
+   ],
+   "referencias": [
+    17,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "19",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,6,20",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it000",
+    "it028"
+   ],
+   "referencias": [
+    5,
+    19,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "14,21,22",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it002",
+    "it016"
+   ],
+   "referencias": [
+    20,
+    13,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "24",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mortati et al. 25",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25,26",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it012"
+   ],
+   "referencias": [
+    25,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "27",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "26",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "20,28,29",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it023",
+    "it029"
+   ],
+   "referencias": [
+    19,
+    27,
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,26,30",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it008",
+    "it027"
+   ],
+   "referencias": [
+    1,
+    25,
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,29",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it022"
+   ],
+   "referencias": [
+    28,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "28(p213)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "19",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "26",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Lee et al. 15",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Entro contento figurare distinguere uguale indicare armare no mente maggiore principe antico contare"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

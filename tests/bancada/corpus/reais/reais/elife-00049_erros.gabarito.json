@@ -1,0 +1,1166 @@
+{
+ "id": "elife-00049_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00049.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Barrera A, Guerra B, Lee H, Lanford RE. 2004. Analysis of host range phenotypes of primate hepadnaviruses by in vitro infections of hepatitis D virus pseudotypes. J Virol 78:5233–5243.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Barrera A, Guerra B, Notvall L, Lanford RE. 2005. Mapping of the hepatitis B virus pre-S1 domain involved in receptor recognition. J Virol 79:9786–9798.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Blanchet M, Sureau C. 2006. Analysis of the cytosolic domains of the hepatitis B virus envelope proteins for their function in viral particle assembly and infectivity. J Virol 80:11935–11945.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Blanchet M, Sureau C. 2007. Infectivity determinants of the hepatitis B virus pre-S domain are confined to the N-terminal 75 amino acid residues. J Virol 81:5841–5849.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Boehm ST, Thasler WE, Weiss TS, Jilg W. 2005. Primary human hepatocytes as an in vitro model for hepatitis B virus infection. Models of viral hepatitis Vol 25:119–134.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Bowden S, Jackson K, Littlejohn M, Locarnini S. 2004. Quantification of HBV covalently closed circular DNA from liver tissue by real-time PCR. Methods Mol Med 95:41–50.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Burge C, Karlin S. 1997. Prediction of complete gene structures in human genomic DNA. J Mol Biol 268:78–94.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Camacho C, Coulouris G, Avagyan V, Ma N, Papadopoulos J, Bealer K, et al.. 2009. BLAST+: architecture and applications. BMC Bioinformatics 10:421.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Chen PJ, Kalpana G, Goldberg J, Mason W, Werner B, Gerin J, et al.. 1986. Structure and replication of the genome of the hepatitis delta virus. Proc Natl Acad Sci U S A 83:8774–8778.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Chouteau P, Le Seyec J, Cannie I, Nassal M, Guguen-Guillouzo C, Gripon P. 2001. A short N-proximal region in the large envelope protein harbors a determinant that contributes to the species specificity of human hepatitis B virus. J Virol 75:11565–11572.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Engelke M, Mills K, Seitz S, Simon P, Gripon P, Schnölzer M, et al.. 2006. Characterization of a hepatitis B and hepatitis delta virus receptor binding site. Hepatology 43:750–760.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Freitas N, Salisse J, Cunha C, Toshkov I, Menne S, Gudima SO. 2012. Hepatitis delta virus infects the cells of hepadnavirus-induced hepatocellular carcinoma in woodchucks. Hepatology 56:76–85.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Glebe D, Aliakbari M, Krass P, Knoop EV, Valerius KP, Gerlich WH. 2003. Pre-s1 antigen-dependent infection of Tupaia hepatocyte cultures with human hepatitis B virus. J Virol 77:9511–9521.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Glebe D, Urban S, Knoop EV, Cag N, Krass P, Grün S, et al.. 2005. Mapping of the hepatitis B virus attachment site by use of infection-inhibiting preS1 lipopeptides and Tupaia hepatocytes. Gastroenterology 129:234–245.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Glebe D, Urban S. 2007. Viral and cellular determinants involved in hepadnaviral entry. World J Gastroenterol 13:22–38.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Grabherr MG, Haas BJ, Yassour M, Levin JZ, Thompson DA, Amit I, et al.. 2011. Full-length transcriptome assembly from RNA-Seq data without a reference genome. Nat Biotechnol 29:644–652.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Gripon P, Diot C, Thézé N, Fourel I, Loreal O, Brechot C, et al.. 1988. Hepatitis B virus infection of adult human hepatocytes cultured in the presence of dimethyl sulfoxide. J Virol 62:4136–4143.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Gripon P, Rumin S, Urban S, Le Seyec J, Glaise D, Cannie I, et al.. 2002. Infection of a human hepatoma cell line by hepatitis B virus. Proc Natl Acad Sci U S A 99:15655–15660.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Gripon P, Diot C, Guguen-Guillouzo C. 1993. Reproducible high level infection of cultured adult human hepatocytes by hepatitis B virus: effect of polyethylene glycol on adsorption and penetration. Virology 192:534–540.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Gripon P, Le Seyec J, Rumin S, Guguen-Guillouzo C. 1995. Myristylation of the hepatitis B virus large surface protein is essential for viral infectivity. Virology 213:292–299.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Gripon P, Cannie I, Urban S. 2005. Efficient inhibition of hepatitis B virus infection by acylated peptides derived from the large viral surface protein. J Virol 79:1613–1622.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Hagenbuch B, Meier PJ. 1994. Molecular cloning, chromosomal localization, and functional characterization of a human liver Na+/bile acid cotransporter. J Clin Invest 93:1326–1331.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Hart SN, Li Y, Nakamoto K, Subileau EA, Steen D, Zhong XB. 2010. A comparison of whole genome gene expression profiles of HepaRG cells and HepG2 cells to primary human hepatocytes and human liver tissues. Drug Metab Dispos 38:988–994.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Heermann KH, Goldmann U, Schwartz W, Seyffarth T, Baumgarten H, Gerlich WH. 1984. Large surface proteins of hepatitis B virus containing the pre-s sequence. J Virol 52:396–402.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Hu NJ, Iwata S, Cameron AD, Drew D. 2011. Crystal structure of a bacterial homologue of the bile acid sodium symporter ASBT. Nature 478:408–411.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Hughes SA, Wedemeyer H, Harrison PM. 2011. Hepatitis delta virus. Lancet 378:73–85.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Kullak-Ublick GA, Glasa J, Böker C, Oswald M, Grützner U, Hagenbuch B, et al.. 1997. Chlorambucil-taurocholate is transported by bile acid carriers expressed in human hepatocellular carcinomas. Gastroenterology 113:1295–1305.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Lavanchy D. 2004. Hepatitis B virus epidemiology, disease burden, treatment, and current and emerging prevention and control measures. J Viral Hepat 11:97–107.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Le Duff Y, Blanchet M, Sureau C. 2009. The pre-S1 and antigenic loop infectivity determinants of the hepatitis B virus envelope proteins are functionally independent. J Virol 83:12443–12451.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Le Seyec J, Chouteau P, Cannie I, Guguen-Guillouzo C, Gripon P. 1999. Infection process of the hepatitis B virus depends on the presence of a defined sequence in the pre-S1 domain. J Virol 73:2052–2057.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Lee S, Kim S. 2007. Gene regulations in HBV-related liver cirrhosis closely correlate with disease severity. J Biochem Mol Biol 40:814–824.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Leistner CM, Gruen-Bernhard S, Glebe D. 2008. Role of glycosaminoglycans for binding and infection of hepatitis B virus. Cell Microbiol 10:122–133.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Liang D, Hagenbuch B, Stieger B, Meier PJ. 1993. Parallel decrease of Na(+)-taurocholate cotransport and its encoding mRNA in primary cultures of rat hepatocytes. Hepatology 18:1162–1166.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Mareninova O, Shin JM, Vagin O, Turdikulova S, Hallen S, Sachs G. 2005. Topography of the membrane domain of the liver Na+-dependent bile acid transporter. Biochemistry 44:13702–13712.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Mi H, Lazareva-Ulitsky B, Loo R, Kejariwal A, Vandergriff J, Rabkin S, et al.. 2005. The PANTHER database of protein families, subfamilies, functions and pathways. Nucleic Acids Res 33:D284–D288.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Morizono K, Xie Y, Olafsen T, Lee B, Dasgupta A, Wu AM, et al.. 2011. The soluble serum protein Gas6 bridges virion envelope phosphatidylserine to the TAM receptor tyrosine kinase Axl to mediate viral entry. Cell Host Microbe 9:286–298.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Rippin SJ, Hagenbuch B, Meier PJ, Stieger B. 2001. Cholestatic expression pattern of sinusoidal and canalicular organic anion transport systems in primary cultured rat hepatocytes. Hepatology 33:776–782.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Schulze A, Gripon P, Urban S. 2007. Hepatitis B virus infection initiates with a large surface protein-dependent binding to heparan sulfate proteoglycans. Hepatology 46:1759–1768.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Schulze A, Schieck A, Ni Y, Mier W, Urban S. 2010. Fine mapping of pre-S sequence requirements for hepatitis B virus large envelope protein-mediated receptor interaction. J Virol 84:1989–2000.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Seeger C, Zoulin F, Mason WS. 2007. Hepadnaviruses. Field's virology Vol 2:2977.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Shayakhmetov DM, Gaggar A, Ni S, Li ZY, Lieber A. 2005. Adenovirus binding to blood factors results in liver cell infection and hepatotoxicity. J Virol 79:7478–7491.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Shevchenko A, Tomas H, Havlis J, Olsen JV, Mann M. 2006. In-gel digestion for mass spectrometric characterization of proteins and proteomes. Nat Protoc 1:2856–2860.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Stieger B, Hagenbuch B, Landmann L, Höchli M, Schroeder A, Meier PJ. 1994. In situ localization of the hepatocytic Na+/Taurocholate cotransporting polypeptide in rat liver. Gastroenterology 107:1781–1787.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Stieger B. 2011. The role of the sodium-taurocholate cotransporting polypeptide (NTCP) and of the bile salt export pump (BSEP) in physiology and pathophysiology of bile formation. Handb Exp Pharmacol:205–259.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Su JJ, Yan RQ, Gan YQ, Zhou DN, Huang GH. 1987. [Experimental infection of human hepatitis B virus (HBV) in adult tree shrews]. Zhonghua Bing Li Xue Za Zhi 16:103–106.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Suchanek M, Radzikowska A, Thiele C. 2005. Photo-leucine and photo-methionine allow identification of protein-protein interactions in living cells. Nat Methods 2:261–267.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Sui J, Li W, Roberts A, Matthews LJ, Murakami A, Vogel L, et al.. 2005. Evaluation of human monoclonal antibody 80R for immunoprophylaxis of severe acute respiratory syndrome by an animal study, epitope mapping, and analysis of spike variants. J Virol 79:5900–5906.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Summers J, Smith PM, Horwich AL. 1990. Hepadnavirus envelope proteins regulate covalently closed circular DNA amplification. J Virol 64:2819–2824.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Sureau C, Moriarty AM, Thornton GB, Lanford RE. 1992. Production of infectious hepatitis delta virus in vitro and neutralization with antibodies directed against hepatitis B virus pre-S antigens. J Virol 66:1241–1245.",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Sureau C. 2006. The role of the HBV envelope proteins in the HDV replication cycle. Curr Top Microbiol Immunol 307:113–131.",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Walter E, Keist R, Niederost B, Pult I, Blum HE. 1996. Hepatitis B virus infection of Tupaia hepatocytes in vitro and in vivo. Hepatology 24:1–5.",
+   "item": "bib52"
+  },
+  {
+   "indice": 51,
+   "texto": "Xiao X, Li J, Samulski RJ. 1998. Production of high-titer recombinant adeno-associated virus vectors in the absence of helper adenovirus. J Virol 72:2224–2232.",
+   "item": "bib54"
+  },
+  {
+   "indice": 52,
+   "texto": "Xu T, Venable JD, Park SK, Cociorva D, Lu B, Liao L, et al.. 2006. ProLuCID, a fast and sensitive tandem mass spectra-based protein identification program. Mol Cell Proteomics 5:S174.",
+   "item": "bib55"
+  },
+  {
+   "indice": 53,
+   "texto": "Zollner G, Wagner M, Fickert P, Silbert D, Fuchsbichler A, Zatloukal K, et al.. 2005. Hepatobiliary transporter expression in human hepatocellular carcinoma. Liver Int 25:367–379.",
+   "item": "bib56"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Lavanchy, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hughes et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Heermann et al., 1984",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Seeger et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barrera et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sureau, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hughes et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Le Seyec et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chouteau et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blanchet and Sureau, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Le Duff et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Glebe and Urban, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barrera et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Glebe et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Engelke et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schulze et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Suchanek et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Su et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Walter et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Glebe et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schulze et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 1986",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al., 1988",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Boehm et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barrera et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Glebe et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Engelke et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schulze et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hagenbuch and Meier, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stieger, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mareninova et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hu et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stieger, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stieger et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schulze et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leistner et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liang et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rippin et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al., 1988",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Seeger et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shayakhmetov et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Morizono et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stieger, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kullak-Ublick et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zollner et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee and Kim, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Walter et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al. (2002)",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sureau et al. (1992)",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blanchet and Sureau (2006)",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Xiao et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sui et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barrera et al. (2004)",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schulze et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Freitas et al. (2012)",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Summers et al. (1990)",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bowden et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Werle-Lapostolle et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Glebe et al. (2003)",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Grabherr et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burge and Karlin, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Camacho et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Camacho et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mi et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hart et al. (2010)",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shevchenko et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Xu et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tabb et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gripon et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schulze et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Werle-Lapostolle et al., 2004",
+   "item": "bib53"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Tabb et al., 2002",
+   "item": "bib51"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

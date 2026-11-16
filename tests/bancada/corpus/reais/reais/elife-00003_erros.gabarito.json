@@ -1,0 +1,1111 @@
+{
+ "id": "elife-00003_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00003.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Augusto LA, Decottignies P, Synguelakis M, Nicaise M, Le Maréchal P, Chaby R. 2003. Histones: a novel class of lipopolysaccharide-binding molecules. Biochemistry 42:3929–3938.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Bielecki J, Youngman P, Connelly P, Portnoy DA. 1990. Bacillus subtilis expressing a haemolysin gene from Listeria monocytogenes can grow in mammalian cells. Nature 345:175–176.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Bliska JB, Casadevall A. 2009. Intracellular pathogenic bacteria and fungi. Nat Rev Microbiol 7:165–171.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Bolton SJ, Perry VH. 1997. Histone H1; a neuronal protein that binds bacterial lipopolysaccharide. J Neurocytol 26:823–831.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Bozza PT, Viola JP. 2010. Lipid droplets in inflammation and cancer. Prostaglandins Leukot Essent Fatty Acids 82:243–250.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Brasaemle DL, Dolios G, Shapiro L, Wang R. 2004. Proteomic analysis of proteins associated with lipid droplets of basal and lipolytically stimulated 3T3-L1 adipocytes. J Biol Chem 279:46835–46842.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Cermelli S, Guo Y, Gross SP, Welte MA. 2006. The lipid-droplet proteome reveals that droplets are a protein-storage depot. Curr Biol 16:1783–1795.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Chintapalli VR, Wang J, Dow JA. 2007. Using FlyAtlas to identify better Drosophila melanogaster models of human disease. Nat Genet 39:715–720.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "De Lucca AJ, Heden LO, Ingber B, Bhatnagar D. 2011. Antifungal properties of wheat histones (H1-H4) and purified wheat histone H1. J Agric Food Chem 59:6933–6939.",
+   "item": "bib10"
+  },
+  {
+   "indice": 9,
+   "texto": "Fernandes JM, Molle G, Kemp GD, Smith VJ. 2004. Isolation and characterisation of oncorhyncin II, a histone H1-derived antimicrobial peptide from skin secretions of rainbow trout, Oncorhynchus mykiss. Dev Comp Immunol 28:127–138.",
+   "item": "bib11"
+  },
+  {
+   "indice": 10,
+   "texto": "Figueredo SM, Weeks CS, Young SK, Ouellette AJ. 2009. Anionic amino acids near the pro-alpha-defensin N terminus mediate inhibition of bactericidal activity in mouse pro-cryptdin-4. J Biol Chem 284:6826–6831.",
+   "item": "bib12"
+  },
+  {
+   "indice": 11,
+   "texto": "Gunjan A, Verreault A. 2003. A Rad53 kinase-dependent surveillance mechanism that regulates histone protein levels in S. cerevisiae. Cell 115:537–549.",
+   "item": "bib13"
+  },
+  {
+   "indice": 12,
+   "texto": "Heumann D, Roger T. 2002. Initial responses to endotoxins and Gram-negative bacteria. Clin Chim Acta 323:59–72.",
+   "item": "bib14"
+  },
+  {
+   "indice": 13,
+   "texto": "Hirsch JG. 1958. Bactericidal action of histone. J Exp Med 108:925–944.",
+   "item": "bib15"
+  },
+  {
+   "indice": 14,
+   "texto": "Huang L, Jacob RJ, Pegg SC, Baldwin MA, Wang CC, Burlingame AL, et al.. 2001. Functional assignment of the 20 S proteasome from Trypanosoma brucei using mass spectrometry and new bioinformatics approaches. J Biol Chem 276:28327–28339.",
+   "item": "bib16"
+  },
+  {
+   "indice": 15,
+   "texto": "Kim HS, Yoon H, Minn I, Park CB, Lee WT, Zasloff M, et al.. 2000. Pepsin-mediated processing of the cytoplasmic histone H2A to strong antimicrobial peptide buforin I. J Immunol 165:3268–3274.",
+   "item": "bib17"
+  },
+  {
+   "indice": 16,
+   "texto": "Larsson S, Resjö S, Gomez MF, James P, Holm C. 2012. Characterization of the lipid droplet proteome of a clonal insulin-producing β-cell line (INS-1 832/13). J Proteome Res 11:1264–1273.",
+   "item": "bib18"
+  },
+  {
+   "indice": 17,
+   "texto": "Lee DY, Huang CM, Nakatsuji T, Thiboutot D, Kang SA, Monestier M, et al.. 2009. Histone H4 is a major component of the antimicrobial action of human sebocytes. J Invest Dermatol 129:2489–2496.",
+   "item": "bib20"
+  },
+  {
+   "indice": 18,
+   "texto": "Lehrer RI, Rosenman M, Harwig SS, Jackson R, Eisenhauer P. 1991. Ultrasensitive assays for endogenous antimicrobial polypeptides. J Immunol Methods 137:167–173.",
+   "item": "bib21"
+  },
+  {
+   "indice": 19,
+   "texto": "Li Z, Thiel K, Thul PJ, Beller M, Kühnlein RP, Welt MA. 2012. Lipid droplets control the maternal histone supply of drosophila embryos. Current Biology.",
+   "item": "bib22"
+  },
+  {
+   "indice": 20,
+   "texto": "Lowder M, Unge A, Maraha N, Jansson JK, Swiggett J, Oliver JD. 2000. Effect of starvation and the viable-but-nonculturable state on green fluorescent protein (GFP) fluorescence in GFP-tagged Pseudomonas fluorescens A506. Appl Environ Microbiol 66:3160–3165.",
+   "item": "bib23"
+  },
+  {
+   "indice": 21,
+   "texto": "Mackay IR. 2002. Hepatoimmunology: a perspective. Immunol Cell Biol 80:36–44.",
+   "item": "bib24"
+  },
+  {
+   "indice": 22,
+   "texto": "McQuilton P, St Pierre SE, Thurmond J. 2012. FlyBase 101—the basics of navigating FlyBase. Nucleic Acids Res 40:D706–D714.",
+   "item": "bib25"
+  },
+  {
+   "indice": 23,
+   "texto": "Ouvry-Patat SA, Schey KL. 2007. Characterization of antimicrobial histone sequences and posttranslational modifications by mass spectrometry. J Mass Spectrom 42:664–674.",
+   "item": "bib26"
+  },
+  {
+   "indice": 24,
+   "texto": "Parseghian MH, Luhrs KA. 2006. Beyond the walls of the nucleus: the role of histones in cellular signaling and innate immunity. Biochem Cell Biol 84:589–604.",
+   "item": "bib27"
+  },
+  {
+   "indice": 25,
+   "texto": "Ray K, Marteyn B, Sansonetti PJ, Tang CM. 2009. Life on the inside: the intracellular lifestyle of cytosolic bacteria. Nat Rev Microbiol 7:333–340.",
+   "item": "bib28"
+  },
+  {
+   "indice": 26,
+   "texto": "Saffarzadeh M, Juenemann C, Queisser MA, Lochnit G, Barreto G, Galuska SP, et al.. 2012. Neutrophil extracellular traps directly induce epithelial and endothelial cell death: a predominant role of histones. PLoS One 7:e32366.",
+   "item": "bib29"
+  },
+  {
+   "indice": 27,
+   "texto": "Senga F, Yin L, Karasuno H, Ohtaki H, Nakamachi T, Satoh K, et al.. 2008. Minus charge stimulation prevents LPS-induced liver injury by reduction of nitric oxide. J Clin Biochem Nutr 42:222–227.",
+   "item": "bib30"
+  },
+  {
+   "indice": 28,
+   "texto": "Singh RK, Kabbaj MH, Paik J, Gunjan A. 2009a. Histone levels are regulated by phosphorylation and ubiquitylation-dependent proteolysis. Nat Cell Biol 11:925–933.",
+   "item": "bib31"
+  },
+  {
+   "indice": 29,
+   "texto": "Singh RK, Paik J, Gunjan A. 2009b. Generation and management of excess histones during the cell cycle. Front Biosci 14:3145–3158.",
+   "item": "bib32"
+  },
+  {
+   "indice": 30,
+   "texto": "Singh RK, Liang D, Gajjalaiahvari UR, Kabbaj MH, Paik J, Gunjan A. 2010. Excess histone levels mediate cytotoxicity via multiple mechanisms. Cell Cycle 9:4236–4244.",
+   "item": "bib33"
+  },
+  {
+   "indice": 31,
+   "texto": "Smolenski G, Haines S, Kwan FY, Bond J, Farr V, Davis SR, et al.. 2007. Characterisation of host defence proteins in milk using a proteomic approach. J Proteome Res 6:207–215.",
+   "item": "bib34"
+  },
+  {
+   "indice": 32,
+   "texto": "Tilney LG, Portnoy DA. 1989. Actin filaments and the growth, movement, and spread of the intracellular bacterial parasite, Listeria monocytogenes. J Cell Biol 109:1597–1608.",
+   "item": "bib35"
+  },
+  {
+   "indice": 33,
+   "texto": "Turró S, Ingelmo-Torres M, Estanyol JM, Tebar F, Fernández MA, Albor CV, et al.. 2006. Identification and characterization of associated with lipid droplet protein 1: a novel membrane-associated protein that resides on hepatic lipid droplets. Traffic 7:1254–1269.",
+   "item": "bib36"
+  },
+  {
+   "indice": 34,
+   "texto": "von Kockritz-Blickwede M, Nizet V. 2009. Innate immunity turned inside-out: antimicrobial defense by phagocyte extracellular traps. J Mol Med (Berl) 87:775–783.",
+   "item": "bib37"
+  },
+  {
+   "indice": 35,
+   "texto": "Wan HC, Melo RC, Jin Z, Dvorak AM, Weller PF. 2007. Roles and origins of leukocyte lipid bodies: proteomic and ultrastructural studies. FASEB J 21:167–178.",
+   "item": "bib38"
+  },
+  {
+   "indice": 36,
+   "texto": "Welte MA, Cermelli S, Griner J, Viera A, Guo Y, Kim DH, et al.. 2005. Regulation of lipid-droplet transport by the perilipin homolog LSD2. Curr Biol 15:1266–1275.",
+   "item": "bib39"
+  },
+  {
+   "indice": 37,
+   "texto": "Welte MA. 2007. Proteins under new management: lipid droplets deliver. Trends Cell Biol 17:363–369.",
+   "item": "bib40"
+  },
+  {
+   "indice": 38,
+   "texto": "Wergeland HI, Haaheim LR, Natås OB, Wesenberg F, Oeding P. 1989. Antibodies to staphylococcal peptidoglycan and its peptide epitopes, teichoic acid, and lipoteichoic acid in sera from blood donors and patients with staphylococcal infections. J Clin Microbiol 27:1286–1291.",
+   "item": "bib41"
+  },
+  {
+   "indice": 39,
+   "texto": "Yang H, Zhou Z, Zhang H, Chen M, Li J, Ma Y, et al.. 2010. Shotgun proteomic analysis of the fat body during metamorphosis of domesticated silkworm (Bombyx mori). Amino Acids 38:1333–1342.",
+   "item": "bib42"
+  },
+  {
+   "indice": 40,
+   "texto": "Zhang H, Wang Y, Li J, Yu J, Pu J, Li L, et al.. 2011. Proteome of skeletal muscle lipid droplet reveals association with mitochondria and apolipoprotein a-I. J Proteome Res 10:4757–4768.",
+   "item": "bib43"
+  },
+  {
+   "indice": 41,
+   "texto": "Zhang P, Na H, Liu Z, Zhang S, Xue P, Chen Y, et al.. 2012. Proteomic study and marker protein identification of Caenorhabditis elegans lipid droplets. Mol Cell Proteomics 11:317–328.",
+   "item": "bib44"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Hirsch, 1958",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cho et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Saffarzadeh et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Singh et al., 2009a",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2009b",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cermelli et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Welte, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cermelli et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wan et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Larsson et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cermelli et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cermelli et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hirsch, 1958",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brasaemle et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cermelli et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cermelli et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hirsch, 1958",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ouvry-Patat and Schey, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cermelli et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cermelli et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Singh et al., 2009a",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2009b",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lowder et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bielecki et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tilney and Portnoy, 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chintapalli et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "McQuilton et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gunjan and Verreault, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Heumann and Roger, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wergeland et al., 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smolenski et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wan et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Larsson et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mackay, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turro et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turro et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Parseghian and Luhrs, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Senga et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fernandes et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "von Kockritz-Blickwede and Nizet, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smolenski et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wan et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Larsson et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tilney and Portnoy, 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bielecki et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lowder et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gunjan and Verreault, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Figueredo et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bozza and Viola, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ray et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "De Lucca et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bliska and Casadevall, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gunjan and Verreault, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bolton and Perry, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Augusto et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Singh et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cermelli et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brasaemle et al., (2004)",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leach et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cermelli et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Figueredo et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Figueredo et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lehrer et al. (1991)",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Huang et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turro et al., (2006)",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wan et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turro et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Cho et al., 2002",
+   "item": "bib9"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Leach et al., 2000",
+   "item": "bib19"
+  },
+  {
+   "ponto": "E",
+   "referencia": 36,
+   "item": "bib39"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

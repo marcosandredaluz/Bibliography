@@ -1,0 +1,679 @@
+{
+ "id": "treino_harvard_es-ES_perturbado",
+ "estilo": "harvard",
+ "sistema": "autor-data",
+ "locale": "es-ES",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Alberola, P. y Bustos, C. (2014) «Luego cinco primero millones miguel siguiente los puerta libertad proceso», Das Gesundheitswesen, 76(9), pp. 397-412. Disponible en: https://doi.org/10.99999/teste.treino.84029.",
+   "item": "it014"
+  },
+  {
+   "indice": 1,
+   "texto": "Bilbao, C. (1980) Ministro piel s origen posibilidad j cierta. Águeda Terrón Bertrán S.L.",
+   "item": "it015"
+  },
+  {
+   "indice": 2,
+   "texto": "Botella, L. et al. (1978) «Suelo pero carácter evitar opinión tenemos obstante cámara demás futuro», Cadernos de Saúde Pública, 25(4), pp. 362-368. Disponible en: https://doi.org/10.99999/teste.treino.32504.",
+   "item": "it010"
+  },
+  {
+   "indice": 3,
+   "texto": "Castells, E. y Ángel, B. (1998) Pensar quien edad unión negro efecto supuesto primer. Comercial Cerdán S.A.",
+   "item": "it016"
+  },
+  {
+   "indice": 4,
+   "texto": "Cuéllar, O. (2007a) «Expresión queda plan padre», Journal of the American Medical Informatics Association, 75(3), pp. 621-638. Disponible en: https://doi.org/10.99999/teste.treino.12113.",
+   "item": "it022"
+  },
+  {
+   "indice": 5,
+   "texto": "Cuéllar, O. (2007b) «Nada jóvenes norte forma europea martín resto caso alguna», Preventive Veterinary Medicine, 68(7), pp. 35-39. Disponible en: https://doi.org/10.99999/teste.treino.15060.",
+   "item": "it021"
+  },
+  {
+   "indice": 6,
+   "texto": "Haute Autorité de Santé (France) (2008) «Conjunto obras voy garcía obra bien está políticos ellas profesional decisión dado aquellas», Journal of the American Medical Informatics Association, 53(7), pp. 315-324.",
+   "item": "it009"
+  },
+  {
+   "indice": 7,
+   "texto": "Instituto Nacional de Câncer (Brasil) (1987) Calidad santa alta tuvo donde poner mayor poner junto sola. Sevilla: Hermanos Valenciano S.Com.",
+   "item": "it008"
+  },
+  {
+   "indice": 8,
+   "texto": "Instituto Nacional de Câncer (Brasil) (2008) Cual aspecto ni elecciones meses empresa modelo animales. Disponible en: https://exemplo-treino.org/1481 (Accedido: 11 de noviembre de 2026).",
+   "item": "it007"
+  },
+  {
+   "indice": 9,
+   "texto": "Istituto Superiore di Sanità (1977) Decía puerto mi palabra único superior hicieron mañana éxito alguna casos estructura concepto curso medidas visto. Disponible en: https://leis-treino.gov/8636.",
+   "item": "it018"
+  },
+  {
+   "indice": 10,
+   "texto": "Lara, A. et al. (1998) «Don materia curso ha investigación carne muchas decir papel», Medical Mycology, 64(12), pp. 724-738.",
+   "item": "it012"
+  },
+  {
+   "indice": 11,
+   "texto": "Lee, S. y Herrero, A. (1980) Victoria internacional último puerta afirmó cuba mar creación porque. Disponible en: https://leis-treino.gov/5629.",
+   "item": "it004"
+  },
+  {
+   "indice": 12,
+   "texto": "Li, W. et al. (1976) «Casi palabras generales centro», Revista de Saúde Pública, 75(5), pp. 564-581. Disponible en: https://doi.org/10.99999/teste.treino.72253.",
+   "item": "it003"
+  },
+  {
+   "indice": 13,
+   "texto": "Organização Pan-Americana da Saúde (2002) Producción deja domingo llevar formas lenguaje iglesia quien. Disponible en: https://exemplo-treino.org/7427 (Accedido: 1 de noviembre de 2026).",
+   "item": "it013"
+  },
+  {
+   "indice": 14,
+   "texto": "Øster, J. et al. (2015) «Misma atención supuesto suficiente d secretario manera», Cadernos de Saúde Pública, 45(9), pp. 821-834. Disponible en: https://doi.org/10.99999/teste.treino.98332.",
+   "item": "it006"
+  },
+  {
+   "indice": 15,
+   "texto": "Pham, V.A. (1991) Si técnica hicieron santiago animales primero gracias tú mucha modo saber. Disponible en: https://leis-treino.gov/2063.",
+   "item": "it005"
+  },
+  {
+   "indice": 16,
+   "texto": "Pons-Tello, E. et al. (1992) «Uno todo último interés», Revue d’Épidémiologie et de Santé Publique, 62(10), pp. 638-653. Disponible en: https://doi.org/10.99999/teste.treino.10534.",
+   "item": "it000"
+  },
+  {
+   "indice": 17,
+   "texto": "Robert Koch-Institut (sin fecha) Octubre manuel niño tipo varios cara parece ahí administración. Disponible en: https://leis-treino.gov/1683.",
+   "item": "it020"
+  },
+  {
+   "indice": 18,
+   "texto": "Rosselló, B. et al. (2002) «González asunto tal distintas ocasión hace jóvenes vida baja son madre luego período da», Cadernos de Saúde Pública, 36(6), pp. 540-544.",
+   "item": "it019"
+  },
+  {
+   "indice": 19,
+   "texto": "São Paulo (Estado) (1987) Esfuerzo época alto antes siete amigos sí pública ya radio. Disponible en: https://leis-treino.gov/9855.",
+   "item": "it011"
+  },
+  {
+   "indice": 20,
+   "texto": "Sebastián Nuñez, E. y Rivero, S. (2022) Corazón ejemplo fue fuerza solamente ejemplo trabajadores ha demasiado través. Toledo: Eusebia Beltrán Barón S.C.P.",
+   "item": "it002"
+  },
+  {
+   "indice": 21,
+   "texto": "Vall, I. (1976) Todos obstante iglesia programas origen tendrá tenían piel señaló productos. Comercializadora Pozo & Asociados S.L.L.",
+   "item": "it017"
+  },
+  {
+   "indice": 22,
+   "texto": "di Zabaleta, R. y Benítez, X. (2012) «D voz exterior supuesto situación temas», Gaceta Sanitaria, 42(1), pp. 865-875.",
+   "item": "it001"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Lee y Herrero, 1980; Organização Pan-Americana da Saúde, 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it004"
+   ],
+   "referencias": [
+    13,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Castells y Ángel, 1998; Rosselló et al., 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it019"
+   ],
+   "referencias": [
+    3,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Instituto Nacional de Câncer (Brasil) (1987)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado), 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al. (1976)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bilbao, 1980; Sebastián Nuñez y Rivero, 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it002"
+   ],
+   "referencias": [
+    1,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee y Herrero, 1980; Castells y Ángel, 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it016"
+   ],
+   "referencias": [
+    11,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bilbao, 1980; Instituto Nacional de Câncer (Brasil), 1987; Øster et al., 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it008",
+    "it006"
+   ],
+   "referencias": [
+    1,
+    7,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham, 1991; Castells y Ángel, 1998; Sebastián Nuñez y Rivero, 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it002",
+    "it005"
+   ],
+   "referencias": [
+    3,
+    20,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bilbao, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cuéllar, 2007b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Zabaleta y Benítez, 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Instituto Nacional de Câncer (Brasil) (1987)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1987, 2008; di Zabaleta y Benítez, 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it007",
+    "it001"
+   ],
+   "referencias": [
+    7,
+    8,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Istituto Superiore di Sanità (1977)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee y Herrero (1980)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster et al., 2015; Sebastián Nuñez y Rivero, 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it006"
+   ],
+   "referencias": [
+    20,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 1977; Organização Pan-Americana da Saúde, 2002; Haute Autorité de Santé (France), 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it018",
+    "it013"
+   ],
+   "referencias": [
+    6,
+    9,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bilbao (1980)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Alberola y Bustos, 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cuéllar, 2007a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Botella et al., 1978; Lee y Herrero, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it004"
+   ],
+   "referencias": [
+    2,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Botella et al., 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Istituto Superiore di Sanità, 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(di Zabaleta y Benítez, 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Instituto Nacional de Câncer (Brasil) (1987)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham, 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee y Herrero (1980)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Castells y Ángel, 1998; Instituto Nacional de Câncer (Brasil), 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it016"
+   ],
+   "referencias": [
+    8,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, sin fecha)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1987; Pons-Tello et al., 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it008"
+   ],
+   "referencias": [
+    16,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bilbao (1980)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bilbao, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lara et al., 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vall, 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France), 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lara et al., 1998, p. 245)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Øster et al., 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil), 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde, 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Øster et al. (2015)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Estados especialmente partes particular fuerte cierta dónde tan período puede cierto siete carlos alto"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

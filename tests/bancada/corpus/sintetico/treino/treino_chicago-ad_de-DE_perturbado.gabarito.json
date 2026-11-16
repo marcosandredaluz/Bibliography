@@ -1,0 +1,562 @@
+{
+ "id": "treino_chicago-ad_de-DE_perturbado",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "de-DE",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Choi, Seo-yeon. 1985. „Frau lernen werden wirklich dürfen Land am voll las frei“. Medical Mycology 13 (8): 575–95. https://doi.org/10.99999/teste.treino.16866.",
+   "item": "it004"
+  },
+  {
+   "indice": 1,
+   "texto": "Cichorius, Petros. 2000. „Einfach nun Winter im sitzen Mädchen“. Journal of the American Medical Informatics Association 26 (2): 4–10. https://doi.org/10.99999/teste.treino.26396.",
+   "item": "it016"
+  },
+  {
+   "indice": 2,
+   "texto": "Conselho Nacional de Saúde (Brasil). 1992. „Ja Gott Lehrerin“. In Fahrrad neu endlich um nennen schön hängen See, herausgegeben von Leokadia Harloff. Junk Scholl OHG mbH.",
+   "item": "it007"
+  },
+  {
+   "indice": 3,
+   "texto": "Dörr, Thilo, Lilija Walter, und Hans-Uwe Weiß. 1985. „Danach von müssen nass Eis Schüler damit“. Gaceta Sanitaria 34 (4): 579–92.",
+   "item": "it018"
+  },
+  {
+   "indice": 4,
+   "texto": "Dussen, Marie-Luise van der, und Thea Boucsein. 2012. „Zimmer darin vielleicht die Wasser Eis“. BMC Public Health 71 (2): 532–42.",
+   "item": "it020"
+  },
+  {
+   "indice": 5,
+   "texto": "Fritsch, Arnim, und Richard Lachmann. 2014. „Erde Erde Auto verkaufen“. In Dick sind gefährlich bald Monat nein bis böse Flasche Finger Küche viel, herausgegeben von Meral Walter. Klemm GmbH.",
+   "item": "it019"
+  },
+  {
+   "indice": 6,
+   "texto": "Haute Autorité de Santé (France). 2000. „Fährt Schwester Tisch halten wird Blume ein Rad brauchen“. https://exemplo-treino.org/4634.",
+   "item": "it010"
+  },
+  {
+   "indice": 7,
+   "texto": "Hertrampf, Gaetano. 1992. „Bekommen Ende vor Rad denn Ding See Jahr dumm böse mögen Zug Polizei“. Cadernos de Saúde Pública 33 (6): 288–93.",
+   "item": "it014"
+  },
+  {
+   "indice": 8,
+   "texto": "Ihm wissen dumm vorbei Himmel doch oft auch werden, Gesetz Nr. 7128 (1985). https://leis-treino.gov/143.",
+   "item": "it021"
+  },
+  {
+   "indice": 9,
+   "texto": "Izaguirre Pino, Carlota. 2001. „Klettern los damit bekommen unter als nennen her gestern“. Medical Mycology 71 (6): 364–74. https://doi.org/10.99999/teste.treino.58433.",
+   "item": "it002"
+  },
+  {
+   "indice": 10,
+   "texto": "Jacob, Lucie. 1979. „Ding setzen ich Mensch wohnen Geschichte Fisch gern Mädchen seit zehn“. Epidemiologia & Prevenzione 38 (3): 616–33.",
+   "item": "it017"
+  },
+  {
+   "indice": 11,
+   "texto": "Jung werden dem Schule ins Sonntag Wohnung vorbei Winter frei finden, Gesetz Nr. 10187 (1993). https://leis-treino.gov/2765.",
+   "item": "it012"
+  },
+  {
+   "indice": 12,
+   "texto": "Klingelhöfer, Meike, Pero Bähr, und Kati Hendriks. 2015. „Eltern ins eigentlich Katze Bruder Klasse einigen schon Bauer davon sprechen Hund“. Revue d’Épidémiologie et de Santé Publique 39 (10): 239–45. https://doi.org/10.99999/teste.treino.76875.",
+   "item": "it024"
+  },
+  {
+   "indice": 13,
+   "texto": "Knappe, Walther, Simona Geißler, Arne Koch II, Catharina Speer, Dariusz Ring, und Anka Kühnert. o. J. „Rund neun darauf fast ihm bringen Affe scheinen Nacht so“. One Health 65 (5): 151–63. https://doi.org/10.99999/teste.treino.16282.",
+   "item": "it022"
+  },
+  {
+   "indice": 14,
+   "texto": "Koch II, Norman del, Dorle Hahn, Lotte Herrmann, und Paul-Heinz Textor. 2005. „Mama ohne fragen später Auto hängen vom nun Tier werfen alt Minute“. Das Gesundheitswesen 57 (9): 413–25. https://doi.org/10.99999/teste.treino.21146.",
+   "item": "it001"
+  },
+  {
+   "indice": 15,
+   "texto": "Lassen Sonne Gott hoch schenken Haus, Gesetz Nr. 10651 (2015). https://leis-treino.gov/5865.",
+   "item": "it023"
+  },
+  {
+   "indice": 16,
+   "texto": "National Library of Medicine (Estados Unidos). 2007. „Nächste natürlich jetzt Papa hören“. Revue d’Épidémiologie et de Santé Publique 18 (7): 605–16.",
+   "item": "it008"
+  },
+  {
+   "indice": 17,
+   "texto": "Nguyen, Minh. 1989. „Dazu Wald wissen tragen“. https://exemplo-treino.org/8653.",
+   "item": "it005"
+  },
+  {
+   "indice": 18,
+   "texto": "Øster, Rüdiger, Marianne Striebitz, Utz Stadelmann, und Ioannis Rosenow. 2008. „Fliegen Lehrerin vom ja Teller Herz fest gut drehen“. Epidemiologia e Serviços de Saúde 61 (1): 22–38.",
+   "item": "it006"
+  },
+  {
+   "indice": 19,
+   "texto": "Robert Koch-Institut. 1982. „Spaß nimmt Fußball alt Berg“. BMC Public Health 32 (12): 718–22. https://doi.org/10.99999/teste.treino.55124.",
+   "item": "it009"
+  },
+  {
+   "indice": 20,
+   "texto": "Rosenow, Ricarda, Mato Kroker, und Ludmila Schmidt. 2003. „Zeigen kein neun spät sitzen ging müde Bein“. https://exemplo-treino.org/2571.",
+   "item": "it013"
+  },
+  {
+   "indice": 21,
+   "texto": "Schmiedecke, Fatih, Rico Höfig, Aleksej Biggen, Alexandre Metz, Klaus-Werner Pölitz, und Dorota Etzold. 1991. „Darauf darin anfangen Weihnachten weiter beide bis“. Revue d’Épidémiologie et de Santé Publique 75 (12): 712–26. https://doi.org/10.99999/teste.treino.91319.",
+   "item": "it011"
+  },
+  {
+   "indice": 22,
+   "texto": "Täsche-Zimmer, Margarita, Tania Weinhage, Ralph Ring, und Sophie Misicher. 2009. „Müssen lustig offen waschen laufen Tür sehen Zimmer“. https://exemplo-treino.org/8973.",
+   "item": "it000"
+  },
+  {
+   "indice": 23,
+   "texto": "Wang, Wei. 2005. Lehrerin lustig gehören bald wollen erschrecken eigentlich. Becker OHG mbH.",
+   "item": "it003"
+  },
+  {
+   "indice": 24,
+   "texto": "Warmer, Klaus-Ulrich. 1990. „Fiel tragen rufen rechnen Glück Schluss ohne“. Journal of the American Medical Informatics Association 24 (10): 666–76. https://doi.org/10.99999/teste.treino.97493.",
+   "item": "it015"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Cichorius 2000; Jacob 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it017"
+   ],
+   "referencias": [
+    1,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster u. a. 2008; Warmer 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it015"
+   ],
+   "referencias": [
+    18,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hertrampf 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Izaguirre Pino (2001)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jacob 1979; Choi 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it004"
+   ],
+   "referencias": [
+    10,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fritsch und Lachmann 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ihm wissen dumm vorbei Himmel doch oft auch werden 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Warmer 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos) 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Schmiedecke u. a. 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lassen Sonne Gott hoch schenken Haus 2015; Choi 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it004"
+   ],
+   "referencias": [
+    15,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rosenow u. a. 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(van der Dussen und Boucsein 2012; Cichorius 2000; del Koch II u. a. 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it016",
+    "it001"
+   ],
+   "referencias": [
+    4,
+    1,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Schmiedecke u. a. 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jacob 1979; Izaguirre Pino 2001; Jung werden dem Schule ins Sonntag Wohnung vorbei Winter frei finden 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it002",
+    "it012"
+   ],
+   "referencias": [
+    10,
+    9,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France) 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wang 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dörr u. a. 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Klingelhöfer u. a. 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hertrampf 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Knappe u. a., o. J.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Klingelhöfer u. a. 2015; Schmiedecke u. a. 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it011"
+   ],
+   "referencias": [
+    12,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Schmiedecke u. a. 1991; Täsche-Zimmer u. a. 2009; van der Dussen und Boucsein 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it000",
+    "it020"
+   ],
+   "referencias": [
+    21,
+    22,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France) 2000; van der Dussen und Boucsein 2012; Knappe u. a., o. J.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it020",
+    "it022"
+   ],
+   "referencias": [
+    6,
+    4,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jacob 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi 1985, 95)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(del Koch II u. a. 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Fritsch und Lachmann 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Fritsch und Lachmann 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Robert Koch-Institut (1982)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Eigene Darstellung (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Wald Seite lachen oder viel bin vor Wiese trinken erklären wenn"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

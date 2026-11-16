@@ -1,0 +1,583 @@
+{
+ "id": "treino_ieee_es-ES_erros",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "es-ES",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] M. Ballester, E. Pulido, J. Escribano, G. Almazán, L. Reguera, y C. Cornejo, «Líder partido social menos», Das Gesundheitswesen, vol. 39, n.o 4, pp. 29-40, 1982, doi: 10.99999/teste.treino.35469.",
+   "item": "it011"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] N. di Beltrán y B. Roda, «Precios algún mirada lucha social persona comisión martín u aquellos silencio creo», Banco Internacionales S.L.N.E, Guipúzcoa, 1984.",
+   "item": "it001"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] M. Nguyen, G. Reig, E. Cid, y M. J. Ortuño, «Perdido soy estos vista parecía programa trata día», en P desde hacen hermano ahí desde ver victoria, A. Vallés, Ed., Huesca: Paco Cerro Alegre S.A., 2022, pp. 243-258.",
+   "item": "it005"
+  },
+  {
+   "indice": 3,
+   "texto": "[5] N. Estevez, Superior mira todavía perdido tal poco afirmó por muerte cuadro soy. 1977. [En línea]. Disponible en: https://leis-treino.gov/3089",
+   "item": "it016"
+  },
+  {
+   "indice": 4,
+   "texto": "[6] L. Pineda, F. Villena, C. Quintero, T. Fuster, E. Ochoa, y C. Iniesta, «Haya orden humanos al región tiempos n tiempos», BMC Public Health, vol. 5, n.o 5, pp. 209-229, 2010, doi: 10.99999/teste.treino.19101.",
+   "item": "it015"
+  },
+  {
+   "indice": 5,
+   "texto": "[7] B. Fajardo, «Son dios historia económico mirada puede conciencia tiene», Preventive Veterinary Medicine, vol. 52, n.o 10, pp. 185-189, 1996, doi: 10.99999/teste.treino.48419.",
+   "item": "it017"
+  },
+  {
+   "indice": 6,
+   "texto": "[8] N. Pastor, «Pacientes media actual últimos finalmente viene nuestras pasado total pie», Cadernos de Saúde Pública, vol. 42, n.o 5, pp. 125-131, 2021, doi: 10.99999/teste.treino.84621.",
+   "item": "it012"
+  },
+  {
+   "indice": 7,
+   "texto": "[9] I. Merino y B. Bermúdez, «Trabajar varias zonas con hay semanas mal llegar segunda cambios», Das Gesundheitswesen, vol. 72, n.o 11, pp. 890-899, doi: 10.99999/teste.treino.70322.",
+   "item": "it019"
+  },
+  {
+   "indice": 8,
+   "texto": "[10] A. Vaquero y H. Llabrés, «Considera material fueron mujer noche», Hermanos Pelayo S.L.N.E, Vizcaya, 1981.",
+   "item": "it018"
+  },
+  {
+   "indice": 9,
+   "texto": "[11] National Library of Medicine (Estados Unidos), «Forma local final primera hacer dio», Epidemiologia e Serviços de Saúde, vol. 46, n.o 2, pp. 627-646, 2002, doi: 10.99999/teste.treino.81861.",
+   "item": "it007"
+  },
+  {
+   "indice": 10,
+   "texto": "[12] G. Øster, S. Vera, y C. Ruiz, «Unidos república nadie banco nacional antonio». Accedido: 8 de noviembre de 2026. [En línea]. Disponible en: https://exemplo-treino.org/6188",
+   "item": "it006"
+  },
+  {
+   "indice": 11,
+   "texto": "[13] S. Lee, «Apenas esta lejos cambios arte participación cambio él pequeño grado», Revista de Saúde Pública, vol. 47, n.o 9, pp. 38-43, 2010, doi: 10.99999/teste.treino.38784.",
+   "item": "it004"
+  },
+  {
+   "indice": 12,
+   "texto": "[14] J. A. Ferrer Berrocal, L. Cantero, y Y. Manjón, «Primero decía saber salida claro problema», Das Gesundheitswesen, vol. 47, n.o 2, pp. 76-93, 1977, doi: 10.99999/teste.treino.41163.",
+   "item": "it002"
+  },
+  {
+   "indice": 13,
+   "texto": "[15] Ministerio de Sanidad (España), «Ideas nuestro chile final ningún había viaje cabo ahora baja voz», One Health, vol. 60, n.o 6, pp. 636-644, 1979.",
+   "item": "it008"
+  },
+  {
+   "indice": 14,
+   "texto": "[16] G. Correa y Í. Nevado, Semanas causa resto la. 1985. [En línea]. Disponible en: https://leis-treino.gov/3137",
+   "item": "it020"
+  },
+  {
+   "indice": 15,
+   "texto": "[17] C. Mármol y F. Valenciano, «Tratamiento sistema persona electoral tras etapa hacia grupo ideas personas», Preventive Veterinary Medicine, vol. 43, n.o 4, pp. 585-593, 1986, doi: 10.99999/teste.treino.87738.",
+   "item": "it013"
+  },
+  {
+   "indice": 16,
+   "texto": "[18] G. Correa y Í. Nevado, «Instituciones pueden norte quedó programa van participación voy democracia servicio», Cadernos de Saúde Pública, vol. 23, n.o 12, pp. 784-793, 1985, doi: 10.99999/teste.treino.53492.",
+   "item": "it021"
+  },
+  {
+   "indice": 17,
+   "texto": "[19] P. Julián, E. Heredia, L. Antúnez, M. Frutos, P. Vera, y E. Baños, «Aquí estados vista español costa santiago político llamado», Epidemiologia & Prevenzione, vol. 56, n.o 9, pp. 71-78, 2001, doi: 10.99999/teste.treino.42843.",
+   "item": "it010"
+  },
+  {
+   "indice": 18,
+   "texto": "[20] I. Yáñez y F. Carretero, «Creo edad calle peso única nos baja peor», Medical Mycology, vol. 46, n.o 6, pp. 848-853, 1989.",
+   "item": "it014"
+  },
+  {
+   "indice": 19,
+   "texto": "[21] J. Li, D. Salazar, y M. Baquero, «Allá encima semanas asimismo democracia», Revue d’Épidémiologie et de Santé Publique, vol. 43, n.o 5, pp. 340-347, 1980, doi: 10.99999/teste.treino.47978.",
+   "item": "it003"
+  },
+  {
+   "indice": 20,
+   "texto": "[23] H. Llamas-Lloret, «Tipos paciente tenía hora gracias si internacional menos finalmente tales», One Health, vol. 22, n.o 12, pp. 324-337, 1995, doi: 10.99999/teste.treino.32104.",
+   "item": "extra0"
+  },
+  {
+   "indice": 21,
+   "texto": "[24] I. de Blanch, F. Segovia, y H. Losa, Zona país tiempos asunto relación otros total tomar social objetivo. Ceuta: Inmobiliaria Serra S.Coop., 1979.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "di Beltrán [2]",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4], [5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it016"
+   ],
+   "referencias": [
+    null,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [7], [8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it017",
+    "it012"
+   ],
+   "referencias": [
+    2,
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Merino [9]",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vaquero [10]",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vaquero [10]",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it005"
+   ],
+   "referencias": [
+    9,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ferrer Berrocal et al. [14]",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [17], [18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it013",
+    "it021"
+   ],
+   "referencias": [
+    2,
+    15,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Correa [18]",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19], [20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it014"
+   ],
+   "referencias": [
+    17,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "National Library of Medicine (Estados Unidos) [11]",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[22]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9, p. 178]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Ministerio de Sanidad (España) [15]",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "[4], [5]",
+   "item": "it000"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[22]",
+   "item": "it009"
+  },
+  {
+   "ponto": "D",
+   "citacao": "[4]",
+   "item": "it000"
+  },
+  {
+   "ponto": "E",
+   "referencia": 20,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 21,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Mismos vino ver esa carne mientras unidos ciento constitución"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

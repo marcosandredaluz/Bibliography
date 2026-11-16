@@ -1,0 +1,676 @@
+{
+ "id": "reservado_iso690-num_fr-FR_perturbado",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "fr-FR",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1.  LÉVY-BOURDON, Roger et COHEN, François. Debout fortune présent chemise triste société père police étouffer. Das Gesundheitswesen. 2001. Vol. 45, no. 11, p. 802‑817. DOI 10.99999/teste.reservado.81697.",
+   "item": "it000"
+  },
+  {
+   "indice": 1,
+   "texto": "2.  NOËL, Maggie et BÈGUE, Claudine. Fait fixer convenir contenir de. Gaceta Sanitaria. Vol. 59, no. 2, p. 667‑687. DOI 10.99999/teste.reservado.86728.",
+   "item": "it028"
+  },
+  {
+   "indice": 2,
+   "texto": "3.  WEBER, Adèle, LECLERCQ, Adrien, GUILLAUME, Antoine, GONZALEZ, Marianne, DUBOIS, Margaret et LEBRETON, Robert. Lire souffrir tout gens tel conscience vaincre plaire éloigner prochain vision accord soir. Revue d’Épidémiologie et de Santé Publique. 2010. Vol. 61, no. 4, p. 238‑244. DOI 10.99999/teste.reservado.45259.",
+   "item": "it024"
+  },
+  {
+   "indice": 3,
+   "texto": "4.  ORGANIZACIÓN MUNDIAL DE LA SALUD. Masse point grain goutte connaître image saison loup repousser. Online. 2008. [Accessed 16 novembre 2026]. Available from: https://exemplo-reservado.org/5723",
+   "item": "it009"
+  },
+  {
+   "indice": 4,
+   "texto": "5.  CONSELHO FEDERAL DE MEDICINA VETERINÁRIA. Adresser noir résister abandonner trait chiffre dans assez croire ci étroit. Online. 1984. [Accessed 9 novembre 2026]. Available from: https://exemplo-reservado.org/6955",
+   "item": "it030"
+  },
+  {
+   "indice": 5,
+   "texto": "6.  DE MASSON, Marthe. Pied blanc quand bon haine. Online. 2004. [Accessed 4 novembre 2026]. Available from: https://exemplo-reservado.org/5534",
+   "item": "it001"
+  },
+  {
+   "indice": 6,
+   "texto": "7.  HEBERT, Sabine et DELANNOY, Hélène. Soit éternel surtout reposer. Preventive Veterinary Medicine. 1988. Vol. 66, no. 6, p. 3‑15. DOI 10.99999/teste.reservado.91127.",
+   "item": "it011"
+  },
+  {
+   "indice": 7,
+   "texto": "8.  ORGANIZACIÓN MUNDIAL DE LA SALUD. Chaque rester que dominer saint pied dix mois réalité hasard. Online. 2019. 3800. Available from: https://leis-reservado.gov/982",
+   "item": "it018"
+  },
+  {
+   "indice": 8,
+   "texto": "9.  MERLE, Maryse, BRUNEL, Anastasie, HERVÉ, Clémence, TURPIN, Océane, LEGRAND, Thibaut et HOARAU, Céline. Flamme amener énergie ne cher installer existence vieux. . Picardboeuf : Gilles S.A.S., 1987.",
+   "item": "it015"
+  },
+  {
+   "indice": 9,
+   "texto": "10.  ORGANIZACIÓN MUNDIAL DE LA SALUD. Ton monsieur peur fixe songer pauvre recueillir rendre préparer certainement question. Online. 1990. 10354. Available from: https://leis-reservado.gov/2626",
+   "item": "it008"
+  },
+  {
+   "indice": 10,
+   "texto": "11.  LENOIR, Frédérique, THIBAULT, Georges et DA COSTA, Rémy. Naturellement essuyer lequel personne ce. In : GAUTIER, Stéphane (éd.), Vue seigneur devoir pauvre droit nouveau. Carpentier-sur-Navarro : Bourdon, 1982. p. 42‑57.",
+   "item": "it022"
+  },
+  {
+   "indice": 11,
+   "texto": "12.  CONSELHO FEDERAL DE MEDICINA VETERINÁRIA. Mettre traîner seul comme. Online. 2015. [Accessed 1 novembre 2026]. Available from: https://exemplo-reservado.org/2812",
+   "item": "it021"
+  },
+  {
+   "indice": 12,
+   "texto": "13.  MARQUES, Martine, PERRET, William, DAVID, Jeannine, DELAHAYE, Suzanne, GUILBERT, Édouard et GOSSELIN, Louis. Allumer spectacle air sentier fumée tracer vivant. Online. 2012. 9938. Available from: https://leis-reservado.gov/6510",
+   "item": "it027"
+  },
+  {
+   "indice": 13,
+   "texto": "14.  GUILLET, Roger, HERNANDEZ, Frédéric, SAMSON, Jacqueline et MARTINEAU, Marthe. Paix apparaître armer mettre voiture voyager vaincre entrée rentrer tendre énorme ni. Preventive Veterinary Medicine. 2015. Vol. 4, no. 2, p. 198‑205. DOI 10.99999/teste.reservado.75573.",
+   "item": "it010"
+  },
+  {
+   "indice": 14,
+   "texto": "15.  AMAYA GÁRATE, Maristela, RUIZ, Gilles, FONTAINE, Gilbert et LEDUC, Aimée. Nécessaire claire salle lendemain agir veille faim entrer. . Dupuisboeuf : Rey, 1983.",
+   "item": "it002"
+  },
+  {
+   "indice": 15,
+   "texto": "16.  CHEN, Hao, JOUBERT, Joséphine et DE OLIVEIRA, Maggie. Couper dessus cent beaux terrain voilà ouvrage réveiller respect chacun cheveu témoin. Medical Mycology. 1994. Vol. 79, no. 5, p. 134‑139. DOI 10.99999/teste.reservado.57871.",
+   "item": "it003"
+  },
+  {
+   "indice": 16,
+   "texto": "17.  COHEN, Alex et CAMUS, Eugène. Poids admettre portier rencontre pousser regretter français cours autrefois été puissance. BMC Public Health. 1979. Vol. 70, no. 3, p. 342‑360. DOI 10.99999/teste.reservado.65938.",
+   "item": "it014"
+  },
+  {
+   "indice": 17,
+   "texto": "18.  RIVIÈRE, Margot, WEISS, Amélie et ROSSI, Alexandre. Rapidement avis chacun enfant habitant conscience cruel désigner pensée en. Le Gall : Fernandes, 2004.",
+   "item": "it025"
+  },
+  {
+   "indice": 18,
+   "texto": "19.  JOSEPH, Henri, LÉVY, Lucy et RICHARD, Valérie. Goutte plonger savoir avenir lequel. . Moreau : Leduc Gautier S.A.S., 2019.",
+   "item": "it012"
+  },
+  {
+   "indice": 19,
+   "texto": "20.  GIMENEZ, Susan, GUYOT, Roland, MILLET, Thibault et LÉVÊQUE, Nicolas. Mort retourner étonner donc chacun curiosité. One Health. 2026. Vol. 34, no. 7, p. 421‑438.",
+   "item": "it019"
+  },
+  {
+   "indice": 20,
+   "texto": "21.  PHAM, Van Anh, SCHNEIDER, Hélène et BLONDEL, Mathilde. Cou nécessaire gauche sortir puissance parce que sauvage seconde dans loin puissant durer soutenir nord. Journal of the American Medical Informatics Association. 2001. Vol. 69, no. 10, p. 432‑447.",
+   "item": "it005"
+  },
+  {
+   "indice": 21,
+   "texto": "22.  DUPONT, Michel. Tâche détail diriger respirer sourd petit résoudre sens. In : BARBIER, Denis (éd.), Poésie événement parfaitement coûter puis nourrir entrer. Girard-la-Forêt : Marin Perrier S.A.S., 1987. p. 7‑22.",
+   "item": "it023"
+  },
+  {
+   "indice": 22,
+   "texto": "23.  ORGANIZACIÓN MUNDIAL DE LA SALUD. Enfermer établir désir but inspirer bon lourd foi oncle instant confondre étendre. Online. 2018. [Accessed 13 novembre 2026]. Available from: https://exemplo-reservado.org/9642",
+   "item": "it013"
+  },
+  {
+   "indice": 23,
+   "texto": "24.  BARBE, Christophe. Lever fille gouvernement créer cours. Epidemiologia & Prevenzione. 2007. Vol. 2, no. 4, p. 494‑501. DOI 10.99999/teste.reservado.12418.",
+   "item": "it020"
+  },
+  {
+   "indice": 24,
+   "texto": "25.  O’CONNOR, Yves, BECKER, Adrienne, GRENIER, Danielle et LEMAÎTRE, Adrien. Bureau boire type silencieux bureau. Online. 2023. 921. Available from: https://leis-reservado.gov/7087",
+   "item": "it006"
+  },
+  {
+   "indice": 25,
+   "texto": "26.  CHOI, Min-jun, HOARAU, Daniel et FERNANDES, Frédérique. Voici parvenir vaste mêler pur papa tourner arracher toujours détail couleur bureau. Das Gesundheitswesen. 1990. Vol. 26, no. 5, p. 754‑762. DOI 10.99999/teste.reservado.91114.",
+   "item": "it004"
+  },
+  {
+   "indice": 26,
+   "texto": "27.  LOPES, Chantal, MALLET, Auguste et LEDOUX, Thierry. Sang contenter accepter vie porter capable pur docteur docteur moyen convenir curieux quitter. BMC Public Health. 2000. Vol. 63, no. 1, p. 68‑73. DOI 10.99999/teste.reservado.43959.",
+   "item": "it016"
+  },
+  {
+   "indice": 27,
+   "texto": "28.  DIJOUX, Dominique et MARIE, Guy. Faux nuit veille ajouter note facile. Medical Mycology. 1996. Vol. 76, no. 8, p. 286‑299. DOI 10.99999/teste.reservado.86860.",
+   "item": "it017"
+  },
+  {
+   "indice": 28,
+   "texto": "29.  MINAS GERAIS (ESTADO). Importer ouvrage bonheur plein question ordre plaire. Journal of the American Medical Informatics Association. 1982. Vol. 32, no. 2, p. 156‑175. DOI 10.99999/teste.reservado.86441.",
+   "item": "it007"
+  },
+  {
+   "indice": 29,
+   "texto": "30.  CONSELHO FEDERAL DE MEDICINA VETERINÁRIA. Briller assurer branche officier loi où centre spectacle courir précis. Preventive Veterinary Medicine. 1984. Vol. 60, no. 2, p. 170‑185. DOI 10.99999/teste.reservado.45485.",
+   "item": "it029"
+  },
+  {
+   "indice": 30,
+   "texto": "31.  TESSIER, Gabriel, DURAND, Éric et CHRÉTIEN, Anaïs. Mort promener lourd lit père instinct jeunesse enlever sourire plaindre. Revue d’Épidémiologie et de Santé Publique. 2018. Vol. 4, no. 5, p. 589‑602. DOI 10.99999/teste.reservado.71094.",
+   "item": "it026"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Noël (2)",
+   "tipo": "narrativa",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it001"
+   ],
+   "referencias": [
+    4,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7, 14, 15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it010",
+    "it002"
+   ],
+   "referencias": [
+    6,
+    13,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cohen (17)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it030"
+   ],
+   "referencias": [
+    19,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pham et al. (21)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 21, 22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it023",
+    "it030"
+   ],
+   "referencias": [
+    20,
+    21,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 15, 22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it002",
+    "it000"
+   ],
+   "referencias": [
+    21,
+    14,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "O'Connor et al. (25)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 27, 28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it030",
+    "it017"
+   ],
+   "referencias": [
+    26,
+    4,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14, 29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it010"
+   ],
+   "referencias": [
+    28,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(31)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24, p. 289)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "de Masson (6)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Amuser songer quelque nuit elle obtenir goutte blanc"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

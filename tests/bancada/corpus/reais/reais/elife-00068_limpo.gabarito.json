@@ -1,0 +1,943 @@
+{
+ "id": "elife-00068_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00068.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Abeyta MJ, Clark AT, Rodriguez RT, Bodnar MS, Pera RA, Firpo MT. 2004. Unique gene expression signatures of independently-derived human embryonic stem cell lines. Hum Mol Genet 13:601–608.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Boyer LA, Lee TI, Cole MF, Johnstone SE, Levine SS, Zucker JP. 2005. Core transcriptional regulatory circuitry in human embryonic stem cells. Cell 122:947–956.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Chen JL, Attardi LD, Verrijzer CP, Yokomori K, Tjian R. 1994. Assembly of recombinant TFIID reveals differential coactivator requirements for distinct transcriptional activators. Cell 79:93–105.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Chen L, Daley GQ. 2008. Molecular basis of pluripotency. Hum Mol Genet 17:R23–R27.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Cler E, Papai G, Schultz P, Davidson I. 2009. Recent advances in understanding the structure and function of general transcription factor TFIID. Cell Mol Life Sci 66:2123–2134.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "D'Alessio JA, Ng R, Willenbring H, Tjian R. 2011. Core promoter recognition complex changes accompany liver development. Proc Natl Acad Sci USA 108:3906–3911.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "D'Alessio JA, Wright KJ, Tjian R. 2009. Shifting players and paradigms in cell-specific transcription. Mol Cell 36:924–931.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Davidson I. 2003. The genetics of TBP and TBP-related factors. Trends Biochem Sci 28:391–398.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Deato MD, Marr MT, Sottero T, Inouye C, Hu P, Tjian R. 2008. MyoD targets TAF3/TRF3 to activate myogenin transcription. Mol Cell 32:96–105.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Deato MD, Tjian R. 2007. Switching of the core transcription machinery during myogenesis. Genes Dev 21:2137–2149.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Edgar R, Domrachev M, Lash AE. 2002. Gene Expression Omnibus: NCBI gene expression and hybridization array data repository. Nucleic Acids Res 30:207–210.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Elbashir SM, Harborth J, Lendeckel W, Yalcin A, Weber K, Tuschl T. 2001. Duplexes of 21-nucleotide RNAs mediate RNA interference in cultured mammalian cells. Nature 411:494–498.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Fan X, Chou DM, Struhl K. 2006. Activator-specific recruitment of Mediator in vivo. Nat Struct Mol Biol 13:117–120.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Fuda NJ, Ardehali MB, Lis JT. 2009. Defining mechanisms that regulate RNA polymerase II transcription in vivo. Nature 461:186–192.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Ginis I, Luo Y, Miura T, Thies S, Brandenberger R, Gerecht-Nir S, et al.. 2004. Differences between human and mouse embryonic stem cells. Dev Biol 269:360–380.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Goecks J, Nekrutenko A, Taylor J. 2010. Galaxy: a comprehensive approach for supporting accessible, reproducible, and transparent computational research in the life sciences. Genome Biol 11:R86.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Green MR. 2005. Eukaryotic transcription activation: right on target. Mol Cell 18:399–402.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Guenther MG, Levine SS, Boyer LA, Jaenisch R, Young RA. 2007. A chromatin landmark and transcription initiation at most promoters in human cells. Cell 130:77–88.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Hart DO, Raha T, Lawson ND, Green MR. 2007. Initiation of zebrafish haematopoiesis by the TATA-box-binding protein-related factor Trf3. Nature 450:1082–1085.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Hochheimer A., Tjian R. 2003. Diversified transcription initiation complexes expand promoter selectivity and tissue-specific gene expression. Genes Dev 17:1309–1320.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Kimura K, Wakamatsu A, Suzuki Y, Ota T, Nishikawa T, Yamashita R, et al.. 2006. Diversification of transcriptional modulation: large-scale identification and characterization of putative alternative promoters of human genes. Genome Res 16:55–65.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Kolle G, Shepherd JL, Gardiner B, Kassahn KS, Cloonan N, Wood DL, et al.. 2011. Deep-transcriptome and ribonome sequencing redefines the molecular networks of pluripotency and the extracellular space in human embryonic stem cells. Genome Res 21:2014–2025.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Kuras L, Kosa P, Mencia M, Struhl K. 2000. TAF-Containing and TAF-independent forms of transcriptionally active TBP in vivo. Science 288:1244–1248.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Lavigne AC, Mengus G, May M, Dubrovskaya V, Tora L, Chambon P, et al.. 1996. Multiple interactions between hTAFII55 and other TFIID subunits. Requirements for the formation of stable ternary complexes between hTAFII55 and the TATA-binding protein. J Biol Chem 271:19774–19780.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Li XY, Bhaumik SR, Green MR. 2000. Distinct classes of yeast promoters revealed by differential TAF recruitment. Science 288:1242–1244.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Li XY, Bhaumik SR, Zhu X, Li L, Shen WC, Dixit BL, et al.. 2002. Selective recruitment of TAFs by yeast upstream activating sequences. Implications for eukaryotic promoter structure. Curr Biol 12:1240–1244.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Liu Z, Scannell DR, Eisen MB, Tjian R. 2011. Control of embryonic stem cell lineage commitment by core promoter factor, TAF3. Cell 146:720–731.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Maston GA, Evans SK, Green MR. 2006. Transcriptional regulatory elements in the human genome. Annu Rev Genomics Hum Genet 7:29–59.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Müller F, Zaucker A, Tora L. 2010. Developmental regulation of transcription initiation: more than just changing the actors. Curr Opin Genet Dev 20:533–540.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Ng HH, Robert F, Young RA, Struhl K. 2002. Genome-wide location and regulated recruitment of the RSC nucleosome-remodeling complex. Genes Dev 16:806–819.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Niwa H, Miyazaki J, Smith AG. 2000. Quantitative expression of Oct-3/4 defines differentiation, dedifferentiation or self-renewal of ES cells. Nat Genet 24:372–376.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Pal S, Gupta R, Kim H, Wickramasinghe P, Baubet V, Showe LC, et al.. 2011. Alternative transcription exceeds alternative splicing in generating the transcriptome diversity of cerebellar development. Genome Res 21:1260–1272.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Pan G, Thomson JA. 2007. Nanog and transcriptional networks in embryonic stem cell pluripotency. Cell Res 17:42–49.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Papai G, Weil PA, Schultz P. 2011. New insights into the function of transcription factor TFIID from recent structural studies. Curr Opin Genet Dev 21:219–224.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Penny GD, Kay GF, Sheardown SA, Rastan S, Brockdorff N. 1996. Requirement for Xist in X chromosome inactivation. Nature 379:131–137.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Raha T, Cheng SW, Green MR. 2005. HIV-1 Tat stimulates transcription complex assembly through recruitment of TBP in the absence of TAFs. PLoS Biol 3:e44.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Schnerch A, Cerdan C, Bhatia M. 2010. Distinguishing between mouse and human pluripotent stem cell regulation: the best laid plans of mice and men. Stem Cells 28:419–430.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Shen WC, Green MR. 1997. Yeast TAF(II)145 functions as a core promoter selectivity factor, not a general coactivator. Cell 90:615–624.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Sun Y, Li H, Yang H, Rao MS, Zhan M. 2006. Mechanisms controlling embryonic stem cell self-renewal and differentiation. Crit Rev Eukaryot Gene Expr 16:211–231.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Tanese N. 1997. Small-scale density gradient sedimentation to separate and analyze multiprotein complexes. Methods 12:224–234.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Thomas MC, Chiang CM. 2006. The general transcription machinery and general cofactors. Crit Rev Biochem Mol Biol 41:105–178.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Tokusumi Y, Ma Y, Song X, Jacobson RH, Takada S. 2007. The new core promoter element XCPE1 (X Core Promoter Element 1) directs activator-, mediator-, and TATA-binding protein-dependent but TFIID-independent RNA polymerase II transcription from TATA-less promoters. Mol Cell Biol 27:1844–1858.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Vermeulen M, Mulder KW, Denissov S, Pijnappel WW, van Schaik FM, Varier RA, et al.. 2007. Selective anchoring of TFIID to nucleosomes by trimethylation of histone H3 lysine 4. Cell 131:58–69.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Verrijzer CP, Yokomori K, Chen JL, Tjian R. 1994. Drosophila TAFII150: similarity to yeast gene TSM-1 and specific binding to core promoter DNA. Science 264:933–941.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Weake VM, Workman JL. 2010. Inducible gene expression: diverse regulatory mechanisms. Nat Rev Genet 11:426–437.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Wei CL, Miura T, Robson P, Lim SK, Xu XQ, Lee MY, et al.. 2005. Transcriptome profiling of human and murine ESCs identifies divergent paths required to maintain the stem cell state. Stem Cells 23:166–185.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Weinzierl RO, Ruppert S, Dynlacht BD, Tanese N, Tjian R. 1993. Cloning and expression of Drosophila TAFII60 and human TAFII70 reveal conserved interactions with other subunits of TFIID. EMBO J 12:5303–5309.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Wright KJ, Marr MT, Tjian R. 2006. TAF4 nucleates a core subcomplex of TFIID and mediates activated transcription from a TATA-less promoter. Proc Natl Acad Sci USA 103:12347–12352.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Zeng PY, Vakoc CR, Chen ZC, Blobel GA, Berger SL. 2006. In vivo dual cross-linking for identification of indirect DNA-associated proteins by chromatin immunoprecipitation. Biotechniques 41:694.",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Zhu LJ, Gazin C, Lawson ND, Pagès H, Lin SM, Lapointe DS, et al.. 2010. ChIPpeakAnno: a Bioconductor package to annotate ChIP-seq and ChIP-chip data. BMC Bioinformatics 11:237.",
+   "item": "bib50"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Thomas and Chiang, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Green, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fuda et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weake and Workman, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Davidson, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hochheimer and Tjian, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuras et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Raha et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tokusumi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deato and Tjian, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deato et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "D'Alessio et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "D'Alessio et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Müller et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen and Daley, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sun et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pan and Thomson, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Niwa et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Abeyta et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Abeyta et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Boyer et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guenther et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "D'Alessio et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Müller et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ginis et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wei et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schnerch et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wright et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Verrijzer et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Weinzierl et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lavigne et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lavigne et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cler et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Papai et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shen and Green, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maston et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vermeulen et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuras et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fan et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ng et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kimura et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kolle et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pal et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deato et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deato and Tjian, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "D'Alessio et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "D'Alessio et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Boyer et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Penny et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tanese, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zeng et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hart et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Edgar et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guenther et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goecks et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "E",
+   "referencia": 11,
+   "item": "bib12"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

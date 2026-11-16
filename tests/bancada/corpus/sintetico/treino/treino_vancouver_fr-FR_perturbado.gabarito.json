@@ -1,0 +1,674 @@
+{
+ "id": "treino_vancouver_fr-FR_perturbado",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Deschamps C. Fou preuve bientôt accomplir regard carte courant. [JoubertVille]: Benoit; 1997.",
+   "item": "it014"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Conselho Nacional de Saúde (Brasil). Plaisir au lit remplir retourner nuit secours vent âge défendre préférer danger [Internet]. 13041. 2017. Disponible sur: https://leis-treino.gov/3419",
+   "item": "it009"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Gomez Esteban J. Second autre pensée un dieu crainte dans. Toussaint: Grondin; 2012.",
+   "item": "it002"
+  },
+  {
+   "indice": 3,
+   "texto": "4. National Library of Medicine (Estados Unidos). Choix après an dernier encore beau pauvre bord pain. In: Le Roux M, éditeur. Poser dernier troubler chaque ministre système fixe souffrir huit abri plutôt tour le libre société. CarpentierBourg: Rémy SA; 2019. p. 166‑81.",
+   "item": "it007"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Dos Santos L, Da Costa O. Vision surveiller divers d’autres condamner brûler coûter [Internet]. 1982 [cité 3 nov 2026]. Disponible sur: https://exemplo-treino.org/3860",
+   "item": "it023"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Park J ho, Regnier I, Perret V, Leroux F. Larme poésie douter rêver sac croiser. Revue d’Épidémiologie et de Santé Publique. 2019;10(8):669‑81. doi:10.99999/teste.treino.39618",
+   "item": "it004"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Letellier E, Masse V, Raymond N. Reprendre profondément feuille détacher rejoindre journée ce. Revista de Saúde Pública. 1(2):410‑7. doi:10.99999/teste.treino.10914",
+   "item": "it027"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Diaz M, Delmas A, Munoz B, Diaz C. Lune sérieux société entier briller. Cadernos de Saúde Pública. 2007;43(12):92‑108.",
+   "item": "it015"
+  },
+  {
+   "indice": 8,
+   "texto": "9. National Library of Medicine (Estados Unidos). Flot entretenir intérêt recueillir fier disparaître frapper considérer. Epidemiologia & Prevenzione. 2010;15(10):278‑98. doi:10.99999/teste.treino.95218",
+   "item": "it008"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Georges É, Pineau C. Victime large sonner titre mieux représenter règle titre interroger marchand agiter dehors cours trace. Revue d’Épidémiologie et de Santé Publique. 2022;33(8):790‑804. doi:10.99999/teste.treino.80103",
+   "item": "it028"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Aubert M, Robert A, Grégoire V, Hoareau É. Surveiller marquer mince salut satisfaire loup sauter défendre parler entretenir général endormir. Preventive Veterinary Medicine. 2015;62(3):447‑52. doi:10.99999/teste.treino.30279",
+   "item": "it010"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Ministerio de Sanidad (España). Dos côte oser consentir nerveux sortir rapport vrai fixe [Internet]. 503. 1995. Disponible sur: https://leis-treino.gov/9581",
+   "item": "it024"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Groß B. Faim rang dos on train personnage jeter haine [Internet]. 1986 [cité 8 nov 2026]. Disponible sur: https://exemplo-treino.org/4449",
+   "item": "it006"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Ministerio de Sanidad (España). Être couche avant cabinet préparer sommet [Internet]. 3223. 2010. Disponible sur: https://leis-treino.gov/4705",
+   "item": "it026"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Tessier J. Soulever entrée oeil trésor sauvage groupe chanter plante d’abord céder dessus tard. Epidemiologia e Serviços de Saúde. 2020;72(5):137‑53. doi:10.99999/teste.treino.22842",
+   "item": "it012"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Barbe I, Germain V, Jacob P, Collin J. Éclater son simplement ce son éclairer sou former souvenir général. One Health. 2023;30(11):647‑61. doi:10.99999/teste.treino.41900",
+   "item": "it019"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Moulin T, Jacquot N, Bernier M. Surveiller imposer l’une semblable hiver autour quelque charge salut début. Giraud: Blanchard Hervé et Fils; 1998.",
+   "item": "it016"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Hubert C. Terre fine saint chaleur autre ton intérieur. One Health. 2022;40(5):92‑102. doi:10.99999/teste.treino.91335",
+   "item": "it011"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Lefebvre A. Petit emporter éprouver forêt neuf. In: Martin A, éditeur. Cent fortune envoyer conversation quand partir manquer regard. Lecontenec: Hervé Durand et Fils; 1976. p. 253‑68.",
+   "item": "it013"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Fischer-Renaud H, Bodin H, Aubert A. Vieux lutte gagner deux intéresser mal malgré d’autres principe pauvre habiter tôt. Das Gesundheitswesen. 2004;23(9):852‑72. doi:10.99999/teste.treino.94891",
+   "item": "it000"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Chen X, Marty A, Denis L, Valentin M. Ami rire maintenant employer cuisine attacher doute nous combien. Medical Mycology. 1994;79(3):741‑8.",
+   "item": "it003"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Georges É, Pineau C. Horizon crainte également reconnaître donner état docteur déchirer traîner droit fait vieux. Medical Mycology. 2022;14(8):653‑68.",
+   "item": "it029"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Bernier D, Roy J, Lebrun C. Porter police présenter. Epidemiologia & Prevenzione. 1991;43(10):199‑203.",
+   "item": "it025"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Hubert C. Parler bataille groupe calme aussitôt réfléchir retenir fois combien enlever. Das Gesundheitswesen. 1980;7(4):485‑505.",
+   "item": "it021"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Tran VA, Descamps L, Rodriguez A, Michel S. Oublier sou détail présent rire. Journal of the American Medical Informatics Association. 2000;64(4):159‑64. doi:10.99999/teste.treino.98545",
+   "item": "it005"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Moulin A, Voisin F, Charrier V, Robin É. Malade point oeil représenter montrer appel également. Revue d’Épidémiologie et de Santé Publique. 1990;68(9):120‑36. doi:10.99999/teste.treino.11208",
+   "item": "it020"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Mahe A, Gautier A. Tour alors rouler ici désert quarante cheval. Revue d’Épidémiologie et de Santé Publique. 2014;19(7):689‑709. doi:10.99999/teste.treino.26404",
+   "item": "it022"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Sauvage G. Prononcer chat nation dont monde pencher ainsi. Preventive Veterinary Medicine. 2001;52(11):628‑34. doi:10.99999/teste.treino.62835",
+   "item": "it017"
+  },
+  {
+   "indice": 28,
+   "texto": "29. Pichon L. Fait type remplir ventre vert action charge fruit tranquille papa. Epidemiologia & Prevenzione. 2004;30(10):719‑30.",
+   "item": "it018"
+  },
+  {
+   "indice": 29,
+   "texto": "30. van der Becker F, Wagner L, Schneider L. Risquer lutter apparaître village soirée se bas veille oublier claire tant. Foucher: Samson S.A.S.; 2017.",
+   "item": "it001"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1–3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it009",
+    "it002"
+   ],
+   "referencias": [
+    0,
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,4,5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it023",
+    "it009"
+   ],
+   "referencias": [
+    3,
+    4,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Park et al. (6)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Letellier et al. (7)",
+   "tipo": "narrativa",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8–10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it008",
+    "it028"
+   ],
+   "referencias": [
+    7,
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it008"
+   ],
+   "referencias": [
+    1,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,4,10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it007",
+    "it028"
+   ],
+   "referencias": [
+    1,
+    3,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11,14,15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it026",
+    "it012"
+   ],
+   "referencias": [
+    10,
+    13,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gomez Esteban (3)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tessier (15)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deschamps (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20,21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it003"
+   ],
+   "referencias": [
+    19,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4,9,22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it029",
+    "it007"
+   ],
+   "referencias": [
+    8,
+    21,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ministerio de Sanidad (España) (12)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9,12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it024"
+   ],
+   "referencias": [
+    8,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "National Library of Medicine (Estados Unidos) (4)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,28,29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it017",
+    "it018"
+   ],
+   "referencias": [
+    4,
+    27,
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it029"
+   ],
+   "referencias": [
+    7,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Georges (22)",
+   "tipo": "narrativa",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Ciel tirer lumière discours devenir grain couche ah content flamme sol nom endormir étendue"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

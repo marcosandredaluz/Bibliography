@@ -1,0 +1,620 @@
+{
+ "id": "treino_ama_pt-BR_erros",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "pt-BR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Ramos V. Itaque eius quam sequi eaque beatae. Revista de Saúde Pública. 2023;60(1):23–43. doi:10.99999/teste.treino.77307",
+   "item": "it020"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Costa R. Non in eligendi ducimus veritatis quos alias totam autem architecto in sit tempora debitis quidem libero. Em: Moura E, org. A nihil harum occaecati architecto ipsa. Nunes S/A; 1978:124–139.",
+   "item": "it016"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Farias D, Moreira G, Mendonça C, da Costa G. Quia voluptates quasi quia dolore. Preventive Veterinary Medicine. 2019;3(10):521–534. doi:10.99999/teste.treino.77804",
+   "item": "it024"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Farias D, Moreira G, Mendonça C, da Costa G. Rerum impedit architecto dolorem laborum fugiat atque odit modi quas totam. 2019. Acesso em 6 de novembro de 2026. https://exemplo-treino.org/9872",
+   "item": "it023"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Freitas B, Silveira L, Castro CE, Castro I, Rios C, Macedo J. Enim porro sit quia nostrum sit eligendi aliquam. Em: Ribeiro I, org. Sapiente laudantium quas molestias maiores animi nulla eos quod voluptates quis. Borges; 2024:148–163.",
+   "item": "it013"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Lee J ho, Silveira MI, Castro AG, Borges H. Cumque officiis laudantium nobis iusto dolor architecto nesciunt maiores. Pires; 2007.",
+   "item": "it004"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Istituto Superiore di Sanità. Odit molestias numquam fuga ipsam natus vero consectetur corrupti. 2005. Acesso em 3 de novembro de 2026. https://exemplo-treino.org/6081",
+   "item": "it018"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Novais R, da Mota A, Lima H, da Cunha R. Est molestias atque vitae expedita quia tempora ad velit accusamus ad molestias maiores. Revista de Saúde Pública. 2009;57(12):843–852. doi:10.99999/teste.treino.70608",
+   "item": "it011"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Borges-Leão A, Nogueira AG, Monteiro AG. Sint quas dolore eligendi inventore consectetur enim eos perferendis. 2016. https://leis-treino.gov/7102",
+   "item": "it000"
+  },
+  {
+   "indice": 9,
+   "texto": "12. van der da Costa JM. Quae aspernatur neque perspiciatis vel ratione. Revue d’Épidémiologie et de Santé Publique. 2017;1(9):18–37.",
+   "item": "it001"
+  },
+  {
+   "indice": 10,
+   "texto": "13. Organização Pan-Americana da Saúde. Iure odio veniam magnam maxime vel totam recusandae sunt laudantium iste doloremque mollitia. Preventive Veterinary Medicine. 2000;48(5):91–95.",
+   "item": "it008"
+  },
+  {
+   "indice": 11,
+   "texto": "14. Liu W, Araújo R. Blanditiis molestiae neque pariatur dignissimos occaecati omnis rerum. da Cruz; 1985.",
+   "item": "it003"
+  },
+  {
+   "indice": 12,
+   "texto": "15. Freitas M. Corporis voluptates suscipit delectus dolor laboriosam facere vero enim. Revista de Saúde Pública. 65(6):541–559. doi:10.99999/teste.treino.14323",
+   "item": "it022"
+  },
+  {
+   "indice": 13,
+   "texto": "16. Sá MS, Câmara L. Expedita accusamus maiores nesciunt doloremque tenetur sit adipisci consectetur quaerat ullam rem rerum. 2000. Acesso em 1o de novembro de 2026. https://exemplo-treino.org/7551",
+   "item": "it015"
+  },
+  {
+   "indice": 14,
+   "texto": "17. Fernandes S, Martins O, Moreira B, Pinto S, Cassiano E, Nogueira L. Sequi blanditiis laborum esse dolore suscipit. Cadernos de Saúde Pública. 1994;32(2):863–881. doi:10.99999/teste.treino.14482",
+   "item": "it012"
+  },
+  {
+   "indice": 15,
+   "texto": "18. Nunes V, Lima PH. Eligendi architecto in iusto ut minima eligendi odit amet aspernatur quae quidem minima nostrum ratione. Journal of the American Medical Informatics Association. 1979;75(9):793–797.",
+   "item": "it017"
+  },
+  {
+   "indice": 16,
+   "texto": "19. Gonçalves L, Monteiro M, Monteiro C. Sunt incidunt harum distinctio at laborum aliquam et. Revue d’Épidémiologie et de Santé Publique. 1990;33(10):536–543.",
+   "item": "it021"
+  },
+  {
+   "indice": 17,
+   "texto": "20. Díaz Lledó T, Cavalcanti S, Moraes Y. Deleniti provident vel fugit dolor provident quibusdam incidunt molestias. Journal of the American Medical Informatics Association. 2022;31(3):232–242.",
+   "item": "it002"
+  },
+  {
+   "indice": 18,
+   "texto": "21. da Luz AV, Nogueira L. Quam incidunt distinctio commodi. Marques - EI; 1982.",
+   "item": "it019"
+  },
+  {
+   "indice": 19,
+   "texto": "22. Costa C. Ipsa nesciunt maiores aspernatur quos reprehenderit praesentium. Preventive Veterinary Medicine. 1978;71(7):499–517. doi:10.99999/teste.treino.94869",
+   "item": "it014"
+  },
+  {
+   "indice": 20,
+   "texto": "23. D’Ávila L, Souza L. Quos at a suscipit ab minima iure nisi. 1999. https://leis-treino.gov/861",
+   "item": "it006"
+  },
+  {
+   "indice": 21,
+   "texto": "24. Nguyen VA, Castro B, Teixeira A, Pastor K. At reprehenderit consectetur quia cupiditate laborum eum adipisci perferendis. Gaceta Sanitaria. 2016;63(5):200–218. doi:10.99999/teste.treino.95497",
+   "item": "it005"
+  },
+  {
+   "indice": 22,
+   "texto": "25. Robert Koch-Institut. Distinctio asperiores eligendi nostrum architecto reiciendis architecto sapiente. 2008. Acesso em 1o de novembro de 2026. https://exemplo-treino.org/3681",
+   "item": "it007"
+  },
+  {
+   "indice": 23,
+   "texto": "26. Correia-Lopes F, da Paz E, da Luz N, Melo LH. Possimus nesciunt animi repellendus blanditiis quo voluptate dolore possimus hic. Sampaio; 1987.",
+   "item": "extra0"
+  },
+  {
+   "indice": 24,
+   "texto": "27. de da Luz B, Câmara F. Assumenda corporis adipisci autem ex adipisci. Em: Casa Grande B, org. Sunt doloremque nam ex. da Mata; 1999:111–126.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "3–5",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it023",
+    "it013"
+   ],
+   "referencias": [
+    2,
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,7",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it018"
+   ],
+   "referencias": [
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,9",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it000"
+   ],
+   "referencias": [
+    7,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "10",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine 11",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12–14",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it008",
+    "it003"
+   ],
+   "referencias": [
+    9,
+    10,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2,5,11",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it016",
+    "it009"
+   ],
+   "referencias": [
+    4,
+    1,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6,17,18",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it012",
+    "it017"
+   ],
+   "referencias": [
+    5,
+    14,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7,14",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it018"
+   ],
+   "referencias": [
+    11,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,18",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it011"
+   ],
+   "referencias": [
+    15,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "11,19,20",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it021",
+    "it002"
+   ],
+   "referencias": [
+    null,
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,12",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it001"
+   ],
+   "referencias": [
+    0,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Costa 2",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "22",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "19,23",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it021"
+   ],
+   "referencias": [
+    20,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "6",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8,23",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it006"
+   ],
+   "referencias": [
+    7,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7,17,24",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it012",
+    "it005"
+   ],
+   "referencias": [
+    6,
+    14,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13,14,17",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it003",
+    "it012"
+   ],
+   "referencias": [
+    10,
+    11,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16(p47)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "25",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "16",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "van der da Costa 12",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "10",
+   "item": "it010"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Virginia-Maryland College of Veterinary Medicine 11",
+   "item": "it009"
+  },
+  {
+   "ponto": "D",
+   "citacao": "2,5,11",
+   "item": "it009"
+  },
+  {
+   "ponto": "D",
+   "citacao": "11,19,20",
+   "item": "it009"
+  },
+  {
+   "ponto": "E",
+   "referencia": 23,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 24,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Pariatur tempore alias cum suscipit est voluptates dolorum repudiandae delectus ducimus perspiciatis dignissimos"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

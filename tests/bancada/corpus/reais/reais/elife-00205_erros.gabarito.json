@@ -1,0 +1,1997 @@
+{
+ "id": "elife-00205_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00205.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Arrigoni R, Alam SL, Wamstad JA, Bardwell VJ, Sundquist WI, Schreiber-Agus N. 2006. The Polycomb-associated protein Rybp is a ubiquitin binding protein. FEBS Lett 580:6233–6241.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Atsuta T, Fujimura S, Moriya H, Vidal M, Akasaka T, Koseki H. 2001. Production of monoclonal antibodies against mammalian Ring1B proteins. Hybridoma 20:43–46.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Benjamini Y, Hochberg Y. 1995. Controlling the false discovery rate: a practical and powerful approach to multiple testing. J Roy Statist Soc Ser B 57:289–300.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Ben-Saadon R, Zaaroor D, Ziv T, Ciechanover A. 2006. The polycomb protein Ring1B generates self atypical mixed ubiquitin chains required for its in vitro histone H2A ligase activity. Mol Cell 24:701–711.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Bird A. 2002. DNA methylation patterns and epigenetic memory. Genes Dev 16:6–21.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Blackledge NP, Klose R. 2011. CpG island chromatin: a platform for gene regulation. Epigenetics 6:147–152.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Blackledge NP, Long HK, Zhou JC, Kriaucionis S, Patient R, Klose RJ. 2012. Bio-CAP: a versatile and highly sensitive technique to purify and characterise regions of non-methylated DNA. Nucleic Acids Res 40:e32.",
+   "item": "bib8"
+  },
+  {
+   "indice": 7,
+   "texto": "Boyer LA, Plath K, Zeitlinger J, Brambrink T, Medeiros LA, Lee TI, et al.. 2006. Polycomb complexes repress developmental regulators in murine embryonic stem cells. Nature 441:349–353.",
+   "item": "bib9"
+  },
+  {
+   "indice": 8,
+   "texto": "Bracken AP, Dietrich N, Pasini D, Hansen KH, Helin K. 2006. Genome-wide mapping of Polycomb target genes unravels their roles in cell fate transitions. Genes Dev 20:1123–1136.",
+   "item": "bib10"
+  },
+  {
+   "indice": 9,
+   "texto": "Buchwald G, van der Stoop P, Weichenrieder O, Perrakis A, van Lohuizen M, Sixma TK. 2006. Structure and E3-ligase activity of the Ring-Ring complex of polycomb proteins Bmi1 and Ring1b. EMBO J 25:2465–2474.",
+   "item": "bib11"
+  },
+  {
+   "indice": 10,
+   "texto": "Butler JS, Koutelou E, Schibler AC, Dent SY. 2012. Histone-modifying enzymes: regulators of developmental decisions and drivers of human disease. Epigenomics 4:163–177.",
+   "item": "bib12"
+  },
+  {
+   "indice": 11,
+   "texto": "Cao R, Wang L, Wang H, Xia L, Erdjument-Bromage H, Tempst P, et al.. 2002. Role of histone H3 lysine 27 methylation in Polycomb-group silencing. Science 298:1039–1043.",
+   "item": "bib13"
+  },
+  {
+   "indice": 12,
+   "texto": "Cao R, Tsukada Y, Zhang Y. 2005. Role of Bmi-1 and Ring1A in H2A ubiquitylation and Hox gene silencing. Mol Cell 20:845–854.",
+   "item": "bib14"
+  },
+  {
+   "indice": 13,
+   "texto": "Carrozza MJ, Li B, Florens L, Suganuma T, Swanson SK, Lee KK, et al.. 2005. Histone H3 methylation by Set2 directs deacetylation of coding regions by Rpd3S to suppress spurious intragenic transcription. Cell 123:581–592.",
+   "item": "bib15"
+  },
+  {
+   "indice": 14,
+   "texto": "Carvalho BS, Irizarry RA. 2010. A framework for oligonucleotide microarray preprocessing. Bioinformatics 26:2363–2367.",
+   "item": "bib16"
+  },
+  {
+   "indice": 15,
+   "texto": "Czermin B, Melfi R, McCabe D, Seitz V, Imhof A, Pirrotta V. 2002. Drosophila enhancer of Zeste/ESC complexes have a histone H3 methyltransferase activity that marks chromosomal Polycomb sites. Cell 111:185–196.",
+   "item": "bib17"
+  },
+  {
+   "indice": 16,
+   "texto": "de Napoles M, Mermoud JE, Wakao R, Tang YA, Endoh M, Appanah R, et al.. 2004. Polycomb group proteins Ring1A/B link ubiquitylation of histone H2A to heritable gene silencing and X inactivation. Dev Cell 7:663–676.",
+   "item": "bib18"
+  },
+  {
+   "indice": 17,
+   "texto": "Deaton AM, Bird A. 2011. CpG islands and the regulation of transcription. Genes Dev 25:1010–1022.",
+   "item": "bib19"
+  },
+  {
+   "indice": 18,
+   "texto": "Dietrich N, Lerdrup M, Landt E, Agrawal-Singh S, Bak M, Tommerup N, et al.. 2012. REST-mediated recruitment of polycomb repressor complexes in mammalian cells. PLoS Genet 8:e1002494.",
+   "item": "bib20"
+  },
+  {
+   "indice": 19,
+   "texto": "Endoh M, Endo TA, Endoh T, Fujimura Y, Ohara O, Toyoda T, et al.. 2008. Polycomb group proteins Ring1A/B are functionally linked to the core transcriptional regulatory circuitry to maintain ES cell identity. Development 135:1513–1524.",
+   "item": "bib21"
+  },
+  {
+   "indice": 20,
+   "texto": "Endoh M, Endo TA, Endoh T, Isono K, Sharif J, Ohara O, et al.. 2012. Histone H2A Mono-Ubiquitination Is a Crucial Step to Mediate PRC1-Dependent Repression of Developmental Genes to Maintain ES Cell Identity. PLoS Genet 8:e1002774.",
+   "item": "bib22"
+  },
+  {
+   "indice": 21,
+   "texto": "Eskeland R, Leeb M, Grimes GR, Kress C, Boyle S, Sproul D, et al.. 2010. Ring1B compacts chromatin structure and represses gene expression independent of histone ubiquitination. Mol Cell 38:452–464.",
+   "item": "bib23"
+  },
+  {
+   "indice": 22,
+   "texto": "Fischer R, Trudgian DC, Wright C, Thomas G, Bradbury LA, Brown MA, et al.. 2012. Discovery of candidate serum proteomic and metabolomic biomarkers in ankylosing spondylitis. Mol Cell Proteomics 11:M111.013904.",
+   "item": "bib24"
+  },
+  {
+   "indice": 23,
+   "texto": "Francis NJ, Kingston RE, Woodcock CL. 2004. Chromatin compaction by a polycomb group protein complex. Science 306:1574–1577.",
+   "item": "bib25"
+  },
+  {
+   "indice": 24,
+   "texto": "Frescas D, Guardavaccaro D, Bassermann F, Koyama-Nasu R, Pagano M. 2007. JHDM1B/FBXL10 is a nucleolar protein that represses transcription of ribosomal RNA genes. Nature 450:309–313.",
+   "item": "bib26"
+  },
+  {
+   "indice": 25,
+   "texto": "Gao Z, Zhang J, Bonasio R, Strino F, Sawai A, Parisi F, et al.. 2012. PCGF homologs, CBX proteins, and RYBP define functionally distinct PRC1 family complexes. Mol Cell 45:344–356.",
+   "item": "bib27"
+  },
+  {
+   "indice": 26,
+   "texto": "Gearhart MD, Corcoran CM, Wamstad JA, Bardwell VJ. 2006. Polycomb group and SCF ubiquitin ligases are found in a novel BCOR complex that is recruited to BCL6 targets. Mol Cell Biol 26:6880–6889.",
+   "item": "bib28"
+  },
+  {
+   "indice": 27,
+   "texto": "Greer EL, Shi Y. 2012. Histone methylation: a dynamic mark in health, disease and inheritance. Nat Rev Genet 13:343–357.",
+   "item": "bib29"
+  },
+  {
+   "indice": 28,
+   "texto": "Hisada K, Sanchez C, Endo TA, Endoh M, Roman-Trufero M, Sharif J, et al.. 2012. RYBP represses endogenous retroviruses and preimplantation- and germ line-specific genes in mouse embryonic stem cells. Mol Cell Biol 32:1139–1149.",
+   "item": "bib30"
+  },
+  {
+   "indice": 29,
+   "texto": "Illingworth RS, Bird AP. 2009. CpG islands–'a rough guide'. FEBS Lett 583:1713–1720.",
+   "item": "bib31"
+  },
+  {
+   "indice": 30,
+   "texto": "Illingworth RS, Gruenewald-Schneider U, Webb S, Kerr AR, James KD, Turner DJ, et al.. 2010. Orphan CpG islands identify numerous conserved promoters in the mammalian genome. PLoS Genet 6:e1001134.",
+   "item": "bib32"
+  },
+  {
+   "indice": 31,
+   "texto": "Illingworth RS, Botting CH, Grimes GR, Bickmore WA, Eskeland R. 2012. PRC1 and PRC2 are not required for targeting of H2A.Z to developmental genes in embryonic stem cells. PLoS One 7:e34848.",
+   "item": "bib33"
+  },
+  {
+   "indice": 32,
+   "texto": "Kanhere A, Viiri K, Araújo CC, Rasaiyaah J, Bouwman RD, Whyte WA, et al.. 2010. Short RNAs are transcribed from repressed polycomb target genes and interact with polycomb repressive complex-2. Mol Cell 38:675–688.",
+   "item": "bib34"
+  },
+  {
+   "indice": 33,
+   "texto": "Kim H, Kang K, Kim J. 2009. AEBP2 as a potential targeting protein for Polycomb Repression Complex PRC2. Nucleic Acids Res 37:2940–2950.",
+   "item": "bib35"
+  },
+  {
+   "indice": 34,
+   "texto": "Klose RJ, Bird AP. 2004. MeCP2 behaves as an elongated monomer that does not stably associate with the Sin3a chromatin remodeling complex. J Biol Chem 279:46490–46496.",
+   "item": "bib36"
+  },
+  {
+   "indice": 35,
+   "texto": "Klose RJ, Bird AP. 2006. Genomic DNA methylation: the mark and its mediators. Trends Biochem Sci 31:89–97.",
+   "item": "bib37"
+  },
+  {
+   "indice": 36,
+   "texto": "Klymenko T, Müller J. 2004. The histone methyltransferases Trithorax and Ash1 prevent transcriptional silencing by Polycomb group proteins. EMBO Rep 5:373–377.",
+   "item": "bib38"
+  },
+  {
+   "indice": 37,
+   "texto": "Kouzarides T. 2007. Chromatin modifications and their function. Cell 128:693–705.",
+   "item": "bib39"
+  },
+  {
+   "indice": 38,
+   "texto": "Koyama-Nasu R, David G, Tanese N. 2007. The F-box protein Fbl10 is a novel transcriptional repressor of c-Jun. Nat Cell Biol 9:1074–1080.",
+   "item": "bib40"
+  },
+  {
+   "indice": 39,
+   "texto": "Ku M, Koche RP, Rheinbay E, Mendenhall EM, Endoh M, Mikkelsen TS, et al.. 2008. Genomewide analysis of PRC1 and PRC2 occupancy identifies two classes of bivalent domains. PLoS Genet 4:e1000242.",
+   "item": "bib41"
+  },
+  {
+   "indice": 40,
+   "texto": "Kuzmichev A, Nishioka K, Erdjument-Bromage H, Tempst P, Reinberg D. 2002. Histone methyltransferase activity associated with a human multiprotein complex containing the Enhancer of Zeste protein. Genes Dev 16:2893–2905.",
+   "item": "bib42"
+  },
+  {
+   "indice": 41,
+   "texto": "Langmead B, Trapnell C, Pop M, Salzberg SL. 2009. Ultrafast and memory-efficient alignment of short DNA sequences to the human genome. Genome Biol 10:R25.",
+   "item": "bib43"
+  },
+  {
+   "indice": 42,
+   "texto": "Lavigne M, Francis NJ, King IF, Kingston RE. 2004. Propagation of silencing; recruitment and repression of naive chromatin in trans by polycomb repressed chromatin. Mol Cell 13:415–425.",
+   "item": "bib44"
+  },
+  {
+   "indice": 43,
+   "texto": "Lee JH, Skalnik DG. 2005. CpG-binding protein (CXXC finger protein 1) is a component of the mammalian Set1 histone H3-Lys4 methyltransferase complex, the analogue of the yeast Set1/COMPASS complex. J Biol Chem 280:41725–41731.",
+   "item": "bib45"
+  },
+  {
+   "indice": 44,
+   "texto": "Lee TI, Jenner RG, Boyer LA, Guenther MG, Levine SS, Kumar RM, et al.. 2006. Control of developmental regulators by Polycomb in human embryonic stem cells. Cell 125:301–313.",
+   "item": "bib46"
+  },
+  {
+   "indice": 45,
+   "texto": "Leeb M, Wutz A. 2007. Ring1B is crucial for the regulation of developmental control genes and PRC1 proteins but not X inactivation in embryonic cells. J Cell Biol 178:219–229.",
+   "item": "bib47"
+  },
+  {
+   "indice": 46,
+   "texto": "Leeb M, Pasini D, Novatchkova M, Jaritz M, Helin K, Wutz A. 2010. Polycomb complexes act redundantly to repress genomic repeats and genes. Genes Dev 24:265–276.",
+   "item": "bib48"
+  },
+  {
+   "indice": 47,
+   "texto": "Levine SS, Weiss A, Erdjument-Bromage H, Shao Z, Tempst P, Kingston RE. 2002. The core of the polycomb repressive complex is compositionally and functionally conserved in flies and humans. Mol Cell Biol 22:6070–6078.",
+   "item": "bib49"
+  },
+  {
+   "indice": 48,
+   "texto": "Li Z, Cao R, Wang M, Myers MP, Zhang Y, Xu RM. 2006. Structure of a Bmi-1-Ring1B polycomb group ubiquitin ligase complex. J Biol Chem 281:20643–20649.",
+   "item": "bib50"
+  },
+  {
+   "indice": 49,
+   "texto": "Li G, Margueron R, Ku M, Chambon P, Bernstein BE, Reinberg D. 2010. Jarid2 and PRC2, partners in regulating gene expression. Genes Dev 24:368–380.",
+   "item": "bib51"
+  },
+  {
+   "indice": 50,
+   "texto": "Lynch MD, Smith AJ, De Gobbi M, Flenley M, Hughes JR, Vernimmen D, et al.. 2012. An interspecies analysis reveals a key role for unmethylated CpG dinucleotides in vertebrate Polycomb complex recruitment. EMBO J 31:317–329.",
+   "item": "bib52"
+  },
+  {
+   "indice": 51,
+   "texto": "Mendenhall EM, Koche RP, Truong T, Zhou VW, Issac B, Chi AS, et al.. 2010. GC-rich sequence elements recruit PRC2 in mammalian ES cells. PLoS Genet 6:e1001244.",
+   "item": "bib53"
+  },
+  {
+   "indice": 52,
+   "texto": "Mikkelsen TS, Ku M, Jaffe DB, Issac B, Lieberman E, Giannoukos G, et al.. 2007. Genome-wide maps of chromatin state in pluripotent and lineage-committed cells. Nature 448:553–560.",
+   "item": "bib54"
+  },
+  {
+   "indice": 53,
+   "texto": "Min J, Zhang Y, Xu RM. 2003. Structural basis for specific binding of Polycomb chromodomain to histone H3 methylated at Lys 27. Genes Dev 17:1823–1828.",
+   "item": "bib55"
+  },
+  {
+   "indice": 54,
+   "texto": "Müller J, Hart CM, Francis NJ, Vargas ML, Sengupta A, Wild B, et al.. 2002. Histone methyltransferase activity of a Drosophila Polycomb group repressor complex. Cell 111:197–208.",
+   "item": "bib56"
+  },
+  {
+   "indice": 55,
+   "texto": "Neira JL, Roman-Trufero M, Contreras LM, Prieto J, Singh G, Barrera FN, et al.. 2009. The transcriptional repressor RYBP is a natively unfolded protein which folds upon binding to DNA. Biochemistry 48:1348–1360.",
+   "item": "bib57"
+  },
+  {
+   "indice": 56,
+   "texto": "Pasini D, Bracken AP, Hansen JB, Capillo M, Helin K. 2007. The polycomb group protein Suz12 is required for embryonic stem cell differentiation. Mol Cell Biol 27:3769–3779.",
+   "item": "bib58"
+  },
+  {
+   "indice": 57,
+   "texto": "Peng JC, Valouev A, Swigut T, Zhang J, Zhao Y, Sidow A, et al.. 2009. Jarid2/Jumonji coordinates control of PRC2 enzymatic activity and target gene occupancy in pluripotent cells. Cell 139:1290–1302.",
+   "item": "bib59"
+  },
+  {
+   "indice": 58,
+   "texto": "Peters AH, Kubicek S, Mechtler K, O'Sullivan RJ, Derijck AA, Perez-Burgos L, et al.. 2003. Partitioning and plasticity of repressive histone methylation states in mammalian chromatin. Mol Cell 12:1577–1589.",
+   "item": "bib60"
+  },
+  {
+   "indice": 59,
+   "texto": "Poux S, Horard B, Sigrist CJ, Pirrotta V. 2002. The Drosophila trithorax protein is a coactivator required to prevent re-establishment of polycomb silencing. Development 129:2483–2493.",
+   "item": "bib61"
+  },
+  {
+   "indice": 60,
+   "texto": "Quinlan AR, Hall IM. 2010. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics 26:841–842.",
+   "item": "bib62"
+  },
+  {
+   "indice": 61,
+   "texto": "Ren X, Kerppola TK. 2011. REST interacts with Cbx proteins and regulates polycomb repressive complex 1 occupancy at RE1 elements. Mol Cell Biol 31:2100–2110.",
+   "item": "bib63"
+  },
+  {
+   "indice": 62,
+   "texto": "Ringrose L, Paro R. 2007. Polycomb/Trithorax response elements and epigenetic memory of cell identity. Development 134:223–232.",
+   "item": "bib64"
+  },
+  {
+   "indice": 63,
+   "texto": "Robin P, Fritsch L, Philipot O, Svinarchuk F, Ait-Si-Ali S. 2007. Post-translational modifications of histones H3 and H4 associated with the histone methyltransferases Suv39h1 and G9a. Genome Biol 8:R270.",
+   "item": "bib65"
+  },
+  {
+   "indice": 64,
+   "texto": "Sánchez C, Sanchez I, Demmers JA, Rodriguez P, Strouboulis J, Vidal M. 2007. Proteomics analysis of Ring1B/Rnf2 interactors identifies a novel complex with the Fbxl10/Jhdm1B histone demethylase and the Bcl6 interacting corepressor. Mol Cell Proteomics 6:820–834.",
+   "item": "bib66"
+  },
+  {
+   "indice": 65,
+   "texto": "Schmidt D, Wilson MD, Spyrou C, Brown GD, Hadfield J, Odom DT. 2009. ChIP-seq: using high-throughput sequencing to discover protein-DNA interactions. Methods 48:240–248.",
+   "item": "bib67"
+  },
+  {
+   "indice": 66,
+   "texto": "Schoeftner S, Sengupta AK, Kubicek S, Mechtler K, Spahn L, Koseki H, et al.. 2006. Recruitment of PRC1 function at the initiation of X inactivation independent of PRC2 and silencing. EMBO J 25:3110–3122.",
+   "item": "bib68"
+  },
+  {
+   "indice": 67,
+   "texto": "Schuettengruber B, Chourrout D, Vervoort M, Leblanc B, Cavalli G. 2007. Genome regulation by polycomb and trithorax proteins. Cell 128:735–745.",
+   "item": "bib69"
+  },
+  {
+   "indice": 68,
+   "texto": "Shao Z, Raible F, Mollaaghababa R, Guyon JR, Wu CT, Bender W, et al.. 1999. Stabilization of chromatin structure by PRC1, a Polycomb complex. Cell 98:37–46.",
+   "item": "bib70"
+  },
+  {
+   "indice": 69,
+   "texto": "Simon JA, Kingston RE. 2009. Mechanisms of polycomb gene silencing: knowns and unknowns. Nat Rev Mol Cell Biol 10:697–708.",
+   "item": "bib71"
+  },
+  {
+   "indice": 70,
+   "texto": "Smyth GK. 2004. Linear models and empirical bayes methods for assessing differential expression in microarray experiments. Stat Appl Genet Mol Biol 3:Article3.",
+   "item": "bib72"
+  },
+  {
+   "indice": 71,
+   "texto": "Strahl BD, Grant PA, Briggs SD, Sun ZW, Bone JR, Caldwell JA, et al.. 2002. Set2 is a nucleosomal histone H3-selective methyltransferase that mediates transcriptional repression. Mol Cell Biol 22:1298–1306.",
+   "item": "bib73"
+  },
+  {
+   "indice": 72,
+   "texto": "Tavares L, Dimitrova E, Oxley D, Webster J, Poot R, Demmers J, et al.. 2012. RYBP-PRC1 complexes mediate H2A ubiquitylation at polycomb target sites independently of PRC2 and H3K27me3. Cell 148:664–678.",
+   "item": "bib74"
+  },
+  {
+   "indice": 73,
+   "texto": "Thomson JP, Skene PJ, Selfridge J, Clouaire T, Guy J, Webb S, et al.. 2010. CpG islands influence chromatin structure via the CpG-binding protein Cfp1. Nature 464:1082–1086.",
+   "item": "bib75"
+  },
+  {
+   "indice": 74,
+   "texto": "Vassilev AP, Rasmussen HH, Christensen EI, Nielsen S, Celis JE. 1995. The levels of ubiquitinated histone H2A are highly upregulated in transformed human cells: partial colocalization of uH2A clusters and PCNA/cyclin foci in a fraction of cells in S-phase. J Cell Sci 108:1205–1215.",
+   "item": "bib76"
+  },
+  {
+   "indice": 75,
+   "texto": "Wang L, Brown JL, Cao R, Zhang Y, Kassis JA, Jones RS. 2004a. Hierarchical recruitment of polycomb group silencing complexes. Mol Cell 14:637–646.",
+   "item": "bib77"
+  },
+  {
+   "indice": 76,
+   "texto": "Wang H, Wang L, Erdjument-Bromage H, Vidal M, Tempst P, Jones RS, et al.. 2004. Role of histone H2A ubiquitination in Polycomb silencing. Nature 431:873–878.",
+   "item": "bib78"
+  },
+  {
+   "indice": 77,
+   "texto": "Woo CJ, Kharchenko PV, Daheron L, Park PJ, Kingston RE. 2010. A region of the human HOXD cluster that confers polycomb-group responsiveness. Cell 140:99–110.",
+   "item": "bib80"
+  },
+  {
+   "indice": 78,
+   "texto": "Yamagishi T, Hirose S, Kondo T. 2008. Secondary DNA structure formation for Hoxb9 promoter and identification of its specific binding protein. Nucleic Acids Res 36:1965–1975.",
+   "item": "bib81"
+  },
+  {
+   "indice": 79,
+   "texto": "Yu M, Mazor T, Huang H, Huang HT, Kathrein KL, Woo AJ, et al.. 2012. Direct recruitment of polycomb repressive complex 1 to chromatin by core binding transcription factors. Mol Cell 45:330–343.",
+   "item": "bib82"
+  },
+  {
+   "indice": 80,
+   "texto": "Yuan W, Wu T, Fu H, Dai C, Wu H, Liu N, et al.. 2012. Dense chromatin activates Polycomb repressive complex 2 to regulate H3 lysine 27 methylation. Science 337:971–975.",
+   "item": "bib83"
+  },
+  {
+   "indice": 81,
+   "texto": "Zhang Y, Liu T, Meyer CA, Eeckhoute J, Johnson DS, Bernstein BE, et al.. 2008. Model-based analysis of ChIP-Seq (MACS). Genome Biol 9:R137.",
+   "item": "bib84"
+  },
+  {
+   "indice": 82,
+   "texto": "Zhou JC, Blackledge NP, Farcas AM, Klose RJ. 2012. Recognition of CpG island chromatin by KDM2A requires direct and specific interaction with linker DNA. Mol Cell Biol 32:479–489.",
+   "item": "bib85"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Kouzarides, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Greer and Shi, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Butler et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Klose and Bird, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bird, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Klose and Bird, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Illingworth and Bird, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge and Klose, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Thomson et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib75"
+   ],
+   "referencias": [
+    73
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee and Skalnik, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Peters et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Robin et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib65"
+   ],
+   "referencias": [
+    63
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strahl et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib73"
+   ],
+   "referencias": [
+    71
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carrozza et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge and Klose, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deaton and Bird, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mikkelsen et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Simon and Kingston, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib71"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2004b",
+   "tipo": "xref",
+   "itens": [
+    "bib78"
+   ],
+   "referencias": [
+    76
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "de Napoles et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Czermin et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuzmichev et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Müller et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shao et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib70"
+   ],
+   "referencias": [
+    68
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lavigne et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Francis et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Eskeland et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schuettengruber et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib69"
+   ],
+   "referencias": [
+    67
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ringrose and Paro, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib64"
+   ],
+   "referencias": [
+    62
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Simon and Kingston, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib71"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ku et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woo et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib80"
+   ],
+   "referencias": [
+    77
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mendenhall et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kanhere et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lynch et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Koyama-Nasu et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yamagishi et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib81"
+   ],
+   "referencias": [
+    78
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Boyer et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bracken et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mikkelsen et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shao et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib70"
+   ],
+   "referencias": [
+    68
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Czermin et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuzmichev et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Müller et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Levine et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tavares et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib74"
+   ],
+   "referencias": [
+    72
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Peng et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Thomson et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib75"
+   ],
+   "referencias": [
+    73
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gearhart et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sánchez et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib66"
+   ],
+   "referencias": [
+    64
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gao et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gao et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ben-Saadon et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Buchwald et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Illingworth et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib79"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gao et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2004a",
+   "tipo": "xref",
+   "itens": [
+    "bib77"
+   ],
+   "referencias": [
+    75
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib79"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Thomson et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib75"
+   ],
+   "referencias": [
+    73
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhou et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib85"
+   ],
+   "referencias": [
+    82
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Endoh et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leeb and Wutz, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Endoh et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leeb et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Illingworth et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Endoh et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vassilev et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib76"
+   ],
+   "referencias": [
+    74
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Endoh et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Endoh et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Simon and Kingston, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib71"
+   ],
+   "referencias": [
+    69
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Min et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2004b",
+   "tipo": "xref",
+   "itens": [
+    "bib78"
+   ],
+   "referencias": [
+    76
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tavares et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib74"
+   ],
+   "referencias": [
+    72
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schoeftner et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib68"
+   ],
+   "referencias": [
+    66
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pasini et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leeb et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tavares et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib74"
+   ],
+   "referencias": [
+    72
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Arrigoni et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Neira et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tavares et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib74"
+   ],
+   "referencias": [
+    72
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gao et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hisada et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tavares et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib74"
+   ],
+   "referencias": [
+    72
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ren and Kerppola, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib63"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dietrich et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yu et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib82"
+   ],
+   "referencias": [
+    79
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mendenhall et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lynch et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Poux et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Klymenko and Müller, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kim et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cao et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2004b",
+   "tipo": "xref",
+   "itens": [
+    "bib78"
+   ],
+   "referencias": [
+    76
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Francis et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Eskeland et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yuan et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib83"
+   ],
+   "referencias": [
+    80
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ku et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Atsuta et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Klose and Bird, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fischer et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carvalho and Irizarry, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smyth, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib72"
+   ],
+   "referencias": [
+    70
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmidt et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib67"
+   ],
+   "referencias": [
+    65
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blackledge et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Illingworth et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tavares et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib74"
+   ],
+   "referencias": [
+    72
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Peng et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Langmead et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib84"
+   ],
+   "referencias": [
+    81
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Quinlan and Hall, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Benjamini and Hochberg, 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Blackledge et al., 2010",
+   "item": "bib7"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Blackledge et al., 2010",
+   "item": "bib7"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Blackledge et al., 2010",
+   "item": "bib7"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Blackledge et al., 2010",
+   "item": "bib7"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Blackledge et al., 2010",
+   "item": "bib7"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Blackledge et al., 2010",
+   "item": "bib7"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Blackledge et al., 2010",
+   "item": "bib7"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Wang et al., 2010",
+   "item": "bib79"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Wang et al., 2010",
+   "item": "bib79"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Blackledge et al., 2010",
+   "item": "bib7"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Blackledge et al., 2010",
+   "item": "bib7"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Blackledge et al., 2010",
+   "item": "bib7"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Blackledge et al., 2010",
+   "item": "bib7"
+  },
+  {
+   "ponto": "ANO",
+   "citacao": "Wang et al., 2004b",
+   "item": "bib78",
+   "ano_referencia": "2004",
+   "nota": "divergência existente no artigo publicado"
+  },
+  {
+   "ponto": "ANO",
+   "citacao": "Wang et al., 2004b",
+   "item": "bib78",
+   "ano_referencia": "2004",
+   "nota": "divergência existente no artigo publicado"
+  },
+  {
+   "ponto": "ANO",
+   "citacao": "Wang et al., 2004b",
+   "item": "bib78",
+   "ano_referencia": "2004",
+   "nota": "divergência existente no artigo publicado"
+  },
+  {
+   "ponto": "E",
+   "referencia": 24,
+   "item": "bib26"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

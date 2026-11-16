@@ -1,0 +1,565 @@
+{
+ "id": "treino_iso690-ad_en-US_limpo",
+ "estilo": "iso690-ad",
+ "sistema": "autor-data",
+ "locale": "en-US",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "ALEXANDER, Kimberly, MONTES, Cheyenne and ROGERS, Teresa, 2001. Ground design black change life respond listen throughout. Epidemiologia & Prevenzione. 2001. Vol. 24, no. 7, p. 769–780. DOI 10.99999/teste.treino.37349.",
+   "item": "it016"
+  },
+  {
+   "indice": 1,
+   "texto": "AMO SERRA, Odalis, PEREZ, Abigail and BALDWIN, Katherine, 1985. Early man responsibility catch team visit care.. Online. 1985. 4121. Available from: https://leis-treino.gov/8054",
+   "item": "it002"
+  },
+  {
+   "indice": 2,
+   "texto": "ANDERSON, Brandon, HAMILTON, Nicholas and GUZMAN, Katherine, 2024. Either believe herself others receive seat late system though peace. BMC Public Health. 2024. Vol. 44, no. 1, p. 421–432.",
+   "item": "it022"
+  },
+  {
+   "indice": 3,
+   "texto": "DAVIS, Matthew, JOHNSON, Hannah and FOSTER, Katherine, 1986. Final may risk environmental site movie skill. South Glennside: Rodriguez, Hardy and Irwin.",
+   "item": "it010"
+  },
+  {
+   "indice": 4,
+   "texto": "FRIEDMAN, Anna, BAUER, John, GREEN, Lauren and CLARKE, Holly, 2010. Speech all authority management produce country quickly. In: PATTERSON, Elizabeth (ed.), Call of difference meet knowledge during goal by message wide way wall media like force. North Jacobstad: Braun-Burgess. p. 18–33.",
+   "item": "it018"
+  },
+  {
+   "indice": 5,
+   "texto": "HAUTE AUTORITÉ DE SANTÉ (FRANCE), 1995. Seek develop decade identify clearly where change total impact white table. Journal of the American Medical Informatics Association. 1995. Vol. 67, no. 7, p. 447–465. DOI 10.99999/teste.treino.49606.",
+   "item": "it009"
+  },
+  {
+   "indice": 6,
+   "texto": "KENNEDY, Micheal, 2024. Man why special usually office choice future including world however conference easy. . Online. 2024. Available from: https://exemplo-treino.org/8178 [Accessed 6 November 2026].",
+   "item": "it021"
+  },
+  {
+   "indice": 7,
+   "texto": "KING, Lisa, 2024. Night people continue must clearly skill. Jasonburgh: Cook Ltd.",
+   "item": "it020"
+  },
+  {
+   "indice": 8,
+   "texto": "LE, Minh, YANG, Heidi and ANDERSON, Kristin, 2023. Evening stock career through miss law name. Revista de Saúde Pública. 2023. Vol. 17, no. 8, p. 681–698. DOI 10.99999/teste.treino.46886.",
+   "item": "it005"
+  },
+  {
+   "indice": 9,
+   "texto": "LI, Xiaoming and MURRAY, Lisa, 1987. School difficult against represent pretty though us whom meeting surface analysis. In: FLEMING, Matthew (ed.), Glass example relationship treat box grow police everything school discuss including standard remain. Andersontown: Black Group. p. 116–131.",
+   "item": "it003"
+  },
+  {
+   "indice": 10,
+   "texto": "MCPHERSON-RICHARD, Joel and CARPENTER, Ronald, 1988. To war them young positive sing TV film reality. Medical Mycology. 1988. Vol. 40, no. 11, p. 709–720.",
+   "item": "it000"
+  },
+  {
+   "indice": 11,
+   "texto": "MÜLLER, Sue and BUTLER, Richard, 2012. Subject cost bag lot two across room late lead big model upon. . Online. 2012. Available from: https://exemplo-treino.org/6887 [Accessed 2 November 2026].",
+   "item": "it006"
+  },
+  {
+   "indice": 12,
+   "texto": "PARK, Ji-ho, 2021. Find national under end himself seat shake change say few society bar. South Anita: Lyons Group.",
+   "item": "it004"
+  },
+  {
+   "indice": 13,
+   "texto": "PEREZ, Marilyn and MELENDEZ, David, 2023. Lose product Republican article age again party listen relate cup name recently clearly. North James: Green-Ruiz.",
+   "item": "it012"
+  },
+  {
+   "indice": 14,
+   "texto": "PETERSON, Karen, 1998. Administration great course structure soldier guy should figure. Epidemiologia e Serviços de Saúde. 1998. Vol. 72, no. 3, p. 419–434.",
+   "item": "it017"
+  },
+  {
+   "indice": 15,
+   "texto": "RANDOLPH, Amanda, MACK, Mary and THOMAS, Duane, 2001. Education option number mother change save cause nearly use practice friend theory. BMC Public Health. 2001. Vol. 79, no. 7, p. 48–52. DOI 10.99999/teste.treino.11202.",
+   "item": "it015"
+  },
+  {
+   "indice": 16,
+   "texto": "RICHMOND, Donald, [no date]. Chance middle fact care environment these. In: COBB, Michele (ed.), Number network build carry Republican. Huynhhaven: Jones-Gutierrez. p. 120–135.",
+   "item": "it023"
+  },
+  {
+   "indice": 17,
+   "texto": "SANCHEZ, Melissa, MATTHEWS, Michael, HILL, Morgan, HILL, Joseph, WANG, Micheal and TAYLOR, Laura, 2026. Call administration hospital dream air realize culture want begin. Das Gesundheitswesen. 2026. Vol. 24, no. 2, p. 107–126.",
+   "item": "it013"
+  },
+  {
+   "indice": 18,
+   "texto": "TAYLOR, Edward, VILLANUEVA, Adriana and ESTRADA, Corey, 2001. At me black seem left science write. Journal of the American Medical Informatics Association. 2001. Vol. 59, no. 2, p. 229–249. DOI 10.99999/teste.treino.87607.",
+   "item": "it014"
+  },
+  {
+   "indice": 19,
+   "texto": "TURNER, Melissa, JUAREZ, Michael, SCHROEDER, Monica and BENDER, Anthony, 2026. Fall of leader professor play dinner police suddenly herself. Gaceta Sanitaria. 2026. Vol. 13, no. 7, p. 350–355. DOI 10.99999/teste.treino.56860.",
+   "item": "it019"
+  },
+  {
+   "indice": 20,
+   "texto": "VIRGINIA-MARYLAND COLLEGE OF VETERINARY MEDICINE, 1993. There size world particularly another.. Online. 1993. 3888. Available from: https://leis-treino.gov/6776",
+   "item": "it007"
+  },
+  {
+   "indice": 21,
+   "texto": "VIRGINIA-MARYLAND COLLEGE OF VETERINARY MEDICINE, 2023. Bank various across human table home continue. Epidemiologia & Prevenzione. 2023. Vol. 59, no. 7, p. 135–139. DOI 10.99999/teste.treino.54199.",
+   "item": "it008"
+  },
+  {
+   "indice": 22,
+   "texto": "VON TORRES, Willie, 1985. International already church performance thousand product. Journal of the American Medical Informatics Association. 1985. Vol. 55, no. 1, p. 671–680. DOI 10.99999/teste.treino.56129.",
+   "item": "it001"
+  },
+  {
+   "indice": 23,
+   "texto": "WATSON, Arthur, WEBB, Jeremy and MARKS, Thomas, 2018a. Fast contain very paper. Das Gesundheitswesen. 2018. Vol. 31, no. 11, p. 772–777.",
+   "item": "it024"
+  },
+  {
+   "indice": 24,
+   "texto": "WATSON, Arthur, WEBB, Jeremy and MARKS, Thomas, 2018b. Line become along. Preventive Veterinary Medicine. 2018. Vol. 26, no. 9, p. 822–831.",
+   "item": "it025"
+  },
+  {
+   "indice": 25,
+   "texto": "WILLIAMS, Kevin and HURLEY, Brianna, 2011. Image prepare agreement improve particular trial life capital sea. BMC Public Health. 2011. Vol. 18, no. 8, p. 468–488. DOI 10.99999/teste.treino.33464.",
+   "item": "it011"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (2023)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mcpherson-Richard, Carpenter 1988; Anderson, Hamilton, Guzman 2024; Virginia-Maryland College of Veterinary Medicine 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it022",
+    "it007"
+   ],
+   "referencias": [
+    10,
+    2,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Friedman, Bauer, Green, Clarke 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Watson, Webb, Marks (2018a)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France) 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Williams, Hurley 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kennedy 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Anderson, Hamilton, Guzman 2024; Alexander, Montes, Rogers 2001; Amo Serra, Perez, Baldwin 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it016",
+    "it002"
+   ],
+   "referencias": [
+    2,
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Watson, Webb, Marks (2018a)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Randolph, Mack, Thomas (2001)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Li, Murray 1987; Turner, Juarez, Schroeder, Bender 2026; Virginia-Maryland College of Veterinary Medicine 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it019",
+    "it008"
+   ],
+   "referencias": [
+    9,
+    19,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mcpherson-Richard, Carpenter 1988; Park 2021; Alexander, Montes, Rogers 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it004",
+    "it016"
+   ],
+   "referencias": [
+    10,
+    12,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(King 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mcpherson-Richard, Carpenter 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le, Yang, Anderson 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Müller, Butler 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sanchez, Matthews, Hill, Hill, Wang, Taylor 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Anderson, Hamilton, Guzman (2024)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Davis, Johnson, Foster 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Taylor, Villanueva, Estrada (2001)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Richmond [no date])",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Peterson 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(von Torres 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Watson, Webb, Marks 2018b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Perez, Melendez (2023)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park 2021; Li, Murray 1987; Friedman, Bauer, Green, Clarke 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it003",
+    "it018"
+   ],
+   "referencias": [
+    12,
+    9,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Randolph, Mack, Thomas 2001; Taylor, Villanueva, Estrada 2001; Park 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it014",
+    "it004"
+   ],
+   "referencias": [
+    15,
+    18,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2023, p. 61)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Richmond [no date])",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Alexander, Montes, Rogers 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Richmond [no date])",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Amo Serra, Perez, Baldwin (1985)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Prepared by the author (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Former nature hear into fly surface boy book improve create cover image ready personal"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

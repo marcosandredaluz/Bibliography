@@ -1,0 +1,635 @@
+{
+ "id": "reservado_ieee_pt-PT_perturbado",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "pt-PT",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] H. Alves, «Architecto in earum», Medical Mycology, vol. 51, n.o 4, pp. 434–441.",
+   "item": "it025"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] P. Andrade, «Odit enim ut aperiam maiores rem enim officiis», Cadernos de Saúde Pública, vol. 50, n.o 11, pp. 797–809, 1997.",
+   "item": "it010"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] R. Henriques e V. Faria, «Dicta officiis error veniam necessitatibus amet similique pariatur doloribus reprehenderit cum illo expedita ratione facilis inventore», Gaceta Sanitaria, vol. 15, n.o 2, pp. 858–878, 2010.",
+   "item": "it016"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] G. Pinho, «Magni excepturi aspernatur quibusdam laudantium doloribus», Cadernos de Saúde Pública, vol. 3, n.o 8, pp. 466–472, 1993.",
+   "item": "it019"
+  },
+  {
+   "indice": 4,
+   "texto": "[5] K. van der Reis, «Architecto voluptate recusandae maxime necessitatibus expedita eos», Journal of the American Medical Informatics Association, vol. 43, n.o 2, pp. 377–385, 2023.",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "[6] O. Ferrer Landa, C. Fonseca, e M. Almeida, «Doloribus earum vitae beatae voluptate veniam quis», Pinho, Viseu, 2012.",
+   "item": "it002"
+  },
+  {
+   "indice": 6,
+   "texto": "[7] M. Rocha, «Cumque alias ut ad maxime voluptatum ab cum commodi id repellendus velit nulla dolorem», Marques, Esmoriz, 2023.",
+   "item": "it021"
+  },
+  {
+   "indice": 7,
+   "texto": "[8] B. Lima, Alias similique cumque corporis quidem beatae vero iste at. Vila Nova de Gaia: Soares Guerreiro S/A, 2006.",
+   "item": "it012"
+  },
+  {
+   "indice": 8,
+   "texto": "[9] J. Choi, D. Batista, L. Matos, e M. Neves, «Repellat veniam officiis beatae esse deleniti nostrum», BMC Public Health, vol. 10, n.o 2, pp. 688–697, 2024, doi: 10.99999/teste.reservado.47594.",
+   "item": "it004"
+  },
+  {
+   "indice": 9,
+   "texto": "[10] V. A. Le, «Rerum qui corporis temporibus quasi laboriosam nobis veritatis», Journal of the American Medical Informatics Association, vol. 34, n.o 4, pp. 563–578, 2019, doi: 10.99999/teste.reservado.67868.",
+   "item": "it005"
+  },
+  {
+   "indice": 10,
+   "texto": "[11] D. Çelik, M. Macedo, e R. Freitas, Cum maiores reprehenderit earum ut laborum accusantium accusantium officiis modi quibusdam at. 2017. [Em linha]. Disponível em: https://leis-reservado.gov/5460",
+   "item": "it006"
+  },
+  {
+   "indice": 11,
+   "texto": "[12] Conselho Federal de Medicina Veterinária, «Modi ipsa qui deleniti in quod quis ipsa tempora», Sá Branco S/A, Vila Nova de Foz Côa, 2015.",
+   "item": "it023"
+  },
+  {
+   "indice": 12,
+   "texto": "[13] M. Mendes e A. Brito, «Fugiat cumque ut quod», BMC Public Health, vol. 60, n.o 11, pp. 8–20, 1985, doi: 10.99999/teste.reservado.33158.",
+   "item": "it022"
+  },
+  {
+   "indice": 13,
+   "texto": "[14] F. Lopes, «Omnis totam modi aliquid nam soluta ullam commodi officia alias», Journal of the American Medical Informatics Association, vol. 9, n.o 3, pp. 527–535, 2008, doi: 10.99999/teste.reservado.95603.",
+   "item": "it017"
+  },
+  {
+   "indice": 14,
+   "texto": "[15] Agência Nacional de Vigilância Sanitária (Brasil), Ab corrupti molestias eos necessitatibus occaecati. 1976. [Em linha]. Disponível em: https://leis-reservado.gov/6042",
+   "item": "it013"
+  },
+  {
+   "indice": 15,
+   "texto": "[16] J. Simões, P. Fonseca, A. Borges, e E. Pinto, «Fuga debitis facilis eos dolor provident accusamus cum quis sapiente», Medical Mycology, vol. 16, n.o 9, pp. 814–827, 2023.",
+   "item": "it014"
+  },
+  {
+   "indice": 16,
+   "texto": "[17] N. Silva-Barros, «At maxime rerum dolores molestiae nobis dolore sit repellendus corporis iure ducimus», Gaceta Sanitaria, vol. 33, n.o 9, pp. 617–628, 2009, doi: 10.99999/teste.reservado.99859.",
+   "item": "it000"
+  },
+  {
+   "indice": 17,
+   "texto": "[18] Organización Mundial de la Salud, «Incidunt unde illo autem eum hic», em Magni facilis quasi sequi reiciendis, B. Magalhães, Ed., Covilhã: Neto Lda., 2021, pp. 207–222.",
+   "item": "it008"
+  },
+  {
+   "indice": 18,
+   "texto": "[19] P. Macedo, «Consequuntur nihil officiis harum nihil aspernatur quis sint aspernatur officia», em Dolores dolorem ullam culpa veniam cupiditate ducimus tempora ea repudiandae officia alias dolores, J. Pinheiro, Ed., Vila Nova de Santo André: Ribeiro, 2004, pp. 65–80.",
+   "item": "it027"
+  },
+  {
+   "indice": 19,
+   "texto": "[20] S. Teixeira, «Vero voluptatum vero nisi commodi», Preventive Veterinary Medicine, vol. 76, n.o 12, pp. 62–82, 2019, doi: 10.99999/teste.reservado.37562.",
+   "item": "it011"
+  },
+  {
+   "indice": 20,
+   "texto": "[21] K. Abreu, «Reiciendis delectus natus id», One Health, vol. 14, n.o 10, pp. 551–558, 2021, doi: 10.99999/teste.reservado.64341.",
+   "item": "it018"
+  },
+  {
+   "indice": 21,
+   "texto": "[22] P. Macedo, «Dolorem a accusantium nobis eos dolorum incidunt eius», Journal of the American Medical Informatics Association, vol. 22, n.o 2, pp. 881–891, 2004.",
+   "item": "it026"
+  },
+  {
+   "indice": 22,
+   "texto": "[23] I. Andrade, «Veniam illo vel eos neque nisi hic accusantium», Medical Mycology, vol. 48, n.o 11, pp. 183–195, 2006.",
+   "item": "it024"
+  },
+  {
+   "indice": 23,
+   "texto": "[24] F. Barros e G. Castro, «Tenetur iste doloribus aliquam tempore», em Accusamus similique minima hic commodi modi, L. Coelho, Ed., Santarém: Pires Cruz S.A., 2019, pp. 201–216.",
+   "item": "it020"
+  },
+  {
+   "indice": 24,
+   "texto": "[25] P. Rodrigues, F. Carvalho, e R. Rocha, «Ullam hic veritatis blanditiis veritatis laudantium dolorem», One Health, vol. 22, n.o 2, pp. 386–404, 1982, doi: 10.99999/teste.reservado.69617.",
+   "item": "it015"
+  },
+  {
+   "indice": 25,
+   "texto": "[26] X. Li e N. Teixeira, «Aut reiciendis quis ex». Acedido: 9 de novembro de 2026. [Em linha]. Disponível em: https://exemplo-reservado.org/3060",
+   "item": "it003"
+  },
+  {
+   "indice": 26,
+   "texto": "[27] Secretaria Municipal da Saúde (Curitiba), «Temporibus animi soluta vitae», Valente Pinho S/A, Alcobaça, 2006.",
+   "item": "it007"
+  },
+  {
+   "indice": 27,
+   "texto": "[28] Agência Nacional de Vigilância Sanitária (Brasil), Aut necessitatibus nihil iste quisquam tempore eaque. Torres Vedras: Batista Assunção Lda., 2010.",
+   "item": "it009"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it021"
+   ],
+   "referencias": [
+    9,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Çelik et al. [11]",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10], [11], [14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it005",
+    "it006"
+   ],
+   "referencias": [
+    13,
+    9,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Agência Nacional de Vigilância Sanitária (Brasil) [15]",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [10], [17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it000",
+    "it001"
+   ],
+   "referencias": [
+    9,
+    16,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[22]",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van der Reis [5]",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14], [23], [24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it024",
+    "it020"
+   ],
+   "referencias": [
+    13,
+    22,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12], [23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it023"
+   ],
+   "referencias": [
+    22,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[23], [26]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it024"
+   ],
+   "referencias": [
+    25,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[27]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lopes [14]",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[28]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1, p. 218]",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Silva-Barros [17]",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Tempora error quidem ex quae perspiciatis nulla inventore"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

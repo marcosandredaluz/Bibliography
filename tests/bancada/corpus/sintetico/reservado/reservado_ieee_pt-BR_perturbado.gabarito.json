@@ -1,0 +1,618 @@
+{
+ "id": "reservado_ieee_pt-BR_perturbado",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "pt-BR",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] H. von Nascimento, A. L. Vasconcelos, e B. Gonçalves, “Consequuntur quia tempore neque animi cumque blanditiis a magnam mollitia optio facilis vero”, Epidemiologia & Prevenzione, v. 14, n. 1, p. 838–844, 1979.",
+   "item": "it001"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] Minas Gerais (Estado), “Excepturi at pariatur expedita exercitationem perspiciatis”, Vieira da Luz - ME, Siqueira, 1990.",
+   "item": "it021"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] M. Mendonça, “Libero suscipit atque eius ex beatae asperiores neque inventore”, Cadernos de Saúde Pública, v. 11, n. 5, p. 623–636, 2004, doi: 10.99999/teste.reservado.98210.",
+   "item": "it016"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] V. Azevedo, A. Castro, J. Freitas, e C. Nunes, Nobis ipsum reprehenderit numquam nam sit in mollitia suscipit laudantium fugiat praesentium et consequuntur. Siqueira: Nascimento, 2007.",
+   "item": "it011"
+  },
+  {
+   "indice": 4,
+   "texto": "[5] H. Wang, “Molestias saepe soluta tempore neque odio praesentium quod nulla saepe”. Acesso em: 12 de novembro de 2026. [Online]. Disponível em: https://exemplo-reservado.org/9202",
+   "item": "it003"
+  },
+  {
+   "indice": 5,
+   "texto": "[6] I. Freitas, P. Campos, M. L. Borges, e D. Rodrigues, “Dolore eos non quibusdam quis et similique”, Revista de Saúde Pública, v. 52, n. 5, p. 290–308, 2022.",
+   "item": "it015"
+  },
+  {
+   "indice": 6,
+   "texto": "[7] Minas Gerais (Estado), “Commodi quam ratione nostrum quo laboriosam”. Acesso em: 6 de novembro de 2026. [Online]. Disponível em: https://exemplo-reservado.org/2030",
+   "item": "it014"
+  },
+  {
+   "indice": 7,
+   "texto": "[8] B. Çelik, “Quam molestiae deleniti laborum exercitationem ducimus praesentium perferendis hic alias ab”. Acesso em: 13 de novembro de 2026. [Online]. Disponível em: https://exemplo-reservado.org/5592",
+   "item": "it006"
+  },
+  {
+   "indice": 8,
+   "texto": "[9] Minas Gerais (Estado), “Atque provident reiciendis atque necessitatibus sapiente qui ipsum eaque”, Sampaio, Santos, 1990.",
+   "item": "it022"
+  },
+  {
+   "indice": 9,
+   "texto": "[10] E. Rocha e M. F. Montenegro, Quis est ipsum facere at earum enim. Rezende: Nascimento e Filhos, 2011.",
+   "item": "it010"
+  },
+  {
+   "indice": 10,
+   "texto": "[11] A. Moreira, S. Macedo, J. da Mata, C. Fogaça, R. Vieira, e P. Correia, “Beatae quisquam exercitationem laborum aliquam minima perferendis”, BMC Public Health, v. 14, n. 5, p. 579–589, 2001, doi: 10.99999/teste.reservado.25074.",
+   "item": "it013"
+  },
+  {
+   "indice": 11,
+   "texto": "[12] Minas Gerais (Estado), “Recusandae libero blanditiis cumque totam pariatur soluta ad”, One Health, v. 36, n. 10, p. 710–719, 2011, doi: 10.99999/teste.reservado.33181.",
+   "item": "it007"
+  },
+  {
+   "indice": 12,
+   "texto": "[13] M. Silveira, “Earum quo quos ratione ipsa sunt mollitia natus magnam recusandae recusandae”, Epidemiologia & Prevenzione, v. 71, n. 4, p. 667–686, 2005, doi: 10.99999/teste.reservado.68355.",
+   "item": "it017"
+  },
+  {
+   "indice": 13,
+   "texto": "[14] J. Choi, “Totam harum exercitationem laudantium quis”, One Health, v. 51, n. 12, p. 54–63, 2010, doi: 10.99999/teste.reservado.77034.",
+   "item": "it004"
+  },
+  {
+   "indice": 14,
+   "texto": "[15] B. da Mata, M. Porto, A. J. Moraes, H. Barbosa, L. Nascimento, e N. Macedo, “Incidunt fugit molestias culpa accusamus est nostrum quibusdam”, Epidemiologia & Prevenzione, v. 41, n. 7, p. 146–152, 1990, doi: 10.99999/teste.reservado.30827.",
+   "item": "it019"
+  },
+  {
+   "indice": 15,
+   "texto": "[16] Secretaria Municipal da Saúde (Curitiba), “Nisi non quibusdam minus perspiciatis quis eum illo odit”, Medical Mycology, v. 16, n. 9, p. 638–648, 1995, doi: 10.99999/teste.reservado.55245.",
+   "item": "it008"
+  },
+  {
+   "indice": 16,
+   "texto": "[17] G. Teixeira, R. L. Novais, H. Monteiro, e J. L. Campos, “Laboriosam quisquam fuga vel eum aliquam”, Revista de Saúde Pública, v. 48, n. 9, p. 133–139, doi: 10.99999/teste.reservado.47412.",
+   "item": "it020"
+  },
+  {
+   "indice": 17,
+   "texto": "[18] Public Health Agency of Canada, “Aut natus eaque beatae nihil deserunt aspernatur non cum at”, Pacheco S/A, da Rosa da Mata, 1996.",
+   "item": "it009"
+  },
+  {
+   "indice": 18,
+   "texto": "[19] C. Araújo-Sampaio, A. L. Guerra, e G. Nogueira, “Qui labore maxime sit perspiciatis eum”, Borges e Filhos, Fogaça Grande, 2006.",
+   "item": "it000"
+  },
+  {
+   "indice": 19,
+   "texto": "[20] M. L. da Conceição, “Exercitationem rerum eligendi unde deleniti pariatur porro”, Epidemiologia e Serviços de Saúde, v. 77, n. 4, p. 622–641, 2018, doi: 10.99999/teste.reservado.13406.",
+   "item": "it012"
+  },
+  {
+   "indice": 20,
+   "texto": "[21] D. Poza Alegria e S. Ramos, Tenetur quaerat quibusdam officiis quos autem iure quas. da Paz: Nunes, 1984.",
+   "item": "it002"
+  },
+  {
+   "indice": 21,
+   "texto": "[22] Santé publique France, “Magni minima consectetur quis aperiam tenetur rerum et itaque explicabo velit”. Acesso em: 3 de novembro de 2026. [Online]. Disponível em: https://exemplo-reservado.org/4592",
+   "item": "it018"
+  },
+  {
+   "indice": 22,
+   "texto": "[23] M. Pham, “Optio non cupiditate reprehenderit enim error voluptatem eius”, Journal of the American Medical Informatics Association, v. 60, n. 9, p. 815–820, 2005.",
+   "item": "it005"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1], [2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it021"
+   ],
+   "referencias": [
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Azevedo et al. [4]",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [8], [9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it006",
+    "it022"
+   ],
+   "referencias": [
+    6,
+    7,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4], [6], [11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it013",
+    "it015"
+   ],
+   "referencias": [
+    3,
+    10,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [7], [9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it022",
+    "it014"
+   ],
+   "referencias": [
+    2,
+    8,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [13], [14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it016",
+    "it004"
+   ],
+   "referencias": [
+    12,
+    2,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11], [16], [17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it008",
+    "it020"
+   ],
+   "referencias": [
+    10,
+    15,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it009"
+   ],
+   "referencias": [
+    2,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [14]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it004"
+   ],
+   "referencias": [
+    7,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "von Nascimento et al. [1]",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Azevedo et al. [4]",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Minas Gerais (Estado) [9]",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [9], [20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it022",
+    "it014"
+   ],
+   "referencias": [
+    19,
+    8,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[22], [23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it005"
+   ],
+   "referencias": [
+    21,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2], [6], [12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it021",
+    "it015"
+   ],
+   "referencias": [
+    11,
+    1,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "von Nascimento et al. [1]",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [15], [23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it005",
+    "it019"
+   ],
+   "referencias": [
+    6,
+    22,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [5], [22]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it018",
+    "it016"
+   ],
+   "referencias": [
+    4,
+    21,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[9], [15], [19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it019",
+    "it022"
+   ],
+   "referencias": [
+    18,
+    14,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[21, p. 253]",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Minas Gerais (Estado) [9]",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Iusto dolorum quaerat sint maxime veritatis in voluptatum sequi officiis aspernatur"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

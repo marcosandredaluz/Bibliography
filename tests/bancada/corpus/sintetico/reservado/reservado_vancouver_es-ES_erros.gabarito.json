@@ -1,0 +1,570 @@
+{
+ "id": "reservado_vancouver_es-ES_erros",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "es-ES",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Olmedo W, Vigil N, Márquez É, Avilés B. Palabras conocimiento realizar unidos dice seguro acciones figura luz cómo. Journal of the American Medical Informatics Association. 2000;5(5):128-44. doi:10.99999/teste.reservado.63779",
+   "item": "it018"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Nicolau O, Zorrilla L, Robledo H, Peñas L, Carpio C, Bárcena D. Silencio eso esfuerzo embargo aquel algunos. Journal of the American Medical Informatics Association. 2011;31(5):23-42. doi:10.99999/teste.reservado.28687",
+   "item": "it019"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Chen J, Pujadas R, Quero D. Con argentina llegado dicen siglo proceso tenían. Epidemiologia e Serviços de Saúde. 1993;69(11):826-45.",
+   "item": "it003"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Seco L, Campoy L, Torrents N. Estoy frente lópez grupo cine porque educación diez encuentra habrá san durante. Gaceta Sanitaria. 67(1):334-47. doi:10.99999/teste.reservado.14339",
+   "item": "it021"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Minas Gerais (Estado). Sistemas baja pocos única año policía próximo. Lleida: Hermanos Cuenca S.Coop.; 2017.",
+   "item": "it017"
+  },
+  {
+   "indice": 5,
+   "texto": "6. de Carbó J, Delgado M. Mediante arriba m pesar siete lleva don pesar. Gaceta Sanitaria. 2006;31(2):841-59. doi:10.99999/teste.reservado.65209",
+   "item": "it001"
+  },
+  {
+   "indice": 6,
+   "texto": "8. Park J ho, Bejarano L, Manso E, Falcón J. Social partir cinco cuadro mes serán. Ourense: Virginia Guzmán Iglesias S.L.N.E; 1980.",
+   "item": "it004"
+  },
+  {
+   "indice": 7,
+   "texto": "9. Conselho Federal de Medicina Veterinária. Realizar muerte pocos suerte tres sociales región más razón largo obra nombre hecho calle ministerio podía [Internet]. 2005 [citado 13 de noviembre de 2026]. Disponible en: https://exemplo-reservado.org/5117",
+   "item": "it008"
+  },
+  {
+   "indice": 8,
+   "texto": "10. Agenzia Italiana del Farmaco. Negro intereses comisión podemos tipos abril había valor justicia buscar operación [Internet]. 5538. 2000. Disponible en: https://leis-reservado.gov/3955",
+   "item": "it010"
+  },
+  {
+   "indice": 9,
+   "texto": "11. Tenorio-Benavente E, Gallardo H, Hernando C. Manuel mayo internacional título él personas [Internet]. 2026 [citado 3 de noviembre de 2026]. Disponible en: https://exemplo-reservado.org/6481",
+   "item": "it000"
+  },
+  {
+   "indice": 10,
+   "texto": "12. Otero J, Lerma S, Esteban JL. Toma algo nada pie. Das Gesundheitswesen. 2004;56(4):881-8. doi:10.99999/teste.reservado.87883",
+   "item": "it020"
+  },
+  {
+   "indice": 11,
+   "texto": "13. Cazorla G, Nieto E, Hidalgo A. Diciembre niño nuestro recuerdo sentido dio casos defensa carrera del técnica pensar mesa cerca. One Health. 2014;3(9):871-90. doi:10.99999/teste.reservado.63671",
+   "item": "it011"
+  },
+  {
+   "indice": 12,
+   "texto": "14. Cabañas G. Enfermedad unión naturaleza vuelve anterior. [Las Palmas]: Cadenas & Asociados S.L.N.E; 2001.",
+   "item": "it013"
+  },
+  {
+   "indice": 13,
+   "texto": "16. Prats J. Como diferencia buscar modo unas [Internet]. 1986 [citado 8 de noviembre de 2026]. Disponible en: https://exemplo-reservado.org/7287",
+   "item": "it014"
+  },
+  {
+   "indice": 14,
+   "texto": "17. Llanos JA. Centros frente aparece dejar ésta pero. Salamanca: Hnos Jara S.A.; 1992.",
+   "item": "it023"
+  },
+  {
+   "indice": 15,
+   "texto": "18. Nguyen VA, Mármol JA, Carpio P. Hacer noche comercio son viene buen vamos [Internet]. 1976 [citado 13 de noviembre de 2026]. Disponible en: https://exemplo-reservado.org/4761",
+   "item": "it005"
+  },
+  {
+   "indice": 16,
+   "texto": "19. Peiró S. Características cierta justicia falta que aún produce. Revue d’Épidémiologie et de Santé Publique. 1999;66(4):831-8. doi:10.99999/teste.reservado.22859",
+   "item": "it015"
+  },
+  {
+   "indice": 17,
+   "texto": "20. Secretaria Municipal da Saúde (Curitiba). Solución conjunto pacientes explicó hechos revolución centro [Internet]. 2014 [citado 10 de noviembre de 2026]. Disponible en: https://exemplo-reservado.org/3721",
+   "item": "it016"
+  },
+  {
+   "indice": 18,
+   "texto": "21. Secretaria Municipal da Saúde (Curitiba). Unos suelo allí como cualquier otras pasado propia libertad lleva [Internet]. 1983 [citado 7 de noviembre de 2026]. Disponible en: https://exemplo-reservado.org/1646",
+   "item": "it009"
+  },
+  {
+   "indice": 19,
+   "texto": "22. Çelik R, Querol F, Huguet E. Mayoría figura encima carácter voluntad necesidad artículo dirección e todavía régimen ministerio. Alicante: Cámara y asociados S.A.T.; 2013.",
+   "item": "it006"
+  },
+  {
+   "indice": 20,
+   "texto": "23. Gallart Tello M, Feliu B, Mata L, Tomé C. Imposible hora principales recursos ellas noviembre zonas puerto ocasiones. Journal of the American Medical Informatics Association. 1999;48(12):118-30. doi:10.99999/teste.reservado.49848",
+   "item": "it002"
+  },
+  {
+   "indice": 21,
+   "texto": "24. Bundesinstitut für Risikobewertung. Estuvo gracias iglesia hacerlo. Valladolid: Villanueva y Canales S.Coop.; 2002.",
+   "item": "it012"
+  },
+  {
+   "indice": 22,
+   "texto": "25. Bonet-Sevillano A. Siendo alguien profesional ciencia somos ocasiones soy. En: Tejada P, editor. Pudo internacional modelo tampoco investigación nuestro fuerzas miguel trabajadores explicó contrario esas presente hacia. León: Construcción Ibéricos S.A.; 2011. p. 250-65.",
+   "item": "extra0"
+  },
+  {
+   "indice": 23,
+   "texto": "26. de Ferreras T, Calleja J. Radio dicen solución le tú ayuda trabajar dólares esa política porque nuevo. Das Gesundheitswesen. 1978;59(4):255-64.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nicolau et al. (2)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3–5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it021",
+    "it017"
+   ],
+   "referencias": [
+    2,
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al. (3)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4,7,13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it011",
+    "it007"
+   ],
+   "referencias": [
+    3,
+    11,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Otero et al. (12)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11,14,15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it022",
+    "it000"
+   ],
+   "referencias": [
+    12,
+    null,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7,16,17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it014",
+    "it023"
+   ],
+   "referencias": [
+    null,
+    13,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Llanos (17)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14,21,22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it013",
+    "it006"
+   ],
+   "referencias": [
+    18,
+    12,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gallart Tello et al. (23)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al. (3)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Prats (16)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(7)",
+   "item": "it007"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(4,7,13)",
+   "item": "it007"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(11,14,15)",
+   "item": "it022"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(7,16,17)",
+   "item": "it007"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(7)",
+   "item": "it007"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(7)",
+   "item": "it007"
+  },
+  {
+   "ponto": "E",
+   "referencia": 22,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 23,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Amor cuanto fiscal rosa precio dejó al radio nosotros hombre obras palabras interior"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,613 @@
+{
+ "id": "treino_iso690-num_it-IT_erros",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "it-IT",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1.  TUTINO, Benedetto. Civiltà quadro notevole cuore guerra roba. Cadernos de Saúde Pública. 2008. Vol. 35, no. 10, p. 294–312. DOI 10.99999/teste.treino.70265.",
+   "item": "it019"
+  },
+  {
+   "indice": 1,
+   "texto": "2.  COMOLLI, Ricciotti, FICINO, Ivo e CUZZOCREA, Teresa. Compiere uscire crisi sembrare verde dirigere parlare gamba bagno. BMC Public Health. 1989. Vol. 29, no. 4, p. 395–401. DOI 10.99999/teste.treino.58489.",
+   "item": "it016"
+  },
+  {
+   "indice": 2,
+   "texto": "3.  SALOM RIPOLL, Francisco Javier, MASTROIANNI, Jacopo, DONINI, Annalisa e FILIPPELLI, Giosuè. Decisione attenzione puro cui ferro principale autore no pagina attaccare leggero tacere colore braccio. Torsa : Nolcini, Gabba e Bonaventura e figli, 1981.",
+   "item": "it002"
+  },
+  {
+   "indice": 3,
+   "texto": "4.  CONSELHO NACIONAL DE SAÚDE (BRASIL). Felice commissione ombra parete contadino grande caratteristico cominciare sorella. One Health. 2020. Vol. 80, no. 12, p. 17–35.",
+   "item": "it007"
+  },
+  {
+   "indice": 4,
+   "texto": "5.  FARANDA, Nedda, SALIERI, Venancio e BROSCHI, Mercedes. Fortuna piacere invitare vista fratello cominciare scappare. Epidemiologia e Serviços de Saúde. 1991. Vol. 75, no. 8, p. 626–636. DOI 10.99999/teste.treino.26671.",
+   "item": "it014"
+  },
+  {
+   "indice": 5,
+   "texto": "6.  ACCARDO, Ignazio. Appunto qualsiasi programma formare. Preventive Veterinary Medicine. 2010. Vol. 71, no. 1, p. 465–469. DOI 10.99999/teste.treino.35865.",
+   "item": "it022"
+  },
+  {
+   "indice": 6,
+   "texto": "7.  GUIDONE, Corrado. Pietra tecnico fatica attività estero spiegare proposta famoso intenzione. BMC Public Health. 1987. Vol. 68, no. 4, p. 290–305. DOI 10.99999/teste.treino.71646.",
+   "item": "it011"
+  },
+  {
+   "indice": 7,
+   "texto": "9.  CHOI, Ji-ho. Concetto potere pubblicare utile situazione muovere perfino conto svegliare accanto passione. . Ruoti : Moresi-Boccioni s.r.l., 2014.",
+   "item": "it004"
+  },
+  {
+   "indice": 8,
+   "texto": "10.  CUOMO, Leonardo, FANTONI, Benedetto, PETRALLI, Enrico e MERCADANTE, Arnaldo. Vincere finire pure peso innamorare compagno trattare ciascuno dito oro. BMC Public Health. 2004. Vol. 78, no. 6, p. 709–719.",
+   "item": "it018"
+  },
+  {
+   "indice": 9,
+   "texto": "11.  ROBERT KOCH-INSTITUT. Cattolico tirare pericolo aspettare caffè. Perno : Ludovisi, Schiavone e Polesel s.r.l., 1977.",
+   "item": "it010"
+  },
+  {
+   "indice": 10,
+   "texto": "13.  ANTONELLI, Barbara. Oltre inutile eppure studio crescere soffrire favore poiché. Online. 12305. Available from: https://leis-treino.gov/8973",
+   "item": "it023"
+  },
+  {
+   "indice": 11,
+   "texto": "14.  ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE. Foglia concedere sposare quasi iniziare preciso superiore stesso prodotto. . Sesto Ed Uniti : Gatto-Geraci s.r.l., 2015.",
+   "item": "it008"
+  },
+  {
+   "indice": 12,
+   "texto": "15.  VERSACE, Valeria, PIZZAMANO, Giacinto, GRASSO, Teresa e FILOGAMO, Gabriele. Avanzare automobile qualcuno spalla neppure voltare latino croce continuo piano morale partecipare regione qualche. Das Gesundheitswesen. 2019. Vol. 22, no. 7, p. 833–843. DOI 10.99999/teste.treino.35982.",
+   "item": "it012"
+  },
+  {
+   "indice": 13,
+   "texto": "16.  HAUTE AUTORITÉ DE SANTÉ (FRANCE). Spesa elemento provocare processo ombra luogo sinistro quarto maestro. Online. 2013. 8331. Available from: https://leis-treino.gov/176",
+   "item": "it013"
+  },
+  {
+   "indice": 14,
+   "texto": "17.  DE RUGGERI, Antonello. Proposta ripetere tentare appoggiare battere ragione spazio. Vitorchiano Stazione : Briccialdi, Chiaramonte e Ponti SPA, 2025.",
+   "item": "it001"
+  },
+  {
+   "indice": 15,
+   "texto": "18.  GERACI, Sylvia e MALATESTA, Sonia. Memoria ancora massa pezzo porre pace storia maniera. . Linarolo : Ciampi, Cammarata e Samele s.r.l., 1984.",
+   "item": "it024"
+  },
+  {
+   "indice": 16,
+   "texto": "19.  TRAN, Thi Hoa, MARENZIO, Iolanda e BOSIO, Antonia. Grave libertà mancare. Gaceta Sanitaria. 1995. Vol. 10, no. 10, p. 166–178. DOI 10.99999/teste.treino.34242.",
+   "item": "it005"
+  },
+  {
+   "indice": 17,
+   "texto": "20.  ROBERT KOCH-INSTITUT. Successo levare comunicazione stamattina intendere presentare serie possedere secondo. Besenello : Iannelli, Bonomo e Gabbana Group, 1996.",
+   "item": "it021"
+  },
+  {
+   "indice": 18,
+   "texto": "21.  ÑÚÑEZ, Giorgia, BRUNELLESCHI, Virginia e TASSO, Tiziano. Consiglio fratello profondo dirigere presenza provocare tono loro svolgere tutto secolo adesso conto. San Gimignano : Marangoni Group, 2001.",
+   "item": "it006"
+  },
+  {
+   "indice": 19,
+   "texto": "22.  ROBERT KOCH-INSTITUT. Soprattutto milione giugno duro sorridere nord tavolo passare verde figurare consentire. BMC Public Health. 2015. Vol. 44, no. 2, p. 690–708.",
+   "item": "it009"
+  },
+  {
+   "indice": 20,
+   "texto": "23.  CHEN, Xiaoming. Viso qualità guardare qualcosa direttore esporre. BMC Public Health. 2018. Vol. 30, no. 12, p. 71–82. DOI 10.99999/teste.treino.20175.",
+   "item": "it003"
+  },
+  {
+   "indice": 21,
+   "texto": "24.  RASTELLI-ZOLA, Marcella e FO, Nicolò. Dividere animo mantenere stato corpo stabilire. Epidemiologia & Prevenzione. 1978. Vol. 74, no. 7, p. 581–591. DOI 10.99999/teste.treino.78932.",
+   "item": "it000"
+  },
+  {
+   "indice": 22,
+   "texto": "25.  STOPPANI, Luigina, GABRIELI, Matteo e BENIGNI, Gianna. Non polizia fuggire gusto bello presente significare. . Selegas : Chigi-Chechi Group, 2000.",
+   "item": "it017"
+  },
+  {
+   "indice": 23,
+   "texto": "26.  ZANAZZO, Giosuè e SALATA, Amico. Arrestare riuscire bagno scena capitare lei capire albergo popolazione riprendere. Medical Mycology. 2017. Vol. 10, no. 2, p. 319–329.",
+   "item": "it020"
+  },
+  {
+   "indice": 24,
+   "texto": "27.  TELESIO-COLUMBO, Giuliano. Titolo distruggere levare se politico. BMC Public Health. 1990. Vol. 1, no. 12, p. 593–597. DOI 10.99999/teste.treino.19258.",
+   "item": "extra0"
+  },
+  {
+   "indice": 25,
+   "texto": "28.  VAN DER CAMPANELLA, Carmelo e ALIGHIERI, Serafina. Allora sognare azzurro presente necessario medesimo volta. Rocca Santa Maria : Catalano-Brichese s.r.l., 1994.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2, 3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it002"
+   ],
+   "referencias": [
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tutino (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it014"
+   ],
+   "referencias": [
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Faranda et al. (5)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9–11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it018",
+    "it010"
+   ],
+   "referencias": [
+    7,
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11, 12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it025"
+   ],
+   "referencias": [
+    9,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9, 11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it010"
+   ],
+   "referencias": [
+    7,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 14, 15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it007",
+    "it012"
+   ],
+   "referencias": [
+    11,
+    3,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3, 16, 17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it013",
+    "it001"
+   ],
+   "referencias": [
+    2,
+    13,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it018"
+   ],
+   "referencias": [
+    15,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8, 19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it005"
+   ],
+   "referencias": [
+    null,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tran et al. (19)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guidone (7)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21, 22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it009"
+   ],
+   "referencias": [
+    18,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it024"
+   ],
+   "referencias": [
+    9,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2, 22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it009"
+   ],
+   "referencias": [
+    1,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tutino (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 24, 25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it007",
+    "it017"
+   ],
+   "referencias": [
+    21,
+    3,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16, 26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it020"
+   ],
+   "referencias": [
+    13,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Antonelli (13)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10, p. 118)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Randazzo (8)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(8)",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(11, 12)",
+   "item": "it025"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(12)",
+   "item": "it025"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(8, 19)",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Randazzo (8)",
+   "item": "it015"
+  },
+  {
+   "ponto": "E",
+   "referencia": 24,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 25,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Coprire soffrire produrre grazie villa albero popolazione sera opporre"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

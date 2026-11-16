@@ -1,0 +1,684 @@
+{
+ "id": "reservado_vancouver_it-IT_limpo",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "it-IT",
+ "conjunto": "reservado",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Santé publique France. Fiducia nord giorno numeroso scappare pensiero stanza. Castrocaro Terme E Terra Del Sole: Zampa e figli; 1980.",
+   "item": "it010"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Public Health Agency of Canada. Numeroso coraggio sentimento giugno veramente da imporre. [Torreano Di Martignacco]: Moresi, Sgalambro e Guinizzelli SPA; 1988.",
+   "item": "it009"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Conselho Federal de Medicina Veterinária. Esistere neppure breve mercato atteggiamento [Internet]. 1988 [citato 10 novembre 2026]. Disponibile su: https://exemplo-reservado.org/7319",
+   "item": "it016"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Li H, Farina A. Portare nessuno richiedere bravo fantasia pubblicare buio verità momento [Internet]. 6034. 1993. Disponibile su: https://leis-reservado.gov/4699",
+   "item": "it003"
+  },
+  {
+   "indice": 4,
+   "texto": "5. del Littizzetto G, Luciani M, Cimini I. Costa moderno pronto utile programma scappare regione cattolico tecnico necessità distinguere [Internet]. 2018 [citato 1 novembre 2026]. Disponibile su: https://exemplo-reservado.org/4573",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Agência Nacional de Vigilância Sanitária (Brasil). Divenire provincia nascere spesa offendere simile azzurro [Internet]. 2001 [citato 14 novembre 2026]. Disponibile su: https://exemplo-reservado.org/1362",
+   "item": "it011"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Tozzo R. Significare italiano verso essere sviluppo muovere costruzione attuale coraggio. Journal of the American Medical Informatics Association. 1984;57(9):855–62.",
+   "item": "it029"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Secretaria Municipal da Saúde (Curitiba). Attaccare giungere appunto tra sangue musica zia sorriso. Sissa Trecasali: Liguori Group; 2011.",
+   "item": "it024"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Saraceno S, Babati M, Montesano I, Pederiva M, Grisoni G, Antonetti L. Oggetto relazione campagna pensiero buono maniera affare divertire opporre scherzare. Gaceta Sanitaria. 2018;24(1):857–67. doi:10.99999/teste.reservado.51611",
+   "item": "it013"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Carli C, Fiorucci A. Pieno soltanto ammettere interno. BMC Public Health. 1981;40(3):10–26.",
+   "item": "it026"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Pergolesi-Iannucci G. Vero là qui usare ambiente aiuto provare. In: Orengo I, curatore. Porta piangere bestia causa invece esame tardi. Calvene: Lollobrigida-Garobbio s.r.l.; 2022. p. 11–26.",
+   "item": "it000"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Mastroianni D. Stesso nobile da disporre pagina risposta riportare famiglia dolce nudo minimo mestiere invitare ah accettare. Medical Mycology. 2005;50(6):814–26. doi:10.99999/teste.reservado.12408",
+   "item": "it023"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Spallanzani B, Roccabonella C, Randazzo L, Cafarchia R, Scandone G, Ajello M. Folla fuoco pena stringere macchina speranza bere. Revista de Saúde Pública. 2021;74(9):863–9. doi:10.99999/teste.reservado.29004",
+   "item": "it019"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Kim M jun, Casalodi A. Prova storia davvero impressione morire. Das Gesundheitswesen. 2014;59(3):103–10. doi:10.99999/teste.reservado.46689",
+   "item": "it004"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Tozzo R. Disposizione scena grosso naturalmente politico volere posare personaggio acqua. Carattano: Iannuzzi-Leopardi e figli; 1984.",
+   "item": "it028"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Pellico F. Consiglio meritare articolo fame attività importanza. Revue d’Épidémiologie et de Santé Publique. 80(1):196–214. doi:10.99999/teste.reservado.96856",
+   "item": "it027"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Rosselli T, Procacci A, Tremonti A, Soprano C. Partire dirigere cucina tratto determinare dormire raccontare esperienza usare battaglia anima. One Health. 2011;49(2):576–96. doi:10.99999/teste.reservado.27835",
+   "item": "it018"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Conselho Federal de Medicina Veterinária. Mentre fame buono carta resistere. Solesino: Zaccagnini e figli; 2026.",
+   "item": "it007"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Agenzia Italiana del Farmaco. Azzurro girare testa necessario metà sorgere capitare chi. Epidemiologia e Serviços de Saúde. 2018;14(2):329–42. doi:10.99999/teste.reservado.96214",
+   "item": "it008"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Vergassola A, Loredan M. Animo dubbio situazione appunto spirito dirigere arrestare. Epidemiologia e Serviços de Saúde. 1984;72(4):583–600.",
+   "item": "it014"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Sagnelli M, Ostinelli G, Magrassi L. Chiedere vivere diretto piede affrontare giro moglie porre tuttavia scuola. Das Gesundheitswesen. 2023;35(8):245–59. doi:10.99999/teste.reservado.37306",
+   "item": "it012"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Beccaria C, Rosselli V, Innocenti M, Benigni V, Bocca R, Cimarosa M. Provocare fermare non fiume mangiare escludere nazionale bruciare normale bruciare. Medical Mycology. 2002;61(11):267–72. doi:10.99999/teste.reservado.49380",
+   "item": "it017"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Barrios Bru C, Gaggini V, Boccioni B, Greco G. Lontano movimento zitto notare vero almeno immagine coraggio cambiare sereno luogo enorme [Internet]. 14432. 1982. Disponibile su: https://leis-reservado.gov/4899",
+   "item": "it002"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Pham TH, Loredan R, Papetti R. Nord si compagnia religioso [Internet]. 8922. 2026. Disponibile su: https://leis-reservado.gov/2224",
+   "item": "it005"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Nolcini L, Comencini C, Togliatti M, Gabbana E. Estate accompagnare riva umano consiglio collina comprendere personaggio quadro sorella passato consiglio. Epidemiologia & Prevenzione. 1976;76(2):582–90.",
+   "item": "it015"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Eco G, Rosselli G, Faranda M. Amare significare unico aiutare su direttore gettare finalmente. Das Gesundheitswesen. 2016;66(1):599–611.",
+   "item": "it022"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Baresi M. Domenica stare credere mamma raggiungere cultura meritare. Revista de Saúde Pública. 1992;54(7):60–80. doi:10.99999/teste.reservado.50601",
+   "item": "it020"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Cendron M, Boito H, Vitturi C, Spinola A, Vianello D, Asmundo P. Occorrere dente figurare favore fondo davanti correre levare. Castelfiorentino: Tamburini-Lancisi e figli; 1991.",
+   "item": "it025"
+  },
+  {
+   "indice": 28,
+   "texto": "29. Groß Z, Barillaro R. Mandare via cattolico cortile comunicazione vivo grazia ragazzo conto. Medical Mycology. 1977;15(6):848–63. doi:10.99999/teste.reservado.48348",
+   "item": "it006"
+  },
+  {
+   "indice": 29,
+   "texto": "30. Aldobrandi L. Lingua ripetere mercato raccogliere legare mese montagna gamba elemento. One Health. 2004;38(12):747–58. doi:10.99999/teste.reservado.66023",
+   "item": "it021"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3–5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it003",
+    "it001"
+   ],
+   "referencias": [
+    2,
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Saraceno et al. (9)",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mastroianni (12)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13,14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it004"
+   ],
+   "referencias": [
+    12,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15,16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it027"
+   ],
+   "referencias": [
+    14,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9,17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it013"
+   ],
+   "referencias": [
+    16,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8,18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it024"
+   ],
+   "referencias": [
+    17,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5,8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it024"
+   ],
+   "referencias": [
+    4,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19,20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it008"
+   ],
+   "referencias": [
+    19,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Beccaria et al. (22)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barrios Bru et al. (23)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19,24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it005"
+   ],
+   "referencias": [
+    18,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nolcini et al. (25)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Secretaria Municipal da Saúde (Curitiba) (8)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3,15,26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it016",
+    "it022"
+   ],
+   "referencias": [
+    14,
+    2,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baresi (27)",
+   "tipo": "narrativa",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Santé publique France (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Santé publique France (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4,13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it003"
+   ],
+   "referencias": [
+    12,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Agenzia Italiana del Farmaco (19)",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Relazione probabilmente atto oppure avanzare bestia domani comprendere stabilire"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

@@ -1,0 +1,633 @@
+{
+ "id": "treino_chicago-ad_es-ES_limpo",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "es-ES",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Amigo programas problemas el, Legislation No. 13264 (1985). https://leis-treino.gov/7511.",
+   "item": "it010"
+  },
+  {
+   "indice": 1,
+   "texto": "Beltrán, Pepita, Chus Artigas, y Atilio Revilla. 2022. «Que sus g opinión ni propuesta me superior». En Mayoría don creación días dado razón varios, editado por Che Ramirez. Promociones Quirós & Asociados S.Com.",
+   "item": "it024"
+  },
+  {
+   "indice": 2,
+   "texto": "Blazquez, Abigaíl da, Telmo Rincón, y Espiridión Salamanca. 2010. «Pronto ministerio tengo casos base zonas marco que policía ojos». Epidemiologia e Serviços de Saúde 20 (10): 86-93. https://doi.org/10.99999/teste.treino.79137.",
+   "item": "it001"
+  },
+  {
+   "indice": 3,
+   "texto": "Cañizares-Cortina, Eliana, Clemente Blanes, y María Dolores Roca. 2000. «Tan tampoco tuvo c ninguna unión haciendo casa casos incluso bajo». Revista de Saúde Pública 59 (3): 610-15. https://doi.org/10.99999/teste.treino.25888.",
+   "item": "it000"
+  },
+  {
+   "indice": 4,
+   "texto": "Choi, Seo-yeon, y Joan Araujo. 2017. «Algunos carácter de edad clase se viaje sabía estudio lenguaje». En Consumo voy hijo interior puedo película hora presencia diario palabras consecuencia, editado por Alex Alvarez. Hnos Azorin S.Com.",
+   "item": "it004"
+  },
+  {
+   "indice": 5,
+   "texto": "Cortés, Candelario. 2024. «Chile paz pacientes palabra finalmente menos veces santa está trabajo». Inmobiliaria Artigas y asociados S.A.D.",
+   "item": "it023"
+  },
+  {
+   "indice": 6,
+   "texto": "D’Ávila, Florinda, Demetrio Agustí, y Maricela Carro. 1986. «Buenos nuestra única como queda ello hospital origen hijo». One Health 43 (11): 345-52. https://doi.org/10.99999/teste.treino.85601.",
+   "item": "it006"
+  },
+  {
+   "indice": 7,
+   "texto": "Director solución lucha hombre rafael allí aspecto juicio, Legislation No. 11743 (2006). https://leis-treino.gov/6205.",
+   "item": "it012"
+  },
+  {
+   "indice": 8,
+   "texto": "Fonseca, Emma, León Lobato, y Antonio Cisneros. 2006. «Rodríguez niveles otros sola resultado actitud empresas». Familia Barbero S.A.",
+   "item": "it026"
+  },
+  {
+   "indice": 9,
+   "texto": "Fuster, Leopoldo, María Pilar Arjona, Jenaro Abella, Francisca Rodríguez, Máxima Cánovas, y María Pilar Mascaró. 2023. «Jamás ella razón características cerca propia pronto gracias serie respecto estas tenido difícil». Epidemiologia & Prevenzione 51 (7): 394-99.",
+   "item": "it011"
+  },
+  {
+   "indice": 10,
+   "texto": "Humano españa oro hijo hospital tema, Legislation No. 13783 (2005). https://leis-treino.gov/2642.",
+   "item": "it028"
+  },
+  {
+   "indice": 11,
+   "texto": "Mejores semanas corazón tan cuya unidad será poder adelante paso fuerte aunque local pesar hasta, Legislation No. 2005 (2001). https://leis-treino.gov/1993.",
+   "item": "it019"
+  },
+  {
+   "indice": 12,
+   "texto": "Ministerio de Sanidad (España). 1976. «Generales mano encuentro director única volvió dónde medidas trata hubiera». https://exemplo-treino.org/9098.",
+   "item": "it013"
+  },
+  {
+   "indice": 13,
+   "texto": "Moles, Martirio, Ámbar Lloret, y Yolanda Arias. 2014. «Creo cosas conjunto económico puesto cosa hacia dos nuestros». Das Gesundheitswesen 34 (8): 690-702. https://doi.org/10.99999/teste.treino.96220.",
+   "item": "it021"
+  },
+  {
+   "indice": 14,
+   "texto": "Morata Peñalver, Aníbal, Fito Viña, y Josefina Pagès. 2010. «Suficiente fondo quiero nunca medida clase fueron donde». En Madre hija américa mundo fiscal obstante estar he pacientes reforma final puntos, editado por Atilio Maldonado. Álvaro Dalmau Pedro S.L.N.E.",
+   "item": "it002"
+  },
+  {
+   "indice": 15,
+   "texto": "Oficial teatro texto horas ni dan don revolución debía final, Legislation No. 6164 (2009). https://leis-treino.gov/821.",
+   "item": "it017"
+  },
+  {
+   "indice": 16,
+   "texto": "Olivares, Evangelina, Adalberto Chacón, y Aristides Peiró. 2010. «Propios partido voy fuentes haciendo hechos civil sentido entrada fernando». Epidemiologia e Serviços de Saúde 70 (1): 489-99. https://doi.org/10.99999/teste.treino.64065.",
+   "item": "it015"
+  },
+  {
+   "indice": 17,
+   "texto": "Organização Pan-Americana da Saúde. 1982. «Clase juego comunidad llegó último viene próximo están podrá allá doctor van pequeña». Revista de Saúde Pública 45 (3): 668-84.",
+   "item": "it008"
+  },
+  {
+   "indice": 18,
+   "texto": "Perez, Candelas, y María Del Carmen Manuel. 2005. «Miembros encuentran fuerte teoría primera personas horas información artículo lópez». Grupo Asenjo S.L.N.E.",
+   "item": "it029"
+  },
+  {
+   "indice": 19,
+   "texto": "Pham, Minh, Martín Falcó, y Jafet Revilla. 1988. «Mujeres pie futuro sectores el suerte». En Millones pasó últimos presenta pp bueno esfuerzo, editado por María Ayllón. Viñas & Asociados S.L.N.E.",
+   "item": "it005"
+  },
+  {
+   "indice": 20,
+   "texto": "Pozuelo, Etelvina. 1995. «Capaz durante fernando actividad fernando mis». Preventive Veterinary Medicine 74 (1): 709-21.",
+   "item": "it025"
+  },
+  {
+   "indice": 21,
+   "texto": "Robert Koch-Institut. 2025. «Pequeña tienen victoria título nuestra dejó». Revue d’Épidémiologie et de Santé Publique 32 (8): 666-85. https://doi.org/10.99999/teste.treino.31680.",
+   "item": "it007"
+  },
+  {
+   "indice": 22,
+   "texto": "Robert Koch-Institut. s. f. Diez elementos conocer ayer fiscal. Augusto Pablo Cortés S.Coop.",
+   "item": "it027"
+  },
+  {
+   "indice": 23,
+   "texto": "Salazar, Lucio, Elodia Coloma, Javier Quesada, Édgar Vélez, Elodia Marí, y Germán Cortina. 1981. «Qué mes oposición éxito población fuego octubre organización varias comisión». Gaceta Sanitaria 3 (11): 560-70.",
+   "item": "it018"
+  },
+  {
+   "indice": 24,
+   "texto": "Tello, Calisto, y Marcela Castellanos. 1997. «Enero alto fuentes mirada veces humano podía este electoral quienes resultados asociación especie». Medical Mycology 20 (10): 732-50. https://doi.org/10.99999/teste.treino.57268.",
+   "item": "it016"
+  },
+  {
+   "indice": 25,
+   "texto": "Tener investigación hombre poco cosas silencio, Legislation No. 3600 (1982). https://leis-treino.gov/1058.",
+   "item": "it020"
+  },
+  {
+   "indice": 26,
+   "texto": "Torrens, Santos, Andrés Rosado, Emperatriz Cortes, Marisol Ibarra, Gala Calderon, y Irene Díaz. 1984. «Serie así posibilidades común asociación mantener». Hnos Miró S.A.",
+   "item": "it022"
+  },
+  {
+   "indice": 27,
+   "texto": "Torrijos, Jordana, Fernando Pereira, Cloe Lillo, Azeneth Arnau, Tiburcio Poza, y Jose Miguel Amador. 2022. «Obstante construcción corte fácil larga naturaleza». Revue d’Épidémiologie et de Santé Publique 74 (1): 415-24. https://doi.org/10.99999/teste.treino.12655.",
+   "item": "it014"
+  },
+  {
+   "indice": 28,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. 2026. «Fueron consecuencia quiero papel corte unas nivel asunto consecuencia». Cadernos de Saúde Pública 75 (6): 244-54.",
+   "item": "it009"
+  },
+  {
+   "indice": 29,
+   "texto": "Zhang, Jing, y Fidela Salcedo. 1985. «Algunos encima pregunta instituciones nuestra enero general e programa encuentro domingo tipo». Journal of the American Medical Informatics Association 75 (9): 744-50.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Cortés 2024; Perez y Manuel 2005; Cañizares-Cortina et al. 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it029",
+    "it000"
+   ],
+   "referencias": [
+    5,
+    18,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pozuelo 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, s. f.; Pham et al. 1988; Moles et al. 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it005",
+    "it021"
+   ],
+   "referencias": [
+    22,
+    19,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moles et al. (2014)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tener investigación hombre poco cosas silencio 1982; Olivares et al. 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it015"
+   ],
+   "referencias": [
+    25,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Amigo programas problemas el 1985; Torrijos et al. 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it014"
+   ],
+   "referencias": [
+    0,
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cortés 2024; Perez y Manuel 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it029"
+   ],
+   "referencias": [
+    5,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Salazar et al. (1981)",
+   "tipo": "narrativa",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Beltrán et al. 2022; Director solución lucha hombre rafael allí aspecto juicio 2006; Ministerio de Sanidad (España) 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it012",
+    "it013"
+   ],
+   "referencias": [
+    1,
+    7,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tello y Castellanos 1997)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mejores semanas corazón tan cuya unidad será poder adelante paso fuerte aunque local pesar hasta 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Moles et al. 2014; Morata Peñalver et al. 2010; Salazar et al. 1981)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it002",
+    "it018"
+   ],
+   "referencias": [
+    13,
+    14,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Oficial teatro texto horas ni dan don revolución debía final 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cañizares-Cortina et al. 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pozuelo 1995; Zhang y Salcedo 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it003"
+   ],
+   "referencias": [
+    20,
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pham et al. (1988)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Torrens et al. 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham et al. 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Morata Peñalver et al. 2010; Choi y Araujo 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it004"
+   ],
+   "referencias": [
+    14,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Humano españa oro hijo hospital tema 2005; Beltrán et al. 2022; D’Ávila et al. 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it024",
+    "it006"
+   ],
+   "referencias": [
+    10,
+    1,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde 1982; Beltrán et al. 2022; Humano españa oro hijo hospital tema 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it024",
+    "it028"
+   ],
+   "referencias": [
+    17,
+    1,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut, s. f.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pozuelo 1995; Pham et al. 1988; Fonseca et al. 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it005",
+    "it026"
+   ],
+   "referencias": [
+    20,
+    19,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Humano españa oro hijo hospital tema 2005; Director solución lucha hombre rafael allí aspecto juicio 2006; Organização Pan-Americana da Saúde 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it012",
+    "it008"
+   ],
+   "referencias": [
+    10,
+    7,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Director solución lucha hombre rafael allí aspecto juicio 2006; Robert Koch-Institut 2025; Fonseca et al. 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it007",
+    "it026"
+   ],
+   "referencias": [
+    7,
+    21,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Blazquez et al. 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Moles et al. 2014; Choi y Araujo 2017; Pham et al. 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it004",
+    "it005"
+   ],
+   "referencias": [
+    13,
+    4,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mejores semanas corazón tan cuya unidad será poder adelante paso fuerte aunque local pesar hasta 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Amigo programas problemas el 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fuster et al. 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Director solución lucha hombre rafael allí aspecto juicio 2006, 70)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Mejores semanas corazón tan cuya unidad será poder adelante paso fuerte aunque local pesar hasta 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Zhang y Salcedo 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(da Blazquez et al. 2010)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Pham et al. (1988)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Actitud apoyo francia deseo enfermedad hubo condiciones"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

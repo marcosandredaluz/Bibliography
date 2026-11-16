@@ -1,0 +1,597 @@
+{
+ "id": "treino_ieee_it-IT_perturbado",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "it-IT",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] L. Argenti, C. Gadda, e N. Morpurgo, «Finire valle semplice conoscere spirito vicino libertà essere carta interessare pericoloso», in Tale camminare bisognare accettare concludere estendere dichiarare ritorno perdere stabilire, D. Grossi, A c. di, Lodrone: Piccio Group, 2013, pp. 33–48.",
+   "item": "it018"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] O. Buonauro, O. Cilibrasi, e I. Casaleggio, «Anche scopo interno unire mostrare morire giro spettacolo», Gaceta Sanitaria, vol. 58, fasc. 12, pp. 44–57, 1993.",
+   "item": "it014"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] Conselho Nacional de Saúde (Brasil), «Cuore capace mancare morte insieme spalla forte meglio accettare meno fiducia assoluto forte». Consultato: 14 novembre 2026. [Online]. Disponibile su: https://exemplo-treino.org/9797",
+   "item": "it025"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] Organização Pan-Americana da Saúde, «Giorno bravo girare prendere ordine ragione li noto fissare sognare soluzione», Lamborghini-Marino e figli, Brugnetto, 1980.",
+   "item": "it008"
+  },
+  {
+   "indice": 4,
+   "texto": "[5] M. von Giunti, P. Tebaldi, E. Gargallo, e F. Grimani, Veramente tratto teatro nazionale noto cristiano spettacolo. 1990. [Online]. Disponibile su: https://leis-treino.gov/7651",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "[6] Haute Autorité de Santé (France), Rappresentare pomeriggio escludere idea. 1995. [Online]. Disponibile su: https://leis-treino.gov/1140",
+   "item": "it022"
+  },
+  {
+   "indice": 6,
+   "texto": "[7] G. Leonetti, «Commissione avvertire ridurre contro normale dove riuscire piuttosto secondo decidere importare», Revue d’Épidémiologie et de Santé Publique, vol. 5, fasc. 7, pp. 783–798.",
+   "item": "it026"
+  },
+  {
+   "indice": 7,
+   "texto": "[8] São Paulo (Estado), Staccare attento puro forma personaggio senza ascoltare estero possedere. 2003. [Online]. Disponibile su: https://leis-treino.gov/6258",
+   "item": "it012"
+  },
+  {
+   "indice": 8,
+   "texto": "[9] P. Miguel Quevedo e S. Ritacca, «Attenzione commercio erba direzione tacere pranzo crisi sud facile sole don», Revue d’Épidémiologie et de Santé Publique, vol. 24, fasc. 6, pp. 221–233, 1991, doi: 10.99999/teste.treino.38612.",
+   "item": "it002"
+  },
+  {
+   "indice": 9,
+   "texto": "[10] Conselho Nacional de Saúde (Brasil), «Presente collina tirare attività invitare ora materia», Sinisi-Storladi e figli, Baranzate, 1992.",
+   "item": "it017"
+  },
+  {
+   "indice": 10,
+   "texto": "[11] Conselho Nacional de Saúde (Brasil), Esame leggere verità attesa potenza messa. 2002. [Online]. Disponibile su: https://leis-treino.gov/7806",
+   "item": "it011"
+  },
+  {
+   "indice": 11,
+   "texto": "[12] T. Rossini, «Amico valore importare titolo notevole alcuno poeta sacro quanto interessare migliore», Revista de Saúde Pública, vol. 51, fasc. 5, pp. 450–459, 2003, doi: 10.99999/teste.treino.60199.",
+   "item": "it027"
+  },
+  {
+   "indice": 12,
+   "texto": "[13] T. Pezzali, O. Saragat, M. Vezzali, e G. Bettin, «Provvedere operazione aria aiuto partire». Consultato: 13 novembre 2026. [Online]. Disponibile su: https://exemplo-treino.org/7426",
+   "item": "it015"
+  },
+  {
+   "indice": 13,
+   "texto": "[14] M. Gozzano e B. Brenna, «Attendere titolo rompere ritorno rendere pensare bocca buio», Medical Mycology, vol. 12, fasc. 1, pp. 675–691, 2004, doi: 10.99999/teste.treino.94390.",
+   "item": "it016"
+  },
+  {
+   "indice": 14,
+   "texto": "[15] A. Lucchesi, E. Montanari, e J. Treves, «Bosco capello appoggiare europeo cantare quale vendere eh strumento allontanare», in Dividere dietro ognuno liberare metro oramai dietro attimo oggetto passare giovanotto cittadino, F. Pedrazzini, A c. di, Arvier: Caruso, Nadi e Palombi e figli, 2016, pp. 125–140.",
+   "item": "it020"
+  },
+  {
+   "indice": 15,
+   "texto": "[16] H. Chen e M. Vezzali, «Uomo storico minore coraggio nudo direzione essere città contadino», Epidemiologia e Serviços de Saúde, vol. 33, fasc. 11, pp. 767–780, 2024, doi: 10.99999/teste.treino.31871.",
+   "item": "it003"
+  },
+  {
+   "indice": 16,
+   "texto": "[17] A. Caffarelli, «Comodo verde ragazzo ammettere pena condizione baciare papà», Revue d’Épidémiologie et de Santé Publique, vol. 18, fasc. 4, pp. 653–669, 1984.",
+   "item": "it021"
+  },
+  {
+   "indice": 17,
+   "texto": "[18] G. Petrucelli, O. Barese, V. Orsini, M. Ficino, A. Trentini, e M. Aulenti, «Popolazione andare commercio spegnere pagina comunque importare adesso vedere secolo enorme durare autorità», Medical Mycology, vol. 60, fasc. 6, pp. 581–597, 2015, doi: 10.99999/teste.treino.93637.",
+   "item": "it013"
+  },
+  {
+   "indice": 18,
+   "texto": "[19] T. Rossini, «Perfetto avere mezzo piuttosto mente presidente mano», Revue d’Épidémiologie et de Santé Publique, vol. 16, fasc. 5, pp. 231–237, 2003, doi: 10.99999/teste.treino.12736.",
+   "item": "it028"
+  },
+  {
+   "indice": 19,
+   "texto": "[20] Organização Pan-Americana da Saúde, «Produzione riempire quadro esso profondo aprire gioia organizzare sperare politica», in Greco scusare automobile disporre bambino politica grave procedere piacere cattivo diffondere, V. Marcacci, A c. di, Carisio: Scialpi s.r.l., 2000, pp. 209–224.",
+   "item": "it009"
+  },
+  {
+   "indice": 20,
+   "texto": "[21] J. Kim, V. Caffarelli, e M. Ossola, «Addirittura naturale dove lungo tipo autore folla storico amare casa», Gaceta Sanitaria, vol. 41, fasc. 4, pp. 279–296, 2013.",
+   "item": "it004"
+  },
+  {
+   "indice": 21,
+   "texto": "[22] E. Ostinelli, «Badare sede recare dipendere prossimo grado», Das Gesundheitswesen, vol. 76, fasc. 3, pp. 603–609, 1990.",
+   "item": "it019"
+  },
+  {
+   "indice": 22,
+   "texto": "[23] A. Cherubini, G. Miniati, D. Pizzamano, E. Fo, L. Petrocelli, e G. Caracciolo, «Cura nome limite commercio operazione situazione libero pericolo campo segno differenza il», Revista de Saúde Pública, vol. 25, fasc. 9, pp. 549–564, 2011.",
+   "item": "it010"
+  },
+  {
+   "indice": 23,
+   "texto": "[24] A. Carullo-Ginesio, A. Camanni, e O. Comboni, «Nudo mente sala pianura vedere dire straordinario dedicare essa insieme riempire». Consultato: 9 novembre 2026. [Online]. Disponibile su: https://exemplo-treino.org/2950",
+   "item": "it000"
+  },
+  {
+   "indice": 24,
+   "texto": "[25] A. Cesaroni, F. Gonzaga, e R. Stoppani, «Giardino cultura lotta territorio materia», Epidemiologia & Prevenzione, vol. 5, fasc. 12, pp. 172–192, 1995.",
+   "item": "it024"
+  },
+  {
+   "indice": 25,
+   "texto": "[26] P. Müller e A. Verdone, «Italiano giovane principe occorrere continuo nome militare accendere», Medical Mycology, vol. 67, fasc. 1, pp. 237–245, 2006, doi: 10.99999/teste.treino.78675.",
+   "item": "it006"
+  },
+  {
+   "indice": 26,
+   "texto": "[27] Organização Pan-Americana da Saúde, «Quarto pensare impedire buio aspettare zitto soprattutto straordinario», One Health, vol. 69, fasc. 11, pp. 521–525, 2015.",
+   "item": "it007"
+  },
+  {
+   "indice": 27,
+   "texto": "[28] T. H. Le e M. Bombieri, «Fratello soldato secolo spazio morte mente quanto venire», Preventive Veterinary Medicine, vol. 25, fasc. 3, pp. 670–674, 2009, doi: 10.99999/teste.treino.46260.",
+   "item": "it005"
+  },
+  {
+   "indice": 28,
+   "texto": "[29] G. Pozzecco, «Subito ferire escludere internazionale nazionale vivo attesa con malattia preoccupare mercato», Cadernos de Saúde Pública, vol. 11, fasc. 12, pp. 358–363, 2008, doi: 10.99999/teste.treino.92920.",
+   "item": "it023"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1], [2], [3]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it014",
+    "it025"
+   ],
+   "referencias": [
+    0,
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Organização Pan-Americana da Saúde [4]",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "von Giunti et al. [5]",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6], [7], [8]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it026",
+    "it012"
+   ],
+   "referencias": [
+    5,
+    6,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it002"
+   ],
+   "referencias": [
+    0,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11], [12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it027"
+   ],
+   "referencias": [
+    10,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pezzali et al. [13]",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[14], [15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it020"
+   ],
+   "referencias": [
+    13,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Caffarelli [17]",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15], [20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it009"
+   ],
+   "referencias": [
+    14,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11], [21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it004"
+   ],
+   "referencias": [
+    10,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15], [22], [23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it010",
+    "it020"
+   ],
+   "referencias": [
+    21,
+    22,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carullo-Ginesio et al. [24]",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [22], [25]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it019",
+    "it024"
+   ],
+   "referencias": [
+    4,
+    21,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[26]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[27]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[28]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[29]",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [16], [24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it003",
+    "it000"
+   ],
+   "referencias": [
+    4,
+    15,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Organização Pan-Americana da Saúde [20]",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[20, p. 155]",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[28]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Conselho Nacional de Saúde (Brasil) [10]",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Attento cavallo abbastanza accompagnare presto giudizio porto costituire periodo musica fame carattere"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

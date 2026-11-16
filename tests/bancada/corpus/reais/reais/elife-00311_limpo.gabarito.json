@@ -1,0 +1,1198 @@
+{
+ "id": "elife-00311_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00311.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Adams PD, Afonine PV, Bunkóczi G, Chen VB, Davis IW, Echols N, et al.. 2010. PHENIX: a comprehensive Python-based system for macromolecular structure solution. Acta Crystallogr D Biol Crystallogr 66:213–221. doi: 10.1107/S0907444909052925",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Adams PD, Pannu NS, Read RJ, Brünger AT. 1997. Cross-validated maximum likelihood enhances crystallographic simulated annealing refinement. Proc Natl Acad Sci USA 94:5018–5023.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Afonine PV, Grosse-Kunstleve RW, Adams PD. 2005. A robust bulk-solvent correction and anisotropic scaling procedure. Acta Crystallogr D Biol Crystallogr 61:850–855. doi: 10.1107/S0907444905007894",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Afonine PV, Grosse-Kunstleve RW, Echols N, Headd JJ, Moriarty NW, Mustyakimov M, et al.. 2012. Towards automated crystallographic structure refinement with phenix.refine. Acta Crystallogr D Biol Crystallogr 68:352–367. doi: 10.1107/S0907444912001308",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Berendsen HJC, Postma JPM, van Gunsteren WF, DiNola A, Haak JR. 1984. Molecular dynamics with coupling to an external bath. The Journal of Chemical Physics 81:3684. doi: 10.1063/1.448118",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, et al.. 2000. The protein data bank. Nucleic Acids Res 28:235–242. doi: 10.1093/nar/28.1.235",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Bhabha G, Lee J, Ekiert DC, Gam J, Wilson IA, Dyson HJ, et al.. 2011. A dynamic knockout reveals that conformational fluctuations influence the chemical step of enzyme catalysis. Science 332:234–238. doi: 10.1126/science.1198542",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Brändén CI, Jones TA. 1990. Between objectivity and subjectivity. Nature 343:687–689. doi: 10.1038/343687a0",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Bricogne G, Blanc E, Brandi M, Flensburg C, Keller P, Paciorek W, et al.. 2009..",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Brünger AT. 1992. Free R value: a novel statistical quantity for assessing the accuracy of crystal structures. Nature 355:472–475. doi: 10.1038/355472a0",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Burling FT, Brunger AT. 1994. Thermal motion and conformational disorder in protein crystal structures: comparison of multi-conformer and time-averaging models. Israel Journal of Chemistry 34:165–175.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Burling FT, Weis WI, Flaherty KM, Brünger AT. 1996. Direct observation of protein solvation and discrete disorder with experimental crystallographic phases. Science 271:72–77. doi: 10.1126/science.271.5245.72",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Burnley BT, Afonine PV, Adams PD, Gros P. 2012. Data from: modelling dynamics in protein crystal structures by ensemble refinement. Dryad Digital Repository. doi: 10.5061/dryad.5n01h",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Clarage JB, Phillips GN. 1994. Cross-validation tests of time-averaged molecular dynamics refinements for determination of protein structures by X-ray crystallography. Acta Crystallogr D Biol Crystallogr 50:24–36. doi: 10.1107/S0907444993009515",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "DePristo MA, de Bakker PI, Blundell TL. 2004. Heterogeneity and inaccuracy in protein structures solved by X-ray crystallography. Structure 12:831–838. doi: 10.1016/j.str.2004.02.031",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Dunlop KV, Irvin RT, Hazes B. 2005. Pros and cons of cryocrystallography: should we also collect a room-temperature data set?. Acta Crystallogr D Biol Crystallogr 61:80–87. doi: 10.1107/S0907444904027179",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Eisenmesser EZ, Millet O, Labeikovsky W, Korzhnev DM, Wolf-Watz M, Bosco DA, et al.. 2005. Intrinsic dynamics of an enzyme underlies catalysis. Nature 438:117–121. doi: 10.1038/nature04105",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Feynman RP, Leighton RB, Sands ML. 1963. The Feynman lectures on physics, Vol 1: Mainly mechanics, radiation, and heat.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Fraser JS, Clarkson MW, Degnan SC, Erion R, Kern D, Alber T. 2009. Hidden alternative structures of proline isomerase essential for catalysis. Nature 462:669–673. doi: 10.1038/nature08615",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Furnham N, Blundell TL, DePristo MA, Terwilliger TC. 2006. Is one solution good enough?. Nat Struct Mol Biol 13:184–185. doi: 10.1038/nsmb0306-184",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Gajhede M, Osmark P, Poulsen FM, Ipsen H, Larsen JN, Joost van Neerven RJ, et al.. 1996. X-ray and NMR structure of Bet v 1, the origin of birch pollen allergy. Nat Struct Mol Biol 3:1040–1045. doi: 10.1038/nsb1296-1040",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Gros P, van Gunsteren WF, Hol WG. 1990. Inclusion of thermal motion in crystallographic structures by restrained molecular dynamics. Science 249:1149–1152.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Grosse-Kunstleve RW, Afonine PV, Adams PD. 2004. Cctbx news: geometry restraints and other new features. Newsletter of the IUCr Commission on Crystallographic Computing 4:19–36.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Hazes B, Sastry PA, Hayakawa K, Read RJ, Irvin RT. 2000. Crystal structure of Pseudomonas aeruginosa PAK pilin suggests a main-chain-dominated mode of receptor binding. J Mol Biol 299:1005–1017. doi: 10.1006/jmbi.2000.3801",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "He X, Zhou J, Bartlam M, Zhang R, Ma J, Lou Z, et al.. 2008. Crystal structure of the polymerase PAC–PB1N complex from an avian influenza H5N1 virus. Nature 454:1123–1126. doi: 10.1038/nature07120",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Heaslet H, Rosenfeld R, Giffin M, Lin YC, Tam K, Torbett BE, et al.. 2007. Conformational flexibility in the flap domains of ligand-free HIV protease. Acta Crystallogr D Biol Crystallogr 63:866–875. doi: 10.1107/S0907444907029125",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Jiang JS., Brünger AT. 1994. Protein hydration observed by X-ray diffraction. Solvation properties of penicillopepsin and neuraminidase crystal structures. J Mol Biol 243:100–115. doi: 10.1006/jmbi.1994.1633",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Joosten RP, te Beek TA, Krieger E, Hekkelman ML, Hooft RW, Schneider R, et al.. 2010. A series of PDB related databases for everyday needs. Nucleic Acids Res 39:D411–D419. doi: 10.1093/nar/gkq1105",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Kimber MS, Nachman J, Cunningham AM, Gish GD, Pawson T, Pai EF. 2000. Structural basis for specificity switching of the Src SH2 domain. Mol Cell 5:1043–1049.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Klein DE, Stayrook SE, Shi F, Narayan K, Lemmon MA. 2008. Structural basis for EGFR ligand sequestration by Argos. Nature 453:1271–1275. doi: 10.1038/nature06978",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Korostelev A, Laurberg M, Noller HF. 2009. Multistart simulated annealing refinement of the crystal structure of the 70S ribosome. Proc Natl Acad Sci USA 106:18195–18200. doi: 10.1073/pnas.0909287106",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Lang PT, Ng HL, Fraser JS, Corn JE, Echols N, Sales M, et al.. 2010. Automated electron-density sampling reveals widespread conformational polymorphism in proteins. Protein Sci 19:1420–1431.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Lee AL, Kinnear SA, Wand AJ. 2000. Redistribution and loss of side chain entropy upon formation of a calmodulin-peptide complex. Nat Struct Biol 7:72–77. doi: 10.1038/71280",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Levin EJ, Kondrashov DA, Wesenberg GE, Phillips GN. 2007. Ensemble refinement of protein crystal structures: validation and application. Structure 15:1040–1052. doi: 10.1016/j.str.2007.06.019",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Linderstrøm-Lang K, Schellman J. 1959. Protein structure and enzyme activity. The Enzymes Vol 1.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Marković-Housley Z, Degano M, Lamba D, von Roepenack-Lahaye E, Clemens S, Susani M, et al.. 2003. Crystal structure of a hypoallergenic isoform of the major birch pollen allergen Bet v 1 and its likely biological function as a plant steroid carrier. J Mol Biol 325:123–133.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Murshudov GN, Vagin AA, Dodson EJ. 1997. Refinement of macromolecular structures by the maximum-likelihood method. Acta Crystallogr D Biol Crystallogr 53:240–255. doi: 10.1107/S0907444996012255",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Nagar B, Bornmann WG, Pellicena P, Schindler T, Veach DR, Miller WT, et al.. 2002. Crystal structures of the kinase domain of c-Abl in complex with the small molecule inhibitors PD173955 and imatinib (STI-571). Cancer Res 62:4236–4243.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Olsen JG, Flensburg C, Olsen O, Bricogne G, Henriksen A. 2004. Solving the structure of the bubble protein using the anomalous sulfur signal from single-crystal in-house Cu Kalpha diffraction data only. Acta Crystallogr D Biol Crystallogr 60:250–255. doi: 10.1107/S0907444903025927",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Pannu NS, Read RJ. 1996. Improved structure refinement through maximum likelihood. Acta Crystallogr Sect A Found Crystallogr 52:659–668. doi: 10.1107/S0108767396004370",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Reiling KK, Endres NF, Dauber DS, Craik CS, Stroud RM. 2002. Anisotropic dynamics of the JE-2147-HIV protease complex: drug resistance and thermodynamic binding mode examined in a 1.09 A structure. Biochemistry 41:4582–4594.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Rodríguez DD, Grosse C, Himmel S, Gonzalez C, de Ilarduya IM, Becker S, et al.. 2009. Crystallographic ab initio protein structure solution below atomic resolution. Nat Methods 6:651–653. doi: 10.1038/nmeth.1365",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Schiffer CA, Gros P, van Gunsteren WF. 1995. Time-averaging crystallographic refinement: possibilities and limitations using alpha-cyclodextrin as a test system. Acta Crystallogr D Biol Crystallogr 51:85–92. doi: 10.1107/S0907444994007158",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Schindler T, Bornmann W, Pellicena P, Miller WT, Clarkson B, Kuriyan J. 2000. Structural mechanism for STI-571 inhibition of abelson tyrosine kinase. Science 289:1938–1942.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Schomaker V, Trueblood KN. 1968. On the rigid-body motion of molecules in crystals. Acta Crystallogr B 24:63–76. doi: 10.1107/S0567740868001718",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Sheriff S, Hendrickson WA. 1987. Description of overall anisotropy in diffraction from macromolecular crystals. Acta Crystallogr A 43:118–121. doi: 10.1107/S010876738709977X",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Shimamura T, Shiroishi M, Weyand S, Tsujimoto H, Winter G, Katritch V, et al.. 2011. Structure of the human histamine H1 receptor complex with doxepin. Nature 475:65–70. doi: 10.1038/nature10236",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Singh BK, Sattler JM, Chatterjee M, Huttu J, Schuler H, Kursula I. 2011. Crystal structures explain functional differences in the two actin depolymerization factors of the malaria parasite. J Biol Chem 286:28256–28264. doi: 10.1074/jbc.M111.211730",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Terwilliger TC, Grosse-Kunstleve RW, Afonine PV, Adams PD, Moriarty NW, Zwart P, et al.. 2007. Interpretation of ensembles created by multiple iterative rebuilding of macromolecular models. Acta Crystallogr D Biol Crystallogr 63:597–610. doi: 10.1107/S0907444907009791",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Torchia DA, Ishima R. 2003. Molecular structure and dynamics of proteins in solution: insights derived from high-resolution NMR approaches. Pure and Applied Chemistry 75:1371–1381. doi: 10.1351/pac200375101371",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Torda A, Scheek R, van Gunsteren WF. 1989. Time-dependent distance restraints in molecular dynamics simulations. Chemical Physics Letters 157:289–294. doi: 10.1016/0009-2614(89)87249-5",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Vagin AA, Steiner RA, Lebedev AA, Potterton L, McNicholas S, Long F, et al.. 2004. REFMAC5 dictionary: organization of prior chemical knowledge and guidelines for its use. Acta Crystallogr D Biol Crystallogr 60:2184–2195. doi: 10.1107/S0907444904023510",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "Vajpai N, Strauss A, Fendrich G, Cowan-Jacob SW, Manley PW, Grzesiek S, et al.. 2008. Solution conformations and dynamics of ABL kinase-inhibitor complexes determined by NMR substantiate the different binding modes of imatinib/nilotinib and dasatinib. J Biol Chem 283:18292–18302. doi: 10.1074/jbc.M801337200",
+   "item": "bib53"
+  },
+  {
+   "indice": 53,
+   "texto": "van den Bedem H, Dhanik A, Latombe JC, Deacon AM. 2009. Modeling discrete heterogeneity in X-ray diffraction data by fitting multi-conformers. Acta Crystallogr D Biol Crystallogr 65:1107–1117. doi: 10.1107/S0907444909030613",
+   "item": "bib54"
+  },
+  {
+   "indice": 54,
+   "texto": "Velazquez-Campoy A., Kiso Y, Freire E. 2001. The binding energetics of first- and second-generation HIV-1 protease inhibitors: implications for drug design. Arch Biochem Biophys 390:169–175. doi: 10.1006/abbi.2001.2333",
+   "item": "bib55"
+  },
+  {
+   "indice": 55,
+   "texto": "Vitkup D, Ringe D, Karplus M, Petsko GA. 2002. Why protein R-factors are so large: a self-consistent analysis. Proteins 46:345–354.",
+   "item": "bib56"
+  },
+  {
+   "indice": 56,
+   "texto": "Wang H, Yan Z, Geng J, Kunz S, Seebeck T, Ke H. 2007. Crystal structure of the Leishmania major phosphodiesterase LmjPDEB1 and insight into the design of the parasite-selective inhibitors. Mol Microbiol 66:1029–1038. doi: 10.1111/j.1365-2958.2007.05976.x",
+   "item": "bib57"
+  },
+  {
+   "indice": 57,
+   "texto": "Winn MD, Isupov MN, Murshudov GN. 2001. Use of TLS parameters to model anisotropic displacements in macromolecular refinement. Acta Crystallogr D Biol Crystallogr 57:122–133.",
+   "item": "bib58"
+  },
+  {
+   "indice": 58,
+   "texto": "Wu B, Chien EYT, Mol CD, Fenalti G, Liu W, Katritch V, et al.. 2010. Structures of the CXCR4 chemokine GPCR with small-molecule and cyclic peptide antagonists. Science 330:1066–1071. doi: 10.1126/science.1194396",
+   "item": "bib59"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Linderstrøm-Lang and Schellman, 1959",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Feynman et al., 1963",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Berman et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vitkup et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Furnham et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "DePristo et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Levin et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Terwilliger et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Korostelev et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van den Bedem et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Berman et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gros et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Torda et al. (1989)",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gros et al. (1990)",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brünger, 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burling and Brunger, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Clarage and Phillips, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brünger, 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gros et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pannu and Read, 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Adams et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Murshudov et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schomaker and Trueblood, 1968",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Winn et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Joosten et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang and Brünger, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Afonine et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Olsen et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Afonine et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vagin et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bricogne et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burling et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brändén and Jones, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burling et al. (1996)",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brünger, 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gajhede et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marković-Housley et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dunlop et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fraser et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hazes et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fraser et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fraser et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Eisenmesser et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fraser et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fraser et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Eisenmesser et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Eisenmesser et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fraser et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Heaslet et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Heaslet et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reiling et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Velazquez-Campoy et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Torchia and Ishima, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nagar et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schindler et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nagar et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nagar et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vajpai et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gros et al. (1990)",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Adams et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Afonine et al. (2005)",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sheriff and Hendrickson, 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang and Brünger, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gros et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Afonine et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Afonine et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Berendsen et al., 1984",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Grosse-Kunstleve et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Afonine et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bricogne et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Joosten et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burling and Brunger, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "E",
+   "referencia": 6,
+   "item": "bib7"
+  },
+  {
+   "ponto": "E",
+   "referencia": 12,
+   "item": "bib13"
+  },
+  {
+   "ponto": "E",
+   "referencia": 24,
+   "item": "bib25"
+  },
+  {
+   "ponto": "E",
+   "referencia": 28,
+   "item": "bib29"
+  },
+  {
+   "ponto": "E",
+   "referencia": 29,
+   "item": "bib30"
+  },
+  {
+   "ponto": "E",
+   "referencia": 41,
+   "item": "bib42"
+  },
+  {
+   "ponto": "E",
+   "referencia": 46,
+   "item": "bib47"
+  },
+  {
+   "ponto": "E",
+   "referencia": 47,
+   "item": "bib48"
+  },
+  {
+   "ponto": "E",
+   "referencia": 56,
+   "item": "bib57"
+  },
+  {
+   "ponto": "E",
+   "referencia": 58,
+   "item": "bib59"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

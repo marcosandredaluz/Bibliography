@@ -1,0 +1,607 @@
+{
+ "id": "treino_iso690-ad_es-ES_limpo",
+ "estilo": "iso690-ad",
+ "sistema": "autor-data",
+ "locale": "es-ES",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "ADÁN, Marciano, 2000. Alta ambiente pasar finalmente cosa aquí. Gaceta Sanitaria. 2000. Vol. 68, no. 12, p. 305-322. DOI 10.99999/teste.treino.46525.",
+   "item": "it018"
+  },
+  {
+   "indice": 1,
+   "texto": "ALMANSA, José Luis, ROSADO, José María y LUQUE, Plinio, 2010. Función buena i mundial solución decía espacio esos debía en sector derechos será solución. Gaceta Sanitaria. 2010. Vol. 61, no. 5, p. 844-861. DOI 10.99999/teste.treino.34444.",
+   "item": "it025"
+  },
+  {
+   "indice": 2,
+   "texto": "ANDRES, Nacio, PADILLA, Cándido y TAMARIT, Máxima, 1990. Radio nuestra sociales distintas tales largo para pronto joven serie dice trabajo secretario hombres. One Health. 1990. Vol. 68, no. 4, p. 694-709.",
+   "item": "it023"
+  },
+  {
+   "indice": 3,
+   "texto": "ARIAS, Candelario, VALCÁRCEL, Gregorio y CARBAJO, Gloria, 1976. Pudo artículo atrás trata encima conocer fue. Epidemiologia e Serviços de Saúde. 1976. Vol. 3, no. 11, p. 654-673. DOI 10.99999/teste.treino.42066.",
+   "item": "it016"
+  },
+  {
+   "indice": 4,
+   "texto": "CABALLERO, César, RODA, Salvador, CORBACHO, Flora, ROSALES, Jeremías, SALMERÓN, Baltasar y FUENTE, Ezequiel, 2006. Habrá encuentra adelante. Journal of the American Medical Informatics Association. 2006. Vol. 33, no. 2, p. 170-183. DOI 10.99999/teste.treino.70553.",
+   "item": "it013"
+  },
+  {
+   "indice": 5,
+   "texto": "CARLOS, Alonso, ANGUITA, Ignacio, ESPAÑA, Noelia, MONTAÑA, Agapito, FOLCH, Elías y ROSADO, Elvira, 1983. Varios elecciones aquella amor esos vivir personas ministro generales necesidad aparece propuesta. . Online. 1983. Available from: https://exemplo-treino.org/6818 [Accessed 15 noviembre 2026].",
+   "item": "it022"
+  },
+  {
+   "indice": 6,
+   "texto": "CASES, Jose Angel, HARO, Benita, MARTORELL, Tadeo y AMORÓS, Amaro, 2009. Centro allí cabo s amigo cuba tendrá aún interior. Das Gesundheitswesen. 2009. Vol. 16, no. 8, p. 37-45.",
+   "item": "it011"
+  },
+  {
+   "indice": 7,
+   "texto": "CHOI, Seo-yeon, ESPINOSA, Odalys y GARCÍA, Ester, 1990. Servicios máximo ciencia nuestras reforma sino i estado país. Revue d’Épidémiologie et de Santé Publique. 1990. Vol. 54, no. 5, p. 109-128.",
+   "item": "it004"
+  },
+  {
+   "indice": 8,
+   "texto": "CONSELHO NACIONAL DE SAÚDE (BRASIL), 1981. Con rafael partidos constitución hechos ejemplo miedo abril los civil duda gobierno silencio estaba mirada. BMC Public Health. 1981. Vol. 80, no. 1, p. 52-71. DOI 10.99999/teste.treino.52707.",
+   "item": "it007"
+  },
+  {
+   "indice": 9,
+   "texto": "D’ÁVILA, Estela, ARAGONÉS, Aureliano y TÉLLEZ, Amaro, 2014. Servicios ii allá investigación principal largo unidad poder nos. Murcia: Antúnez & Asociados S.Coop.",
+   "item": "it006"
+  },
+  {
+   "indice": 10,
+   "texto": "DEL BAYO, Mariana, JOVER, Clara, ESPINOSA, Modesto y LUCENA, Maximiano, 2000. Algunos cabo esos paso. One Health. 2000. Vol. 47, no. 7, p. 62-71. DOI 10.99999/teste.treino.29246.",
+   "item": "it001"
+  },
+  {
+   "indice": 11,
+   "texto": "FABREGAT, Joaquín, SERRANO, Chelo, PERELLÓ, María Manuela, AGUSTÍ, Juan Luis, CAMPS, María Del Carmen y OLIVERA, Leocadio, [no date]. Encuentran sido contenido enero ser mismo. Gaceta Sanitaria. Vol. 49, no. 6, p. 393-409. DOI 10.99999/teste.treino.55782.",
+   "item": "it026"
+  },
+  {
+   "indice": 12,
+   "texto": "FONSECA, Leticia, HUERTA, Pablo, RIVAS, Jorge y ZURITA, Lázaro, 2020. Larga asimismo situación después luz amor título plaza.. Online. 2020. 14084. Available from: https://leis-treino.gov/9602",
+   "item": "it020"
+  },
+  {
+   "indice": 13,
+   "texto": "FUENTES, Eva María, 2002. Técnica primeros memoria paciente especie busca mirada hacen mirada cerca. Das Gesundheitswesen. 2002. Vol. 50, no. 6, p. 107-115. DOI 10.99999/teste.treino.21916.",
+   "item": "it012"
+  },
+  {
+   "indice": 14,
+   "texto": "GUTIERREZ, Chelo, ALMAGRO, Eulalia y RÍO, Flavio, 1983. Explicó concepto términos teatro muerto. In: CAÑIZARES, Herminio (ed.), Música tribunal ello derecho i empresas he precios medida voy sangre. Huelva: Restauración del Levante S.Com. p. 146-161.",
+   "item": "it015"
+  },
+  {
+   "indice": 15,
+   "texto": "HAUTE AUTORITÉ DE SANTÉ (FRANCE), 2012. Largo nuestros figura toda contenido siete miembros. Epidemiologia & Prevenzione. 2012. Vol. 2, no. 2, p. 592-602.",
+   "item": "it008"
+  },
+  {
+   "indice": 16,
+   "texto": "LI, Hao, 1996. Nada algún policía otros muchos. Journal of the American Medical Informatics Association. 1996. Vol. 60, no. 7, p. 172-185. DOI 10.99999/teste.treino.96680.",
+   "item": "it003"
+  },
+  {
+   "indice": 17,
+   "texto": "LUQUE, Onofre, ALVAREZ, Reyes, FONSECA, Atilio, BAUZÀ, Ximena, CARBAJO, Adela y HIERRO, Patricia, 2003. Nadie duda cara costa. Revue d’Épidémiologie et de Santé Publique. 2003. Vol. 30, no. 10, p. 625-643. DOI 10.99999/teste.treino.30005.",
+   "item": "it021"
+  },
+  {
+   "indice": 18,
+   "texto": "MORA, Irene, MARTÍNEZ, Felipa, REIG, Samuel, PLANA, Valerio, ARRIBAS, Rosalina y RIVAS, Primitivo, 1987. Tú crecimiento segundo nacional igual había siguiente control. Gaceta Sanitaria. 1987. Vol. 2, no. 9, p. 423-428. DOI 10.99999/teste.treino.36832.",
+   "item": "it019"
+  },
+  {
+   "indice": 19,
+   "texto": "MULET, Nando, LAGUNA, Aránzazu, TAMAYO, Mariana, FÁBREGAS, Luisa, SEVILLANO, Rubén y LUÍS, Gustavo, 1978a. Equipo me efectos partido también unidad dios interior texto duda empresa. Epidemiologia & Prevenzione. 1978. Vol. 64, no. 4, p. 116-134.",
+   "item": "it028"
+  },
+  {
+   "indice": 20,
+   "texto": "MULET, Nando, LAGUNA, Aránzazu, TAMAYO, Mariana, FÁBREGAS, Luisa, SEVILLANO, Rubén y LUÍS, Gustavo, 1978b. Pueblo carrera ahora real quiero serán menos. One Health. 1978. Vol. 41, no. 11, p. 669-681. DOI 10.99999/teste.treino.15526.",
+   "item": "it027"
+  },
+  {
+   "indice": 21,
+   "texto": "ROBERT KOCH-INSTITUT, 2026. Instituto oposición parece jamás alguna ambiente mujer yo.. Online. 2026. 13442. Available from: https://leis-treino.gov/4386",
+   "item": "it017"
+  },
+  {
+   "indice": 22,
+   "texto": "ROSELLÓ, Emigdio, 2002. País tomar allí tales otro esas c servicios población peso consumo junto carrera madrid capacidad segundo. . Online. 2002. Available from: https://exemplo-treino.org/1332 [Accessed 15 noviembre 2026].",
+   "item": "it024"
+  },
+  {
+   "indice": 23,
+   "texto": "SAAVEDRA, Máxima y ÁLVAREZ, Xiomara, 1976. Nuevos técnica cargo igual seguir cara tengo sentido. Epidemiologia & Prevenzione. 1976. Vol. 73, no. 9, p. 317-336.",
+   "item": "it014"
+  },
+  {
+   "indice": 24,
+   "texto": "SANZ-PAREJA, Sigfrido, BARREDA, Dora y DELGADO, Amor, 2018. Ellas animales todos mil deben ayer segundo familia estas música. Gaceta Sanitaria. 2018. Vol. 58, no. 2, p. 183-196. DOI 10.99999/teste.treino.40845.",
+   "item": "it000"
+  },
+  {
+   "indice": 25,
+   "texto": "SÃO PAULO (ESTADO), 1976. Bueno puesto todas debe historia futuro consumo nombre. Ceuta: Distribuciones PPNR S.A.",
+   "item": "it009"
+  },
+  {
+   "indice": 26,
+   "texto": "TRAN, Minh y ROIG, Josefina, 2017. Mayor cara sino deseo. Cadernos de Saúde Pública. 2017. Vol. 59, no. 2, p. 678-692. DOI 10.99999/teste.treino.73262.",
+   "item": "it005"
+  },
+  {
+   "indice": 27,
+   "texto": "TRILLO, Conrado, CAPDEVILA, María Dolores, RIVAS, Valentina, SABATER, Lucas, MÚÑIZ, Clotilde y AGUSTÍN, Agustina, 1981. Derecho artículo televisión pie dan programas. La Coruña: Cervera y Almeida S.L.",
+   "item": "it010"
+  },
+  {
+   "indice": 28,
+   "texto": "TUDELA CABEZA, Luciano, 1989. Pablo sociedad padres carlos servicio manuel. . Online. 1989. Available from: https://exemplo-treino.org/5253 [Accessed 6 noviembre 2026].",
+   "item": "it002"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Gutierrez, Almagro, Río (1983)",
+   "tipo": "narrativa",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fuentes 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut 2026; Andres, Padilla, Tamarit 1990; Mulet, Laguna, Tamayo, Fábregas, Sevillano, Luís 1978a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it023",
+    "it028"
+   ],
+   "referencias": [
+    21,
+    2,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sanz-Pareja, Barreda, Delgado 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Saavedra, Álvarez (1976)",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Arias, Valcárcel, Carbajo 1976; Adán 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it018"
+   ],
+   "referencias": [
+    3,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fonseca, Huerta, Rivas, Zurita 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mulet, Laguna, Tamayo, Fábregas, Sevillano, Luís 1978b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Andres, Padilla, Tamarit 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carlos, Anguita, España, Montaña, Folch, Rosado (1983)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Almansa, Rosado, Luque (2010)",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Almansa, Rosado, Luque 2010; Conselho Nacional de Saúde (Brasil) 1981; Fabregat, Serrano, Perelló, Agustí, Camps, Olivera [no date])",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it007",
+    "it026"
+   ],
+   "referencias": [
+    1,
+    8,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(D’Ávila, Aragonés, Téllez 2014; del Bayo, Jover, Espinosa, Lucena 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it001"
+   ],
+   "referencias": [
+    9,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Li 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(del Bayo, Jover, Espinosa, Lucena 2000; Trillo, Capdevila, Rivas, Sabater, Múñiz, Agustín 1981; Tudela Cabeza 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it010",
+    "it002"
+   ],
+   "referencias": [
+    10,
+    27,
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran, Roig 2017; Li 1996; São Paulo (Estado) 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it003",
+    "it009"
+   ],
+   "referencias": [
+    26,
+    16,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "D’Ávila, Aragonés, Téllez (2014)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Caballero, Roda, Corbacho, Rosales, Salmerón, Fuente 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mora, Martínez, Reig, Plana, Arribas, Rivas 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France) 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gutierrez, Almagro, Río 1983; São Paulo (Estado) 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it009"
+   ],
+   "referencias": [
+    14,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Arias, Valcárcel, Carbajo 1976; Haute Autorité de Santé (France) 2012; Adán 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it008",
+    "it018"
+   ],
+   "referencias": [
+    3,
+    15,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Li 1996; Caballero, Roda, Corbacho, Rosales, Salmerón, Fuente 2006; Fonseca, Huerta, Rivas, Zurita 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it013",
+    "it020"
+   ],
+   "referencias": [
+    16,
+    4,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tudela Cabeza 1989; Choi, Espinosa, García 1990; Cases, Haro, Martorell, Amorós 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it004",
+    "it011"
+   ],
+   "referencias": [
+    28,
+    7,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Luque, Alvarez, Fonseca, Bauzà, Carbajo, Hierro 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(D’Ávila, Aragonés, Téllez 2014; Roselló 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it024"
+   ],
+   "referencias": [
+    9,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mulet, Laguna, Tamayo, Fábregas, Sevillano, Luís 1978a; 1978b; Robert Koch-Institut 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028",
+    "it027",
+    "it017"
+   ],
+   "referencias": [
+    19,
+    20,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Choi, Espinosa, García (1990)",
+   "tipo": "narrativa",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(D’Ávila, Aragonés, Téllez 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Haute Autorité de Santé (France) 2012, p. 300)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(São Paulo (Estado) 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Cases, Haro, Martorell, Amorós 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Li 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Li (1996)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Deja mitad estamos toma hecho salida algunos pp dolor hija has hoy principios"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

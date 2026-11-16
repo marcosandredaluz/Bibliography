@@ -1,0 +1,1338 @@
+{
+ "id": "elife-00160_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00160.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Bacia K, Futai E, Prinz S, Meister A, Daum S, Glatte D, et al.. 2011. Multibudded tubules formed by COPII on artificial liposomes. Sci Rep 1:17.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Barfield RM, Fromme JC, Schekman R. 2009. The exomer coat complex transports Fus1p to the plasma membrane via a novel plasma membrane sorting signal in yeast. Mol Biol Cell 20:4985–4996.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Bayly R, Axelrod JD. 2011. Pointing in the right direction: new developments in the field of planar cell polarity. Nat Rev Genet 12:385–391.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Beck R, Sun Z, Adolf F, Rutz C, Bassler J, Wild K, et al.. 2008. Membrane curvature induced by Arf1-GTP is essential for vesicle formation. Proc Natl Acad Sci USA 105:11731–11736.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Bielli A, Haney CJ, Gabreski G, Watkins SC, Bannykh SI, Aridor M. 2005. Regulation of Sar1 NH2 terminus by GTP binding and hydrolysis promotes membrane deformation to control COPII vesicle fission. J Cell Biol 171:919–924.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Bonifacino JS, Lippincott-Schwartz J. 2003. Coat proteins: shaping membrane transport. Nat Rev Mol Cell Biol 4:409–414.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Burgos PV, Mardones GA, Rojas AL, daSilva LL, Prabhu Y, Hurley JH, et al.. 2010. Sorting of the Alzheimer's disease amyloid precursor protein mediated by the AP-4 complex. Dev Cell 18:425–436.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Chen WS, Antic D, Matis M, Logan CY, Povelones M, Anderson GA, et al.. 2008. Asymmetric homotypic interactions of the atypical cadherin flamingo mediate intercellular polarity signaling. Cell 133:1093–1105.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Christoforidis S, Zerial M. 2000. Purification and identification of novel Rab effectors using affinity chromatography. Methods 20:403–410.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Crottet P, Meyer DM, Rohrer J, Spiess M. 2002. ARF1.GTP, tyrosine-based signals, and phosphatidylinositol 4,5-bisphosphate constitute a minimal machinery to recruit the AP-1 clathrin adaptor to membranes. Mol Biol Cell 13:3672–3682.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Curwin AJ, von Blume J, Malhotra V. 2012. Cofilin-mediated sorting and export of specific cargo from the Golgi apparatus in yeast. Mol Biol Cell 23:2327–2338.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Daboussi L, Costaguta G, Payne GS. 2012. Phosphoinositide-mediated clathrin adaptor progression at the trans-Golgi network. Nat Cell Biol 14:239–248. doi: 10.1038/ncb2427",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "De Matteis MA, Luini A. 2008. Exiting the Golgi complex. Nat Rev Mol Cell Biol 9:273–284.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Devenport D, Fuchs E. 2008. Planar polarization in embryonic epidermis orchestrates global asymmetric morphogenesis of hair follicles. Nat Cell Biol 10:1257–1268.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Donaldson JG, Jackson CL. 2011. ARF family G proteins and their regulators: roles in membrane transport, development and disease. Nat Rev Mol Cell Biol 12:362–375. doi: 10.1038/nrm3117",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Fölsch H, Mattila PE, Weisz OA. 2009. Taking the scenic route: biosynthetic traffic to the plasma membrane in polarized epithelial cells. Traffic 10:972–981.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Gillingham AK, Munro S. 2007. The small G proteins of the Arf family and their regulators. Annu Rev Cell Dev Biol 23:579–611.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Guo Y, Punj V, Sengupta D, Linstedt AD. 2008. Coat-tether interaction in Golgi organization. Mol Biol Cell 19:2830–2843.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Hesse D, Hommel A, Jaschke A, Moser M, Bernhardt U, Zahn C, et al.. 2010. Altered GLUT4 trafficking in adipocytes in the absence of the GTPase Arfrp1. Biochem Biophys Res Commun 394:896–903.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Hesse D, Jaschke A, Kanzleiter T, Witte N, Augustin R, Hommel A, et al.. 2012. The GTPase ARFRP1 is essential for normal hepatic glycogen storage and IGF1 secretion. Mol Cell Biol 32:4363–4374. doi: 10.1128/MCB.00522-12",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Hirst J, Barlow LD, Francisco GC, Sahlender DA, Seaman MN, Dacks JB, et al.. 2011. The fifth adaptor protein complex. PLoS Biol 9:e1001170.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Hommel A, Hesse D, Volker W, Jaschke A, Moser M, Engel T, et al.. 2010. The ARF-like GTPase ARFRP1 is essential for lipid droplet growth and is involved in the regulation of lipolysis. Mol Cell Biol 30:1231–1242.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Jackson LP, Kelly BT, McCoy AJ, Gaffry T, James LC, Collins BM, et al.. 2010. A large-scale conformational change couples membrane recruitment to cargo binding in the AP2 clathrin adaptor complex. Cell 141:1220–1229.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Jin H, White SR, Shida T, Schulz S, Aguiar M, Gygi SP, et al.. 2010. The conserved Bardet-Biedl syndrome proteins assemble a coat that traffics membrane proteins to cilia. Cell 141:1208–1219.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Kallay LM, McNickle A, Brennwald PJ, Hubbard AL, Braiterman LT. 2006. Scribble associates with two polarity proteins, Lgl2 and Vangl2, via distinct molecular domains. J Cell Biochem 99:647–664.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Kibar Z, Underhill DA, Canonne-Hergaux F, Gauthier S, Justice MJ, Gros P. 2001a. Identification of a new chemically induced allele (Lp(m1Jus)) at the loop-tail locus: morphology, histology, and genetic mapping. Genomics 72:331–337.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Kibar Z, Vogan KJ, Groulx N, Justice MJ, Underhill DA, Gros P. 2001b. Ltap, a mammalian homolog of Drosophila Strabismus/Van Gogh, is altered in the mouse neural tube mutant Loop-tail. Nat Genet 28:251–255.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Klein TJ, Mlodzik M. 2005. Planar cell polarization: an emerging model points in the right direction. Annu Rev Cell Dev Biol 21:155–176.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Lee I, Doray B, Govero J, Kornfeld S. 2008. Binding of cargo sorting signals to AP-1 enhances its association with ADP ribosylation factor 1-GTP. J Cell Biol 180:467–472.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Lee MC, Miller EA, Goldberg J, Orci L, Schekman R. 2004. Bi-directional protein transport between the ER and Golgi. Annu Rev Cell Dev Biol 20:87–123.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Lee MC, Orci L, Hamamoto S, Futai E, Ravazzola M, Schekman R. 2005. Sar1p N-terminal helix initiates membrane curvature and completes the fission of a COPII vesicle. Cell 122:605–617.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Lu X, Borchers AG, Jolicoeur C, Rayburn H, Baker JC, Tessier-Lavigne M. 2004. PTK7/CCK-4 is a novel regulator of planar cell polarity in vertebrates. Nature 430:93–98.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Ma D, Taneja TK, Hagen BM, Kim BY, Ortega B, Lederer WJ, et al.. 2011. Golgi export of the Kir2.1 channel is driven by a trafficking signal located within its tertiary structure. Cell 145:1102–1115.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Malhotra V, Campelo F. 2011. PKD regulates membrane fission to generate TGN to cell surface transport carriers. Cold Spring Harb Perspect Biol 3:a005280. doi: 10.1101/cshperspect.a005280",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Merte J, Jensen D, Wright K, Sarsfield S, Wang Y, Schekman R, et al.. 2010. Sec24b selectively sorts Vangl2 to regulate planar cell polarity during neural tube closure. Nat Cell Biol 12:41–46.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Montcouquiol M, Rachel RA, Lanford PJ, Copeland NG, Jenkins NA, Kelley MW. 2003. Identification of Vangl2 and Scrb1 as planar polarity genes in mammals. Nature 423:173–177.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Mueller AG, Moser M, Kluge R, Leder S, Blum M, Buttner R, et al.. 2002. Embryonic lethality caused by apoptosis during gastrulation in mice lacking the gene of the ADP-ribosylation factor-related protein 1. Mol Cell Biol 22:1488–1494.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Muth TR, Caplan MJ. 2003. Transport protein trafficking in polarized cells. Annu Rev Cell Dev Biol 19:333–366.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Nishimoto-Morita K, Shin HW, Mitsuhashi H, Kitamura M, Zhang Q, Johannes L, et al.. 2009. Differential effects of depletion of ARL1 and ARFRP1 on membrane trafficking between the trans-Golgi network and endosomes. J Biol Chem 284:10583–10592.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Ohno H. 2006. Physiological roles of clathrin adaptor AP complexes: lessons from mutant animals. J Biochem 139:943–948.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Ohno H, Aguilar RC, Yeh D, Taura D, Saito T, Bonifacino JS. 1998. The medium subunits of adaptor complexes recognize distinct but overlapping sets of tyrosine-based sorting signals. J Biol Chem 273:25915–25921.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Panic B, Whyte JR, Munro S. 2003. The ARF-like GTPases Arl1p and Arl3p act in a pathway that interacts with vesicle-tethering factors at the Golgi apparatus. Curr Biol 13:405–410.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Rodriguez-Boulan E, Kreitzer G, Musch A. 2005. Organization of vesicular trafficking in epithelia. Nat Rev Mol Cell Biol 6:233–247.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Shimada Y, Yonemura S, Ohkura H, Strutt D, Uemura T. 2006. Polarized transport of Frizzled along the planar microtubule arrays in Drosophila wing epithelium. Dev Cell 10:209–222.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Shin HW, Kobayashi H, Kitamura M, Waguri S, Suganuma T, Uchiyama Y, et al.. 2005. Roles of ARFRP1 (ADP-ribosylation factor-related protein 1) in post-Golgi membrane trafficking. J Cell Sci 118:4039–4048.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Strutt H, Strutt D. 2008. Differential stability of flamingo protein complexes underlies the establishment of planar polarity. Curr Biol 18:1555–1564.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Taylor J, Abramova N, Charlton J, Adler PN. 1998. Van Gogh: a new Drosophila tissue polarity gene. Genetics 150:199–210.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Torban E, Kor C, Gros P. 2004. Van Gogh-like2 (Strabismus) and its role in planar cell polarity and convergent extension in vertebrates. Trends Genet 20:570–577.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "von Blume J, Alleaume AM, Cantero-Recasens G, Curwin A, Carreras-Sureda A, Zimmermann T, et al.. 2011. ADF/cofilin regulates secretory cargo sorting at the TGN via the Ca2+ ATPase SPCA1. Dev Cell 20:652–662.",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "von Blume J, Duran JM, Forlanelli E, Alleaume AM, Egorov M, Polishchuk R, et al.. 2009. Actin remodeling by ADF/cofilin is required for cargo sorting at the trans-Golgi network. J Cell Biol 187:1055–1069.",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Wakana Y, van Galen J, Meissner F, Scarpa M, Polishchuk RS, Mann M, et al.. 2012. A new class of carriers that transport selective cargo from the trans Golgi network to the cell surface. EMBO J 31:3976–3990. doi: 10.1038/emboj.2012.235",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Wang CW, Hamamoto S, Orci L, Schekman R. 2006. Exomer: A coat complex for transport of select membrane proteins from the trans-Golgi network to the plasma membrane in yeast. J Cell Biol 174:973–983.",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "Wang YJ, Wang J, Sun HQ, Martinez M, Sun YX, Macia E, et al.. 2003. Phosphatidylinositol 4 phosphate regulates targeting of clathrin adaptor AP-1 complexes to the Golgi. Cell 114:299–310.",
+   "item": "bib53"
+  },
+  {
+   "indice": 53,
+   "texto": "Wendler F, Gillingham AK, Sinka R, Rosa-Ferreira C, Gordon DE, Franch-Marro X, et al.. 2010. A genome-wide RNA interference screen identifies two novel components of the metazoan secretory pathway. EMBO J 29:304–314.",
+   "item": "bib54"
+  },
+  {
+   "indice": 54,
+   "texto": "Wolff T, Rubin GM. 1998. Strabismus, a novel gene that regulates tissue polarity and cell fate decisions in Drosophila. Development 125:1149–1159.",
+   "item": "bib55"
+  },
+  {
+   "indice": 55,
+   "texto": "Yeaman C, Ayala MI, Wright JR, Bard F, Bossard C, Ang A, et al.. 2004. Protein kinase D regulates basolateral membrane protein exit from trans-Golgi network. Nat Cell Biol 6:106–112.",
+   "item": "bib56"
+  },
+  {
+   "indice": 56,
+   "texto": "Yu X, Breitman M, Goldberg J. 2012. A structure-based mechanism for Arf1-dependent recruitment of coatomer to membranes. Cell 148:530–542.",
+   "item": "bib57"
+  },
+  {
+   "indice": 57,
+   "texto": "Zahn C, Hommel A, Lu L, Hong W, Walther DJ, Florian S, et al.. 2006. Knockout of Arfrp1 leads to disruption of ARF-like1 (ARL1) targeting to the trans-Golgi in mouse embryos and HeLa cells. Mol Membr Biol 23:475–485.",
+   "item": "bib58"
+  },
+  {
+   "indice": 58,
+   "texto": "Zahn C, Jaschke A, Weiske J, Hommel A, Hesse D, Augustin R, et al.. 2008. ADP-ribosylation factor-like GTPase ARFRP1 is required for trans-Golgi to plasma membrane trafficking of E-cadherin. J Biol Chem 283:27179–27188.",
+   "item": "bib59"
+  },
+  {
+   "indice": 59,
+   "texto": "Zanetti G, Pahuja KB, Studer S, Shim S, Schekman R. 2012. COPII and the regulation of protein sorting in mammals. Nat Cell Biol 14:20–28. doi: 10.1038/ncb2390",
+   "item": "bib60"
+  },
+  {
+   "indice": 60,
+   "texto": "Zhu Y, Drake MT, Kornfeld S. 1999. ADP-ribosylation factor 1 dependent clathrin-coat assembly on synthetic liposomes. Proc Natl Acad Sci USA 96:5013–5018.",
+   "item": "bib61"
+  },
+  {
+   "indice": 61,
+   "texto": "Zhu Y, Traub LM, Kornfeld S. 1998. ADP-ribosylation factor 1 transiently activates high-affinity adaptor protein complex AP-1 binding sites on Golgi membranes. Mol Biol Cell 9:1323–1337.",
+   "item": "bib62"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Klein and Mlodzik, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Klein and Mlodzik, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bayly and Axelrod, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shimada et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strutt and Strutt, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rodriguez-Boulan et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rodriguez-Boulan et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burgos et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ma et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barfield et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "von Blume et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Curwin et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2005",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bielli et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Beck et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gillingham and Munro, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Donaldson and Jackson, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wendler et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Donaldson and Jackson, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shin et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zahn et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nishimoto-Morita et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hesse et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hommel et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hesse et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Taylor et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wolff and Rubin, 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Torban et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kibar et al., 2001a",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2001b",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Montcouquiol et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Merte et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Donaldson and Jackson, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shin et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zahn et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nishimoto-Morita et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jin et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bonifacino and Lippincott-Schwartz, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kallay et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bonifacino and Lippincott-Schwartz, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhu et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib62"
+   ],
+   "referencias": [
+    61
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1999",
+   "tipo": "xref",
+   "itens": [
+    "bib61"
+   ],
+   "referencias": [
+    60
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Devenport and Fuchs, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shin et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zahn et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nishimoto-Morita et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lu et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yeaman et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Malhotra and Campelo, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "De Matteis and Luini, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barfield et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gillingham and Munro, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zanetti et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib60"
+   ],
+   "referencias": [
+    59
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gillingham and Munro, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jin et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shin et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zahn et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib59"
+   ],
+   "referencias": [
+    58
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nishimoto-Morita et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mueller et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Panic et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zahn et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nishimoto-Morita et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nishimoto-Morita et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Muth and Caplan, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bonifacino and Lippincott-Schwartz, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hirst et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ohno et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bonifacino and Lippincott-Schwartz, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ma et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ohno, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fölsch et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Daboussi et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Crottet et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jackson et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yu et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burgos et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Burgos et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guo et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wakana et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guo et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Christoforidis and Zerial (2000)",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jin et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ohno et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bacia et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

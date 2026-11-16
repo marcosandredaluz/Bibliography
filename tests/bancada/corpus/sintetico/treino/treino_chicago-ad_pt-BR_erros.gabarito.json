@@ -1,0 +1,637 @@
+{
+ "id": "treino_chicago-ad_pt-BR_erros",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "pt-BR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Abella Colom, Gracia, e Kaique Duarte. 2008. “Tenetur vel quo quae dolore ipsam unde corporis sed”. Journal of the American Medical Informatics Association 15 (11): 698–707. https://doi.org/10.99999/teste.treino.22624.",
+   "item": "it002"
+  },
+  {
+   "indice": 1,
+   "texto": "Barros, Raquel. 2011. Sit necessitatibus quod quas distinctio hic alias aspernatur. Cavalcanti.",
+   "item": "it017"
+  },
+  {
+   "indice": 2,
+   "texto": "Borges, Brayan. 1978. “Harum possimus architecto qui repellendus impedit illo dolorum”. Silva Silveira Ltda.",
+   "item": "it018"
+  },
+  {
+   "indice": 3,
+   "texto": "Çelik, Pietro, e Dante Camargo. 1977. “Dolorem impedit ea dolore explicabo expedita labore maiores ducimus”. Epidemiologia e Serviços de Saúde 39 (11): 374–78. https://doi.org/10.99999/teste.treino.81593.",
+   "item": "it006"
+  },
+  {
+   "indice": 4,
+   "texto": "Conselho Nacional de Saúde (Brasil). 2011. Nesciunt odit excepturi soluta aut omnis veritatis voluptates modi architecto. Santos S/A.",
+   "item": "it014"
+  },
+  {
+   "indice": 5,
+   "texto": "Conselho Nacional de Saúde (Brasil). 2023. “Provident natus iure necessitatibus dolorum animi dicta sed unde explicabo”. https://exemplo-treino.org/1360.",
+   "item": "it008"
+  },
+  {
+   "indice": 6,
+   "texto": "Dolor laborum sint non ex tempore eius, Legislação N. 3012 (1982). https://leis-treino.gov/3384.",
+   "item": "it013"
+  },
+  {
+   "indice": 7,
+   "texto": "Farias, Beatriz, Luan Castro, Fernando Duarte, e Lucas Gabriel Azevedo. 2002. “Repudiandae numquam aspernatur eligendi iure id sit in quo ea”. Medical Mycology 44 (7): 106–13. https://doi.org/10.99999/teste.treino.79989.",
+   "item": "it025"
+  },
+  {
+   "indice": 8,
+   "texto": "Hic dolorem voluptates ratione nulla nam explicabo sunt delectus officiis nesciunt, Legislação N. 12887 (1990). https://leis-treino.gov/7261.",
+   "item": "it004"
+  },
+  {
+   "indice": 9,
+   "texto": "Instituto Nacional de Câncer (Brasil). 1979. Blanditiis laboriosam debitis eligendi eius delectus corrupti consequuntur. Da Conceição.",
+   "item": "it024"
+  },
+  {
+   "indice": 10,
+   "texto": "Instituto Nacional de Câncer (Brasil). 1990. “Vitae numquam sequi nisi autem eligendi quas optio officiis debitis”. BMC Public Health 72 (6): 207–16. https://doi.org/10.99999/teste.treino.90922.",
+   "item": "it007"
+  },
+  {
+   "indice": 11,
+   "texto": "Jesus, Jade, Sabrina Nogueira, e Valentim Gomes. 2013. “Neque exercitationem provident quia corrupti laboriosam suscipit dolorem expedita”. Preventive Veterinary Medicine 46 (8): 94–105. https://doi.org/10.99999/teste.treino.80809.",
+   "item": "it019"
+  },
+  {
+   "indice": 12,
+   "texto": "Le, Van Anh, Carlos Eduardo Casa Grande, João Guilherme Lima, e Maysa Cirino. 1985. “Ad facere commodi tempore ad”. https://exemplo-treino.org/4855.",
+   "item": "it005"
+  },
+  {
+   "indice": 13,
+   "texto": "Marques-Porto, Catarina. 2023. “Possimus qui perspiciatis maiores quidem enim incidunt sed delectus ratione”. Nunes.",
+   "item": "extra0"
+  },
+  {
+   "indice": 14,
+   "texto": "Montenegro, Gael Henrique van der, Nina Rodrigues, e Sara Araújo. 1988. “Blanditiis perspiciatis cupiditate totam veniam dicta sequi aliquam earum optio asperiores”. Revue d’Épidémiologie et de Santé Publique 3 (12): 121–38.",
+   "item": "it001"
+  },
+  {
+   "indice": 15,
+   "texto": "National Library of Medicine (Estados Unidos). 2003. “Exercitationem sint quisquam adipisci velit tempore illo vero”. Revista de Saúde Pública 55 (12): 141–50. https://doi.org/10.99999/teste.treino.39666.",
+   "item": "it009"
+  },
+  {
+   "indice": 16,
+   "texto": "Odio saepe ratione voluptatum eos nesciunt dolores dicta dolorem, Legislação N. 6823 (1981). https://leis-treino.gov/4964.",
+   "item": "it027"
+  },
+  {
+   "indice": 17,
+   "texto": "Oliveira, Caio da, Kamilly Marques, Manuela da Cruz, e Carlos Eduardo Sales. 2005. “Excepturi alias dolor esse autem necessitatibus error nisi assumenda”. Revue d’Épidémiologie et de Santé Publique 33 (5): 347–61. https://doi.org/10.99999/teste.treino.31414.",
+   "item": "extra1"
+  },
+  {
+   "indice": 18,
+   "texto": "Oliveira, Maria Alice, Daniela Cardoso, Ian Teixeira, Maria Vitória das Neves, Raul Rocha, e Benício Viana. s.d. “Dolores quam voluptas iure dolores voluptatibus corporis ullam saepe provident”. One Health 7 (1): 53–71.",
+   "item": "it028"
+  },
+  {
+   "indice": 19,
+   "texto": "Pacheco, Anthony, e Davi Miguel Lima. 2007. “Repudiandae dignissimos ipsam ullam sed amet”. Revista de Saúde Pública 7 (10): 30–40.",
+   "item": "it016"
+  },
+  {
+   "indice": 20,
+   "texto": "Pastor, Felipe, e Eduarda Garcia. 1992. Nam alias iusto saepe adipisci. Borges.",
+   "item": "it010"
+  },
+  {
+   "indice": 21,
+   "texto": "Pinto, José Pedro. 1983. “Possimus nulla dolorum laudantium quia cupiditate accusamus”. Revista de Saúde Pública 46 (10): 389–94. https://doi.org/10.99999/teste.treino.73710.",
+   "item": "it023"
+  },
+  {
+   "indice": 22,
+   "texto": "Ratione ut nihil voluptatibus quam unde vitae ab numquam, Legislação N. 8178 (2019). https://leis-treino.gov/7234.",
+   "item": "it020"
+  },
+  {
+   "indice": 23,
+   "texto": "Ribeiro-Montenegro, Eduarda, e Rodrigo Melo. 1990. “Tempora non dolore nisi animi debitis dicta dolorem officia ea accusantium quas veniam illum ipsum”. https://exemplo-treino.org/1962.",
+   "item": "it000"
+  },
+  {
+   "indice": 24,
+   "texto": "Rios, Hadassa, Francisco Souza, Ana Sophia Brito, Rebeca Vasconcelos, Yan da Costa, e Matteo Moreira. 1995. Labore enim aut harum. Pacheco S.A.",
+   "item": "it021"
+  },
+  {
+   "indice": 25,
+   "texto": "Rosa, Eduardo da, e Beatriz Sampaio. 2006. “Molestiae facilis rem aliquam laudantium repudiandae fugit”. Journal of the American Medical Informatics Association 59 (4): 116–21. https://doi.org/10.99999/teste.treino.87903.",
+   "item": "it011"
+  },
+  {
+   "indice": 26,
+   "texto": "São Paulo (Estado). 2006. “Amet debitis blanditiis ipsum magni soluta dolore blanditiis nihil ab necessitatibus”. https://exemplo-treino.org/4217.",
+   "item": "it012"
+  },
+  {
+   "indice": 27,
+   "texto": "Silveira, Gael Henrique, Dante Rios, Dom Peixoto, Jade Santos, Ian Rodrigues, e Bárbara Castro. 1979. “Aliquid voluptatibus recusandae totam unde deleniti harum optio”. Cadernos de Saúde Pública 16 (8): 472–92. https://doi.org/10.99999/teste.treino.25357.",
+   "item": "it022"
+  },
+  {
+   "indice": 28,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. 1991. “Assumenda natus illum aliquam libero iure perspiciatis rerum voluptate amet quasi”. https://exemplo-treino.org/6711.",
+   "item": "it015"
+  },
+  {
+   "indice": 29,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. 2025a. “Facere itaque aliquam necessitatibus recusandae nostrum nisi dicta quia ad inventore atque aliquid”. BMC Public Health 18 (1): 164–68. https://doi.org/10.99999/teste.treino.40969.",
+   "item": "it029"
+  },
+  {
+   "indice": 30,
+   "texto": "Zhang, Xiaoming. 2001. “Vel illum eveniet accusantium maiores dolore nam culpa odit a culpa”. Epidemiologia & Prevenzione 13 (11): 524–29.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Oliveira et al., s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Jesus et al. 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pinto (1983)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van der Montenegro et al. (1988)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Rosa e Sampaio 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dolor laborum sint non ex tempore eius 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pacheco e Lima 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Borges 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hic dolorem voluptates ratione nulla nam explicabo sunt delectus officiis nesciunt 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil) 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Barros 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Silveira et al. 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pastor e Garcia 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ratione ut nihil voluptatibus quam unde vitae ab numquam 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2025a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2025b; Conselho Nacional de Saúde (Brasil) 2023; Barros 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it008",
+    "it017"
+   ],
+   "referencias": [
+    null,
+    5,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(National Library of Medicine (Estados Unidos) 2003)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pinto 1983; Abella Colom e Duarte 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it002"
+   ],
+   "referencias": [
+    21,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ribeiro-Montenegro e Melo 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil) 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(van der Montenegro et al. 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Çelik e Camargo 1977; Conselho Nacional de Saúde (Brasil) 2023; São Paulo (Estado) 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it008",
+    "it012"
+   ],
+   "referencias": [
+    3,
+    5,
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rios et al. (1995)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Odio saepe ratione voluptatum eos nesciunt dolores dicta dolorem 1981; Zhang 2001; Virginia-Maryland College of Veterinary Medicine 2025b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it003",
+    "it030"
+   ],
+   "referencias": [
+    16,
+    30,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Silveira et al. 1979; Instituto Nacional de Câncer (Brasil) 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it007"
+   ],
+   "referencias": [
+    27,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rios et al. 1995; Pinto 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it023"
+   ],
+   "referencias": [
+    24,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado) 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le et al. 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Farias et al. 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Nacional de Saúde (Brasil) 1991, 118)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Rios et al. 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(da Rosa e Sampaio 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 1991)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "National Library of Medicine (Estados Unidos) (2003)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Virginia-Maryland College of Veterinary Medicine 2025b; Conselho Nacional de Saúde (Brasil) 2023; Barros 2011)",
+   "item": "it030"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Conselho Nacional de Saúde (Brasil) 1991)",
+   "item": "it026"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Odio saepe ratione voluptatum eos nesciunt dolores dicta dolorem 1981; Zhang 2001; Virginia-Maryland College of Veterinary Medicine 2025b)",
+   "item": "it030"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Conselho Nacional de Saúde (Brasil) 1991, 118)",
+   "item": "it026"
+  },
+  {
+   "ponto": "E",
+   "referencia": 13,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 17,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Minus magnam laborum praesentium eos distinctio numquam est officia"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

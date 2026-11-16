@@ -1,0 +1,547 @@
+{
+ "id": "reservado_iso690-num_es-ES_perturbado",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "es-ES",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1.  CALLEJA, Pía. Zonas vuelta español puerta pero madrid época producto cultura forma. BMC Public Health. 1997. Vol. 54, no. 12, p. 421-433. DOI 10.99999/teste.reservado.55431.",
+   "item": "it017"
+  },
+  {
+   "indice": 1,
+   "texto": "2.  AUSTRALIAN INSTITUTE OF HEALTH AND WELFARE (AUSTRALIA). Difícil humano favor capital país dicho señora partir conocimiento. Online. 1988. 13433. Available from: https://leis-reservado.gov/1093",
+   "item": "it007"
+  },
+  {
+   "indice": 2,
+   "texto": "3.  PAREDES, Juan Luis y AZNAR, Juan. Presidente derecho obstante ninguna programas total atención. Epidemiologia & Prevenzione. 1984. Vol. 56, no. 2, p. 812-828. DOI 10.99999/teste.reservado.86675.",
+   "item": "it014"
+  },
+  {
+   "indice": 3,
+   "texto": "4.  NADAL PINO, Victor y CANTÓN, Emilia. Tanto habrá humano estados libertad acto. Epidemiologia & Prevenzione. 2022. Vol. 42, no. 8, p. 304-315. DOI 10.99999/teste.reservado.36853.",
+   "item": "it002"
+  },
+  {
+   "indice": 4,
+   "texto": "5.  BOADA, Berta, ROMÁN, Calixta, MARÍ, Cloe y ACUÑA, Rosa María. Líder problemas recuerdo esas actitud ejército quién. One Health. 2018. Vol. 77, no. 3, p. 429-442. DOI 10.99999/teste.reservado.49126.",
+   "item": "it011"
+  },
+  {
+   "indice": 5,
+   "texto": "6.  AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA (BRASIL). Construcción francisco gente central valores buena trata pues madrid empresa. . Valencia : Calderón y Quero S.Com., 2017.",
+   "item": "it008"
+  },
+  {
+   "indice": 6,
+   "texto": "7.  DOS LINARES, Hernando. Éxito pasar modelo lópez derecha cosas u mil peor sentido. Online. 1983. [Accessed 10 noviembre 2026]. Available from: https://exemplo-reservado.org/7256",
+   "item": "it001"
+  },
+  {
+   "indice": 7,
+   "texto": "8.  RAMIREZ, Paulina. Grandes vuelve porque respuesta cuerpo cuales. . Alicante : Servicios Matas y asociados S.A.T., 1997.",
+   "item": "it021"
+  },
+  {
+   "indice": 8,
+   "texto": "9.  GARCÍA, Pía. Carácter según diferencia actual al uno c orden media hacia esa. BMC Public Health. 1995. Vol. 52, no. 10, p. 647-658. DOI 10.99999/teste.reservado.42965.",
+   "item": "it012"
+  },
+  {
+   "indice": 9,
+   "texto": "10.  RAMIREZ, Paulina. Sociedad información pasó manos volver. Cadernos de Saúde Pública. 1997. Vol. 18, no. 2, p. 290-300.",
+   "item": "it022"
+  },
+  {
+   "indice": 10,
+   "texto": "11.  AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA (BRASIL). Poder ayuda tal autor. Málaga : Grupo Manuel S.A.U, 1997.",
+   "item": "it013"
+  },
+  {
+   "indice": 11,
+   "texto": "12.  CHEN, Wei, FUENTES, Rosa, MARQUEZ, Noé y NEBOT, Antonio. Pablo demasiado programa niveles tres cine. Alicante : Arregui & Asociados S.L.L., 1981.",
+   "item": "it003"
+  },
+  {
+   "indice": 12,
+   "texto": "13.  MARQUEZ, Graciano, GRACIA, Felicia y VILLALOBOS, Cándido. También cargo problema contrario objetivo esa peso cuyo verdad ciudad puede efectos padres. Epidemiologia & Prevenzione. 1999. Vol. 32, no. 6, p. 408-417. DOI 10.99999/teste.reservado.25970.",
+   "item": "it015"
+  },
+  {
+   "indice": 13,
+   "texto": "14.  PUBLIC HEALTH AGENCY OF CANADA. Blanco instituto finalmente guerra habría pp. Toledo : Manufacturas Hurtado & Asociados S.Coop., 2023.",
+   "item": "it010"
+  },
+  {
+   "indice": 14,
+   "texto": "15.  BAYÓN-MATA, Jordi, NIÑO, Dionisio, CAMACHO, Roberto y MANJÓN, Luis. Social bastante vivir república. One Health. 2017. Vol. 61, no. 10, p. 558-564. DOI 10.99999/teste.reservado.87961.",
+   "item": "it000"
+  },
+  {
+   "indice": 15,
+   "texto": "16.  POU, Felix y FERRERO, Virginia. He debe éxito podría tema además principal alta. . Tarragona : Pastor Ugarte Bejarano S.L.U., 2012.",
+   "item": "it019"
+  },
+  {
+   "indice": 16,
+   "texto": "17.  GIRONA, Virgilio, GALLART, Jesusa, BARROSO, Teresita y ZABALA, Tadeo. Acuerdo cuenta distintas cosa muerte atrás recursos niños proyecto trabajadores naturaleza juego. . Guipúzcoa : Leopoldo Escalona Moreno S.Com., [no date].",
+   "item": "it020"
+  },
+  {
+   "indice": 17,
+   "texto": "18.  PHAM, Van Anh, ARJONA, Eutropio y MENDOZA, Berto. Oficial imposible aspectos uno total josé. Medical Mycology. 1978. Vol. 57, no. 4, p. 561-571.",
+   "item": "it005"
+  },
+  {
+   "indice": 18,
+   "texto": "19.  ØSTER, Gabriel y ANGLADA, Goyo. Tratamiento hospital presenta zonas resto cierto nada nivel i has argentina. Epidemiologia & Prevenzione. 2024. Vol. 28, no. 4, p. 288-297.",
+   "item": "it006"
+  },
+  {
+   "indice": 19,
+   "texto": "20.  VIGIL, Ale, LOSA, Gaspar y VILLEGAS, Valentín. Nuestros grado última militar comisión número dio asociación aun alta. Online. 1989. [Accessed 14 noviembre 2026]. Available from: https://exemplo-reservado.org/2401",
+   "item": "it018"
+  },
+  {
+   "indice": 20,
+   "texto": "21.  CHOI, Ji-ho, DONAIRE, Perla, FERRERAS, Flora y GIRONA, Ángeles. Total primeros queda temas toma intereses alrededor actitud pesar resto usted. Medical Mycology. 1999. Vol. 12, no. 12, p. 595-606. DOI 10.99999/teste.reservado.48714.",
+   "item": "it004"
+  },
+  {
+   "indice": 21,
+   "texto": "22.  CODINA, Carmen y ESPINOSA, Severo. González es costa políticas considera número interés. Revue d’Épidémiologie et de Santé Publique. 2025. Vol. 8, no. 4, p. 839-844.",
+   "item": "it016"
+  },
+  {
+   "indice": 22,
+   "texto": "23.  AGENZIA ITALIANA DEL FARMACO. Ante uso sociedad material hijo común casa marco. One Health. 1980. Vol. 71, no. 1, p. 307-314.",
+   "item": "it009"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3–5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it002",
+    "it011"
+   ],
+   "referencias": [
+    2,
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5–7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it008",
+    "it001"
+   ],
+   "referencias": [
+    4,
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6, 8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it008"
+   ],
+   "referencias": [
+    7,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "García (9)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ramirez (10)",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 12, 13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it002",
+    "it015"
+   ],
+   "referencias": [
+    11,
+    3,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2, 13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it015"
+   ],
+   "referencias": [
+    1,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bayón-Mata et al. (15)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it003"
+   ],
+   "referencias": [
+    4,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6, 13, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it008",
+    "it005"
+   ],
+   "referencias": [
+    12,
+    5,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "García (9)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 13, 20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it017",
+    "it015"
+   ],
+   "referencias": [
+    19,
+    0,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18, 22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it016"
+   ],
+   "referencias": [
+    17,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2, 3, 19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it014",
+    "it006"
+   ],
+   "referencias": [
+    1,
+    2,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20, p. 145)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Codina (22)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Edad entre origen cuanto arriba pública ayer base ellos estados hacer alguna deja vino ayuda américa"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

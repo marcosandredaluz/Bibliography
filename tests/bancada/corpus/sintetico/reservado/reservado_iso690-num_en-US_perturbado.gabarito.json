@@ -1,0 +1,647 @@
+{
+ "id": "reservado_iso690-num_en-US_perturbado",
+ "estilo": "iso690-num",
+ "sistema": "numerico",
+ "locale": "en-US",
+ "conjunto": "reservado",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1.  FISHER, Janet, SALINAS, Alex, CARPENTER, Phillip and JIMENEZ, Sheila. Quite director score feel billion build industry however. BMC Public Health. 2000. Vol. 2, no. 2, p. 641–645.",
+   "item": "it021"
+  },
+  {
+   "indice": 1,
+   "texto": "2.  DOS ANDERSON, Candace and WILLIAMS, Stephen. Only from first big company visit statement face change consider affect. Online. 2003. [Accessed 16 November 2026]. Available from: https://exemplo-reservado.org/1276",
+   "item": "it001"
+  },
+  {
+   "indice": 2,
+   "texto": "3.  CONSELHO FEDERAL DE MEDICINA VETERINÁRIA. Effect memory his me set sea ball price. Online. 1978. 6502. Available from: https://leis-reservado.gov/9848",
+   "item": "it010"
+  },
+  {
+   "indice": 3,
+   "texto": "4.  PUBLIC HEALTH AGENCY OF CANADA. Family civil air particular ability police do force million yes. South Christopherside : Steele, Hayes and Brown, 2008.",
+   "item": "it015"
+  },
+  {
+   "indice": 4,
+   "texto": "5.  COBB, Scott and WILSON, Hannah. Table prove mission hear finally. Revista de Saúde Pública. 2015. Vol. 68, no. 3, p. 538–551. DOI 10.99999/teste.reservado.12881.",
+   "item": "it011"
+  },
+  {
+   "indice": 5,
+   "texto": "6.  EWING, Taylor, MULLINS, Brianna, SCHMIDT, Terry, LYNN, Ryan, CURTIS, Angela and FERNANDEZ, Kari. Especially policy serious my candidate baby soldier own gun. . West Nathanielland : Allen and Sons, 2024.",
+   "item": "it019"
+  },
+  {
+   "indice": 6,
+   "texto": "7.  BUNDESINSTITUT FÜR RISIKOBEWERTUNG. Culture design grow here begin professor south. BMC Public Health. 2003. Vol. 31, no. 12, p. 747–764. DOI 10.99999/teste.reservado.72004.",
+   "item": "it009"
+  },
+  {
+   "indice": 7,
+   "texto": "8.  LIU, Jing, MARQUEZ, Janice, KING, Thomas and FREEMAN, Cynthia. Growth result save difficult improve ask claim father agency family lawyer treat. Das Gesundheitswesen. 1990. Vol. 76, no. 9, p. 345–364. DOI 10.99999/teste.reservado.23349.",
+   "item": "it003"
+  },
+  {
+   "indice": 8,
+   "texto": "9.  SECRETARIA MUNICIPAL DA SAÚDE (CURITIBA). Beyond how surface fast. . Melendezfort : Abbott-Case, 1980.",
+   "item": "it023"
+  },
+  {
+   "indice": 9,
+   "texto": "10.  NGUYEN, Thi Hoa and NORTON, Adrian. Push husband large executive benefit leave result Democrat as information. In : SPARKS, Justin (ed.), Young nature born sort clearly story our. Castillofurt : Tucker PLC, 2022. p. 122–137.",
+   "item": "it005"
+  },
+  {
+   "indice": 10,
+   "texto": "11.  BUNDESINSTITUT FÜR RISIKOBEWERTUNG. Fire toward place program role father lead start simply investment through record thing. Humphreyside : Fletcher-Valencia, [no date].",
+   "item": "it022"
+  },
+  {
+   "indice": 11,
+   "texto": "12.  NEWMAN, Diane, BROWN, Patricia and ELLIOTT, Dawn. Traditional today student success finally. In : POOLE, Bianca (ed.), Music focus rate close drop read grow computer. North Marilyn : Hooper Group, 2020. p. 41–56.",
+   "item": "it020"
+  },
+  {
+   "indice": 12,
+   "texto": "13.  HART, Mario, SMALL, David and TORRES, Bobby. Mean rise newspaper whether structure onto want bar. Das Gesundheitswesen. 2011. Vol. 21, no. 2, p. 249–260. DOI 10.99999/teste.reservado.15657.",
+   "item": "it018"
+  },
+  {
+   "indice": 13,
+   "texto": "14.  FARLEY, Gail, LEWIS, Kenneth, MARTIN, Mary, NEWMAN, Laura, CLARK, Ryan and BUTLER, Pamela. Medical which book we exactly himself. Gaceta Sanitaria. 2005. Vol. 9, no. 4, p. 430–440. DOI 10.99999/teste.reservado.22469.",
+   "item": "it013"
+  },
+  {
+   "indice": 14,
+   "texto": "15.  LINARES ARELLANO, Tatiana. Score start military act despite security down international product fast. New Victoria : Ball-Hardy, 2010.",
+   "item": "it002"
+  },
+  {
+   "indice": 15,
+   "texto": "16.  HINES, Kimberly, ADKINS, Paula and DUDLEY, Shannon. Bar sell might listen whose describe area. In : WHITE, Zachary (ed.), Professional nature walk join its success. Port Christopher : Rodriguez Inc, 2010. p. 204–219.",
+   "item": "it016"
+  },
+  {
+   "indice": 16,
+   "texto": "17.  KIM, Min-jun, WARREN, Kelly, DAVILA, Kyle and ELLISON, Timothy. Hospital use adult me far model. Epidemiologia e Serviços de Saúde. 2003. Vol. 37, no. 1, p. 235–243. DOI 10.99999/teste.reservado.16176.",
+   "item": "it004"
+  },
+  {
+   "indice": 17,
+   "texto": "18.  BARRY, Tyrone, IRWIN, Ryan, MARTIN, Ashley, SAUNDERS, Morgan, CAMPBELL, Kristy and KIRK, Wendy. Network together to even over plant present nice within three. Revue d’Épidémiologie et de Santé Publique. 2012. Vol. 27, no. 7, p. 835–853. DOI 10.99999/teste.reservado.90677.",
+   "item": "it012"
+  },
+  {
+   "indice": 18,
+   "texto": "19.  ŁUKASZ, Jeremy, RILEY, Bradley, JACKSON, Michael and DOUGLAS, Sarah. College free painting give candidate can free support something machine type business. Das Gesundheitswesen. 1981. Vol. 4, no. 12, p. 300–310. DOI 10.99999/teste.reservado.33938.",
+   "item": "it006"
+  },
+  {
+   "indice": 19,
+   "texto": "20.  MERCADO-WHITE, Linda and NEAL, Amber. Seat go mean common thus job every. New Rodneyfort : Hall, Phillips and Perez, 1998.",
+   "item": "it000"
+  },
+  {
+   "indice": 20,
+   "texto": "21.  SECRETARIA MUNICIPAL DA SAÚDE (CURITIBA). Herself stage player trip politics few black fact. Online. 1980. [Accessed 6 November 2026]. Available from: https://exemplo-reservado.org/6407",
+   "item": "it024"
+  },
+  {
+   "indice": 21,
+   "texto": "22.  ROBINSON, Jasmine. Light southern serve ok no oil deep it be with table. BMC Public Health. 1986. Vol. 45, no. 8, p. 133–141.",
+   "item": "it017"
+  },
+  {
+   "indice": 22,
+   "texto": "23.  DAY, Lynn. Represent treatment rather billion full address. . Jenkinsberg : Davis-Brown, 1983.",
+   "item": "it014"
+  },
+  {
+   "indice": 23,
+   "texto": "24.  CONSELHO FEDERAL DE MEDICINA VETERINÁRIA. Institution bad mean player young out realize back. . Shawnfort : Zamora Ltd, 1978.",
+   "item": "it007"
+  },
+  {
+   "indice": 24,
+   "texto": "25.  PUBLIC HEALTH AGENCY OF CANADA. Across bed box serve back effect election society cold effort program. In : JOHNSON, Michael (ed.), Raise American follow a western teacher major conference so long everyone after improve indeed. Masonfort : Lang PLC, 2020. p. 153–168.",
+   "item": "it008"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1–3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it001",
+    "it010"
+   ],
+   "referencias": [
+    0,
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cobb (5)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2, 4, 6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it015",
+    "it001"
+   ],
+   "referencias": [
+    5,
+    3,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1, 11, 12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it020",
+    "it022"
+   ],
+   "referencias": [
+    0,
+    11,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8, 15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it002"
+   ],
+   "referencias": [
+    7,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5, 16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it011"
+   ],
+   "referencias": [
+    15,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Farley et al. (14)",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it003"
+   ],
+   "referencias": [
+    17,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14, 17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it004"
+   ],
+   "referencias": [
+    13,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6, 11, 20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it022",
+    "it019"
+   ],
+   "referencias": [
+    19,
+    10,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15, 18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it002"
+   ],
+   "referencias": [
+    17,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4, 11, 23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it015",
+    "it014"
+   ],
+   "referencias": [
+    10,
+    3,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(8, 14, 16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it013",
+    "it016"
+   ],
+   "referencias": [
+    7,
+    13,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mercado-White (20)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22, p. 23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Cobb (5)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Prepared by the author (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Teach foot seem know loss focus month situation exactly some great special effort today step"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

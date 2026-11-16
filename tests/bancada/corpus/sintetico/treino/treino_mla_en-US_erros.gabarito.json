@@ -1,0 +1,515 @@
+{
+ "id": "treino_mla_en-US_erros",
+ "estilo": "mla",
+ "sistema": "autor-pagina",
+ "locale": "en-US",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Beck, Billy. “Open Skill Boy Talk Blue Worry Get Smile Government Real Purpose.” Revista de Saúde Pública, vol. 62, no. 10, 2010, pp. 187–202.",
+   "item": "it017"
+  },
+  {
+   "indice": 1,
+   "texto": "Butler-Berg, Micheal. Develop Here Actually Mind Test Buy Read Player. 1978, https://exemplo-treino.org/8077.",
+   "item": "extra0"
+  },
+  {
+   "indice": 2,
+   "texto": "da Jackson, Mallory. Next Day Term Indicate Rich. 1988. King-Harris.",
+   "item": "it001"
+  },
+  {
+   "indice": 3,
+   "texto": "del Meyers, David, et al. “Race Campaign Tough Cultural Class.” Journal of the American Medical Informatics Association, vol. 71, no. 12, 1990, pp. 330–38, https://doi.org/10.99999/teste.treino.63295.",
+   "item": "extra1"
+  },
+  {
+   "indice": 4,
+   "texto": "Doyle, Tina, et al. “President Several Safe Dark Major Film Customer Building Smile.” Preventive Veterinary Medicine, vol. 12, no. 3, pp. 211–27, https://doi.org/10.99999/teste.treino.31651.",
+   "item": "it019"
+  },
+  {
+   "indice": 5,
+   "texto": "Gallegos, Angelica, and Steven Pham. Thousand Land New Age Theory Recently within Reveal. 2022. West, Robinson and Hudson.",
+   "item": "it012"
+  },
+  {
+   "indice": 6,
+   "texto": "Harrison, Haley. “Be More Get Prepare Direction Black Dark Somebody Ground Voice Usually.” One Health, vol. 56, no. 5, 2016, pp. 76–92.",
+   "item": "it021"
+  },
+  {
+   "indice": 7,
+   "texto": "———. “War Several Their Who Better Oil Theory Usually Box.” Gaceta Sanitaria, vol. 1, no. 4, 2016, pp. 423–31.",
+   "item": "it020"
+  },
+  {
+   "indice": 8,
+   "texto": "Haute Autorité de Santé (France). Father Industry Box Appear. 1992, https://exemplo-treino.org/7769.",
+   "item": "it010"
+  },
+  {
+   "indice": 9,
+   "texto": "Lane, Chelsea, et al. Toward Expert the Material Occur Human Quality Actually Indeed Focus during Only Once Can. Hamilton LLC, 1982.",
+   "item": "it014"
+  },
+  {
+   "indice": 10,
+   "texto": "Lewis, Melissa, et al. “Body Center from about Build Single throughout Easy Week Worry Movie.” Revue d’Épidémiologie et de Santé Publique, vol. 65, no. 8, 1991, pp. 44–53, https://doi.org/10.99999/teste.treino.27708.",
+   "item": "it016"
+  },
+  {
+   "indice": 11,
+   "texto": "Lopez-Mejia, Ernest. Now Pressure Place Run Focus Mrs. 2017, https://exemplo-treino.org/6270.",
+   "item": "it000"
+  },
+  {
+   "indice": 12,
+   "texto": "Maxwell, Leslie, et al. Perhaps Feel Simple Blood Program Away Ball Interesting Generation Agree It Development. Bennett, Martinez and Zavala, 1976.",
+   "item": "it015"
+  },
+  {
+   "indice": 13,
+   "texto": "Ministerio de Sanidad (España). Including Read Early Town Because Day. no. 12831, 2019, https://leis-treino.gov/5735.",
+   "item": "it007"
+  },
+  {
+   "indice": 14,
+   "texto": "———. “Service Chair Occur Value Soldier a Turn Trade Together Single Actually.” Preventive Veterinary Medicine, vol. 3, no. 8, 2000, pp. 197–202, https://doi.org/10.99999/teste.treino.95704.",
+   "item": "it008"
+  },
+  {
+   "indice": 15,
+   "texto": "Nichols, Andrea, et al. Woman Modern Few Would Meet Enough Make Run. 1987. Harris, Grimes and Garcia.",
+   "item": "it011"
+  },
+  {
+   "indice": 16,
+   "texto": "Øster, Denise. “Manage Population Guy Dog Movement Skill Mean Amount Risk Quickly Career Project.” Trial Look Consider Grow, edited by Lawrence Davis, Moore, Ellison and Maldonado, 1983, pp. 170–85.",
+   "item": "it006"
+  },
+  {
+   "indice": 17,
+   "texto": "Pham, Minh, et al. Exist Doctor Own Difficult Else as Memory Including Son Military Common House. 2026. Graham Inc.",
+   "item": "it005"
+  },
+  {
+   "indice": 18,
+   "texto": "São Paulo (Estado). “Policy between Practice Join Want If Town Yes Small.” Cadernos de Saúde Pública, vol. 41, no. 6, 2010, pp. 573–86.",
+   "item": "it009"
+  },
+  {
+   "indice": 19,
+   "texto": "Wood, Joseph. Task Increase Lead Feel Probably Main or Choose Wonder. Foley-Moore, 1983.",
+   "item": "it013"
+  },
+  {
+   "indice": 20,
+   "texto": "Young, Kevin, et al. “Ask Whom Feel Clearly Bag Game.” Epidemiologia & Prevenzione, vol. 6, no. 1, 1985, pp. 90–97, https://doi.org/10.99999/teste.treino.81806.",
+   "item": "it018"
+  },
+  {
+   "indice": 21,
+   "texto": "Zhang, Jing, et al. Raise Effect Industry They Yourself Low Side Hundred. 1993, https://exemplo-treino.org/2484.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(São Paulo (Estado))",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España), Including Read Early Town Because Day)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee; Ministerio de Sanidad (España), “Service Chair Occur Value Soldier a Turn Trade Together Single Actually”; Haute Autorité de Santé (France))",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it008",
+    "it010"
+   ],
+   "referencias": [
+    null,
+    14,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Beck; Lane et al.; São Paulo (Estado))",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it014",
+    "it009"
+   ],
+   "referencias": [
+    0,
+    9,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España), “Service Chair Occur Value Soldier a Turn Trade Together Single Actually”)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España), “Service Chair Occur Value Soldier a Turn Trade Together Single Actually”)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Harrison, “Be More Get Prepare Direction Black Dark Somebody Ground Voice Usually”)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Øster; Ministerio de Sanidad (España), “Service Chair Occur Value Soldier a Turn Trade Together Single Actually”; Zhang et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it008",
+    "it003"
+   ],
+   "referencias": [
+    16,
+    14,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Doyle et al.; Zhang et al.; Lane et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it003",
+    "it014"
+   ],
+   "referencias": [
+    4,
+    21,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Beck)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nichols et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España), Including Read Early Town Because Day; Wood)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007",
+    "it013"
+   ],
+   "referencias": [
+    13,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Jackson; Øster)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it006"
+   ],
+   "referencias": [
+    2,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(São Paulo (Estado); Padilla Clavero et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it002"
+   ],
+   "referencias": [
+    18,
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Young et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Padilla Clavero et al.; Pham et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it005"
+   ],
+   "referencias": [
+    null,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lopez-Mejia)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lane et al.; Gallegos and Pham; Maxwell et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it012",
+    "it015"
+   ],
+   "referencias": [
+    9,
+    5,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wood)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gallegos and Pham; Young et al.; Haute Autorité de Santé (France))",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it018",
+    "it010"
+   ],
+   "referencias": [
+    5,
+    20,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lopez-Mejia; Young et al.; Beck)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it018",
+    "it017"
+   ],
+   "referencias": [
+    11,
+    20,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wood)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lewis et al.; Harrison, “War Several Their Who Better Oil Theory Usually Box”; Gallegos and Pham)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it020",
+    "it012"
+   ],
+   "referencias": [
+    10,
+    7,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham et al. 284)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Zhang et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Harrison, “Be More Get Prepare Direction Black Dark Somebody Ground Voice Usually”)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Lopez-Mejia)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Padilla Clavero et al.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Lee; Ministerio de Sanidad (España), “Service Chair Occur Value Soldier a Turn Trade Together Single Actually”; Haute Autorité de Santé (France))",
+   "item": "it004"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(São Paulo (Estado); Padilla Clavero et al.)",
+   "item": "it002"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Padilla Clavero et al.; Pham et al.)",
+   "item": "it002"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Padilla Clavero et al.)",
+   "item": "it002"
+  },
+  {
+   "ponto": "E",
+   "referencia": 1,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 3,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Prepared by the author (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Affect color knowledge growth play who front key also oil design well after avoid"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

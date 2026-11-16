@@ -1,0 +1,558 @@
+{
+ "id": "reservado_vancouver_pt-PT_erros",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "pt-PT",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Gonçalves W, Batista H, Alves R, Melo K. Nisi quaerat odit excepturi ratione dolor occaecati. Das Gesundheitswesen. 2016;30(2):488–508.",
+   "item": "it023"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Łukasz G. Exercitationem assumenda odio cum eius suscipit recusandae atque quaerat libero iste ipsam qui. Em: Andrade F, editor. Vitae officia quis dolorem cum quisquam similique magni vel. Gafanha da Nazaré: Reis; 1984. p. 136–51.",
+   "item": "it006"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Silva B, Campos C, Macedo L, Soares C. Dolor ducimus veritatis praesentium corporis distinctio asperiores culpa quasi ipsa a consequuntur rerum. Em: Monteiro J, editor. Est maxime maxime veniam aliquid dolorum explicabo fugit ab molestias vitae veritatis dolore eum asperiores. Ermesinde: Mendes e Filhos; 2004. p. 67–82.",
+   "item": "it011"
+  },
+  {
+   "indice": 3,
+   "texto": "5. Simões M, Sousa V. Quibusdam blanditiis quae magni impedit odio ducimus possimus incidunt. Em: Tavares N, editor. Sunt aspernatur cupiditate id at veritatis. Câmara de Lobos: Pereira Paiva S/A; 1993. p. 252–67.",
+   "item": "it025"
+  },
+  {
+   "indice": 4,
+   "texto": "6. Agência Nacional de Vigilância Sanitária (Brasil). Dicta ipsum dicta voluptatibus sapiente aspernatur facilis illo beatae [Internet]. 1988 [citado 16 de novembro de 2026]. Disponível em: https://exemplo-reservado.org/8965",
+   "item": "it017"
+  },
+  {
+   "indice": 5,
+   "texto": "7. Miranda D. Doloremque nobis sed corporis deleniti ratione eveniet iste odit similique vero. Preventive Veterinary Medicine. 1999;28(3):561–73. doi:10.99999/teste.reservado.20927",
+   "item": "it014"
+  },
+  {
+   "indice": 6,
+   "texto": "8. van der Oliveira M, Leite V, Guerreiro G. Sapiente accusamus autem dolorum iure odio tenetur dolore. Esposende: Nunes e Filhos; 1977.",
+   "item": "it001"
+  },
+  {
+   "indice": 7,
+   "texto": "9. Agenzia Italiana del Farmaco. Exercitationem non ipsum atque id illo nam. Medical Mycology. 2022;75(2):838–50. doi:10.99999/teste.reservado.84750",
+   "item": "it009"
+  },
+  {
+   "indice": 8,
+   "texto": "11. Lopes E, Azevedo T, Alves I. Repellendus nostrum aliquid accusamus nisi sapiente facere. Medical Mycology. 2023;72(10):101–11. doi:10.99999/teste.reservado.33573",
+   "item": "it016"
+  },
+  {
+   "indice": 9,
+   "texto": "12. Simões M, Sousa V. Expedita doloribus saepe possimus numquam odio ipsam exercitationem accusamus sint assumenda. [Sacavém]: Macedo; 1993.",
+   "item": "it026"
+  },
+  {
+   "indice": 10,
+   "texto": "13. Agenzia Italiana del Farmaco. Placeat tempore doloribus facilis saepe molestias. Epidemiologia & Prevenzione. 1976;56(11):16–31.",
+   "item": "it007"
+  },
+  {
+   "indice": 11,
+   "texto": "14. Neto J. Odit aliquid eius repellendus laboriosam nemo deleniti cum. Preventive Veterinary Medicine. 1989;80(7):652–6. doi:10.99999/teste.reservado.96894",
+   "item": "it019"
+  },
+  {
+   "indice": 12,
+   "texto": "15. Fernández Batlle C. Velit molestias commodi adipisci repudiandae reprehenderit molestias quibusdam blanditiis ullam atque. Loures: Borges S/A; 1981.",
+   "item": "it002"
+  },
+  {
+   "indice": 13,
+   "texto": "16. Lima G, Esteves M, Rocha T. Exercitationem eaque quisquam aperiam blanditiis non cum fugiat. Lixa: Neto; 2018.",
+   "item": "it015"
+  },
+  {
+   "indice": 14,
+   "texto": "17. Fonseca-Leal S, Mota D. Facilis nemo tempore ab quos ducimus dolores sint enim quasi. Revista de Saúde Pública. 2012;8(3):265–76.",
+   "item": "it000"
+  },
+  {
+   "indice": 15,
+   "texto": "18. Barros N, Teixeira T. Dolores assumenda eos laborum sed omnis. Gaceta Sanitaria. 1991;49(2):7–15. doi:10.99999/teste.reservado.52401",
+   "item": "it022"
+  },
+  {
+   "indice": 16,
+   "texto": "19. Silva M. Rerum iusto debitis repellendus voluptatum deleniti nam laborum. Epidemiologia e Serviços de Saúde. 1981;36(12):333–46. doi:10.99999/teste.reservado.30715",
+   "item": "it010"
+  },
+  {
+   "indice": 17,
+   "texto": "20. Santé publique France. Blanditiis veniam quia distinctio voluptate dolorum repellat. Cadernos de Saúde Pública. 2003;42(5):731–50. doi:10.99999/teste.reservado.77276",
+   "item": "it008"
+  },
+  {
+   "indice": 18,
+   "texto": "21. Cunha I, Marques M, Esteves R, Lourenço Í, Ribeiro C, Matias L. Error nisi repellendus velit beatae excepturi. Barreiro: Pereira Ferreira S.A.; 2005.",
+   "item": "it020"
+  },
+  {
+   "indice": 19,
+   "texto": "22. Li W, Batista L, Figueiredo G. Adipisci dolor et nihil autem tempore magnam velit quod quasi. Medical Mycology. 1994;19(1):554–71.",
+   "item": "it003"
+  },
+  {
+   "indice": 20,
+   "texto": "23. Costa C. Harum nisi ab accusamus molestiae cumque similique molestiae eaque nisi nobis eius odio. Em: Almeida A, editor. Ipsa voluptatibus beatae fugit qui sit architecto sequi accusantium excepturi dignissimos. Santarém: Sousa Neves Lda.; 1996. p. 119–34.",
+   "item": "it021"
+  },
+  {
+   "indice": 21,
+   "texto": "24. Fonseca P. Quia voluptate ratione facilis explicabo eligendi cum dicta. Epidemiologia & Prevenzione. 1997;1(11):623–34. doi:10.99999/teste.reservado.60516",
+   "item": "it013"
+  },
+  {
+   "indice": 22,
+   "texto": "25. Monteiro L. Quos delectus perspiciatis illum doloremque animi est optio ducimus. Seixal: Oliveira.",
+   "item": "it024"
+  },
+  {
+   "indice": 23,
+   "texto": "26. Secretaria Municipal da Saúde (Curitiba). Assumenda error harum quae veritatis eligendi possimus adipisci [Internet]. 5970. 2002. Disponível em: https://leis-reservado.gov/7035",
+   "item": "it018"
+  },
+  {
+   "indice": 24,
+   "texto": "27. Brito D. Quos similique non sequi architecto rerum sapiente qui nostrum laudantium non hic esse. Gaceta Sanitaria. 2017;38(3):150–70. doi:10.99999/teste.reservado.78315",
+   "item": "it012"
+  },
+  {
+   "indice": 25,
+   "texto": "28. Neto-Nunes B, Brito M, Teixeira R. Magnam nisi nemo ullam quibusdam incidunt sequi ab recusandae repudiandae molestias [Internet]. 9179. 2010. Disponível em: https://leis-reservado.gov/8787",
+   "item": "extra0"
+  },
+  {
+   "indice": 26,
+   "texto": "29. van der Ribeiro B, Morais I. Harum quis debitis dignissimos debitis quibusdam minus. Cadernos de Saúde Pública. 2026;38(7):885–95.",
+   "item": "extra1"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(4)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(5–7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it014",
+    "it025"
+   ],
+   "referencias": [
+    4,
+    5,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3,8)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it001"
+   ],
+   "referencias": [
+    2,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7,9,10)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it005",
+    "it014"
+   ],
+   "referencias": [
+    7,
+    null,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9,11,12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it016",
+    "it026"
+   ],
+   "referencias": [
+    7,
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12–14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it007",
+    "it019"
+   ],
+   "referencias": [
+    9,
+    10,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3,12,16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it015",
+    "it011"
+   ],
+   "referencias": [
+    9,
+    13,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fonseca-Leal (17)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Łukasz (2)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9,19,20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it008",
+    "it009"
+   ],
+   "referencias": [
+    16,
+    17,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Monteiro (25)",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Łukasz (2)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(1)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(10,20,26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it018",
+    "it008"
+   ],
+   "referencias": [
+    null,
+    23,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(17)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Agência Nacional de Vigilância Sanitária (Brasil) (6)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(4)",
+   "item": "it004"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(7,9,10)",
+   "item": "it005"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(10,20,26)",
+   "item": "it005"
+  },
+  {
+   "ponto": "E",
+   "referencia": 25,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 26,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Placeat fugit velit veniam placeat autem quidem nisi aspernatur amet ea corrupti sed architecto"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

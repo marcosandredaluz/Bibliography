@@ -1,0 +1,667 @@
+{
+ "id": "treino_ama_es-ES_perturbado",
+ "estilo": "ama",
+ "sistema": "numerico",
+ "locale": "es-ES",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. García Cerro A, Barrera J. Palabras durante plaza dicen volvió presente carlos atrás consecuencia hija. Journal of the American Medical Informatics Association. 1978;29(1):361-369. doi:10.99999/teste.treino.57926",
+   "item": "it002"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Quintero JB, Batalla JI, Serrano P, Escalona C. Unas apenas o producto trabajadores administración y e lado televisión él ver aquí aspectos. Medical Mycology. 2008;29(4):732-738. doi:10.99999/teste.treino.85583",
+   "item": "it017"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Wang W, Bernal R. Exterior niveles fue mano dice luego recuerdo última. Medical Mycology. 1983;69(12):267-283.",
+   "item": "it003"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Organização Pan-Americana da Saúde. Partes sin peor económica entrada gran siempre vez boca hablar. Transportes VJ S.L.U.; 1998.",
+   "item": "it007"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Suárez F. Siguiente entre empresa público campo iba hemos mañana. En: Huerta J, ed. América tienen d dios duda color técnica papel señaló arte nuevo julio segundo. Inmobiliaria AWTA S.L.:215-230.",
+   "item": "it026"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Abascal J, Alcántara T, Coronado M, Ramis M. Siendo ser respuesta otros debido salida medida estas haciendo. Revue d’Épidémiologie et de Santé Publique. 1988;32(8):152-156. doi:10.99999/teste.treino.28123",
+   "item": "it019"
+  },
+  {
+   "indice": 6,
+   "texto": "7. Burgos E. Mes seguridad tienen interior ministro aspectos antes aquellos pasa campaña cabeza asimismo. Ordóñez y asociados S.L.; 1983.",
+   "item": "it020"
+  },
+  {
+   "indice": 7,
+   "texto": "8. São Paulo (Estado). Saber debido niño tipo. 1979. https://leis-treino.gov/2068",
+   "item": "it015"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Tormo ML, Fernández M, Juan M, Chaparro T. Ve español europea rosa hay m dólares usted. Cadernos de Saúde Pública. 1979;42(9):524-544.",
+   "item": "it021"
+  },
+  {
+   "indice": 9,
+   "texto": "10. del Pavón R, Lluch S, Carballo A. Salud p origen generales cuba mayo propia decir. 2002. Accedido 11 de noviembre de 2026. https://exemplo-treino.org/6499",
+   "item": "it001"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Contreras A. Datos policía encima aun propia oro cabo. Revue d’Épidémiologie et de Santé Publique. 2019;67(12):102-122. doi:10.99999/teste.treino.83843",
+   "item": "it014"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Ferrer A, Nogués A, Escolano G, Amat G, Pedraza L, Pavón R. Película visto diferentes actitud carta. Tecla Llorens Ferrer S.Coop.; 2020.",
+   "item": "it022"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Conselho Nacional de Saúde (Brasil). Libre carrera minutos momentos favor acerca primeros santiago. Manufacturas Gisbert S.L.; 1994.",
+   "item": "it009"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Virginia-Maryland College of Veterinary Medicine. R flores cabo perdido teoría falta. 1997. Accedido 10 de noviembre de 2026. https://exemplo-treino.org/7350",
+   "item": "it010"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Gárate M, Calvet S. Atención va seguir resultado conocer aparece negro todos sin jorge paz poner. Banco Pablo y asociados S.L.; 1977.",
+   "item": "it028"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Reina L, Julián L, Roman E, Salinas E, Casares A, Ramirez V. Programas aumento bueno personal iba iglesia mismo términos considera. Julián y Duarte S.A.; 1995.",
+   "item": "it025"
+  },
+  {
+   "indice": 16,
+   "texto": "17. Llabrés L, Almazán S, Rodríguez E. Recursos n resto contrario perdido vamos. Revue d’Épidémiologie et de Santé Publique. 1979;15(2):834-853.",
+   "item": "it013"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Machado-Padilla M, Narváez M. Debía conocer estados tienen santiago ambiente pie esta resultados popular base. Revista de Saúde Pública. 1986;10(12):691-696.",
+   "item": "it000"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Ministerio de Sanidad (España). Relaciones principal unas particular sur los artículo lugar. 2002. Accedido 10 de noviembre de 2026. https://exemplo-treino.org/8086",
+   "item": "it011"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Polo N, Clavero A, Morán C. Encuentra podía tratamiento entrar para música estado sistemas capital carlos hospital desde. Gaceta Sanitaria. 1982;16(10):777-795.",
+   "item": "it016"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Mayol R. Popular cosas largo siglo puntos vuelve ya victoria mejores mitad mantener función hombre. Epidemiologia & Prevenzione. 1990;9(7):350-368. doi:10.99999/teste.treino.60001",
+   "item": "it024"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Pham M. Adelante época sería por haciendo naturaleza. Medical Mycology. 1991;39(1):34-40. doi:10.99999/teste.treino.53795",
+   "item": "it005"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Jimenez M. Oro otras animales nadie estas unidos sé superior rosa. Das Gesundheitswesen. 2018;32(6):840-846.",
+   "item": "it023"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Müller LÁ, Elías I, Sabater A, Frutos P. Ellos dice podría económica sector línea salud. 1992. Accedido 9 de noviembre de 2026. https://exemplo-treino.org/5735",
+   "item": "it006"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Gárate M, Calvet S. Deja fiscal verdad baja centros unidad sino. Medical Mycology. 1977;19(9):336-343. doi:10.99999/teste.treino.32705",
+   "item": "it027"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Grau C, Riba N. Tenía aumento pensar principal entrada encontrar serie artículo pp socialista fuerzas desarrollo encontrar presente. Hnos Quintero S.L.; 2019.",
+   "item": "it018"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Haute Autorité de Santé (France). Encuentran cómo contrario trabajo productos modelo número eran. Gaceta Sanitaria. 1976;62(6):758-769.",
+   "item": "it008"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Batlle F. Va ante construcción cantidad lenguaje. Medical Mycology. 2004;62(1):381-395. doi:10.99999/teste.treino.22602",
+   "item": "it012"
+  },
+  {
+   "indice": 28,
+   "texto": "29. Lee M jun, Chaves M. Así mayo minutos claro lado algunas nuevas zona carlos juego. Familia Vila S.Coop.; 2022.",
+   "item": "it004"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "1,2",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it017"
+   ],
+   "referencias": [
+    0,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang 3",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5–7",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it019",
+    "it020"
+   ],
+   "referencias": [
+    4,
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "8",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1,3,10",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it002",
+    "it001"
+   ],
+   "referencias": [
+    2,
+    0,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Contreras 11",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ferrer et al. 12",
+   "tipo": "narrativa",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13,14",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it010"
+   ],
+   "referencias": [
+    12,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang 3",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "4,13,16",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it025",
+    "it007"
+   ],
+   "referencias": [
+    12,
+    15,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "17",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "18",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "7,16,19",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it011",
+    "it020"
+   ],
+   "referencias": [
+    15,
+    18,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "20",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "21",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "12,22",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it005"
+   ],
+   "referencias": [
+    11,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "23",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "24",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "24",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reina et al. 16",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25,26",
+   "tipo": "parentetica",
+   "itens": [
+    "it027",
+    "it018"
+   ],
+   "referencias": [
+    24,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "27",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13–15",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it028",
+    "it010"
+   ],
+   "referencias": [
+    12,
+    14,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "13",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "28",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mayol 21",
+   "tipo": "narrativa",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "22",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "25,26,29",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it027",
+    "it004"
+   ],
+   "referencias": [
+    25,
+    24,
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "16",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "5,14",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it026"
+   ],
+   "referencias": [
+    13,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "15",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "20(p209)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "15",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "9",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "5",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Quintero et al. 2",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Congreso pronto asociación seguridad vía has evitar civil hasta principios asunto"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

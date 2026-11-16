@@ -1,0 +1,953 @@
+{
+ "id": "elife-00183_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00183.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Bak A, Irons SL, Martinière A, Blanc S, Drucker M. 2012. Host cell processes to accomplish mechanical and non-circulative virus transmission. Protoplasma 249:529–539. doi: 10.1007/s00709-011-0328-8",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Blanc S, Cerutti M, Usmany M, Vlak JM, Hull R. 1993a. Biological activity of cauliflower mosaic virus aphid transmission factor expressed in a heterologous system. Virology 192:643–650. doi: 10.1006/viro.1993.1080",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Blanc S, Schmidt I, Kuhl G, Espérandieu P, Lebeurier G, Hull R, et al.. 1993b. Paracrystalline structure of cauliflower mosaic virus aphid transmission factor produced both in plants and in a heterologous system and relationship with a solubilized active form. Virology 197:283–292. doi: 10.1006/viro.1993.1589",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Blanc S, Uzest M, Drucker M. 2011. New research horizons in vector-transmission of plant viruses. Curr Opin Microbiol 14:483–491. doi: 10.1016/j.mib.2011.07.008",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Blose SH, Meltzer DI, Feramisco JR. 1984. 10-nm filaments are induced to collapse in living cells microinjected with monoclonal and polyclonal antibodies against tubulin. J Cell Biol 98:847–858. doi: 10.1083/jcb.98.3.847",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Braam J, Davis RW. 1990. Rain-, wind-, and touch-induced expression of calmodulin and calmodulin-related genes in Arabidopsis. Cell 60:357–364. doi: 10.1016/0092-8674(90)90587-5",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "de Vos M, Jander G. 2009. Myzus persicae (green peach aphid) salivary components induce defence responses in Arabidopsis thaliana. Plant Cell Environ 32:1548–1560. doi: 10.1111/j.1365-3040.2009.02019.x",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "de Vos M, Jander G. 2010. Volatile communication in plant-aphid interactions. Curr Opin Plant Biol 13:366–371. doi: 10.1016/j.pbi.2010.05.001",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Delseny M, Hull R. 1983. Isolation and characterization of faithful and altered clones of the genomes of cauliflower mosaic virus isolates Cabb B-JI, CM4-184, and Bari I. Plasmid 9:31–41. doi: 10.1016/0147-619X(83)90029-X",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Drucker M, Froissart R, Hébrard E, Uzest M, Ravallec M, Espérandieu P, et al.. 2002. Intracellular distribution of viral gene products regulates a complex mechanism of cauliflower mosaic virus acquisition by its aphid vector. Proc Natl Acad Sci USA 99:2422–2427. doi: 10.1073/pnas.042587799",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Espinoza AM, Medina V, Hull R, Markham PG. 1991. Cauliflower mosaic virus gene II product forms distinct inclusion bodies in infected plant cells. Virology 185:337–344. doi: 10.1016/0042-6822(91)90781-6",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Giovanini MP, Saltzmann KD, Puthoff DP, Gonzalo M, Ohm HW, Williams CE. 2007. A novel wheat gene encoding a putative chitin-binding lectin is associated with resistance against Hessian fly. Mol Plant Pathol 8:69–82. doi: 10.1111/j.1364-3703.2006.00371.x",
+   "item": "bib13"
+  },
+  {
+   "indice": 12,
+   "texto": "Griffin BA, Adams SR, Tsien RY. 1998. Specific covalent labeling of recombinant protein molecules inside live cells. Science 281:269–272. doi: 10.1126/science.281.5374.269",
+   "item": "bib14"
+  },
+  {
+   "indice": 13,
+   "texto": "Hardham AR, Takemoto D, White RG. 2008. Rapid and dynamic subcellular reorganization following mechanical stimulation of Arabidopsis epidermal cells mimics responses to fungal and oomycete attack. BMC Plant Biol 8:63. doi: 10.1186/1471-2229-8-63",
+   "item": "bib15"
+  },
+  {
+   "indice": 14,
+   "texto": "Hogenhout SA, Bos JIB. 2011. Effector proteins that modulate plant–insect interactions. Curr Opin Plant Biol 14:422–428. doi: 10.1016/j.pbi.2011.05.003",
+   "item": "bib16"
+  },
+  {
+   "indice": 15,
+   "texto": "Hoh F, Uzest M, Drucker M, Plisson-Chastang C, Bron P, Blanc S, et al.. 2010. Structural insights into the molecular mechanisms of cauliflower mosaic virus transmission by its insect vector. J Virol 84:4706–4713. doi: 10.1128/JVI.02662-09",
+   "item": "bib17"
+  },
+  {
+   "indice": 16,
+   "texto": "Khelifa M, Journou S, Krishnan K, Gargani D, Espérandieu P, Blanc S, et al.. 2007. Electron-lucent inclusion bodies are structures specialized for aphid transmission of cauliflower mosaic virus. J Gen Virol 88:2872–2880. doi: 10.1099/vir.0.83009-0",
+   "item": "bib18"
+  },
+  {
+   "indice": 17,
+   "texto": "Kuno G, Chang GJJ. 2005. Biological transmission of arboviruses: reexamination of and new insights into components, mechanisms, and unique traits as well as their evolutionary trends. Clin Microbiol Rev 18:608–637. doi: 10.1128/CMR.18.4.608-637.2005",
+   "item": "bib19"
+  },
+  {
+   "indice": 18,
+   "texto": "Kuśnierczyk A, Winge P, Jørstad TS, Troczyńska J, Rossiter JT, Bones AM. 2008. Towards global understanding of plant defence against aphids–timing and dynamics of early Arabidopsis defence responses to cabbage aphid (Brevicoryne brassicae) attack. Plant Cell Environ 31:1097–1115. doi: 10.1111/j.1365-3040.2008.01823.x",
+   "item": "bib20"
+  },
+  {
+   "indice": 19,
+   "texto": "Laemmli UK. 1970. Cleavage of structural proteins during the assembly of the head of bacteriophage T4. Nature 227:680–685. doi: 10.1038/227680a0",
+   "item": "bib21"
+  },
+  {
+   "indice": 20,
+   "texto": "Leh V, Jacquot E, Geldreich A, Hermann T, Leclerc D, Cerutti M, et al.. 1999. Aphid transmission of cauliflower mosaic virus requires the viral PIII protein. EMBO J 18:7077–7085. doi: 10.1093/emboj/18.24.7077",
+   "item": "bib22"
+  },
+  {
+   "indice": 21,
+   "texto": "Martinière A, Gargani D, Uzest M, Lautredou N, Blanc S, Drucker M. 2009. A role for plant microtubules in the formation of transmission-specific inclusion bodies of cauliflower mosaic virus. Plant J 58:135–146. doi: 10.1111/j.1365-313X.2008.03768.x",
+   "item": "bib23"
+  },
+  {
+   "indice": 22,
+   "texto": "Martinière A, Macia JL, Bagnolini G, Jridi C, Bak A, Blanc S, et al.. 2011a. VAPA, an innovative “virus-acquisition phenotyping assay” opens new horizons in research into the vector-transmission of plant viruses. PLoS One 6:e23241. doi: 10.1371/journal.pone.0023241",
+   "item": "bib24"
+  },
+  {
+   "indice": 23,
+   "texto": "Martinière A, Shvedunova M, Thomson AJW, Evans NH, Penfield S, Runions J, et al.. 2011b. Homeostasis of plasma membrane viscosity in fluctuating temperatures. New Phytol 192:328–337. doi: 10.1111/j.1469-8137.2011.03821.x",
+   "item": "bib25"
+  },
+  {
+   "indice": 24,
+   "texto": "Miles PW. 1968. Insect secretions in plants. Annu Rev Phytopathol 6:137–164. doi: 10.1146/annurev.py.06.090168.001033",
+   "item": "bib26"
+  },
+  {
+   "indice": 25,
+   "texto": "Matthews KR. 2011. Controlling and coordinating development in vector-transmitted parasites. Science 331:1149–1153. doi: 10.1126/science.1198077",
+   "item": "bib27"
+  },
+  {
+   "indice": 26,
+   "texto": "Moury B, Fabre F, Senoussi R. 2007. Estimation of the number of virus particles transmitted by an insect vector. Proc Natl Acad Sci USA 104:17891–17896. doi: 10.1073/pnas.0702739104",
+   "item": "bib28"
+  },
+  {
+   "indice": 27,
+   "texto": "Ng JCK, Falk BW. 2006. Virus-vector interactions mediating nonpersistent and semipersistent transmission of plant viruses. Annu Rev Phytopathol 44:183–212. doi: 10.1146/annurev.phyto.44.070505.143325",
+   "item": "bib29"
+  },
+  {
+   "indice": 28,
+   "texto": "Plisson C, Uzest M, Drucker M, Froissart R, Dumas C, Conway J, et al.. 2005. Structure of the mature P3-virus particle complex of cauliflower mosaic virus revealed by cryo-electron microscopy. J Mol Biol 346:267–277. doi: 10.1016/j.jmb.2004.11.052",
+   "item": "bib30"
+  },
+  {
+   "indice": 29,
+   "texto": "Rodriguez D, Lopez-Abella D, Diaz-Ruiz JR. 1987. Viroplasms of an aphid-transmissible isolate of cauliflower mosaic virus contain helper component activity. J Gen Virol 68:2063–2067. doi: 10.1099/0022-1317-68-8-2063",
+   "item": "bib31"
+  },
+  {
+   "indice": 30,
+   "texto": "Shalla TA, Shepherd RJ, Petersen LJ. 1980. Comparative cytology of nine isolates of cauliflower mosaic virus. Virology 102:381–388. doi: 10.1016/0042-6822(80)90105-1",
+   "item": "bib32"
+  },
+  {
+   "indice": 31,
+   "texto": "Uzest M, Gargani D, Drucker M, Hébrard E, Garzo E, Candresse T, et al.. 2007. A protein key to plant virus transmission at the tip of the insect vector stylet. Proc Natl Acad Sci USA 104:17959–17964. doi: 10.1073/pnas.0706608104",
+   "item": "bib34"
+  },
+  {
+   "indice": 32,
+   "texto": "Uzest M, Gargani D, Dombrovsky A, Cazevieille C, Cot D, Blanc S. 2010. The “acrostyle”: a newly described anatomical structure in aphid stylets. Arthropod Struct Dev 39:221–229. doi: 10.1016/j.asd.2010.02.005",
+   "item": "bib35"
+  },
+  {
+   "indice": 33,
+   "texto": "Villada ES, González EG, López-Sesé AI, Castiel AF, Gómez-Guillamón ML. 2009. Hypersensitive response to Aphis gossypii Glover in melon genotypes carrying the Vat gene. J Exp Bot 60:3269–3277. doi: 10.1093/jxb/erp163",
+   "item": "bib36"
+  },
+  {
+   "indice": 34,
+   "texto": "Vitha S, Baluška F, Jasik J, Volkmann D, Barlow P. 2000. Steedman's wax for F-actin visualization. Actin: a dynamic framework for multiple plant cell functions:619–636.",
+   "item": "bib37"
+  },
+  {
+   "indice": 35,
+   "texto": "Widholm JM. 1972. The use of fluorescein diacetate and phenosafranine for determining viability of cultured plant cells. Stain Technol 47:189–194. doi: 10.3109/10520297209116483",
+   "item": "bib38"
+  },
+  {
+   "indice": 36,
+   "texto": "Woolston CJ, Covey SN, Penswick JR, Davies JW. 1983. Aphid transmission and a polypeptide are specified by a defined region of the cauliflower mosaic virus genome. Gene 23:15–23. doi: 10.1016/0378-1119(83)90212-3",
+   "item": "bib39"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Moury et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Matthews, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blanc et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuno and Chang, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blanc et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bak et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ng and Falk, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blanc et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Uzest et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2010",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blanc et al., 1993a",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leh et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Plisson et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Espinoza et al., 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Drucker et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Drucker et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hoh et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woolston et al., 1983",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Khelifa et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Khelifa et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fereres and Moreno, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martinière et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martinière et al., 2011a",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ueda et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hardham et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Espinoza et al., 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Drucker et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fereres and Moreno, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Miles, 1968",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martinière et al., 2011a",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Griffin et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shalla et al., 1980",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rodriguez et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Espinoza et al., 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blanc et al., 1993b",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Drucker et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Espinoza et al., 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Drucker et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hogenhout and Bos, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuśnierczyk et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "de Vos and Jander, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Villada et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuśnierczyk et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "de Vos and Jander, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Giovanini et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kuśnierczyk et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "de Vos and Jander, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ueda et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Delseny and Hull, 1983",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martinière et al. (2009)",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Delseny and Hull, 1983",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Griffin et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blanc et al. (1993b)",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martinière et al. (2009)",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Widholm, 1972",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vitha et al. (2000)",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Drucker et al. (2002)",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blanc et al., 1993b",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Drucker et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Khelifa et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blose et al., 1984",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Laemmli, 1970",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Drucker et al. (2002)",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blanc et al., 1993a",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martinière et al. (2011a)",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martinière et al. (2011b)",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Fereres and Moreno, 2009",
+   "item": "bib12"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Ueda et al., 1999",
+   "item": "bib33"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Fereres and Moreno, 2009",
+   "item": "bib12"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Ueda et al., 1999",
+   "item": "bib33"
+  },
+  {
+   "ponto": "E",
+   "referencia": 5,
+   "item": "bib6"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

@@ -1,0 +1,698 @@
+{
+ "id": "reservado_chicago-ad_pt-BR_erros",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "pt-BR",
+ "conjunto": "reservado",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Agência Nacional de Vigilância Sanitária (Brasil). 1990. “Laboriosam dolor ab beatae dolorum tenetur sequi quaerat provident aliquid libero”. https://exemplo-reservado.org/1025.",
+   "item": "it019"
+  },
+  {
+   "indice": 1,
+   "texto": "Australian Institute of Health and Welfare (Australia). 1982. “Cupiditate aliquid occaecati quos nisi laborum animi”. Preventive Veterinary Medicine 37 (8): 40–50.",
+   "item": "it009"
+  },
+  {
+   "indice": 2,
+   "texto": "Azevedo, Laís, Mariah Teixeira, e Maria Flor Guerra. 2008. “Reprehenderit sunt nobis eveniet soluta quibusdam quis provident”. Journal of the American Medical Informatics Association 7 (12): 713–26. https://doi.org/10.99999/teste.reservado.10866.",
+   "item": "it027"
+  },
+  {
+   "indice": 3,
+   "texto": "Barbosa, Henry. 1995. “Nisi corporis aliquam blanditiis in quasi amet eius”. Alves da Conceição e Filhos.",
+   "item": "it024"
+  },
+  {
+   "indice": 4,
+   "texto": "Borges, Luana. 1976. “Reiciendis voluptas earum provident culpa”. One Health 22 (1): 481–500.",
+   "item": "it010"
+  },
+  {
+   "indice": 5,
+   "texto": "Bundesinstitut für Risikobewertung. 1982. “Impedit adipisci sunt labore perspiciatis explicabo laudantium fuga perferendis”. https://exemplo-reservado.org/3125.",
+   "item": "it013"
+  },
+  {
+   "indice": 6,
+   "texto": "Bundesinstitut für Risikobewertung. 1990. “Repellat eum aliquam repudiandae”. https://exemplo-reservado.org/7122.",
+   "item": "it007"
+  },
+  {
+   "indice": 7,
+   "texto": "Campos, Kamilly, Antony Moreira, e Marcos Vinicius Fonseca. 2002. Perferendis officia ad similique officiis a ipsum doloribus. Souza.",
+   "item": "it018"
+  },
+  {
+   "indice": 8,
+   "texto": "Castro, Bryan. 2006. “Maiores sunt quas”. Medical Mycology 64 (8): 382–87. https://doi.org/10.99999/teste.reservado.46791.",
+   "item": "it026"
+  },
+  {
+   "indice": 9,
+   "texto": "Fonseca, Ravy, Rhavi Vasconcelos, Marcelo Vieira, Marina Teixeira, Daniela Moreira, e Bianca Ferreira. 2000. “Praesentium vitae quisquam voluptas doloremque atque”. Cadernos de Saúde Pública 46 (11): 699–715. https://doi.org/10.99999/teste.reservado.13864.",
+   "item": "it025"
+  },
+  {
+   "indice": 10,
+   "texto": "Gremião, Melissa, Gael Henrique Azevedo, e Heloísa da Mota. 2021. “Placeat adipisci iusto neque inventore nam”. Em Id eius doloribus nostrum libero inventore itaque voluptates facilis, organizado por Luísa Leão. Vieira.",
+   "item": "it006"
+  },
+  {
+   "indice": 11,
+   "texto": "Jesus, Carolina, Sophie da Rosa, Ana Julia Teixeira, e Luiz Otávio Rezende. 1993. Esse neque cupiditate voluptatibus veritatis eos qui quibusdam animi sed. Farias Garcia e Filhos.",
+   "item": "it012"
+  },
+  {
+   "indice": 12,
+   "texto": "Kim, Min-jun, Theodoro Rios, e Thomas Castro. 1995. “Earum laborum neque nulla similique quibusdam”. https://exemplo-reservado.org/1359.",
+   "item": "it004"
+  },
+  {
+   "indice": 13,
+   "texto": "Le, Minh, Nathan Viana, Alexandre Garcia, e Vinicius Silveira. 1982. “Amet aut nihil repellendus provident veritatis quasi laborum deserunt”. Revue d’Épidémiologie et de Santé Publique 63 (3): 33–37. https://doi.org/10.99999/teste.reservado.21695.",
+   "item": "it005"
+  },
+  {
+   "indice": 14,
+   "texto": "Lopes, Isaac, Alícia Nogueira, Luara Cavalcante, e Gabriela Oliveira. 2022. “Repudiandae maiores voluptas enim aperiam pariatur”. Medical Mycology 79 (11): 89–107.",
+   "item": "it020"
+  },
+  {
+   "indice": 15,
+   "texto": "Macedo-Jesus, Felipe. 2013. “Ratione debitis accusamus et quasi enim debitis modi dolorum quaerat”. Epidemiologia e Serviços de Saúde 41 (4): 750–63. https://doi.org/10.99999/teste.reservado.63331.",
+   "item": "it000"
+  },
+  {
+   "indice": 16,
+   "texto": "Mata, Lorena da. 1995. “Impedit tenetur adipisci quia provident consequuntur corporis fuga at qui”. Em Suscipit corporis quas occaecati nam voluptatibus at adipisci, organizado por Joana Viana. Cassiano Monteiro - EI.",
+   "item": "it021"
+  },
+  {
+   "indice": 17,
+   "texto": "Melo, Yago, Ravi Campos, Noah Correia, Ravi Nunes, Enzo Gabriel Nunes, e Anthony Gabriel da Luz. 1984. “Possimus id officiis iure maiores aspernatur”. https://exemplo-reservado.org/3502.",
+   "item": "it022"
+  },
+  {
+   "indice": 18,
+   "texto": "Mendes, Cecília, Larissa Montenegro, Ana Carolina Barros, Milena Cassiano, Isabella Fonseca, e Guilherme Montenegro. 1996. “Modi adipisci mollitia nam sunt nulla adipisci aut libero”. Gaceta Sanitaria 3 (5): 182–89.",
+   "item": "it028"
+  },
+  {
+   "indice": 19,
+   "texto": "Mendonça, Eduardo, Liz Mendonça, Ana Júlia Macedo, Carlos Eduardo Cavalcante, Rebeca da Luz, e Enzo Viana. s.d. “A provident ducimus cum autem quibusdam nobis quae perspiciatis mollitia omnis”. Medical Mycology 69 (12): 251–68.",
+   "item": "it029"
+  },
+  {
+   "indice": 20,
+   "texto": "Minima at ipsum provident soluta voluptas, Legislação N. 11112 (1978). https://leis-reservado.gov/4414.",
+   "item": "it003"
+  },
+  {
+   "indice": 21,
+   "texto": "Nunes, Isaac. 1991a. “Beatae iste deleniti quos molestias facilis distinctio nam fuga aliquid quibusdam dolores”. Medical Mycology 38 (10): 702–16. https://doi.org/10.99999/teste.reservado.98732.",
+   "item": "it031"
+  },
+  {
+   "indice": 22,
+   "texto": "Nunes, Isaac. 1991b. “Sed recusandae vitae iusto corporis laudantium voluptatum adipisci molestias doloremque delectus voluptates eius ipsum culpa”. Epidemiologia e Serviços de Saúde 65 (9): 48–60.",
+   "item": "it030"
+  },
+  {
+   "indice": 23,
+   "texto": "Pereira, Helena, Lucca Freitas, Pedro Aparecida, Maria Fernanda Montenegro, Maria Vitória Mendonça, e Maria Cecília Barros. 2002. Odio quidem accusantium rem aliquid vero similique praesentium fugit libero praesentium odio laboriosam omnis tenetur laborum. Barbosa Ltda.",
+   "item": "it023"
+  },
+  {
+   "indice": 24,
+   "texto": "Rezende, Giovanna. 1986. “Veniam recusandae asperiores sit accusantium culpa fugiat rem”. Em Quod necessitatibus reprehenderit eos asperiores adipisci debitis perferendis vitae, organizado por Anna Liz Rocha. Pinto.",
+   "item": "it017"
+  },
+  {
+   "indice": 25,
+   "texto": "Rios, Ana Cecília de, Maria Vitória da Rosa, e Yan Camargo. 2022. “Deleniti iusto eum vitae sunt animi ullam”. https://exemplo-reservado.org/1759.",
+   "item": "extra1"
+  },
+  {
+   "indice": 26,
+   "texto": "Rocha, Vitor Gabriel von, Matheus Peixoto, Pedro Miguel das Neves, e Anthony Azevedo. 1992. “Sint ullam assumenda omnis facere cupiditate alias”. Montenegro Ltda.",
+   "item": "it001"
+  },
+  {
+   "indice": 27,
+   "texto": "Rodrigues, Camila. 2024. “Aliquid ea odit sequi earum aperiam eos”. BMC Public Health 57 (8): 642–47. https://doi.org/10.99999/teste.reservado.27304.",
+   "item": "it016"
+  },
+  {
+   "indice": 28,
+   "texto": "Sá, Anthony Gabriel, Brenda Andrade, Miguel Duarte, Theo Pereira, Alice Almeida, e Isaac Cavalcanti. 2026. “Architecto magni ut ducimus aliquid possimus esse”. Revue d’Épidémiologie et de Santé Publique 57 (2): 833–39. https://doi.org/10.99999/teste.reservado.15288.",
+   "item": "it014"
+  },
+  {
+   "indice": 29,
+   "texto": "Secretaria Municipal da Saúde (Curitiba). 2026. “Blanditiis quos quo enim voluptates a”. https://exemplo-reservado.org/3607.",
+   "item": "it008"
+  },
+  {
+   "indice": 30,
+   "texto": "Valcárcel Muñoz, Leocadio. 1985. Fugit magnam quos reiciendis. Leão.",
+   "item": "it002"
+  },
+  {
+   "indice": 31,
+   "texto": "Viana-Brito, Luiz Gustavo, Heloisa Pereira, e Laura Machado. 1998. “Tenetur id accusamus reprehenderit provident illum repudiandae suscipit explicabo ducimus”. Em Et architecto nemo eligendi dolores adipisci, organizado por Apollo da Rosa. Camargo - EI.",
+   "item": "extra0"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Pereira et al. 2002; Bundesinstitut für Risikobewertung 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it007"
+   ],
+   "referencias": [
+    23,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Siqueira et al. 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(V. G. von Rocha et al. 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Melo et al. 1984; Casa Grande 2025; Lopes et al. 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it015",
+    "it020"
+   ],
+   "referencias": [
+    17,
+    null,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(V. G. von Rocha et al. 1992; Le et al. 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it005"
+   ],
+   "referencias": [
+    26,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mendes et al. 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Secretaria Municipal da Saúde (Curitiba) 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sá et al. 2026)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rodrigues 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bundesinstitut für Risikobewertung (1982)",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Le et al. 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Australian Institute of Health and Welfare (Australia) 1982; Azevedo et al. 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it027"
+   ],
+   "referencias": [
+    1,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Azevedo et al. 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Macedo-Jesus 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pereira et al. 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Australian Institute of Health and Welfare (Australia) 1982; Le et al. 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it005"
+   ],
+   "referencias": [
+    1,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Kim et al. 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jesus et al. (1993)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Mata 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Castro 2006; Siqueira et al. 1996; Le et al. 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it011",
+    "it005"
+   ],
+   "referencias": [
+    8,
+    null,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião et al. 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Borges 1976; Australian Institute of Health and Welfare (Australia) 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it009"
+   ],
+   "referencias": [
+    4,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rezende 1986; Bundesinstitut für Risikobewertung 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017",
+    "it007"
+   ],
+   "referencias": [
+    24,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Le et al. (1982)",
+   "tipo": "narrativa",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Campos et al. 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(V. G. von Rocha et al. 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(V. G. von Rocha et al. 1992; Barbosa 1995)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it024"
+   ],
+   "referencias": [
+    26,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nunes 1991b; Jesus et al. 1993; Nunes 1991a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it012",
+    "it031"
+   ],
+   "referencias": [
+    22,
+    11,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Minima at ipsum provident soluta voluptas 1978)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fonseca et al. 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Valcárcel Muñoz 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nunes 1991a; Le et al. 1982; Mendonça et al., s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it031",
+    "it005",
+    "it029"
+   ],
+   "referencias": [
+    21,
+    13,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Macedo-Jesus 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bundesinstitut für Risikobewertung 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Agência Nacional de Vigilância Sanitária (Brasil) (1990)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(V. G. von Rocha et al. 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Borges 1976, 185)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Casa Grande 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Gremião et al. 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Rodrigues 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Pereira et al. (2002)",
+   "tipo": "narrativa",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Siqueira et al. 1996)",
+   "item": "it011"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Melo et al. 1984; Casa Grande 2025; Lopes et al. 2022)",
+   "item": "it015"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Castro 2006; Siqueira et al. 1996; Le et al. 1982)",
+   "item": "it011"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Casa Grande 2025)",
+   "item": "it015"
+  },
+  {
+   "ponto": "E",
+   "referencia": 25,
+   "item": "extra1"
+  },
+  {
+   "ponto": "E",
+   "referencia": 31,
+   "item": "extra0"
+  }
+ ],
+ "nao_citacoes": [
+  "Elaborado pela autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "In amet nesciunt voluptatum aspernatur commodi vitae sit tempore quam neque doloremque illo modi eaque repellat"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

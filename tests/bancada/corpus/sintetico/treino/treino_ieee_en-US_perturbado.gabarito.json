@@ -1,0 +1,605 @@
+{
+ "id": "treino_ieee_en-US_perturbado",
+ "estilo": "ieee",
+ "sistema": "numerico",
+ "locale": "en-US",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "[1] K. Owens, “How seem different much chance hospital behind series statement.” Accessed: Nov. 12, 2026. [Online]. Available: https://exemplo-treino.org/6043",
+   "item": "it020"
+  },
+  {
+   "indice": 1,
+   "texto": "[2] A. Houston, “Series me include walk husband support budget,” Medical Mycology, vol. 4, no. 9, pp. 328–336, 2023, doi: 10.99999/teste.treino.35902.",
+   "item": "it019"
+  },
+  {
+   "indice": 2,
+   "texto": "[3] Istituto Superiore di Sanità, “Sell bit recently real or western receive,” Roberson-Patterson, Patriciaside, 1999.",
+   "item": "it018"
+  },
+  {
+   "indice": 3,
+   "texto": "[4] S. Çelik, V. Simon, and C. Knox, “Class test research light high remember TV shake collection team,” Edwards-Mclaughlin, East Kelsey, 2013.",
+   "item": "it006"
+  },
+  {
+   "indice": 4,
+   "texto": "[5] Istituto Superiore di Sanità, Cultural tough see machine future toward floor choose increase page. 2002. [Online]. Available: https://leis-treino.gov/2562",
+   "item": "it008"
+  },
+  {
+   "indice": 5,
+   "texto": "[6] M. Bailey, B. Murphy, J. Douglas, C. Griffin, A. Moore, and J. Robinson, “Southern author fish consumer song story tough after,” in Hope daughter receive when Democrat, A. Williamson, Ed., Christinemouth: Ryan, Marks and Kirk, 2008, pp. 43–58.",
+   "item": "it023"
+  },
+  {
+   "indice": 6,
+   "texto": "[7] P. Morton, Z. Robinson, C. Adams, and S. Strong, South research different against speak for rather thank. Lisaburgh: Morris, Acosta and Castillo, 1992.",
+   "item": "it010"
+  },
+  {
+   "indice": 7,
+   "texto": "[8] X. Chen, K. Vargas, R. King, and L. Taylor, Amount this despite fire its outside voice. Port Georgeview: Scott-Alvarado, 2020.",
+   "item": "it003"
+  },
+  {
+   "indice": 8,
+   "texto": "[9] A. Green, “Government who majority series son direction vote individual at picture whether,” Das Gesundheitswesen, vol. 71, no. 1, pp. 642–658, 1986, doi: 10.99999/teste.treino.29563.",
+   "item": "it015"
+  },
+  {
+   "indice": 9,
+   "texto": "[10] B. Valencia, T. Shaffer, A. Fitzpatrick, J. Morrow, J. Cooper, and M. Howe, “Understand population certainly indicate fish I me,” Epidemiologia e Serviços de Saúde, vol. 66, no. 6, pp. 769–787, 2011.",
+   "item": "it011"
+  },
+  {
+   "indice": 10,
+   "texto": "[11] São Paulo (Estado), “Worker else during direction personal garden else of stand parent,” Chavez, Anderson and Goodman, North Jeffreyside, 2006.",
+   "item": "it014"
+  },
+  {
+   "indice": 11,
+   "texto": "[12] R. Haynes, “List type environment fire performance always,” Medical Mycology, vol. 55, no. 7, pp. 504–513, 2002, doi: 10.99999/teste.treino.98613.",
+   "item": "it012"
+  },
+  {
+   "indice": 12,
+   "texto": "[13] National Library of Medicine (Estados Unidos), “Realize throughout someone college wall person where,” Love, Daugherty and Gallagher, East Nicole, 1976.",
+   "item": "it021"
+  },
+  {
+   "indice": 13,
+   "texto": "[14] Organização Pan-Americana da Saúde, “Yourself decade gun section able contain assume tree throw,” Preventive Veterinary Medicine, vol. 13, no. 10, pp. 838–842, 2002.",
+   "item": "it009"
+  },
+  {
+   "indice": 14,
+   "texto": "[15] R. Juliá Estévez, A. Todd, L. Torres, and S. Frost, “Herself brother discussion movie,” Gaceta Sanitaria, vol. 49, no. 8, pp. 765–781, 2023.",
+   "item": "it002"
+  },
+  {
+   "indice": 15,
+   "texto": "[16] M. Bailey, B. Murphy, J. Douglas, C. Griffin, A. Moore, and J. Robinson, “Car few individual girl person wrong,” in Will car lawyer type claim interest often, M. Hall, Ed., West Micheleshire: Andrade-Rubio, 2008, pp. 247–262.",
+   "item": "it024"
+  },
+  {
+   "indice": 16,
+   "texto": "[17] J. Choi, J. Thomas, and K. Franklin, “Write view day choose boy increase,” Reyes, Mathews and Green, Calvinside, 1982.",
+   "item": "it004"
+  },
+  {
+   "indice": 17,
+   "texto": "[18] V. A. Pham, A. Vasquez, and E. Porter, Brother control form later improve ask vote third adult sport suggest. 2004. [Online]. Available: https://leis-treino.gov/7119",
+   "item": "it005"
+  },
+  {
+   "indice": 18,
+   "texto": "[19] S. Fritz-Perez and J. Chambers, “Budget everything ever current risk,” BMC Public Health, vol. 29, no. 9, pp. 262–275, 1993, doi: 10.99999/teste.treino.85816.",
+   "item": "it000"
+  },
+  {
+   "indice": 19,
+   "texto": "[20] Virginia-Maryland College of Veterinary Medicine, “Condition manager mouth experience research factor fine even learn,” Cox, Perez and Wilkins, Port Tammy, 1986.",
+   "item": "it013"
+  },
+  {
+   "indice": 20,
+   "texto": "[21] M. Harvey and B. Chapman, “Letter turn religious he difference policy until increase start,” in Agreement space cultural yet majority, C. Hunt, Ed., Robertsonborough: Bishop LLC, 1982, pp. 183–198.",
+   "item": "it017"
+  },
+  {
+   "indice": 21,
+   "texto": "[22] Instituto Nacional de Câncer (Brasil), “Past turn financial rest guess public,” Gaceta Sanitaria, vol. 33, no. 5, pp. 680–684, 1990.",
+   "item": "it007"
+  },
+  {
+   "indice": 22,
+   "texto": "[23] N. Bryant, J. Jensen, J. Carter, and E. Cox, “Now see city,” Preventive Veterinary Medicine, vol. 29, no. 11, pp. 23–37, doi: 10.99999/teste.treino.32894.",
+   "item": "it022"
+  },
+  {
+   "indice": 23,
+   "texto": "[24] R. Wilson, “Two her money with include customer sport court federal evidence popular model son,” Mitchell-Parker, Jackfurt, 2024.",
+   "item": "it016"
+  },
+  {
+   "indice": 24,
+   "texto": "[25] C. van der Sanders, W. Watkins, and Z. Love, “People reveal plant organization whom color difficult tell political study heavy her just.” Accessed: Nov. 06, 2026. [Online]. Available: https://exemplo-treino.org/9999",
+   "item": "it001"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "[1]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [4], [5]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it006",
+    "it008"
+   ],
+   "referencias": [
+    2,
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6], [7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it010"
+   ],
+   "referencias": [
+    5,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [9], [10]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it015",
+    "it011"
+   ],
+   "referencias": [
+    7,
+    8,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2]",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "São Paulo (Estado) [11]",
+   "tipo": "narrativa",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Istituto Superiore di Sanità [5]",
+   "tipo": "narrativa",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[13]",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Organização Pan-Americana da Saúde [14]",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6], [15]",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it002"
+   ],
+   "referencias": [
+    5,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[15], [16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it002"
+   ],
+   "referencias": [
+    15,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[17]",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[18]",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[5], [9]",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it008"
+   ],
+   "referencias": [
+    8,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[6], [12]",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it012"
+   ],
+   "referencias": [
+    5,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4], [16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it024"
+   ],
+   "referencias": [
+    3,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[19]",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[20]",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it006"
+   ],
+   "referencias": [
+    0,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[8], [21]",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it017"
+   ],
+   "referencias": [
+    7,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4], [11]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it014"
+   ],
+   "referencias": [
+    3,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Juliá Estévez et al. [15]",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[2], [16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it024",
+    "it019"
+   ],
+   "referencias": [
+    15,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[22]",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[3], [23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it022"
+   ],
+   "referencias": [
+    2,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[4]",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[7], [16], [23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it010",
+    "it024"
+   ],
+   "referencias": [
+    22,
+    6,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[1], [24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it020"
+   ],
+   "referencias": [
+    23,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "van der Sanders et al. [25]",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[23]",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "[21, p. 175]",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "[16]",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[24]",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "[7]",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine [20]",
+   "tipo": "narrativa",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Prepared by the author (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Our dog treatment light while social just state major who consider man respond"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

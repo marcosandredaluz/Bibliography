@@ -1,0 +1,658 @@
+{
+ "id": "treino_chicago-ad_fr-FR_limpo",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Brunet, Isabelle, Laetitia Noël, et Maryse Brunel. 1996a. Autre véritable étaler exprimer dégager consentir bois imaginer marquer montrer véritable. Menard.",
+   "item": "it030"
+  },
+  {
+   "indice": 1,
+   "texto": "Brunet, Isabelle, Laetitia Noël, et Maryse Brunel. 1996b. « Surtout année geste haute impossible sentiment contenter tantôt direction ». Epidemiologia & Prevenzione 27 (5): 528‑35. https://doi.org/10.99999/teste.treino.89371.",
+   "item": "it029"
+  },
+  {
+   "indice": 2,
+   "texto": "Cordier, Lorraine, Charles Pinto, et Jérôme Mace. 2006. « Changement petit presser immobile nommer voix écraser dame ». BMC Public Health 54 (6): 318‑28. https://doi.org/10.99999/teste.treino.81570.",
+   "item": "it016"
+  },
+  {
+   "indice": 3,
+   "texto": "Da Costa, Denise, Roger Duval, Anouk Seguin, et Timothée Valentin. 2009. « Écrire résultat entourer moyen après matin recueillir ». Epidemiologia & Prevenzione 17 (7): 746‑62.",
+   "item": "it013"
+  },
+  {
+   "indice": 4,
+   "texto": "De Oliveira, Élise, et Joséphine Evrard. 1998. « Prévenir entier conversation bien charger cent emporter papier se soirée ». In Parfaitement fils révéler distinguer peu premier ainsi exprimer discuter trois an, édité par Aurélie Lévy. Torres.",
+   "item": "it024"
+  },
+  {
+   "indice": 5,
+   "texto": "Durand, Charles. 1999. Demande loi connaissance commencer étage ensuite pleurer approcher membre digne foule. Lambert.",
+   "item": "it022"
+  },
+  {
+   "indice": 6,
+   "texto": "Escalier possible époque membre affirmer troubler rapporter front traîner, Acte jurid. No 13400 (2017). https://leis-treino.gov/486.",
+   "item": "it018"
+  },
+  {
+   "indice": 7,
+   "texto": "Éternel saint accomplir juge intention, Acte jurid. No 8033 (1987). https://leis-treino.gov/4219.",
+   "item": "it011"
+  },
+  {
+   "indice": 8,
+   "texto": "Faivre, Nathalie. 2013. « Public tombe plan sous traiter exprimer travers ». Revista de Saúde Pública 69 (9): 810‑27.",
+   "item": "it027"
+  },
+  {
+   "indice": 9,
+   "texto": "Gomes, Laurence, Gilles Mercier, Alain Dupuis, et Juliette Garcia. 1980. « Un instinct objet long résultat réalité vue apparence autant descendre ». Das Gesundheitswesen 64 (9): 202‑9.",
+   "item": "it020"
+  },
+  {
+   "indice": 10,
+   "texto": "Guyon, Laurent, et Julien Durand. 2022. « Vingt lever grand énergie croire faux ailleurs dos désir rouge yeux soldat temps ». https://exemplo-treino.org/7658.",
+   "item": "it014"
+  },
+  {
+   "indice": 11,
+   "texto": "Hamon, Michèle. 2010. « Plein leur étudier là exister tenter ». Lecomte Barbier S.A.R.L.",
+   "item": "it010"
+  },
+  {
+   "indice": 12,
+   "texto": "Lee, Ji-ho, Dorothée Hoarau, Renée Pinto, et Danielle Raymond. 1976. Confondre couleur ci exiger prévoir intérêt social devoir pour commun jeunesse plus. Bouchet Petitjean S.A.R.L.",
+   "item": "it004"
+  },
+  {
+   "indice": 13,
+   "texto": "Lutte spectacle aider guerre menacer d’abord, Acte jurid. No 4299 (1976). https://leis-treino.gov/4095.",
+   "item": "it008"
+  },
+  {
+   "indice": 14,
+   "texto": "Marquez Sebastián, Fernando, Christiane Godard, et Anouk Lemaire. 1988. Puissance changement d’abord foi. Boulay.",
+   "item": "it002"
+  },
+  {
+   "indice": 15,
+   "texto": "Mendès-Leblanc, Margaux. 2019. Remettre nouveau composer appeler foule imposer métier guère contre exprimer dur satisfaire vent. Pasquier.",
+   "item": "it000"
+  },
+  {
+   "indice": 16,
+   "texto": "Meunier, Olivier, et Denise Denis. 2023. « Inconnu espace parole recueillir second ». Das Gesundheitswesen 61 (11): 611‑20. https://doi.org/10.99999/teste.treino.15183.",
+   "item": "it017"
+  },
+  {
+   "indice": 17,
+   "texto": "Meyer, Xavier, Céline Guérin, Lucie Rodrigues, Pierre Carre, William Lefebvre, et Henri Roux. 2009. « Usage doux ailleurs étranger terre membre coûter penser ». Revista de Saúde Pública 56 (4): 561‑71. https://doi.org/10.99999/teste.treino.95566.",
+   "item": "it021"
+  },
+  {
+   "indice": 18,
+   "texto": "Moreno, Zacharie, Caroline Allain, Simone Lenoir, et Édith Turpin. 1993. « Embrasser demeurer compagnon vieil type blond fête briller arrivée travers rêver ». Revista de Saúde Pública 26 (11): 354‑71. https://doi.org/10.99999/teste.treino.66159.",
+   "item": "it019"
+  },
+  {
+   "indice": 19,
+   "texto": "Ñúñez, Suzanne. 1977. Retour éternel cri champ eau queue plan inquiéter réduire nouveau courir apparence trait pendre gros. Hubert et Fils.",
+   "item": "it006"
+  },
+  {
+   "indice": 20,
+   "texto": "Parent, Hugues, Jacqueline Alves, Bernard Marchand, Denise Rossi, Sophie Humbert, et Josette Lopez. 1987. Maintenir transformer comment rapport mourir trou fin. Barbe Laine S.A.R.L.",
+   "item": "it012"
+  },
+  {
+   "indice": 21,
+   "texto": "Pascal, Inès, et Juliette Gimenez. 2002. « Comme fin hiver sur terminer accorder ». Epidemiologia e Serviços de Saúde 45 (2): 8‑20. https://doi.org/10.99999/teste.treino.71446.",
+   "item": "it025"
+  },
+  {
+   "indice": 22,
+   "texto": "Potier, Cécile, Nathalie Torres, Jeanne Louis, Antoine Brunel, Henri Bonnet, et Stéphanie Courtois. 2009. « Groupe plonger quel jouer joindre dessiner mettre pas doucement encore propre ». Epidemiologia e Serviços de Saúde 78 (10): 497‑507. https://doi.org/10.99999/teste.treino.98571.",
+   "item": "it026"
+  },
+  {
+   "indice": 23,
+   "texto": "Ramos, Maurice, Roland Gros, Marianne Teixeira, et Dominique Berthelot. s. d. « Affaire cacher préférer journée saint emporter ressembler succès état vouloir ». Revue d’Épidémiologie et de Santé Publique 49 (12): 419‑36. https://doi.org/10.99999/teste.treino.37645.",
+   "item": "it028"
+  },
+  {
+   "indice": 24,
+   "texto": "Réflexion frère ligne nombreux armer avouer joindre recevoir, Acte jurid. No 11084 (2014). https://leis-treino.gov/3488.",
+   "item": "it005"
+  },
+  {
+   "indice": 25,
+   "texto": "Riou, Amélie dos, Susan Weiss, et Élise Marion. 1986. Loi sûr accepter parcourir rue lutter bas plein. Roger.",
+   "item": "it001"
+  },
+  {
+   "indice": 26,
+   "texto": "Robert Koch-Institut. 2001. « Accent remercier étendue goutte son embrasser attitude disparaître réunir rouler membre cause place ». Cadernos de Saúde Pública 53 (7): 776‑92.",
+   "item": "it007"
+  },
+  {
+   "indice": 27,
+   "texto": "Roche, Théophile, Valentine Deschamps, Anastasie Dos Santos, Franck Boulay, Philippine Verdier, et Michèle Royer. 2006. « Toile là saison passé honneur mensonge personne peur auquel malgré public en devant autre ». Medical Mycology 1 (6): 690‑99. https://doi.org/10.99999/teste.treino.56276.",
+   "item": "it023"
+  },
+  {
+   "indice": 28,
+   "texto": "São Paulo (Estado). 2024. « Fixe lendemain rose rapide énergie jamais nommer ensuite ». Epidemiologia e Serviços de Saúde 35 (12): 874‑79.",
+   "item": "it009"
+  },
+  {
+   "indice": 29,
+   "texto": "Vaillant, Colette. 2013. « Appuyer prévoir soin temps avenir exposer que ». Dubois.",
+   "item": "it015"
+  },
+  {
+   "indice": 30,
+   "texto": "Zhang, Jing, Benoît Bonnin, Sophie Auger, et Denis Gros. 1996. « Affaire auprès devenir combat recevoir signe président consentir président ». Medical Mycology 33 (9): 593‑97. https://doi.org/10.99999/teste.treino.11024.",
+   "item": "it003"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Ñúñez (1977)",
+   "tipo": "narrativa",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brunet et al. (1996a)",
+   "tipo": "narrativa",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marquez Sebastián et al. (1988)",
+   "tipo": "narrativa",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Marquez Sebastián et al. 1988; Vaillant 2013; Éternel saint accomplir juge intention 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it015",
+    "it011"
+   ],
+   "referencias": [
+    14,
+    29,
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vaillant 2013; São Paulo (Estado) 2024; Mendès-Leblanc 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it009",
+    "it000"
+   ],
+   "referencias": [
+    29,
+    28,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Meyer et al. 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Durand 1999; Parent et al. 1987; Guyon et Durand 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it012",
+    "it014"
+   ],
+   "referencias": [
+    5,
+    20,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cordier et al. 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gomes et al. 1980; Guyon et Durand 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020",
+    "it014"
+   ],
+   "referencias": [
+    9,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gomes et al. 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zhang et al. 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Durand 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brunet et al. 1996a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brunet et al. 1996a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Da Costa et al. 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Faivre 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mendès-Leblanc 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Réflexion frère ligne nombreux armer avouer joindre recevoir 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brunet et al. (1996b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Guyon et Durand 2022; Meunier et Denis 2023; Pascal et Gimenez 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it017",
+    "it025"
+   ],
+   "referencias": [
+    10,
+    16,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Guyon et Durand 2022)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(dos Riou et al. 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Moreno et al. (1993)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Escalier possible époque membre affirmer troubler rapporter front traîner 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brunet et al. 1996a; Parent et al. 1987)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it012"
+   ],
+   "referencias": [
+    0,
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pascal et Gimenez 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee et al. 1976; Hamon 2010; Marquez Sebastián et al. 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it010",
+    "it002"
+   ],
+   "referencias": [
+    12,
+    11,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lee et al. 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Potier et al. 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(De Oliveira et Evrard 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Mendès-Leblanc 2019; dos Riou et al. 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it001"
+   ],
+   "referencias": [
+    15,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vaillant 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Roche et al. 2006)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ramos et al., s. d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lutte spectacle aider guerre menacer d’abord 1976)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Durand 1999, 166)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Da Costa et al. 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Ñúñez 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Meyer et al. 2009)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Zhang et al. (1996)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Profond revoir profiter comprendre commun presque votre attaquer convenir intéresser précieux pouvoir lumière remplacer ou"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

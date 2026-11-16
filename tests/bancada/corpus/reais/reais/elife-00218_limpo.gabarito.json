@@ -1,0 +1,1274 @@
+{
+ "id": "elife-00218_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00218.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Alex LA, Reeve JN, Orme-Johnson WH, Walsh CT. 1990. Cloning, sequence determination, and expression of the genes encoding the subunits of the nickel-containing 8-hydroxy-5-deazaflavin reducing hydrogenase from Methanobacterium thermoautotrophicum deltaH. Biochemistry 29:7237–7244. doi: 10.1021/bi00483a011",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Böttcher B, Wynne SA, Crowther RA. 1997. Determination of the fold of the core protein of hepatitis B virus by electron cryomicroscopy. Nature 386:88–91. doi: 10.1038/386088a0",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Braks IJ, Hoppert M, Roge S, Mayer F. 1994. Structural aspects and immunolocalization of the F420-reducing and non-F420-reducing hydrogenases from Methanobacterium thermoautotrophicum Marburg. J Bacteriol 176:7677–7687.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Bryson K, McGuffin LJ, Marsden RL, Ward JJ, Sodhi JS, Jones DT. 2005. Protein structure prediction servers at University College London. Nucl Acids Res 33:W36–W38. doi: 10.1093/nar/gki410",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Calzolai L, Gorst CM, Zhao Z-H, Teng Q, Adams MWW, La Mar GN. 1995. 1H NMR Investigation of the electronic and molecular structure of the four-iron cluster ferredoxin from the hyperthermophile Pyrococcus furiosus. Identification of Asp 14 as a cluster ligand in each of the four redox states. Biochemistry 34:11373–11384. doi: 10.1021/bi00036a010",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Ceh K, Demmer U, Warkentin E, Moll J, Thauer RK, Shima S, et al.. 2009. Structural basis of the hydride transfer mechanism in F420-dependent methylenetetrahydromethanopterin dehydrogenase. Biochemistry 48:10098–10105. doi: 10.1021/bi901104d",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Chen D-H, Baker ML, Hryc CF, DiMaio F, Jakana J, Wu W, et al.. 2011. Structural basis for scaffolding-mediated assembly and maturation of a dsDNA virus. Proc Natl Acad Sci USA 108:1355–1360. doi: 10.1073/pnas.1015739108",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Cong Y, Baker ML, Jakana J, Woolford D, Miller EJ, Reissmann S, et al.. 2010. 4.0-Å resolution cryo-EM structure of the mammalian chaperonin TRiC/CCT reveals its unique subunit arrangement. Proc Natl Acad Sci USA 107:4967–4972. doi: 10.1073/pnas.0913774107",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Cong Y, Schroder GF, Meyer AS, Jakana J, Ma B, Dougherty MT, et al.. 2012. Symmetry-free cryo-EM structures of the chaperonin TRiC along its ATPase-driven conformational cycle. EMBO J 31:720–730. doi: 10.1038/emboj.2011.366",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Constant P, Chowdhury SP, Hesse L, Pratscher J, Conrad R. 2011. Genome data mining and soil survey for the novel group 5 [NiFe]-hydrogenase to explore the diversity and ecological importance of presumptive high-affinity H2-oxidizing bacteria. Appl Environ Microbiol 77:6027–6035. doi: 10.1128/AEM.00673-11",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "DeLano WL. 2002. The Pymol User's Manual.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Dym O, Eisenberg D. 2001. Sequence-structure analysis of FAD-containing proteins. [review]. Protein Science 10:1712–1728. doi: 10.1101/ps.1280110.1110/ps.12801",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Emsley P, Cowtan K. 2004. Coot: model-building tools for molecular graphics. Acta Crystallogr D Biol Crystallogr 60:2126–2132. doi: 10.1107/S0907444904019158",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Fernández JJ, Luque D, Castón JR, Carrascosa JL. 2008. Sharpening high resolution information in single particle electron cryomicroscopy. J Struct Biol 164:170–175. doi: 10.1016/j.jsb.2008.05.010",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Fox JA, Livingston DJ, Orme-Johnson WH, Walsh CT. 1987. 8-Hydroxy-5-deazaflavin-reducing hydrogenase from Methanobacterium thermoautotrophicum: 1. Purification and characterization. Biochemistry 26:4219–4227. doi: 10.1021/bi00388a007",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Fritsch J, Scheerer P, Frielingsdorf S, Kroschinsky S, Friedrich B, Lenz O, et al.. 2011. The crystal structure of an oxygen-tolerant hydrogenase uncovers a novel iron-sulphur centre. Nature 479:249–252. doi: 10.1038/nature10505",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Garcin E, Vernede X, Hatchikian EC, Volbeda A, Frey M, Fontecilla-Camps JC. 1999. The crystal structure of a reduced [NiFeSe]-hydrogenase provides an image of the activated catalytic center. Structure 7:557–566. doi: 10.1016/S0969-2126(99)80072-0",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Gipson P, Mills DJ, Wouts R, Grininger M, Vonck J, Kühlbrandt W. 2010. Direct structural insight into the substrate shuttling mechanism of yeast fatty acid synthase by electron cryo-microscopy. Proc Natl Acad Sci USA 107:9164–9169. doi: 10.1073/pnas.0913547107",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Glaeser RM, Typke D, Tiemeijer PC, Pulokas J, Cheng A. 2011. Precise beam-tilt alignment and collimation are required to minimize the phase error associated with coma in high-resolution cryo-EM. J Struct Biol 174:1–10. doi: 10.1016/j.jsb.2010.12.005",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Grigorieff N. 2000. Resolution measurement in structures derived from single particles. Acta Crystallogr D Biol Crystallogr 56:1270–1277. doi: 10.1107/S0907444900009549",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Gruner I, Frädrich C, Böttger LH, Trautwein AX, Jahn D, Härtig E. 2011. Aspartate 141 Is the fourth ligand of the oxygen-sensing [4Fe-4S]2+ cluster of Bacillus subtilis transcriptional regulator Fnr. J Biol Chem 286:2017–2021. doi: 10.1074/jbc.M110.191940",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Higuchi Y, Yagi T, Yasuoka N. 1997. Unusual ligand structure in [Ni-Fe]-active center and an additional Mg site in hydrogenase revealed by high resolution X-ray structure analysis. Structure 5:1671–1680. doi: 10.1016/S0969-2126(97)00313-4",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Johnson EF, Mukhopadhyay B. 2005. A new type of sulfite reductase, a novel coenzyme F420-dependent enzyme, from the methanarchaeon Methanocaldococcus jannaschii. J Biol Chem 280:38776–38786. doi: 10.1074/jbc.M503492200",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Liesegang H, Kaster A-K, Wiezer A, Goenrich M, Wollherr A, Seedorf H, et al.. 2010. Complete genome sequence of Methanothermobacter marburgensis, a methanoarchaeon model organism. J Bacteriol 192:5850–5851. doi: 10.1128/JB.00844-10",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Liu H, Jin L, Koh SBS, Atanasov I, Schein S, Wu L, et al.. 2010. Atomic structure of human adenovirus by cryo-EM reveals interactions among protein networks. Science 329:1038–1043. doi: 10.1126/science.1187433",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Ludtke SJ, Baker ML, Chen D-H, Song J-L, Chuang DT, Chiu W. 2008. De novo backbone trace of GroEL from single particle electron cryomicrosopy. Structure 16:441–448. doi: 10.1016/j.str.2008.02.007",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Ludtke SJ, Baldwin PR, Chiu W. 1999. EMAN: semiautomated software for high-resolution single-particle reconstructions. J Struct. Biol 128:82–97. doi: 10.1006/jsbi.1999.4174",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Ludtke SJ, Chen D-H, Song J-L, Chuang DT, Chiu W. 2004. Seeing GroEL at 6 Å resolution by single particle electron cryomicroscopy. Structure 12:1129–1136. doi: 10.1016/j.str.2004.05.006",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Ludtke SJ, Jakana J, Song J-L, Chuang DT, Chiu W. 2001. A 11.5 Å single particle reconstruction of GroEL using EMAN. J Mol Biol 314:253–262. doi: 10.1006/jmbi.2001.5133",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Marques MC, Coelho R, De Lacey AL, Pereira IAC, Matias PM. 2010. The three-dimensional structure of [NiFeSe]-hydrogenase from Desulfovibrio vulgaris Hildenborough: a hydrogenase without a bridging ligand in the active site in its oxidised, “as-isolated” state. J Mol Biol 396:893–907. doi: 10.1016/j.jmb.2009.12.013",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Matias PM, Soares CM, Saraiva LM, Coelho R, Morais J, LeGall J, et al.. 2001. [NiFe]-hydrogenase from Desulfovibrio desulfuricans ATCC 27774: gene sequencing, three-dimensional structure determination and refinement at 1.8 Å and modelling studies of its interaction with the tetrahaem cytochrome c3. J Biol Inorg Chem 6:63–81. doi: 10.1007/s007750000167",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Menon NK, Robbins J, Der Vartanian M, Patil D, Peck HDJ, Menon AL, et al.. 1993. Carboxy-terminal processing of the large subunit of [NiFe] hydrogenases. FEBS Lett 331:91–95. doi: 10.1016/0014-5793(93)80303-C",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Montet Y, Amara P, Volbeda A, Vernede X, Hatchikian EC, Field MJ, et al.. 1997. Gas access to the active site of [Ni-Fe]-hydrogenases probed by X-ray crystallography and molecular dynamics. Nat Struct Biol 4:523–526. doi: 10.1038/nsb0797-523",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Muraki N, Nomata J, Ebata K, Mizoguchi T, Shiba T, Tamiaki H, et al.. 2010. X-ray crystal structure of the light-independent protochlorophyllide reductase. Nature 465:110–114. doi: 10.1038/nature08950",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Muth E, Mörschel E, Klein A. 1987. Purification and characterization of an 8-hydroxy-5-deazaflavin-reducing hydrogenase from the archaebacterium Methanococcus voltae. Eur J Biochem 169:571–577. doi: 10.1111/j.1432-1033.1987.tb13647.x",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Ogata H, Kellers P, Lubitz W. 2010. The crystal structure of the [NiFe]-hydrogenase from the photosynthetic bacterium Allochromatium vinosum: characterization of the oxidized enzyme (Ni-A State). J Mol Biol 402:428–444. doi: 10.1016/j.jmb.2010.07.041",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Pettersen EF, Goddard TD, Huang CC, Couch GS, Greenblatt DM, Meng EC, et al.. 2004. UCSF Chimera: a visualisation system for exploratory research and analysis. J Comput Chem 25:1605–1612. doi: 10.1002/jcc.20084",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Rosenthal P, Henderson R. 2003. Optimal determination of particle orientation, absolute hand, and contrast loss in single-particle electron cryomicroscopy. J Mol Biol 333:721–745. doi: 10.1016/j.jmb.2003.07.013",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Scheres SHW, Chen S. 2012. Prevention of overfitting in cryo-EM structure determination. Nat Methods 12:853–854. doi: 10.1038/nmeth.2115",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Schönheit P, Moll J, Thauer RK. 1980. Growth parameters (Ks, mmax, Ys) of Methanobacterium thermoautotrophicum. Arch Microbiol 127:59–65. doi: 10.1007/BF00414356",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Settembre EC, Chen JZ, Dormitzer PR, Grigorieff N, Harrison SC. 2011. Atomic model of an infectious rotavirus particle. EMBO J 30:408–416. doi: 10.1038/emboj.2010.322",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Shima S, Thauer RK. 2001. Tetrahydromethanopterin-specific enzymes from Methanopyrus kandleri. Methods Enzymol 331:317–353. doi: 10.1016/S0076-6879(01)31069-8",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Shomura Y, Yoon K-S, Nishihara H, Higuchi Y. 2011. Structural basis for a [4Fe-3S] cluster in the oxygen-tolerant membrane-bound [NiFe]-hydrogenase. Nature 279:253–256. doi: 10.1038/nature10504",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Sprott GD, Shaw KM, Beveridge TJ. 1987. Properties of the particluate enzyme F420-reducing hydrogenase isolated from Methanospirillum hungatei. Can J Microbiol 33:896–904. doi: 10.1139/m87-156",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Tang G, Peng L, Baldwin PR, Mann DS, Jiang W, Rees I, et al.. 2007. EMAN2: an extensible image processing suite for electron microscopy. J Struct Biol 157:38–46. doi: 10.1016/j.jsb.2006.05.009",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Thauer RK, Kaster A-K, Goenrich M, Schick M, Hiromoto T, Shima S. 2010. Hydrogenases from methanogenic archaea, nickel, a novel cofactor, and H2 storage. Annu Rev Biochem 79:507–536. doi: 10.1146/annurev.biochem.030508.152103",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Theodoratou E, Huber R, Böck A. 2005. [NiFe]-hydrogenase maturation endopeptidase: structure and function. Biochem Soc Trans 33:108–111. doi: 10.1042/BST0330108",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Vignais PM, Billoud B. 2007. Occurrence, classification, and biological function of hydrogenases: an overview. Chem Rev 107:4206–4272. doi: 10.1021/cr050196r",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Volbeda A, Amara P, Darnault C, Mouesco JM, Parkin A, Roessler MM, et al.. 2012. X-ray crystallographic and computational studies of the O2 tolerant [NiFe]-hydrogenase 1 from Escherichia coli. Proc Natl Acad Sci USA 109:5305–5310. doi: 10.1073/pnas.1119806109",
+   "item": "bib49"
+  },
+  {
+   "indice": 49,
+   "texto": "Volbeda A, Charon MH, Piras C, Hatchikian EC, Frey M, Fontecilla-Camps JC. 1995. Crystal structure of the nickel-iron hydrogenase from Desulfovibrio gigas. Nature 373:580–587. doi: 10.1038/373580a0",
+   "item": "bib50"
+  },
+  {
+   "indice": 50,
+   "texto": "Wackett L, Hartwieg E, King J, Orme-Johnson W, Walsh C. 1987. Electron microscopy of nickel-containing methanogenic enzymes: methyl reductase and F420-reducing hydrogenase. J Bacteriol 169:718–727.",
+   "item": "bib51"
+  },
+  {
+   "indice": 51,
+   "texto": "Wolf M, Garcea RL, Grigorieff N, Harrison SC. 2010. Subunit interactions in bovine papillomavirus. Proc Natl Acad Sci USA 107:6298–6303. doi: 10.1073/pnas.0914604107",
+   "item": "bib52"
+  },
+  {
+   "indice": 52,
+   "texto": "Yu X, Ge P, Jiang J, Atanasov I, Zhou ZH. 2011. Atomic model of CPV reveals the mechanism used by this single-shelled virus to economically carry out functions conserved in multishelled reoviruses. Structure 19:652–661. doi: 10.1016/j.str.2011.03.003",
+   "item": "bib53"
+  },
+  {
+   "indice": 53,
+   "texto": "Yu X, Jin L, Zhou ZH. 2008. 3.88 A structure of cytoplasmic polyhedrosis virus by cryo-electron microscopy. Nature 453:415–419. doi: 10.1038/nature06893",
+   "item": "bib54"
+  },
+  {
+   "indice": 54,
+   "texto": "Zhang X, Jin L, Fang Q, Hui WH, Zhou ZH. 2010a. 3.3 Å cryo-EM structure of a non-enveloped virus reveals a priming mechanism for cell entry. Cell 141:472–482. doi: 10.1016/j.cell.2010.03.041",
+   "item": "bib55"
+  },
+  {
+   "indice": 55,
+   "texto": "Zhang J, Baker ML, Schröder GF, Douglas NR, Reissmann S, Jakana J, et al.. 2010b. Mechanism of folding chamber closure in a group II chaperonin. Nature 363:379–383. doi: 10.1038/nature08701",
+   "item": "bib56"
+  },
+  {
+   "indice": 56,
+   "texto": "Zhang J, Ma B, DiMaio F, Douglas NR, Joachimiak LA, Baker D, et al.. 2011. Cryo-EM structure of a group II chaperonin in the prehydrolysis ATP-bound state leading to lid closure. Structure 19:633–639. doi: 10.1016/j.str.2011.03.005",
+   "item": "bib57"
+  },
+  {
+   "indice": 57,
+   "texto": "Zhang X, Settembre E, Xu C, Dormitzer PR, Bellamy R, Harrison SC, et al.. 2008. Near-atomic resolution using electron cryomicroscopy and single-particle reconstruction. Proc Natl Acad Sci USA 105:1867–1872. doi: 10.1073/pnas.0711623105",
+   "item": "bib58"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Vignais and Billoud, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Constant et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Volbeda et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Higuchi et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Montet et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Garcin et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Matias et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marques et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ogata et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fritsch et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shomura et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Volbeda et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Thauer et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Muth et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sprott et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wackett et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Braks et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wackett et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Braks et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wolf et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2010a",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Settembre et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ludtke et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cong et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2012",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2010b",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wackett et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Braks et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Higuchi et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Garcin et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Menon et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Theodoratou et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liesegang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Thauer et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Calzolai et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Muraki et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gruner et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Alex et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liesegang et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fox et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Alex et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ceh et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dym and Eisenberg, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Johnson and Mukhopadhyay, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Böttcher et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yu et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib54"
+   ],
+   "referencias": [
+    53
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2011",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib58"
+   ],
+   "referencias": [
+    57
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2010a",
+   "tipo": "xref",
+   "itens": [
+    "bib55"
+   ],
+   "referencias": [
+    54
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wolf et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Settembre et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ludtke et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ludtke et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2010b",
+   "tipo": "xref",
+   "itens": [
+    "bib56"
+   ],
+   "referencias": [
+    55
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cong et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Scheres and Chen, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ludtke et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib57"
+   ],
+   "referencias": [
+    56
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dym and Eisenberg, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wackett et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Muth et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sprott et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schönheit et al., 1980",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shima and Thauer, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Glaeser et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gipson et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ludtke et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tang et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ludtke et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tang et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Grigorieff, 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Scheres and Chen, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rosenthal and Henderson, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rosenthal and Henderson, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fernández et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pettersen et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marques et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Emsley and Cowtan, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bryson et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pettersen et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pettersen et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "DeLano, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

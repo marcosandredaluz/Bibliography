@@ -1,0 +1,1051 @@
+{
+ "id": "elife-00133_perturbado",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00133.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Adio S, Reth J, Bathe F, Woehlke G. 2006. Review: regulation mechanisms of Kinesin-1. J Muscle Res Cell Motil 27:153–160. doi: 10.1007/s10974-005-9054-1",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Andrews SB, Gallant PE, Leapman RD, Schnapp BJ, Reese TS. 1993. Single kinesin molecules crossbridge microtubules in vitro. Proc Natl Acad Sci USA 90:6503–6507. doi: 10.1073/pnas.90.14.6503",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Baas PW. 1999. Microtubules and neuronal polarity: lessons from mitosis. Neuron 22:23–31. doi: 10.1016/S0896-6273(00)80675-3",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Baas PW. 2002. Neuronal polarity: microtubules strike back. Nat Cell Biol 4:E194–E195. doi: 10.1038/ncb0802-e194",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Baas PW, Deitch JS, Black MM, Banker GA. 1988. Polarity orientation of microtubules in hippocampal neurons: uniformity in the axon and nonuniformity in the dendrite. Proc Natl Acad Sci USA 85:8335–8339. doi: 10.1073/pnas.85.21.8335",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Baas PW, Lin S. 2011. Hooks and comets: the story of microtubule polarity orientation in the neuron. Dev Neurobiol 71:403–418. doi: 10.1002/dneu.20818",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Baas PW, Vidya Nadar C, Myers KA. 2006. Axonal transport of microtubules: the long and short of it. Traffic 7:490–498. doi: 10.1111/j.1600-0854.2006.00392.x",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Baas PW, White LA, Heidemann SR. 1987. Microtubule polarity reversal accompanies regrowth of amputated neurites. Proc Natl Acad Sci USA 84:5272–5276. doi: 10.1073/pnas.84.15.5272",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Barbagallo B, Prescott HA, Boyle P, Climer J, Francis MM. 2010. A dominant mutation in a neuronal acetylcholine receptor subunit leads to motor neuron degeneration in Caenorhabditis elegans. J Neurosci 30:13932–13942. doi: 10.1523/JNEUROSCI.1515-10.2010",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Chretien D, Kenney JM, Fuller SD, Wade RH. 1996. Determination of microtubule polarity by cryo-electron microscopy. Structure 4:1031–1040. doi: 10.1016/S0969-2126(96)00110-4",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Clark IE, Jan LY, Jan YN. 1997. Reciprocal localization of Nod and kinesin fusion proteins indicates microtubule polarity in the Drosophila oocyte, epithelium, neuron and muscle. Development 124:461–470.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Dietrich KA, Sindelar CV, Brewer PD, Downing KH, Cremo CR, Rice SE. 2008. The kinesin-1 motor protein is regulated by a direct interaction of its head and tail. Proc Natl Acad Sci USA 105:8938–8943. doi: 10.1073/pnas.0803575105",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Gao FB, Brenman JE, Jan LY, Jan YN. 1999. Genes regulating dendritic outgrowth, branching, and routing in Drosophila. Genes Dev 13:2549–2561. doi: 10.1101/gad.13.19.2549",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Guillaud L, Setou M, Hirokawa N. 2003. KIF17 dynamics and regulation of NR2B trafficking in hippocampal neurons. J Neurosci 23:131–140.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Hall DH, Hedgecock EM. 1991. Kinesin-related gene unc-104 is required for axonal transport of synaptic vesicles in C. elegans. Cell 65:837–847. doi: 10.1016/0092-8674(91)90391-B",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Hedstrom KL, Ogawa Y, Rasband MN. 2008. AnkyrinG is required for maintenance of the axon initial segment and neuronal polarity. J Cell Biol 183:635–640. doi: 10.1083/jcb.200806112",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Hirokawa N, Pfister KK, Yorifuji H, Wagner MC, Brady ST, Bloom GS. 1989. Submolecular domains of bovine brain kinesin identified by electron microscopy and monoclonal antibody decoration. Cell 56:867–878. doi: 10.1016/0092-8674(89)90691-0",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Hirokawa N, Takemura R. 2005. Molecular motors and mechanisms of directional transport in neurons. Nat Rev Neurosci 6:201–214. doi: 10.1038/nrn1624",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Hoogenraad CC, Bradke F. 2009. Control of neuronal polarity and plasticity—a renaissance for microtubules?. Trends Cell Biol 19:669–676. doi: 10.1016/j.tcb.2009.08.006",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Howard J, Hyman AA. 2003. Dynamics and mechanics of the microtubule plus end. Nature 422:753–758. doi: 10.1038/nature01600",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Jolly AL, Kim H, Srinivasan D, Lakonishok M, Larson AG, Gelfand VI. 2010. Kinesin-1 heavy chain mediates microtubule sliding to drive changes in cell shape. Proc Natl Acad Sci USA 107:12151–12156. doi: 10.1073/pnas.1004736107",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Kapitein LC, Hoogenraad CC. 2011. Which way to go? Cytoskeletal organization and polarized transport in neurons. Mol Cell Neurosci 46:9–20. doi: 10.1016/j.mcn.2010.08.015",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Kapitein LC, Schlager MA, Kuijpers M, Wulf PS, van Spronsen M, MacKintosh FC, et al.. 2010. Mixed microtubules steer dynein-driven cargo transport into dendrites. Curr Biol 20:290–299. doi: 10.1016/j.cub.2009.12.052",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Kennedy MJ, Ehlers MD. 2006. Organelles and trafficking machinery for postsynaptic plasticity. Annu Rev Neurosci 29:325–362. doi: 10.1146/annurev.neuro.29.051605.112808",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Klassen MP, Shen K. 2007. Wnt signaling positions neuromuscular connectivity by inhibiting synapse formation in C. elegans. Cell 130:704–716. doi: 10.1016/j.cell.2007.06.046",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Kollins KM, Bell RL, Butts M, Withers GS. 2009. Dendrites differ from axons in patterns of microtubule stability and polymerization during development. Neural Dev 4:26. doi: 10.1186/1749-8104-4-26",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Maniar TA, Kaplan M, Wang GJ, Shen K, Wei L, Shaw JE, et al. 2012. UNC-33 (CRMP) and ankyrin organize microtubules and localize kinesin to polarize axon-dendrite sorting. Nat Neurosci 15:48–56. doi: 10.1038/nn.2970",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Marszalek JR, Weiner JA, Farlow SJ, Chun J, Goldstein LS. 1999. Novel dendritic kinesin sorting identified by different process targeting of two related kinesins: KIF21A and KIF21B. J Cell Biol 145:469–479. doi: 10.1083/jcb.145.3.469",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Mattie FJ, Stackpole MM, Stone MC, Clippard JR, Rudnick DA, Qiu Y, et al. 2010. Directed microtubule growth, +TIPs, and kinesin-2 are required for uniform microtubule polarity in dendrites. Curr Biol 20:2169–2177. doi: 10.1016/j.cub.2010.11.050",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Navone F, Niclas J, Hom-Booher N, Sparks L, Bernstein HD, McCaffrey G, et al.. 1992. Cloning and expression of a human kinesin heavy chain gene: interaction of the COOH-terminal domain with cytoplasmic microtubules in transfected CV-1 cells. J Cell Biol 117:1263–1275. doi: 10.1083/jcb.117.6.1263",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Ou CY, Poon VY, Maeder CI, Watanabe S, Lehrman EK, Fu AK, et al.. 2010. Two cyclin-dependent kinase pathways are essential for polarized trafficking of presynaptic components. Cell 141:846–858. doi: 10.1016/j.cell.2010.04.011",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Palacios IM, St Johnston D. 2002. Kinesin light chain-independent function of the Kinesin heavy chain in cytoplasmic streaming and posterior localisation in the Drosophila oocyte. Development 129:5473–5485. doi: 10.1242/dev.00119",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Patel N, Thierry-Mieg D, Mancillas JR. 1993. Cloning by insertional mutagenesis of a cDNA encoding Caenorhabditis elegans kinesin heavy chain. Proc Natl Acad Sci USA 90:9181–9185. doi: 10.1073/pnas.90.19.9181",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Rolls MM, Satoh D, Clyne PJ, Henner AL, Uemura T, Doe CQ. 2007. Polarity and intracellular compartmentalization of Drosophila neurons. Neural Dev 2:7. doi: 10.1186/1749-8104-2-7",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Saito N, Okada Y, Noda Y, Kinoshita Y, Kondo S, Hirokawa N. 1997. KIFC2 is a novel neuron-specific C-terminal type kinesin superfamily motor for dendritic transport of multivesicular body-like organelles. Neuron 18:425–438. doi: 10.1016/S0896-6273(00)81243-X",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Seeger MA, Rice SE. 2010. Microtubule-associated protein-like binding of the kinesin-1 tail to microtubules. J Biol Chem 285:8155–8162. doi: 10.1074/jbc.M109.068247",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Siddiqui SS. 2002. Metazoan motor models: kinesin superfamily in C. elegans. Traffic 3:20–28. doi: 10.1034/j.1600-0854.2002.30104.x",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Sieburth D, Ch'ng Q, Dybbs M, Tavazoie M, Kennedy S, Wang D, et al.. 2005. Systematic analysis of genes required for synapse structure and function. Nature 436:510–517. doi: 10.1038/nature03809",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Sloboda RD, Rosenbaum JL. 1982. Purification and assay of microtubule-associated proteins (MAPs). Methods Enzymol 85:409–416.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Sobotzik JM, Sie JM, Politi C, Del Turco D, Bennett V, Deller T, et al.. 2009. AnkyrinG is required to maintain axo-dendritic polarity in vivo. Proc Natl Acad Sci USA 106:17564–17569. doi: 10.1073/pnas.0909267106",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Stepanova T, Slemmer J, Hoogenraad CC, Lansbergen G, Dortland B, De Zeeuw CI, et al.. 2003. Visualization of microtubule growth in cultured neurons via the use of EB3-GFP (end-binding protein 3-green fluorescent protein). J Neurosci 23:2655–2664.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Stone MC, Roegiers F, Rolls MM. 2008. Microtubules have opposite orientation in axons and dendrites of Drosophila neurons. Mol Biol Cell 19:4122–4129. doi: 10.1091/mbc.E07-10-1079",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Sym M, Robinson N, Kenyon C. 1999. MIG-13 positions migrating cells along the anteroposterior body axis of C. elegans. Cell 98:25–36. doi: 10.1016/S0092-8674(00)80603-0",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Teichmann HM, Shen K. 2011. UNC-6 and UNC-40 promote dendritic growth through PAR-4 in Caenorhabditis elegans neurons. Nat Neurosci 14:165–172. doi: 10.1038/Nn.2717",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Ueno H, Yasunaga T, Shingyoji C, Hirose K. 2008. Dynein pulls microtubules without rotating its stalk. Proc Natl Acad Sci USA 105:19702–19707. doi: 10.1073/pnas.0808194105",
+   "item": "bib53"
+  },
+  {
+   "indice": 45,
+   "texto": "Vale RD. 2003. The molecular motor toolbox for intracellular transport. Cell 112:467–480. doi: 10.1016/S0092-8674(03)00111-9",
+   "item": "bib45"
+  },
+  {
+   "indice": 46,
+   "texto": "Wagner MC, Pfister KK, Brady ST, Bloom GS. 1991. Purification of kinesin from bovine brain and assay of microtubule-stimulated ATPase activity. Methods Enzymol 196:157–175. doi: 10.1016/0076-6879(91)96016-K",
+   "item": "bib46"
+  },
+  {
+   "indice": 47,
+   "texto": "White JG, Southgate E, Thomson JN, Brenner S. 1976. The structure of the ventral nerve cord of Caenorhabditis elegans. Philos Trans R Soc Lond B Biol Sci 275:327–348. doi: 10.1098/rstb.1976.0086",
+   "item": "bib47"
+  },
+  {
+   "indice": 48,
+   "texto": "Yamada M, Toba S, Takitoh T, Yoshida Y, Mori D, Nakamura T, et al.. 2010. mNUDC is required for plus-end-directed transport of cytoplasmic dynein and dynactins by kinesin-1. EMBO J 29:517–531. doi: 10.1038/emboj.2009.378",
+   "item": "bib48"
+  },
+  {
+   "indice": 49,
+   "texto": "Yang HY, Mains PE, McNally FJ. 2005. Kinesin-1 mediates translocation of the meiotic spindle to the oocyte cortex through KCA-1, a novel cargo adapter. J Cell Biol 169:447–457. doi: 10.1083/jcb.200411132",
+   "item": "bib49"
+  },
+  {
+   "indice": 50,
+   "texto": "Yasunaga T, Wakabayashi T. 1996. Extensible and object-oriented system Eos supplies a new environment for image analysis of electron micrographs of macromolecules. J Struct Biol 116:155–160. doi: 10.1006/jsbi.1996.0025",
+   "item": "bib50"
+  },
+  {
+   "indice": 51,
+   "texto": "Yasunaga T, Wakabayashi T. 2008. Evaluation of a 2k CCD camera with an epitaxially grown CsI scintillator for recording energy-filtered electron cryo-micrographs. J Electron Microsc (Tokyo) 57:101–112. doi: 10.1093/jmicro/dfn006",
+   "item": "bib51"
+  },
+  {
+   "indice": 52,
+   "texto": "Zheng Y, Wildonger J, Ye B, Zhang Y, Kita A, Younger SH, et al.. 2008. Dynein is required for polarized dendritic transport and uniform microtubule orientation in axons. Nat Cell Biol 10:1172–1180. doi: 10.1038/ncb1777",
+   "item": "bib52"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Howard and Hyman, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baas and Lin, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baas et al., 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baas et al., 1988",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stepanova et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolls et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stone et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kollins et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kapitein and Hoogenraad, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maniar et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baas and Lin, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baas, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zheng et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maniar et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baas, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hoogenraad and Bradke, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vale, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hirokawa and Takemura, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vale, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Adio et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Navone et al., 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Andrews et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jolly et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Seeger and Rice, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "White et al., 1976",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sym et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Klassen and Shen, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Clark et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stone et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maniar et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baas et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Siddiqui, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Teichmann and Shen, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hall and Hedgecock, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ou et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sieburth et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barbagallo et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vale, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Navone et al., 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dietrich et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Seeger and Rice, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Andrews et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Palacios and St Johnston, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yamada et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ueno et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib53"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hirokawa et al., 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chretien et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Navone et al., 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Seeger and Rice, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Seeger and Rice, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Patel et al., 1993",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    49
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Seeger and Rice, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jolly et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baas et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zheng et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib52"
+   ],
+   "referencias": [
+    52
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mattie et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Maniar et al. (2012)",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hedstrom et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sobotzik et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kennedy and Ehlers, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Saito et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marszalek et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guillaud et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kapitein et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gao et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sloboda and Rosenbaum, 1982",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wagner et al., 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yasunaga and Wakabayashi, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib51"
+   ],
+   "referencias": [
+    51
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yasunaga and Wakabayashi, 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib50"
+   ],
+   "referencias": [
+    50
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

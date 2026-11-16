@@ -1,0 +1,1312 @@
+{
+ "id": "elife-00288_erros",
+ "estilo": "jats-elife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00288.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Bauer AL, Beauchemin CA, Perelson AS. 2009. Agent-based modeling of host-pathogen systems: the successes and challenges. Inf Sci (Ny) 179:1379–1389. doi: 10.1016/j.ins.2008.11.012",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Ciupe SM, Ribeiro RM, Nelson PW, Perelson AS. 2007. Modeling the mechanisms of acute hepatitis B virus infection. J Theor Biol 247:23–35. doi: 10.1016/j.jtbi.2007.02.017",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Collins WJ, Johnson DC. 2003. Herpes simplex virus gE/gI expressed in epithelial cells interferes with cell-to-cell spread. J Virol 77:2686–2695. doi: 10.1128/JVI.77.4.2686-2695.2003",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Corey L, Adams HG, Brown ZA, Holmes KK. 1983. Genital herpes simplex virus infections: clinical manifestations, course, and complications. Ann Intern Med 98:958–972.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Crespi C, Cumberland W, Wald A, Corey L, Blower S. 2007. Longitudinal study of herpes simplex virus type 2 infection using viral dynamic modelling. Sex Transm Infect 83:359–364. doi: 10.1136/sti.2006.022020",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "De Boer RJ, Homann D, Perelson AS. 2003. Different dynamics of CD4+ and CD8+ T cell responses during and after acute lymphocytic choriomeningitis virus infection. J Immunol 171:3928–3935.",
+   "item": "bib7"
+  },
+  {
+   "indice": 6,
+   "texto": "Doceul V, Hollinshead M, van der Linden L, Smith GL. 2010. Repulsion of superinfecting virions: a mechanism for rapid virus spread. Science 327:873–876. doi: 10.1126/science.1183173",
+   "item": "bib8"
+  },
+  {
+   "indice": 7,
+   "texto": "Farnsworth A, Johnson DC. 2006. Herpes simplex virus gE/gI must accumulate in the trans-Golgi network at early times and then redistribute to cell junctions to promote cell-cell spread. J Virol 80:3167–3179. doi: 10.1128/JVI.80.7.3167-3179.2006",
+   "item": "bib9"
+  },
+  {
+   "indice": 8,
+   "texto": "Fraser C, Riley S, Anderson RM, Ferguson NM. 2004. Factors that make an infectious disease outbreak controllable. Proc Natl Acad Sci USA 101:6146–6151. doi: 10.1073/pnas.0307506101",
+   "item": "bib10"
+  },
+  {
+   "indice": 9,
+   "texto": "Gebhardt T, Wakim LM, Eidsmo L, Reading PC, Heath WR, Carbone FR. 2009. Memory T cells in nonlymphoid tissue that provide enhanced local immunity during infection with herpes simplex virus. Nat Immunol 10:524–530. doi: 10.1038/ni.1718",
+   "item": "bib11"
+  },
+  {
+   "indice": 10,
+   "texto": "Ionides EL, Breto C, King AA. 2006. Inference for nonlinear dynamical systems. Proc Natl Acad Sci USA 103:18438–18443. doi: 10.1073/pnas.0603181103",
+   "item": "bib12"
+  },
+  {
+   "indice": 11,
+   "texto": "Jerome KR, Huang ML, Wald A, Selke S, Corey L. 2002. Quantitative stability of DNA after extended storage of clinical specimens as determined by real-time PCR. J Clin Microbiol 40:2609–2611. doi: 10.1128/JCM.40.7.2609-2611.2002",
+   "item": "bib13"
+  },
+  {
+   "indice": 12,
+   "texto": "Jiang C, Hwang YT, Randell JC, Coen DM, Hwang CB. 2007a. Mutations that decrease DNA binding of the processivity factor of the herpes simplex virus DNA polymerase reduce viral yield, alter the kinetics of viral DNA replication, and decrease the fidelity of DNA replication. J Virol 81:3495–3502. doi: 10.1128/JVI.02359-06",
+   "item": "bib14"
+  },
+  {
+   "indice": 13,
+   "texto": "Jiang C, Hwang YT, Wang G, Randell JC, Coen DM, et al.. 2007b. Herpes simplex virus mutants with multiple substitutions affecting DNA binding of UL42 are impaired for viral replication and DNA synthesis. J Virol 81:12077–12079. doi: 10.1128/JVI.01133-07",
+   "item": "bib15"
+  },
+  {
+   "indice": 14,
+   "texto": "Magaret A, Wald A, Huang M, Selke S, Corey L. 2007. Optimizing PCR positivity criterion for detection of herpes simplex virus DNA on skin and mucosa. J Clin Microbiol 45:1618–1620. doi: 10.1128/JCM.01405-06",
+   "item": "bib16"
+  },
+  {
+   "indice": 15,
+   "texto": "Marino S, Hogue IB, Ray CJ, Kirschner DE. 2008. A methodology for performing global uncertainty and sensitivity analysis in systems biology. J Theor Biol 254:178–196. doi: 10.1016/j.jtbi.2008.04.011",
+   "item": "bib17"
+  },
+  {
+   "indice": 16,
+   "texto": "Mark KE, Wald A, Magaret AS, Selke S, Olin L, Huang ML, et al.. 2008. Rapidly cleared episodes of herpes simplex virus reactivation in immunocompetent adults. J Infect Dis 198:1141–1149. doi: 10.1086/591913",
+   "item": "bib18"
+  },
+  {
+   "indice": 17,
+   "texto": "Mertz GJ, Schmidt O, Jourden JL, Guinan ME, Remington ML, Fahnlander A, et al.. 1985. Frequency of acquisition of first-episode genital infection with herpes simplex virus from symptomatic and asymptomatic source contacts. Sex Transm Dis 12:33–39. doi: 10.1097/00007435-198501000-00007",
+   "item": "bib19"
+  },
+  {
+   "indice": 18,
+   "texto": "Mertz GJ, Coombs RW, Ashley R, Jourden J, Remington M, Winter C, et al.. 1988. Transmission of genital herpes in couples with one symptomatic and one asymptomatic partner: a prospective study. J Infect Dis 157:1169–1177. doi: 10.1093/infdis/157.6.1169",
+   "item": "bib20"
+  },
+  {
+   "indice": 19,
+   "texto": "Perelson A, Neumann A, Markowitz M, Leonard J, Ho D. 1996. HIV-1 dynamics in vivo: virion clearance rate, infected cell life-span, and viral generation time. Science 271:1582–1586. doi: 10.1126/science.271.5255.1582",
+   "item": "bib21"
+  },
+  {
+   "indice": 20,
+   "texto": "Ribeiro RM, Qin L, Chavez LL, Li D, Self SG, Perelson AS. 2010. Estimation of the initial viral growth rate and basic reproductive number during acute HIV-1 infection. J Virol 84:6096–6102. doi: 10.1128/JVI.00127-10",
+   "item": "bib22"
+  },
+  {
+   "indice": 21,
+   "texto": "Roizman BKD. 2007. Herpes simplex viruses and their replication. Fields Virology.",
+   "item": "bib23"
+  },
+  {
+   "indice": 22,
+   "texto": "Sacks WR, Schaffer PA. 1987. Deletion mutants in the gene encoding the herpes simplex virus type 1 immediate-early protein ICP0 exhibit impaired growth in cell culture. J Virol 61:829–839.",
+   "item": "bib24"
+  },
+  {
+   "indice": 23,
+   "texto": "Schiffer JT, Abu-Raddad L, Mark K, Zhu J, Selke S, Magaret A, et al.. 2009. Frequent release of low amounts of herpes simplex virus from neurons: results of a mathematical model. Sci Transl Med 1:1–9. doi: 10.1126/scitranslmed.3000193",
+   "item": "bib25"
+  },
+  {
+   "indice": 24,
+   "texto": "Schiffer JT, Abu-Raddad L, Mark KE, Zhu J, Selke S, Koelle DM, et al.. 2010. Mucosal host immune response predicts the severity and duration of herpes simplex virus-2 genital tract shedding episodes. Proc Natl Acad Sci USA 107:18973–18978. doi: 10.1073/pnas.1006614107",
+   "item": "bib26"
+  },
+  {
+   "indice": 25,
+   "texto": "Schiffer JT, Magaret A, Selke S, Corey L, Wald A. 2011a. Detailed analysis of mucosal herpes simplex virus-2 replication kinetics with and without antiviral therapy. J Antimicrob Chemother 66:2593–2600. doi: 10.1093/jac/dkr346",
+   "item": "bib27"
+  },
+  {
+   "indice": 26,
+   "texto": "Schiffer JT, Wald A, Selke S, Corey L, Magaret A. 2011b. The kinetics of mucosal herpes simplex virus-2 infection in humans: evidence for rapid viral-host interactions. J Infect Dis 204:554–561. doi: 10.1093/infdis/jir314",
+   "item": "bib28"
+  },
+  {
+   "indice": 27,
+   "texto": "Shin H, Iwasaki A. 2012. A vaccine strategy that protects against genital herpes by establishing local memory T cells. Nature. doi: 10.1038/nature11522",
+   "item": "bib29"
+  },
+  {
+   "indice": 28,
+   "texto": "Spruance SL, Overall JC, Kern ER, Krueger GG, Pliam V, Miller W. 1977. The natural history of recurrent herpes simplex labialis: implications for antiviral therapy. N Engl J Med 297:69–75. doi: 10.1056/NEJM197707142970201",
+   "item": "bib30"
+  },
+  {
+   "indice": 29,
+   "texto": "Spruance SL, Green JA, Chiu G, Yeh TJ, Wenerstrom G, Overall JC. 1982. Pathogenesis of herpes simplex labialis: correlation of vesicle fluid interferon with lesion age and virus titer. Infect Immun 36:907–910.",
+   "item": "bib31"
+  },
+  {
+   "indice": 30,
+   "texto": "Sylwester AW, Mitchell BL, Edgar JB, Taormina C, Pelte C, Ruchti F, et al.. 2005. Broadly targeted human cytomegalovirus-specific CD4+ and CD8+ T cells dominate the memory compartments of exposed subjects. J Exp Med 202:673–685. doi: 10.1084/jem.20050882",
+   "item": "bib32"
+  },
+  {
+   "indice": 31,
+   "texto": "Tata S, Johnston C, Huang ML, Selke S, Magaret A, Corey L, et al.. 2010. Overlapping reactivations of herpes simplex virus type 2 in the genital and perianal mucosa. J Infect Dis 201:499–504. doi: 10.1086/650302",
+   "item": "bib33"
+  },
+  {
+   "indice": 32,
+   "texto": "Turner R, Shehab Z, Osborne K, Hendley JO. 1982. Shedding and survival of herpes simplex virus from ‘fever blisters’. Pediatrics 70:547–549.",
+   "item": "bib34"
+  },
+  {
+   "indice": 33,
+   "texto": "Verjans GM, Hintzen RQ, van Dun JM, Poot A, Milikan JC, Laman JD, et al.. 2007. Selective retention of herpes simplex virus-specific T cells in latently infected human trigeminal ganglia. Proc Natl Acad Sci USA 104:3496–3501. doi: 10.1073/pnas.0610847104",
+   "item": "bib35"
+  },
+  {
+   "indice": 34,
+   "texto": "Wald A, Zeh J, Selke S, Ashley RL, Corey L. 1995. Virologic characteristics of subclinical and symptomatic genital herpes infections. N Engl J Med 333:770–775. doi: 10.1056/NEJM199509213331205",
+   "item": "bib36"
+  },
+  {
+   "indice": 35,
+   "texto": "Wald A, Corey L, Cone R, Hobson A, Davis G, Zeh J. 1997. Frequent genital herpes simplex virus 2 shedding in immunocompetent women. Effect of acyclovir treatment. J Clin Invest 99:1092–1097. doi: 10.1172/JCI119237",
+   "item": "bib37"
+  },
+  {
+   "indice": 36,
+   "texto": "Wald A, Zeh J, Selke S, Warren T, Ryncarz A, Ashley R, et al.. 2000. Reactivation of genital herpes simplex virus type 2 infection in asymptomatic seropositive persons. N Engl J Med 342:844–850. doi: 10.1056/NEJM200003233421203",
+   "item": "bib38"
+  },
+  {
+   "indice": 37,
+   "texto": "Wang K, Lau T, Morales M, Mont E, Straus S. 2005. Laser-capture microdissection: refining estimates of the quantity and distribution of latent herpes simplex virus 1 and varicella-zoster virus DNA in human trigeminal Ganglia at the single-cell level. J Virol 79:14079–14087. doi: 10.1128/JVI.79.22.14079-14087.2005",
+   "item": "bib39"
+  },
+  {
+   "indice": 38,
+   "texto": "Zhu J, Hladik F, Woodward A, Klock A, Peng T, Johnston C, et al.. 2009. Persistence of HIV-1 receptor-positive cells after HSV-2 reactivation is a potential mechanism for increased HIV-1 acquisition. Nat Med 15:886–892. doi: 10.1038/nm.2006",
+   "item": "bib41"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Perelson et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sylwester et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wald et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1997",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2000",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Crespi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mark et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhu et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mark et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mark et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gebhardt et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mark et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jerome et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Magaret et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tata et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Corey et al., 1983",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhu et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2009",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mark et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Roizman, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Doceul et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Corey et al., 1983",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Collins and Johnson, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cunningham et al., 1985",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhu et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2009",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wald et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1997",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2000",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Crespi et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mark et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wald et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2000",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mark et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mark et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ciupe et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ribeiro et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Collins and Johnson, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Farnsworth and Johnson, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Spruance et al., 1977",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gebhardt et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Shin and Iwasaki, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ionides et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wald et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Verjans et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mertz et al., 1985",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1998",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Spruance et al., 1982",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bauer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wald et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Magaret et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mark et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Magaret et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mark et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tata et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhu et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2009",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhu et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2010",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mark et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2010",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Corey et al., 1983",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Collins and Johnson, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sacks and Schaffer, 1987",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2007a",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Jiang et al., 2007b",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turner et al., 1982",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "De Boer et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schiffer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2010",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fraser et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marino et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Zhu et al., 2007",
+   "item": "bib40"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Zhu et al., 2007",
+   "item": "bib40"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Cunningham et al., 1985",
+   "item": "bib6"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Zhu et al., 2007",
+   "item": "bib40"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Zhu et al., 2007",
+   "item": "bib40"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Zhu et al., 2007",
+   "item": "bib40"
+  },
+  {
+   "ponto": "ANO",
+   "citacao": "Schiffer et al., 2011",
+   "item": "bib28",
+   "ano_referencia": "2011b",
+   "nota": "divergência existente no artigo publicado"
+  },
+  {
+   "ponto": "ANO",
+   "citacao": "Schiffer et al., 2011",
+   "item": "bib28",
+   "ano_referencia": "2011b",
+   "nota": "divergência existente no artigo publicado"
+  },
+  {
+   "ponto": "ANO",
+   "citacao": "Schiffer et al., 2011",
+   "item": "bib28",
+   "ano_referencia": "2011b",
+   "nota": "divergência existente no artigo publicado"
+  },
+  {
+   "ponto": "ANO",
+   "citacao": "2009",
+   "item": "bib37",
+   "ano_referencia": "1997",
+   "nota": "divergência existente no artigo publicado"
+  },
+  {
+   "ponto": "ANO",
+   "citacao": "1998",
+   "item": "bib20",
+   "ano_referencia": "1988",
+   "nota": "divergência existente no artigo publicado"
+  },
+  {
+   "ponto": "ANO",
+   "citacao": "Schiffer et al., 2011",
+   "item": "bib28",
+   "ano_referencia": "2011b",
+   "nota": "divergência existente no artigo publicado"
+  },
+  {
+   "ponto": "E",
+   "referencia": 25,
+   "item": "bib27"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

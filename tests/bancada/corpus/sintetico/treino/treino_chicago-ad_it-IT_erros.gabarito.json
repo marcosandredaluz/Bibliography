@@ -1,0 +1,656 @@
+{
+ "id": "treino_chicago-ad_it-IT_erros",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "it-IT",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Acosta Verdú, Amarilis, Stefano Costalonga, Francesca Andreotti, e Giampaolo Tartaglia. 2016. «Militare grazia creare là ottenere». Gaceta Sanitaria 73 (2): 674–80. https://doi.org/10.99999/teste.treino.68446.",
+   "item": "it002"
+  },
+  {
+   "indice": 1,
+   "texto": "Battisti, Vincenzo, e Lucrezia Raimondi. 2024. «Impedire zia guerra salire bisogno popolo confessare concetto pure». Preventive Veterinary Medicine 70 (3): 340–52. https://doi.org/10.99999/teste.treino.71344.",
+   "item": "it018"
+  },
+  {
+   "indice": 2,
+   "texto": "Bertoli, Alessandro, Ruggero Totino, Gelsomina Errigo, e Adelmo Columbo. 2002. «Politica dove scendere rispetto arte avvicinare amico parecchio albergo realtà uso realtà». Revista de Saúde Pública 7 (1): 157–64. https://doi.org/10.99999/teste.treino.72317.",
+   "item": "it013"
+  },
+  {
+   "indice": 3,
+   "texto": "Bignardi, Gianluigi, Erika Cammarata, Saverio Spinola, e Osvaldo Praga. 2005. «Sì mantenere fame politico nemico senso domenica». Gaceta Sanitaria 17 (10): 530–40. https://doi.org/10.99999/teste.treino.89278.",
+   "item": "it016"
+  },
+  {
+   "indice": 4,
+   "texto": "Borzomì, Aldo da. 1999. «Attuale permettere giornata numero grosso nudo poiché». Sabatini e figli.",
+   "item": "it001"
+  },
+  {
+   "indice": 5,
+   "texto": "Cassarà, Federico, Melania Duse, Camillo Samele, Federica Montesano, Caterina Gilardoni, e Amedeo Bruno. s.d. «Senso tuttavia ogni nudo». Journal of the American Medical Informatics Association 37 (11): 130–43. https://doi.org/10.99999/teste.treino.86013.",
+   "item": "it020"
+  },
+  {
+   "indice": 6,
+   "texto": "Celentano, Pina, Sebastiano Marazzi, e Barbara Ferrante. 1996. «Peggio soprattutto sguardo scala comunicazione chiesa davvero dormire». BMC Public Health 61 (11): 276–92.",
+   "item": "it011"
+  },
+  {
+   "indice": 7,
+   "texto": "Chen, Hao, e Virgilio Dulbecco. 2018. «Pelle giorno cosa tuttavia bocca alto valere volare». Gaceta Sanitaria 62 (10): 27–35. https://doi.org/10.99999/teste.treino.11725.",
+   "item": "it003"
+  },
+  {
+   "indice": 8,
+   "texto": "Golino, Alessandra, Annamaria Flaiano, Ilaria Paoletti, e Paulina Buonauro. 2025. «Domenica pronto mente fondo bellezza contadino domandare tardi». Journal of the American Medical Informatics Association 80 (10): 879–93.",
+   "item": "it019"
+  },
+  {
+   "indice": 9,
+   "texto": "Gullotta, Sandro, e Flora Passalacqua. 1982. «Importante parte piacere interessante esporre prossimo bocca come diritto corpo conoscenza abitare monte foglia». BMC Public Health 70 (1): 453–62. https://doi.org/10.99999/teste.treino.28140.",
+   "item": "it017"
+  },
+  {
+   "indice": 10,
+   "texto": "Instituto Nacional de Câncer (Brasil). 2020. «Invece neppure cercare umano dottore». Epidemiologia e Serviços de Saúde 78 (6): 691–707. https://doi.org/10.99999/teste.treino.41504.",
+   "item": "it009"
+  },
+  {
+   "indice": 11,
+   "texto": "Luzi, Aria, Ugo Galvani, e Marcello Binaghi. 2017. «Causa bisogno essa sereno contro». https://exemplo-treino.org/7427.",
+   "item": "it012"
+  },
+  {
+   "indice": 12,
+   "texto": "Micca, Dionigi de, Ciro Falcone, e Federigo Battisti. 2013. «Successo utile capace levare recare pregare davvero tale uccidere divertire». Epidemiologia e Serviços de Saúde 65 (8): 648–60. https://doi.org/10.99999/teste.treino.39570.",
+   "item": "extra1"
+  },
+  {
+   "indice": 13,
+   "texto": "Molesini, Flora, Mirco Barese, e Patrizio Montalcini. 2020a. «Cercare verde importare morire dichiarare esso dolore credere». Revue d’Épidémiologie et de Santé Publique 26 (9): 297–308.",
+   "item": "it021"
+  },
+  {
+   "indice": 14,
+   "texto": "Molesini, Flora, Mirco Barese, e Patrizio Montalcini. 2020b. «Tecnico gesto nero desiderio osservare avanzare periodo assumere vestito senza». Journal of the American Medical Informatics Association 16 (7): 791–96. https://doi.org/10.99999/teste.treino.14239.",
+   "item": "it022"
+  },
+  {
+   "indice": 15,
+   "texto": "Moretti, Benedetto, e Toni Buscetta. 2019. «Libero no nobile libro loro conseguenza». https://exemplo-treino.org/8010.",
+   "item": "it014"
+  },
+  {
+   "indice": 16,
+   "texto": "Riccati, Ivan. 1989. «Probabilmente collo suo popolazione società ogni». Sandi e figli.",
+   "item": "it015"
+  },
+  {
+   "indice": 17,
+   "texto": "Robert Koch-Institut. 1980. «Porta perfetto giro americano braccio strumento grado grado gruppo durante immagine risultato». In Riprendere ah buono impedire studio risposta soldato, a cura di Guido Brancaccio. Grisoni, Rensi e Mannoia e figli.",
+   "item": "it007"
+  },
+  {
+   "indice": 18,
+   "texto": "Scialpi, Ignazio, Marta Gianvecchio, e Annunziata Monduzzi. 2004. «Quello tuttavia teatro comodo sede preferire». Gaceta Sanitaria 55 (9): 589–93. https://doi.org/10.99999/teste.treino.96966.",
+   "item": "it010"
+  },
+  {
+   "indice": 19,
+   "texto": "Tedesco-Nadi, Pierluigi, e Lilla Sokolov. 2017. «Provocare signorina fiducia scherzare piacere gesto viso svolgere relazione proposta esame tagliare partecipare accompagnare». https://exemplo-treino.org/1532.",
+   "item": "extra0"
+  },
+  {
+   "indice": 20,
+   "texto": "Tomei-Foscari, Alessandra, Giulia Palmisano, e Dionigi Chiappetta. 1996. «Attività faccia oppure significare no mio». Epidemiologia & Prevenzione 69 (9): 439–59.",
+   "item": "it000"
+  },
+  {
+   "indice": 21,
+   "texto": "Tran, Minh, Ludovico Rossini, e Martino Zaccardo. 1977. «Fermo latte gridare stamattina legge». Epidemiologia & Prevenzione 1 (12): 106–11.",
+   "item": "it005"
+  },
+  {
+   "indice": 22,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. 2011. «Lato finire denaro sviluppo mezzo continuare quanto pagare sociale descrivere vedere notte». Cadernos de Saúde Pública 30 (6): 542–51. https://doi.org/10.99999/teste.treino.55016.",
+   "item": "it008"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Riccati 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Moretti e Buscetta 2019; Tran et al. 1977; Molesini et al. 2020a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it005",
+    "it021"
+   ],
+   "referencias": [
+    15,
+    21,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine 2011; Gullotta e Passalacqua 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008",
+    "it017"
+   ],
+   "referencias": [
+    22,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Acosta Verdú et al. 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Molesini et al. 2020b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Instituto Nacional de Câncer (Brasil) 2020; Robert Koch-Institut 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it007"
+   ],
+   "referencias": [
+    10,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tran et al. 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Golino et al. 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gullotta e Passalacqua (1982)",
+   "tipo": "narrativa",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Chen e Dulbecco 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bignardi et al. 2005; Bertoli et al. 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it013"
+   ],
+   "referencias": [
+    3,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Moretti e Buscetta 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Celentano et al. (1996)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Celentano et al. 1996; Bertoli et al. 2002; Virginia-Maryland College of Veterinary Medicine 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it013",
+    "it008"
+   ],
+   "referencias": [
+    6,
+    2,
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bertoli et al. 2002; Luzi et al. 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013",
+    "it012"
+   ],
+   "referencias": [
+    2,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Molesini et al. 2020b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Molesini et al. 2020b; da Borzomì 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022",
+    "it001"
+   ],
+   "referencias": [
+    14,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Molesini et al. 2020b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Chen e Dulbecco 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Çelik et al. 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Robert Koch-Institut 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Medesimo rapporto situazione bisogno tuttavia udire zia sognare 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Battisti e Raimondi 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chen e Dulbecco (2018)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Scialpi et al. 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Borzomì 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Instituto Nacional de Câncer (Brasil) (2020)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Borzomì 1999; Moretti e Buscetta 2019; Bignardi et al. 2005)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it014",
+    "it016"
+   ],
+   "referencias": [
+    4,
+    15,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Cassarà et al., s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Acosta Verdú et al. 2016; Tomei-Foscari et al. 1996; Cassarà et al., s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it000",
+    "it020"
+   ],
+   "referencias": [
+    0,
+    20,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Molesini et al. 2020a; Scialpi et al. 2004)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021",
+    "it010"
+   ],
+   "referencias": [
+    13,
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Scialpi et al. 2004; Luzi et al. 2017; Cassarà et al., s.d.)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it012",
+    "it020"
+   ],
+   "referencias": [
+    18,
+    11,
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Borzomì 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Riccati 1989; Bertoli et al. 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it013"
+   ],
+   "referencias": [
+    16,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bignardi et al. 2005; Cassarà et al., s.d.; Tran et al. 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016",
+    "it020",
+    "it005"
+   ],
+   "referencias": [
+    3,
+    5,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Celentano et al. 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Scialpi et al. 2004, 218)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Battisti e Raimondi 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Çelik et al. 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Battisti e Raimondi 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Luzi et al. (2017)",
+   "tipo": "narrativa",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Çelik et al. 1980)",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Medesimo rapporto situazione bisogno tuttavia udire zia sognare 1989)",
+   "item": "it004"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Çelik et al. 1980)",
+   "item": "it006"
+  },
+  {
+   "ponto": "E",
+   "referencia": 12,
+   "item": "extra1"
+  },
+  {
+   "ponto": "E",
+   "referencia": 19,
+   "item": "extra0"
+  }
+ ],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Ricordare riva capello parete senza possedere di gatto naturalmente tornare ridurre dente"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

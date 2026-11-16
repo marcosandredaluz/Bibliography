@@ -1,0 +1,7 @@
+{
+  "documento": "python3 oraculo/validador_cruzado.py {arquivo}",
+  "referencias": "python3 oraculo/chave_referencia.py {arquivo}",
+  "afirmacoes": null,
+  "plagio": null,
+  "caminho": "node suites/seguranca/caminho_contido.cjs {arquivo}"
+}

@@ -1,0 +1,612 @@
+{
+ "id": "reservado_harvard_it-IT_limpo",
+ "estilo": "harvard",
+ "sistema": "autor-data",
+ "locale": "it-IT",
+ "conjunto": "reservado",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Agência Nacional de Vigilância Sanitária (Brasil) (2001) Forse rimettere ma no stanza folla colpire principale massa colpo sede distanza passare insieme suo carta. Disponibile su: https://leis-reservado.gov/649.",
+   "item": "it022"
+  },
+  {
+   "indice": 1,
+   "texto": "Alighieri, U. et al. (1988) «Mezzo raccontare tempo vuoto attorno», Revue d’Épidémiologie et de Santé Publique, 68(6), pp. 569–573. Disponibile su: https://doi.org/10.99999/teste.reservado.19254.",
+   "item": "it017"
+  },
+  {
+   "indice": 2,
+   "texto": "Anichini, A. et al. (1983) Pazzo casa ieri riferire stella filo. Concorezzo: Federico, Borsellino e Pelli e figli.",
+   "item": "it011"
+  },
+  {
+   "indice": 3,
+   "texto": "Bocca, M. (2012) «Spazio arte allontanare ferire allontanare forte uguale meritare passato grosso tutto sorriso», Preventive Veterinary Medicine, 1(8), pp. 47–67. Disponibile su: https://doi.org/10.99999/teste.reservado.97920.",
+   "item": "it025"
+  },
+  {
+   "indice": 4,
+   "texto": "Brenna, M. (1977) «Villa chiave comunicazione volare dovere abbandonare persona visita contadino raccontare», in A. Agostinelli (a c. di) Trascinare guerra spesso accendere concedere don bellezza infine fronte ricordare anzi onore. Gizzeria: Mastroianni e figli, pp. 13–28.",
+   "item": "it019"
+  },
+  {
+   "indice": 5,
+   "texto": "dos Cabibbo, A. (1984) «Promettere tacere pranzo presenza zona rispondere», Journal of the American Medical Informatics Association, 1(8), pp. 686–700. Disponibile su: https://doi.org/10.99999/teste.reservado.49469.",
+   "item": "it001"
+  },
+  {
+   "indice": 6,
+   "texto": "Casadei, E. et al. (1983) Bene pezzo lavorare scegliere arrivare considerare alcuno erba linea guardare ricchezza fianco. Petrucelli, Pisacane e Peranda s.r.l.",
+   "item": "it010"
+  },
+  {
+   "indice": 7,
+   "texto": "Castellitto, N., Zarlino, G. e Meucci, D. (1996) Suo punta sorella ecco aiuto qua rimanere legare disposizione. Manzoni-Sanguineti SPA.",
+   "item": "it021"
+  },
+  {
+   "indice": 8,
+   "texto": "Choi, J., Gianetti, R. e Interiano, E. (1980) «Autorità sopra dunque considerare errore età contro indicare», One Health, 68(5), pp. 12–20.",
+   "item": "it004"
+  },
+  {
+   "indice": 9,
+   "texto": "Conselho Federal de Medicina Veterinária (1993) «Eccetera volgere fretta quello arrestare pietà servizio minuto», Journal of the American Medical Informatics Association, 27(6), pp. 857–871. Disponibile su: https://doi.org/10.99999/teste.reservado.95370.",
+   "item": "it008"
+  },
+  {
+   "indice": 10,
+   "texto": "Contrafatto, C. e Giovine, G. (2019) «Folla da possedere accogliere porre lato accompagnare ragazza», in M. Perozzo (a c. di) Luogo quanto muovere inizio sorella animale domani. Struda’: Ubaldi e figli, pp. 223–238.",
+   "item": "it013"
+  },
+  {
+   "indice": 11,
+   "texto": "Dibiasi, F. et al. (1982) Nord entro anima compagno oramai accordo vendere buono bestia. Credera: Veneziano-Segrè Group.",
+   "item": "it018"
+  },
+  {
+   "indice": 12,
+   "texto": "Fantini, V., Chinnici, G. e Sauro, V. (2002) «Muro riva congresso contare sentire lasciare attuale trascinare», Medical Mycology, 3(9), pp. 405–410. Disponibile su: https://doi.org/10.99999/teste.reservado.39468.",
+   "item": "it023"
+  },
+  {
+   "indice": 13,
+   "texto": "Gonzalo Mena, J. (2001) Carne a elevare assumere distanza vestire maggiore passo fermo molto distanza capo passo pietra. Disponibile su: https://exemplo-reservado.org/7824 (Consultato: 10 novembre 2026).",
+   "item": "it002"
+  },
+  {
+   "indice": 14,
+   "texto": "Manunta-Peranda, B. (1977) «Anche altro ma riprendere aspetto impedire aiuto appena papà azzurro limitare passare distanza a posizione», Das Gesundheitswesen, 53(10), pp. 22–42. Disponibile su: https://doi.org/10.99999/teste.reservado.89698.",
+   "item": "it000"
+  },
+  {
+   "indice": 15,
+   "texto": "Nguyen, T.H., Cavanna, P. e Moneta, P. (1999) Contento corso filo realtà folla pieno confronto dentro. Disponibile su: https://leis-reservado.gov/6100.",
+   "item": "it005"
+  },
+  {
+   "indice": 16,
+   "texto": "Organización Mundial de la Salud (1988) «Unico perfetto potenza là evitare bene polizia», Journal of the American Medical Informatics Association, 26(8), pp. 430–448.",
+   "item": "it007"
+  },
+  {
+   "indice": 17,
+   "texto": "Organización Mundial de la Salud (1990) Smettere difesa tutto pensare misura nero natura. Mosorrofa: Pucci SPA.",
+   "item": "it009"
+  },
+  {
+   "indice": 18,
+   "texto": "Øster, S., Naccari, P. e Dibiasi, C. (2020) Proporre morte normale centrale fiore preparare andare resto madre compagnia limitare preoccupare spettacolo zio intenzione. Disponibile su: https://leis-reservado.gov/9144.",
+   "item": "it006"
+  },
+  {
+   "indice": 19,
+   "texto": "Pavanello, T. e Vianello, P. (2018) «Regno chilometro cui temere costituire», Journal of the American Medical Informatics Association, 47(2), pp. 748–759. Disponibile su: https://doi.org/10.99999/teste.reservado.95536.",
+   "item": "it015"
+  },
+  {
+   "indice": 20,
+   "texto": "Petrucelli, S. et al. (1995a) «Accordo opporre difesa porta essere solito fissare francese donna fatica stampa», in A. Trapani (a c. di) Effetto saltare ponte repubblica perfetto cantare. Cava Tigozzi: Rossini-Rosmini SPA, pp. 123–138.",
+   "item": "it029"
+  },
+  {
+   "indice": 21,
+   "texto": "Petrucelli, S. et al. (1995b) «Piccolo diritto per casa padre considerare enorme stagione rappresentare ascoltare diventare scienza ascoltare richiedere», One Health, 70(4), pp. 437–442. Disponibile su: https://doi.org/10.99999/teste.reservado.66306.",
+   "item": "it030"
+  },
+  {
+   "indice": 22,
+   "texto": "Rosiello, D. et al. (1998) «Egli entro resto anno solito attimo specie rosso posizione soprattutto mondo nostro», Das Gesundheitswesen, 74(11), pp. 846–865. Disponibile su: https://doi.org/10.99999/teste.reservado.14927.",
+   "item": "it014"
+  },
+  {
+   "indice": 23,
+   "texto": "Santi, C., Merisi, R. e Silvestri, V. (2019) «Carta scena necessario vedere messa parola riconoscere sole spingere usare vario spegnere studiare conoscenza guardia regione», Das Gesundheitswesen, 26(12), pp. 127–132. Disponibile su: https://doi.org/10.99999/teste.reservado.53643.",
+   "item": "it027"
+  },
+  {
+   "indice": 24,
+   "texto": "Sauro, S. et al. (2002) «Bianco bellezza mio dietro nemmeno tutto», Preventive Veterinary Medicine, 25(11), pp. 670–676. Disponibile su: https://doi.org/10.99999/teste.reservado.91490.",
+   "item": "it024"
+  },
+  {
+   "indice": 25,
+   "texto": "Solimena, C., Marinetti, I. e Storladi, M. (sine data) «Permettere ritrovare permettere visita a», Cadernos de Saúde Pública, 45(4), pp. 116–125. Disponibile su: https://doi.org/10.99999/teste.reservado.97224.",
+   "item": "it028"
+  },
+  {
+   "indice": 26,
+   "texto": "Tacchini, P. et al. (2021) «Atto intenzione pranzo porre rimettere scrivere», Epidemiologia & Prevenzione, 52(4), pp. 808–814.",
+   "item": "it026"
+  },
+  {
+   "indice": 27,
+   "texto": "Tencalla, P., Gaggini, M. e Cabibbo, L. (1990) «Nostro eccetera prezzo abitare anzi attento sorgere fumare», in N. Ruberto (a c. di) Rimanere posto film libro continuare capello gente. Grumo Appula: Monte, Donà e Contarini s.r.l., pp. 87–102.",
+   "item": "it012"
+  },
+  {
+   "indice": 28,
+   "texto": "Wang, H. e Migliaccio, S. (2025) Tecnico lotta annunciare lontano notevole tirare presente produrre leggere roba. Disponibile su: https://leis-reservado.gov/7.",
+   "item": "it003"
+  },
+  {
+   "indice": 29,
+   "texto": "Zeffirelli, S. e Bergoglio, L. (1984) Figurare scusare sino europeo affare termine offendere indietro provvedere guardia di unico spalla trasformare tavolo. Lodrino: Mondadori-Guinizzelli s.r.l.",
+   "item": "it016"
+  },
+  {
+   "indice": 30,
+   "texto": "Zola, A., Roth, I. e Argurio, V. (2021) «Governo atteggiamento con madre palazzo», BMC Public Health, 2(6), pp. 865–872. Disponibile su: https://doi.org/10.99999/teste.reservado.40796.",
+   "item": "it020"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Tencalla, Gaggini e Cabibbo, 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Sauro et al., 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Brenna, 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Castellitto, Zarlino e Meucci, 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Solimena, Marinetti e Storladi, sine data)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bocca, 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(dos Cabibbo, 1984)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi, Gianetti e Interiano, 1980; Petrucelli et al., 1995b; Bocca, 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it030",
+    "it025",
+    "it004"
+   ],
+   "referencias": [
+    21,
+    3,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Tacchini et al., 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Manunta-Peranda (1977)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Agência Nacional de Vigilância Sanitária (Brasil), 2001)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Casadei et al., 1983; Zeffirelli e Bergoglio, 1984; Tencalla, Gaggini e Cabibbo, 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it016",
+    "it010"
+   ],
+   "referencias": [
+    27,
+    29,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Conselho Federal de Medicina Veterinária, 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Petrucelli et al., 1995a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organización Mundial de la Salud, 1988; Wang e Migliaccio, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it007"
+   ],
+   "referencias": [
+    28,
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Contrafatto e Giovine, 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Rosiello et al., 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Casadei et al., 1983; Bocca, 2012)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it025"
+   ],
+   "referencias": [
+    6,
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zeffirelli e Bergoglio (1984)",
+   "tipo": "narrativa",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gonzalo Mena, 2001; Øster, Naccari e Dibiasi, 2020)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it002"
+   ],
+   "referencias": [
+    18,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organización Mundial de la Salud, 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Manunta-Peranda, 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Petrucelli et al. (1995b)",
+   "tipo": "narrativa",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Wang e Migliaccio, 2025)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Zola, Roth e Argurio, 2021)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fantini, Chinnici e Sauro, 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Dibiasi et al., 1982; Anichini et al., 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it018"
+   ],
+   "referencias": [
+    2,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bocca (2012)",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Alighieri et al., 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Anichini et al., 1983; Gonzalo Mena, 2001; Pavanello e Vianello, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002",
+    "it011",
+    "it015"
+   ],
+   "referencias": [
+    13,
+    2,
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Manunta-Peranda, 1977; Petrucelli et al., 1995b; Nguyen, Cavanna e Moneta, 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000",
+    "it030",
+    "it005"
+   ],
+   "referencias": [
+    14,
+    21,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santi, Merisi e Silvestri, 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen, Cavanna e Moneta, 1999, p. 249)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Dibiasi et al., 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Brenna, 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Dibiasi et al., 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Santi, Merisi e Silvestri (2019)",
+   "tipo": "narrativa",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Credere largo repubblica comporre memoria limite rivelare caldo dio entro istante esprimere nostro"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

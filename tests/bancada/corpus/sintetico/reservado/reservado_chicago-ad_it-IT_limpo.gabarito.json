@@ -1,0 +1,605 @@
+{
+ "id": "reservado_chicago-ad_it-IT_limpo",
+ "estilo": "chicago-ad",
+ "sistema": "autor-data",
+ "locale": "it-IT",
+ "conjunto": "reservado",
+ "variante": "limpo",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Agenzia Italiana del Farmaco. 2011. «Partecipare presto ordinare stesso limite successo simile antico vivo ufficio biondo vasto lontano cucina». Das Gesundheitswesen 19 (12): 769–88. https://doi.org/10.99999/teste.reservado.33177.",
+   "item": "it008"
+  },
+  {
+   "indice": 1,
+   "texto": "Australian Institute of Health and Welfare (Australia). 1996. «Nascondere storia abito mondo attimo villa sposare guerra qualsiasi contenere terreno». Epidemiologia & Prevenzione 63 (1): 276–80. https://doi.org/10.99999/teste.reservado.56351.",
+   "item": "it009"
+  },
+  {
+   "indice": 2,
+   "texto": "Barreda Roldan, Ignacio, Alessandra Spanevello, e Gioacchino Venditti. 2007. «Abitare pezzo spiegare valore mercato». Preventive Veterinary Medicine 37 (7): 619–31.",
+   "item": "it002"
+  },
+  {
+   "indice": 3,
+   "texto": "Bocca, Costanzo. s.d. Povero specie ancora sacro qui fatto studiare sangue lei. Federico e figli.",
+   "item": "it021"
+  },
+  {
+   "indice": 4,
+   "texto": "Bova, Rosario, Ubaldo Mantegazza, e Rosaria Moretti. 2023. «Apparire temere abbastanza chiave importante suonare». Medical Mycology 52 (1): 744–54. https://doi.org/10.99999/teste.reservado.91538.",
+   "item": "it018"
+  },
+  {
+   "indice": 5,
+   "texto": "Chen, Jing. 1993. «Risposta braccio iniziare capello costruire vista sognare inizio ammettere». Gaceta Sanitaria 29 (9): 441–53.",
+   "item": "it003"
+  },
+  {
+   "indice": 6,
+   "texto": "Chindamo, Fabrizio, Sandro Tasso, Serafina Sforza, e Corrado Bresciani. 2007. «Cattolico sforzo quale attento memoria corsa movimento pensare relazione». https://exemplo-reservado.org/9149.",
+   "item": "it012"
+  },
+  {
+   "indice": 7,
+   "texto": "Descrivere figlio addosso naturale muro cucina città mare escludere grande, Legislazione No. 12409 (1992). https://leis-reservado.gov/4969.",
+   "item": "it023"
+  },
+  {
+   "indice": 8,
+   "texto": "Dottore decidere partecipare aggiungere pregare verde morte nascondere, Legislazione No. 4523 (2008). https://leis-reservado.gov/3782.",
+   "item": "it001"
+  },
+  {
+   "indice": 9,
+   "texto": "Fiorucci, Guarino, Lara Gilardoni, Michele Fornaciari, e Camillo Gucci. 2000. «Completamente o particolare numero volare caldo valle provvedere esporre comunicazione tirare centrale attento presso secondo». BMC Public Health 50 (3): 648–61. https://doi.org/10.99999/teste.reservado.66414.",
+   "item": "it010"
+  },
+  {
+   "indice": 10,
+   "texto": "Groß, Tina, Sebastiano Emo, Adelasia Granatelli, e Nico Tamburini. 1989. «Entrare andare fatica occhio». Revue d’Épidémiologie et de Santé Publique 31 (1): 746–52. https://doi.org/10.99999/teste.reservado.14055.",
+   "item": "it006"
+  },
+  {
+   "indice": 11,
+   "texto": "Malpighi, Dario. 1977. «Pensiero cavallo spingere scorrere». Epidemiologia e Serviços de Saúde 9 (11): 164–74. https://doi.org/10.99999/teste.reservado.40928.",
+   "item": "it020"
+  },
+  {
+   "indice": 12,
+   "texto": "Modigliani, Antonella, Melina Pellegrini, e Adelmo Contarini. 1999. «Pranzo aprire raccogliere affatto spazio valle». Medical Mycology 29 (5): 531–38.",
+   "item": "it017"
+  },
+  {
+   "indice": 13,
+   "texto": "Montalcini-Jilani, Gianni, Giacomo Morpurgo, Isabella Tamborini, e Lamberto Gemito. 2013. «Normale operazione gruppo gruppo mangiare perfetto». Lopresti, Rapisardi e Grisoni Group.",
+   "item": "it000"
+  },
+  {
+   "indice": 14,
+   "texto": "Napolitano, Letizia, Loretta Vendetti, Domenico Giorgetti, Sergius Gagliardi, Griselda Catalano, e Fiorenzo Casellati. 1994. «Guidare secondo centro stazione pensiero discorso parecchio restare esperienza». In Davvero tornare baciare volontà meritare ricchezza, a cura di Giacobbe Bocelli. Guarato, Zaguri e Campise SPA.",
+   "item": "it011"
+  },
+  {
+   "indice": 15,
+   "texto": "Nguyen, Van Anh, Cipriano Pareto, Vincentio Lucciano, e Durante Pavarotti. 2007. «Invitare chiedere prodotto zona nostro comunque inizio vario posizione nazionale accorgersi riportare gusto forza richiedere». Villarosa, Malacarne e Carpaccio s.r.l.",
+   "item": "it005"
+  },
+  {
+   "indice": 16,
+   "texto": "Occorrere nascere accorgersi concludere massimo politica, Legislazione No. 14865 (2015). https://leis-reservado.gov/728.",
+   "item": "it016"
+  },
+  {
+   "indice": 17,
+   "texto": "Offredi, Silvio, e Irma Scotti. 1992. «Grosso poco scoppiare leggere avvertire amare sala». https://exemplo-reservado.org/5096.",
+   "item": "it022"
+  },
+  {
+   "indice": 18,
+   "texto": "Park, Ji-ho, e Romana Zacco. 2023. «Matrimonio ambiente tu maestro nord dito». Revista de Saúde Pública 12 (11): 39–44.",
+   "item": "it004"
+  },
+  {
+   "indice": 19,
+   "texto": "Pederiva, Mercedes, Martino Donini, Giulia Basadonna, e Stefani Canetta. 2000. Occorrere partire imparare sacrificio contatto confronto classe. Paruta-Infantino s.r.l.",
+   "item": "it015"
+  },
+  {
+   "indice": 20,
+   "texto": "Santé publique France. 2017. Ecco direttore tale esempio gridare. Capuana-Rosiello s.r.l.",
+   "item": "it014"
+  },
+  {
+   "indice": 21,
+   "texto": "Scarpa, Paoletta, e Fulvio Rusticucci. 1992. «Inizio domenica più nuovo desiderio autore memoria impressione pane nostro». Revue d’Épidémiologie et de Santé Publique 3 (2): 886–906.",
+   "item": "it013"
+  },
+  {
+   "indice": 22,
+   "texto": "Secretaria Municipal da Saúde (Curitiba). 1994. Pagare diretto militare internazionale affrontare sottile società prossimo. Anichini, Porcellato e Redi e figli.",
+   "item": "it007"
+  },
+  {
+   "indice": 23,
+   "texto": "Vasari, Girolamo. 2012. «Generale mentre pazzo estate incontrare accordo concedere atto». BMC Public Health 60 (9): 118–25.",
+   "item": "it019"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "(Park e Zacco 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bova et al. 2023; Chen 1993; Offredi e Scotti 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018",
+    "it003",
+    "it022"
+   ],
+   "referencias": [
+    4,
+    5,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Secretaria Municipal da Saúde (Curitiba) 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park e Zacco 2023; Modigliani et al. 1999; Agenzia Italiana del Farmaco 2011)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it017",
+    "it008"
+   ],
+   "referencias": [
+    18,
+    12,
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Groß et al. 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Groß et al. 1989; Agenzia Italiana del Farmaco 2011; Modigliani et al. 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it008",
+    "it017"
+   ],
+   "referencias": [
+    10,
+    0,
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park e Zacco 2023; Nguyen et al. 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it005"
+   ],
+   "referencias": [
+    18,
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Chen 1993)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Secretaria Municipal da Saúde (Curitiba) 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Occorrere nascere accorgersi concludere massimo politica 2015)",
+   "tipo": "parentetica",
+   "itens": [
+    "it016"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Australian Institute of Health and Welfare (Australia) 1996; Santé publique France 2017; Groß et al. 1989)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it014",
+    "it006"
+   ],
+   "referencias": [
+    1,
+    20,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Australian Institute of Health and Welfare (Australia) 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santé publique France 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Scarpa e Rusticucci 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vasari 2012; Dottore decidere partecipare aggiungere pregare verde morte nascondere 2008)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it001"
+   ],
+   "referencias": [
+    23,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bocca (s.d.)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fiorucci et al. 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Malpighi 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Montalcini-Jilani et al. 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pederiva et al. 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pederiva et al. 2000)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park e Zacco 2023; Montalcini-Jilani et al. 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it000"
+   ],
+   "referencias": [
+    18,
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Descrivere figlio addosso naturale muro cucina città mare escludere grande 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Montalcini-Jilani et al. 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santé publique France 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vasari (2012)",
+   "tipo": "narrativa",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Nguyen et al. 2007; Barreda Roldan et al. 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005",
+    "it002"
+   ],
+   "referencias": [
+    15,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Park e Zacco 2023; Bova et al. 2023; Chindamo et al. 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it018",
+    "it012"
+   ],
+   "referencias": [
+    18,
+    4,
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Australian Institute of Health and Welfare (Australia) (1996)",
+   "tipo": "narrativa",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Chindamo et al. 2007)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Napolitano et al. 1994)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Montalcini-Jilani et al. 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Australian Institute of Health and Welfare (Australia) 1996; Malpighi 1977)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009",
+    "it020"
+   ],
+   "referencias": [
+    1,
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Bova et al. 2023)",
+   "tipo": "parentetica",
+   "itens": [
+    "it018"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Fiorucci et al. 2000, 275)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Montalcini-Jilani et al. 2013)",
+   "tipo": "parentetica",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Scarpa e Rusticucci 1992)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Modigliani et al. 1999)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Fiorucci et al. (2000)",
+   "tipo": "narrativa",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "elaborazione dell'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Biondo attore provare faccia preferire monte russo tirare rendere festa lavoro lago"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

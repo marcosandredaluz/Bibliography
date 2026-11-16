@@ -1,0 +1,1057 @@
+{
+ "id": "elife-00312_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00312.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Aimone JB, Deng W, Gage FH. 2011. Resolving new memories: a critical look at the dentate gyrus, adult neurogenesis, and pattern separation. Neuron 70:589–596. doi: 10.1016/j.neuron.2011.05.010",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Alme CB, Buzzetti RA, Marrone DF, Leutgeb JK, Chawla MK, Schaner MJ, et al.. 2010. Hippocampal granule cells opt for early retirement. Hippocampus 20:1109–1123. doi: 10.1002/hipo.20810",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Barrientos RM, O'Reilly RC, Rudy JW. 2002. Memory for context is impaired by injecting anisomycin into dorsal hippocampus following context exploration. Behav Brain Res 134:299–306. doi: 10.1016/S0166-4328(02)00045-1",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Cameron HA, McKay RD. 2001. Adult neurogenesis produces a large pool of new granule cells in the dentate gyrus. J Comp Neurol 435:406–417. doi: 10.1002/cne.1040",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Chawla MK, Guzowski JF, Ramirez-Amaya V, Lipa P, Hoffman KL, Marriott LK, et al.. 2005. Sparse, environmentally selective expression of Arc RNA in the upper blade of the rodent fascia dentata by brief spatial experience. Hippocampus 15:579–586. doi: 10.1002/hipo.20091",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Clelland CD, Choi M, Romberg C, Clemenson GD, Fragniere A, Tyers P, et al.. 2009. A functional role for adult hippocampal neurogenesis in spatial pattern separation. Science 325:210–213. doi: 10.1126/science.1173215",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Creer DJ, Romberg C, Saksida LM, Van Praag H, Bussey TJ. 2010. Running enhances spatial pattern separation in mice. Proc Natl Acad Sci USA 107:2367–2372. doi: 10.1073/pnas.0911725107",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Deng W, Aimone JB, Gage FH. 2010. New neurons and new memories: how does adult hippocampal neurogenesis affect learning and memory?. Nat Rev Neurosci 11:339–350. doi: 10.1038/nrn2822",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Dupret D, O'Neill J, Pleydell-Bouverie B, Csicsvari J. 2010. The reorganization and reactivation of hippocampal maps predict spatial memory performance. Nat Neurosci 13:995–1002. doi: 10.1038/nn.2599",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Fanselow MS. 1990. Factors governing one trial contextual conditioning. Anim Learn Behav 18:264–270. doi: 10.3758/BF03205285",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Fanselow MS. 2000. Contextual fear, gestalt memories, and the hippocampus. Behav Brain Res 110:73–81. doi: 10.1016/S0166-4328(99)00186-2",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Fanselow MS. 2010. From contextual fear to a dynamic view of memory systems. Trends Cogn Sci 14:7–15. doi: 10.1016/j.tics.2009.10.008",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Gilbert PE, Kesner RP, Lee I. 2001. Dissociating hippocampal subregions: double dissociation between dentate gyrus and CA1. Hippocampus 11:626–636. doi: 10.1002/hipo.1077",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Goodrich-Hunsaker NJ, Hunsaker MR, Kesner RP. 2008. The interactions and dissociations of the dorsal hippocampus subregions: how the dentate gyrus, CA3, and CA1 process spatial information. Behav Neurosci 122:16–26. doi: 10.1037/0735-7044.122.1.16",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Goshen I, Brodsky M, Prakash R, Wallace J, Gradinaru V, Ramakrishnan C, et al.. 2011. Dynamics of retrieval strategies for remote memories. Cell 147:678–689. doi: 10.1016/j.cell.2011.09.033",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Guzowski JF, Timlin JA, Roysam B, Mcnaughton BL, Worley PF, Barnes CA. 2005. Mapping behaviorally relevant neural circuits with immediate-early gene expression. Curr Opin Neurobiol 15:599–606. doi: 10.1016/j.conb.2005.08.018",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Han JH, Kushner SA, Yiu AP, Hsiang HL, Buch T, Waisman A, et al.. 2009. Selective erasure of a fear memory. Science 323:1492–1496. doi: 10.1126/science.1164139",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Houser CR. 2007. Interneurons of the dentate gyrus: an overview of cell types, terminal fields and neurochemical identity. Prog Brain Res 163:217–232. doi: 10.1016/S0079-6123(07)63013-1",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Kempermann G, Kuhn HG, Gage FH. 1998. Experience-induced neurogenesis in the senescent dentate gyrus. J Neurosci 18:3206–3212.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Lassalle JM, Bataille T, Halley H. 2000. Reversible inactivation of the hippocampal mossy fiber synapses in mice impairs spatial learning, but neither consolidation nor memory retrieval, in the Morris navigation task. Neurobiol Learn Mem 73:243–257. doi: 10.1006/nlme.1999.3931",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Lee I, Kesner RP. 2004. Encoding versus retrieval of spatial memory: double dissociation between the dentate gyrus and the perforant path inputs into CA3 in the dorsal hippocampus. Hippocampus 14:66–76. doi: 10.1002/hipo.10167",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Leutgeb JK, Leutgeb S, Moser MB, Moser EI. 2007. Pattern separation in the dentate gyrus and CA3 of the hippocampus. Science 315:961–966. doi: 10.1126/science.1135801",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Leutgeb S, Leutgeb JK, Treves A, Moser MB, Moser EI. 2004. Distinct ensemble codes in hippocampal areas CA3 and CA1. Science 305:1295–1298. doi: 10.1126/science.1100265",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Liu X, Ramirez S, Pang PT, Puryear CB, Govindarajan A, Deisseroth K, et al.. 2012. Optogenetic stimulation of a hippocampal engram activates fear memory recall. Nature 484:381–385. doi: 10.1038/nature11028",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Marr D. 1971. Simple memory: a theory for archicortex. Philos Trans R Soc Lond B Biol Sci 262:23–81. doi: 10.1098/rstb.1971.0078",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Mathews EA, Morgenstern NA, Piatti VC, Zhao C, Jessberger S, Schinder AF, et al.. 2010. A distinctive layering pattern of mouse dentate granule cells is generated by developmental and adult neurogenesis. J Comp Neurol 518:4479–4490. doi: 10.1002/cne.22489",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "McHugh TJ, Jones MW, Quinn JJ, Balthasar N, Coppari R, Elmquist JK, et al.. 2007. Dentate gyrus NMDA receptors mediate rapid pattern separation in the hippocampal network. Science 317:94–99. doi: 10.1126/science.1140263",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Nakashiba T, Cushman JD, Pelkey KA, Renaudineau S, Buhl DL, Mchugh TJ, et al.. 2012. Young dentate granule cells mediate pattern separation, whereas old granule cells facilitate pattern completion. Cell 149:188–201. doi: 10.1016/j.cell.2012.01.046",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Neunuebel JP, Knierim JJ. 2012. Spatial firing correlates of physiologically distinct cell types of the rat dentate gyrus. J Neurosci 32:3848–3858. doi: 10.1523/JNEUROSCI.6038-11.2012",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "O'Reilly RC, McClelland JL. 1994. Hippocampal conjunctive encoding, storage, and recall: avoiding a trade-off. Hippocampus 4:661–682. doi: 10.1002/hipo.450040605",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Ramamoorthi K, Fropf R, Belfort GM, Fitzmaurice HL, Mckinney RM, Neve RL, et al.. 2011. Npas4 regulates a transcriptional program in CA3 required for contextual memory formation. Science 334:1669–1675. doi: 10.1126/science.1208049",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Reijmers LG, Perkins BL, Matsuo N, Mayford M. 2007. Localization of a stable neural correlate of associative memory. Science 317:1230–1233. doi: 10.1126/science.1143839",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Riedel G, Micheau J, Lam AG, Roloff EL, Martin SJ, Bridge H, et al.. 1999. Reversible neural inactivation reveals hippocampal participation in several memory processes. Nat Neurosci 2:898–905. doi: 10.1038/13202",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Rolls ET. 2010. A computational theory of episodic memory formation in the hippocampus. Behav Brain Res 215:180–196. doi: 10.1016/j.bbr.2010.03.027",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Rolls ET, Kesner RP. 2006. A computational theory of hippocampal function, and empirical tests of the theory. Prog Neurobiol 79:1–48. doi: 10.1016/j.pneurobio.2006.04.005",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Rudy JW, Barrientos RM, O'Reilly RC. 2002. Hippocampal formation supports conditioning to memory of a context. Behav Neurosci 116:530–538. doi: 10.1037/0735-7044.116.4.530",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Rudy JW, O'Reilly RC. 2001. Conjunctive representations, the hippocampus, and contextual fear conditioning. Cogn Affect Behav Neurosci 1:66–82. doi: 10.3758/CABN.1.1.66",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Silva AJ, Zhou Y, Rogerson T, Shobe J, Balaji J. 2009. Molecular and cellular approaches to memory allocation in neural circuits. Science 326:391–395. doi: 10.1126/science.1174519",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Squire LR. 1992. Memory and the hippocampus: a synthesis from findings with rats, monkeys, and humans. Psychol Rev 99:195–231. doi: 10.1037/0033-295X.99.2.195",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Stote DL, Fanselow MS. 2004. NMDA receptor modulation of incidental learning in Pavlovian context conditioning. Behav Neurosci 118:253–257. doi: 10.1037/0735-7044.118.1.253",
+   "item": "bib40"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Squire, 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolls and Kesner, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolls, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolls and Kesner, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolls, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marr, 1971",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gilbert et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "McHugh et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goodrich-Hunsaker et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nakashiba et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leutgeb et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Treves and Rolls, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Treves and Rolls, 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolls and Kesner, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolls, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Riedel et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dupret et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goshen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Guzowski et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reijmers et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reijmers et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fanselow, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2000",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2010",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barrientos et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rudy et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stote and Fanselow, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rudy and O'Reilly, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rudy et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reijmers et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Han et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Riedel et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goshen et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Marr, 1971",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "O'Reilly and McClelland, 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolls and Kesner, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolls, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Chawla et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gilbert et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Goodrich-Hunsaker et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "McHugh et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Houser, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leutgeb et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Alme et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Neunuebel and Knierim, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Alme et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Neunuebel and Knierim, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Deng et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Aimone et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cameron and McKay, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mathews et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Clelland et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Creer et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leutgeb et al. (2007)",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Silva et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lassalle et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee and Kesner, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nakashiba et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Treves and Rolls, 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rolls, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rudy and O'Reilly, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stote and Fanselow, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ramamoorthi et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Liu et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reijmers et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Han et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Leutgeb et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2007",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gilbert et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fanselow, 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Reijmers et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "McHugh et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kempermann et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kempermann et al. (1998)",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Treves and Rolls, 1994",
+   "item": "bib42"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Treves and Rolls, 1992",
+   "item": "bib41"
+  },
+  {
+   "ponto": "D",
+   "citacao": "Treves and Rolls, 1992",
+   "item": "bib41"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

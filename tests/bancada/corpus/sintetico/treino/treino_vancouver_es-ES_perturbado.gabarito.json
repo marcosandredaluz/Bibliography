@@ -1,0 +1,597 @@
+{
+ "id": "treino_vancouver_es-ES_perturbado",
+ "estilo": "vancouver",
+ "sistema": "numerico",
+ "locale": "es-ES",
+ "conjunto": "treino",
+ "variante": "perturbado",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "1. Bautista B, Vicente T, Múgica F, Andrade A. Pensar derecha tenido plaza arriba podemos quien. En: Gomila J, editor. Tú paz hacer resulta mayores modelo ante aquel teatro. Zamora: Hermanos Bayón S.Com.; 2011. p. 223-38.",
+   "item": "it030"
+  },
+  {
+   "indice": 1,
+   "texto": "2. Li J, Arribas N, Ledesma J. Presencia muerto grupo dios mismos fue diario misma. Revista de Saúde Pública. 2011;4(10):573-86.",
+   "item": "it003"
+  },
+  {
+   "indice": 2,
+   "texto": "3. Casares JL, Fábregas N, Marí E, Cano EM. Diversos semanas puso realizar consejo había niveles hechos. BMC Public Health. 2004;41(5):834-8. doi:10.99999/teste.treino.54237",
+   "item": "it011"
+  },
+  {
+   "indice": 3,
+   "texto": "4. Pastor A, Bermudez I, Valbuena C, Palma M. Barcelona posible proyecto falta luz. Revue d’Épidémiologie et de Santé Publique. 2017;75(4):147-65. doi:10.99999/teste.treino.61928",
+   "item": "it021"
+  },
+  {
+   "indice": 4,
+   "texto": "5. Tran M, Frutos J, Pareja A, Benavent H. Puntos josé dios tiempo pueda atención fuerza esa junto estaba diario medida padres. One Health. 1998;25(6):28-32. doi:10.99999/teste.treino.63046",
+   "item": "it005"
+  },
+  {
+   "indice": 5,
+   "texto": "6. Díez P. Justicia algún puedo juicio mayores poner ocho asunto. Journal of the American Medical Informatics Association. 2018;48(2):480-96.",
+   "item": "it012"
+  },
+  {
+   "indice": 6,
+   "texto": "7. del Fuertes A, Sedano A, Juan I. Propia estructura parte pueden ante miembros servicio ella película cuerpo elecciones régimen. Cadernos de Saúde Pública. 2025;62(6):790-804. doi:10.99999/teste.treino.32918",
+   "item": "it001"
+  },
+  {
+   "indice": 7,
+   "texto": "8. Conselho Nacional de Saúde (Brasil). Tú riesgo partido mes juez s viejo cámara. Zamora: Inversiones Infante y asociados S.Coop.; 1985.",
+   "item": "it016"
+  },
+  {
+   "indice": 8,
+   "texto": "9. Vigil L. Electoral ello primer presencia radio capacidad tú. Revista de Saúde Pública. 1990;36(6):553-8.",
+   "item": "it020"
+  },
+  {
+   "indice": 9,
+   "texto": "10. Bautista B, Vicente T, Múgica F, Andrade A. Comunidad quien uno bueno aún serie aunque [Internet]. 4224. 2011. Disponible en: https://leis-treino.gov/4854",
+   "item": "it029"
+  },
+  {
+   "indice": 10,
+   "texto": "11. Isern-Belmonte L. Color todos ex diciembre ministerio dios características etc [Internet]. 1979 [citado 10 de noviembre de 2026]. Disponible en: https://exemplo-treino.org/9904",
+   "item": "it000"
+  },
+  {
+   "indice": 11,
+   "texto": "12. Benito I. Sigue entonces luz datos fuentes elementos actividad reunión casos importante. En: Gil L, editor. Hay francisco mundo rey etc medios realidad diversas. Pontevedra: Manufacturas ZS S.L.N.E; 1996. p. 276-91.",
+   "item": "it022"
+  },
+  {
+   "indice": 12,
+   "texto": "13. Ministerio de Sanidad (España). Pueda boca él asociación sobre están realizar fuera presenta. Guipúzcoa: Transportes Royo & Asociados S.A.; 2010.",
+   "item": "it024"
+  },
+  {
+   "indice": 13,
+   "texto": "14. Linares I, Villegas A, Feliu MD, Huertas O, Sales E, Araujo C. Visto sí agua mira cual mil particular imagen. Epidemiologia e Serviços de Saúde. 79(8):794-810.",
+   "item": "it028"
+  },
+  {
+   "indice": 14,
+   "texto": "15. Chacón M. Sistemas realidad interés elecciones méxico podemos primero expresión usted país rosa formación les nivel. Medical Mycology. 1983;72(2):523-34.",
+   "item": "it025"
+  },
+  {
+   "indice": 15,
+   "texto": "16. Robert Koch-Institut. Nunca d materia violencia nuestro [Internet]. 6122. 2017. Disponible en: https://leis-treino.gov/1337",
+   "item": "it007"
+  },
+  {
+   "indice": 16,
+   "texto": "17. D’Ávila V, Carro C, Arias G, Crespi G. Última imágenes condiciones resulta radio sur suerte [Internet]. 2018 [citado 12 de noviembre de 2026]. Disponible en: https://exemplo-treino.org/3999",
+   "item": "it006"
+  },
+  {
+   "indice": 17,
+   "texto": "18. Adán A, Echevarría A, Asensio Z. Quedó volvió otra voluntad local parís diario sino estaban hijo población buscar derecho mar [Internet]. 1999 [citado 13 de noviembre de 2026]. Disponible en: https://exemplo-treino.org/2660",
+   "item": "it026"
+  },
+  {
+   "indice": 18,
+   "texto": "19. Piña D, Tejada A, Crespo A, Bru V, Porcel O, Gaya A. Mercado vamos mayor mano seguir modelo local aspectos año. Medical Mycology. 1993;30(9):796-800.",
+   "item": "it015"
+  },
+  {
+   "indice": 19,
+   "texto": "20. Romero B, Rodrigo N, Barreda M, Valdés D, Bolaños E, Cuervo G. Intereses poner militares fuentes ningún el nuestra. One Health. 2005;21(1):95-111.",
+   "item": "it027"
+  },
+  {
+   "indice": 20,
+   "texto": "21. Franch I, Roldan J, Lillo JM, Vázquez G, Mir J, Ángel M. Jefe puerto pp aún asimismo. Journal of the American Medical Informatics Association. 1987;22(2):770-83.",
+   "item": "it010"
+  },
+  {
+   "indice": 21,
+   "texto": "22. Balaguer L. Miembros se película todos larga área comercio algunas nadie mira. [Pontevedra]: Arenas & Asociados S.A.; 1990.",
+   "item": "it013"
+  },
+  {
+   "indice": 22,
+   "texto": "23. Matas L. Sabía quería hacer. En: Marquez A, editor. Peso cuadro nunca cuerpo político carne. Zamora: Desarrollo Guitart S.L.; 1979. p. 159-74.",
+   "item": "it019"
+  },
+  {
+   "indice": 23,
+   "texto": "24. Instituto Nacional de Câncer (Brasil). Existen demasiado volver del militar principal nuestras tipos punto ve social menos puntos derecha importantes acto [Internet]. 5006. 1984. Disponible en: https://leis-treino.gov/9945",
+   "item": "it017"
+  },
+  {
+   "indice": 24,
+   "texto": "25. Barón D, Portillo A, Cañas G. Experiencia mejor paso antonio recuerdo música policía. Sevilla: Rosselló y asociados S.A.; 2019.",
+   "item": "it014"
+  },
+  {
+   "indice": 25,
+   "texto": "26. Ariño M, Moya G. Última fue ni formas sí siete has hecho guerra. One Health. 2014;21(12):178-87. doi:10.99999/teste.treino.65653",
+   "item": "it018"
+  },
+  {
+   "indice": 26,
+   "texto": "27. Peral Cabañas I. Real voluntad pero hubo espera manos universidad corte enfermedad los. Das Gesundheitswesen. 2005;27(4):680-7.",
+   "item": "it002"
+  },
+  {
+   "indice": 27,
+   "texto": "28. Instituto Nacional de Câncer (Brasil). Número habían libro total menos flores menor [Internet]. 10350. 1976. Disponible en: https://leis-treino.gov/8858",
+   "item": "it023"
+  },
+  {
+   "indice": 28,
+   "texto": "29. Ministerio de Sanidad (España). Llegar sí música. Revista de Saúde Pública. 1980;47(10):669-88. doi:10.99999/teste.treino.25982",
+   "item": "it009"
+  },
+  {
+   "indice": 29,
+   "texto": "30. Choi J ho, Solano J. Mis mesa d pedro manera tema será le a explicó debido pese. Medical Mycology. 2021;6(7):713-32. doi:10.99999/teste.treino.15847",
+   "item": "it004"
+  },
+  {
+   "indice": 30,
+   "texto": "31. National Library of Medicine (Estados Unidos). Natural tenido respecto luis cuba actividades análisis fuego ejemplo. Das Gesundheitswesen. 1995;17(12):883-93.",
+   "item": "it008"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Bautista et al. (1)",
+   "tipo": "narrativa",
+   "itens": [
+    "it030"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al. (2)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3–5)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it021",
+    "it005"
+   ],
+   "referencias": [
+    2,
+    3,
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(6)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7–9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001",
+    "it016",
+    "it020"
+   ],
+   "referencias": [
+    6,
+    7,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2,10,11)",
+   "tipo": "parentetica",
+   "itens": [
+    "it029",
+    "it000",
+    "it003"
+   ],
+   "referencias": [
+    9,
+    10,
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(12)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(13)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(14)",
+   "tipo": "parentetica",
+   "itens": [
+    "it028"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(2)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(16)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(17,18)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it026"
+   ],
+   "referencias": [
+    16,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(15,19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it025"
+   ],
+   "referencias": [
+    18,
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(20)",
+   "tipo": "parentetica",
+   "itens": [
+    "it027"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(21)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "del Fuertes et al. (7)",
+   "tipo": "narrativa",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(22)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(23)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(18,19)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015",
+    "it026"
+   ],
+   "referencias": [
+    18,
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(24)",
+   "tipo": "parentetica",
+   "itens": [
+    "it017"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25,26)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014",
+    "it018"
+   ],
+   "referencias": [
+    24,
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(27)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(28)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(29)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(7)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(25)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(30)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(31)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(3)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(9)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Li et al. (2)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [
+  "Elaborado por la autora (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Español elementos jorge dejar línea recuerdo espacio cuales"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}

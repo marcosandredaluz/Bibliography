@@ -1,0 +1,960 @@
+{
+ "id": "elife-00011_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00011.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Abruzzi KC, Rodriguez J, Menet JS, Desrochers J, Zadina A, Luo W, et al.. 2011. Drosophila CLOCK target gene characterization: implications for circadian tissue-specific gene expression. Genes Dev 25:2374–2386.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Bhatt DM, Pandya-Jones A, Tong AJ, Barozzi I, Lissner MM, Natoli G, et al.. 2012. Transcript dynamics of proinflammatory genes revealed by sequence analysis of subcellular RNA fractions. Cell 150:279–290.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Bregman A, Avraham-Kelbert M, Barkai O, Duek L, Guterman A, Choder M. 2011. Promoter elements regulate cytoplasmic mRNA decay. Cell 147:1473–1483.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Bunger MK, Wilsbacher LD, Moran SM, Clendenin C, Radcliffe LA, Hogenesch JB, et al.. 2000. Mop3 is an essential component of the master circadian pacemaker in mammals. Cell 103:1009–1017.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Carrillo Oesterreich F, Preibisch S, Neugebauer KM. 2010. Global analysis of nascent RNA reveals transcriptional pausing in terminal exons. Mol Cell 40:571–581.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Cheadle C, Fan J, Cho-Chung YS, Werner T, Ray J, Do L, et al.. 2005. Control of gene expression during T cell activation: alternate regulation of mRNA transcription and mRNA stability. BMC Genomics 6:75.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Dardente H, Cermakian N. 2007. Molecular circadian rhythms in central and peripheral clocks in mammals. Chronobiol Int 24:195–213.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Feng D, Liu T, Sun Z, Bugge A, Mullican SE, Alenghat T, et al.. 2011. A circadian rhythm orchestrated by histone deacetylase 3 controls hepatic lipid metabolism. Science 331:1315–1319.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Gatfield D, Le Martelot G, Vejnar CE, Gerlach D, Schaad O, Fleury-Olela F, et al.. 2009. Integration of microRNA miR-122 in hepatic circadian gene expression. Genes Dev 23:1313–1326.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Giege P, Hoffmann M, Binder S, Brennicke A. 2000. RNA degradation buffers asymmetries of transcription in Arabidopsis mitochondria. EMBO Rep 1:164–170.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "Griffiths-Jones S. 2007. Annotating noncoding RNA genes. Annu Rev Genomics Hum Genet 8:279–298.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Haas MJ, Pitot HC. 1999. Glucocorticoids stimulate CREB binding to a cyclic-AMP response element in the rat serine dehydratase gene. Arch Biochem Biophys 362:317–324.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Hao S., Baltimore D. 2009. The stability of mRNA influences the temporal order of the induction of genes encoding inflammatory molecules. Nat Immunol 10:281–288.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Hughes ME, Grant GR, Paquin C, Qian J, Nitabach MN. 2012. Deep sequencing the circadian and diurnal transcriptome of Drosophila brain. Genome Res 22:1266–1281.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Joshi A, Beck Y, Michoel T. 2012. Post-transcriptional regulatory networks play a key role in noise reduction that is conserved from micro-organisms to mammals. FEBS J 279:3501–3512.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Keene JD. 2007. RNA regulons: coordination of post-transcriptional events. Nat Rev Genet 8:533–543.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Khodor YL, Menet JS, Tolan M, Rosbash M. 2012. Cotranscriptional splicing efficiency differs dramatically between Drosophila and mouse. RNA.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Khodor YL, Rodriguez J, Abruzzi KC, Tang CH, Marr II MT, Rosbash M. 2011. Nascent-seq indicates widespread cotranscriptional pre-mRNA splicing in Drosophila. Genes Dev 25:2502–2512.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Ko CH, Takahashi JS. 2006. Molecular components of the mammalian circadian clock. Hum Mol Genet 15:R271–R277.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Koike N, Yoo SH, Huang HC, Kumar V, Lee C, Kim TK, et al.. 2012. Transcriptional architecture and chromatin landscape of the core circadian clock in mammals. Science 338:349–354.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Kojima S, Shingle DL, Green CB. 2011. Post-transcriptional control of circadian rhythms. J Cell Sci 124:311–320.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Langmead B, Trapnell C, Pop M, Salzberg SL. 2009. Ultrafast and memory-efficient alignment of short DNA sequences to the human genome. Genome Biol 10:R25.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Levin JZ, Yassour M, Adiconis X, Nusbaum C, Thompson DA, Friedman N, et al.. 2010. Comprehensive comparative analysis of strand-specific RNA sequencing methods. Nat Methods 7:709–715.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Lowrey PL, Takahashi JS. 2004. Mammalian circadian biology: elucidating genome-wide levels of temporal organization. Annu Rev Genomics Hum Genet 5:407–441.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Martin D, Brun C, Remy E, Mouren P, Thieffry D, Jacq B. 2004. GOToolBox: functional analysis of gene datasets based on Gene Ontology. Genome Biol 5:R101.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Mattick JS. 2009. The genetic signatures of noncoding RNAs. PLoS Genet 5:e1000459.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "McDonald MJ, Rosbash M. 2001. Microarray analysis and organization of circadian gene expression in Drosophila. Cell 107:567–578.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Mercer TR, Dinger ME, Mattick JS. 2009. Long non-coding RNAs: insights into functions. Nat Rev Genet 10:155–159.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Nicol JW, Helt GA, Blanchard Jnr SG, Raja A, Loraine AE. 2009. The Integrated Genome Browser: free software for distribution and exploration of genome-scale datasets. Bioinformatics 25:2730–2731.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Panda S, Antoch MP, Miller BH, Su AI, Schook AB, Straume M, et al.. 2002. Coordinated transcription of key pathways in the mouse by the circadian clock. Cell 109:307–320.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Rey G, Cesbron F, Rougemont J, Reinke H, Brunner M, Naef F. 2011. Genome-wide and phase-specific DNA-binding rhythms of BMAL1 control circadian output functions in mouse liver. PLoS Biol 9:e1000595.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Rodriguez J, Menet JS, Rosbash M. 2012. Nascent-seq indicates widespread cotranscriptional RNA editing in Drosophila. Mol Cell 47:27–37.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Schmidt D, Wilson MD, Spyrou C, Brown GD, Hadfield J, Odom DT. 2009. ChIP-seq: using high-throughput sequencing to discover protein-DNA interactions. Methods 48:240–248.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Sharova LV, Sharov AA, Nedorezov T, Piao Y, Shaik N, Ko MS. 2009. Database for mRNA half-life of 19 977 genes obtained by DNA microarray analysis of pluripotent and differentiating mouse embryonic stem cells. DNA Res 16:45–58.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "So WV, Rosbash M. 1997. Post-transcriptional regulation contributes to Drosophila clock gene mRNA cycling. EMBO J 16:7146–7155.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Staiger D, Green R. 2011. RNA-based regulation in the plant circadian clock. Trends Plant Sci 16:517–523.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Staiger D, Koster T. 2011. Spotlight on post-transcriptional control in the circadian system. Cell Mol Life Sci 68:71–83.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Storch KF, Lipan O, Leykin I, Viswanathan N, Davis FC, Wong WH, et al.. 2002. Extensive and divergent circadian gene expression in liver and heart. Nature 417:78–83.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Trapnell C, Pachter L, Salzberg SL. 2009. TopHat: discovering splice junctions with RNA-Seq. Bioinformatics 25:1105–1111.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Trcek T, Larson DR, Moldon A, Query CC, Singer RH. 2011. Single-molecule mRNA decay measurements reveal promoter-regulated mRNA stability in yeast. Cell 147:1484–1497.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Ukai-Tadenuma M, Yamada RG, Xu H, Ripperger JA, Liu AC, Ueda HR. 2011. Delay in feedback repression by cryptochrome 1 is required for circadian clock function. Cell 144:268–281.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Vollmers C, Gill S, DiTacchio L, Pulivarthy SR, Le HD, Panda S. 2009. Time of feeding and the intrinsic circadian clock drive rhythms in hepatic gene expression. Proc Natl Acad Sci U S A 106:21453–21458.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Wang KC, Chang HY. 2011. Molecular mechanisms of long noncoding RNAs. Mol Cell 43:904–914.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Wijnen H, Naef F, Young MW. 2005. Molecular and statistical tools for circadian transcript profiling. Methods Enzymol 393:341–365.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Woo KC, Ha DC, Lee KH, Kim DY, Kim TD, Kim KT. 2010. Circadian amplitude of cryptochrome 1 is modulated by mRNA stability regulation via cytoplasmic hnRNP D oscillation. Mol Cell Biol 30:197–205.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Woo KC, Kim TD, Lee KH, Kim DY, Kim W, Lee KY, et al.. 2009. Mouse period 2 mRNA circadian oscillation is modulated by PTB-mediated rhythmic mRNA degradation. Nucleic Acids Res 37:26–37.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Wuarin J, Schibler U. 1994. Physical isolation of nascent RNA chains transcribed by RNA polymerase II: evidence for cotranscriptional splicing. Mol Cell Biol 14:7219–7225.",
+   "item": "bib47"
+  },
+  {
+   "indice": 47,
+   "texto": "Zhang L, Weng W, Guo J. 2011. Posttranscriptional mechanisms in controlling eukaryotic circadian rhythms. FEBS Lett 585:1400–1405.",
+   "item": "bib48"
+  },
+  {
+   "indice": 48,
+   "texto": "Zhang Y, Liu T, Meyer CA, Eeckhoute J, Johnson DS, Bernstein BE, et al.. 2008. Model-based analysis of ChIP-Seq (MACS). Genome Biol 9:R137.",
+   "item": "bib49"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Ko and Takahashi, 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dardente and Cermakian, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lowrey and Takahashi, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vollmers et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "McDonald and Rosbash, 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Panda et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Storch et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hughes et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kojima et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Staiger and Green, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Staiger and Koster, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "So and Rosbash, 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woo et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woo et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kojima et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Keene, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Giege et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cheadle et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carrillo Oesterreich et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Khodor et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wuarin and Schibler (1994)",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bhatt et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Carrillo Oesterreich et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Khodor et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Khodor et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Khodor et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sharova et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Gatfield et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sharova et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kojima et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Staiger and Koster, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib48"
+   ],
+   "referencias": [
+    47
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rey et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rey et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ukai-Tadenuma et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Koike et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Giege et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cheadle et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Griffiths-Jones, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mattick, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Mercer et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wang and Chang, 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cheadle et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hao and Baltimore, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Joshi et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bregman et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trcek et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bregman et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trcek et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Haas and Pitot, 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ukai-Tadenuma et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Abruzzi et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bunger et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Levin et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schmidt et al. (2009)",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trapnell et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nicol et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rodriguez et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Langmead et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhang et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib49"
+   ],
+   "referencias": [
+    48
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Martin et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wijnen et al. (2005)",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "E",
+   "referencia": 7,
+   "item": "bib8"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

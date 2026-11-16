@@ -1,0 +1,572 @@
+{
+ "id": "elife-00299_perturbado",
+ "estilo": "jats-elife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "perturbado",
+ "fonte": "elife-00299.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Amit I, Garber M, Chevrier N, Leite AP, Donner Y, Eisenhaure T, et al.. 2009. Unbiased reconstruction of a mammalian transcriptional network mediating pathogen responses. Science 326:257–263. doi: 10.1126/science.1179050",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Barreiro LB, Tailleux L, Pai AA, Gicquel B, Marioni JC, Gilad Y. 2012. Deciphering the genetic architecture of variation in the immune response to Mycobacterium tuberculosis infection. Proc Natl Acad Sci USA 109:1204–1209. doi: 10.1073/pnas.1115761109",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Bucasas KL, Franco LM, Shaw CA, Bray MS, Wells JM, Nino D, et al.. 2011. Early patterns of gene expression correlate with the humoral immune response to influenza vaccination in humans. J Infect Dis 203:921–929. doi: 10.1093/infdis/jiq156",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Bullaughey K, Chavarria CI, Coop G, Gilad Y. 2009. Expression quantitative trait loci detected in cell lines are often present in primary tissues. Hum Mol Genet 18:4296–4303. doi: 10.1093/hmg/ddp382",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Cookson W, Liang L, Abecasis G, Moffatt M, Lathrop M. 2009. Mapping complex disease traits with global gene expression. Nat Rev Genet 10:184–194. doi: 10.1038/nrg2537",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Dennis G, Sherman BT, Hosack DA, Yang J, Gao W, Lane HC, et al.. 2003. DAVID: database for annotation, visualization, and integrated discovery. Genome Biol 4:P3. doi: 10.1186/gb-2003-4-5-p3",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Dowdle WR, Kendal AP, Noble GR. 1979. Influenza viruses. Diagnostic procedures for viral, rickettsial and Chlamydial infections:603–605.",
+   "item": "bib11"
+  },
+  {
+   "indice": 7,
+   "texto": "Du P, Kibbe WA, Lin SM. 2008. lumi: a pipeline for processing Illumina microarray. Bioinformatics 24:1547–1548. doi: 10.1093/bioinformatics/btn224",
+   "item": "bib7"
+  },
+  {
+   "indice": 8,
+   "texto": "Emilsson V, Thorleifsson G, Zhang B, Leonardson AS, Zink F, Zhu J, et al.. 2008. Genetics of gene expression and its effect on disease. Nature 452:423–428. doi: 10.1038/nature06758",
+   "item": "bib8"
+  },
+  {
+   "indice": 9,
+   "texto": "Frank AL, Puck J, Hughes BJ, Cate TR. 1980. Microneutralization test for influenza A and B and parainfluenza 1 and 2 viruses that uses continuous cell lines and fresh serum enhancement. J Clin Microbiol 12:426–432.",
+   "item": "bib9"
+  },
+  {
+   "indice": 10,
+   "texto": "Innocenti F, Cooper GM, Stanaway IB, Gamazon ER, Smith JD, Mirkov S, et al.. 2011. Identification, replication, and functional fine-mapping of expression quantitative trait loci in primary human liver tissue. PLOS Genet 7:e1002078. doi: 10.1371/journal.pgen.1002078",
+   "item": "bib10"
+  },
+  {
+   "indice": 11,
+   "texto": "Kent WJ. 2002. BLAT–the BLAST-like alignment tool. Genome Res 12:656–664. doi: 10.1101/gr.229202",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Klein NP, Fireman B, Enright A, Ray P, Black S, Dekker CL. 2007. A role for genetics in the immune response to the varicella vaccine. Pediatr Infect Dis J 26:300–305. doi: 10.1097/01.inf.0000257454.74513.07",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Ligges U, Machler M. 2003. Scatterplot3d - an R Package for Visualizing Multivariate data. J Stat Softw 8:1–20.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Lin SM, Du P, Huber W, Kibbe WA. 2008. Model-based variance-stabilizing transformation for Illumina microarray data. Nucleic Acids Res 36:e11. doi: 10.1093/nar/gkm1075",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Millstein J, Zhang B, Zhu J, Schadt EE. 2009. Disentangling molecular relationships with a causal inference test. BMC Genet 10:23. doi: 10.1186/1471-2156-10-23",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Morley M, Molony CM, Weber TM, Devlin JL, Ewens KG, Spielman RS, et al.. 2004. Genetic analysis of genome-wide variation in human gene expression. Nature 430:743–747. doi: 10.1038/nature02797",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Nakaya HI, Wrammert J, Lee EK, Racioppi L, Marie-Kunze S, Haining WN, et al.. 2011. Systems biology of vaccination for seasonal influenza in humans. Nat Immunol 12:786–795. doi: 10.1038/ni.2067",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Naukkarinen J, Surakka I, Pietilainen KH, Rissanen A, Salomaa V, Ripatti S, et al.. 2010. Use of genome-wide expression data to mine the “Gray Zone” of GWA studies leads to novel candidate obesity genes. PLOS Genet 6:e1000976. doi: 10.1371/journal.pgen.1000976",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Nicolae DL, Gamazon E, Zhang W, Duan S, Dolan ME, Cox NJ. 2010. Trait-associated SNPs are more likely to be eQTLs: annotation to enhance discovery from GWAS. PLOS Genet 6:e1000888. doi: 10.1371/journal.pgen.1000888",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Pearl J. 2010. An introduction to causal inference. Int J Biostat 6:1–59. doi: 10.2202/1557-4679.1203",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Purcell S, Neale B, Todd-Brown K, Thomas L, Ferreira MA, Bender D, et al.. 2007. PLINK: a tool set for whole-genome association and population-based linkage analyses. Am J Hum Genet 81:559–575. doi: 10.1086/519795",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "R Development Core Team. 2009. R: a language and environment for statistical computing. doi: 10.1007/s10985-007-9065-x",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "Rotival M, Zeller T, Wild PS, Maouche S, Szymczak S, Schillert A, et al.. 2011. Integrating genome-wide genetic variations and monocyte expression data reveals trans-regulated gene modules in humans. PLOS Genet 7:e1002367. doi: 10.1371/journal.pgen.1002367",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Schadt EE, Lamb J, Yang X, Zhu J, Edwards S, Guhathakurta D, et al.. 2005. An integrative genomics approach to infer causal associations between gene expression and disease. Nat Genet 37:710–717. doi: 10.1038/ng1589",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Smith W, Andrewes CH, Laidlaw PP. 1933. A virus obtained from influenza patients. Lancet 222:66–68. doi: 10.1016/S0140-6736(00)78541-2",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Srivastava B, Blazejewska P, Hessmann M, Bruder D, Geffers R, Mauel S, et al.. 2009. Host genetic background strongly influences the response to influenza a virus infections. PLOS ONE 4:e4857. doi: 10.1371/journal.pone.0004857",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Stranger BE, Forrest MS, Dunning M, Ingle CE, Beazley C, Thorne N, et al.. 2007. Relative impact of nucleotide and copy number variation on gene expression phenotypes. Science 315:848–853. doi: 10.1126/science.1136678",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Tan PL, Jacobson RM, Poland GA, Jacobsen SJ, Pankratz VS. 2001. Twin studies of immunogenicity–determining the genetic contribution to vaccine failure. Vaccine 19:2434–2439. doi: 10.1016/S0264-410X(00)00468-0",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Trammell RA, Toth LA. 2008. Genetic susceptibility and resistance to influenza infection and disease in humans and mice. Expert Rev Mol Diagn 8:515–529. doi: 10.1586/14737159.8.4.515",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "World Health Organization. 2009. Seasonal Influenza. World Health Organization Factsheet No. 211.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Zhu W, Higgs BW, Morehouse C, Streicher K, Ambrose CS, Woo J, et al.. 2010. A whole genome transcriptional analysis of the early immune response induced by live attenuated and inactivated influenza vaccines in young children. Vaccine 28:2865–2876. doi: 10.1016/j.vaccine.2010.01.060",
+   "item": "bib32"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "World Health Organization, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Smith et al., 1933",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Trammell and Toth, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Srivastava et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Klein et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Tan et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Morley et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stranger et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bullaughey et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Innocenti et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rotival et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Emilsson et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Cookson et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Naukkarinen et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nicolae et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rotival et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Barreiro et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schadt et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Amit et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhu et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bucasas et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Nakaya et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Pearl, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Millstein et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dowdle et al., 1979",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Frank et al., 1980",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bucasas et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lin et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Du et al., 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "R Development Core Team, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kent, 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bucasas et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Purcell et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ligges and Machler, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dennis et al., 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Millstein et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

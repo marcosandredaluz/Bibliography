@@ -1,0 +1,1142 @@
+{
+ "id": "elife-00173_limpo",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "limpo",
+ "fonte": "elife-00173.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Adrain C, Strisovsky K, Zettl M, Hu L, Lemberg MK, Freeman M. 2011. Mammalian EGF receptor activation by the rhomboid protease RHBDL2. EMBO Rep 12:421–427.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Akiyama Y, Maegawa S. 2007. Sequence features of substrates required for cleavage by GlpG, an Escherichia coli rhomboid protease. Mol Microbiol 64:1028–1037.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Antalis TM, Buzza MS, Hodge KM, Hooper JD, Netzel-Arnett S. 2010. The cutting edge: membrane-anchored serine protease activities in the pericellular microenvironment. Biochem J 428:325–346.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Baker RP, Urban S. 2012. Architectural and thermodynamic principles underlying intramembrane protease function. Nat Chem Biol 8:759–768.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Baker RP, Wijetilaka R, Urban S. 2006. Two plasmodium rhomboid proteases preferentially cleave different adhesins implicated in all invasive stages of malaria. PLoS Pathog 2:e113.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Baker RP, Young K, Feng L, Shi Y, Urban S. 2007. Enzymatic analysis of a rhomboid intramembrane protease implicates transmembrane helix 5 as the lateral substrate gate. Proc Natl Acad Sci USA 104:8257–8262.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Blobel CP, Carpenter G, Freeman M. 2009. The role of protease activity in ErbB biology. Exp Cell Res 315:671–682.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Bondar AN, del Val C, White SH. 2009. Rhomboid protease dynamics and lipid interactions. Structure 17:395–405.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Brown MS, Ye J, Rawson RB, Goldstein JL. 2000. Regulated intramembrane proteolysis: a control mechanism conserved from bacteria to humans. Cell 100:391–398.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "De Strooper B, Annaert W, Cupers P, Saftig P, Craessaerts K, Mumm JS, et al.. 1999. A presenilin-1-dependent gamma-secretase-like protease mediates release of Notch intracellular domain. Nature 398:518–522.",
+   "item": "bib10"
+  },
+  {
+   "indice": 10,
+   "texto": "De Strooper B, Saftig P, Craessaerts K, Vanderstichele H, Guhde G, Annaert W, et al.. 1998. Deficiency of presenilin-1 inhibits the normal cleavage of amyloid precursor protein. Nature 391:387–390.",
+   "item": "bib11"
+  },
+  {
+   "indice": 11,
+   "texto": "Eaton GR, Eaton SS, Barr DP, Weber RT. 2010. Chapter 3: important principles for quantitative EPR. Quantitative EPR:25–36.",
+   "item": "bib12"
+  },
+  {
+   "indice": 12,
+   "texto": "Erez E, Fass D, Bibi E. 2009. How intramembrane proteases bury hydrolytic reactions in the membrane. Nature 459:371–378.",
+   "item": "bib13"
+  },
+  {
+   "indice": 13,
+   "texto": "Fast PG. 1966. A comparative study of the phospholipids and fatty acids of some insects. Lipids 1:209–215.",
+   "item": "bib14"
+  },
+  {
+   "indice": 14,
+   "texto": "Fluhrer R, Grammer G, Israel L, Condron MM, Haffner C, Friedmann E, et al.. 2006. A gamma-secretase-like intramembrane cleavage of TNFalpha by the GxGD aspartyl protease SPPL2b. Nat Cell Biol 8:894–896.",
+   "item": "bib15"
+  },
+  {
+   "indice": 15,
+   "texto": "Fraering PC, Ye W, Strub JM, Dolios G, LaVoie MJ, Ostaszewski BL, et al.. 2004. Purification and characterization of the human gamma-secretase complex. Biochemistry 43:9774–9789.",
+   "item": "bib16"
+  },
+  {
+   "indice": 16,
+   "texto": "Friedmann E, Hauben E, Maylandt K, Schleeger S, Vreugde S, Lichtenthaler SF, et al.. 2006. SPPL2a and SPPL2b promote intramembrane proteolysis of TNFalpha in activated dendritic cells to trigger IL-12 production. Nat Cell Biol 8:843–848.",
+   "item": "bib17"
+  },
+  {
+   "indice": 17,
+   "texto": "Ha Y. 2009. Structure and mechanism of intramembrane protease. Semin Cell Dev Biol 20:240–250.",
+   "item": "bib18"
+  },
+  {
+   "indice": 18,
+   "texto": "Kinch LN, Ginalski K, Grishin NV. 2006. Site-2 protease regulated intramembrane proteolysis: sequence homologs suggest an ancient signaling cascade. Protein Sci 15:84–93.",
+   "item": "bib19"
+  },
+  {
+   "indice": 19,
+   "texto": "Kirkin V, Cahuzac N, Guardiola-Serrano F, Huault S, Luckerath K, Friedmann E, et al.. 2007. The Fas ligand intracellular domain is released by ADAM10 and SPPL2a cleavage in T-cells. Cell Death Differ 14:1678–1687.",
+   "item": "bib20"
+  },
+  {
+   "indice": 20,
+   "texto": "Lemberg MK, Freeman M. 2007. Functional and evolutionary implications of enhanced genomic analysis of rhomboid intramembrane proteases. Genome Res 17:1634–1646.",
+   "item": "bib21"
+  },
+  {
+   "indice": 21,
+   "texto": "Lemberg MK, Menendez J, Misik A, Garcia M, Koth CM, Freeman M. 2005. Mechanism of intramembrane proteolysis investigated with purified rhomboid proteases. EMBO J 24:464–472.",
+   "item": "bib22"
+  },
+  {
+   "indice": 22,
+   "texto": "Li SC, Goto NK, Williams KA, Deber CM. 1996. Alpha-helical, but not beta-sheet, propensity of proline is determined by peptide environment. Proc Natl Acad Sci USA 93:6676–6681.",
+   "item": "bib23"
+  },
+  {
+   "indice": 23,
+   "texto": "López-Otín C, Bond JS. 2008. Proteases: multifunctional enzymes in life and disease. J Biol Chem 283:30433–30437.",
+   "item": "bib24"
+  },
+  {
+   "indice": 24,
+   "texto": "Makinoshima H, Glickman MS. 2005. Regulation of Mycobacterium tuberculosis cell envelope composition and virulence by intramembrane proteolysis. Nature 436:406–409.",
+   "item": "bib25"
+  },
+  {
+   "indice": 25,
+   "texto": "Monné M, Hermansson M, von Heijne G. 1999a. A turn propensity scale for transmembrane helices. J Mol Biol 288:141–145.",
+   "item": "bib26"
+  },
+  {
+   "indice": 26,
+   "texto": "Monné M, Nilsson I, Elofsson A, von Heijne G. 1999b. Turns in transmembrane helices: determination of the minimal length of a “helical hairpin” and derivation of a fine-grained turn propensity scale. J Mol Biol 293:807–814.",
+   "item": "bib27"
+  },
+  {
+   "indice": 27,
+   "texto": "Ng NM, Pike RN, Boyd SE. 2009. Subsite cooperativity in protease specificity. Biol Chem 390:401–407.",
+   "item": "bib28"
+  },
+  {
+   "indice": 28,
+   "texto": "Peschon JJ, Slack JL, Reddy P, Stocking KL, Sunnarborg SW, Lee DC, et al.. 1998. An essential role for ectodomain shedding in mammalian development. Science 282:1281–1284.",
+   "item": "bib29"
+  },
+  {
+   "indice": 29,
+   "texto": "Rawson RB, Zelenski NG, Nijhawan D, Ye J, Sakai J, Hasan MT, et al.. 1997. Complementation cloning of S2P, a gene encoding a putative metalloprotease required for intramembrane cleavage of SREBPs. Mol Cell 1:47–57.",
+   "item": "bib30"
+  },
+  {
+   "indice": 30,
+   "texto": "Sato T, Nyborg AC, Iwata N, Diehl TS, Saido TC, Golde TE, et al.. 2006. Signal peptide peptidase: biochemical properties and modulation by nonsteroidal antiinflammatory drugs. Biochemistry 45:8649–8656.",
+   "item": "bib31"
+  },
+  {
+   "indice": 31,
+   "texto": "Schechter I. 2005. Mapping of the active site of proteases in the 1960s and rational design of inhibitors/drugs in the 1990s. Curr Protein Pept Sci 6:501–512.",
+   "item": "bib32"
+  },
+  {
+   "indice": 32,
+   "texto": "Schramm CA, Hannigan BT, Donald JE, Keasar C, Saven JG, Degrado WF, et al.. 2012. Knowledge-based potential for positioning membrane-associated structures and assessing residue-specific energetic contributions. Structure 20:924–935.",
+   "item": "bib33"
+  },
+  {
+   "indice": 33,
+   "texto": "Stevenson LG, Strisovsky K, Clemmer KM, Bhatt S, Freeman M, Rather PN. 2007. Rhomboid protease AarA mediates quorum-sensing in Providencia stuartii by activating TatA of the twin-arginine translocase. Proc Natl Acad Sci USA 104:1003–1008.",
+   "item": "bib34"
+  },
+  {
+   "indice": 34,
+   "texto": "Strisovsky K, Sharpe HJ, Freeman M. 2009. Sequence-specific intramembrane proteolysis: identification of a recognition motif in rhomboid substrates. Mol Cell 36:1048–1059.",
+   "item": "bib35"
+  },
+  {
+   "indice": 35,
+   "texto": "Urban S. 2009. Making the cut: central roles of intramembrane proteolysis in pathogenic microorganisms. Nat Rev Microbiol 7:411–423.",
+   "item": "bib36"
+  },
+  {
+   "indice": 36,
+   "texto": "Urban S. 2010. Taking the plunge: integrating structural, enzymatic and computational insights into a unified model for membrane-immersed rhomboid proteolysis. Biochem J 425:501–512.",
+   "item": "bib37"
+  },
+  {
+   "indice": 37,
+   "texto": "Urban S, Baker RP. 2008. In vivo analysis reveals substrate-gating mutants of a rhomboid intramembrane protease display increased activity in living cells. Biol Chem 389:1107–1115.",
+   "item": "bib38"
+  },
+  {
+   "indice": 38,
+   "texto": "Urban S, Freeman M. 2003. Substrate specificity of rhomboid intramembrane proteases is governed by helix-breaking residues in the substrate transmembrane domain. Mol Cell 11:1425–1434.",
+   "item": "bib39"
+  },
+  {
+   "indice": 39,
+   "texto": "Urban S, Lee JR, Freeman M. 2001. Drosophila rhomboid-1 defines a family of putative intramembrane serine proteases. Cell 107:173–182.",
+   "item": "bib40"
+  },
+  {
+   "indice": 40,
+   "texto": "Urban S, Lee JR, Freeman M. 2002. A family of rhomboid intramembrane proteases activates all membrane-tether EGF ligands in Drosophila. EMBO J 21:4277–4286.",
+   "item": "bib41"
+  },
+  {
+   "indice": 41,
+   "texto": "Urban S, Wolfe MS. 2005. Reconstitution of intramembrane proteolysis in vitro reveals that pure rhomboid is sufficient for catalysis and specificity. Proc Natl Acad Sci USA 102:1883–1888.",
+   "item": "bib42"
+  },
+  {
+   "indice": 42,
+   "texto": "Vinothkumar KR, Strisovsky K, Andreeva A, Christova Y, Verhelst S, Freeman M. 2010. The structural basis for catalysis and substrate specificity of a rhomboid protease. EMBO J 29:3797–3809.",
+   "item": "bib43"
+  },
+  {
+   "indice": 43,
+   "texto": "Wolfe MS, Xia W, Ostaszewski BL, Diehl TS, Kimberly WT, Selkoe DJ. 1999. Two transmembrane aspartates in presenilin-1 required for presenilin endoproteolysis and gamma-secretase activity. Nature 398:513–517.",
+   "item": "bib44"
+  },
+  {
+   "indice": 44,
+   "texto": "Wu Z, Yan N, Feng L, Oberstein A, Yan H, Baker RP, et al.. 2006. Structural analysis of a rhomboid family intramembrane protease reveals a gating mechanism for substrate entry. Nat Struct Mol Biol 13:1084–1091.",
+   "item": "bib45"
+  },
+  {
+   "indice": 45,
+   "texto": "Yang J, Spek EJ, Gong Y, Zhou H, Kallenbach NR. 1997. The role of context on alpha-helix stabilization: host-guest analysis in a mixed background peptide model. Protein Sci 6:1264–1272.",
+   "item": "bib46"
+  },
+  {
+   "indice": 46,
+   "texto": "Zhou Y, Moin SM, Urban S, Zhang Y. 2012. An internal water-retention site in the rhomboid intramembrane protease GlpG ensures catalytic efficiency. Structure 20:1255–1263.",
+   "item": "bib47"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "López–Otín and Bond, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schechter, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schechter, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib32"
+   ],
+   "referencias": [
+    31
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ng et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "López–Otín and Bond, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brown et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Erez et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "De Strooper et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1999",
+   "tipo": "xref",
+   "itens": [
+    "bib10"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wolfe et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib44"
+   ],
+   "referencias": [
+    43
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fluhrer et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Friedmann et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kirkin et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Rawson et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    29
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Makinoshima and Glickman, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib40"
+   ],
+   "referencias": [
+    39
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "2002",
+   "tipo": "xref",
+   "itens": [
+    "bib41"
+   ],
+   "referencias": [
+    40
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib36"
+   ],
+   "referencias": [
+    35
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Kinch et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lemberg and Freeman, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vinothkumar et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib43"
+   ],
+   "referencias": [
+    42
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Erez et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brown et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban and Freeman, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Akiyama and Maegawa, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strisovsky et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bondar et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lemberg et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strisovsky et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fraering et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fluhrer et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Friedmann et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sato et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    30
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Fast, 1966",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban and Wolfe, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban and Freeman, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baker et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban and Baker, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ha, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baker and Urban, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib37"
+   ],
+   "referencias": [
+    36
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stevenson et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Schramm et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib33"
+   ],
+   "referencias": [
+    32
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ha, 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strisovsky et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Strisovsky et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib35"
+   ],
+   "referencias": [
+    34
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baker et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban and Baker, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Monné et al., 1999a",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1999b",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Peschon et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban and Freeman, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lemberg et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban and Wolfe, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Adrain et al., 2011",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Monné et al., 1999a",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1999b",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Yang et al., 1997",
+   "tipo": "xref",
+   "itens": [
+    "bib46"
+   ],
+   "referencias": [
+    45
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Erez et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Monné et al., 1999a",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1999b",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Monné et al., 1999b",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban and Freeman, 2003",
+   "tipo": "xref",
+   "itens": [
+    "bib39"
+   ],
+   "referencias": [
+    38
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Akiyama and Maegawa, 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Stevenson et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib34"
+   ],
+   "referencias": [
+    33
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baker and Urban, 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Zhou et al., 2012",
+   "tipo": "xref",
+   "itens": [
+    "bib47"
+   ],
+   "referencias": [
+    46
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Blobel et al., 2009",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Antalis et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban and Wolfe, 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib42"
+   ],
+   "referencias": [
+    41
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baker et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baker et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Monné et al., 1999b",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Wu et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib45"
+   ],
+   "referencias": [
+    44
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Eaton et al., 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Baker et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Urban and Baker, 2008",
+   "tipo": "xref",
+   "itens": [
+    "bib38"
+   ],
+   "referencias": [
+    37
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

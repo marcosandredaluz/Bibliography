@@ -1,0 +1,662 @@
+{
+ "id": "elife-00105_erros",
+ "estilo": "jats-eLife",
+ "sistema": "autor-data",
+ "locale": "en",
+ "conjunto": "reais",
+ "variante": "erros",
+ "fonte": "elife-00105.xml",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Akbar AN, Borthwick NJ, Wickremasinghe RG, Panayoitidis P, Pilling D, Bofill M, et al.. 1996. Interleukin-2 receptor common gamma-chain signaling cytokines regulate activated T cell apoptosis in response to growth factor withdrawal: selective induction of anti-apoptotic (bcl-2, bcl-xL) but not pro-apoptotic (bax, bcl-xS) gene expression. Eur J Immunol 26:294–299.",
+   "item": "bib1"
+  },
+  {
+   "indice": 1,
+   "texto": "Albert ML, Sauter B, Bhardwaj N. 1998. Dendritic cells acquire antigen from apoptotic cells and induce class I-restricted CTLs. Nature 392:86–89.",
+   "item": "bib2"
+  },
+  {
+   "indice": 2,
+   "texto": "Bendele A, McComb J, Gould T, McAbee T, Sennello G, Chlipala E, et al.. 1999. Animal models of arthritis: relevance to human disease. Toxicol Pathol 27:134–142.",
+   "item": "bib3"
+  },
+  {
+   "indice": 3,
+   "texto": "Bierer BE, Mattila PS, Standaert RF, Herzenberg LA, Burakoff SJ, Crabtree G, et al.. 1990. Two distinct signal transmission pathways in T lymphocytes are inhibited by complexes formed between an immunophilin and either FK506 or rapamycin. Proc Natl Acad Sci USA 87:9231–9235.",
+   "item": "bib4"
+  },
+  {
+   "indice": 4,
+   "texto": "Brand DD, Latham KA, Rosloniec EF. 2007. Collagen-induced arthritis. Nat Protoc 2:1269–1275.",
+   "item": "bib5"
+  },
+  {
+   "indice": 5,
+   "texto": "Clark RL, Cuttino JTJ, Anderle SK, Cromartie WJ, Schwab JH. 1979. Radiologic analysis of arthritis in rats after systemic injection of streptococcal cell walls. Arthritis Rheum 22:25–35.",
+   "item": "bib6"
+  },
+  {
+   "indice": 6,
+   "texto": "Doi R, Tangoku A, Inoue K, Chowdhury P, Rayford PL. 1992. Effects of FK506 on exocrine pancreas in rats. Pancreas 7:197–204.",
+   "item": "bib7"
+  },
+  {
+   "indice": 7,
+   "texto": "Dumont FJ, Kastner C, Iacovone FJ, Fischer PA. 1994. Quantitative and temporal analysis of the cellular interaction of FK-506 and rapamycin in T-lymphocytes. J Pharmacol Exp Ther 268:32–41.",
+   "item": "bib8"
+  },
+  {
+   "indice": 8,
+   "texto": "Duperrier K, Velten FW, Bohlender J, Demory A, Metharom P, Goerdt S. 2005. Immunosuppressive agents mediate reduced allostimulatory properties of myeloid-derived dendritic cells despite induction of divergent molecular phenotypes. Mol Immunol 42:1531–1540.",
+   "item": "bib9"
+  },
+  {
+   "indice": 9,
+   "texto": "Hackstein H, Thomson AW. 2004. Dendritic cells: emerging pharmacological targets of immunosuppressive drugs. Nat Rev Immunol 4:24–34.",
+   "item": "bib11"
+  },
+  {
+   "indice": 10,
+   "texto": "Horigome A, Hirano T, Oka K. 1998. Tacrolimus-induced apoptosis and its prevention by interleukins in mitogen-activated human peripheral-blood mononuclear cells. Immunopharmacology 39:21–30.",
+   "item": "bib12"
+  },
+  {
+   "indice": 11,
+   "texto": "Hildeman DA, Zhu Y, Mitchell TC, Bouillet P, Strasser A, Kappler J, et al.. 2002. Activated T cell death in vivo mediated by proapoptotic bcl-2 family member bim. Immunity 16:759–767.",
+   "item": "bib13"
+  },
+  {
+   "indice": 12,
+   "texto": "Inaba K, Swiggard WJ, Steinman RM, Romani N, Schuler G. 2001. Isolation of dendritic cells. Curr Protoc Immunol.",
+   "item": "bib14"
+  },
+  {
+   "indice": 13,
+   "texto": "Ito T, Kimura T, Furukawa M, Yamaguchi H, Goto M, Nakano I, et al.. 1994. Protective effects of gabexate mesilate on acute pancreatitis induced by tacrolimus (FK-506) in rats in which the pancreas was stimulated by caerulein. J Gastroenterol 29:305–313.",
+   "item": "bib15"
+  },
+  {
+   "indice": 14,
+   "texto": "Lee YR, Yang IH, Lee YH, Im SA, Song S, Li H, et al.. 2005. Cyclosporin A and tacrolimus, but not rapamycin, inhibit MHC-restricted antigen presentation pathways in dendritic cells. Blood 105:3951–3955.",
+   "item": "bib16"
+  },
+  {
+   "indice": 15,
+   "texto": "Lenardo MJ. 1991. Interleukin-2 programs mouse alpha beta T lymphocytes for apoptosis. Nature 353:858–861.",
+   "item": "bib17"
+  },
+  {
+   "indice": 16,
+   "texto": "Longman RS, Braun D, Pellegrini S, Rice CM, Darnell RB, Albert ML. 2007. Dendritic-cell maturation alters intracellular signaling networks, enabling differential effects of IFN-alpha/beta on antigen cross-presentation. Blood 109:1113–1122.",
+   "item": "bib18"
+  },
+  {
+   "indice": 17,
+   "texto": "Migita K, Eguchi K, Kawabe Y, Tsukada T, Mizokami A, Nagataki S. 1995. FK506 augments activation-induced programmed cell death of T lymphocytes in vivo. J Clin Invest 96:727–732.",
+   "item": "bib19"
+  },
+  {
+   "indice": 18,
+   "texto": "Migita K, Eguchi K, Kawabe Y, Origuchi T, Tominaga M, Nagataki S. 1997. FK506 potentiates steroid-induced T-cell apoptosis. Transplantation 64:1365–1369.",
+   "item": "bib20"
+  },
+  {
+   "indice": 19,
+   "texto": "Migita K, Origuchi T, Kawabe Y, Tominaga M, Ida H, Kawakami A, et al.. 1999. FK506 markedly enhances apoptosis of antigen-stimulated peripheral T cells by down-regulation of Bcl-xL. Transplantation 68:1018–1023.",
+   "item": "bib21"
+  },
+  {
+   "indice": 20,
+   "texto": "Orange DE, Jegathesan M, Blachere NE, Frank MO, Scher HI, Albert ML, et al.. 2004. Effective antigen cross-presentation by prostate cancer patients' dendritic cells: implications for prostate cancer immunotherapy. Prostate Cancer Prostatic Dis 7:63–72.",
+   "item": "bib22"
+  },
+  {
+   "indice": 21,
+   "texto": "Popov I, Li M, Zheng X, San H, Zhang X, Ichim TE, et al.. 2006. Preventing autoimmune arthritis using antigen-specific immature dendritic cells: a novel tolerogenic vaccine. Arthritis Res Ther 8:R141.",
+   "item": "bib23"
+  },
+  {
+   "indice": 22,
+   "texto": "Sabado RL, Bhardwaj N. 2010. Directing dendritic cell immunotherapy towards successful cancer treatment. Immunotherapy 2:37–56.",
+   "item": "bib24"
+  },
+  {
+   "indice": 23,
+   "texto": "Siekierka JJ, Hung SH, Poe M, Lin CS, Sigal NH. 1989a. A cytosolic binding protein for the immunosuppressant FK506 has peptidyl-prolyl isomerase activity but is distinct from cyclophilin. Nature 341:755–757.",
+   "item": "bib25"
+  },
+  {
+   "indice": 24,
+   "texto": "Szabo G, Gavala C, Mandrekar P. 2001. Tacrolimus and cyclosporine A inhibit allostimulatory capacity and cytokine production of human myeloid dendritic cells. J Investig Med 49:442–449.",
+   "item": "bib27"
+  },
+  {
+   "indice": 25,
+   "texto": "Takagishi K, Yamamoto M, Nishimura A, Yamasaki G, Kanazawa N, Hotokebuchi T, et al.. 1989. Effects of FK-506 on collagen arthritis in mice. Transplant Proc 21:1053–1055.",
+   "item": "bib28"
+  },
+  {
+   "indice": 26,
+   "texto": "Turnquist HR, Raimondi G, Zahorchak AF, Fischer RT, Wang Z, Thomson AW. 2007. Rapamycin-conditioned dendritic cells are poor stimulators of allogeneic CD4+ T cells, but enrich for antigen-specific Foxp3+ T regulatory cells and promote organ transplant tolerance. J Immunol 178:7018–7031.",
+   "item": "bib29"
+  },
+  {
+   "indice": 27,
+   "texto": "Vanier LE, Prud'homme GJ. 1992. Cyclosporin A markedly enhances superantigen-induced peripheral T cell deletion and inhibits anergy induction. J Exp Med 176:37–46.",
+   "item": "bib30"
+  },
+  {
+   "indice": 28,
+   "texto": "Woltman AM, de Fijter JW, Kamerling SW, Paul LC, Daha MR, van Kooten C. 2000. The effect of calcineurin inhibitors and corticosteroids on the differentiation of human dendritic cells. Eur J Immunol 30:1807–1812.",
+   "item": "bib31"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Bierer et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Horigome et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Migita et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woltman et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Szabo et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Duperrier et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hackstein and Thomson, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Popov et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Popov et al., 2006",
+   "tipo": "xref",
+   "itens": [
+    "bib23"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Turnquist et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib29"
+   ],
+   "referencias": [
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woltman et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Szabo et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib27"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Duperrier et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hackstein and Thomson, 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib11"
+   ],
+   "referencias": [
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Albert et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib2"
+   ],
+   "referencias": [
+    1
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Orange et al., 2004",
+   "tipo": "xref",
+   "itens": [
+    "bib22"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Woltman et al., 2000",
+   "tipo": "xref",
+   "itens": [
+    "bib31"
+   ],
+   "referencias": [
+    28
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Duperrier et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib9"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Siekierka et al., 1989b",
+   "tipo": "xref",
+   "itens": [
+    "bib26"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bierer et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bierer et al., 1990",
+   "tipo": "xref",
+   "itens": [
+    "bib4"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Vanier and Prud'homme, 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib30"
+   ],
+   "referencias": [
+    27
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Migita et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1997",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Horigome et al., 1998",
+   "tipo": "xref",
+   "itens": [
+    "bib12"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lenardo, 1991",
+   "tipo": "xref",
+   "itens": [
+    "bib17"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hildeman et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Akbar et al., 1996",
+   "tipo": "xref",
+   "itens": [
+    "bib1"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Hildeman et al., 2002",
+   "tipo": "xref",
+   "itens": [
+    "bib13"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Migita et al., 1995",
+   "tipo": "xref",
+   "itens": [
+    "bib19"
+   ],
+   "referencias": [
+    17
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "1997",
+   "tipo": "xref",
+   "itens": [
+    "bib20"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lee et al., 2005",
+   "tipo": "xref",
+   "itens": [
+    "bib16"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takagishi et al., 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Doi et al., 1992",
+   "tipo": "xref",
+   "itens": [
+    "bib7"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Ito et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib15"
+   ],
+   "referencias": [
+    13
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Siekierka et al., 1989a",
+   "tipo": "xref",
+   "itens": [
+    "bib25"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Dumont et al., 1994",
+   "tipo": "xref",
+   "itens": [
+    "bib8"
+   ],
+   "referencias": [
+    7
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Takagishi et al., 1989",
+   "tipo": "xref",
+   "itens": [
+    "bib28"
+   ],
+   "referencias": [
+    25
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Sabado and Bhardwaj, 2010",
+   "tipo": "xref",
+   "itens": [
+    "bib24"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Migita et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib21"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Longman et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib18"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Inaba et al., 2001",
+   "tipo": "xref",
+   "itens": [
+    "bib14"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Brand et al., 2007",
+   "tipo": "xref",
+   "itens": [
+    "bib5"
+   ],
+   "referencias": [
+    4
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Clark et al., 1979",
+   "tipo": "xref",
+   "itens": [
+    "bib6"
+   ],
+   "referencias": [
+    5
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Bendele et al., 1999",
+   "tipo": "xref",
+   "itens": [
+    "bib3"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "paragrafo"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "Siekierka et al., 1989b",
+   "item": "bib26"
+  }
+ ],
+ "nao_citacoes": [],
+ "alertas_proibidos": []
+}

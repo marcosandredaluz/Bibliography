@@ -1,0 +1,663 @@
+{
+ "id": "treino_apa_fr-FR_erros",
+ "estilo": "apa",
+ "sistema": "autor-data",
+ "locale": "fr-FR",
+ "conjunto": "treino",
+ "variante": "erros",
+ "referencias": [
+  {
+   "indice": 0,
+   "texto": "Alexandre, E., Philippe, J., & Payet, É. (2024). Prononcer quoi cher moi quarante enlever longtemps sang monter fumer attitude ou. Lecomte.",
+   "item": "it022"
+  },
+  {
+   "indice": 1,
+   "texto": "Choi, M., Fernandes, L., & Collin, A. (1987). Mois retrouver vol écouter précéder résoudre plutôt absolu mensonge. https://exemplo-treino.org/4412",
+   "item": "it004"
+  },
+  {
+   "indice": 2,
+   "texto": "Couturier, É., Carlier, T., & Faivre, T. (s. d.). Soumettre tenir nous expliquer chien bureau sombre aussitôt comment enfoncer dont. Epidemiologia & Prevenzione, 51(7), 609‑617. https://doi.org/10.99999/teste.treino.47592",
+   "item": "it024"
+  },
+  {
+   "indice": 3,
+   "texto": "da Meyer, B., Delahaye, L., Guillon, S., & Lesage, P. (1979). Docteur aller humide corde inquiétude très parfois moment sûr entendre entourer jambe troubler chat. Cadernos de Saúde Pública, 36(2), 334‑346.",
+   "item": "it001"
+  },
+  {
+   "indice": 4,
+   "texto": "De Oliveira, A., & Klein, M. (2014). Garçon vague sueur acheter soudain air courant lisser précipiter. Menard.",
+   "item": "it019"
+  },
+  {
+   "indice": 5,
+   "texto": "Dupuy-Maréchal, G., Rey, M., Gaillard, N., & Guillot, X. (1984). Bas rang distinguer absence relever durant naturel mensonge. Revista de Saúde Pública, 18(3), 837‑857. https://doi.org/10.99999/teste.treino.25028",
+   "item": "extra0"
+  },
+  {
+   "indice": 6,
+   "texto": "Entretenir clair tranquille remettre ensemble souvent depuis, Acte jurid. No 1204 (1982). https://leis-treino.gov/3106",
+   "item": "it013"
+  },
+  {
+   "indice": 7,
+   "texto": "Hamel, H., & Lambert, M. (1992). Celui tromper derrière remarquer me subir nous près éloigner soit train. https://exemplo-treino.org/7156",
+   "item": "it012"
+  },
+  {
+   "indice": 8,
+   "texto": "Henry, N. (1983). Escalier cercle réveiller autour bas grand route cruel. Epidemiologia & Prevenzione, 36(3), 181‑198. https://doi.org/10.99999/teste.treino.27397",
+   "item": "it021"
+  },
+  {
+   "indice": 9,
+   "texto": "Hervé, A., Guichard, N., Aubert, P., & Dumas, H. (1979). Position queue mensonge contenir vivant défaut feuille installer. Vaillant.",
+   "item": "it017"
+  },
+  {
+   "indice": 10,
+   "texto": "Lebreton, É. (2014). Quarante enfance moitié ajouter contenter veille haïr. Dijoux Rodriguez S.A.S.",
+   "item": "it010"
+  },
+  {
+   "indice": 11,
+   "texto": "Lefèvre-Roger, I., Pons, D., Martineau, R., & Gauthier, V. (2019). Circonstance rideau point résoudre jouer terreur examiner sentiment soin douleur son vaste. One Health, 35(6), 856‑868.",
+   "item": "it000"
+  },
+  {
+   "indice": 12,
+   "texto": "Li, W. (2002). Papa plaire signer heureux porter. https://exemplo-treino.org/4291",
+   "item": "it003"
+  },
+  {
+   "indice": 13,
+   "texto": "Maillot, M. (1995). Remarquer notre or cesse gris ignorer ruine déjà risquer. Epidemiologia & Prevenzione, 17(10), 47‑51. https://doi.org/10.99999/teste.treino.21744",
+   "item": "it016"
+  },
+  {
+   "indice": 14,
+   "texto": "Ministerio de Sanidad (España). (1985). Près parvenir bleu français désespoir content exister poids. One Health, 80(1), 237‑245. https://doi.org/10.99999/teste.treino.63438",
+   "item": "it008"
+  },
+  {
+   "indice": 15,
+   "texto": "Organização Pan-Americana da Saúde. (2017). Prince jambe séparer pont montrer garde sauter circonstance. Gaceta Sanitaria, 69(6), 465‑481. https://doi.org/10.99999/teste.treino.79504",
+   "item": "it009"
+  },
+  {
+   "indice": 16,
+   "texto": "Payet, M., Joseph, B., Hernandez, F., & Bodin, P. (1988a). Conseil présenter sûr créer pouvoir gouvernement. In M. Gallet (Éd.), Déjà maison lire cerveau madame mari (p. 118‑133). Lévy.",
+   "item": "it025"
+  },
+  {
+   "indice": 17,
+   "texto": "Payet, M., Joseph, B., Hernandez, F., & Bodin, P. (1988b). Tâche commencer soutenir fuir étrange été. Revista de Saúde Pública, 25(4), 275‑291.",
+   "item": "it026"
+  },
+  {
+   "indice": 18,
+   "texto": "Pham, T. H., De Sousa, A., & Normand, R. (1986). Travail permettre croix trouver content mari. Gaceta Sanitaria, 70(3), 779‑797. https://doi.org/10.99999/teste.treino.20872",
+   "item": "it005"
+  },
+  {
+   "indice": 19,
+   "texto": "Raynaud, P., Breton, A., Léger, T., Mercier, L., Evrard, V., & Duhamel, A. (2019). Même doux vêtement composer penser hasard grand cesse. Revista de Saúde Pública, 61(8), 868‑874. https://doi.org/10.99999/teste.treino.84697",
+   "item": "it014"
+  },
+  {
+   "indice": 20,
+   "texto": "Richard, M., & Martinez, A. (1980). Sept vieillard nombreux ouvert en saint clair. BMC Public Health, 46(2), 348‑368.",
+   "item": "it023"
+  },
+  {
+   "indice": 21,
+   "texto": "Santamaria Santiago, R., Alves, M., & Allard, V. (1988). Demi âgé agiter large ennemi victime court trait éviter seul grand donc. In M. Fabre (Éd.), Recherche l’un vouloir chacun exécuter si anglais allumer enlever (p. 165‑180). Toussaint SARL.",
+   "item": "it002"
+  },
+  {
+   "indice": 22,
+   "texto": "Vallet, A., & Bigot, C. (1983). Voir terre problème sortir terminer est. Preventive Veterinary Medicine, 3(6), 580‑599. https://doi.org/10.99999/teste.treino.34988",
+   "item": "it015"
+  },
+  {
+   "indice": 23,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. (1996). Soutenir beau épaule nouveau mauvais et passé étoile. https://exemplo-treino.org/8439",
+   "item": "it011"
+  },
+  {
+   "indice": 24,
+   "texto": "Virginia-Maryland College of Veterinary Medicine. (2018). Source été verre saison part quart. Revista de Saúde Pública, 57(12), 542‑559.",
+   "item": "it007"
+  },
+  {
+   "indice": 25,
+   "texto": "von Marchal, J., & Boulay, J. (2005). Déchirer inutile mêler épais chanter ressembler nouveau écraser. Gaceta Sanitaria, 34(5), 229‑247. https://doi.org/10.99999/teste.treino.94314",
+   "item": "extra1"
+  },
+  {
+   "indice": 26,
+   "texto": "Wagner, Y., Pruvost, T., & Ruiz, T. (2016). Changement voyager personnage rouge. One Health, 50(3), 783‑802. https://doi.org/10.99999/teste.treino.80943",
+   "item": "it018"
+  }
+ ],
+ "citacoes": [
+  {
+   "texto": "Payet et al. (1988a)",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(De Oliveira & Klein, 2014; Henry, 1983; Li, 2002)",
+   "tipo": "parentetica",
+   "itens": [
+    "it003",
+    "it019",
+    "it021"
+   ],
+   "referencias": [
+    12,
+    4,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Payet et al., 1988b; Wagner et al., 2016)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it018"
+   ],
+   "referencias": [
+    17,
+    26
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lebreton, 2014; Organização Pan-Americana da Saúde, 2017; Payet et al., 1988b)",
+   "tipo": "parentetica",
+   "itens": [
+    "it026",
+    "it009",
+    "it010"
+   ],
+   "referencias": [
+    17,
+    15,
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Ministerio de Sanidad (España), 1985)",
+   "tipo": "parentetica",
+   "itens": [
+    "it008"
+   ],
+   "referencias": [
+    14
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Lefèvre-Roger et al. (2019)",
+   "tipo": "narrativa",
+   "itens": [
+    "it000"
+   ],
+   "referencias": [
+    11
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Payet et al., 1988a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Alexandre et al., 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Li (2002)",
+   "tipo": "narrativa",
+   "itens": [
+    "it003"
+   ],
+   "referencias": [
+    12
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Pham et al., 1986)",
+   "tipo": "parentetica",
+   "itens": [
+    "it005"
+   ],
+   "referencias": [
+    18
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Couturier et al., s. d.; De Oliveira & Klein, 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it019",
+    "it024"
+   ],
+   "referencias": [
+    4,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Henry, 1983; Payet et al., 1988a)",
+   "tipo": "parentetica",
+   "itens": [
+    "it025",
+    "it021"
+   ],
+   "referencias": [
+    16,
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Henry (1983)",
+   "tipo": "narrativa",
+   "itens": [
+    "it021"
+   ],
+   "referencias": [
+    8
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santamaria Santiago et al., 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Gremião et al., 1998; Virginia-Maryland College of Veterinary Medicine, 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006",
+    "it011"
+   ],
+   "referencias": [
+    null,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Richard & Martinez, 1980; Virginia-Maryland College of Veterinary Medicine, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023",
+    "it007"
+   ],
+   "referencias": [
+    20,
+    24
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lebreton, 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Raynaud et al., 2019)",
+   "tipo": "parentetica",
+   "itens": [
+    "it014"
+   ],
+   "referencias": [
+    19
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde, 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Choi et al., 1987; Santamaria Santiago et al., 1988; Virginia-Maryland College of Veterinary Medicine, 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it004",
+    "it002",
+    "it011"
+   ],
+   "referencias": [
+    1,
+    21,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lebreton, 2014)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010"
+   ],
+   "referencias": [
+    10
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Richard & Martinez, 1980)",
+   "tipo": "parentetica",
+   "itens": [
+    "it023"
+   ],
+   "referencias": [
+    20
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Payet et al. (1988a)",
+   "tipo": "narrativa",
+   "itens": [
+    "it025"
+   ],
+   "referencias": [
+    16
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(da Meyer et al., 1979)",
+   "tipo": "parentetica",
+   "itens": [
+    "it001"
+   ],
+   "referencias": [
+    3
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (1996)",
+   "tipo": "narrativa",
+   "itens": [
+    "it011"
+   ],
+   "referencias": [
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Santamaria Santiago et al., 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it002"
+   ],
+   "referencias": [
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Couturier et al., s. d.; Hamel & Lambert, 1992; Organização Pan-Americana da Saúde, 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it012",
+    "it009",
+    "it024"
+   ],
+   "referencias": [
+    7,
+    15,
+    2
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Alexandre et al., 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Entretenir clair tranquille remettre ensemble souvent depuis, 1982)",
+   "tipo": "parentetica",
+   "itens": [
+    "it013"
+   ],
+   "referencias": [
+    6
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lebreton, 2014; Maillot, 1995; Santamaria Santiago et al., 1988)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it016",
+    "it002"
+   ],
+   "referencias": [
+    10,
+    13,
+    21
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Hervé et al., 1979; Payet et al., 1988a; Virginia-Maryland College of Veterinary Medicine, 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it011",
+    "it025",
+    "it017"
+   ],
+   "referencias": [
+    23,
+    16,
+    9
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Organização Pan-Americana da Saúde, 2017)",
+   "tipo": "parentetica",
+   "itens": [
+    "it009"
+   ],
+   "referencias": [
+    15
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vallée et al., 1990)",
+   "tipo": "parentetica",
+   "itens": [
+    "it020"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Lebreton, 2014; Virginia-Maryland College of Veterinary Medicine, 1996)",
+   "tipo": "parentetica",
+   "itens": [
+    "it010",
+    "it011"
+   ],
+   "referencias": [
+    10,
+    23
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Vallet & Bigot, 1983)",
+   "tipo": "parentetica",
+   "itens": [
+    "it015"
+   ],
+   "referencias": [
+    22
+   ],
+   "contexto": "paragrafo"
+  },
+  {
+   "texto": "(Couturier et al., s. d., p. 54)",
+   "tipo": "parentetica",
+   "itens": [
+    "it024"
+   ],
+   "referencias": [
+    2
+   ],
+   "contexto": "direta"
+  },
+  {
+   "texto": "(Gremião et al., 1998)",
+   "tipo": "parentetica",
+   "itens": [
+    "it006"
+   ],
+   "referencias": [
+    null
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Virginia-Maryland College of Veterinary Medicine, 2018)",
+   "tipo": "parentetica",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "(Alexandre et al., 2024)",
+   "tipo": "parentetica",
+   "itens": [
+    "it022"
+   ],
+   "referencias": [
+    0
+   ],
+   "contexto": "tabela"
+  },
+  {
+   "texto": "Virginia-Maryland College of Veterinary Medicine (2018)",
+   "tipo": "narrativa",
+   "itens": [
+    "it007"
+   ],
+   "referencias": [
+    24
+   ],
+   "contexto": "legenda"
+  }
+ ],
+ "alertas_esperados": [
+  {
+   "ponto": "D",
+   "citacao": "(Gremião et al., 1998; Virginia-Maryland College of Veterinary Medicine, 1996)",
+   "item": "it006"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Vallée et al., 1990)",
+   "item": "it020"
+  },
+  {
+   "ponto": "D",
+   "citacao": "(Gremião et al., 1998)",
+   "item": "it006"
+  },
+  {
+   "ponto": "E",
+   "referencia": 5,
+   "item": "extra0"
+  },
+  {
+   "ponto": "E",
+   "referencia": 25,
+   "item": "extra1"
+  }
+ ],
+ "nao_citacoes": [
+  "élaboré par l'autrice (2026)"
+ ],
+ "alertas_proibidos": [
+  {
+   "ponto": "C",
+   "trecho": "Engager silence chance demande sueur rejoindre satisfaire anglais prix grain céder avant début"
+  },
+  {
+   "ponto": "F",
+   "motivo": "apendice_apos_referencias"
+  }
+ ]
+}
