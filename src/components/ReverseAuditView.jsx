@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import * as pdfjs from 'pdfjs-dist';
 import { Icone, useAviso } from './ui.jsx';
 import { normalizar } from '../lib/csl.js';
+import AuditResolutionModal, { AcoesResolucaoAlerta, BadgeAlvoAlerta } from './AuditResolutionModal.jsx';
+import SplitViewWordPdfModal from './SplitViewWordPdfModal.jsx';
 
 const STOPWORDS = new Set(
   'de da do das dos em no na nos nas para por com sem sobre entre como mais menos muito pouco tambem quando onde qual quais quem cujo cuja este esta estes estas esse essa esses essas aquele aquela aquilo isso isto um uma uns umas o a os as e ou mas se que nao sim ao aos pela pelo pelas pelos segundo conforme apud et al p pp pag v n dispõem apontam demonstram mostra mostram estudo estudos artigo artigos autor autores'.split(
@@ -246,6 +248,8 @@ function localizarOcorrenciaNoPdf(ocorrencia, paginas) {
 export default function ReverseAuditView({
   refs,
   bib,
+  estilo = 'abnt',
+  idioma = 'pt-BR',
   estadoAuditoria,
   setEstadoAuditoria,
   aoMudarRodando,
@@ -307,6 +311,7 @@ export default function ReverseAuditView({
   // Caso seja chamado sem estadoAuditoria externo, mantém fallback local
   const [estadoLocal, setEstadoLocal] = useState({
     nomeArquivo: '',
+    caminhoArquivo: '',
     textoManuscrito: '',
     buscarEBaixar: true,
     resultado: null,
@@ -317,7 +322,7 @@ export default function ReverseAuditView({
   const estado = estadoAuditoria || estadoLocal;
   const atualizarEstado = setEstadoAuditoria || setEstadoLocal;
 
-  const { nomeArquivo, textoManuscrito, buscarEBaixar, resultado, dataHora, mostrarCaixaTexto } = estado;
+  const { nomeArquivo, caminhoArquivo, textoManuscrito, buscarEBaixar, resultado, dataHora, mostrarCaixaTexto } = estado;
 
   const setNomeArquivo = (v) => atualizarEstado((ant) => ({ ...ant, nomeArquivo: v }));
   const setTextoManuscrito = (v) => atualizarEstado((ant) => ({ ...ant, textoManuscrito: v }));
@@ -377,45 +382,107 @@ export default function ReverseAuditView({
 
   const [moduloAuditoria, setModuloAuditoria] = useState('todos'); // 'todos' | 'chamadas' | 'plagio'
   const [abaVisualizacao, setAbaVisualizacao] = useState('todas'); // 'inconformidades' | 'conformes' | 'todas'
-  const [grupoIntercorrenciaAtivo, setGrupoIntercorrenciaAtivo] = useState('todas'); // 'todas' | 'ia' | 'citacao_falsa' | 'plagio' | 'orfa' | 'sobrando' | 'metadados' | 'pdf' | 'metodologico'
+  const [grupoIntercorrenciaAtivo, setGrupoIntercorrenciaAtivo] = useState('todas');
   const [modoAgrupamentoVisaoGeral, setModoAgrupamentoVisaoGeral] = useState('tipo'); // 'tipo' | 'ordem'
   const [mostrarPainelPromptIa, setMostrarPainelPromptIa] = useState(false);
   const [instrucaoExtraIa, setInstrucaoExtraIa] = useState(
     'Analise ponto a ponto o que está certo ou errado nas citações abaixo, reescreva os parágrafos com problemas mantendo rigor acadêmico e sugira referências científicas reais (com DOI válido) para substituir qualquer fonte suspeita de alucinação.'
   );
 
-  // Itens marcados como resolvidos / ignorados pelo usuário
-  const [itensResolvidos, setItensResolvidos] = useState(() => {
+  // Separação clara de Status: { [idItem]: 'resolvido' | 'ignorado' }
+  const [statusItens, setStatusItens] = useState(() => {
     try {
-      const salvos = localStorage.getItem('auditoria_itens_resolvidos_v1');
-      return salvos ? new Set(JSON.parse(salvos)) : new Set();
-    } catch {
-      return new Set();
-    }
+      const salvosV2 = localStorage.getItem('auditoria_status_itens_v2');
+      if (salvosV2) return JSON.parse(salvosV2) || {};
+      const salvosV1 = localStorage.getItem('auditoria_itens_resolvidos_v1');
+      if (salvosV1) {
+        const arr = JSON.parse(salvosV1) || [];
+        const obj = {};
+        arr.forEach((k) => { obj[k] = 'resolvido'; });
+        return obj;
+      }
+    } catch {}
+    return {};
   });
   const [mostrarResolvidos, setMostrarResolvidos] = useState(false);
 
-  const alternarItemResolvido = (idItem) => {
-    setItensResolvidos((prev) => {
-      const novo = new Set(prev);
-      if (novo.has(idItem)) {
-        novo.delete(idItem);
+  // Compatibilidade Set para filtragem de ativos
+  const itensResolvidos = useMemo(() => new Set(Object.keys(statusItens)), [statusItens]);
+  const totalResolvidos = useMemo(
+    () => Object.values(statusItens).filter((v) => v === 'resolvido').length,
+    [statusItens]
+  );
+  const totalIgnorados = useMemo(
+    () => Object.values(statusItens).filter((v) => v === 'ignorado').length,
+    [statusItens]
+  );
+
+  const definirStatusItem = (idItem, novoStatus) => {
+    setStatusItens((prev) => {
+      const prox = { ...prev };
+      if (!novoStatus || prox[idItem] === novoStatus) {
+        delete prox[idItem];
       } else {
-        novo.add(idItem);
+        prox[idItem] = novoStatus;
       }
       try {
-        localStorage.setItem('auditoria_itens_resolvidos_v1', JSON.stringify([...novo]));
+        localStorage.setItem('auditoria_status_itens_v2', JSON.stringify(prox));
       } catch {}
-      return novo;
+      return prox;
     });
   };
 
   const limparItensResolvidos = () => {
-    setItensResolvidos(new Set());
+    setStatusItens({});
     try {
+      localStorage.removeItem('auditoria_status_itens_v2');
       localStorage.removeItem('auditoria_itens_resolvidos_v1');
     } catch {}
-    avisar('Todos os itens resolvidos foram restaurados!', 'info');
+    avisar('Todos os alertas resolvidos e ignorados foram restaurados!', 'info');
+  };
+
+  // Modais de Resolução Interativa, Word Atalho e Split-View (Word <-> PDF)
+  const [itemEmResolucao, setItemEmResolucao] = useState(null);
+  const [dadosSplitView, setDadosSplitView] = useState(null);
+
+  const aplicarCirurgiaNoDocx = async (operacao) => {
+    const res = await window.api.audit.cirurgiaDocx({
+      caminhoDocx: caminhoArquivo,
+      operacao,
+    });
+    if (res?.ok) {
+      atualizarEstado((ant) => ({
+        ...ant,
+        textoManuscrito: res.textoAtualizado || ant.textoManuscrito,
+        caminhoArquivo: res.caminhoSalvo || ant.caminhoArquivo,
+        nomeArquivo: res.caminhoSalvo ? res.caminhoSalvo.split(/[\\/]/).pop() : ant.nomeArquivo,
+      }));
+    }
+    return res;
+  };
+
+  const atualizarTextoLocal = (alvo, novo, substituirTudo = false) => {
+    atualizarEstado((ant) => {
+      let tx = ant.textoManuscrito || '';
+      if (substituirTudo) {
+        tx = novo;
+      } else if (alvo && tx.includes(alvo)) {
+        tx = tx.replace(alvo, novo).replace(/\n{3,}/g, '\n\n');
+      }
+      return { ...ant, textoManuscrito: tx };
+    });
+  };
+
+  const abrirNoWordAtalho = async (textoBusca = '') => {
+    try {
+      const res = await window.api.audit.abrirNoWord({
+        caminhoDocx: caminhoArquivo,
+        textoBusca,
+      });
+      avisar(res?.mensagem || 'Trecho copiado para Ctrl+V no Word!', res?.ok ? 'ok' : 'info');
+    } catch (e) {
+      avisar('Erro ao abrir Word: ' + e.message, 'erro');
+    }
   };
 
   // Estado do buscador integrado de "Artigo Real Parecido" por chave de item
@@ -817,6 +884,7 @@ export default function ReverseAuditView({
       atualizarEstado((ant) => ({
         ...ant,
         nomeArquivo: arq.nome,
+        caminhoArquivo: arq.caminho || '',
         textoManuscrito: novoTexto,
         mostrarCaixaTexto: true,
       }));
@@ -829,6 +897,7 @@ export default function ReverseAuditView({
   const limparAuditoriaAtual = () => {
     atualizarEstado({
       nomeArquivo: '',
+      caminhoArquivo: '',
       textoManuscrito: '',
       buscarEBaixar: true,
       resultado: null,
@@ -1084,9 +1153,10 @@ export default function ReverseAuditView({
   const alertasCorrupcaoGene = resultado?.alertasCorrupcaoGene || [];
   const alertasFomento = resultado?.alertasFomento || [];
   const alertasDesvioTematico = resultado?.alertasDesvioTematico || [];
+  const alertasFigurasTabelas = resultado?.alertasFigurasTabelas || [];
   const citacoesSemReferencia = resultado?.citacoesSemReferencia || [];
 
-  // Alertas de Metadados / ABNT vs Alertas Metodológicos vs Alertas Estilo IA (Open-Detector) vs Estatística vs Rede vs Metodologia Clínica vs Estilometria vs Predatórias vs ABNT 6023 vs Genômica
+  // Alertas de Metadados / ABNT vs Alertas Metodológicos vs Alertas Estilo IA (Open-Detector) vs Estatística vs Rede vs Metodologia Clínica vs Estilometria vs Predatórias vs ABNT 6023 vs Genômica vs Figuras/Tabelas
   const alertasPrecisao = resultado?.alertasPrecisao || [];
   const alertasEstiloIa = resultado?.alertasEstiloIa || alertasPrecisao.filter((ap) => ap.tipo === 'estilo_redacao_ia');
   const alertasMetadadosAbnt = alertasPrecisao.filter(
@@ -1120,6 +1190,11 @@ export default function ReverseAuditView({
         'fomento_sem_numero_processo',
         'ausencia_declaracao_fomento',
         'desvio_tematico_citacao',
+        'ilustracao_sem_fonte',
+        'ilustracao_sem_chamada',
+        'chamada_ilustracao_orfa',
+        'ilustracao_salto_numeracao',
+        'tabela_vs_quadro_ibge',
       ].includes(ap.tipo)
   );
   const alertasMetodologicos = alertasPrecisao.filter((ap) =>
@@ -1148,7 +1223,7 @@ export default function ReverseAuditView({
   );
   const totalConformesComPdf = obrasConformes.filter((o) => o.temPdf || refs.some((x) => x.id === o.refBibId && x.pdf)).length;
 
-  // Itens ativos (subtraindo os marcados como resolvidos / ignorados pelo autor)
+  // Itens ativos (subtraindo os marcados como resolvidos ou ignorados pelo autor)
   const refsSuspeitasIaAtivas = refsSuspeitasIa.filter((r) => !itensResolvidos.has(`ia_${r.refBibId || r.id || r.primeiroSobrenome}`));
   const alertasAtribuicaoFalsaAtivos = alertasAtribuicaoFalsa.filter((a) => !itensResolvidos.has(`atrib_${a.numParagrafo}_${a.numLinha}`));
   const alertasPlagioAtivos = alertasPlagio.filter((p) => !itensResolvidos.has(`plagio_${p.numParagrafo}_${p.numLinha}`));
@@ -1162,6 +1237,7 @@ export default function ReverseAuditView({
   const alertasCorrupcaoGeneAtivos = alertasCorrupcaoGene.filter((c, i) => !itensResolvidos.has(`gene_${c.numParagrafo}_${c.termoDetectado || i}`));
   const alertasFomentoAtivos = alertasFomento.filter((f) => !itensResolvidos.has(`fom_${f.tipo}`));
   const alertasDesvioTematicoAtivos = alertasDesvioTematico.filter((d) => !itensResolvidos.has(`desvio_${d.numParagrafo}_${d.refBibId}`));
+  const alertasFigurasTabelasAtivos = alertasFigurasTabelas.filter((ft, i) => !itensResolvidos.has(`figtab_${ft.numParagrafo}_${ft.tipo}_${ft.numero || i}`));
   const citacoesSemReferenciaAtivas = citacoesSemReferencia.filter((c) => !itensResolvidos.has(`orfa_${c.chave}`));
   const refsNaoCitadasNoTextoAtivas = refsNaoCitadasNoTexto.filter((r) => !itensResolvidos.has(`sobr_${r.refBibId || r.textoOriginal}`));
   const alertasMetadadosAbntAtivos = alertasMetadadosAbnt.filter((ap) => !itensResolvidos.has(`meta_${ap.numParagrafo}_${ap.numLinha}_${ap.tipo}`));
@@ -1183,12 +1259,53 @@ export default function ReverseAuditView({
     alertasCorrupcaoGeneAtivos.length +
     alertasFomentoAtivos.length +
     alertasDesvioTematicoAtivos.length +
+    alertasFigurasTabelasAtivos.length +
     citacoesSemReferenciaAtivas.length +
     refsNaoCitadasNoTextoAtivas.length +
     alertasMetadadosAbntAtivos.length +
     alertasPdfAtivos.length +
     alertasMetodologicosAtivos.length +
     alertasEstiloIaAtivos.length;
+
+  // Exportar cópia do Word com comentários nativos (<w:comment>) (Evolução 2)
+  const exportarWordComComentarios = async () => {
+    try {
+      const todasInconformidades = [
+        ...refsSuspeitasIaAtivas.map((r) => ({ tipo: 'ALUCINAÇÃO IA', autorCitado: r.primeiroSobrenome, fraseWord: r.ocorrenciasNoTexto?.[0]?.fraseContexto || '', mensagem: r.alertaAutenticidade })),
+        ...alertasAtribuicaoFalsaAtivos.map((a) => ({ tipo: 'ATRIBUIÇÃO TROCADA', numParagrafo: a.numParagrafo, numLinha: a.numLinha, fraseWord: a.fraseWord, mensagem: a.mensagem })),
+        ...alertasPlagioAtivos.map((p) => ({ tipo: 'PLÁGIO / SEM ASPAS', numParagrafo: p.numParagrafo, numLinha: p.numLinha, fraseWord: p.fraseNoWord, mensagem: p.mensagem })),
+        ...alertasFigurasTabelasAtivos.map((f) => ({ tipo: 'FIGURA / TABELA ABNT', numParagrafo: f.numParagrafo, numLinha: f.numLinha, fraseWord: f.fraseWord, mensagem: f.mensagem })),
+        ...citacoesSemReferenciaAtivas.map((c) => ({ tipo: 'CITAÇÃO ÓRFÃ', autorCitado: c.autor, fraseWord: c.ocorrencias?.[0]?.fraseContexto || '', mensagem: `${c.autor} (${c.ano}) citado no texto, mas ausente nas referências finais.` })),
+        ...alertasMetadadosAbntAtivos,
+        ...alertasPdfAtivos.map((p) => ({ tipo: 'DIVERGÊNCIA PDF', numParagrafo: p.ocorrencia?.numParagrafo, fraseWord: p.ocorrencia?.fraseContexto || '', mensagem: p.mensagem })),
+      ];
+      const res = await window.api.audit.exportarDocxComentarios({
+        caminhoDocxOriginal: caminhoArquivo,
+        inconformidades: todasInconformidades,
+      });
+      if (res?.cancelado) return;
+      if (res?.ok) {
+        avisar(`Cópia anotada gerada com ${res.totalComentarios} balões de comentário em: ${res.caminhoSaida}`, 'ok');
+      }
+    } catch (e) {
+      avisar('Erro ao exportar comentários para Word: ' + e.message, 'erro');
+    }
+  };
+
+  // Emitir Laudo Pericial Formal em HTML/PDF Imprimível (Evolução 3)
+  const emitirLaudoPericial = async () => {
+    if (!resultado) return;
+    try {
+      await window.api.audit.gerarLaudoPericial({
+        resultado,
+        nomeArquivo,
+        dataHora,
+        statusItens,
+      });
+    } catch (e) {
+      avisar('Erro ao gerar Laudo Pericial: ' + e.message, 'erro');
+    }
+  };
 
   // Gerador do Prompt Completo Estruturado para colar na IA (ChatGPT / Claude / Gemini)
   const gerarTextoPromptParaIa = () => {
@@ -1907,16 +2024,42 @@ export default function ReverseAuditView({
               className="btn pequeno secundario"
               onClick={() => setMostrarCaixaTexto(!mostrarCaixaTexto)}
             >
-              {mostrarCaixaTexto ? '🔼 Recolher Caixa de Texto' : '📝 Ver / Editar Texto do Manuscrito'}
+              {mostrarCaixaTexto ? '🔼 Recolher Caixa de Texto' : '📝 Ver / Editar Texto'}
             </button>
             <button
               className="btn pequeno primario"
               onClick={executarAuditoria}
               disabled={rodando}
-              title="Roda novamente a auditoria sobre o texto atual"
+              title="Roda novamente a auditoria sobre o texto atualizado"
             >
               🔄 Refazer Auditoria
             </button>
+            <button
+              className="btn pequeno secundario"
+              onClick={exportarWordComComentarios}
+              disabled={rodando}
+              title="Salva uma cópia do arquivo .DOCX com todas as inconformidades ativas inseridas como balões de comentário nativos do Word"
+            >
+              💬 Anotar no Word (.DOCX)
+            </button>
+            <button
+              className="btn pequeno secundario"
+              onClick={emitirLaudoPericial}
+              disabled={rodando}
+              title="Gera Dossiê / Laudo Pericial Técnico formatado para impressão ou salvar em PDF"
+            >
+              ⚖️ Laudo Pericial (PDF)
+            </button>
+            {caminhoArquivo && (
+              <button
+                className="btn pequeno fantasma"
+                onClick={() => abrirNoWordAtalho('')}
+                disabled={rodando}
+                title="Abrir arquivo original no Microsoft Word"
+              >
+                📂 Abrir Word
+              </button>
+            )}
             <button
               className="btn pequeno secundario"
               onClick={escolherArquivo}
@@ -2435,7 +2578,23 @@ export default function ReverseAuditView({
               <div className="sub-card-filtro">{refsNaoCitadasNoTextoAtivas.length ? 'Sobrando nas referências' : 'Todas citadas'}</div>
             </div>
 
-            {/* 17. Total a Corrigir */}
+            {/* 17. Figuras & Tabelas (ABNT 14724 / IBGE) */}
+            <div
+              className={`card-metrica-filtro ${alertasFigurasTabelasAtivos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'figuras_tabelas' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'figuras_tabelas' ? 'todas' : 'figuras_tabelas'); }}
+              title="Clique para filtrar falta de chamada no texto ou linha de Fonte em Figuras, Quadros e Tabelas"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Figuras &amp; Tabelas</span>
+                <span>🖼️</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasFigurasTabelasAtivos.length ? '#d97706' : '#16a34a' }}>
+                {alertasFigurasTabelasAtivos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasFigurasTabelasAtivos.length ? 'Falta Fonte / Chamada' : 'ABNT 14724 / IBGE ok'}</div>
+            </div>
+
+            {/* 18. Total a Corrigir */}
             <div
               className={`card-metrica-filtro ${totalInconformidades > 0 ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'todas' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo('todas'); }}
@@ -2849,21 +3008,42 @@ export default function ReverseAuditView({
                     🤖 Redação IA ({alertasEstiloIaAtivos.length})
                   </button>
                 )}
+                {alertasFigurasTabelasAtivos.length > 0 && (
+                  <button
+                    className={`chip ${grupoIntercorrenciaAtivo === 'figuras_tabelas' ? 'ativo' : ''}`}
+                    onClick={() => setGrupoIntercorrenciaAtivo('figuras_tabelas')}
+                    style={{
+                      fontSize: 11.8,
+                      padding: '3px 10px',
+                      color: grupoIntercorrenciaAtivo === 'figuras_tabelas' ? '#fff' : '#d97706',
+                      borderColor: '#d97706',
+                      background: grupoIntercorrenciaAtivo === 'figuras_tabelas' ? '#d97706' : 'transparent',
+                    }}
+                  >
+                    🖼️ Figuras &amp; Tabelas ({alertasFigurasTabelasAtivos.length})
+                  </button>
+                )}
                 {itensResolvidos.size > 0 && (
-                  <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 10 }}>
+                  <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+                    <span style={{ fontSize: 11.2, color: '#15803d', fontWeight: 700, background: '#dcfce7', padding: '2px 7px', borderRadius: 4 }}>
+                      ✓ {totalResolvidos} resolvido(s)
+                    </span>
+                    <span style={{ fontSize: 11.2, color: '#475569', fontWeight: 700, background: '#f1f5f9', padding: '2px 7px', borderRadius: 4 }}>
+                      🚫 {totalIgnorados} ignorado(s)
+                    </span>
                     <label style={{ fontSize: 11.8, display: 'inline-flex', alignItems: 'center', gap: 5, cursor: 'pointer', userSelect: 'none', color: 'var(--texto-suave)' }}>
                       <input
                         type="checkbox"
                         checked={mostrarResolvidos}
                         onChange={(e) => setMostrarResolvidos(e.target.checked)}
                       />
-                      Mostrar {itensResolvidos.size} ignorados/resolvidos
+                      Exibir resolvidos/ignorados
                     </label>
                     <button
                       className="btn pequeno fantasma"
                       onClick={limparItensResolvidos}
                       style={{ fontSize: 11, padding: '2px 8px', color: 'var(--texto-suave)' }}
-                      title="Restaurar todos os alertas marcados como resolvidos"
+                      title="Restaurar todos os alertas marcados como resolvidos ou ignorados"
                     >
                       ↺ Restaurar todos
                     </button>
@@ -2874,15 +3054,17 @@ export default function ReverseAuditView({
           {/* ALERTA A: Fontes Inventadas por IA (Alucinação de ChatGPT / DOI falso / Artigo fantasma) */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'ia') && (mostrarResolvidos ? refsSuspeitasIa.length > 0 : refsSuspeitasIaAtivas.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
-              <h4 style={{ color: '#dc2626' }}>
-                🤖 Alerta Anti-Alucinação de IA: Fontes Suspeitas de terem sido Inventadas ({refsSuspeitasIaAtivas.length})
+              <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>🤖 Fontes Suspeitas ou Não Autenticadas nas Referências ({refsSuspeitasIaAtivas.length})</span>
+                <BadgeAlvoAlerta alvo="citacao" />
               </h4>
               <div className="lista-historico">
                 {refsSuspeitasIa
                   .filter((r) => mostrarResolvidos || !itensResolvidos.has(`ia_${r.refBibId || r.id || r.primeiroSobrenome}`))
                   .map((r, i) => {
                     const idItem = `ia_${r.refBibId || r.id || r.primeiroSobrenome}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     const chaveBusca = `ia_${i}`;
                     const primOc = r.ocorrenciasNoTexto?.[0];
                     return (
@@ -2890,7 +3072,6 @@ export default function ReverseAuditView({
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <strong>{r.textoOriginal}</strong>
-                            {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             <div style={{ color: '#dc2626', fontWeight: 700, fontSize: 12.5, marginTop: 4 }}>
                               {r.alertaAutenticidade}
                             </div>
@@ -2902,14 +3083,26 @@ export default function ReverseAuditView({
                             )}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={primOc ? () => abrirNoWordAtalho(primOc.fraseContexto) : () => abrirNoWordAtalho(r.textoOriginal)}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'citacao',
+                                  categoria: 'ia',
+                                  diagnostico: r.alertaAutenticidade,
+                                  fraseWord: primOc?.fraseContexto || '',
+                                  paragrafoCompleto: primOc?.paragrafoCompleto || '',
+                                  locWord: primOc ? `Parágrafo §${primOc.numParagrafo} · Linha ${primOc.numLinha}` : 'Lista de Referências',
+                                  chaveCitacao: `${r.primeiroSobrenome} (${r.ano})`,
+                                  textoReferencia: r.textoOriginal,
+                                  refBibItem: refs.find((x) => x.id === r.refBibId) || null,
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno primario"
                               onClick={() =>
@@ -2921,9 +3114,9 @@ export default function ReverseAuditView({
                                   numParagrafo: primOc?.numParagrafo || '',
                                 })
                               }
-                              title="Pesquisa nas bases científicas (PubMed, OpenAlex, Europe PMC) artigos reais que tratam exatamente do mesmo tema para substituir esta fonte suspeita!"
+                              title="Pesquisa nas bases científicas artigos reais para substituir esta fonte suspeita"
                             >
-                              🔎 Buscar Artigo Real Parecido p/ Substituir
+                              🔎 Buscar Parecido
                             </button>
                             <button
                               className="btn pequeno secundario"
@@ -2938,7 +3131,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA analisar
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -2953,23 +3146,25 @@ export default function ReverseAuditView({
           {/* ALERTA B: Citação que NÃO Existe no Artigo ou foi Atribuída ao Artigo Errado */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'citacao_falsa') && (mostrarResolvidos ? alertasAtribuicaoFalsa.length > 0 : alertasAtribuicaoFalsaAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
-              <h4 style={{ color: '#dc2626' }}>
-                🚨 Citações Inexistentes no Artigo ou Atribuídas ao Artigo Errado ({alertasAtribuicaoFalsaAtivos.length})
+              <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>🚨 Citações Inexistentes no Artigo ou Atribuídas ao Artigo Errado ({alertasAtribuicaoFalsaAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="cruzamento" />
               </h4>
               <div className="lista-historico">
                 {alertasAtribuicaoFalsa
                   .filter((a) => mostrarResolvidos || !itensResolvidos.has(`atrib_${a.numParagrafo}_${a.numLinha}`))
                   .map((a, i) => {
                     const idItem = `atrib_${a.numParagrafo}_${a.numLinha}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     const chaveBusca = `falsa_${i}`;
+                    const refObjB = refs.find((x) => x.id === a.refBibId) || null;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
                               {a.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             <div style={{ fontSize: 12.2, marginTop: 4 }}>
                               <strong>📍 Frase no seu Word (Parágrafo §{a.numParagrafo} · Linha {a.numLinha}):</strong>{' '}
@@ -2982,14 +3177,36 @@ export default function ReverseAuditView({
                             )}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(a.fraseWord)}
+                              onAbrirSplitView={
+                                refObjB?.pdf
+                                  ? () =>
+                                      setDadosSplitView({
+                                        refItem: refObjB,
+                                        paginaInicial: a.paginaPdf || 1,
+                                        fraseWord: a.fraseWord,
+                                        locWord: `Parágrafo §${a.numParagrafo} · Linha ${a.numLinha}`,
+                                        diagnostico: a.mensagem,
+                                      })
+                                  : undefined
+                              }
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'cruzamento',
+                                  categoria: 'atribuicao',
+                                  diagnostico: a.mensagem,
+                                  fraseWord: a.fraseWord,
+                                  locWord: `Parágrafo §${a.numParagrafo} · Linha ${a.numLinha}`,
+                                  chaveCitacao: a.autorCitado || '',
+                                  refBibItem: refObjB,
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno primario"
                               onClick={() =>
@@ -3002,7 +3219,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🔎 Buscar Artigo Real sobre esta Frase
+                              🔎 Buscar Parecido
                             </button>
                             <button
                               className="btn pequeno secundario"
@@ -3015,7 +3232,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA analisar
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -3030,22 +3247,23 @@ export default function ReverseAuditView({
           {/* ALERTA C: Detector de Plágio / Cópia Literal Sem Aspas */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'plagio') && (mostrarResolvidos ? alertasPlagio.length > 0 : alertasPlagioAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
-              <h4 style={{ color: '#dc2626' }}>
-                🔍 Detector de Plágio e Cópia Literal Sem Aspas ({alertasPlagioAtivos.length})
+              <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>🔍 Detector de Plágio e Cópia Literal Sem Aspas ({alertasPlagioAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="cruzamento" />
               </h4>
               <div className="lista-historico">
                 {alertasPlagio
                   .filter((p) => mostrarResolvidos || !itensResolvidos.has(`plagio_${p.numParagrafo}_${p.numLinha}`))
                   .map((p, i) => {
                     const idItem = `plagio_${p.numParagrafo}_${p.numLinha}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
                               {p.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             <div style={{ fontSize: 12.2, marginTop: 5 }}>
                               <strong>📝 Como está escrito no seu Word (§{p.numParagrafo}, Linha {p.numLinha}):</strong>{' '}
@@ -3075,14 +3293,25 @@ export default function ReverseAuditView({
                         )}
                       </div>
                       <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                        <button
-                          className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                          onClick={() => alternarItemResolvido(idItem)}
-                          title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                          style={{ fontSize: 11.5, padding: '3px 8px' }}
-                        >
-                          {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                        </button>
+                        <AcoesResolucaoAlerta
+                          idItem={idItem}
+                          statusAtual={stItem}
+                          onDefinirStatus={definirStatusItem}
+                          onAbrirWord={() => abrirNoWordAtalho(p.fraseNoWord)}
+                          onAbrirResolver={() =>
+                            setItemEmResolucao({
+                              idItem,
+                              alvo: 'cruzamento',
+                              categoria: 'plagio',
+                              diagnostico: p.mensagem,
+                              fraseWord: p.fraseNoWord,
+                              locWord: `Parágrafo §${p.numParagrafo} · Linha ${p.numLinha}`,
+                              trechoCoincidente: p.trechoCoincidente,
+                              trechoOriginalArtigo: p.trechoOriginalArtigo,
+                              autorFonte: p.autorFonte,
+                            })
+                          }
+                        />
                         <button
                           className="btn pequeno secundario"
                           onClick={() =>
@@ -3096,7 +3325,7 @@ export default function ReverseAuditView({
                             })
                           }
                         >
-                          🤖 Copiar p/ IA Parafrasear
+                          🤖 Copiar p/ IA
                         </button>
                       </div>
                     </div>
@@ -3110,25 +3339,26 @@ export default function ReverseAuditView({
           {/* ALERTA C2: Auditoria Matemática Forense de Resultados Estatísticos (Statcheck) */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'estatistica') && (mostrarResolvidos ? alertasEstatisticos.length > 0 : alertasEstatisticosAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
-              <h4 style={{ color: '#dc2626' }}>
-                📊 Auditoria Matemática Forense de Resultados Estatísticos · Statcheck ({alertasEstatisticosAtivos.length})
+              <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>📊 Auditoria Matemática de Resultados Estatísticos · Statcheck ({alertasEstatisticosAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="manuscrito" />
               </h4>
               <div className="lista-historico">
                 {alertasEstatisticos
                   .filter((st) => mostrarResolvidos || !itensResolvidos.has(`estat_${st.numParagrafo}_${st.numLinha}`))
                   .map((st, i) => {
                     const idItem = `estat_${st.numParagrafo}_${st.numLinha}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
                               {st.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             <div style={{ fontSize: 12.2, marginTop: 5 }}>
-                              <strong>📝 Localização no Texto (§{st.numParagrafo}, Linha {st.numLinha} · {st.secao}):</strong>{' '}
+                              <strong>📝 Localização no seu Texto (§{st.numParagrafo}, Linha {st.numLinha} · {st.secao}):</strong>{' '}
                               <em>"{st.fraseWord}"</em>
                             </div>
                             <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
@@ -3141,14 +3371,22 @@ export default function ReverseAuditView({
                             </div>
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(st.fraseWord)}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'manuscrito',
+                                  categoria: 'estatistica',
+                                  diagnostico: st.mensagem,
+                                  fraseWord: st.fraseWord,
+                                  locWord: `Parágrafo §${st.numParagrafo} · Linha ${st.numLinha}`,
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -3162,7 +3400,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA Corrigir
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -3176,41 +3414,36 @@ export default function ReverseAuditView({
           {/* ALERTA C3: Auditoria Forense de Redes de Citação e Concentração de Autoria (COPE) */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'rede') && (mostrarResolvidos ? alertasRede.length > 0 : alertasRedeAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
-              <h4 style={{ color: '#d97706' }}>
-                🕸️ Auditoria Forense de Redes de Citação e Concentração de Autoria · COPE ({alertasRedeAtivos.length})
+              <h4 style={{ color: '#d97706', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>🕸️ Auditoria de Redes de Citação e Concentração de Autoria · COPE ({alertasRedeAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="citacao" />
               </h4>
               <div className="lista-historico">
                 {alertasRede
                   .filter((ar) => mostrarResolvidos || !itensResolvidos.has(`rede_${ar.autor || ar.periodico}`))
                   .map((ar, i) => {
                     const idItem = `rede_${ar.autor || ar.periodico}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>
                               {ar.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
                               <span><strong>Alvo:</strong> <code>{ar.autor || ar.periodico}</code></span>
                               <span><strong>Ocorrências:</strong> <code>{ar.totalObras}</code></span>
                               <span><strong>Percentual do Corpus:</strong> <code style={{ color: '#d97706', fontWeight: 700 }}>{ar.percentual}%</code></span>
-                              <span className="badge pendente" style={{ fontSize: 11, background: 'rgba(217, 119, 6, 0.1)', color: '#d97706' }}>
-                                📌 Diretriz de Diversidade Teórica (COPE)
-                              </span>
                             </div>
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -3224,7 +3457,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA Diversificar
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -3238,53 +3471,59 @@ export default function ReverseAuditView({
           {/* ALERTA C4: Auditoria Forense Metodológica e Clínica (PICO / STROBE / CONSORT) */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'metodologia_clinica') && (mostrarResolvidos ? alertasMetodologiaClinica.length > 0 : alertasMetodologiaClinicaAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
-              <h4 style={{ color: '#dc2626' }}>
-                🔬 Auditoria Forense Metodológica e Ética · STROBE / CONSORT / PICO ({alertasMetodologiaClinicaAtivos.length})
+              <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>🔬 Auditoria Metodológica e Ética do SEU Manuscrito · STROBE / CONSORT ({alertasMetodologiaClinicaAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="manuscrito" />
               </h4>
               <div className="lista-historico">
                 {alertasMetodologiaClinica
                   .filter((mc) => mostrarResolvidos || !itensResolvidos.has(`metod_${mc.tipo}`))
                   .map((mc, i) => {
                     const idItem = `metod_${mc.tipo}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
                               {mc.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-                              <span><strong>Critério:</strong> <code>{mc.tipo}</code></span>
-                              <span className="badge alerta" style={{ fontSize: 11 }}>
-                                📋 Diretriz Editorial Obrigatória
-                              </span>
+                              <span><strong>Critério Avaliado no Seu Texto:</strong> <code>{mc.tipo}</code></span>
                             </div>
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              rotuloResolver="⚡ Inserir Declaração"
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'manuscrito',
+                                  categoria: 'metodologia',
+                                  tipoAlerta: mc.tipo,
+                                  diagnostico: mc.mensagem,
+                                  locWord: 'Corpo / Método do Seu Manuscrito',
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
                                 copiarPromptItemIndividualIa({
-                                  tituloProblema: 'Inconformidade Metodológica / Ética em Saúde',
+                                  tituloProblema: 'Inconformidade Metodológica / Ética no Seu Manuscrito',
                                   fraseWord: mc.tipo,
                                   locWord: 'Seção de Método / Metodologia do Manuscrito',
                                   refTexto: 'Checklist STROBE / CONSORT / Resoluções CNS',
                                   diagnostico: mc.mensagem,
-                                  trechoArtigo: 'Adequação necessária para evitar desk reject no periódico',
+                                  trechoArtigo: 'Adequação necessária no manuscrito',
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA Adequar
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -3298,45 +3537,53 @@ export default function ReverseAuditView({
           {/* ALERTA C5: Frases Torturadas e Parafraseamento Robótico (Problematic Paper Screener) */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'frases_torturadas') && (mostrarResolvidos ? alertasFrasesTorturadas.length > 0 : alertasFrasesTorturadasAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
-              <h4 style={{ color: '#dc2626' }}>
-                🧟 Detecção Forense de Frases Torturadas · Problematic Paper Screener ({alertasFrasesTorturadasAtivos.length})
+              <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>🧟 Detecção de Sinônimos Robóticos no Seu Texto · Cabanac ({alertasFrasesTorturadasAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="manuscrito" />
               </h4>
               <div className="lista-historico">
                 {alertasFrasesTorturadas
                   .filter((ft, i) => mostrarResolvidos || !itensResolvidos.has(`tort_${ft.numParagrafo}_${ft.termoDetectado || i}`))
                   .map((ft, i) => {
                     const idItem = `tort_${ft.numParagrafo}_${ft.termoDetectado || i}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
                               {ft.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
                               <span><strong>Termo Detectado:</strong> <code style={{ color: '#b91c1c', fontWeight: 600 }}>{ft.termoDetectado}</code></span>
                               <span>➡️ <strong>Termo Canônico:</strong> <code style={{ color: '#16a34a', fontWeight: 600 }}>{ft.termoCanonica}</code></span>
-                              <span className="badge alerta" style={{ fontSize: 11 }}>
-                                {ft.categoria || 'Integridade Textual'}
-                              </span>
                             </div>
                             {ft.fraseWord && (
                               <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
-                                <strong>Passagem no Word (§{ft.numParagrafo}, L.{ft.numLinha}):</strong> &ldquo;{ft.fraseWord}&rdquo;
+                                <strong>Passagem no Seu Word (§{ft.numParagrafo}, L.{ft.numLinha}):</strong> &ldquo;{ft.fraseWord}&rdquo;
                               </div>
                             )}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(ft.fraseWord)}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'manuscrito',
+                                  categoria: 'torturada',
+                                  diagnostico: ft.mensagem,
+                                  fraseWord: ft.fraseWord,
+                                  locWord: `§${ft.numParagrafo}, Linha ${ft.numLinha}`,
+                                  termoDetectado: ft.termoDetectado,
+                                  termoCanonica: ft.termoCanonica,
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -3350,7 +3597,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA Corrigir
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -3364,22 +3611,23 @@ export default function ReverseAuditView({
           {/* ALERTA C6: Estilometria Acadêmica e Diversidade Textual */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'estilometria') && (mostrarResolvidos ? alertasEstilometricos.length > 0 : alertasEstilometricosAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
-              <h4 style={{ color: '#d97706' }}>
-                📐 Auditoria Estilométrica e Rítmica · TTR, Burstiness & Guiraud ({alertasEstilometricosAtivos.length})
+              <h4 style={{ color: '#d97706', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>📐 Ritmo e Estilometria da SUA Redação · TTR, Burstiness &amp; Guiraud ({alertasEstilometricosAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="manuscrito" />
               </h4>
               <div className="lista-historico">
                 {alertasEstilometricos
                   .filter((es) => mostrarResolvidos || !itensResolvidos.has(`estilo_${es.numParagrafo}_${es.tipo}`))
                   .map((es, i) => {
                     const idItem = `estilo_${es.numParagrafo}_${es.tipo}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>
                               {es.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             {es.metricas && (
                               <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
@@ -3391,19 +3639,27 @@ export default function ReverseAuditView({
                             )}
                             {es.fraseWord && (
                               <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
-                                <strong>Parágrafo (§{es.numParagrafo}, L.{es.numLinha}):</strong> &ldquo;{es.fraseWord}&rdquo;
+                                <strong>Seu Parágrafo (§{es.numParagrafo}, L.{es.numLinha}):</strong> &ldquo;{es.fraseWord}&rdquo;
                               </div>
                             )}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(es.fraseWord)}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'manuscrito',
+                                  categoria: 'estilometria',
+                                  diagnostico: es.mensagem,
+                                  fraseWord: es.fraseWord,
+                                  locWord: `§${es.numParagrafo}, Linha ${es.numLinha}`,
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -3417,7 +3673,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA Reestruturar
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -3431,22 +3687,23 @@ export default function ReverseAuditView({
           {/* ALERTA C7: Periódicos Predatórios e Revistas Clonadas */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'predatorias') && (mostrarResolvidos ? alertasPredatorios.length > 0 : alertasPredatoriosAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
-              <h4 style={{ color: '#dc2626' }}>
-                🚨 Fontes Suspeitas · Periódicos Predatórios e Clonados ({alertasPredatoriosAtivos.length})
+              <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>🚨 Fontes Suspeitas · Periódicos Predatórios e Clonados ({alertasPredatoriosAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="citacao" />
               </h4>
               <div className="lista-historico">
                 {alertasPredatorios
                   .filter((ap) => mostrarResolvidos || !itensResolvidos.has(`pred_${ap.refBibId || ap.chaveAutorAno}`))
                   .map((ap, i) => {
                     const idItem = `pred_${ap.refBibId || ap.chaveAutorAno}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
                               {ap.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
                               <span><strong>Entidade:</strong> <code style={{ color: '#b91c1c', fontWeight: 600 }}>{ap.nomeDetectado}</code></span>
@@ -3461,14 +3718,12 @@ export default function ReverseAuditView({
                             )}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(ap.nomeDetectado || ap.textoReferencia)}
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -3482,7 +3737,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA Substituir
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -3496,22 +3751,23 @@ export default function ReverseAuditView({
           {/* ALERTA C8: Completude Normativa ABNT NBR 6023:2018 */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'abnt6023') && (mostrarResolvidos ? alertasAbnt6023.length > 0 : alertasAbnt6023Ativos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
-              <h4 style={{ color: '#d97706' }}>
-                📋 Inconformidade de Elementos Obrigatórios · ABNT NBR 6023:2018 ({alertasAbnt6023Ativos.length})
+              <h4 style={{ color: '#d97706', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>📋 Inconformidade de Elementos Obrigatórios · ABNT NBR 6023:2018 ({alertasAbnt6023Ativos.length})</span>
+                <BadgeAlvoAlerta alvo="citacao" />
               </h4>
               <div className="lista-historico">
                 {alertasAbnt6023
                   .filter((ab) => mostrarResolvidos || !itensResolvidos.has(`abnt6023_${ab.idxRef}_${ab.tipo}`))
                   .map((ab, i) => {
                     const idItem = `abnt6023_${ab.idxRef}_${ab.tipo}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>
                               {ab.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             <div style={{ fontSize: 12, marginTop: 4, color: 'var(--cor-texto-sub)' }}>
                               <strong>Sugestão Normativa:</strong> {ab.sugestao}
@@ -3523,14 +3779,22 @@ export default function ReverseAuditView({
                             )}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(ab.textoReferencia)}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'citacao',
+                                  categoria: 'abnt',
+                                  diagnostico: ab.mensagem,
+                                  fraseWord: ab.textoReferencia,
+                                  locWord: 'Lista Final de Referências',
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -3544,7 +3808,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA Formatar
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -3558,22 +3822,23 @@ export default function ReverseAuditView({
           {/* ALERTA C9: Corrupção Genômica por Planilha */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'genomica') && (mostrarResolvidos ? alertasCorrupcaoGene.length > 0 : alertasCorrupcaoGeneAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
-              <h4 style={{ color: '#dc2626' }}>
-                🧬 Corrupção de Nomenclatura Genômica por Planilha · Ziemann / HGNC ({alertasCorrupcaoGeneAtivos.length})
+              <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>🧬 Corrupção de Nomenclatura Genômica · Ziemann / HGNC ({alertasCorrupcaoGeneAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="manuscrito" />
               </h4>
               <div className="lista-historico">
                 {alertasCorrupcaoGene
                   .filter((cg, i) => mostrarResolvidos || !itensResolvidos.has(`gene_${cg.numParagrafo}_${cg.termoDetectado || i}`))
                   .map((cg, i) => {
                     const idItem = `gene_${cg.numParagrafo}_${cg.termoDetectado || i}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
                               {cg.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
                               <span><strong>Termo Detectado:</strong> <code style={{ color: '#b91c1c', fontWeight: 600 }}>{cg.termoDetectado}</code></span>
@@ -3581,19 +3846,29 @@ export default function ReverseAuditView({
                             </div>
                             {cg.fraseWord && (
                               <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
-                                <strong>Trecho no Word (§{cg.numParagrafo}, L.{cg.numLinha}):</strong> &ldquo;{cg.fraseWord}&rdquo;
+                                <strong>Trecho no Seu Word (§{cg.numParagrafo}, L.{cg.numLinha}):</strong> &ldquo;{cg.fraseWord}&rdquo;
                               </div>
                             )}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(cg.fraseWord)}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'manuscrito',
+                                  categoria: 'genomica',
+                                  diagnostico: cg.mensagem,
+                                  fraseWord: cg.fraseWord,
+                                  locWord: `§${cg.numParagrafo}, Linha ${cg.numLinha}`,
+                                  termoDetectado: cg.termoDetectado,
+                                  termoCanonica: cg.geneAtualHgnc,
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -3607,7 +3882,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA Corrigir
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -3621,36 +3896,45 @@ export default function ReverseAuditView({
           {/* ALERTA C10: Declaração de Fomento e Apoio Institucional */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'fomento') && (mostrarResolvidos ? alertasFomento.length > 0 : alertasFomentoAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
-              <h4 style={{ color: '#d97706' }}>
-                🏛️ Declaração de Fomento, Bolsas e Processos · Portaria CAPES 206/2018 ({alertasFomentoAtivos.length})
+              <h4 style={{ color: '#d97706', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>🏛️ Declaração de Fomento e Bolsas no SEU Manuscrito · CAPES ({alertasFomentoAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="manuscrito" />
               </h4>
               <div className="lista-historico">
                 {alertasFomento
                   .filter((af) => mostrarResolvidos || !itensResolvidos.has(`fom_${af.tipo}`))
                   .map((af, i) => {
                     const idItem = `fom_${af.tipo}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>
                               {af.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             <div style={{ fontSize: 12, marginTop: 4, color: 'var(--cor-texto-sub)' }}>
                               <strong>Sugestão:</strong> {af.sugestao}
                             </div>
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              rotuloResolver="⚡ Inserir Declaração"
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'manuscrito',
+                                  categoria: 'fomento',
+                                  tipoAlerta: af.tipo,
+                                  diagnostico: af.mensagem,
+                                  locWord: 'Seção de Agradecimentos / Financiamento',
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -3664,7 +3948,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA Redigir
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -3678,22 +3962,24 @@ export default function ReverseAuditView({
           {/* ALERTA C11: Desvio Temático de Citação (Claim-Support TF-IDF) */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'desvio_tematico') && (mostrarResolvidos ? alertasDesvioTematico.length > 0 : alertasDesvioTematicoAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
-              <h4 style={{ color: '#dc2626' }}>
-                ⚠️ Desvio Temático de Citação · TF-IDF Claim-Support ({alertasDesvioTematicoAtivos.length})
+              <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>⚠️ Desvio Temático entre SUA Afirmação e a Obra Citada ({alertasDesvioTematicoAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="cruzamento" />
               </h4>
               <div className="lista-historico">
                 {alertasDesvioTematico
                   .filter((dt) => mostrarResolvidos || !itensResolvidos.has(`desvio_${dt.numParagrafo}_${dt.refBibId}`))
                   .map((dt, i) => {
                     const idItem = `desvio_${dt.numParagrafo}_${dt.refBibId}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
+                    const refObjDt = refs.find((x) => x.id === dt.refBibId) || null;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
                               {dt.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
                               <span><strong>Citação:</strong> <code>{dt.autorCitado}</code></span>
@@ -3701,19 +3987,41 @@ export default function ReverseAuditView({
                             </div>
                             {dt.fraseWord && (
                               <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
-                                <strong>Afirmação no Word (§{dt.numParagrafo}, L.{dt.numLinha}):</strong> &ldquo;{dt.fraseWord}&rdquo;
+                                <strong>Sua Afirmação no Word (§{dt.numParagrafo}, L.{dt.numLinha}):</strong> &ldquo;{dt.fraseWord}&rdquo;
                               </div>
                             )}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(dt.fraseWord)}
+                              onAbrirSplitView={
+                                refObjDt?.pdf
+                                  ? () =>
+                                      setDadosSplitView({
+                                        refItem: refObjDt,
+                                        paginaInicial: 1,
+                                        fraseWord: dt.fraseWord,
+                                        locWord: `§${dt.numParagrafo}, Linha ${dt.numLinha}`,
+                                        diagnostico: dt.mensagem,
+                                      })
+                                  : undefined
+                              }
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'cruzamento',
+                                  categoria: 'atribuicao',
+                                  diagnostico: dt.mensagem,
+                                  fraseWord: dt.fraseWord,
+                                  locWord: `§${dt.numParagrafo}, Linha ${dt.numLinha}`,
+                                  chaveCitacao: dt.autorCitado,
+                                  refBibItem: refObjDt,
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -3727,7 +4035,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA Avaliar
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -3737,20 +4045,97 @@ export default function ReverseAuditView({
               </div>
             </div>
           )}
+
+          {/* ALERTA C12: Auditoria de Figuras, Quadros e Tabelas (ABNT NBR 14724 & IBGE) (Evolução 1) */}
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'figuras_tabelas') && (mostrarResolvidos ? alertasFigurasTabelas.length > 0 : alertasFigurasTabelasAtivos.length > 0) && (
+            <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
+              <h4 style={{ color: '#d97706', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>🖼️ Auditoria de Figuras, Quadros e Tabelas · ABNT NBR 14724 &amp; IBGE ({alertasFigurasTabelasAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="manuscrito" />
+              </h4>
+              <div className="lista-historico">
+                {alertasFigurasTabelas
+                  .filter((ft, i) => mostrarResolvidos || !itensResolvidos.has(`figtab_${ft.numParagrafo}_${ft.tipo}_${ft.numero || i}`))
+                  .map((ft, i) => {
+                    const idItem = `figtab_${ft.numParagrafo}_${ft.tipo}_${ft.numero || i}`;
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#b45309', fontSize: 12.8 }}>
+                              {ft.mensagem}
+                            </div>
+                            <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                              <span><strong>Elemento:</strong> <code>{(ft.elementoTipo || 'Elemento').toUpperCase()} {ft.numero || ''}</code></span>
+                              <span><strong>Norma:</strong> ABNT NBR 14724 / IBGE</span>
+                            </div>
+                            {ft.fraseWord && (
+                              <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                                <strong>No Seu Word (§{ft.numParagrafo || '?'}, L.{ft.numLinha || '?'}):</strong> &ldquo;{ft.fraseWord}&rdquo;
+                              </div>
+                            )}
+                          </div>
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(ft.fraseWord || `${ft.elementoTipo} ${ft.numero}`)}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'manuscrito',
+                                  categoria: 'figuras',
+                                  diagnostico: ft.mensagem,
+                                  fraseWord: ft.fraseWord,
+                                  locWord: `§${ft.numParagrafo || '?'}, Linha ${ft.numLinha || '?'}`,
+                                })
+                              }
+                            />
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Conformidade de Ilustrações / Tabelas (ABNT 14724 / IBGE)',
+                                  fraseWord: ft.fraseWord,
+                                  locWord: `§${ft.numParagrafo || '?'}, Linha ${ft.numLinha || '?'}`,
+                                  diagnostico: ft.mensagem,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+              </div>
+            </div>
+          )}
+
           {/* ALERTA D: Citadas no texto mas ausentes nas Referências (Citações Órfãs) */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'orfa') && (mostrarResolvidos ? resultado.citacoesSemReferencia.length > 0 : citacoesSemReferenciaAtivas.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626' }}>
-              <h4 style={{ color: '#dc2626' }}>
-                ❌ Inconformidade: Citadas no texto, mas AUSENTES na lista final de Referências ({citacoesSemReferenciaAtivas.length})
+              <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>❌ Citações no Seu Texto AUSENTES na Lista Final de Referências ({citacoesSemReferenciaAtivas.length})</span>
+                <BadgeAlvoAlerta alvo="cruzamento" />
               </h4>
               <div className="lista-historico">
                 {resultado.citacoesSemReferencia
                   .filter((c) => mostrarResolvidos || !itensResolvidos.has(`orfa_${c.chave}`))
                   .map((c, idxOrfa) => {
                     const idItem = `orfa_${c.chave}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     const chaveBusca = `orfa_${idxOrfa}`;
                     const primOc = c.ocorrencias?.[0];
+                    const refMatchBib = refs.find((x) => {
+                      const t = `${x.csl?.title || ''}`.toLowerCase();
+                      return c.tituloNaBib && t.includes(c.tituloNaBib.toLowerCase().slice(0, 20));
+                    }) || null;
                     return (
                       <div key={c.chave} className="card-historico" style={{ opacity: resolvido ? 0.6 : 1 }}>
                         <div className="card-historico-topo">
@@ -3758,18 +4143,28 @@ export default function ReverseAuditView({
                             <strong>
                               {c.autor} ({c.ano}) — aparece {c.ocorrencias.length}x no texto, mas não está nas Referências finais!
                             </strong>
-                            {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             {c.tituloNaBib && <span className="badge-ja-existe" style={{ marginLeft: 8 }}>Na biblioteca: {c.tituloNaBib}</span>}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              rotuloResolver="🛠️ Resolver (Tirar / Inserir Ref no Word)"
+                              onAbrirWord={primOc ? () => abrirNoWordAtalho(primOc.fraseContexto) : undefined}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'cruzamento',
+                                  categoria: 'orfa',
+                                  diagnostico: `A citação ${c.autor} (${c.ano}) aparece no texto, mas não foi encontrada entrada correspondente na lista final de Referências.`,
+                                  fraseWord: primOc?.fraseContexto || '',
+                                  locWord: primOc ? `Parágrafo §${primOc.numParagrafo} · Linha ${primOc.numLinha}` : '',
+                                  chaveCitacao: `${c.autor} (${c.ano})`,
+                                  refBibItem: refMatchBib,
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno primario"
                               onClick={() =>
@@ -3782,7 +4177,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🔎 Buscar esta Fonte ou Artigo Parecido
+                              🔎 Buscar Fonte Online
                             </button>
                             <button
                               className="btn pequeno secundario"
@@ -3819,8 +4214,9 @@ export default function ReverseAuditView({
           {/* ALERTA E: Referências na Lista Final mas NUNCA Citadas no Texto (Sobrando / Consultadas) */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'sobrando') && (mostrarResolvidos ? refsNaoCitadasNoTexto.length > 0 : refsNaoCitadasNoTextoAtivas.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
-              <h4 style={{ color: '#b45309' }}>
-                ⚠️ Inconformidade: Obras na Lista Final de Referências que NUNCA foram Citadas no Texto ({refsNaoCitadasNoTextoAtivas.length})
+              <h4 style={{ color: '#b45309', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>⚠️ Obras na Lista Final de Referências que NUNCA foram Citadas no Texto ({refsNaoCitadasNoTextoAtivas.length})</span>
+                <BadgeAlvoAlerta alvo="cruzamento" />
               </h4>
               <p className="dica-texto" style={{ margin: '2px 0 8px 0' }}>
                 Segundo as normas ABNT NBR 10520 e diretrizes acadêmicas de periódicos, todas as obras listadas nas Referências devem ter sido citadas no corpo do trabalho (ou explicitamente indicadas como bibliografia consultada).
@@ -3830,28 +4226,37 @@ export default function ReverseAuditView({
                   .filter((r) => mostrarResolvidos || !itensResolvidos.has(`sobr_${r.refBibId || r.textoOriginal}`))
                   .map((r, i) => {
                     const idItem = `sobr_${r.refBibId || r.textoOriginal}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     const chaveBusca = `sobrando_${i}`;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <strong>{r.textoOriginal}</strong>
-                            {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             <div style={{ color: '#b45309', fontWeight: 600, fontSize: 12, marginTop: 4 }}>
                               ⚠️ Nenhuma citação no formato ({r.primeiroSobrenome}, {r.ano}) foi localizada no texto. (Marcada como Consultada)
                             </div>
                             {r.doiOficial && <div style={{ fontSize: 11.8, color: 'var(--texto-suave)', marginTop: 2 }}>DOI: {r.doiOficial}</div>}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              rotuloResolver="🛠️ Remover / Gerenciar"
+                              onAbrirWord={() => abrirNoWordAtalho(r.textoOriginal)}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'cruzamento',
+                                  categoria: 'sobrando',
+                                  diagnostico: `A obra de ${r.primeiroSobrenome} (${r.ano}) está nas Referências mas nunca foi citada no corpo do manuscrito.`,
+                                  textoReferencia: r.textoOriginal,
+                                  locWord: 'Lista Final de Referências',
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -3863,7 +4268,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🔎 Artigos Parecidos
+                              🔎 Parecidos
                             </button>
                             <button
                               className="btn pequeno fantasma"
@@ -3890,15 +4295,17 @@ export default function ReverseAuditView({
           {/* ALERTA F: Divergências de Metadados Oficiais & Norma ABNT NBR */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'metadados') && (mostrarResolvidos ? alertasMetadadosAbnt.length > 0 : alertasMetadadosAbntAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #2563eb', background: 'rgba(37, 99, 235, 0.04)' }}>
-              <h4 style={{ color: '#1d4ed8' }}>
-                📐 Divergências de Metadados Oficiais &amp; ABNT NBR 10520 ({alertasMetadadosAbntAtivos.length})
+              <h4 style={{ color: '#1d4ed8', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>📐 Chamadas de Citação no Seu Texto &amp; ABNT NBR 10520 ({alertasMetadadosAbntAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="manuscrito" />
               </h4>
               <div className="lista-historico">
                 {alertasMetadadosAbnt
                   .filter((ap) => mostrarResolvidos || !itensResolvidos.has(`meta_${ap.numParagrafo}_${ap.numLinha}_${ap.tipo}`))
                   .map((ap, i) => {
                     const idItem = `meta_${ap.numParagrafo}_${ap.numLinha}_${ap.tipo}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     const ehParcial = ap.tipo === 'afirmacao_parcialmente_sustentada';
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: ehParcial ? '3px solid #d97706' : '3px solid #2563eb', opacity: resolvido ? 0.6 : 1 }}>
@@ -3906,24 +4313,32 @@ export default function ReverseAuditView({
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: ehParcial ? '#b45309' : '#1e3a8a', fontSize: 12.6 }}>
                               {ap.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             {ap.fraseWord && (
                               <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
-                                <strong>📍 Trecho no Word (Parágrafo §{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
+                                <strong>📍 Trecho no Seu Word (Parágrafo §{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
                                 <em>"{ap.fraseWord}"</em>
                               </div>
                             )}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(ap.fraseWord)}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'manuscrito',
+                                  categoria: 'abnt',
+                                  diagnostico: ap.mensagem,
+                                  fraseWord: ap.fraseWord,
+                                  locWord: `Parágrafo §${ap.numParagrafo} · Linha ${ap.numLinha}`,
+                                  chaveCitacao: ap.autorCitado,
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -3936,7 +4351,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA Ajustar
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -3950,23 +4365,36 @@ export default function ReverseAuditView({
           {/* ALERTA G: Divergências de Conteúdo e Páginas no PDF do Artigo */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'pdf') && (mostrarResolvidos ? alertasPdf.length > 0 : alertasPdfAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #7c3aed', background: 'rgba(124, 58, 237, 0.04)' }}>
-              <h4 style={{ color: '#7c3aed' }}>
-                📄 Divergências de Conteúdo e Páginas no PDF do Artigo ({alertasPdfAtivos.length})
+              <h4 style={{ color: '#7c3aed', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>📄 Divergências de Conteúdo e Páginas no PDF do Artigo ({alertasPdfAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="cruzamento" />
               </h4>
               <div className="lista-historico">
                 {alertasPdf
                   .filter((ap) => mostrarResolvidos || !itensResolvidos.has(`pdf_${ap.ref?.refBibId}_${ap.paginaPdf}_${ap.status}`))
                   .map((ap, i) => {
                     const idItem = `pdf_${ap.ref?.refBibId}_${ap.paginaPdf}_${ap.status}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     const refObj = refs.find((x) => x.id === ap.ref.refBibId);
+                    const objSplit = refObj?.pdf
+                      ? () =>
+                          setDadosSplitView({
+                            refItem: refObj,
+                            paginaInicial: ap.paginaPdf || 1,
+                            fraseWord: ap.ocorrencia?.fraseContexto || '',
+                            paragrafoCompleto: ap.ocorrencia?.paragrafoCompleto || '',
+                            locWord: `Parágrafo §${ap.ocorrencia?.numParagrafo} · Linha ${ap.ocorrencia?.numLinha}`,
+                            diagnostico: ap.mensagem,
+                            trechoPdf: ap.trechoPdf,
+                          })
+                      : undefined;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #7c3aed', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#6d28d9', fontSize: 12.6 }}>
                               {ap.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             <div style={{ fontSize: 12, color: 'var(--texto-suave)', marginTop: 2 }}>
                               <strong>Obra:</strong> {ap.ref.primeiroSobrenome} ({ap.ref.ano}) — {ap.ref.tituloOficial || ap.ref.tituloBuscado}
@@ -3984,14 +4412,28 @@ export default function ReverseAuditView({
                             )}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(ap.ocorrencia?.fraseContexto || '')}
+                              onAbrirSplitView={objSplit}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'cruzamento',
+                                  categoria: 'div_pdf',
+                                  diagnostico: ap.mensagem,
+                                  fraseWord: ap.ocorrencia?.fraseContexto || '',
+                                  paragrafoCompleto: ap.ocorrencia?.paragrafoCompleto || '',
+                                  locWord: `Parágrafo §${ap.ocorrencia?.numParagrafo} · Linha ${ap.ocorrencia?.numLinha}`,
+                                  chaveCitacao: `${ap.ref.primeiroSobrenome} (${ap.ref.ano})`,
+                                  refBibItem: refObj,
+                                  trechoOriginalArtigo: ap.trechoPdf,
+                                  paginaPdf: ap.paginaPdf,
+                                })
+                              }
+                            />
                             {refObj?.pdf && (
                               <button
                                 className="btn pequeno primario"
@@ -4027,39 +4469,48 @@ export default function ReverseAuditView({
           {/* ALERTA H: Avisos de Escopo Metodológico e Submissão */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'metodologico') && (mostrarResolvidos ? alertasMetodologicos.length > 0 : alertasMetodologicosAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #4b5563', background: 'rgba(75, 85, 99, 0.04)' }}>
-              <h4 style={{ color: '#374151' }}>
-                📌 Avisos de Escopo Metodológico &amp; Submissão ({alertasMetodologicosAtivos.length})
+              <h4 style={{ color: '#374151', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>📌 Avisos Estruturais e Escala no Seu Manuscrito ({alertasMetodologicosAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="manuscrito" />
               </h4>
               <div className="lista-historico">
                 {alertasMetodologicos
                   .filter((ap) => mostrarResolvidos || !itensResolvidos.has(`metodologico_${ap.numParagrafo}_${ap.tipo}`))
                   .map((ap, i) => {
                     const idItem = `metodologico_${ap.numParagrafo}_${ap.tipo}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #6b7280', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#1f2937', fontSize: 12.6 }}>
                               {ap.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             {ap.fraseWord && (
                               <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
-                                <strong>📍 Trecho no Word (Parágrafo §{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
+                                <strong>📍 Trecho no Seu Word (Parágrafo §{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
                                 <em>"{ap.fraseWord}"</em>
                               </div>
                             )}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(ap.fraseWord)}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'manuscrito',
+                                  categoria: 'geral',
+                                  diagnostico: ap.mensagem,
+                                  fraseWord: ap.fraseWord,
+                                  locWord: `Parágrafo §${ap.numParagrafo} · Linha ${ap.numLinha}`,
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -4071,7 +4522,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA Ajustar
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -4085,26 +4536,27 @@ export default function ReverseAuditView({
           {/* ALERTA H: Marcadores Estilísticos de Redação de IA (Open-Detector) */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'estilo_ia') && (mostrarResolvidos ? alertasEstiloIa.length > 0 : alertasEstiloIaAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #8b5cf6', background: 'rgba(139, 92, 246, 0.04)' }}>
-              <h4 style={{ color: '#8b5cf6' }}>
-                🤖 Marcadores de Redação Estilística de IA (Open-Detector) ({alertasEstiloIaAtivos.length})
+              <h4 style={{ color: '#8b5cf6', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span>🤖 Marcadores de Redação de IA no Seu Texto (Open-Detector) ({alertasEstiloIaAtivos.length})</span>
+                <BadgeAlvoAlerta alvo="manuscrito" />
               </h4>
               <div className="lista-historico">
                 {alertasEstiloIa
                   .filter((ap) => mostrarResolvidos || !itensResolvidos.has(`estiloia_${ap.numParagrafo}_${ap.numLinha}`))
                   .map((ap, i) => {
                     const idItem = `estiloia_${ap.numParagrafo}_${ap.numLinha}`;
-                    const resolvido = itensResolvidos.has(idItem);
+                    const stItem = statusItens[idItem] || null;
+                    const resolvido = !!stItem;
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: '3px solid #8b5cf6', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
                           <div style={{ flex: 1 }}>
                             <div style={{ fontWeight: 700, color: '#6d28d9', fontSize: 12.6 }}>
                               {ap.mensagem}
-                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
                             {ap.fraseWord && (
                               <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
-                                <strong>📍 Parágrafo Suspeito no Word (§{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
+                                <strong>📍 Parágrafo no Seu Word (§{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
                                 <em>"{ap.fraseWord}"</em>
                               </div>
                             )}
@@ -4119,14 +4571,22 @@ export default function ReverseAuditView({
                             )}
                           </div>
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
-                            <button
-                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
-                              onClick={() => alternarItemResolvido(idItem)}
-                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
-                              style={{ fontSize: 11.5, padding: '3px 8px' }}
-                            >
-                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
-                            </button>
+                            <AcoesResolucaoAlerta
+                              idItem={idItem}
+                              statusAtual={stItem}
+                              onDefinirStatus={definirStatusItem}
+                              onAbrirWord={() => abrirNoWordAtalho(ap.fraseWord)}
+                              onAbrirResolver={() =>
+                                setItemEmResolucao({
+                                  idItem,
+                                  alvo: 'manuscrito',
+                                  categoria: 'estilometria',
+                                  diagnostico: ap.mensagem,
+                                  fraseWord: ap.fraseWord,
+                                  locWord: `Parágrafo §${ap.numParagrafo} · Linha ${ap.numLinha}`,
+                                })
+                              }
+                            />
                             <button
                               className="btn pequeno secundario"
                               onClick={() =>
@@ -4138,7 +4598,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ Humanizar com IA
+                              🤖 Copiar p/ IA
                             </button>
                           </div>
                         </div>
@@ -4472,6 +4932,72 @@ export default function ReverseAuditView({
             </div>
           )}
         </>
+      )}
+
+      {/* Modal Interativo de Resolução Direta (Editor Interno + Cirurgia .DOCX + Inserção de Referências) */}
+      {itemEmResolucao && (
+        <AuditResolutionModal
+          itemResolucao={itemEmResolucao}
+          refsBiblioteca={refs}
+          estilo={estilo}
+          idioma={idioma}
+          caminhoDocx={caminhoArquivo}
+          textoManuscrito={textoManuscrito}
+          onAplicarCirurgiaNoDocx={aplicarCirurgiaNoDocx}
+          onAtualizarTextoLocal={atualizarTextoLocal}
+          onDefinirStatus={definirStatusItem}
+          onImportarCsl={onImportarCsl}
+          onAbrirNoWord={(q) => abrirNoWordAtalho(q)}
+          onAbrirSplitView={
+            itemEmResolucao?.refBibItem?.pdf
+              ? () =>
+                  setDadosSplitView({
+                    refItem: itemEmResolucao.refBibItem,
+                    paginaInicial: itemEmResolucao.paginaPdf || 1,
+                    fraseWord: itemEmResolucao.fraseWord,
+                    paragrafoCompleto: itemEmResolucao.paragrafoCompleto,
+                    locWord: itemEmResolucao.locWord,
+                    diagnostico: itemEmResolucao.diagnostico,
+                    trechoPdf: itemEmResolucao.trechoOriginalArtigo,
+                  })
+              : undefined
+          }
+          onCopiarPromptIa={() =>
+            copiarPromptItemIndividualIa({
+              tituloProblema: itemEmResolucao.diagnostico,
+              fraseWord: itemEmResolucao.fraseWord,
+              locWord: itemEmResolucao.locWord,
+              refTexto: itemEmResolucao.chaveCitacao || itemEmResolucao.textoReferencia || '',
+              diagnostico: itemEmResolucao.diagnostico,
+              trechoArtigo: itemEmResolucao.trechoOriginalArtigo || '',
+            })
+          }
+          avisar={avisar}
+          onFechar={() => setItemEmResolucao(null)}
+        />
+      )}
+
+      {/* Modal Comparador Lado a Lado (Split View Word <-> PDF) (Evolução 4) */}
+      {dadosSplitView && (
+        <SplitViewWordPdfModal
+          dadosComparacao={dadosSplitView}
+          onFechar={() => setDadosSplitView(null)}
+          onAbrirNoWord={() => abrirNoWordAtalho(dadosSplitView.fraseWord || '')}
+          onAbrirEditorResolucao={() =>
+            setItemEmResolucao({
+              idItem: dadosSplitView.idItem || `split_${Date.now()}`,
+              alvo: 'cruzamento',
+              categoria: 'div_pdf',
+              diagnostico: dadosSplitView.diagnostico,
+              fraseWord: dadosSplitView.fraseWord,
+              paragrafoCompleto: dadosSplitView.paragrafoCompleto,
+              locWord: dadosSplitView.locWord,
+              refBibItem: dadosSplitView.refItem,
+              trechoOriginalArtigo: dadosSplitView.trechoPdf,
+              paginaPdf: dadosSplitView.paginaInicial,
+            })
+          }
+        />
       )}
     </div>
   );
