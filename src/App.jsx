@@ -200,6 +200,26 @@ function ConteudoApp() {
     }
   });
 
+  // Aba lateral de detalhes (Metadados, Notas e PICO) sob demanda para desobstruir a tela inicial
+  const [painelDireitoAberto, setPainelDireitoAberto] = useState(() => {
+    try {
+      const salvo = localStorage.getItem('bib_painel_direito_aberto');
+      return salvo !== null ? JSON.parse(salvo) : false; // Por demanda: nasce fechado para tela inicial limpa e ampla!
+    } catch {
+      return false;
+    }
+  });
+
+  const alternarPainelDireito = (forcarEstado) => {
+    setPainelDireitoAberto((ant) => {
+      const novo = typeof forcarEstado === 'boolean' ? forcarEstado : !ant;
+      try {
+        localStorage.setItem('bib_painel_direito_aberto', JSON.stringify(novo));
+      } catch {}
+      return novo;
+    });
+  };
+
   const iniciarRedimColuna = (colKey, e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -1305,6 +1325,13 @@ function ConteudoApp() {
           <button className="btn-toolbar-zotero destaque-azul" onClick={() => setModalExportarWord(true)} title="Gerar bibliografia">
             📄 Bibliografia
           </button>
+          <button
+            className={`btn-toolbar-zotero ${painelDireitoAberto ? 'destaque-azul' : ''}`}
+            onClick={() => alternarPainelDireito()}
+            title={painelDireitoAberto ? 'Ocultar aba lateral de detalhes (expandir tabela)' : 'Abrir aba lateral de detalhes (Metadados, Notas e PICO)'}
+          >
+            {painelDireitoAberto ? '◀ Ocultar Detalhes' : 'ℹ️ Detalhes'}
+          </button>
         </div>
 
         {/* Direita: Caixa de Busca Estilo Zotero com Escopo */}
@@ -1702,7 +1729,9 @@ function ConteudoApp() {
         <div
           className="grade-3-paineis-zotero"
           style={{
-            gridTemplateColumns: `${largurasPaineis.esquerdo}px 5px minmax(360px, 1fr) 5px ${largurasPaineis.direito}px`,
+            gridTemplateColumns: painelDireitoAberto
+              ? `${largurasPaineis.esquerdo}px 5px minmax(360px, 1fr) 5px ${largurasPaineis.direito}px`
+              : `${largurasPaineis.esquerdo}px 5px 1fr`,
           }}
         >
           {/* PAINEL 1 (ESQUERDA): Árvore de Coleções em cima + Seletor de Tags/Autores embaixo */}
@@ -2102,6 +2131,12 @@ function ConteudoApp() {
                           title="Arraste para redimensionar a coluna PDF"
                         />
                       </th>
+                      <th
+                        style={{ width: 84, textAlign: 'center' }}
+                        title="Abrir aba lateral de detalhes, metadados, notas e PICO"
+                      >
+                        <span>Detalhes</span>
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
@@ -2273,6 +2308,31 @@ function ConteudoApp() {
                                 </div>
                               )}
                             </td>
+
+                            {/* Botão de Detalhes sob demanda na linha */}
+                            <td style={{ textAlign: 'center', whiteSpace: 'nowrap' }} onClick={(e) => e.stopPropagation()}>
+                              <button
+                                type="button"
+                                className="btn pequeno secundario"
+                                onClick={() => {
+                                  setSelecionadas([r.id]);
+                                  alternarPainelDireito(true);
+                                }}
+                                title="Ver detalhes, metadados, notas e PICO desta obra"
+                                style={{
+                                  padding: '2px 7px',
+                                  fontSize: 11,
+                                  borderRadius: 4,
+                                  border: sel && painelDireitoAberto ? '1px solid var(--primaria)' : '1px solid var(--borda)',
+                                  background: sel && painelDireitoAberto ? 'var(--primaria)' : 'var(--fundo)',
+                                  color: sel && painelDireitoAberto ? '#ffffff' : 'var(--texto)',
+                                  fontWeight: 600,
+                                  cursor: 'pointer',
+                                }}
+                              >
+                                ℹ️ Detalhes
+                              </button>
+                            </td>
                           </tr>
 
                           {/* Linhas filhas expansíveis (Árvore de anexos, citações no Word e notas igual ao Zotero) */}
@@ -2281,7 +2341,7 @@ function ConteudoApp() {
                               {(r.ocorrenciasWord || []).map((oc, idxOc) => (
                                 <tr key={`oc-${idxOc}`} className="linha-filha-zotero">
                                   <td colSpan={3} />
-                                  <td colSpan={6} style={{ whiteSpace: 'normal', lineHeight: 1.4 }}>
+                                  <td colSpan={7} style={{ whiteSpace: 'normal', lineHeight: 1.4 }}>
                                     ↳ 📍 <strong>Word (Parágrafo §{oc.numParagrafo || idxOc + 1} · Linha {oc.numLinha || '?'}{oc.secao ? ` · ${oc.secao}` : ''}):</strong>{' '}
                                     <em>"{oc.fraseContexto}"</em>
                                     {(oc.trechoPdf || oc.trechoArtigoResumo) && (
@@ -2305,7 +2365,7 @@ function ConteudoApp() {
                               {r.pdf && (
                                 <tr className="linha-filha-zotero" onDoubleClick={() => abrirPdfEmAba(r)}>
                                   <td colSpan={3} />
-                                  <td colSpan={6}>
+                                  <td colSpan={7}>
                                     ↳ 📄 <strong>Texto Completo (PDF):</strong> <code>{r.pdf}</code>
                                   </td>
                                   <td style={{ textAlign: 'center' }}>
@@ -2318,7 +2378,7 @@ function ConteudoApp() {
                               {r.notas && (
                                 <tr className="linha-filha-zotero">
                                   <td colSpan={3} />
-                                  <td colSpan={7}>
+                                  <td colSpan={8}>
                                     ↳ 📝 <strong>Nota de Fichamento:</strong> {r.notas.slice(0, 140)}
                                     {r.notas.length > 140 ? '…' : ''}
                                   </td>
@@ -2351,31 +2411,45 @@ function ConteudoApp() {
                 >
                   ↺ Restaurar Colunas
                 </button>
+                <button
+                  type="button"
+                  className={`btn pequeno ${painelDireitoAberto ? 'secundario' : 'primario'}`}
+                  onClick={() => alternarPainelDireito()}
+                  title={painelDireitoAberto ? 'Ocultar aba lateral de detalhes' : 'Abrir aba lateral de detalhes'}
+                  style={{ marginLeft: 6, padding: '2px 9px', fontSize: 11, fontWeight: 600 }}
+                >
+                  {painelDireitoAberto ? '◀ Ocultar Painel Lateral' : '▶ Detalhes do Artigo'}
+                </button>
               </span>
             </footer>
           </section>
 
-          {/* Divisor redimensionável entre Tabela Central e Painel Direito */}
-          <div
-            className="divisor-painel-zotero"
-            onMouseDown={(e) => iniciarRedimPainel('direito', e)}
-            onDoubleClick={restaurarLargurasPadrao}
-            title="Arraste para redimensionar o painel direito (2 cliques restaura o padrão)"
-          />
+          {/* Divisor redimensionável e Painel Direito (apenas quando aberto sob demanda) */}
+          {painelDireitoAberto && (
+            <>
+              <div
+                className="divisor-painel-zotero"
+                onMouseDown={(e) => iniciarRedimPainel('direito', e)}
+                onDoubleClick={restaurarLargurasPadrao}
+                title="Arraste para redimensionar o painel direito (2 cliques restaura o padrão)"
+              />
 
-          {/* PAINEL 3 (DIREITA): INSPETOR DE METADADOS, NOTAS, PICO, CITAÇÕES E REDE */}
-          <ReferenceDetail
-            refItem={refAtiva}
-            estilo={cfg.estilo}
-            idioma={cfg.idioma}
-            colecoes={bib.colecoes || []}
-            onAtualizar={atualizarRef}
-            onExcluir={excluirRefs}
-            onAnexarPdf={anexarPdfManual}
-            onAbrirLeitorPdf={(r, pag) => abrirPdfEmAba(r, pag)}
-            onImportarCsl={importarCsl}
-            onRecarregar={recarregarBiblioteca}
-          />
+              {/* PAINEL 3 (DIREITA): INSPETOR DE METADADOS, NOTAS, PICO, CITAÇÕES E REDE */}
+              <ReferenceDetail
+                refItem={refAtiva}
+                estilo={cfg.estilo}
+                idioma={cfg.idioma}
+                colecoes={bib.colecoes || []}
+                onAtualizar={atualizarRef}
+                onExcluir={excluirRefs}
+                onAnexarPdf={anexarPdfManual}
+                onAbrirLeitorPdf={(r, pag) => abrirPdfEmAba(r, pag)}
+                onImportarCsl={importarCsl}
+                onRecarregar={recarregarBiblioteca}
+                onFechar={() => alternarPainelDireito(false)}
+              />
+            </>
+          )}
         </div>
       )}
 
@@ -2385,6 +2459,15 @@ function ConteudoApp() {
           className="menu-flutuante-zotero"
           style={{ position: 'fixed', top: menuContexto.y, left: menuContexto.x, zIndex: 300 }}
         >
+          <button
+            onClick={() => {
+              setSelecionadas([menuContexto.ref.id]);
+              alternarPainelDireito(true);
+              setMenuContexto(null);
+            }}
+          >
+            ℹ️ Ver Detalhes do Artigo (Metadados, Notas &amp; PICO)
+          </button>
           {menuContexto.ref.pdf ? (
             <>
               <button onClick={() => abrirPdfEmAba(menuContexto.ref)}>📄 Abrir PDF em Aba (Leitor Integrado)</button>

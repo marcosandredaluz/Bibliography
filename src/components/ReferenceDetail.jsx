@@ -37,6 +37,7 @@ export default function ReferenceDetail({
   onAbrirLeitorPdf,
   onImportarCsl,
   onRecarregar,
+  onFechar,
 }) {
   const avisar = useAviso();
   const [aba, setAba] = useState('dados'); // 'dados' | 'fichamento' | 'citacao' | 'rede'
@@ -174,6 +175,19 @@ export default function ReferenceDetail({
   if (!refItem) {
     return (
       <aside className="painel-detalhe vazio-detalhe">
+        {onFechar && (
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end', padding: '6px 10px' }}>
+            <button
+              type="button"
+              className="btn pequeno fantasma"
+              onClick={onFechar}
+              title="Fechar painel lateral de detalhes"
+              style={{ fontSize: 12, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 4 }}
+            >
+              ✕ Ocultar Painel
+            </button>
+          </div>
+        )}
         <Icone nome="book" tam={36} />
         <p>Selecione uma referência para ver e editar os detalhes, notas, PICO e formatação ABNT/APA/Vancouver.</p>
       </aside>
@@ -277,6 +291,31 @@ export default function ReferenceDetail({
           >
             <Icone nome="trash" />
           </button>
+          {onFechar && (
+            <button
+              type="button"
+              className="btn-icone"
+              onClick={onFechar}
+              title="Ocultar painel lateral de detalhes (expandir tabela de artigos)"
+              style={{
+                marginLeft: 4,
+                fontSize: 13,
+                fontWeight: 700,
+                color: 'var(--texto-suave)',
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: 26,
+                height: 26,
+                borderRadius: 4,
+                border: '1px solid var(--borda)',
+                background: 'var(--fundo)',
+                cursor: 'pointer',
+              }}
+            >
+              ✕
+            </button>
+          )}
         </div>
       </div>
 
