@@ -1242,8 +1242,9 @@ export default function ReverseAuditView({
         : (r.ocorrenciasNoTexto || []).map((o) => ({ ocorrencia: o, mensagem: o.trechoArtigoResumo ? 'Confirmado no resumo' : 'Citado no Word' }));
       listaOc.forEach((v) => {
         const oc = v.ocorrencia || v;
+        const tagIntencao = oc.intencao?.rotulo ? ` [${oc.intencao.rotulo}]` : '';
         blocos.push(
-          `   - Word (§${oc.numParagrafo}, Linha ${oc.numLinha}): "${oc.fraseContexto}" -> ${v.mensagem || ''}${
+          `   - Word (§${oc.numParagrafo}, Linha ${oc.numLinha})${tagIntencao}: "${oc.fraseContexto}" -> ${v.mensagem || ''}${
             v.trechoPdf || oc.trechoArtigoResumo ? ` | Trecho no artigo: "${v.trechoPdf || oc.trechoArtigoResumo}"` : ''
           }`
         );
@@ -1516,8 +1517,31 @@ export default function ReverseAuditView({
                   </div>
 
                   <div style={{ fontSize: 12.2, marginTop: 5 }}>
+                    {oc.intencao?.rotulo && (
+                      <span style={{ display: 'inline-block', marginRight: 6, padding: '1px 7px', borderRadius: 10, background: 'rgba(37, 99, 235, 0.12)', color: '#2563eb', fontSize: 11, fontWeight: 600 }}>
+                        {oc.intencao.rotulo}
+                      </span>
+                    )}
                     <strong>📝 Frase onde você citou no Word:</strong> <em>"{oc.fraseContexto}"</em>
                   </div>
+
+                  {oc.proposicoesAtomicas?.length > 1 && (
+                    <details style={{ fontSize: 11.5, marginTop: 4, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4, border: '1px solid var(--borda)' }}>
+                      <summary style={{ cursor: 'pointer', fontWeight: 600, color: 'var(--texto)' }}>
+                        🔬 Proposições Atômicas (RefChecker): {oc.proposicoesAtomicas.filter((p) => p.sustentada).length}/{oc.proposicoesAtomicas.length} premissas sustentadas
+                      </summary>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: 3, marginTop: 4 }}>
+                        {oc.proposicoesAtomicas.map((p, idxP) => (
+                          <div key={idxP} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 11 }}>
+                            <span>{p.sustentada ? '✅' : '❌'}</span>
+                            <span style={{ color: p.sustentada ? 'inherit' : '#dc2626', fontStyle: p.sustentada ? 'normal' : 'italic' }}>
+                              "{p.proposicao}"
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </details>
+                  )}
 
                   {oc.paragrafoCompleto && oc.paragrafoCompleto !== oc.fraseContexto && (
                     <details style={{ fontSize: 11.5, marginTop: 3, color: 'var(--texto-suave)' }}>
@@ -2514,35 +2538,38 @@ export default function ReverseAuditView({
                 📐 Divergências de Metadados Oficiais &amp; ABNT NBR 10520 ({alertasMetadadosAbnt.length})
               </h4>
               <div className="lista-historico">
-                {alertasMetadadosAbnt.map((ap, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #2563eb' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#1e3a8a', fontSize: 12.6 }}>{ap.mensagem}</div>
-                        {ap.fraseWord && (
-                          <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
-                            <strong>📍 Trecho no Word (Parágrafo §{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
-                            <em>"{ap.fraseWord}"</em>
-                          </div>
-                        )}
+                {alertasMetadadosAbnt.map((ap, i) => {
+                  const ehParcial = ap.tipo === 'afirmacao_parcialmente_sustentada';
+                  return (
+                    <div key={i} className="card-historico" style={{ borderLeft: ehParcial ? '3px solid #d97706' : '3px solid #2563eb' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                        <div style={{ flex: 1 }}>
+                          <div style={{ fontWeight: 700, color: ehParcial ? '#b45309' : '#1e3a8a', fontSize: 12.6 }}>{ap.mensagem}</div>
+                          {ap.fraseWord && (
+                            <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
+                              <strong>📍 Trecho no Word (Parágrafo §{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
+                              <em>"{ap.fraseWord}"</em>
+                            </div>
+                          )}
+                        </div>
+                        <button
+                          className="btn pequeno secundario"
+                          onClick={() =>
+                            copiarPromptItemIndividualIa({
+                              tituloProblema: ehParcial ? 'Ajuste de Premissa Não Sustentada' : 'Ajuste de Metadados / Norma ABNT',
+                              fraseWord: ap.fraseWord,
+                              locWord: `Parágrafo §${ap.numParagrafo} · Linha ${ap.numLinha}`,
+                              refTexto: ap.autorCitado,
+                              diagnostico: ap.mensagem,
+                            })
+                          }
+                        >
+                          🤖 Copiar p/ IA Ajustar
+                        </button>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Ajuste de Metadados / Norma ABNT',
-                            fraseWord: ap.fraseWord,
-                            locWord: `Parágrafo §${ap.numParagrafo} · Linha ${ap.numLinha}`,
-                            refTexto: ap.autorCitado,
-                            diagnostico: ap.mensagem,
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Ajustar
-                      </button>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           )}
