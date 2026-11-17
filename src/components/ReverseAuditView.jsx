@@ -1021,13 +1021,29 @@ export default function ReverseAuditView({
   const alertasPlagio = resultado?.alertasPlagio || [];
   const alertasEstatisticos = resultado?.alertasEstatisticos || [];
   const alertasRede = resultado?.alertasRede || [];
+  const alertasMetodologiaClinica = resultado?.alertasMetodologiaClinica || [];
   const citacoesSemReferencia = resultado?.citacoesSemReferencia || [];
 
-  // Alertas de Metadados / ABNT vs Alertas Metodológicos vs Alertas Estilo IA (Open-Detector) vs Estatística vs Rede
+  // Alertas de Metadados / ABNT vs Alertas Metodológicos vs Alertas Estilo IA (Open-Detector) vs Estatística vs Rede vs Metodologia Clínica
   const alertasPrecisao = resultado?.alertasPrecisao || [];
   const alertasEstiloIa = resultado?.alertasEstiloIa || alertasPrecisao.filter((ap) => ap.tipo === 'estilo_redacao_ia');
   const alertasMetadadosAbnt = alertasPrecisao.filter(
-    (ap) => !['quebra_escala_narrativa', 'secao_pos_referencias', 'estilo_redacao_ia', 'inconsistencia_estatistica_grave', 'inconsistencia_estatistica_numerica', 'alta_concentracao_autoria', 'concentracao_periodico'].includes(ap.tipo)
+    (ap) =>
+      ![
+        'quebra_escala_narrativa',
+        'secao_pos_referencias',
+        'estilo_redacao_ia',
+        'inconsistencia_estatistica_grave',
+        'inconsistencia_estatistica_numerica',
+        'alta_concentracao_autoria',
+        'concentracao_periodico',
+        'ausencia_aprovacao_etica',
+        'ausencia_mencao_tcle',
+        'ausencia_criterios_elegibilidade',
+        'ensaio_sem_registro_icmje',
+        'ausencia_declaracao_conflitos',
+        'poucos_descritores',
+      ].includes(ap.tipo)
   );
   const alertasMetodologicos = alertasPrecisao.filter((ap) =>
     ['quebra_escala_narrativa', 'secao_pos_referencias'].includes(ap.tipo)
@@ -1061,6 +1077,7 @@ export default function ReverseAuditView({
     alertasPlagio.length +
     alertasEstatisticos.length +
     alertasRede.length +
+    alertasMetodologiaClinica.length +
     citacoesSemReferencia.length +
     refsNaoCitadasNoTexto.length +
     alertasMetadadosAbnt.length +
@@ -1988,6 +2005,13 @@ export default function ReverseAuditView({
               <span>{alertasRede.length ? 'Monopólio / Favorecimento' : 'Fontes diversificadas'}</span>
             </div>
             <div className="card-metrica">
+              <span className="rotulo-metrica">🔬 Metodologia & Ética</span>
+              <strong style={{ color: alertasMetodologiaClinica.length ? '#dc2626' : '#16a34a' }}>
+                {alertasMetodologiaClinica.length}
+              </strong>
+              <span>{alertasMetodologiaClinica.length ? 'Ressalvas STROBE/PICO' : 'Checklist conforme'}</span>
+            </div>
+            <div className="card-metrica">
               <span className="rotulo-metrica">Citadas s/ Referência</span>
               <strong style={{ color: resultado.citacoesSemReferencia.length ? '#dc2626' : '#16a34a' }}>
                 {resultado.citacoesSemReferencia.length}
@@ -2186,6 +2210,21 @@ export default function ReverseAuditView({
                     }}
                   >
                     🕸️ Rede / COPE ({alertasRede.length})
+                  </button>
+                )}
+                {alertasMetodologiaClinica.length > 0 && (
+                  <button
+                    className={`chip ${grupoIntercorrenciaAtivo === 'metodologia_clinica' ? 'ativo' : ''}`}
+                    onClick={() => setGrupoIntercorrenciaAtivo('metodologia_clinica')}
+                    style={{
+                      fontSize: 11.8,
+                      padding: '3px 10px',
+                      color: grupoIntercorrenciaAtivo === 'metodologia_clinica' ? '#fff' : '#dc2626',
+                      borderColor: '#dc2626',
+                      background: grupoIntercorrenciaAtivo === 'metodologia_clinica' ? '#dc2626' : 'transparent',
+                    }}
+                  >
+                    🔬 Metodologia / Ética ({alertasMetodologiaClinica.length})
                   </button>
                 )}
                 {resultado.citacoesSemReferencia.length > 0 && (
@@ -2551,6 +2590,47 @@ export default function ReverseAuditView({
                         }
                       >
                         🤖 Copiar p/ IA Diversificar
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* ALERTA C4: Auditoria Forense Metodológica e Clínica (PICO / STROBE / CONSORT) */}
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'metodologia_clinica') && alertasMetodologiaClinica.length > 0 && (
+            <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
+              <h4 style={{ color: '#dc2626' }}>
+                🔬 Auditoria Forense Metodológica e Ética · STROBE / CONSORT / PICO ({alertasMetodologiaClinica.length})
+              </h4>
+              <div className="lista-historico">
+                {alertasMetodologiaClinica.map((mc, i) => (
+                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{mc.mensagem}</div>
+                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                          <span><strong>Critério:</strong> <code>{mc.tipo}</code></span>
+                          <span className="badge alerta" style={{ fontSize: 11 }}>
+                            📋 Diretriz Editorial Obrigatória
+                          </span>
+                        </div>
+                      </div>
+                      <button
+                        className="btn pequeno secundario"
+                        onClick={() =>
+                          copiarPromptItemIndividualIa({
+                            tituloProblema: 'Inconformidade Metodológica / Ética em Saúde',
+                            fraseWord: mc.tipo,
+                            locWord: 'Seção de Método / Metodologia do Manuscrito',
+                            refTexto: 'Checklist STROBE / CONSORT / Resoluções CNS',
+                            diagnostico: mc.mensagem,
+                            trechoArtigo: 'Adequação necessária para evitar desk reject no periódico',
+                          })
+                        }
+                      >
+                        🤖 Copiar p/ IA Adequar
                       </button>
                     </div>
                   </div>

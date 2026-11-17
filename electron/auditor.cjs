@@ -27,6 +27,7 @@ const { IndiceWinnowing } = require('./similarity_winnowing.cjs');
 const { executarGreedyStringTiling } = require('./similarity_tiling.cjs');
 const { auditarEstatisticaDoManuscrito } = require('./statcheck_forense.cjs');
 const { auditarRedeCitacoesDoManuscrito } = require('./rede_citacoes_forense.cjs');
+const { auditarMetodologiaClinicaDoManuscrito } = require('./auditor_metodologico_clinico.cjs');
 
 // Mapa CSL-JSON extraído do último arquivo .docx aberto (Mendeley / Zotero / EndNote)
 let ultimoMapaCslEmbutidoDocx = null;
@@ -2477,6 +2478,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasEstiloIa,
       alertasEstatisticos: [],
       alertasRede: [],
+      alertasMetodologiaClinica: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: 0, totalObrasVerificadas: 0, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: 0, totalComPdf: 0, totalSemPdf: 0, obras: [] },
@@ -2601,6 +2603,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasPrecisao,
       alertasEstatisticos: [],
       alertasRede: [],
+      alertasMetodologiaClinica: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: gruposCitacao.size, totalObrasVerificadas: refsMapeadasFast.length, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: refsMapeadasFast.filter(r => r.citadaNoTexto).length, totalComPdf: 0, totalSemPdf: refsMapeadasFast.length, obras: [] },
@@ -2680,6 +2683,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasPrecisao: [],
       alertasEstatisticos: [],
       alertasRede: [],
+      alertasMetodologiaClinica: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: 0, totalObrasVerificadas: 0, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: 0, totalComPdf: 0, totalSemPdf: 0, obras: [] },
@@ -3183,6 +3187,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasPrecisao,
       alertasEstatisticos: [],
       alertasRede: [],
+      alertasMetodologiaClinica: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: gruposCitacao.size, totalObrasVerificadas: refsMapeadas.length, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: {
@@ -3594,6 +3599,23 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     }
   }
 
+  // ---------- 8c. Auditoria Forense Metodológica e Clínica (PICO / STROBE / CONSORT / RobotReviewer) ----------
+  const auditoriaMetodologica = auditarMetodologiaClinicaDoManuscrito(paragrafosCorpo, texto);
+  const alertasMetodologiaClinica = auditoriaMetodologica.alertasMetodologicos || [];
+  if (alertasMetodologiaClinica.length > 0) {
+    for (const am of alertasMetodologiaClinica) {
+      alertasPrecisao.push({
+        tipo: am.tipo,
+        numParagrafo: 0,
+        numLinha: 0,
+        secao: 'Metodologia e Diretrizes',
+        autorCitado: 'Auditoria Metodológica',
+        fraseWord: `Desenho: ${auditoriaMetodologica.desenhoEstudo.descricao} (${auditoriaMetodologica.desenhoEstudo.checklist})`,
+        mensagem: am.mensagem,
+      });
+    }
+  }
+
   return {
     totalCitacoesOcorrencias: citacoes.length,
     totalAutoresCitadosUnicos: gruposCitacao.size,
@@ -3606,8 +3628,10 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     alertasEstiloIa,
     alertasEstatisticos,
     alertasRede,
+    alertasMetodologiaClinica,
     resumoEstatistico: auditoriaEstatistica,
     resumoRede: auditoriaRede,
+    resumoMetodologiaClinica: auditoriaMetodologica,
     errosParsingConflito,
     resumoVerificacaoConteudo: {
       totalObrasCitadas: gruposCitacao.size,
@@ -3638,5 +3662,6 @@ module.exports = {
   analisarEstiloRedacaoIaOpenDetector,
   auditarEstatisticaDoManuscrito,
   auditarRedeCitacoesDoManuscrito,
+  auditarMetodologiaClinicaDoManuscrito,
   auditarManuscrito,
 };
