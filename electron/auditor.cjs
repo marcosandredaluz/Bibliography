@@ -25,6 +25,7 @@ const os = require('os');
 const DiffMatchPatch = require('diff-match-patch');
 const { IndiceWinnowing } = require('./similarity_winnowing.cjs');
 const { executarGreedyStringTiling } = require('./similarity_tiling.cjs');
+const { auditarEstatisticaDoManuscrito } = require('./statcheck_forense.cjs');
 
 // Mapa CSL-JSON extraído do último arquivo .docx aberto (Mendeley / Zotero / EndNote)
 let ultimoMapaCslEmbutidoDocx = null;
@@ -2473,11 +2474,53 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasPlagio: [],
       alertasPrecisao: alertasEstiloIa,
       alertasEstiloIa,
+      alertasEstatisticos: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: 0, totalObrasVerificadas: 0, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: 0, totalComPdf: 0, totalSemPdf: 0, obras: [] },
       linhasPosReferenciasIgnoradas: linhasPosReferencias.length,
       moduloExecutado: 'estilo_ia',
+    };
+  }
+
+  // ATALHO ULTRA-RÁPIDO: MÓDULO 7 (Auditoria Estatística Forense - Statcheck)
+  if (modulo === 'estatistica') {
+    const auditoriaEstatistica = auditarEstatisticaDoManuscrito(paragrafosCorpo);
+    const alertasEstatisticos = auditoriaEstatistica.alertasEstatisticos || [];
+    if (typeof onProgresso === 'function') {
+      onProgresso({
+        fase: 'concluido',
+        atual: paragrafosCorpo.length,
+        total: paragrafosCorpo.length,
+        porcentagem: 100,
+        mensagem: '✓ Auditoria Estatística Concluída (Statcheck)',
+        detalhe: `${auditoriaEstatistica.totalTestes} teste(s) analisado(s), ${auditoriaEstatistica.inconsistenciasGraves} inconsistência(s) crítica(s).`,
+      });
+    }
+    return {
+      totalCitacoesOcorrencias: citacoes.length,
+      totalAutoresCitadosUnicos: gruposCitacao.size,
+      totalReferenciasListaFinal: refsFinais.length,
+      citacoesSemReferencia: [],
+      refsMapeadas: [],
+      alertasAtribuicaoFalsa: [],
+      alertasPlagio: [],
+      alertasPrecisao: alertasEstatisticos.map((ae) => ({
+        tipo: ae.tipo,
+        numParagrafo: ae.numParagrafo,
+        numLinha: ae.numLinha,
+        secao: ae.secao,
+        autorCitado: 'Análise Estatística',
+        fraseWord: ae.textoBruto,
+        mensagem: ae.mensagem,
+      })),
+      alertasEstatisticos,
+      resumoEstatistico: auditoriaEstatistica,
+      errosParsingConflito: [],
+      resumoVerificacaoConteudo: { totalObrasCitadas: 0, totalObrasVerificadas: 0, totalObrasNaoVerificadas: 0, obras: [] },
+      resumoObrasConformes: { totalConformes: 0, totalComPdf: 0, totalSemPdf: 0, obras: [] },
+      linhasPosReferenciasIgnoradas: linhasPosReferencias.length,
+      moduloExecutado: 'estatistica',
     };
   }
 
@@ -2553,6 +2596,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasAtribuicaoFalsa: [],
       alertasPlagio: [],
       alertasPrecisao,
+      alertasEstatisticos: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: gruposCitacao.size, totalObrasVerificadas: refsMapeadasFast.length, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: refsMapeadasFast.filter(r => r.citadaNoTexto).length, totalComPdf: 0, totalSemPdf: refsMapeadasFast.length, obras: [] },
@@ -2630,6 +2674,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasAtribuicaoFalsa: [],
       alertasPlagio: alertasPlagioDiff,
       alertasPrecisao: [],
+      alertasEstatisticos: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: 0, totalObrasVerificadas: 0, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: 0, totalComPdf: 0, totalSemPdf: 0, obras: [] },
@@ -3131,6 +3176,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasAtribuicaoFalsa: [],
       alertasPlagio: [],
       alertasPrecisao,
+      alertasEstatisticos: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: gruposCitacao.size, totalObrasVerificadas: refsMapeadas.length, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: {
@@ -3342,6 +3388,23 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
   // ---------- 7. Detector de Plágio / Cópia Literal com Google Diff Match Patch ----------
   const alertasPlagio = await analisarPlagioComDiffMatchPatch(paragrafosCorpo, corpusArtigos);
 
+  // ---------- 7b. Auditoria Matemática Forense de Resultados Estatísticos (Statcheck) ----------
+  const auditoriaEstatistica = auditarEstatisticaDoManuscrito(paragrafosCorpo);
+  const alertasEstatisticos = auditoriaEstatistica.alertasEstatisticos || [];
+  if (alertasEstatisticos.length > 0) {
+    for (const ae of alertasEstatisticos) {
+      alertasPrecisao.push({
+        tipo: ae.tipo,
+        numParagrafo: ae.numParagrafo,
+        numLinha: ae.numLinha,
+        secao: ae.secao,
+        autorCitado: 'Análise Estatística',
+        fraseWord: ae.textoBruto,
+        mensagem: ae.mensagem,
+      });
+    }
+  }
+
   // ---------- 8. Citações no texto que NÃO apareceram na lista final de Referências ----------
   const citacoesSemReferenciaBrutas = [];
   for (const g of gruposCitacao.values()) {
@@ -3518,6 +3581,8 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     alertasPlagio,
     alertasPrecisao,
     alertasEstiloIa,
+    alertasEstatisticos,
+    resumoEstatistico: auditoriaEstatistica,
     errosParsingConflito,
     resumoVerificacaoConteudo: {
       totalObrasCitadas: gruposCitacao.size,
@@ -3546,5 +3611,6 @@ module.exports = {
   verificarCompatibilidadeBilingue,
   sanitizarCamposGerenciadorBibliografia,
   analisarEstiloRedacaoIaOpenDetector,
+  auditarEstatisticaDoManuscrito,
   auditarManuscrito,
 };

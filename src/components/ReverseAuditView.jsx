@@ -1019,13 +1019,14 @@ export default function ReverseAuditView({
   );
   const alertasAtribuicaoFalsa = resultado?.alertasAtribuicaoFalsa || [];
   const alertasPlagio = resultado?.alertasPlagio || [];
+  const alertasEstatisticos = resultado?.alertasEstatisticos || [];
   const citacoesSemReferencia = resultado?.citacoesSemReferencia || [];
 
-  // Alertas de Metadados / ABNT vs Alertas Metodológicos vs Alertas Estilo IA (Open-Detector)
+  // Alertas de Metadados / ABNT vs Alertas Metodológicos vs Alertas Estilo IA (Open-Detector) vs Estatística
   const alertasPrecisao = resultado?.alertasPrecisao || [];
   const alertasEstiloIa = resultado?.alertasEstiloIa || alertasPrecisao.filter((ap) => ap.tipo === 'estilo_redacao_ia');
   const alertasMetadadosAbnt = alertasPrecisao.filter(
-    (ap) => !['quebra_escala_narrativa', 'secao_pos_referencias', 'estilo_redacao_ia'].includes(ap.tipo)
+    (ap) => !['quebra_escala_narrativa', 'secao_pos_referencias', 'estilo_redacao_ia', 'inconsistencia_estatistica_grave', 'inconsistencia_estatistica_numerica'].includes(ap.tipo)
   );
   const alertasMetodologicos = alertasPrecisao.filter((ap) =>
     ['quebra_escala_narrativa', 'secao_pos_referencias'].includes(ap.tipo)
@@ -1057,6 +1058,7 @@ export default function ReverseAuditView({
     refsSuspeitasIa.length +
     alertasAtribuicaoFalsa.length +
     alertasPlagio.length +
+    alertasEstatisticos.length +
     citacoesSemReferencia.length +
     refsNaoCitadasNoTexto.length +
     alertasMetadadosAbnt.length +
@@ -1146,6 +1148,20 @@ export default function ReverseAuditView({
         blocos.push(
           `- **Pergunta para a IA:** Reescreva este trecho do Parágrafo §${p.numParagrafo} em formato de paráfrase acadêmica original (sem plágio) OU formate como citação direta com aspas conforme a norma.`
         );
+        blocos.push(``);
+      });
+    }
+
+    if (alertasEstatisticos.length > 0) {
+      blocos.push(`## 📊 PONTO CRÍTICO C2 — INCONSISTÊNCIAS ESTATÍSTICAS E VALIDAÇÃO MATEMÁTICA / STATCHECK (${alertasEstatisticos.length}):`);
+      alertasEstatisticos.forEach((st, idx) => {
+        blocos.push(`### [Alerta Estatístico C2.${idx + 1}]`);
+        blocos.push(`- **Diagnóstico:** ${st.mensagem}`);
+        blocos.push(`- **Local no Word:** Parágrafo §${st.numParagrafo} · Linha ${st.numLinha} (${st.secao})`);
+        blocos.push(`- **Texto no meu Word:** "${st.fraseWord}"`);
+        blocos.push(`- **Teste Reportado:** ${st.textoBruto}`);
+        blocos.push(`- **Confronto:** p relatado = ${st.pRelatado} vs p recalculado pela distribuição exata = ${st.pRecalculado}`);
+        blocos.push(`- **Pergunta para a IA:** Corrija os valores estatísticos ou graus de liberdade relatados no texto para que a matemática relatada seja rigorosamente consistente.`);
         blocos.push(``);
       });
     }
@@ -1956,6 +1972,13 @@ export default function ReverseAuditView({
               <span>{alertasPlagio.length ? 'Trechos copiados literalmente' : 'Nenhum plágio'}</span>
             </div>
             <div className="card-metrica">
+              <span className="rotulo-metrica">📊 Inconsistência Estatística</span>
+              <strong style={{ color: alertasEstatisticos.length ? '#dc2626' : '#16a34a' }}>
+                {alertasEstatisticos.length}
+              </strong>
+              <span>{alertasEstatisticos.length ? 'Erro matemático / p-hacking' : 'Matemática consistente'}</span>
+            </div>
+            <div className="card-metrica">
               <span className="rotulo-metrica">Citadas s/ Referência</span>
               <strong style={{ color: resultado.citacoesSemReferencia.length ? '#dc2626' : '#16a34a' }}>
                 {resultado.citacoesSemReferencia.length}
@@ -2124,6 +2147,21 @@ export default function ReverseAuditView({
                     }}
                   >
                     🔍 Plágio / Cópia ({alertasPlagio.length})
+                  </button>
+                )}
+                {alertasEstatisticos.length > 0 && (
+                  <button
+                    className={`chip ${grupoIntercorrenciaAtivo === 'estatistica' ? 'ativo' : ''}`}
+                    onClick={() => setGrupoIntercorrenciaAtivo('estatistica')}
+                    style={{
+                      fontSize: 11.8,
+                      padding: '3px 10px',
+                      color: grupoIntercorrenciaAtivo === 'estatistica' ? '#fff' : '#dc2626',
+                      borderColor: '#dc2626',
+                      background: grupoIntercorrenciaAtivo === 'estatistica' ? '#dc2626' : 'transparent',
+                    }}
+                  >
+                    📊 Estatística / Statcheck ({alertasEstatisticos.length})
                   </button>
                 )}
                 {resultado.citacoesSemReferencia.length > 0 && (
@@ -2399,6 +2437,53 @@ export default function ReverseAuditView({
                         }
                       >
                         🤖 Copiar p/ IA Parafrasear
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* ALERTA C2: Auditoria Matemática Forense de Resultados Estatísticos (Statcheck) */}
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'estatistica') && alertasEstatisticos.length > 0 && (
+            <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
+              <h4 style={{ color: '#dc2626' }}>
+                📊 Auditoria Matemática Forense de Resultados Estatísticos · Statcheck ({alertasEstatisticos.length})
+              </h4>
+              <div className="lista-historico">
+                {alertasEstatisticos.map((st, i) => (
+                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{st.mensagem}</div>
+                        <div style={{ fontSize: 12.2, marginTop: 5 }}>
+                          <strong>📝 Localização no Texto (§{st.numParagrafo}, Linha {st.numLinha} · {st.secao}):</strong>{' '}
+                          <em>"{st.fraseWord}"</em>
+                        </div>
+                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                          <span><strong>Teste:</strong> <code>{st.textoBruto}</code></span>
+                          <span><strong>p relatado:</strong> <code>{st.pRelatado}</code></span>
+                          <span><strong>p recalculado:</strong> <code style={{ color: '#dc2626', fontWeight: 700 }}>{st.pRecalculado}</code></span>
+                          <span className={`badge ${st.tipo === 'inconsistencia_estatistica_grave' ? 'alerta' : 'pendente'}`} style={{ fontSize: 11 }}>
+                            {st.tipo === 'inconsistencia_estatistica_grave' ? '🚨 Erro Crítico / p-hacking' : '⚠ Inconsistência de Arredondamento'}
+                          </span>
+                        </div>
+                      </div>
+                      <button
+                        className="btn pequeno secundario"
+                        onClick={() =>
+                          copiarPromptItemIndividualIa({
+                            tituloProblema: 'Inconsistência Estatística (Statcheck)',
+                            fraseWord: st.fraseWord,
+                            locWord: `Parágrafo §${st.numParagrafo} · Linha ${st.numLinha}`,
+                            refTexto: st.textoBruto,
+                            diagnostico: st.mensagem,
+                            trechoArtigo: `Valor relatado: p = ${st.pRelatado} vs Valor recalculado exato: p = ${st.pRecalculado}`,
+                          })
+                        }
+                      >
+                        🤖 Copiar p/ IA Corrigir
                       </button>
                     </div>
                   </div>
