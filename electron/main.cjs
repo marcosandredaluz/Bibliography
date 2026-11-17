@@ -7,7 +7,7 @@ function logBoot(msg) {
   } catch {}
 }
 logBoot('Iniciando main.cjs | argv=' + JSON.stringify(process.argv));
-const { app, BrowserWindow, ipcMain, dialog, shell, clipboard, protocol, net, Menu } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog, shell, clipboard, protocol, net, Menu, screen } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const { pathToFileURL } = require('url');
@@ -60,20 +60,82 @@ function criarJanela() {
     ? `Bibliografia — 📁 [${path.basename(cfg.libraryPath)}] — ${cfg.libraryPath}`
     : 'Bibliografia';
 
+  // Configuração e restauração de geometria da janela (suporte multi-monitores e auto-maximização)
+  const estadoJanela = cfg?.janela || { maximizada: true, width: 1400, height: 860 };
+
+  let x = estadoJanela.x;
+  let y = estadoJanela.y;
+  if (x !== undefined && y !== undefined) {
+    try {
+      const displays = screen.getAllDisplays();
+      const visivel = displays.some((d) => {
+        const b = d.bounds;
+        return (
+          x >= b.x - 40 &&
+          x < b.x + b.width &&
+          y >= b.y - 40 &&
+          y < b.y + b.height
+        );
+      });
+      if (!visivel) {
+        x = undefined;
+        y = undefined;
+      }
+    } catch {}
+  }
+
   janela = new BrowserWindow({
-    width: 1400,
-    height: 860,
+    width: estadoJanela.width || 1400,
+    height: estadoJanela.height || 860,
+    x,
+    y,
     minWidth: 1000,
     minHeight: 600,
     title: tituloInicial,
     backgroundColor: '#f6f7f9',
     autoHideMenuBar: true,
-    show: true,
+    show: false, // Inicia invisível para aplicar maximize antes de exibir na tela (evita flash de redimensionamento)
     webPreferences: {
       preload: path.join(__dirname, 'preload.cjs'),
       contextIsolation: true,
       nodeIntegration: false,
     },
+  });
+
+  // Garante que o aplicativo nasça ocupando toda a tela no monitor onde foi aberto
+  if (estadoJanela.maximizada !== false) {
+    janela.maximize();
+  }
+
+  const salvarEstadoJanela = () => {
+    try {
+      if (!janela || janela.isDestroyed()) return;
+      const maximizada = janela.isMaximized();
+      const bounds = maximizada ? (estadoJanela.bounds || {}) : janela.getBounds();
+      cfg.janela = {
+        maximizada,
+        x: bounds.x,
+        y: bounds.y,
+        width: bounds.width,
+        height: bounds.height,
+        bounds,
+      };
+      config.salvar(cfg);
+    } catch {}
+  };
+
+  janela.on('resize', () => {
+    if (!janela.isMaximized()) {
+      estadoJanela.bounds = janela.getBounds();
+    }
+  });
+  janela.on('move', () => {
+    if (!janela.isMaximized()) {
+      estadoJanela.bounds = janela.getBounds();
+    }
+  });
+  janela.on('close', () => {
+    salvarEstadoJanela();
   });
 
   // Nunca navegar para um PDF solto na janela; links externos abrem no navegador.
@@ -103,6 +165,9 @@ function criarJanela() {
 
   janela.once('ready-to-show', () => {
     logBoot('READY-TO-SHOW disparado');
+    if (estadoJanela.maximizada !== false) {
+      janela.maximize();
+    }
     janela.show();
     janela.focus();
   });
