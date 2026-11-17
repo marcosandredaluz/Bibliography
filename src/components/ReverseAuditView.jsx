@@ -384,6 +384,40 @@ export default function ReverseAuditView({
     'Analise ponto a ponto o que está certo ou errado nas citações abaixo, reescreva os parágrafos com problemas mantendo rigor acadêmico e sugira referências científicas reais (com DOI válido) para substituir qualquer fonte suspeita de alucinação.'
   );
 
+  // Itens marcados como resolvidos / ignorados pelo usuário
+  const [itensResolvidos, setItensResolvidos] = useState(() => {
+    try {
+      const salvos = localStorage.getItem('auditoria_itens_resolvidos_v1');
+      return salvos ? new Set(JSON.parse(salvos)) : new Set();
+    } catch {
+      return new Set();
+    }
+  });
+  const [mostrarResolvidos, setMostrarResolvidos] = useState(false);
+
+  const alternarItemResolvido = (idItem) => {
+    setItensResolvidos((prev) => {
+      const novo = new Set(prev);
+      if (novo.has(idItem)) {
+        novo.delete(idItem);
+      } else {
+        novo.add(idItem);
+      }
+      try {
+        localStorage.setItem('auditoria_itens_resolvidos_v1', JSON.stringify([...novo]));
+      } catch {}
+      return novo;
+    });
+  };
+
+  const limparItensResolvidos = () => {
+    setItensResolvidos(new Set());
+    try {
+      localStorage.removeItem('auditoria_itens_resolvidos_v1');
+    } catch {}
+    avisar('Todos os itens resolvidos foram restaurados!', 'info');
+  };
+
   // Estado do buscador integrado de "Artigo Real Parecido" por chave de item
   // { [chave]: { aberto: boolean, termo: string, fonte: 'openalex'|'pubmed'|'europepmc', carregando: boolean, itens: [], fraseContexto: '', numParagrafo: '', refSuspeita: '' } }
   const [buscasParecidos, setBuscasParecidos] = useState({});
@@ -1114,26 +1148,47 @@ export default function ReverseAuditView({
   );
   const totalConformesComPdf = obrasConformes.filter((o) => o.temPdf || refs.some((x) => x.id === o.refBibId && x.pdf)).length;
 
+  // Itens ativos (subtraindo os marcados como resolvidos / ignorados pelo autor)
+  const refsSuspeitasIaAtivas = refsSuspeitasIa.filter((r) => !itensResolvidos.has(`ia_${r.refBibId || r.id || r.primeiroSobrenome}`));
+  const alertasAtribuicaoFalsaAtivos = alertasAtribuicaoFalsa.filter((a) => !itensResolvidos.has(`atrib_${a.numParagrafo}_${a.numLinha}`));
+  const alertasPlagioAtivos = alertasPlagio.filter((p) => !itensResolvidos.has(`plagio_${p.numParagrafo}_${p.numLinha}`));
+  const alertasEstatisticosAtivos = alertasEstatisticos.filter((e) => !itensResolvidos.has(`estat_${e.numParagrafo}_${e.numLinha}`));
+  const alertasRedeAtivos = alertasRede.filter((r) => !itensResolvidos.has(`rede_${r.autor || r.periodico}`));
+  const alertasMetodologiaClinicaAtivos = alertasMetodologiaClinica.filter((m) => !itensResolvidos.has(`metod_${m.tipo}`));
+  const alertasFrasesTorturadasAtivos = alertasFrasesTorturadas.filter((f, i) => !itensResolvidos.has(`tort_${f.numParagrafo}_${f.termoDetectado || i}`));
+  const alertasEstilometricosAtivos = alertasEstilometricos.filter((e) => !itensResolvidos.has(`estilo_${e.numParagrafo}_${e.tipo}`));
+  const alertasPredatoriosAtivos = alertasPredatorios.filter((p) => !itensResolvidos.has(`pred_${p.refBibId || p.chaveAutorAno}`));
+  const alertasAbnt6023Ativos = alertasAbnt6023.filter((a) => !itensResolvidos.has(`abnt6023_${a.idxRef}_${a.tipo}`));
+  const alertasCorrupcaoGeneAtivos = alertasCorrupcaoGene.filter((c, i) => !itensResolvidos.has(`gene_${c.numParagrafo}_${c.termoDetectado || i}`));
+  const alertasFomentoAtivos = alertasFomento.filter((f) => !itensResolvidos.has(`fom_${f.tipo}`));
+  const alertasDesvioTematicoAtivos = alertasDesvioTematico.filter((d) => !itensResolvidos.has(`desvio_${d.numParagrafo}_${d.refBibId}`));
+  const citacoesSemReferenciaAtivas = citacoesSemReferencia.filter((c) => !itensResolvidos.has(`orfa_${c.chave}`));
+  const refsNaoCitadasNoTextoAtivas = refsNaoCitadasNoTexto.filter((r) => !itensResolvidos.has(`sobr_${r.refBibId || r.textoOriginal}`));
+  const alertasMetadadosAbntAtivos = alertasMetadadosAbnt.filter((ap) => !itensResolvidos.has(`meta_${ap.numParagrafo}_${ap.numLinha}_${ap.tipo}`));
+  const alertasPdfAtivos = alertasPdf.filter((ap) => !itensResolvidos.has(`pdf_${ap.ref?.refBibId}_${ap.paginaPdf}_${ap.status}`));
+  const alertasMetodologicosAtivos = alertasMetodologicos.filter((ap) => !itensResolvidos.has(`metodologico_${ap.numParagrafo}_${ap.tipo}`));
+  const alertasEstiloIaAtivos = alertasEstiloIa.filter((ap) => !itensResolvidos.has(`estiloia_${ap.numParagrafo}_${ap.numLinha}`));
+
   const totalInconformidades =
-    refsSuspeitasIa.length +
-    alertasAtribuicaoFalsa.length +
-    alertasPlagio.length +
-    alertasEstatisticos.length +
-    alertasRede.length +
-    alertasMetodologiaClinica.length +
-    alertasFrasesTorturadas.length +
-    alertasEstilometricos.length +
-    alertasPredatorios.length +
-    alertasAbnt6023.length +
-    alertasCorrupcaoGene.length +
-    alertasFomento.length +
-    alertasDesvioTematico.length +
-    citacoesSemReferencia.length +
-    refsNaoCitadasNoTexto.length +
-    alertasMetadadosAbnt.length +
-    alertasPdf.length +
-    alertasMetodologicos.length +
-    alertasEstiloIa.length;
+    refsSuspeitasIaAtivas.length +
+    alertasAtribuicaoFalsaAtivos.length +
+    alertasPlagioAtivos.length +
+    alertasEstatisticosAtivos.length +
+    alertasRedeAtivos.length +
+    alertasMetodologiaClinicaAtivos.length +
+    alertasFrasesTorturadasAtivos.length +
+    alertasEstilometricosAtivos.length +
+    alertasPredatoriosAtivos.length +
+    alertasAbnt6023Ativos.length +
+    alertasCorrupcaoGeneAtivos.length +
+    alertasFomentoAtivos.length +
+    alertasDesvioTematicoAtivos.length +
+    citacoesSemReferenciaAtivas.length +
+    refsNaoCitadasNoTextoAtivas.length +
+    alertasMetadadosAbntAtivos.length +
+    alertasPdfAtivos.length +
+    alertasMetodologicosAtivos.length +
+    alertasEstiloIaAtivos.length;
 
   // Gerador do Prompt Completo Estruturado para colar na IA (ChatGPT / Claude / Gemini)
   const gerarTextoPromptParaIa = () => {
@@ -2122,131 +2177,294 @@ export default function ReverseAuditView({
 
       {resultado && (
         <>
-          {/* Painel de 8 métricas forenses da auditoria */}
-          <div className="grade-metricas" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))' }}>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">Citações no Word</span>
-              <strong>{resultado.totalCitacoesOcorrencias}</strong>
-              <span>{resultado.totalAutoresCitadosUnicos} obras distintas</span>
+          {/* Painel Compacto, Intuitivo e Responsivo de Filtros por Métrica */}
+          <div className="grade-metricas-auditoria">
+            {/* 1. Total de Citações */}
+            <div
+              className={`card-metrica-filtro ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'todas' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo('todas'); }}
+              title="Clique para ver todas as citações e inconformidades"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Total de Citações</span>
+                <span>📚</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: 'var(--primaria, #2563eb)' }}>
+                {resultado.totalCitacoesOcorrencias}
+              </div>
+              <div className="sub-card-filtro">{resultado.totalAutoresCitadosUnicos} obras citadas</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">🤖 Fontes Inventadas por IA</span>
-              <strong style={{ color: refsSuspeitasIa.length ? '#dc2626' : '#16a34a' }}>
-                {refsSuspeitasIa.length}
-              </strong>
-              <span>{refsSuspeitasIa.length ? 'DOI falso / Artigo fantasma' : 'Todas autenticadas'}</span>
+
+            {/* 2. Obras Fantasmas / IA */}
+            <div
+              className={`card-metrica-filtro ${refsSuspeitasIaAtivas.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'ia' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'ia' ? 'todas' : 'ia'); }}
+              title="Clique para filtrar obras inexistentes ou com suspeita de alucinação por IA"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Obras Fantasmas (IA)</span>
+                <span>🤖</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: refsSuspeitasIaAtivas.length ? '#dc2626' : '#16a34a' }}>
+                {refsSuspeitasIaAtivas.length}
+              </div>
+              <div className="sub-card-filtro">{refsSuspeitasIaAtivas.length ? 'DOI falso / inexistente' : 'Todas autênticas'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">🚨 Citação Falsa / Trocada</span>
-              <strong style={{ color: alertasAtribuicaoFalsa.length ? '#dc2626' : '#16a34a' }}>
-                {alertasAtribuicaoFalsa.length}
-              </strong>
-              <span>{alertasAtribuicaoFalsa.length ? 'Não consta no artigo citado' : 'Conteúdo compatível'}</span>
+
+            {/* 3. Atribuição Trocada */}
+            <div
+              className={`card-metrica-filtro ${alertasAtribuicaoFalsaAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'atribuicao' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'atribuicao' ? 'todas' : 'atribuicao'); }}
+              title="Clique para filtrar citações cujo conteúdo não consta no artigo citado"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Atribuição Trocada</span>
+                <span>🚨</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasAtribuicaoFalsaAtivos.length ? '#dc2626' : '#16a34a' }}>
+                {alertasAtribuicaoFalsaAtivos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasAtribuicaoFalsaAtivos.length ? 'Não diz o que foi citado' : 'Conteúdo compatível'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">🔍 Plágio / Cópia s/ Aspas</span>
-              <strong style={{ color: alertasPlagio.length ? '#dc2626' : '#16a34a' }}>
-                {alertasPlagio.length}
-              </strong>
-              <span>{alertasPlagio.length ? 'Trechos copiados literalmente' : 'Nenhum plágio'}</span>
+
+            {/* 4. Plágio sem Aspas */}
+            <div
+              className={`card-metrica-filtro ${alertasPlagioAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'plagio' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'plagio' ? 'todas' : 'plagio'); }}
+              title="Clique para filtrar trechos com cópia literal sem aspas normativas"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Plágio sem Aspas</span>
+                <span>🔍</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasPlagioAtivos.length ? '#dc2626' : '#16a34a' }}>
+                {alertasPlagioAtivos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasPlagioAtivos.length ? 'Cópia literal detectada' : 'Nenhum plágio'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">📊 Inconsistência Estatística</span>
-              <strong style={{ color: alertasEstatisticos.length ? '#dc2626' : '#16a34a' }}>
-                {alertasEstatisticos.length}
-              </strong>
-              <span>{alertasEstatisticos.length ? 'Erro matemático / p-hacking' : 'Matemática consistente'}</span>
+
+            {/* 5. Contas & Estatísticas */}
+            <div
+              className={`card-metrica-filtro ${alertasEstatisticosAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'estatistica' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'estatistica' ? 'todas' : 'estatistica'); }}
+              title="Clique para filtrar erros matemáticos em testes e valores p"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Erros em Contas</span>
+                <span>📊</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasEstatisticosAtivos.length ? '#dc2626' : '#16a34a' }}>
+                {alertasEstatisticosAtivos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasEstatisticosAtivos.length ? 'p-hacking / inconsistência' : 'Matemática correta'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">🕸️ Concentração de Rede</span>
-              <strong style={{ color: alertasRede.length ? '#d97706' : '#16a34a' }}>
-                {alertasRede.length}
-              </strong>
-              <span>{alertasRede.length ? 'Monopólio / Favorecimento' : 'Fontes diversificadas'}</span>
+
+            {/* 6. Concentração de Autores/Revistas */}
+            <div
+              className={`card-metrica-filtro ${alertasRedeAtivos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'rede' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'rede' ? 'todas' : 'rede'); }}
+              title="Clique para filtrar concentração excessiva em um mesmo autor ou periódico"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Monopólio de Fontes</span>
+                <span>🕸️</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasRedeAtivos.length ? '#d97706' : '#16a34a' }}>
+                {alertasRedeAtivos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasRedeAtivos.length ? 'Mesmo autor/revista repetido' : 'Fontes diversificadas'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">🔬 Metodologia & Ética</span>
-              <strong style={{ color: alertasMetodologiaClinica.length ? '#dc2626' : '#16a34a' }}>
-                {alertasMetodologiaClinica.length}
-              </strong>
-              <span>{alertasMetodologiaClinica.length ? 'Ressalvas STROBE/PICO' : 'Checklist conforme'}</span>
+
+            {/* 7. Comitê de Ética & Método */}
+            <div
+              className={`card-metrica-filtro ${alertasMetodologiaClinicaAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'metodologia_clinica' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'metodologia_clinica' ? 'todas' : 'metodologia_clinica'); }}
+              title="Clique para filtrar pendências de CEP, TCLE, amostra N ou checklist STROBE/CONSORT"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Ética & Método</span>
+                <span>🔬</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasMetodologiaClinicaAtivos.length ? '#dc2626' : '#16a34a' }}>
+                {alertasMetodologiaClinicaAtivos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasMetodologiaClinicaAtivos.length ? 'Ressalvas metodológicas' : 'Protocolos conformes'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">🧟 Frases Torturadas</span>
-              <strong style={{ color: alertasFrasesTorturadas.length ? '#dc2626' : '#16a34a' }}>
-                {alertasFrasesTorturadas.length}
-              </strong>
-              <span>{alertasFrasesTorturadas.length ? 'Spin-bot / Termos bizarros' : 'Nenhum jargão corrompido'}</span>
+
+            {/* 8. Sinônimos Robóticos */}
+            <div
+              className={`card-metrica-filtro ${alertasFrasesTorturadasAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'frases_torturadas' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'frases_torturadas' ? 'todas' : 'frases_torturadas'); }}
+              title="Clique para filtrar frases torturadas e termos artificiais de spin-bot"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Sinônimos Robóticos</span>
+                <span>🧟</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasFrasesTorturadasAtivos.length ? '#dc2626' : '#16a34a' }}>
+                {alertasFrasesTorturadasAtivos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasFrasesTorturadasAtivos.length ? 'Jargões bizarros de IA' : 'Vocabulário natural'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">📐 Estilometria Textual</span>
-              <strong style={{ color: alertasEstilometricos.length ? '#d97706' : '#16a34a' }}>
-                {alertasEstilometricos.length}
-              </strong>
-              <span>{alertasEstilometricos.length ? 'Monotonia / Pobreza de léxico' : 'Ritmo e léxico naturais'}</span>
+
+            {/* 9. Ritmo da Escrita */}
+            <div
+              className={`card-metrica-filtro ${alertasEstilometricosAtivos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'estilometria' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'estilometria' ? 'todas' : 'estilometria'); }}
+              title="Clique para filtrar períodos monótonos ou repetições mecânicas de vocabulário"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Ritmo da Escrita</span>
+                <span>📐</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasEstilometricosAtivos.length ? '#d97706' : '#16a34a' }}>
+                {alertasEstilometricosAtivos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasEstilometricosAtivos.length ? 'Frases monótonas' : 'Fluidez humana normal'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">🚨 Revistas Predatórias</span>
-              <strong style={{ color: alertasPredatorios.length ? '#dc2626' : '#16a34a' }}>
-                {alertasPredatorios.length}
-              </strong>
-              <span>{alertasPredatorios.length ? 'Editora suspeita / Beall' : 'Fontes idôneas'}</span>
+
+            {/* 10. Revistas Suspeitas */}
+            <div
+              className={`card-metrica-filtro ${alertasPredatoriosAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'predatorias' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'predatorias' ? 'todas' : 'predatorias'); }}
+              title="Clique para filtrar citações em editoras de vaidade ou periódicos predatórios"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Revistas Suspeitas</span>
+                <span>🚨</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasPredatoriosAtivos.length ? '#dc2626' : '#16a34a' }}>
+                {alertasPredatoriosAtivos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasPredatoriosAtivos.length ? 'Editora duvidosa (Beall)' : 'Periódicos idôneos'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">📋 Elementos ABNT 6023</span>
-              <strong style={{ color: alertasAbnt6023.length ? '#d97706' : '#16a34a' }}>
-                {alertasAbnt6023.length}
-              </strong>
-              <span>{alertasAbnt6023.length ? 'Falta cidade/editora/páginas' : 'Normas completas'}</span>
+
+            {/* 11. Regras ABNT 6023 */}
+            <div
+              className={`card-metrica-filtro ${alertasAbnt6023Ativos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'abnt6023' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'abnt6023' ? 'todas' : 'abnt6023'); }}
+              title="Clique para filtrar referências com falta de editora, cidade ou paginação"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Formatação ABNT</span>
+                <span>📋</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasAbnt6023Ativos.length ? '#d97706' : '#16a34a' }}>
+                {alertasAbnt6023Ativos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasAbnt6023Ativos.length ? 'Falta cidade/editora/pág.' : 'Formatação completa'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">🧬 Corrupção Genômica</span>
-              <strong style={{ color: alertasCorrupcaoGene.length ? '#dc2626' : '#16a34a' }}>
-                {alertasCorrupcaoGene.length}
-              </strong>
-              <span>{alertasCorrupcaoGene.length ? 'Gene corrompido em data' : 'Nomenclatura íntegra'}</span>
+
+            {/* 12. Nomes de Genes (Excel) */}
+            <div
+              className={`card-metrica-filtro ${alertasCorrupcaoGeneAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'genomica' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'genomica' ? 'todas' : 'genomica'); }}
+              title="Clique para filtrar símbolos de genes que o Excel converteu em datas"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Genes Trocados p/ Data</span>
+                <span>🧬</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasCorrupcaoGeneAtivos.length ? '#dc2626' : '#16a34a' }}>
+                {alertasCorrupcaoGeneAtivos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasCorrupcaoGeneAtivos.length ? 'Erro de planilha (Ziemann)' : 'Símbolos corretos'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">🏛️ Fomento / CAPES 001</span>
-              <strong style={{ color: alertasFomento.length ? '#d97706' : '#16a34a' }}>
-                {alertasFomento.length}
-              </strong>
-              <span>{alertasFomento.length ? 'Exigência regulamentar' : 'Agradecimentos conformes'}</span>
+
+            {/* 13. Bolsas & Apoio CAPES */}
+            <div
+              className={`card-metrica-filtro ${alertasFomentoAtivos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'fomento' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'fomento' ? 'todas' : 'fomento'); }}
+              title="Clique para filtrar pendências de Código CAPES 001 ou números de processo"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Apoio & Bolsas CAPES</span>
+                <span>🏛️</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasFomentoAtivos.length ? '#d97706' : '#16a34a' }}>
+                {alertasFomentoAtivos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasFomentoAtivos.length ? 'Falta código 001 / CNPq' : 'Agradecimento conforme'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">⚠️ Desvio Temático (TF-IDF)</span>
-              <strong style={{ color: alertasDesvioTematico.length ? '#dc2626' : '#16a34a' }}>
-                {alertasDesvioTematico.length}
-              </strong>
-              <span>{alertasDesvioTematico.length ? 'Citação sem suporte no abstract' : 'Pertinência confirmada'}</span>
+
+            {/* 14. Tema vs Artigo Citado */}
+            <div
+              className={`card-metrica-filtro ${alertasDesvioTematicoAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'desvio_tematico' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'desvio_tematico' ? 'todas' : 'desvio_tematico'); }}
+              title="Clique para filtrar afirmações que não têm respaldo temático no resumo do artigo"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Assunto Divergente</span>
+                <span>⚠️</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: alertasDesvioTematicoAtivos.length ? '#dc2626' : '#16a34a' }}>
+                {alertasDesvioTematicoAtivos.length}
+              </div>
+              <div className="sub-card-filtro">{alertasDesvioTematicoAtivos.length ? 'Frase difere do abstract' : 'Tema coerente'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">Citadas s/ Referência</span>
-              <strong style={{ color: resultado.citacoesSemReferencia.length ? '#dc2626' : '#16a34a' }}>
-                {resultado.citacoesSemReferencia.length}
-              </strong>
-              <span>Faltando na lista final</span>
+
+            {/* 15. Falta nas Referências */}
+            <div
+              className={`card-metrica-filtro ${citacoesSemReferenciaAtivas.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'orfa' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'orfa' ? 'todas' : 'orfa'); }}
+              title="Clique para filtrar autores citados no texto que não estão na lista final"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Falta nas Referências</span>
+                <span>❌</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: citacoesSemReferenciaAtivas.length ? '#dc2626' : '#16a34a' }}>
+                {citacoesSemReferenciaAtivas.length}
+              </div>
+              <div className="sub-card-filtro">{citacoesSemReferenciaAtivas.length ? 'Citou e não listou' : 'Todas listadas'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">Nas Referências s/ Citação</span>
-              <strong style={{ color: refsNaoCitadasNoTexto.length ? '#d97706' : '#16a34a' }}>
-                {refsNaoCitadasNoTexto.length}
-              </strong>
-              <span>Sobrando (Consultadas)</span>
+
+            {/* 16. Não Citadas no Texto */}
+            <div
+              className={`card-metrica-filtro ${refsNaoCitadasNoTextoAtivas.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'sobrando' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'sobrando' ? 'todas' : 'sobrando'); }}
+              title="Clique para filtrar obras presentes na lista final que nunca foram citadas no texto"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Listada s/ Citação</span>
+                <span>⏳</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: refsNaoCitadasNoTextoAtivas.length ? '#d97706' : '#16a34a' }}>
+                {refsNaoCitadasNoTextoAtivas.length}
+              </div>
+              <div className="sub-card-filtro">{refsNaoCitadasNoTextoAtivas.length ? 'Sobrando nas referências' : 'Todas citadas'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">🎯 Total Inconformidades</span>
-              <strong style={{ color: totalInconformidades > 0 ? '#dc2626' : '#16a34a' }}>
+
+            {/* 17. Total a Corrigir */}
+            <div
+              className={`card-metrica-filtro ${totalInconformidades > 0 ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'todas' ? 'ativo' : ''}`}
+              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo('todas'); }}
+              title="Clique para exibir todos os pontos a corrigir"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Alertas a Corrigir</span>
+                <span>🎯</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: totalInconformidades > 0 ? '#dc2626' : '#16a34a' }}>
                 {totalInconformidades}
-              </strong>
-              <span>{totalInconformidades > 0 ? 'Pontos a corrigir' : '100% Conforme'}</span>
+              </div>
+              <div className="sub-card-filtro">{totalInconformidades > 0 ? 'Pontos a ajustar' : '100% Conforme'}</div>
             </div>
-            <div className="card-metrica">
-              <span className="rotulo-metrica">📥 Conformes no Rol de Trabalho</span>
-              <strong style={{ color: '#16a34a' }}>
+
+            {/* 18. Obras com PDF no Acervo */}
+            <div
+              className={`card-metrica-filtro ${abaVisualizacao === 'conformes' ? 'ativo' : ''}`}
+              onClick={() => setAbaVisualizacao('conformes')}
+              title="Clique para ver o rol de obras autênticas e os PDFs disponíveis no acervo"
+            >
+              <div className="topo-card-filtro">
+                <span className="titulo-card-filtro">Obras no Acervo</span>
+                <span>📥</span>
+              </div>
+              <div className="valor-card-filtro" style={{ color: '#16a34a' }}>
                 {totalConformesComPdf} / {obrasConformes.length}
-              </strong>
-              <span>{totalConformesComPdf} PDFs baixados e salvos</span>
+              </div>
+              <div className="sub-card-filtro">{totalConformesComPdf} PDFs baixados</div>
             </div>
           </div>
 
@@ -2346,7 +2564,7 @@ export default function ReverseAuditView({
                 >
                   Todas ({totalInconformidades})
                 </button>
-                {refsSuspeitasIa.length > 0 && (
+                {refsSuspeitasIaAtivas.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'ia' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('ia')}
@@ -2358,10 +2576,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'ia' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🤖 IA / DOI Falso ({refsSuspeitasIa.length})
+                    🤖 IA / DOI Falso ({refsSuspeitasIaAtivas.length})
                   </button>
                 )}
-                {alertasAtribuicaoFalsa.length > 0 && (
+                {alertasAtribuicaoFalsaAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'citacao_falsa' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('citacao_falsa')}
@@ -2373,10 +2591,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'citacao_falsa' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🚨 Citação Trocada / Inexistente ({alertasAtribuicaoFalsa.length})
+                    🚨 Citação Trocada / Inexistente ({alertasAtribuicaoFalsaAtivos.length})
                   </button>
                 )}
-                {alertasPlagio.length > 0 && (
+                {alertasPlagioAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'plagio' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('plagio')}
@@ -2388,10 +2606,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'plagio' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🔍 Plágio / Cópia ({alertasPlagio.length})
+                    🔍 Plágio / Cópia ({alertasPlagioAtivos.length})
                   </button>
                 )}
-                {alertasEstatisticos.length > 0 && (
+                {alertasEstatisticosAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'estatistica' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('estatistica')}
@@ -2403,10 +2621,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'estatistica' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    📊 Estatística / Statcheck ({alertasEstatisticos.length})
+                    📊 Estatística / Statcheck ({alertasEstatisticosAtivos.length})
                   </button>
                 )}
-                {alertasRede.length > 0 && (
+                {alertasRedeAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'rede' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('rede')}
@@ -2418,10 +2636,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'rede' ? '#d97706' : 'transparent',
                     }}
                   >
-                    🕸️ Rede / COPE ({alertasRede.length})
+                    🕸️ Rede / COPE ({alertasRedeAtivos.length})
                   </button>
                 )}
-                {alertasMetodologiaClinica.length > 0 && (
+                {alertasMetodologiaClinicaAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'metodologia_clinica' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('metodologia_clinica')}
@@ -2433,10 +2651,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'metodologia_clinica' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🔬 Metodologia / Ética ({alertasMetodologiaClinica.length})
+                    🔬 Metodologia / Ética ({alertasMetodologiaClinicaAtivos.length})
                   </button>
                 )}
-                {alertasFrasesTorturadas.length > 0 && (
+                {alertasFrasesTorturadasAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'frases_torturadas' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('frases_torturadas')}
@@ -2448,10 +2666,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'frases_torturadas' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🧟 Frases Torturadas ({alertasFrasesTorturadas.length})
+                    🧟 Frases Torturadas ({alertasFrasesTorturadasAtivos.length})
                   </button>
                 )}
-                {alertasEstilometricos.length > 0 && (
+                {alertasEstilometricosAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'estilometria' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('estilometria')}
@@ -2463,10 +2681,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'estilometria' ? '#d97706' : 'transparent',
                     }}
                   >
-                    📐 Estilometria ({alertasEstilometricos.length})
+                    📐 Estilometria ({alertasEstilometricosAtivos.length})
                   </button>
                 )}
-                {alertasPredatorios.length > 0 && (
+                {alertasPredatoriosAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'predatorias' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('predatorias')}
@@ -2478,10 +2696,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'predatorias' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🚨 Predatórias ({alertasPredatorios.length})
+                    🚨 Predatórias ({alertasPredatoriosAtivos.length})
                   </button>
                 )}
-                {alertasAbnt6023.length > 0 && (
+                {alertasAbnt6023Ativos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'abnt6023' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('abnt6023')}
@@ -2493,10 +2711,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'abnt6023' ? '#d97706' : 'transparent',
                     }}
                   >
-                    📋 ABNT 6023 ({alertasAbnt6023.length})
+                    📋 ABNT 6023 ({alertasAbnt6023Ativos.length})
                   </button>
                 )}
-                {alertasCorrupcaoGene.length > 0 && (
+                {alertasCorrupcaoGeneAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'genomica' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('genomica')}
@@ -2508,10 +2726,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'genomica' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🧬 Genômica ({alertasCorrupcaoGene.length})
+                    🧬 Genômica ({alertasCorrupcaoGeneAtivos.length})
                   </button>
                 )}
-                {alertasFomento.length > 0 && (
+                {alertasFomentoAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'fomento' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('fomento')}
@@ -2523,10 +2741,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'fomento' ? '#d97706' : 'transparent',
                     }}
                   >
-                    🏛️ Fomento ({alertasFomento.length})
+                    🏛️ Fomento ({alertasFomentoAtivos.length})
                   </button>
                 )}
-                {alertasDesvioTematico.length > 0 && (
+                {alertasDesvioTematicoAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'desvio_tematico' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('desvio_tematico')}
@@ -2538,10 +2756,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'desvio_tematico' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    ⚠️ Desvio Temático ({alertasDesvioTematico.length})
+                    ⚠️ Desvio Temático ({alertasDesvioTematicoAtivos.length})
                   </button>
                 )}
-                {resultado.citacoesSemReferencia.length > 0 && (
+                {citacoesSemReferenciaAtivas.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'orfa' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('orfa')}
@@ -2553,10 +2771,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'orfa' ? '#b91c1c' : 'transparent',
                     }}
                   >
-                    ❌ Citações Órfãs ({resultado.citacoesSemReferencia.length})
+                    ❌ Citações Órfãs ({citacoesSemReferenciaAtivas.length})
                   </button>
                 )}
-                {refsNaoCitadasNoTexto.length > 0 && (
+                {refsNaoCitadasNoTextoAtivas.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'sobrando' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('sobrando')}
@@ -2568,10 +2786,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'sobrando' ? '#d97706' : 'transparent',
                     }}
                   >
-                    ⚠️ Referências Não Citadas ({refsNaoCitadasNoTexto.length})
+                    ⚠️ Referências Não Citadas ({refsNaoCitadasNoTextoAtivas.length})
                   </button>
                 )}
-                {alertasMetadadosAbnt.length > 0 && (
+                {alertasMetadadosAbntAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'metadados' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('metadados')}
@@ -2583,10 +2801,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'metadados' ? '#2563eb' : 'transparent',
                     }}
                   >
-                    📐 Metadados & ABNT ({alertasMetadadosAbnt.length})
+                    📐 Metadados & ABNT ({alertasMetadadosAbntAtivos.length})
                   </button>
                 )}
-                {alertasPdf.length > 0 && (
+                {alertasPdfAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'pdf' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('pdf')}
@@ -2598,10 +2816,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'pdf' ? '#7c3aed' : 'transparent',
                     }}
                   >
-                    📄 Divergência no PDF ({alertasPdf.length})
+                    📄 Divergência no PDF ({alertasPdfAtivos.length})
                   </button>
                 )}
-                {alertasMetodologicos.length > 0 && (
+                {alertasMetodologicosAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'metodologico' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('metodologico')}
@@ -2613,10 +2831,10 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'metodologico' ? '#4b5563' : 'transparent',
                     }}
                   >
-                    📌 Escopo Metodológico ({alertasMetodologicos.length})
+                    📌 Escopo Metodológico ({alertasMetodologicosAtivos.length})
                   </button>
                 )}
-                {alertasEstiloIa.length > 0 && (
+                {alertasEstiloIaAtivos.length > 0 && (
                   <button
                     className={`chip ${grupoIntercorrenciaAtivo === 'estilo_ia' ? 'ativo' : ''}`}
                     onClick={() => setGrupoIntercorrenciaAtivo('estilo_ia')}
@@ -2628,162 +2846,218 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'estilo_ia' ? '#8b5cf6' : 'transparent',
                     }}
                   >
-                    🤖 Redação IA ({alertasEstiloIa.length})
+                    🤖 Redação IA ({alertasEstiloIaAtivos.length})
                   </button>
+                )}
+                {itensResolvidos.size > 0 && (
+                  <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <label style={{ fontSize: 11.8, display: 'inline-flex', alignItems: 'center', gap: 5, cursor: 'pointer', userSelect: 'none', color: 'var(--texto-suave)' }}>
+                      <input
+                        type="checkbox"
+                        checked={mostrarResolvidos}
+                        onChange={(e) => setMostrarResolvidos(e.target.checked)}
+                      />
+                      Mostrar {itensResolvidos.size} ignorados/resolvidos
+                    </label>
+                    <button
+                      className="btn pequeno fantasma"
+                      onClick={limparItensResolvidos}
+                      style={{ fontSize: 11, padding: '2px 8px', color: 'var(--texto-suave)' }}
+                      title="Restaurar todos os alertas marcados como resolvidos"
+                    >
+                      ↺ Restaurar todos
+                    </button>
+                  </div>
                 )}
               </div>
 
           {/* ALERTA A: Fontes Inventadas por IA (Alucinação de ChatGPT / DOI falso / Artigo fantasma) */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'ia') && refsSuspeitasIa.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'ia') && (mostrarResolvidos ? refsSuspeitasIa.length > 0 : refsSuspeitasIaAtivas.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
               <h4 style={{ color: '#dc2626' }}>
-                🤖 Alerta Anti-Alucinação de IA: Fontes Suspeitas de terem sido Inventadas ({refsSuspeitasIa.length})
+                🤖 Alerta Anti-Alucinação de IA: Fontes Suspeitas de terem sido Inventadas ({refsSuspeitasIaAtivas.length})
               </h4>
               <div className="lista-historico">
-                {refsSuspeitasIa.map((r, i) => {
-                  const chaveBusca = `ia_${i}`;
-                  const primOc = r.ocorrenciasNoTexto?.[0];
-                  return (
-                    <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                        <div style={{ flex: 1 }}>
-                          <strong>{r.textoOriginal}</strong>
-                          <div style={{ color: '#dc2626', fontWeight: 700, fontSize: 12.5, marginTop: 4 }}>
-                            {r.alertaAutenticidade}
-                          </div>
-                          {primOc && (
-                            <div style={{ fontSize: 12, marginTop: 4 }}>
-                              <strong>📍 Onde você citou no Word (§{primOc.numParagrafo}, Linha {primOc.numLinha}):</strong>{' '}
-                              <em>"{primOc.fraseContexto}"</em>
+                {refsSuspeitasIa
+                  .filter((r) => mostrarResolvidos || !itensResolvidos.has(`ia_${r.refBibId || r.id || r.primeiroSobrenome}`))
+                  .map((r, i) => {
+                    const idItem = `ia_${r.refBibId || r.id || r.primeiroSobrenome}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    const chaveBusca = `ia_${i}`;
+                    const primOc = r.ocorrenciasNoTexto?.[0];
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <strong>{r.textoOriginal}</strong>
+                            {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            <div style={{ color: '#dc2626', fontWeight: 700, fontSize: 12.5, marginTop: 4 }}>
+                              {r.alertaAutenticidade}
                             </div>
-                          )}
+                            {primOc && (
+                              <div style={{ fontSize: 12, marginTop: 4 }}>
+                                <strong>📍 Onde você citou no Word (§{primOc.numParagrafo}, Linha {primOc.numLinha}):</strong>{' '}
+                                <em>"{primOc.fraseContexto}"</em>
+                              </div>
+                            )}
+                          </div>
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno primario"
+                              onClick={() =>
+                                abrirBuscaArtigoParecido(chaveBusca, {
+                                  fraseWord: primOc?.fraseContexto || '',
+                                  tituloSugerido: r.tituloBuscado || '',
+                                  textoRef: r.textoOriginal,
+                                  autor: r.primeiroSobrenome,
+                                  numParagrafo: primOc?.numParagrafo || '',
+                                })
+                              }
+                              title="Pesquisa nas bases científicas (PubMed, OpenAlex, Europe PMC) artigos reais que tratam exatamente do mesmo tema para substituir esta fonte suspeita!"
+                            >
+                              🔎 Buscar Artigo Real Parecido p/ Substituir
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Fonte com suspeita de alucinação por IA / não encontrada',
+                                  fraseWord: primOc?.fraseContexto,
+                                  paragrafoWord: primOc?.paragrafoCompleto,
+                                  locWord: primOc ? `Parágrafo §${primOc.numParagrafo} · Linha ${primOc.numLinha}` : '',
+                                  refTexto: r.textoOriginal,
+                                  diagnostico: r.alertaAutenticidade,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA analisar
+                            </button>
+                          </div>
                         </div>
-                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                          <button
-                            className="btn pequeno primario"
-                            onClick={() =>
-                              abrirBuscaArtigoParecido(chaveBusca, {
-                                fraseWord: primOc?.fraseContexto || '',
-                                tituloSugerido: r.tituloBuscado || '',
-                                textoRef: r.textoOriginal,
-                                autor: r.primeiroSobrenome,
-                                numParagrafo: primOc?.numParagrafo || '',
-                              })
-                            }
-                            title="Pesquisa nas bases científicas (PubMed, OpenAlex, Europe PMC) artigos reais que tratam exatamente do mesmo tema para substituir esta fonte suspeita!"
-                          >
-                            🔎 Buscar Artigo Real Parecido p/ Substituir
-                          </button>
-                          <button
-                            className="btn pequeno secundario"
-                            onClick={() =>
-                              copiarPromptItemIndividualIa({
-                                tituloProblema: 'Fonte com suspeita de alucinação por IA / não encontrada',
-                                fraseWord: primOc?.fraseContexto,
-                                paragrafoWord: primOc?.paragrafoCompleto,
-                                locWord: primOc ? `Parágrafo §${primOc.numParagrafo} · Linha ${primOc.numLinha}` : '',
-                                refTexto: r.textoOriginal,
-                                diagnostico: r.alertaAutenticidade,
-                              })
-                            }
-                          >
-                            🤖 Copiar p/ IA analisar
-                          </button>
-                        </div>
+                        {renderPainelBuscaArtigoParecido(chaveBusca)}
                       </div>
-                      {renderPainelBuscaArtigoParecido(chaveBusca)}
-                    </div>
-                  );
-                })}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA B: Citação que NÃO Existe no Artigo ou foi Atribuída ao Artigo Errado */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'citacao_falsa') && alertasAtribuicaoFalsa.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'citacao_falsa') && (mostrarResolvidos ? alertasAtribuicaoFalsa.length > 0 : alertasAtribuicaoFalsaAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
               <h4 style={{ color: '#dc2626' }}>
-                🚨 Citações Inexistentes no Artigo ou Atribuídas ao Artigo Errado ({alertasAtribuicaoFalsa.length})
+                🚨 Citações Inexistentes no Artigo ou Atribuídas ao Artigo Errado ({alertasAtribuicaoFalsaAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasAtribuicaoFalsa.map((a, i) => {
-                  const chaveBusca = `falsa_${i}`;
-                  return (
-                    <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                        <div style={{ flex: 1 }}>
-                          <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{a.mensagem}</div>
-                          <div style={{ fontSize: 12.2, marginTop: 4 }}>
-                            <strong>📍 Frase no seu Word (Parágrafo §{a.numParagrafo} · Linha {a.numLinha}):</strong>{' '}
-                            <em>"{a.fraseWord}"</em>
-                          </div>
-                          {a.outroArtigoSugerido && (
-                            <div style={{ fontSize: 12, color: '#15803d', fontWeight: 700, marginTop: 4 }}>
-                              💡 Fonte correta identificada na sua biblioteca: {a.outroArtigoSugerido}
+                {alertasAtribuicaoFalsa
+                  .filter((a) => mostrarResolvidos || !itensResolvidos.has(`atrib_${a.numParagrafo}_${a.numLinha}`))
+                  .map((a, i) => {
+                    const idItem = `atrib_${a.numParagrafo}_${a.numLinha}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    const chaveBusca = `falsa_${i}`;
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
+                              {a.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
-                          )}
+                            <div style={{ fontSize: 12.2, marginTop: 4 }}>
+                              <strong>📍 Frase no seu Word (Parágrafo §{a.numParagrafo} · Linha {a.numLinha}):</strong>{' '}
+                              <em>"{a.fraseWord}"</em>
+                            </div>
+                            {a.outroArtigoSugerido && (
+                              <div style={{ fontSize: 12, color: '#15803d', fontWeight: 700, marginTop: 4 }}>
+                                💡 Fonte correta identificada na sua biblioteca: {a.outroArtigoSugerido}
+                              </div>
+                            )}
+                          </div>
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno primario"
+                              onClick={() =>
+                                abrirBuscaArtigoParecido(chaveBusca, {
+                                  fraseWord: a.fraseWord,
+                                  tituloSugerido: '',
+                                  textoRef: a.autorCitado || '',
+                                  autor: a.autorCitado || '',
+                                  numParagrafo: a.numParagrafo,
+                                })
+                              }
+                            >
+                              🔎 Buscar Artigo Real sobre esta Frase
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Citação não localizada no artigo citado / possível troca de autor',
+                                  fraseWord: a.fraseWord,
+                                  locWord: `Parágrafo §${a.numParagrafo} · Linha ${a.numLinha}`,
+                                  diagnostico: `${a.mensagem}${a.outroArtigoSugerido ? ` | Sugestão na biblioteca: ${a.outroArtigoSugerido}` : ''}`,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA analisar
+                            </button>
+                          </div>
                         </div>
-                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                          <button
-                            className="btn pequeno primario"
-                            onClick={() =>
-                              abrirBuscaArtigoParecido(chaveBusca, {
-                                fraseWord: a.fraseWord,
-                                tituloSugerido: '',
-                                textoRef: a.autorCitado || '',
-                                autor: a.autorCitado || '',
-                                numParagrafo: a.numParagrafo,
-                              })
-                            }
-                          >
-                            🔎 Buscar Artigo Real sobre esta Frase
-                          </button>
-                          <button
-                            className="btn pequeno secundario"
-                            onClick={() =>
-                              copiarPromptItemIndividualIa({
-                                tituloProblema: 'Citação não localizada no artigo citado / possível troca de autor',
-                                fraseWord: a.fraseWord,
-                                locWord: `Parágrafo §${a.numParagrafo} · Linha ${a.numLinha}`,
-                                diagnostico: `${a.mensagem}${a.outroArtigoSugerido ? ` | Sugestão na biblioteca: ${a.outroArtigoSugerido}` : ''}`,
-                              })
-                            }
-                          >
-                            🤖 Copiar p/ IA analisar
-                          </button>
-                        </div>
+                        {renderPainelBuscaArtigoParecido(chaveBusca)}
                       </div>
-                      {renderPainelBuscaArtigoParecido(chaveBusca)}
-                    </div>
-                  );
-                })}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA C: Detector de Plágio / Cópia Literal Sem Aspas */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'plagio') && alertasPlagio.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'plagio') && (mostrarResolvidos ? alertasPlagio.length > 0 : alertasPlagioAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
               <h4 style={{ color: '#dc2626' }}>
-                🔍 Detector de Plágio e Cópia Literal Sem Aspas ({alertasPlagio.length})
+                🔍 Detector de Plágio e Cópia Literal Sem Aspas ({alertasPlagioAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasPlagio.map((p, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{p.mensagem}</div>
-                        <div style={{ fontSize: 12.2, marginTop: 5 }}>
-                          <strong>📝 Como está escrito no seu Word (§{p.numParagrafo}, Linha {p.numLinha}):</strong>{' '}
-                          <em>"{p.fraseNoWord}"</em>
-                        </div>
-                        <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
-                          <strong>📄 Texto original idêntico no artigo de {p.autorFonte}:</strong>{' '}
-                          "{p.trechoOriginalArtigo}"
-                        </div>
-                        {p.trechoCoincidente && (
-                          <div
-                            style={{
+                {alertasPlagio
+                  .filter((p) => mostrarResolvidos || !itensResolvidos.has(`plagio_${p.numParagrafo}_${p.numLinha}`))
+                  .map((p, i) => {
+                    const idItem = `plagio_${p.numParagrafo}_${p.numLinha}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
+                              {p.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            <div style={{ fontSize: 12.2, marginTop: 5 }}>
+                              <strong>📝 Como está escrito no seu Word (§{p.numParagrafo}, Linha {p.numLinha}):</strong>{' '}
+                              <em>"{p.fraseNoWord}"</em>
+                            </div>
+                            <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
+                              <strong>📄 Texto original idêntico no artigo de {p.autorFonte}:</strong>{' '}
+                              "{p.trechoOriginalArtigo}"
+                            </div>
+                            {p.trechoCoincidente && (
+                              <div
+                                style={{
                               fontSize: 11.8,
                               marginTop: 6,
                               background: 'rgba(239, 68, 68, 0.08)',
@@ -2800,780 +3074,1077 @@ export default function ReverseAuditView({
                           </div>
                         )}
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Alerta de Plágio / Cópia Literal sem Aspas',
-                            fraseWord: p.fraseNoWord,
-                            locWord: `Parágrafo §${p.numParagrafo} · Linha ${p.numLinha}`,
-                            refTexto: p.autorFonte,
-                            diagnostico: p.mensagem,
-                            trechoArtigo: p.trechoOriginalArtigo,
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Parafrasear
-                      </button>
+                      <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                        <button
+                          className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                          onClick={() => alternarItemResolvido(idItem)}
+                          title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                          style={{ fontSize: 11.5, padding: '3px 8px' }}
+                        >
+                          {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                        </button>
+                        <button
+                          className="btn pequeno secundario"
+                          onClick={() =>
+                            copiarPromptItemIndividualIa({
+                              tituloProblema: 'Alerta de Plágio / Cópia Literal sem Aspas',
+                              fraseWord: p.fraseNoWord,
+                              locWord: `Parágrafo §${p.numParagrafo} · Linha ${p.numLinha}`,
+                              refTexto: p.autorFonte,
+                              diagnostico: p.mensagem,
+                              trechoArtigo: p.trechoOriginalArtigo,
+                            })
+                          }
+                        >
+                          🤖 Copiar p/ IA Parafrasear
+                        </button>
+                      </div>
                     </div>
                   </div>
-                ))}
+                );
+              })}
               </div>
             </div>
           )}
 
           {/* ALERTA C2: Auditoria Matemática Forense de Resultados Estatísticos (Statcheck) */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'estatistica') && alertasEstatisticos.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'estatistica') && (mostrarResolvidos ? alertasEstatisticos.length > 0 : alertasEstatisticosAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
               <h4 style={{ color: '#dc2626' }}>
-                📊 Auditoria Matemática Forense de Resultados Estatísticos · Statcheck ({alertasEstatisticos.length})
+                📊 Auditoria Matemática Forense de Resultados Estatísticos · Statcheck ({alertasEstatisticosAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasEstatisticos.map((st, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{st.mensagem}</div>
-                        <div style={{ fontSize: 12.2, marginTop: 5 }}>
-                          <strong>📝 Localização no Texto (§{st.numParagrafo}, Linha {st.numLinha} · {st.secao}):</strong>{' '}
-                          <em>"{st.fraseWord}"</em>
-                        </div>
-                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-                          <span><strong>Teste:</strong> <code>{st.textoBruto}</code></span>
-                          <span><strong>p relatado:</strong> <code>{st.pRelatado}</code></span>
-                          <span><strong>p recalculado:</strong> <code style={{ color: '#dc2626', fontWeight: 700 }}>{st.pRecalculado}</code></span>
-                          <span className={`badge ${st.tipo === 'inconsistencia_estatistica_grave' ? 'alerta' : 'pendente'}`} style={{ fontSize: 11 }}>
-                            {st.tipo === 'inconsistencia_estatistica_grave' ? '🚨 Erro Crítico / p-hacking' : '⚠ Inconsistência de Arredondamento'}
-                          </span>
+                {alertasEstatisticos
+                  .filter((st) => mostrarResolvidos || !itensResolvidos.has(`estat_${st.numParagrafo}_${st.numLinha}`))
+                  .map((st, i) => {
+                    const idItem = `estat_${st.numParagrafo}_${st.numLinha}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
+                              {st.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            <div style={{ fontSize: 12.2, marginTop: 5 }}>
+                              <strong>📝 Localização no Texto (§{st.numParagrafo}, Linha {st.numLinha} · {st.secao}):</strong>{' '}
+                              <em>"{st.fraseWord}"</em>
+                            </div>
+                            <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                              <span><strong>Teste:</strong> <code>{st.textoBruto}</code></span>
+                              <span><strong>p relatado:</strong> <code>{st.pRelatado}</code></span>
+                              <span><strong>p recalculado:</strong> <code style={{ color: '#dc2626', fontWeight: 700 }}>{st.pRecalculado}</code></span>
+                              <span className={`badge ${st.tipo === 'inconsistencia_estatistica_grave' ? 'alerta' : 'pendente'}`} style={{ fontSize: 11 }}>
+                                {st.tipo === 'inconsistencia_estatistica_grave' ? '🚨 Erro Crítico / p-hacking' : '⚠ Inconsistência de Arredondamento'}
+                              </span>
+                            </div>
+                          </div>
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Inconsistência Estatística (Statcheck)',
+                                  fraseWord: st.fraseWord,
+                                  locWord: `Parágrafo §${st.numParagrafo} · Linha ${st.numLinha}`,
+                                  refTexto: st.textoBruto,
+                                  diagnostico: st.mensagem,
+                                  trechoArtigo: `Valor relatado: p = ${st.pRelatado} vs Valor recalculado exato: p = ${st.pRecalculado}`,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA Corrigir
+                            </button>
+                          </div>
                         </div>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Inconsistência Estatística (Statcheck)',
-                            fraseWord: st.fraseWord,
-                            locWord: `Parágrafo §${st.numParagrafo} · Linha ${st.numLinha}`,
-                            refTexto: st.textoBruto,
-                            diagnostico: st.mensagem,
-                            trechoArtigo: `Valor relatado: p = ${st.pRelatado} vs Valor recalculado exato: p = ${st.pRecalculado}`,
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Corrigir
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA C3: Auditoria Forense de Redes de Citação e Concentração de Autoria (COPE) */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'rede') && alertasRede.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'rede') && (mostrarResolvidos ? alertasRede.length > 0 : alertasRedeAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
               <h4 style={{ color: '#d97706' }}>
-                🕸️ Auditoria Forense de Redes de Citação e Concentração de Autoria · COPE ({alertasRede.length})
+                🕸️ Auditoria Forense de Redes de Citação e Concentração de Autoria · COPE ({alertasRedeAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasRede.map((ar, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>{ar.mensagem}</div>
-                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-                          <span><strong>Alvo:</strong> <code>{ar.autor || ar.periodico}</code></span>
-                          <span><strong>Ocorrências:</strong> <code>{ar.totalObras}</code></span>
-                          <span><strong>Percentual do Corpus:</strong> <code style={{ color: '#d97706', fontWeight: 700 }}>{ar.percentual}%</code></span>
-                          <span className="badge pendente" style={{ fontSize: 11, background: 'rgba(217, 119, 6, 0.1)', color: '#d97706' }}>
-                            📌 Diretriz de Diversidade Teórica (COPE)
-                          </span>
+                {alertasRede
+                  .filter((ar) => mostrarResolvidos || !itensResolvidos.has(`rede_${ar.autor || ar.periodico}`))
+                  .map((ar, i) => {
+                    const idItem = `rede_${ar.autor || ar.periodico}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>
+                              {ar.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                              <span><strong>Alvo:</strong> <code>{ar.autor || ar.periodico}</code></span>
+                              <span><strong>Ocorrências:</strong> <code>{ar.totalObras}</code></span>
+                              <span><strong>Percentual do Corpus:</strong> <code style={{ color: '#d97706', fontWeight: 700 }}>{ar.percentual}%</code></span>
+                              <span className="badge pendente" style={{ fontSize: 11, background: 'rgba(217, 119, 6, 0.1)', color: '#d97706' }}>
+                                📌 Diretriz de Diversidade Teórica (COPE)
+                              </span>
+                            </div>
+                          </div>
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Concentração de Citações (Diretrizes COPE)',
+                                  fraseWord: `Autor/Veículo concentrado: ${ar.autor || ar.periodico} (${ar.percentual}% do acervo)`,
+                                  locWord: 'Lista de Referências e Citações',
+                                  refTexto: ar.autor || ar.periodico,
+                                  diagnostico: ar.mensagem,
+                                  trechoArtigo: `Total de referências concentradas: ${ar.totalObras}`,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA Diversificar
+                            </button>
+                          </div>
                         </div>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Concentração de Citações (Diretrizes COPE)',
-                            fraseWord: `Autor/Veículo concentrado: ${ar.autor || ar.periodico} (${ar.percentual}% do acervo)`,
-                            locWord: 'Lista de Referências e Citações',
-                            refTexto: ar.autor || ar.periodico,
-                            diagnostico: ar.mensagem,
-                            trechoArtigo: `Total de referências concentradas: ${ar.totalObras}`,
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Diversificar
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA C4: Auditoria Forense Metodológica e Clínica (PICO / STROBE / CONSORT) */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'metodologia_clinica') && alertasMetodologiaClinica.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'metodologia_clinica') && (mostrarResolvidos ? alertasMetodologiaClinica.length > 0 : alertasMetodologiaClinicaAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
               <h4 style={{ color: '#dc2626' }}>
-                🔬 Auditoria Forense Metodológica e Ética · STROBE / CONSORT / PICO ({alertasMetodologiaClinica.length})
+                🔬 Auditoria Forense Metodológica e Ética · STROBE / CONSORT / PICO ({alertasMetodologiaClinicaAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasMetodologiaClinica.map((mc, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{mc.mensagem}</div>
-                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-                          <span><strong>Critério:</strong> <code>{mc.tipo}</code></span>
-                          <span className="badge alerta" style={{ fontSize: 11 }}>
-                            📋 Diretriz Editorial Obrigatória
-                          </span>
+                {alertasMetodologiaClinica
+                  .filter((mc) => mostrarResolvidos || !itensResolvidos.has(`metod_${mc.tipo}`))
+                  .map((mc, i) => {
+                    const idItem = `metod_${mc.tipo}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
+                              {mc.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                              <span><strong>Critério:</strong> <code>{mc.tipo}</code></span>
+                              <span className="badge alerta" style={{ fontSize: 11 }}>
+                                📋 Diretriz Editorial Obrigatória
+                              </span>
+                            </div>
+                          </div>
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Inconformidade Metodológica / Ética em Saúde',
+                                  fraseWord: mc.tipo,
+                                  locWord: 'Seção de Método / Metodologia do Manuscrito',
+                                  refTexto: 'Checklist STROBE / CONSORT / Resoluções CNS',
+                                  diagnostico: mc.mensagem,
+                                  trechoArtigo: 'Adequação necessária para evitar desk reject no periódico',
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA Adequar
+                            </button>
+                          </div>
                         </div>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Inconformidade Metodológica / Ética em Saúde',
-                            fraseWord: mc.tipo,
-                            locWord: 'Seção de Método / Metodologia do Manuscrito',
-                            refTexto: 'Checklist STROBE / CONSORT / Resoluções CNS',
-                            diagnostico: mc.mensagem,
-                            trechoArtigo: 'Adequação necessária para evitar desk reject no periódico',
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Adequar
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA C5: Frases Torturadas e Parafraseamento Robótico (Problematic Paper Screener) */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'frases_torturadas') && alertasFrasesTorturadas.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'frases_torturadas') && (mostrarResolvidos ? alertasFrasesTorturadas.length > 0 : alertasFrasesTorturadasAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
               <h4 style={{ color: '#dc2626' }}>
-                🧟 Detecção Forense de Frases Torturadas · Problematic Paper Screener ({alertasFrasesTorturadas.length})
+                🧟 Detecção Forense de Frases Torturadas · Problematic Paper Screener ({alertasFrasesTorturadasAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasFrasesTorturadas.map((ft, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{ft.mensagem}</div>
-                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-                          <span><strong>Termo Detectado:</strong> <code style={{ color: '#b91c1c', fontWeight: 600 }}>{ft.termoDetectado}</code></span>
-                          <span>➡️ <strong>Termo Canônico:</strong> <code style={{ color: '#16a34a', fontWeight: 600 }}>{ft.termoCanonica}</code></span>
-                          <span className="badge alerta" style={{ fontSize: 11 }}>
-                            {ft.categoria || 'Integridade Textual'}
-                          </span>
-                        </div>
-                        {ft.fraseWord && (
-                          <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
-                            <strong>Passagem no Word (§{ft.numParagrafo}, L.{ft.numLinha}):</strong> &ldquo;{ft.fraseWord}&rdquo;
+                {alertasFrasesTorturadas
+                  .filter((ft, i) => mostrarResolvidos || !itensResolvidos.has(`tort_${ft.numParagrafo}_${ft.termoDetectado || i}`))
+                  .map((ft, i) => {
+                    const idItem = `tort_${ft.numParagrafo}_${ft.termoDetectado || i}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
+                              {ft.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                              <span><strong>Termo Detectado:</strong> <code style={{ color: '#b91c1c', fontWeight: 600 }}>{ft.termoDetectado}</code></span>
+                              <span>➡️ <strong>Termo Canônico:</strong> <code style={{ color: '#16a34a', fontWeight: 600 }}>{ft.termoCanonica}</code></span>
+                              <span className="badge alerta" style={{ fontSize: 11 }}>
+                                {ft.categoria || 'Integridade Textual'}
+                              </span>
+                            </div>
+                            {ft.fraseWord && (
+                              <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                                <strong>Passagem no Word (§{ft.numParagrafo}, L.{ft.numLinha}):</strong> &ldquo;{ft.fraseWord}&rdquo;
+                              </div>
+                            )}
                           </div>
-                        )}
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Frase Torturada / Spin-bot detectado',
+                                  fraseWord: ft.fraseWord,
+                                  locWord: `§${ft.numParagrafo}, Linha ${ft.numLinha} (${ft.secao || 'Corpo'})`,
+                                  refTexto: `Termo canônico: ${ft.termoCanonica}`,
+                                  diagnostico: ft.mensagem,
+                                  trechoArtigo: `Substituir "${ft.termoDetectado}" por "${ft.termoCanonica}"`,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA Corrigir
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Frase Torturada / Spin-bot detectado',
-                            fraseWord: ft.fraseWord,
-                            locWord: `§${ft.numParagrafo}, Linha ${ft.numLinha} (${ft.secao || 'Corpo'})`,
-                            refTexto: `Termo canônico: ${ft.termoCanonica}`,
-                            diagnostico: ft.mensagem,
-                            trechoArtigo: `Substituir "${ft.termoDetectado}" por "${ft.termoCanonica}"`,
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Corrigir
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA C6: Estilometria Acadêmica e Diversidade Textual */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'estilometria') && alertasEstilometricos.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'estilometria') && (mostrarResolvidos ? alertasEstilometricos.length > 0 : alertasEstilometricosAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
               <h4 style={{ color: '#d97706' }}>
-                📐 Auditoria Estilométrica e Rítmica · TTR, Burstiness & Guiraud ({alertasEstilometricos.length})
+                📐 Auditoria Estilométrica e Rítmica · TTR, Burstiness & Guiraud ({alertasEstilometricosAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasEstilometricos.map((es, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>{es.mensagem}</div>
-                        {es.metricas && (
-                          <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-                            <span><strong>Burstiness (CV):</strong> {es.metricas.burstiness}</span>
-                            <span><strong>TTR:</strong> {es.metricas.ttr}</span>
-                            <span><strong>Guiraud:</strong> {es.metricas.guiraud}</span>
-                            <span><strong>Flesch:</strong> {es.metricas.fleschLegibilidade}</span>
+                {alertasEstilometricos
+                  .filter((es) => mostrarResolvidos || !itensResolvidos.has(`estilo_${es.numParagrafo}_${es.tipo}`))
+                  .map((es, i) => {
+                    const idItem = `estilo_${es.numParagrafo}_${es.tipo}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>
+                              {es.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            {es.metricas && (
+                              <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                                <span><strong>Burstiness (CV):</strong> {es.metricas.burstiness}</span>
+                                <span><strong>TTR:</strong> {es.metricas.ttr}</span>
+                                <span><strong>Guiraud:</strong> {es.metricas.guiraud}</span>
+                                <span><strong>Flesch:</strong> {es.metricas.fleschLegibilidade}</span>
+                              </div>
+                            )}
+                            {es.fraseWord && (
+                              <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                                <strong>Parágrafo (§{es.numParagrafo}, L.{es.numLinha}):</strong> &ldquo;{es.fraseWord}&rdquo;
+                              </div>
+                            )}
                           </div>
-                        )}
-                        {es.fraseWord && (
-                          <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
-                            <strong>Parágrafo (§{es.numParagrafo}, L.{es.numLinha}):</strong> &ldquo;{es.fraseWord}&rdquo;
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Anomalia Estilométrica / Monotonia Mecânica',
+                                  fraseWord: es.fraseWord,
+                                  locWord: `§${es.numParagrafo}, Linha ${es.numLinha} (${es.secao || 'Corpo'})`,
+                                  refTexto: 'Padrão rítmico e riqueza vocabular acadêmica',
+                                  diagnostico: es.mensagem,
+                                  trechoArtigo: 'Reestruturação sintática para restaurar variação estilométrica humana',
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA Reestruturar
+                            </button>
                           </div>
-                        )}
+                        </div>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Anomalia Estilométrica / Monotonia Mecânica',
-                            fraseWord: es.fraseWord,
-                            locWord: `§${es.numParagrafo}, Linha ${es.numLinha} (${es.secao || 'Corpo'})`,
-                            refTexto: 'Padrão rítmico e riqueza vocabular acadêmica',
-                            diagnostico: es.mensagem,
-                            trechoArtigo: 'Reestruturação sintática para restaurar variação estilométrica humana',
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Reestruturar
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA C7: Periódicos Predatórios e Revistas Clonadas */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'predatorias') && alertasPredatorios.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'predatorias') && (mostrarResolvidos ? alertasPredatorios.length > 0 : alertasPredatoriosAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
               <h4 style={{ color: '#dc2626' }}>
-                🚨 Fontes Suspeitas · Periódicos Predatórios e Clonados ({alertasPredatorios.length})
+                🚨 Fontes Suspeitas · Periódicos Predatórios e Clonados ({alertasPredatoriosAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasPredatorios.map((ap, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{ap.mensagem}</div>
-                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-                          <span><strong>Entidade:</strong> <code style={{ color: '#b91c1c', fontWeight: 600 }}>{ap.nomeDetectado}</code></span>
-                          <span className="badge alerta" style={{ fontSize: 11 }}>
-                            {ap.subtipo}
-                          </span>
-                        </div>
-                        {ap.textoReferencia && (
-                          <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
-                            <strong>Referência:</strong> &ldquo;{ap.textoReferencia}&rdquo;
+                {alertasPredatorios
+                  .filter((ap) => mostrarResolvidos || !itensResolvidos.has(`pred_${ap.refBibId || ap.chaveAutorAno}`))
+                  .map((ap, i) => {
+                    const idItem = `pred_${ap.refBibId || ap.chaveAutorAno}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
+                              {ap.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                              <span><strong>Entidade:</strong> <code style={{ color: '#b91c1c', fontWeight: 600 }}>{ap.nomeDetectado}</code></span>
+                              <span className="badge alerta" style={{ fontSize: 11 }}>
+                                {ap.subtipo}
+                              </span>
+                            </div>
+                            {ap.textoReferencia && (
+                              <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                                <strong>Referência:</strong> &ldquo;{ap.textoReferencia}&rdquo;
+                              </div>
+                            )}
                           </div>
-                        )}
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Citação em Periódico Predatório / Não Idôneo',
+                                  fraseWord: ap.textoReferencia,
+                                  locWord: 'Lista de Referências',
+                                  refTexto: ap.chaveAutorAno,
+                                  diagnostico: ap.mensagem,
+                                  trechoArtigo: 'Substituição recomendada por artigo indexado no SciELO/Scopus',
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA Substituir
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Citação em Periódico Predatório / Não Idôneo',
-                            fraseWord: ap.textoReferencia,
-                            locWord: 'Lista de Referências',
-                            refTexto: ap.chaveAutorAno,
-                            diagnostico: ap.mensagem,
-                            trechoArtigo: 'Substituição recomendada por artigo indexado no SciELO/Scopus',
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Substituir
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA C8: Completude Normativa ABNT NBR 6023:2018 */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'abnt6023') && alertasAbnt6023.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'abnt6023') && (mostrarResolvidos ? alertasAbnt6023.length > 0 : alertasAbnt6023Ativos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
               <h4 style={{ color: '#d97706' }}>
-                📋 Inconformidade de Elementos Obrigatórios · ABNT NBR 6023:2018 ({alertasAbnt6023.length})
+                📋 Inconformidade de Elementos Obrigatórios · ABNT NBR 6023:2018 ({alertasAbnt6023Ativos.length})
               </h4>
               <div className="lista-historico">
-                {alertasAbnt6023.map((ab, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>{ab.mensagem}</div>
-                        <div style={{ fontSize: 12, marginTop: 4, color: 'var(--cor-texto-sub)' }}>
-                          <strong>Sugestão Normativa:</strong> {ab.sugestao}
-                        </div>
-                        {ab.textoReferencia && (
-                          <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
-                            <strong>Entrada:</strong> &ldquo;{ab.textoReferencia}&rdquo;
+                {alertasAbnt6023
+                  .filter((ab) => mostrarResolvidos || !itensResolvidos.has(`abnt6023_${ab.idxRef}_${ab.tipo}`))
+                  .map((ab, i) => {
+                    const idItem = `abnt6023_${ab.idxRef}_${ab.tipo}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>
+                              {ab.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            <div style={{ fontSize: 12, marginTop: 4, color: 'var(--cor-texto-sub)' }}>
+                              <strong>Sugestão Normativa:</strong> {ab.sugestao}
+                            </div>
+                            {ab.textoReferencia && (
+                              <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                                <strong>Entrada:</strong> &ldquo;{ab.textoReferencia}&rdquo;
+                              </div>
+                            )}
                           </div>
-                        )}
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Inconformidade Normativa ABNT NBR 6023',
+                                  fraseWord: ab.textoReferencia,
+                                  locWord: 'Lista de Referências',
+                                  refTexto: ab.chaveRef,
+                                  diagnostico: ab.mensagem,
+                                  trechoArtigo: ab.sugestao,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA Formatar
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Inconformidade Normativa ABNT NBR 6023',
-                            fraseWord: ab.textoReferencia,
-                            locWord: 'Lista de Referências',
-                            refTexto: ab.chaveRef,
-                            diagnostico: ab.mensagem,
-                            trechoArtigo: ab.sugestao,
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Formatar
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA C9: Corrupção Genômica por Planilha */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'genomica') && alertasCorrupcaoGene.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'genomica') && (mostrarResolvidos ? alertasCorrupcaoGene.length > 0 : alertasCorrupcaoGeneAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
               <h4 style={{ color: '#dc2626' }}>
-                🧬 Corrupção de Nomenclatura Genômica por Planilha · Ziemann / HGNC ({alertasCorrupcaoGene.length})
+                🧬 Corrupção de Nomenclatura Genômica por Planilha · Ziemann / HGNC ({alertasCorrupcaoGeneAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasCorrupcaoGene.map((cg, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{cg.mensagem}</div>
-                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-                          <span><strong>Termo Detectado:</strong> <code style={{ color: '#b91c1c', fontWeight: 600 }}>{cg.termoDetectado}</code></span>
-                          <span>➡️ <strong>Gene Canônico HGNC:</strong> <code style={{ color: '#16a34a', fontWeight: 600 }}>{cg.geneAtualHgnc}</code> ({cg.nomeCompleto})</span>
-                        </div>
-                        {cg.fraseWord && (
-                          <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
-                            <strong>Trecho no Word (§{cg.numParagrafo}, L.{cg.numLinha}):</strong> &ldquo;{cg.fraseWord}&rdquo;
+                {alertasCorrupcaoGene
+                  .filter((cg, i) => mostrarResolvidos || !itensResolvidos.has(`gene_${cg.numParagrafo}_${cg.termoDetectado || i}`))
+                  .map((cg, i) => {
+                    const idItem = `gene_${cg.numParagrafo}_${cg.termoDetectado || i}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
+                              {cg.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                              <span><strong>Termo Detectado:</strong> <code style={{ color: '#b91c1c', fontWeight: 600 }}>{cg.termoDetectado}</code></span>
+                              <span>➡️ <strong>Gene Canônico HGNC:</strong> <code style={{ color: '#16a34a', fontWeight: 600 }}>{cg.geneAtualHgnc}</code> ({cg.nomeCompleto})</span>
+                            </div>
+                            {cg.fraseWord && (
+                              <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                                <strong>Trecho no Word (§{cg.numParagrafo}, L.{cg.numLinha}):</strong> &ldquo;{cg.fraseWord}&rdquo;
+                              </div>
+                            )}
                           </div>
-                        )}
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Corrupção de Símbolo Gênico por Planilha',
+                                  fraseWord: cg.fraseWord,
+                                  locWord: `§${cg.numParagrafo}, Linha ${cg.numLinha} (${cg.secao || 'Corpo'})`,
+                                  refTexto: `Gene canônico: ${cg.geneAtualHgnc}`,
+                                  diagnostico: cg.mensagem,
+                                  trechoArtigo: `Substituir "${cg.termoDetectado}" por "${cg.geneAtualHgnc}"`,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA Corrigir
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Corrupção de Símbolo Gênico por Planilha',
-                            fraseWord: cg.fraseWord,
-                            locWord: `§${cg.numParagrafo}, Linha ${cg.numLinha} (${cg.secao || 'Corpo'})`,
-                            refTexto: `Gene canônico: ${cg.geneAtualHgnc}`,
-                            diagnostico: cg.mensagem,
-                            trechoArtigo: `Substituir "${cg.termoDetectado}" por "${cg.geneAtualHgnc}"`,
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Corrigir
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA C10: Declaração de Fomento e Apoio Institucional */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'fomento') && alertasFomento.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'fomento') && (mostrarResolvidos ? alertasFomento.length > 0 : alertasFomentoAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
               <h4 style={{ color: '#d97706' }}>
-                🏛️ Declaração de Fomento, Bolsas e Processos · Portaria CAPES 206/2018 ({alertasFomento.length})
+                🏛️ Declaração de Fomento, Bolsas e Processos · Portaria CAPES 206/2018 ({alertasFomentoAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasFomento.map((af, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>{af.mensagem}</div>
-                        <div style={{ fontSize: 12, marginTop: 4, color: 'var(--cor-texto-sub)' }}>
-                          <strong>Sugestão:</strong> {af.sugestao}
+                {alertasFomento
+                  .filter((af) => mostrarResolvidos || !itensResolvidos.has(`fom_${af.tipo}`))
+                  .map((af, i) => {
+                    const idItem = `fom_${af.tipo}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>
+                              {af.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            <div style={{ fontSize: 12, marginTop: 4, color: 'var(--cor-texto-sub)' }}>
+                              <strong>Sugestão:</strong> {af.sugestao}
+                            </div>
+                          </div>
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Conformidade de Declaração de Fomento / CAPES / CNPq',
+                                  fraseWord: af.mensagem,
+                                  locWord: 'Seção de Agradecimentos / Financiamento',
+                                  refTexto: af.agencia || 'Agência de Fomento',
+                                  diagnostico: af.mensagem,
+                                  trechoArtigo: af.sugestao,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA Redigir
+                            </button>
+                          </div>
                         </div>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Conformidade de Declaração de Fomento / CAPES / CNPq',
-                            fraseWord: af.mensagem,
-                            locWord: 'Seção de Agradecimentos / Financiamento',
-                            refTexto: af.agencia || 'Agência de Fomento',
-                            diagnostico: af.mensagem,
-                            trechoArtigo: af.sugestao,
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Redigir
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA C11: Desvio Temático de Citação (Claim-Support TF-IDF) */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'desvio_tematico') && alertasDesvioTematico.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'desvio_tematico') && (mostrarResolvidos ? alertasDesvioTematico.length > 0 : alertasDesvioTematicoAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
               <h4 style={{ color: '#dc2626' }}>
-                ⚠️ Desvio Temático de Citação · TF-IDF Claim-Support ({alertasDesvioTematico.length})
+                ⚠️ Desvio Temático de Citação · TF-IDF Claim-Support ({alertasDesvioTematicoAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasDesvioTematico.map((dt, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{dt.mensagem}</div>
-                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-                          <span><strong>Citação:</strong> <code>{dt.autorCitado}</code></span>
-                          <span><strong>Similaridade Vetorial:</strong> <code>{dt.similaridadeCosseno}</code></span>
-                        </div>
-                        {dt.fraseWord && (
-                          <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
-                            <strong>Afirmação no Word (§{dt.numParagrafo}, L.{dt.numLinha}):</strong> &ldquo;{dt.fraseWord}&rdquo;
+                {alertasDesvioTematico
+                  .filter((dt) => mostrarResolvidos || !itensResolvidos.has(`desvio_${dt.numParagrafo}_${dt.refBibId}`))
+                  .map((dt, i) => {
+                    const idItem = `desvio_${dt.numParagrafo}_${dt.refBibId}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>
+                              {dt.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                              <span><strong>Citação:</strong> <code>{dt.autorCitado}</code></span>
+                              <span><strong>Similaridade Vetorial:</strong> <code>{dt.similaridadeCosseno}</code></span>
+                            </div>
+                            {dt.fraseWord && (
+                              <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                                <strong>Afirmação no Word (§{dt.numParagrafo}, L.{dt.numLinha}):</strong> &ldquo;{dt.fraseWord}&rdquo;
+                              </div>
+                            )}
                           </div>
-                        )}
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Desvio Temático entre Afirmação e Obra Citada',
+                                  fraseWord: dt.fraseWord,
+                                  locWord: `§${dt.numParagrafo}, Linha ${dt.numLinha}`,
+                                  refTexto: dt.autorCitado,
+                                  diagnostico: dt.mensagem,
+                                  trechoArtigo: dt.sugestao,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA Avaliar
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Desvio Temático entre Afirmação e Obra Citada',
-                            fraseWord: dt.fraseWord,
-                            locWord: `§${dt.numParagrafo}, Linha ${dt.numLinha}`,
-                            refTexto: dt.autorCitado,
-                            diagnostico: dt.mensagem,
-                            trechoArtigo: dt.sugestao,
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Avaliar
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
               </div>
             </div>
           )}
           {/* ALERTA D: Citadas no texto mas ausentes nas Referências (Citações Órfãs) */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'orfa') && resultado.citacoesSemReferencia.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'orfa') && (mostrarResolvidos ? resultado.citacoesSemReferencia.length > 0 : citacoesSemReferenciaAtivas.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626' }}>
               <h4 style={{ color: '#dc2626' }}>
-                ❌ Inconformidade: Citadas no texto, mas AUSENTES na lista final de Referências ({resultado.citacoesSemReferencia.length})
+                ❌ Inconformidade: Citadas no texto, mas AUSENTES na lista final de Referências ({citacoesSemReferenciaAtivas.length})
               </h4>
               <div className="lista-historico">
-                {resultado.citacoesSemReferencia.map((c, idxOrfa) => {
-                  const chaveBusca = `orfa_${idxOrfa}`;
-                  const primOc = c.ocorrencias?.[0];
-                  return (
-                    <div key={c.chave} className="card-historico">
-                      <div className="card-historico-topo">
-                        <div>
-                          <strong>
-                            {c.autor} ({c.ano}) — aparece {c.ocorrencias.length}x no texto, mas não está nas Referências finais!
-                          </strong>
-                          {c.tituloNaBib && <span className="badge-ja-existe" style={{ marginLeft: 8 }}>Na biblioteca: {c.tituloNaBib}</span>}
+                {resultado.citacoesSemReferencia
+                  .filter((c) => mostrarResolvidos || !itensResolvidos.has(`orfa_${c.chave}`))
+                  .map((c, idxOrfa) => {
+                    const idItem = `orfa_${c.chave}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    const chaveBusca = `orfa_${idxOrfa}`;
+                    const primOc = c.ocorrencias?.[0];
+                    return (
+                      <div key={c.chave} className="card-historico" style={{ opacity: resolvido ? 0.6 : 1 }}>
+                        <div className="card-historico-topo">
+                          <div>
+                            <strong>
+                              {c.autor} ({c.ano}) — aparece {c.ocorrencias.length}x no texto, mas não está nas Referências finais!
+                            </strong>
+                            {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            {c.tituloNaBib && <span className="badge-ja-existe" style={{ marginLeft: 8 }}>Na biblioteca: {c.tituloNaBib}</span>}
+                          </div>
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno primario"
+                              onClick={() =>
+                                abrirBuscaArtigoParecido(chaveBusca, {
+                                  fraseWord: primOc?.fraseContexto || '',
+                                  tituloSugerido: c.tituloNaBib || `${c.autor} ${c.ano}`,
+                                  textoRef: `${c.autor} ${c.ano}`,
+                                  autor: c.autor,
+                                  numParagrafo: primOc?.numParagrafo || '',
+                                })
+                              }
+                            >
+                              🔎 Buscar esta Fonte ou Artigo Parecido
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: `Autor citado no texto (${c.autor}, ${c.ano}) mas ausente na lista final de Referências`,
+                                  fraseWord: primOc?.fraseContexto,
+                                  locWord: primOc ? `Parágrafo §${primOc.numParagrafo} · Linha ${primOc.numLinha}` : '',
+                                  refTexto: `${c.autor} (${c.ano})`,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA
+                            </button>
+                          </div>
                         </div>
-                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                          <button
-                            className="btn pequeno primario"
-                            onClick={() =>
-                              abrirBuscaArtigoParecido(chaveBusca, {
-                                fraseWord: primOc?.fraseContexto || '',
-                                tituloSugerido: c.tituloNaBib || `${c.autor} ${c.ano}`,
-                                textoRef: `${c.autor} ${c.ano}`,
-                                autor: c.autor,
-                                numParagrafo: primOc?.numParagrafo || '',
-                              })
-                            }
-                          >
-                            🔎 Buscar esta Fonte ou Artigo Parecido
-                          </button>
-                          <button
-                            className="btn pequeno secundario"
-                            onClick={() =>
-                              copiarPromptItemIndividualIa({
-                                tituloProblema: `Autor citado no texto (${c.autor}, ${c.ano}) mas ausente na lista final de Referências`,
-                                fraseWord: primOc?.fraseContexto,
-                                locWord: primOc ? `Parágrafo §${primOc.numParagrafo} · Linha ${primOc.numLinha}` : '',
-                                refTexto: `${c.autor} (${c.ano})`,
-                              })
-                            }
-                          >
-                            🤖 Copiar p/ IA
-                          </button>
-                        </div>
+                        {c.ocorrencias.map((oc, i) => (
+                          <div key={i} className="sub-meta" style={{ marginTop: 4 }}>
+                            <span className="badge-ja-existe" style={{ marginRight: 6 }}>
+                              📍 Parágrafo §{oc.numParagrafo || i + 1} · Linha {oc.numLinha || '?'}
+                              {oc.secao ? ` · ${oc.secao}` : ''}
+                            </span>
+                            <strong>Frase no Word:</strong> <em>"{oc.fraseContexto}"</em>
+                          </div>
+                        ))}
+                        {renderPainelBuscaArtigoParecido(chaveBusca)}
                       </div>
-                      {c.ocorrencias.map((oc, i) => (
-                        <div key={i} className="sub-meta" style={{ marginTop: 4 }}>
-                          <span className="badge-ja-existe" style={{ marginRight: 6 }}>
-                            📍 Parágrafo §{oc.numParagrafo || i + 1} · Linha {oc.numLinha || '?'}
-                            {oc.secao ? ` · ${oc.secao}` : ''}
-                          </span>
-                          <strong>Frase no Word:</strong> <em>"{oc.fraseContexto}"</em>
-                        </div>
-                      ))}
-                      {renderPainelBuscaArtigoParecido(chaveBusca)}
-                    </div>
-                  );
-                })}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA E: Referências na Lista Final mas NUNCA Citadas no Texto (Sobrando / Consultadas) */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'sobrando') && refsNaoCitadasNoTexto.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'sobrando') && (mostrarResolvidos ? refsNaoCitadasNoTexto.length > 0 : refsNaoCitadasNoTextoAtivas.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
               <h4 style={{ color: '#b45309' }}>
-                ⚠️ Inconformidade: Obras na Lista Final de Referências que NUNCA foram Citadas no Texto ({refsNaoCitadasNoTexto.length})
+                ⚠️ Inconformidade: Obras na Lista Final de Referências que NUNCA foram Citadas no Texto ({refsNaoCitadasNoTextoAtivas.length})
               </h4>
               <p className="dica-texto" style={{ margin: '2px 0 8px 0' }}>
                 Segundo as normas ABNT NBR 10520 e diretrizes acadêmicas de periódicos, todas as obras listadas nas Referências devem ter sido citadas no corpo do trabalho (ou explicitamente indicadas como bibliografia consultada).
               </p>
               <div className="lista-historico">
-                {refsNaoCitadasNoTexto.map((r, i) => {
-                  const chaveBusca = `sobrando_${i}`;
-                  return (
-                    <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                        <div style={{ flex: 1 }}>
-                          <strong>{r.textoOriginal}</strong>
-                          <div style={{ color: '#b45309', fontWeight: 600, fontSize: 12, marginTop: 4 }}>
-                            ⚠️ Nenhuma citação no formato ({r.primeiroSobrenome}, {r.ano}) foi localizada no texto. (Marcada como Consultada)
+                {refsNaoCitadasNoTexto
+                  .filter((r) => mostrarResolvidos || !itensResolvidos.has(`sobr_${r.refBibId || r.textoOriginal}`))
+                  .map((r, i) => {
+                    const idItem = `sobr_${r.refBibId || r.textoOriginal}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    const chaveBusca = `sobrando_${i}`;
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <strong>{r.textoOriginal}</strong>
+                            {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            <div style={{ color: '#b45309', fontWeight: 600, fontSize: 12, marginTop: 4 }}>
+                              ⚠️ Nenhuma citação no formato ({r.primeiroSobrenome}, {r.ano}) foi localizada no texto. (Marcada como Consultada)
+                            </div>
+                            {r.doiOficial && <div style={{ fontSize: 11.8, color: 'var(--texto-suave)', marginTop: 2 }}>DOI: {r.doiOficial}</div>}
                           </div>
-                          {r.doiOficial && <div style={{ fontSize: 11.8, color: 'var(--texto-suave)', marginTop: 2 }}>DOI: {r.doiOficial}</div>}
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                abrirBuscaArtigoParecido(chaveBusca, {
+                                  fraseWord: '',
+                                  tituloSugerido: r.tituloBuscado || '',
+                                  textoRef: r.textoOriginal,
+                                  autor: r.primeiroSobrenome,
+                                })
+                              }
+                            >
+                              🔎 Artigos Parecidos
+                            </button>
+                            <button
+                              className="btn pequeno fantasma"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: `Obra listada nas referências mas nunca citada no manuscrito`,
+                                  refTexto: r.textoOriginal,
+                                  diagnostico: `A obra consta nas Referências, mas não possui nenhuma citação (§) no texto. O que fazer?`,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA
+                            </button>
+                          </div>
                         </div>
-                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                          <button
-                            className="btn pequeno secundario"
-                            onClick={() =>
-                              abrirBuscaArtigoParecido(chaveBusca, {
-                                fraseWord: '',
-                                tituloSugerido: r.tituloBuscado || '',
-                                textoRef: r.textoOriginal,
-                                autor: r.primeiroSobrenome,
-                              })
-                            }
-                          >
-                            🔎 Artigos Parecidos
-                          </button>
-                          <button
-                            className="btn pequeno fantasma"
-                            onClick={() =>
-                              copiarPromptItemIndividualIa({
-                                tituloProblema: `Obra listada nas referências mas nunca citada no manuscrito`,
-                                refTexto: r.textoOriginal,
-                                diagnostico: `A obra consta nas Referências, mas não possui nenhuma citação (§) no texto. O que fazer?`,
-                              })
-                            }
-                          >
-                            🤖 Copiar p/ IA
-                          </button>
-                        </div>
+                        {renderPainelBuscaArtigoParecido(chaveBusca)}
                       </div>
-                      {renderPainelBuscaArtigoParecido(chaveBusca)}
-                    </div>
-                  );
-                })}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA F: Divergências de Metadados Oficiais & Norma ABNT NBR */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'metadados') && alertasMetadadosAbnt.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'metadados') && (mostrarResolvidos ? alertasMetadadosAbnt.length > 0 : alertasMetadadosAbntAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #2563eb', background: 'rgba(37, 99, 235, 0.04)' }}>
               <h4 style={{ color: '#1d4ed8' }}>
-                📐 Divergências de Metadados Oficiais &amp; ABNT NBR 10520 ({alertasMetadadosAbnt.length})
+                📐 Divergências de Metadados Oficiais &amp; ABNT NBR 10520 ({alertasMetadadosAbntAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasMetadadosAbnt.map((ap, i) => {
-                  const ehParcial = ap.tipo === 'afirmacao_parcialmente_sustentada';
-                  return (
-                    <div key={i} className="card-historico" style={{ borderLeft: ehParcial ? '3px solid #d97706' : '3px solid #2563eb' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                        <div style={{ flex: 1 }}>
-                          <div style={{ fontWeight: 700, color: ehParcial ? '#b45309' : '#1e3a8a', fontSize: 12.6 }}>{ap.mensagem}</div>
-                          {ap.fraseWord && (
-                            <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
-                              <strong>📍 Trecho no Word (Parágrafo §{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
-                              <em>"{ap.fraseWord}"</em>
+                {alertasMetadadosAbnt
+                  .filter((ap) => mostrarResolvidos || !itensResolvidos.has(`meta_${ap.numParagrafo}_${ap.numLinha}_${ap.tipo}`))
+                  .map((ap, i) => {
+                    const idItem = `meta_${ap.numParagrafo}_${ap.numLinha}_${ap.tipo}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    const ehParcial = ap.tipo === 'afirmacao_parcialmente_sustentada';
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: ehParcial ? '3px solid #d97706' : '3px solid #2563eb', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: ehParcial ? '#b45309' : '#1e3a8a', fontSize: 12.6 }}>
+                              {ap.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
                             </div>
-                          )}
+                            {ap.fraseWord && (
+                              <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
+                                <strong>📍 Trecho no Word (Parágrafo §{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
+                                <em>"{ap.fraseWord}"</em>
+                              </div>
+                            )}
+                          </div>
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: ehParcial ? 'Ajuste de Premissa Não Sustentada' : 'Ajuste de Metadados / Norma ABNT',
+                                  fraseWord: ap.fraseWord,
+                                  locWord: `Parágrafo §${ap.numParagrafo} · Linha ${ap.numLinha}`,
+                                  refTexto: ap.autorCitado,
+                                  diagnostico: ap.mensagem,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA Ajustar
+                            </button>
+                          </div>
                         </div>
-                        <button
-                          className="btn pequeno secundario"
-                          onClick={() =>
-                            copiarPromptItemIndividualIa({
-                              tituloProblema: ehParcial ? 'Ajuste de Premissa Não Sustentada' : 'Ajuste de Metadados / Norma ABNT',
-                              fraseWord: ap.fraseWord,
-                              locWord: `Parágrafo §${ap.numParagrafo} · Linha ${ap.numLinha}`,
-                              refTexto: ap.autorCitado,
-                              diagnostico: ap.mensagem,
-                            })
-                          }
-                        >
-                          🤖 Copiar p/ IA Ajustar
-                        </button>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA G: Divergências de Conteúdo e Páginas no PDF do Artigo */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'pdf') && alertasPdf.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'pdf') && (mostrarResolvidos ? alertasPdf.length > 0 : alertasPdfAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #7c3aed', background: 'rgba(124, 58, 237, 0.04)' }}>
               <h4 style={{ color: '#7c3aed' }}>
-                📄 Divergências de Conteúdo e Páginas no PDF do Artigo ({alertasPdf.length})
+                📄 Divergências de Conteúdo e Páginas no PDF do Artigo ({alertasPdfAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasPdf.map((ap, i) => {
-                  const refObj = refs.find((x) => x.id === ap.ref.refBibId);
-                  return (
-                    <div key={i} className="card-historico" style={{ borderLeft: '3px solid #7c3aed' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                        <div style={{ flex: 1 }}>
-                          <div style={{ fontWeight: 700, color: '#6d28d9', fontSize: 12.6 }}>{ap.mensagem}</div>
-                          <div style={{ fontSize: 12, color: 'var(--texto-suave)', marginTop: 2 }}>
-                            <strong>Obra:</strong> {ap.ref.primeiroSobrenome} ({ap.ref.ano}) — {ap.ref.tituloOficial || ap.ref.tituloBuscado}
+                {alertasPdf
+                  .filter((ap) => mostrarResolvidos || !itensResolvidos.has(`pdf_${ap.ref?.refBibId}_${ap.paginaPdf}_${ap.status}`))
+                  .map((ap, i) => {
+                    const idItem = `pdf_${ap.ref?.refBibId}_${ap.paginaPdf}_${ap.status}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    const refObj = refs.find((x) => x.id === ap.ref.refBibId);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #7c3aed', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#6d28d9', fontSize: 12.6 }}>
+                              {ap.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            <div style={{ fontSize: 12, color: 'var(--texto-suave)', marginTop: 2 }}>
+                              <strong>Obra:</strong> {ap.ref.primeiroSobrenome} ({ap.ref.ano}) — {ap.ref.tituloOficial || ap.ref.tituloBuscado}
+                            </div>
+                            {ap.ocorrencia?.fraseContexto && (
+                              <div style={{ fontSize: 12, marginTop: 4 }}>
+                                <strong>📍 Frase no seu Word (Parágrafo §{ap.ocorrencia.numParagrafo} · Linha {ap.ocorrencia.numLinha}):</strong>{' '}
+                                <em>"{ap.ocorrencia.fraseContexto}"</em>
+                              </div>
+                            )}
+                            {ap.trechoPdf && (
+                              <div style={{ fontSize: 11.8, marginTop: 4, color: 'var(--texto)' }}>
+                                <strong>📄 Trecho encontrado no PDF (pág. {ap.paginaPdf}):</strong> "{ap.trechoPdf}"
+                              </div>
+                            )}
                           </div>
-                          {ap.ocorrencia?.fraseContexto && (
-                            <div style={{ fontSize: 12, marginTop: 4 }}>
-                              <strong>📍 Frase no seu Word (Parágrafo §{ap.ocorrencia.numParagrafo} · Linha {ap.ocorrencia.numLinha}):</strong>{' '}
-                              <em>"{ap.ocorrencia.fraseContexto}"</em>
-                            </div>
-                          )}
-                          {ap.trechoPdf && (
-                            <div style={{ fontSize: 11.8, marginTop: 4, color: 'var(--texto)' }}>
-                              <strong>📄 Trecho encontrado no PDF (pág. {ap.paginaPdf}):</strong> "{ap.trechoPdf}"
-                            </div>
-                          )}
-                        </div>
-                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                          {refObj?.pdf && (
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
                             <button
-                              className="btn pequeno primario"
-                              onClick={() => onAbrirPdfNaPagina(refObj, ap.paginaPdf || 1)}
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
                             >
-                              📖 Abrir PDF {ap.paginaPdf ? `na Pág. ${ap.paginaPdf}` : ''}
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
                             </button>
-                          )}
-                          <button
-                            className="btn pequeno secundario"
-                            onClick={() =>
-                              copiarPromptItemIndividualIa({
-                                tituloProblema: 'Divergência de Conteúdo / Página no PDF',
-                                fraseWord: ap.ocorrencia?.fraseContexto,
-                                locWord: `Parágrafo §${ap.ocorrencia?.numParagrafo} · Linha ${ap.ocorrencia?.numLinha}`,
-                                refTexto: `${ap.ref.primeiroSobrenome} (${ap.ref.ano})`,
-                                diagnostico: ap.mensagem,
-                                trechoArtigo: ap.trechoPdf,
-                              })
-                            }
-                          >
-                            🤖 Copiar p/ IA
-                          </button>
+                            {refObj?.pdf && (
+                              <button
+                                className="btn pequeno primario"
+                                onClick={() => onAbrirPdfNaPagina(refObj, ap.paginaPdf || 1)}
+                              >
+                                📖 Abrir PDF {ap.paginaPdf ? `na Pág. ${ap.paginaPdf}` : ''}
+                              </button>
+                            )}
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Divergência de Conteúdo / Página no PDF',
+                                  fraseWord: ap.ocorrencia?.fraseContexto,
+                                  locWord: `Parágrafo §${ap.ocorrencia?.numParagrafo} · Linha ${ap.ocorrencia?.numLinha}`,
+                                  refTexto: `${ap.ref.primeiroSobrenome} (${ap.ref.ano})`,
+                                  diagnostico: ap.mensagem,
+                                  trechoArtigo: ap.trechoPdf,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA
+                            </button>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA H: Avisos de Escopo Metodológico e Submissão */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'metodologico') && alertasMetodologicos.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'metodologico') && (mostrarResolvidos ? alertasMetodologicos.length > 0 : alertasMetodologicosAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #4b5563', background: 'rgba(75, 85, 99, 0.04)' }}>
               <h4 style={{ color: '#374151' }}>
-                📌 Avisos de Escopo Metodológico &amp; Submissão ({alertasMetodologicos.length})
+                📌 Avisos de Escopo Metodológico &amp; Submissão ({alertasMetodologicosAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasMetodologicos.map((ap, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #6b7280' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#1f2937', fontSize: 12.6 }}>{ap.mensagem}</div>
-                        {ap.fraseWord && (
-                          <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
-                            <strong>📍 Trecho no Word (Parágrafo §{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
-                            <em>"{ap.fraseWord}"</em>
+                {alertasMetodologicos
+                  .filter((ap) => mostrarResolvidos || !itensResolvidos.has(`metodologico_${ap.numParagrafo}_${ap.tipo}`))
+                  .map((ap, i) => {
+                    const idItem = `metodologico_${ap.numParagrafo}_${ap.tipo}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #6b7280', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#1f2937', fontSize: 12.6 }}>
+                              {ap.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            {ap.fraseWord && (
+                              <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
+                                <strong>📍 Trecho no Word (Parágrafo §{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
+                                <em>"{ap.fraseWord}"</em>
+                              </div>
+                            )}
                           </div>
-                        )}
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Aviso de Escopo Metodológico',
+                                  fraseWord: ap.fraseWord,
+                                  locWord: `Parágrafo §${ap.numParagrafo} · Linha ${ap.numLinha}`,
+                                  diagnostico: ap.mensagem,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ IA Ajustar
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Aviso de Escopo Metodológico',
-                            fraseWord: ap.fraseWord,
-                            locWord: `Parágrafo §${ap.numParagrafo} · Linha ${ap.numLinha}`,
-                            diagnostico: ap.mensagem,
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ IA Ajustar
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
               </div>
             </div>
           )}
 
           {/* ALERTA H: Marcadores Estilísticos de Redação de IA (Open-Detector) */}
-          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'estilo_ia') && alertasEstiloIa.length > 0 && (
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'estilo_ia') && (mostrarResolvidos ? alertasEstiloIa.length > 0 : alertasEstiloIaAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #8b5cf6', background: 'rgba(139, 92, 246, 0.04)' }}>
               <h4 style={{ color: '#8b5cf6' }}>
-                🤖 Marcadores de Redação Estilística de IA (Open-Detector) ({alertasEstiloIa.length})
+                🤖 Marcadores de Redação Estilística de IA (Open-Detector) ({alertasEstiloIaAtivos.length})
               </h4>
               <div className="lista-historico">
-                {alertasEstiloIa.map((ap, i) => (
-                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #8b5cf6' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, color: '#6d28d9', fontSize: 12.6 }}>{ap.mensagem}</div>
-                        {ap.fraseWord && (
-                          <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
-                            <strong>📍 Parágrafo Suspeito no Word (§{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
-                            <em>"{ap.fraseWord}"</em>
+                {alertasEstiloIa
+                  .filter((ap) => mostrarResolvidos || !itensResolvidos.has(`estiloia_${ap.numParagrafo}_${ap.numLinha}`))
+                  .map((ap, i) => {
+                    const idItem = `estiloia_${ap.numParagrafo}_${ap.numLinha}`;
+                    const resolvido = itensResolvidos.has(idItem);
+                    return (
+                      <div key={i} className="card-historico" style={{ borderLeft: '3px solid #8b5cf6', opacity: resolvido ? 0.6 : 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: '#6d28d9', fontSize: 12.6 }}>
+                              {ap.mensagem}
+                              {resolvido && <span className="badge sucesso" style={{ marginLeft: 6, fontSize: 11 }}>✓ Ignorado / Resolvido</span>}
+                            </div>
+                            {ap.fraseWord && (
+                              <div style={{ fontSize: 12, marginTop: 4, color: 'var(--texto-suave)' }}>
+                                <strong>📍 Parágrafo Suspeito no Word (§{ap.numParagrafo} · Linha {ap.numLinha}):</strong>{' '}
+                                <em>"{ap.fraseWord}"</em>
+                              </div>
+                            )}
+                            {ap.marcadores?.length > 0 && (
+                              <div style={{ marginTop: 6, display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+                                {ap.marcadores.map((m, mi) => (
+                                  <span key={mi} className="tag-mini" style={{ background: '#ede9fe', color: '#6d28d9', border: '1px solid #c4b5fd' }}>
+                                    ⚡ "{m}"
+                                  </span>
+                                ))}
+                              </div>
+                            )}
                           </div>
-                        )}
-                        {ap.marcadores?.length > 0 && (
-                          <div style={{ marginTop: 6, display: 'flex', gap: 4, flexWrap: 'wrap' }}>
-                            {ap.marcadores.map((m, mi) => (
-                              <span key={mi} className="tag-mini" style={{ background: '#ede9fe', color: '#6d28d9', border: '1px solid #c4b5fd' }}>
-                                ⚡ "{m}"
-                              </span>
-                            ))}
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                            <button
+                              className={`btn pequeno ${resolvido ? 'sucesso' : 'fantasma'}`}
+                              onClick={() => alternarItemResolvido(idItem)}
+                              title={resolvido ? 'Restaurar alerta' : 'Marcar como resolvido ou ignorar'}
+                              style={{ fontSize: 11.5, padding: '3px 8px' }}
+                            >
+                              {resolvido ? '✓ Resolvido (Desfazer)' : '✓ Ignorar / Resolvido'}
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() =>
+                                copiarPromptItemIndividualIa({
+                                  tituloProblema: 'Marcadores de Redação por IA (Open-Detector)',
+                                  fraseWord: ap.fraseWord,
+                                  locWord: `Parágrafo §${ap.numParagrafo} · Linha ${ap.numLinha}`,
+                                  diagnostico: ap.mensagem,
+                                })
+                              }
+                            >
+                              🤖 Copiar p/ Humanizar com IA
+                            </button>
                           </div>
-                        )}
+                        </div>
                       </div>
-                      <button
-                        className="btn pequeno secundario"
-                        onClick={() =>
-                          copiarPromptItemIndividualIa({
-                            tituloProblema: 'Marcadores de Redação por IA (Open-Detector)',
-                            fraseWord: ap.fraseWord,
-                            locWord: `Parágrafo §${ap.numParagrafo} · Linha ${ap.numLinha}`,
-                            diagnostico: ap.mensagem,
-                          })
-                        }
-                      >
-                        🤖 Copiar p/ Humanizar com IA
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
               </div>
             </div>
           )}

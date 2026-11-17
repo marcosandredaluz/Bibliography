@@ -138,10 +138,19 @@ function calcularMetricasEstilometricas(texto) {
   const trigramasContagem = new Map();
   const trigramasRepetidos = [];
   for (let i = 0; i <= palavras.length - 3; i++) {
-    const tri = `${palavras[i]} ${palavras[i + 1]} ${palavras[i + 2]}`;
+    const w1 = palavras[i];
+    const w2 = palavras[i + 1];
+    const w3 = palavras[i + 2];
+    const tri = `${w1} ${w2} ${w3}`;
+
+    // Ignora citações de autor-data (ex: "et al 2015", "et al 2026", números de página ou anos)
+    if (/\bet\s+al\b/i.test(tri) || /\b\d{4}\b/.test(tri) || /\b\d+\b/.test(w1) || /\b\d+\b/.test(w2) || /\b\d+\b/.test(w3)) {
+      continue;
+    }
+
     const n = (trigramasContagem.get(tri) || 0) + 1;
     trigramasContagem.set(tri, n);
-    if (n === 2 && !STOPWORDS_GRAMATICAIS.has(palavras[i])) {
+    if (n === 2 && !STOPWORDS_GRAMATICAIS.has(w1)) {
       trigramasRepetidos.push(tri);
     }
   }
@@ -177,6 +186,11 @@ function auditarEstilometriaDoManuscrito(paragrafos = []) {
   for (const p of paragrafos) {
     const texto = typeof p === 'string' ? p : p.texto || '';
     if (!texto || texto.trim().length < 80) continue;
+
+    // Ignora elementos pré-textuais (Capa, Folha de Rosto, Ficha Catalográfica, Dedicatória)
+    if (/\b(?:Trabalho\s+de\s+Conclus[ãa]o\s+de\s+Curso|Disserta[çc][ãa]o\s+apresentada|Tese\s+apresentada|requisito\s+obrigat[óo]rio\s+para\s+obten[çc][ãa]o|Projeto\s+de\s+Interven[çc][ãa]o|Ficha\s+catalogr[áa]fica|Orientador\s*:)\b/i.test(texto)) {
+      continue;
+    }
 
     const meta = typeof p === 'object' ? {
       numParagrafo: p.numParagrafo || 0,
