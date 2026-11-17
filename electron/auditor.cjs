@@ -26,6 +26,7 @@ const DiffMatchPatch = require('diff-match-patch');
 const { IndiceWinnowing } = require('./similarity_winnowing.cjs');
 const { executarGreedyStringTiling } = require('./similarity_tiling.cjs');
 const { auditarEstatisticaDoManuscrito } = require('./statcheck_forense.cjs');
+const { auditarRedeCitacoesDoManuscrito } = require('./rede_citacoes_forense.cjs');
 
 // Mapa CSL-JSON extraído do último arquivo .docx aberto (Mendeley / Zotero / EndNote)
 let ultimoMapaCslEmbutidoDocx = null;
@@ -2475,6 +2476,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasPrecisao: alertasEstiloIa,
       alertasEstiloIa,
       alertasEstatisticos: [],
+      alertasRede: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: 0, totalObrasVerificadas: 0, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: 0, totalComPdf: 0, totalSemPdf: 0, obras: [] },
@@ -2515,6 +2517,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
         mensagem: ae.mensagem,
       })),
       alertasEstatisticos,
+      alertasRede: [],
       resumoEstatistico: auditoriaEstatistica,
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: 0, totalObrasVerificadas: 0, totalObrasNaoVerificadas: 0, obras: [] },
@@ -2597,6 +2600,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasPlagio: [],
       alertasPrecisao,
       alertasEstatisticos: [],
+      alertasRede: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: gruposCitacao.size, totalObrasVerificadas: refsMapeadasFast.length, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: refsMapeadasFast.filter(r => r.citadaNoTexto).length, totalComPdf: 0, totalSemPdf: refsMapeadasFast.length, obras: [] },
@@ -2675,6 +2679,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasPlagio: alertasPlagioDiff,
       alertasPrecisao: [],
       alertasEstatisticos: [],
+      alertasRede: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: 0, totalObrasVerificadas: 0, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: 0, totalComPdf: 0, totalSemPdf: 0, obras: [] },
@@ -3177,6 +3182,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasPlagio: [],
       alertasPrecisao,
       alertasEstatisticos: [],
+      alertasRede: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: gruposCitacao.size, totalObrasVerificadas: refsMapeadas.length, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: {
@@ -3571,6 +3577,23 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
   const alertasEstiloIa = analisarEstiloRedacaoIaOpenDetector(paragrafosCorpo);
   alertasPrecisao.push(...alertasEstiloIa);
 
+  // ---------- 8b. Análise Forense de Redes de Citação e Concentração de Autoria (COPE / PyAlex) ----------
+  const auditoriaRede = auditarRedeCitacoesDoManuscrito({ refsMapeadas, gruposCitacao, paragrafosCorpo });
+  const alertasRede = auditoriaRede.alertasRede || [];
+  if (alertasRede.length > 0) {
+    for (const ar of alertasRede) {
+      alertasPrecisao.push({
+        tipo: ar.tipo,
+        numParagrafo: 0,
+        numLinha: 0,
+        secao: 'Rede de Citações',
+        autorCitado: ar.autor || ar.periodico || 'Rede de Citações',
+        fraseWord: 'Análise de Concentração e Diversidade de Fontes (COPE)',
+        mensagem: ar.mensagem,
+      });
+    }
+  }
+
   return {
     totalCitacoesOcorrencias: citacoes.length,
     totalAutoresCitadosUnicos: gruposCitacao.size,
@@ -3582,7 +3605,9 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     alertasPrecisao,
     alertasEstiloIa,
     alertasEstatisticos,
+    alertasRede,
     resumoEstatistico: auditoriaEstatistica,
+    resumoRede: auditoriaRede,
     errosParsingConflito,
     resumoVerificacaoConteudo: {
       totalObrasCitadas: gruposCitacao.size,
@@ -3612,5 +3637,6 @@ module.exports = {
   sanitizarCamposGerenciadorBibliografia,
   analisarEstiloRedacaoIaOpenDetector,
   auditarEstatisticaDoManuscrito,
+  auditarRedeCitacoesDoManuscrito,
   auditarManuscrito,
 };

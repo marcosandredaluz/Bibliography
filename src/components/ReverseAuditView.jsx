@@ -1020,13 +1020,14 @@ export default function ReverseAuditView({
   const alertasAtribuicaoFalsa = resultado?.alertasAtribuicaoFalsa || [];
   const alertasPlagio = resultado?.alertasPlagio || [];
   const alertasEstatisticos = resultado?.alertasEstatisticos || [];
+  const alertasRede = resultado?.alertasRede || [];
   const citacoesSemReferencia = resultado?.citacoesSemReferencia || [];
 
-  // Alertas de Metadados / ABNT vs Alertas Metodológicos vs Alertas Estilo IA (Open-Detector) vs Estatística
+  // Alertas de Metadados / ABNT vs Alertas Metodológicos vs Alertas Estilo IA (Open-Detector) vs Estatística vs Rede
   const alertasPrecisao = resultado?.alertasPrecisao || [];
   const alertasEstiloIa = resultado?.alertasEstiloIa || alertasPrecisao.filter((ap) => ap.tipo === 'estilo_redacao_ia');
   const alertasMetadadosAbnt = alertasPrecisao.filter(
-    (ap) => !['quebra_escala_narrativa', 'secao_pos_referencias', 'estilo_redacao_ia', 'inconsistencia_estatistica_grave', 'inconsistencia_estatistica_numerica'].includes(ap.tipo)
+    (ap) => !['quebra_escala_narrativa', 'secao_pos_referencias', 'estilo_redacao_ia', 'inconsistencia_estatistica_grave', 'inconsistencia_estatistica_numerica', 'alta_concentracao_autoria', 'concentracao_periodico'].includes(ap.tipo)
   );
   const alertasMetodologicos = alertasPrecisao.filter((ap) =>
     ['quebra_escala_narrativa', 'secao_pos_referencias'].includes(ap.tipo)
@@ -1059,6 +1060,7 @@ export default function ReverseAuditView({
     alertasAtribuicaoFalsa.length +
     alertasPlagio.length +
     alertasEstatisticos.length +
+    alertasRede.length +
     citacoesSemReferencia.length +
     refsNaoCitadasNoTexto.length +
     alertasMetadadosAbnt.length +
@@ -1979,6 +1981,13 @@ export default function ReverseAuditView({
               <span>{alertasEstatisticos.length ? 'Erro matemático / p-hacking' : 'Matemática consistente'}</span>
             </div>
             <div className="card-metrica">
+              <span className="rotulo-metrica">🕸️ Concentração de Rede</span>
+              <strong style={{ color: alertasRede.length ? '#d97706' : '#16a34a' }}>
+                {alertasRede.length}
+              </strong>
+              <span>{alertasRede.length ? 'Monopólio / Favorecimento' : 'Fontes diversificadas'}</span>
+            </div>
+            <div className="card-metrica">
               <span className="rotulo-metrica">Citadas s/ Referência</span>
               <strong style={{ color: resultado.citacoesSemReferencia.length ? '#dc2626' : '#16a34a' }}>
                 {resultado.citacoesSemReferencia.length}
@@ -2162,6 +2171,21 @@ export default function ReverseAuditView({
                     }}
                   >
                     📊 Estatística / Statcheck ({alertasEstatisticos.length})
+                  </button>
+                )}
+                {alertasRede.length > 0 && (
+                  <button
+                    className={`chip ${grupoIntercorrenciaAtivo === 'rede' ? 'ativo' : ''}`}
+                    onClick={() => setGrupoIntercorrenciaAtivo('rede')}
+                    style={{
+                      fontSize: 11.8,
+                      padding: '3px 10px',
+                      color: grupoIntercorrenciaAtivo === 'rede' ? '#fff' : '#d97706',
+                      borderColor: '#d97706',
+                      background: grupoIntercorrenciaAtivo === 'rede' ? '#d97706' : 'transparent',
+                    }}
+                  >
+                    🕸️ Rede / COPE ({alertasRede.length})
                   </button>
                 )}
                 {resultado.citacoesSemReferencia.length > 0 && (
@@ -2484,6 +2508,49 @@ export default function ReverseAuditView({
                         }
                       >
                         🤖 Copiar p/ IA Corrigir
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* ALERTA C3: Auditoria Forense de Redes de Citação e Concentração de Autoria (COPE) */}
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'rede') && alertasRede.length > 0 && (
+            <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
+              <h4 style={{ color: '#d97706' }}>
+                🕸️ Auditoria Forense de Redes de Citação e Concentração de Autoria · COPE ({alertasRede.length})
+              </h4>
+              <div className="lista-historico">
+                {alertasRede.map((ar, i) => (
+                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>{ar.mensagem}</div>
+                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                          <span><strong>Alvo:</strong> <code>{ar.autor || ar.periodico}</code></span>
+                          <span><strong>Ocorrências:</strong> <code>{ar.totalObras}</code></span>
+                          <span><strong>Percentual do Corpus:</strong> <code style={{ color: '#d97706', fontWeight: 700 }}>{ar.percentual}%</code></span>
+                          <span className="badge pendente" style={{ fontSize: 11, background: 'rgba(217, 119, 6, 0.1)', color: '#d97706' }}>
+                            📌 Diretriz de Diversidade Teórica (COPE)
+                          </span>
+                        </div>
+                      </div>
+                      <button
+                        className="btn pequeno secundario"
+                        onClick={() =>
+                          copiarPromptItemIndividualIa({
+                            tituloProblema: 'Concentração de Citações (Diretrizes COPE)',
+                            fraseWord: `Autor/Veículo concentrado: ${ar.autor || ar.periodico} (${ar.percentual}% do acervo)`,
+                            locWord: 'Lista de Referências e Citações',
+                            refTexto: ar.autor || ar.periodico,
+                            diagnostico: ar.mensagem,
+                            trechoArtigo: `Total de referências concentradas: ${ar.totalObras}`,
+                          })
+                        }
+                      >
+                        🤖 Copiar p/ IA Diversificar
                       </button>
                     </div>
                   </div>
