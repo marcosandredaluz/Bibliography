@@ -96,6 +96,18 @@ Estamos desenhando as próximas soluções para colaboração científica multi-
 
 ---
 
+## 🤝 Inspirações Open Source e Reconhecimentos
+
+Este projeto utiliza exclusivamente padrões abertos, APIs científicas públicas e inspirações arquiteturais/algorítmicas limpas da comunidade de código aberto e cientometria (sem referenciar soluções comerciais proprietárias):
+
+- **Integração com Word e Extração de Campos:** Arquitetura inspirada em [`zotero/zotero-word-for-windows-integration`](https://github.com/zotero/zotero-word-for-windows-integration) (Ribbon OOXML `.dotm` / VBA `wdFieldAddin`), [`rmzelle/ref-extractor`](https://github.com/rmzelle/ref-extractor) (leitura reversa de campos `<w:instrText>` no `.docx`), [`Future-Scholars/paperlib`](https://github.com/Future-Scholars/paperlib) (ponte HTTP local) e [`citation-style-language/styles`](https://github.com/citation-style-language/styles).
+- **Anti-Alucinação e Auditoria de Evidências:** Decomposição atômica e pontuação composta por campo inspiradas em [`amazon-science/RefChecker`](https://github.com/amazon-science/RefChecker), [`markrussinovich/refchecker`](https://github.com/markrussinovich/refchecker), [`atomgptlab/hallucination_detector`](https://github.com/atomgptlab/hallucination_detector), [`Vikranth3140/Citation-Hallucination-Detection`](https://github.com/Vikranth3140/Citation-Hallucination-Detection), [`hadipourh/verifyref`](https://github.com/hadipourh/verifyref) e [`allenai/scicite`](https://github.com/allenai/scicite).
+- **NER Jurídico/Institucional, Recuperação e Cientometria:** Taxonomia [`peluz/lener-br`](https://github.com/peluz/lener-br) / `pierreguillou/ner-bert-large-cased-pt-lenerbr`; Okapi BM25 (`rank_bm25`) & TF-IDF (`scikit-learn`); **statcheck** (*Nuijten et al.*); **Problematic Paper Screener** (*Cabanac, Labbé & Magazinov*); checagem gênica (*Ziemann et al. / HGNC*); **Winnowing** (MOSS), **RKR-GST** (JPlag), `diff-match-patch`, [`Imalwayshere/Open-Detector`](https://github.com/Imalwayshere/Open-Detector) e [`irgifebry/plagiarism-checker`](https://github.com/irgifebry/plagiarism-checker).
+
+O manifesto completo de dependências, repositórios e normas sob a licença Apache 2.0 está documentado em [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+---
+
 ## 👤 Autor e Mantenedor
 
 Desenvolvido e mantido por:

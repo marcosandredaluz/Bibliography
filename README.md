@@ -162,6 +162,18 @@ Bibliography is built for the global scientific community. Language definitions 
 
 ---
 
+## 🤝 Open-Source Inspirations & Acknowledgments
+
+This project builds solely upon open standards, public scientific APIs, and clean-room architectural/algorithmic inspirations from the open-source and scientometric community (excluding proprietary commercial software):
+
+- **Word Add-in & Reference Extraction:** Architectural concepts inspired by [`zotero/zotero-word-for-windows-integration`](https://github.com/zotero/zotero-word-for-windows-integration) (`.dotm` Fluent Ribbon / VBA `wdFieldAddin` bridge), [`rmzelle/ref-extractor`](https://github.com/rmzelle/ref-extractor) (OpenXML `<w:instrText>` reverse extraction), [`Future-Scholars/paperlib`](https://github.com/Future-Scholars/paperlib) (local HTTP IPC bridge), and [`citation-style-language/styles`](https://github.com/citation-style-language/styles).
+- **Anti-Hallucination & Claim Verification:** Two-stage evidence triage, atomic claim checking, and composite scoring inspired by [`amazon-science/RefChecker`](https://github.com/amazon-science/RefChecker), [`markrussinovich/refchecker`](https://github.com/markrussinovich/refchecker), [`atomgptlab/hallucination_detector`](https://github.com/atomgptlab/hallucination_detector), [`Vikranth3140/Citation-Hallucination-Detection`](https://github.com/Vikranth3140/Citation-Hallucination-Detection), [`hadipourh/verifyref`](https://github.com/hadipourh/verifyref), and [`allenai/scicite`](https://github.com/allenai/scicite).
+- **Legal/Institutional NER, Retrieval & Scientometrics:** Entity taxonomy from [`peluz/lener-br`](https://github.com/peluz/lener-br) / [`pierreguillou/ner-bert-large-cased-pt-lenerbr`](https://huggingface.co/pierreguillou/ner-bert-large-cased-pt-lenerbr); Okapi BM25 (`rank_bm25`) & TF-IDF (`scikit-learn`); **statcheck** (*Nuijten et al.*); **Problematic Paper Screener** (*Cabanac, Labbé & Magazinov*); gene-symbol screening (*Ziemann et al. / HGNC*); **Winnowing** (MOSS), **RKR-GST** (JPlag), `diff-match-patch`, [`Imalwayshere/Open-Detector`](https://github.com/Imalwayshere/Open-Detector), and [`irgifebry/plagiarism-checker`](https://github.com/irgifebry/plagiarism-checker).
+
+For the complete dependency, repository, and standards manifest under Apache 2.0, see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+---
+
 ## 👤 Author & Maintainer
 
 Developed and maintained by:
