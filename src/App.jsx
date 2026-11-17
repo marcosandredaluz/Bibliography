@@ -17,6 +17,7 @@ import QuickAddModal from './components/QuickAddModal.jsx';
 import SearchHub from './components/SearchHub.jsx';
 import PdfReaderModal from './components/PdfReaderModal.jsx';
 import { WordHubView, PrismaAndScreeningView } from './components/WordAndPrismaView.jsx';
+import WordQuickCitatorModal from './components/WordQuickCitatorModal.jsx';
 import ReverseAuditView from './components/ReverseAuditView.jsx';
 import MendeleyExtras from './components/MendeleyExtras.jsx';
 import HelpGuideView, { TutorialEtapa } from './components/HelpGuideView.jsx';
@@ -82,6 +83,7 @@ function ConteudoApp() {
   const [modalVersaoAberto, setModalVersaoAberto] = useState(false);
   const [modalExportarWord, setModalExportarWord] = useState(false);
   const [modalEstilos, setModalEstilos] = useState(false);
+  const [seletorWordModal, setSeletorWordModal] = useState(null); // { origem, termo, modo } | null
   const [baixandoLote, setBaixandoLote] = useState(false);
   const [gerandoInsightsLote, setGerandoInsightsLote] = useState(false);
   const [novaColecao, setNovaColecao] = useState('');
@@ -410,9 +412,13 @@ function ConteudoApp() {
     };
     window.addEventListener('click', fecharMenus);
     const desinscrever = window.api.bib.aoAtualizar(() => recarregarBiblioteca());
+    const desinscreverWordSeletor = window.api.word?.aoAbrirSeletorCitacao?.((dados) => {
+      setSeletorWordModal(dados || { origem: 'app' });
+    });
     return () => {
       window.removeEventListener('click', fecharMenus);
       desinscrever?.();
+      desinscreverWordSeletor?.();
     };
   }, []);
 
@@ -2587,6 +2593,35 @@ function ConteudoApp() {
           onInstalado={async (novoId) => {
             setEstilos(await window.api.cit.estilos());
             if (novoId) await mudarEstilo(novoId);
+          }}
+        />
+      )}
+
+      {seletorWordModal && (
+        <WordQuickCitatorModal
+          aberto={Boolean(seletorWordModal)}
+          requisicao={seletorWordModal}
+          refs={refs}
+          estilo={cfg?.estilo || 'abnt'}
+          estilos={estilos}
+          idioma={cfg?.idioma || 'pt-BR'}
+          onConfirmar={async (payload) => {
+            const res = await window.api.word.responderSeletorCitacao(payload);
+            setSeletorWordModal(null);
+            if (res?.enviadoParaRibbon) {
+              avisar('✓ Citação enviada diretamente para o cursor do Word!', 'ok');
+            } else if (res?.injetadoDireto) {
+              avisar(`✓ ${res.citacaoTexto} inserida como Campo no Word (${res.documentoAtivoNome})!`, 'ok');
+            } else if (res?.citacaoTexto) {
+              avisar(`Copiado: ${res.citacaoTexto} — cole no Word (Ctrl+V).`, 'ok');
+            }
+          }}
+          onCancelar={async () => {
+            const orig = seletorWordModal?.origem;
+            setSeletorWordModal(null);
+            if (orig === 'word_ribbon') {
+              await window.api.word.responderSeletorCitacao({ origem: orig, cancelado: true }).catch(() => {});
+            }
           }}
         />
       )}

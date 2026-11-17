@@ -17,6 +17,42 @@ const telemetriaWord = {
   ultimaAuditoriaWord: null,
 };
 
+let seletorPendenteResolver = null;
+
+function resolverSeletorPendente(resultado) {
+  if (typeof seletorPendenteResolver === 'function') {
+    const fn = seletorPendenteResolver;
+    seletorPendenteResolver = null;
+    fn(resultado);
+    return true;
+  }
+  return false;
+}
+
+function gerarCodigoCampoBibliografia(ids = [], pagina = '') {
+  const cleanIds = [...new Set((ids || []).filter(Boolean))];
+  const p = String(pagina || '').trim();
+  return `BIBLIOGRAFIA_ITEM id=${cleanIds.join(',')}${p ? `|p=${p}` : ''}`;
+}
+
+function parsearCodigoCampoBibliografia(codigo = '') {
+  const s = String(codigo || '').trim();
+  const mId = s.match(/BIBLIOGRAFIA_ITEM\s+id=([^\s|]+)/i);
+  if (mId) {
+    const ids = mId[1].split(',').map((x) => x.trim()).filter(Boolean);
+    const mPag = s.match(/\|p=([^\s"]+)/i);
+    return { ids, pagina: mPag ? mPag[1].trim() : '' };
+  }
+  const mJson = s.match(/BIBLIOGRAFIA_ITEM\s+(\{[\s\S]*\})/);
+  if (mJson) {
+    try {
+      const obj = JSON.parse(mJson[1]);
+      return { ids: Array.isArray(obj.ids) ? obj.ids : [], pagina: obj.pagina || '' };
+    } catch {}
+  }
+  return { ids: [], pagina: '' };
+}
+
 function limparHtmlParaTexto(html = '') {
   return String(html || '')
     .replace(/<br\s*\/?>/gi, '\n')
@@ -57,7 +93,7 @@ function formatarEntradasParaWord(entradas) {
     .join('');
 }
 
-function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBiblioteca }) {
+function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBiblioteca, aoSolicitarSeletorCitacao, porta = PORTA }) {
   const srv = http.createServer(async (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -291,6 +327,103 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
         return enviarTexto(200, citTxt);
       }
 
+      if (url.pathname === '/api/word/seletor-citacao-interativo' && req.method === 'POST') {
+        if (!bib) throw new Error('Nenhuma biblioteca aberta.');
+        const { termo = '', modo = 'campos' } = await lerCorpo();
+        if (typeof aoSolicitarSeletorCitacao === 'function') {
+          if (seletorPendenteResolver) {
+            seletorPendenteResolver({ cancelado: true });
+          }
+          const escolha = await new Promise((resolve) => {
+            const timer = setTimeout(() => {
+              if (seletorPendenteResolver === resolve) seletorPendenteResolver = null;
+              resolve({ cancelado: true });
+            }, 90000);
+            seletorPendenteResolver = (resEscolha) => {
+              clearTimeout(timer);
+              resolve(resEscolha || { cancelado: true });
+            };
+            aoSolicitarSeletorCitacao({ termo, modo });
+          });
+
+          if (escolha?.cancelado || !escolha?.ids?.length) {
+            res.writeHead(204);
+            return res.end();
+          }
+          const itens = escolha.ids.map((id) => bib.refs.get(id)?.csl).filter(Boolean);
+          if (!itens.length) {
+            res.writeHead(204);
+            return res.end();
+          }
+          const f = citacoes.formatar({
+            itens,
+            estiloId: escolha.estilo || cfg.estilo,
+            idioma: cfg.idioma,
+            raizBiblioteca: bib.raiz,
+          });
+          let citacaoTexto = f.citacaoTexto;
+          const pagStr = String(escolha.pagina || '').trim().replace(/^p\.?\s*/i, '');
+          if (pagStr) {
+            citacaoTexto = citacaoTexto.replace(/\)\s*$/, `, p. ${pagStr})`);
+          }
+          for (const id of escolha.ids) {
+            if (bib.refs.has(id)) await bib.atualizar(id, { status: 'citada' });
+          }
+          aoAtualizarBiblioteca?.();
+          return enviarJson(200, {
+            ok: true,
+            citacaoTexto,
+            codigoCampo: gerarCodigoCampoBibliografia(escolha.ids, pagStr),
+            ids: escolha.ids,
+            pagina: pagStr,
+          });
+        }
+
+        // Fallback automático caso não haja UI interativa acoplada
+        const fallback = [...bib.refs.values()].filter((r) => r.status !== 'descartada')[0];
+        if (!fallback) {
+          res.writeHead(204);
+          return res.end();
+        }
+        const f = citacoes.formatar({ itens: [fallback.csl], estiloId: cfg.estilo, idioma: cfg.idioma, raizBiblioteca: bib.raiz });
+        return enviarJson(200, {
+          ok: true,
+          citacaoTexto: f.citacaoTexto,
+          codigoCampo: gerarCodigoCampoBibliografia([fallback.id], ''),
+          ids: [fallback.id],
+          pagina: '',
+        });
+      }
+
+      if (url.pathname === '/api/word/atualizar-lote-campos' && req.method === 'POST') {
+        if (!bib) throw new Error('Nenhuma biblioteca aberta.');
+        const { campos = [], estilo } = await lerCorpo();
+        const estiloAlvo = estilo || cfg.estilo;
+        const atualizados = [];
+        for (const cp of campos) {
+          const parsed = parsearCodigoCampoBibliografia(cp.codigo || '');
+          const idsValidos = parsed.ids.filter((id) => bib.refs.has(id));
+          if (!idsValidos.length) continue;
+          const itens = idsValidos.map((id) => bib.refs.get(id).csl);
+          const f = citacoes.formatar({
+            itens,
+            estiloId: estiloAlvo,
+            idioma: cfg.idioma,
+            raizBiblioteca: bib.raiz,
+          });
+          let citacaoTexto = f.citacaoTexto;
+          if (parsed.pagina) {
+            citacaoTexto = citacaoTexto.replace(/\)\s*$/, `, p. ${String(parsed.pagina).replace(/^p\.?\s*/i, '')})`);
+          }
+          for (const id of idsValidos) {
+            await bib.atualizar(id, { status: 'citada' });
+          }
+          atualizados.push({ idx: cp.idx, citacaoTexto });
+        }
+        aoAtualizarBiblioteca?.();
+        return enviarJson(200, { ok: true, estilo: estiloAlvo, atualizados });
+      }
+
       if (url.pathname === '/api/word/auditar' && req.method === 'POST') {
         if (!bib) throw new Error('Nenhuma biblioteca aberta.');
         const { texto = '', modulo = 'todos' } = await lerCorpo();
@@ -367,10 +500,17 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
   });
 
   srv.on('error', (err) => {
-    console.warn('Servidor local Word (porta 23119):', err.message);
+    console.warn(`Servidor local Word (porta ${porta}):`, err.message);
   });
-  srv.listen(PORTA, '127.0.0.1');
-  return { porta: PORTA, caminhoManifesto: path.join(DIR_ADDIN, 'manifest.xml'), telemetriaWord };
+  srv.listen(porta, '127.0.0.1');
+  return { porta, srv, caminhoManifesto: path.join(DIR_ADDIN, 'manifest.xml'), telemetriaWord };
 }
 
-module.exports = { iniciarServidorWord, PORTA, telemetriaWord };
+module.exports = {
+  iniciarServidorWord,
+  PORTA,
+  telemetriaWord,
+  resolverSeletorPendente,
+  gerarCodigoCampoBibliografia,
+  parsearCodigoCampoBibliografia,
+};

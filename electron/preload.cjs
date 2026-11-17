@@ -66,6 +66,19 @@ contextBridge.exposeInMainWorld('api', {
     mostrarManifesto: () => chamar('word:mostrarManifesto'),
     abrirPastaVba: () => chamar('word:abrirPastaVba'),
     modoTopo: (ativo) => chamar('word:modoTopo', ativo),
+    statusExtensao: () => chamar('word:statusExtensao'),
+    compilarEInstalarDotm: () => chamar('word:compilarEInstalarDotm'),
+    escolherEInstalarDotm: () => chamar('word:escolherEInstalarDotm'),
+    removerExtensaoWord: () => chamar('word:removerExtensaoWord'),
+    alternarAtalhoGlobal: (ativo) => chamar('word:alternarAtalhoGlobal', ativo),
+    abrirSeletorRapido: () => chamar('word:abrirSeletorRapido'),
+    responderSeletorCitacao: (dados) => chamar('word:responderSeletorCitacao', dados),
+    atualizarCamposWordAtivo: (opts) => chamar('word:atualizarCamposWordAtivo', opts),
+    aoAbrirSeletorCitacao: (cb) => {
+      const fn = (_e, dados) => cb(dados);
+      ipcRenderer.on('word:abrirSeletorCitacao', fn);
+      return () => ipcRenderer.removeListener('word:abrirSeletorCitacao', fn);
+    },
     extrairReferenciasDocx: (caminhoDocx) => chamar('word:extrairReferenciasDocx', caminhoDocx),
     importarExtraidas: (opts) => chamar('word:importarExtraidas', opts),
     inserirCitacaoWordAtivo: (opts) => chamar('word:inserirCitacaoWordAtivo', opts),

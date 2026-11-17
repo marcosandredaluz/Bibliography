@@ -54,25 +54,95 @@ Public Sub Ribbon_InserirCitacao(control As IRibbonControl)
     Dim statusCod As Long
     Dim termoBusca As String
     Dim modo As String
-    
+    Dim textoVisivel As String
+    Dim campoPayload As String
+
     modo = ObterModoCitacao()
     termoBusca = Trim(Selection.Text)
-    
-    Application.StatusBar = "Consultando catálogo de referências no motor local..."
-    resposta = EnviarRequisicaoHttp("POST", API_BASE_URL & "/seletor-citacao", _
-                                   "{""termo"": " & EscaparJson(termoBusca) & ", ""modo"": " & EscaparJson(modo) & "}", statusCod)
+
+    Application.StatusBar = "Abrindo Seletor Rápido do aplicativo Bibliografia..."
+    ' Chama o seletor interativo no Electron (90s de timeout para escolha multi-referência pelo autor)
+    resposta = EnviarRequisicaoHttpComTimeout("POST", API_BASE_URL & "/seletor-citacao-interativo", _
+                                             "{""termo"": " & EscaparJson(termoBusca) & ", ""modo"": " & EscaparJson(modo) & "}", _
+                                             statusCod, 95)
     Application.StatusBar = ""
-    
+
     If statusCod = 200 And Len(Trim(resposta)) > 0 Then
-        ' Insere de acordo com o modo escolhido (Campos Word ou Bookmarks)
-        InserirCitacaoHibrida resposta, modo
-    Else
-        MsgBox "Nenhuma citação foi selecionada ou motor indisponível.", vbInformation, "Citações"
+        textoVisivel = ExtrairCampoJson(resposta, "citacaoTexto")
+        campoPayload = ExtrairCampoJson(resposta, "codigoCampo")
+        If Len(Trim(textoVisivel)) = 0 Then textoVisivel = Trim(resposta)
+        InserirCitacaoHibrida textoVisivel, modo, campoPayload
+    ElseIf statusCod <> 204 Then
+        MsgBox "Seletor de citação cancelado ou motor local indisponível.", vbInformation, "Citações"
     End If
     Exit Sub
 TratarErro:
     Application.StatusBar = ""
     MsgBox "Erro ao inserir citação: " & Err.Description, vbCritical, "Erro"
+End Sub
+
+Public Sub Ribbon_AtualizarCampos(control As IRibbonControl)
+    On Error GoTo TratarErro
+    Dim doc As Document
+    Dim fld As Field
+    Dim payloadLote As String
+    Dim idx As Long
+    Dim totalCampos As Long
+    Dim resposta As String
+    Dim statusCod As Long
+
+    Set doc = ActiveDocument
+    If doc Is Nothing Then Exit Sub
+
+    payloadLote = "["
+    totalCampos = 0
+    For idx = 1 To doc.Fields.Count
+        Set fld = doc.Fields(idx)
+        If InStr(fld.Code.Text, "BIBLIOGRAFIA_ITEM") > 0 Then
+            If totalCampos > 0 Then payloadLote = payloadLote & ","
+            payloadLote = payloadLote & "{""idx"":" & idx & ",""codigo"":" & EscaparJson(Trim(fld.Code.Text)) & "}"
+            totalCampos = totalCampos + 1
+        End If
+    Next idx
+    payloadLote = payloadLote & "]"
+
+    If totalCampos = 0 Then
+        Ribbon_InserirBibliografia control
+        Exit Sub
+    End If
+
+    Application.StatusBar = "Atualizando " & totalCampos & " citação(ões) conforme a norma ativa..."
+    resposta = EnviarRequisicaoHttp("POST", API_BASE_URL & "/atualizar-lote-campos", _
+                                    "{""campos"": " & payloadLote & "}", statusCod)
+    Application.StatusBar = ""
+
+    If statusCod = 200 Then
+        Dim blocos() As String
+        blocos = Split(resposta, "{""idx"":")
+        Dim k As Long
+        For k = 1 To UBound(blocos)
+            Dim b As String
+            b = blocos(k)
+            Dim posSep As Long
+            posSep = InStr(b, ",")
+            If posSep > 1 Then
+                Dim idxNum As Long
+                idxNum = Val(Left(b, posSep - 1))
+                Dim novoTxt As String
+                novoTxt = ExtrairCampoJson("{" & b, "citacaoTexto")
+                If idxNum >= 1 And idxNum <= doc.Fields.Count And Len(novoTxt) > 0 Then
+                    doc.Fields(idxNum).Result.Text = novoTxt
+                End If
+            End If
+        Next k
+        Ribbon_InserirBibliografia control
+    Else
+        MsgBox "Falha ao atualizar campos (HTTP " & statusCod & ").", vbExclamation, "Bibliografia"
+    End If
+    Exit Sub
+TratarErro:
+    Application.StatusBar = ""
+    MsgBox "Erro ao atualizar campos: " & Err.Description, vbCritical, "Erro"
 End Sub
 
 Public Sub Ribbon_InserirBibliografia(control As IRibbonControl)
@@ -274,27 +344,32 @@ End Sub
 ' 3. FORMATO HÍBRIDO DE CITAÇÃO: CAMPOS NATIVOS WORD (ZOTERO) E BOOKMARKS (MENDELEY)
 ' ==============================================================================
 
-Private Sub InserirCitacaoHibrida(ByVal textoCitacao As String, ByVal modo As String)
+Private Sub InserirCitacaoHibrida(ByVal textoCitacao As String, ByVal modo As String, Optional ByVal codigoCampo As String = "")
     Dim rng As Range
     Set rng = Selection.Range
-    
+
     If modo = "campos" Then
         ' Formato 1: Campo Nativo do Word (wdFieldAddin no padrão Zotero)
-        ' Protege o texto contra edição inadvertida
+        Dim instrucao As String
+        If Len(Trim(codigoCampo)) > 0 Then
+            instrucao = codigoCampo
+        Else
+            instrucao = "BIBLIOGRAFIA_ITEM " & textoCitacao
+        End If
         Dim fld As Field
         Set fld = ActiveDocument.Fields.Add(Range:=rng, Type:=wdFieldAddin, _
-                                           Text:="BIBLIOGRAFIA_ITEM " & textoCitacao, _
+                                           Text:=instrucao, _
                                            PreserveFormatting:=True)
-        rng.Text = textoCitacao
+        fld.Result.Text = textoCitacao
     Else
         ' Formato 2: Texto Puro com Bookmark delimitador (Padrão ZOTERO_BREF_ / Mendeley)
         Dim nomeBookmark As String
         nomeBookmark = "BIB_BREF_" & Hex(CLng(Timer * 100)) & "_" & Int(Rnd * 1000)
-        
+
         rng.Text = textoCitacao
         ActiveDocument.Bookmarks.Add nomeBookmark, rng
     End If
-    
+
     Selection.Collapse wdCollapseEnd
 End Sub
 
@@ -316,16 +391,22 @@ End Sub
 
 Private Function EnviarRequisicaoHttp(ByVal metodo As String, ByVal url As String, _
                                      ByVal corpoPost As String, ByRef statusOut As Long) As String
+    EnviarRequisicaoHttp = EnviarRequisicaoHttpComTimeout(metodo, url, corpoPost, statusOut, TIMEOUT_SEGUNDOS)
+End Function
+
+Private Function EnviarRequisicaoHttpComTimeout(ByVal metodo As String, ByVal url As String, _
+                                               ByVal corpoPost As String, ByRef statusOut As Long, _
+                                               ByVal timeoutSeg As Long) As String
     Dim http As Object
     Set http = CreateObject("WinHttp.WinHttpRequest.5.1")
-    
+
     http.Open metodo, url, False
-    http.SetTimeouts TIMEOUT_SEGUNDOS * 1000, TIMEOUT_SEGUNDOS * 1000, _
-                      TIMEOUT_SEGUNDOS * 1000, TIMEOUT_SEGUNDOS * 1000
-    
+    http.SetTimeouts timeoutSeg * 1000, timeoutSeg * 1000, _
+                      timeoutSeg * 1000, timeoutSeg * 1000
+
     http.SetRequestHeader "Content-Type", "application/json; charset=utf-8"
     http.SetRequestHeader "User-Agent", "BibliografiaWordPlugin/2.0 (Windows 365 Desktop)"
-    
+
     If metodo = "POST" And Len(corpoPost) > 0 Then
         Dim bytesCorpo() As Byte
         bytesCorpo = ConverterParaUtf8(corpoPost)
@@ -333,9 +414,9 @@ Private Function EnviarRequisicaoHttp(ByVal metodo As String, ByVal url As Strin
     Else
         http.Send
     End If
-    
+
     statusOut = http.Status
-    EnviarRequisicaoHttp = http.ResponseText
+    EnviarRequisicaoHttpComTimeout = http.ResponseText
 End Function
 
 Private Function ConverterParaUtf8(ByVal texto As String) As Byte()

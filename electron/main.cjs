@@ -7,7 +7,7 @@ function logBoot(msg) {
   } catch {}
 }
 logBoot('Iniciando main.cjs | argv=' + JSON.stringify(process.argv));
-const { app, BrowserWindow, ipcMain, dialog, shell, clipboard, protocol, net, Menu, screen } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog, shell, clipboard, protocol, net, Menu, screen, globalShortcut } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const { pathToFileURL } = require('url');
@@ -24,8 +24,21 @@ const { injetarComentariosNoDocx } = require('./docx_comentarios_injector.cjs');
 const { gerarHtmlLaudoPericial } = require('./laudo_pericial_generator.cjs');
 const { executarCirurgiaDocx } = require('./docx_surgical_editor.cjs');
 const { execFile } = require('child_process');
-const { iniciarServidorWord, PORTA, telemetriaWord } = require('./wordServer.cjs');
+const {
+  iniciarServidorWord,
+  PORTA,
+  telemetriaWord,
+  resolverSeletorPendente,
+  gerarCodigoCampoBibliografia,
+  parsearCodigoCampoBibliografia,
+} = require('./wordServer.cjs');
 const { extrairReferenciasDeDocx } = require('./word_ref_extractor.cjs');
+const {
+  diagnosticarExtensaoWord,
+  instalarDotmEmStartup,
+  removerDotmDoStartup,
+  compilarDotmViaWordCom,
+} = require('./word_dotm_builder.cjs');
 const os = require('os');
 
 const DEV = process.argv.includes('--dev');
@@ -414,20 +427,108 @@ function registrarIpc() {
     return { atualizados, total: alvos.length };
   });
 
-  // Fase 3: Integração Nativa com o Microsoft Word (Office.js + VBA .bas + Ref-Extractor + COM Direto)
+  // Fase 3: Integração Nativa com o Microsoft Word (Office.js + VBA .dotm + Ref-Extractor + COM Direto + Atalho Zotero)
+  const DIR_RECURSOS_VBA = path.join(__dirname, '..', 'resources', 'word-vba-integration');
+
+  const injetarCitacaoNoCursorWordCom = async (citacaoTexto, codigoCampo, comCampoNativo = true) => {
+    let injetadoDireto = false;
+    let documentoAtivoNome = '';
+    if (process.platform === 'win32') {
+      const txtB64 = Buffer.from(citacaoTexto, 'utf8').toString('base64');
+      const codeB64 = Buffer.from(codigoCampo, 'utf8').toString('base64');
+      const usarCampo = comCampoNativo ? '$true' : '$false';
+      const psScript = `
+        $OutputEncoding = [System.Text.Encoding]::UTF8
+        try {
+          $word = [Runtime.InteropServices.Marshal]::GetActiveObject("Word.Application")
+          if ($word.Documents.Count -gt 0 -and $word.Selection) {
+            $txt = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${txtB64}"))
+            $codigo = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${codeB64}"))
+            $sel = $word.Selection
+            $rng = $sel.Range
+            if (${usarCampo}) {
+              $fld = $word.ActiveDocument.Fields.Add($rng, 81, $codigo, $true)
+              $fld.Result.Text = $txt
+            } else {
+              $rng.Text = $txt
+            }
+            $word.Activate()
+            Write-Output ("OK:" + $word.ActiveDocument.Name)
+          }
+        } catch {
+          Write-Output "NO_WORD"
+        }
+      `;
+      const out = await new Promise((resolve) => {
+        execFile('powershell', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript], { timeout: 5000 }, (_e, stdout) => {
+          resolve(String(stdout || '').trim());
+        });
+      });
+      if (out.startsWith('OK:')) {
+        injetadoDireto = true;
+        documentoAtivoNome = out.slice(3).trim();
+      }
+    }
+    return { injetadoDireto, documentoAtivoNome };
+  };
+
   h('word:info', async () => {
-    const pastaStartupWord = process.env.APPDATA
-      ? path.join(process.env.APPDATA, 'Microsoft', 'Word', 'STARTUP')
-      : null;
+    const extInfo = diagnosticarExtensaoWord(DIR_RECURSOS_VBA);
     return {
       porta: PORTA,
       urlPainel: `http://127.0.0.1:${PORTA}/word-addin/index.html`,
       caminhoManifesto: path.join(__dirname, '..', 'resources', 'word-addin', 'manifest.xml'),
-      caminhoPastaVba: path.join(__dirname, '..', 'resources', 'word-vba-integration'),
-      caminhoModuloBas: path.join(__dirname, '..', 'resources', 'word-vba-integration', 'Bibliografia.bas'),
-      pastaStartupWord,
+      caminhoPastaVba: DIR_RECURSOS_VBA,
+      caminhoModuloBas: extInfo.caminhoBas,
+      pastaStartupWord: extInfo.pastaStartup,
+      extensaoDotm: extInfo,
+      atalhoGlobal: 'Ctrl+Shift+B',
+      atalhoAtivo: globalShortcut.isRegistered('CommandOrControl+Shift+B'),
       telemetria: telemetriaWord,
     };
+  });
+  h('word:statusExtensao', async () => diagnosticarExtensaoWord(DIR_RECURSOS_VBA));
+  h('word:compilarEInstalarDotm', async () => {
+    const diag = diagnosticarExtensaoWord(DIR_RECURSOS_VBA);
+    if (diag.temDotmCompiladoNoApp) {
+      const resInst = await instalarDotmEmStartup(diag.caminhoDotmNoApp);
+      return { ok: true, origem: 'precompilado', ...resInst, diag: diagnosticarExtensaoWord(DIR_RECURSOS_VBA) };
+    }
+    const resComp = await compilarDotmViaWordCom({
+      caminhoBas: diag.caminhoBas,
+      caminhoCustomUi: diag.caminhoCustomUi,
+      caminhoSaidaDotm: diag.caminhoDotmNoApp,
+    });
+    if (!resComp.ok) {
+      return { ...resComp, diag: diagnosticarExtensaoWord(DIR_RECURSOS_VBA) };
+    }
+    const resInst = await instalarDotmEmStartup(diag.caminhoDotmNoApp);
+    return { ok: true, origem: 'compilado', ...resInst, diag: diagnosticarExtensaoWord(DIR_RECURSOS_VBA) };
+  });
+  h('word:escolherEInstalarDotm', async () => {
+    const r = await dialog.showOpenDialog(janela, {
+      title: 'Selecionar template compilado (.dotm) para instalar no Microsoft Word',
+      defaultPath: DIR_RECURSOS_VBA,
+      properties: ['openFile'],
+      filters: [{ name: 'Modelo Word com Macro (.dotm)', extensions: ['dotm'] }],
+    });
+    if (r.canceled || !r.filePaths.length) return null;
+    const resInst = await instalarDotmEmStartup(r.filePaths[0]);
+    return { ok: true, ...resInst, diag: diagnosticarExtensaoWord(DIR_RECURSOS_VBA) };
+  });
+  h('word:removerExtensaoWord', async () => {
+    const res = await removerDotmDoStartup();
+    return { ok: true, ...res, diag: diagnosticarExtensaoWord(DIR_RECURSOS_VBA) };
+  });
+  h('word:alternarAtalhoGlobal', async (ativo) => {
+    const registrado = registrarAtalhoWordGlobal(!!ativo);
+    cfg.atalhoWordAtivo = !!ativo;
+    config.salvar(cfg);
+    return { atalhoAtivo: registrado, atalhoGlobal: 'Ctrl+Shift+B' };
+  });
+  h('word:abrirSeletorRapido', async () => {
+    acionarAtalhoSeletorWord('app');
+    return true;
   });
   h('word:mostrarManifesto', async () => {
     const p = path.join(__dirname, '..', 'resources', 'word-addin', 'manifest.xml');
@@ -435,9 +536,8 @@ function registrarIpc() {
     return p;
   });
   h('word:abrirPastaVba', async () => {
-    const pastaVba = path.join(__dirname, '..', 'resources', 'word-vba-integration');
-    await shell.openPath(pastaVba);
-    return pastaVba;
+    await shell.openPath(DIR_RECURSOS_VBA);
+    return DIR_RECURSOS_VBA;
   });
   h('word:modoTopo', async (ativo) => {
     if (janela) janela.setAlwaysOnTop(!!ativo);
@@ -509,10 +609,10 @@ function registrarIpc() {
       idioma: idioma || cfg.idioma,
       raizBiblioteca: b.raiz,
     });
+    const pgLimpa = String(pagina || '').trim().replace(/^p\.?\s*/i, '');
     let citacaoTexto = f.citacaoTexto;
-    if (pagina && String(pagina).trim()) {
-      const pg = String(pagina).trim().replace(/^p\.?\s*/i, '');
-      citacaoTexto = citacaoTexto.replace(/\)\s*$/, `, p. ${pg})`);
+    if (pgLimpa) {
+      citacaoTexto = citacaoTexto.replace(/\)\s*$/, `, p. ${pgLimpa})`);
     }
     clipboard.writeText(citacaoTexto);
 
@@ -528,43 +628,12 @@ function registrarIpc() {
       });
     }
 
-    let injetadoDireto = false;
-    let documentoAtivoNome = '';
-    if (process.platform === 'win32') {
-      const txtB64 = Buffer.from(citacaoTexto, 'utf8').toString('base64');
-      const codeB64 = Buffer.from(`BIBLIOGRAFIA_ITEM id=${ids.join(',')}`, 'utf8').toString('base64');
-      const usarCampo = comCampoNativo ? '$true' : '$false';
-      const psScript = `
-        $OutputEncoding = [System.Text.Encoding]::UTF8
-        try {
-          $word = [Runtime.InteropServices.Marshal]::GetActiveObject("Word.Application")
-          if ($word.Documents.Count -gt 0 -and $word.Selection) {
-            $txt = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${txtB64}"))
-            $codigo = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${codeB64}"))
-            $sel = $word.Selection
-            $rng = $sel.Range
-            if (${usarCampo}) {
-              $fld = $word.ActiveDocument.Fields.Add($rng, 81, $codigo, $true)
-              $fld.Result.Text = $txt
-            } else {
-              $rng.Text = $txt
-            }
-            Write-Output ("OK:" + $word.ActiveDocument.Name)
-          }
-        } catch {
-          Write-Output "NO_WORD"
-        }
-      `;
-      const out = await new Promise((resolve) => {
-        execFile('powershell', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript], { timeout: 5000 }, (_e, stdout) => {
-          resolve(String(stdout || '').trim());
-        });
-      });
-      if (out.startsWith('OK:')) {
-        injetadoDireto = true;
-        documentoAtivoNome = out.slice(3).trim();
-      }
-    }
+    const codigoCampo = gerarCodigoCampoBibliografia(ids, pgLimpa);
+    const { injetadoDireto, documentoAtivoNome } = await injetarCitacaoNoCursorWordCom(
+      citacaoTexto,
+      codigoCampo,
+      comCampoNativo
+    );
 
     if (janela && !janela.isDestroyed()) {
       janela.webContents.send('bib:atualizado');
@@ -575,6 +644,179 @@ function registrarIpc() {
       documentoAtivoNome,
       citacaoTexto,
       comCampoNativo,
+    };
+  });
+
+  h('word:responderSeletorCitacao', async ({ origem = 'app', cancelado = false, ids = [], pagina = '', estilo, idioma, comCampoNativo = true }) => {
+    if (origem === 'word_ribbon') {
+      resolverSeletorPendente(cancelado ? { cancelado: true } : { cancelado: false, ids, pagina, estilo });
+      return { ok: true, enviadoParaRibbon: true };
+    }
+    if (cancelado || !ids.length) {
+      return { ok: true, cancelado: true };
+    }
+    const b = exigirBiblioteca();
+    const itens = ids.map((id) => b.refs.get(id)?.csl).filter(Boolean);
+    if (!itens.length) return { ok: true, cancelado: true };
+    const f = citacoes.formatar({
+      itens,
+      estiloId: estilo || cfg.estilo,
+      idioma: idioma || cfg.idioma,
+      raizBiblioteca: b.raiz,
+    });
+    const pgLimpa = String(pagina || '').trim().replace(/^p\.?\s*/i, '');
+    let citacaoTexto = f.citacaoTexto;
+    if (pgLimpa) {
+      citacaoTexto = citacaoTexto.replace(/\)\s*$/, `, p. ${pgLimpa})`);
+    }
+    clipboard.writeText(citacaoTexto);
+    for (const id of ids) {
+      if (b.refs.has(id)) await b.atualizar(id, { status: 'citada' });
+    }
+    const codigoCampo = gerarCodigoCampoBibliografia(ids, pgLimpa);
+    const { injetadoDireto, documentoAtivoNome } = await injetarCitacaoNoCursorWordCom(
+      citacaoTexto,
+      codigoCampo,
+      comCampoNativo
+    );
+    if (janela && !janela.isDestroyed()) {
+      janela.webContents.send('bib:atualizado');
+    }
+    return { ok: true, injetadoDireto, documentoAtivoNome, citacaoTexto };
+  });
+
+  h('word:atualizarCamposWordAtivo', async ({ estilo, idioma } = {}) => {
+    const b = exigirBiblioteca();
+    const estiloAlvo = estilo || cfg.estilo;
+    const idiomaAlvo = idioma || cfg.idioma;
+    if (process.platform !== 'win32') {
+      throw new Error('Atualização COM direta disponível no Windows.');
+    }
+
+    // 1. Lê todos os códigos BIBLIOGRAFIA_ITEM presentes no documento ativo no Word
+    const psLer = `
+      $OutputEncoding = [System.Text.Encoding]::UTF8
+      try {
+        $word = [Runtime.InteropServices.Marshal]::GetActiveObject("Word.Application")
+        if ($word.Documents.Count -eq 0) { Write-Output "ERR:NO_DOC"; exit 0 }
+        $doc = $word.ActiveDocument
+        $arr = @()
+        for ($i = 1; $i -le $doc.Fields.Count; $i++) {
+          $c = $doc.Fields.Item($i).Code.Text
+          if ($c -match "BIBLIOGRAFIA_ITEM") {
+            $arr += [PSCustomObject]@{ idx = $i; codigo = $c.Trim() }
+          }
+        }
+        Write-Output ("DOC:" + $doc.Name)
+        if ($arr.Count -gt 0) {
+          Write-Output ("JSON:" + ($arr | ConvertTo-Json -Compress))
+        } else {
+          Write-Output "JSON:[]"
+        }
+      } catch {
+        Write-Output "ERR:NO_WORD"
+      }
+    `;
+    const outLer = await new Promise((resolve) => {
+      execFile('powershell', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psLer], { timeout: 6000 }, (_e, stdout) => {
+        resolve(String(stdout || ''));
+      });
+    });
+
+    if (outLer.includes('ERR:NO_WORD')) {
+      throw new Error('Abra o Microsoft Word com seu documento antes de atualizar os campos.');
+    }
+    if (outLer.includes('ERR:NO_DOC')) {
+      throw new Error('Nenhum documento aberto no Microsoft Word.');
+    }
+
+    const mDoc = outLer.match(/DOC:([^\r\n]+)/);
+    const nomeDocWord = mDoc ? mDoc[1].trim() : 'Word';
+    const mJson = outLer.match(/JSON:(\[.*\]|\{.*\})/s);
+    let campos = [];
+    if (mJson) {
+      const parsed = JSON.parse(mJson[1]);
+      campos = Array.isArray(parsed) ? parsed : [parsed];
+    }
+
+    // 2. Recalcula textos formatados pela norma ativa para cada campo encontrado
+    const atualizacoes = [];
+    const idsEncontrados = new Set();
+    for (const cp of campos) {
+      const parsed = parsearCodigoCampoBibliografia(cp.codigo || '');
+      const idsValidos = parsed.ids.filter((id) => b.refs.has(id));
+      if (!idsValidos.length) continue;
+      idsValidos.forEach((id) => idsEncontrados.add(id));
+      const f = citacoes.formatar({
+        itens: idsValidos.map((id) => b.refs.get(id).csl),
+        estiloId: estiloAlvo,
+        idioma: idiomaAlvo,
+        raizBiblioteca: b.raiz,
+      });
+      let citTxt = f.citacaoTexto;
+      if (parsed.pagina) {
+        citTxt = citTxt.replace(/\)\s*$/, `, p. ${String(parsed.pagina).replace(/^p\.?\s*/i, '')})`);
+      }
+      atualizacoes.push({ idx: cp.idx, texto: citTxt });
+    }
+
+    for (const id of idsEncontrados) {
+      await b.atualizar(id, { status: 'citada' });
+    }
+
+    // 3. Gera bibliografia final atualizada das obras citadas
+    const filtradasBib = [...b.refs.values()].filter((r) => r.status === 'citada');
+    let textoBib = '';
+    if (filtradasBib.length) {
+      const fBib = citacoes.formatar({
+        itens: filtradasBib.map((r) => r.csl).filter(Boolean),
+        estiloId: estiloAlvo,
+        idioma: idiomaAlvo,
+        raizBiblioteca: b.raiz,
+      });
+      textoBib = (fBib.entradas || [])
+        .map((h) => String(h || '').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&nbsp;/g, ' ').trim())
+        .filter(Boolean)
+        .join('\r\n\r\n');
+    }
+
+    // 4. Aplica atualização de cada campo + marcador BIBLIOGRAFIA_REFERENCIAS_FINAL no Word ativo
+    const updB64 = Buffer.from(JSON.stringify(atualizacoes), 'utf8').toString('base64');
+    const bibB64 = Buffer.from(textoBib, 'utf8').toString('base64');
+    const psAplicar = `
+      $OutputEncoding = [System.Text.Encoding]::UTF8
+      $word = [Runtime.InteropServices.Marshal]::GetActiveObject("Word.Application")
+      $doc = $word.ActiveDocument
+      $updsJson = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${updB64}"))
+      $upds = $updsJson | ConvertFrom-Json
+      foreach ($u in $upds) {
+        if ($u.idx -ge 1 -and $u.idx -le $doc.Fields.Count) {
+          $doc.Fields.Item([int]$u.idx).Result.Text = [string]$u.texto
+        }
+      }
+      $bib = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${bibB64}"))
+      if ($bib.Length -gt 0 -and $doc.Bookmarks.Exists("BIBLIOGRAFIA_REFERENCIAS_FINAL")) {
+        $rng = $doc.Bookmarks("BIBLIOGRAFIA_REFERENCIAS_FINAL").Range
+        $rng.Text = $bib
+        $doc.Bookmarks.Add("BIBLIOGRAFIA_REFERENCIAS_FINAL", $rng) | Out-Null
+      }
+      Write-Output ("ATUALIZADO:" + $upds.Count)
+    `;
+    await new Promise((resolve, reject) => {
+      execFile('powershell', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psAplicar], { timeout: 10000 }, (err) => {
+        if (err) return reject(err);
+        resolve();
+      });
+    });
+
+    if (janela && !janela.isDestroyed()) {
+      janela.webContents.send('bib:atualizado');
+    }
+    return {
+      ok: true,
+      documentoAtivoNome: nomeDocWord,
+      totalCamposAtualizados: atualizacoes.length,
+      totalReferencias: filtradasBib.length,
     };
   });
 
@@ -1011,6 +1253,27 @@ function destacarJanela() {
   }, 600);
 }
 
+function acionarAtalhoSeletorWord(origem = 'hotkey', payload = {}) {
+  destacarJanela();
+  if (janela && !janela.isDestroyed()) {
+    janela.webContents.send('word:abrirSeletorCitacao', { origem, ...payload });
+  }
+}
+
+function registrarAtalhoWordGlobal(habilitar = true) {
+  try {
+    globalShortcut.unregister('CommandOrControl+Shift+B');
+    if (habilitar) {
+      return globalShortcut.register('CommandOrControl+Shift+B', () => {
+        acionarAtalhoSeletorWord('hotkey');
+      });
+    }
+    return false;
+  } catch {
+    return false;
+  }
+}
+
 // ---------- Inicialização ----------
 const instanciaUnica = app.requestSingleInstanceLock();
 if (!instanciaUnica) {
@@ -1049,12 +1312,24 @@ if (!instanciaUnica) {
           janela.webContents.send('bib:atualizado');
         }
       },
+      aoSolicitarSeletorCitacao: ({ termo, modo }) => {
+        acionarAtalhoSeletorWord('word_ribbon', { termo, modo });
+      },
     });
+    if (cfg.atalhoWordAtivo !== false) {
+      registrarAtalhoWordGlobal(true);
+    }
     criarJanela();
     destacarJanela();
     logBoot('criarJanela concluído');
   }).catch((e) => {
     logBoot('Erro fatal no whenReady: ' + (e && e.stack || e));
+  });
+
+  app.on('will-quit', () => {
+    try {
+      globalShortcut.unregisterAll();
+    } catch {}
   });
 
   app.on('window-all-closed', () => {

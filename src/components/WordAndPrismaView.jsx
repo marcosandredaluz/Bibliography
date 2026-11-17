@@ -24,9 +24,14 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
   const [extracaoDocx, setExtracaoDocx] = useState(null);
   const [extraindoDocx, setExtraindoDocx] = useState(false);
   const [importandoExtracao, setImportandoExtracao] = useState(false);
+  const [instalandoExtensao, setInstalandoExtensao] = useState(false);
+  const [atualizandoCampos, setAtualizandoCampos] = useState(false);
+  const [avisoTrustVba, setAvisoTrustVba] = useState(false);
+
+  const carregarInfoWord = () => window.api.word.info().then(setInfoWord).catch(() => {});
 
   useEffect(() => {
-    window.api.word.info().then(setInfoWord).catch(() => {});
+    carregarInfoWord();
   }, []);
 
   const alternarTopo = async () => {
@@ -150,8 +155,83 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
     }
   };
 
+  const instalarExtensaoWord = async () => {
+    setInstalandoExtensao(true);
+    setAvisoTrustVba(false);
+    try {
+      const res = await window.api.word.compilarEInstalarDotm();
+      await carregarInfoWord();
+      if (res?.ok) {
+        avisar('✓ Extensão "Bibliografia Forense" (.dotm) instalada na pasta STARTUP do Word! Reinicie o Word para ver a aba.', 'ok');
+      } else if (res?.precisaConfiarVba) {
+        setAvisoTrustVba(true);
+        avisar(res.mensagem, 'info');
+      } else {
+        avisar(res?.mensagem || 'Não foi possível gerar o .dotm automaticamente.', 'erro');
+      }
+    } catch (e) {
+      avisar(e.message, 'erro');
+    } finally {
+      setInstalandoExtensao(false);
+    }
+  };
+
+  const importarDotmPronto = async () => {
+    try {
+      const res = await window.api.word.escolherEInstalarDotm();
+      if (!res) return;
+      await carregarInfoWord();
+      setAvisoTrustVba(false);
+      avisar('✓ Arquivo .dotm instalado no STARTUP do Word com sucesso!', 'ok');
+    } catch (e) {
+      avisar(e.message, 'erro');
+    }
+  };
+
+  const removerExtensaoDoWord = async () => {
+    try {
+      await window.api.word.removerExtensaoWord();
+      await carregarInfoWord();
+      avisar('Extensão removida da pasta STARTUP do Word.', 'info');
+    } catch (e) {
+      avisar(e.message, 'erro');
+    }
+  };
+
+  const atualizarCamposWordAberto = async () => {
+    setAtualizandoCampos(true);
+    try {
+      const res = await window.api.word.atualizarCamposWordAtivo({ estilo, idioma });
+      await onRecarregar?.();
+      avisar(
+        `✓ ${res.totalCamposAtualizados} citação(ões) dinâmica(s) e ${res.totalReferencias} referência(s) atualizadas no Word (${res.documentoAtivoNome})!`,
+        'ok'
+      );
+    } catch (e) {
+      avisar(e.message, 'erro');
+    } finally {
+      setAtualizandoCampos(false);
+    }
+  };
+
+  const alternarAtalhoZotero = async () => {
+    try {
+      const res = await window.api.word.alternarAtalhoGlobal(!infoWord?.atalhoAtivo);
+      await carregarInfoWord();
+      avisar(
+        res.atalhoAtivo
+          ? '⌨️ Atalho Zotero Ctrl+Shift+B ativado! Pressione Ctrl+Shift+B dentro do Word para abrir o seletor rápido.'
+          : 'Atalho global Ctrl+Shift+B desativado.',
+        'info'
+      );
+    } catch (e) {
+      avisar(e.message, 'erro');
+    }
+  };
+
   const citadasCount = refs.filter((r) => r.status === 'citada').length;
   const consultadasCount = refs.filter((r) => r.status === 'consultada').length;
+  const dotmInstalado = Boolean(infoWord?.extensaoDotm?.instaladoNoWord);
 
   return (
     <div className="central-buscadores">
@@ -178,7 +258,14 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
             ● Ponte Word :{infoWord?.porta || 23119} Ativa
           </span>
           <button className="btn fantasma" onClick={() => setMostrarPlugIns((v) => !v)}>
-            🔌 {mostrarPlugIns ? 'Ocultar Plugins Office.js / VBA' : 'Instalar Plugin Word (Office.js / VBA)'}
+            🔌 {mostrarPlugIns ? 'Ocultar Extensão Word (.dotm / Office.js)' : dotmInstalado ? '✓ Extensão Word (.dotm) Ativa' : 'Instalar Extensão no Word (.dotm)'}
+          </button>
+          <button
+            className="btn secundario"
+            onClick={() => window.api.word.abrirSeletorRapido()}
+            title="Abre o Seletor Rápido de Citações (também acessível direto do Word com Ctrl+Shift+B)"
+          >
+            ⚡ Seletor Rápido ({infoWord?.atalhoGlobal || 'Ctrl+Shift+B'})
           </button>
           <button className={`btn ${sempreNoTopo ? 'primario' : 'secundario'}`} onClick={alternarTopo}>
             <Icone nome="external" tam={14} />{' '}
@@ -188,21 +275,59 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
       </div>
 
       {mostrarPlugIns && infoWord && (
-        <div className="bloco-proxy" style={{ borderLeft: '4px solid #2563eb', background: '#f8fafc' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10 }}>
-            <div>
-              <strong>Modos Nativos dentro da Faixa de Opções do Microsoft Word (estilo Zotero / Mendeley / Paperlib)</strong>
-              <div style={{ fontSize: 12.5, color: '#475569', marginTop: 4 }}>
-                • <strong>Opção 1 — Suplemento Moderno (Office.js):</strong> usa Content Controls <code>BIB_REF:id</code> conectados em <code>{infoWord.urlPainel}</code>.<br />
-                • <strong>Opção 2 — Macro Ribbon VBA (<code>Bibliografia.bas</code> + <code>customUI14.xml</code>):</strong> alterna entre Campos Nativos (<code>wdFieldAddin</code>) e Bookmarks (<code>BIB_BREF_...</code>) + grifos/comentários direto no Word.
+        <div className="bloco-proxy" style={{ borderLeft: `4px solid ${dotmInstalado ? '#16a34a' : '#2563eb'}`, background: '#f8fafc' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 12 }}>
+            <div style={{ flex: 1, minWidth: 280 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <strong>Extensão Nativa no Microsoft Word (Aba "Bibliografia Forense" estilo Zotero &amp; Mendeley)</strong>
+                <span
+                  className="pill-contagem"
+                  style={{
+                    background: dotmInstalado ? '#dcfce7' : '#fef3c7',
+                    color: dotmInstalado ? '#166534' : '#92400e',
+                  }}
+                >
+                  {dotmInstalado ? '✓ Instalada no STARTUP do Word' : 'Ainda não instalada no Word'}
+                </span>
               </div>
+              <div style={{ fontSize: 12.5, color: '#475569', marginTop: 6, lineHeight: 1.45 }}>
+                • <strong>Aba Ribbon no Word (<code>Bibliografia.dotm</code>):</strong> instala na pasta de inicialização do Word (<code>{infoWord.pastaStartupWord || '%APPDATA%\\Microsoft\\Word\\STARTUP'}</code>) para adicionar botões nativos de Citar, Atualizar Norma, Inserir Referências e Grifar Erros/IA dentro do Word.<br />
+                • <strong>Atalho Instantâneo Sem Macro (<code>{infoWord.atalhoGlobal || 'Ctrl+Shift+B'}</code>):</strong>{' '}
+                <button
+                  type="button"
+                  onClick={alternarAtalhoZotero}
+                  style={{ border: 'none', background: 'none', color: '#2563eb', fontWeight: 600, cursor: 'pointer', padding: 0, textDecoration: 'underline' }}
+                >
+                  {infoWord.atalhoAtivo ? 'Ativo (clique p/ desativar)' : 'Desativado (clique p/ ativar)'}
+                </button>{' '}
+                — funciona dentro do Word mesmo se sua instituição bloquear macros VBA!
+              </div>
+
+              {avisoTrustVba && (
+                <div style={{ marginTop: 10, padding: '8px 10px', borderRadius: 6, background: '#fffbeb', border: '1px solid #f59e0b', fontSize: 12.5, color: '#78350f' }}>
+                  <strong>Permissão necessária no Word para compilar o <code>.dotm</code> automaticamente:</strong><br />
+                  No Microsoft Word, acesse <em>Arquivo → Opções → Central de Confiabilidade → Configurações da Central de Confiabilidade → Configurações de Macro</em> e marque <strong>"Confiar no acesso ao modelo de objeto do projeto do VBA"</strong>. Depois clique novamente em <strong>"🔨 Compilar &amp; Instalar no Word"</strong> (ou importe manualmente <code>Bibliografia.bas</code> via <code>Alt+F11</code>, salve como <code>Bibliografia.dotm</code> e clique em "Selecionar .dotm pronto").
+                </div>
+              )}
             </div>
-            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-              <button className="btn pequeno secundario" onClick={() => window.api.word.mostrarManifesto()}>
-                <Icone nome="folder" tam={13} /> Ver manifest.xml (Office.js)
+
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>
+              <button className="btn pequeno primario" onClick={instalarExtensaoWord} disabled={instalandoExtensao}>
+                {instalandoExtensao ? 'Gerando .dotm…' : dotmInstalado ? '🔄 Reinstalar / Atualizar .dotm no Word' : '🔨 Gerar & Instalar Extensão (.dotm)'}
               </button>
-              <button className="btn pequeno primario" onClick={() => window.api.word.abrirPastaVba()}>
-                <Icone nome="folder" tam={13} /> Abrir Pasta Macro VBA (.bas / customUI)
+              <button className="btn pequeno secundario" onClick={importarDotmPronto}>
+                📥 Selecionar .dotm pronto
+              </button>
+              {dotmInstalado && (
+                <button className="btn pequeno fantasma" onClick={removerExtensaoDoWord} style={{ color: '#b91c1c' }}>
+                  🗑️ Remover do Word
+                </button>
+              )}
+              <button className="btn pequeno fantasma" onClick={() => window.api.word.abrirPastaVba()}>
+                <Icone nome="folder" tam={13} /> Pasta VBA (.bas / customUI)
+              </button>
+              <button className="btn pequeno fantasma" onClick={() => window.api.word.mostrarManifesto()}>
+                <Icone nome="folder" tam={13} /> Manifesto Office.js
               </button>
             </div>
           </div>
@@ -247,6 +372,9 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
             </button>
             <button className="btn secundario" onClick={() => inserirOuCopiarListaWord('consultadas')}>
               <Icone nome="copy" tam={14} /> 2. Inserir/Copiar CONSULTADAS ({consultadasCount})
+            </button>
+            <button className="btn secundario" onClick={atualizarCamposWordAberto} disabled={atualizandoCampos}>
+              🔄 {atualizandoCampos ? 'Atualizando Campos no Word…' : 'Atualizar Campos & Norma no Word Aberto'}
             </button>
             <button className="btn fantasma" onClick={abrirExtratorDocx} disabled={extraindoDocx} style={{ border: '1px solid #cbd5e1' }}>
               🔍 {extraindoDocx ? 'Extraindo XML do Word…' : 'Extrair Citações / Campos de .DOCX (Ref-Extractor)'}

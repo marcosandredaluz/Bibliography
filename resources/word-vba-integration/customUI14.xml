@@ -18,9 +18,17 @@
                   size="large"
                   imageMso="BibliographyInsertGallery"
                   screentip="Gerar Lista de Referências Final"
-                  supertip="Gera a lista final de referências no final do documento, padronizada segundo a NBR 6023 ou Vancouver."
+                  supertip="Gera a lista final de referências no final do documento, padronizada segundo a NBR 6023, APA ou Vancouver."
                   onAction="Ribbon_InserirBibliografia" />
-                  
+
+          <button id="btnAtualizarCampos"
+                  label="Atualizar Campos (Norma)"
+                  size="normal"
+                  imageMso="RefreshAll"
+                  screentip="Atualizar Citações e Referências"
+                  supertip="Recalcula todas as citações inseridas e a lista final de referências ao alternar entre ABNT, Vancouver ou APA."
+                  onAction="Ribbon_AtualizarCampos" />
+
           <button id="btnAlternarModo"
                   label="Formato (Campos vs Bookmarks)"
                   size="normal"

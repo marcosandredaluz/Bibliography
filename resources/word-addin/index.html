@@ -29,8 +29,9 @@
   </div>
 
   <div class="caixa" style="display:flex; gap:6px; flex-wrap:wrap;">
-    <button class="primario" onclick="atualizarBibliografia(false)">Atualizar Referências Citadas</button>
-    <button class="secundario" onclick="atualizarBibliografia(true)" title="Adiciona também a lista separada de obras Consultadas (lidas mas não citadas)">+ Bibliografia Consultada</button>
+    <button class="primario" onclick="atualizarCamposEBibliografia(false)">Atualizar Campos & Referências Citadas</button>
+    <button class="secundario" onclick="atualizarCamposEBibliografia(true)" title="Adiciona também a lista separada de obras Consultadas (lidas mas não citadas)">+ Bibliografia Consultada</button>
+    <button class="secundario" id="btnCitarMulti" style="display:none; background:#eff6ff; border-color:#2563eb; color:#1d4ed8;" onclick="citarSelecionadas()">Citar Selecionadas</button>
   </div>
   <div id="msg" class="msg"></div>
 
@@ -38,6 +39,7 @@
 
   <script>
     let refs = [];
+    let selecionadas = new Set();
     let officePronto = false;
     if (window.Office) {
       Office.onReady(() => { officePronto = true; });
@@ -51,6 +53,14 @@
       renderizar();
     }
 
+    function toggleSel(id) {
+      if (selecionadas.has(id)) selecionadas.delete(id);
+      else selecionadas.add(id);
+      const btn = document.getElementById('btnCitarMulti');
+      btn.style.display = selecionadas.size >= 2 ? 'inline-block' : 'none';
+      btn.textContent = `Citar ${selecionadas.size} Juntas`;
+    }
+
     function renderizar() {
       const q = (document.getElementById('busca').value || '').toLowerCase();
       const filtradas = refs.filter(r => !q || (r.busca || '').includes(q)).slice(0, 40);
@@ -58,55 +68,85 @@
       if (!filtradas.length) { el.innerHTML = '<em>Nenhuma referência encontrada.</em>'; return; }
       el.innerHTML = filtradas.map(r => `
         <div class="item">
-          <div>
+          <input type="checkbox" style="width:auto;margin:0;" ${selecionadas.has(r.id) ? 'checked' : ''} onchange="toggleSel('${r.id}')" />
+          <div style="flex:1">
             <strong>${r.titulo}</strong>
             <div class="meta">${r.autorAno} · <span class="status">${r.status}</span></div>
           </div>
-          <button class="primario" onclick="citar('${r.id}')">Citar</button>
+          <button class="primario" onclick="citarIds(['${r.id}'])">Citar</button>
         </div>
       `).join('');
     }
 
     document.getElementById('busca').addEventListener('input', renderizar);
 
-    async function citar(id) {
+    async function citarSelecionadas() {
+      const ids = Array.from(selecionadas);
+      if (!ids.length) return;
+      await citarIds(ids);
+      selecionadas.clear();
+      toggleSel('_none_');
+      selecionadas.clear();
+      document.getElementById('btnCitarMulti').style.display = 'none';
+    }
+
+    async function citarIds(ids) {
       const estilo = document.getElementById('estilo').value;
       const pagina = document.getElementById('pagina').value.trim();
       const res = await fetch('/api/citar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ids: [id], estilo, pagina })
+        body: JSON.stringify({ ids, estilo, pagina })
       }).then(r => r.json());
 
       if (officePronto && window.Word) {
         await Word.run(async (ctx) => {
           const sel = ctx.document.getSelection();
           const cc = sel.insertContentControl();
-          cc.tag = `BIB_REF:${id}`;
+          cc.tag = `BIB_REF:${ids.join(',')}${pagina ? '|p:' + pagina : ''}`;
           cc.title = 'Citação Bibliografia';
           cc.insertHtml(res.citacaoHtml, Word.InsertLocation.replace);
           await ctx.sync();
         });
-        mostrar('Citação inserida no documento e marcada como Citada!');
+        mostrar('Citação dinâmica inserida e marcada como Citada!');
       } else {
         await navigator.clipboard.writeText(res.citacaoTexto);
-        mostrar('Citação copiada e referência marcada como Citada!');
+        mostrar('Citação copiada e referência(s) marcada(s) como Citada!');
       }
       carregar();
     }
 
-    async function atualizarBibliografia(incluirConsultadas) {
+    async function atualizarCamposEBibliografia(incluirConsultadas) {
       const estilo = document.getElementById('estilo').value;
       let idsNoDoc = [];
       if (officePronto && window.Word) {
+        const grupos = [];
         await Word.run(async (ctx) => {
           const controles = ctx.document.contentControls;
           controles.load('items/tag');
           await ctx.sync();
           for (const c of controles.items) {
             if (c.tag && c.tag.startsWith('BIB_REF:')) {
-              idsNoDoc.push(...c.tag.slice(8).split(',').filter(Boolean));
+              const raw = c.tag.slice(8);
+              const [idsStr, pagPart] = raw.split('|p:');
+              const ids = idsStr.split(',').filter(Boolean);
+              idsNoDoc.push(...ids);
+              grupos.push({ chave: raw, ids, pagina: pagPart || '' });
             }
+          }
+          if (grupos.length) {
+            const atualizados = await fetch('/api/campos-atualizar', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ grupos, estilo })
+            }).then(r => r.json());
+            for (const c of controles.items) {
+              if (c.tag && c.tag.startsWith('BIB_REF:')) {
+                const novo = atualizados.citacoesAtualizadas?.[c.tag.slice(8)];
+                if (novo?.citacaoHtml) c.insertHtml(novo.citacaoHtml, Word.InsertLocation.replace);
+              }
+            }
+            await ctx.sync();
           }
         });
       }
@@ -122,7 +162,7 @@
           corpo.insertHtml(res.htmlCompleto, Word.InsertLocation.end);
           await ctx.sync();
         });
-        mostrar(`Bibliografia inserida (${res.totalCitadas} citadas)!`);
+        mostrar(`Campos & Bibliografia atualizados (${res.totalCitadas} citadas)!`);
       } else {
         mostrar(`Sincronizado (${res.totalCitadas} citadas)!`);
       }
