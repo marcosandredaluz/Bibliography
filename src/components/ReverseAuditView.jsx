@@ -920,24 +920,68 @@ export default function ReverseAuditView({
     );
   };
 
-  const anexarPdfEVerificarCard = async (itemAudit, idx) => {
-    if (!itemAudit?.refBibId) {
-      avisar('Esta referência ainda não possui ID na biblioteca.', 'erro');
-      return;
+  const garantirRefNaBibliotecaParaCard = async (itemAudit) => {
+    if (itemAudit?.refBibId) return itemAudit.refBibId;
+    const textoRef = String(itemAudit?.textoOriginal || '').trim();
+    const urlMatch = textoRef.match(/https?:\/\/[^\s)>]+/i)?.[0];
+    const ehWeb = Boolean(urlMatch) && !/\.pdf(?:$|\?)/i.test(urlMatch);
+    const anoNum = itemAudit?.anoBase && /^\d{4}$/.test(String(itemAudit.anoBase)) ? Number(itemAudit.anoBase) : null;
+    const cslManual = {
+      type: ehWeb ? 'webpage' : 'report',
+      title: String(itemAudit?.tituloBuscado || textoRef || 'Fonte institucional').slice(0, 240),
+      author: itemAudit?.primeiroSobrenome ? [{ family: itemAudit.primeiroSobrenome }] : undefined,
+      issued: anoNum ? { 'date-parts': [[anoNum]] } : undefined,
+      DOI: itemAudit?.doi || undefined,
+      URL: urlMatch || undefined,
+      note: textoRef || undefined,
+    };
+    const criada = await window.api.bib.criar({
+      csl: cslManual,
+      status: 'citada',
+      notas: `Fonte confirmada na Auditoria Reversa:\n${textoRef}`,
+    });
+    if (!criada?.id) {
+      throw new Error('Não foi possível criar esta referência na biblioteca ativa.');
     }
+    return criada.id;
+  };
+
+  const atualizarCardNoResultado = (itemAudit, idxFallback, patch) => {
+    setResultado((ant) => {
+      if (!ant) return ant;
+      const novas = [...(ant.refsMapeadas || [])];
+      const idxReal = novas.findIndex(
+        (x) =>
+          (itemAudit?.refBibId && x.refBibId === itemAudit.refBibId) ||
+          (itemAudit?.chave && x.chave === itemAudit.chave) ||
+          (itemAudit?.textoOriginal && x.textoOriginal === itemAudit.textoOriginal)
+      );
+      const alvo = idxReal >= 0 ? idxReal : idxFallback;
+      if (alvo >= 0 && novas[alvo]) {
+        novas[alvo] = { ...novas[alvo], ...patch };
+      }
+      return { ...ant, refsMapeadas: novas };
+    });
+  };
+
+  const anexarPdfEVerificarCard = async (itemAudit, idx, opcoes = {}) => {
     try {
       const caminhos = await window.api.dialogo.escolherPdfs();
-      if (!caminhos?.length) return;
-      setEtapa(`Anexando PDF e lendo páginas de ${itemAudit.primeiroSobrenome} (${itemAudit.ano})…`);
-      await window.api.bib.anexarPdf(itemAudit.refBibId, caminhos[0]);
-      const bytesPdf = await window.api.bib.lerPdfBytes(itemAudit.refBibId);
+      if (!caminhos?.length) return false;
+      setEtapa(`Cadastrando fonte e lendo PDF de ${itemAudit.primeiroSobrenome || 'documento'} (${itemAudit.ano || 's.d.'})…`);
+      const refId = await garantirRefNaBibliotecaParaCard(itemAudit);
+      await window.api.bib.anexarPdf(refId, caminhos[0]);
+      const bytesPdf = await window.api.bib.lerPdfBytes(refId);
       const paginas = await extrairPaginasPdf(bytesPdf);
       const textoCompleto = paginas.map((p) => p.bruto).join('\n\n');
-      await window.api.bib.atualizar(itemAudit.refBibId, { textoExtraido: textoCompleto.slice(0, 50000) });
+      await window.api.bib.atualizar(refId, {
+        status: 'citada',
+        textoExtraido: textoCompleto.slice(0, 50000),
+      });
 
       let verificacoes = [];
       if (itemAudit.ocorrenciasNoTexto?.length) {
-        const grifosAtuais = await window.api.bib.lerGrifos(itemAudit.refBibId);
+        const grifosAtuais = await window.api.bib.lerGrifos(refId);
         const novosGrifos = [...grifosAtuais];
         verificacoes = itemAudit.ocorrenciasNoTexto.map((oc) => {
           const ver = localizarOcorrenciaNoPdf(oc, paginas);
@@ -964,8 +1008,8 @@ export default function ReverseAuditView({
           }
           return { ocorrencia: oc, ...ver };
         });
-        await window.api.bib.salvarGrifos(itemAudit.refBibId, novosGrifos);
-        await window.api.bib.atualizar(itemAudit.refBibId, {
+        await window.api.bib.salvarGrifos(refId, novosGrifos);
+        await window.api.bib.atualizar(refId, {
           ocorrenciasWord: verificacoes.map((v) => ({
             ...v.ocorrencia,
             paginaPdf: v.paginaPdf,
@@ -977,17 +1021,48 @@ export default function ReverseAuditView({
       }
 
       await onRecarregar?.();
-      setResultado((ant) => {
-        if (!ant) return ant;
-        const novas = [...ant.refsMapeadas];
-        novas[idx] = { ...novas[idx], temPdf: true, verificacoesPdf: verificacoes };
-        return { ...ant, refsMapeadas: novas };
-      });
+      const patch = { refBibId: refId, temPdf: true, verificacoesPdf: verificacoes };
+      if (opcoes.promoverAutenticidade) {
+        patch.statusAutenticidade = 'institucional_tese';
+        patch.natureza = 'norma_livro_institucional';
+        patch.alertaAutenticidade = '✅ Apostila / PDF local anexado e verificado manualmente pelo autor.';
+      }
+      atualizarCardNoResultado(itemAudit, idx, patch);
+      if (opcoes.idItem) {
+        definirStatusItem(opcoes.idItem, 'resolvido');
+      }
       setEtapa('');
       avisar(
-        'PDF anexado manualmente! As páginas das citações e o PICO/Notas foram extraídos automaticamente.',
+        'PDF/Apostila anexado na Biblioteca! O alerta foi resolvido e as páginas citadas foram vinculadas.',
         'ok'
       );
+      return true;
+    } catch (e) {
+      setEtapa('');
+      avisar(e.message, 'erro');
+      return false;
+    }
+  };
+
+  const confirmarFonteSiteOuApostilaNoCard = async (itemAudit, idItem, { comPdf = false } = {}) => {
+    if (comPdf) {
+      await anexarPdfEVerificarCard(itemAudit, -1, { idItem, promoverAutenticidade: true });
+      return;
+    }
+    try {
+      setEtapa(`Confirmando fonte consultada de ${itemAudit.primeiroSobrenome || 'obra'} na Biblioteca…`);
+      const refId = await garantirRefNaBibliotecaParaCard(itemAudit);
+      await window.api.bib.atualizar(refId, { status: 'citada' });
+      await onRecarregar?.();
+      atualizarCardNoResultado(itemAudit, -1, {
+        refBibId: refId,
+        statusAutenticidade: 'institucional_tese',
+        natureza: 'norma_livro_institucional',
+        alertaAutenticidade: '✅ Site / Fonte institucional confirmada manualmente pelo autor.',
+      });
+      definirStatusItem(idItem, 'resolvido');
+      setEtapa('');
+      avisar('Fonte confirmada e cadastrada na Biblioteca! Alerta marcado como resolvido.', 'ok');
     } catch (e) {
       setEtapa('');
       avisar(e.message, 'erro');
@@ -3191,10 +3266,15 @@ export default function ReverseAuditView({
           {/* ALERTA A: Fontes Inventadas por IA (Alucinação de ChatGPT / DOI falso / Artigo fantasma) */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'ia') && (mostrarResolvidos ? refsSuspeitasIa.length > 0 : refsSuspeitasIaAtivas.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
-              <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+              <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
                 <span>🤖 Fontes Suspeitas ou Não Autenticadas nas Referências ({refsSuspeitasIaAtivas.length})</span>
                 <BadgeAlvoAlerta alvo="citacao" />
               </h4>
+              <p className="texto-suave" style={{ fontSize: 12, marginTop: 0, marginBottom: 10 }}>
+                💡 Site oficial ou apostila do computador (MS/UFMA/institucional)? Use{' '}
+                <strong>📎 Anexar Apostila/PDF</strong> ou <strong>🌐 Confirmar Site/Oficial</strong> para salvar na Biblioteca e resolver o alerta automaticamente, ou marque{' '}
+                <strong>✓ Resolvido</strong> / <strong>🚫 Ignorar</strong>.
+              </p>
               <div className="lista-historico">
                 {refsSuspeitasIa
                   .filter((r) => mostrarResolvidos || !itensResolvidos.has(`ia_${r.refBibId || r.id || r.primeiroSobrenome}`))
@@ -3240,6 +3320,20 @@ export default function ReverseAuditView({
                                 })
                               }
                             />
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() => confirmarFonteSiteOuApostilaNoCard(r, idItem, { comPdf: true })}
+                              title="Anexa o PDF/apostila do seu computador na Biblioteca, lê as páginas citadas e marca este alerta como resolvido"
+                            >
+                              📎 Anexar Apostila/PDF
+                            </button>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() => confirmarFonteSiteOuApostilaNoCard(r, idItem, { comPdf: false })}
+                              title="Confirma esta obra como site/documento institucional válido, salva na Biblioteca e resolve o alerta"
+                            >
+                              🌐 Confirmar Site/Oficial
+                            </button>
                             <button
                               className="btn pequeno primario"
                               onClick={() =>

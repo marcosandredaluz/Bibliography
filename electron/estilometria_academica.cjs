@@ -135,8 +135,10 @@ function calcularMetricasEstilometricas(texto) {
   );
 
   // 5. Diversidade de Trigramas (3-grams) e detecção de repetições mecânicas contíguas
-  // Remove citações parentéticas autor-data antes de analisar trigramas para não gerar falso positivo por citar a mesma instituição/autor
-  const textoSemCitacoes = texto.replace(/\([^)]*(?:\d{4}|s\.d\.|et\s+al\.?)[^)]*\)/gi, ' ');
+  // Remove citações parentéticas e nomes próprios compostos de políticas/instituições (Title Case) antes de contar trigramas mecânicos
+  const textoSemCitacoes = texto
+    .replace(/\([^)]*(?:\d{4}|s\.d\.|et\s+al\.?)[^)]*\)/gi, ' ')
+    .replace(/\b(?:[A-ZÀ-Ú][a-zà-ÿ]{2,}(?:\s+(?:de|da|do|dos|das|em|para|e)\s+[A-ZÀ-Ú][a-zà-ÿ]{2,}|\s+[A-ZÀ-Ú][a-zà-ÿ]{2,}){2,})\b/g, ' ');
   const palavrasSemCit = textoSemCitacoes
     .toLowerCase()
     .normalize('NFD')
@@ -146,6 +148,7 @@ function calcularMetricasEstilometricas(texto) {
   const trigramasContagem = new Map();
   const trigramasIndices = new Map();
   const trigramasRepetidos = [];
+  let maxRepeticaoTrigrama = 0;
   for (let i = 0; i <= palavrasSemCit.length - 3; i++) {
     const w1 = palavrasSemCit[i];
     const w2 = palavrasSemCit[i + 1];
@@ -173,6 +176,7 @@ function calcularMetricasEstilometricas(texto) {
 
     const n = (trigramasContagem.get(tri) || 0) + 1;
     trigramasContagem.set(tri, n);
+    if (n > maxRepeticaoTrigrama) maxRepeticaoTrigrama = n;
     if (n === 2) {
       // Verifica se já não é sobreposição direta de um trigrama repetido registrado logo antes
       const ehSobreposicaoAnterior = trigramasRepetidos.some((ant) => {
@@ -196,6 +200,7 @@ function calcularMetricasEstilometricas(texto) {
     burstiness,
     densidadeLexical,
     fleschLegibilidade: flesch,
+    maxRepeticaoTrigrama,
     trigramasRepetidos: trigramasRepetidos.slice(0, 5),
   };
 }
@@ -261,8 +266,8 @@ function auditarEstilometriaDoManuscrito(paragrafos = []) {
     somaFlesch += m.fleschLegibilidade;
     qtdValidos++;
 
-    // Alerta 1: Monotonia sintática extrema em parágrafo com 3+ frases (Sintoma de Spin-Bot ou IA mecânica)
-    if (m.totalPalavras >= 35 && m.numFrases >= 3 && m.burstiness < 0.12) {
+    // Alerta 1: Monotonia sintática extrema em parágrafo longo com 4+ frases uniformes (Sintoma de Spin-Bot ou IA mecânica)
+    if (m.totalPalavras >= 40 && m.numFrases >= 4 && m.burstiness < 0.12) {
       alertasEstilometricos.push({
         tipo: 'monotonia_sintatica_estilometrica',
         numParagrafo: meta.numParagrafo,
@@ -287,8 +292,8 @@ function auditarEstilometriaDoManuscrito(paragrafos = []) {
       });
     }
 
-    // Alerta 3: Repetição mecânica de trigramas no mesmo parágrafo
-    if (m.trigramasRepetidos.length >= 2) {
+    // Alerta 3: Repetição mecânica de trigramas no mesmo parágrafo (exige repetição >= 3x de uma expressão ou >= 3 trigramas distintos repetidos)
+    if (m.maxRepeticaoTrigrama >= 3 || m.trigramasRepetidos.length >= 3) {
       alertasEstilometricos.push({
         tipo: 'repeticao_trigramas_mecanica',
         numParagrafo: meta.numParagrafo,

@@ -406,16 +406,22 @@ function extrairChavesAutorDeCitacao(trechoAutorBruto) {
     return { chavePrincipal: '', chavesAlias: [], autorExibicao: '' };
   }
 
-  // Verifica se é entidade corporativa/institucional
+  // ABNT NBR 10520: Citação por entrada de título (ex.: "Curitiba lança...", "O impacto das...")
+  const ehCitacaoTitulo =
+    /(?:\.\.\.|…)\s*$/.test(String(trechoAutorBruto || '')) ||
+    /^(?:[A-ZÀ-Ú][A-Za-zÀ-ÿ'-]+)\s+(?!(?:de|da|do|dos|das|del|van|von|et|al|and|of|for|in|on|to|e)\b)[a-zà-ÿ]{3,}/.test(limpo);
+
+  // Verifica se é entidade corporativa/institucional (nunca confundir título com reticências com órgão corporativo)
   const ehCorporativo =
+    !ehCitacaoTitulo &&
     /\b(instituto|international|college|organization|organizacao|ministerio|secretaria|departamento|associacao|association|society|sociedade|brasil|curitiba|world|mundial|hl7|ihe|iso|inca|oms|who|conass|conasems|anvisa|ibge|fiocruz|opas|paho|cdc|centers\s+for\s+disease|conitec|ipea|unicef|unesco|united\s+nations|european\s+medicines|food\s+and\s+drug|fundacao|funda[cç][aã]o|agencia|ag[eê]ncia|tribunal|conselho\s+nacional)\b/i.test(
       limpo
     );
 
   let primeiroBloco = '';
   let coautores = [];
-  if (ehCorporativo) {
-    primeiroBloco = limpo.replace(/[,.:]+$/, '').trim();
+  if (ehCorporativo || ehCitacaoTitulo) {
+    primeiroBloco = limpo.replace(/[,.:…]+$/, '').trim();
     coautores = [primeiroBloco];
   } else {
     // Separa coautores por ";", " e ", " & ", " and " ou vírgula entre autores
@@ -435,28 +441,44 @@ function extrairChavesAutorDeCitacao(trechoAutorBruto) {
   const ultimaPalavra = normalizarChave(semParticulas[semParticulas.length - 1] || palavras[palavras.length - 1] || '');
   const primeiraPalavra = normalizarChave(semParticulas[0] || palavras[0] || '');
 
-  const chavePrincipal = ehCorporativo
-    ? chaveBlocoInteiro || primeiraPalavra
-    : (palavras.length > 1 ? chaveSemParticulas : ultimaPalavra) || chaveSemParticulas || chaveBlocoInteiro;
+  const chavePrincipal = ehCitacaoTitulo
+    ? chaveBlocoInteiro || chaveSemParticulas || primeiraPalavra
+    : ehCorporativo
+      ? chaveBlocoInteiro || primeiraPalavra
+      : (palavras.length > 1 ? chaveSemParticulas : ultimaPalavra) || chaveSemParticulas || chaveBlocoInteiro;
 
-  const aliasesSet = new Set([
-    chavePrincipal,
-    chaveBlocoInteiro,
-    chaveSemParticulas,
-    ultimaPalavra,
-    primeiraPalavra,
-  ]);
+  const aliasesSet = ehCitacaoTitulo
+    ? new Set([chavePrincipal, chaveBlocoInteiro, chaveSemParticulas].filter((k) => k && k.length >= 4))
+    : new Set([
+        chavePrincipal,
+        chaveBlocoInteiro,
+        chaveSemParticulas,
+        ultimaPalavra,
+        primeiraPalavra,
+      ]);
 
-  for (const ca of coautores) {
-    const k = normalizarChave(ca);
-    if (k.length >= 3 && !SIGLAS_CONTEXTO_NAO_AUTOR.has(k)) aliasesSet.add(k);
-    const caPals = ca.split(/\s+/).filter((p) => !PARTICULAS_NOME.has(normalizarChave(p)));
-    const semP = normalizarChave(caPals.join(''));
-    if (semP.length >= 3 && !SIGLAS_CONTEXTO_NAO_AUTOR.has(semP)) aliasesSet.add(semP);
-    if (caPals.length > 1) {
-      const ult = normalizarChave(caPals[caPals.length - 1]);
-      if (ult.length >= 3 && !SIGLAS_CONTEXTO_NAO_AUTOR.has(ult)) aliasesSet.add(ult);
-    }
+  const coautoresExplicitos = [];
+  if (!ehCorporativo && !ehCitacaoTitulo) {
+    coautores.forEach((ca, idxCa) => {
+      const k = normalizarChave(ca);
+      if (k.length >= 3 && !SIGLAS_CONTEXTO_NAO_AUTOR.has(k)) {
+        aliasesSet.add(k);
+        if (idxCa > 0) coautoresExplicitos.push(k);
+      }
+      const caPals = ca.split(/\s+/).filter((p) => !PARTICULAS_NOME.has(normalizarChave(p)));
+      const semP = normalizarChave(caPals.join(''));
+      if (semP.length >= 3 && !SIGLAS_CONTEXTO_NAO_AUTOR.has(semP)) {
+        aliasesSet.add(semP);
+        if (idxCa > 0) coautoresExplicitos.push(semP);
+      }
+      if (caPals.length > 1) {
+        const ult = normalizarChave(caPals[caPals.length - 1]);
+        if (ult.length >= 3 && !SIGLAS_CONTEXTO_NAO_AUTOR.has(ult)) {
+          aliasesSet.add(ult);
+          if (idxCa > 0) coautoresExplicitos.push(ult);
+        }
+      }
+    });
   }
 
   const aliases = expandirAliasesAutor(Array.from(aliasesSet));
@@ -465,6 +487,9 @@ function extrairChavesAutorDeCitacao(trechoAutorBruto) {
     autorExibicao: primeiroBloco,
     chavePrincipal,
     chavesAlias: aliases,
+    coautoresExplicitos: [...new Set(coautoresExplicitos)],
+    temEtAl: /\bet\s+al\.?/i.test(String(trechoAutorBruto || '')),
+    ehCitacaoTitulo,
   };
 }
 
@@ -497,11 +522,24 @@ function extrairAutorETituloDeReferencia(linha) {
     primeiroSegmento = 'Brasil';
   }
 
+  // ABNT NBR 6023: Detecção precoce de entrada pelo título ("PRIMEIRA palavra em CAIXA ALTA seguida de minúsculas")
+  // Evita que manchetes iniciadas por cidade/instituição (ex.: "CURITIBA lança...", "O IMPACTO das...") sejam confundidas com autor corporativo!
+  const ehInicioCorporateWord = /^(?:INSTITUTO|MINIST[EÉ]RIO|SECRETARIA|FUNDA[CÇ][AÃ]O|AG[EÊ]NCIA|CONSELHO|TRIBUNAL|PREFEITURA|UNIVERSIDADE|ASSOCIA[CÇ][AÃ]O|SOCIEDADE|ORGANIZA[CÇ][AÃ]O|WORLD|AMERICAN|INTERNATIONAL|EUROPEAN)\b/.test(
+    semNum
+  );
+  const ehEntradaPeloTitulo =
+    !ehCorporativo &&
+    !ehInicioCorporateWord &&
+    /^(?:(?:O|A|OS|AS|UM|UMA|THE|AN)\s+)?[A-ZÀ-Ú]{2,}(?:\s+[A-ZÀ-Ú]{2,})?\s+[a-zà-ÿ]{2,}/.test(semNum);
+
   // Regra R2: Chave de autor corporativo é o elemento de entrada inteiro (termina no ponto final ou parêntese jurisdicional)
   // Ex.: "INSTITUTO NACIONAL DE CÂNCER (Brasil).", "HL7 INTERNATIONAL.", "AMERICAN COLLEGE OF RADIOLOGY.", "Goiás.", "Instituto Federal de Goiás."
-  const mCorporativo = !ehCorporativo && semNum.match(
-    /^([A-Za-zÀ-ÿ0-9\s'-]+?(?:INSTITUTO|INTERNATIONAL|COLLEGE|ORGANIZATION|ORGANIZACAO|ORGANIZA[CÇ][AÃ]O|MINISTERIO|MINIST[EÉ]RIO|SECRETARIA|ASSOCIACAO|ASSOCIATION|SOCIETY|SOCIEDADE|BRASIL|GOI[AÁ]S|CURITIBA|WORLD|OMS|WHO|OPAS|PAHO|CDC|CENTERS\s+FOR\s+DISEASE|UNITED\s+NATIONS|UNICEF|UNESCO|EUROPEAN\s+MEDICINES|FOOD\s+AND\s+DRUG|FUNDA[CÇ][AÃ]O|FIOCRUZ|CONITEC|IPEA|CONASS|CONASEMS|TRIBUNAL|CONSELHO\s+NACIONAL|HL7|IHE|ISO|INCA|ANVISA|IBGE)[A-Za-zÀ-ÿ0-9\s'-]*?)(?:\s*\([^)]+\))?\.\s+/i
-  );
+  const mCorporativo =
+    !ehCorporativo &&
+    !ehEntradaPeloTitulo &&
+    semNum.match(
+      /^([A-Za-zÀ-ÿ0-9\s'-]+?(?:INSTITUTO|INTERNATIONAL|COLLEGE|ORGANIZATION|ORGANIZACAO|ORGANIZA[CÇ][AÃ]O|MINISTERIO|MINIST[EÉ]RIO|SECRETARIA|ASSOCIACAO|ASSOCIATION|SOCIETY|SOCIEDADE|BRASIL|GOI[AÁ]S|CURITIBA|WORLD|OMS|WHO|OPAS|PAHO|CDC|CENTERS\s+FOR\s+DISEASE|UNITED\s+NATIONS|UNICEF|UNESCO|EUROPEAN\s+MEDICINES|FOOD\s+AND\s+DRUG|FUNDA[CÇ][AÃ]O|FIOCRUZ|CONITEC|IPEA|CONASS|CONASEMS|TRIBUNAL|CONSELHO\s+NACIONAL|HL7|IHE|ISO|INCA|ANVISA|IBGE)[A-Za-zÀ-ÿ0-9\s'-]*?)(?:\s*\([^)]+\))?\.\s+/i
+    );
 
   if (mCorporativo) {
     ehCorporativo = true;
@@ -515,9 +553,12 @@ function extrairAutorETituloDeReferencia(linha) {
       /^((?:DE\s+LA|VAN\s+DER|VAN\s+DEN|DEL\s+LA|DE|DA|DO|DOS|DAS|DEL|DELLA|DI|DU|VAN|VON|LE|LA|MC|MAC))\s+([A-ZÀ-Ú]{2,}[A-Za-zÀ-ÿ'’-]*)$/
     );
 
-    // Detecta formato Vancouver pessoal em caixa mista (ex.: "Domingues CMAS", "Van der Berg J", "De la Cruz M", "Mc Donald R", "O'Connor PJ", "Al-Mansoor K")
+    // Detecta formato Vancouver pessoal em caixa mista (ex.: "Domingues CMAS", "Van der Berg J", "De la Cruz M")
+    // Guarda: exigir pelo menos uma minúscula antes das iniciais para não mutilar sobrenomes compostos em CAIXA ALTA (ex.: "COELHO NETO, G. C.")
     const mVancouverPessoal =
       !mPrepCaixaAlta &&
+      !ehEntradaPeloTitulo &&
+      /[a-zà-ÿ]/.test(antesVirgula) &&
       antesVirgula.match(
         /^((?:(?:de\s+la|van\s+der|van\s+den|de|da|do|dos|das|van|von|del|della|di|du|le|la|mc|mac)\s+)?[A-ZÀ-Ú][A-Za-zà-ú'’-]+(?:-[A-ZÀ-Ú][A-Za-zà-ú'’-]+)?(?:\s+[A-ZÀ-Ú][a-zà-ú'’-]+)?)\s+(?:(?:Jr\.?|Junior|J[uú]nior|Filho|Neto|Sobrinho|II|III)\s+)?[A-Z]{1,5}(?:\s+(?:de|da|do|dos|das|Jr\.?|Filho|Neto)\s*[A-Z]{0,4})?$/
       );
@@ -530,7 +571,8 @@ function extrairAutorETituloDeReferencia(linha) {
     } else {
       const mPrep =
         mPrepCaixaAlta ||
-        antesVirgula.match(/^((?:de\s+la|van\s+der|van\s+den|de|da|do|dos|das|del|della|di|du|van|von|le|la))\s+([A-ZÀ-Úa-zà-ú'’-]+)$/i);
+        (!ehEntradaPeloTitulo &&
+          antesVirgula.match(/^((?:de\s+la|van\s+der|van\s+den|de|da|do|dos|das|del|della|di|du|van|von|le|la))\s+([A-ZÀ-Úa-zà-ú'’-]+)$/i));
       if (mPrep && !numeroRef) {
         defeitoPreposicaoEntrada = {
           preposicao: mPrep[1].toUpperCase(),
@@ -555,50 +597,72 @@ function extrairAutorETituloDeReferencia(linha) {
   const ultimaPalavra = normalizarChave(semParticulas[semParticulas.length - 1] || palavrasSeg[palavrasSeg.length - 1] || '');
   const primeiraPalavra = normalizarChave(semParticulas[0] || palavrasSeg[0] || '');
 
-  if (!ehCorporativo) {
+  if (!ehCorporativo && !ehEntradaPeloTitulo) {
     ehCorporativo =
       /\b(instituto|international|college|organization|organizacao|ministerio|secretaria|associacao|association|society|sociedade|brasil|goias|curitiba|world|mundial|hl7|ihe|iso|inca|oms|who)\b/i.test(
         primeiroSegmento
       ) || palavrasSeg.length >= 3;
   }
 
-  // Regra R2: Para autor corporativo, a chave principal é o elemento de entrada inteiro (ex.: institutonacionaldecancer)
-  const chavePrincipal = ehCorporativo
+  // ABNT NBR 10520: Para entrada pelo título (PRIMEIRA palavra resto...), usa as 2 primeiras palavras significativas para evitar colisão com órgão homônimo
+  let chavePrincipal = ehCorporativo
     ? chaveInteira || primeiraPalavra
     : chaveSemPart || ultimaPalavra || chaveInteira;
 
-  const aliasesBase = [chavePrincipal, chaveInteira, chaveSemPart, ultimaPalavra, primeiraPalavra];
-  // ABNT NBR 10520: referências com entrada pelo título (PRIMEIRA palavra resto...) são citadas como (Primeira segunda..., ano)
-  if (!ehCorporativo && /^[A-ZÀ-Ú]{2,}\s+[a-zà-ÿ]{2,}/.test(primeiroSegmento)) {
+  let aliasesBase;
+  if (ehEntradaPeloTitulo) {
     const palavrasTit = primeiroSegmento.split(/\s+/).filter(Boolean);
+    const k2 = palavrasTit.length >= 2 ? normalizarChave(`${palavrasTit[0]} ${palavrasTit[1]}`) : chaveInteira;
+    const k3 = palavrasTit.length >= 3 ? normalizarChave(`${palavrasTit[0]} ${palavrasTit[1]} ${palavrasTit[2]}`) : '';
+    chavePrincipal = k2.length >= 4 ? k2 : chaveInteira;
+    aliasesBase = [chavePrincipal, k2, k3, chaveInteira].filter((k) => k && k.length >= 4);
     if (palavrasTit.length >= 2) {
-      const k2 = normalizarChave(`${palavrasTit[0]} ${palavrasTit[1]}`);
-      if (k2.length >= 4) aliasesBase.push(k2);
+      primeiroSegmento = `${palavrasTit[0]} ${palavrasTit[1]}...`;
     }
-    if (palavrasTit.length >= 3) {
-      const k3 = normalizarChave(`${palavrasTit[0]} ${palavrasTit[1]} ${palavrasTit[2]}`);
-      if (k3.length >= 6) aliasesBase.push(k3);
+  } else {
+    aliasesBase = [chavePrincipal, chaveInteira, chaveSemPart, ultimaPalavra, primeiraPalavra];
+    if (!ehCorporativo && /^[A-ZÀ-Ú]{2,}\s+[a-zà-ÿ]{2,}/.test(primeiroSegmento)) {
+      const palavrasTit = primeiroSegmento.split(/\s+/).filter(Boolean);
+      if (palavrasTit.length >= 2) {
+        const k2 = normalizarChave(`${palavrasTit[0]} ${palavrasTit[1]}`);
+        if (k2.length >= 4) aliasesBase.push(k2);
+      }
+      if (palavrasTit.length >= 3) {
+        const k3 = normalizarChave(`${palavrasTit[0]} ${palavrasTit[1]} ${palavrasTit[2]}`);
+        if (k3.length >= 6) aliasesBase.push(k3);
+      }
     }
   }
   // Se a linha menciona explicitamente siglas conhecidas, adiciona aos aliases
   if (/\bISO\s+\d+/i.test(semNum)) aliasesBase.push('iso');
   if (/\bINCA\b/i.test(semNum)) aliasesBase.push('inca');
   if (/\bBI-RADS\b/i.test(semNum)) aliasesBase.push('acr');
-  if (/^Brasil\s+M\s+da\s+S\./i.test(semNum) || /\bMinist[eé]rio\s+da\s+Sa[uú]de\b/i.test(semNum)) {
+  if (!ehEntradaPeloTitulo && (/^Brasil\s+M\s+da\s+S\./i.test(semNum) || /\bMinist[eé]rio\s+da\s+Sa[uú]de\b/i.test(semNum))) {
     aliasesBase.push('brasil', 'ms', 'ministeriodasaude');
   }
 
   // Extrai coautores adicionais da entrada bibliográfica e adiciona seus sobrenomes aos aliases
-  const blocoAutoresBruto = semNum.split(/\.\s+[A-ZÀ-Ú“"']/)[0] || '';
-  const coautoresLinha = blocoAutoresBruto.split(/\s*;\s*|\s+(?:e|&|and)\s+/i);
-  for (const ca of coautoresLinha) {
-    const caPartes = ca.split(/[,;(]/)[0].trim().split(/\s+/).filter(Boolean);
-    const caSemPart = caPartes.filter((p) => !PARTICULAS_NOME.has(normalizarChave(p)));
-    if (caSemPart.length > 0) {
-      const k = normalizarChave(caSemPart[caSemPart.length - 1]);
-      if (k.length >= 3 && !SIGLAS_CONTEXTO_NAO_AUTOR.has(k)) aliasesBase.push(k);
-      const kInt = normalizarChave(caSemPart.join(''));
-      if (kInt.length >= 3 && !SIGLAS_CONTEXTO_NAO_AUTOR.has(kInt)) aliasesBase.push(kInt);
+  let numAutoresReferencia = 1;
+  if (!ehEntradaPeloTitulo) {
+    const blocoAutoresBruto =
+      semNum.split(/\.\s+(?=(?:“|"|[A-ZÀ-Ú][a-zà-ÿ]{1,}|[A-ZÀ-Ú]{2,}\s+[a-zà-ÿ]|[A-ZÀ-Ú]{2,}[:,]))|\bet\s+al\.\s+/i)[0] || '';
+    const coautoresLinha = blocoAutoresBruto
+      .split(/\s*;\s*|(?<=\s[A-Z]{1,4})\s*,\s*|\s+(?:e|&|and)\s+/i)
+      .filter(Boolean);
+    numAutoresReferencia = Math.max(1, coautoresLinha.length);
+    for (const ca of coautoresLinha) {
+      let caBase = ca.split(/[,;(]/)[0].trim();
+      if (/[a-zà-ÿ]/.test(caBase)) {
+        caBase = caBase.replace(/\s+[A-Z]{1,4}$/, '').trim();
+      }
+      const caPartes = caBase.split(/\s+/).filter(Boolean);
+      const caSemPart = caPartes.filter((p) => !PARTICULAS_NOME.has(normalizarChave(p)));
+      if (caSemPart.length > 0) {
+        const k = normalizarChave(caSemPart[caSemPart.length - 1]);
+        if (k.length >= 3 && !SIGLAS_CONTEXTO_NAO_AUTOR.has(k)) aliasesBase.push(k);
+        const kInt = normalizarChave(caSemPart.join(''));
+        if (kInt.length >= 3 && !SIGLAS_CONTEXTO_NAO_AUTOR.has(kInt)) aliasesBase.push(kInt);
+      }
     }
   }
 
@@ -624,7 +688,7 @@ function extrairAutorETituloDeReferencia(linha) {
     restoAposAutores = mFimAutoresPessoais[1].trim();
   } else if (mFimAutoresVancouver && mFimAutoresVancouver[1]) {
     restoAposAutores = mFimAutoresVancouver[1].trim();
-  } else {
+  } else if (!ehEntradaPeloTitulo) {
     const mFimInstitucional = semNum.match(/^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9\s(),.'’-]{2,95}?\.\s+([A-ZÀ-Ú0-9“"'].+)$/);
     if (mFimInstitucional && mFimInstitucional[1]) {
       restoAposAutores = mFimInstitucional[1].trim();
@@ -657,6 +721,7 @@ function extrairAutorETituloDeReferencia(linha) {
     primeiroSobrenome: primeiroSegmento,
     chaveAutor: chavePrincipal,
     chavesAutorAlias: chavesAlias,
+    numAutoresLinha: numAutoresReferencia,
     tituloExtraido: tituloFinal,
     defeitoPreposicaoEntrada,
     codigoControlado,
@@ -1269,6 +1334,53 @@ function classificarIntencaoCitacao(frase, autor) {
   return { categoria: 'mencao_geral', rotulo: '📌 Menção Contextual / Informativa' };
 }
 
+function resolverRefPareadaPorCoautores(infoAutor, anoCompleto, anoBase, refsFinais = []) {
+  if (!Array.isArray(refsFinais) || refsFinais.length === 0 || !infoAutor?.chavePrincipal) return null;
+
+  const temSufixoCit = /[a-f]$/i.test(anoCompleto);
+  const filtrarPorAno = (r, estrito) => {
+    if (estrito) return r.ano === anoCompleto;
+    if (temSufixoCit) return false;
+    return r.anoBase === anoBase && !/[a-f]$/i.test(r.ano);
+  };
+
+  const buscarCandidatos = (estrito) => {
+    const cands = [];
+    for (const r of refsFinais) {
+      if (!filtrarPorAno(r, estrito)) continue;
+      const aliasesRef = new Set(r.chavesAutorAlias || [r.chaveAutor]);
+      const aliasesCit = infoAutor.chavesAlias || [infoAutor.chavePrincipal];
+      const principalBate = aliasesRef.has(infoAutor.chavePrincipal) || aliasesCit.includes(r.chaveAutor);
+      const algumAliasBate = aliasesCit.some((al) => al && aliasesRef.has(al));
+      if (!principalBate && !algumAliasBate) continue;
+
+      let score = principalBate ? 20 : 8;
+      for (const al of aliasesCit) {
+        if (al && aliasesRef.has(al)) score += 6;
+      }
+      const coautoresExp = infoAutor.coautoresExplicitos || [];
+      for (const co of coautoresExp) {
+        if (aliasesRef.has(co)) score += 18;
+        else score -= 18;
+      }
+      if (!infoAutor.temEtAl && r.numAutoresLinha) {
+        const qtdCitada = 1 + coautoresExp.length;
+        if (r.numAutoresLinha === qtdCitada) score += 12;
+        else if (r.numAutoresLinha > qtdCitada) score -= (r.numAutoresLinha - qtdCitada) * 4;
+      }
+      if (infoAutor.temEtAl && r.numAutoresLinha >= 3) score += 6;
+      cands.push({ ref: r, score });
+    }
+    return cands;
+  };
+
+  let candidatos = buscarCandidatos(true);
+  if (candidatos.length === 0) candidatos = buscarCandidatos(false);
+  if (candidatos.length === 0) return null;
+  candidatos.sort((a, b) => b.score - a.score);
+  return candidatos[0].ref;
+}
+
 // ---------- 4. Extração de Citações no Corpo do Texto (ABNT + Vancouver Numérico) e Alertas de Forma ----------
 function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
   const citacoes = [];
@@ -1407,6 +1519,9 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
             const anoCompleto = mItem[2].replace(/[\[\]]/g, '').toLowerCase();
             const anoBase = anoCompleto.slice(0, 4);
             const paginaDeclarada = mItem[3] || null;
+            const refCorrespondente = resolverRefPareadaPorCoautores(infoAutor, anoCompleto, anoBase, refsFinais);
+            const chaveUnificada = refCorrespondente ? refCorrespondente.chave : `${infoAutor.chavePrincipal}:${anoCompleto}`;
+            const numeroRefAssociado = refCorrespondente?.numeroRef || null;
             registrarCitacaoUnicaNaFrase({
               bruto: `(${subParte.trim()})`,
               autor: infoAutor.autorExibicao,
@@ -1414,7 +1529,8 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
               chavesAutorAlias: infoAutor.chavesAlias,
               ano: anoCompleto,
               anoBase,
-              chave: `${infoAutor.chavePrincipal}:${anoCompleto}`,
+              chave: chaveUnificada,
+              numeroRef: numeroRefAssociado,
               paginaDeclarada,
               trechoDireto,
               fraseContexto: frase.trim(),
@@ -1442,23 +1558,33 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         if (/\b(?:elaborad[oa]|produzid[oa]|organizad[oa]|autoria|adaptad[oa]|modificad[oa])\s+(?:pel[oa]|pelos|pelas)?\s*(?:autor[ae]s?|pesquisador(?:a|es)?|pr[oó]pri[oa])\b/i.test(autLimpo)) {
           continue;
         }
+        const anoCompleto = m[2].replace(/[\[\]]/g, '').toLowerCase();
+        const anoBase = anoCompleto.slice(0, 4);
+        const paginaDeclarada = m[3] || null;
         let infoAutor = extrairChavesAutorDeCitacao(autLimpo);
-        if (autLimpo.includes(',') && refsFinais.length > 0) {
-          const partePosVirgula = autLimpo.split(',').pop().trim();
-          const infoPos = extrairChavesAutorDeCitacao(partePosVirgula);
-          const inteiroBate = refsFinais.some((r) => r.chavesAutorAlias?.some((al) => infoAutor.chavesAlias.includes(al)));
-          const posBate = infoPos.chavePrincipal && refsFinais.some((r) => r.chavesAutorAlias?.some((al) => infoPos.chavesAlias.includes(al)));
-          if (!inteiroBate && posBate) {
-            autLimpo = partePosVirgula;
-            infoAutor = infoPos;
+        while (autLimpo.includes(',') && refsFinais.length > 0) {
+          const idxVirg = autLimpo.indexOf(',');
+          const segAntes = autLimpo.slice(0, idxVirg).trim();
+          const restApos = autLimpo.slice(idxVirg + 1).trim();
+          if (!restApos) break;
+          const infoAntes = extrairChavesAutorDeCitacao(segAntes);
+          const infoRest = extrairChavesAutorDeCitacao(restApos);
+          const antesBate =
+            infoAntes.chavePrincipal &&
+            refsFinais.some((r) => (!anoBase || r.anoBase === anoBase) && r.chavesAutorAlias?.includes(infoAntes.chavePrincipal));
+          const restBate =
+            infoRest.chavePrincipal &&
+            refsFinais.some((r) => (!anoBase || r.anoBase === anoBase) && infoRest.chavesAlias.some((al) => r.chavesAutorAlias?.includes(al)));
+          if (!antesBate && restBate) {
+            autLimpo = restApos;
+            infoAutor = infoRest;
+          } else {
+            break;
           }
         }
         if (!infoAutor.chavePrincipal || infoAutor.chavePrincipal.length < 2 || ignorarSobrenomes.has(infoAutor.chavePrincipal)) {
           continue;
         }
-        const anoCompleto = m[2].replace(/[\[\]]/g, '').toLowerCase();
-        const anoBase = anoCompleto.slice(0, 4);
-        const paginaDeclarada = m[3] || null;
 
         // Ignora créditos de banco de dados de gráficos/tabelas ("Fonte: Ministério da Saúde... SINAN... Elaboração própria") quando não houver referência homônima
         if (
@@ -1468,28 +1594,10 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
           continue;
         }
 
-        // Se o manuscrito usa referências numeradas e a citação narrativa corresponde a uma delas (ex: Victora et al. (1997) = Ref #9), unifica a chave!
-        let chaveUnificada = `${infoAutor.chavePrincipal}:${anoCompleto}`;
-        let numeroRefAssociado = null;
-        if (refsFinais.length > 0) {
-          let refCorrespondente = refsFinais.find(
-            (r) =>
-              r.ano === anoCompleto &&
-              r.chavesAutorAlias?.some((al) => infoAutor.chavesAlias.includes(al))
-          );
-          if (!refCorrespondente && !/[a-f]$/i.test(anoCompleto)) {
-            refCorrespondente = refsFinais.find(
-              (r) =>
-                r.anoBase === anoBase &&
-                !/[a-f]$/i.test(r.ano) &&
-                r.chavesAutorAlias?.some((al) => infoAutor.chavesAlias.includes(al))
-            );
-          }
-          if (refCorrespondente) {
-            chaveUnificada = refCorrespondente.chave;
-            numeroRefAssociado = refCorrespondente.numeroRef || null;
-          }
-        }
+        // Se a citação narrativa corresponde a uma referência na lista final, unifica a chave considerando coautores
+        const refCorrespondente = resolverRefPareadaPorCoautores(infoAutor, anoCompleto, anoBase, refsFinais);
+        const chaveUnificada = refCorrespondente ? refCorrespondente.chave : `${infoAutor.chavePrincipal}:${anoCompleto}`;
+        const numeroRefAssociado = refCorrespondente?.numeroRef || null;
 
         registrarCitacaoUnicaNaFrase({
           bruto: m[0],
@@ -1533,27 +1641,9 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         const anoBase = anoCompleto.slice(0, 4);
         const paginaDeclarada = m[3] || null;
 
-        let chaveUnificada = `${infoAutor.chavePrincipal}:${anoCompleto}`;
-        let numeroRefAssociado = null;
-        if (refsFinais.length > 0) {
-          let refCorrespondente = refsFinais.find(
-            (r) =>
-              r.ano === anoCompleto &&
-              r.chavesAutorAlias?.some((al) => infoAutor.chavesAlias.includes(al))
-          );
-          if (!refCorrespondente && !/[a-f]$/i.test(anoCompleto)) {
-            refCorrespondente = refsFinais.find(
-              (r) =>
-                r.anoBase === anoBase &&
-                !/[a-f]$/i.test(r.ano) &&
-                r.chavesAutorAlias?.some((al) => infoAutor.chavesAlias.includes(al))
-            );
-          }
-          if (refCorrespondente) {
-            chaveUnificada = refCorrespondente.chave;
-            numeroRefAssociado = refCorrespondente.numeroRef || null;
-          }
-        }
+        const refCorrespondente = resolverRefPareadaPorCoautores(infoAutor, anoCompleto, anoBase, refsFinais);
+        const chaveUnificada = refCorrespondente ? refCorrespondente.chave : `${infoAutor.chavePrincipal}:${anoCompleto}`;
+        const numeroRefAssociado = refCorrespondente?.numeroRef || null;
 
         registrarCitacaoUnicaNaFrase({
           bruto: m[0],
@@ -1654,6 +1744,7 @@ function analisarLinhasReferencias(linhas, mapaCslEmbutido = ultimoMapaCslEmbuti
       primeiroSobrenome,
       chaveAutor,
       chavesAutorAlias,
+      numAutoresLinha,
       tituloExtraido,
       defeitoPreposicaoEntrada,
       codigoControlado,
@@ -1695,6 +1786,7 @@ function analisarLinhasReferencias(linhas, mapaCslEmbutido = ultimoMapaCslEmbuti
       primeiroSobrenome,
       chaveAutor,
       chavesAutorAlias: aliasesComNum,
+      numAutoresLinha: numAutoresLinha || 1,
       tituloBuscado: metaCsl?.title || tituloExtraido,
       natureza,
       subtipoLener: infoClas.subtipoLener,
@@ -1705,6 +1797,21 @@ function analisarLinhasReferencias(linhas, mapaCslEmbutido = ultimoMapaCslEmbuti
       chave,
     });
   }
+
+  // Disambigua entradas com mesma chave (ex.: mesmo primeiro autor e ano com coautores distintos sem sufixo a/b)
+  const contagemPorChave = new Map();
+  for (const e of entradas) {
+    contagemPorChave.set(e.chave, (contagemPorChave.get(e.chave) || 0) + 1);
+  }
+  const seqPorChave = new Map();
+  for (const e of entradas) {
+    if ((contagemPorChave.get(e.chave) || 0) > 1) {
+      const seq = (seqPorChave.get(e.chave) || 0) + 1;
+      seqPorChave.set(e.chave, seq);
+      e.chave = `${e.chave}#${seq}`;
+    }
+  }
+
   return entradas;
 }
 
@@ -1790,6 +1897,12 @@ const EQUIVALENCIAS_PT_EN = [
   ['priorizacao', 'priorizar', 'prioridades', 'matriz', 'criterios', 'pontuacao', 'escore', 'prioritization', 'priority', 'priorities', 'matrix', 'criteria', 'scoring', 'ranking', 'decision', 'problem'],
   ['magnitude', 'transcendencia', 'vulnerabilidade', 'viabilidade', 'exequibilidade', 'aceitabilidade', 'sustentabilidade', 'custo', 'feasibility', 'acceptability', 'sustainability', 'vulnerability', 'severity', 'impact', 'cost', 'resources'],
   ['avaliacao', 'avaliar', 'implementacao', 'fidelidade', 'teoria de mudanca', 'avaliacao de processo', 'intervencao', 'entrega do programa', 'evaluation', 'evaluate', 'implementation', 'fidelity', 'theory of change', 'process evaluation', 'health intervention', 'program intervention', 'intervention delivery', 'program delivery', 'service delivery', 'delivered'],
+
+  // Informática em Saúde, Interoperabilidade, Qualidade de Dados & Evidências Quantitativas
+  ['controle', 'grupo controle', 'comparacao', 'referencia', 'control', 'control group', 'baseline', 'comparison'],
+  ['aumentar', 'aumento', 'aumentaram', 'subir', 'subiram', 'elevacao', 'cair', 'queda', 'reduzir', 'reducao', 'increase', 'increased', 'increases', 'rise', 'rose', 'decrease', 'decreased', 'reduction'],
+  ['acuracia', 'completude', 'precisao', 'rigidez', 'tempo', 'sobrecarga', 'accuracy', 'completeness', 'precision', 'rigid', 'rigidity', 'time', 'workflow', 'burden'],
+  ['integrado', 'integracao', 'integrados', 'interoperabilidade', 'desatualizado', 'desatualizados', 'subnotificacao', 'sub-registrado', 'tempo real', 'heterogeneo', 'fragmentacao', 'fragmentados', 'integrated', 'integration', 'interoperability', 'outdated', 'underreported', 'underreporting', 'real-time', 'realtime', 'heterogeneous', 'fragmented', 'fragmentation'],
 ];
 
 function contemTermoComFronteira(textoNorm, termo) {
@@ -3385,11 +3498,11 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       .trim();
     if (f.length < 35) return [f];
 
-    // Divide por conjunções adversativas/aditivas, ponto e vírgula e orações subordinadas
+    // Divide apenas por delimitadores estruturais e conjunções adversativas/independentes (evita fragmentar enumerações por "e" ou premissas ligadas por ", onde")
     const rawParts = f
-      .split(/(?:;\s*|,\s*(?:onde|enquanto|mas|por[eé]m|contudo|todavia|embora|al[eé]m\s+de|com\s+a\s+finalidade\s+de|promovendo|resultando\s+em)\s+|\s+e\s+(?=[a-zà-ÿ]{4,}\s+[a-zà-ÿ]{4,}))/i)
+      .split(/(?:;\s*|,\s*(?:enquanto|mas|por[eé]m|contudo|todavia|embora|com\s+a\s+finalidade\s+de)\s+)/i)
       .map((p) => p.trim())
-      .filter((p) => p.length >= 22);
+      .filter((p) => p.length >= 28);
 
     return rawParts.length > 0 ? rawParts : [f];
   }
@@ -3485,6 +3598,14 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       const props = decomporEmProposicoesAtomicas(oc.fraseContexto || oc.trechoDireto || '');
       const proposicoesAuditadas = [];
       for (const prop of props) {
+        const tokensConteudoProp = prop
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase()
+          .replace(/[^a-z0-9\s]/g, ' ')
+          .split(/\s+/)
+          .filter((w) => w.length >= 4 && !STOPWORDS_CIENTIFICAS_GERAIS.has(w) && !/^\d+$/.test(w));
+        if (tokensConteudoProp.length < 4) continue;
         const scoreProp = calcularSimilaridadeCossenoRadicais(prop, textoAlvoArtigo);
         const verProp = verificarCompatibilidadeBilingue(prop, textoAlvoArtigo);
         const sustentada = verProp.compativel || scoreProp >= 0.12;

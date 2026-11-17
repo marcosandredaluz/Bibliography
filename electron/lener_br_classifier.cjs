@@ -32,13 +32,13 @@ const TIPOS_CSL_NORMATIVOS_OU_INSTITUCIONAIS = new Set([
 const REGEX_LENER_LEGISLACAO =
   /\b(lei\s+(?:federal|estadual|municipal|complementar|org[aâ]nica|n[º°o.]?\s*\d)|decreto(?:-lei)?\s+n?[º°o.]?|portaria(?:\s+de\s+consolida[cç][aã]o|\s+conjunta|\s+gm\/ms|\s+svsa|\s+saps|\s+saes|\s+n[º°o.]?)?|resolu[cç][aã]o\s+(?:rdc|cns|cit|cib|cfm|cofen|conanda|n[º°o.]?)|instru[cç][aã]o\s+normativa|medida\s+provis[oó]ria|emenda\s+constitucional|constitui[cç][aã]o\s+da\s+rep[uú]blica|constitui[cç][aã]o\s+federal|di[aá]rio\s+oficial\s+da\s+uni[aã]o|di[aá]rio\s+oficial\s+do\s+estado|estatuto\s+da\s+crian[cç]a\s+e\s+do\s+adolescente)\b/i;
 
-// Padrões de Atos Normativos Secundários e Documentos Técnicos Oficiais de Saúde Pública (BVS / Ministério da Saúde / OMS)
+// Padrões de Atos Normativos Secundários, Apostilas Institucionais e Documentos Técnicos Oficiais de Saúde Pública (BVS / Ministério da Saúde / OMS)
 const REGEX_DOCUMENTOS_TECNICOS_SAUDE =
-  /\b(nota\s+t[eé]cnica|nota\s+informativa(?:\s+conjunta)?|parecer\s+t[eé]cnico(?:-cient[ií]fico)?|boletim\s+epidemiol[oó]gico|boletim\s+informativo|plano\s+de\s+conting[eê]ncia|plano\s+nacional|plano\s+estadual|plano\s+municipal|relat[oó]rio\s+(?:anual\s+)?de\s+gest[aã]o|manual\s+t[eé]cnico|manual\s+de\s+normas|guia\s+de\s+vigil[aâ]ncia|cadernos?\s+de\s+aten[cç][aã]o\s+b[aá]sica|protocolo\s+cl[ií]nico\s+e\s+diretrizes\s+terap[eê]uticas|protocolo\s+de\s+sa[uú]de|protocolo\s+de\s+preven[cç][aã]o|linha\s+de\s+cuidado|implementation\s+guide|technical\s+framework|iso\s+\d+|bi-rads\s+atlas|brencaminhamento|registro\s+de\s+atendimento\s+cl[ií]nico|simplifier\.net|rede\s+nacional\s+de\s+dados\s+em\s+sa[uú]de|estimativa\s+20\d\d:\s+incid[eê]ncia|diagn[oó]stico\s+de\s+maturidade|global\s+strategy\s+to\s+eliminate|position\s+paper|censo\s+demogr[aá]fico|pesquisa\s+nacional\s+por\s+amostra\s+de\s+domic[ií]lios|pesquisa\s+nacional\s+de\s+sa[uú]de)\b/i;
+  /\b(nota\s+t[eé]cnica|nota\s+informativa(?:\s+conjunta)?|parecer\s+t[eé]cnico(?:-cient[ií]fico)?|boletim\s+epidemiol[oó]gico|boletim\s+informativo|plano\s+de\s+conting[eê]ncia|plano\s+nacional|plano\s+estadual|plano\s+municipal|relat[oó]rio\s+(?:anual\s+)?de\s+gest[aã]o|manual\s+t[eé]cnico|manual\s+de\s+normas|guia\s+de\s+vigil[aâ]ncia|cadernos?\s+de\s+aten[cç][aã]o\s+b[aá]sica|protocolo\s+cl[ií]nico\s+e\s+diretrizes\s+terap[eê]uticas|protocolo\s+de\s+sa[uú]de|protocolo\s+de\s+preven[cç][aã]o|linha\s+de\s+cuidado|implementation\s+guide|technical\s+framework|iso\s+\d+|bi-rads\s+atlas|brencaminhamento|registro\s+de\s+atendimento\s+cl[ií]nico|simplifier\.net|rede\s+nacional\s+de\s+dados\s+em\s+sa[uú]de|estimativa\s+20\d\d:\s+incid[eê]ncia|diagn[oó]stico\s+de\s+maturidade|global\s+strategy\s+to\s+eliminate|position\s+paper|censo\s+demogr[aá]fico|pesquisa\s+nacional\s+por\s+amostra\s+de\s+domic[ií]lios|pesquisa\s+nacional\s+de\s+sa[uú]de|material\s+(?:digital|did[aá]tico)\s+elaborado|curso\s+de\s+especializa[cç][aã]o|apostila\s+d[eo]\s+curso|caderno\s+tem[aá]tico)\b/i;
 
 // Padrões da categoria ORGANIZACAO (LeNER-Br + Administração Pública Direta/Indireta, todas as 27 UFs com ou sem qualificador "(Estado)" e Organismos Internacionais)
 const REGEX_LENER_ORGANIZACAO =
-  /^(?:\[\d+\]\s*|\d+\.\s*)?(?:Brasil\s+M\s+da\s+S\.|Brasil\.?\s*Minist[eé]rio\s+da\s+Sa[uú]de|Brasil\.\s+Presid[eê]ncia|Brasil\.\s+Congresso|Brasil\.\s+Senado|Brasil\.\s+Conselho|(?:Brasil|Minist[eé]rio\s+da\s+Sa[uú]de|Acre|Alagoas|Amap[aá]|Amazonas|Bahia|Cear[aá]|Distrito\s+Federal|Esp[ií]rito\s+Santo|Goi[aá]s|Maranh[aã]o|Mato\s+Grosso(?:\s+do\s+Sul)?|Minas\s+Gerais|Par[aá]|Para[ií]ba|Paran[aá]|Pernambuco|Piau[ií]|Rio\s+de\s+Janeiro|Rio\s+Grande\s+do\s+(?:Norte|Sul)|Rond[oô]nia|Roraima|Santa\s+Catarina|S[aã]o\s+Paulo|Sergipe|Tocantins|Curitiba|Goi[aâ]nia|S[aã]o\s+Lu[ií]s|Belo\s+Horizonte|Porto\s+Alegre|Recife|Salvador|Fortaleza|Manaus|Bel[eé]m|Florian[oó]polis|Vit[oó]ria|Natal|Macei[oó]|Jo[aã]o\s+Pessoa|Teresina|Aracaju|Campo\s+Grande|Cuiab[aá]|Palmas|Macap[aá]|Rio\s+Branco|Boa\s+Vista|Porto\s+Velho)(?:\s*\([^)]+\))?\.|Secretaria\s+(?:de\s+Estado|Estadual|Municipal|Especial)\s+d[ae]\s+Sa[uú]de|Prefeitura\s+Municipal|Instituto\s+Federal|Universidade\s+(?:Federal|Estadual)|Instituto\s+Brasileiro\s+de\s+Geografia\s+e\s+Estat[ií]stica|IBGE|Instituto\s+Nacional\s+de\s+C[aâ]ncer|INCA|Funda[cç][aã]o\s+Oswaldo\s+Cruz|FIOCRUZ|Ag[eê]ncia\s+Nacional\s+de\s+Vigil[aâ]ncia\s+Sanit[aá]ria|ANVISA|Comiss[aã]o\s+Nacional\s+de\s+Incorpora[cç][aã]o\s+de\s+Tecnologias|CONITEC|Instituto\s+de\s+Pesquisa\s+Econ[oô]mica\s+Aplicada|IPEA|Coordena[cç][aã]o\s+de\s+Aperfei[cç]oamento|CAPES|Conselho\s+Nacional\s+de\s+(?:Sa[uú]de|Desenvolvimento|Secret[aá]rios|Secretarias)|CNS|CNPq|CONASS|CONASEMS|Conselho\s+Federal\s+de\s+(?:Medicina|Enfermagem|Farm[aá]cia)|CFM|COFEN|CFF|Organiza[cç][aã]o\s+Mundial\s+da\s+Sa[uú]de|Organiza[cç][aã]o\s+Pan-Americana\s+da\s+Sa[uú]de|World\s+Health\s+Organization|Pan\s+American\s+Health\s+Organization|United\s+Nations|UNICEF|UNESCO|WHO\.|OPAS\.|PAHO\.|CDC\.|Centers\s+for\s+Disease\s+Control|HL7\s+International|IHE\s+International|International\s+Organization\s+for\s+Standardization|American\s+College\s+of\s+Radiology|Associa[cç][aã]o\s+Brasileira\s+de\s+Normas\s+T[eé]cnicas|ABNT\.)/i;
+  /^(?:\[\d+\]\s*|\d+\.\s*)?(?:Brasil\s+M\s+da\s+S\.|Brasil\.?\s*Minist[eé]rio\s+da\s+Sa[uú]de|Brasil\.\s+Presid[eê]ncia|Brasil\.\s+Congresso|Brasil\.\s+Senado|Brasil\.\s+Conselho|(?:Brasil|Minist[eé]rio\s+da\s+Sa[uú]de|Acre|Alagoas|Amap[aá]|Amazonas|Bahia|Cear[aá]|Distrito\s+Federal|Esp[ií]rito\s+Santo|Goi[aá]s|Maranh[aã]o|Mato\s+Grosso(?:\s+do\s+Sul)?|Minas\s+Gerais|Par[aá]|Para[ií]ba|Paran[aá]|Pernambuco|Piau[ií]|Rio\s+de\s+Janeiro|Rio\s+Grande\s+do\s+(?:Norte|Sul)|Rond[oô]nia|Roraima|Santa\s+Catarina|S[aã]o\s+Paulo|Sergipe|Tocantins|Curitiba|Goi[aâ]nia|S[aã]o\s+Lu[ií]s|Belo\s+Horizonte|Porto\s+Alegre|Recife|Salvador|Fortaleza|Manaus|Bel[eé]m|Florian[oó]polis|Vit[oó]ria|Natal|Macei[oó]|Jo[aã]o\s+Pessoa|Teresina|Aracaju|Campo\s+Grande|Cuiab[aá]|Palmas|Macap[aá]|Rio\s+Branco|Boa\s+Vista|Porto\s+Velho)(?:\s*\([^)]+\))?\.|Secretaria\s+(?:de\s+Estado|Estadual|Municipal|Especial)\s+d[ae]\s+Sa[uú]de|Prefeitura\s+Municipal|Instituto\s+Federal|Instituto\s+(?:das?|dos?|de)\s+[A-ZÀ-Ú][A-Za-zÀ-ÿ\s.-]{3,60}\.|Universidade\s+(?:Federal|Estadual)|Instituto\s+Brasileiro\s+de\s+Geografia\s+e\s+Estat[ií]stica|IBGE|Instituto\s+Nacional\s+de\s+C[aâ]ncer|INCA|Funda[cç][aã]o\s+Oswaldo\s+Cruz|FIOCRUZ|Ag[eê]ncia\s+Nacional\s+de\s+Vigil[aâ]ncia\s+Sanit[aá]ria|ANVISA|Comiss[aã]o\s+Nacional\s+de\s+Incorpora[cç][aã]o\s+de\s+Tecnologias|CONITEC|Instituto\s+de\s+Pesquisa\s+Econ[oô]mica\s+Aplicada|IPEA|Coordena[cç][aã]o\s+de\s+Aperfei[cç]oamento|CAPES|Conselho\s+Nacional\s+de\s+(?:Sa[uú]de|Desenvolvimento|Secret[aá]rios|Secretarias)|CNS|CNPq|CONASS|CONASEMS|Conselho\s+Federal\s+de\s+(?:Medicina|Enfermagem|Farm[aá]cia)|CFM|COFEN|CFF|Organiza[cç][aã]o\s+Mundial\s+da\s+Sa[uú]de|Organiza[cç][aã]o\s+Pan-Americana\s+da\s+Sa[uú]de|World\s+Health\s+Organization|Pan\s+American\s+Health\s+Organization|United\s+Nations|UNICEF|UNESCO|WHO\.|OPAS\.|PAHO\.|CDC\.|Centers\s+for\s+Disease\s+Control|HL7\s+International|IHE\s+International|International\s+Organization\s+for\s+Standardization|American\s+College\s+of\s+Radiology|Associa[cç][aã]o\s+Brasileira\s+de\s+Normas\s+T[eé]cnicas|ABNT\.)/i;
 
 // Domínios Oficiais Governamentais, Educacionais e de Organismos Multilaterais
 const REGEX_DOMINIOS_OFICIAIS =
@@ -110,8 +110,8 @@ function classificarReferenciaHarmonizada(linha, doi, metadadoCslEmbutido = null
     !temAssinaturaPeriodico &&
     !ehUrlNcbiOuRepositorioArtigos &&
     (/\bDispon[ií]vel\s+em:\s*https?:\/\/[^\s]+/i.test(s) &&
-      (/(?:\.gov|\.edu|\.org|\.int|\.ac\.[a-z]{2})\b/i.test(s) ||
-       /\b(?:members|about|licensing|portal|standards|normas|documentos|relatorios)\b/i.test(s)));
+      (/(?:\.gov|\.edu|\.org|\.int|\.ac\.[a-z]{2}|\.(?:leg|jus|mil|ong|emp)\.br)\b/i.test(s) ||
+       /(?:\/|\b)(?:members|about|sobre|institucional|quem-somos|licensing|portal|standards|normas|documentos|relatorios)\b/i.test(s)));
 
   if (!doi && !ehUrlNcbiOuRepositorioArtigos && (REGEX_DOMINIOS_OFICIAIS.test(s) || REGEX_LENER_ORGANIZACAO.test(s) || ehUrlOficialOuInstitucional)) {
     return {
@@ -130,16 +130,16 @@ function classificarReferenciaHarmonizada(linha, doi, metadadoCslEmbutido = null
     };
   }
 
-  // 6. Livros e monografias com paginação total ("168 p.") ou edição declarada ("2o ed.", "5. ed.")
+  // 6. Livros, apostilas e monografias com paginação total ("19 p.", "168 p.") ou edição declarada ("5. ed.") ou "Cidade(, UF)?: Editora, [Ano]"
   if (
-    /\b\d{2,4}\s*p\.\s*$/i.test(s) ||
+    (!doi && !temAssinaturaPeriodico && /\b\d{1,4}\s*p\.(?:\s|$)/i.test(s)) ||
     /\b\d+[º°o.]?\s*ed\b/i.test(s) ||
-    (!doi && /\b(bras[ií]lia|rio\s+de\s+janeiro|s[aã]o\s+paulo|genebra|geneva|reston|ann\s+arbor|oak\s+brook|curitiba|goi[aâ]nia)\s*:\s*[^,]+,\s*(19|20)\d\d/i.test(s))
+    (!doi && /\b(?:bras[ií]lia|rio\s+de\s+janeiro|s[aã]o\s+paulo|s[aã]o\s+lu[ií]s|genebra|geneva|reston|ann\s+arbor|oak\s+brook|curitiba|goi[aâ]nia|porto\s+alegre|belo\s+horizonte|recife|salvador|fortaleza)(?:,\s*[A-Z]{2})?\s*:\s*[^,]+,\s*\[?(?:19|20)\d\d[a-f]?\]?/i.test(s))
   ) {
     return {
       natureza: 'norma_livro_institucional',
       subtipoLener: 'LIVRO_MONOGRAFIA',
-      rotuloAutenticidade: '🏛 Livro / Manual Técnico / Monografia Institucional',
+      rotuloAutenticidade: '🏛 Livro / Material Didático / Monografia Institucional',
     };
   }
 

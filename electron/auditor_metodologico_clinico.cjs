@@ -241,7 +241,10 @@ function auditarDescritoresDecsMesh(texto) {
 
   if (!texto || typeof texto !== 'string') return resultado;
 
-  const mKw = /(?:palavras[- ]chave|descritores|keywords?)\s*[:.]?\s*([^\n\r]+)/i.exec(texto);
+  // Exige separador explícito (":", "–", "-") após Palavras-chave/Descritores para não capturar menções no texto explicativo do resumo
+  const mKw =
+    /(?:^|\n|\r)\s*(?:palavras[- ]chave|descritores(?:\s+em\s+ci[êe]ncias\s+da\s+sa[uú]de)?|keywords?)\s*[:–—-]\s*([^\n\r]+)/i.exec(texto) ||
+    /(?:palavras[- ]chave|descritores|keywords?)\s*[:–—-]\s*([^\n\r]+)/i.exec(texto);
   if (!mKw) return resultado;
 
   const linhaBruta = mKw[1].trim();
