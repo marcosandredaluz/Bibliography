@@ -1043,9 +1043,11 @@ export default function ReverseAuditView({
   const alertasEstatisticos = resultado?.alertasEstatisticos || [];
   const alertasRede = resultado?.alertasRede || [];
   const alertasMetodologiaClinica = resultado?.alertasMetodologiaClinica || [];
+  const alertasFrasesTorturadas = resultado?.alertasFrasesTorturadas || [];
+  const alertasEstilometricos = resultado?.alertasEstilometricos || [];
   const citacoesSemReferencia = resultado?.citacoesSemReferencia || [];
 
-  // Alertas de Metadados / ABNT vs Alertas Metodológicos vs Alertas Estilo IA (Open-Detector) vs Estatística vs Rede vs Metodologia Clínica
+  // Alertas de Metadados / ABNT vs Alertas Metodológicos vs Alertas Estilo IA (Open-Detector) vs Estatística vs Rede vs Metodologia Clínica vs Estilometria
   const alertasPrecisao = resultado?.alertasPrecisao || [];
   const alertasEstiloIa = resultado?.alertasEstiloIa || alertasPrecisao.filter((ap) => ap.tipo === 'estilo_redacao_ia');
   const alertasMetadadosAbnt = alertasPrecisao.filter(
@@ -1064,6 +1066,10 @@ export default function ReverseAuditView({
         'ensaio_sem_registro_icmje',
         'ausencia_declaracao_conflitos',
         'poucos_descritores',
+        'frase_torturada',
+        'monotonia_sintatica_estilometrica',
+        'pobreza_lexical_anomala',
+        'repeticao_trigramas_mecanica',
       ].includes(ap.tipo)
   );
   const alertasMetodologicos = alertasPrecisao.filter((ap) =>
@@ -1099,6 +1105,8 @@ export default function ReverseAuditView({
     alertasEstatisticos.length +
     alertasRede.length +
     alertasMetodologiaClinica.length +
+    alertasFrasesTorturadas.length +
+    alertasEstilometricos.length +
     citacoesSemReferencia.length +
     refsNaoCitadasNoTexto.length +
     alertasMetadadosAbnt.length +
@@ -1202,6 +1210,52 @@ export default function ReverseAuditView({
         blocos.push(`- **Teste Reportado:** ${st.textoBruto}`);
         blocos.push(`- **Confronto:** p relatado = ${st.pRelatado} vs p recalculado pela distribuição exata = ${st.pRecalculado}`);
         blocos.push(`- **Pergunta para a IA:** Corrija os valores estatísticos ou graus de liberdade relatados no texto para que a matemática relatada seja rigorosamente consistente.`);
+        blocos.push(``);
+      });
+    }
+
+    if (alertasRede.length > 0) {
+      blocos.push(`## 🕸️ PONTO CRÍTICO C3 — CONCENTRAÇÃO DE AUTORIA E REDES DE CITAÇÃO / COPE (${alertasRede.length}):`);
+      alertasRede.forEach((ar, idx) => {
+        blocos.push(`### [Alerta de Rede C3.${idx + 1}]`);
+        blocos.push(`- **Diagnóstico:** ${ar.mensagem}`);
+        blocos.push(`- **Pergunta para a IA:** Diversifique as fontes bibliográficas reduzindo a dependência excessiva em um único autor ou periódico.`);
+        blocos.push(``);
+      });
+    }
+
+    if (alertasMetodologiaClinica.length > 0) {
+      blocos.push(`## 🔬 PONTO CRÍTICO C4 — AUDITORIA METODOLÓGICA E ÉTICA / STROBE / CONSORT (${alertasMetodologiaClinica.length}):`);
+      alertasMetodologiaClinica.forEach((mc, idx) => {
+        blocos.push(`### [Alerta Metodológico C4.${idx + 1}]`);
+        blocos.push(`- **Critério:** ${mc.tipo}`);
+        blocos.push(`- **Diagnóstico:** ${mc.mensagem}`);
+        blocos.push(`- **Pergunta para a IA:** Indique os ajustes textuais necessários no método/metodologia para atender a este requisito editorial.`);
+        blocos.push(``);
+      });
+    }
+
+    if (alertasFrasesTorturadas.length > 0) {
+      blocos.push(`## 🧟 PONTO CRÍTICO C5 — FRASES TORTURADAS E PARAFRASEAMENTO ROBÓTICO / CABANAC (${alertasFrasesTorturadas.length}):`);
+      alertasFrasesTorturadas.forEach((ft, idx) => {
+        blocos.push(`### [Frase Torturada C5.${idx + 1}]`);
+        blocos.push(`- **Diagnóstico:** ${ft.mensagem}`);
+        blocos.push(`- **Local no Word:** Parágrafo §${ft.numParagrafo} · Linha ${ft.numLinha} (${ft.secao || 'Corpo'})`);
+        blocos.push(`- **Expressão Detectada:** "${ft.termoDetectado}" -> Termo Canônico Real: "${ft.termoCanonica}"`);
+        blocos.push(`- **Texto no meu Word:** "${ft.fraseWord}"`);
+        blocos.push(`- **Pergunta para a IA:** Substitua o jargão bizarro pelo termo consagrado "${ft.termoCanonica}" e restaure a linguagem acadêmica formal.`);
+        blocos.push(``);
+      });
+    }
+
+    if (alertasEstilometricos.length > 0) {
+      blocos.push(`## 📐 PONTO CRÍTICO C6 — ANÁLISE ESTILOMÉTRICA E VARIAÇÃO RÍTMICA / TTR / BURSTINESS (${alertasEstilometricos.length}):`);
+      alertasEstilometricos.forEach((es, idx) => {
+        blocos.push(`### [Alerta Estilométrico C6.${idx + 1}]`);
+        blocos.push(`- **Diagnóstico:** ${es.mensagem}`);
+        blocos.push(`- **Local no Word:** Parágrafo §${es.numParagrafo} · Linha ${es.numLinha} (${es.secao || 'Corpo'})`);
+        blocos.push(`- **Texto no meu Word:** "${es.fraseWord}"`);
+        blocos.push(`- **Pergunta para a IA:** Diversifique as estruturas sintáticas deste parágrafo, alternando períodos curtos e compostos para eliminar a monotonia sintática.`);
         blocos.push(``);
       });
     }
@@ -2035,6 +2089,20 @@ export default function ReverseAuditView({
               <span>{alertasMetodologiaClinica.length ? 'Ressalvas STROBE/PICO' : 'Checklist conforme'}</span>
             </div>
             <div className="card-metrica">
+              <span className="rotulo-metrica">🧟 Frases Torturadas</span>
+              <strong style={{ color: alertasFrasesTorturadas.length ? '#dc2626' : '#16a34a' }}>
+                {alertasFrasesTorturadas.length}
+              </strong>
+              <span>{alertasFrasesTorturadas.length ? 'Spin-bot / Termos bizarros' : 'Nenhum jargão corrompido'}</span>
+            </div>
+            <div className="card-metrica">
+              <span className="rotulo-metrica">📐 Estilometria Textual</span>
+              <strong style={{ color: alertasEstilometricos.length ? '#d97706' : '#16a34a' }}>
+                {alertasEstilometricos.length}
+              </strong>
+              <span>{alertasEstilometricos.length ? 'Monotonia / Pobreza de léxico' : 'Ritmo e léxico naturais'}</span>
+            </div>
+            <div className="card-metrica">
               <span className="rotulo-metrica">Citadas s/ Referência</span>
               <strong style={{ color: resultado.citacoesSemReferencia.length ? '#dc2626' : '#16a34a' }}>
                 {resultado.citacoesSemReferencia.length}
@@ -2248,6 +2316,36 @@ export default function ReverseAuditView({
                     }}
                   >
                     🔬 Metodologia / Ética ({alertasMetodologiaClinica.length})
+                  </button>
+                )}
+                {alertasFrasesTorturadas.length > 0 && (
+                  <button
+                    className={`chip ${grupoIntercorrenciaAtivo === 'frases_torturadas' ? 'ativo' : ''}`}
+                    onClick={() => setGrupoIntercorrenciaAtivo('frases_torturadas')}
+                    style={{
+                      fontSize: 11.8,
+                      padding: '3px 10px',
+                      color: grupoIntercorrenciaAtivo === 'frases_torturadas' ? '#fff' : '#dc2626',
+                      borderColor: '#dc2626',
+                      background: grupoIntercorrenciaAtivo === 'frases_torturadas' ? '#dc2626' : 'transparent',
+                    }}
+                  >
+                    🧟 Frases Torturadas ({alertasFrasesTorturadas.length})
+                  </button>
+                )}
+                {alertasEstilometricos.length > 0 && (
+                  <button
+                    className={`chip ${grupoIntercorrenciaAtivo === 'estilometria' ? 'ativo' : ''}`}
+                    onClick={() => setGrupoIntercorrenciaAtivo('estilometria')}
+                    style={{
+                      fontSize: 11.8,
+                      padding: '3px 10px',
+                      color: grupoIntercorrenciaAtivo === 'estilometria' ? '#fff' : '#d97706',
+                      borderColor: '#d97706',
+                      background: grupoIntercorrenciaAtivo === 'estilometria' ? '#d97706' : 'transparent',
+                    }}
+                  >
+                    📐 Estilometria ({alertasEstilometricos.length})
                   </button>
                 )}
                 {resultado.citacoesSemReferencia.length > 0 && (
@@ -2662,7 +2760,100 @@ export default function ReverseAuditView({
             </div>
           )}
 
-          {/* ALERTA D: Citadas no texto mas ausentes nas Referências (Citações Órfãs) */}
+          {/* ALERTA C5: Frases Torturadas e Parafraseamento Robótico (Problematic Paper Screener) */}
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'frases_torturadas') && alertasFrasesTorturadas.length > 0 && (
+            <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
+              <h4 style={{ color: '#dc2626' }}>
+                🧟 Detecção Forense de Frases Torturadas · Problematic Paper Screener ({alertasFrasesTorturadas.length})
+              </h4>
+              <div className="lista-historico">
+                {alertasFrasesTorturadas.map((ft, i) => (
+                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{ft.mensagem}</div>
+                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                          <span><strong>Termo Detectado:</strong> <code style={{ color: '#b91c1c', fontWeight: 600 }}>{ft.termoDetectado}</code></span>
+                          <span>➡️ <strong>Termo Canônico:</strong> <code style={{ color: '#16a34a', fontWeight: 600 }}>{ft.termoCanonica}</code></span>
+                          <span className="badge alerta" style={{ fontSize: 11 }}>
+                            {ft.categoria || 'Integridade Textual'}
+                          </span>
+                        </div>
+                        {ft.fraseWord && (
+                          <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                            <strong>Passagem no Word (§{ft.numParagrafo}, L.{ft.numLinha}):</strong> &ldquo;{ft.fraseWord}&rdquo;
+                          </div>
+                        )}
+                      </div>
+                      <button
+                        className="btn pequeno secundario"
+                        onClick={() =>
+                          copiarPromptItemIndividualIa({
+                            tituloProblema: 'Frase Torturada / Spin-bot detectado',
+                            fraseWord: ft.fraseWord,
+                            locWord: `§${ft.numParagrafo}, Linha ${ft.numLinha} (${ft.secao || 'Corpo'})`,
+                            refTexto: `Termo canônico: ${ft.termoCanonica}`,
+                            diagnostico: ft.mensagem,
+                            trechoArtigo: `Substituir "${ft.termoDetectado}" por "${ft.termoCanonica}"`,
+                          })
+                        }
+                      >
+                        🤖 Copiar p/ IA Corrigir
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* ALERTA C6: Estilometria Acadêmica e Diversidade Textual */}
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'estilometria') && alertasEstilometricos.length > 0 && (
+            <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
+              <h4 style={{ color: '#d97706' }}>
+                📐 Auditoria Estilométrica e Rítmica · TTR, Burstiness & Guiraud ({alertasEstilometricos.length})
+              </h4>
+              <div className="lista-historico">
+                {alertasEstilometricos.map((es, i) => (
+                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>{es.mensagem}</div>
+                        {es.metricas && (
+                          <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                            <span><strong>Burstiness (CV):</strong> {es.metricas.burstiness}</span>
+                            <span><strong>TTR:</strong> {es.metricas.ttr}</span>
+                            <span><strong>Guiraud:</strong> {es.metricas.guiraud}</span>
+                            <span><strong>Flesch:</strong> {es.metricas.fleschLegibilidade}</span>
+                          </div>
+                        )}
+                        {es.fraseWord && (
+                          <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                            <strong>Parágrafo (§{es.numParagrafo}, L.{es.numLinha}):</strong> &ldquo;{es.fraseWord}&rdquo;
+                          </div>
+                        )}
+                      </div>
+                      <button
+                        className="btn pequeno secundario"
+                        onClick={() =>
+                          copiarPromptItemIndividualIa({
+                            tituloProblema: 'Anomalia Estilométrica / Monotonia Mecânica',
+                            fraseWord: es.fraseWord,
+                            locWord: `§${es.numParagrafo}, Linha ${es.numLinha} (${es.secao || 'Corpo'})`,
+                            refTexto: 'Padrão rítmico e riqueza vocabular acadêmica',
+                            diagnostico: es.mensagem,
+                            trechoArtigo: 'Reestruturação sintática para restaurar variação estilométrica humana',
+                          })
+                        }
+                      >
+                        🤖 Copiar p/ IA Reestruturar
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'orfa') && resultado.citacoesSemReferencia.length > 0 && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626' }}>
               <h4 style={{ color: '#dc2626' }}>

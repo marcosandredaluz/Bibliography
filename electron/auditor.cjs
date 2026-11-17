@@ -28,6 +28,8 @@ const { executarGreedyStringTiling } = require('./similarity_tiling.cjs');
 const { auditarEstatisticaDoManuscrito } = require('./statcheck_forense.cjs');
 const { auditarRedeCitacoesDoManuscrito } = require('./rede_citacoes_forense.cjs');
 const { auditarMetodologiaClinicaDoManuscrito } = require('./auditor_metodologico_clinico.cjs');
+const { auditarFrasesTorturadasDoManuscrito } = require('./tortured_phrases_detector.cjs');
+const { auditarEstilometriaDoManuscrito } = require('./estilometria_academica.cjs');
 
 // Mapa CSL-JSON extraído do último arquivo .docx aberto (Mendeley / Zotero / EndNote)
 let ultimoMapaCslEmbutidoDocx = null;
@@ -2479,6 +2481,8 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasEstatisticos: [],
       alertasRede: [],
       alertasMetodologiaClinica: [],
+      alertasFrasesTorturadas: [],
+      alertasEstilometricos: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: 0, totalObrasVerificadas: 0, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: 0, totalComPdf: 0, totalSemPdf: 0, obras: [] },
@@ -2604,6 +2608,8 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasEstatisticos: [],
       alertasRede: [],
       alertasMetodologiaClinica: [],
+      alertasFrasesTorturadas: [],
+      alertasEstilometricos: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: gruposCitacao.size, totalObrasVerificadas: refsMapeadasFast.length, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: refsMapeadasFast.filter(r => r.citadaNoTexto).length, totalComPdf: 0, totalSemPdf: refsMapeadasFast.length, obras: [] },
@@ -2684,6 +2690,8 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasEstatisticos: [],
       alertasRede: [],
       alertasMetodologiaClinica: [],
+      alertasFrasesTorturadas: [],
+      alertasEstilometricos: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: 0, totalObrasVerificadas: 0, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: 0, totalComPdf: 0, totalSemPdf: 0, obras: [] },
@@ -3188,6 +3196,8 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasEstatisticos: [],
       alertasRede: [],
       alertasMetodologiaClinica: [],
+      alertasFrasesTorturadas: [],
+      alertasEstilometricos: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: gruposCitacao.size, totalObrasVerificadas: refsMapeadas.length, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: {
@@ -3616,6 +3626,40 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     }
   }
 
+  // ---------- 8d. Detecção Forense de Frases Torturadas (Problematic Paper Screener / Cabanac) ----------
+  const auditoriaTorturadas = auditarFrasesTorturadasDoManuscrito(paragrafosCorpo);
+  const alertasFrasesTorturadas = auditoriaTorturadas.alertasFrasesTorturadas || [];
+  if (alertasFrasesTorturadas.length > 0) {
+    for (const at of alertasFrasesTorturadas) {
+      alertasPrecisao.push({
+        tipo: at.tipo,
+        numParagrafo: at.numParagrafo,
+        numLinha: at.numLinha,
+        secao: at.secao,
+        autorCitado: 'Auditoria de Parafraseamento',
+        fraseWord: at.fraseWord,
+        mensagem: at.mensagem,
+      });
+    }
+  }
+
+  // ---------- 8e. Análise Estilométrica Determinística (TTR / Burstiness / Guiraud) ----------
+  const auditoriaEstilometria = auditarEstilometriaDoManuscrito(paragrafosCorpo);
+  const alertasEstilometricos = auditoriaEstilometria.alertasEstilometricos || [];
+  if (alertasEstilometricos.length > 0) {
+    for (const ae of alertasEstilometricos) {
+      alertasPrecisao.push({
+        tipo: ae.tipo,
+        numParagrafo: ae.numParagrafo,
+        numLinha: ae.numLinha,
+        secao: ae.secao,
+        autorCitado: 'Auditoria Estilométrica',
+        fraseWord: ae.fraseWord,
+        mensagem: ae.mensagem,
+      });
+    }
+  }
+
   return {
     totalCitacoesOcorrencias: citacoes.length,
     totalAutoresCitadosUnicos: gruposCitacao.size,
@@ -3629,9 +3673,13 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     alertasEstatisticos,
     alertasRede,
     alertasMetodologiaClinica,
+    alertasFrasesTorturadas,
+    alertasEstilometricos,
     resumoEstatistico: auditoriaEstatistica,
     resumoRede: auditoriaRede,
     resumoMetodologiaClinica: auditoriaMetodologica,
+    resumoFrasesTorturadas: auditoriaTorturadas,
+    resumoEstilometria: auditoriaEstilometria,
     errosParsingConflito,
     resumoVerificacaoConteudo: {
       totalObrasCitadas: gruposCitacao.size,
@@ -3663,5 +3711,7 @@ module.exports = {
   auditarEstatisticaDoManuscrito,
   auditarRedeCitacoesDoManuscrito,
   auditarMetodologiaClinicaDoManuscrito,
+  auditarFrasesTorturadasDoManuscrito,
+  auditarEstilometriaDoManuscrito,
   auditarManuscrito,
 };
