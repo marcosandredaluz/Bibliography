@@ -132,7 +132,7 @@ function auditarAspectosEticos(texto) {
 /**
  * Audita critérios de elegibilidade, inclusão/exclusão e tamanho amostral.
  */
-function auditarElegibilidadeEAmostra(texto) {
+function auditarElegibilidadeEAmostra(texto, desenho = null) {
   const resultado = {
     temCriteriosInclusao: false,
     temCriteriosExclusao: false,
@@ -167,8 +167,9 @@ function auditarElegibilidadeEAmostra(texto) {
     resultado.temCalculoAmostral = true;
   }
 
-  // Alertas Metodológicos
-  if (!resultado.temCriteriosInclusao && !resultado.temCriteriosExclusao) {
+  // Alertas Metodológicos (projetos de intervenção / modelagem de dados / pesquisa qualitativa não seguem checklist de amostragem STROBE/CONSORT)
+  const desenhoSemAmostraClinica = desenho && ['projeto_intervencao', 'qualitativo'].includes(desenho.tipo);
+  if (!desenhoSemAmostraClinica && !resultado.temCriteriosInclusao && !resultado.temCriteriosExclusao) {
     resultado.alertas.push({
       tipo: 'ausencia_criterios_elegibilidade',
       mensagem: '📌 CRITÉRIOS DE ELEGIBILIDADE AUSENTES: O manuscrito não detalha expressamente os "Critérios de Inclusão" ou "Critérios de Exclusão" da amostra estudada (Requisito essencial STROBE/CONSORT).',
@@ -273,7 +274,7 @@ function auditarMetodologiaClinicaDoManuscrito(paragrafosCorpo = [], textoComple
 
   const desenho = identificarDesenhoEstudo(textoTotal);
   const etica = auditarAspectosEticos(textoTotal);
-  const amostra = auditarElegibilidadeEAmostra(textoTotal);
+  const amostra = auditarElegibilidadeEAmostra(textoTotal, desenho);
   const transparencia = auditarTransparenciaERegistro(textoTotal, desenho);
   const descritores = auditarDescritoresDecsMesh(textoTotal);
 

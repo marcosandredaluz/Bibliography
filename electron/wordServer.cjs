@@ -4,9 +4,40 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const citacoes = require('./citations.cjs');
+const auditor = require('./auditor.cjs');
 
 const PORTA = 23119;
 const DIR_ADDIN = path.join(__dirname, '..', 'resources', 'word-addin');
+
+const telemetriaWord = {
+  iniciadoEm: new Date().toISOString(),
+  ultimaAtividadeEm: null,
+  ultimoCliente: null,
+  requisicoesAtendidas: 0,
+  ultimaAuditoriaWord: null,
+};
+
+function limparHtmlParaTexto(html = '') {
+  return String(html || '')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<\/(p|div|li)>/gi, '\n')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+function normalizarBusca(s = '') {
+  return String(s || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
+}
 
 function resumoAutorAno(csl) {
   const a = csl?.author?.[0] || csl?.editor?.[0];
@@ -37,9 +68,17 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
     }
 
     const url = new URL(req.url, `http://127.0.0.1:${PORTA}`);
+    telemetriaWord.ultimaAtividadeEm = new Date().toISOString();
+    telemetriaWord.ultimoCliente = req.headers['user-agent'] || 'word-client';
+    telemetriaWord.requisicoesAtendidas += 1;
+
     const enviarJson = (codigo, obj) => {
       res.writeHead(codigo, { 'Content-Type': 'application/json; charset=utf-8' });
       res.end(JSON.stringify(obj));
+    };
+    const enviarTexto = (codigo, txt) => {
+      res.writeHead(codigo, { 'Content-Type': 'text/plain; charset=utf-8' });
+      res.end(String(txt || ''));
     };
 
     try {
@@ -57,8 +96,22 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
       const bib = obterBiblioteca();
       const cfg = obterConfig();
 
+      if (url.pathname === '/api/word/ping') {
+        return enviarJson(200, {
+          ok: true,
+          engine: 'Bibliografia Word Integration Engine',
+          version: '2.0.0',
+          status: 'online',
+          port: PORTA,
+          bibliotecaAtiva: Boolean(bib),
+          estiloAtivo: cfg?.estilo || 'abnt',
+          totalObras: bib ? bib.refs.size : 0,
+          suporte_formatos: ['campos_word_zotero', 'bookmarks_mendeley', 'content_control_officejs'],
+        });
+      }
+
       if (url.pathname === '/api/status') {
-        if (!bib) return enviarJson(200, { ativo: false, estilos: [], refs: [] });
+        if (!bib) return enviarJson(200, { ativo: false, estilos: [], refs: [], telemetria: telemetriaWord });
         const estilos = citacoes.listarEstilos(bib.raiz).map(({ id, nome }) => ({ id, nome }));
         const refs = [...bib.refs.values()].map((r) => ({
           id: r.id,
@@ -67,7 +120,22 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
           status: r.status,
           busca: `${r.csl?.title || ''} ${resumoAutorAno(r.csl)} ${(r.tags || []).join(' ')}`.toLowerCase(),
         }));
-        return enviarJson(200, { ativo: true, estiloAtivo: cfg.estilo, estilos, refs });
+        return enviarJson(200, { ativo: true, estiloAtivo: cfg.estilo, estilos, refs, telemetria: telemetriaWord });
+      }
+
+      if (url.pathname === '/api/word/gerar-bibliografia' && req.method === 'GET') {
+        if (!bib) throw new Error('Nenhuma biblioteca ativa no Bibliografia.');
+        const idsCitadas = [...bib.refs.values()].filter((r) => r.status === 'citada').map((r) => r.id);
+        const itens = idsCitadas.map((id) => bib.refs.get(id)?.csl).filter(Boolean);
+        if (!itens.length) return enviarTexto(200, '');
+        const f = citacoes.formatar({
+          itens,
+          estiloId: cfg.estilo,
+          idioma: cfg.idioma,
+          raizBiblioteca: bib.raiz,
+        });
+        const textoLinhas = (f.entradas || []).map((h) => limparHtmlParaTexto(h)).filter(Boolean).join('\r\n\r\n');
+        return enviarTexto(200, textoLinhas);
       }
 
       // Lê corpo JSON de requisições POST
@@ -157,6 +225,141 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
         });
       }
 
+      if (url.pathname === '/api/campos-atualizar' && req.method === 'POST') {
+        if (!bib) throw new Error('Nenhuma biblioteca aberta.');
+        const { grupos = [], estilo } = await lerCorpo();
+        const estiloAlvo = estilo || cfg.estilo;
+        const citacoesAtualizadas = {};
+        const todosIds = new Set();
+
+        for (const grupo of grupos) {
+          const idsGrupo = (grupo.ids || []).filter((id) => bib.refs.has(id));
+          if (!idsGrupo.length) continue;
+          idsGrupo.forEach((id) => todosIds.add(id));
+          const itens = idsGrupo.map((id) => bib.refs.get(id).csl);
+          const f = citacoes.formatar({
+            itens,
+            estiloId: estiloAlvo,
+            idioma: cfg.idioma,
+            raizBiblioteca: bib.raiz,
+          });
+          let citacaoTexto = f.citacaoTexto;
+          let citacaoHtml = f.citacao;
+          if (grupo.pagina) {
+            citacaoTexto = citacaoTexto.replace(/\)\s*$/, `, ${grupo.pagina})`);
+            citacaoHtml = citacaoHtml.replace(/\)\s*(<\/[^>]+>)?\s*$/, `, ${grupo.pagina})$1`);
+          }
+          citacoesAtualizadas[grupo.chave || idsGrupo.join(',')] = { citacaoTexto, citacaoHtml };
+        }
+
+        const itensCit = [...todosIds].map((id) => bib.refs.get(id)?.csl).filter(Boolean);
+        const fBib = itensCit.length
+          ? citacoes.formatar({ itens: itensCit, estiloId: estiloAlvo, idioma: cfg.idioma, raizBiblioteca: bib.raiz })
+          : { entradas: [] };
+        return enviarJson(200, {
+          estilo: estiloAlvo,
+          citacoesAtualizadas,
+          htmlCompleto: `<h2>REFERÊNCIAS</h2>${formatarEntradasParaWord(fBib.entradas)}`,
+          totalAtualizadas: Object.keys(citacoesAtualizadas).length,
+        });
+      }
+
+      if (url.pathname === '/api/word/seletor-citacao' && req.method === 'POST') {
+        if (!bib) throw new Error('Nenhuma biblioteca aberta.');
+        const { termo = '', pagina = '' } = await lerCorpo();
+        const q = normalizarBusca(termo).trim();
+        const todas = [...bib.refs.values()].filter((r) => r.status !== 'descartada');
+        const escolhida = q
+          ? todas.find((r) =>
+              normalizarBusca(`${r.csl?.title || ''} ${resumoAutorAno(r.csl)} ${(r.tags || []).join(' ')}`).includes(q)
+            ) || todas[0]
+          : todas.find((r) => r.status === 'citada') || todas[0];
+        if (!escolhida) return enviarTexto(404, '');
+
+        const f = citacoes.formatar({
+          itens: [escolhida.csl],
+          estiloId: cfg.estilo,
+          idioma: cfg.idioma,
+          raizBiblioteca: bib.raiz,
+        });
+        let citTxt = f.citacaoTexto;
+        if (pagina) {
+          citTxt = citTxt.replace(/\)\s*$/, `, p. ${String(pagina).replace(/^p\.?\s*/i, '')})`);
+        }
+        await bib.atualizar(escolhida.id, { status: 'citada' });
+        aoAtualizarBiblioteca?.();
+        return enviarTexto(200, citTxt);
+      }
+
+      if (url.pathname === '/api/word/auditar' && req.method === 'POST') {
+        if (!bib) throw new Error('Nenhuma biblioteca aberta.');
+        const { texto = '', modulo = 'todos' } = await lerCorpo();
+        const resAudit = await auditor.auditarManuscrito({
+          texto,
+          biblioteca: bib,
+          buscarEBaixar: false,
+          modulo,
+        });
+        const alertas = [];
+        for (const rm of resAudit.refsMapeadas || []) {
+          if (['ia_doi_inexistente', 'ia_doi_trocado', 'suspeita_ia_fantasma'].includes(rm.statusAutenticidade)) {
+            const occ = rm.ocorrenciasNoTexto?.[0];
+            alertas.push({
+              tipo: rm.statusAutenticidade,
+              paragrafo: occ?.numParagrafo || 0,
+              trecho: occ?.fraseContexto?.slice(0, 75) || rm.textoOriginal?.slice(0, 75) || '',
+              mensagem: rm.alertaAutenticidade || 'Fonte não confirmada nas bases.',
+              gravidade: 'critica',
+            });
+          }
+        }
+        for (const cOrfa of resAudit.citacoesSemReferencia || []) {
+          const occ = cOrfa.ocorrencias?.[0];
+          alertas.push({
+            tipo: 'citacao_orfa',
+            paragrafo: occ?.numParagrafo || 0,
+            trecho: occ?.fraseContexto?.slice(0, 75) || `${cOrfa.autor} (${cOrfa.ano})`,
+            mensagem: `Citação (${cOrfa.autor}, ${cOrfa.ano}) ausente na lista final de Referências.`,
+            gravidade: 'media',
+          });
+        }
+        for (const aEst of resAudit.alertasEstiloIa || []) {
+          alertas.push({
+            tipo: 'estilo_ia',
+            paragrafo: aEst.numParagrafo || 0,
+            trecho: (aEst.trecho || aEst.fraseWord || '').slice(0, 75),
+            mensagem: aEst.mensagem || 'Cadência sintética detectada.',
+            gravidade: 'estilo_ia',
+          });
+        }
+        telemetriaWord.ultimaAuditoriaWord = {
+          data: new Date().toISOString(),
+          total_palavras: String(texto).trim().split(/\s+/).filter(Boolean).length,
+          total_citacoes: resAudit.totalCitacoesOcorrencias || 0,
+          alertas,
+        };
+        return enviarJson(200, {
+          status: 'concluido',
+          total_palavras: telemetriaWord.ultimaAuditoriaWord.total_palavras,
+          total_citacoes: telemetriaWord.ultimaAuditoriaWord.total_citacoes,
+          alertas,
+          resumo: {
+            referenciasLista: resAudit.totalReferenciasListaFinal || 0,
+            orfas: (resAudit.citacoesSemReferencia || []).length,
+          },
+        });
+      }
+
+      if (url.pathname === '/painel-auditoria') {
+        const ult = telemetriaWord.ultimaAuditoriaWord;
+        const linhas = (ult?.alertas || [])
+          .map((a) => `<li><strong>[§${a.paragrafo}] ${a.tipo}</strong> — ${a.mensagem}</li>`)
+          .join('');
+        const htmlPainel = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Diagnóstico Word — Bibliografia</title><style>body{font-family:Segoe UI,sans-serif;max-width:860px;margin:24px auto;padding:0 16px;color:#0f172a}h1{color:#991b1b}li{margin:8px 0;padding:8px 12px;background:#f8fafc;border-left:4px solid #b91c1c;border-radius:4px}</style></head><body><h1>Diagnóstico Word · Bibliografia Forense</h1><p>${ult ? `${ult.total_citacoes} citações verificadas · ${(ult.alertas || []).length} ocorrência(s)` : 'Nenhuma auditoria executada pelo Word ainda.'}</p><ul>${linhas || '<li>Nenhuma inconformidade pendente.</li>'}</ul></body></html>`;
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+        return res.end(htmlPainel);
+      }
+
       enviarJson(404, { erro: 'Rota não encontrada' });
     } catch (e) {
       enviarJson(500, { erro: e.message });
@@ -167,7 +370,7 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
     console.warn('Servidor local Word (porta 23119):', err.message);
   });
   srv.listen(PORTA, '127.0.0.1');
-  return { porta: PORTA, caminhoManifesto: path.join(DIR_ADDIN, 'manifest.xml') };
+  return { porta: PORTA, caminhoManifesto: path.join(DIR_ADDIN, 'manifest.xml'), telemetriaWord };
 }
 
-module.exports = { iniciarServidorWord, PORTA };
+module.exports = { iniciarServidorWord, PORTA, telemetriaWord };

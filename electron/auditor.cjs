@@ -479,12 +479,13 @@ function extrairChavesAutorDeCitacao(trechoAutorBruto) {
  */
 function extrairAutorETituloDeReferencia(linha) {
   const textoBruto = sanitizarCamposGerenciadorBibliografia(String(linha || '')).trim();
-  const mNumRef = textoBruto.match(/^\s*(?:\[(\d+)\]|(\d+)\.|\((\d+)\))\s+/);
+  const ehAnoInicial = /^(?:19|20)\d\d[a-z]?(?:\.|,|\s|$)/.test(textoBruto);
+  const mNumRef = ehAnoInicial ? null : textoBruto.match(/^\s*(?:\[(\d{1,3})\]|(\d{1,3})\.|\((\d{1,3})\))\s+/);
   const numeroRef = mNumRef ? Number(mNumRef[1] || mNumRef[2] || mNumRef[3]) : null;
 
-  const semNum = textoBruto
-    .replace(/^\s*(?:\[\d+\]|\d+\.|\(\d+\))\s*/, '')
-    .trim();
+  const semNum = mNumRef
+    ? textoBruto.slice(mNumRef[0].length).trim()
+    : textoBruto;
 
   let primeiroSegmento = '';
   let defeitoPreposicaoEntrada = null;
@@ -567,6 +568,18 @@ function extrairAutorETituloDeReferencia(linha) {
     : chaveSemPart || ultimaPalavra || chaveInteira;
 
   const aliasesBase = [chavePrincipal, chaveInteira, chaveSemPart, ultimaPalavra, primeiraPalavra];
+  // ABNT NBR 10520: referências com entrada pelo título (PRIMEIRA palavra resto...) são citadas como (Primeira segunda..., ano)
+  if (!ehCorporativo && /^[A-ZÀ-Ú]{2,}\s+[a-zà-ÿ]{2,}/.test(primeiroSegmento)) {
+    const palavrasTit = primeiroSegmento.split(/\s+/).filter(Boolean);
+    if (palavrasTit.length >= 2) {
+      const k2 = normalizarChave(`${palavrasTit[0]} ${palavrasTit[1]}`);
+      if (k2.length >= 4) aliasesBase.push(k2);
+    }
+    if (palavrasTit.length >= 3) {
+      const k3 = normalizarChave(`${palavrasTit[0]} ${palavrasTit[1]} ${palavrasTit[2]}`);
+      if (k3.length >= 6) aliasesBase.push(k3);
+    }
+  }
   // Se a linha menciona explicitamente siglas conhecidas, adiciona aos aliases
   if (/\bISO\s+\d+/i.test(semNum)) aliasesBase.push('iso');
   if (/\bINCA\b/i.test(semNum)) aliasesBase.push('inca');
@@ -872,15 +885,21 @@ function ehTituloSecao(texto) {
   const s = String(texto || '').trim();
   if (!s || s.length > 90) return false;
   if (/[.!?;,]$/.test(s)) return false;
+  // Nunca trata legendas de figuras/quadros/tabelas, fontes ou células/fórmulas tabulares como títulos de seção
+  if (/^(?:\d{1,3}\s+)?(?:figura|tabela|quadro|gr[aá]fico|mapa|diagrama|fluxograma|fotografia|organograma|esquema|ficha)\s+\d+\s*[:.–—-]/i.test(s)) return false;
+  if (/^fonte\s*[:–—-]/i.test(s)) return false;
+  if (/[÷×=]/.test(s) || /\s{3,}/.test(s)) return false;
+  if (/^\d{1,4}$/.test(s)) return false;
   if (
-    /^(?:\d+(?:\.\d+)*\.?\s+)?(?:introdu[cç][aã]o|objetivos?|metodologia|percurso\s+metodol[oó]gico|materiais?\s+e\s+m[eé]todos?|m[eé]todos?|resultados?(?:\s+esperados)?|discuss[aã]o|resultados?\s+e\s+discuss[aã]o|conclus[aã]o|conclus[oõ]es|considera[cç][oõ]es\s+finais|revis[aã]o\s+de\s+literatura|referencial\s+te[oó]rico|fundamenta[cç][aã]o\s+te[oó]rica|cronograma|or[cç]amento|background|introduction|methods|results|discussion|conclusion)\b/i.test(
+    /^(?:\d+(?:\.\d+)*\.?\s+)?(?:introdu[cç][aã]o|objetivos?(?:\s+geral|\s+espec[ií]ficos)?|metodologia|percurso\s+metodol[oó]gico|materiais?\s+e\s+m[eé]todos?|m[eé]todos?|resultados?(?:\s+esperados|\s+e\s+discuss[aã]o)?|discuss[aã]o|conclus[aã]o|conclus[oõ]es|considera[cç][oõ]es\s+finais|revis[aã]o\s+de\s+literatura|referencial\s+te[oó]rico|fundamenta[cç][aã]o\s+te[oó]rica|cronograma|or[cç]amento|viabilidade(?:\s+e\s+riscos)?|background|introduction|methods|results|discussion|conclusion)(?:\s*:)?$/i.test(
       s
     )
   ) {
     return true;
   }
-  if (/^\d+(?:\.\d+)*\s+[A-ZÀ-Ú]/.test(s) && s.split(/\s+/).length <= 12) return true;
-  if (s === s.toUpperCase() && /[A-ZÀ-Ú]{3,}/.test(s) && s.split(/\s+/).length <= 10) return true;
+  if (/^\d+(?:\.\d+)+\s+[A-ZÀ-Ú]/.test(s) && s.split(/\s+/).length <= 12) return true;
+  if (/^\d{1,2}\s+[A-ZÀ-Ú]{2,}/.test(s) && s.split(/\s+/).length <= 10 && !/:/.test(s)) return true;
+  if (s === s.toUpperCase() && /[A-ZÀ-Ú]{5,}/.test(s) && s.split(/\s+/).length <= 10 && (s.split(/\s+/).length >= 2 || s.length >= 6)) return true;
   return false;
 }
 
@@ -903,35 +922,53 @@ function ehInicioSecaoPosReferencias(texto) {
 
 function ehInicioNovaReferencia(linha, bufferAnterior) {
   const s = sanitizarCamposGerenciadorBibliografia(String(linha || '')).trim();
-  // Se a linha começa com numeração explícita de referência (ex.: "1. ", "2. ", "[1] ") e tem estrutura bibliográfica, é sempre nova referência!
-  if (/^(?:\[\d+\]|\d+\.|\(\d+\))\s+[A-Za-zÀ-ÿ0-9“"']/.test(s)) {
+  const buf = String(bufferAnterior || '').trim();
+  if (!s) return false;
+
+  // Fragmentos de continuação (página isolada, anos isolados, cauda de DOI/URL, linha iniciada em minúscula) nunca iniciam referência
+  if (/^\d{1,4}$/.test(s)) return false;
+  if (/^[a-zà-ÿ]/.test(s)) return false;
+  if (/^(?:19|20)\d\d[a-z]?(?:\.|,|;|:|\s|$)/.test(s)) return false;
+  if (/^\d+(?:\.\d+)?-[a-z0-9-]+/i.test(s) || /^[0-9]{4,}[a-z0-9.-]*\.?$/i.test(s) || /^[0-9]{2,6}x[0-9]{4,}/i.test(s)) return false;
+  if (buf && /(?:https?:\/\/|www\.|DOI\s*:?\s*|10\.\d{4,9}\/)\S*[-/]$/i.test(buf)) return false;
+
+  // Numeração explícita de referência (1 a 3 dígitos — exclui anos de 4 dígitos)
+  if (!/^(?:19|20)\d\d/.test(s) && /^(?:\[\d{1,3}\]|\d{1,3}\.|\(\d{1,3}\))\s+[A-Za-zÀ-ÿ0-9]/.test(s)) {
     return true;
   }
-  // Se o buffer anterior ainda não tem ano nem DOI nem URL, a referência anterior ainda não acabou!
+  // Se o buffer anterior ainda não tem ano (inclusive sufixos 2026a/2018b) nem DOI nem URL, a referência anterior ainda não acabou!
   if (
-    bufferAnterior &&
-    !/\b(19\d\d|20\d\d|20--[a-z]?|19--[a-z]?)\b/i.test(bufferAnterior) &&
-    !/\[s\.d\.?\]/i.test(bufferAnterior) &&
-    !/\b10\.\d{4,9}\/\S+/.test(bufferAnterior) &&
-    !/https?:\/\//.test(bufferAnterior) &&
-    !/www\.\S+/i.test(bufferAnterior)
+    buf &&
+    !/\b(?:19\d\d|20\d\d|20--|19--)[a-z]?\b/i.test(buf) &&
+    !/\[s\.d\.?\]/i.test(buf) &&
+    !/\b10\.\d{4,9}\/\S+/.test(buf) &&
+    !/https?:\/\//.test(buf) &&
+    !/www\.\S+/i.test(buf)
   ) {
     return false;
   }
   // Linhas que começam com dados de publicação, ano, cidade ou periódicos são continuações da mesma referência
   if (/^(?:19|20)\d\d/.test(s)) return false;
   if (/^(?:Bras[ií]lia|Rio de Janeiro|S[aã]o Paulo|Genebra|Curitiba|Goi[aâ]nia|New York|London|Boston)\s*[:;,]/i.test(s)) return false;
-  if (/^(?:Dispon[ií]vel|Acesso|Acessado|DOI|https?|www\.|v\.|vol\.|n\.|nº|no\.|p\.|pp\.|ed\.|edn\.|supl\.)/i.test(s)) return false;
-  if (/^(?:Journal|Revista|Cadernos|Ci[eê]ncia|American Journal|American College|Nature|Lancet|PLOS|BMC|Arq\.|Di[aá]rio Oficial)\b/i.test(s)) return false;
+  if (/^(?:Dispon[ií]vel|Available|Acesso|Acessado|Accessed|DOI|https?|www\.|v\.|vol\.|n\.|nº|no\.|p\.|pp\.|ed\.|edn\.|supl\.|Preprint)/i.test(s)) return false;
+  if (/^(?:Journal|Revista|Cadernos|Ci[eê]ncia|Epidemiologia|Arquivos|American Journal|American College|Nature|Lancet|PLOS|BMC|Arq\.|Di[aá]rio Oficial)\b/i.test(s)) return false;
 
   // Início de nova referência ABNT / Vancouver
-  if (/^[A-ZÀ-Ú0-9][A-Za-zÀ-ÿ0-9'.-]+(?:\s+[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*,\s+[A-ZÀ-Ú]/.test(s)) return true;
+  if (/^[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+(?:(?:\s+(?:de|da|do|dos|das)\s+|\s+)[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*,\s+[A-ZÀ-Ú](?:\.|[a-zA-ZÀ-ÿ])/.test(s)) return true;
   if (/^(?:BRASIL|MINIST[EÉ]RIO DA SA[UÚ]DE|SECRETARIA MUNICIPAL|SECRETARIA DE ESTADO|INSTITUTO NACIONAL|INSTITUTO FEDERAL|ORGANIZA[CÇ][AÃ]O MUNDIAL|CONASS|CONASEMS|WORLD HEALTH|HL7 INTERNATIONAL|IHE INTERNATIONAL|CURITIBA|GOI[AÁ]S|WHO|S[AÃ]O PAULO|PARAN[AÁ]|SANTA CATARINA|CONSELHO NACIONAL|NATIONAL LIBRARY|VIRGINIA-MARYLAND|SNOMED INTERNATIONAL|INTERNATIONAL ORGANIZATION)\b/i.test(s)) return true;
-  if (/^(?:[A-ZÀ-Ú0-9][A-ZÀ-Ú0-9\s/._-]{2,80}(?:\s*\([A-Za-zÀ-ÿ\s.-]+\))?)\s*[.:,]/i.test(s) &&
-      !/^(?:Dispon[ií]vel|Acesso|Acessado|Volume|Fasc[ií]culo|Nota|Fonte)\b/i.test(s)) {
+  // ABNT NBR 6023: entrada pelo título quando a linha anterior terminou uma referência com ano (PRIMEIRA palavra em CAIXA ALTA + resto do título)
+  if (
+    buf &&
+    /[.)\]]\s*$/.test(buf) &&
+    /^(?:[A-ZÀ-Ú]{2,}|(?:O|A|OS|AS|UM|UMA|THE|AN)\s+[A-ZÀ-Ú]{2,})(?:\s+[A-ZÀ-Ú]{2,})?\s+[a-zà-ÿ]{2,}/.test(s) &&
+    !/^(?:Journal|Revista|Cadernos|Ci[eê]ncia|Epidemiologia|Arquivos|Dispon[ií]vel|Acesso|Available|Accessed|Preprint)\b/i.test(s)
+  ) {
     return true;
   }
-  if (/^[A-ZÀ-Ú0-9\s/._-]{3,80}(?:\s*\([^)]+\))?\.\s+[A-Za-zÀ-ÿ0-9“"']/.test(s)) return true;
+  if (/^(?:[A-ZÀ-Ú]{2,}[A-ZÀ-Ú0-9\s/._'-]{1,78}(?:\s*\([^)]+\))?)\s*[.:]\s+[A-Za-zÀ-ÿ0-9“"']/.test(s) &&
+      !/^(?:Dispon[ií]vel|Acesso|Acessado|Volume|Fasc[ií]culo|Nota|Fonte|DOI|URL|ISSN|ISBN)\b/i.test(s)) {
+    return true;
+  }
   return false;
 }
 
@@ -1006,8 +1043,11 @@ function dividirCorpoEReferencias(textoCompleto) {
 
   for (const item of fatiaCorpo) {
     const ehFimDeCelula = item.texto.includes('\uE002');
-    const textoLimpo = item.texto.replace(/\uE002/g, '').trim();
+    let textoLimpo = item.texto.replace(/\uE002/g, '').trim();
     if (!textoLimpo) continue;
+    // Ignora números isolados de página residual de PDF no fluxo do corpo e limpa prefixo numérico colado em legendas
+    if (/^\d{1,4}$/.test(textoLimpo)) continue;
+    textoLimpo = textoLimpo.replace(/^\d{1,3}\s+(?=(?:Figura|Tabela|Quadro|Gr[aá]fico|Mapa|Diagrama|Fluxograma|Fotografia|Organograma|Esquema|Fonte)\b)/i, '');
 
     if (ehTituloSecao(textoLimpo)) {
       if (bufferPar.trim()) {
@@ -1028,9 +1068,23 @@ function dividirCorpoEReferencias(textoCompleto) {
       continue;
     }
 
-    if (bufferPar && !celulaAnteriorTerminou && !/[.!?:]$/.test(bufferPar)) {
+    const ehLegendaOuFonte = /^(?:(?:figura|tabela|quadro|gr[aá]fico|mapa|diagrama|fluxograma|fotografia|organograma|esquema)\s+\d+\s*[:.–—-]|fonte\s*[:–—-])/i.test(textoLimpo);
+    if (ehLegendaOuFonte && bufferPar.trim()) {
+      contadorParagrafo++;
+      contadorParagrafoCap1++;
+      paragrafosCorpo.push({
+        texto: bufferPar.trim(),
+        numParagrafo: contadorParagrafo,
+        numParagrafoNaSecao: contadorParagrafoCap1,
+        numLinha: linhaInicioPar,
+        secao: secaoAtual,
+      });
+      bufferPar = '';
+    }
+
+    if (bufferPar && !celulaAnteriorTerminou && !/[.!?:]$/.test(bufferPar) && !ehLegendaOuFonte) {
       bufferPar += ' ' + textoLimpo;
-    } else if (bufferPar && !celulaAnteriorTerminou && textoLimpo.length > 0 && /^[a-zà-ÿ0-9]/.test(textoLimpo)) {
+    } else if (bufferPar && !celulaAnteriorTerminou && textoLimpo.length > 0 && /^[a-zà-ÿ]/.test(textoLimpo) && !ehLegendaOuFonte) {
       bufferPar += ' ' + textoLimpo;
     } else {
       if (bufferPar.trim()) {
@@ -1092,25 +1146,51 @@ function dividirCorpoEReferencias(textoCompleto) {
     if (entrouPosReferencias) {
       linhasPosReferencias.push({ texto: textoLimpo, numLinha: item.numLinha });
     } else {
+      // Remove números isolados de página residual de PDF dentro da seção de referências
+      if (/^\d{1,4}$/.test(textoLimpo)) continue;
       fatiaRef.push(textoLimpo);
     }
   }
 
-  // 3. Agrupa linhas da seção de referências em entradas bibliográficas completas e coesas
-  const linhasReferencias = [];
+  // 3. Agrupa linhas da seção de referências em entradas bibliográficas completas e coesas, reparando DOIs/URLs quebrados em PDF
+  const linhasReferenciasBrutas = [];
   let bufferRef = '';
   for (const l of fatiaRef) {
     if (ehInicioNovaReferencia(l, bufferRef)) {
       if (bufferRef.trim()) {
-        linhasReferencias.push(bufferRef.trim());
+        linhasReferenciasBrutas.push(bufferRef.trim());
       }
       bufferRef = l;
+    } else if (bufferRef && /(?:https?:\/\/|www\.|DOI\s*:?\s*|10\.\d{4,9}\/)\S*[-/]$/i.test(bufferRef.trimEnd())) {
+      bufferRef = bufferRef.trimEnd() + l.trimStart();
     } else {
       bufferRef = bufferRef ? (bufferRef + ' ' + l) : l;
     }
   }
   if (bufferRef.trim()) {
-    linhasReferencias.push(bufferRef.trim());
+    linhasReferenciasBrutas.push(bufferRef.trim());
+  }
+
+  // 4. Normaliza DOIs/URLs quebrados por espaços residuais e separa eventuais entradas ABNT coladas na mesma linha
+  const linhasReferencias = [];
+  for (const entryBruta of linhasReferenciasBrutas) {
+    let s = entryBruta;
+    for (let passo = 0; passo < 3; passo++) {
+      const prox = s
+        .replace(/((?:https?:\/\/|www\.|DOI\s*:?\s*|10\.\d{4,9}\/)[^\s,;()<>"]*?[-/])\s+([a-zA-Z0-9._-]{2,})/gi, '$1$2')
+        .replace(/,\s+\d{1,3}\s+(?=v\.\s*\d)/gi, ', ');
+      if (prox === s) break;
+      s = prox;
+    }
+    // Separa entradas distintas que tenham ficado concatenadas na mesma linha após DOI, data de acesso ou ponto final de entrada com ano
+    const partesSeparadas = s
+      .split(/(?<=\b10\.\d{4,9}\/\S+)\s+(?=[A-ZÀ-Ú]{2,}[A-ZÀ-Ú\s'’-]*,\s+[A-ZÀ-Ú]\.|(?:BRASIL|MINIST[EÉ]RIO|INSTITUTO|ORGANIZA[CÇ][AÃ]O|WORLD|AMERICAN|INTERNATIONAL|CONSELHO|SECRETARIA|CURITIBA)\b)/)
+      .flatMap((p) =>
+        p.split(/(?<=\b(?:19|20)\d\d[a-z]?\.[^.]{0,180}?\.\s*)(?=[A-ZÀ-Ú]{2,}(?:-[A-ZÀ-Ú]{2,})*(?:\s+(?:DE|DA|DO|DOS|DAS|E))?,\s+[A-ZÀ-Ú]\.)/)
+      )
+      .map((p) => p.replace(/\s+\d{1,3}$/, (m) => (/^\s+(?:19|20)\d{2}$/.test(m) ? m : '')).trim())
+      .filter(Boolean);
+    linhasReferencias.push(...partesSeparadas);
   }
 
   return {
@@ -1307,43 +1387,53 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         if (buffer.trim()) partes.push(buffer.trim());
 
         for (const parte of partes) {
-          const mItem = parte.match(
-            /^([A-ZÀ-Ú0-9][A-Za-zÀ-ÿ0-9\s.,;&'-]{1,95}?)\s*,\s*(\[?(?:19\d\d|20\d\d|20--)[a-z]?\]?|\[?s\.d\.\]?)(?:\s*,\s*(?:p\.?|p[aá]g\.?|pp\.?)\s*(\d+(?:-\d+)?))?$/i
+          // Suporta também múltiplos anos separados por vírgula para o mesmo autor: (Autor, 2024, 2026b)
+          const mMultiAno = parte.match(
+            /^([A-ZÀ-Ú0-9][A-Za-zÀ-ÿ0-9\s.,;&'-]{1,95}?)\s*,\s*((?:19\d\d|20\d\d|20--)[a-z]?(?:\s*,\s*(?:19\d\d|20\d\d|20--)[a-z]?)+)$/i
           );
-          if (!mItem) continue;
-          const infoAutor = extrairChavesAutorDeCitacao(mItem[1]);
-          if (!infoAutor.chavePrincipal || infoAutor.chavePrincipal.length < 2 || ignorarSobrenomes.has(infoAutor.chavePrincipal)) {
-            continue;
+          const subPartes = mMultiAno
+            ? mMultiAno[2].split(/\s*,\s*/).map((anoItem) => `${mMultiAno[1].trim()}, ${anoItem.trim()}`)
+            : [parte];
+
+          for (const subParte of subPartes) {
+            const mItem = subParte.match(
+              /^([A-ZÀ-Ú0-9][A-Za-zÀ-ÿ0-9\s.,;&'-]{1,95}?)\s*,\s*(\[?(?:19\d\d|20\d\d|20--)[a-z]?\]?|\[?s\.d\.\]?)(?:\s*,\s*(?:p\.?|p[aá]g\.?|pp\.?)\s*(\d+(?:-\d+)?))?$/i
+            );
+            if (!mItem) continue;
+            const infoAutor = extrairChavesAutorDeCitacao(mItem[1]);
+            if (!infoAutor.chavePrincipal || infoAutor.chavePrincipal.length < 2 || ignorarSobrenomes.has(infoAutor.chavePrincipal)) {
+              continue;
+            }
+            const anoCompleto = mItem[2].replace(/[\[\]]/g, '').toLowerCase();
+            const anoBase = anoCompleto.slice(0, 4);
+            const paginaDeclarada = mItem[3] || null;
+            registrarCitacaoUnicaNaFrase({
+              bruto: `(${subParte.trim()})`,
+              autor: infoAutor.autorExibicao,
+              chaveAutor: infoAutor.chavePrincipal,
+              chavesAutorAlias: infoAutor.chavesAlias,
+              ano: anoCompleto,
+              anoBase,
+              chave: `${infoAutor.chavePrincipal}:${anoCompleto}`,
+              paginaDeclarada,
+              trechoDireto,
+              fraseContexto: frase.trim(),
+              paragrafoCompleto: par.trim(),
+              numParagrafo: objPar.numParagrafo,
+              numParagrafoNaSecao: objPar.numParagrafoNaSecao || objPar.numParagrafo,
+              numLinha: objPar.numLinha,
+              numFraseNoParagrafo: idxFrase + 1,
+              secao: objPar.secao || 'Corpo do Texto',
+            });
           }
-          const anoCompleto = mItem[2].replace(/[\[\]]/g, '').toLowerCase();
-          const anoBase = anoCompleto.slice(0, 4);
-          const paginaDeclarada = mItem[3] || null;
-          registrarCitacaoUnicaNaFrase({
-            bruto: `(${parte.trim()})`,
-            autor: infoAutor.autorExibicao,
-            chaveAutor: infoAutor.chavePrincipal,
-            chavesAutorAlias: infoAutor.chavesAlias,
-            ano: anoCompleto,
-            anoBase,
-            chave: `${infoAutor.chavePrincipal}:${anoCompleto}`,
-            paginaDeclarada,
-            trechoDireto,
-            fraseContexto: frase.trim(),
-            paragrafoCompleto: par.trim(),
-            numParagrafo: objPar.numParagrafo,
-            numParagrafoNaSecao: objPar.numParagrafoNaSecao || objPar.numParagrafo,
-            numLinha: objPar.numLinha,
-            numFraseNoParagrafo: idxFrase + 1,
-            secao: objPar.secao || 'Corpo do Texto',
-          });
         }
       }
 
-      // 2) Narrativas ABNT/Vancouver: Mendes (2011), Victora et al. (1997), Wang et al. (2025), Entidade ([20--?])
+      // 2) Narrativas ABNT/Vancouver (usa (?<![A-Za-zÀ-ÿ0-9_]) para aceitar sobrenomes acentuados como Órgão/Ávila sem /i global)
       const reNar =
-        /\b([A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+(?:(?:\s+(?:de|da|do|dos|das|van|von|del|e|&|and)\s+|\s*,\s*|\s+)[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*(?:\s+et\s+al\.?)?)\s*\(\s*(\[?(?:19\d\d|20\d\d|20--)[a-z]?\]?|\[?s\.d\.\]?)(?:\s*,\s*(?:p\.?|p[aá]g\.?|pp\.?)\s*(\d+(?:-\d+)?))?\s*\)/gi;
+        /(?<![A-Za-zÀ-ÿ0-9_])([A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+(?:(?:\s+(?:de|da|do|dos|das|van|von|del|e|&|and)\s+|\s*,\s*|\s+)[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*(?:\s+[Ee][Tt]\s+[Aa][Ll]\.?)?)\s*\(\s*(\[?(?:19\d\d|20\d\d|20--)[a-zA-Z]?\]?|\[?[Ss]\.[Dd]\.\]?)(?:\s*,\s*(?:[Pp](?:[ÁáAa][Gg])?\.?|[Pp]{2}\.?)\s*(\d+(?:-\d+)?))?\s*\)/g;
       while ((m = reNar.exec(frase)) !== null) {
-        const autLimpo = m[1]
+        let autLimpo = m[1]
           .replace(
             /^(?:(?:por\s+outro\s+lado|al[eé]m\s+disso|adicionalmente|outrossim)\s*,\s*)?(?:(?:segundo|conforme|consoante|como|para|de\s+acordo\s+com|em|no\s+estudo\s+de|nos\s+estudos\s+de)\s+)?(?:(?:o|a|os|as)\s+)?(?:(?:dados|diretrizes|relat[oó]rio|estudos?|pesquisas?|orienta[cç][oõ]es)\s+d[ea]\s+)?(?:(?:apontad[oa]|verificad[oa]|demonstrad[oa]|relatad[oa]|descrit[oa])\s+por\s+)?(?:(?:o|a|os|as)\s+)?/i,
             ''
@@ -1352,7 +1442,17 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         if (/\b(?:elaborad[oa]|produzid[oa]|organizad[oa]|autoria|adaptad[oa]|modificad[oa])\s+(?:pel[oa]|pelos|pelas)?\s*(?:autor[ae]s?|pesquisador(?:a|es)?|pr[oó]pri[oa])\b/i.test(autLimpo)) {
           continue;
         }
-        const infoAutor = extrairChavesAutorDeCitacao(autLimpo);
+        let infoAutor = extrairChavesAutorDeCitacao(autLimpo);
+        if (autLimpo.includes(',') && refsFinais.length > 0) {
+          const partePosVirgula = autLimpo.split(',').pop().trim();
+          const infoPos = extrairChavesAutorDeCitacao(partePosVirgula);
+          const inteiroBate = refsFinais.some((r) => r.chavesAutorAlias?.some((al) => infoAutor.chavesAlias.includes(al)));
+          const posBate = infoPos.chavePrincipal && refsFinais.some((r) => r.chavesAutorAlias?.some((al) => infoPos.chavesAlias.includes(al)));
+          if (!inteiroBate && posBate) {
+            autLimpo = partePosVirgula;
+            infoAutor = infoPos;
+          }
+        }
         if (!infoAutor.chavePrincipal || infoAutor.chavePrincipal.length < 2 || ignorarSobrenomes.has(infoAutor.chavePrincipal)) {
           continue;
         }
@@ -1412,9 +1512,9 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         });
       }
 
-      // 2b) Narrativas com colchetes diretos: Autor [20--a], Entidade, [20--b], Organizacao [2021]
+      // 2b) Narrativas com colchetes diretos: Autor [20--a], Órgão, [20--b], Organizacao [2021] (aceita iniciais acentuadas, sem /i global)
       const reNarColchetes =
-        /(?<!\()\b([A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+(?:(?:\s+(?:de|da|do|dos|das|van|von|del|e|&|and)\s+|\s*,\s*|\s+)[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*(?:\s+et\s+al\.?)?)(?:,\s*|\s+)\[\s*((?:19\d\d|20\d\d|20--)[a-z]?|s\.d\.)(?:\s*,\s*(?:p\.?|p[aá]g\.?|pp\.?)\s*(\d+(?:-\d+)?))?\s*\](?!\))/gi;
+        /(?<!\()(?<![A-Za-zÀ-ÿ0-9_])([A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+(?:(?:\s+(?:de|da|do|dos|das|van|von|del|e|&|and)\s+|\s*,\s*|\s+)[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*(?:\s+[Ee][Tt]\s+[Aa][Ll]\.?)?)(?:,\s*|\s+)\[\s*((?:19\d\d|20\d\d|20--)[a-zA-Z]?|[Ss]\.[Dd]\.)(?:\s*,\s*(?:[Pp](?:[ÁáAa][Gg])?\.?|[Pp]{2}\.?)\s*(\d+(?:-\d+)?))?\s*\](?!\))/g;
       while ((m = reNarColchetes.exec(frase)) !== null) {
         const autLimpo = m[1]
           .replace(

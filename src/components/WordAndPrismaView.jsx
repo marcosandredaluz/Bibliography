@@ -18,6 +18,12 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
   const [nomeDoc, setNomeDoc] = useState(documentos[0]?.titulo || 'Tese / Artigo Principal');
   const [busca, setBusca] = useState('');
   const [pagina, setPagina] = useState('');
+  const [usarCampoNativo, setUsarCampoNativo] = useState(true);
+  const [mostrarPlugIns, setMostrarPlugIns] = useState(false);
+  const [selecionadasComposta, setSelecionadasComposta] = useState(new Set());
+  const [extracaoDocx, setExtracaoDocx] = useState(null);
+  const [extraindoDocx, setExtraindoDocx] = useState(false);
+  const [importandoExtracao, setImportandoExtracao] = useState(false);
 
   useEffect(() => {
     window.api.word.info().then(setInfoWord).catch(() => {});
@@ -28,7 +34,7 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
     setSempreNoTopo(novo);
     avisar(
       novo
-        ? 'Janela fixada sempre no topo! Abra o Word ao lado e clique em "Citar".'
+        ? 'Janela fixada sempre no topo! Abra o Word ao lado e clique em "Citar no Word".'
         : 'Janela desafixada do topo.',
       'info'
     );
@@ -41,51 +47,107 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
       .filter((r) => !q || normalizar(`${r.csl?.title || ''} ${autoresResumo(r.csl)} ${ano(r.csl)}`).includes(q));
   }, [refs, busca]);
 
-  const citarRapido = async (r) => {
+  const toggleSelecaoComposta = (id) => {
+    setSelecionadasComposta((ant) => {
+      const prox = new Set(ant);
+      if (prox.has(id)) prox.delete(id);
+      else prox.add(id);
+      return prox;
+    });
+  };
+
+  const citarIdsNoWord = async (ids) => {
     try {
-      const f = await window.api.cit.formatar({ ids: [r.id], estilo, idioma });
-      let txt = f.citacaoTexto;
-      if (pagina.trim()) {
-        txt = txt.replace(/\)\s*$/, `, p. ${pagina.trim().replace(/^p\.?\s*/i, '')})`);
-      }
-      await window.api.sistema.copiarTexto(txt);
-      // Promove para Citada e registra no documento Word ativo
-      await onAtualizarRef(r.id, { status: 'citada' });
       const docAtual = documentos.find((d) => d.titulo === nomeDoc);
-      const idsAtuais = new Set([...(docAtual?.citadasIds || []), r.id]);
+      const idsSync = [...new Set([...(docAtual?.citadasIds || []), ...ids])];
+      const res = await window.api.word.inserirCitacaoWordAtivo({
+        ids,
+        estilo,
+        idioma,
+        pagina,
+        comCampoNativo: usarCampoNativo,
+        docId: nomeDoc,
+        tituloDoc: nomeDoc,
+      });
       await window.api.bib.sincronizarWord({
         docId: nomeDoc,
         titulo: nomeDoc,
         estilo,
-        citadasIds: [...idsAtuais],
+        citadasIds: idsSync,
       });
       onRecarregar?.();
-      avisar(`Copiado: ${txt} — cole no Word (Ctrl+V). Marcada como Citada!`, 'ok');
+      if (res?.injetadoDireto) {
+        avisar(
+          `✓ ${res.citacaoTexto} injetada direto no Word (${res.documentoAtivoNome}) ${usarCampoNativo ? 'como Campo protegido' : 'no cursor'} + copiada!`,
+          'ok'
+        );
+      } else {
+        avisar(`Copiado: ${res?.citacaoTexto || ''} — cole no Word (Ctrl+V). Marcada(s) como Citada!`, 'ok');
+      }
+      if (ids.length > 1) setSelecionadasComposta(new Set());
     } catch (e) {
       avisar(e.message, 'erro');
     }
   };
 
-  const copiarListaWord = async (escopo) => {
-    const ids = refs
-      .filter((r) => (escopo === 'citadas' ? r.status === 'citada' : r.status === 'consultada'))
-      .map((r) => r.id);
-    if (!ids.length) {
-      avisar(
-        escopo === 'citadas'
-          ? 'Nenhuma referência está marcada como Citada ainda.'
-          : 'Nenhuma referência está marcada apenas como Consultada.',
-        'info'
-      );
-      return;
+  const inserirOuCopiarListaWord = async (escopo) => {
+    try {
+      const res = await window.api.word.inserirBibliografiaWordAtivo({ escopo, estilo, idioma });
+      if (res?.injetadoDireto) {
+        avisar(
+          `✓ ${escopo === 'citadas' ? 'REFERÊNCIAS' : 'BIBLIOGRAFIA CONSULTADA'} (${res.total} obras) inserida/atualizada direto no Word (${res.documentoAtivoNome})!`,
+          'ok'
+        );
+      } else {
+        avisar(
+          escopo === 'citadas'
+            ? `Lista de REFERÊNCIAS (${res.total} obras citadas) copiada! Cole no fim do Word (Ctrl+V).`
+            : `Lista de BIBLIOGRAFIA CONSULTADA (${res.total} obras) copiada! Cole no Word (Ctrl+V).`,
+          'ok'
+        );
+      }
+    } catch (e) {
+      avisar(e.message, 'info');
     }
-    await window.api.cit.copiar({ ids, estilo, idioma, tipo: 'bibliografia' });
-    avisar(
-      escopo === 'citadas'
-        ? `Lista de REFERÊNCIAS (${ids.length} obras citadas) copiada! Cole no fim do Word (Ctrl+V).`
-        : `Lista de BIBLIOGRAFIA CONSULTADA (${ids.length} obras lidas e não citadas) copiada!`,
-      'ok'
-    );
+  };
+
+  const abrirExtratorDocx = async () => {
+    setExtraindoDocx(true);
+    try {
+      const res = await window.api.word.extrairReferenciasDocx();
+      if (!res) return;
+      setExtracaoDocx(res);
+      avisar(
+        `Extraídas ${res.resumo.totalObrasUnicas} obra(s) de "${res.nomeArquivo}" (${res.resumo.novasParaImportar} nova(s) p/ importar).`,
+        'ok'
+      );
+    } catch (e) {
+      avisar(e.message, 'erro');
+    } finally {
+      setExtraindoDocx(false);
+    }
+  };
+
+  const importarExtraidasParaBiblioteca = async () => {
+    if (!extracaoDocx?.itens?.length) return;
+    setImportandoExtracao(true);
+    try {
+      const res = await window.api.word.importarExtraidas({
+        itens: extracaoDocx.itens,
+        marcarComoCitada: true,
+      });
+      await onRecarregar?.();
+      const atualizada = await window.api.word.extrairReferenciasDocx(extracaoDocx.caminhoDocx);
+      if (atualizada) setExtracaoDocx(atualizada);
+      avisar(
+        `✓ Importação concluída: ${res.adicionadas} obra(s) adicionada(s), ${res.atualizadasCitada} atualizada(s) como Citada (${res.jaExistentes} já estavam na biblioteca).`,
+        'ok'
+      );
+    } catch (e) {
+      avisar(e.message, 'erro');
+    } finally {
+      setImportandoExtracao(false);
+    }
   };
 
   const citadasCount = refs.filter((r) => r.status === 'citada').length;
@@ -95,18 +157,59 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
     <div className="central-buscadores">
       <div className="topo-buscadores">
         <div>
-          <h2>Integração com o Microsoft Word (ABNT, APA 7ª ed., Vancouver)</h2>
+          <h2>Integração Nativa com o Microsoft Word (ABNT, APA 7ª ed., Vancouver)</h2>
           <p className="subtitulo">
-            Cite enquanto escreve no Word: cada citação inserida marca automaticamente a obra como <strong>Citada</strong>, separando-a das obras apenas <strong>Consultadas</strong>.
+            Injete citações direto no cursor do Word como <strong>Campos dinâmicos (estilo Zotero/Mendeley)</strong> ou copie via ponte local na porta <code>{infoWord?.porta || 23119}</code>.
           </p>
         </div>
-        <button className={`btn ${sempreNoTopo ? 'primario' : 'secundario'}`} onClick={alternarTopo}>
-          <Icone nome="external" tam={14} />{' '}
-          {sempreNoTopo ? 'Fixado no Topo (Ativo)' : 'Fixar janela ao lado do Word'}
-        </button>
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+          <span
+            style={{
+              fontSize: 12,
+              padding: '4px 10px',
+              borderRadius: 999,
+              background: '#dcfce7',
+              color: '#166534',
+              fontWeight: 600,
+              border: '1px solid #86efac',
+            }}
+            title={infoWord?.telemetria?.ultimaAtividadeEm ? `Última comunicação Word: ${infoWord.telemetria.ultimaAtividadeEm}` : 'Servidor HTTP local pronto'}
+          >
+            ● Ponte Word :{infoWord?.porta || 23119} Ativa
+          </span>
+          <button className="btn fantasma" onClick={() => setMostrarPlugIns((v) => !v)}>
+            🔌 {mostrarPlugIns ? 'Ocultar Plugins Office.js / VBA' : 'Instalar Plugin Word (Office.js / VBA)'}
+          </button>
+          <button className={`btn ${sempreNoTopo ? 'primario' : 'secundario'}`} onClick={alternarTopo}>
+            <Icone nome="external" tam={14} />{' '}
+            {sempreNoTopo ? 'Fixado no Topo (Ativo)' : 'Fixar janela ao lado do Word'}
+          </button>
+        </div>
       </div>
 
-      {/* Barra de configuração do documento e exportação em 1 clique */}
+      {mostrarPlugIns && infoWord && (
+        <div className="bloco-proxy" style={{ borderLeft: '4px solid #2563eb', background: '#f8fafc' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10 }}>
+            <div>
+              <strong>Modos Nativos dentro da Faixa de Opções do Microsoft Word (estilo Zotero / Mendeley / Paperlib)</strong>
+              <div style={{ fontSize: 12.5, color: '#475569', marginTop: 4 }}>
+                • <strong>Opção 1 — Suplemento Moderno (Office.js):</strong> usa Content Controls <code>BIB_REF:id</code> conectados em <code>{infoWord.urlPainel}</code>.<br />
+                • <strong>Opção 2 — Macro Ribbon VBA (<code>Bibliografia.bas</code> + <code>customUI14.xml</code>):</strong> alterna entre Campos Nativos (<code>wdFieldAddin</code>) e Bookmarks (<code>BIB_BREF_...</code>) + grifos/comentários direto no Word.
+              </div>
+            </div>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              <button className="btn pequeno secundario" onClick={() => window.api.word.mostrarManifesto()}>
+                <Icone nome="folder" tam={13} /> Ver manifest.xml (Office.js)
+              </button>
+              <button className="btn pequeno primario" onClick={() => window.api.word.abrirPastaVba()}>
+                <Icone nome="folder" tam={13} /> Abrir Pasta Macro VBA (.bas / customUI)
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Barra de configuração do documento e exportação/injeção em 1 clique */}
       <div className="bloco-proxy">
         <div className="grade-3">
           <label className="campo">
@@ -137,45 +240,133 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
           </label>
         </div>
 
-        <div className="barra-pdf" style={{ marginTop: 6 }}>
-          <button className="btn primario" onClick={() => copiarListaWord('citadas')}>
-            <Icone nome="copy" tam={14} /> 1. Copiar REFERÊNCIAS (somente as {citadasCount} Citadas)
-          </button>
-          <button className="btn secundario" onClick={() => copiarListaWord('consultadas')}>
-            <Icone nome="copy" tam={14} /> 2. Copiar BIBLIOGRAFIA CONSULTADA ({consultadasCount} lidas não citadas)
-          </button>
-          {infoWord && (
-            <button
-              className="btn fantasma"
-              onClick={() => window.api.word.mostrarManifesto()}
-              title="Mostra o arquivo manifest.xml do suplemento nativo do Word"
-            >
-              <Icone nome="folder" tam={14} /> Manifesto do Suplemento Word (Servidor ativo na porta {infoWord.porta})
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10, marginTop: 8 }}>
+          <div className="barra-pdf">
+            <button className="btn primario" onClick={() => inserirOuCopiarListaWord('citadas')}>
+              <Icone nome="copy" tam={14} /> 1. Inserir/Copiar REFERÊNCIAS ({citadasCount} Citadas)
             </button>
-          )}
+            <button className="btn secundario" onClick={() => inserirOuCopiarListaWord('consultadas')}>
+              <Icone nome="copy" tam={14} /> 2. Inserir/Copiar CONSULTADAS ({consultadasCount})
+            </button>
+            <button className="btn fantasma" onClick={abrirExtratorDocx} disabled={extraindoDocx} style={{ border: '1px solid #cbd5e1' }}>
+              🔍 {extraindoDocx ? 'Extraindo XML do Word…' : 'Extrair Citações / Campos de .DOCX (Ref-Extractor)'}
+            </button>
+          </div>
+
+          <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12.5, color: '#334155', cursor: 'pointer' }}>
+            <input
+              type="checkbox"
+              checked={usarCampoNativo}
+              onChange={(e) => setUsarCampoNativo(e.target.checked)}
+            />
+            Inserir como Campo protegido no Word aberto (<code>wdFieldAddin</code>)
+          </label>
         </div>
       </div>
 
-      {/* Lista rápida para citar em 1 clique */}
+      {/* Resultado do Ref-Extractor (Zotero / Mendeley / EndNote / ABNT de qualquer .DOCX) */}
+      {extracaoDocx && (
+        <div className="bloco-cofre" style={{ borderLeft: '4px solid #0d9488' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10, marginBottom: 10 }}>
+            <div>
+              <strong>🔍 Extrator Reverso de Citações ({extracaoDocx.nomeArquivo})</strong>
+              <div style={{ fontSize: 12, color: '#475569', marginTop: 2 }}>
+                Modo: <strong>{extracaoDocx.origemModo === 'campos_dinamicos' ? 'Campos Dinâmicos XML (Zotero / Mendeley / EndNote / Bibliografia)' : 'Referências Estáticas (ABNT/Vancouver)'}</strong> ·{' '}
+                Total: <strong>{extracaoDocx.resumo.totalObrasUnicas}</strong> obra(s) · Já na biblioteca: <strong>{extracaoDocx.resumo.jaNaBiblioteca}</strong> · Novas: <strong>{extracaoDocx.resumo.novasParaImportar}</strong>
+              </div>
+            </div>
+            <div style={{ display: 'flex', gap: 8 }}>
+              <button
+                className="btn pequeno primario"
+                onClick={importarExtraidasParaBiblioteca}
+                disabled={importandoExtracao || !extracaoDocx.itens.length}
+              >
+                {importandoExtracao ? 'Importando…' : `📥 Importar / Sincronizar (${extracaoDocx.resumo.totalObrasUnicas}) como Citadas`}
+              </button>
+              <button className="btn pequeno fantasma" onClick={() => setExtracaoDocx(null)}>
+                Fechar
+              </button>
+            </div>
+          </div>
+
+          <div style={{ maxHeight: 230, overflowY: 'auto', display: 'grid', gap: 6 }}>
+            {extracaoDocx.itens.map((it) => (
+              <div
+                key={it.chaveUnica}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: '6px 10px',
+                  borderRadius: 6,
+                  background: '#ffffff',
+                  border: '1px solid #e2e8f0',
+                  gap: 10,
+                }}
+              >
+                <div style={{ fontSize: 12.5 }}>
+                  <strong>{it.csl?.title || it.textoOriginal}</strong>
+                  <div style={{ fontSize: 11.5, color: '#64748b' }}>
+                    {it.csl?.author?.[0]?.family || it.csl?.author?.[0]?.literal || 'Autor n/d'} ·{' '}
+                    {it.csl?.issued?.['date-parts']?.[0]?.[0] || 's.d.'} ·{' '}
+                    {it.csl?.DOI ? `DOI: ${it.csl.DOI} · ` : ''}
+                    Citada {it.ocorrencias}x ({it.origens.join(', ')})
+                  </div>
+                </div>
+                <span
+                  className="pill-contagem"
+                  style={{
+                    background: it.naBiblioteca ? '#dcfce7' : '#fef3c7',
+                    color: it.naBiblioteca ? '#166534' : '#92400e',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {it.naBiblioteca ? '✓ Na Biblioteca' : '+ Nova p/ Importar'}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Lista rápida para citar em 1 clique (com suporte a multi-citação composta) */}
       <div className="bloco-cofre">
-        <div className="barra-lista" style={{ marginBottom: 10 }}>
-          <strong>Clique em "Citar no Word" para copiar a citação e já marcar como Citada:</strong>
-          <input
-            style={{ width: 320, padding: '5px 10px', borderRadius: 6, border: '1px solid #cbd5e1' }}
-            value={busca}
-            onChange={(e) => setBusca(e.target.value)}
-            placeholder="Buscar por autor, título ou ano…"
-          />
+        <div className="barra-lista" style={{ marginBottom: 10, flexWrap: 'wrap', gap: 8 }}>
+          <strong>Clique em "⚡ Citar no Word" para injetar no cursor / copiar e já marcar como Citada:</strong>
+          <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+            {selecionadasComposta.size >= 2 && (
+              <button
+                className="btn pequeno primario"
+                onClick={() => citarIdsNoWord([...selecionadasComposta])}
+              >
+                ⚡ Citar {selecionadasComposta.size} juntas no Word
+              </button>
+            )}
+            <input
+              style={{ width: 320, padding: '5px 10px', borderRadius: 6, border: '1px solid #cbd5e1' }}
+              value={busca}
+              onChange={(e) => setBusca(e.target.value)}
+              placeholder="Buscar por autor, título ou ano…"
+            />
+          </div>
         </div>
 
         <div className="lista-artigos-inline">
           {refsFiltradas.map((r) => (
             <div key={r.id} className="item-artigo-inline">
-              <div className="item-artigo-info">
-                <h4>{semHtml(r.csl?.title)}</h4>
-                <div className="sub-meta">
-                  <strong>{[autoresResumo(r.csl), ano(r.csl)].filter(Boolean).join(', ')}</strong>
-                  {r.csl?.['container-title'] ? ` · ${r.csl['container-title']}` : ''}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, flex: 1, minWidth: 0 }}>
+                <input
+                  type="checkbox"
+                  checked={selecionadasComposta.has(r.id)}
+                  onChange={() => toggleSelecaoComposta(r.id)}
+                  title="Marque 2+ artigos para gerar citação composta única: (Autor A, 2020; Autor B, 2022)"
+                />
+                <div className="item-artigo-info">
+                  <h4>{semHtml(r.csl?.title)}</h4>
+                  <div className="sub-meta">
+                    <strong>{[autoresResumo(r.csl), ano(r.csl)].filter(Boolean).join(', ')}</strong>
+                    {r.csl?.['container-title'] ? ` · ${r.csl['container-title']}` : ''}
+                  </div>
                 </div>
               </div>
               <div className="item-artigo-acoes">
@@ -188,8 +379,8 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
                 >
                   {r.status === 'citada' ? '✓ Citada' : r.status === 'consultada' ? 'Consultada' : 'A ler'}
                 </span>
-                <button className="btn pequeno primario" onClick={() => citarRapido(r)}>
-                  <Icone nome="copy" tam={13} /> Citar no Word
+                <button className="btn pequeno primario" onClick={() => citarIdsNoWord([r.id])}>
+                  <Icone nome="copy" tam={13} /> ⚡ Citar no Word
                 </button>
               </div>
             </div>

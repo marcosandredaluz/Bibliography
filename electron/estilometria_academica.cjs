@@ -201,6 +201,25 @@ function calcularMetricasEstilometricas(texto) {
 }
 
 /**
+ * Verifica se o bloco corresponde a tabela, quadro estruturado ou fórmula matemática de indicador
+ * (que não deve ser avaliado como prosa acadêmica contínua por burstiness ou trigramas).
+ */
+function ehTabelaOuQuadroEstruturado(texto = '') {
+  const s = String(texto || '').trim();
+  if (!s) return true;
+  if (/^(?:Figura|Tabela|Quadro|Gr[aá]fico|Ficha)\s+\d+\s*[:.–—-]/i.test(s)) return true;
+  const colunasTabulares = (s.match(/\s{3,}|\t/g) || []).length;
+  if (colunasTabulares >= 2) return true;
+  if (/[÷×=]\s*(?:total|100|\d)/i.test(s) && !/[.!?]\s+[A-ZÀ-Ú]/.test(s)) return true;
+  const pontosFinais = (s.match(/[.!?](?:\s|$)/g) || []).length;
+  const palavras = (s.match(/\b[\p{L}\p{N}-]+\b/gu) || []).length;
+  if (palavras >= 35 && pontosFinais <= 1 && /[;:]/.test(s) && /\b(?:Fonte\s*:|Numerador|Denominador|Periodicidade)\b/i.test(s)) {
+    return true;
+  }
+  return false;
+}
+
+/**
  * Audita os parágrafos do manuscrito e emite alertas estilométricos determinísticos.
  */
 function auditarEstilometriaDoManuscrito(paragrafos = []) {
@@ -217,8 +236,11 @@ function auditarEstilometriaDoManuscrito(paragrafos = []) {
     const texto = typeof p === 'string' ? p : p.texto || '';
     if (!texto || texto.trim().length < 80) continue;
 
-    // Ignora elementos pré-textuais (Capa, Folha de Rosto, Ficha Catalográfica, Dedicatória)
-    if (/\b(?:Trabalho\s+de\s+Conclus[ãa]o\s+de\s+Curso|Disserta[çc][ãa]o\s+apresentada|Tese\s+apresentada|requisito\s+obrigat[óo]rio\s+para\s+obten[çc][ãa]o|Projeto\s+de\s+Interven[çc][ãa]o|Ficha\s+catalogr[áa]fica|Orientador\s*:)\b/i.test(texto)) {
+    // Ignora elementos pré-textuais, tabelas, quadros e fórmulas de indicadores
+    if (
+      /\b(?:Trabalho\s+de\s+Conclus[ãa]o\s+de\s+Curso|Disserta[çc][ãa]o\s+apresentada|Tese\s+apresentada|requisito\s+obrigat[óo]rio\s+para\s+obten[çc][ãa]o|Projeto\s+de\s+Interven[çc][ãa]o|Ficha\s+catalogr[áa]fica|Orientador\s*:)\b/i.test(texto) ||
+      ehTabelaOuQuadroEstruturado(texto)
+    ) {
       continue;
     }
 

@@ -24,7 +24,8 @@ const { injetarComentariosNoDocx } = require('./docx_comentarios_injector.cjs');
 const { gerarHtmlLaudoPericial } = require('./laudo_pericial_generator.cjs');
 const { executarCirurgiaDocx } = require('./docx_surgical_editor.cjs');
 const { execFile } = require('child_process');
-const { iniciarServidorWord, PORTA } = require('./wordServer.cjs');
+const { iniciarServidorWord, PORTA, telemetriaWord } = require('./wordServer.cjs');
+const { extrairReferenciasDeDocx } = require('./word_ref_extractor.cjs');
 const os = require('os');
 
 const DEV = process.argv.includes('--dev');
@@ -413,20 +414,243 @@ function registrarIpc() {
     return { atualizados, total: alvos.length };
   });
 
-  // Fase 3: Integração Word
-  h('word:info', async () => ({
-    porta: PORTA,
-    urlPainel: `http://127.0.0.1:${PORTA}/word-addin/index.html`,
-    caminhoManifesto: path.join(__dirname, '..', 'resources', 'word-addin', 'manifest.xml'),
-  }));
+  // Fase 3: Integração Nativa com o Microsoft Word (Office.js + VBA .bas + Ref-Extractor + COM Direto)
+  h('word:info', async () => {
+    const pastaStartupWord = process.env.APPDATA
+      ? path.join(process.env.APPDATA, 'Microsoft', 'Word', 'STARTUP')
+      : null;
+    return {
+      porta: PORTA,
+      urlPainel: `http://127.0.0.1:${PORTA}/word-addin/index.html`,
+      caminhoManifesto: path.join(__dirname, '..', 'resources', 'word-addin', 'manifest.xml'),
+      caminhoPastaVba: path.join(__dirname, '..', 'resources', 'word-vba-integration'),
+      caminhoModuloBas: path.join(__dirname, '..', 'resources', 'word-vba-integration', 'Bibliografia.bas'),
+      pastaStartupWord,
+      telemetria: telemetriaWord,
+    };
+  });
   h('word:mostrarManifesto', async () => {
     const p = path.join(__dirname, '..', 'resources', 'word-addin', 'manifest.xml');
     shell.showItemInFolder(p);
     return p;
   });
+  h('word:abrirPastaVba', async () => {
+    const pastaVba = path.join(__dirname, '..', 'resources', 'word-vba-integration');
+    await shell.openPath(pastaVba);
+    return pastaVba;
+  });
   h('word:modoTopo', async (ativo) => {
     if (janela) janela.setAlwaysOnTop(!!ativo);
     return !!ativo;
+  });
+
+  h('word:extrairReferenciasDocx', async (caminhoFornecido) => {
+    let caminho = caminhoFornecido;
+    if (!caminho) {
+      const r = await dialog.showOpenDialog(janela, {
+        title: 'Selecionar arquivo do Microsoft Word (.docx) para extrair citações e campos',
+        properties: ['openFile'],
+        filters: [{ name: 'Documento Word (.docx)', extensions: ['docx'] }],
+      });
+      if (r.canceled || !r.filePaths.length) return null;
+      caminho = r.filePaths[0];
+    }
+    const resultado = await extrairReferenciasDeDocx(caminho, biblioteca);
+    return { ...resultado, nomeArquivo: path.basename(caminho) };
+  });
+
+  h('word:importarExtraidas', async ({ itens = [], marcarComoCitada = true }) => {
+    const b = exigirBiblioteca();
+    let adicionadas = 0;
+    let jaExistentes = 0;
+    let atualizadasCitada = 0;
+
+    for (const it of itens) {
+      const csl = it?.csl;
+      if (!csl || (!csl.title && !csl.DOI)) continue;
+      let existente = csl.DOI ? b.porDoi(csl.DOI) : null;
+      if (!existente && csl.title) {
+        const chTit = String(csl.title).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 36);
+        if (chTit.length >= 10) {
+          existente = [...b.refs.values()].find(
+            (r) => String(r.csl?.title || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 36) === chTit
+          ) || null;
+        }
+      }
+      if (existente) {
+        jaExistentes++;
+        if (marcarComoCitada && existente.status !== 'citada') {
+          await b.atualizar(existente.id, { status: 'citada' });
+          atualizadasCitada++;
+        }
+        continue;
+      }
+      await b.criar({
+        csl,
+        tags: ['ExtraidaDoWord'],
+        status: marcarComoCitada ? 'citada' : 'a_ler',
+      });
+      adicionadas++;
+    }
+
+    if (janela && !janela.isDestroyed()) {
+      janela.webContents.send('bib:atualizado');
+    }
+    return { adicionadas, jaExistentes, atualizadasCitada };
+  });
+
+  h('word:inserirCitacaoWordAtivo', async ({ ids = [], estilo, idioma, pagina = '', comCampoNativo = true, docId, tituloDoc }) => {
+    const b = exigirBiblioteca();
+    const itens = ids.map((id) => b.refs.get(id)?.csl).filter(Boolean);
+    if (!itens.length) throw new Error('Selecione ao menos uma referência válida.');
+    const f = citacoes.formatar({
+      itens,
+      estiloId: estilo || cfg.estilo,
+      idioma: idioma || cfg.idioma,
+      raizBiblioteca: b.raiz,
+    });
+    let citacaoTexto = f.citacaoTexto;
+    if (pagina && String(pagina).trim()) {
+      const pg = String(pagina).trim().replace(/^p\.?\s*/i, '');
+      citacaoTexto = citacaoTexto.replace(/\)\s*$/, `, p. ${pg})`);
+    }
+    clipboard.writeText(citacaoTexto);
+
+    for (const id of ids) {
+      if (b.refs.has(id)) await b.atualizar(id, { status: 'citada' });
+    }
+    if (docId) {
+      await b.sincronizarDocumentoWord({
+        docId,
+        titulo: tituloDoc || docId,
+        estilo: estilo || cfg.estilo,
+        citadasIds: ids,
+      });
+    }
+
+    let injetadoDireto = false;
+    let documentoAtivoNome = '';
+    if (process.platform === 'win32') {
+      const txtB64 = Buffer.from(citacaoTexto, 'utf8').toString('base64');
+      const codeB64 = Buffer.from(`BIBLIOGRAFIA_ITEM id=${ids.join(',')}`, 'utf8').toString('base64');
+      const usarCampo = comCampoNativo ? '$true' : '$false';
+      const psScript = `
+        $OutputEncoding = [System.Text.Encoding]::UTF8
+        try {
+          $word = [Runtime.InteropServices.Marshal]::GetActiveObject("Word.Application")
+          if ($word.Documents.Count -gt 0 -and $word.Selection) {
+            $txt = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${txtB64}"))
+            $codigo = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${codeB64}"))
+            $sel = $word.Selection
+            $rng = $sel.Range
+            if (${usarCampo}) {
+              $fld = $word.ActiveDocument.Fields.Add($rng, 81, $codigo, $true)
+              $fld.Result.Text = $txt
+            } else {
+              $rng.Text = $txt
+            }
+            Write-Output ("OK:" + $word.ActiveDocument.Name)
+          }
+        } catch {
+          Write-Output "NO_WORD"
+        }
+      `;
+      const out = await new Promise((resolve) => {
+        execFile('powershell', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript], { timeout: 5000 }, (_e, stdout) => {
+          resolve(String(stdout || '').trim());
+        });
+      });
+      if (out.startsWith('OK:')) {
+        injetadoDireto = true;
+        documentoAtivoNome = out.slice(3).trim();
+      }
+    }
+
+    if (janela && !janela.isDestroyed()) {
+      janela.webContents.send('bib:atualizado');
+    }
+    return {
+      ok: true,
+      injetadoDireto,
+      documentoAtivoNome,
+      citacaoTexto,
+      comCampoNativo,
+    };
+  });
+
+  h('word:inserirBibliografiaWordAtivo', async ({ escopo = 'citadas', estilo, idioma }) => {
+    const b = exigirBiblioteca();
+    const filtradas = [...b.refs.values()].filter((r) => (escopo === 'citadas' ? r.status === 'citada' : r.status === 'consultada'));
+    if (!filtradas.length) {
+      throw new Error(
+        escopo === 'citadas'
+          ? 'Nenhuma obra está marcada como Citada ainda.'
+          : 'Nenhuma obra está marcada apenas como Consultada.'
+      );
+    }
+    const f = citacoes.formatar({
+      itens: filtradas.map((r) => r.csl).filter(Boolean),
+      estiloId: estilo || cfg.estilo,
+      idioma: idioma || cfg.idioma,
+      raizBiblioteca: b.raiz,
+    });
+    const textoPlano = (f.entradas || [])
+      .map((h) => String(h || '').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&nbsp;/g, ' ').trim())
+      .filter(Boolean)
+      .join('\r\n\r\n');
+    clipboard.writeText(textoPlano);
+
+    let injetadoDireto = false;
+    let documentoAtivoNome = '';
+    if (process.platform === 'win32' && textoPlano) {
+      const tituloSec = escopo === 'citadas' ? 'REFERÊNCIAS' : 'BIBLIOGRAFIA CONSULTADA';
+      const marcador = escopo === 'citadas' ? 'BIBLIOGRAFIA_REFERENCIAS_FINAL' : 'BIBLIOGRAFIA_CONSULTADA_FINAL';
+      const bibB64 = Buffer.from(textoPlano, 'utf8').toString('base64');
+      const titB64 = Buffer.from(tituloSec, 'utf8').toString('base64');
+      const psScript = `
+        $OutputEncoding = [System.Text.Encoding]::UTF8
+        try {
+          $word = [Runtime.InteropServices.Marshal]::GetActiveObject("Word.Application")
+          if ($word.Documents.Count -gt 0) {
+            $doc = $word.ActiveDocument
+            $bib = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${bibB64}"))
+            $tit = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${titB64}"))
+            if ($doc.Bookmarks.Exists("${marcador}")) {
+              $rng = $doc.Bookmarks("${marcador}").Range
+              $rng.Text = $bib
+              $doc.Bookmarks.Add("${marcador}", $rng) | Out-Null
+            } else {
+              $rng = $doc.Content
+              $rng.Collapse(0)
+              $rng.InsertParagraphAfter()
+              $rng.InsertAfter($tit + "\r\n")
+              $rng.Collapse(0)
+              $rng.Text = $bib
+              $doc.Bookmarks.Add("${marcador}", $rng) | Out-Null
+            }
+            Write-Output ("OK:" + $doc.Name)
+          }
+        } catch {
+          Write-Output "NO_WORD"
+        }
+      `;
+      const out = await new Promise((resolve) => {
+        execFile('powershell', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript], { timeout: 6000 }, (_e, stdout) => {
+          resolve(String(stdout || '').trim());
+        });
+      });
+      if (out.startsWith('OK:')) {
+        injetadoDireto = true;
+        documentoAtivoNome = out.slice(3).trim();
+      }
+    }
+
+    return {
+      ok: true,
+      total: filtradas.length,
+      injetadoDireto,
+      documentoAtivoNome,
+    };
   });
 
   // Auditoria Reversa de Manuscrito (.docx, .pdf, .txt)

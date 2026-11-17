@@ -92,7 +92,44 @@ async function extrairPaginasPdf(bytes) {
       const pag = await docPdf.getPage(i);
       const txt = await pag.getTextContent();
       const bruto = txt.items.map((it) => it.str + (it.hasEOL ? '\n' : ' ')).join('');
-      paginas.push({ numero: i, bruto, norm: normalizar(bruto).replace(/\s+/g, ' ') });
+
+      // Agrupa itens em linhas visuais ordenadas por Y decrescente e X crescente para reconstrução fiel de manuscritos
+      const buckets = [];
+      for (const it of txt.items || []) {
+        const s = String(it.str || '');
+        if (!s.trim()) continue;
+        const y = Array.isArray(it.transform) ? Number(it.transform[5]) : 0;
+        const x = Array.isArray(it.transform) ? Number(it.transform[4]) : 0;
+        const h = Number(it.height) || (Array.isArray(it.transform) ? Math.abs(Number(it.transform[3])) : 11) || 11;
+        const bucketExist = buckets.find((b) => Math.abs(b.y - y) <= Math.max(2.5, h * 0.35));
+        if (bucketExist) {
+          bucketExist.itens.push({ str: s, x, h });
+        } else {
+          buckets.push({ y, h, itens: [{ str: s, x, h }] });
+        }
+      }
+      buckets.sort((a, b) => b.y - a.y);
+      const linhasVisuais = buckets.map((b) => {
+        b.itens.sort((a, b2) => a.x - b2.x);
+        let linhaTexto = '';
+        let prevXEnd = null;
+        for (const it of b.itens) {
+          if (linhaTexto && prevXEnd !== null) {
+            const gap = it.x - prevXEnd;
+            linhaTexto += gap > Math.max(12, b.h * 1.4) ? '   ' : ' ';
+          }
+          linhaTexto += it.str.trim();
+          prevXEnd = it.x + it.str.length * Math.max(4, b.h * 0.48);
+        }
+        return {
+          y: b.y,
+          x: b.itens[0]?.x ?? 0,
+          altura: b.h,
+          texto: linhaTexto.trim(),
+        };
+      }).filter((l) => l.texto);
+
+      paginas.push({ numero: i, bruto, norm: normalizar(bruto).replace(/\s+/g, ' '), linhasVisuais });
     }
     return paginas;
   } finally {
@@ -103,6 +140,106 @@ async function extrairPaginasPdf(bytes) {
       /* ignora erro de cleanup */
     }
   }
+}
+
+function ehQuebraDeUrlOuDoi(textoAnterior, textoProximo) {
+  const ant = String(textoAnterior || '').trimEnd();
+  const prox = String(textoProximo || '').trimStart();
+  if (!ant || !prox) return false;
+  if (/(?:https?:\/\/|www\.|doi\s*:?\s*|10\.\d{4,9}\/)\S*[-/]$/i.test(ant)) return true;
+  if (/[-\/]$/.test(ant) && /^(?:10\.\d{4,9}\/|\d{3,}-\d{3,}|[a-z0-9._-]+\.(?:html?|pdf|en|pt)\b)/i.test(prox)) return true;
+  return false;
+}
+
+function ehLinhaEstruturalNova(linha, emReferencias = false) {
+  const s = String(linha || '').trim();
+  if (!s) return false;
+  if (/^(?:refer[eê]ncias(?:\s+bibliogr[aá]ficas)?|bibliografia(?:\s+consultada)?|references|anexo|ap[eê]ndice)\b/i.test(s)) return true;
+  if (/^\d+(?:\.\d+)*\s+[A-ZÀ-Ú]/.test(s) && !/\b(?:19|20)\d\d\b/.test(s)) return true;
+  if (/^(?:figura|tabela|quadro|gr[aá]fico|mapa|diagrama|fluxograma|fotografia|organograma|esquema)\s+\d+\s*[:.–—-]/i.test(s)) return true;
+  if (/^fonte\s*[:–—-]/i.test(s)) return true;
+  if (/\s{3,}/.test(s)) return true; // linha de tabela com múltiplas colunas
+  if (emReferencias) {
+    if (/^(?:\[\d{1,3}\]|\d{1,3}\.)\s+[A-Za-zÀ-ÿ“"']/.test(s) && !/^(?:19|20)\d\d[a-z]?\./.test(s)) return true;
+    if (/^[A-ZÀ-Ú]{2,}[A-ZÀ-Ú\s'’-]*,\s+[A-ZÀ-Ú]/.test(s)) return true;
+    if (/^(?:[A-ZÀ-Ú]{2,}|(?:O|A|OS|AS|UM|UMA|THE)\s+[A-ZÀ-Ú]{2,})(?:\s+[A-ZÀ-Ú]{2,})?\s+[a-zà-ÿ]{2,}/.test(s)) return true;
+    if (/^(?:[A-ZÀ-Ú]{2,}[A-ZÀ-Ú0-9\s().'-]{2,60})\s*[.:]\s+/.test(s) && !/^(?:Journal|Revista|Dispon[ií]vel|Acesso|Preprint|DOI|URL)\b/i.test(s)) return true;
+  }
+  return false;
+}
+
+function reconstruirTextoPdfManuscrito(paginas = []) {
+  if (!Array.isArray(paginas) || !paginas.length) return '';
+  const todasLinhas = [];
+  let emReferencias = false;
+
+  for (const pag of paginas) {
+    const rawLines = Array.isArray(pag.linhasVisuais) && pag.linhasVisuais.length > 0
+      ? [...pag.linhasVisuais]
+      : String(pag.bruto || '')
+          .split(/\r?\n/)
+          .map((t, idx) => ({ texto: t.trim(), y: 1000 - idx * 14, x: 0, altura: 11 }))
+          .filter((l) => l.texto);
+
+    // Remove números de página isolados no topo (2 primeiras linhas) ou rodapé (2 últimas linhas) da página
+    const filtradas = rawLines.filter((l, idx) => {
+      const noExtremo = idx <= 1 || idx >= rawLines.length - 2;
+      if (noExtremo && /^\d{1,4}$/.test(l.texto)) return false;
+      if (/^\d{1,4}$/.test(l.texto) && Number(l.texto) === pag.numero) return false;
+      return true;
+    });
+    if (!filtradas.length) continue;
+
+    // Calcula espaçamento entrelinhas predominante na página para detectar parágrafos reais vs quebras visuais
+    const deltas = [];
+    for (let i = 1; i < filtradas.length; i++) {
+      const d = filtradas[i - 1].y - filtradas[i].y;
+      if (d > 4 && d < 45) deltas.push(d);
+    }
+    deltas.sort((a, b) => a - b);
+    const deltaBase = deltas.length ? deltas[Math.floor(deltas.length * 0.45)] : 14;
+
+    filtradas.forEach((l, idx) => {
+      if (/^(?:\d+(?:\.\d+)*\s+)?(?:refer[eê]ncias(?:\s+bibliogr[aá]ficas)?|bibliografia(?:\s+consultada)?|references)\s*:?\s*$/i.test(l.texto)) {
+        emReferencias = true;
+      } else if (/^(?:anexo|ap[eê]ndice)\b/i.test(l.texto)) {
+        emReferencias = false;
+      }
+      const dPrev = idx > 0 ? filtradas[idx - 1].y - l.y : 0;
+      const quebraMaior = idx > 0 && dPrev > Math.max(deltaBase * 1.32, l.altura * 1.85);
+      todasLinhas.push({
+        texto: l.texto.replace(/\u00AD/g, ''),
+        novaSecaoOuPar: idx === 0 ? null : (quebraMaior || ehLinhaEstruturalNova(l.texto, emReferencias)),
+        emReferencias,
+      });
+    });
+  }
+
+  const paragrafos = [];
+  let buf = '';
+  for (const item of todasLinhas) {
+    if (!buf) {
+      buf = item.texto;
+      continue;
+    }
+    const urlQuebrada = ehQuebraDeUrlOuDoi(buf, item.texto);
+    if (urlQuebrada) {
+      buf = buf.trimEnd() + item.texto.trimStart();
+      continue;
+    }
+    const novaPorInicioRef = item.novaSecaoOuPar === true || ehLinhaEstruturalNova(item.texto, item.emReferencias);
+    const paginaTerminouSentenca = item.novaSecaoOuPar === null && /[.!?:]\s*$/.test(buf) && /^[A-ZÀ-Ú0-9“"']/.test(item.texto);
+    const separadorPorFonteOuCaption = /^(?:fonte\s*:|(?:figura|tabela|quadro|gr[aá]fico)\s+\d+\s*[:.–—-])/i.test(item.texto);
+
+    if (novaPorInicioRef || paginaTerminouSentenca || separadorPorFonteOuCaption) {
+      paragrafos.push(buf.trim());
+      buf = item.texto;
+    } else {
+      buf = `${buf} ${item.texto}`;
+    }
+  }
+  if (buf.trim()) paragrafos.push(buf.trim());
+  return paragrafos.join('\n\n');
 }
 
 function localizarOcorrenciaNoPdf(ocorrencia, paginas) {
@@ -874,9 +1011,9 @@ export default function ReverseAuditView({
       if (!arq) return;
       let novoTexto = '';
       if (arq.tipo === 'pdf') {
-        setEtapa('Extraindo texto do PDF do manuscrito…');
+        setEtapa('Extraindo e reconstruindo parágrafos e DOIs do PDF do manuscrito…');
         const pags = await extrairPaginasPdf(arq.bytes);
-        novoTexto = pags.map((p) => p.bruto).join('\n\n');
+        novoTexto = reconstruirTextoPdfManuscrito(pags) || pags.map((p) => p.bruto).join('\n\n');
         setEtapa('');
       } else {
         novoTexto = arq.texto || '';

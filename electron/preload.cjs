@@ -64,7 +64,12 @@ contextBridge.exposeInMainWorld('api', {
   word: {
     info: () => chamar('word:info'),
     mostrarManifesto: () => chamar('word:mostrarManifesto'),
+    abrirPastaVba: () => chamar('word:abrirPastaVba'),
     modoTopo: (ativo) => chamar('word:modoTopo', ativo),
+    extrairReferenciasDocx: (caminhoDocx) => chamar('word:extrairReferenciasDocx', caminhoDocx),
+    importarExtraidas: (opts) => chamar('word:importarExtraidas', opts),
+    inserirCitacaoWordAtivo: (opts) => chamar('word:inserirCitacaoWordAtivo', opts),
+    inserirBibliografiaWordAtivo: (opts) => chamar('word:inserirBibliografiaWordAtivo', opts),
   },
   audit: {
     escolherArquivo: () => chamar('audit:escolherArquivo'),

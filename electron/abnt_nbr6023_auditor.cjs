@@ -37,8 +37,13 @@ function identificarTipologiaAbnt(texto = '', metadados = {}) {
     return 'tese_dissertacao';
   }
 
-  // Artigo de periódico (indícios de volume, fascículo ou periódico)
-  if (/\b(?:v\.|vol\.|n\.|nº|no\.|fasc\.)\s*\d+/i.test(t) || metadados.tipo === 'journal-article' || metadados.periodico) {
+  // Artigo de periódico ou preprint (indícios de volume, fascículo, DOI científico ou e-locator)
+  if (
+    /\b(?:v\.|vol\.|n\.|nº|no\.|fasc\.|e\d{5,}|preprint|arxiv|scielo)\s*\d*/i.test(t) ||
+    metadados.tipo === 'journal-article' ||
+    metadados.periodico ||
+    (/\b(?:DOI\s*:?\s*(?:https?:\/\/(?:dx\.)?doi\.org\/)?10\.\d{4,9}\/[^\s]+)\b/i.test(t) && /,\s*(?:19|20)\d\d[a-z]?\./i.test(t))
+  ) {
     return 'artigo_periodico';
   }
 
@@ -61,9 +66,15 @@ function auditarReferenciaAbntIndividual(ref, idx = 0) {
   const inconformidades = [];
   const tipologia = identificarTipologiaAbnt(texto, ref);
 
-  // 1. Verificação de URL e data de acesso (Obrigatório para qualquer meio eletrônico)
-  const temUrl = /https?:\/\/[^\s]+/i.test(texto);
-  if (temUrl) {
+  // 1. Verificação de URL e data de acesso (Obrigatório para documentos eletrônicos via URL; pela ABNT NBR 6023:2018 o DOI substitui a exigência de "Disponível em / Acesso em")
+  const temDoiOficial = /\bDOI\s*:?\s*(?:https?:\/\/(?:dx\.)?doi\.org\/)?10\.\d{4,9}\/[^\s]+/i.test(texto) ||
+    /https?:\/\/(?:dx\.)?doi\.org\/10\.\d{4,9}\/[^\s]+/i.test(texto);
+  const textoSemDoi = texto
+    .replace(/\bDOI\s*:?\s*(?:https?:\/\/(?:dx\.)?doi\.org\/)?10\.\d{4,9}\/[^\s]+/gi, ' ')
+    .replace(/https?:\/\/(?:dx\.)?doi\.org\/10\.\d{4,9}\/[^\s]+/gi, ' ');
+  const temUrlNaoDoi = /https?:\/\/[^\s]+/i.test(textoSemDoi);
+
+  if (temUrlNaoDoi && !temDoiOficial) {
     const temDisponivelEm = /Dispon[íi]vel\s+em\s*:\s*<?https?:\/\/[^\s>]+>?/i.test(texto);
     const mAcessoEm = texto.match(/Acesso\s+em\s*:\s*(\d{1,2})\s+([a-zA-Zá-úÁ-Ú.]+)\s+(\d{4})/i);
 
@@ -98,9 +109,12 @@ function auditarReferenciaAbntIndividual(ref, idx = 0) {
 
   // 2. Verificação de Livros / Monografias
   if (tipologia === 'monografia_livro') {
-    // Cidade e Editora: busca padrão "Cidade: Editora, Ano" ou "[S.l.: s.n.]"
-    const temPadraoLocalEditora = /(?:[A-ZÀ-Ú][a-zA-Zà-ú\s'-]+|\b\[S\.l\.\])\s*:\s*(?:[A-ZÀ-Úa-zà-ú0-9\s.,'-]+|\b\[s\.n\.\])\s*,\s*(?:[12]\d{3}|\[20--[a-z]?\])/i.test(texto);
-    const temLocalIsolado = /:\s*[A-ZÀ-Ú][a-zà-ú]+/.test(texto);
+    // Cidade (opcionalmente com UF: "São Luís, MA:") e Editora (opcionalmente coeditora ";" ou "/"), seguidas de Ano (com sufixo opcional a-f)
+    const temPadraoLocalEditora =
+      /(?:[A-ZÀ-Ú][a-zA-Zà-ú\s.,'-]{1,60}|\b\[S\.l\.\])\s*:\s*(?:[A-ZÀ-Úa-zà-ú0-9\s.,;/'&-]{1,100}|\b\[s\.n\.\])\s*,\s*(?:[12]\d{3}[a-f]?|\[20--[a-z]?\])/i.test(
+        texto
+      );
+    const temLocalIsolado = /:\s*[A-ZÀ-Ú][A-Za-zÀ-ÿ]+/.test(texto);
 
     if (!temPadraoLocalEditora && !temLocalIsolado) {
       inconformidades.push({
@@ -112,13 +126,14 @@ function auditarReferenciaAbntIndividual(ref, idx = 0) {
     }
   }
 
-  // 3. Verificação de Artigos de Periódicos
+  // 3. Verificação de Artigos de Periódicos (preprints em repositórios oficiais dispensam volume/paginação)
   if (tipologia === 'artigo_periodico') {
+    const ehPreprint = /\b(?:preprint|biorxiv|medrxiv|arxiv|scielo\s+preprints)\b/i.test(texto);
     const temVolume = /\b(?:v\.|vol\.)\s*\d+/i.test(texto);
     const temFasciculo = /\b(?:n\.|nº|no\.|fasc\.)\s*\d+/i.test(texto);
     const temPaginacao = /\bp\.\s*\d+(?:\s*[-–]\s*\d+)?\b/i.test(texto) || /\b(?:e\d{5,}|art\.\s*e\d+)\b/i.test(texto);
 
-    if (!temPaginacao && !temVolume && !temFasciculo) {
+    if (!ehPreprint && !temPaginacao && !temVolume && !temFasciculo) {
       inconformidades.push({
         tipo: 'abnt_artigo_sem_volume_paginas',
         gravidade: 'alta',
