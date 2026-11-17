@@ -266,7 +266,153 @@ async function buscarTitulo(consulta) {
     } catch {}
   }
 
+  // Fallback complementar no Semantic Scholar (Inspirado no RefChecker)
+  if (itens.length === 0) {
+    try {
+      const qLimpa = q.split(/[:–—]/)[0].trim().slice(0, 100);
+      const urlS2 = `https://api.semanticscholar.org/graph/v1/paper/search?query=${encodeURIComponent(qLimpa)}&limit=5&fields=title,year,authors,externalIds,isRetracted`;
+      const dadosS2 = await buscarJson(urlS2, {}, 1);
+      for (const r of dadosS2.data || []) {
+        itens.push({
+          doi: r.externalIds?.DOI ? normalizarDoi(r.externalIds.DOI) : null,
+          pmid: r.externalIds?.PubMed ? String(r.externalIds.PubMed) : null,
+          titulo: r.title || '(sem título)',
+          autores: (r.authors || []).slice(0, 4).map((a) => a.name).filter(Boolean).join(', ') +
+            ((r.authors || []).length > 4 ? ' et al.' : ''),
+          ano: r.year || '',
+          fonte: 'Semantic Scholar',
+          tipo: 'article',
+          isRetracted: Boolean(r.isRetracted),
+        });
+      }
+    } catch {}
+  }
+
   return itens;
 }
 
-module.exports = { porDoi, porPmid, porPmc, porIsbn, buscarTitulo, normalizarDoi, separarNome };
+/**
+ * Consulta a API do Semantic Scholar (Graph API) por DOI, PMID ou S2 PaperId.
+ * Extrai metadados completos em CSL-JSON e flag de retratação.
+ */
+async function porSemanticScholar(entrada) {
+  const limpo = String(entrada || '').trim();
+  let idS2 = limpo;
+  if (/^10\.\d{4,9}\//.test(limpo)) {
+    idS2 = `DOI:${limpo}`;
+  } else if (/^\d{5,9}$/.test(limpo)) {
+    idS2 = `PMID:${limpo}`;
+  }
+  const url = `https://api.semanticscholar.org/graph/v1/paper/${encodeURIComponent(idS2)}?fields=title,authors,year,journal,externalIds,isRetracted,citationCount,abstract,publicationDate,isOpenAccess`;
+  const dados = await buscarJson(url, {}, 2);
+  if (!dados || !dados.title) {
+    throw new Error(`Obra não encontrada no Semantic Scholar: ${entrada}`);
+  }
+
+  const csl = {
+    type: 'article-journal',
+    title: semTags(dados.title),
+    DOI: dados.externalIds?.DOI ? normalizarDoi(dados.externalIds.DOI) : undefined,
+    PMID: dados.externalIds?.PubMed ? String(dados.externalIds.PubMed) : undefined,
+    'container-title': dados.journal?.name || undefined,
+    volume: dados.journal?.volume || undefined,
+    page: dados.journal?.pages || undefined,
+    abstract: dados.abstract ? semTags(dados.abstract) : undefined,
+  };
+  if (dados.year) {
+    csl.issued = { 'date-parts': [[Number(dados.year)]] };
+  }
+  if (dados.authors?.length) {
+    csl.author = dados.authors.map((a) => separarNome(a.name)).filter(Boolean);
+  }
+
+  return {
+    csl: limparCsl(csl),
+    isRetracted: Boolean(dados.isRetracted),
+    citationCount: dados.citationCount || 0,
+    externalIds: dados.externalIds || {},
+  };
+}
+
+/**
+ * Triagem Forense Ativa de Retratações (Inspirado no RefChecker):
+ * Cruza OpenAlex (Retraction Watch) + PubMed ('Retracted Publication') + Crossref + Semantic Scholar.
+ */
+async function verificarRetratacaoArtigo({ doi, pmid, titulo } = {}) {
+  const resultado = {
+    retratado: false,
+    motivo: null,
+    fonte: null,
+  };
+
+  const doiNorm = doi ? normalizarDoi(doi) : null;
+  const pmidNorm = pmid ? String(pmid).replace(/\D/g, '') : null;
+
+  // 1. Verificação via OpenAlex (Catálogo Retraction Watch de mais de 250M de trabalhos)
+  if (doiNorm || pmidNorm) {
+    try {
+      const idBusca = doiNorm ? `https://doi.org/${encodeURI(doiNorm)}` : `pmid:${pmidNorm}`;
+      const urlOa = `https://api.openalex.org/works/${idBusca}?select=id,title,is_retracted`;
+      const dadosOa = await buscarJson(urlOa, {}, 2);
+      if (dadosOa?.is_retracted) {
+        resultado.retratado = true;
+        resultado.fonte = 'OpenAlex / Retraction Watch';
+        resultado.motivo = dadosOa.title?.startsWith('RETRACTED')
+          ? dadosOa.title
+          : 'Artigo formalmente retratado/despublicado pela revista científica conforme indexação do Retraction Watch.';
+        return resultado;
+      }
+    } catch {}
+  }
+
+  // 2. Verificação via PubMed (PubType: 'Retracted Publication')
+  if (pmidNorm) {
+    try {
+      const urlPm = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id=${pmidNorm}`;
+      const dadosPm = await buscarJson(urlPm, {}, 2);
+      const pubtypes = dadosPm?.result?.[pmidNorm]?.pubtype || [];
+      if (pubtypes.some((pt) => /retracted\s+publication/i.test(pt))) {
+        resultado.retratado = true;
+        resultado.fonte = 'PubMed / National Library of Medicine';
+        resultado.motivo = 'Artigo classificado formalmente pelo PubMed/NLM como "Retracted Publication".';
+        return resultado;
+      }
+    } catch {}
+  }
+
+  // 3. Verificação no título oficial de Crossref/CSL
+  if (titulo && /^RETRACTED\b/i.test(titulo.trim())) {
+    resultado.retratado = true;
+    resultado.fonte = 'Registro Oficial Crossref';
+    resultado.motivo = `Artigo com marcação de retratação no título oficial: "${titulo}".`;
+    return resultado;
+  }
+
+  // 4. Verificação complementar no Semantic Scholar (com tolerância a 429)
+  if (doiNorm) {
+    try {
+      const urlS2 = `https://api.semanticscholar.org/graph/v1/paper/DOI:${encodeURIComponent(doiNorm)}?fields=isRetracted,title`;
+      const dadosS2 = await buscarJson(urlS2, {}, 1);
+      if (dadosS2?.isRetracted) {
+        resultado.retratado = true;
+        resultado.fonte = 'Semantic Scholar';
+        resultado.motivo = 'Artigo identificado como retratado no índice do Semantic Scholar.';
+        return resultado;
+      }
+    } catch {}
+  }
+
+  return resultado;
+}
+
+module.exports = {
+  porDoi,
+  porPmid,
+  porPmc,
+  porSemanticScholar,
+  porIsbn,
+  buscarTitulo,
+  verificarRetratacaoArtigo,
+  normalizarDoi,
+  separarNome,
+};

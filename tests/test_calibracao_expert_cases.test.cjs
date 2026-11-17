@@ -165,5 +165,25 @@ console.log('--- INICIANDO BATERIA DE CALIBRAÇÃO DOS CASOS PERICIAIS ---');
   assert.strictEqual(al2.length, 1, 'Cópia literal de 15 palavras sem aspas deve ser detectada');
 
   console.log('✓ 7. Plágio Forense: Limiar de 10 palavras e isenção de sociedades e comitês validados.');
-  console.log('\nTODOS OS 7 CASOS PERICIAIS PASSARAM COM 100% DE SUCESSO!');
+
+  // Caso 8: Triagem Ativa de Retratações Científicas (RefChecker / OpenAlex / Crossref)
+  const metadata = require('../electron/metadata.cjs');
+  assert.strictEqual(typeof metadata.verificarRetratacaoArtigo, 'function', 'Deve exportar verificarRetratacaoArtigo');
+  assert.strictEqual(typeof metadata.porSemanticScholar, 'function', 'Deve exportar porSemanticScholar');
+
+  // 8.1. Detecção por título formal com prefixo de retratação
+  const ret1 = await metadata.verificarRetratacaoArtigo({
+    titulo: 'RETRACTED: Experimental clinical trial on respiratory therapies'
+  });
+  assert.strictEqual(ret1.retratado, true, 'Deve identificar artigo retratado pelo título oficial');
+  assert.strictEqual(ret1.fonte, 'Registro Oficial Crossref');
+
+  // 8.2. Artigo íntegro sem flag de retratação
+  const ret2 = await metadata.verificarRetratacaoArtigo({
+    titulo: 'Randomized controlled trial of cardiovascular health'
+  });
+  assert.strictEqual(ret2.retratado, false, 'Artigo sem histórico de retratação não deve ser marcado');
+
+  console.log('✓ 8. Triagem de Retratações: Motor de verificação forense ativo e funcional.');
+  console.log('\nTODOS OS 8 CASOS PERICIAIS PASSARAM COM 100% DE SUCESSO!');
 })();

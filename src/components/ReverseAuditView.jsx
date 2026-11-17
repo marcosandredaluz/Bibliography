@@ -1015,7 +1015,7 @@ export default function ReverseAuditView({
   // Contabiliza e categoriza todas as intercorrências
   const refsNaoCitadasNoTexto = (resultado?.refsMapeadas || []).filter((r) => !r.citadaNoTexto);
   const refsSuspeitasIa = (resultado?.refsMapeadas || []).filter((r) =>
-    ['ia_doi_trocado', 'ia_doi_inexistente', 'ia_autor_adulterado', 'suspeita_ia_fantasma'].includes(r.statusAutenticidade)
+    ['ia_doi_trocado', 'ia_doi_inexistente', 'ia_autor_adulterado', 'suspeita_ia_fantasma', 'artigo_retratado'].includes(r.statusAutenticidade)
   );
   const alertasAtribuicaoFalsa = resultado?.alertasAtribuicaoFalsa || [];
   const alertasPlagio = resultado?.alertasPlagio || [];
@@ -1049,7 +1049,7 @@ export default function ReverseAuditView({
   });
 
   const obrasConformes = (resultado?.refsMapeadas || []).filter(
-    (r) => !['ia_doi_trocado', 'ia_doi_inexistente', 'ia_autor_adulterado', 'suspeita_ia_fantasma'].includes(r.statusAutenticidade)
+    (r) => !['ia_doi_trocado', 'ia_doi_inexistente', 'ia_autor_adulterado', 'suspeita_ia_fantasma', 'artigo_retratado'].includes(r.statusAutenticidade)
   );
   const totalConformesComPdf = obrasConformes.filter((o) => o.temPdf || refs.some((x) => x.id === o.refBibId && x.pdf)).length;
 
@@ -1289,7 +1289,7 @@ export default function ReverseAuditView({
 
   const obrasCriticas = (resultado?.refsMapeadas || []).filter(
     (r) =>
-      ['ia_doi_trocado', 'ia_doi_inexistente', 'ia_autor_adulterado', 'suspeita_ia_fantasma'].includes(r.statusAutenticidade) ||
+      ['ia_doi_trocado', 'ia_doi_inexistente', 'ia_autor_adulterado', 'suspeita_ia_fantasma', 'artigo_retratado'].includes(r.statusAutenticidade) ||
       r.retratado ||
       alertasAtribuicaoFalsa.some((a) => a.autorCitado?.toLowerCase().includes(r.primeiroSobrenome.toLowerCase()))
   );
@@ -1311,7 +1311,7 @@ export default function ReverseAuditView({
     const chaveBuscaCard = `ref_${idx}`;
     const primOc = r.ocorrenciasNoTexto?.[0];
     const ehCritica =
-      ['ia_doi_trocado', 'ia_doi_inexistente', 'ia_autor_adulterado', 'suspeita_ia_fantasma'].includes(r.statusAutenticidade) ||
+      ['ia_doi_trocado', 'ia_doi_inexistente', 'ia_autor_adulterado', 'suspeita_ia_fantasma', 'artigo_retratado'].includes(r.statusAutenticidade) ||
       r.retratado ||
       alertasAtribuicaoFalsa.some((a) => a.autorCitado?.toLowerCase().includes(r.primeiroSobrenome.toLowerCase()));
     const ehRessalva =

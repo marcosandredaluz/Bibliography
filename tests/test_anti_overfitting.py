@@ -1,5 +1,8 @@
 import os
-import pytest
+try:
+    import pytest
+except ImportError:
+    pytest = None
 
 FORBIDDEN_FILE = os.path.join(os.path.dirname(__file__), "forbidden_literals.txt")
 
@@ -41,3 +44,7 @@ def test_nenhum_literal_proibido_no_codigo():
                     pass
                     
     assert len(violacoes) == 0, f"Violações da Regra de Ouro (Anti-Overfitting):\n" + "\n".join(violacoes)
+
+if __name__ == "__main__":
+    test_nenhum_literal_proibido_no_codigo()
+    print("✅ TESTE ANTI-OVERFITTING (REGRA DE OURO): 0 VIOLAÇÕES DETECTADAS!")

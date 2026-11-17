@@ -7,7 +7,15 @@
 // 6. Valida DOIs (detectando DOI inexistente e DOI trocado), recupera resumos bilíngues (PubMed XML + OpenAlex) e faz verificação semântica bilíngue PT↔EN + numérica.
 const fs = require('fs');
 const zlib = require('zlib');
-const { porDoi, porPmid, porPmc, buscarTitulo, normalizarDoi } = require('./metadata.cjs');
+const {
+  porDoi,
+  porPmid,
+  porPmc,
+  porSemanticScholar,
+  buscarTitulo,
+  verificarRetratacaoArtigo,
+  normalizarDoi,
+} = require('./metadata.cjs');
 const { localizarUrlPdfAberto, baixarPdfParaArquivo } = require('./importers.cjs');
 const { extrairMetadadosCslEmbutidosNoXml } = require('./csl_mendeley_parser.cjs');
 const { classificarReferenciaHarmonizada } = require('./lener_br_classifier.cjs');
@@ -1393,7 +1401,7 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         });
       }
 
-      // 2b) Narrativas com colchetes diretos: Brasil [20--a], Brasil, [20--b], Ministério da Saúde [2021]
+      // 2b) Narrativas com colchetes diretos: Autor [20--a], Entidade, [20--b], Organizacao [2021]
       const reNarColchetes =
         /(?<!\()\b([A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+(?:(?:\s+(?:de|da|do|dos|das|van|von|del|e|&|and)\s+|\s*,\s*|\s+)[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*(?:\s+et\s+al\.?)?)(?:,\s*|\s+)\[\s*((?:19\d\d|20\d\d|20--)[a-z]?|s\.d\.)(?:\s*,\s*(?:p\.?|p[aá]g\.?|pp\.?)\s*(\d+(?:-\d+)?))?\s*\](?!\))/gi;
       while ((m = reNarColchetes.exec(frase)) !== null) {
@@ -2867,6 +2875,33 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
               status: grupo ? 'citada' : 'consultada',
             }));
         }
+
+        // Triagem ativa de retratações científicas (Inspirado no RefChecker)
+        if (!ehNormaLivroOuInstitucional && (refDoc.doi || csl?.DOI || refDoc.pmid || csl?.PMID || refBib?.csl?.DOI)) {
+          try {
+            const infoRetratacao = await verificarRetratacaoArtigo({
+              doi: refDoc.doi || csl?.DOI || refBib?.csl?.DOI,
+              pmid: refDoc.pmid || csl?.PMID || refBib?.csl?.PMID,
+              titulo: csl?.title || refBib?.csl?.title || refDoc.tituloBuscado,
+            });
+            if (infoRetratacao.retratado) {
+              refDoc.retratado = true;
+              if (refBib) refBib.retratado = true;
+              statusAutenticidade = 'artigo_retratado';
+              alertaAutenticidade = `🚨 ARTIGO CIENTÍFICO RETRATADO / DESPUBLICADO: A obra "${refDoc.primeiroSobrenome} (${refDoc.ano})" foi formalmente retratada na literatura (${infoRetratacao.fonte})! Motivo: ${infoRetratacao.motivo}`;
+              divergenciaMetadados = alertaAutenticidade;
+              alertasPrecisao.push({
+                tipo: 'artigo_cientifico_retratado',
+                numParagrafo: grupo?.ocorrencias?.[0]?.numParagrafo || 0,
+                numLinha: grupo?.ocorrencias?.[0]?.numLinha || 0,
+                secao: 'Lista de Referências',
+                autorCitado: `${refDoc.primeiroSobrenome} (${refDoc.ano})`,
+                fraseWord: refDoc.textoOriginal,
+                mensagem: alertaAutenticidade,
+              });
+            }
+          } catch {}
+        }
       } catch {
         /* continua se offline */
       }
@@ -3056,7 +3091,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       doiOficial: !ehFonteInexistenteOuFalsa ? refBib?.csl?.DOI || refDoc.doi || null : refDoc.doi || null,
       temPdf: !ehFonteInexistenteOuFalsa && !!refBib?.pdf,
       nomeArquivoPdf: !ehFonteInexistenteOuFalsa ? refBib?.pdf || null : null,
-      retratado: !ehFonteInexistenteOuFalsa && !!refBib?.retratado,
+      retratado: !ehFonteInexistenteOuFalsa && (!!refBib?.retratado || !!refDoc.retratado),
       divergenciaMetadados,
       statusAutenticidade,
       alertaAutenticidade,
@@ -3373,7 +3408,11 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     let statusObra = 'nao_verificada';
     let motivo = 'Sem fonte aberta ou DOI disponível';
 
-    if (refMapeada?.infoRepositorio) {
+    if (refMapeada?.retratado || refMapeada?.statusAutenticidade === 'artigo_retratado') {
+      statusObra = 'artigo_retratado';
+      motivo = '🚨 Artigo formalmente retratado na literatura científica (Retraction Watch / PubMed / Crossref)';
+      totalNaoVerificadas++;
+    } else if (refMapeada?.infoRepositorio) {
       statusObra = 'conteudo_confirmado';
       motivo = `${refMapeada.infoRepositorio.repositorio} — PDF e errata auditados (${refMapeada.infoRepositorio.detalhesErrata || 'sem errata'})`;
       totalVerificadas++;
