@@ -104,6 +104,27 @@ async function extrairPaginasPdf(bytes) {
 }
 
 function localizarOcorrenciaNoPdf(ocorrencia, paginas) {
+  if (!paginas || paginas.length === 0) {
+    return {
+      status: 'sem_paginas',
+      paginaPdf: null,
+      compatibilidade: 0,
+      mensagem: 'Sem páginas para analisar no PDF.',
+    };
+  }
+
+  // Detecta se o PDF é um documento rasterizado/escaneado sem camada de texto pesquisável (OCR)
+  const mediaCaracteres =
+    paginas.reduce((acc, p) => acc + (p.bruto ? p.bruto.trim().length : 0), 0) / paginas.length;
+  if (mediaCaracteres < 35) {
+    return {
+      status: 'scan_sem_texto_ocr',
+      paginaPdf: null,
+      compatibilidade: 0,
+      mensagem: '📄 PDF DIGITALIZADO (SCAN): Documento escaneado em imagem sem camada de texto OCR. A verificação automática de trechos requer OCR prévio no arquivo.',
+    };
+  }
+
   const textoContextoCompleto = `${ocorrencia.trechoDireto || ''} ${ocorrencia.fraseContexto || ''} ${ocorrencia.paragrafoCompleto || ''}`.trim();
   const ehPdfEmIngles =
     paginas.length > 0 &&
@@ -1510,6 +1531,8 @@ export default function ReverseAuditView({
                   ? '#dc2626'
                   : v.status === 'divergencia_pagina'
                   ? '#d97706'
+                  : v.status === 'scan_sem_texto_ocr'
+                  ? '#64748b'
                   : v.status === 'resumo'
                   ? '#2563eb'
                   : '#15803d';

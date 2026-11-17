@@ -121,4 +121,17 @@ assert.strictEqual(REGEX_DOMINIOS_TESTE.test('https://www.who.int/publications')
 assert.strictEqual(REGEX_DOMINIOS_TESTE.test('https://nature.com/articles/123'), false);
 console.log('✓ 9. Classificacao: dominios institucionais e educacionais internacionais validados (100%)');
 
+// 10. Teste de detecção de PDF digitalizado em imagem (Scan sem camada OCR)
+function detectarScanSemTexto(paginas) {
+  if (!paginas || paginas.length === 0) return true;
+  const media = paginas.reduce((acc, p) => acc + (p.bruto ? p.bruto.trim().length : 0), 0) / paginas.length;
+  return media < 35;
+}
+
+const pdfRasterScan = [{ numero: 1, bruto: '   ' }, { numero: 2, bruto: 'p. 1' }];
+const pdfTextoCompleto = [{ numero: 1, bruto: 'Este é um artigo científico com texto completo e parágrafos legíveis.' }];
+assert.strictEqual(detectarScanSemTexto(pdfRasterScan), true, 'Deve identificar PDF escaneado sem OCR');
+assert.strictEqual(detectarScanSemTexto(pdfTextoCompleto), false, 'PDF digital normal não deve ser marcado como scan');
+console.log('✓ 10. PDF Digitalizado: Detecção de scan sem texto validada (100%)');
+
 console.log('\nTODOS OS TESTES UNITARIOS PASSARAM COM SUCESSO!');
