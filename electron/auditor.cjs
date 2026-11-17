@@ -30,6 +30,11 @@ const { auditarRedeCitacoesDoManuscrito } = require('./rede_citacoes_forense.cjs
 const { auditarMetodologiaClinicaDoManuscrito } = require('./auditor_metodologico_clinico.cjs');
 const { auditarFrasesTorturadasDoManuscrito } = require('./tortured_phrases_detector.cjs');
 const { auditarEstilometriaDoManuscrito } = require('./estilometria_academica.cjs');
+const { auditarReferenciasPredatorias } = require('./periodicos_predatorios_detector.cjs');
+const { auditarCompletudeAbnt6023 } = require('./abnt_nbr6023_auditor.cjs');
+const { auditarCorrupcaoBiomedicaDoManuscrito } = require('./corrupcao_biomedica_detector.cjs');
+const { auditarFomentoEAfiliacoes } = require('./fomento_afiliacoes_auditor.cjs');
+const { auditarClaimSupportDoManuscrito } = require('./tfidf_claim_support.cjs');
 
 // Mapa CSL-JSON extraído do último arquivo .docx aberto (Mendeley / Zotero / EndNote)
 let ultimoMapaCslEmbutidoDocx = null;
@@ -2483,6 +2488,11 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasMetodologiaClinica: [],
       alertasFrasesTorturadas: [],
       alertasEstilometricos: [],
+      alertasPredatorios: [],
+      alertasAbnt6023: [],
+      alertasCorrupcaoGene: [],
+      alertasFomento: [],
+      alertasDesvioTematico: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: 0, totalObrasVerificadas: 0, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: 0, totalComPdf: 0, totalSemPdf: 0, obras: [] },
@@ -2610,6 +2620,11 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasMetodologiaClinica: [],
       alertasFrasesTorturadas: [],
       alertasEstilometricos: [],
+      alertasPredatorios: [],
+      alertasAbnt6023: [],
+      alertasCorrupcaoGene: [],
+      alertasFomento: [],
+      alertasDesvioTematico: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: gruposCitacao.size, totalObrasVerificadas: refsMapeadasFast.length, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: refsMapeadasFast.filter(r => r.citadaNoTexto).length, totalComPdf: 0, totalSemPdf: refsMapeadasFast.length, obras: [] },
@@ -2692,6 +2707,11 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasMetodologiaClinica: [],
       alertasFrasesTorturadas: [],
       alertasEstilometricos: [],
+      alertasPredatorios: [],
+      alertasAbnt6023: [],
+      alertasCorrupcaoGene: [],
+      alertasFomento: [],
+      alertasDesvioTematico: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: 0, totalObrasVerificadas: 0, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: { totalConformes: 0, totalComPdf: 0, totalSemPdf: 0, obras: [] },
@@ -3198,6 +3218,11 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       alertasMetodologiaClinica: [],
       alertasFrasesTorturadas: [],
       alertasEstilometricos: [],
+      alertasPredatorios: [],
+      alertasAbnt6023: [],
+      alertasCorrupcaoGene: [],
+      alertasFomento: [],
+      alertasDesvioTematico: [],
       errosParsingConflito: [],
       resumoVerificacaoConteudo: { totalObrasCitadas: gruposCitacao.size, totalObrasVerificadas: refsMapeadas.length, totalObrasNaoVerificadas: 0, obras: [] },
       resumoObrasConformes: {
@@ -3660,6 +3685,102 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     }
   }
 
+  // ---------- 8f. Detecção de Periódicos Predatórios e Clonados (Beall / Retraction Watch / DOAJ) ----------
+  const auditoriaPredatoria = auditarReferenciasPredatorias(refsMapeadas);
+  const alertasPredatorios = auditoriaPredatoria.alertasPredatorios || [];
+  if (alertasPredatorios.length > 0) {
+    for (const ap of alertasPredatorios) {
+      alertasPrecisao.push({
+        tipo: ap.tipoAlerta || 'periodico_predatorio_suspeito',
+        numParagrafo: 0,
+        numLinha: 0,
+        secao: 'Lista de Referências',
+        autorCitado: ap.chaveAutorAno,
+        fraseWord: ap.textoReferencia,
+        mensagem: ap.mensagem,
+      });
+
+      // Atualiza o status da referência na lista para não ser rotulada como conforme
+      const refAlvo = refsMapeadas.find(
+        (r) => (r.refBibId && r.refBibId === ap.refBibId) || (r.textoOriginal && r.textoOriginal === ap.textoReferencia)
+      );
+      if (refAlvo) {
+        if (!refAlvo.statusAutenticidade || refAlvo.statusAutenticidade === 'ok' || refAlvo.statusAutenticidade === 'autenticado') {
+          refAlvo.statusAutenticidade = 'periodico_predatorio_suspeito';
+          refAlvo.alertaAutenticidade = ap.mensagem;
+        }
+      }
+    }
+  }
+
+  // ---------- 8g. Auditoria de Completude Normativa ABNT NBR 6023:2018 (Livros, Artigos, Web) ----------
+  const auditoriaAbnt6023 = auditarCompletudeAbnt6023(refsMapeadas);
+  const alertasAbnt6023 = auditoriaAbnt6023.alertasAbnt6023 || [];
+  if (alertasAbnt6023.length > 0) {
+    for (const aa of alertasAbnt6023) {
+      alertasPrecisao.push({
+        tipo: aa.tipo,
+        numParagrafo: 0,
+        numLinha: 0,
+        secao: 'Lista de Referências',
+        autorCitado: aa.chaveRef,
+        fraseWord: aa.textoReferencia,
+        mensagem: aa.mensagem,
+      });
+    }
+  }
+
+  // ---------- 8h. Detecção de Corrupção Genômica / Símbolos por Planilhas (Ziemann et al. / HGNC) ----------
+  const auditoriaCorrupcaoGene = auditarCorrupcaoBiomedicaDoManuscrito(paragrafosCorpo);
+  const alertasCorrupcaoGene = auditoriaCorrupcaoGene.alertasCorrupcao || [];
+  if (alertasCorrupcaoGene.length > 0) {
+    for (const ac of alertasCorrupcaoGene) {
+      alertasPrecisao.push({
+        tipo: ac.tipo,
+        numParagrafo: ac.numParagrafo,
+        numLinha: ac.numLinha,
+        secao: ac.secao,
+        autorCitado: 'Nomenclatura Biomédica',
+        fraseWord: ac.fraseWord,
+        mensagem: ac.mensagem,
+      });
+    }
+  }
+
+  // ---------- 8i. Auditoria de Fomento, Bolsas e Processos ROR/CAPES (Portaria 206/2018 / CNPq) ----------
+  const auditoriaFomento = auditarFomentoEAfiliacoes(paragrafosCorpo);
+  const alertasFomento = auditoriaFomento.alertasFomento || [];
+  if (alertasFomento.length > 0) {
+    for (const af of alertasFomento) {
+      alertasPrecisao.push({
+        tipo: af.tipo,
+        numParagrafo: 0,
+        numLinha: 0,
+        secao: 'Agradecimentos e Fomento',
+        autorCitado: af.agencia || 'Órgãos de Fomento',
+        fraseWord: 'Declaração de Apoio Financeiro / Processo',
+        mensagem: af.mensagem,
+      });
+    }
+  }
+
+  // ---------- 8j. Suporte de Evidência e Desvio Temático TF-IDF (Claim-Support) ----------
+  const auditoriaClaimSupport = auditarClaimSupportDoManuscrito(refsMapeadas);
+  const alertasDesvioTematico = auditoriaClaimSupport.alertasDesvioTematico || [];
+  if (alertasDesvioTematico.length > 0) {
+    for (const ad of alertasDesvioTematico) {
+      alertasPrecisao.push({
+        tipo: ad.tipo,
+        numParagrafo: ad.numParagrafo,
+        numLinha: ad.numLinha,
+        secao: ad.secao,
+        autorCitado: ad.autorCitado,
+        fraseWord: ad.fraseWord,
+        mensagem: ad.mensagem,
+      });
+    }
+  }
+
   return {
     totalCitacoesOcorrencias: citacoes.length,
     totalAutoresCitadosUnicos: gruposCitacao.size,
@@ -3675,11 +3796,21 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     alertasMetodologiaClinica,
     alertasFrasesTorturadas,
     alertasEstilometricos,
+    alertasPredatorios,
+    alertasAbnt6023,
+    alertasCorrupcaoGene,
+    alertasFomento,
+    alertasDesvioTematico,
     resumoEstatistico: auditoriaEstatistica,
     resumoRede: auditoriaRede,
     resumoMetodologiaClinica: auditoriaMetodologica,
     resumoFrasesTorturadas: auditoriaTorturadas,
     resumoEstilometria: auditoriaEstilometria,
+    resumoPredatorios: auditoriaPredatoria,
+    resumoAbnt6023: auditoriaAbnt6023,
+    resumoCorrupcaoGene: auditoriaCorrupcaoGene,
+    resumoFomento: auditoriaFomento,
+    resumoClaimSupport: auditoriaClaimSupport,
     errosParsingConflito,
     resumoVerificacaoConteudo: {
       totalObrasCitadas: gruposCitacao.size,
@@ -3713,5 +3844,10 @@ module.exports = {
   auditarMetodologiaClinicaDoManuscrito,
   auditarFrasesTorturadasDoManuscrito,
   auditarEstilometriaDoManuscrito,
+  auditarReferenciasPredatorias,
+  auditarCompletudeAbnt6023,
+  auditarCorrupcaoBiomedicaDoManuscrito,
+  auditarFomentoEAfiliacoes,
+  auditarClaimSupportDoManuscrito,
   auditarManuscrito,
 };

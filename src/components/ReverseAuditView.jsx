@@ -1045,9 +1045,14 @@ export default function ReverseAuditView({
   const alertasMetodologiaClinica = resultado?.alertasMetodologiaClinica || [];
   const alertasFrasesTorturadas = resultado?.alertasFrasesTorturadas || [];
   const alertasEstilometricos = resultado?.alertasEstilometricos || [];
+  const alertasPredatorios = resultado?.alertasPredatorios || [];
+  const alertasAbnt6023 = resultado?.alertasAbnt6023 || [];
+  const alertasCorrupcaoGene = resultado?.alertasCorrupcaoGene || [];
+  const alertasFomento = resultado?.alertasFomento || [];
+  const alertasDesvioTematico = resultado?.alertasDesvioTematico || [];
   const citacoesSemReferencia = resultado?.citacoesSemReferencia || [];
 
-  // Alertas de Metadados / ABNT vs Alertas Metodológicos vs Alertas Estilo IA (Open-Detector) vs Estatística vs Rede vs Metodologia Clínica vs Estilometria
+  // Alertas de Metadados / ABNT vs Alertas Metodológicos vs Alertas Estilo IA (Open-Detector) vs Estatística vs Rede vs Metodologia Clínica vs Estilometria vs Predatórias vs ABNT 6023 vs Genômica
   const alertasPrecisao = resultado?.alertasPrecisao || [];
   const alertasEstiloIa = resultado?.alertasEstiloIa || alertasPrecisao.filter((ap) => ap.tipo === 'estilo_redacao_ia');
   const alertasMetadadosAbnt = alertasPrecisao.filter(
@@ -1070,6 +1075,17 @@ export default function ReverseAuditView({
         'monotonia_sintatica_estilometrica',
         'pobreza_lexical_anomala',
         'repeticao_trigramas_mecanica',
+        'periodico_predatorio_suspeito',
+        'abnt_formula_disponivel_em',
+        'abnt_data_acesso_ausente',
+        'abnt_mes_acesso_fora_padrao',
+        'abnt_livro_sem_local_editora',
+        'abnt_artigo_sem_volume_paginas',
+        'corrupcao_gene_excel',
+        'capes_falta_codigo_001',
+        'fomento_sem_numero_processo',
+        'ausencia_declaracao_fomento',
+        'desvio_tematico_citacao',
       ].includes(ap.tipo)
   );
   const alertasMetodologicos = alertasPrecisao.filter((ap) =>
@@ -1094,7 +1110,7 @@ export default function ReverseAuditView({
   });
 
   const obrasConformes = (resultado?.refsMapeadas || []).filter(
-    (r) => !['ia_doi_trocado', 'ia_doi_inexistente', 'ia_autor_adulterado', 'suspeita_ia_fantasma', 'artigo_retratado'].includes(r.statusAutenticidade)
+    (r) => !['ia_doi_trocado', 'ia_doi_inexistente', 'ia_autor_adulterado', 'suspeita_ia_fantasma', 'artigo_retratado', 'periodico_predatorio_suspeito'].includes(r.statusAutenticidade)
   );
   const totalConformesComPdf = obrasConformes.filter((o) => o.temPdf || refs.some((x) => x.id === o.refBibId && x.pdf)).length;
 
@@ -1107,6 +1123,11 @@ export default function ReverseAuditView({
     alertasMetodologiaClinica.length +
     alertasFrasesTorturadas.length +
     alertasEstilometricos.length +
+    alertasPredatorios.length +
+    alertasAbnt6023.length +
+    alertasCorrupcaoGene.length +
+    alertasFomento.length +
+    alertasDesvioTematico.length +
     citacoesSemReferencia.length +
     refsNaoCitadasNoTexto.length +
     alertasMetadadosAbnt.length +
@@ -1256,6 +1277,68 @@ export default function ReverseAuditView({
         blocos.push(`- **Local no Word:** Parágrafo §${es.numParagrafo} · Linha ${es.numLinha} (${es.secao || 'Corpo'})`);
         blocos.push(`- **Texto no meu Word:** "${es.fraseWord}"`);
         blocos.push(`- **Pergunta para a IA:** Diversifique as estruturas sintáticas deste parágrafo, alternando períodos curtos e compostos para eliminar a monotonia sintática.`);
+        blocos.push(``);
+      });
+    }
+
+    if (alertasPredatorios.length > 0) {
+      blocos.push(`## 🚨 PONTO CRÍTICO C7 — PERIÓDICOS PREDATÓRIOS E CLONADOS / BEALL / RETRACTION WATCH (${alertasPredatorios.length}):`);
+      alertasPredatorios.forEach((ap, idx) => {
+        blocos.push(`### [Revista Suspeita C7.${idx + 1}]`);
+        blocos.push(`- **Referência:** ${ap.chaveAutorAno} — ${ap.textoReferencia}`);
+        blocos.push(`- **Diagnóstico:** ${ap.mensagem}`);
+        blocos.push(`- **Motivo:** ${ap.motivo}`);
+        blocos.push(`- **Pergunta para a IA:** Substitua esta referência por um artigo científico idôneo indexado no Scopus / Web of Science / SciELO que comprove a mesma premissa.`);
+        blocos.push(``);
+      });
+    }
+
+    if (alertasAbnt6023.length > 0) {
+      blocos.push(`## 📋 PONTO CRÍTICO C8 — ELEMENTOS OBRIGATÓRIOS ABNT NBR 6023:2018 (${alertasAbnt6023.length}):`);
+      alertasAbnt6023.forEach((ab, idx) => {
+        blocos.push(`### [Inconformidade ABNT 6023 C8.${idx + 1}]`);
+        blocos.push(`- **Obra:** ${ab.chaveRef} — ${ab.textoReferencia}`);
+        blocos.push(`- **Diagnóstico:** ${ab.mensagem}`);
+        blocos.push(`- **Sugestão Normativa:** ${ab.sugestao}`);
+        blocos.push(`- **Pergunta para a IA:** Complete e formate esta referência rigorosamente conforme a ABNT NBR 6023:2018 com todos os elementos obrigatórios.`);
+        blocos.push(``);
+      });
+    }
+
+    if (alertasCorrupcaoGene.length > 0) {
+      blocos.push(`## 🧬 PONTO CRÍTICO C9 — CORRUPÇÃO DE NOMENCLATURA GENÔMICA POR PLANILHA / HGNC (${alertasCorrupcaoGene.length}):`);
+      alertasCorrupcaoGene.forEach((cg, idx) => {
+        blocos.push(`### [Corrupção Genômica C9.${idx + 1}]`);
+        blocos.push(`- **Local no Word:** Parágrafo §${cg.numParagrafo} · Linha ${cg.numLinha} (${cg.secao || 'Corpo'})`);
+        blocos.push(`- **Termo Detectado:** "${cg.termoDetectado}" -> Gene Original: "${cg.geneCorrompido}" (Nome Atual HGNC: "${cg.geneAtualHgnc}")`);
+        blocos.push(`- **Diagnóstico:** ${cg.mensagem}`);
+        blocos.push(`- **Texto no meu Word:** "${cg.fraseWord}"`);
+        blocos.push(`- **Pergunta para a IA:** Corrija o texto substituindo a data espúria pelo símbolo oficial do gene "${cg.geneAtualHgnc}".`);
+        blocos.push(``);
+      });
+    }
+
+    if (alertasFomento.length > 0) {
+      blocos.push(`## 🏛️ PONTO CRÍTICO C10 — FOMENTO, BOLSAS E AFILIAÇÕES / PORTARIA CAPES 206/2018 (${alertasFomento.length}):`);
+      alertasFomento.forEach((af, idx) => {
+        blocos.push(`### [Alerta de Fomento C10.${idx + 1}]`);
+        blocos.push(`- **Diagnóstico:** ${af.mensagem}`);
+        blocos.push(`- **Sugestão:** ${af.sugestao}`);
+        blocos.push(`- **Pergunta para a IA:** Redija o parágrafo canônico de agradecimentos e financiamento para atender a esta exigência regulamentar.`);
+        blocos.push(``);
+      });
+    }
+
+    if (alertasDesvioTematico.length > 0) {
+      blocos.push(`## ⚠️ PONTO CRÍTICO C11 — DESVIO TEMÁTICO DE CITAÇÃO / CLAIM-SUPPORT TF-IDF (${alertasDesvioTematico.length}):`);
+      alertasDesvioTematico.forEach((dt, idx) => {
+        blocos.push(`### [Desvio Temático C11.${idx + 1}]`);
+        blocos.push(`- **Citação:** ${dt.autorCitado}`);
+        blocos.push(`- **Local no Word:** Parágrafo §${dt.numParagrafo} · Linha ${dt.numLinha} (${dt.secao || 'Corpo'})`);
+        blocos.push(`- **Afirmação no Word:** "${dt.fraseWord}"`);
+        blocos.push(`- **Similaridade Vetorial (TF-IDF Cosseno):** ${dt.similaridadeCosseno}`);
+        blocos.push(`- **Diagnóstico:** ${dt.mensagem}`);
+        blocos.push(`- **Pergunta para a IA:** Esta citação realmente dá respaldo à afirmação feita? Se não, indique uma referência autêntica da área que fundamente essa mesma tese.`);
         blocos.push(``);
       });
     }
@@ -2103,6 +2186,41 @@ export default function ReverseAuditView({
               <span>{alertasEstilometricos.length ? 'Monotonia / Pobreza de léxico' : 'Ritmo e léxico naturais'}</span>
             </div>
             <div className="card-metrica">
+              <span className="rotulo-metrica">🚨 Revistas Predatórias</span>
+              <strong style={{ color: alertasPredatorios.length ? '#dc2626' : '#16a34a' }}>
+                {alertasPredatorios.length}
+              </strong>
+              <span>{alertasPredatorios.length ? 'Editora suspeita / Beall' : 'Fontes idôneas'}</span>
+            </div>
+            <div className="card-metrica">
+              <span className="rotulo-metrica">📋 Elementos ABNT 6023</span>
+              <strong style={{ color: alertasAbnt6023.length ? '#d97706' : '#16a34a' }}>
+                {alertasAbnt6023.length}
+              </strong>
+              <span>{alertasAbnt6023.length ? 'Falta cidade/editora/páginas' : 'Normas completas'}</span>
+            </div>
+            <div className="card-metrica">
+              <span className="rotulo-metrica">🧬 Corrupção Genômica</span>
+              <strong style={{ color: alertasCorrupcaoGene.length ? '#dc2626' : '#16a34a' }}>
+                {alertasCorrupcaoGene.length}
+              </strong>
+              <span>{alertasCorrupcaoGene.length ? 'Gene corrompido em data' : 'Nomenclatura íntegra'}</span>
+            </div>
+            <div className="card-metrica">
+              <span className="rotulo-metrica">🏛️ Fomento / CAPES 001</span>
+              <strong style={{ color: alertasFomento.length ? '#d97706' : '#16a34a' }}>
+                {alertasFomento.length}
+              </strong>
+              <span>{alertasFomento.length ? 'Exigência regulamentar' : 'Agradecimentos conformes'}</span>
+            </div>
+            <div className="card-metrica">
+              <span className="rotulo-metrica">⚠️ Desvio Temático (TF-IDF)</span>
+              <strong style={{ color: alertasDesvioTematico.length ? '#dc2626' : '#16a34a' }}>
+                {alertasDesvioTematico.length}
+              </strong>
+              <span>{alertasDesvioTematico.length ? 'Citação sem suporte no abstract' : 'Pertinência confirmada'}</span>
+            </div>
+            <div className="card-metrica">
               <span className="rotulo-metrica">Citadas s/ Referência</span>
               <strong style={{ color: resultado.citacoesSemReferencia.length ? '#dc2626' : '#16a34a' }}>
                 {resultado.citacoesSemReferencia.length}
@@ -2346,6 +2464,81 @@ export default function ReverseAuditView({
                     }}
                   >
                     📐 Estilometria ({alertasEstilometricos.length})
+                  </button>
+                )}
+                {alertasPredatorios.length > 0 && (
+                  <button
+                    className={`chip ${grupoIntercorrenciaAtivo === 'predatorias' ? 'ativo' : ''}`}
+                    onClick={() => setGrupoIntercorrenciaAtivo('predatorias')}
+                    style={{
+                      fontSize: 11.8,
+                      padding: '3px 10px',
+                      color: grupoIntercorrenciaAtivo === 'predatorias' ? '#fff' : '#dc2626',
+                      borderColor: '#dc2626',
+                      background: grupoIntercorrenciaAtivo === 'predatorias' ? '#dc2626' : 'transparent',
+                    }}
+                  >
+                    🚨 Predatórias ({alertasPredatorios.length})
+                  </button>
+                )}
+                {alertasAbnt6023.length > 0 && (
+                  <button
+                    className={`chip ${grupoIntercorrenciaAtivo === 'abnt6023' ? 'ativo' : ''}`}
+                    onClick={() => setGrupoIntercorrenciaAtivo('abnt6023')}
+                    style={{
+                      fontSize: 11.8,
+                      padding: '3px 10px',
+                      color: grupoIntercorrenciaAtivo === 'abnt6023' ? '#fff' : '#d97706',
+                      borderColor: '#d97706',
+                      background: grupoIntercorrenciaAtivo === 'abnt6023' ? '#d97706' : 'transparent',
+                    }}
+                  >
+                    📋 ABNT 6023 ({alertasAbnt6023.length})
+                  </button>
+                )}
+                {alertasCorrupcaoGene.length > 0 && (
+                  <button
+                    className={`chip ${grupoIntercorrenciaAtivo === 'genomica' ? 'ativo' : ''}`}
+                    onClick={() => setGrupoIntercorrenciaAtivo('genomica')}
+                    style={{
+                      fontSize: 11.8,
+                      padding: '3px 10px',
+                      color: grupoIntercorrenciaAtivo === 'genomica' ? '#fff' : '#dc2626',
+                      borderColor: '#dc2626',
+                      background: grupoIntercorrenciaAtivo === 'genomica' ? '#dc2626' : 'transparent',
+                    }}
+                  >
+                    🧬 Genômica ({alertasCorrupcaoGene.length})
+                  </button>
+                )}
+                {alertasFomento.length > 0 && (
+                  <button
+                    className={`chip ${grupoIntercorrenciaAtivo === 'fomento' ? 'ativo' : ''}`}
+                    onClick={() => setGrupoIntercorrenciaAtivo('fomento')}
+                    style={{
+                      fontSize: 11.8,
+                      padding: '3px 10px',
+                      color: grupoIntercorrenciaAtivo === 'fomento' ? '#fff' : '#d97706',
+                      borderColor: '#d97706',
+                      background: grupoIntercorrenciaAtivo === 'fomento' ? '#d97706' : 'transparent',
+                    }}
+                  >
+                    🏛️ Fomento ({alertasFomento.length})
+                  </button>
+                )}
+                {alertasDesvioTematico.length > 0 && (
+                  <button
+                    className={`chip ${grupoIntercorrenciaAtivo === 'desvio_tematico' ? 'ativo' : ''}`}
+                    onClick={() => setGrupoIntercorrenciaAtivo('desvio_tematico')}
+                    style={{
+                      fontSize: 11.8,
+                      padding: '3px 10px',
+                      color: grupoIntercorrenciaAtivo === 'desvio_tematico' ? '#fff' : '#dc2626',
+                      borderColor: '#dc2626',
+                      background: grupoIntercorrenciaAtivo === 'desvio_tematico' ? '#dc2626' : 'transparent',
+                    }}
+                  >
+                    ⚠️ Desvio Temático ({alertasDesvioTematico.length})
                   </button>
                 )}
                 {resultado.citacoesSemReferencia.length > 0 && (
@@ -2854,6 +3047,222 @@ export default function ReverseAuditView({
               </div>
             </div>
           )}
+
+          {/* ALERTA C7: Periódicos Predatórios e Revistas Clonadas */}
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'predatorias') && alertasPredatorios.length > 0 && (
+            <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
+              <h4 style={{ color: '#dc2626' }}>
+                🚨 Fontes Suspeitas · Periódicos Predatórios e Clonados ({alertasPredatorios.length})
+              </h4>
+              <div className="lista-historico">
+                {alertasPredatorios.map((ap, i) => (
+                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{ap.mensagem}</div>
+                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                          <span><strong>Entidade:</strong> <code style={{ color: '#b91c1c', fontWeight: 600 }}>{ap.nomeDetectado}</code></span>
+                          <span className="badge alerta" style={{ fontSize: 11 }}>
+                            {ap.subtipo}
+                          </span>
+                        </div>
+                        {ap.textoReferencia && (
+                          <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                            <strong>Referência:</strong> &ldquo;{ap.textoReferencia}&rdquo;
+                          </div>
+                        )}
+                      </div>
+                      <button
+                        className="btn pequeno secundario"
+                        onClick={() =>
+                          copiarPromptItemIndividualIa({
+                            tituloProblema: 'Citação em Periódico Predatório / Não Idôneo',
+                            fraseWord: ap.textoReferencia,
+                            locWord: 'Lista de Referências',
+                            refTexto: ap.chaveAutorAno,
+                            diagnostico: ap.mensagem,
+                            trechoArtigo: 'Substituição recomendada por artigo indexado no SciELO/Scopus',
+                          })
+                        }
+                      >
+                        🤖 Copiar p/ IA Substituir
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* ALERTA C8: Completude Normativa ABNT NBR 6023:2018 */}
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'abnt6023') && alertasAbnt6023.length > 0 && (
+            <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
+              <h4 style={{ color: '#d97706' }}>
+                📋 Inconformidade de Elementos Obrigatórios · ABNT NBR 6023:2018 ({alertasAbnt6023.length})
+              </h4>
+              <div className="lista-historico">
+                {alertasAbnt6023.map((ab, i) => (
+                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>{ab.mensagem}</div>
+                        <div style={{ fontSize: 12, marginTop: 4, color: 'var(--cor-texto-sub)' }}>
+                          <strong>Sugestão Normativa:</strong> {ab.sugestao}
+                        </div>
+                        {ab.textoReferencia && (
+                          <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                            <strong>Entrada:</strong> &ldquo;{ab.textoReferencia}&rdquo;
+                          </div>
+                        )}
+                      </div>
+                      <button
+                        className="btn pequeno secundario"
+                        onClick={() =>
+                          copiarPromptItemIndividualIa({
+                            tituloProblema: 'Inconformidade Normativa ABNT NBR 6023',
+                            fraseWord: ab.textoReferencia,
+                            locWord: 'Lista de Referências',
+                            refTexto: ab.chaveRef,
+                            diagnostico: ab.mensagem,
+                            trechoArtigo: ab.sugestao,
+                          })
+                        }
+                      >
+                        🤖 Copiar p/ IA Formatar
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* ALERTA C9: Corrupção Genômica por Planilha */}
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'genomica') && alertasCorrupcaoGene.length > 0 && (
+            <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
+              <h4 style={{ color: '#dc2626' }}>
+                🧬 Corrupção de Nomenclatura Genômica por Planilha · Ziemann / HGNC ({alertasCorrupcaoGene.length})
+              </h4>
+              <div className="lista-historico">
+                {alertasCorrupcaoGene.map((cg, i) => (
+                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{cg.mensagem}</div>
+                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                          <span><strong>Termo Detectado:</strong> <code style={{ color: '#b91c1c', fontWeight: 600 }}>{cg.termoDetectado}</code></span>
+                          <span>➡️ <strong>Gene Canônico HGNC:</strong> <code style={{ color: '#16a34a', fontWeight: 600 }}>{cg.geneAtualHgnc}</code> ({cg.nomeCompleto})</span>
+                        </div>
+                        {cg.fraseWord && (
+                          <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                            <strong>Trecho no Word (§{cg.numParagrafo}, L.{cg.numLinha}):</strong> &ldquo;{cg.fraseWord}&rdquo;
+                          </div>
+                        )}
+                      </div>
+                      <button
+                        className="btn pequeno secundario"
+                        onClick={() =>
+                          copiarPromptItemIndividualIa({
+                            tituloProblema: 'Corrupção de Símbolo Gênico por Planilha',
+                            fraseWord: cg.fraseWord,
+                            locWord: `§${cg.numParagrafo}, Linha ${cg.numLinha} (${cg.secao || 'Corpo'})`,
+                            refTexto: `Gene canônico: ${cg.geneAtualHgnc}`,
+                            diagnostico: cg.mensagem,
+                            trechoArtigo: `Substituir "${cg.termoDetectado}" por "${cg.geneAtualHgnc}"`,
+                          })
+                        }
+                      >
+                        🤖 Copiar p/ IA Corrigir
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* ALERTA C10: Declaração de Fomento e Apoio Institucional */}
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'fomento') && alertasFomento.length > 0 && (
+            <div className="bloco-cofre" style={{ borderLeft: '4px solid #d97706', background: 'rgba(217, 119, 6, 0.04)' }}>
+              <h4 style={{ color: '#d97706' }}>
+                🏛️ Declaração de Fomento, Bolsas e Processos · Portaria CAPES 206/2018 ({alertasFomento.length})
+              </h4>
+              <div className="lista-historico">
+                {alertasFomento.map((af, i) => (
+                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #d97706' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 700, color: '#d97706', fontSize: 12.8 }}>{af.mensagem}</div>
+                        <div style={{ fontSize: 12, marginTop: 4, color: 'var(--cor-texto-sub)' }}>
+                          <strong>Sugestão:</strong> {af.sugestao}
+                        </div>
+                      </div>
+                      <button
+                        className="btn pequeno secundario"
+                        onClick={() =>
+                          copiarPromptItemIndividualIa({
+                            tituloProblema: 'Conformidade de Declaração de Fomento / CAPES / CNPq',
+                            fraseWord: af.mensagem,
+                            locWord: 'Seção de Agradecimentos / Financiamento',
+                            refTexto: af.agencia || 'Agência de Fomento',
+                            diagnostico: af.mensagem,
+                            trechoArtigo: af.sugestao,
+                          })
+                        }
+                      >
+                        🤖 Copiar p/ IA Redigir
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* ALERTA C11: Desvio Temático de Citação (Claim-Support TF-IDF) */}
+          {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'desvio_tematico') && alertasDesvioTematico.length > 0 && (
+            <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
+              <h4 style={{ color: '#dc2626' }}>
+                ⚠️ Desvio Temático de Citação · TF-IDF Claim-Support ({alertasDesvioTematico.length})
+              </h4>
+              <div className="lista-historico">
+                {alertasDesvioTematico.map((dt, i) => (
+                  <div key={i} className="card-historico" style={{ borderLeft: '3px solid #dc2626' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 700, color: '#dc2626', fontSize: 12.8 }}>{dt.mensagem}</div>
+                        <div style={{ fontSize: 12, marginTop: 4, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                          <span><strong>Citação:</strong> <code>{dt.autorCitado}</code></span>
+                          <span><strong>Similaridade Vetorial:</strong> <code>{dt.similaridadeCosseno}</code></span>
+                        </div>
+                        {dt.fraseWord && (
+                          <div style={{ fontSize: 12, color: 'var(--cor-texto-sub)', marginTop: 6, background: 'rgba(0,0,0,0.02)', padding: '4px 8px', borderRadius: 4 }}>
+                            <strong>Afirmação no Word (§{dt.numParagrafo}, L.{dt.numLinha}):</strong> &ldquo;{dt.fraseWord}&rdquo;
+                          </div>
+                        )}
+                      </div>
+                      <button
+                        className="btn pequeno secundario"
+                        onClick={() =>
+                          copiarPromptItemIndividualIa({
+                            tituloProblema: 'Desvio Temático entre Afirmação e Obra Citada',
+                            fraseWord: dt.fraseWord,
+                            locWord: `§${dt.numParagrafo}, Linha ${dt.numLinha}`,
+                            refTexto: dt.autorCitado,
+                            diagnostico: dt.mensagem,
+                            trechoArtigo: dt.sugestao,
+                          })
+                        }
+                      >
+                        🤖 Copiar p/ IA Avaliar
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          {/* ALERTA D: Citadas no texto mas ausentes nas Referências (Citações Órfãs) */}
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'orfa') && resultado.citacoesSemReferencia.length > 0 && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626' }}>
               <h4 style={{ color: '#dc2626' }}>
