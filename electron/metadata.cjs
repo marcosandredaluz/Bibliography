@@ -227,18 +227,46 @@ async function porIsbn(entrada) {
 async function buscarTitulo(consulta) {
   const q = String(consulta || '').trim();
   if (q.length < 3) throw new Error('Digite pelo menos 3 caracteres.');
-  const url = `https://api.crossref.org/works?rows=10&query.bibliographic=${encodeURIComponent(q)}` +
-    '&select=DOI,title,author,issued,container-title,type,publisher';
-  const dados = await buscarJson(url);
-  return (dados.message?.items || []).map((it) => ({
-    doi: it.DOI,
-    titulo: semTags(it.title?.[0] || '(sem título)'),
-    autores: (it.author || []).map((a) => a.family || a.name).filter(Boolean).slice(0, 4).join(', ') +
-      ((it.author || []).length > 4 ? ' et al.' : ''),
-    ano: it.issued?.['date-parts']?.[0]?.[0] || '',
-    fonte: semTags(it['container-title']?.[0] || it.publisher || ''),
-    tipo: it.type,
-  }));
+  const itens = [];
+  try {
+    const url = `https://api.crossref.org/works?rows=10&query.bibliographic=${encodeURIComponent(q)}` +
+      '&select=DOI,title,author,issued,container-title,type,publisher';
+    const dados = await buscarJson(url);
+    for (const it of dados.message?.items || []) {
+      itens.push({
+        doi: it.DOI,
+        titulo: semTags(it.title?.[0] || '(sem título)'),
+        autores: (it.author || []).map((a) => a.family || a.name).filter(Boolean).slice(0, 4).join(', ') +
+          ((it.author || []).length > 4 ? ' et al.' : ''),
+        ano: it.issued?.['date-parts']?.[0]?.[0] || '',
+        fonte: semTags(it['container-title']?.[0] || it.publisher || ''),
+        tipo: it.type,
+      });
+    }
+  } catch {}
+
+  // Fallback no OpenAlex para artigos sem DOI no Crossref ou falhas temporárias
+  if (itens.length === 0) {
+    try {
+      const qLimpa = q.split(/[:–—]/)[0].trim().slice(0, 100);
+      const urlOa = `https://api.openalex.org/works?per-page=5&search=${encodeURIComponent(qLimpa)}`;
+      const dadosOa = await buscarJson(urlOa);
+      for (const r of dadosOa.results || []) {
+        itens.push({
+          doi: r.doi ? r.doi.replace(/^https?:\/\/doi\.org\//i, '') : null,
+          pmid: r.ids?.pmid ? String(r.ids.pmid).replace(/\D/g, '') : null,
+          titulo: r.display_name || r.title || '(sem título)',
+          autores: (r.authorships || []).slice(0, 4).map((a) => a.author?.display_name).filter(Boolean).join(', ') +
+            ((r.authorships || []).length > 4 ? ' et al.' : ''),
+          ano: r.publication_year || '',
+          fonte: r.primary_location?.source?.display_name || '',
+          tipo: r.type || 'article',
+        });
+      }
+    } catch {}
+  }
+
+  return itens;
 }
 
 module.exports = { porDoi, porPmid, porPmc, porIsbn, buscarTitulo, normalizarDoi, separarNome };

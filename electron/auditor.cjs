@@ -693,8 +693,14 @@ function compararCamposDoiOficial(refDoc, csl) {
   const fasciculoDeclarado = mFasciculoDeclarado ? mFasciculoDeclarado[1] : null;
   const fasciculoOficial = csl.issue ? String(csl.issue) : null;
   const normFasc = (val) => String(val || '').replace(/^0+/, '').trim();
+  const ehPublicacaoContinua = Boolean(
+    csl['article-number'] ||
+      csl['elocation-id'] ||
+      /e\d{4,}/i.test(csl.page || '') ||
+      /e\d{4,}/i.test(textoRef)
+  );
 
-  if (fasciculoDeclarado && !fasciculoOficial) {
+  if (fasciculoDeclarado && !fasciculoOficial && ehPublicacaoContinua) {
     divergencias.push({
       campo: 'fasciculo',
       declarado: `n. ${fasciculoDeclarado}`,
@@ -729,28 +735,45 @@ function compararCamposDoiOficial(refDoc, csl) {
 
   // 3. Ano de Publicação (com tolerância de ±1 ano para Epub ahead of print vs. Volume impresso)
   const anoDeclarado = refDoc.anoBase;
-  const anoOficial = String(csl.issued?.['date-parts']?.[0]?.[0] || '');
-  const anoOnline = String(
-    csl['published-online']?.['date-parts']?.[0]?.[0] ||
-      csl['published-print']?.['date-parts']?.[0]?.[0] ||
-      csl.created?.['date-parts']?.[0]?.[0] ||
-      csl.deposited?.['date-parts']?.[0]?.[0] ||
-      ''
+  const anosOficiaisValidos = new Set();
+  const registrarAno = (objData) => {
+    const y = objData?.['date-parts']?.[0]?.[0];
+    if (y && /^\d{4}$/.test(String(y))) anosOficiaisValidos.add(String(y));
+  };
+  registrarAno(csl.issued);
+  registrarAno(csl['published-print']);
+  registrarAno(csl['published-online']);
+  registrarAno(csl.published);
+  registrarAno(csl.created);
+  registrarAno(csl.deposited);
+
+  const anoOficialPrincipal = String(
+    csl.issued?.['date-parts']?.[0]?.[0] || Array.from(anosOficiaisValidos)[0] || ''
   );
-  const diffAno = anoDeclarado && anoOficial ? Math.abs(Number(anoDeclarado) - Number(anoOficial)) : 0;
   const doiContemAnoDeclarado =
     anoDeclarado && String(refDoc.doi || csl.DOI || '').includes(anoDeclarado);
   const textoContemAmbosAnos =
-    anoDeclarado && anoOficial && textoRef.includes(anoDeclarado) && textoRef.includes(anoOficial);
-  const ehEpubAheadOfPrintValido =
-    diffAno === 1 && (doiContemAnoDeclarado || textoContemAmbosAnos || anoOnline === anoDeclarado || Math.abs(Number(anoDeclarado) - Number(anoOnline || anoOficial)) <= 1);
+    anoDeclarado &&
+    anoOficialPrincipal &&
+    textoRef.includes(anoDeclarado) &&
+    textoRef.includes(anoOficialPrincipal);
 
-  if (anoDeclarado && anoOficial && diffAno > 0 && !ehEpubAheadOfPrintValido) {
+  const ehAnoExatamenteOficial = anoDeclarado && anosOficiaisValidos.has(anoDeclarado);
+  const ehEpubAheadOfPrintValido =
+    ehAnoExatamenteOficial ||
+    doiContemAnoDeclarado ||
+    textoContemAmbosAnos ||
+    (anoDeclarado &&
+      Array.from(anosOficiaisValidos).some(
+        (anoOf) => Math.abs(Number(anoDeclarado) - Number(anoOf)) <= 1
+      ));
+
+  if (anoDeclarado && anosOficiaisValidos.size > 0 && !ehEpubAheadOfPrintValido) {
     divergencias.push({
       campo: 'ano',
       declarado: anoDeclarado,
-      oficial: anoOficial,
-      mensagem: `Divergência de ano: declarado "${anoDeclarado}", oficial "${anoOficial}".`,
+      oficial: anoOficialPrincipal,
+      mensagem: `Divergência de ano: declarado "${anoDeclarado}", oficial "${anoOficialPrincipal}".`,
     });
   }
 
@@ -868,7 +891,8 @@ function ehInicioNovaReferencia(linha, bufferAnterior) {
   // Se o buffer anterior ainda não tem ano nem DOI nem URL, a referência anterior ainda não acabou!
   if (
     bufferAnterior &&
-    !/\b(19\d\d|20\d\d)\b/.test(bufferAnterior) &&
+    !/\b(19\d\d|20\d\d|20--[a-z]?|19--[a-z]?)\b/i.test(bufferAnterior) &&
+    !/\[s\.d\.?\]/i.test(bufferAnterior) &&
     !/\b10\.\d{4,9}\/\S+/.test(bufferAnterior) &&
     !/https?:\/\//.test(bufferAnterior) &&
     !/www\.\S+/i.test(bufferAnterior)
@@ -884,6 +908,10 @@ function ehInicioNovaReferencia(linha, bufferAnterior) {
   // Início de nova referência ABNT / Vancouver
   if (/^[A-ZÀ-Ú0-9][A-Za-zÀ-ÿ0-9'.-]+(?:\s+[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*,\s+[A-ZÀ-Ú]/.test(s)) return true;
   if (/^(?:BRASIL|MINIST[EÉ]RIO DA SA[UÚ]DE|SECRETARIA MUNICIPAL|SECRETARIA DE ESTADO|INSTITUTO NACIONAL|INSTITUTO FEDERAL|ORGANIZA[CÇ][AÃ]O MUNDIAL|CONASS|CONASEMS|WORLD HEALTH|HL7 INTERNATIONAL|IHE INTERNATIONAL|CURITIBA|GOI[AÁ]S|WHO|S[AÃ]O PAULO|PARAN[AÁ]|SANTA CATARINA|CONSELHO NACIONAL|NATIONAL LIBRARY|VIRGINIA-MARYLAND|SNOMED INTERNATIONAL|INTERNATIONAL ORGANIZATION)\b/i.test(s)) return true;
+  if (/^(?:[A-ZÀ-Ú0-9][A-ZÀ-Ú0-9\s/._-]{2,80}(?:\s*\([A-Za-zÀ-ÿ\s.-]+\))?)\s*[.:,]/i.test(s) &&
+      !/^(?:Dispon[ií]vel|Acesso|Acessado|Volume|Fasc[ií]culo|Nota|Fonte)\b/i.test(s)) {
+    return true;
+  }
   if (/^[A-ZÀ-Ú0-9\s/._-]{3,80}(?:\s*\([^)]+\))?\.\s+[A-Za-zÀ-ÿ0-9“"']/.test(s)) return true;
   return false;
 }
@@ -1297,7 +1325,10 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         /\b([A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+(?:(?:\s+(?:de|da|do|dos|das|van|von|del|e|&|and)\s+|\s*,\s*|\s+)[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*(?:\s+et\s+al\.?)?)\s*\(\s*(\[?(?:19\d\d|20\d\d|20--)[a-z]?\]?|\[?s\.d\.\]?)(?:\s*,\s*(?:p\.?|p[aá]g\.?|pp\.?)\s*(\d+(?:-\d+)?))?\s*\)/gi;
       while ((m = reNar.exec(frase)) !== null) {
         const autLimpo = m[1]
-          .replace(/^(?:segundo|conforme|como|para|de\s+acordo\s+com|em|no\s+estudo\s+de|nos\s+estudos\s+de|consoante)\s+(?:o|a|os|as)?\s*/i, '')
+          .replace(
+            /^(?:(?:por\s+outro\s+lado|al[eé]m\s+disso|adicionalmente|outrossim)\s*,\s*)?(?:(?:segundo|conforme|consoante|como|para|de\s+acordo\s+com|em|no\s+estudo\s+de|nos\s+estudos\s+de)\s+)?(?:(?:o|a|os|as)\s+)?(?:(?:dados|diretrizes|relat[oó]rio|estudos?|pesquisas?|orienta[cç][oõ]es)\s+d[ea]\s+)?(?:(?:apontad[oa]|verificad[oa]|demonstrad[oa]|relatad[oa]|descrit[oa])\s+por\s+)?(?:(?:o|a|os|as)\s+)?/i,
+            ''
+          )
           .trim();
         if (/\b(?:elaborad[oa]|produzid[oa]|organizad[oa]|autoria|adaptad[oa]|modificad[oa])\s+(?:pel[oa]|pelos|pelas)?\s*(?:autor[ae]s?|pesquisador(?:a|es)?|pr[oó]pri[oa])\b/i.test(autLimpo)) {
           continue;
@@ -1322,11 +1353,83 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         let chaveUnificada = `${infoAutor.chavePrincipal}:${anoCompleto}`;
         let numeroRefAssociado = null;
         if (refsFinais.length > 0) {
-          const refCorrespondente = refsFinais.find(
+          let refCorrespondente = refsFinais.find(
             (r) =>
-              (r.anoBase === anoBase || r.ano === anoCompleto) &&
+              r.ano === anoCompleto &&
               r.chavesAutorAlias?.some((al) => infoAutor.chavesAlias.includes(al))
           );
+          if (!refCorrespondente && !/[a-f]$/i.test(anoCompleto)) {
+            refCorrespondente = refsFinais.find(
+              (r) =>
+                r.anoBase === anoBase &&
+                !/[a-f]$/i.test(r.ano) &&
+                r.chavesAutorAlias?.some((al) => infoAutor.chavesAlias.includes(al))
+            );
+          }
+          if (refCorrespondente) {
+            chaveUnificada = refCorrespondente.chave;
+            numeroRefAssociado = refCorrespondente.numeroRef || null;
+          }
+        }
+
+        registrarCitacaoUnicaNaFrase({
+          bruto: m[0],
+          autor: infoAutor.autorExibicao,
+          chaveAutor: infoAutor.chavePrincipal,
+          chavesAutorAlias: infoAutor.chavesAlias,
+          ano: anoCompleto,
+          anoBase,
+          chave: chaveUnificada,
+          numeroRef: numeroRefAssociado,
+          paginaDeclarada,
+          trechoDireto,
+          fraseContexto: frase.trim(),
+          paragrafoCompleto: par.trim(),
+          numParagrafo: objPar.numParagrafo,
+          numParagrafoNaSecao: objPar.numParagrafoNaSecao || objPar.numParagrafo,
+          numLinha: objPar.numLinha,
+          numFraseNoParagrafo: idxFrase + 1,
+          secao: objPar.secao || 'Corpo do Texto',
+        });
+      }
+
+      // 2b) Narrativas com colchetes diretos: Brasil [20--a], Brasil, [20--b], Ministério da Saúde [2021]
+      const reNarColchetes =
+        /(?<!\()\b([A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+(?:(?:\s+(?:de|da|do|dos|das|van|von|del|e|&|and)\s+|\s*,\s*|\s+)[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9'.-]+)*(?:\s+et\s+al\.?)?)(?:,\s*|\s+)\[\s*((?:19\d\d|20\d\d|20--)[a-z]?|s\.d\.)(?:\s*,\s*(?:p\.?|p[aá]g\.?|pp\.?)\s*(\d+(?:-\d+)?))?\s*\](?!\))/gi;
+      while ((m = reNarColchetes.exec(frase)) !== null) {
+        const autLimpo = m[1]
+          .replace(
+            /^(?:(?:por\s+outro\s+lado|al[eé]m\s+disso|adicionalmente|outrossim)\s*,\s*)?(?:(?:segundo|conforme|consoante|como|para|de\s+acordo\s+com|em|no\s+estudo\s+de|nos\s+estudos\s+de)\s+)?(?:(?:o|a|os|as)\s+)?(?:(?:dados|diretrizes|relat[oó]rio|estudos?|pesquisas?|orienta[cç][oõ]es)\s+d[ea]\s+)?(?:(?:apontad[oa]|verificad[oa]|demonstrad[oa]|relatad[oa]|descrit[oa])\s+por\s+)?(?:(?:o|a|os|as)\s+)?/i,
+            ''
+          )
+          .trim();
+        if (/\b(?:elaborad[oa]|produzid[oa]|organizad[oa]|autoria|adaptad[oa]|modificad[oa])\s+(?:pel[oa]|pelos|pelas)?\s*(?:autor[ae]s?|pesquisador(?:a|es)?|pr[oó]pri[oa])\b/i.test(autLimpo)) {
+          continue;
+        }
+        const infoAutor = extrairChavesAutorDeCitacao(autLimpo);
+        if (!infoAutor.chavePrincipal || infoAutor.chavePrincipal.length < 2 || ignorarSobrenomes.has(infoAutor.chavePrincipal)) {
+          continue;
+        }
+        const anoCompleto = m[2].replace(/[\[\]]/g, '').toLowerCase();
+        const anoBase = anoCompleto.slice(0, 4);
+        const paginaDeclarada = m[3] || null;
+
+        let chaveUnificada = `${infoAutor.chavePrincipal}:${anoCompleto}`;
+        let numeroRefAssociado = null;
+        if (refsFinais.length > 0) {
+          let refCorrespondente = refsFinais.find(
+            (r) =>
+              r.ano === anoCompleto &&
+              r.chavesAutorAlias?.some((al) => infoAutor.chavesAlias.includes(al))
+          );
+          if (!refCorrespondente && !/[a-f]$/i.test(anoCompleto)) {
+            refCorrespondente = refsFinais.find(
+              (r) =>
+                r.anoBase === anoBase &&
+                !/[a-f]$/i.test(r.ano) &&
+                r.chavesAutorAlias?.some((al) => infoAutor.chavesAlias.includes(al))
+            );
+          }
           if (refCorrespondente) {
             chaveUnificada = refCorrespondente.chave;
             numeroRefAssociado = refCorrespondente.numeroRef || null;
@@ -1422,9 +1525,9 @@ function analisarLinhasReferencias(linhas, mapaCslEmbutido = ultimoMapaCslEmbuti
     if (!ehLinhaReferenciaValida(l)) continue;
 
     let doi = normalizarDoi(l);
-    const mPmc = l.match(/(?:pmc\.ncbi\.nlm\.nih\.gov\/articles\/|PMCID\s*:?\s*|PMC)\s*(PMC\d+|\d{5,9})/i);
-    const pmcid = mPmc ? mPmc[1].toUpperCase().replace(/^PMC/, '') : null;
-    const mPmid = l.match(/(?:pubmed\.ncbi\.nlm\.nih\.gov\/|PMID\s*:?\s*)(\d{5,9})/i);
+    const mPmc = l.match(/(?:(?:pmc|www)\.ncbi\.nlm\.nih\.gov\/pmc\/articles\/PMC?|PMCID\s*:?\s*PMC?|\bPMC)\s*(\d{5,9})/i);
+    const pmcid = mPmc ? mPmc[1] : null;
+    const mPmid = l.match(/(?:(?:pubmed|www)\.ncbi\.nlm\.nih\.gov\/(?:pubmed\/)?|PMID\s*:?\s*)(\d{5,9})/i);
     const pmid = mPmid ? mPmid[1] : null;
     const { anoCompleto, anoBase, sufixoAno } = extrairAnoPublicacaoReferencia(l);
     const {
@@ -1799,7 +1902,7 @@ function calcularSimilaridadeCossenoRadicais(textoA, textoB) {
  */
 async function analisarPlagioComDiffMatchPatch(paragrafosCorpo, corpusArtigos) {
   const alertas = [];
-  const minPalavrasIdenticas = 7;
+  const minPalavrasIdenticas = 10;
 
   // Pré-processa e normaliza o corpus de artigos UMA ÚNICA VEZ para evitar milhões de chamadas redundantes
   const corpusOtimizado = [];
@@ -1891,9 +1994,12 @@ async function analisarPlagioComDiffMatchPatch(paragrafosCorpo, corpusArtigos) {
           blocosIguais = Math.max(blocosIguais, resGst.tilesCount);
         }
 
-        if (maiorBlocoIdentico.length >= 32) {
-            // Isenta nomes próprios de sociedades e entidades (ex: International Society for Human and Animal Mycology)
-            const ehEntidadePropria = /^(?:international\s+society\s+for\s+human\s+and\s+animal\s+mycology|world\s+health\s+organization|centers\s+for\s+disease\s+control|instituto\s+brasileiro\s+de\s+geografia|sistema\s+[uú]nico\s+de\s+sa[uú]de|rede\s+nacional\s+de\s+dados\s+em\s+sa[uú]de|conselho\s+nacional\s+de\s+sa[uú]de)\b/i.test(maiorBlocoIdentico.trim());
+        if (maiorBlocoIdentico.length >= 40 && totalPalavrasIguais >= minPalavrasIdenticas) {
+            // Isenta nomes próprios de sociedades, diretrizes, periódicos, comitês e entidades institucionais
+            const ehEntidadePropria =
+              /\b(?:international\s+society|society\s+for\s+human\s+and\s+animal|world\s+health\s+organization|centers\s+for\s+disease\s+control|national\s+library\s+of\s+medicine|instituto\s+brasileiro\s+de\s+geografia|sistema\s+[uú]nico\s+de\s+sa[uú]de|rede\s+nacional\s+de\s+dados\s+em\s+sa[uú]de|conselho\s+nacional\s+de\s+sa[uú]de|comit[eê]\s+de\s+[eé]tica\s+em\s+pesquisa|termo\s+de\s+consentimento|guia\s+de\s+vigil[aâ]ncia|protocolo\s+cl[ií]nico|morbidity\s+and\s+mortality\s+weekly\s+report|guidelines\s+working\s+group)\b/i.test(
+                maiorBlocoIdentico.trim()
+              );
             if (ehEntidadePropria) continue;
 
             const citouAutorNoParagrafo =
@@ -2721,30 +2827,36 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
           if (!csl) {
             // Sem DOI explícito: busca pelo título extraído, mas EXIGE correspondência estrita de Autor + Ano + Título!
             const candidatos = await buscarTitulo(refDoc.tituloBuscado || refDoc.textoOriginal.slice(0, 140));
-          const palavrasTituloRef = normalizarChave(refDoc.tituloBuscado)
-            .match(/[a-z0-9]{4,}/g) || [];
-          const melhor = (candidatos || []).find((cand) => {
-            if (!cand.doi || !cand.ano || !refDoc.anoBase) return false;
-            if (Math.abs(Number(cand.ano) - Number(refDoc.anoBase)) > 1) return false;
-            const autCand = normalizarChave(cand.autores || '');
-            const autorOk = refDoc.chavesAutorAlias.some((al) => al.length >= 3 && autCand.includes(al));
-            if (!autorOk) return false;
-            const titCand = normalizarChave(cand.titulo || '');
-            if (titCand.length < 15) return false;
-            return titCand.includes(normalizarChave(refDoc.tituloBuscado).slice(0, 18));
-          });
+            const melhor = (candidatos || []).find((cand) => {
+              if (!cand.ano || !refDoc.anoBase) return false;
+              if (!cand.doi && !cand.pmid) return false;
+              if (Math.abs(Number(cand.ano) - Number(refDoc.anoBase)) > 1) return false;
+              const autCand = normalizarChave(cand.autores || '');
+              const autorOk = refDoc.chavesAutorAlias.some((al) => al.length >= 3 && autCand.includes(al));
+              if (!autorOk) return false;
+              const titCand = normalizarChave(cand.titulo || '');
+              const titRef = normalizarChave(refDoc.tituloBuscado || '');
+              const titRefSemSub = normalizarChave((refDoc.tituloBuscado || '').split(/[:–—]/)[0].trim());
+              if (titCand.length < 12) return false;
+              return titCand.includes(titRef.slice(0, 16)) || titRef.includes(titCand.slice(0, 16)) ||
+                     (titRefSemSub.length >= 12 && (titCand.includes(titRefSemSub.slice(0, 16)) || titRefSemSub.includes(titCand.slice(0, 16))));
+            });
 
-          if (melhor?.doi) {
-            csl = await porDoi(melhor.doi);
-            statusAutenticidade = 'autenticada';
-            alertaAutenticidade = `✅ Fonte Real Autenticada nas bases (DOI localizado: ${melhor.doi})`;
-          } else {
-            statusAutenticidade = 'suspeita_ia_fantasma';
-            alertaAutenticidade =
-              '🚨 REFERÊNCIA NÃO LOCALIZADA NAS BASES: Nenhum artigo científico com este título, autor e ano foi encontrado no PubMed/Crossref/OpenAlex!';
-            divergenciaMetadados = alertaAutenticidade;
+            if (melhor?.doi) {
+              csl = await porDoi(melhor.doi);
+              statusAutenticidade = 'autenticada';
+              alertaAutenticidade = `✅ Fonte Real Autenticada nas bases (DOI localizado: ${melhor.doi})`;
+            } else if (melhor?.pmid) {
+              csl = await porPmid(melhor.pmid);
+              statusAutenticidade = 'autenticada';
+              alertaAutenticidade = `✅ Fonte Real Autenticada no PubMed (PMID: ${melhor.pmid})`;
+            } else {
+              statusAutenticidade = 'suspeita_ia_fantasma';
+              alertaAutenticidade =
+                '🚨 REFERÊNCIA NÃO LOCALIZADA NAS BASES: Nenhum artigo científico com este título, autor e ano foi encontrado no PubMed/Crossref/OpenAlex!';
+              divergenciaMetadados = alertaAutenticidade;
+            }
           }
-        }
       }
 
         if (csl && !refBib && statusAutenticidade === 'autenticada') {

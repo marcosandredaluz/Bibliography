@@ -44,9 +44,9 @@ const REGEX_LENER_ORGANIZACAO =
 const REGEX_DOMINIOS_OFICIAIS =
   /(?:\.gov(?:\.[a-z]{2})?|\.edu(?:\.[a-z]{2})?|\.ac\.[a-z]{2}|\.leg\.br|\.jus\.br|\.mp\.br|\.mil\.br|\.def\.br|\.int\b|\b(?:who|iris\.who|paho|opas|unicef|cdc|nih|snomed|w3|hl7|ihe|iso|cancer|fapesp|capes|cnpq)\.org|\bbvsms\.saude\.gov\.br|\bin\.gov\.br|\bsaude\.gov\.br|\bibge\.gov\.br|\bfiocruz\.br)/i;
 
-// Detecta se a linha tem estrutura típica de artigo de periódico científico (ex.: "2020;38(2):482-488" ou periódicos científicos consagrados)
+// Detecta se a linha tem estrutura típica de artigo de periódico científico (ex.: "2020;38(2):482-488", páginas/volume ou periódicos científicos consagrados)
 const REGEX_ASSINATURA_PERIODICO_CIENTIFICO =
-  /(?:\b(?:19|20)\d\d\s*;\s*\d{1,4}\s*(?:\([^)]+\))?\s*:\s*[eE]?\d+|\b(?:Cad\.?\s*Sa[uú]de\s*P[uú]blica|Rev\.?\s*Sa[uú]de\s*P[uú]blica|Ci[eê]nc\.?\s*Sa[uú]de\s*Colet|Epidemiol\.?\s*Serv\.?\s*Sa[uú]de|Rev\.?\s*Bras\.?\s*Epidemiol|Sa[uú]de\s*Debate|Interface\s*\(Botucatu\)|Lancet|N\s*Engl\s*J\s*Med|NEJM|JAMA|BMJ|Vaccine|PLoS\s*One|BMC\s*Public\s*Health|BMC\s*Health\s*Serv\s*Res|Int\s*J\s*Epidemiol|Nat\s*Hum\s*Behav|Nature|Science|Pan\s*Am\s*J\s*Public\s*Health|Rev\s*Panam\s*Salud\s*Publica|MMWR\s*Recomm\s*Rep|Am\s*J\s*Public\s*Health)\b)/i;
+  /(?:\b(?:19|20)\d\d\s*;\s*\d{1,4}\s*(?:\([^)]+\))?\s*:\s*[eE]?\d+|\bv\.\s*\d+.*(?:p\.|pp\.)\s*\d+(?:-\d+)?\b|\b(?:PMCID\s*:?\s*PMC?\d+|PMID\s*:?\s*\d+)\b|\b(?:Cad\.?\s*Sa[uú]de\s*P[uú]blica|Rev\.?\s*Sa[uú]de\s*P[uú]blica|Ci[eê]nc\.?\s*Sa[uú]de\s*Colet|Epidemiol\.?\s*Serv\.?\s*Sa[uú]de|Rev\.?\s*Bras\.?\s*Epidemiol|Sa[uú]de\s*Debate|Interface\s*\(Botucatu\)|Lancet|N\s*Engl\s*J\s*Med|NEJM|JAMA|BMJ|Vaccine|PLoS\s*One|BMC\s*Public\s*Health|BMC\s*Health\s*Serv\s*Res|Int\s*J\s*Epidemiol|Nat\s*Hum\s*Behav|Nature|Science|Pan\s*Am\s*J\s*Public\s*Health|Rev\s*Panam\s*Salud\s*Publica|MMWR\b|MMWR\s*Recomm\s*Rep|Am\s*J\s*Public\s*Health|J\s*Am\s*Med\s*Inform\s*Assoc|JAMIA|Med\s*Mycol|Mycopathologia|Emerg\s*Infect\s*Dis|Mem\s*Inst\s*Oswaldo\s*Cruz|Braz\s*J\s*Infect\s*Dis|PLoS\s*Negl\s*Trop\s*Dis|Front\s*Microbiol|Sci\s*Rep)\b)/i;
 
 // Periódicos Acadêmicos Regionais / Universitários Brasileiros sem DOI Crossref ou Literatura Acadêmica (Teses/Dissertações/Anais)
 const REGEX_PERIODICOS_REGIONAIS_E_TESES =
@@ -104,14 +104,16 @@ function classificarReferenciaHarmonizada(linha, doi, metadadoCslEmbutido = null
   }
 
   // 4. Se não possui DOI de artigo científico e pertence a Domínio Oficial (.gov, .edu, .org, .int) ou ORGANIZACAO LeNER-Br
+  const ehUrlNcbiOuRepositorioArtigos = /https?:\/\/(?:(?:pubmed|www|pmc)\.ncbi\.nlm\.nih\.gov|scielo\.|sciencedirect\.|springer\.|wiley\.|nature\.|tandfonline\.)/i.test(s);
   const ehUrlOficialOuInstitucional =
     !doi &&
     !temAssinaturaPeriodico &&
+    !ehUrlNcbiOuRepositorioArtigos &&
     (/\bDispon[ií]vel\s+em:\s*https?:\/\/[^\s]+/i.test(s) &&
       (/(?:\.gov|\.edu|\.org|\.int|\.ac\.[a-z]{2})\b/i.test(s) ||
        /\b(?:members|about|licensing|portal|standards|normas|documentos|relatorios)\b/i.test(s)));
 
-  if (!doi && (REGEX_DOMINIOS_OFICIAIS.test(s) || REGEX_LENER_ORGANIZACAO.test(s) || ehUrlOficialOuInstitucional)) {
+  if (!doi && !ehUrlNcbiOuRepositorioArtigos && (REGEX_DOMINIOS_OFICIAIS.test(s) || REGEX_LENER_ORGANIZACAO.test(s) || ehUrlOficialOuInstitucional)) {
     return {
       natureza: 'norma_livro_institucional',
       subtipoLener: 'ORGANIZACAO_PUBLICA',
