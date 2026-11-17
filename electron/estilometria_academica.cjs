@@ -134,24 +134,54 @@ function calcularMetricasEstilometricas(texto) {
     (248.835 - (1.015 * mediaComprimentoFrase) - (84.6 * mediaSilabasPorPalavra)).toFixed(1)
   );
 
-  // 5. Diversidade de Trigramas (3-grams) e detecção de repetições contíguas
+  // 5. Diversidade de Trigramas (3-grams) e detecção de repetições mecânicas contíguas
+  // Remove citações parentéticas autor-data antes de analisar trigramas para não gerar falso positivo por citar a mesma instituição/autor
+  const textoSemCitacoes = texto.replace(/\([^)]*(?:\d{4}|s\.d\.|et\s+al\.?)[^)]*\)/gi, ' ');
+  const palavrasSemCit = textoSemCitacoes
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .match(/\b[a-z0-9'-]+\b/g) || [];
+
   const trigramasContagem = new Map();
+  const trigramasIndices = new Map();
   const trigramasRepetidos = [];
-  for (let i = 0; i <= palavras.length - 3; i++) {
-    const w1 = palavras[i];
-    const w2 = palavras[i + 1];
-    const w3 = palavras[i + 2];
+  for (let i = 0; i <= palavrasSemCit.length - 3; i++) {
+    const w1 = palavrasSemCit[i];
+    const w2 = palavrasSemCit[i + 1];
+    const w3 = palavrasSemCit[i + 2];
     const tri = `${w1} ${w2} ${w3}`;
 
-    // Ignora citações de autor-data (ex: "et al 2015", "et al 2026", números de página ou anos)
-    if (/\bet\s+al\b/i.test(tri) || /\b\d{4}\b/.test(tri) || /\b\d+\b/.test(w1) || /\b\d+\b/.test(w2) || /\b\d+\b/.test(w3)) {
+    // Ignora citações, anos, números e trigramas que começam/terminam em preposição/artigo fraco
+    if (
+      /\bet\s+al\b/i.test(tri) ||
+      /\b\d+\b/.test(w1) ||
+      /\b\d+\b/.test(w2) ||
+      /\b\d+\b/.test(w3) ||
+      STOPWORDS_GRAMATICAIS.has(w1) ||
+      STOPWORDS_GRAMATICAIS.has(w3)
+    ) {
       continue;
     }
 
+    // Evita contar sobreposição imediata da mesma expressão (ex: "referencia e contrarreferencia" deslizando)
+    const ultimoIdx = trigramasIndices.get(tri);
+    if (ultimoIdx !== undefined && i - ultimoIdx < 4) {
+      continue;
+    }
+    trigramasIndices.set(tri, i);
+
     const n = (trigramasContagem.get(tri) || 0) + 1;
     trigramasContagem.set(tri, n);
-    if (n === 2 && !STOPWORDS_GRAMATICAIS.has(w1)) {
-      trigramasRepetidos.push(tri);
+    if (n === 2) {
+      // Verifica se já não é sobreposição direta de um trigrama repetido registrado logo antes
+      const ehSobreposicaoAnterior = trigramasRepetidos.some((ant) => {
+        const partsAnt = ant.split(' ');
+        return (partsAnt[1] === w1 && partsAnt[2] === w2) || (partsAnt[0] === w2 && partsAnt[1] === w3);
+      });
+      if (!ehSobreposicaoAnterior) {
+        trigramasRepetidos.push(tri);
+      }
     }
   }
 

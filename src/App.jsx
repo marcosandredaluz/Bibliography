@@ -127,6 +127,7 @@ function ConteudoApp() {
   // Definição e isolamento do estado da Auditoria Reversa por projeto
   const ESTADO_AUDITORIA_LIMPO = {
     nomeArquivo: '',
+    caminhoArquivo: '',
     textoManuscrito: '',
     buscarEBaixar: true,
     resultado: null,
@@ -1667,6 +1668,8 @@ function ConteudoApp() {
         <ReverseAuditView
           refs={refs}
           bib={bib}
+          estilo={cfg.estilo}
+          idioma={cfg.idioma}
           estadoAuditoria={estadoAuditoria}
           setEstadoAuditoria={setEstadoAuditoria}
           aoMudarRodando={setAuditoriaEmExecucao}
@@ -2315,17 +2318,25 @@ function ConteudoApp() {
                                 type="button"
                                 className="btn pequeno secundario"
                                 onClick={() => {
-                                  setSelecionadas([r.id]);
-                                  alternarPainelDireito(true);
+                                  if (painelDireitoAberto && refAtiva?.id === r.id) {
+                                    alternarPainelDireito(false);
+                                  } else {
+                                    setSelecionadas([r.id]);
+                                    alternarPainelDireito(true);
+                                  }
                                 }}
-                                title="Ver detalhes, metadados, notas e PICO desta obra"
+                                title={
+                                  painelDireitoAberto && refAtiva?.id === r.id
+                                    ? 'Clique novamente para fechar o painel de detalhes'
+                                    : 'Ver detalhes, metadados, notas e PICO desta obra'
+                                }
                                 style={{
                                   padding: '2px 7px',
                                   fontSize: 11,
                                   borderRadius: 4,
-                                  border: sel && painelDireitoAberto ? '1px solid var(--primaria)' : '1px solid var(--borda)',
-                                  background: sel && painelDireitoAberto ? 'var(--primaria)' : 'var(--fundo)',
-                                  color: sel && painelDireitoAberto ? '#ffffff' : 'var(--texto)',
+                                  border: painelDireitoAberto && refAtiva?.id === r.id ? '1px solid var(--primaria)' : '1px solid var(--borda)',
+                                  background: painelDireitoAberto && refAtiva?.id === r.id ? 'var(--primaria)' : 'var(--fundo)',
+                                  color: painelDireitoAberto && refAtiva?.id === r.id ? '#ffffff' : 'var(--texto)',
                                   fontWeight: 600,
                                   cursor: 'pointer',
                                 }}

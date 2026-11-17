@@ -35,6 +35,7 @@ const { auditarCompletudeAbnt6023 } = require('./abnt_nbr6023_auditor.cjs');
 const { auditarCorrupcaoBiomedicaDoManuscrito } = require('./corrupcao_biomedica_detector.cjs');
 const { auditarFomentoEAfiliacoes } = require('./fomento_afiliacoes_auditor.cjs');
 const { auditarClaimSupportDoManuscrito } = require('./tfidf_claim_support.cjs');
+const { auditarFigurasETabelasDoManuscrito } = require('./figuras_tabelas_auditor.cjs');
 
 // Mapa CSL-JSON extraído do último arquivo .docx aberto (Mendeley / Zotero / EndNote)
 let ultimoMapaCslEmbutidoDocx = null;
@@ -3781,6 +3782,23 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     }
   }
 
+  // ---------- 8k. Auditoria de Figuras, Quadros e Tabelas (ABNT NBR 14724 & IBGE) ----------
+  const auditoriaFigurasTabelas = auditarFigurasETabelasDoManuscrito(paragrafosCorpo);
+  const alertasFigurasTabelas = auditoriaFigurasTabelas.alertasFigurasTabelas || [];
+  if (alertasFigurasTabelas.length > 0) {
+    for (const aft of alertasFigurasTabelas) {
+      alertasPrecisao.push({
+        tipo: aft.tipo,
+        numParagrafo: aft.numParagrafo,
+        numLinha: aft.numLinha,
+        secao: aft.secao,
+        autorCitado: `${aft.elementoTipo.toUpperCase()} ${aft.numero}`,
+        fraseWord: aft.fraseWord,
+        mensagem: aft.mensagem,
+      });
+    }
+  }
+
   return {
     totalCitacoesOcorrencias: citacoes.length,
     totalAutoresCitadosUnicos: gruposCitacao.size,
@@ -3801,6 +3819,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     alertasCorrupcaoGene,
     alertasFomento,
     alertasDesvioTematico,
+    alertasFigurasTabelas,
     resumoEstatistico: auditoriaEstatistica,
     resumoRede: auditoriaRede,
     resumoMetodologiaClinica: auditoriaMetodologica,
@@ -3811,6 +3830,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     resumoCorrupcaoGene: auditoriaCorrupcaoGene,
     resumoFomento: auditoriaFomento,
     resumoClaimSupport: auditoriaClaimSupport,
+    resumoFigurasTabelas: auditoriaFigurasTabelas,
     errosParsingConflito,
     resumoVerificacaoConteudo: {
       totalObrasCitadas: gruposCitacao.size,

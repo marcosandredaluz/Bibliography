@@ -30,7 +30,11 @@
 function identificarDesenhoEstudo(texto) {
   if (!texto || typeof texto !== 'string') return { tipo: 'nao_identificado', descricao: 'Não especificado' };
 
-  if (/\b(?:ensaio\s+cl[íi]nico(?:\s+randomizado|\s+controlado)?|clinical\s+trial|randomized\s+controlled\s+trial|rct)\b/i.test(texto)) {
+  // Verifica primeiro desenhos de intervenção técnica/serviço ou pesquisa documental que não configuram ensaio clínico medicamentoso
+  if (/\b(?:projeto\s+de\s+interven[çc][ãa]o|plano\s+de\s+interven[çc][ãa]o|diagn[óo]stico\s+situacional|relato\s+de\s+experi[êe]ncia|modelagem\s+de\s+dados|desenvolvimento\s+de\s+sistema)\b/i.test(texto)) {
+    return { tipo: 'projeto_intervencao', descricao: 'Projeto de Intervenção / Diagnóstico Situacional / Modelagem', checklist: 'TIDieR / SQUIRE' };
+  }
+  if (/(?:trata-se\s+de\s+(?:um\s+)?ensaio\s+cl[íi]nico|este\s+(?:estudo\s+[ée]\s+um\s+)?ensaio\s+cl[íi]nico|presente\s+ensaio\s+cl[íi]nico|realizou-se\s+(?:um\s+)?ensaio\s+cl[íi]nico|randomized\s+controlled\s+trial|ensaio\s+cl[íi]nico\s+randomizado\s+(?:duplo|triplo)[- ]cego)/i.test(texto)) {
     return { tipo: 'ensaio_clinico', descricao: 'Ensaio Clínico (Intervenção / RCT)', checklist: 'CONSORT' };
   }
   if (/\b(?:revis[ãa]o\s+sistem[áa]tica|systematic\s+review|meta[- ]an[áa]lise|metan[áa]lise|meta[- ]analysis)\b/i.test(texto)) {
@@ -103,21 +107,21 @@ function auditarAspectosEticos(texto) {
     resultado.dispensaTcle = true;
   }
 
-  // Alertas éticos
+  // Alertas éticos aplicáveis exclusivamente à redação do próprio manuscrito
   const estudaHumanos = /\b(?:pacientes|participantes|indiv[íi]duos|volunt[áa]rios|prontu[áa]rios|dados\s+secund[áa]rios|human\s+subjects|patients)\b/i.test(texto);
-  const estudaBancosPublicosAnonimos = /\b(?:dados\s+secund[áa]rios\s+de\s+dom[íi]nio\s+p[úu]blico|sinan|datasus|sim\s*\/\s*datasus|sinasc|censo\s+demogr[áa]fico|banco\s+de\s+dados\s+p[úu]blico|dados\s+agregados\s+sem\s+identifica[çc][ãa]o)\b/i.test(texto);
+  const estudaBancosPublicosAnonimos = /\b(?:dados\s+secund[áa]rios\s+de\s+dom[íi]nio\s+p[úu]blico|sinan|datasus|sim\s*\/\s*datasus|sinasc|censo\s+demogr[áa]fico|banco\s+de\s+dados\s+p[úu]blico|dados\s+agregados\s+sem\s+identifica[çc][ãa]o|projeto\s+de\s+interven[çc][ãa]o|diagn[óo]stico\s+situacional)\b/i.test(texto);
 
   if (estudaHumanos && !estudaBancosPublicosAnonimos) {
     if (!resultado.mencaoCep && !resultado.caae) {
       resultado.alertas.push({
         tipo: 'ausencia_aprovacao_etica',
-        mensagem: '⚠️ ASPECTO ÉTICO CRÍTICO: O manuscrito investiga seres humanos ou prontuários, mas NÃO relata aprovação por Comitê de Ética em Pesquisa (CEP/CONEP) nem número de CAAE (Resolução CNS 466/12 ou 510/16).',
+        mensagem: '⚠️ ASPECTO ÉTICO (SEU MANUSCRITO): O texto do seu manuscrito menciona estudo com pacientes/prontuários, mas NÃO relata aprovação por Comitê de Ética (CEP/CONEP) nem número de CAAE (Res. CNS 466/12 ou 510/16). Caso seja estudo de intervenção técnica/dados agregados, informe a isenção ou clique em Ignorar.',
       });
     }
     if (!resultado.mencaoTcle && !resultado.dispensaTcle && !resultado.aprovadoCep) {
       resultado.alertas.push({
         tipo: 'ausencia_mencao_tcle',
-        mensagem: '⚠️ TCLE NÃO MENCIONADO: Não foi identificada menção à assinatura do Termo de Consentimento Livre e Esclarecido (TCLE) ou justificativa para sua dispensa pelo CEP.',
+        mensagem: '⚠️ TCLE NÃO MENCIONADO (SEU MANUSCRITO): Não foi identificada no seu manuscrito menção ao Termo de Consentimento Livre e Esclarecido (TCLE) ou justificativa de dispensa pelo CEP.',
       });
     }
   }
@@ -261,7 +265,11 @@ function auditarDescritoresDecsMesh(texto) {
  * Auditoria Metodológica e Clínica Global do Manuscrito.
  */
 function auditarMetodologiaClinicaDoManuscrito(paragrafosCorpo = [], textoCompleto = '') {
-  const textoTotal = textoCompleto || paragrafosCorpo.map((p) => (typeof p === 'string' ? p : p.texto || '')).join('\n\n');
+  // Analisa preferencialmente o corpo do manuscrito (excluindo títulos de obras na lista final de Referências)
+  const textoCorpo = Array.isArray(paragrafosCorpo) && paragrafosCorpo.length > 0
+    ? paragrafosCorpo.map((p) => (typeof p === 'string' ? p : p.texto || '')).join('\n\n')
+    : '';
+  const textoTotal = textoCorpo || textoCompleto;
 
   const desenho = identificarDesenhoEstudo(textoTotal);
   const etica = auditarAspectosEticos(textoTotal);

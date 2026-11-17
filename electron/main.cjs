@@ -20,6 +20,10 @@ const buscadores = require('./searchers.cjs');
 const cofre = require('./vault.cjs');
 const importadores = require('./importers.cjs');
 const auditor = require('./auditor.cjs');
+const { injetarComentariosNoDocx } = require('./docx_comentarios_injector.cjs');
+const { gerarHtmlLaudoPericial } = require('./laudo_pericial_generator.cjs');
+const { executarCirurgiaDocx } = require('./docx_surgical_editor.cjs');
+const { execFile } = require('child_process');
 const { iniciarServidorWord, PORTA } = require('./wordServer.cjs');
 const os = require('os');
 
@@ -436,12 +440,12 @@ function registrarIpc() {
     const caminho = r.filePaths[0];
     const ext = path.extname(caminho).toLowerCase();
     if (ext === '.docx') {
-      return { nome: path.basename(caminho), tipo: 'docx', texto: auditor.extrairTextoDocx(caminho) };
+      return { nome: path.basename(caminho), caminho, tipo: 'docx', texto: auditor.extrairTextoDocx(caminho) };
     }
     if (ext === '.pdf') {
-      return { nome: path.basename(caminho), tipo: 'pdf', bytes: await fs.promises.readFile(caminho) };
+      return { nome: path.basename(caminho), caminho, tipo: 'pdf', bytes: await fs.promises.readFile(caminho) };
     }
-    return { nome: path.basename(caminho), tipo: 'txt', texto: await fs.promises.readFile(caminho, 'utf8') };
+    return { nome: path.basename(caminho), caminho, tipo: 'txt', texto: await fs.promises.readFile(caminho, 'utf8') };
   });
 
   h('audit:executar', async ({ texto, buscarEBaixar = true, pastaDestino = null, modulo = 'todos' }) => {
@@ -513,6 +517,160 @@ function registrarIpc() {
       janela.webContents.send('bib:atualizado');
     }
     return { baixados, copiados, erros, pasta: pastaDestino };
+  });
+
+  // Cirurgia direta em arquivo .DOCX (remover citação, editar trecho, excluir frase, inserir referência nas Referências)
+  h('audit:cirurgiaDocx', async ({ caminhoDocx, operacao }) => {
+    let alvo = caminhoDocx;
+    if (!alvo || !fs.existsSync(alvo) || path.extname(alvo).toLowerCase() !== '.docx') {
+      const r = await dialog.showOpenDialog(janela, {
+        title: 'Selecione o arquivo Word (.docx) onde aplicar a correção',
+        properties: ['openFile'],
+        filters: [{ name: 'Documento Microsoft Word (.docx)', extensions: ['docx'] }],
+      });
+      if (r.canceled || !r.filePaths.length) {
+        return { ok: false, cancelado: true };
+      }
+      alvo = r.filePaths[0];
+    }
+
+    const res = await executarCirurgiaDocx(alvo, operacao);
+    const textoAtualizado = res.ok && res.caminhoSalvo && fs.existsSync(res.caminhoSalvo)
+      ? auditor.extrairTextoDocx(res.caminhoSalvo)
+      : null;
+
+    return {
+      ...res,
+      textoAtualizado,
+      caminhoOrigem: alvo,
+    };
+  });
+
+  // Atalho inteligente para abrir o documento no Microsoft Word e saltar diretamente para o trecho citado
+  h('audit:abrirNoWord', async ({ caminhoDocx, textoBusca = '' }) => {
+    const trechoCurto = String(textoBusca || '')
+      .replace(/^["'“”\s]+|["'“”\s]+$/g, '')
+      .slice(0, 75)
+      .trim();
+
+    if (trechoCurto) {
+      clipboard.writeText(trechoCurto);
+    }
+
+    let arquivo = caminhoDocx;
+    if (!arquivo || !fs.existsSync(arquivo)) {
+      return {
+        ok: false,
+        trechoCopiado: trechoCurto,
+        mensagem: trechoCurto
+          ? `Trecho copiado para a área de transferência! Pressione Ctrl+L e Ctrl+V no seu Word para ir direto ao ponto.`
+          : 'Arquivo original não vinculado; carregue o .docx para abrir direto pelo atalho.',
+      };
+    }
+
+    // Tenta automação Word.Application via PowerShell no Windows para abrir e selecionar o trecho exato na tela
+    if (process.platform === 'win32') {
+      const arquivoEsc = arquivo.replace(/'/g, "''");
+      const buscaEsc = trechoCurto.slice(0, 50).replace(/'/g, "''").replace(/[\r\n]+/g, ' ');
+      const psScript = `
+        try {
+          $word = [Runtime.InteropServices.Marshal]::GetActiveObject("Word.Application")
+        } catch {
+          $word = New-Object -ComObject Word.Application
+        }
+        $word.Visible = $true
+        $alvoFull = [System.IO.Path]::GetFullPath('${arquivoEsc}')
+        $doc = $null
+        foreach ($d in $word.Documents) {
+          if ($d.FullName -ieq $alvoFull) { $doc = $d; break }
+        }
+        if (-not $doc) {
+          $doc = $word.Documents.Open($alvoFull)
+        }
+        $doc.Activate()
+        $word.Activate()
+        $q = '${buscaEsc}'
+        if ($q.Length -gt 5) {
+          $rng = $doc.Content
+          $rng.Find.ClearFormatting()
+          $ok = $rng.Find.Execute($q, $false, $false, $false, $false, $false, $true, 1)
+          if ($ok) { $rng.Select(); $word.ActiveWindow.ScrollIntoView($rng, $true) }
+        }
+      `;
+      try {
+        await new Promise((resolve) => {
+          execFile('powershell', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript], { timeout: 6000 }, () => resolve());
+        });
+        return {
+          ok: true,
+          trechoCopiado: trechoCurto,
+          mensagem: trechoCurto
+            ? `Documento aberto no Word com o trecho "${trechoCurto.slice(0, 40)}…" localizado (e copiado no Ctrl+V).`
+            : 'Documento aberto no Microsoft Word!',
+        };
+      } catch {
+        // Fallback shell.openPath abaixo
+      }
+    }
+
+    const erro = await shell.openPath(arquivo);
+    if (erro) throw new Error(erro);
+    return {
+      ok: true,
+      trechoCopiado: trechoCurto,
+      mensagem: trechoCurto
+        ? `Word aberto! O trecho foi copiado: pressione Ctrl+L (Localizar) e Ctrl+V no Word.`
+        : 'Documento aberto!',
+    };
+  });
+
+  // Injeção automática de comentários nativos do Word (<w:comment>) em uma cópia revisada
+  h('audit:exportarDocxComentarios', async ({ caminhoDocxOriginal, inconformidades = [] }) => {
+    let origem = caminhoDocxOriginal;
+    if (!origem || !fs.existsSync(origem) || path.extname(origem).toLowerCase() !== '.docx') {
+      const rOpen = await dialog.showOpenDialog(janela, {
+        title: 'Escolha o arquivo Word (.docx) original para receber os comentários da auditoria',
+        properties: ['openFile'],
+        filters: [{ name: 'Documento Word (.docx)', extensions: ['docx'] }],
+      });
+      if (rOpen.canceled || !rOpen.filePaths.length) return { ok: false, cancelado: true };
+      origem = rOpen.filePaths[0];
+    }
+
+    const dir = path.dirname(origem);
+    const base = path.basename(origem, '.docx');
+    const rSave = await dialog.showSaveDialog(janela, {
+      title: 'Salvar Cópia Anotada com Balões de Comentários da Auditoria',
+      defaultPath: path.join(dir, `${base}_revisado_comentarios.docx`),
+      filters: [{ name: 'Documento Word Anotado (.docx)', extensions: ['docx'] }],
+    });
+    if (rSave.canceled || !rSave.filePath) return { ok: false, cancelado: true };
+
+    const res = await injetarComentariosNoDocx(origem, rSave.filePath, inconformidades);
+    return res;
+  });
+
+  // Geração e abertura do Laudo Pericial de Auditoria Bibliográfica (HTML imprimível / PDF)
+  h('audit:gerarLaudoPericial', async ({ resultado, nomeArquivo, dataHora, statusItens = {} }) => {
+    const resolvidosSet = Object.keys(statusItens || {});
+    const html = gerarHtmlLaudoPericial(resultado, {
+      nomeArquivo: nomeArquivo || 'Manuscrito_Auditado.docx',
+      dataHora: dataHora || new Date(),
+      inconformidadesResolvidas: resolvidosSet,
+    });
+
+    const janelaLaudo = new BrowserWindow({
+      width: 1024,
+      height: 840,
+      title: `Laudo Pericial — ${nomeArquivo || 'Auditoria Bibliográfica'}`,
+      autoHideMenuBar: true,
+      webPreferences: {
+        nodeIntegration: false,
+        contextIsolation: true,
+      },
+    });
+    janelaLaudo.loadURL('data:text/html;charset=utf-8,' + encodeURIComponent(html));
+    return { ok: true };
   });
 
   // Recursos estilo Mendeley: Caderno (Notebook) e Pasta Monitorada (Downloads)

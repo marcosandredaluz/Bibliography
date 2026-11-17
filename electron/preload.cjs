@@ -70,6 +70,10 @@ contextBridge.exposeInMainWorld('api', {
     escolherArquivo: () => chamar('audit:escolherArquivo'),
     executar: (opts) => chamar('audit:executar', opts),
     baixarPdfsParaPasta: (opts) => chamar('audit:baixarPdfsParaPasta', opts),
+    cirurgiaDocx: (opts) => chamar('audit:cirurgiaDocx', opts),
+    abrirNoWord: (opts) => chamar('audit:abrirNoWord', opts),
+    exportarDocxComentarios: (opts) => chamar('audit:exportarDocxComentarios', opts),
+    gerarLaudoPericial: (opts) => chamar('audit:gerarLaudoPericial', opts),
     aoProgresso: (cb) => {
       const fn = (_e, dados) => cb(dados);
       ipcRenderer.on('audit:progresso', fn);
