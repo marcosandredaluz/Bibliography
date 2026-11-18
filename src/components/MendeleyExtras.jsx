@@ -1,9 +1,11 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Icone, useAviso } from './ui.jsx';
 import { autoresResumo, ano, semHtml } from '../lib/csl.js';
+import { useI18n } from '../i18n.jsx';
 
 export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) {
   const avisar = useAviso();
+  const { tr } = useI18n();
   const [aba, setAba] = useState('rabbit'); // 'rabbit' | 'caderno' | 'downloads' | 'estatisticas'
 
   // 1. ResearchRabbit (Artigo Semente -> Trabalhos Anteriores, Posteriores, Similares e Grafo Visual)
@@ -528,19 +530,22 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
     <div className="central-buscadores">
       <div className="topo-buscadores">
         <div>
-          <h2>🔗 Grafo de Citações e Linhagem Científica: O "Antes e Depois" da Literatura</h2>
+          <h2>🔗 {tr('Grafo de Citações e Linhagem Científica: O "Antes e Depois" da Literatura', 'Citation Graph & Scientific Lineage: "Before & After" Literature Mapping')}</h2>
           <p className="subtitulo">
-            Explore a rede causal de citações: <strong>⏪ O Antes</strong> (trabalhos anteriores e referências que deram base) e <strong>⏩ O Depois</strong> (trabalhos posteriores e derivados que citaram a obra), com navegação recursiva e adição de fontes ao seu estudo em 1 clique.
+            {tr(
+              'Explore a rede causal de citações: ⏪ O Antes (trabalhos anteriores e referências que deram base) e ⏩ O Depois (trabalhos posteriores e derivados que citaram a obra), com navegação recursiva e adição de fontes ao seu estudo em 1 clique.',
+              'Explore the causal citation network: ⏪ Prior Works (foundational references cited by this study) and ⏩ Derivative Works (subsequent studies citing this paper), with recursive snowballing and 1-click library import.'
+            )}
           </p>
         </div>
       </div>
 
       <div className="abas-central">
         <button className={aba === 'rabbit' ? 'ativa' : ''} onClick={() => setAba('rabbit')}>
-          🔗 Grafo de Citações (Linhagem &amp; Conexões)
+          🔗 {tr('Grafo de Citações (Linhagem & Conexões)', 'Citation Graph (Lineage & Links)')}
         </button>
         <button className={aba === 'caderno' ? 'ativa' : ''} onClick={() => setAba('caderno')}>
-          <Icone nome="edit" tam={14} /> Caderno de Síntese &amp; Fichamento
+          <Icone nome="edit" tam={14} /> {tr('Caderno de Síntese & Fichamento', 'Synthesis & Reading Notebook')}
         </button>
         <button
           className={aba === 'downloads' ? 'ativa' : ''}
@@ -549,10 +554,10 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
             window.api.mendeley.listarPdfsDownloads().then(setDownloads);
           }}
         >
-          <Icone nome="folder" tam={14} /> Pasta Monitorada (Downloads: {downloads.arquivos.length})
+          <Icone nome="folder" tam={14} /> {tr('Pasta Monitorada (Downloads:', 'Watch Folder (Downloads:')} {downloads.arquivos.length})
         </button>
         <button className={aba === 'estatisticas' ? 'ativa' : ''} onClick={() => setAba('estatisticas')}>
-          <Icone nome="book" tam={14} /> Estatísticas &amp; Regra dos 5 Anos
+          <Icone nome="book" tam={14} /> {tr('Estatísticas & Regra dos 5 Anos', 'Statistics & 5-Year Rule')}
         </button>
       </div>
 
@@ -563,7 +568,7 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
           <div className="bloco-proxy" style={{ marginBottom: 14 }}>
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'flex-end' }}>
               <label className="campo" style={{ flex: 2, minWidth: 260 }}>
-                <span className="campo-rotulo">🌱 1. Escolha o Artigo Semente (Seed Paper) da sua Biblioteca:</span>
+                <span className="campo-rotulo">🌱 1. {tr('Escolha o Artigo Semente (Seed Paper) da sua Biblioteca:', 'Choose the Seed Paper from your Library:')}</span>
                 <select
                   value={sementeId}
                   onChange={(e) => {
@@ -571,7 +576,7 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
                     explorarResearchRabbit(e.target.value);
                   }}
                 >
-                  {refs.length === 0 && <option value="">(Sua biblioteca está vazia — adicione um DOI ao lado)</option>}
+                  {refs.length === 0 && <option value="">({tr('Sua biblioteca está vazia — adicione um DOI ao lado', 'Your library is empty — add a DOI alongside')})</option>}
                   {refs.map((r) => (
                     <option key={r.id} value={r.id}>
                       {autoresResumo(r.csl) || 'Autor'} ({ano(r.csl) || 's.d.'}) — {semHtml(r.csl?.title).slice(0, 75)}
@@ -586,18 +591,18 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
                 onClick={() => explorarResearchRabbit(sementeId)}
                 disabled={carregandoRabbit || !refs.length}
               >
-                🐇 {carregandoRabbit ? 'Mapeando Rede…' : 'Mapear Rede'}
+                🐇 {carregandoRabbit ? tr('Mapeando Rede…', 'Mapping Network…') : tr('Mapear Rede', 'Map Network')}
               </button>
 
               <form onSubmit={buscarSementePorDoiOuTitulo} style={{ display: 'flex', gap: 6, flex: 1.4, minWidth: 260 }}>
                 <input
                   value={buscaDoiDireto}
                   onChange={(e) => setBuscaDoiDireto(e.target.value)}
-                  placeholder="Ou cole um DOI / Título novo para explorar…"
+                  placeholder={tr('Ou cole um DOI / Título novo para explorar…', 'Or paste a new DOI / Title to explore…')}
                   style={{ flex: 1, padding: '7px 10px', borderRadius: 6, border: '1px solid var(--borda)' }}
                 />
                 <button type="submit" className="btn secundario" disabled={carregandoRabbit}>
-                  + Semente
+                  + {tr('Semente', 'Seed')}
                 </button>
               </form>
             </div>

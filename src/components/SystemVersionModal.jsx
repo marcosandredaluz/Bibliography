@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Icone, Modal } from './ui';
+import { useI18n } from '../i18n.jsx';
 
 export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
+  const { tr, ehEn, mudarIdioma } = useI18n();
   const [infoSistema, setInfoSistema] = useState(null);
   const [infoWord, setInfoWord] = useState(null);
   const [copiado, setCopiado] = useState(false);
@@ -113,7 +115,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
           <div style={{ flex: 1, minWidth: 240 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
               <h2 style={{ margin: 0, fontSize: 20, fontWeight: 800, color: 'var(--texto)' }}>
-                Bibliografia Científica
+                {tr('Bibliografia Científica', 'Bibliography Platform')}
               </h2>
               <span
                 style={{
@@ -138,28 +140,31 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
                   borderRadius: 99,
                 }}
               >
-                ✓ Sistema Operacional
+                ✓ {tr('Sistema Operacional', 'Operational')}
               </span>
             </div>
             <p style={{ margin: '4px 0 0 0', fontSize: 12.5, color: 'var(--texto-suave)' }}>
-              Gerenciador pessoal de referências científicas, leitura com PDF.js e integração CSL com processadores de texto (.DOCX).
+              {tr(
+                'Gerenciador pessoal de referências científicas, leitura com PDF.js e integração CSL com processadores de texto (.DOCX).',
+                'Offline-first scientific reference manager, PDF.js reader, and native CSL/Word (.DOCX) integration.'
+              )}
             </p>
           </div>
 
-          <div style={{ display: 'flex', gap: 6 }}>
+          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
             <button
               className={`chip ${abaAtiva === 'diagnostico' ? 'ativo' : ''}`}
               onClick={() => setAbaAtiva('diagnostico')}
               style={{ fontSize: 12, padding: '5px 12px' }}
             >
-              ⚙️ Diagnóstico do Sistema
+              ⚙️ {tr('Diagnóstico do Sistema', 'System Diagnostics')}
             </button>
             <button
               className={`chip ${abaAtiva === 'changelog' ? 'ativo' : ''}`}
               onClick={() => setAbaAtiva('changelog')}
               style={{ fontSize: 12, padding: '5px 12px' }}
             >
-              📜 Histórico de Versões
+              📜 {tr('Histórico de Versões', 'Changelog')}
             </button>
           </div>
         </div>
@@ -167,6 +172,44 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
         {/* ABA 1: DIAGNÓSTICO EM TEMPO REAL */}
         {abaAtiva === 'diagnostico' && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+            {/* SELETOR DE IDIOMA DA INTERFACE (PT-BR PADRÃO / ENGLISH PACK INCLUSO) */}
+            <div
+              style={{
+                padding: '10px 14px',
+                borderRadius: 8,
+                background: 'var(--painel)',
+                border: '1px solid var(--borda)',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                gap: 10,
+                flexWrap: 'wrap',
+              }}
+            >
+              <div>
+                <strong style={{ fontSize: 13 }}>{tr('🌐 Idioma da Interface (Language Pack)', '🌐 Interface Language Pack')}</strong>
+                <div style={{ fontSize: 11.5, color: 'var(--texto-suave)' }}>
+                  {tr('Padrão: Português (Brasil). Pacote English incluído nativamente na instalação.', 'Default: Português (Brasil). English pack bundled in installation.')}
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: 6 }}>
+                <button
+                  type="button"
+                  className={`btn pequeno ${!ehEn ? 'primario' : 'secundario'}`}
+                  onClick={() => mudarIdioma('pt-BR')}
+                >
+                  🇧🇷 Português (Padrão)
+                </button>
+                <button
+                  type="button"
+                  className={`btn pequeno ${ehEn ? 'primario' : 'secundario'}`}
+                  onClick={() => mudarIdioma('en')}
+                >
+                  🇺🇸 English
+                </button>
+              </div>
+            </div>
+
             {/* QUADRO 1: STATUS DO SERVIDOR MICROSOFT WORD */}
             <div
               style={{
@@ -180,10 +223,10 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 8 }}>
                 <div>
                   <strong style={{ fontSize: 13.5, color: 'var(--texto)' }}>
-                    📝 Servidor de Citações para Microsoft Word
+                    📝 {tr('Servidor de Citações para Microsoft Word', 'Local Word Citation Bridge Server')}
                   </strong>
                   <div style={{ fontSize: 12, color: 'var(--texto-suave)', marginTop: 2 }}>
-                    Comunicação local em tempo real entre o Word e o acervo bibliográfico.
+                    {tr('Comunicação local em tempo real entre o Word e o acervo bibliográfico.', 'Real-time loopback communication (127.0.0.1) between Microsoft Word and your local library.')}
                   </div>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -197,15 +240,15 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
                       borderRadius: 6,
                     }}
                   >
-                    {infoWord?.erro ? '🔴 INATIVO' : `🟢 ONLINE (Porta ${infoWord?.porta || 23119})`}
+                    {infoWord?.erro ? tr('🔴 INATIVO', '🔴 OFFLINE') : `🟢 ONLINE (${tr('Porta', 'Port')} ${infoWord?.porta || 23119})`}
                   </span>
                   {infoWord?.urlPainel && (
                     <button
                       className="btn pequeno secundario"
                       onClick={() => window.api?.sistema?.abrirLink(infoWord.urlPainel)}
-                      title="Abrir painel web do suplemento do Word no navegador"
+                      title={tr('Abrir painel web do suplemento do Word no navegador', 'Open Word add-in panel in browser')}
                     >
-                      Testar no Navegador ↗
+                      {tr('Testar no Navegador ↗', 'Test in Browser ↗')}
                     </button>
                   )}
                 </div>
@@ -230,7 +273,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
                 }}
               >
                 <div style={{ fontSize: 11.5, fontWeight: 700, color: 'var(--texto-suave)', textTransform: 'uppercase' }}>
-                  💻 Runtime &amp; Plataforma
+                  💻 {tr('Runtime & Plataforma', 'Runtime & Platform')}
                 </div>
                 <div style={{ marginTop: 8, display: 'flex', flexDirection: 'column', gap: 5, fontSize: 12 }}>
                   <div>
@@ -243,7 +286,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
                     <strong>Chromium:</strong> <span style={{ fontFamily: 'monospace' }}>v{infoSistema?.chrome || '124.x'}</span>
                   </div>
                   <div>
-                    <strong>SO:</strong> Windows ({infoSistema?.arquitetura || 'x64'})
+                    <strong>{tr('SO', 'OS')}:</strong> Windows ({infoSistema?.arquitetura || 'x64'})
                   </div>
                 </div>
               </div>
@@ -258,23 +301,23 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
                 }}
               >
                 <div style={{ fontSize: 11.5, fontWeight: 700, color: 'var(--texto-suave)', textTransform: 'uppercase' }}>
-                  📚 Acervo da Biblioteca
+                  📚 {tr('Acervo da Biblioteca', 'Library Summary')}
                 </div>
                 <div style={{ marginTop: 8, display: 'flex', flexDirection: 'column', gap: 5, fontSize: 12 }}>
                   <div>
-                    <strong>Obras Indexadas:</strong>{' '}
-                    <span style={{ color: 'var(--primaria)', fontWeight: 700 }}>{refs.length} referências</span>
+                    <strong>{tr('Obras Indexadas:', 'Indexed Items:')}</strong>{' '}
+                    <span style={{ color: 'var(--primaria)', fontWeight: 700 }}>{refs.length} {tr('referências', 'references')}</span>
                   </div>
                   <div>
-                    <strong>PDFs Anexados:</strong>{' '}
-                    <span style={{ color: '#16a34a', fontWeight: 600 }}>{totalComPdf} arquivos</span>
+                    <strong>{tr('PDFs Anexados:', 'Attached PDFs:')}</strong>{' '}
+                    <span style={{ color: '#16a34a', fontWeight: 600 }}>{totalComPdf} {tr('arquivos', 'files')}</span>
                   </div>
                   <div>
-                    <strong>Citadas no Manuscrito:</strong>{' '}
-                    <span style={{ color: '#2563eb', fontWeight: 600 }}>{totalCitadas} obras</span>
+                    <strong>{tr('Citadas no Manuscrito:', 'Cited in Manuscript:')}</strong>{' '}
+                    <span style={{ color: '#2563eb', fontWeight: 600 }}>{totalCitadas} {tr('obras', 'items')}</span>
                   </div>
                   <div>
-                    <strong>Coleções / Capítulos:</strong> {bib?.colecoes?.length || 0} pastas
+                    <strong>{tr('Coleções / Capítulos:', 'Collections / Chapters:')}</strong> {bib?.colecoes?.length || 0} {tr('pastas', 'folders')}
                   </div>
                 </div>
               </div>
@@ -289,20 +332,20 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
                 }}
               >
                 <div style={{ fontSize: 11.5, fontWeight: 700, color: 'var(--texto-suave)', textTransform: 'uppercase' }}>
-                  📐 Motores CSL &amp; Visualização
+                  📐 {tr('Motores CSL & Visualização', 'CSL & Viewer Engines')}
                 </div>
                 <div style={{ marginTop: 8, display: 'flex', flexDirection: 'column', gap: 5, fontSize: 12 }}>
                   <div>
-                    <strong>Motor CSL:</strong> CiteProc-JS (Oficial)
+                    <strong>{tr('Motor CSL:', 'CSL Engine:')}</strong> CiteProc-JS
                   </div>
                   <div>
-                    <strong>Normas Nativas:</strong> ABNT NBR 6023, APA 7ª, Vancouver, Chicago
+                    <strong>{tr('Normas Nativas:', 'Native Styles:')}</strong> ABNT NBR 6023, APA 7th, Vancouver, Chicago
                   </div>
                   <div>
-                    <strong>Leitor de PDF:</strong> PDF.js v6.4 com Web Worker
+                    <strong>{tr('Leitor de PDF:', 'PDF Reader:')}</strong> PDF.js Web Worker
                   </div>
                   <div>
-                    <strong>Persistência:</strong> JSON Atômico no OneDrive/Drive
+                    <strong>{tr('Persistência:', 'Storage:')}</strong> {tr('JSON Atômico no OneDrive/Drive', 'Atomic JSON per reference')}
                   </div>
                 </div>
               </div>
@@ -462,13 +505,13 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
           <button
             className="btn secundario"
             onClick={copiarDiagnostico}
-            title="Copia todas as informações técnicas do sistema para colar em suporte ou documentação"
+            title={tr('Copia todas as informações técnicas do sistema para colar em suporte ou documentação', 'Copy technical system info for support or documentation')}
           >
-            {copiado ? '✓ Diagnóstico Copiado!' : '📋 Copiar Diagnóstico Técnico'}
+            {copiado ? tr('✓ Diagnóstico Copiado!', '✓ Diagnostics Copied!') : tr('📋 Copiar Diagnóstico Técnico', '📋 Copy System Diagnostics')}
           </button>
 
           <button className="btn primario" onClick={aoFechar}>
-            Fechar
+            {tr('Fechar', 'Close')}
           </button>
         </div>
       </div>

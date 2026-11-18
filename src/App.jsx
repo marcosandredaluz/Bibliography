@@ -3,6 +3,7 @@ import {
   STATUS,
   TIPOS,
   statusPorId,
+  rotuloStatus,
   tipoPorId,
   autoresResumo,
   ano,
@@ -11,6 +12,7 @@ import {
   textoDeBusca,
 } from './lib/csl.js';
 import { analisarPdf } from './lib/pdf.js';
+import { I18nProvider, useI18n } from './i18n.jsx';
 import { Icone, ProvedorAvisos, Modal, Vazio, useAviso } from './components/ui.jsx';
 import ReferenceDetail from './components/ReferenceDetail.jsx';
 import QuickAddModal from './components/QuickAddModal.jsx';
@@ -37,15 +39,39 @@ const ICONE_TIPO = {
 };
 
 export default function App() {
+  const [idiomaUi, setIdiomaUi] = useState(() => {
+    try {
+      const salvo = localStorage.getItem('bib_idioma_ui');
+      return salvo === 'en' ? 'en' : 'pt-BR';
+    } catch {
+      return 'pt-BR';
+    }
+  });
+
+  const atualizarIdiomaUi = async (novo) => {
+    const val = novo === 'en' ? 'en' : 'pt-BR';
+    setIdiomaUi(val);
+    try {
+      localStorage.setItem('bib_idioma_ui', val);
+      document.documentElement.lang = val;
+    } catch {}
+    try {
+      await window.api?.config?.definir?.({ idiomaInterface: val });
+    } catch {}
+  };
+
   return (
-    <ProvedorAvisos>
-      <ConteudoApp />
-    </ProvedorAvisos>
+    <I18nProvider idioma={idiomaUi} aoMudarIdioma={atualizarIdiomaUi}>
+      <ProvedorAvisos>
+        <ConteudoApp aoSincronizarIdiomaCfg={(val) => setIdiomaUi(val === 'en' ? 'en' : 'pt-BR')} />
+      </ProvedorAvisos>
+    </I18nProvider>
   );
 }
 
-function ConteudoApp() {
+function ConteudoApp({ aoSincronizarIdiomaCfg }) {
   const avisar = useAviso();
+  const { idioma, ehEn, t, tr, alternarIdioma, mudarIdioma } = useI18n();
   const [cfg, setCfg] = useState(null);
   const [bib, setBib] = useState(null);
   const [estilos, setEstilos] = useState([]);
@@ -376,7 +402,11 @@ function ConteudoApp() {
   const carregarInicial = async () => {
     try {
       const c = await window.api.config.obter();
-      setCfg(c || { libraryPath: null, recentes: [], tema: 'escuro', estilo: 'abnt', idioma: 'pt-BR' });
+      setCfg(c || { libraryPath: null, recentes: [], tema: 'escuro', estilo: 'abnt', idioma: 'pt-BR', idiomaInterface: 'pt-BR' });
+      if (c?.idiomaInterface) {
+        aoSincronizarIdiomaCfg?.(c.idiomaInterface);
+        try { localStorage.setItem('bib_idioma_ui', c.idiomaInterface === 'en' ? 'en' : 'pt-BR'); } catch {}
+      }
       if (c?.libraryPath) {
         try {
           const estado = await window.api.bib.estado();
@@ -439,7 +469,8 @@ function ConteudoApp() {
     if (cfg?.tema) {
       document.documentElement.setAttribute('data-tema', cfg.tema);
     }
-  }, [cfg, cfg?.tema]);
+    document.documentElement.lang = idioma;
+  }, [cfg, cfg?.tema, idioma]);
 
   const escolherPastaBiblioteca = async (caminho) => {
     try {
@@ -917,10 +948,10 @@ function ConteudoApp() {
               WebkitTextFillColor: 'transparent',
             }}
           >
-            BIBLIOGRAFIA
+            {tr('BIBLIOGRAFIA', 'BIBLIOGRAPHY')}
           </h1>
           <p style={{ margin: '0 0 24px', fontSize: '13px', color: '#94a3b8', letterSpacing: '1px' }}>
-            Gerenciador Científico & Citações CSL
+            {tr('Gerenciador Científico & Citações CSL', 'Scientific Reference Manager & CSL Citations')}
           </p>
           <div
             style={{
@@ -942,7 +973,7 @@ function ConteudoApp() {
               }}
             />
           </div>
-          <div style={{ fontSize: '12px', color: '#64748b' }}>Carregando sua biblioteca…</div>
+          <div style={{ fontSize: '12px', color: '#64748b' }}>{tr('Carregando sua biblioteca…', 'Loading your library…')}</div>
         </div>
       </div>
     );
@@ -951,15 +982,34 @@ function ConteudoApp() {
     return (
       <div className="tela-boas-vindas">
         <div className="card-boas-vindas">
+          <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 6, marginBottom: 8 }}>
+            <button
+              type="button"
+              className={`btn pequeno ${!ehEn ? 'primario' : 'secundario'}`}
+              onClick={() => mudarIdioma('pt-BR')}
+            >
+              🇧🇷 Português (Padrão)
+            </button>
+            <button
+              type="button"
+              className={`btn pequeno ${ehEn ? 'primario' : 'secundario'}`}
+              onClick={() => mudarIdioma('en')}
+            >
+              🇺🇸 English
+            </button>
+          </div>
           <div className="logo-boas-vindas">
             <Icone nome="book" tam={36} />
             <div>
-              <h1>Bibliografia</h1>
-              <p>Gerenciador Científico &amp; Auditoria Forense de Manuscritos</p>
+              <h1>{t('app.title')}</h1>
+              <p>{t('app.subtitle')}</p>
             </div>
           </div>
           <p className="explicacao">
-            Escolha a pasta onde sua biblioteca ficará salva. Seus artigos, fichamentos e PDFs ficarão sincronizados com segurança na sua nuvem pessoal.
+            {tr(
+              'Escolha a pasta onde sua biblioteca ficará salva. Seus artigos, fichamentos e PDFs ficarão sincronizados com segurança na sua nuvem pessoal.',
+              'Choose the folder where your library will be stored. Your papers, reading notes, and PDFs stay safely synced in your personal cloud drive.'
+            )}
           </p>
           <div className="opcoes-pastas">
             {(cfg.sugestoes || []).map((s, idx) => (
@@ -970,7 +1020,7 @@ function ConteudoApp() {
               >
                 <Icone nome="folder" tam={22} />
                 <div>
-                  <strong>{s.nome} {idx === 0 ? '(Recomendado)' : ''}</strong>
+                  <strong>{s.nome} {idx === 0 ? tr('(Recomendado)', '(Recommended)') : ''}</strong>
                   <span>{s.caminho}</span>
                 </div>
               </button>
@@ -982,7 +1032,7 @@ function ConteudoApp() {
                 if (p) escolherPastaBiblioteca(p);
               }}
             >
-              <Icone nome="folder" tam={18} /> Escolher outra pasta no computador…
+              <Icone nome="folder" tam={18} /> {tr('Escolher outra pasta no computador…', 'Choose another folder on computer…')}
             </button>
           </div>
         </div>
@@ -1021,15 +1071,15 @@ function ConteudoApp() {
         <div className="overlay-drop">
           <div className="caixa-drop">
             <Icone nome="upload" tam={42} />
-            <h3>Solte os PDFs para adicionar à Minha Biblioteca</h3>
-            <p>O DOI é lido automaticamente e os metadados vêm do Crossref/PubMed.</p>
+            <h3>{tr('Solte os PDFs para adicionar à Minha Biblioteca', 'Drop PDFs to add them to My Library')}</h3>
+            <p>{tr('O DOI é lido automaticamente e os metadados vêm do Crossref/PubMed.', 'DOI is read automatically and metadata is fetched from Crossref/PubMed.')}</p>
           </div>
         </div>
       )}
 
       {/* 1. BARRA LATERAL VERTICAL PERMANENTE ESTILO MENDELEY / ACTIVITY RAIL */}
       <aside className="rail-vertical-zotero">
-        <div className="rail-topo-marca" title="Bibliografia Científica">
+        <div className="rail-topo-marca" title={t('app.subtitle')}>
           <div className="rail-logo-icone">
             <Icone nome="book" tam={22} />
           </div>
@@ -1039,73 +1089,81 @@ function ConteudoApp() {
           <button
             className={`rail-item ${abaSuperior === 'biblioteca' ? 'ativo' : ''}`}
             onClick={() => setAbaSuperior('biblioteca')}
-            title="Minha Biblioteca de Referências"
+            title={tr('Minha Biblioteca de Referências', 'My Reference Library')}
           >
             <span className="rail-icone">📚</span>
-            <span className="rail-rotulo">Biblioteca</span>
+            <span className="rail-rotulo">{t('menu.library')}</span>
             <span className="rail-badge">{refs.length}</span>
           </button>
 
           <button
             className={`rail-item ${abaSuperior === 'buscadores' ? 'ativo' : ''}`}
             onClick={() => setAbaSuperior('buscadores')}
-            title="Buscadores Saúde & Contas de Acesso"
+            title={tr('Buscadores Saúde & Contas de Acesso', 'Scientific Search Hub & Accounts')}
           >
             <span className="rail-icone">🔍</span>
-            <span className="rail-rotulo">Buscadores</span>
+            <span className="rail-rotulo">{t('menu.searchers')}</span>
           </button>
 
           <button
             className={`rail-item ${abaSuperior === 'word' ? 'ativo' : ''}`}
             onClick={() => setAbaSuperior('word')}
-            title="Manuscrito (.DOCX - Consultadas × Citadas)"
+            title={tr('Manuscrito (.DOCX - Consultadas × Citadas)', 'Manuscript (.DOCX - Consulted vs. Cited)')}
           >
             <span className="rail-icone">📝</span>
-            <span className="rail-rotulo">Manuscrito</span>
+            <span className="rail-rotulo">{t('menu.manuscript')}</span>
           </button>
 
           <button
             className={`rail-item ${abaSuperior === 'auditoria' ? 'ativo' : ''}`}
             onClick={() => setAbaSuperior('auditoria')}
-            title="Auditoria Reversa (.DOCX/PDF)"
+            title={tr('Auditoria Reversa (.DOCX/PDF)', 'Forensic Reverse Audit (.DOCX/PDF)')}
           >
             <span className="rail-icone">🔬</span>
-            <span className="rail-rotulo">Auditoria</span>
+            <span className="rail-rotulo">{t('menu.auditing')}</span>
           </button>
 
           <button
             className={`rail-item ${abaSuperior === 'prisma' ? 'ativo' : ''}`}
             onClick={() => setAbaSuperior('prisma')}
-            title="Triagem Sistemática & Fluxograma PRISMA 2020"
+            title={tr('Triagem Sistemática & Fluxograma PRISMA 2020', 'Systematic Screening & PRISMA 2020 Flowchart')}
           >
             <span className="rail-icone">📊</span>
-            <span className="rail-rotulo">PRISMA</span>
+            <span className="rail-rotulo">{t('menu.prisma')}</span>
           </button>
 
           <button
             className={`rail-item ${abaSuperior === 'mendeley' ? 'ativo' : ''}`}
             onClick={() => setAbaSuperior('mendeley')}
-            title="Grafo de Citações & Caderno de Síntese"
+            title={tr('Grafo de Citações & Caderno de Síntese', 'Citation Graph & Research Notebook')}
           >
             <span className="rail-icone">🔗</span>
-            <span className="rail-rotulo">Grafo</span>
+            <span className="rail-rotulo">{t('menu.graph')}</span>
           </button>
 
           <button
             className={`rail-item ${abaSuperior === 'ajuda' ? 'ativo' : ''}`}
             onClick={() => setAbaSuperior('ajuda')}
-            title="Manual & Tutorial Passo a Passo Interativo"
+            title={tr('Manual & Tutorial Passo a Passo Interativo', 'User Guide & Interactive Tutorial')}
           >
             <span className="rail-icone">❓</span>
-            <span className="rail-rotulo">Tutorial</span>
+            <span className="rail-rotulo">{t('menu.tutorial')}</span>
           </button>
         </div>
 
         <div className="rail-rodape">
           <button
             className="rail-item-rodape"
+            onClick={alternarIdioma}
+            title={tr('Idioma da interface: Português (Brasil) — clique para mudar para English', 'Interface language: English — click to switch to Português (Brasil)')}
+            style={{ fontWeight: 800, fontSize: '11px', letterSpacing: '0.2px' }}
+          >
+            {ehEn ? '🇺🇸 EN' : '🇧🇷 PT'}
+          </button>
+          <button
+            className="rail-item-rodape"
             onClick={() => setModalVersaoAberto(true)}
-            title={`Sobre o Bibliografia, Versão ${(typeof window !== 'undefined' && window.api?.versao?.obterInfo?.()?.app) || '1.0.1'} & Diagnóstico do Sistema`}
+            title={`${tr('Sobre o Bibliografia, Versão', 'About Bibliography, Version')} ${(typeof window !== 'undefined' && window.api?.versao?.obterInfo?.()?.app) || '1.0.1'} & ${t('menu.diagnostics')}`}
             style={{ fontWeight: 800, fontSize: '11px', letterSpacing: '0.2px' }}
           >
             v{(typeof window !== 'undefined' && window.api?.versao?.obterInfo?.()?.app) || '1.0.1'}
@@ -1113,7 +1171,7 @@ function ConteudoApp() {
           <button
             className="rail-item-rodape"
             onClick={alternarTema}
-            title={cfg.tema === 'escuro' ? 'Mudar para Modo Claro' : 'Mudar para Modo Escuro'}
+            title={cfg.tema === 'escuro' ? tr('Mudar para Modo Claro', 'Switch to Light Mode') : tr('Mudar para Modo Escuro', 'Switch to Dark Mode')}
           >
             <Icone nome={cfg.tema === 'escuro' ? 'sun' : 'moon'} tam={20} />
           </button>
@@ -1132,28 +1190,28 @@ function ConteudoApp() {
               atualizarProjetosRecentes();
               setMenuProjetosAberto((v) => !v);
             }}
-            title={`Projeto ativo: ${bib?.raiz || 'Pasta de trabalho'}\nClique para alternar entre pastas de projetos ou abrir outro diretório.`}
+            title={`${tr('Projeto ativo', 'Active project')}: ${bib?.raiz || tr('Pasta de trabalho', 'Workspace folder')}\n${tr('Clique para alternar entre pastas de projetos ou abrir outro diretório.', 'Click to switch between project folders or open another directory.')}`}
           >
             <span className="icone-pasta-proj">📁</span>
             <div className="badge-projeto-meta">
-              <span className="rotulo-proj-topo">PROJETO ATIVO</span>
+              <span className="rotulo-proj-topo">{tr('PROJETO ATIVO')}</span>
               <span className="nome-proj-atual">
-                {bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : 'Minha Biblioteca'}
+                {bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : tr('Minha Biblioteca', 'My Library')}
               </span>
             </div>
-            <span className="badge-contador-obras-proj" title={`${refs.length} obras cadastradas neste projeto`}>
-              {refs.length} {refs.length === 1 ? 'obra' : 'obras'}
+            <span className="badge-contador-obras-proj" title={`${refs.length} ${tr('obras cadastradas neste projeto', 'items in this project')}`}>
+              {refs.length} {refs.length === 1 ? tr('obra', 'item') : tr('obras', 'items')}
             </span>
-            <span className="caret-proj-topo">▾ Alternar</span>
+            <span className="caret-proj-topo">▾ {tr('Alternar', 'Switch')}</span>
           </button>
           {menuProjetosAberto && (
             <div className="menu-dropdown-projetos">
               <div className="cabecalho-dropdown-proj">
                 <div className="cabecalho-dropdown-titulo">
-                  <span>📚 Projetos &amp; Bibliotecas</span>
-                  <span className="badge-total-proj">{Math.min(10, projetosRecentes.length)} recentes</span>
+                  <span>📚 {tr('Projetos & Bibliotecas', 'Projects & Libraries')}</span>
+                  <span className="badge-total-proj">{Math.min(10, projetosRecentes.length)} {tr('recentes', 'recent')}</span>
                 </div>
-                <div className="subtitulo-dropdown-proj">Selecione para alternar instantaneamente:</div>
+                <div className="subtitulo-dropdown-proj">{tr('Selecione para alternar instantaneamente:', 'Select to switch immediately:')}</div>
               </div>
               <div className="lista-projetos-recentes">
                 {projetosRecentes.slice(0, 10).map((p, idx) => {
@@ -1169,7 +1227,7 @@ function ConteudoApp() {
                       <div className="item-proj-info">
                         <div className="item-proj-linha-superior">
                           <span className="item-proj-nome">{nomeExibicao}</span>
-                          {ehAtivo && <span className="item-proj-badge-ativo">✓ Ativo</span>}
+                          {ehAtivo && <span className="item-proj-badge-ativo">✓ {tr('Ativo', 'Active')}</span>}
                         </div>
                         <span className="item-proj-caminho" title={p.caminho}>{p.caminho}</span>
                       </div>
@@ -1180,7 +1238,7 @@ function ConteudoApp() {
               </div>
               <div className="divisor-dropdown-proj" />
               <button className="btn-acao-proj" onClick={escolherOutroProjeto}>
-                📂 Abrir Outra Pasta no Computador ou OneDrive…
+                📂 {tr('Abrir Outra Pasta no Computador ou OneDrive…', 'Open Another Folder on PC or Cloud…')}
               </button>
               <button
                 className="btn-acao-proj destaque"
@@ -1189,7 +1247,7 @@ function ConteudoApp() {
                   setModalNovoProjeto(true);
                 }}
               >
-                ➕ Criar Nova Pasta de Projeto Acadêmico…
+                ➕ {tr('Criar Nova Pasta de Projeto Acadêmico…', 'Create New Academic Project Folder…')}
               </button>
             </div>
           )}
@@ -1200,7 +1258,7 @@ function ConteudoApp() {
           {abasPdf.map((idPdf) => {
             const r = refs.find((x) => x.id === idPdf);
             if (!r) return null;
-            const rotulo = `${autoresResumo(r.csl) || 'PDF'} (${ano(r.csl) || 's.d.'}) — ${semHtml(r.csl?.title).slice(0, 30)}`;
+            const rotulo = `${autoresResumo(r.csl) || 'PDF'} (${ano(r.csl) || 'n.d.'}) — ${semHtml(r.csl?.title).slice(0, 30)}`;
             return (
               <button
                 key={idPdf}
@@ -1221,14 +1279,23 @@ function ConteudoApp() {
           <span
             className="pill-nuvem-topo"
             onClick={() => window.api.bib.abrirPasta()}
-            title={`Abrir pasta sincronizada: ${bib.raiz}`}
+            title={`${tr('Abrir pasta sincronizada', 'Open synced folder')}: ${bib.raiz}`}
           >
-            ☁ OneDrive sincronizado
+            ☁ {tr('Pasta sincronizada', 'Cloud folder synced')}
           </span>
+          <button
+            type="button"
+            className="btn-icone"
+            onClick={alternarIdioma}
+            title={tr('Alternar idioma (Português / English)', 'Switch language (Português / English)')}
+            style={{ fontSize: 11.5, fontWeight: 700, paddingInline: 6 }}
+          >
+            {ehEn ? '🇺🇸 EN' : '🇧🇷 PT'}
+          </button>
           <button
             className="btn-icone"
             onClick={alternarTema}
-            title={cfg.tema === 'escuro' ? 'Modo Claro' : 'Modo Escuro'}
+            title={cfg.tema === 'escuro' ? tr('Modo Claro', 'Light Mode') : tr('Modo Escuro', 'Dark Mode')}
           >
             <Icone nome={cfg.tema === 'escuro' ? 'sun' : 'moon'} tam={16} />
           </button>
@@ -1244,30 +1311,30 @@ function ConteudoApp() {
             <button
               className="btn-toolbar-zotero destaque"
               onClick={() => setMenuNovoItem((v) => !v)}
-              title="Adicionar referências ou arquivos"
+              title={tr('Adicionar referências ou arquivos', 'Add references or files')}
             >
-              <span style={{ color: '#16a34a', fontWeight: 900 }}>＋</span> Adicionar ▾
+              <span style={{ color: '#16a34a', fontWeight: 900 }}>＋</span> {t('actions.add')} ▾
             </button>
             {menuNovoItem && (
               <div className="menu-flutuante-zotero">
                 <button onClick={() => { setMenuNovoItem(false); setVarinhaAberta(true); }}>
-                  🪄 <strong>Colar DOI / PMID / ISBN…</strong>
+                  🪄 <strong>{tr('Colar DOI / PMID / ISBN…', 'Paste DOI / PMID / ISBN…')}</strong>
                 </button>
                 <button onClick={async () => { setMenuNovoItem(false); const c = await window.api.dialogo.escolherPdfs(); if (c?.length) await importarPdfs(c, 'a_ler'); }}>
-                  📎 Adicionar Arquivos PDF…
+                  📎 {tr('Adicionar Arquivos PDF…', 'Add PDF Files…')}
                 </button>
                 <button onClick={() => { setMenuNovoItem(false); importarPastaDePdfsDireto(); }}>
-                  📁 Importar Pasta de PDFs…
+                  📁 {tr('Importar Pasta de PDFs…', 'Import PDF Folder…')}
                 </button>
                 <button onClick={() => { setMenuNovoItem(false); importarArquivoRisBib(); }}>
-                  📥 Importar RIS / BibTeX (.ris, .bib)…
+                  📥 {tr('Importar RIS / BibTeX (.ris, .bib)…', 'Import RIS / BibTeX (.ris, .bib)…')}
                 </button>
                 <button onClick={() => { setMenuNovoItem(false); importarMendeley(); }}>
-                  📦 Importar do Mendeley (SQLite)…
+                  📦 {tr('Importar do Mendeley (SQLite)…', 'Import from Mendeley (SQLite)…')}
                 </button>
                 <div className="divisor-menu" />
                 <button onClick={() => { setMenuNovoItem(false); setModalAdicionar(true); }}>
-                  🔍 Busca Completa (Online)…
+                  🔍 {tr('Busca Completa (Online)…', 'Full Search / Manual Entry…')}
                 </button>
               </div>
             )}
@@ -1279,7 +1346,7 @@ function ConteudoApp() {
                 autoFocus
                 value={textoVarinha}
                 onChange={(e) => setTextoVarinha(e.target.value)}
-                placeholder="Cole o DOI, PMID ou ISBN e tecle Enter…"
+                placeholder={tr('Cole o DOI, PMID ou ISBN e tecle Enter…', 'Paste DOI, PMID, or ISBN and press Enter…')}
               />
               <button type="submit" className="btn pequeno primario" disabled={carregandoVarinha}>
                 {carregandoVarinha ? '…' : 'OK'}
@@ -1292,20 +1359,20 @@ function ConteudoApp() {
             <button
               className="btn-toolbar-zotero"
               onClick={() => setMenuAcoesRapidas((v) => !v)}
-              title="Ações automatizadas com IA e nuvem"
+              title={tr('Ações automatizadas com IA e nuvem', 'Automated retrieval & analysis actions')}
             >
-              ⚡ Ações ▾
+              ⚡ {t('actions.quickActions')} ▾
             </button>
             {menuAcoesRapidas && (
               <div className="menu-flutuante-zotero">
                 <button onClick={() => { setMenuAcoesRapidas(false); baixarPdfsEmLote(); }} disabled={baixandoLote}>
-                  ⬇ Buscar PDFs Gratuitos (Unpaywall)
+                  ⬇ {tr('Buscar PDFs Gratuitos (Unpaywall)', 'Fetch Free PDFs (Unpaywall)')}
                 </button>
                 <button onClick={() => { setMenuAcoesRapidas(false); gerarInsightsPicosEmLote(); }} disabled={gerandoInsightsLote}>
-                  ✨ Fichamento, PICO &amp; Insights (IA)
+                  ✨ {tr('Fichamento, PICO & Insights (IA)', 'Reading Notes, PICO & Insights')}
                 </button>
                 <button onClick={() => { setMenuAcoesRapidas(false); setAbaSuperior('word'); }}>
-                  📝 Sincronizar Citações com Word
+                  📝 {tr('Sincronizar Citações com Word', 'Sync Citations with Word')}
                 </button>
               </div>
             )}
@@ -1314,7 +1381,7 @@ function ConteudoApp() {
 
         <div className="grupo-toolbar-centro">
           <label className="seletor-estilo">
-            <span>Estilo:</span>
+            <span>{tr('Estilo:')}</span>
             <select value={cfg.estilo} onChange={(e) => mudarEstilo(e.target.value)}>
               {estilos.map((e) => (
                 <option key={e.id} value={e.id}>
@@ -1323,21 +1390,21 @@ function ConteudoApp() {
               ))}
             </select>
           </label>
-          <button className="btn-toolbar-zotero" onClick={() => setModalEstilos(true)} title="Instalar estilos CSL">
-            + Estilos
+          <button className="btn-toolbar-zotero" onClick={() => setModalEstilos(true)} title={tr('Instalar estilos CSL', 'Install CSL citation styles')}>
+            {tr('+ Estilos')}
           </button>
-          <button className="btn-toolbar-zotero" onClick={() => copiarSelecionadas('citacao')} title="Copiar citação">
-            📋 Citar
+          <button className="btn-toolbar-zotero" onClick={() => copiarSelecionadas('citacao')} title={t('actions.copyCitation')}>
+            📋 {t('actions.cite')}
           </button>
-          <button className="btn-toolbar-zotero destaque-azul" onClick={() => setModalExportarWord(true)} title="Gerar bibliografia">
-            📄 Bibliografia
+          <button className="btn-toolbar-zotero destaque-azul" onClick={() => setModalExportarWord(true)} title={t('actions.createBibliography')}>
+            📄 {t('actions.bibliography')}
           </button>
           <button
             className={`btn-toolbar-zotero ${painelDireitoAberto ? 'destaque-azul' : ''}`}
             onClick={() => alternarPainelDireito()}
-            title={painelDireitoAberto ? 'Ocultar aba lateral de detalhes (expandir tabela)' : 'Abrir aba lateral de detalhes (Metadados, Notas e PICO)'}
+            title={painelDireitoAberto ? tr('Ocultar aba lateral de detalhes (expandir tabela)', 'Hide right inspector pane (expand table)') : tr('Abrir aba lateral de detalhes (Metadados, Notas e PICO)', 'Open right inspector pane (Metadata, Notes & PICO)')}
           >
-            {painelDireitoAberto ? '◀ Ocultar Detalhes' : 'ℹ️ Detalhes'}
+            {painelDireitoAberto ? `◀ ${t('actions.hideDetails')}` : `ℹ️ ${t('actions.details')}`}
           </button>
         </div>
 
@@ -1350,16 +1417,16 @@ function ConteudoApp() {
               setBusca(e.target.value);
               if (abaSuperior !== 'biblioteca') setAbaSuperior('biblioteca');
             }}
-            placeholder="Pesquisar título, autor, ano, tag ou dentro do PDF…"
+            placeholder={tr('Pesquisar título, autor, ano, tag ou dentro do PDF…', 'Search title, author, year, tag, or inside PDF…')}
           />
           <select
             value={escopoBusca}
             onChange={(e) => setEscopoBusca(e.target.value)}
-            title="Escopo da busca (igual ao Zotero)"
+            title={tr('Escopo da busca (igual ao Zotero)', 'Search scope')}
           >
-            <option value="basico">Título, Autor, Ano</option>
-            <option value="tudo">Todos os Campos e Notas</option>
-            <option value="pdf">Texto dos PDFs</option>
+            <option value="basico">{tr('Título, Autor, Ano', 'Title, Author, Year')}</option>
+            <option value="tudo">{tr('Todos os Campos e Notas', 'All Fields & Notes')}</option>
+            <option value="pdf">{tr('Texto dos PDFs', 'Full-Text PDFs')}</option>
           </select>
           {busca && (
             <button className="btn-icone" onClick={() => setBusca('')}>
@@ -1375,20 +1442,20 @@ function ConteudoApp() {
         <TutorialEtapa
           idEtapa="pdf"
           abertoPorPadrao={true}
-          titulo="Como Ler o PDF, Navegar com Rolagem Livre e Marcar Trechos Citados"
-          resumo="Navegue pelas páginas com barras de rolagem vertical e horizontal, use zoom sem cortes e selecione frases diretamente no texto para grifar ou citar no Word."
+          titulo={tr('Como Ler o PDF, Navegar com Rolagem Livre e Marcar Trechos Citados', 'How to Read PDFs, Scroll Freely, and Highlight Cited Excerpts')}
+          resumo={tr('Navegue pelas páginas com barras de rolagem vertical e horizontal, use zoom sem cortes e selecione frases diretamente no texto para grifar ou citar no Word.', 'Scroll pages smoothly, zoom without clipping, and select sentences directly to highlight or cite in Word.')}
           passos={[
             {
-              titulo: 'Navegação e Rolagem Livre',
-              texto: 'Utilize as barras de rolagem vertical e horizontal acessíveis nas bordas do leitor. Ajuste o zoom com Zoom + / Zoom − mantendo a página centralizada e totalmente visível.',
+              titulo: tr('Navegação e Rolagem Livre', 'Navigation & Free Scrolling'),
+              texto: tr('Utilize as barras de rolagem vertical e horizontal acessíveis nas bordas do leitor. Ajuste o zoom com Zoom + / Zoom − mantendo a página centralizada e totalmente visível.', 'Use vertical and horizontal scrollbars along the viewer edges and Zoom + / Zoom − to keep pages centered.'),
             },
             {
-              titulo: 'Grifar com a Barra Flutuante',
-              texto: 'Selecione qualquer trecho no PDF com o mouse. Uma barra de cores surge instantaneamente sobre o texto para grifar com Amarelo (Conceito), Verde (PICO), Azul (Citação) ou Rosa (Crítica).',
+              titulo: tr('Grifar com a Barra Flutuante', 'Highlight with Floating Bar'),
+              texto: tr('Selecione qualquer trecho no PDF com o mouse. Uma barra de cores surge instantaneamente sobre o texto para grifar com Amarelo (Conceito), Verde (PICO), Azul (Citação) ou Rosa (Crítica).', 'Select any text in the PDF to open the floating highlight bar: Yellow (Concept), Green (PICO), Blue (Citation), or Pink (Critique).'),
             },
             {
-              titulo: 'Marcar Página e Copiar para o Word',
-              texto: 'Ao selecionar uma frase citada, clique em "✔ Salvar". O sistema indexa a página exata (ex: p. 4) e disponibiliza o botão "Copiar Resumo de Comentários" para colar no Word.',
+              titulo: tr('Marcar Página e Copiar para o Word', 'Save Page & Copy to Word'),
+              texto: tr('Ao selecionar uma frase citada, clique em "✔ Salvar". O sistema indexa a página exata (ex: p. 4) e disponibiliza o botão "Copiar Resumo de Comentários" para colar no Word.', 'Select a cited quote and click "✔ Save" to index its exact page number and copy formatted notes to Word.'),
             },
           ]}
         />
@@ -1399,38 +1466,38 @@ function ConteudoApp() {
           <div className="cockpit-linha-superior">
             <div className="cockpit-bloco-identificacao">
               <div className="cockpit-tag-com-caminho">
-                <span className="cockpit-badge-status">PROJETO ATIVO</span>
+                <span className="cockpit-badge-status">{tr('PROJETO ATIVO')}</span>
                 <span className="cockpit-caminho-projeto" title={bib?.raiz}>
-                  📍 <code>{bib?.raiz || 'Pasta de trabalho'}</code>
+                  📍 <code>{bib?.raiz || tr('Pasta de trabalho', 'Workspace folder')}</code>
                 </span>
                 <button
                   type="button"
                   className="btn-abrir-pasta-mini"
                   onClick={() => window.api.bib.abrirPasta()}
-                  title="Abrir esta pasta no Windows Explorer"
+                  title={tr('Abrir esta pasta no Windows Explorer', 'Open this folder in Explorer')}
                 >
-                  Abrir pasta ↗
+                  {t('actions.openFolder')} ↗
                 </button>
               </div>
               <h2 className="cockpit-titulo-projeto">
-                📁 {bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : 'Minha Biblioteca'}
+                📁 {bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : tr('Minha Biblioteca', 'My Library')}
               </h2>
             </div>
 
             <div className="cockpit-bloco-metricas">
               <div className="cockpit-metrica-card">
                 <span className="cockpit-metrica-num">{refs.length}</span>
-                <span className="cockpit-metrica-legenda">Obras</span>
+                <span className="cockpit-metrica-legenda">{tr('Obras', 'Items')}</span>
               </div>
               <div className="cockpit-metrica-card">
                 <span className="cockpit-metrica-num">
                   {refs.filter((r) => r.anexos?.some((a) => a.tipo === 'pdf')).length}
                 </span>
-                <span className="cockpit-metrica-legenda">Com PDF</span>
+                <span className="cockpit-metrica-legenda">{tr('Com PDF', 'With PDF')}</span>
               </div>
               <div className="cockpit-metrica-card">
                 <span className="cockpit-metrica-num">{contagens.citada || 0}</span>
-                <span className="cockpit-metrica-legenda">Citadas</span>
+                <span className="cockpit-metrica-legenda">{tr('Citadas', 'Cited')}</span>
               </div>
               <button
                 type="button"
@@ -1439,17 +1506,17 @@ function ConteudoApp() {
                   atualizarProjetosRecentes();
                   setMenuProjetosAberto(true);
                 }}
-                title="Trocar para outro projeto acadêmico ou pasta"
+                title={tr('Trocar para outro projeto acadêmico ou pasta', 'Switch to another project or folder')}
               >
-                ⇄ Alternar Projeto
+                ⇄ {t('actions.switchProject')}
               </button>
               <button
                 type="button"
                 className="btn-cockpit-recolher"
                 onClick={alternarCockpit}
-                title={mostrarCockpit ? 'Recolher Central de Início Rápido' : 'Expandir Central de Início Rápido'}
+                title={mostrarCockpit ? tr('Recolher Central de Início Rápido', 'Collapse Quick Actions') : tr('Expandir Central de Início Rápido', 'Expand Quick Actions')}
               >
-                {mostrarCockpit ? '▲ Recolher Ações' : '▼ Ações Rápidas'}
+                {mostrarCockpit ? tr('▲ Recolher Ações', '▲ Collapse') : tr('▼ Ações Rápidas', '▼ Quick Actions')}
               </button>
             </div>
           </div>
@@ -1459,8 +1526,8 @@ function ConteudoApp() {
               <div className="cockpit-card-acao" onClick={() => setAbaSuperior('buscadores')}>
                 <div className="cockpit-card-icone">🔍</div>
                 <div className="cockpit-card-conteudo">
-                  <strong>1. Buscadores de Literatura</strong>
-                  <p>PubMed, Europe PMC, SciELO, OpenAlex, Cochrane. Importe com 1 clique.</p>
+                  <strong>{tr('1. Buscadores de Literatura', '1. Federated Literature Search')}</strong>
+                  <p>{tr('PubMed, Europe PMC, SciELO, OpenAlex, Cochrane. Importe com 1 clique.', 'PubMed, Europe PMC, SciELO, OpenAlex, ClinicalTrials. One-click import.')}</p>
                 </div>
                 <span className="cockpit-card-seta">→</span>
               </div>
@@ -1468,8 +1535,8 @@ function ConteudoApp() {
               <div className="cockpit-card-acao" onClick={() => setVarinhaAberta(true)}>
                 <div className="cockpit-card-icone">🪄</div>
                 <div className="cockpit-card-conteudo">
-                  <strong>2. Inserir via DOI / PMID</strong>
-                  <p>Cole DOI/PMID para preenchimento de metadados e download de PDF.</p>
+                  <strong>{tr('2. Inserir via DOI / PMID', '2. Add by DOI / PMID')}</strong>
+                  <p>{tr('Cole DOI/PMID para preenchimento de metadados e download de PDF.', 'Paste DOI/PMID for automatic metadata enrichment and PDF retrieval.')}</p>
                 </div>
                 <span className="cockpit-card-seta">→</span>
               </div>
@@ -1477,8 +1544,8 @@ function ConteudoApp() {
               <div className="cockpit-card-acao" onClick={() => setAbaSuperior('prisma')}>
                 <div className="cockpit-card-icone">📊</div>
                 <div className="cockpit-card-conteudo">
-                  <strong>3. Triagem PRISMA 2020</strong>
-                  <p>Seleção duplo-cega de artigos, desduplicação e diagrama de fluxo.</p>
+                  <strong>{tr('3. Triagem PRISMA 2020', '3. PRISMA 2020 Screening')}</strong>
+                  <p>{tr('Seleção duplo-cega de artigos, desduplicação e diagrama de fluxo.', 'Double-blind title/abstract screening, deduplication, and flowchart.')}</p>
                 </div>
                 <span className="cockpit-card-seta">→</span>
               </div>
@@ -1486,8 +1553,8 @@ function ConteudoApp() {
               <div className="cockpit-card-acao" onClick={() => setModalExportarWord(true)}>
                 <div className="cockpit-card-icone">📝</div>
                 <div className="cockpit-card-conteudo">
-                  <strong>4. Citar no Manuscrito .DOCX</strong>
-                  <p>Exportar normas ABNT/Vancouver e auditar referências contra alucinações.</p>
+                  <strong>{tr('4. Citar no Manuscrito .DOCX', '4. Cite in .DOCX Manuscript')}</strong>
+                  <p>{tr('Exportar normas ABNT/Vancouver e auditar referências contra alucinações.', 'Format in 2,800+ CSL styles and audit manuscripts for AI hallucinations.')}</p>
                 </div>
                 <span className="cockpit-card-seta">→</span>
               </div>
@@ -1500,34 +1567,34 @@ function ConteudoApp() {
         <TutorialEtapa
           idEtapa="biblioteca"
           abertoPorPadrao={true}
-          titulo="Passo a Passo da Minha Biblioteca (Baixar PDFs → Ler/Grifar → Marcar Uso → Exportar Word)"
-          resumo="Siga os 4 passos abaixo para usar sua biblioteca ou clique em '❓ Manual & Tutorial Passo a Passo' lá no topo para abrir o manual completo."
+          titulo={tr('Passo a Passo da Minha Biblioteca (Baixar PDFs → Ler/Grifar → Marcar Uso → Exportar Word)', 'Library Quick Guide (Fetch PDFs → Read/Highlight → Track Usage → Export to Word)')}
+          resumo={tr('Siga os 4 passos abaixo para usar sua biblioteca ou clique em \'❓ Manual & Tutorial Passo a Passo\' lá no topo para abrir o manual completo.', 'Follow these 4 steps or open Tutorial on the left rail for the complete guide.')}
           passos={[
             {
-              titulo: 'Baixar Artigos e PDFs',
-              texto: 'Cole um DOI/PMID na "🪄 Varinha Mágica", pesquise temas em "🔍 Buscadores Saúde" ou clique em "⬇ Buscar PDFs Gratuitos" para baixar os PDFs automaticamente.',
-              rotuloAcao: '⬇ Buscar PDFs Gratuitos',
+              titulo: tr('Baixar Artigos e PDFs', 'Fetch Papers & PDFs'),
+              texto: tr('Cole um DOI/PMID na "🪄 Varinha Mágica", pesquise temas em "🔍 Buscadores Saúde" ou clique em "⬇ Buscar PDFs Gratuitos" para baixar os PDFs automaticamente.', 'Paste a DOI/PMID in the Magic Wand, query databases in Search Hub, or fetch Open Access PDFs automatically.'),
+              rotuloAcao: tr('⬇ Buscar PDFs Gratuitos', '⬇ Fetch Free PDFs'),
               acao: baixarPdfsEmLote,
             },
             {
-              titulo: 'Ler PDF e Marcar Trecho Citado',
-              texto: 'Dê 2 cliques em qualquer artigo com botão azul "PDF" na tabela para abrir o PDF em aba, grifar e clicar em "❝ Marcar como Trecho Citado" (salva a página!).',
-              rotuloAcao: '📎 Adicionar PDFs do PC',
+              titulo: tr('Ler PDF e Marcar Trecho Citado', 'Read PDF & Mark Cited Quotes'),
+              texto: tr('Dê 2 cliques em qualquer artigo com botão azul "PDF" na tabela para abrir o PDF em aba, grifar e clicar em "❝ Marcar como Trecho Citado" (salva a página!).', 'Double-click any item with a blue PDF badge to open the reader, highlight passages, and save page numbers.'),
+              rotuloAcao: tr('📎 Adicionar PDFs do PC', '📎 Add PDFs from PC'),
               acao: async () => {
                 const p = await window.api.dialogo.escolherPdfs();
                 if (p?.length) await importarPdfs(p, 'a_ler');
               },
             },
             {
-              titulo: 'Marcar o que Vai Usar (Coluna Uso/Status)',
-              texto: 'Na tabela abaixo, mude o status do artigo entre "A ler" (separado), "Consultada" (lido/estudado) ou "Citada" (usado no texto do Word).',
-              rotuloAcao: '📖 Ver Manual Completo',
+              titulo: tr('Marcar o que Vai Usar (Coluna Uso/Status)', 'Track Usage (Status Column)'),
+              texto: tr('Na tabela abaixo, mude o status do artigo entre "A ler" (separado), "Consultada" (lido/estudado) ou "Citada" (usado no texto do Word).', 'Set each reference status between "To read", "Consulted", or "Cited" directly in the table.'),
+              rotuloAcao: tr('📖 Ver Manual Completo', '📖 Open Full Guide'),
               acao: () => setAbaSuperior('ajuda'),
             },
             {
-              titulo: 'Exportar para o Word ou Auditar .DOCX',
-              texto: 'Selecione um artigo e clique em "📋 Citar" ou "📄 Criar Bibliografia" na barra acima — ou use a aba "✔ Auditoria Reversa" para conferir um Word pronto!',
-              rotuloAcao: '📄 Criar Bibliografia p/ Word',
+              titulo: tr('Exportar para o Word ou Auditar .DOCX', 'Export to Word or Audit .DOCX'),
+              texto: tr('Selecione um artigo e clique em "📋 Citar" ou "📄 Criar Bibliografia" na barra acima — ou use a aba "✔ Auditoria Reversa" para conferir um Word pronto!', 'Select items and click Cite or Bibliography above — or switch to Forensic Audit to verify a .DOCX/.PDF draft.'),
+              rotuloAcao: tr('📄 Criar Bibliografia p/ Word', '📄 Create Bibliography for Word'),
               acao: () => setModalExportarWord(true),
             },
           ]}
@@ -1538,21 +1605,21 @@ function ConteudoApp() {
         <TutorialEtapa
           idEtapa="buscadores"
           abertoPorPadrao={true}
-          titulo="Passo a Passo: Como Pesquisar Artigos na Saúde e Importar Direto para o App"
-          resumo="Pesquise em 28 bases científicas (PubMed, Europe PMC, OpenAlex, SciELO, LILACS) sem sair do programa."
+          titulo={tr('Passo a Passo: Como Pesquisar Artigos na Saúde e Importar Direto para o App', 'Quick Guide: Federated Literature Search & Direct Import')}
+          resumo={tr('Pesquise em 28 bases científicas (PubMed, Europe PMC, OpenAlex, SciELO, LILACS) sem sair do programa.', 'Search major scientific databases (PubMed, Europe PMC, OpenAlex, Crossref, SciELO) without leaving the app.')}
           passos={[
             {
-              titulo: 'Digite o tema da pesquisa',
-              texto: 'Escreva as palavras-chave na barra abaixo (ex.: "diabetes exercise") para ver na hora quantos artigos existem em cada base.',
+              titulo: tr('Digite o tema da pesquisa', 'Enter your search query'),
+              texto: tr('Escreva as palavras-chave na barra abaixo (ex.: "diabetes exercise") para ver na hora quantos artigos existem em cada base.', 'Type keywords below to count and compare hits across scientific databases in real time.'),
             },
             {
-              titulo: 'Busque e importe dentro do próprio App',
-              texto: 'Nos cartões do PubMed, Europe PMC, OpenAlex ou Crossref, clique em "⚡ Buscar Artigos Aqui no App" e depois em "+ Biblioteca".',
+              titulo: tr('Busque e importe dentro do próprio App', 'Fetch & import right inside the app'),
+              texto: tr('Nos cartões do PubMed, Europe PMC, OpenAlex ou Crossref, clique em "⚡ Buscar Artigos Aqui no App" e depois em "+ Biblioteca".', 'On open API cards (PubMed, Europe PMC, OpenAlex, Crossref), fetch results and click "+ Library".'),
             },
             {
-              titulo: 'Baixe os PDFs gratuitos',
-              texto: 'Depois de importar os artigos para a Biblioteca, clique em "⬇ Buscar PDFs Gratuitos" na Biblioteca para baixar os PDFs Open Access.',
-              rotuloAcao: '📚 Voltar à Biblioteca e Baixar PDFs',
+              titulo: tr('Baixe os PDFs gratuitos', 'Download Open Access PDFs'),
+              texto: tr('Depois de importar os artigos para a Biblioteca, clique em "⬇ Buscar PDFs Gratuitos" na Biblioteca para baixar os PDFs Open Access.', 'After importing references, fetch free Open Access PDFs directly from your Library.'),
+              rotuloAcao: tr('📚 Voltar à Biblioteca e Baixar PDFs', '📚 Go to Library & Fetch PDFs'),
               acao: () => {
                 setAbaSuperior('biblioteca');
                 baixarPdfsEmLote();
@@ -1566,22 +1633,22 @@ function ConteudoApp() {
         <TutorialEtapa
           idEtapa="word"
           abertoPorPadrao={true}
-          titulo="Passo a Passo: Como Exportar Citações e Referências (Consultadas × Citadas) para o Word"
-          resumo="Gere separadamente a lista de Referências Citadas no texto e a Bibliografia Consultada em ABNT, Vancouver ou APA."
+          titulo={tr('Passo a Passo: Como Exportar Citações e Referências (Consultadas × Citadas) para o Word', 'Quick Guide: Word Integration, Citations & Consulted vs. Cited Lists')}
+          resumo={tr('Gere separadamente a lista de Referências Citadas no texto e a Bibliografia Consultada em ABNT, Vancouver ou APA.', 'Generate Cited References and Consulted Bibliography separately in ABNT, Vancouver, APA, or 2,800+ CSL styles.')}
           passos={[
             {
-              titulo: 'Escolha a norma de formatação',
-              texto: 'Selecione ABNT, Vancouver, APA 7ª ed. ou instale normas de mais de 2.800 revistas e universidades brasileiras.',
-              rotuloAcao: '+ Instalar Outros Estilos',
+              titulo: tr('Escolha a norma de formatação', 'Choose your citation style'),
+              texto: tr('Selecione ABNT, Vancouver, APA 7ª ed. ou instale normas de mais de 2.800 revistas e universidades brasileiras.', 'Select APA, Vancouver, ABNT, or install styles from 2,800+ journals and universities.'),
+              rotuloAcao: tr('+ Instalar Outros Estilos', '+ Install More Styles'),
               acao: () => setModalEstilos(true),
             },
             {
-              titulo: 'Copie as Citadas ou as Consultadas',
-              texto: 'Clique em "📋 Copiar Bibliografia das Citadas" (obras que entraram no texto) ou "📋 Copiar Bibliografia das Consultadas" e dê Ctrl+V no Word.',
+              titulo: tr('Copie as Citadas ou as Consultadas', 'Copy Cited or Consulted lists'),
+              texto: tr('Clique em "📋 Copiar Bibliografia das Citadas" (obras que entraram no texto) ou "📋 Copiar Bibliografia das Consultadas" e dê Ctrl+V no Word.', 'Copy formatted Cited or Consulted bibliographies with rich italics directly into Word.'),
             },
             {
-              titulo: 'Vincule um .DOCX ou use o Painel no Word',
-              texto: 'Você também pode escolher um arquivo .docx para sincronizar o que já foi citado ou instalar o suplemento lateral dentro do Microsoft Word.',
+              titulo: tr('Vincule um .DOCX ou use o Painel no Word', 'Use the .DOCX Sync or Native Word Ribbon'),
+              texto: tr('Você também pode escolher um arquivo .docx para sincronizar o que já foi citado ou instalar o suplemento lateral dentro do Microsoft Word.', 'Install the .dotm Word Ribbon extension or scan any .docx manuscript directly.'),
             },
           ]}
         />
@@ -1591,24 +1658,24 @@ function ConteudoApp() {
         <TutorialEtapa
           idEtapa="auditoria"
           abertoPorPadrao={true}
-          titulo="Passo a Passo da Auditoria Reversa e Forense (.DOCX, .PDF ou Texto)"
-          resumo="Audite citações no texto × referências com conferência determinística, eliminação de falsos alarmes, download de PDFs em pasta à sua escolha e relatório forense para IA."
+          titulo={tr('Passo a Passo da Auditoria Reversa e Forense (.DOCX, .PDF ou Texto)', 'Quick Guide: Forensic Reverse Citation Auditing (.DOCX, .PDF, or Text)')}
+          resumo={tr('Audite citações no texto × referências com conferência determinística, eliminação de falsos alarmes, download de PDFs em pasta à sua escolha e relatório forense para IA.', 'Audit in-text citations against reference lists, verify DOIs against Crossref/PubMed/OpenAlex, detect AI hallucinations, and check claim-to-PDF support.')}
           passos={[
             {
-              titulo: '1. Carregar Arquivo ou Colar Texto',
-              texto: 'Clique em "Carregar Arquivo (.DOCX, .PDF, .TXT)" ou cole o manuscrito. O algoritmo analisa o corpo do texto e a seção de REFERÊNCIAS mantendo cada entrada completa sem fragmentação.',
+              titulo: tr('1. Carregar Arquivo ou Colar Texto', '1. Load File or Paste Text'),
+              texto: tr('Clique em "Carregar Arquivo (.DOCX, .PDF, .TXT)" ou cole o manuscrito. O algoritmo analisa o corpo do texto e a seção de REFERÊNCIAS mantendo cada entrada completa sem fragmentação.', 'Load a .DOCX, .PDF, or .TXT manuscript. The parser segments body text, References, and post-reference appendices.'),
             },
             {
-              titulo: '2. Escolher Pasta de Destino (OneDrive / PC)',
-              texto: 'Defina a pasta onde os artigos e PDFs autenticados devem ser salvos. Você pode apontar para sua pasta do OneDrive ou qualquer diretório do seu computador.',
+              titulo: tr('2. Escolher Pasta de Destino (OneDrive / PC)', '2. Active Library / PDF Folder'),
+              texto: tr('Defina a pasta onde os artigos e PDFs autenticados devem ser salvos. Você pode apontar para sua pasta do OneDrive ou qualquer diretório do seu computador.', 'Authenticated articles and downloaded Open Access PDFs are stored cleanly in your active project folder.'),
             },
             {
-              titulo: '3. Executar a Auditoria Completa',
-              texto: 'O sistema cruza as citações narrativas e parentéticas (norma ABNT NBR 10520:2023), autentica DOIs no Crossref/PubMed, elimina alucinações de IA e baixa os PDFs gratuitos.',
+              titulo: tr('3. Executar a Auditoria Completa', '3. Run Full Forensic Audit'),
+              texto: tr('O sistema cruza as citações narrativas e parentéticas (norma ABNT NBR 10520:2023), autentica DOIs no Crossref/PubMed, elimina alucinações de IA e baixa os PDFs gratuitos.', 'Cross-checks in-text citations vs. references, authenticates DOIs/PMIDs, screens retractions, and verifies claims via semantic/BM25/TF-IDF matching.'),
             },
             {
-              titulo: '4. Relatório Forense e Assistente de IA',
-              texto: 'Veja o diagnóstico de cada citação com Parágrafo (§), Linha e Página do PDF. Clique em "🤖 Copiar Relatório p/ Colar na IA" para obter assistência direta de reescrita no ChatGPT ou Claude.',
+              titulo: tr('4. Relatório Forense e Assistente de IA', '4. Forensic Report & Correction Export'),
+              texto: tr('Veja o diagnóstico de cada citação com Parágrafo (§), Linha e Página do PDF. Clique em "🤖 Copiar Relatório p/ Colar na IA" para obter assistência direta de reescrita no ChatGPT ou Claude.', 'Inspect every finding by Paragraph (§), Line, and PDF Page, apply surgical Word fixes, or copy structured prompts for revision.'),
             },
           ]}
         />
@@ -1618,20 +1685,20 @@ function ConteudoApp() {
         <TutorialEtapa
           idEtapa="prisma"
           abertoPorPadrao={true}
-          titulo="Passo a Passo: Como Fazer Remoção de Duplicatas, Triagem Cega e Fluxograma PRISMA 2020"
-          resumo="Ideal para revisões sistemáticas, integrativas e de escopo na área da saúde."
+          titulo={tr('Passo a Passo: Como Fazer Remoção de Duplicatas, Triagem Cega e Fluxograma PRISMA 2020', 'Quick Guide: Deduplication, Blind Screening & PRISMA 2020 Flowchart')}
+          resumo={tr('Ideal para revisões sistemáticas, integrativas e de escopo na área da saúde.', 'Designed for systematic, scoping, and integrative literature reviews.')}
           passos={[
             {
-              titulo: '1. Detectar e Mesclar Duplicatas',
-              texto: 'Na primeira sub-aba, veja pares de artigos repetidos vindos de bases diferentes e clique em "Mesclar" sem perder notas nem PDFs.',
+              titulo: tr('1. Detectar e Mesclar Duplicatas', '1. Detect & Merge Duplicates'),
+              texto: tr('Na primeira sub-aba, veja pares de artigos repetidos vindos de bases diferentes e clique em "Mesclar" sem perder notas nem PDFs.', 'Identify duplicate records across databases and merge them without losing notes or PDFs.'),
             },
             {
-              titulo: '2. Triagem Cega (Estilo Rayyan)',
-              texto: 'Na sub-aba Triagem, leia título/resumo e clique em "✅ Incluir", "❓ Talvez" ou "❌ Excluir (informando o motivo para o PRISMA)".',
+              titulo: tr('2. Triagem Cega (Estilo Rayyan)', '2. Double-Blind Screening'),
+              texto: tr('Na sub-aba Triagem, leia título/resumo e clique em "✅ Incluir", "❓ Talvez" ou "❌ Excluir (informando o motivo para o PRISMA)".', 'Screen titles and abstracts with Include, Maybe, or Exclude + structured PRISMA reasons.'),
             },
             {
-              titulo: '3. Exportar Fluxograma PRISMA 2020',
-              texto: 'Na sub-aba PRISMA 2020, os números são preenchidos automaticamente a partir da sua biblioteca e você pode copiar o fluxograma oficial.',
+              titulo: tr('3. Exportar Fluxograma PRISMA 2020', '3. Export PRISMA 2020 Diagram'),
+              texto: tr('Na sub-aba PRISMA 2020, os números são preenchidos automaticamente a partir da sua biblioteca e você pode copiar o fluxograma oficial.', 'Counts populate automatically from your library ready for PRISMA 2020 flowchart export.'),
             },
           ]}
         />
@@ -1641,20 +1708,20 @@ function ConteudoApp() {
         <TutorialEtapa
           idEtapa="mendeley"
           abertoPorPadrao={true}
-          titulo="Passo a Passo: Caderno de Síntese, Sugestões por IA e Pasta Downloads Monitorada"
-          resumo="Recursos clássicos do Mendeley Desktop & Reference Manager integrados à sua biblioteca."
+          titulo={tr('Passo a Passo: Caderno de Síntese, Sugestões por IA e Pasta Downloads Monitorada', 'Quick Guide: Research Notebook, Similar Papers & Watched Downloads')}
+          resumo={tr('Recursos clássicos do Mendeley Desktop & Reference Manager integrados à sua biblioteca.', 'Reading synthesis notebook, OpenAlex paper discovery, and quick Downloads folder watcher.')}
           passos={[
             {
-              titulo: '📓 Caderno de Leitura (Notebook)',
-              texto: 'Anote sínteses comparando vários artigos ao mesmo tempo e insira citações clicáveis direto nas suas notas.',
+              titulo: tr('📓 Caderno de Leitura (Notebook)', '📓 Reading Notebook'),
+              texto: tr('Anote sínteses comparando vários artigos ao mesmo tempo e insira citações clicáveis direto nas suas notas.', 'Write synthesis notes across multiple studies with clickable inline citations.'),
             },
             {
-              titulo: '✨ Sugestões de Artigos Parecidos',
-              texto: 'Escolha qualquer artigo da sua biblioteca para o programa buscar na base OpenAlex outros estudos semelhantes.',
+              titulo: tr('✨ Sugestões de Artigos Parecidos', '✨ Related Paper Discovery'),
+              texto: tr('Escolha qualquer artigo da sua biblioteca para o programa buscar na base OpenAlex outros estudos semelhantes.', 'Select any paper in your library to explore related literature and citation graphs via OpenAlex.'),
             },
             {
-              titulo: '📥 Pasta Downloads do Windows',
-              texto: 'Veja todos os PDFs que você baixou recentemente no navegador e traga para sua biblioteca com 1 único clique!',
+              titulo: tr('📥 Pasta Downloads do Windows', '📥 Watched Downloads Folder'),
+              texto: tr('Veja todos os PDFs que você baixou recentemente no navegador e traga para sua biblioteca com 1 único clique!', 'Inspect recently downloaded PDFs from your browser and import them into your project in 1 click.'),
             },
           ]}
         />
@@ -1749,7 +1816,7 @@ function ConteudoApp() {
               {/* Card de Identificação em Destaque do Projeto Ativo */}
               <div className="card-projeto-ativo-sidebar">
                 <div className="card-proj-topo-linha">
-                  <span className="card-proj-etiqueta">PROJETO ATIVO</span>
+                  <span className="card-proj-etiqueta">{tr('PROJETO ATIVO')}</span>
                   <button
                     type="button"
                     className="btn-trocar-proj-sidebar"
@@ -1757,103 +1824,103 @@ function ConteudoApp() {
                       atualizarProjetosRecentes();
                       setMenuProjetosAberto(true);
                     }}
-                    title="Alternar entre pastas de projetos ou criar novo"
+                    title={tr('Alternar entre pastas de projetos ou criar novo', 'Switch between project folders or create new')}
                   >
-                    ⇄ Alternar
+                    ⇄ {tr('Alternar', 'Switch')}
                   </button>
                 </div>
-                <div className="card-proj-nome-linha" title={bib?.raiz || 'Pasta do projeto'}>
+                <div className="card-proj-nome-linha" title={bib?.raiz || tr('Pasta do projeto', 'Project folder')}>
                   <span className="icone-pasta-sidebar">📁</span>
                   <strong className="nome-pasta-sidebar">
-                    {bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : 'Minha Biblioteca'}
+                    {bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : tr('Minha Biblioteca', 'My Library')}
                   </strong>
                 </div>
                 <div className="card-proj-caminho-linha" title={bib?.raiz}>
-                  📍 {bib?.raiz ? (bib.raiz.length > 28 ? '…' + bib.raiz.slice(-25) : bib.raiz) : 'Pasta local'}
+                  📍 {bib?.raiz ? (bib.raiz.length > 28 ? '…' + bib.raiz.slice(-25) : bib.raiz) : tr('Pasta local', 'Local folder')}
                 </div>
                 <div className="card-proj-meta-linha">
-                  <span className="badge-obras-sidebar">📚 {refs.length} {refs.length === 1 ? 'obra' : 'obras'}</span>
+                  <span className="badge-obras-sidebar">📚 {refs.length} {refs.length === 1 ? tr('obra', 'item') : tr('obras', 'items')}</span>
                   {contagens.citada > 0 && (
-                    <span className="badge-citadas-sidebar">✅ {contagens.citada} citadas</span>
+                    <span className="badge-citadas-sidebar">✅ {contagens.citada} {tr('citadas', 'cited')}</span>
                   )}
                 </div>
               </div>
 
-              <div className="cabecalho-secao-zotero">MINHA BIBLIOTECA</div>
+              <div className="cabecalho-secao-zotero">{tr('MINHA BIBLIOTECA')}</div>
 
               <button
                 className={`no-arvore ${visao === 'todas' ? 'ativo' : ''}`}
                 onClick={() => setVisao('todas')}
               >
-                <span>📚 Todos os Itens</span>
+                <span>📚 {tr('Todos os Itens')}</span>
                 <span className="cont-arvore">{refs.length}</span>
               </button>
               <button
                 className={`no-arvore ${visao === 'status:a_ler' ? 'ativo' : ''}`}
                 onClick={() => setVisao('status:a_ler')}
               >
-                <span>📌 A Ler (Fila de Triagem)</span>
+                <span>📌 {tr('A Ler (Fila de Triagem)')}</span>
                 <span className="cont-arvore">{contagens.a_ler}</span>
               </button>
               <button
                 className={`no-arvore ${visao === 'status:consultada' ? 'ativo' : ''}`}
                 onClick={() => setVisao('status:consultada')}
               >
-                <span>📘 Consultadas (Lidas)</span>
+                <span>📘 {tr('Consultadas (Lidas)')}</span>
                 <span className="cont-arvore">{contagens.consultada}</span>
               </button>
               <button
                 className={`no-arvore ${visao === 'status:citada' ? 'ativo' : ''}`}
                 onClick={() => setVisao('status:citada')}
               >
-                <span>✅ Citadas no Trabalho</span>
+                <span>✅ {tr('Citadas no Trabalho')}</span>
                 <span className="cont-arvore">{contagens.citada}</span>
               </button>
               <button
                 className={`no-arvore ${visao === 'favoritos' ? 'ativo' : ''}`}
                 onClick={() => setVisao('favoritos')}
               >
-                <span>⭐ Favoritos (Mendeley)</span>
+                <span>⭐ {tr('Favoritos (Mendeley)')}</span>
                 <span className="cont-arvore">{contagens.favoritos}</span>
               </button>
               <button
                 className={`no-arvore ${visao === 'lidos_recentes' ? 'ativo' : ''}`}
                 onClick={() => setVisao('lidos_recentes')}
               >
-                <span>👁 Lidos Recentemente</span>
+                <span>👁 {tr('Lidos Recentemente')}</span>
                 <span className="cont-arvore">{contagens.lidos_recentes}</span>
               </button>
               <button
                 className={`no-arvore ${visao === 'sem_colecao' ? 'ativo' : ''}`}
                 onClick={() => setVisao('sem_colecao')}
               >
-                <span>📂 Itens Não Classificados</span>
+                <span>📂 {tr('Itens Não Classificados')}</span>
                 <span className="cont-arvore">{contagens.sem_colecao}</span>
               </button>
               <button
                 className={`no-arvore ${visao === 'revisao' ? 'ativo' : ''}`}
                 onClick={() => setVisao('revisao')}
               >
-                <span>⚠ Precisa de Revisão</span>
+                <span>⚠ {tr('Precisa de Revisão')}</span>
                 <span className="cont-arvore">{contagens.revisao}</span>
               </button>
               <button
                 className={`no-arvore ${visao === 'sem_pdf' ? 'ativo' : ''}`}
                 onClick={() => setVisao('sem_pdf')}
               >
-                <span>📎 Sem PDF Anexado</span>
+                <span>📎 {tr('Sem PDF Anexado')}</span>
                 <span className="cont-arvore">{contagens.sem_pdf}</span>
               </button>
               <button
                 className={`no-arvore ${visao === 'status:descartada' ? 'ativo' : ''}`}
                 onClick={() => setVisao('status:descartada')}
               >
-                <span>🗑 Excluídas na Triagem</span>
+                <span>🗑 {tr('Excluídas na Triagem')}</span>
                 <span className="cont-arvore">{contagens.descartada}</span>
               </button>
 
               <div className="cabecalho-secao-zotero" style={{ marginTop: 10 }}>
-                <span>COLEÇÕES / CAPÍTULOS</span>
+                <span>{tr('COLEÇÕES / CAPÍTULOS')}</span>
               </div>
               {(bib.colecoes || []).map((c) => {
                 const qtd = refs.filter((r) => (r.colecoes || []).includes(c.id)).length;
@@ -1869,7 +1936,7 @@ function ConteudoApp() {
                     <button
                       className="btn-excluir-col"
                       onClick={() => removerColecao(c.id)}
-                      title="Remover coleção"
+                      title={tr('Remover coleção', 'Remove collection')}
                     >
                       ×
                     </button>
@@ -1880,7 +1947,7 @@ function ConteudoApp() {
                 <input
                   value={novaColecao}
                   onChange={(e) => setNovaColecao(e.target.value)}
-                  placeholder="+ Nova coleção (Enter)…"
+                  placeholder={tr('+ Nova coleção (Enter)…', '+ New collection (Enter)…')}
                 />
               </form>
             </div>
@@ -1892,19 +1959,19 @@ function ConteudoApp() {
                   className={abaSeletorInferior === 'tags' ? 'ativa' : ''}
                   onClick={() => setAbaSeletorInferior('tags')}
                 >
-                  🏷 Tags ({listaTags.length})
+                  🏷 {tr('Tags', 'Tags')} ({listaTags.length})
                 </button>
                 <button
                   className={abaSeletorInferior === 'autores' ? 'ativa' : ''}
                   onClick={() => setAbaSeletorInferior('autores')}
                 >
-                  👤 Autores ({listaAutores.length})
+                  👤 {tr('Autores', 'Authors')} ({listaAutores.length})
                 </button>
                 <button
                   className={abaSeletorInferior === 'periodicos' ? 'ativa' : ''}
                   onClick={() => setAbaSeletorInferior('periodicos')}
                 >
-                  📰 Revistas
+                  📰 {tr('Revistas', 'Journals')}
                 </button>
               </div>
 
@@ -1955,11 +2022,11 @@ function ConteudoApp() {
                 <input
                   value={buscaTagAutor}
                   onChange={(e) => setBuscaTagAutor(e.target.value)}
-                  placeholder={`Filtrar ${abaSeletorInferior}…`}
+                  placeholder={tr(`Filtrar ${abaSeletorInferior}…`, `Filter ${abaSeletorInferior === 'autores' ? 'authors' : abaSeletorInferior === 'periodicos' ? 'journals' : 'tags'}…`)}
                 />
                 {visao !== 'todas' && (
                   <button className="btn pequeno fantasma" onClick={() => setVisao('todas')}>
-                    Limpar
+                    {tr('Limpar')}
                   </button>
                 )}
               </div>
@@ -1971,7 +2038,7 @@ function ConteudoApp() {
             className="divisor-painel-zotero"
             onMouseDown={(e) => iniciarRedimPainel('esquerdo', e)}
             onDoubleClick={restaurarLargurasPadrao}
-            title="Arraste para redimensionar o painel esquerdo (2 cliques restaura o padrão)"
+            title={tr('Arraste para redimensionar o painel esquerdo (2 cliques restaura o padrão)', 'Drag to resize left pane (double-click resets)')}
           />
 
           {/* PAINEL 2 (CENTRO): TABELA MULTICOLUNAS CLÁSSICA DO ZOTERO & MENDELEY */}
@@ -1980,20 +2047,20 @@ function ConteudoApp() {
               refs.length === 0 ? (
                 <div className="estado-vazio-projeto-novo">
                   <div className="icone-grande-vazio">📚</div>
-                  <h3>Esta pasta de projeto está pronta para sua pesquisa!</h3>
+                  <h3>{tr('Esta pasta de projeto está pronta para sua pesquisa!', 'This project folder is ready for your research!')}</h3>
                   <p className="texto-apoio-vazio">
-                    Você está trabalhando no projeto: <strong>{bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : 'Minha Biblioteca'}</strong>
+                    {tr('Você está trabalhando no projeto:', 'Active project:')} <strong>{bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : tr('Minha Biblioteca', 'My Library')}</strong>
                     <br />
                     <code className="caminho-vazio-code">{bib?.raiz}</code>
                   </p>
                   <p className="subtexto-vazio">
-                    Escolha por onde deseja começar a adicionar artigos nesta biblioteca:
+                    {tr('Escolha por onde deseja começar a adicionar artigos nesta biblioteca:', 'Choose how you would like to start adding references to this library:')}
                   </p>
                   <div className="botoes-acao-vazio-grid">
                     <button className="btn-vazio-card" onClick={() => setAbaSuperior('buscadores')}>
                       <span className="icone-vazio-card">🔍</span>
                       <div className="info-vazio-card">
-                        <strong>Buscar nas Bases Científicas</strong>
+                        <strong>{tr('Buscar nas Bases Científicas', 'Search Scientific Databases')}</strong>
                         <span>PubMed, Europe PMC, SciELO, OpenAlex, Cochrane…</span>
                       </div>
                       <span className="seta-vazio-card">→</span>
@@ -2001,8 +2068,8 @@ function ConteudoApp() {
                     <button className="btn-vazio-card" onClick={() => setVarinhaAberta(true)}>
                       <span className="icone-vazio-card">🪄</span>
                       <div className="info-vazio-card">
-                        <strong>Inserir via DOI / PMID</strong>
-                        <span>Metadados automáticos e download de PDF</span>
+                        <strong>{tr('Inserir via DOI / PMID', 'Add via DOI / PMID')}</strong>
+                        <span>{tr('Metadados automáticos e download de PDF', 'Automatic metadata and PDF retrieval')}</span>
                       </div>
                       <span className="seta-vazio-card">→</span>
                     </button>
@@ -2012,28 +2079,28 @@ function ConteudoApp() {
                     }}>
                       <span className="icone-vazio-card">📎</span>
                       <div className="info-vazio-card">
-                        <strong>Adicionar PDFs do Computador</strong>
-                        <span>Importe arquivos PDF já salvos no seu disco</span>
+                        <strong>{tr('Adicionar PDFs do Computador', 'Add Local PDF Files')}</strong>
+                        <span>{tr('Importe arquivos PDF já salvos no seu disco', 'Import PDFs already stored on your disk')}</span>
                       </div>
                       <span className="seta-vazio-card">→</span>
                     </button>
                     <button className="btn-vazio-card" onClick={importarRisOuBib}>
                       <span className="icone-vazio-card">📄</span>
                       <div className="info-vazio-card">
-                        <strong>Importar RIS / BibTeX</strong>
-                        <span>Traga referências do Zotero, Mendeley ou EndNote</span>
+                        <strong>{tr('Importar RIS / BibTeX', 'Import RIS / BibTeX')}</strong>
+                        <span>{tr('Traga referências do Zotero, Mendeley ou EndNote', 'Bring references from Zotero, Mendeley, or EndNote')}</span>
                       </div>
                       <span className="seta-vazio-card">→</span>
                     </button>
                   </div>
                 </div>
               ) : (
-                <Vazio icone="book" titulo="Nenhum item nesta coleção ou filtro">
+                <Vazio icone="book" titulo={tr('Nenhum item nesta coleção ou filtro', 'No items in this collection or filter')}>
                   <p>
-                    Nenhuma obra corresponde aos filtros ativos nesta coleção ou busca.
+                    {tr('Nenhuma obra corresponde aos filtros ativos nesta coleção ou busca.', 'No items match the active filters in this collection or search.')}
                   </p>
                   <button className="btn pequeno fantasma" onClick={() => setVisao('todas')}>
-                    Ver todas as {refs.length} obras da biblioteca
+                    {tr('Ver todas as', 'Show all')} {refs.length} {tr('obras da biblioteca', 'library items')}
                   </button>
                 </Vazio>
               )
@@ -2042,11 +2109,11 @@ function ConteudoApp() {
                 <table className="tabela-itens-zotero">
                   <thead>
                     <tr>
-                      <th className="col-icone-fixa" style={{ width: 28 }} title="Expandir anexos e notas (estilo árvore do Zotero)" />
-                      <th className="col-icone-fixa" style={{ width: 28 }} title="Lido / Não lido (bolinha verde do Mendeley)">
+                      <th className="col-icone-fixa" style={{ width: 28 }} title={tr('Expandir anexos e notas (estilo árvore do Zotero)', 'Expand attachments and notes')} />
+                      <th className="col-icone-fixa" style={{ width: 28 }} title={tr('Lido / Não lido (bolinha verde do Mendeley)', 'Read / Unread')}>
                         ●
                       </th>
-                      <th className="col-icone-fixa" style={{ width: 28 }} title="Favorito">
+                      <th className="col-icone-fixa" style={{ width: 28 }} title={tr('Favorito', 'Favorite')}>
                         ★
                       </th>
                       <th
@@ -2054,12 +2121,12 @@ function ConteudoApp() {
                         style={largurasColunas.titulo ? { width: largurasColunas.titulo } : undefined}
                         onClick={() => alternarOrdenacaoColuna('titulo')}
                       >
-                        <span>Título {colunaOrdem === 'titulo' ? (direcaoOrdem === 'asc' ? '▲' : '▼') : ''}</span>
+                        <span>{tr('Título')} {colunaOrdem === 'titulo' ? (direcaoOrdem === 'asc' ? '▲' : '▼') : ''}</span>
                         <span
                           className="alca-redim-col"
                           onClick={(e) => e.stopPropagation()}
                           onMouseDown={(e) => iniciarRedimColuna('titulo', e)}
-                          title="Arraste para redimensionar a coluna Título"
+                          title={tr('Arraste para redimensionar a coluna Título', 'Drag to resize Title column')}
                         />
                       </th>
                       <th
@@ -2067,12 +2134,12 @@ function ConteudoApp() {
                         style={{ width: largurasColunas.autor }}
                         onClick={() => alternarOrdenacaoColuna('autor')}
                       >
-                        <span>Autor / Criador {colunaOrdem === 'autor' ? (direcaoOrdem === 'asc' ? '▲' : '▼') : ''}</span>
+                        <span>{tr('Autor / Criador')} {colunaOrdem === 'autor' ? (direcaoOrdem === 'asc' ? '▲' : '▼') : ''}</span>
                         <span
                           className="alca-redim-col"
                           onClick={(e) => e.stopPropagation()}
                           onMouseDown={(e) => iniciarRedimColuna('autor', e)}
-                          title="Arraste para redimensionar a coluna Autor"
+                          title={tr('Arraste para redimensionar a coluna Autor', 'Drag to resize Author column')}
                         />
                       </th>
                       <th
@@ -2080,12 +2147,12 @@ function ConteudoApp() {
                         style={{ width: largurasColunas.ano }}
                         onClick={() => alternarOrdenacaoColuna('ano')}
                       >
-                        <span>Ano {colunaOrdem === 'ano' ? (direcaoOrdem === 'asc' ? '▲' : '▼') : ''}</span>
+                        <span>{tr('Ano')} {colunaOrdem === 'ano' ? (direcaoOrdem === 'asc' ? '▲' : '▼') : ''}</span>
                         <span
                           className="alca-redim-col"
                           onClick={(e) => e.stopPropagation()}
                           onMouseDown={(e) => iniciarRedimColuna('ano', e)}
-                          title="Arraste para redimensionar a coluna Ano"
+                          title={tr('Arraste para redimensionar a coluna Ano', 'Drag to resize Year column')}
                         />
                       </th>
                       <th
@@ -2093,25 +2160,25 @@ function ConteudoApp() {
                         style={{ width: largurasColunas.periodico }}
                         onClick={() => alternarOrdenacaoColuna('periodico')}
                       >
-                        <span>Publicação {colunaOrdem === 'periodico' ? (direcaoOrdem === 'asc' ? '▲' : '▼') : ''}</span>
+                        <span>{tr('Publicação')} {colunaOrdem === 'periodico' ? (direcaoOrdem === 'asc' ? '▲' : '▼') : ''}</span>
                         <span
                           className="alca-redim-col"
                           onClick={(e) => e.stopPropagation()}
                           onMouseDown={(e) => iniciarRedimColuna('periodico', e)}
-                          title="Arraste para redimensionar a coluna Publicação"
+                          title={tr('Arraste para redimensionar a coluna Publicação', 'Drag to resize Publication column')}
                         />
                       </th>
                       <th
                         className="th-redimensionavel"
                         style={{ width: largurasColunas.nivel }}
-                        title="Nível de Evidência (1A a 5), Nota da Revista (Quartil/Qualis/FI) e Nota do Artigo"
+                        title={tr('Nível de Evidência (1A a 5), Nota da Revista (Quartil/Qualis/FI) e Nota do Artigo', 'Evidence Level (1A-5), Journal Quartile/IF, and Article Score')}
                       >
-                        <span>Nível &amp; Nota</span>
+                        <span>{tr('Nível & Nota')}</span>
                         <span
                           className="alca-redim-col"
                           onClick={(e) => e.stopPropagation()}
                           onMouseDown={(e) => iniciarRedimColuna('nivel', e)}
-                          title="Arraste para redimensionar a coluna Nível & Nota"
+                          title={tr('Arraste para redimensionar a coluna Nível & Nota', 'Drag to resize Level & Score column')}
                         />
                       </th>
                       <th
@@ -2119,32 +2186,32 @@ function ConteudoApp() {
                         style={{ width: largurasColunas.status }}
                         onClick={() => alternarOrdenacaoColuna('status')}
                       >
-                        <span>Uso / Status {colunaOrdem === 'status' ? (direcaoOrdem === 'asc' ? '▲' : '▼') : ''}</span>
+                        <span>{tr('Uso / Status')} {colunaOrdem === 'status' ? (direcaoOrdem === 'asc' ? '▲' : '▼') : ''}</span>
                         <span
                           className="alca-redim-col"
                           onClick={(e) => e.stopPropagation()}
                           onMouseDown={(e) => iniciarRedimColuna('status', e)}
-                          title="Arraste para redimensionar a coluna Uso / Status"
+                          title={tr('Arraste para redimensionar a coluna Uso / Status', 'Drag to resize Status column')}
                         />
                       </th>
                       <th
                         className="th-redimensionavel"
                         style={{ width: largurasColunas.pdf, textAlign: 'center' }}
-                        title="PDF (Abrir, Baixar Automático, Buscar no Google ou Anexar do PC)"
+                        title={tr('PDF (Abrir, Baixar Automático, Buscar no Google ou Anexar do PC)', 'PDF (Open, Auto-Fetch, Google Scholar, or Attach Local PDF)')}
                       >
                         <span>📎 PDF</span>
                         <span
                           className="alca-redim-col"
                           onClick={(e) => e.stopPropagation()}
                           onMouseDown={(e) => iniciarRedimColuna('pdf', e)}
-                          title="Arraste para redimensionar a coluna PDF"
+                          title={tr('Arraste para redimensionar a coluna PDF', 'Drag to resize PDF column')}
                         />
                       </th>
                       <th
                         style={{ width: 84, textAlign: 'center' }}
-                        title="Abrir aba lateral de detalhes, metadados, notas e PICO"
+                        title={tr('Abrir aba lateral de detalhes, metadados, notas e PICO', 'Open right inspector pane (metadata, notes, PICO)')}
                       >
-                        <span>Detalhes</span>
+                        <span>{tr('Detalhes')}</span>
                       </th>
                     </tr>
                   </thead>
@@ -2221,8 +2288,8 @@ function ConteudoApp() {
                             {/* Título com ícone de tipo + alerta de retratação */}
                             <td className="cel-titulo">
                               <span className="icone-tipo-item">{icone}</span>
-                              {r.retratado && <span className="tag-retratado-mini">RETRATADO</span>}
-                              <span>{semHtml(r.csl?.title) || '(Sem título)'}</span>
+                              {r.retratado && <span className="tag-retratado-mini">{tr('RETRATADO', 'RETRACTED')}</span>}
+                              <span>{semHtml(r.csl?.title) || tr('(Sem título)', '(Untitled)')}</span>
                             </td>
 
                             <td className="cel-truncada">{autoresResumo(r.csl) || '—'}</td>
@@ -2232,10 +2299,10 @@ function ConteudoApp() {
                             {/* Coluna Nível de Evidência + Nota da Revista & Artigo */}
                             <td
                               className="cel-truncada"
-                              title={`${ins.nivelNome || ''}\nRevista: ${ins.quartil || ''} (Qualis ${ins.qualisEstimado || 'N/A'}) · FI: ${ins.fi2Anos ?? 'N/D'}\nNota do Artigo: ${ins.notaArtigo ?? '—'}/10 (${ins.citacoes ?? 0} citações)`}
+                              title={`${ins.nivelNome || ''}\n${tr('Revista', 'Journal')}: ${ins.quartil || ''} (Qualis ${ins.qualisEstimado || 'N/A'}) · ${tr('FI', 'IF')}: ${ins.fi2Anos ?? 'N/A'}\n${tr('Nota do Artigo', 'Article Score')}: ${ins.notaArtigo ?? '—'}/10 (${ins.citacoes ?? 0} ${tr('citações', 'citations')})`}
                             >
                               <span className="badge-evidencia" style={{ marginRight: 4 }}>
-                                {nivCod === 'DIRETRIZ' ? 'DIR' : `Nív. ${nivCod}`}
+                                {nivCod === 'DIRETRIZ' ? tr('DIR', 'GL') : `${tr('Nív.', 'Lvl')} ${nivCod}`}
                               </span>
                               {ins.quartil && ins.quartil !== '—' && (
                                 <span className="tag-mini" style={{ fontWeight: 700, color: '#1d4ed8', marginRight: 4 }}>
@@ -2257,7 +2324,7 @@ function ConteudoApp() {
                               >
                                 {STATUS.map((s) => (
                                   <option key={s.id} value={s.id}>
-                                    {s.nome}
+                                    {rotuloStatus(s.id, idioma)}
                                   </option>
                                 ))}
                               </select>
@@ -2270,21 +2337,21 @@ function ConteudoApp() {
                                   <button
                                     className="badge-pdf"
                                     onClick={() => abrirPdfEmAba(r)}
-                                    title="Abrir no leitor integrado (com grifos)"
+                                    title={tr('Abrir no leitor integrado (com grifos)', 'Open in built-in PDF reader')}
                                   >
                                     PDF
                                   </button>
                                   <button
                                     className="btn-icone-pdf-externo"
                                     onClick={() => window.api.bib.abrirPdf(r.id).catch((e) => avisar(e.message, 'erro'))}
-                                    title="Abrir no Navegador Externo (Edge/Chrome) ou Leitor Padrão do Windows"
+                                    title={tr('Abrir no Navegador Externo (Edge/Chrome) ou Leitor Padrão do Windows', 'Open in external PDF viewer')}
                                   >
                                     ↗
                                   </button>
                                   <button
                                     className="btn-icone-pdf-pasta"
                                     onClick={() => window.api.bib.mostrarPdf(r.id).catch((e) => avisar(e.message, 'erro'))}
-                                    title="Mostrar e selecionar o arquivo PDF na pasta do Windows Explorer"
+                                    title={tr('Mostrar e selecionar o arquivo PDF na pasta do Windows Explorer', 'Reveal PDF file in folder')}
                                   >
                                     📁
                                   </button>
@@ -2295,7 +2362,7 @@ function ConteudoApp() {
                                     <button
                                       className="badge-baixar-pdf"
                                       onClick={() => baixarPdfDeUmaRef(r)}
-                                      title="Tentar baixar PDF gratuito automaticamente (Unpaywall / OpenAlex)"
+                                      title={tr('Tentar baixar PDF gratuito automaticamente (Unpaywall / OpenAlex)', 'Try auto-downloading free PDF (Unpaywall / OpenAlex)')}
                                     >
                                       ⬇
                                     </button>
@@ -2303,14 +2370,14 @@ function ConteudoApp() {
                                   <button
                                     className="badge-baixar-pdf"
                                     onClick={() => buscarPdfGoogleManual(r)}
-                                    title="Buscar este PDF no Google Acadêmico no navegador para baixar manualmente"
+                                    title={tr('Buscar este PDF no Google Acadêmico no navegador para baixar manualmente', 'Search PDF on Google Scholar')}
                                   >
                                     🌐
                                   </button>
                                   <button
                                     className="badge-baixar-pdf"
                                     onClick={() => anexarPdfManual(r.id)}
-                                    title="Anexar manualmente um arquivo PDF que você baixou no seu computador"
+                                    title={tr('Anexar manualmente um arquivo PDF que você baixou no seu computador', 'Attach a local PDF file')}
                                   >
                                     📎
                                   </button>
@@ -2333,8 +2400,8 @@ function ConteudoApp() {
                                 }}
                                 title={
                                   painelDireitoAberto && refAtiva?.id === r.id
-                                    ? 'Clique novamente para fechar o painel de detalhes'
-                                    : 'Ver detalhes, metadados, notas e PICO desta obra'
+                                    ? tr('Clique novamente para fechar o painel de detalhes', 'Click again to close details pane')
+                                    : tr('Ver detalhes, metadados, notas e PICO desta obra', 'View metadata, notes, and PICO')
                                 }
                                 style={{
                                   padding: '2px 7px',
@@ -2347,7 +2414,7 @@ function ConteudoApp() {
                                   cursor: 'pointer',
                                 }}
                               >
-                                ℹ️ Detalhes
+                                ℹ️ {tr('Detalhes')}
                               </button>
                             </td>
                           </tr>
@@ -2359,11 +2426,11 @@ function ConteudoApp() {
                                 <tr key={`oc-${idxOc}`} className="linha-filha-zotero">
                                   <td colSpan={3} />
                                   <td colSpan={7} style={{ whiteSpace: 'normal', lineHeight: 1.4 }}>
-                                    ↳ 📍 <strong>Word (Parágrafo §{oc.numParagrafo || idxOc + 1} · Linha {oc.numLinha || '?'}{oc.secao ? ` · ${oc.secao}` : ''}):</strong>{' '}
+                                    ↳ 📍 <strong>Word ({tr('Parágrafo', 'Paragraph')} §{oc.numParagrafo || idxOc + 1} · {tr('Linha', 'Line')} {oc.numLinha || '?'}{oc.secao ? ` · ${oc.secao}` : ''}):</strong>{' '}
                                     <em>"{oc.fraseContexto}"</em>
                                     {(oc.trechoPdf || oc.trechoArtigoResumo) && (
                                       <div style={{ color: 'var(--texto-suave)', marginTop: 2 }}>
-                                        📄 <strong>Trecho no Artigo{oc.paginaPdf ? ` (pág. ${oc.paginaPdf})` : ''}:</strong> "{oc.trechoPdf || oc.trechoArtigoResumo}"
+                                        📄 <strong>{tr('Trecho no Artigo', 'Source Excerpt')}{oc.paginaPdf ? ` (${tr('pág.', 'p.')} ${oc.paginaPdf})` : ''}:</strong> "{oc.trechoPdf || oc.trechoArtigoResumo}"
                                       </div>
                                     )}
                                   </td>
@@ -2373,7 +2440,7 @@ function ConteudoApp() {
                                         className="btn pequeno primario"
                                         onClick={() => abrirPdfEmAba(r, oc.paginaPdf)}
                                       >
-                                        Pág. {oc.paginaPdf}
+                                        {tr('Pág.', 'p.')} {oc.paginaPdf}
                                       </button>
                                     )}
                                   </td>
@@ -2383,11 +2450,11 @@ function ConteudoApp() {
                                 <tr className="linha-filha-zotero" onDoubleClick={() => abrirPdfEmAba(r)}>
                                   <td colSpan={3} />
                                   <td colSpan={7}>
-                                    ↳ 📄 <strong>Texto Completo (PDF):</strong> <code>{r.pdf}</code>
+                                    ↳ 📄 <strong>{tr('Texto Completo (PDF):', 'Full-Text PDF:')}</strong> <code>{r.pdf}</code>
                                   </td>
                                   <td style={{ textAlign: 'center' }}>
                                     <button className="btn pequeno primario" onClick={() => abrirPdfEmAba(r)}>
-                                      Abrir aba
+                                      {tr('Abrir aba', 'Open tab')}
                                     </button>
                                   </td>
                                 </tr>
@@ -2396,7 +2463,7 @@ function ConteudoApp() {
                                 <tr className="linha-filha-zotero">
                                   <td colSpan={3} />
                                   <td colSpan={8}>
-                                    ↳ 📝 <strong>Nota de Fichamento:</strong> {r.notas.slice(0, 140)}
+                                    ↳ 📝 <strong>{tr('Nota de Fichamento:', 'Reading Note:')}</strong> {r.notas.slice(0, 140)}
                                     {r.notas.length > 140 ? '…' : ''}
                                   </td>
                                 </tr>
@@ -2414,28 +2481,28 @@ function ConteudoApp() {
             {/* Barra de status inferior estilo Zotero */}
             <footer className="rodape-tabela-zotero">
               <span>
-                Exibindo <strong>{refsFiltradas.length}</strong> de {refs.length} itens ·{' '}
-                <strong style={{ color: '#2f80ed' }}>{contagens.consultada} Consultadas</strong> ·{' '}
-                <strong style={{ color: '#27ae60' }}>{contagens.citada} Citadas no Word</strong>
+                {tr('Exibindo', 'Showing')} <strong>{refsFiltradas.length}</strong> {tr('de', 'of')} {refs.length} {tr('itens', 'items')} ·{' '}
+                <strong style={{ color: '#2f80ed' }}>{contagens.consultada} {tr('Consultadas', 'Consulted')}</strong> ·{' '}
+                <strong style={{ color: '#27ae60' }}>{contagens.citada} {tr('Citadas no Word', 'Cited in Word')}</strong>
               </span>
               <span style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span>Arraste as bordas das colunas ou painéis para redimensionar.</span>
+                <span>{tr('Arraste as bordas das colunas ou painéis para redimensionar.', 'Drag column or pane borders to resize.')}</span>
                 <button
                   className="btn pequeno fantasma"
                   style={{ padding: '2px 7px', fontSize: 11 }}
                   onClick={restaurarLargurasPadrao}
-                  title="Restaurar tamanho padrão das colunas e painéis"
+                  title={tr('Restaurar tamanho padrão das colunas e painéis', 'Reset default column & pane widths')}
                 >
-                  ↺ Restaurar Colunas
+                  ↺ {tr('Restaurar Colunas', 'Reset Layout')}
                 </button>
                 <button
                   type="button"
                   className={`btn pequeno ${painelDireitoAberto ? 'secundario' : 'primario'}`}
                   onClick={() => alternarPainelDireito()}
-                  title={painelDireitoAberto ? 'Ocultar aba lateral de detalhes' : 'Abrir aba lateral de detalhes'}
+                  title={painelDireitoAberto ? t('actions.hideDetails') : t('actions.details')}
                   style={{ marginLeft: 6, padding: '2px 9px', fontSize: 11, fontWeight: 600 }}
                 >
-                  {painelDireitoAberto ? '◀ Ocultar Painel Lateral' : '▶ Detalhes do Artigo'}
+                  {painelDireitoAberto ? `◀ ${tr('Ocultar Painel Lateral', 'Hide Side Pane')}` : `▶ ${tr('Detalhes do Artigo', 'Item Details')}`}
                 </button>
               </span>
             </footer>
@@ -2448,7 +2515,7 @@ function ConteudoApp() {
                 className="divisor-painel-zotero"
                 onMouseDown={(e) => iniciarRedimPainel('direito', e)}
                 onDoubleClick={restaurarLargurasPadrao}
-                title="Arraste para redimensionar o painel direito (2 cliques restaura o padrão)"
+                title={tr('Arraste para redimensionar o painel direito (2 cliques restaura o padrão)', 'Drag to resize right pane (double-click resets)')}
               />
 
               {/* PAINEL 3 (DIREITA): INSPETOR DE METADADOS, NOTAS, PICO, CITAÇÕES E REDE */}
@@ -2483,18 +2550,18 @@ function ConteudoApp() {
               setMenuContexto(null);
             }}
           >
-            ℹ️ Ver Detalhes do Artigo (Metadados, Notas &amp; PICO)
+            ℹ️ {tr('Ver Detalhes do Artigo (Metadados, Notas & PICO)', 'View Item Details (Metadata, Notes & PICO)')}
           </button>
           {menuContexto.ref.pdf ? (
             <>
-              <button onClick={() => abrirPdfEmAba(menuContexto.ref)}>📄 Abrir PDF em Aba (Leitor Integrado)</button>
+              <button onClick={() => abrirPdfEmAba(menuContexto.ref)}>📄 {tr('Abrir PDF em Aba (Leitor Integrado)', 'Open PDF in Built-in Tab')}</button>
               <button
                 onClick={() => {
                   window.api.bib.abrirPdf(menuContexto.ref.id).catch((e) => avisar(e.message, 'erro'));
                   setMenuContexto(null);
                 }}
               >
-                ↗ Abrir no Navegador / Leitor Externo (Windows)
+                ↗ {tr('Abrir no Navegador / Leitor Externo (Windows)', 'Open in External PDF Viewer')}
               </button>
               <button
                 onClick={() => {
@@ -2502,20 +2569,20 @@ function ConteudoApp() {
                   setMenuContexto(null);
                 }}
               >
-                📁 Mostrar Arquivo na Pasta do Windows Explorer
+                📁 {tr('Mostrar Arquivo na Pasta do Windows Explorer', 'Reveal File in Folder')}
               </button>
-              <button onClick={() => anexarPdfManual(menuContexto.ref.id)}>🔄 Substituir PDF por outro do PC…</button>
+              <button onClick={() => anexarPdfManual(menuContexto.ref.id)}>🔄 {tr('Substituir PDF por outro do PC…', 'Replace PDF with local file…')}</button>
             </>
           ) : (
             <>
               <button onClick={() => anexarPdfManual(menuContexto.ref.id)}>
-                📎 Anexar PDF Baixado do Computador…
+                📎 {tr('Anexar PDF Baixado do Computador…', 'Attach Local PDF File…')}
               </button>
               <button onClick={() => buscarPdfGoogleManual(menuContexto.ref)}>
-                🌐 Buscar PDF no Google Acadêmico (p/ Baixar Manual)
+                🌐 {tr('Buscar PDF no Google Acadêmico (p/ Baixar Manual)', 'Search PDF on Google Scholar')}
               </button>
               <button onClick={() => baixarPdfDeUmaRef(menuContexto.ref)}>
-                ⬇ Tentar Baixar PDF Gratuito Automático (Unpaywall)
+                ⬇ {tr('Tentar Baixar PDF Gratuito Automático (Unpaywall)', 'Try Auto-Download Free PDF (Unpaywall)')}
               </button>
             </>
           )}
@@ -2523,33 +2590,33 @@ function ConteudoApp() {
             onClick={async () => {
               await window.api.meta.gerarInsights({ id: menuContexto.ref.id, consultarOnline: true, forcarReescrita: true });
               await recarregarBiblioteca();
-              avisar('Notas, PICO, Nível do Artigo e Nota da Revista atualizados!', 'ok');
+              avisar(tr('Notas, PICO, Nível do Artigo e Nota da Revista atualizados!', 'Notes, PICO, Evidence Level, and Journal Score updated!'), 'ok');
             }}
           >
-            ✨ Gerar / Atualizar Notas, PICO &amp; Nota da Revista
+            ✨ {tr('Gerar / Atualizar Notas, PICO & Nota da Revista', 'Generate / Update Notes, PICO & Journal Metrics')}
           </button>
           <button onClick={() => copiarSelecionadas('citacao', [menuContexto.ref.id])}>
-            📋 Copiar Citação para o Word (e marcar Citada)
+            📋 {tr('Copiar Citação para o Word (e marcar Citada)', 'Copy In-Text Citation (and mark Cited)')}
           </button>
           <button onClick={() => copiarSelecionadas('bibliografia', [menuContexto.ref.id])}>
-            📄 Copiar Referência Bibliográfica Formatada
+            📄 {tr('Copiar Referência Bibliográfica Formatada', 'Copy Formatted Bibliography Entry')}
           </button>
           <div className="divisor-menu" />
           <button onClick={() => atualizarRef(menuContexto.ref.id, { status: 'consultada', lido: true })}>
-            📘 Marcar como Consultada (Lida)
+            📘 {tr('Marcar como Consultada (Lida)', 'Mark as Consulted (Read)')}
           </button>
           <button onClick={() => atualizarRef(menuContexto.ref.id, { status: 'citada', lido: true })}>
-            ✅ Marcar como Citada no Trabalho
+            ✅ {tr('Marcar como Citada no Trabalho', 'Mark as Cited in Manuscript')}
           </button>
           <button onClick={() => atualizarRef(menuContexto.ref.id, { status: 'a_ler' })}>
-            📌 Marcar como A Ler
+            📌 {tr('Marcar como A Ler', 'Mark as To Read')}
           </button>
           <div className="divisor-menu" />
           <button
             style={{ color: '#dc2626' }}
             onClick={() => excluirRefs([menuContexto.ref.id])}
           >
-            🗑 Mover Item para a Lixeira
+            🗑 {tr('Mover Item para a Lixeira', 'Move Item to Trash')}
           </button>
         </div>
       )}
@@ -2630,7 +2697,7 @@ function ConteudoApp() {
         <div className="overlay-modal" onClick={() => setModalNovoProjeto(false)}>
           <div className="caixa-modal" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '440px' }}>
             <header className="cabecalho-modal">
-              <h3>Criar Novo Projeto / Biblioteca</h3>
+              <h3>{tr('Criar Novo Projeto / Biblioteca', 'Create New Project / Library')}</h3>
               <button className="btn-fechar" onClick={() => setModalNovoProjeto(false)}>×</button>
             </header>
             <form
@@ -2641,14 +2708,17 @@ function ConteudoApp() {
               style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '14px' }}
             >
               <p style={{ margin: 0, fontSize: '13px', color: 'var(--texto-suave)' }}>
-                Uma nova pasta será criada para este projeto com a estrutura completa e isolada de referências, PDFs, grifos e notas.
+                {tr(
+                  'Uma nova pasta será criada para este projeto com a estrutura completa e isolada de referências, PDFs, grifos e notas.',
+                  'A dedicated folder will be created for this project with an isolated structure for references, PDFs, highlights, and notes.'
+                )}
               </p>
               <div className="campo">
-                <label style={{ fontSize: '12px', fontWeight: 600 }}>Nome do Projeto / Artigo / Tese:</label>
+                <label style={{ fontSize: '12px', fontWeight: 600 }}>{tr('Nome do Projeto / Artigo / Tese:', 'Project / Paper / Thesis Name:')}</label>
                 <input
                   autoFocus
                   type="text"
-                  placeholder="Ex: Tese Doutorado, Artigo Revista X, Revisão 2024"
+                  placeholder={tr('Ex: Tese Doutorado, Artigo Revista X, Revisão 2024', 'e.g., Systematic Review 2026, Journal Manuscript')}
                   value={nomeNovoProjeto}
                   onChange={(e) => setNomeNovoProjeto(e.target.value)}
                   style={{ width: '100%', marginTop: '4px' }}
@@ -2657,10 +2727,10 @@ function ConteudoApp() {
               </div>
               <footer style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '10px' }}>
                 <button type="button" className="btn secundario" onClick={() => setModalNovoProjeto(false)}>
-                  Cancelar
+                  {tr('Cancelar')}
                 </button>
                 <button type="submit" className="btn primario" disabled={!nomeNovoProjeto.trim()}>
-                  Criar e Abrir Projeto
+                  {tr('Criar e Abrir Projeto', 'Create & Open Project')}
                 </button>
               </footer>
             </form>
@@ -2745,6 +2815,7 @@ const SUGESTOES_ESTILOS = [
 
 function ModalGerenciarEstilos({ estilos, onFechar, onInstalado }) {
   const avisar = useAviso();
+  const { tr } = useI18n();
   const [consulta, setConsulta] = useState('');
   const [resultados, setResultados] = useState([]);
   const [buscando, setBuscando] = useState(false);
@@ -2770,7 +2841,7 @@ function ModalGerenciarEstilos({ estilos, onFechar, onInstalado }) {
     try {
       const novo = await window.api.cit.instalarOnline(id);
       await onInstalado(novo.id);
-      avisar(`Modelo "${novo.nome}" instalado na pasta estilos/ do OneDrive e ativado!`, 'ok');
+      avisar(tr(`Modelo "${novo.nome}" instalado na pasta estilos/ e ativado!`, `Style "${novo.nome}" installed and activated!`), 'ok');
     } catch (err) {
       avisar(err.message, 'erro');
     } finally {
@@ -2783,7 +2854,7 @@ function ModalGerenciarEstilos({ estilos, onFechar, onInstalado }) {
       const novo = await window.api.cit.importarCsl();
       if (novo) {
         await onInstalado(novo.id);
-        avisar(`Arquivo "${novo.nome}" importado e ativado!`, 'ok');
+        avisar(tr(`Arquivo "${novo.nome}" importado e ativado!`, `Style "${novo.nome}" imported and activated!`), 'ok');
       }
     } catch (err) {
       avisar(err.message, 'erro');
@@ -2791,14 +2862,14 @@ function ModalGerenciarEstilos({ estilos, onFechar, onInstalado }) {
   };
 
   return (
-    <Modal titulo="Modelos de Formatação (ABNT, Universidades, Saúde & Internacionais)" onFechar={onFechar} largura={680}>
+    <Modal titulo={tr('Modelos de Formatação (ABNT, Universidades, Saúde & Internacionais)', 'Citation Styles Manager (2,800+ CSL Repositories)')} onFechar={onFechar} largura={680}>
       <div className="form-vertical">
         <div className="barra-pdf" style={{ marginBottom: 12 }}>
           <button className="btn primario pequeno" onClick={importarDoPc}>
-            <Icone nome="upload" tam={13} /> Importar arquivo .CSL do computador
+            <Icone nome="upload" tam={13} /> {tr('Importar arquivo .CSL do computador', 'Import local .CSL file')}
           </button>
           <button className="btn secundario pequeno" onClick={() => window.api.bib.abrirPasta('estilos')}>
-            <Icone nome="folder" tam={13} /> Abrir pasta estilos/ no OneDrive
+            <Icone nome="folder" tam={13} /> {tr('Abrir pasta estilos/ no OneDrive', 'Open estilos/ folder')}
           </button>
         </div>
 
@@ -2806,16 +2877,16 @@ function ModalGerenciarEstilos({ estilos, onFechar, onInstalado }) {
           <input
             value={consulta}
             onChange={(e) => setConsulta(e.target.value)}
-            placeholder="Buscar entre +2.800 normas oficiais (ex.: abnt, usp, ufmg, vancouver, lancet, ama, harvard)…"
+            placeholder={tr('Buscar entre +2.800 normas oficiais (ex.: abnt, usp, ufmg, vancouver, lancet, ama, harvard)…', 'Search 2,800+ official CSL styles (e.g., apa, vancouver, nature, lancet, ama, ieee, abnt)…')}
           />
           <button type="submit" className="btn primario" disabled={buscando}>
-            <Icone nome="search" tam={14} /> {buscando ? 'Buscando…' : 'Buscar online'}
+            <Icone nome="search" tam={14} /> {buscando ? tr('Buscando…', 'Searching…') : tr('Buscar online', 'Search Online')}
           </button>
         </form>
 
         {resultados.length > 0 && (
           <div className="lista-resultados-modal" style={{ marginBottom: 14 }}>
-            <h5>Resultados no repositório oficial Citation Style Language:</h5>
+            <h5>{tr('Resultados no repositório oficial Citation Style Language:', 'Official Citation Style Language Repository Results:')}</h5>
             {resultados.map((r) => (
               <div key={r.id} className="item-resultado-modal">
                 <div>
@@ -2825,14 +2896,14 @@ function ModalGerenciarEstilos({ estilos, onFechar, onInstalado }) {
                   </div>
                 </div>
                 {idsInstalados.has(r.id) ? (
-                  <span className="badge-ja-existe">✓ Instalado</span>
+                  <span className="badge-ja-existe">✓ {tr('Instalado', 'Installed')}</span>
                 ) : (
                   <button
                     className="btn pequeno primario"
                     disabled={instalando === r.id}
                     onClick={() => instalar(r.id)}
                   >
-                    {instalando === r.id ? 'Instalando…' : '+ Instalar'}
+                    {instalando === r.id ? tr('Instalando…', 'Installing…') : tr('+ Instalar', '+ Install')}
                   </button>
                 )}
               </div>
@@ -2840,7 +2911,7 @@ function ModalGerenciarEstilos({ estilos, onFechar, onInstalado }) {
           </div>
         )}
 
-        <h5>Modelos recomendados (Universidades Brasileiras &amp; Periódicos da Saúde) — 1 clique:</h5>
+        <h5>{tr('Modelos recomendados (Universidades Brasileiras & Periódicos da Saúde) — 1 clique:', 'Recommended Citation Styles — One Click:')}</h5>
         <div className="lista-resultados-modal">
           {SUGESTOES_ESTILOS.map((s) => (
             <div key={s.id} className="item-resultado-modal">
@@ -2851,14 +2922,14 @@ function ModalGerenciarEstilos({ estilos, onFechar, onInstalado }) {
                 </div>
               </div>
               {idsInstalados.has(s.id) ? (
-                <span className="badge-ja-existe">✓ Instalado</span>
+                <span className="badge-ja-existe">✓ {tr('Instalado', 'Installed')}</span>
               ) : (
                 <button
                   className="btn pequeno secundario"
                   disabled={instalando === s.id}
                   onClick={() => instalar(s.id)}
                 >
-                  {instalando === s.id ? 'Baixando…' : '+ Baixar e Ativar'}
+                  {instalando === s.id ? tr('Baixando…', 'Downloading…') : tr('+ Baixar e Ativar', '+ Install & Activate')}
                 </button>
               )}
             </div>
@@ -2871,6 +2942,7 @@ function ModalGerenciarEstilos({ estilos, onFechar, onInstalado }) {
 
 function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicial, estilos, idioma, onFechar }) {
   const avisar = useAviso();
+  const { tr } = useI18n();
   const temSelecionadas = selecionadas && selecionadas.length > 0;
   const qtdCitadas = useMemo(() => refs.filter((r) => r.status === 'citada').length, [refs]);
   const qtdConsultadas = useMemo(() => refs.filter((r) => r.status === 'consultada').length, [refs]);
@@ -2958,12 +3030,12 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
   const nomeEstiloAtual = estilos.find((e) => e.id === estilo)?.nome || estilo;
 
   return (
-    <Modal titulo="📄 Gerar Bibliografia Formatada (Word / ABNT / Vancouver / APA)" onFechar={onFechar} largura={1080}>
+    <Modal titulo={tr('📄 Gerar Bibliografia Formatada (Word / ABNT / Vancouver / APA)', '📄 Generate Formatted Bibliography (Word / APA / Vancouver / ABNT)')} onFechar={onFechar} largura={1080}>
       <div className="form-vertical" style={{ gap: 14 }}>
         {/* Barra de Seleção de Escopo com Abas Grandes e Fáceis de Navegar */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', borderBottom: '1px solid var(--borda)', paddingBottom: 10 }}>
           <span style={{ fontSize: '12.5px', fontWeight: 700, color: 'var(--texto-suave)', textTransform: 'uppercase', letterSpacing: 0.5 }}>
-            Escopo:
+            {tr('Escopo:', 'Scope:')}
           </span>
           <button
             type="button"
@@ -2971,7 +3043,7 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
             style={{ fontWeight: 600, padding: '6px 14px', borderRadius: 6 }}
             onClick={() => setEscopo('todas')}
           >
-            📚 Todas as Obras ({refs.filter((r) => r.status !== 'descartada').length})
+            📚 {tr('Todas as Obras', 'All Items')} ({refs.filter((r) => r.status !== 'descartada').length})
           </button>
           {temSelecionadas && (
             <button
@@ -2980,7 +3052,7 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
               style={{ fontWeight: 600, padding: '6px 14px', borderRadius: 6, background: escopo === 'selecionadas' ? '#2563eb' : undefined }}
               onClick={() => setEscopo('selecionadas')}
             >
-              📌 Selecionadas na Tabela ({selecionadas.length})
+              📌 {tr('Selecionadas na Tabela', 'Selected Rows')} ({selecionadas.length})
             </button>
           )}
           <button
@@ -2989,7 +3061,7 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
             style={{ fontWeight: 600, padding: '6px 14px', borderRadius: 6 }}
             onClick={() => setEscopo('citadas')}
           >
-            ✔ Citadas no Texto ({qtdCitadas})
+            ✔ {tr('Citadas no Texto', 'Cited in Text')} ({qtdCitadas})
           </button>
           <button
             type="button"
@@ -2997,7 +3069,7 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
             style={{ fontWeight: 600, padding: '6px 14px', borderRadius: 6 }}
             onClick={() => setEscopo('consultadas')}
           >
-            📖 Consultadas ({qtdConsultadas})
+            📖 {tr('Consultadas', 'Consulted')} ({qtdConsultadas})
           </button>
           <button
             type="button"
@@ -3005,14 +3077,14 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
             style={{ fontWeight: 600, padding: '6px 14px', borderRadius: 6 }}
             onClick={() => setEscopo('ambas')}
           >
-            Citadas + Consultadas
+            {tr('Citadas + Consultadas', 'Cited + Consulted')}
           </button>
         </div>
 
         {/* Linha de Controles: Norma CSL, Pasta/Coleção e Busca Rápida */}
         <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1.1fr 1.5fr', gap: 12, alignItems: 'center' }}>
           <label className="campo" style={{ margin: 0 }}>
-            <span className="campo-rotulo">Norma Bibliográfica (Estilo CSL)</span>
+            <span className="campo-rotulo">{tr('Norma Bibliográfica (Estilo CSL)', 'Citation Standard (CSL Style)')}</span>
             <select
               value={estilo}
               onChange={(e) => setEstilo(e.target.value)}
@@ -3027,14 +3099,14 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
           </label>
 
           <label className="campo" style={{ margin: 0 }}>
-            <span className="campo-rotulo">Filtrar por Coleção / Pasta</span>
+            <span className="campo-rotulo">{tr('Filtrar por Coleção / Pasta', 'Filter by Collection / Folder')}</span>
             <select
               value={colecaoId}
               onChange={(e) => setColecaoId(e.target.value)}
               style={{ height: 38 }}
               disabled={escopo === 'selecionadas'}
             >
-              <option value="todas">Toda a Biblioteca</option>
+              <option value="todas">{tr('Toda a Biblioteca', 'Entire Library')}</option>
               {colecoes.map((c) => (
                 <option key={c.id} value={c.id}>
                   📁 {c.nome}
@@ -3044,11 +3116,11 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
           </label>
 
           <label className="campo" style={{ margin: 0 }}>
-            <span className="campo-rotulo">Buscar nesta prévia</span>
+            <span className="campo-rotulo">{tr('Buscar nesta prévia', 'Filter preview')}</span>
             <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
               <input
                 type="text"
-                placeholder="Filtrar por autor, título ou ano…"
+                placeholder={tr('Filtrar por autor, título ou ano…', 'Filter by author, title, or year…')}
                 value={buscaInterna}
                 onChange={(e) => setBuscaInterna(e.target.value)}
                 style={{ height: 38, width: '100%', paddingRight: buscaInterna ? 28 : 10 }}
@@ -3072,13 +3144,13 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
           <div className="caixa-previa-topo" style={{ marginBottom: 10, display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
               <span style={{ fontSize: '14px', fontWeight: 700, color: 'var(--texto)' }}>
-                {idsFiltrados.length} {idsFiltrados.length === 1 ? 'referência ordenada' : 'referências ordenadas'}
+                {idsFiltrados.length} {idsFiltrados.length === 1 ? tr('referência ordenada', 'formatted reference') : tr('referências ordenadas', 'formatted references')}
               </span>
               <span style={{ fontSize: '12px', padding: '2px 8px', borderRadius: 999, background: 'rgba(59, 130, 246, 0.15)', color: '#3b82f6', fontWeight: 600 }}>
                 {nomeEstiloAtual}
               </span>
               {carregandoPrevia && (
-                <span style={{ fontSize: '12px', color: 'var(--texto-suave)' }}>Formatando…</span>
+                <span style={{ fontSize: '12px', color: 'var(--texto-suave)' }}>{tr('Formatando…', 'Formatting…')}</span>
               )}
             </div>
 
@@ -3088,33 +3160,33 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
                 className="btn secundario pequeno"
                 onClick={async () => {
                   const arq = await window.api.imp.exportarArquivo({ ids: idsFiltrados, formato: 'ris' });
-                  if (arq) avisar(`Arquivo RIS exportado: ${arq}`, 'ok');
+                  if (arq) avisar(tr(`Arquivo RIS exportado: ${arq}`, `RIS file exported: ${arq}`), 'ok');
                 }}
                 disabled={!idsFiltrados.length}
-                title="Exportar para formato .RIS (compatível com Zotero, Mendeley e EndNote)"
+                title={tr('Exportar para formato .RIS (compatível com Zotero, Mendeley e EndNote)', 'Export to .RIS format')}
               >
-                Exportar .RIS
+                {tr('Exportar .RIS', 'Export .RIS')}
               </button>
               <button
                 type="button"
                 className="btn secundario pequeno"
                 onClick={async () => {
                   const arq = await window.api.imp.exportarArquivo({ ids: idsFiltrados, formato: 'bib' });
-                  if (arq) avisar(`Arquivo BibTeX exportado: ${arq}`, 'ok');
+                  if (arq) avisar(tr(`Arquivo BibTeX exportado: ${arq}`, `BibTeX file exported: ${arq}`), 'ok');
                 }}
                 disabled={!idsFiltrados.length}
-                title="Exportar para formato .BIB (BibTeX / Overleaf / LaTeX)"
+                title={tr('Exportar para formato .BIB (BibTeX / Overleaf / LaTeX)', 'Export to .BIB (BibTeX / Overleaf / LaTeX)')}
               >
-                Exportar .BIB
+                {tr('Exportar .BIB', 'Export .BIB')}
               </button>
               <button
                 type="button"
                 className="btn secundario pequeno"
                 onClick={exportarWordDocx}
                 disabled={!idsFiltrados.length}
-                title="Gerar documento .DOCX para Word"
+                title={tr('Gerar documento .DOCX para Word', 'Save formatted .DOCX file')}
               >
-                💾 Salvar .DOCX
+                💾 {tr('Salvar .DOCX', 'Save .DOCX')}
               </button>
             </div>
           </div>
@@ -3131,12 +3203,12 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
               }}
             >
               <p style={{ margin: '0 0 10px', fontSize: 15, fontWeight: 700, color: 'var(--texto)' }}>
-                Nenhuma obra encontrada para o filtro atual.
+                {tr('Nenhuma obra encontrada para o filtro atual.', 'No items match the current filter.')}
               </p>
               <p style={{ margin: '0 0 18px', fontSize: 13, color: 'var(--texto-suave)', maxWidth: 520, marginInline: 'auto' }}>
                 {escopo === 'citadas'
-                  ? 'Você ainda não marcou referências como "Citadas". Clique abaixo para ver todas as obras da biblioteca ou selecione "Todas as Obras" nas abas acima.'
-                  : 'Nenhuma referência corresponde aos critérios ou à busca informada.'}
+                  ? tr('Você ainda não marcou referências como "Citadas". Clique abaixo para ver todas as obras da biblioteca ou selecione "Todas as Obras" nas abas acima.', 'No references are marked "Cited" yet. Click below to display all library items.')
+                  : tr('Nenhuma referência corresponde aos critérios ou à busca informada.', 'No reference matches the current filter or query.')}
               </p>
               <button
                 type="button"
@@ -3148,7 +3220,7 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
                   setBuscaInterna('');
                 }}
               >
-                📚 Mostrar Todas as Obras ({refs.filter((r) => r.status !== 'descartada').length})
+                📚 {tr('Mostrar Todas as Obras', 'Show All Items')} ({refs.filter((r) => r.status !== 'descartada').length})
               </button>
             </div>
           ) : (
@@ -3167,7 +3239,7 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
                 color: 'var(--texto)',
                 userSelect: 'text',
               }}
-              dangerouslySetInnerHTML={{ __html: previaHtml || '<em>Gerando referências pela norma…</em>' }}
+              dangerouslySetInnerHTML={{ __html: previaHtml || `<em>${tr('Gerando referências pela norma…', 'Formatting references…')}</em>` }}
             />
           )}
         </div>
@@ -3175,11 +3247,11 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
         {/* Rodapé do Modal com Ações Primárias em Destaque */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: 8, borderTop: '1px solid var(--borda)' }}>
           <span style={{ fontSize: '12.5px', color: 'var(--texto-suave)' }}>
-            💡 Dica: Clicar no botão abaixo copia a bibliografia com itálicos e formatação rica, pronta para colar no Word com <strong>Ctrl+V</strong>.
+            💡 {tr('Dica: Clicar no botão abaixo copia a bibliografia com itálicos e formatação rica, pronta para colar no Word com', 'Tip: Clicking below copies rich-formatted italics ready to paste into Word with')} <strong>Ctrl+V</strong>.
           </span>
           <div style={{ display: 'flex', gap: 10 }}>
             <button type="button" className="btn secundario" onClick={onFechar} style={{ padding: '8px 16px' }}>
-              Fechar
+              {tr('Fechar')}
             </button>
             <button
               type="button"
@@ -3188,7 +3260,7 @@ function ModalBibliografiaWord({ refs, selecionadas = [], colecoes, estiloInicia
               disabled={!idsFiltrados.length}
               style={{ padding: '8px 22px', fontSize: '14px', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: 8 }}
             >
-              <Icone nome="copy" tam={16} /> Copiar Bibliografia Formatada para o Word (Ctrl+V)
+              <Icone nome="copy" tam={16} /> {tr('Copiar Bibliografia Formatada para o Word (Ctrl+V)', 'Copy Formatted Bibliography for Word (Ctrl+V)')}
             </button>
           </div>
         </div>

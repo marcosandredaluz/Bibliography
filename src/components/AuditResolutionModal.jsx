@@ -1,35 +1,37 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { autoresResumo, ano, semHtml } from '../lib/csl.js';
+import { useI18n } from '../i18n.jsx';
 
 /**
  * Badge visual explícito indicando o ALVO exato da inconformidade
  * (Seu Manuscrito vs. Citação/Obra Externa vs. Cruzamento entre ambos).
  */
 export function BadgeAlvoAlerta({ alvo = 'manuscrito', estiloCompacto = false }) {
+  const { tr } = useI18n();
   const configs = {
     manuscrito: {
-      rotulo: '📝 ALVO: SEU MANUSCRITO (Texto em Redação)',
-      curto: '📝 Seu Manuscrito',
+      rotulo: `📝 ${tr('ALVO: SEU MANUSCRITO (Texto em Redação)', 'TARGET: YOUR MANUSCRIPT (Writing Text)')}`,
+      curto: `📝 ${tr('Seu Manuscrito', 'Your Manuscript')}`,
       bg: 'rgba(37, 99, 235, 0.1)',
       cor: '#1d4ed8',
       borda: 'rgba(37, 99, 235, 0.35)',
-      dica: 'Este alerta avalia a redação, estilo, metodologia ou formatação do SEU documento.',
+      dica: tr('Este alerta avalia a redação, estilo, metodologia ou formatação do SEU documento.', 'This alert evaluates the writing, style, methodology, or formatting of YOUR document.'),
     },
     citacao: {
-      rotulo: '📚 ALVO: CITAÇÃO / OBRA EXTERNA',
-      curto: '📚 Obra Citada',
+      rotulo: `📚 ${tr('ALVO: CITAÇÃO / OBRA EXTERNA', 'TARGET: CITATION / EXTERNAL WORK')}`,
+      curto: `📚 ${tr('Obra Citada', 'Cited Work')}`,
       bg: 'rgba(217, 119, 6, 0.1)',
       cor: '#b45309',
       borda: 'rgba(217, 119, 6, 0.35)',
-      dica: 'Este alerta avalia os metadados, autenticidade ou periódico de uma REFERÊNCIA citada por você.',
+      dica: tr('Este alerta avalia os metadados, autenticidade ou periódico de uma REFERÊNCIA citada por você.', 'This alert evaluates metadata, authenticity, or journal of a REFERENCE cited by you.'),
     },
     cruzamento: {
-      rotulo: '🔗 ALVO: CRUZAMENTO (Seu Texto ↔ Obra Citada)',
-      curto: '🔗 Seu Texto ↔ Obra',
+      rotulo: `🔗 ${tr('ALVO: CRUZAMENTO (Seu Texto ↔ Obra Citada)', 'TARGET: CROSS-CHECK (Your Text ↔ Cited Work)')}`,
+      curto: `🔗 ${tr('Seu Texto ↔ Obra', 'Your Text ↔ Work')}`,
       bg: 'rgba(13, 148, 136, 0.1)',
       cor: '#0f766e',
       borda: 'rgba(13, 148, 136, 0.35)',
-      dica: 'Este alerta compara o que VOCÊ escreveu no parágrafo com a lista final de Referências ou conteúdo do PDF.',
+      dica: tr('Este alerta compara o que VOCÊ escreveu no parágrafo com a lista final de Referências ou conteúdo do PDF.', 'This alert compares what YOU wrote in the paragraph against your References list or PDF content.'),
     },
   };
   const cfg = configs[alvo] || configs.manuscrito;
@@ -65,15 +67,17 @@ export function AcoesResolucaoAlerta({
   onAbrirResolver,
   onAbrirWord,
   onAbrirSplitView,
-  rotuloResolver = '🛠️ Resolver / Editar',
+  rotuloResolver,
 }) {
+  const { tr } = useI18n();
+  const labelResolver = rotuloResolver || tr('🛠️ Resolver / Editar', '🛠️ Resolve / Edit');
   if (statusAtual === 'resolvido') {
     return (
       <button
         type="button"
         className="btn pequeno"
         onClick={() => onDefinirStatus(idItem, null)}
-        title="Marcado como resolvido/corrigido. Clique para reabrir."
+        title={tr('Marcado como resolvido/corrigido. Clique para reabrir.', 'Marked as resolved/fixed. Click to reopen.')}
         style={{
           background: '#dcfce7',
           color: '#15803d',
@@ -83,7 +87,7 @@ export function AcoesResolucaoAlerta({
           padding: '3px 8px',
         }}
       >
-        ✓ Resolvido (Desfazer)
+        ✓ {tr('Resolvido (Desfazer)', 'Resolved (Undo)')}
       </button>
     );
   }
@@ -94,7 +98,7 @@ export function AcoesResolucaoAlerta({
         type="button"
         className="btn pequeno"
         onClick={() => onDefinirStatus(idItem, null)}
-        title="Você optou por ignorar este alerta. Clique para restaurar."
+        title={tr('Você optou por ignorar este alerta. Clique para restaurar.', 'You chose to ignore this alert. Click to restore.')}
         style={{
           background: '#f1f5f9',
           color: '#475569',
@@ -104,7 +108,7 @@ export function AcoesResolucaoAlerta({
           padding: '3px 8px',
         }}
       >
-        🚫 Ignorado (Desfazer)
+        🚫 {tr('Ignorado (Desfazer)', 'Ignored (Undo)')}
       </button>
     );
   }
@@ -116,10 +120,10 @@ export function AcoesResolucaoAlerta({
           type="button"
           className="btn pequeno primario"
           onClick={onAbrirResolver}
-          title="Abrir estúdio de resolução (editar texto, remover citação, inserir referência no Word ou pular para o Word)"
+          title={tr('Abrir estúdio de resolução (editar texto, remover citação, inserir referência no Word ou pular para o Word)', 'Open resolution studio (edit text, remove citation, insert reference in Word, or jump to Word)')}
           style={{ fontSize: 11.3, padding: '3px 8px', fontWeight: 600 }}
         >
-          {rotuloResolver}
+          {labelResolver}
         </button>
       )}
       {onAbrirSplitView && (
@@ -127,7 +131,7 @@ export function AcoesResolucaoAlerta({
           type="button"
           className="btn pequeno secundario"
           onClick={onAbrirSplitView}
-          title="Comparar lado a lado o texto do Word com a página do PDF original"
+          title={tr('Comparar lado a lado o texto do Word com a página do PDF original', 'Compare Word text side by side with original PDF page')}
           style={{ fontSize: 11.3, padding: '3px 8px' }}
         >
           ⚖️ Word ↔ PDF
@@ -138,29 +142,29 @@ export function AcoesResolucaoAlerta({
           type="button"
           className="btn pequeno fantasma"
           onClick={onAbrirWord}
-          title="Abrir o arquivo no Microsoft Word e ir direto para este trecho"
+          title={tr('Abrir o arquivo no Microsoft Word e ir direto para este trecho', 'Open file in Microsoft Word and jump directly to this passage')}
           style={{ fontSize: 11.3, padding: '3px 7px', borderColor: 'rgba(37,99,235,0.3)', color: '#1d4ed8' }}
         >
-          📂 Ir ao Word
+          📂 {tr('Ir ao Word', 'Go to Word')}
         </button>
       )}
       <button
         type="button"
         className="btn pequeno fantasma"
         onClick={() => onDefinirStatus(idItem, 'resolvido')}
-        title="Já corrigi este problema no meu texto"
+        title={tr('Já corrigi este problema no meu texto', 'I already fixed this issue in my text')}
         style={{ color: '#15803d', borderColor: 'rgba(22, 163, 74, 0.35)', fontSize: 11.2, padding: '3px 7px' }}
       >
-        ✓ Resolvido
+        ✓ {tr('Resolvido', 'Resolved')}
       </button>
       <button
         type="button"
         className="btn pequeno fantasma"
         onClick={() => onDefinirStatus(idItem, 'ignorado')}
-        title="Ignorar / Não se aplica ao meu estudo (não vou alterar)"
+        title={tr('Ignorar / Não se aplica ao meu estudo (não vou alterar)', 'Ignore / Not applicable to my study')}
         style={{ color: '#64748b', borderColor: 'rgba(100, 116, 139, 0.35)', fontSize: 11.2, padding: '3px 7px' }}
       >
-        🚫 Ignorar
+        🚫 {tr('Ignorar', 'Ignore')}
       </button>
     </div>
   );
@@ -186,6 +190,7 @@ export default function AuditResolutionModal({
   onFechar,
   avisar,
 }) {
+  const { tr } = useI18n();
   const cat = itemResolucao?.categoria || 'geral';
   const abaInicial = ['orfa', 'ia'].includes(cat) ? 'referencia' : cat === 'sobrando' ? 'lista_sob' : 'texto';
 
@@ -517,7 +522,7 @@ export default function AuditResolutionModal({
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
               <strong style={{ fontSize: 15, color: 'var(--texto)' }}>
-                🛠️ Estúdio de Resolução Direta
+                🛠️ {tr('Estúdio de Resolução Direta', 'Direct Resolution Studio')}
               </strong>
               <BadgeAlvoAlerta alvo={itemResolucao.alvo} />
               {itemResolucao.locWord && (
@@ -560,14 +565,14 @@ export default function AuditResolutionModal({
               className={`btn pequeno ${abaAtiva === 'texto' ? 'primario' : 'secundario'}`}
               onClick={() => setAbaAtiva('texto')}
             >
-              ✏️ Editar / Remover Citação ou Frase
+              ✏️ {tr('Editar / Remover Citação ou Frase', 'Edit / Remove Citation or Sentence')}
             </button>
             <button
               type="button"
               className={`btn pequeno ${abaAtiva === 'referencia' ? 'primario' : 'secundario'}`}
               onClick={() => setAbaAtiva('referencia')}
             >
-              📥 Localizar Obra & Inserir nas Referências do Word
+              📥 {tr('Localizar Obra & Inserir nas Referências do Word', 'Find Work & Insert into Word References')}
             </button>
             {(cat === 'metodologia' || cat === 'fomento') && (
               <button
@@ -575,7 +580,7 @@ export default function AuditResolutionModal({
                 className={`btn pequeno ${abaAtiva === 'declaracao' ? 'primario' : 'secundario'}`}
                 onClick={() => setAbaAtiva('declaracao')}
               >
-                ⚡ Inserir Declaração Padrão
+                ⚡ {tr('Inserir Declaração Padrão', 'Insert Standard Statement')}
               </button>
             )}
             {cat === 'sobrando' && (

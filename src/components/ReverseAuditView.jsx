@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import * as pdfjs from 'pdfjs-dist';
 import { Icone, useAviso } from './ui.jsx';
 import { normalizar } from '../lib/csl.js';
+import { useI18n } from '../i18n.jsx';
 import AuditResolutionModal, { AcoesResolucaoAlerta, BadgeAlvoAlerta } from './AuditResolutionModal.jsx';
 import SplitViewWordPdfModal from './SplitViewWordPdfModal.jsx';
 
@@ -396,6 +397,7 @@ export default function ReverseAuditView({
   onIrParaBiblioteca,
 }) {
   const avisar = useAviso();
+  const { tr, ehEn } = useI18n();
 
   const pastaPadraoPdfs = bib?.raiz ? `${bib.raiz}${bib.raiz.includes('/') ? '/' : '\\'}pdfs` : '';
   const [pastaDestino, setPastaDestino] = useState(pastaPadraoPdfs);
@@ -2162,32 +2164,32 @@ export default function ReverseAuditView({
     >
       <div className="topo-buscadores">
         <div>
-          <h2>Auditoria Forense de Manuscrito (.DOCX/PDF): Anti-IA, Anti-Plágio, Citações Falsas &amp; Páginas</h2>
+          <h2>{tr('Auditoria Forense de Manuscrito (.DOCX/PDF): Anti-IA, Anti-Plágio, Citações Falsas & Páginas', 'Forensic Manuscript Audit (.DOCX/PDF): Anti-Hallucination, Plagiarism & Claim Verification')}</h2>
           <p className="subtitulo">
-            Verifica: <strong>1)</strong> Se alguma fonte foi inventada pela IA (referência fantasma / DOI falso);{' '}
-            <strong>2)</strong> Se uma citação não existe no artigo ou foi atribuída ao artigo errado;{' '}
-            <strong>3)</strong> Se há plágio / cópia sem aspas; <strong>4)</strong> Em qual Parágrafo, Linha do Word e Página do PDF está cada citação.
+            {tr('Verifica:', 'Verifies:')} <strong>1)</strong> {tr('Se alguma fonte foi inventada pela IA (referência fantasma / DOI falso);', 'Phantom / AI-fabricated citations and hijacked DOIs;')}{' '}
+            <strong>2)</strong> {tr('Se uma citação não existe no artigo ou foi atribuída ao artigo errado;', 'Claim-to-source semantic support against full-text PDFs;')}{' '}
+            <strong>3)</strong> {tr('Se há plágio / cópia sem aspas;', 'Unquoted literal/mosaic overlap;')} <strong>4)</strong> {tr('Em qual Parágrafo, Linha do Word e Página do PDF está cada citação.', 'Exact Paragraph, Line, and PDF Page provenance.')}
           </p>
         </div>
         <div className="acoes-topo-buscadores" style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
           <button className="btn secundario" onClick={escolherArquivo} disabled={rodando}>
-            <Icone nome="upload" tam={14} /> Carregar Arquivo (.DOCX, .PDF, .TXT)
+            <Icone nome="upload" tam={14} /> {tr('Carregar Arquivo (.DOCX, .PDF, .TXT)', 'Load File (.DOCX, .PDF, .TXT)')}
           </button>
           {resultado && (
             <>
               <button
                 className="btn primario"
                 onClick={copiarPromptCompletoIa}
-                title="Copia um relatório estruturado em formato de Prompt para você colar no ChatGPT, Claude ou Gemini e questionar o que está certo ou errado"
+                title={tr('Copia um relatório estruturado em formato de Prompt para você colar no ChatGPT, Claude ou Gemini e questionar o que está certo ou errado', 'Copy structured audit prompt for external AI review')}
               >
-                🤖 Copiar Relatório p/ Colar na IA
+                🤖 {tr('Copiar Relatório p/ Colar na IA', 'Copy Audit Prompt')}
               </button>
               <button
                 className="btn secundario"
                 onClick={() => setMostrarPainelPromptIa((v) => !v)}
-                title="Visualizar e personalizar o relatório antes de copiar para a IA"
+                title={tr('Visualizar e personalizar o relatório antes de copiar para a IA', 'Preview and customize audit report before copying')}
               >
-                {mostrarPainelPromptIa ? 'Ocultar Prévia do Relatório IA' : '👁️ Ver / Editar Relatório p/ IA'}
+                {mostrarPainelPromptIa ? tr('Ocultar Prévia do Relatório IA', 'Hide Prompt Preview') : tr('👁️ Ver / Editar Relatório p/ IA', '👁️ Edit Audit Prompt')}
               </button>
             </>
           )}
@@ -2221,13 +2223,13 @@ export default function ReverseAuditView({
                 fontWeight: 800,
               }}
             >
-              📌 AUDITORIA FIXADA NA TELA
+              📌 {tr('AUDITORIA FIXADA NA TELA', 'PINNED AUDIT SESSION')}
             </span>
             <strong style={{ fontSize: 13 }}>
-              {nomeArquivo || 'Manuscrito auditado'} {dataHora ? `· Concluída em ${dataHora}` : ''}
+              {nomeArquivo || tr('Manuscrito auditado', 'Audited manuscript')} {dataHora ? `· ${tr('Concluída em', 'Completed at')} ${dataHora}` : ''}
             </strong>
             <span style={{ fontSize: 12, color: 'var(--texto-suave)' }}>
-              (Permanece salva mesmo ao abrir PDFs ou trocar de aba!)
+              {tr('(Permanece salva mesmo ao abrir PDFs ou trocar de aba!)', '(Persists while inspecting PDFs or switching tabs)')}
             </span>
           </div>
 
@@ -2236,57 +2238,57 @@ export default function ReverseAuditView({
               className="btn pequeno secundario"
               onClick={() => setMostrarCaixaTexto(!mostrarCaixaTexto)}
             >
-              {mostrarCaixaTexto ? '🔼 Recolher Caixa de Texto' : '📝 Ver / Editar Texto'}
+              {mostrarCaixaTexto ? tr('🔼 Recolher Caixa de Texto', '🔼 Collapse Input') : tr('📝 Ver / Editar Texto', '📝 View / Edit Text')}
             </button>
             <button
               className="btn pequeno primario"
               onClick={executarAuditoria}
               disabled={rodando}
-              title="Roda novamente a auditoria sobre o texto atualizado"
+              title={tr('Roda novamente a auditoria sobre o texto atualizado', 'Re-run audit on current text')}
             >
-              🔄 Refazer Auditoria
+              🔄 {tr('Refazer Auditoria', 'Re-run Audit')}
             </button>
             <button
               className="btn pequeno secundario"
               onClick={exportarWordComComentarios}
               disabled={rodando}
-              title="Salva uma cópia do arquivo .DOCX com todas as inconformidades ativas inseridas como balões de comentário nativos do Word"
+              title={tr('Salva uma cópia do arquivo .DOCX com todas as inconformidades ativas inseridas como balões de comentário nativos do Word', 'Export .DOCX copy with native Word review comments')}
             >
-              💬 Anotar no Word (.DOCX)
+              💬 {tr('Anotar no Word (.DOCX)', 'Comment in .DOCX')}
             </button>
             <button
               className="btn pequeno secundario"
               onClick={emitirLaudoPericial}
               disabled={rodando}
-              title="Gera Dossiê / Laudo Pericial Técnico formatado para impressão ou salvar em PDF"
+              title={tr('Gera Dossiê / Laudo Pericial Técnico formatado para impressão ou salvar em PDF', 'Generate printable Forensic Audit Report (HTML/PDF)')}
             >
-              ⚖️ Laudo Pericial (PDF)
+              ⚖️ {tr('Laudo Pericial (PDF)', 'Forensic Report (PDF)')}
             </button>
             {caminhoArquivo && (
               <button
                 className="btn pequeno fantasma"
                 onClick={() => abrirNoWordAtalho('')}
                 disabled={rodando}
-                title="Abrir arquivo original no Microsoft Word"
+                title={tr('Abrir arquivo original no Microsoft Word', 'Open original file in Word')}
               >
-                📂 Abrir Word
+                📂 {tr('Abrir Word', 'Open Word')}
               </button>
             )}
             <button
               className="btn pequeno secundario"
               onClick={escolherArquivo}
               disabled={rodando}
-              title="Escolher outro arquivo .DOCX ou .PDF para uma nova auditoria"
+              title={tr('Escolher outro arquivo .DOCX ou .PDF para uma nova auditoria', 'Choose another .DOCX or .PDF file')}
             >
-              📂 Carregar Novo Arquivo
+              📂 {tr('Carregar Novo Arquivo', 'Load Another File')}
             </button>
             <button
               className="btn pequeno perigo"
               onClick={limparAuditoriaAtual}
               disabled={rodando}
-              title="Limpa a auditoria atual para começar uma nova do zero"
+              title={tr('Limpa a auditoria atual para começar uma nova do zero', 'Clear current audit session')}
             >
-              🗑️ Limpar Auditoria
+              🗑️ {tr('Limpar Auditoria', 'Clear Audit')}
             </button>
           </div>
         </div>
@@ -2416,17 +2418,17 @@ export default function ReverseAuditView({
           {/* Seletor Modular de Tipo de Problema */}
           <div style={{ marginTop: 10, marginBottom: 8, padding: '10px 14px', background: 'var(--fundo)', borderRadius: 8, border: '1px solid var(--borda)' }}>
             <span style={{ fontSize: 11.8, fontWeight: 700, color: 'var(--texto-suave)', textTransform: 'uppercase', letterSpacing: 0.5, display: 'block', marginBottom: 6 }}>
-              🔍 Modo de Execução da Auditoria Forense:
+              🔍 {tr('Modo de Execução da Auditoria Forense:', 'Forensic Audit Execution Mode:')}
             </span>
             <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
               {[
-                { id: 'todos', label: '🎯 Todos os Níveis (Completa)', desc: 'Auditoria forense em todas as 6 frentes: chamadas, autenticidade em 8 bases, páginas, plágio, semântica e redação IA' },
-                { id: 'chamadas', label: '1️⃣ Citações x Referências (< 1s)', desc: 'Nível 1: Cruza citações no corpo do texto x lista final (órfãs e sobrando) sem baixar PDFs' },
-                { id: 'autenticidade', label: '2️⃣ Autenticidade em 8 Bases & Anti-IA', desc: 'Nível 2: Autentica referências e DOIs (Crossref, PubMed, OpenAlex, Handles) contra alucinação de IA' },
-                { id: 'paginas', label: '3️⃣ Citações Diretas & Páginas', desc: 'Nível 3: Confere páginas indicadas (ex. p. 14) e frases entre aspas contra os PDFs originais' },
-                { id: 'plagio', label: '4️⃣ Detector de Plágio (Google Diff)', desc: 'Nível 4: Google Diff Match Patch para detectar blocos idênticos de 7+ palavras nos PDFs' },
-                { id: 'semantica', label: '5️⃣ Fidelidade Semântica (Amazon Science)', desc: 'Nível 5: TF-IDF e Similaridade de Cosseno para avaliar se a ideia atribuída existe no artigo citado' },
-                { id: 'estilo_ia', label: '6️⃣ Marcadores de Redação IA (Open-Detector)', desc: 'Nível 6: Open-Detector para flagrar parágrafos com jargões e cadência típica de LLMs' },
+                { id: 'todos', label: tr('🎯 Todos os Níveis (Completa)', '🎯 All Tiers (Full Audit)'), desc: tr('Auditoria forense em todas as 6 frentes: chamadas, autenticidade em 8 bases, páginas, plágio, semântica e redação IA', 'Full 6-tier audit: calls vs refs, 8-database authenticity, pages, plagiarism, claim semantics, AI writing') },
+                { id: 'chamadas', label: tr('1️⃣ Citações x Referências (< 1s)', '1️⃣ Citations vs. Refs (< 1s)'), desc: tr('Nível 1: Cruza citações no corpo do texto x lista final (órfãs e sobrando) sem baixar PDFs', 'Tier 1: Cross-check body citations vs. reference list') },
+                { id: 'autenticidade', label: tr('2️⃣ Autenticidade em 8 Bases & Anti-IA', '2️⃣ Authenticity & Anti-Hallucination'), desc: tr('Nível 2: Autentica referências e DOIs (Crossref, PubMed, OpenAlex, Handles) contra alucinação de IA', 'Tier 2: Verify DOIs/PMIDs against Crossref, PubMed, OpenAlex') },
+                { id: 'paginas', label: tr('3️⃣ Citações Diretas & Páginas', '3️⃣ Direct Quotes & PDF Pages'), desc: tr('Nível 3: Confere páginas indicadas (ex. p. 14) e frases entre aspas contra os PDFs originais', 'Tier 3: Verify quoted text and page numbers against PDFs') },
+                { id: 'plagio', label: tr('4️⃣ Detector de Plágio (Google Diff)', '4️⃣ Plagiarism Check (Diff/Winnowing)'), desc: tr('Nível 4: Google Diff Match Patch para detectar blocos idênticos de 7+ palavras nos PDFs', 'Tier 4: Literal & mosaic overlap screening against PDFs') },
+                { id: 'semantica', label: tr('5️⃣ Fidelidade Semântica (Amazon Science)', '5️⃣ Semantic Claim Support'), desc: tr('Nível 5: TF-IDF e Similaridade de Cosseno para avaliar se a ideia atribuída existe no artigo citado', 'Tier 5: Bilingual TF-IDF/BM25/ONNX claim support audit') },
+                { id: 'estilo_ia', label: tr('6️⃣ Marcadores de Redação IA (Open-Detector)', '6️⃣ AI Writing & Stylometry'), desc: tr('Nível 6: Open-Detector para flagrar parágrafos com jargões e cadência típica de LLMs', 'Tier 6: Syntactic monotony and AI-phrase patterns') },
               ].map((m) => (
                 <button
                   key={m.id}
@@ -2450,26 +2452,26 @@ export default function ReverseAuditView({
                 disabled={moduloAuditoria === 'chamadas' || moduloAuditoria === 'estilo_ia'}
               />
               <span style={{ opacity: moduloAuditoria === 'chamadas' || moduloAuditoria === 'estilo_ia' ? 0.6 : 1 }}>
-                Buscar automaticamente nas bases (Crossref/OpenAlex) os artigos que ainda não estão na biblioteca e baixar os PDFs gratuitos
+                {tr('Buscar automaticamente nas bases (Crossref/OpenAlex) os artigos que ainda não estão na biblioteca e baixar os PDFs gratuitos', 'Automatically search online databases (Crossref/OpenAlex) for missing works and fetch Open Access PDFs')}
               </span>
             </label>
             <button className="btn primario" onClick={() => executarAuditoria(moduloAuditoria)} disabled={rodando}>
               <Icone nome="search" tam={15} />{' '}
               {rodando
-                ? 'Auditando em tempo real…'
+                ? tr('Auditando em tempo real…', 'Running forensic audit…')
                 : moduloAuditoria === 'chamadas'
-                ? '⚡ Executar Nível 1: Citações x Referências (< 1s)'
+                ? tr('⚡ Executar Nível 1: Citações x Referências (< 1s)', '⚡ Run Tier 1: Citations vs. Refs (< 1s)')
                 : moduloAuditoria === 'autenticidade'
-                ? '🛡️ Executar Nível 2: Autenticidade em 8 Bases & Anti-IA'
+                ? tr('🛡️ Executar Nível 2: Autenticidade em 8 Bases & Anti-IA', '🛡️ Run Tier 2: Source Authenticity & Anti-IA')
                 : moduloAuditoria === 'paginas'
-                ? '📄 Executar Nível 3: Citações Diretas & Páginas'
+                ? tr('📄 Executar Nível 3: Citações Diretas & Páginas', '📄 Run Tier 3: Direct Quotes & Pages')
                 : moduloAuditoria === 'plagio'
-                ? '🔍 Executar Nível 4: Detector de Plágio (Google Diff)'
+                ? tr('🔍 Executar Nível 4: Detector de Plágio (Google Diff)', '🔍 Run Tier 4: Plagiarism Check')
                 : moduloAuditoria === 'semantica'
-                ? '🧠 Executar Nível 5: Fidelidade Semântica (Amazon Science)'
+                ? tr('🧠 Executar Nível 5: Fidelidade Semântica (Amazon Science)', '🧠 Run Tier 5: Semantic Claim Verification')
                 : moduloAuditoria === 'estilo_ia'
-                ? '🤖 Executar Nível 6: Redação IA (Open-Detector)'
-                : 'Executar Auditoria Reversa Completa (6 Níveis)'}
+                ? tr('🤖 Executar Nível 6: Redação IA (Open-Detector)', '🤖 Run Tier 6: AI Writing & Stylometry')
+                : tr('Executar Auditoria Reversa Completa (6 Níveis)', 'Run Full Reverse Audit (6 Tiers)')}
             </button>
           </div>
         </div>
@@ -2482,7 +2484,7 @@ export default function ReverseAuditView({
             <div className="progresso-fase-titulo">
               <span className="progresso-pulse-ativo" />
               <span>
-                {progresso.mensagem || etapa || 'Executando auditoria forense do manuscrito…'}
+                {progresso.mensagem || etapa || tr('Executando auditoria forense do manuscrito…', 'Running forensic manuscript audit…')}
               </span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -2499,7 +2501,7 @@ export default function ReverseAuditView({
                     borderRadius: 6,
                   }}
                 >
-                  {progresso.atual} de {progresso.total} referências
+                  {progresso.atual} / {progresso.total} {tr('referências', 'references')}
                 </span>
               )}
               <span className="progresso-badge-porcentagem">
@@ -2520,11 +2522,11 @@ export default function ReverseAuditView({
               {progresso.detalhe ? (
                 <>📖 <span>{progresso.detalhe}</span></>
               ) : (
-                <span>⚡ Processando ativamente na sua máquina (sem travar)…</span>
+                <span>⚡ {tr('Processando ativamente na sua máquina (sem travar)…', 'Processing locally on your machine…')}</span>
               )}
             </div>
             <div style={{ fontStyle: 'italic', opacity: 0.85, fontSize: 11.5 }}>
-              Auditoria em tempo real · Por favor, aguarde
+              {tr('Auditoria em tempo real · Por favor, aguarde', 'Live forensic verification · Please wait')}
             </div>
           </div>
         </div>
@@ -2538,304 +2540,304 @@ export default function ReverseAuditView({
             <div
               className={`card-metrica-filtro ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'todas' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo('todas'); }}
-              title="Clique para ver todas as citações e inconformidades"
+              title={tr('Clique para ver todas as citações e inconformidades', 'View all citations and findings')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Total de Citações</span>
+                <span className="titulo-card-filtro">{tr('Total de Citações', 'Total Citations')}</span>
                 <span>📚</span>
               </div>
               <div className="valor-card-filtro" style={{ color: 'var(--primaria, #2563eb)' }}>
                 {resultado.totalCitacoesOcorrencias}
               </div>
-              <div className="sub-card-filtro">{resultado.totalAutoresCitadosUnicos} obras citadas</div>
+              <div className="sub-card-filtro">{resultado.totalAutoresCitadosUnicos} {tr('obras citadas', 'unique works')}</div>
             </div>
 
             {/* 2. Obras Fantasmas / IA */}
             <div
               className={`card-metrica-filtro ${refsSuspeitasIaAtivas.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'ia' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'ia' ? 'todas' : 'ia'); }}
-              title="Clique para filtrar obras inexistentes ou com suspeita de alucinação por IA"
+              title={tr('Clique para filtrar obras inexistentes ou com suspeita de alucinação por IA', 'Filter unverified or suspected phantom sources')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Obras Fantasmas (IA)</span>
+                <span className="titulo-card-filtro">{tr('Obras Fantasmas (IA)', 'Unverified / Phantom')}</span>
                 <span>🤖</span>
               </div>
               <div className="valor-card-filtro" style={{ color: refsSuspeitasIaAtivas.length ? '#dc2626' : '#16a34a' }}>
                 {refsSuspeitasIaAtivas.length}
               </div>
-              <div className="sub-card-filtro">{refsSuspeitasIaAtivas.length ? 'DOI falso / inexistente' : 'Todas autênticas'}</div>
+              <div className="sub-card-filtro">{refsSuspeitasIaAtivas.length ? tr('DOI falso / inexistente', 'Unverified / invalid DOI') : tr('Todas autênticas', 'All authenticated')}</div>
             </div>
 
             {/* 3. Atribuição Trocada */}
             <div
               className={`card-metrica-filtro ${alertasAtribuicaoFalsaAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'atribuicao' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'atribuicao' ? 'todas' : 'atribuicao'); }}
-              title="Clique para filtrar citações cujo conteúdo não consta no artigo citado"
+              title={tr('Clique para filtrar citações cujo conteúdo não consta no artigo citado', 'Filter misattributed claims')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Atribuição Trocada</span>
+                <span className="titulo-card-filtro">{tr('Atribuição Trocada', 'Misattribution')}</span>
                 <span>🚨</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasAtribuicaoFalsaAtivos.length ? '#dc2626' : '#16a34a' }}>
                 {alertasAtribuicaoFalsaAtivos.length}
               </div>
-              <div className="sub-card-filtro">{alertasAtribuicaoFalsaAtivos.length ? 'Não diz o que foi citado' : 'Conteúdo compatível'}</div>
+              <div className="sub-card-filtro">{alertasAtribuicaoFalsaAtivos.length ? tr('Não diz o que foi citado', 'Unsupported claim') : tr('Conteúdo compatível', 'Claims supported')}</div>
             </div>
 
             {/* 4. Plágio sem Aspas */}
             <div
               className={`card-metrica-filtro ${alertasPlagioAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'plagio' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'plagio' ? 'todas' : 'plagio'); }}
-              title="Clique para filtrar trechos com cópia literal sem aspas normativas"
+              title={tr('Clique para filtrar trechos com cópia literal sem aspas normativas', 'Filter unquoted literal overlap')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Plágio sem Aspas</span>
+                <span className="titulo-card-filtro">{tr('Plágio sem Aspas', 'Unquoted Overlap')}</span>
                 <span>🔍</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasPlagioAtivos.length ? '#dc2626' : '#16a34a' }}>
                 {alertasPlagioAtivos.length}
               </div>
-              <div className="sub-card-filtro">{alertasPlagioAtivos.length ? 'Cópia literal detectada' : 'Nenhum plágio'}</div>
+              <div className="sub-card-filtro">{alertasPlagioAtivos.length ? tr('Cópia literal detectada', 'Literal overlap flagged') : tr('Nenhum plágio', 'No plagiarism')}</div>
             </div>
 
             {/* 5. Contas & Estatísticas */}
             <div
               className={`card-metrica-filtro ${alertasEstatisticosAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'estatistica' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'estatistica' ? 'todas' : 'estatistica'); }}
-              title="Clique para filtrar erros matemáticos em testes e valores p"
+              title={tr('Clique para filtrar erros matemáticos em testes e valores p', 'Filter statistical inconsistencies (Statcheck)')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Erros em Contas</span>
+                <span className="titulo-card-filtro">{tr('Erros em Contas', 'Statcheck Errors')}</span>
                 <span>📊</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasEstatisticosAtivos.length ? '#dc2626' : '#16a34a' }}>
                 {alertasEstatisticosAtivos.length}
               </div>
-              <div className="sub-card-filtro">{alertasEstatisticosAtivos.length ? 'p-hacking / inconsistência' : 'Matemática correta'}</div>
+              <div className="sub-card-filtro">{alertasEstatisticosAtivos.length ? tr('p-hacking / inconsistência', 'Stat inconsistency') : tr('Matemática correta', 'Stats consistent')}</div>
             </div>
 
             {/* 6. Concentração de Autores/Revistas */}
             <div
               className={`card-metrica-filtro ${alertasRedeAtivos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'rede' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'rede' ? 'todas' : 'rede'); }}
-              title="Clique para filtrar concentração excessiva em um mesmo autor ou periódico"
+              title={tr('Clique para filtrar concentração excessiva em um mesmo autor ou periódico', 'Filter excessive author/journal concentration')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Monopólio de Fontes</span>
+                <span className="titulo-card-filtro">{tr('Monopólio de Fontes', 'Citation Concentration')}</span>
                 <span>🕸️</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasRedeAtivos.length ? '#d97706' : '#16a34a' }}>
                 {alertasRedeAtivos.length}
               </div>
-              <div className="sub-card-filtro">{alertasRedeAtivos.length ? 'Mesmo autor/revista repetido' : 'Fontes diversificadas'}</div>
+              <div className="sub-card-filtro">{alertasRedeAtivos.length ? tr('Mesmo autor/revista repetido', 'High concentration') : tr('Fontes diversificadas', 'Diverse sources')}</div>
             </div>
 
             {/* 7. Comitê de Ética & Método */}
             <div
               className={`card-metrica-filtro ${alertasMetodologiaClinicaAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'metodologia_clinica' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'metodologia_clinica' ? 'todas' : 'metodologia_clinica'); }}
-              title="Clique para filtrar pendências de CEP, TCLE, amostra N ou checklist STROBE/CONSORT"
+              title={tr('Clique para filtrar pendências de CEP, TCLE, amostra N ou checklist STROBE/CONSORT', 'Filter ethics, consent, and clinical checklist items')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Ética & Método</span>
+                <span className="titulo-card-filtro">{tr('Ética & Método', 'Ethics & Method')}</span>
                 <span>🔬</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasMetodologiaClinicaAtivos.length ? '#dc2626' : '#16a34a' }}>
                 {alertasMetodologiaClinicaAtivos.length}
               </div>
-              <div className="sub-card-filtro">{alertasMetodologiaClinicaAtivos.length ? 'Ressalvas metodológicas' : 'Protocolos conformes'}</div>
+              <div className="sub-card-filtro">{alertasMetodologiaClinicaAtivos.length ? tr('Ressalvas metodológicas', 'Methodological notes') : tr('Protocolos conformes', 'Checklist compliant')}</div>
             </div>
 
             {/* 8. Sinônimos Robóticos */}
             <div
               className={`card-metrica-filtro ${alertasFrasesTorturadasAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'frases_torturadas' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'frases_torturadas' ? 'todas' : 'frases_torturadas'); }}
-              title="Clique para filtrar frases torturadas e termos artificiais de spin-bot"
+              title={tr('Clique para filtrar frases torturadas e termos artificiais de spin-bot', 'Filter paraphrasing "tortured phrases"')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Sinônimos Robóticos</span>
+                <span className="titulo-card-filtro">{tr('Sinônimos Robóticos', 'Tortured Phrases')}</span>
                 <span>🧟</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasFrasesTorturadasAtivos.length ? '#dc2626' : '#16a34a' }}>
                 {alertasFrasesTorturadasAtivos.length}
               </div>
-              <div className="sub-card-filtro">{alertasFrasesTorturadasAtivos.length ? 'Jargões bizarros de IA' : 'Vocabulário natural'}</div>
+              <div className="sub-card-filtro">{alertasFrasesTorturadasAtivos.length ? tr('Jargões bizarros de IA', 'Spin-bot artifacts') : tr('Vocabulário natural', 'Natural phrasing')}</div>
             </div>
 
             {/* 9. Ritmo da Escrita */}
             <div
               className={`card-metrica-filtro ${alertasEstilometricosAtivos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'estilometria' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'estilometria' ? 'todas' : 'estilometria'); }}
-              title="Clique para filtrar períodos monótonos ou repetições mecânicas de vocabulário"
+              title={tr('Clique para filtrar períodos monótonos ou repetições mecânicas de vocabulário', 'Filter syntactic monotony & trigram repetition')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Ritmo da Escrita</span>
+                <span className="titulo-card-filtro">{tr('Ritmo da Escrita', 'Stylometry')}</span>
                 <span>📐</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasEstilometricosAtivos.length ? '#d97706' : '#16a34a' }}>
                 {alertasEstilometricosAtivos.length}
               </div>
-              <div className="sub-card-filtro">{alertasEstilometricosAtivos.length ? 'Frases monótonas' : 'Fluidez humana normal'}</div>
+              <div className="sub-card-filtro">{alertasEstilometricosAtivos.length ? tr('Frases monótonas', 'Monotonous rhythm') : tr('Fluidez humana normal', 'Natural rhythm')}</div>
             </div>
 
             {/* 10. Revistas Suspeitas */}
             <div
               className={`card-metrica-filtro ${alertasPredatoriosAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'predatorias' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'predatorias' ? 'todas' : 'predatorias'); }}
-              title="Clique para filtrar citações em editoras de vaidade ou periódicos predatórios"
+              title={tr('Clique para filtrar citações em editoras de vaidade ou periódicos predatórios', 'Filter predatory or hijacked journals')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Revistas Suspeitas</span>
+                <span className="titulo-card-filtro">{tr('Revistas Suspeitas', 'Predatory Venues')}</span>
                 <span>🚨</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasPredatoriosAtivos.length ? '#dc2626' : '#16a34a' }}>
                 {alertasPredatoriosAtivos.length}
               </div>
-              <div className="sub-card-filtro">{alertasPredatoriosAtivos.length ? 'Editora duvidosa (Beall)' : 'Periódicos idôneos'}</div>
+              <div className="sub-card-filtro">{alertasPredatoriosAtivos.length ? tr('Editora duvidosa (Beall)', 'Flagged publisher') : tr('Periódicos idôneos', 'Verified venues')}</div>
             </div>
 
             {/* 11. Regras ABNT 6023 */}
             <div
               className={`card-metrica-filtro ${alertasAbnt6023Ativos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'abnt6023' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'abnt6023' ? 'todas' : 'abnt6023'); }}
-              title="Clique para filtrar referências com falta de editora, cidade ou paginação"
+              title={tr('Clique para filtrar referências com falta de editora, cidade ou paginação', 'Filter missing bibliography metadata fields')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Formatação ABNT</span>
+                <span className="titulo-card-filtro">{tr('Formatação ABNT', 'Style Metadata')}</span>
                 <span>📋</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasAbnt6023Ativos.length ? '#d97706' : '#16a34a' }}>
                 {alertasAbnt6023Ativos.length}
               </div>
-              <div className="sub-card-filtro">{alertasAbnt6023Ativos.length ? 'Falta cidade/editora/pág.' : 'Formatação completa'}</div>
+              <div className="sub-card-filtro">{alertasAbnt6023Ativos.length ? tr('Falta cidade/editora/pág.', 'Missing metadata') : tr('Formatação completa', 'Complete fields')}</div>
             </div>
 
             {/* 12. Nomes de Genes (Excel) */}
             <div
               className={`card-metrica-filtro ${alertasCorrupcaoGeneAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'genomica' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'genomica' ? 'todas' : 'genomica'); }}
-              title="Clique para filtrar símbolos de genes que o Excel converteu em datas"
+              title={tr('Clique para filtrar símbolos de genes que o Excel converteu em datas', 'Filter HGNC gene symbols corrupted by spreadsheets')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Genes Trocados p/ Data</span>
+                <span className="titulo-card-filtro">{tr('Genes Trocados p/ Data', 'Gene Symbol Errors')}</span>
                 <span>🧬</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasCorrupcaoGeneAtivos.length ? '#dc2626' : '#16a34a' }}>
                 {alertasCorrupcaoGeneAtivos.length}
               </div>
-              <div className="sub-card-filtro">{alertasCorrupcaoGeneAtivos.length ? 'Erro de planilha (Ziemann)' : 'Símbolos corretos'}</div>
+              <div className="sub-card-filtro">{alertasCorrupcaoGeneAtivos.length ? tr('Erro de planilha (Ziemann)', 'Spreadsheet artifact') : tr('Símbolos corretos', 'Valid symbols')}</div>
             </div>
 
             {/* 13. Bolsas & Apoio CAPES */}
             <div
               className={`card-metrica-filtro ${alertasFomentoAtivos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'fomento' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'fomento' ? 'todas' : 'fomento'); }}
-              title="Clique para filtrar pendências de Código CAPES 001 ou números de processo"
+              title={tr('Clique para filtrar pendências de Código CAPES 001 ou números de processo', 'Filter funding acknowledgment & grant number checks')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Apoio & Bolsas CAPES</span>
+                <span className="titulo-card-filtro">{tr('Apoio & Bolsas CAPES', 'Funding & Grants')}</span>
                 <span>🏛️</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasFomentoAtivos.length ? '#d97706' : '#16a34a' }}>
                 {alertasFomentoAtivos.length}
               </div>
-              <div className="sub-card-filtro">{alertasFomentoAtivos.length ? 'Falta código 001 / CNPq' : 'Agradecimento conforme'}</div>
+              <div className="sub-card-filtro">{alertasFomentoAtivos.length ? tr('Falta código 001 / CNPq', 'Missing grant disclosure') : tr('Agradecimento conforme', 'Compliant')}</div>
             </div>
 
             {/* 14. Tema vs Artigo Citado */}
             <div
               className={`card-metrica-filtro ${alertasDesvioTematicoAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'desvio_tematico' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'desvio_tematico' ? 'todas' : 'desvio_tematico'); }}
-              title="Clique para filtrar afirmações que não têm respaldo temático no resumo do artigo"
+              title={tr('Clique para filtrar afirmações que não têm respaldo temático no resumo do artigo', 'Filter off-topic citation claims vs. abstract')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Assunto Divergente</span>
+                <span className="titulo-card-filtro">{tr('Assunto Divergente', 'Topic Drift')}</span>
                 <span>⚠️</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasDesvioTematicoAtivos.length ? '#dc2626' : '#16a34a' }}>
                 {alertasDesvioTematicoAtivos.length}
               </div>
-              <div className="sub-card-filtro">{alertasDesvioTematicoAtivos.length ? 'Frase difere do abstract' : 'Tema coerente'}</div>
+              <div className="sub-card-filtro">{alertasDesvioTematicoAtivos.length ? tr('Frase difere do abstract', 'Differs from abstract') : tr('Tema coerente', 'On-topic')}</div>
             </div>
 
             {/* 15. Falta nas Referências */}
             <div
               className={`card-metrica-filtro ${citacoesSemReferenciaAtivas.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'orfa' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'orfa' ? 'todas' : 'orfa'); }}
-              title="Clique para filtrar autores citados no texto que não estão na lista final"
+              title={tr('Clique para filtrar autores citados no texto que não estão na lista final', 'Filter in-text citations missing from References')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Falta nas Referências</span>
+                <span className="titulo-card-filtro">{tr('Falta nas Referências', 'Missing in Refs')}</span>
                 <span>❌</span>
               </div>
               <div className="valor-card-filtro" style={{ color: citacoesSemReferenciaAtivas.length ? '#dc2626' : '#16a34a' }}>
                 {citacoesSemReferenciaAtivas.length}
               </div>
-              <div className="sub-card-filtro">{citacoesSemReferenciaAtivas.length ? 'Citou e não listou' : 'Todas listadas'}</div>
+              <div className="sub-card-filtro">{citacoesSemReferenciaAtivas.length ? tr('Citou e não listou', 'Orphan citations') : tr('Todas listadas', 'All listed')}</div>
             </div>
 
             {/* 16. Não Citadas no Texto */}
             <div
               className={`card-metrica-filtro ${refsNaoCitadasNoTextoAtivas.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'sobrando' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'sobrando' ? 'todas' : 'sobrando'); }}
-              title="Clique para filtrar obras presentes na lista final que nunca foram citadas no texto"
+              title={tr('Clique para filtrar obras presentes na lista final que nunca foram citadas no texto', 'Filter bibliography entries never cited in text')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Listada s/ Citação</span>
+                <span className="titulo-card-filtro">{tr('Listada s/ Citação', 'Uncited in Text')}</span>
                 <span>⏳</span>
               </div>
               <div className="valor-card-filtro" style={{ color: refsNaoCitadasNoTextoAtivas.length ? '#d97706' : '#16a34a' }}>
                 {refsNaoCitadasNoTextoAtivas.length}
               </div>
-              <div className="sub-card-filtro">{refsNaoCitadasNoTextoAtivas.length ? 'Sobrando nas referências' : 'Todas citadas'}</div>
+              <div className="sub-card-filtro">{refsNaoCitadasNoTextoAtivas.length ? tr('Sobrando nas referências', 'Unused entries') : tr('Todas citadas', 'All cited')}</div>
             </div>
 
             {/* 17. Figuras & Tabelas (ABNT 14724 / IBGE) */}
             <div
               className={`card-metrica-filtro ${alertasFigurasTabelasAtivos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'figuras_tabelas' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'figuras_tabelas' ? 'todas' : 'figuras_tabelas'); }}
-              title="Clique para filtrar falta de chamada no texto ou linha de Fonte em Figuras, Quadros e Tabelas"
+              title={tr('Clique para filtrar falta de chamada no texto ou linha de Fonte em Figuras, Quadros e Tabelas', 'Filter Figure/Table callout and source line checks')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Figuras &amp; Tabelas</span>
+                <span className="titulo-card-filtro">{tr('Figuras & Tabelas', 'Figures & Tables')}</span>
                 <span>🖼️</span>
               </div>
               <div className="valor-card-filtro" style={{ color: alertasFigurasTabelasAtivos.length ? '#d97706' : '#16a34a' }}>
                 {alertasFigurasTabelasAtivos.length}
               </div>
-              <div className="sub-card-filtro">{alertasFigurasTabelasAtivos.length ? 'Falta Fonte / Chamada' : 'ABNT 14724 / IBGE ok'}</div>
+              <div className="sub-card-filtro">{alertasFigurasTabelasAtivos.length ? tr('Falta Fonte / Chamada', 'Missing Source / Callout') : tr('ABNT 14724 / IBGE ok', 'ABNT 14724 / IBGE ok')}</div>
             </div>
 
             {/* 18. Total a Corrigir */}
             <div
               className={`card-metrica-filtro ${totalInconformidades > 0 ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'todas' ? 'ativo' : ''}`}
               onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo('todas'); }}
-              title="Clique para exibir todos os pontos a corrigir"
+              title={tr('Clique para exibir todos os pontos a corrigir', 'Click to display all items to fix')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Alertas a Corrigir</span>
+                <span className="titulo-card-filtro">{tr('Alertas a Corrigir', 'Alerts to Fix')}</span>
                 <span>🎯</span>
               </div>
               <div className="valor-card-filtro" style={{ color: totalInconformidades > 0 ? '#dc2626' : '#16a34a' }}>
                 {totalInconformidades}
               </div>
-              <div className="sub-card-filtro">{totalInconformidades > 0 ? 'Pontos a ajustar' : '100% Conforme'}</div>
+              <div className="sub-card-filtro">{totalInconformidades > 0 ? tr('Pontos a ajustar', 'Items to adjust') : tr('100% Conforme', '100% Compliant')}</div>
             </div>
 
             {/* 18. Obras com PDF no Acervo */}
             <div
               className={`card-metrica-filtro ${abaVisualizacao === 'conformes' ? 'ativo' : ''}`}
               onClick={() => setAbaVisualizacao('conformes')}
-              title="Clique para ver o rol de obras autênticas e os PDFs disponíveis no acervo"
+              title={tr('Clique para ver o rol de obras autênticas e os PDFs disponíveis no acervo', 'Click to see verified works and PDFs available in the repository')}
             >
               <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">Obras no Acervo</span>
+                <span className="titulo-card-filtro">{tr('Obras no Acervo', 'Works in Library')}</span>
                 <span>📥</span>
               </div>
               <div className="valor-card-filtro" style={{ color: '#16a34a' }}>
                 {totalConformesComPdf} / {obrasConformes.length}
               </div>
-              <div className="sub-card-filtro">{totalConformesComPdf} PDFs baixados</div>
+              <div className="sub-card-filtro">{totalConformesComPdf} {tr('PDFs baixados', 'PDFs downloaded')}</div>
             </div>
           </div>
 
@@ -2863,7 +2865,7 @@ export default function ReverseAuditView({
               }}
               onClick={() => setAbaVisualizacao('inconformidades')}
             >
-              🎯 1. Painel de Inconformidades ({totalInconformidades})
+              🎯 1. {tr('Painel de Inconformidades', 'Issues Panel')} ({totalInconformidades})
             </button>
             <button
               className={`btn ${abaVisualizacao === 'conformes' ? 'primario' : 'fantasma'}`}
@@ -2876,14 +2878,14 @@ export default function ReverseAuditView({
               }}
               onClick={() => setAbaVisualizacao('conformes')}
             >
-              📥 2. Rol de Obras em Conformidade ({obrasConformes.length} adicionadas · {totalConformesComPdf} com PDF)
+              📥 2. {tr('Rol de Obras em Conformidade', 'Compliant Works List')} ({obrasConformes.length} {tr('adicionadas', 'added')} · {totalConformesComPdf} {tr('com PDF', 'with PDF')})
             </button>
             <button
               className={`btn ${abaVisualizacao === 'todas' ? 'primario' : 'fantasma'}`}
               style={{ fontWeight: 600, fontSize: 12.8 }}
               onClick={() => setAbaVisualizacao('todas')}
             >
-              📋 3. Visão Geral Completa ({resultado.refsMapeadas.length})
+              📋 3. {tr('Visão Geral Completa', 'Full Overview')} ({resultado.refsMapeadas.length})
             </button>
           </div>
 
@@ -2900,10 +2902,10 @@ export default function ReverseAuditView({
               }}
             >
               <h3 style={{ color: '#15803d', margin: '0 0 6px 0' }}>
-                🎉 Nenhuma Inconformidade Encontrada!
+                🎉 {tr('Nenhuma Inconformidade Encontrada!', 'No Issues Found!')}
               </h3>
               <p style={{ margin: 0, color: 'var(--texto-suave)', fontSize: 13 }}>
-                Todas as citações no texto possuem referências correspondentes, todos os DOIs e fontes foram autenticados nas bases oficiais e nenhum plágio ou alucinação foi detectado no manuscrito.
+                {tr('Todas as citações no texto possuem referências correspondentes, todos os DOIs e fontes foram autenticados nas bases oficiais e nenhum plágio ou alucinação foi detectado no manuscrito.', 'All in-text citations have matching references, all DOIs and sources were verified against official databases, and no plagiarism or hallucinations were detected in the manuscript.')}
               </p>
             </div>
           )}
@@ -2926,14 +2928,14 @@ export default function ReverseAuditView({
                 }}
               >
                 <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--texto-suave)', marginRight: 4 }}>
-                  🗂️ Agrupar / Filtrar Intercorrências:
+                  🗂️ {tr('Agrupar / Filtrar Intercorrências:', 'Group / Filter Issues:')}
                 </span>
                 <button
                   className={`chip ${grupoIntercorrenciaAtivo === 'todas' ? 'ativo' : ''}`}
                   onClick={() => setGrupoIntercorrenciaAtivo('todas')}
                   style={{ fontSize: 11.8, padding: '3px 10px' }}
                 >
-                  Todas ({totalInconformidades})
+                  {tr('Todas', 'All')} ({totalInconformidades})
                 </button>
                 {refsSuspeitasIaAtivas.length > 0 && (
                   <button
@@ -2947,7 +2949,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'ia' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🤖 IA / DOI Falso ({refsSuspeitasIaAtivas.length})
+                    🤖 {tr('IA / DOI Falso', 'AI / Fake DOI')} ({refsSuspeitasIaAtivas.length})
                   </button>
                 )}
                 {alertasAtribuicaoFalsaAtivos.length > 0 && (
@@ -2962,7 +2964,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'citacao_falsa' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🚨 Citação Trocada / Inexistente ({alertasAtribuicaoFalsaAtivos.length})
+                    🚨 {tr('Citação Trocada / Inexistente', 'Swapped / Unsupported Quote')} ({alertasAtribuicaoFalsaAtivos.length})
                   </button>
                 )}
                 {alertasPlagioAtivos.length > 0 && (
@@ -2977,7 +2979,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'plagio' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🔍 Plágio / Cópia ({alertasPlagioAtivos.length})
+                    🔍 {tr('Plágio / Cópia', 'Plagiarism / Copy')} ({alertasPlagioAtivos.length})
                   </button>
                 )}
                 {alertasEstatisticosAtivos.length > 0 && (
@@ -2992,7 +2994,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'estatistica' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    📊 Estatística / Statcheck ({alertasEstatisticosAtivos.length})
+                    📊 {tr('Estatística / Statcheck', 'Statistics / Statcheck')} ({alertasEstatisticosAtivos.length})
                   </button>
                 )}
                 {alertasRedeAtivos.length > 0 && (
@@ -3007,7 +3009,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'rede' ? '#d97706' : 'transparent',
                     }}
                   >
-                    🕸️ Rede / COPE ({alertasRedeAtivos.length})
+                    🕸️ {tr('Rede / COPE', 'Network / COPE')} ({alertasRedeAtivos.length})
                   </button>
                 )}
                 {alertasMetodologiaClinicaAtivos.length > 0 && (
@@ -3022,7 +3024,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'metodologia_clinica' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🔬 Metodologia / Ética ({alertasMetodologiaClinicaAtivos.length})
+                    🔬 {tr('Metodologia / Ética', 'Methodology / Ethics')} ({alertasMetodologiaClinicaAtivos.length})
                   </button>
                 )}
                 {alertasFrasesTorturadasAtivos.length > 0 && (
@@ -3037,7 +3039,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'frases_torturadas' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🧟 Frases Torturadas ({alertasFrasesTorturadasAtivos.length})
+                    🧟 {tr('Frases Torturadas', 'Tortured Phrases')} ({alertasFrasesTorturadasAtivos.length})
                   </button>
                 )}
                 {alertasEstilometricosAtivos.length > 0 && (
@@ -3052,7 +3054,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'estilometria' ? '#d97706' : 'transparent',
                     }}
                   >
-                    📐 Estilometria ({alertasEstilometricosAtivos.length})
+                    📐 {tr('Estilometria', 'Stylometry')} ({alertasEstilometricosAtivos.length})
                   </button>
                 )}
                 {alertasPredatoriosAtivos.length > 0 && (
@@ -3067,7 +3069,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'predatorias' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🚨 Predatórias ({alertasPredatoriosAtivos.length})
+                    🚨 {tr('Predatórias', 'Predatory')} ({alertasPredatoriosAtivos.length})
                   </button>
                 )}
                 {alertasAbnt6023Ativos.length > 0 && (
@@ -3082,7 +3084,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'abnt6023' ? '#d97706' : 'transparent',
                     }}
                   >
-                    📋 ABNT 6023 ({alertasAbnt6023Ativos.length})
+                    📋 {tr('ABNT 6023', 'ABNT 6023')} ({alertasAbnt6023Ativos.length})
                   </button>
                 )}
                 {alertasCorrupcaoGeneAtivos.length > 0 && (
@@ -3097,7 +3099,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'genomica' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🧬 Genômica ({alertasCorrupcaoGeneAtivos.length})
+                    🧬 {tr('Genômica', 'Genomics')} ({alertasCorrupcaoGeneAtivos.length})
                   </button>
                 )}
                 {alertasFomentoAtivos.length > 0 && (
@@ -3112,7 +3114,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'fomento' ? '#d97706' : 'transparent',
                     }}
                   >
-                    🏛️ Fomento ({alertasFomentoAtivos.length})
+                    🏛️ {tr('Fomento', 'Funding')} ({alertasFomentoAtivos.length})
                   </button>
                 )}
                 {alertasDesvioTematicoAtivos.length > 0 && (
@@ -3127,7 +3129,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'desvio_tematico' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    ⚠️ Desvio Temático ({alertasDesvioTematicoAtivos.length})
+                    ⚠️ {tr('Desvio Temático', 'Topic Drift')} ({alertasDesvioTematicoAtivos.length})
                   </button>
                 )}
                 {citacoesSemReferenciaAtivas.length > 0 && (
@@ -3142,7 +3144,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'orfa' ? '#b91c1c' : 'transparent',
                     }}
                   >
-                    ❌ Citações Órfãs ({citacoesSemReferenciaAtivas.length})
+                    ❌ {tr('Citações Órfãs', 'Orphan Citations')} ({citacoesSemReferenciaAtivas.length})
                   </button>
                 )}
                 {refsNaoCitadasNoTextoAtivas.length > 0 && (
@@ -3157,7 +3159,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'sobrando' ? '#d97706' : 'transparent',
                     }}
                   >
-                    ⚠️ Referências Não Citadas ({refsNaoCitadasNoTextoAtivas.length})
+                    ⚠️ {tr('Referências Não Citadas', 'Uncited References')} ({refsNaoCitadasNoTextoAtivas.length})
                   </button>
                 )}
                 {alertasMetadadosAbntAtivos.length > 0 && (
@@ -3172,7 +3174,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'metadados' ? '#2563eb' : 'transparent',
                     }}
                   >
-                    📐 Metadados & ABNT ({alertasMetadadosAbntAtivos.length})
+                    📐 {tr('Metadados & ABNT', 'Metadata & ABNT')} ({alertasMetadadosAbntAtivos.length})
                   </button>
                 )}
                 {alertasPdfAtivos.length > 0 && (
@@ -3187,7 +3189,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'pdf' ? '#7c3aed' : 'transparent',
                     }}
                   >
-                    📄 Divergência no PDF ({alertasPdfAtivos.length})
+                    📄 {tr('Divergência no PDF', 'PDF Mismatch')} ({alertasPdfAtivos.length})
                   </button>
                 )}
                 {alertasMetodologicosAtivos.length > 0 && (
@@ -3202,7 +3204,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'metodologico' ? '#4b5563' : 'transparent',
                     }}
                   >
-                    📌 Escopo Metodológico ({alertasMetodologicosAtivos.length})
+                    📌 {tr('Escopo Metodológico', 'Methodological Scope')} ({alertasMetodologicosAtivos.length})
                   </button>
                 )}
                 {alertasEstiloIaAtivos.length > 0 && (
@@ -3217,7 +3219,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'estilo_ia' ? '#8b5cf6' : 'transparent',
                     }}
                   >
-                    🤖 Redação IA ({alertasEstiloIaAtivos.length})
+                    🤖 {tr('Redação IA', 'AI Writing')} ({alertasEstiloIaAtivos.length})
                   </button>
                 )}
                 {alertasFigurasTabelasAtivos.length > 0 && (
@@ -3232,16 +3234,16 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'figuras_tabelas' ? '#d97706' : 'transparent',
                     }}
                   >
-                    🖼️ Figuras &amp; Tabelas ({alertasFigurasTabelasAtivos.length})
+                    🖼️ {tr('Figuras & Tabelas', 'Figures & Tables')} ({alertasFigurasTabelasAtivos.length})
                   </button>
                 )}
                 {itensResolvidos.size > 0 && (
                   <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
                     <span style={{ fontSize: 11.2, color: '#15803d', fontWeight: 700, background: '#dcfce7', padding: '2px 7px', borderRadius: 4 }}>
-                      ✓ {totalResolvidos} resolvido(s)
+                      ✓ {totalResolvidos} {tr('resolvido(s)', 'resolved')}
                     </span>
                     <span style={{ fontSize: 11.2, color: '#475569', fontWeight: 700, background: '#f1f5f9', padding: '2px 7px', borderRadius: 4 }}>
-                      🚫 {totalIgnorados} ignorado(s)
+                      🚫 {totalIgnorados} {tr('ignorado(s)', 'ignored')}
                     </span>
                     <label style={{ fontSize: 11.8, display: 'inline-flex', alignItems: 'center', gap: 5, cursor: 'pointer', userSelect: 'none', color: 'var(--texto-suave)' }}>
                       <input
@@ -3249,15 +3251,15 @@ export default function ReverseAuditView({
                         checked={mostrarResolvidos}
                         onChange={(e) => setMostrarResolvidos(e.target.checked)}
                       />
-                      Exibir resolvidos/ignorados
+                      {tr('Exibir resolvidos/ignorados', 'Show resolved/ignored')}
                     </label>
                     <button
                       className="btn pequeno fantasma"
                       onClick={limparItensResolvidos}
                       style={{ fontSize: 11, padding: '2px 8px', color: 'var(--texto-suave)' }}
-                      title="Restaurar todos os alertas marcados como resolvidos ou ignorados"
+                      title={tr('Restaurar todos os alertas marcados como resolvidos ou ignorados', 'Restore all alerts marked as resolved or ignored')}
                     >
-                      ↺ Restaurar todos
+                      ↺ {tr('Restaurar todos', 'Restore all')}
                     </button>
                   </div>
                 )}
@@ -3267,13 +3269,13 @@ export default function ReverseAuditView({
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'ia') && (mostrarResolvidos ? refsSuspeitasIa.length > 0 : refsSuspeitasIaAtivas.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #dc2626', background: 'rgba(220, 38, 38, 0.04)' }}>
               <h4 style={{ color: '#dc2626', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
-                <span>🤖 Fontes Suspeitas ou Não Autenticadas nas Referências ({refsSuspeitasIaAtivas.length})</span>
+                <span>🤖 {tr('Fontes Suspeitas ou Não Autenticadas nas Referências', 'Suspicious or Unverified Sources in References')} ({refsSuspeitasIaAtivas.length})</span>
                 <BadgeAlvoAlerta alvo="citacao" />
               </h4>
               <p className="texto-suave" style={{ fontSize: 12, marginTop: 0, marginBottom: 10 }}>
-                💡 Site oficial ou apostila do computador (MS/UFMA/institucional)? Use{' '}
-                <strong>📎 Anexar Apostila/PDF</strong> ou <strong>🌐 Confirmar Site/Oficial</strong> para salvar na Biblioteca e resolver o alerta automaticamente, ou marque{' '}
-                <strong>✓ Resolvido</strong> / <strong>🚫 Ignorar</strong>.
+                💡 {tr('Site oficial ou apostila do computador (MS/UFMA/institucional)? Use', 'Official website or local courseware/PDF? Use')}{' '}
+                <strong>📎 {tr('Anexar Apostila/PDF', 'Attach PDF/Handout')}</strong> {tr('ou', 'or')} <strong>🌐 {tr('Confirmar Site/Oficial', 'Confirm Official Site')}</strong> {tr('para salvar na Biblioteca e resolver o alerta automaticamente, ou marque', 'to save in the Library and auto-resolve the alert, or mark')}{' '}
+                <strong>✓ {tr('Resolvido', 'Resolved')}</strong> / <strong>🚫 {tr('Ignorar', 'Ignore')}</strong>.
               </p>
               <div className="lista-historico">
                 {refsSuspeitasIa
@@ -3294,7 +3296,7 @@ export default function ReverseAuditView({
                             </div>
                             {primOc && (
                               <div style={{ fontSize: 12, marginTop: 4 }}>
-                                <strong>📍 Onde você citou no Word (§{primOc.numParagrafo}, Linha {primOc.numLinha}):</strong>{' '}
+                                <strong>📍 {tr('Onde você citou no Word', 'Where cited in Word')} (§{primOc.numParagrafo}, {tr('Linha', 'Line')} {primOc.numLinha}):</strong>{' '}
                                 <em>"{primOc.fraseContexto}"</em>
                               </div>
                             )}
@@ -3313,7 +3315,7 @@ export default function ReverseAuditView({
                                   diagnostico: r.alertaAutenticidade,
                                   fraseWord: primOc?.fraseContexto || '',
                                   paragrafoCompleto: primOc?.paragrafoCompleto || '',
-                                  locWord: primOc ? `Parágrafo §${primOc.numParagrafo} · Linha ${primOc.numLinha}` : 'Lista de Referências',
+                                  locWord: primOc ? `${tr('Parágrafo', 'Paragraph')} §${primOc.numParagrafo} · ${tr('Linha', 'Line')} ${primOc.numLinha}` : tr('Lista de Referências', 'References List'),
                                   chaveCitacao: `${r.primeiroSobrenome} (${r.ano})`,
                                   textoReferencia: r.textoOriginal,
                                   refBibItem: refs.find((x) => x.id === r.refBibId) || null,
@@ -3323,16 +3325,16 @@ export default function ReverseAuditView({
                             <button
                               className="btn pequeno secundario"
                               onClick={() => confirmarFonteSiteOuApostilaNoCard(r, idItem, { comPdf: true })}
-                              title="Anexa o PDF/apostila do seu computador na Biblioteca, lê as páginas citadas e marca este alerta como resolvido"
+                              title={tr('Anexa o PDF/apostila do seu computador na Biblioteca, lê as páginas citadas e marca este alerta como resolvido', 'Attach PDF/handout from your computer to Library, read cited pages, and mark this alert resolved')}
                             >
-                              📎 Anexar Apostila/PDF
+                              📎 {tr('Anexar Apostila/PDF', 'Attach PDF/Handout')}
                             </button>
                             <button
                               className="btn pequeno secundario"
                               onClick={() => confirmarFonteSiteOuApostilaNoCard(r, idItem, { comPdf: false })}
-                              title="Confirma esta obra como site/documento institucional válido, salva na Biblioteca e resolve o alerta"
+                              title={tr('Confirma esta obra como site/documento institucional válido, salva na Biblioteca e resolve o alerta', 'Confirm this work as a valid website/institutional document, save to Library, and resolve alert')}
                             >
-                              🌐 Confirmar Site/Oficial
+                              🌐 {tr('Confirmar Site/Oficial', 'Confirm Official Site')}
                             </button>
                             <button
                               className="btn pequeno primario"
@@ -3345,7 +3347,7 @@ export default function ReverseAuditView({
                                   numParagrafo: primOc?.numParagrafo || '',
                                 })
                               }
-                              title="Pesquisa nas bases científicas artigos reais para substituir esta fonte suspeita"
+                              title={tr('Pesquisa nas bases científicas artigos reais para substituir esta fonte suspeita', 'Search scientific databases for real articles to replace this suspicious source')}
                             >
                               🔎 Buscar Parecido
                             </button>

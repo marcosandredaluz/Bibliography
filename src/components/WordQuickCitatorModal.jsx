@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Modal, Icone } from './ui.jsx';
 import { autoresResumo, ano, semHtml, normalizar } from '../lib/csl.js';
+import { useI18n } from '../i18n.jsx';
 
 /**
  * Seletor Rápido de Citação (Estilo Zotero Quick Format)
@@ -17,6 +18,7 @@ export default function WordQuickCitatorModal({
   onConfirmar,
   onCancelar,
 }) {
+  const { tr } = useI18n();
   const [busca, setBusca] = useState('');
   const [pagina, setPagina] = useState('');
   const [estiloSel, setEstiloSel] = useState(estilo || 'abnt');
@@ -81,41 +83,41 @@ export default function WordQuickCitatorModal({
 
   const origemLabel =
     requisicao?.origem === 'word_ribbon'
-      ? 'Solicitado pela aba "Bibliografia Forense" dentro do Microsoft Word'
+      ? tr('Solicitado pela aba "Bibliografia Forense" dentro do Microsoft Word', 'Triggered from the "Bibliografia Forense" Ribbon tab in Microsoft Word')
       : requisicao?.origem === 'hotkey'
-      ? 'Atalho rápido Ctrl+Shift+B — injeta campo protegido direto no cursor do Word'
-      : 'Seletor rápido estilo Zotero (injeta campo protegido no Word aberto)';
+      ? tr('Atalho rápido Ctrl+Shift+B — injeta campo protegido direto no cursor do Word', 'Global hotkey Ctrl+Shift+B — injects protected field at Word cursor')
+      : tr('Seletor rápido estilo Zotero (injeta campo protegido no Word aberto)', 'Zotero-style Quick Citator (injects protected field into active Word document)');
 
   return (
-    <Modal titulo="⚡ Inserir Citação Rápida no Microsoft Word" onFechar={onCancelar} largura={660}>
+    <Modal titulo={tr('⚡ Inserir Citação Rápida no Microsoft Word', '⚡ Quick Citation Picker for Microsoft Word')} onFechar={onCancelar} largura={660}>
       <div className="form-vertical" onKeyDown={handleKeyDown}>
         <div style={{ fontSize: 12.5, color: '#475569', background: '#eff6ff', border: '1px solid #bfdbfe', padding: '7px 10px', borderRadius: 6, marginBottom: 10 }}>
-          <strong>Origem:</strong> {origemLabel}
+          <strong>{tr('Origem:', 'Source:')}</strong> {origemLabel}
         </div>
 
         <div className="grade-3" style={{ marginBottom: 8 }}>
           <label className="campo" style={{ gridColumn: 'span 2' }}>
-            <span className="campo-rotulo">Buscar referência (autor, título, ano ou tag)</span>
+            <span className="campo-rotulo">{tr('Buscar referência (autor, título, ano ou tag)', 'Search reference (author, title, year, or tag)')}</span>
             <input
               ref={inputBuscaRef}
               value={busca}
               onChange={(e) => setBusca(e.target.value)}
-              placeholder="Digite para filtrar e clique para selecionar 1 ou mais obras…"
+              placeholder={tr('Digite para filtrar e clique para selecionar 1 ou mais obras…', 'Type to filter and select one or more items…')}
             />
           </label>
           <label className="campo">
-            <span className="campo-rotulo">Página(s) (opcional)</span>
+            <span className="campo-rotulo">{tr('Página(s) (opcional)', 'Page(s) (optional)')}</span>
             <input
               value={pagina}
               onChange={(e) => setPagina(e.target.value)}
-              placeholder="Ex.: 45 ou 12-15"
+              placeholder={tr('Ex.: 45 ou 12-15', 'e.g., 45 or 12-15')}
             />
           </label>
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8, gap: 10, flexWrap: 'wrap' }}>
           <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12 }}>
-            <span>Norma:</span>
+            <span>{tr('Norma:', 'Style:')}</span>
             <select value={estiloSel} onChange={(e) => setEstiloSel(e.target.value)} style={{ padding: '4px 8px' }}>
               {estilos.map((e) => (
                 <option key={e.id} value={e.id}>{e.nome}</option>
@@ -123,13 +125,13 @@ export default function WordQuickCitatorModal({
             </select>
           </label>
           <span style={{ fontSize: 12, color: '#1d4ed8', fontWeight: 600 }}>
-            {selecionadasIds.length} obra(s) selecionada(s) {selecionadasIds.length >= 2 ? '→ Citação composta' : ''}
+            {selecionadasIds.length} {tr('obra(s) selecionada(s)', 'item(s) selected')} {selecionadasIds.length >= 2 ? tr('→ Citação composta', '→ Combined citation') : ''}
           </span>
         </div>
 
         <div style={{ maxHeight: 280, overflowY: 'auto', border: '1px solid #e2e8f0', borderRadius: 8, padding: 6, background: '#f8fafc', display: 'grid', gap: 5 }}>
           {resultados.length === 0 ? (
-            <div style={{ padding: 14, textAlign: 'center', color: '#64748b' }}>Nenhuma referência encontrada.</div>
+            <div style={{ padding: 14, textAlign: 'center', color: '#64748b' }}>{tr('Nenhuma referência encontrada.', 'No matching references found.')}</div>
           ) : (
             resultados.map((r) => {
               const marcada = selecionadasIds.includes(r.id);
@@ -154,7 +156,7 @@ export default function WordQuickCitatorModal({
                     <input type="checkbox" checked={marcada} readOnly />
                     <div style={{ minWidth: 0 }}>
                       <div style={{ fontWeight: 600, fontSize: 13, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                        {semHtml(r.csl?.title || '(Sem título)')}
+                        {semHtml(r.csl?.title || tr('(Sem título)', '(Untitled)'))}
                       </div>
                       <div style={{ fontSize: 11.5, color: '#64748b' }}>
                         <strong>{[autoresResumo(r.csl), ano(r.csl)].filter(Boolean).join(', ')}</strong>
@@ -171,7 +173,7 @@ export default function WordQuickCitatorModal({
                     }}
                     disabled={enviando}
                   >
-                    Citar
+                    {tr('Citar', 'Cite')}
                   </button>
                 </div>
               );
@@ -181,11 +183,11 @@ export default function WordQuickCitatorModal({
 
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 12, gap: 10 }}>
           <span style={{ fontSize: 11.5, color: '#64748b' }}>
-            Dica: duplo clique cita na hora; marque 2+ obras e clique abaixo para citação múltipla.
+            {tr('Dica: duplo clique cita na hora; marque 2+ obras e clique abaixo para citação múltipla.', 'Tip: double-click inserts immediately; check 2+ items for multi-citation.')}
           </span>
           <div style={{ display: 'flex', gap: 8 }}>
             <button type="button" className="btn fantasma" onClick={onCancelar} disabled={enviando}>
-              Cancelar (Esc)
+              {tr('Cancelar (Esc)', 'Cancel (Esc)')}
             </button>
             <button
               type="button"
@@ -195,10 +197,10 @@ export default function WordQuickCitatorModal({
             >
               <Icone nome="copy" tam={13} />{' '}
               {enviando
-                ? 'Inserindo no Word…'
+                ? tr('Inserindo no Word…', 'Inserting into Word…')
                 : selecionadasIds.length > 0
-                ? `Inserir ${selecionadasIds.length} no Word (Ctrl+Enter)`
-                : 'Inserir 1ª da Lista no Word'}
+                ? tr(`Inserir ${selecionadasIds.length} no Word (Ctrl+Enter)`, `Insert ${selecionadasIds.length} in Word (Ctrl+Enter)`)
+                : tr('Inserir 1ª da Lista no Word', 'Insert First Match in Word')}
             </button>
           </div>
         </div>

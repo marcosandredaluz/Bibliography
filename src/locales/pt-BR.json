@@ -1,33 +1,45 @@
 {
   "app": {
     "title": "Bibliografia",
-    "subtitle": "Gestão Bibliográfica e Auditoria Forense de Citações"
+    "subtitle": "Gerenciador Científico & Auditoria Forense de Manuscritos"
   },
   "menu": {
     "library": "Biblioteca",
     "searchers": "Buscadores",
     "manuscript": "Manuscrito",
     "auditing": "Auditoria",
-    "prisma": "PRISMA 2020",
+    "prisma": "PRISMA",
     "graph": "Grafo",
     "tutorial": "Tutorial",
-    "version": "v1.2",
+    "version": "v1.0.1",
     "diagnostics": "Diagnóstico do Sistema"
   },
   "actions": {
+    "add": "Adicionar",
+    "quickActions": "Ações",
     "search": "Contar e comparar nas bases",
     "openSearch": "Abrir busca",
     "importHere": "Importar aqui",
     "copyCitation": "Copiar Citação",
+    "cite": "Citar",
+    "bibliography": "Bibliografia",
     "createBibliography": "Criar Bibliografia",
     "exportDocx": "Exportar para .DOCX",
     "auditManuscript": "Auditar Manuscrito",
-    "blindScreening": "Triagem em Duplo-Cego"
+    "blindScreening": "Triagem em Duplo-Cego",
+    "details": "Detalhes",
+    "hideDetails": "Ocultar Detalhes",
+    "switchProject": "Alternar Projeto",
+    "openFolder": "Abrir pasta",
+    "close": "Fechar",
+    "cancel": "Cancelar",
+    "save": "Salvar"
   },
   "status": {
     "loading": "Consultando bases de dados...",
     "openAccess": "Acesso livre",
     "institutional": "CAPES / CAFe / Instituição",
     "subscription": "Assinatura"
-  }
+  },
+  "phrases": {}
 }

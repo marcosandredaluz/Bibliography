@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Icone, Modal, useAviso } from './ui.jsx';
+import { useI18n } from '../i18n.jsx';
 
 const ROTULO_LOGIN = {
-  livre: { texto: 'Acesso livre', classe: 'badge-livre' },
-  parcial: { texto: 'Parcialmente aberto', classe: 'badge-parcial' },
-  cadastro: { texto: 'Requer cadastro gratuito', classe: 'badge-parcial' },
-  cafe: { texto: 'CAPES / CAFe / Instituição', classe: 'badge-cafe' },
-  assinatura: { texto: 'Assinatura', classe: 'badge-assinatura' },
+  livre: { texto: 'Acesso livre', textoEn: 'Open access', classe: 'badge-livre' },
+  parcial: { texto: 'Parcialmente aberto', textoEn: 'Partially open', classe: 'badge-parcial' },
+  cadastro: { texto: 'Requer cadastro gratuito', textoEn: 'Free account required', classe: 'badge-parcial' },
+  cafe: { texto: 'CAPES / CAFe / Instituição', textoEn: 'Institutional / Federated Login', classe: 'badge-cafe' },
+  assinatura: { texto: 'Assinatura', textoEn: 'Subscription', classe: 'badge-assinatura' },
 };
 
 function montarUrl(modeloUrl, consulta) {
@@ -19,6 +20,7 @@ function montarUrl(modeloUrl, consulta) {
 
 export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) {
   const avisar = useAviso();
+  const { tr, ehEn } = useI18n();
   const [catalogo, setCatalogo] = useState([]);
   const [contas, setContas] = useState({});
   const [historico, setHistorico] = useState([]);
@@ -210,14 +212,17 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
       {/* Barra de busca unificada */}
       <div className="topo-buscadores">
         <div>
-          <h2>Central de Buscadores Científicos (Saúde &amp; Multidisciplinar)</h2>
+          <h2>{tr('Central de Buscadores Científicos (Saúde & Multidisciplinar)', 'Federated Scientific Search Hub')}</h2>
           <p className="subtitulo">
-            Compare resultados entre bases automaticamente, abra qualquer buscador com sua estratégia de busca em 1 clique e gerencie seus logins.
+            {tr(
+              'Compare resultados entre bases automaticamente, abra qualquer buscador com sua estratégia de busca em 1 clique e gerencie seus logins.',
+              'Compare hit counts across scientific databases in parallel, open any database with your query in one click, and manage credentials.'
+            )}
           </p>
         </div>
         <div className="acoes-topo-buscadores">
           <button className="btn secundario" onClick={() => setModalNovoBuscador({ novo: true })}>
-            <Icone nome="plus" tam={14} /> Novo redirecionador / buscador
+            <Icone nome="plus" tam={14} /> {tr('Novo redirecionador / buscador', 'New Search Provider')}
           </button>
         </div>
       </div>
@@ -232,21 +237,21 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
         <input
           value={consulta}
           onChange={(e) => setConsulta(e.target.value)}
-          placeholder='Digite sua estratégia (ex.: ("glycemic control" OR diabetes) AND ("resistance training" OR exercise))'
+          placeholder={tr('Digite sua estratégia (ex.: ("glycemic control" OR diabetes) AND ("resistance training" OR exercise))', 'Enter search strategy (e.g., ("glycemic control" OR diabetes) AND ("resistance training" OR exercise))')}
         />
         <button type="submit" className="btn primario" disabled={emProgresso}>
-          <Icone nome="search" tam={15} /> {emProgresso ? 'Consultando bases...' : 'Contar e comparar nas bases'}
+          <Icone nome="search" tam={15} /> {emProgresso ? tr('Consultando bases...', 'Querying databases...') : tr('Contar e comparar nas bases', 'Count & compare databases')}
         </button>
         <button type="button" className="btn secundario" onClick={() => buscarResultadosInline('pubmed')}>
-          Ver artigos (PubMed)
+          {tr('Ver artigos (PubMed)', 'Browse PubMed Results')}
         </button>
         <button
           type="button"
           className="btn fantasma"
           onClick={abrirFavoritos}
-          title="Abre todos os seus buscadores marcados com estrela no navegador"
+          title={tr('Abre todos os seus buscadores marcados com estrela no navegador', 'Open all starred providers in browser')}
         >
-          <Icone nome="external" tam={14} /> Abrir favoritos
+          <Icone nome="external" tam={14} /> {tr('Abrir favoritos', 'Open favorites')}
         </button>
       </form>
 
@@ -255,9 +260,9 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
         <div style={{ margin: '12px 0 16px 0', background: 'var(--card-fundo, #f8fafc)', border: '1px solid var(--borda, #e2e8f0)', borderRadius: 8, padding: '12px 16px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6, fontSize: 13, fontWeight: 600 }}>
             <span style={{ display: 'flex', alignItems: 'center', gap: 6, color: 'var(--azul, #0284c7)' }}>
-              ⏳ Consultando bases científicas em paralelo...
+              ⏳ {tr('Consultando bases científicas em paralelo...', 'Querying scientific databases in parallel...')}
             </span>
-            <span style={{ color: 'var(--texto-suave, #64748b)' }}>{concluidosContadores} de {totalContadores} bases ({pctProgresso}%)</span>
+            <span style={{ color: 'var(--texto-suave, #64748b)' }}>{concluidosContadores} / {totalContadores} ({pctProgresso}%)</span>
           </div>
           <div style={{ width: '100%', height: 8, background: 'var(--fundo-barra, #e2e8f0)', borderRadius: 4, overflow: 'hidden' }}>
             <div style={{ width: `${pctProgresso}%`, height: '100%', background: 'linear-gradient(90deg, #0284c7, #38bdf8)', transition: 'width 0.3s ease-in-out' }} />
@@ -268,16 +273,16 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
       {/* Abas da Central */}
       <div className="abas-central">
         <button className={aba === 'painel' ? 'ativa' : ''} onClick={() => setAba('painel')}>
-          <Icone nome="search" tam={14} /> Bases &amp; Redirecionadores ({catalogo.filter((b) => !b.oculto).length})
+          <Icone nome="search" tam={14} /> {tr('Bases & Redirecionadores', 'Databases & Providers')} ({catalogo.filter((b) => !b.oculto).length})
         </button>
         <button className={aba === 'resultados' ? 'ativa' : ''} onClick={() => setAba('resultados')}>
-          <Icone nome="list" tam={14} /> Importar Resultados Direto
+          <Icone nome="list" tam={14} /> {tr('Importar Resultados Direto', 'Direct Results Import')}
         </button>
         <button className={aba === 'historico' ? 'ativa' : ''} onClick={() => setAba('historico')}>
-          <Icone nome="history" tam={14} /> Histórico &amp; Comparação PRISMA ({historico.length})
+          <Icone nome="history" tam={14} /> {tr('Histórico & Comparação PRISMA', 'Search History & PRISMA Log')} ({historico.length})
         </button>
         <button className={aba === 'contas' ? 'ativa' : ''} onClick={() => setAba('contas')}>
-          <Icone nome="key" tam={14} /> Central de Contas &amp; Proxy CAPES/CAFe
+          <Icone nome="key" tam={14} /> {tr('Central de Contas & Proxy CAPES/CAFe', 'Accounts & Institutional Proxy')}
         </button>
       </div>
 
@@ -292,7 +297,7 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
                   className={`chip ${filtroCategoria === c ? 'ativo' : ''}`}
                   onClick={() => setFiltroCategoria(c)}
                 >
-                  {c === 'todas' ? 'Todas as categorias' : c === 'favoritos' ? '★ Favoritos' : c}
+                  {c === 'todas' ? tr('Todas as categorias', 'All categories') : c === 'favoritos' ? tr('★ Favoritos', '★ Favorites') : c}
                 </button>
               ))}
             </div>
@@ -301,10 +306,10 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
                 <input
                   value={notasBusca}
                   onChange={(e) => setNotasBusca(e.target.value)}
-                  placeholder="Observação desta busca (ex.: Filtro 2019–2026)…"
+                  placeholder={tr('Observação desta busca (ex.: Filtro 2019–2026)…', 'Search notes (e.g., Filter 2019–2026)…')}
                 />
                 <button className="btn pequeno primario" onClick={registrarNoHistorico}>
-                  Salvar no Histórico / PRISMA
+                  {tr('Salvar no Histórico / PRISMA', 'Save to History / PRISMA')}
                 </button>
               </div>
             )}
@@ -313,6 +318,7 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
           <div className="grade-buscadores">
             {buscadoresVisiveis.map((b) => {
               const infoLogin = ROTULO_LOGIN[b.login] || ROTULO_LOGIN.livre;
+              const rotuloInfoLogin = ehEn ? (infoLogin.textoEn || infoLogin.texto) : infoLogin.texto;
               const conta = contas[b.id];
               const cont = contagens[b.id];
               return (
@@ -326,14 +332,14 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
                       <button
                         className={`btn-icone ${b.favorito ? 'favorito-ativo' : ''}`}
                         onClick={() => alternarFavorito(b.id)}
-                        title="Marcar/desmarcar como favorito"
+                        title={tr('Marcar/desmarcar como favorito', 'Toggle favorite')}
                       >
                         <Icone nome="star" cheio={b.favorito} tam={15} />
                       </button>
                       <button
                         className="btn-icone"
                         onClick={() => setModalNovoBuscador(b)}
-                        title="Editar URL ou configurações deste buscador"
+                        title={tr('Editar URL ou configurações deste buscador', 'Edit search provider URL or settings')}
                       >
                         <Icone nome="edit" tam={14} />
                       </button>
@@ -343,9 +349,9 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
                   <p className="card-buscador-desc">{b.descricao}</p>
 
                   <div className="card-buscador-meta">
-                    <span className={`badge-login ${infoLogin.classe}`}>{infoLogin.texto}</span>
+                    <span className={`badge-login ${infoLogin.classe}`}>{rotuloInfoLogin}</span>
                     {conta?.usuario && (
-                      <span className="badge-conta" title={`Usuário salvo: ${conta.usuario}`}>
+                      <span className="badge-conta" title={`${tr('Usuário salvo', 'Saved user')}: ${conta.usuario}`}>
                         <Icone nome="key" tam={11} /> {conta.usuario}
                       </span>
                     )}
@@ -355,20 +361,20 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
                   <div className="card-buscador-contagem">
                     {b.contagem ? (
                       <div className="contagem-auto">
-                        <span>Resultados na base:</span>
+                        <span>{tr('Resultados na base:', 'Database hits:')}</span>
                         <strong>
                           {!cont
                             ? '—'
                             : cont.status === 'loading'
-                            ? 'Contando…'
+                            ? tr('Contando…', 'Counting…')
                             : cont.status === 'ok'
-                            ? cont.valor.toLocaleString('pt-BR')
-                            : 'indisponível'}
+                            ? cont.valor.toLocaleString(ehEn ? 'en-US' : 'pt-BR')
+                            : tr('indisponível', 'unavailable')}
                         </strong>
                       </div>
                     ) : (
                       <div className="contagem-manual">
-                        <span>Nº de resultados (anotar):</span>
+                        <span>{tr('Nº de resultados (anotar):', 'Result count (note):')}</span>
                         <input
                           type="number"
                           min="0"
@@ -384,32 +390,32 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
 
                   <div className="card-buscador-rodape">
                     <button className="btn pequeno primario" onClick={() => abrirBuscador(b, false)}>
-                      <Icone nome="external" tam={13} /> Abrir busca
+                      <Icone nome="external" tam={13} /> {tr('Abrir busca', 'Open search')}
                     </button>
                     {proxy && (b.login === 'cafe' || b.login === 'assinatura') && (
                       <button
                         className="btn pequeno secundario"
                         onClick={() => abrirBuscador(b, true)}
-                        title="Abrir passando pelo proxy da universidade/CAPES"
+                        title={tr('Abrir passando pelo proxy da universidade/CAPES', 'Open via institutional proxy')}
                       >
-                        Via Proxy
+                        {tr('Via Proxy', 'Via Proxy')}
                       </button>
                     )}
                     {['pubmed', 'europepmc', 'openalex'].includes(b.contagem) && (
                       <button
                         className="btn pequeno secundario"
                         onClick={() => buscarResultadosInline(b.contagem)}
-                        title="Listar e importar artigos sem sair do programa"
+                        title={tr('Listar e importar artigos sem sair do programa', 'Browse & import results inside the app')}
                       >
-                        Importar aqui
+                        {tr('Importar aqui', 'Import here')}
                       </button>
                     )}
                     <button
                       className="btn pequeno fantasma"
                       onClick={() => setModalConta(b)}
-                      title="Configurar usuário e senha para este buscador"
+                      title={tr('Configurar usuário e senha para este buscador', 'Configure saved account credentials')}
                     >
-                      <Icone nome="key" tam={13} /> Conta
+                      <Icone nome="key" tam={13} /> {tr('Conta', 'Account')}
                     </button>
                   </div>
                 </div>
@@ -423,11 +429,11 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
       {aba === 'resultados' && (
         <div className="painel-resultados-inline">
           <div className="barra-fontes-inline">
-            <span>Fonte direta:</span>
+            <span>{tr('Fonte direta:', 'Direct source:')}</span>
             {[
               { id: 'pubmed', nome: 'PubMed / MEDLINE' },
-              { id: 'europepmc', nome: 'Europe PMC (texto aberto)' },
-              { id: 'openalex', nome: 'OpenAlex (citações)' },
+              { id: 'europepmc', nome: tr('Europe PMC (texto aberto)', 'Europe PMC (Open Access)') },
+              { id: 'openalex', nome: tr('OpenAlex (citações)', 'OpenAlex (Citations)') },
             ].map((f) => (
               <button
                 key={f.id}

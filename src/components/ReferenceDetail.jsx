@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {
   STATUS,
   TIPOS,
+  rotuloStatus,
   camposDoTipo,
   autoresParaTexto,
   textoParaAutores,
@@ -12,6 +13,7 @@ import {
   semHtml,
 } from '../lib/csl.js';
 import { Icone, Campo, useAviso } from './ui.jsx';
+import { useI18n } from '../i18n.jsx';
 
 const NIVEIS_EVIDENCIA = [
   { id: '', nome: '— Não classificado —' },
@@ -40,6 +42,7 @@ export default function ReferenceDetail({
   onFechar,
 }) {
   const avisar = useAviso();
+  const { idioma: idiomaUi, tr } = useI18n();
   const [aba, setAba] = useState('dados'); // 'dados' | 'fichamento' | 'citacao' | 'rede'
   const [novaTag, setNovaTag] = useState('');
   const [previa, setPrevia] = useState({ citacao: '', bibliografiaHtml: '' });

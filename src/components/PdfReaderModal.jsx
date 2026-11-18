@@ -2,16 +2,18 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as pdfjs from 'pdfjs-dist';
 import { Icone, useAviso } from './ui.jsx';
 import { autoresResumo, ano, semHtml } from '../lib/csl.js';
+import { useI18n } from '../i18n.jsx';
 
 const CORES_GRIFO = [
-  { id: 'amarelo', nome: 'Achado principal', cor: '#fde047', badge: '🟡' },
-  { id: 'verde', nome: 'Metodologia / PICO', cor: '#86efac', badge: '🟢' },
-  { id: 'azul', nome: 'Citar no Word', cor: '#93c5fd', badge: '🔵' },
-  { id: 'rosa', nome: 'Limitação / Crítica', cor: '#fda4af', badge: '🔴' },
+  { id: 'amarelo', nome: 'Achado principal', nomeEn: 'Key Finding', cor: '#fde047', badge: '🟡' },
+  { id: 'verde', nome: 'Metodologia / PICO', nomeEn: 'Methodology / PICO', cor: '#86efac', badge: '🟢' },
+  { id: 'azul', nome: 'Citar no Word', nomeEn: 'Cite in Word', cor: '#93c5fd', badge: '🔵' },
+  { id: 'rosa', nome: 'Limitação / Crítica', nomeEn: 'Limitation / Critique', cor: '#fda4af', badge: '🔴' },
 ];
 
 export default function PdfReaderModal({ refItem, paginaInicial = 1, onFechar, onAtualizarRef, emAba = false }) {
   const avisar = useAviso();
+  const { ehEn, tr } = useI18n();
   const canvasRef = useRef(null);
   const containerPaginaRef = useRef(null);
   const textLayerRef = useRef(null);
@@ -308,9 +310,9 @@ export default function PdfReaderModal({ refItem, paginaInicial = 1, onFechar, o
       <div className="caixa-modal leitor-pdf-modal" onClick={(e) => e.stopPropagation()}>
         <header className="cabecalho-modal leitor-cabecalho">
           <div className="leitor-titulo-box">
-            <h3 title={refItem.csl?.title}>{semHtml(refItem.csl?.title) || 'Leitor de Artigo PDF'}</h3>
+            <h3 title={refItem.csl?.title}>{semHtml(refItem.csl?.title) || tr('Leitor de Artigo PDF', 'PDF Article Reader')}</h3>
             <span className="leitor-subtitulo">
-              {autoresResumo(refItem.csl)} ({ano(refItem.csl)}) · Página {paginaAtual} de {numPaginas || '…'} · Total de {grifos.length} anotações
+              {autoresResumo(refItem.csl)} ({ano(refItem.csl)}) · {tr('Página', 'Page')} {paginaAtual} {tr('de', 'of')} {numPaginas || '…'} · {tr('Total de', 'Total of')} {grifos.length} {tr('anotações', 'notes')}
             </span>
           </div>
 
@@ -323,7 +325,7 @@ export default function PdfReaderModal({ refItem, paginaInicial = 1, onFechar, o
                 setBarraFlutuante({ visivel: false, x: 0, y: 0, trecho: '' });
               }}
             >
-              ◄ Anterior
+              ◄ {tr('Anterior', 'Prev')}
             </button>
             <input
               type="number"
@@ -347,7 +349,7 @@ export default function PdfReaderModal({ refItem, paginaInicial = 1, onFechar, o
                 setBarraFlutuante({ visivel: false, x: 0, y: 0, trecho: '' });
               }}
             >
-              Próxima ►
+              {tr('Próxima', 'Next')} ►
             </button>
             <button className="btn secundario pequeno" onClick={() => setEscala((e) => Math.max(0.75, e - 0.15))}>
               Zoom −
@@ -358,19 +360,19 @@ export default function PdfReaderModal({ refItem, paginaInicial = 1, onFechar, o
             <button
               className="btn secundario pequeno"
               onClick={() => window.api.bib.abrirPdfExterno(refItem.id)}
-              title="Abrir no Adobe Acrobat, Edge ou navegador padrão"
+              title={tr('Abrir no Adobe Acrobat, Edge ou navegador padrão', 'Open in Adobe Acrobat, Edge, or default browser')}
             >
-              ↗ Abrir no Navegador Externo
+              ↗ {tr('Abrir no Navegador Externo', 'Open in External Browser')}
             </button>
             <button
               className="btn secundario pequeno"
               onClick={() => window.api.bib.mostrarArquivo(refItem.id)}
-              title="Abrir pasta onde o PDF está salvo"
+              title={tr('Abrir pasta onde o PDF está salvo', 'Open folder where PDF is saved')}
             >
-              📁 Mostrar na pasta
+              📁 {tr('Mostrar na pasta', 'Show in folder')}
             </button>
             <button className="btn pequeno primario" onClick={onFechar}>
-              Fechar leitor
+              {tr('Fechar leitor', 'Close reader')}
             </button>
           </div>
         </header>

@@ -10,6 +10,7 @@ const PADRAO = {
   libraryPath: null,
   estilo: 'associacao-brasileira-de-normas-tecnicas',
   idioma: 'pt-BR',
+  idiomaInterface: 'pt-BR',
   tema: 'claro',
   projetosRecentes: [],
 };

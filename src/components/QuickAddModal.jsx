@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Icone, useAviso } from './ui.jsx';
+import { useI18n } from '../i18n.jsx';
 
 function detectarTipo(texto) {
   const s = String(texto || '').trim();
@@ -20,6 +21,7 @@ function detectarTipo(texto) {
 
 export default function QuickAddModal({ onFechar, onImportarCsl, onImportarPdfs, onRecarregar }) {
   const avisar = useAviso();
+  const { tr } = useI18n();
   const [entrada, setEntrada] = useState('');
   const [statusInicial, setStatusInicial] = useState('consultada');
   const [carregando, setCarregando] = useState(false);
@@ -93,45 +95,45 @@ export default function QuickAddModal({ onFechar, onImportarCsl, onImportarPdfs,
   };
 
   return (
-    <Modal titulo="Adicionar referência" onFechar={onFechar} largura={640}>
+    <Modal titulo={tr('Adicionar referência', 'Add Reference')} onFechar={onFechar} largura={640}>
       <form onSubmit={submeter} className="form-rapido">
         <label className="campo">
           <span className="campo-rotulo">
-            Cole um DOI, PMID (PubMed), link do PubMed, ISBN de livro ou digite palavras do título
+            {tr('Cole um DOI, PMID (PubMed), link do PubMed, ISBN de livro ou digite palavras do título', 'Paste a DOI, PMID (PubMed), PubMed URL, book ISBN, or type title keywords')}
           </span>
           <div className="linha-form">
             <input
               autoFocus
               value={entrada}
               onChange={(e) => setEntrada(e.target.value)}
-              placeholder="Ex.: 10.1056/NEJMoa2034577  ou  33301246  ou  9788535902778  ou  título do artigo…"
+              placeholder={tr('Ex.: 10.1056/NEJMoa2034577  ou  33301246  ou  9788535902778  ou  título do artigo…', 'e.g., 10.1056/NEJMoa2034577  or  33301246  or  9788535902778  or  paper title…')}
             />
             <button type="submit" className="btn primario" disabled={carregando || !entrada.trim()}>
-              <Icone nome="search" tam={15} /> {carregando ? 'Buscando…' : 'Buscar / Importar'}
+              <Icone nome="search" tam={15} /> {carregando ? tr('Buscando…', 'Searching…') : tr('Buscar / Importar', 'Search / Import')}
             </button>
           </div>
         </label>
 
         <div className="linha-opcoes-rapido">
           <label className="campo-inline">
-            <span>Entrar como:</span>
+            <span>{tr('Entrar como:', 'Import as:')}</span>
             <select value={statusInicial} onChange={(e) => setStatusInicial(e.target.value)}>
-              <option value="a_ler">A ler</option>
-              <option value="consultada">Consultada (lida/fichada)</option>
-              <option value="citada">Citada (usada no texto)</option>
+              <option value="a_ler">{tr('A ler', 'To read')}</option>
+              <option value="consultada">{tr('Consultada (lida/fichada)', 'Consulted (read/noted)')}</option>
+              <option value="citada">{tr('Citada (usada no texto)', 'Cited (used in manuscript)')}</option>
             </select>
           </label>
           <div className="acoes-direita">
             <button type="button" className="btn secundario" onClick={escolherPdfs}>
-              <Icone nome="upload" tam={14} /> Arquivos PDF
+              <Icone nome="upload" tam={14} /> {tr('Arquivos PDF', 'PDF Files')}
             </button>
             <button
               type="button"
               className="btn secundario"
               onClick={escolherPastaComPdfs}
-              title="Escolhe uma pasta inteira do computador e importa todos os PDFs dentro dela"
+              title={tr('Escolhe uma pasta inteira do computador e importa todos os PDFs dentro dela', 'Select an entire folder and import all PDFs inside it')}
             >
-              <Icone nome="folder" tam={14} /> Pasta de PDFs
+              <Icone nome="folder" tam={14} /> {tr('Pasta de PDFs', 'PDF Folder')}
             </button>
             <button
               type="button"
@@ -140,11 +142,11 @@ export default function QuickAddModal({ onFechar, onImportarCsl, onImportarPdfs,
                 const res = await window.api.imp.escolherEImportar(statusInicial);
                 if (res?.importadas) {
                   await onRecarregar?.();
-                  avisar(`${res.importadas} referências importadas do arquivo RIS/BibTeX!`, 'ok');
+                  avisar(tr(`${res.importadas} referências importadas do arquivo RIS/BibTeX!`, `${res.importadas} references imported from RIS/BibTeX!`), 'ok');
                   onFechar();
                 }
               }}
-              title="Importar arquivo .ris, .nbib (PubMed) ou .bib (BibTeX) exportado das bases"
+              title={tr('Importar arquivo .ris, .nbib (PubMed) ou .bib (BibTeX) exportado das bases', 'Import .ris, .nbib (PubMed), or .bib (BibTeX) file')}
             >
               <Icone nome="file" tam={14} /> RIS / BibTeX
             </button>
@@ -157,7 +159,7 @@ export default function QuickAddModal({ onFechar, onImportarCsl, onImportarPdfs,
 
       {resultados.length > 0 && (
         <div className="lista-resultados-modal">
-          <h5>Resultados encontrados no Crossref — clique em Importar:</h5>
+          <h5>{tr('Resultados encontrados no Crossref — clique em Importar:', 'Crossref Matches — click Import:')}</h5>
           {resultados.map((r) => (
             <div key={r.doi} className="item-resultado-modal">
               <div>
@@ -167,7 +169,7 @@ export default function QuickAddModal({ onFechar, onImportarCsl, onImportarPdfs,
                 </div>
               </div>
               <button className="btn pequeno primario" onClick={() => importarDoResultado(r)} disabled={carregando}>
-                Importar
+                {tr('Importar', 'Import')}
               </button>
             </div>
           ))}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Icone } from './ui.jsx';
+import { useI18n } from '../i18n.jsx';
 
 export default function CommandPaletteModal({
   aberto,
@@ -14,6 +15,7 @@ export default function CommandPaletteModal({
   onMudarEstilo,
   estiloAtual,
 }) {
+  const { tr } = useI18n();
   const [busca, setBusca] = useState('');
   const [indiceFoco, setIndiceFoco] = useState(0);
   const inputRef = useRef(null);
@@ -33,70 +35,70 @@ export default function CommandPaletteModal({
         id: 'auditoria',
         tipo: 'comando',
         icone: 'search',
-        titulo: 'Auditoria Forense de Manuscrito (Anti-IA, Anti-Plágio & Páginas)',
-        categoria: 'Navegação',
+        titulo: tr('Auditoria Forense de Manuscrito (Anti-IA, Anti-Plágio & Páginas)', 'Manuscript Forensic Audit (Anti-AI, Anti-Plagiarism & Pages)'),
+        categoria: tr('Navegação', 'Navigation'),
         executar: () => onNavegarAba('auditoria'),
       },
       {
         id: 'exportar_word',
         tipo: 'comando',
         icone: 'file',
-        titulo: 'Exportar Citações & Bibliografia para Word (ABNT / Vancouver)',
-        categoria: 'Word & Citações',
+        titulo: tr('Exportar Citações & Bibliografia para Word (ABNT / Vancouver)', 'Export Citations & Bibliography to Word (ABNT / Vancouver)'),
+        categoria: tr('Word & Citações', 'Word & Citations'),
         executar: onAbrirExportarWord,
       },
       {
         id: 'integridade_jabref',
         tipo: 'comando',
         icone: 'settings',
-        titulo: '🛡️ Verificador de Integridade Bibliográfica do Catálogo (JabRef)',
-        categoria: 'Ferramentas JabRef',
+        titulo: `🛡️ ${tr('Verificador de Integridade Bibliográfica do Catálogo (JabRef)', 'Catalog Bibliographic Integrity Checker (JabRef)')}`,
+        categoria: tr('Ferramentas JabRef', 'JabRef Tools'),
         executar: onVerificarIntegridade,
       },
       {
         id: 'padronizar_pdfs',
         tipo: 'comando',
         icone: 'folder',
-        titulo: '📁 Padronizar Nomes de Todos os PDFs da Pasta (JabRef)',
-        categoria: 'Ferramentas JabRef',
+        titulo: `📁 ${tr('Padronizar Nomes de Todos os PDFs da Pasta (JabRef)', 'Standardize All PDF Filenames in Folder (JabRef)')}`,
+        categoria: tr('Ferramentas JabRef', 'JabRef Tools'),
         executar: onPadronizarPdfs,
       },
       {
         id: 'buscadores',
         tipo: 'comando',
         icone: 'search',
-        titulo: 'Buscadores Científicos (PubMed, SciELO, CAPES, Periódicos)',
-        categoria: 'Navegação',
+        titulo: tr('Buscadores Científicos (PubMed, SciELO, CAPES, Periódicos)', 'Scientific Search Engines (PubMed, SciELO, CAPES, Journals)'),
+        categoria: tr('Navegação', 'Navigation'),
         executar: () => onNavegarAba('buscadores'),
       },
       {
         id: 'biblioteca',
         tipo: 'comando',
         icone: 'library',
-        titulo: 'Ir para a Tabela da Biblioteca Principal',
-        categoria: 'Navegação',
+        titulo: tr('Ir para a Tabela da Biblioteca Principal', 'Go to Main Library Table'),
+        categoria: tr('Navegação', 'Navigation'),
         executar: () => onNavegarAba('biblioteca'),
       },
       {
         id: 'estilo_abnt',
         tipo: 'comando',
         icone: 'file',
-        titulo: 'Mudar Estilo Ativo para ABNT (NBR 6023/10520)',
-        subtitulo: estiloAtual?.includes('abnt') ? '✓ Atualmente selecionado' : '',
-        categoria: 'Estilos Bibliográficos',
+        titulo: tr('Mudar Estilo Ativo para ABNT (NBR 6023/10520)', 'Switch Active Style to ABNT (NBR 6023/10520)'),
+        subtitulo: estiloAtual?.includes('abnt') ? tr('✓ Atualmente selecionado', '✓ Currently selected') : '',
+        categoria: tr('Estilos Bibliográficos', 'Citation Styles'),
         executar: () => onMudarEstilo('abnt-ipea'),
       },
       {
         id: 'estilo_vancouver',
         tipo: 'comando',
         icone: 'file',
-        titulo: 'Mudar Estilo Ativo para Vancouver (Numérico)',
-        subtitulo: estiloAtual?.includes('vancouver') ? '✓ Atualmente selecionado' : '',
-        categoria: 'Estilos Bibliográficos',
+        titulo: tr('Mudar Estilo Ativo para Vancouver (Numérico)', 'Switch Active Style to Vancouver (Numeric)'),
+        subtitulo: estiloAtual?.includes('vancouver') ? tr('✓ Atualmente selecionado', '✓ Currently selected') : '',
+        categoria: tr('Estilos Bibliográficos', 'Citation Styles'),
         executar: () => onMudarEstilo('vancouver'),
       },
     ],
-    [onNavegarAba, onAbrirExportarWord, onVerificarIntegridade, onPadronizarPdfs, onMudarEstilo, estiloAtual]
+    [onNavegarAba, onAbrirExportarWord, onVerificarIntegridade, onPadronizarPdfs, onMudarEstilo, estiloAtual, tr]
   );
 
   // Filtra comandos e artigos pelo termo digitado
@@ -200,7 +202,7 @@ export default function CommandPaletteModal({
           <input
             ref={inputRef}
             type="text"
-            placeholder="Digite um comando, título ou autor… (↑↓ navega · Enter executa · Esc fecha)"
+            placeholder={tr('Digite um comando, título ou autor… (↑↓ navega · Enter executa · Esc fecha)', 'Type a command, title, or author… (↑↓ navigate · Enter run · Esc close)')}
             value={busca}
             onChange={(e) => {
               setBusca(e.target.value);
@@ -234,7 +236,7 @@ export default function CommandPaletteModal({
         <div style={{ maxHeight: 380, overflowY: 'auto', padding: '6px 0' }}>
           {resultados.length === 0 ? (
             <div style={{ padding: '24px 16px', textAlign: 'center', color: 'var(--texto-suave)', fontSize: 13 }}>
-              Nenhum comando ou artigo encontrado para "{busca}".
+              {tr('Nenhum comando ou artigo encontrado para', 'No commands or references found for')} "{busca}".
             </div>
           ) : (
             resultados.map((item, idx) => {
@@ -317,9 +319,9 @@ export default function CommandPaletteModal({
             color: 'var(--texto-suave)',
           }}
         >
-          <span>Paperlib Command Palette · <strong>Ctrl+K</strong></span>
+          <span>{tr('Paleta de Comandos', 'Command Palette')} · <strong>Ctrl+K</strong></span>
           <span>
-            Pressione <strong>Enter</strong> para selecionar
+            {tr('Pressione Enter para selecionar', 'Press Enter to select')}
           </span>
         </div>
       </div>

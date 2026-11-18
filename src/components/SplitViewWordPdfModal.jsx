@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as pdfjs from 'pdfjs-dist';
 import { autoresResumo, ano, semHtml } from '../lib/csl.js';
+import { useI18n } from '../i18n.jsx';
 
 export default function SplitViewWordPdfModal({
   dadosComparacao, // { refItem, paginaInicial, fraseWord, paragrafoCompleto, locWord, diagnostico, trechoPdf }
@@ -10,6 +11,7 @@ export default function SplitViewWordPdfModal({
   onMarcarResolvido,
   onMarcarIgnorado,
 }) {
+  const { tr } = useI18n();
   const canvasRef = useRef(null);
   const textLayerRef = useRef(null);
 
@@ -165,17 +167,17 @@ export default function SplitViewWordPdfModal({
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <strong style={{ fontSize: 14.5, color: 'var(--texto)' }}>
-                ⚖️ Comparador Lado a Lado: Seu Manuscrito Word ↔ Artigo Original (PDF)
+                ⚖️ {tr('Comparador Lado a Lado: Seu Manuscrito Word ↔ Artigo Original (PDF)', 'Side-by-Side Comparator: Your Word Manuscript ↔ Original Article (PDF)')}
               </strong>
               <span
                 className="tag-mini"
                 style={{ background: 'rgba(13, 148, 136, 0.12)', color: '#0f766e', border: '1px solid rgba(13, 148, 136, 0.3)', fontWeight: 700 }}
               >
-                🔗 Cruzamento Forense
+                🔗 {tr('Cruzamento Forense', 'Forensic Cross-Check')}
               </span>
             </div>
             <div style={{ fontSize: 12, color: 'var(--texto-suave)', marginTop: 2 }}>
-              <strong>Obra de Referência:</strong> {autorAno} — {tituloRef}
+              <strong>{tr('Obra de Referência:', 'Reference Work:')}</strong> {autorAno} — {tituloRef}
             </div>
           </div>
 
@@ -189,7 +191,7 @@ export default function SplitViewWordPdfModal({
                   onAbrirEditorResolucao();
                 }}
               >
-                🛠️ Editar / Corrigir Texto
+                🛠️ {tr('Editar / Corrigir Texto', 'Edit / Fix Text')}
               </button>
             )}
             {onAbrirNoWord && (
@@ -198,7 +200,7 @@ export default function SplitViewWordPdfModal({
                 className="btn pequeno secundario"
                 onClick={onAbrirNoWord}
               >
-                📂 Ir para o Ponto no Word
+                📂 {tr('Ir para o Ponto no Word', 'Go to Spot in Word')}
               </button>
             )}
             <button
@@ -206,7 +208,7 @@ export default function SplitViewWordPdfModal({
               className="btn pequeno fantasma"
               onClick={onFechar}
               style={{ fontSize: 16, fontWeight: 700, padding: '4px 10px' }}
-              title="Fechar comparador (Esc)"
+              title={tr('Fechar comparador (Esc)', 'Close comparator (Esc)')}
             >
               ✕
             </button>
@@ -248,7 +250,7 @@ export default function SplitViewWordPdfModal({
                   borderRadius: 4,
                 }}
               >
-                📝 Lado Esquerdo: O que está escrito no seu Word
+                📝 {tr('Lado Esquerdo: O que está escrito no seu Word', 'Left Pane: What is written in Word')}
               </span>
               {dadosComparacao.locWord && (
                 <span style={{ fontSize: 11.5, fontWeight: 600, color: 'var(--texto-suave)' }}>
@@ -286,7 +288,7 @@ export default function SplitViewWordPdfModal({
               }}
             >
               <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--texto-suave)', textTransform: 'uppercase', marginBottom: 6 }}>
-                Trecho citado no manuscrito:
+                {tr('Trecho citado no manuscrito:', 'Cited passage in manuscript:')}
               </div>
               <div style={{ borderLeft: '3px solid #2563eb', paddingLeft: 10, fontStyle: 'italic' }}>
                 "{dadosComparacao.fraseWord || dadosComparacao.paragrafoCompleto}"
@@ -306,7 +308,7 @@ export default function SplitViewWordPdfModal({
                 }}
               >
                 <div style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', marginBottom: 4 }}>
-                  Parágrafo completo no Word:
+                  {tr('Parágrafo completo no Word:', 'Full paragraph in Word:')}
                 </div>
                 {dadosComparacao.paragrafoCompleto}
               </div>
@@ -324,7 +326,7 @@ export default function SplitViewWordPdfModal({
                 }}
               >
                 <strong style={{ color: '#15803d', fontSize: 11.5 }}>
-                  ✅ Passagem mais próxima localizada automaticamente no PDF:
+                  ✅ {tr('Passagem mais próxima localizada automaticamente no PDF:', 'Closest passage automatically matched in PDF:')}
                 </strong>
                 <div style={{ marginTop: 4, fontStyle: 'italic', color: 'var(--texto)' }}>
                   "{dadosComparacao.trechoPdf}"
@@ -340,7 +342,7 @@ export default function SplitViewWordPdfModal({
                   style={{ background: '#dcfce7', color: '#15803d', borderColor: '#86efac', fontWeight: 700 }}
                   onClick={() => { onMarcarResolvido(); onFechar(); }}
                 >
-                  ✓ Já Corrigi / Resolvido
+                  ✓ {tr('Já Corrigi / Resolvido', 'Fixed / Resolved')}
                 </button>
               )}
               {onMarcarIgnorado && (
@@ -349,7 +351,7 @@ export default function SplitViewWordPdfModal({
                   className="btn pequeno secundario"
                   onClick={() => { onMarcarIgnorado(); onFechar(); }}
                 >
-                  🚫 Falso Positivo / Ignorar Alerta
+                  🚫 {tr('Falso Positivo / Ignorar Alerta', 'False Positive / Ignore Alert')}
                 </button>
               )}
             </div>

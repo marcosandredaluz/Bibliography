@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useI18n } from '../i18n.jsx';
 
 /**
  * Faixa de Tutorial Passo a Passo Contextual para o topo de telas/etapas do sistema.
  * Pode ser recolhida/expandida pelo usuário e lembra a preferência no localStorage.
  */
 export function TutorialEtapa({ idEtapa, titulo, resumo, passos = [], abertoPorPadrao = true, acoesExtras = null }) {
+  const { tr } = useI18n();
   const chaveStorage = `bib_tutorial_etapa_${idEtapa}`;
   const [aberto, setAberto] = useState(() => {
     try {
@@ -26,12 +28,12 @@ export function TutorialEtapa({ idEtapa, titulo, resumo, passos = [], abertoPorP
     <div className={`tutorial-etapa-box ${aberto ? 'aberto' : 'fechado'}`}>
       <div className="tutorial-etapa-cabecalho" onClick={alternar}>
         <div className="tutorial-etapa-titulo">
-          <span className="badge-tutorial-etapa">📖 TUTORIAL DESTA ETAPA</span>
+          <span className="badge-tutorial-etapa">📖 {tr('TUTORIAL DESTA ETAPA', 'STEP-BY-STEP GUIDE')}</span>
           <strong>{titulo}</strong>
           {!aberto && <span className="tutorial-etapa-resumo">— {resumo}</span>}
         </div>
         <button type="button" className="btn-toggle-tutorial">
-          {aberto ? '▲ Ocultar passo a passo' : '▼ Ver passo a passo desta tela'}
+          {aberto ? tr('▲ Ocultar passo a passo', '▲ Hide step-by-step') : tr('▼ Ver passo a passo desta tela', '▼ Show screen walkthrough')}
         </button>
       </div>
 
@@ -55,7 +57,7 @@ export function TutorialEtapa({ idEtapa, titulo, resumo, passos = [], abertoPorP
                         p.acao();
                       }}
                     >
-                      {p.rotuloAcao || '⚡ Fazer agora'}
+                      {p.rotuloAcao || tr('⚡ Fazer agora', '⚡ Do this now')}
                     </button>
                   )}
                 </div>
@@ -229,6 +231,7 @@ export default function HelpGuideView({
   aoAbrirModalEstilos,
   aoAbrirModalCadastro,
 }) {
+  const { tr } = useI18n();
   const [modoGuia, setModoGuia] = useState('tutorial'); // 'tutorial' | 'manual'
   const [etapaAtiva, setEtapaAtiva] = useState('etapa-nuvem');
   const [buscaManual, setBuscaManual] = useState('');
@@ -286,9 +289,9 @@ export default function HelpGuideView({
       {/* BANNER SUPERIOR COM SELETOR DE MODO */}
       <div className="guia-banner">
         <div>
-          <h2>📚 Manual de Operação &amp; Tutorial Didático Interativo (v1.2.0)</h2>
+          <h2>📚 {tr('Manual de Operação & Tutorial Didático Interativo (v1.2.0)', 'Operations Manual & Interactive Walkthrough (v1.2.0)')}</h2>
           <p>
-            Instruções completas cobrindo os <strong>6 módulos essenciais</strong> do sistema: Sincronização na Nuvem, Activity Rail, Leitor de PDFs, Auditoria Reversa Forense, Citações Word e PRISMA 2020.
+            {tr('Instruções completas cobrindo os 6 módulos essenciais do sistema: Sincronização na Nuvem, Activity Rail, Leitor de PDFs, Auditoria Reversa Forense, Citações Word e PRISMA 2020.', 'Complete instructions covering the 6 core modules: Cloud Sync, Activity Rail, PDF Reader, Forensic Reverse Audit, Word Citations, and PRISMA 2020.')}
           </p>
         </div>
         <div className="guia-banner-acoes" style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
@@ -297,14 +300,14 @@ export default function HelpGuideView({
             className={modoGuia === 'tutorial' ? 'aba-modo-guia ativa' : 'aba-modo-guia'}
             onClick={() => setModoGuia('tutorial')}
           >
-            🎯 1. Roteiro Passo a Passo Interativo
+            🎯 1. {tr('Roteiro Passo a Passo Interativo', 'Interactive Step-by-Step Guide')}
           </button>
           <button
             type="button"
             className={modoGuia === 'manual' ? 'aba-modo-guia ativa' : 'aba-modo-guia'}
             onClick={() => setModoGuia('manual')}
           >
-            📖 2. Manual Completo para Leitura
+            📖 2. {tr('Manual Completo para Leitura', 'Full Reference Manual')}
           </button>
           <button
             type="button"
@@ -319,7 +322,7 @@ export default function HelpGuideView({
             }}
             onClick={() => irParaAba('biblioteca')}
           >
-            📚 Abrir Minha Biblioteca
+            📚 {tr('Abrir Minha Biblioteca', 'Open My Library')}
           </button>
         </div>
       </div>
@@ -329,21 +332,21 @@ export default function HelpGuideView({
         <div className="manual-leitura-container">
           <div className="manual-leitura-topo">
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, flex: 1 }}>
-              <strong>🔍 Buscar no Manual:</strong>
+              <strong>🔍 {tr('Buscar no Manual:', 'Search Manual:')}</strong>
               <input
                 value={buscaManual}
                 onChange={(e) => setBuscaManual(e.target.value)}
-                placeholder="Ex.: nuvem, rail, PDF, ABNT, reversa, plágio, Word, PRISMA…"
+                placeholder={tr('Ex.: nuvem, rail, PDF, ABNT, reversa, plágio, Word, PRISMA…', 'e.g. cloud, rail, PDF, ABNT, audit, plagiarism, Word, PRISMA…')}
                 style={{ flex: 1, maxWidth: 440, padding: '7px 12px', borderRadius: 6, border: '1px solid var(--borda)' }}
               />
               {buscaManual && (
                 <button type="button" className="btn pequeno" onClick={() => setBuscaManual('')}>
-                  Limpar
+                  {tr('Limpar', 'Clear')}
                 </button>
               )}
             </div>
             <button type="button" className="btn secundario" onClick={copiarManualCompleto}>
-              📋 Copiar Manual Completo (para Word / Impressão)
+              📋 {tr('Copiar Manual Completo (para Word / Impressão)', 'Copy Full Manual (for Word / Print)')}
             </button>
           </div>
 

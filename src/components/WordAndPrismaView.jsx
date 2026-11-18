@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Icone, useAviso } from './ui.jsx';
-import { autoresResumo, ano, semHtml, normalizar } from '../lib/csl.js';
+import { autoresResumo, ano, semHtml, normalizar, rotuloStatus } from '../lib/csl.js';
+import { useI18n } from '../i18n.jsx';
 
 const MOTIVOS_EXCLUSAO = [
   'Fora do escopo / PICO',
@@ -13,6 +14,7 @@ const MOTIVOS_EXCLUSAO = [
 
 export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, onMudarEstilo, onAtualizarRef, onRecarregar }) {
   const avisar = useAviso();
+  const { tr } = useI18n();
   const [infoWord, setInfoWord] = useState(null);
   const [sempreNoTopo, setSempreNoTopo] = useState(false);
   const [nomeDoc, setNomeDoc] = useState(documentos[0]?.titulo || 'Tese / Artigo Principal');
@@ -237,9 +239,9 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
     <div className="central-buscadores">
       <div className="topo-buscadores">
         <div>
-          <h2>Integração Nativa com o Microsoft Word (ABNT, APA 7ª ed., Vancouver)</h2>
+          <h2>{tr('Integração Nativa com o Microsoft Word (ABNT, APA 7ª ed., Vancouver)', 'Native Microsoft Word Integration (APA 7th, Vancouver, ABNT)')}</h2>
           <p className="subtitulo">
-            Injete citações direto no cursor do Word como <strong>Campos dinâmicos (estilo Zotero/Mendeley)</strong> ou copie via ponte local na porta <code>{infoWord?.porta || 23119}</code>.
+            {tr('Injete citações direto no cursor do Word como', 'Inject citations directly at the Word cursor as')} <strong>{tr('Campos dinâmicos (estilo Zotero/Mendeley)', 'dynamic fields (Zotero/Mendeley style)')}</strong> {tr('ou copie via ponte local na porta', 'or sync via local HTTP bridge on port')} <code>{infoWord?.porta || 23119}</code>.
           </p>
         </div>
         <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
@@ -253,23 +255,23 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
               fontWeight: 600,
               border: '1px solid #86efac',
             }}
-            title={infoWord?.telemetria?.ultimaAtividadeEm ? `Última comunicação Word: ${infoWord.telemetria.ultimaAtividadeEm}` : 'Servidor HTTP local pronto'}
+            title={infoWord?.telemetria?.ultimaAtividadeEm ? `${tr('Última comunicação Word:', 'Last Word activity:')} ${infoWord.telemetria.ultimaAtividadeEm}` : tr('Servidor HTTP local pronto', 'Local HTTP bridge ready')}
           >
-            ● Ponte Word :{infoWord?.porta || 23119} Ativa
+            ● {tr('Ponte Word', 'Word Bridge')} :{infoWord?.porta || 23119} {tr('Ativa', 'Online')}
           </span>
           <button className="btn fantasma" onClick={() => setMostrarPlugIns((v) => !v)}>
-            🔌 {mostrarPlugIns ? 'Ocultar Extensão Word (.dotm / Office.js)' : dotmInstalado ? '✓ Extensão Word (.dotm) Ativa' : 'Instalar Extensão no Word (.dotm)'}
+            🔌 {mostrarPlugIns ? tr('Ocultar Extensão Word (.dotm / Office.js)', 'Hide Word Extension (.dotm / Office.js)') : dotmInstalado ? tr('✓ Extensão Word (.dotm) Ativa', '✓ Word Extension (.dotm) Active') : tr('Instalar Extensão no Word (.dotm)', 'Install Word Extension (.dotm)')}
           </button>
           <button
             className="btn secundario"
             onClick={() => window.api.word.abrirSeletorRapido()}
-            title="Abre o Seletor Rápido de Citações (também acessível direto do Word com Ctrl+Shift+B)"
+            title={tr('Abre o Seletor Rápido de Citações (também acessível direto do Word com Ctrl+Shift+B)', 'Open Quick Citation Picker (global hotkey Ctrl+Shift+B)')}
           >
-            ⚡ Seletor Rápido ({infoWord?.atalhoGlobal || 'Ctrl+Shift+B'})
+            ⚡ {tr('Seletor Rápido', 'Quick Citator')} ({infoWord?.atalhoGlobal || 'Ctrl+Shift+B'})
           </button>
           <button className={`btn ${sempreNoTopo ? 'primario' : 'secundario'}`} onClick={alternarTopo}>
             <Icone nome="external" tam={14} />{' '}
-            {sempreNoTopo ? 'Fixado no Topo (Ativo)' : 'Fixar janela ao lado do Word'}
+            {sempreNoTopo ? tr('Fixado no Topo (Ativo)', 'Always on Top (Active)') : tr('Fixar janela ao lado do Word', 'Pin Window Side-by-Side')}
           </button>
         </div>
       </div>
@@ -279,7 +281,7 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 12 }}>
             <div style={{ flex: 1, minWidth: 280 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
-                <strong>Extensão Nativa no Microsoft Word (Aba "Bibliografia Forense" estilo Zotero &amp; Mendeley)</strong>
+                <strong>{tr('Extensão Nativa no Microsoft Word (Aba "Bibliografia Forense" estilo Zotero & Mendeley)', 'Native Microsoft Word Extension (Fluent Ribbon Tab)')}</strong>
                 <span
                   className="pill-contagem"
                   style={{
@@ -287,47 +289,50 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
                     color: dotmInstalado ? '#166534' : '#92400e',
                   }}
                 >
-                  {dotmInstalado ? '✓ Instalada no STARTUP do Word' : 'Ainda não instalada no Word'}
+                  {dotmInstalado ? tr('✓ Instalada no STARTUP do Word', '✓ Installed in Word STARTUP') : tr('Ainda não instalada no Word', 'Not yet installed in Word')}
                 </span>
               </div>
               <div style={{ fontSize: 12.5, color: '#475569', marginTop: 6, lineHeight: 1.45 }}>
-                • <strong>Aba Ribbon no Word (<code>Bibliografia.dotm</code>):</strong> instala na pasta de inicialização do Word (<code>{infoWord.pastaStartupWord || '%APPDATA%\\Microsoft\\Word\\STARTUP'}</code>) para adicionar botões nativos de Citar, Atualizar Norma, Inserir Referências e Grifar Erros/IA dentro do Word.<br />
-                • <strong>Atalho Instantâneo Sem Macro (<code>{infoWord.atalhoGlobal || 'Ctrl+Shift+B'}</code>):</strong>{' '}
+                • <strong>{tr('Aba Ribbon no Word', 'Word Ribbon Tab')} (<code>Bibliografia.dotm</code>):</strong> {tr('instala na pasta de inicialização do Word', 'installs in the Word startup folder')} (<code>{infoWord.pastaStartupWord || '%APPDATA%\\Microsoft\\Word\\STARTUP'}</code>) {tr('para adicionar botões nativos de Citar, Atualizar Norma, Inserir Referências e Grifar Erros/IA dentro do Word.', 'to add native buttons for Cite, Update Standard, Insert References, and Highlight Errors/AI inside Word.')}<br />
+                • <strong>{tr('Atalho Instantâneo Sem Macro', 'Instant Macro-Free Shortcut')} (<code>{infoWord.atalhoGlobal || 'Ctrl+Shift+B'}</code>):</strong>{' '}
                 <button
                   type="button"
                   onClick={alternarAtalhoZotero}
                   style={{ border: 'none', background: 'none', color: '#2563eb', fontWeight: 600, cursor: 'pointer', padding: 0, textDecoration: 'underline' }}
                 >
-                  {infoWord.atalhoAtivo ? 'Ativo (clique p/ desativar)' : 'Desativado (clique p/ ativar)'}
+                  {infoWord.atalhoAtivo ? tr('Ativo (clique p/ desativar)', 'Active (click to disable)') : tr('Desativado (clique p/ ativar)', 'Disabled (click to enable)')}
                 </button>{' '}
-                — funciona dentro do Word mesmo se sua instituição bloquear macros VBA!
+                — {tr('funciona dentro do Word mesmo se sua instituição bloquear macros VBA!', 'works inside Word even if your institution blocks VBA macros!')}
               </div>
 
               {avisoTrustVba && (
                 <div style={{ marginTop: 10, padding: '8px 10px', borderRadius: 6, background: '#fffbeb', border: '1px solid #f59e0b', fontSize: 12.5, color: '#78350f' }}>
-                  <strong>Permissão necessária no Word para compilar o <code>.dotm</code> automaticamente:</strong><br />
-                  No Microsoft Word, acesse <em>Arquivo → Opções → Central de Confiabilidade → Configurações da Central de Confiabilidade → Configurações de Macro</em> e marque <strong>"Confiar no acesso ao modelo de objeto do projeto do VBA"</strong>. Depois clique novamente em <strong>"🔨 Compilar &amp; Instalar no Word"</strong> (ou importe manualmente <code>Bibliografia.bas</code> via <code>Alt+F11</code>, salve como <code>Bibliografia.dotm</code> e clique em "Selecionar .dotm pronto").
+                  <strong>{tr('Permissão necessária no Word para compilar o', 'Permission needed in Word to compile')} <code>.dotm</code> {tr('automaticamente:', 'automatically:')}</strong><br />
+                  {tr(
+                    'No Microsoft Word, acesse Arquivo → Opções → Central de Confiabilidade → Configurações da Central de Confiabilidade → Configurações de Macro e marque "Confiar no acesso ao modelo de objeto do projeto do VBA". Depois clique novamente em "🔨 Compilar & Instalar no Word" (ou importe manualmente Bibliografia.bas via Alt+F11, salve como Bibliografia.dotm e clique em "Selecionar .dotm pronto").',
+                    'In Microsoft Word, go to File → Options → Trust Center → Trust Center Settings → Macro Settings and check "Trust access to the VBA project object model". Then click "🔨 Generate & Install Extension (.dotm)" again (or manually import Bibliografia.bas via Alt+F11, save as Bibliografia.dotm, and click "Select ready .dotm").'
+                  )}
                 </div>
               )}
             </div>
 
             <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>
               <button className="btn pequeno primario" onClick={instalarExtensaoWord} disabled={instalandoExtensao}>
-                {instalandoExtensao ? 'Gerando .dotm…' : dotmInstalado ? '🔄 Reinstalar / Atualizar .dotm no Word' : '🔨 Gerar & Instalar Extensão (.dotm)'}
+                {instalandoExtensao ? tr('Gerando .dotm…', 'Generating .dotm…') : dotmInstalado ? tr('🔄 Reinstalar / Atualizar .dotm no Word', '🔄 Reinstall / Update .dotm in Word') : tr('🔨 Gerar & Instalar Extensão (.dotm)', '🔨 Generate & Install Extension (.dotm)')}
               </button>
               <button className="btn pequeno secundario" onClick={importarDotmPronto}>
-                📥 Selecionar .dotm pronto
+                📥 {tr('Selecionar .dotm pronto', 'Select ready .dotm')}
               </button>
               {dotmInstalado && (
                 <button className="btn pequeno fantasma" onClick={removerExtensaoDoWord} style={{ color: '#b91c1c' }}>
-                  🗑️ Remover do Word
+                  🗑️ {tr('Remover do Word', 'Remove from Word')}
                 </button>
               )}
               <button className="btn pequeno fantasma" onClick={() => window.api.word.abrirPastaVba()}>
-                <Icone nome="folder" tam={13} /> Pasta VBA (.bas / customUI)
+                <Icone nome="folder" tam={13} /> {tr('Pasta VBA (.bas / customUI)', 'VBA Folder (.bas / customUI)')}
               </button>
               <button className="btn pequeno fantasma" onClick={() => window.api.word.mostrarManifesto()}>
-                <Icone nome="folder" tam={13} /> Manifesto Office.js
+                <Icone nome="folder" tam={13} /> {tr('Manifesto Office.js', 'Office.js Manifest')}
               </button>
             </div>
           </div>
@@ -338,15 +343,15 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
       <div className="bloco-proxy">
         <div className="grade-3">
           <label className="campo">
-            <span className="campo-rotulo">Documento / Manuscrito ativo</span>
+            <span className="campo-rotulo">{tr('Documento / Manuscrito ativo', 'Active Document / Manuscript')}</span>
             <input
               value={nomeDoc}
               onChange={(e) => setNomeDoc(e.target.value)}
-              placeholder="Ex.: Dissertação - Cap. 2"
+              placeholder={tr('Ex.: Dissertação - Cap. 2', 'e.g. Thesis - Ch. 2')}
             />
           </label>
           <label className="campo">
-            <span className="campo-rotulo">Norma de formatação do documento</span>
+            <span className="campo-rotulo">{tr('Norma de formatação do documento', 'Document formatting standard')}</span>
             <select value={estilo} onChange={(e) => onMudarEstilo(e.target.value)}>
               {estilos.map((e) => (
                 <option key={e.id} value={e.id}>
@@ -356,11 +361,11 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
             </select>
           </label>
           <label className="campo">
-            <span className="campo-rotulo">Página p/ citação direta (opcional)</span>
+            <span className="campo-rotulo">{tr('Página p/ citação direta (opcional)', 'Page for direct quote (optional)')}</span>
             <input
               value={pagina}
               onChange={(e) => setPagina(e.target.value)}
-              placeholder="Ex.: 45 (gera SILVA, 2023, p. 45)"
+              placeholder={tr('Ex.: 45 (gera SILVA, 2023, p. 45)', 'e.g. 45 (produces SILVA, 2023, p. 45)')}
             />
           </label>
         </div>
@@ -368,16 +373,16 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10, marginTop: 8 }}>
           <div className="barra-pdf">
             <button className="btn primario" onClick={() => inserirOuCopiarListaWord('citadas')}>
-              <Icone nome="copy" tam={14} /> 1. Inserir/Copiar REFERÊNCIAS ({citadasCount} Citadas)
+              <Icone nome="copy" tam={14} /> 1. {tr('Inserir/Copiar REFERÊNCIAS', 'Insert/Copy REFERENCES')} ({citadasCount} {tr('Citadas', 'Cited')})
             </button>
             <button className="btn secundario" onClick={() => inserirOuCopiarListaWord('consultadas')}>
-              <Icone nome="copy" tam={14} /> 2. Inserir/Copiar CONSULTADAS ({consultadasCount})
+              <Icone nome="copy" tam={14} /> 2. {tr('Inserir/Copiar CONSULTADAS', 'Insert/Copy CONSULTED')} ({consultadasCount})
             </button>
             <button className="btn secundario" onClick={atualizarCamposWordAberto} disabled={atualizandoCampos}>
-              🔄 {atualizandoCampos ? 'Atualizando Campos no Word…' : 'Atualizar Campos & Norma no Word Aberto'}
+              🔄 {atualizandoCampos ? tr('Atualizando Campos no Word…', 'Updating Word Fields…') : tr('Atualizar Campos & Norma no Word Aberto', 'Update Fields & Style in Open Word')}
             </button>
             <button className="btn fantasma" onClick={abrirExtratorDocx} disabled={extraindoDocx} style={{ border: '1px solid #cbd5e1' }}>
-              🔍 {extraindoDocx ? 'Extraindo XML do Word…' : 'Extrair Citações / Campos de .DOCX (Ref-Extractor)'}
+              🔍 {extraindoDocx ? tr('Extraindo XML do Word…', 'Extracting Word XML…') : tr('Extrair Citações / Campos de .DOCX (Ref-Extractor)', 'Extract Citations / Fields from .DOCX (Ref-Extractor)')}
             </button>
           </div>
 
@@ -387,7 +392,7 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
               checked={usarCampoNativo}
               onChange={(e) => setUsarCampoNativo(e.target.checked)}
             />
-            Inserir como Campo protegido no Word aberto (<code>wdFieldAddin</code>)
+            {tr('Inserir como Campo protegido no Word aberto', 'Insert as protected Field in open Word')} (<code>wdFieldAddin</code>)
           </label>
         </div>
       </div>
@@ -397,10 +402,10 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
         <div className="bloco-cofre" style={{ borderLeft: '4px solid #0d9488' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10, marginBottom: 10 }}>
             <div>
-              <strong>🔍 Extrator Reverso de Citações ({extracaoDocx.nomeArquivo})</strong>
+              <strong>🔍 {tr('Extrator Reverso de Citações', 'Reverse Citation Extractor')} ({extracaoDocx.nomeArquivo})</strong>
               <div style={{ fontSize: 12, color: '#475569', marginTop: 2 }}>
-                Modo: <strong>{extracaoDocx.origemModo === 'campos_dinamicos' ? 'Campos Dinâmicos XML (Zotero / Mendeley / EndNote / Bibliografia)' : 'Referências Estáticas (ABNT/Vancouver)'}</strong> ·{' '}
-                Total: <strong>{extracaoDocx.resumo.totalObrasUnicas}</strong> obra(s) · Já na biblioteca: <strong>{extracaoDocx.resumo.jaNaBiblioteca}</strong> · Novas: <strong>{extracaoDocx.resumo.novasParaImportar}</strong>
+                {tr('Modo:', 'Mode:')} <strong>{extracaoDocx.origemModo === 'campos_dinamicos' ? tr('Campos Dinâmicos XML (Zotero / Mendeley / EndNote / Bibliografia)', 'Dynamic XML Fields (Zotero / Mendeley / EndNote / Bibliografia)') : tr('Referências Estáticas (ABNT/Vancouver)', 'Static References (ABNT/Vancouver)')}</strong> ·{' '}
+                Total: <strong>{extracaoDocx.resumo.totalObrasUnicas}</strong> {tr('obra(s)', 'work(s)')} · {tr('Já na biblioteca:', 'Already in library:')} <strong>{extracaoDocx.resumo.jaNaBiblioteca}</strong> · {tr('Novas:', 'New:')} <strong>{extracaoDocx.resumo.novasParaImportar}</strong>
               </div>
             </div>
             <div style={{ display: 'flex', gap: 8 }}>
@@ -409,10 +414,10 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
                 onClick={importarExtraidasParaBiblioteca}
                 disabled={importandoExtracao || !extracaoDocx.itens.length}
               >
-                {importandoExtracao ? 'Importando…' : `📥 Importar / Sincronizar (${extracaoDocx.resumo.totalObrasUnicas}) como Citadas`}
+                {importandoExtracao ? tr('Importando…', 'Importing…') : `📥 ${tr('Importar / Sincronizar', 'Import / Sync')} (${extracaoDocx.resumo.totalObrasUnicas}) ${tr('como Citadas', 'as Cited')}`}
               </button>
               <button className="btn pequeno fantasma" onClick={() => setExtracaoDocx(null)}>
-                Fechar
+                {tr('Fechar', 'Close')}
               </button>
             </div>
           </div>
@@ -435,10 +440,10 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
                 <div style={{ fontSize: 12.5 }}>
                   <strong>{it.csl?.title || it.textoOriginal}</strong>
                   <div style={{ fontSize: 11.5, color: '#64748b' }}>
-                    {it.csl?.author?.[0]?.family || it.csl?.author?.[0]?.literal || 'Autor n/d'} ·{' '}
-                    {it.csl?.issued?.['date-parts']?.[0]?.[0] || 's.d.'} ·{' '}
+                    {it.csl?.author?.[0]?.family || it.csl?.author?.[0]?.literal || tr('Autor n/d', 'Author n/a')} ·{' '}
+                    {it.csl?.issued?.['date-parts']?.[0]?.[0] || tr('s.d.', 'n.d.')} ·{' '}
                     {it.csl?.DOI ? `DOI: ${it.csl.DOI} · ` : ''}
-                    Citada {it.ocorrencias}x ({it.origens.join(', ')})
+                    {tr('Citada', 'Cited')} {it.ocorrencias}x ({it.origens.join(', ')})
                   </div>
                 </div>
                 <span
@@ -449,7 +454,7 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
                     whiteSpace: 'nowrap',
                   }}
                 >
-                  {it.naBiblioteca ? '✓ Na Biblioteca' : '+ Nova p/ Importar'}
+                  {it.naBiblioteca ? tr('✓ Na Biblioteca', '✓ In Library') : tr('+ Nova p/ Importar', '+ New to Import')}
                 </span>
               </div>
             ))}
@@ -460,21 +465,21 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
       {/* Lista rápida para citar em 1 clique (com suporte a multi-citação composta) */}
       <div className="bloco-cofre">
         <div className="barra-lista" style={{ marginBottom: 10, flexWrap: 'wrap', gap: 8 }}>
-          <strong>Clique em "⚡ Citar no Word" para injetar no cursor / copiar e já marcar como Citada:</strong>
+          <strong>{tr('Clique em "⚡ Citar no Word" para injetar no cursor / copiar e já marcar como Citada:', 'Click "⚡ Cite in Word" to inject at cursor / copy and mark as Cited:')}</strong>
           <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
             {selecionadasComposta.size >= 2 && (
               <button
                 className="btn pequeno primario"
                 onClick={() => citarIdsNoWord([...selecionadasComposta])}
               >
-                ⚡ Citar {selecionadasComposta.size} juntas no Word
+                ⚡ {tr('Citar', 'Cite')} {selecionadasComposta.size} {tr('juntas no Word', 'together in Word')}
               </button>
             )}
             <input
               style={{ width: 320, padding: '5px 10px', borderRadius: 6, border: '1px solid #cbd5e1' }}
               value={busca}
               onChange={(e) => setBusca(e.target.value)}
-              placeholder="Buscar por autor, título ou ano…"
+              placeholder={tr('Buscar por autor, título ou ano…', 'Search by author, title, or year…')}
             />
           </div>
         </div>
@@ -505,10 +510,10 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
                     color: r.status === 'citada' ? '#166534' : r.status === 'consultada' ? '#1e40af' : '#475569',
                   }}
                 >
-                  {r.status === 'citada' ? '✓ Citada' : r.status === 'consultada' ? 'Consultada' : 'A ler'}
+                  {r.status === 'citada' ? tr('✓ Citada', '✓ Cited') : r.status === 'consultada' ? tr('Consultada', 'Consulted') : tr('A ler', 'To Read')}
                 </span>
                 <button className="btn pequeno primario" onClick={() => citarIdsNoWord([r.id])}>
-                  <Icone nome="copy" tam={13} /> ⚡ Citar no Word
+                  <Icone nome="copy" tam={13} /> ⚡ {tr('Citar no Word', 'Cite in Word')}
                 </button>
               </div>
             </div>
@@ -521,6 +526,7 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
 
 export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
   const avisar = useAviso();
+  const { tr } = useI18n();
   const [aba, setAba] = useState('duplicatas'); // 'duplicatas' | 'triagem' | 'prisma'
   const [historicoBuscas, setHistoricoBuscas] = useState([]);
   const [motivoPadrao, setMotivoPadrao] = useState(MOTIVOS_EXCLUSAO[0]);
@@ -740,17 +746,17 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
       {/* Topo informativo */}
       <div className="topo-buscadores">
         <div>
-          <h2>Triagem Sistemática em Duplo-Cego, Deduplicação Segura &amp; Fluxograma PRISMA 2020</h2>
+          <h2>{tr('Triagem Sistemática em Duplo-Cego, Deduplicação Segura & Fluxograma PRISMA 2020', 'Double-Blind Systematic Screening, Safe Deduplication & PRISMA 2020 Flowchart')}</h2>
           <p className="subtitulo">
-            Gestão metodológica completa da sua revisão: remova duplicatas sem perder notas e PDFs, faça a triagem rápida de resumos e gere o fluxograma oficial para publicação.
+            {tr('Gestão metodológica completa da sua revisão: remova duplicatas sem perder notas e PDFs, faça a triagem rápida de resumos e gere o fluxograma oficial para publicação.', 'Complete methodological management for your review: remove duplicates without losing notes and PDFs, screen abstracts rapidly, and generate the official flowchart for publication.')}
           </p>
         </div>
         <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
           <button className="btn primario" onClick={copiarRelatorioPrisma}>
-            <Icone nome="copy" tam={14} /> Copiar Relatório (.DOCX)
+            <Icone nome="copy" tam={14} /> {tr('Copiar Relatório (.DOCX)', 'Copy Report (.DOCX)')}
           </button>
           <button className="btn secundario" onClick={copiarTabelaMarkdown}>
-            <Icone nome="copy" tam={14} /> Copiar Tabela Markdown
+            <Icone nome="copy" tam={14} /> {tr('Copiar Tabela Markdown', 'Copy Markdown Table')}
           </button>
         </div>
       </div>
@@ -761,8 +767,8 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
           className={`prisma-passo-card ${aba === 'duplicatas' ? 'ativo' : ''}`}
           onClick={() => setAba('duplicatas')}
         >
-          <strong>1. Desduplicação Segura</strong>
-          <span>Une cópias sem perder PDFs, anotações ou tags</span>
+          <strong>1. {tr('Desduplicação Segura', 'Safe Deduplication')}</strong>
+          <span>{tr('Une cópias sem perder PDFs, anotações ou tags', 'Merges copies without losing PDFs, notes, or tags')}</span>
           <div
             className="prisma-passo-badge"
             style={{
@@ -770,7 +776,7 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
               color: gruposDuplicados.length > 0 ? '#92400e' : '#166534',
             }}
           >
-            {gruposDuplicados.length > 0 ? `${gruposDuplicados.length} grupos duplicados` : '✓ 0 duplicatas'}
+            {gruposDuplicados.length > 0 ? `${gruposDuplicados.length} ${tr('grupos duplicados', 'duplicate groups')}` : tr('✓ 0 duplicatas', '✓ 0 duplicates')}
           </div>
         </div>
 
@@ -778,8 +784,8 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
           className={`prisma-passo-card ${aba === 'triagem' ? 'ativo' : ''}`}
           onClick={() => setAba('triagem')}
         >
-          <strong>2. Triagem de Títulos e Resumos (Duplo-Cego)</strong>
-          <span>Avalie títulos e resumos: inclua ou exclua com motivo</span>
+          <strong>2. {tr('Triagem de Títulos e Resumos (Duplo-Cego)', 'Title & Abstract Screening (Double-Blind)')}</strong>
+          <span>{tr('Avalie títulos e resumos: inclua ou exclua com motivo', 'Evaluate titles and abstracts: include or exclude with reason')}</span>
           <div
             className="prisma-passo-badge"
             style={{
@@ -787,7 +793,7 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
               color: pendentesTriagem.length > 0 ? '#1e40af' : '#64748b',
             }}
           >
-            {pendentesTriagem.length} pendentes na fila
+            {pendentesTriagem.length} {tr('pendentes na fila', 'pending in queue')}
           </div>
         </div>
 
@@ -795,8 +801,8 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
           className={`prisma-passo-card ${aba === 'prisma' ? 'ativo' : ''}`}
           onClick={() => setAba('prisma')}
         >
-          <strong>3. Fluxograma PRISMA 2020</strong>
-          <span>Diagrama oficial com números consolidados para o artigo</span>
+          <strong>3. {tr('Fluxograma PRISMA 2020', 'PRISMA 2020 Flowchart')}</strong>
+          <span>{tr('Diagrama oficial com números consolidados para o artigo', 'Official diagram with consolidated figures for the paper')}</span>
           <div
             className="prisma-passo-badge"
             style={{
@@ -804,7 +810,7 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
               color: '#166534',
             }}
           >
-            {citadas.length} incluídas · {consultadas.length} lidas
+            {citadas.length} {tr('incluídas', 'included')} · {consultadas.length} {tr('lidas', 'read')}
           </div>
         </div>
       </div>
@@ -816,29 +822,30 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
           <div className="banner-didatico-prisma">
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <h4 style={{ margin: 0 }}>
-                🛡️ Como funciona a Deduplicação e o que acontece ao Mesclar?
+                🛡️ {tr('Como funciona a Deduplicação e o que acontece ao Mesclar?', 'How Deduplication works and what happens when you Merge?')}
               </h4>
               <button
                 className="btn fantasma pequeno"
                 onClick={() => setMostrarExplicacaoSeguranca((v) => !v)}
                 style={{ padding: '2px 8px', fontSize: 11 }}
               >
-                {mostrarExplicacaoSeguranca ? 'Recolher explicação' : 'Entender o que acontece'}
+                {mostrarExplicacaoSeguranca ? tr('Recolher explicação', 'Collapse explanation') : tr('Entender o que acontece', 'See what happens')}
               </button>
             </div>
 
             {mostrarExplicacaoSeguranca && (
               <div style={{ marginTop: 8 }}>
                 <p style={{ margin: '0 0 6px' }}>
-                  <strong>Por que o sistema sugere mesclar?</strong> Artigos importados de diferentes bases (ex.: PubMed, SciELO, Crossref) frequentemente possuem o mesmo identificador digital (DOI), código PubMed (PMID) ou título idêntico. O sistema detecta essas repetições automaticamente.
+                  <strong>{tr('Por que o sistema sugere mesclar?', 'Why does the system suggest merging?')}</strong>{' '}
+                  {tr('Artigos importados de diferentes bases (ex.: PubMed, SciELO, Crossref) frequentemente possuem o mesmo identificador digital (DOI), código PubMed (PMID) ou título idêntico. O sistema detecta essas repetições automaticamente.', 'Articles imported from different databases (e.g., PubMed, SciELO, Crossref) often share the same DOI, PubMed ID (PMID), or identical title. The system detects these duplicates automatically.')}
                 </p>
-                <strong>O que acontece ao clicar em "Mesclar":</strong>
+                <strong>{tr('O que acontece ao clicar em "Mesclar":', 'What happens when clicking "Merge":')}</strong>
                 <ul>
-                  <li><strong>Zero perda de PDFs:</strong> Se qualquer um dos registros possuir PDF anexo, ele é preservado e associado à obra definitiva mantida.</li>
-                  <li><strong>Unificação de Notas e Etiquetas:</strong> Suas anotações de leitura e tags de ambos os registros são unidas e concatenadas, nunca apagadas.</li>
-                  <li><strong>Preservação do Status Mais Avançado:</strong> Se uma cópia estava como "A ler" e a outra já foi marcada como "Consultada" ou "Citada", o status ativo é mantido.</li>
-                  <li><strong>Enriquecimento de Metadados:</strong> Campos vazios em um registro (resumo, volume, páginas, periódico) são completados a partir do outro.</li>
-                  <li><strong>Exclusão limpa:</strong> Apenas o arquivo JSON redundante é removido do disco, mantendo seu catálogo limpo e exato.</li>
+                  <li><strong>{tr('Zero perda de PDFs:', 'Zero PDF loss:')}</strong> {tr('Se qualquer um dos registros possuir PDF anexo, ele é preservado e associado à obra definitiva mantida.', 'If any record has an attached PDF, it is preserved and linked to the retained master work.')}</li>
+                  <li><strong>{tr('Unificação de Notas e Etiquetas:', 'Unified Notes & Tags:')}</strong> {tr('Suas anotações de leitura e tags de ambos os registros são unidas e concatenadas, nunca apagadas.', 'Your reading notes and tags from both records are merged and concatenated, never deleted.')}</li>
+                  <li><strong>{tr('Preservação do Status Mais Avançado:', 'Highest Status Preserved:')}</strong> {tr('Se uma cópia estava como "A ler" e a outra já foi marcada como "Consultada" ou "Citada", o status ativo é mantido.', 'If one copy was "To Read" and another was "Consulted" or "Cited", the active status is preserved.')}</li>
+                  <li><strong>{tr('Enriquecimento de Metadados:', 'Metadata Enrichment:')}</strong> {tr('Campos vazios em um registro (resumo, volume, páginas, periódico) são completados a partir do outro.', 'Missing fields in one record (abstract, volume, pages, journal) are filled from the other.')}</li>
+                  <li><strong>{tr('Exclusão limpa:', 'Clean removal:')}</strong> {tr('Apenas o arquivo JSON redundante é removido do disco, mantendo seu catálogo limpo e exato.', 'Only the redundant JSON file is removed from disk, keeping your catalog clean and accurate.')}</li>
                 </ul>
               </div>
             )}
@@ -847,9 +854,9 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
           {gruposDuplicados.length === 0 ? (
             <div className="bloco-painel" style={{ textAlign: 'center', padding: '36px 20px' }}>
               <div style={{ fontSize: 32, marginBottom: 8 }}>🎉</div>
-              <h3 style={{ margin: '0 0 6px', color: '#166534' }}>Nenhuma Duplicata Detectada!</h3>
+              <h3 style={{ margin: '0 0 6px', color: '#166534' }}>{tr('Nenhuma Duplicata Detectada!', 'No Duplicates Detected!')}</h3>
               <p style={{ color: 'var(--texto-suave)', maxWidth: 520, margin: '0 auto', fontSize: 13 }}>
-                Todos os registros da sua biblioteca possuem DOIs, PMIDs e títulos únicos. Você pode prosseguir com segurança para a fase de <strong>Triagem Rápida</strong> ou consultar o <strong>Fluxograma PRISMA 2020</strong>.
+                {tr('Todos os registros da sua biblioteca possuem DOIs, PMIDs e títulos únicos. Você pode prosseguir com segurança para a fase de Triagem Rápida ou consultar o Fluxograma PRISMA 2020.', 'All records in your library have unique DOIs, PMIDs, and titles. You can safely proceed to Abstract Screening or inspect the PRISMA 2020 Flowchart.')}
               </p>
             </div>
           ) : (
@@ -869,10 +876,10 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
                     style={{ width: 320, padding: '6px 12px', borderRadius: 6, border: '1px solid var(--borda)' }}
                     value={buscaDuplicatas}
                     onChange={(e) => setBuscaDuplicatas(e.target.value)}
-                    placeholder="Filtrar duplicatas por título, autor ou DOI…"
+                    placeholder={tr('Filtrar duplicatas por título, autor ou DOI…', 'Filter duplicates by title, author, or DOI…')}
                   />
                   <span style={{ fontSize: 12.5, color: 'var(--texto-suave)' }}>
-                    Exibindo {gruposFiltrados.length} de {gruposDuplicados.length} grupos
+                    {tr('Exibindo', 'Showing')} {gruposFiltrados.length} {tr('de', 'of')} {gruposDuplicados.length} {tr('grupos', 'groups')}
                   </span>
                 </div>
 
@@ -881,7 +888,7 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
                   onClick={mesclarTodasDuplicatas}
                   disabled={processandoMescla}
                 >
-                  ⚡ {processandoMescla ? 'Mesclando...' : `Mesclar Todos os ${gruposDuplicados.length} Grupos com Segurança`}
+                  ⚡ {processandoMescla ? tr('Mesclando...', 'Merging...') : `${tr('Mesclar Todos os', 'Safely Merge All')} ${gruposDuplicados.length} ${tr('Grupos com Segurança', 'Groups')}`}
                 </button>
               </div>
 
@@ -889,24 +896,24 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
                 const principal = g.principalSugerido;
                 const criterioBadge =
                   g.criterioTipo === 'doi'
-                    ? `🎯 DOI Idêntico: ${g.criterioValor}`
+                    ? `🎯 ${tr('DOI Idêntico:', 'Identical DOI:')} ${g.criterioValor}`
                     : g.criterioTipo === 'pmid'
-                    ? `🧬 PMID Idêntico: ${g.criterioValor}`
-                    : `🔤 Título Praticamente Idêntico`;
+                    ? `🧬 ${tr('PMID Idêntico:', 'Identical PMID:')} ${g.criterioValor}`
+                    : `🔤 ${tr('Título Praticamente Idêntico', 'Nearly Identical Title')}`;
 
                 return (
                   <div key={g.id} className="card-duplicata-grupo">
                     <div className="card-duplicata-cabecalho">
                       <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
                         <span className="badge-criterio">{criterioBadge}</span>
-                        <strong style={{ fontSize: 13.5 }}>Grupo #{i + 1}: {semHtml(principal.csl?.title)}</strong>
+                        <strong style={{ fontSize: 13.5 }}>{tr('Grupo', 'Group')} #{i + 1}: {semHtml(principal.csl?.title)}</strong>
                       </div>
                       <button
                         className="btn pequeno primario"
                         onClick={() => mesclarGrupo(g, principal)}
                         disabled={processandoMescla}
                       >
-                        ✓ Mesclar {g.itens.length} cópias (Manter o mais completo)
+                        ✓ {tr('Mesclar', 'Merge')} {g.itens.length} {tr('cópias (Manter o mais completo)', 'copies (Keep most complete)')}
                       </button>
                     </div>
 
@@ -928,7 +935,7 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
                                     fontWeight: ehPrincipal ? 700 : 500,
                                   }}
                                 >
-                                  {ehPrincipal ? '⭐ Principal Recomendado (Mais Completo)' : `Cópia redundante #${idx}`}
+                                  {ehPrincipal ? tr('⭐ Principal Recomendado (Mais Completo)', '⭐ Recommended Primary (Most Complete)') : `${tr('Cópia redundante', 'Redundant copy')} #${idx}`}
                                 </span>
                                 <code style={{ fontSize: 11, color: '#64748b' }}>{r.id}.json</code>
                                 <span
@@ -938,20 +945,20 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
                                     color: r.status === 'citada' ? '#166534' : r.status === 'consultada' ? '#1e40af' : '#475569',
                                   }}
                                 >
-                                  Status: {r.status === 'citada' ? '✓ Citada' : r.status === 'consultada' ? 'Consultada' : 'A ler'}
+                                  Status: {r.status === 'citada' ? tr('✓ Citada', '✓ Cited') : r.status === 'consultada' ? tr('Consultada', 'Consulted') : tr('A ler', 'To Read')}
                                 </span>
                                 {r.pdf ? (
                                   <span className="pill-contagem" style={{ background: '#e0f2fe', color: '#0369a1' }}>
-                                    📄 PDF Anexo
+                                    📄 {tr('PDF Anexo', 'Attached PDF')}
                                   </span>
                                 ) : (
                                   <span className="pill-contagem" style={{ background: '#f8fafc', color: '#94a3b8' }}>
-                                    Sem PDF
+                                    {tr('Sem PDF', 'No PDF')}
                                   </span>
                                 )}
                                 {r.notas && (
                                   <span className="pill-contagem" style={{ background: '#fef3c7', color: '#92400e' }}>
-                                    📝 Com Anotações
+                                    📝 {tr('Com Anotações', 'With Notes')}
                                   </span>
                                 )}
                               </div>
@@ -968,10 +975,10 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
                               <button
                                 className="btn fantasma pequeno"
                                 onClick={() => mesclarGrupo(g, r)}
-                                title="Define este registro como o principal a ser mantido em vez do sugerido automaticamente"
+                                title={tr('Define este registro como o principal a ser mantido em vez do sugerido automaticamente', 'Set this record as the primary record to retain instead of the auto-suggested one')}
                                 style={{ fontSize: 11, whiteSpace: 'nowrap' }}
                               >
-                                Manter este em vez do outro
+                                {tr('Manter este em vez do outro', 'Keep this one instead')}
                               </button>
                             )}
                           </div>
@@ -990,9 +997,12 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
       {aba === 'triagem' && (
         <div>
           <div className="banner-didatico-prisma">
-            <h4 style={{ margin: '0 0 4px' }}>📋 Como operar a Triagem Rápida de Título e Resumo</h4>
+            <h4 style={{ margin: '0 0 4px' }}>📋 {tr('Como operar a Triagem Rápida de Título e Resumo', 'How to operate Rapid Title & Abstract Screening')}</h4>
             <p style={{ margin: 0 }}>
-              Avalie cada estudo importado. Clique em <strong>"✓ Incluir (Consultada)"</strong> para aprovar para leitura integral, <strong>"★ Incluir e Citar"</strong> se já for usar diretamente na escrita, ou <strong>"✕ Excluir"</strong> selecionando o motivo para o diagrama PRISMA.
+              {tr(
+                'Avalie cada estudo importado. Clique em "✓ Incluir (Consultada)" para aprovar para leitura integral, "★ Incluir e Citar" se já for usar diretamente na escrita, ou "✕ Excluir" selecionando o motivo para o diagrama PRISMA.',
+                'Evaluate each imported study. Click "✓ Include (Consulted)" to approve for full-text reading, "★ Include & Cite" if ready to cite directly, or "✕ Exclude" choosing the reason for the PRISMA flowchart.'
+              )}
             </p>
           </div>
 
@@ -1011,15 +1021,15 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
                 style={{ width: 340, padding: '6px 12px', borderRadius: 6, border: '1px solid var(--borda)' }}
                 value={buscaTriagem}
                 onChange={(e) => setBuscaTriagem(e.target.value)}
-                placeholder="Buscar por termo no título, autor ou resumo…"
+                placeholder={tr('Buscar por termo no título, autor ou resumo…', 'Search by term in title, author, or abstract…')}
               />
               <span style={{ fontSize: 12.5, color: 'var(--texto-suave)' }}>
-                {pendentesTriagem.length} artigos aguardando triagem
+                {pendentesTriagem.length} {tr('artigos aguardando triagem', 'papers awaiting screening')}
               </span>
             </div>
 
             <label className="campo-inline" style={{ margin: 0 }}>
-              <span style={{ fontSize: 12, fontWeight: 600 }}>Motivo padrão ao Excluir:</span>
+              <span style={{ fontSize: 12, fontWeight: 600 }}>{tr('Motivo padrão ao Excluir:', 'Default Exclusion Reason:')}</span>
               <select
                 value={motivoPadrao}
                 onChange={(e) => setMotivoPadrao(e.target.value)}
@@ -1037,9 +1047,9 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
           {pendentesTriagem.length === 0 ? (
             <div className="bloco-painel" style={{ textAlign: 'center', padding: '36px 20px' }}>
               <div style={{ fontSize: 32, marginBottom: 8 }}>✅</div>
-              <h3 style={{ margin: '0 0 6px', color: '#166534' }}>Fila de Triagem Vazia!</h3>
+              <h3 style={{ margin: '0 0 6px', color: '#166534' }}>{tr('Fila de Triagem Vazia!', 'Screening Queue Empty!')}</h3>
               <p style={{ color: 'var(--texto-suave)', maxWidth: 500, margin: '0 auto', fontSize: 13 }}>
-                Todos os artigos da biblioteca já foram triados (como Consultados, Citados ou Descartados com justificativa).
+                {tr('Todos os artigos da biblioteca já foram triados (como Consultados, Citados ou Descartados com justificativa).', 'All library articles have already been screened (as Consulted, Cited, or Excluded with reason).')}
               </p>
             </div>
           ) : (
@@ -1065,29 +1075,29 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
                           className="btn pequeno primario"
                           onClick={() => {
                             onAtualizarRef(r.id, { status: 'consultada' });
-                            avisar(`Artigo incluído como "Consultada" (para leitura integral)!`, 'ok');
+                            avisar(tr('Artigo incluído como "Consultada" (para leitura integral)!', 'Article included as "Consulted" (for full-text reading)!'), 'ok');
                           }}
                         >
-                          ✓ Incluir (Consultada)
+                          ✓ {tr('Incluir (Consultada)', 'Include (Consulted)')}
                         </button>
                         <button
                           className="btn pequeno secundario"
                           onClick={() => {
                             onAtualizarRef(r.id, { status: 'citada' });
-                            avisar(`Artigo marcado para citação direta!`, 'ok');
+                            avisar(tr('Artigo marcado para citação direta!', 'Article marked for direct citation!'), 'ok');
                           }}
                         >
-                          ★ Incluir e Citar
+                          ★ {tr('Incluir e Citar', 'Include & Cite')}
                         </button>
                         <button
                           className="btn pequeno perigo"
                           onClick={() => {
                             onAtualizarRef(r.id, { status: 'descartada', motivoExclusao: motivoPadrao });
-                            avisar(`Artigo excluído: "${motivoPadrao}"`, 'info');
+                            avisar(`${tr('Artigo excluído:', 'Article excluded:')} "${motivoPadrao}"`, 'info');
                           }}
-                          title={`Exclui registrando o motivo: "${motivoPadrao}"`}
+                          title={`${tr('Exclui registrando o motivo:', 'Exclude recording reason:')} "${motivoPadrao}"`}
                         >
-                          ✕ Excluir ({motivoPadrao.split(' ')[0]}…)
+                          ✕ {tr('Excluir', 'Exclude')} ({motivoPadrao.split(' ')[0]}…)
                         </button>
                       </div>
                     </div>
@@ -1113,7 +1123,7 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
                           onClick={() => toggleResumo(r.id)}
                           style={{ padding: '2px 0', fontSize: 11, color: '#2563eb', marginTop: 3 }}
                         >
-                          {aberto ? '▲ Recolher Resumo' : '▼ Ler Resumo Completo'}
+                          {aberto ? tr('▲ Recolher Resumo', '▲ Collapse Abstract') : tr('▼ Ler Resumo Completo', '▼ Read Full Abstract')}
                         </button>
                       </div>
                     )}
@@ -1129,33 +1139,33 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
       {aba === 'prisma' && (
         <div>
           <div className="banner-didatico-prisma">
-            <h4 style={{ margin: '0 0 4px' }}>📊 Fluxograma Oficial PRISMA 2020 (Page et al., 2021)</h4>
+            <h4 style={{ margin: '0 0 4px' }}>📊 {tr('Fluxograma Oficial PRISMA 2020 (Page et al., 2021)', 'Official PRISMA 2020 Flowchart (Page et al., 2021)')}</h4>
             <p style={{ margin: 0 }}>
-              Este diagrama reflete com exatidão as 4 etapas da sua revisão sistemática. Use os botões no topo para copiar o relatório quantitativo e colá-lo pronto no Word ou Markdown.
+              {tr('Este diagrama reflete com exatidão as 4 etapas da sua revisão sistemática. Use os botões no topo para copiar o relatório quantitativo e colá-lo pronto no Word ou Markdown.', 'This diagram accurately reflects the 4 stages of your systematic review. Use the top buttons to copy the quantitative report and paste it into Word or Markdown.')}
             </p>
           </div>
 
           <div className="prisma-diagrama">
             {/* ETAPA 1: IDENTIFICAÇÃO */}
             <div style={{ width: '100%', textAlign: 'center', fontWeight: 700, fontSize: 13, color: '#1e40af', textTransform: 'uppercase', letterSpacing: 0.5 }}>
-              1. Fase de Identificação
+              1. {tr('Fase de Identificação', 'Identification Phase')}
             </div>
             <div className="prisma-etapa-linha">
               <div className="prisma-caixa">
-                <h5>Registros identificados nas buscas em bases de dados</h5>
+                <h5>{tr('Registros identificados nas buscas em bases de dados', 'Records identified from database searches')}</h5>
                 <div className="prisma-numero">{(totalIdentificadosBases || refs.length).toLocaleString('pt-BR')}</div>
                 <div style={{ fontSize: 11.5, color: 'var(--texto-suave)', marginTop: 4 }}>
-                  Histórico de buscas em bases (PubMed, Scopus, SciELO, etc.)
+                  {tr('Histórico de buscas em bases (PubMed, Scopus, SciELO, etc.)', 'Database search history (PubMed, Scopus, SciELO, etc.)')}
                 </div>
               </div>
 
               <div className="prisma-seta-lado">➔</div>
 
               <div className="prisma-caixa exclusao">
-                <h5>Duplicatas removidas antes da triagem</h5>
-                <div className="prisma-numero">{gruposDuplicados.length} grupos detectados</div>
+                <h5>{tr('Duplicatas removidas antes da triagem', 'Duplicate records removed before screening')}</h5>
+                <div className="prisma-numero">{gruposDuplicados.length} {tr('grupos detectados', 'groups detected')}</div>
                 <div style={{ fontSize: 11.5, color: 'var(--texto-suave)', marginTop: 4 }}>
-                  {gruposDuplicados.length === 0 ? '✓ Biblioteca 100% deduplicada' : 'Aguardando mescla segura na Aba 1'}
+                  {gruposDuplicados.length === 0 ? tr('✓ Biblioteca 100% deduplicada', '✓ Library 100% deduplicated') : tr('Aguardando mescla segura na Aba 1', 'Awaiting safe merge in Tab 1')}
                 </div>
               </div>
             </div>
@@ -1164,25 +1174,25 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
 
             {/* ETAPA 2: TRIAGEM */}
             <div style={{ width: '100%', textAlign: 'center', fontWeight: 700, fontSize: 13, color: '#1e40af', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: 10 }}>
-              2. Fase de Triagem (Screening)
+              2. {tr('Fase de Triagem (Screening)', 'Screening Phase')}
             </div>
             <div className="prisma-etapa-linha">
               <div className="prisma-caixa">
-                <h5>Registros triados por título e resumo</h5>
+                <h5>{tr('Registros triados por título e resumo', 'Records screened by title & abstract')}</h5>
                 <div className="prisma-numero">{refs.length.toLocaleString('pt-BR')}</div>
                 <div style={{ fontSize: 11.5, color: 'var(--texto-suave)', marginTop: 4 }}>
-                  {pendentesTriagem.length > 0 ? `(${pendentesTriagem.length} pendentes na fila de triagem)` : '✓ Triagem de resumos concluída'}
+                  {pendentesTriagem.length > 0 ? `(${pendentesTriagem.length} ${tr('pendentes na fila de triagem', 'pending in screening queue')})` : tr('✓ Triagem de resumos concluída', '✓ Abstract screening completed')}
                 </div>
               </div>
 
               <div className="prisma-seta-lado">➔</div>
 
               <div className="prisma-caixa exclusao">
-                <h5>Registros excluídos na triagem</h5>
-                <div className="prisma-numero">{descartadas.length} artigos</div>
+                <h5>{tr('Registros excluídos na triagem', 'Records excluded during screening')}</h5>
+                <div className="prisma-numero">{descartadas.length} {tr('artigos', 'records')}</div>
                 <div style={{ marginTop: 6, fontSize: 11.5 }}>
                   {Object.entries(motivosContagem).length === 0 ? (
-                    <span style={{ color: 'var(--texto-suave)' }}>Nenhuma exclusão registrada ainda</span>
+                    <span style={{ color: 'var(--texto-suave)' }}>{tr('Nenhuma exclusão registrada ainda', 'No exclusions recorded yet')}</span>
                   ) : (
                     Object.entries(motivosContagem).map(([mot, n]) => (
                       <div key={mot} style={{ marginBottom: 2 }}>
@@ -1198,24 +1208,24 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
 
             {/* ETAPA 3: ELEGIBILIDADE */}
             <div style={{ width: '100%', textAlign: 'center', fontWeight: 700, fontSize: 13, color: '#1e40af', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: 10 }}>
-              3. Fase de Elegibilidade (Texto Completo)
+              3. {tr('Fase de Elegibilidade (Texto Completo)', 'Eligibility Phase (Full Text)')}
             </div>
             <div className="prisma-etapa-linha">
               <div className="prisma-caixa">
-                <h5>Artigos em texto completo avaliados para elegibilidade</h5>
+                <h5>{tr('Artigos em texto completo avaliados para elegibilidade', 'Full-text articles assessed for eligibility')}</h5>
                 <div className="prisma-numero">{(consultadas.length + citadas.length).toLocaleString('pt-BR')}</div>
                 <div style={{ fontSize: 11.5, color: 'var(--texto-suave)', marginTop: 4 }}>
-                  Leitura na íntegra do PDF do artigo
+                  {tr('Leitura na íntegra do PDF do artigo', 'Full-text PDF reading')}
                 </div>
               </div>
 
               <div className="prisma-seta-lado">➔</div>
 
               <div className="prisma-caixa">
-                <h5>Bibliografia Consultada (Leitura Integral)</h5>
-                <div className="prisma-numero" style={{ color: '#2563eb' }}>{consultadas.length} artigos</div>
+                <h5>{tr('Bibliografia Consultada (Leitura Integral)', 'Consulted Bibliography (Full Reading)')}</h5>
+                <div className="prisma-numero" style={{ color: '#2563eb' }}>{consultadas.length} {tr('artigos', 'records')}</div>
                 <div style={{ fontSize: 11.5, color: 'var(--texto-suave)', marginTop: 4 }}>
-                  Lidos como suporte teórico, sem citação direta no texto
+                  {tr('Lidos como suporte teórico, sem citação direta no texto', 'Read as background support, without direct in-text citation')}
                 </div>
               </div>
             </div>
@@ -1224,15 +1234,15 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
 
             {/* ETAPA 4: INCLUSÃO FINAL */}
             <div style={{ width: '100%', textAlign: 'center', fontWeight: 700, fontSize: 13, color: '#059669', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: 10 }}>
-              4. Fase de Inclusão Final
+              4. {tr('Fase de Inclusão Final', 'Final Inclusion Phase')}
             </div>
             <div className="prisma-caixa inclusao" style={{ width: '100%', maxWidth: 520 }}>
               <h5 style={{ color: '#065f46', fontSize: 14 }}>
-                🏆 Estudos incluídos na síntese qualitativa / Citados no manuscrito
+                🏆 {tr('Estudos incluídos na síntese qualitativa / Citados no manuscrito', 'Studies included in qualitative synthesis / Cited in manuscript')}
               </h5>
-              <div className="prisma-numero">{citadas.length} estudos finais</div>
+              <div className="prisma-numero">{citadas.length} {tr('estudos finais', 'final studies')}</div>
               <p style={{ margin: '6px 0 0', fontSize: 12, color: '#047857' }}>
-                Estes são os artigos com status <strong>Citada</strong>, exportados automaticamente para a seção de Referências no seu Word.
+                {tr('Estes são os artigos com status Citada, exportados automaticamente para a seção de Referências no seu Word.', 'These are the articles marked Cited, automatically exported to the References section in your Word document.')}
               </p>
             </div>
           </div>

@@ -1,33 +1,71 @@
 {
   "app": {
     "title": "Bibliography",
-    "subtitle": "Reference Management & Forensic Citation Auditing"
+    "subtitle": "Scientific Reference Manager & Forensic Manuscript Auditor"
   },
   "menu": {
     "library": "Library",
     "searchers": "Search Hub",
     "manuscript": "Manuscript",
     "auditing": "Forensic Audit",
-    "prisma": "PRISMA 2020",
+    "prisma": "PRISMA",
     "graph": "Citation Graph",
     "tutorial": "Tutorial",
-    "version": "v1.2",
+    "version": "v1.0.1",
     "diagnostics": "System Diagnostics"
   },
   "actions": {
+    "add": "Add",
+    "quickActions": "Actions",
     "search": "Count & compare databases",
     "openSearch": "Open search",
     "importHere": "Import here",
     "copyCitation": "Copy Citation",
-    "createBibliography": "Generate Bibliography",
+    "cite": "Cite",
+    "bibliography": "Bibliography",
+    "createBibliography": "Create Bibliography",
     "exportDocx": "Export to .DOCX",
     "auditManuscript": "Audit Manuscript",
-    "blindScreening": "Double-Blind Screening"
+    "blindScreening": "Double-Blind Screening",
+    "details": "Details",
+    "hideDetails": "Hide Details",
+    "switchProject": "Switch Project",
+    "openFolder": "Open folder",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save"
   },
   "status": {
     "loading": "Querying scientific databases...",
     "openAccess": "Open access",
     "institutional": "Institutional / Federated Login",
     "subscription": "Subscription"
+  },
+  "phrases": {
+    "PROJETO ATIVO": "ACTIVE PROJECT",
+    "MINHA BIBLIOTECA": "MY LIBRARY",
+    "Todos os Itens": "All Items",
+    "A Ler (Fila de Triagem)": "To Read (Triage Queue)",
+    "Consultadas (Lidas)": "Consulted (Read)",
+    "Citadas no Trabalho": "Cited in Manuscript",
+    "Favoritos (Mendeley)": "Favorites (Starred)",
+    "Lidos Recentemente": "Recently Read",
+    "Itens Não Classificados": "Unfiled Items",
+    "Precisa de Revisão": "Needs Review",
+    "Sem PDF Anexado": "Missing PDF",
+    "Excluídas na Triagem": "Excluded in Screening",
+    "COLEÇÕES / CAPÍTULOS": "COLLECTIONS / CHAPTERS",
+    "Título": "Title",
+    "Autor / Criador": "Author / Creator",
+    "Ano": "Year",
+    "Publicação": "Publication",
+    "Nível & Nota": "Level & Score",
+    "Uso / Status": "Usage / Status",
+    "Detalhes": "Details",
+    "Estilo:": "Style:",
+    "+ Estilos": "+ Styles",
+    "Fechar": "Close",
+    "Cancelar": "Cancel",
+    "Limpar": "Clear"
   }
 }
