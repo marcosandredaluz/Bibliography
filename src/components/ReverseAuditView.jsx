@@ -131,14 +131,43 @@ function agruparItensEmLinhasVisuaisPdf(itens = [], alturaDominante = 11) {
     .filter((l) => l.texto);
 }
 
+function agruparItensRotacionadosPdf(itens = [], alturaDominante = 11) {
+  if (!itens.length) return [];
+  const dirPositiva = (itens.filter((it) => (it.rotB || 0) >= 0).length) >= itens.length / 2;
+  const buckets = [];
+  for (const it of itens) {
+    const tol = Math.max(3.5, (it.h || alturaDominante) * 0.45);
+    const bucketExist = buckets.find((b) => Math.abs(b.x - it.x) <= tol);
+    if (bucketExist) {
+      bucketExist.itens.push(it);
+      bucketExist.x = (bucketExist.x + it.x) / 2;
+    } else {
+      buckets.push({ x: it.x, h: it.h, itens: [it] });
+    }
+  }
+  buckets.sort((a, b) => (dirPositiva ? a.x - b.x : b.x - a.x));
+  return buckets
+    .map((b) => {
+      b.itens.sort((a, b2) => (dirPositiva ? a.y - b2.y : b2.y - a.y));
+      const linhaTexto = b.itens.map((it) => it.str.trim()).filter(Boolean).join(' ').trim();
+      return {
+        y: b.itens[0]?.y ?? 0,
+        x: b.x,
+        altura: b.h,
+        texto: linhaTexto,
+      };
+    })
+    .filter((l) => l.texto);
+}
+
 function ordenarItensComDeteccaoDeColunasPdf(itens = [], larguraPag = 595, alturaDominante = 11) {
   if (!itens.length) return [];
   const midX = larguraPag * 0.5;
-  const esq = itens.filter((it) => it.x + it.largura <= midX + 6);
-  const dir = itens.filter((it) => it.x >= midX - 6);
-  const cruzamCentro = itens.filter(
-    (it) => it.x < midX - 10 && it.x + it.largura > midX + 10 && it.str.trim().length >= 12
-  );
+  const esq = itens.filter((it) => it.x + it.largura <= midX + 8);
+  const dir = itens.filter((it) => it.x >= midX - 8);
+  const ehSpanCentro = (it) =>
+    it.x < midX - 28 && it.x + it.largura > midX + 28 && it.str.trim().length >= 16;
+  const cruzamCentro = itens.filter(ehSpanCentro);
 
   // Sem evidência clara de 2 colunas: ordenação linear tradicional
   if (esq.length < 15 || dir.length < 15 || cruzamCentro.length > Math.max(8, Math.floor(itens.length * 0.08))) {
@@ -158,8 +187,7 @@ function ordenarItensComDeteccaoDeColunasPdf(itens = [], larguraPag = 595, altur
   };
 
   for (const it of porY) {
-    const cruza = it.x < midX - 10 && it.x + it.largura > midX + 10 && it.str.trim().length >= 12;
-    if (cruza) {
+    if (ehSpanCentro(it)) {
       descarregarColunas();
       resultado.push(...agruparItensEmLinhasVisuaisPdf([it], alturaDominante));
     } else if (it.x + it.largura / 2 < midX) {
@@ -186,26 +214,39 @@ async function extrairPaginasPdf(bytes) {
       const bruto = txt.items.map((it) => it.str + (it.hasEOL ? '\n' : ' ')).join('');
 
       const alturas = [];
-      const itensBrutos = [];
+      const itensNormais = [];
+      const itensRotacionados = [];
       for (const it of txt.items || []) {
         const s = String(it.str || '');
         if (!s.trim()) continue;
         const y = Array.isArray(it.transform) ? Number(it.transform[5]) : 0;
         const x = Array.isArray(it.transform) ? Number(it.transform[4]) : 0;
-        const h = Number(it.height) || (Array.isArray(it.transform) ? Math.abs(Number(it.transform[3])) : 11) || 11;
-        const largura = Math.max(Number(it.width) || 0, s.length * Math.max(4, h * 0.45));
+        const rotB = Array.isArray(it.transform) ? Number(it.transform[1]) || 0 : 0;
+        const rotC = Array.isArray(it.transform) ? Number(it.transform[2]) || 0 : 0;
+        const rotacionado = Math.abs(rotB) > 0.25 || Math.abs(rotC) > 0.25;
+        const h =
+          Number(it.height) ||
+          (Array.isArray(it.transform) ? Math.hypot(rotC, Number(it.transform[3]) || 0) : 11) ||
+          11;
+        const largNum = Number(it.width);
+        const largura =
+          Number.isFinite(largNum) && largNum > 0 ? largNum : s.length * Math.max(3.5, h * 0.42);
         alturas.push(h);
-        itensBrutos.push({ str: s, x, y, h, largura });
+        const item = { str: s, x, y, h, largura, rotB };
+        if (rotacionado) itensRotacionados.push(item);
+        else itensNormais.push(item);
       }
       alturas.sort((a, b) => a - b);
       const alturaDominante = alturas.length ? alturas[Math.floor(alturas.length * 0.5)] : 11;
-      for (const it of itensBrutos) {
+      for (const it of itensNormais) {
         it.ehSobrescrito =
           it.h <= alturaDominante * 0.80 &&
           /^\d{1,3}(?:\s*[,;–—-]\s*\d{1,3})*$/.test(it.str.trim());
       }
 
-      const linhasVisuais = ordenarItensComDeteccaoDeColunasPdf(itensBrutos, larguraPag, alturaDominante);
+      const linhasNormais = ordenarItensComDeteccaoDeColunasPdf(itensNormais, larguraPag, alturaDominante);
+      const linhasRotacionadas = agruparItensRotacionadosPdf(itensRotacionados, alturaDominante);
+      const linhasVisuais = [...linhasNormais, ...linhasRotacionadas];
       paginas.push({ numero: i, bruto, norm: normalizar(bruto).replace(/\s+/g, ' '), linhasVisuais });
     }
     return paginas;

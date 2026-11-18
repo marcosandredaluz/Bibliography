@@ -22,6 +22,7 @@ const {
   confirmarAvaliacaoRobHumana,
   lerAuditTrailRob,
 } = require('../electron/rob_assessor.cjs');
+const { extrairCitacoesDoCorpo } = require('../electron/auditor.cjs');
 
 function reqJson(porta, rota, payload, headers = {}) {
   return new Promise((resolve, reject) => {
@@ -233,6 +234,27 @@ function reqJson(porta, rota, payload, headers = {}) {
     assert.strictEqual(resBib.json.total_cited, 1);
     assert.ok(fs.existsSync(resBib.json.bib_file_path), 'cited-only.bib deve ser gravado');
     console.log('✓ 3. Módulo 4 (/api/v1/citations/resolve & /bibliography + Quarto >= 1.4 MIT) validado.');
+
+    // 4. EXTRATOR VANCOUVER PÓS-PONTUAÇÃO ("palavra.1-3", "(SI-TESTE),4", sem falso positivo em "p. 65-78")
+    const refsNum = Array.from({ length: 12 }, (_, idx) => ({
+      numeroRef: idx + 1,
+      autor: `AutorTeste${idx + 1}`,
+      chaveAutor: `autorteste${idx + 1}`,
+      ano: '2021',
+      chave: `autorteste${idx + 1}:2021`,
+    }));
+    const citsVanc = extrairCitacoesDoCorpo(
+      [
+        'Estudos prévios descreveram redução dessas doenças.1-3 No contexto do programa (SI-TESTE),4 avaliou-se o fluxo conforme recomendação prévia.7,8 A escolha dos atributos seguiu diretriz oficial:10-12 Ver detalhes em Rev Saúde, v.1, p. 65-78.',
+      ],
+      refsNum
+    );
+    const numsCapturados = new Set(citsVanc.citacoes.map((c) => c.numeroRef));
+    for (const esperado of [1, 2, 3, 4, 7, 8, 10, 11, 12]) {
+      assert.ok(numsCapturados.has(esperado), `Número Vancouver pós-pontuação ${esperado} deve ser capturado`);
+    }
+    assert.strictEqual(citsVanc.citacoes.some((c) => Number(c.numeroRef) === 65), false, 'p. 65-78 não pode gerar falso positivo');
+    console.log('✓ 4. Extrator Vancouver pós-pontuação (.1-3, ),4, :10-12) e trava anti-falso-positivo validados.');
 
     console.log('\n🎉 TODOS OS TESTES DOS MÓDULOS CLEAN-ROOM 2, 3 E 4 PASSARAM COM 100%!');
   } finally {

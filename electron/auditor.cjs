@@ -1677,12 +1677,12 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         expressoesNumericas.push({ bruto: m[0], expr: m[1] });
       }
 
-      // Caso texto plano tenha números Vancouver colados ao fim de palavras (ex.: "MS1,", "renda10,11,", "doenças1", "escolaridade11–14,")
+      // Caso texto plano tenha números Vancouver colados ao fim de palavras ou pontuação (ex.: "MS1,", "imunopreveníveis.1-3", "(SI-PNI),4", "estudo.7,8")
       if (refsPorNumero.size > 0 && expressoesNumericas.length === 0) {
-        const reColado = /(?<=[A-Za-zÀ-ÿ)])(\d{1,2}(?:[,–-]\d{1,2})*)(?=[.,;:)\s]|$)/g;
+        const reColado = /(?<=[A-Za-zÀ-ÿ)][.,;:]?)(\d{1,2}(?:[,–-]\d{1,2})*)(?=[.,;:)\s]|$)/g;
         while ((m = reColado.exec(frase)) !== null) {
-          const antesToken = frase.slice(Math.max(0, m.index - 12), m.index).toLowerCase();
-          if (/(?:covid|sars|hiv|htlv|h1n1|hpv|dtp|bcg|rdc|iso|nº|nr|v\.)\s*[-]?$/.test(antesToken)) {
+          const antesToken = frase.slice(Math.max(0, m.index - 16), m.index).toLowerCase();
+          if (/(?:^|\b(?:v|n|p|pp|fig|tab|cap|sec|art|dr|dra|inc|no|nº|et\s+al|covid|sars|hiv|htlv|h1n1|hpv|dtp|bcg|rdc|iso|nr))[.,;:\s-]*$/i.test(antesToken)) {
             continue;
           }
           expressoesNumericas.push({ bruto: `[${m[1]}]`, expr: m[1] });
