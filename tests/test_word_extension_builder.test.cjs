@@ -142,7 +142,21 @@ async function executar() {
       assert.strictEqual(rLote.ok, true);
       assert.strictEqual(rLote.atualizados.length, 1);
       assert(rLote.atualizados[0].citacaoTexto.includes('Carvalho') && rLote.atualizados[0].citacaoTexto.includes('2021'));
-      console.log('✓ 4. Ponte HTTP interativa (/seletor-citacao-interativo + /atualizar-lote-campos) validada.');
+
+      // 5. Hardening CORS & DNS Rebinding: aceita origem local e bloqueia origem externa com 403
+      const rLocalCors = await fetch(`http://127.0.0.1:${portReal}/api/word/ping`, {
+        headers: { Origin: 'http://127.0.0.1:5173' },
+      });
+      assert.strictEqual(rLocalCors.status, 200);
+      assert.strictEqual(rLocalCors.headers.get('access-control-allow-origin'), 'http://127.0.0.1:5173');
+
+      const rEvilCors = await fetch(`http://127.0.0.1:${portReal}/api/word/ping`, {
+        headers: { Origin: 'https://malicioso.exemplo.com' },
+      });
+      assert.strictEqual(rEvilCors.status, 403);
+      assert.strictEqual(rEvilCors.headers.get('access-control-allow-origin'), null);
+
+      console.log('✓ 4. Ponte HTTP interativa (/seletor-citacao-interativo + /atualizar-lote-campos) + Hardening CORS validados.');
     } finally {
       bridge.srv.close();
     }

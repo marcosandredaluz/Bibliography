@@ -6,8 +6,9 @@ import sys
 import os
 import re
 import json
+import html as html_lib
 import uvicorn
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -15,12 +16,29 @@ from typing import Optional, List, Dict, Any
 
 app = FastAPI(title="Bibliografia Word Integration Engine", version="2.0.0")
 
+_LOCAL_HOST_RE = re.compile(r"^(?:127\.0\.0\.1|localhost|testserver)(?::\d{1,5})?$", re.IGNORECASE)
+
+@app.middleware("http")
+async def validar_host_local(request: Request, call_next):
+    host = request.headers.get("host", "")
+    if host and not _LOCAL_HOST_RE.match(host.strip()):
+        return JSONResponse({"detail": "Host não autorizado"}, status_code=403)
+    response = await call_next(request)
+    response.headers.setdefault("X-Content-Type-Options", "nosniff")
+    return response
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=[
+        "http://127.0.0.1:23119",
+        "http://localhost:23119",
+        "http://127.0.0.1:5173",
+        "http://localhost:5173",
+    ],
+    allow_origin_regex=r"^https?://(?:127\.0\.0\.1|localhost)(?::\d{1,5})?$",
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type"],
 )
 
 class AuditoriaRequest(BaseModel):
@@ -218,16 +236,22 @@ async def painel_auditoria_html():
     for a in dados.get("alertas", []):
         cor_borda = "#ef4444" if a["gravidade"] in ["critica", "alta"] else "#8b5cf6" if a["gravidade"] == "estilo_ia" else "#f59e0b"
         bg_card = "rgba(239, 68, 68, 0.05)" if a["gravidade"] in ["critica", "alta"] else "rgba(139, 92, 246, 0.05)" if a["gravidade"] == "estilo_ia" else "rgba(245, 158, 11, 0.05)"
+        par_safe = html_lib.escape(str(a.get("paragrafo", "")))
+        tipo_safe = html_lib.escape(str(a.get("tipo", "")))
+        grav_safe = html_lib.escape(str(a.get("gravidade", "")))
+        msg_safe = html_lib.escape(str(a.get("mensagem", "")))
+        trecho_safe = html_lib.escape(str(a.get("trecho", ""))) if a.get("trecho") else ""
+        msg_js = html_lib.escape(json.dumps(str(a.get("mensagem", ""))), quote=True)
         alertas_html += f"""
         <div style="border-left: 4px solid {cor_borda}; background: {bg_card}; padding: 12px 16px; margin-bottom: 12px; border-radius: 8px;">
             <div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; color: {cor_borda};">
-                <span>§ Parágrafo {a['paragrafo']} · Tipo: {a['tipo']}</span>
-                <span style="text-transform: uppercase; font-size: 11px;">{a['gravidade']}</span>
+                <span>§ Parágrafo {par_safe} · Tipo: {tipo_safe}</span>
+                <span style="text-transform: uppercase; font-size: 11px;">{grav_safe}</span>
             </div>
-            <div style="font-size: 13.5px; margin: 6px 0; color: #1e293b; font-weight: 600;">{a['mensagem']}</div>
-            {f'<div style="font-size: 12px; color: #64748b; font-style: italic; background: #fff; padding: 6px 10px; border-radius: 4px; border: 1px solid #e2e8f0;">"{a["trecho"]}"</div>' if a.get("trecho") else ''}
+            <div style="font-size: 13.5px; margin: 6px 0; color: #1e293b; font-weight: 600;">{msg_safe}</div>
+            {f'<div style="font-size: 12px; color: #64748b; font-style: italic; background: #fff; padding: 6px 10px; border-radius: 4px; border: 1px solid #e2e8f0;">"{trecho_safe}"</div>' if trecho_safe else ''}
             <div style="margin-top: 8px; text-align: right;">
-                <button onclick="copiarPrompt('{a['mensagem']}')" style="background: #2563eb; color: #fff; border: none; padding: 4px 10px; border-radius: 4px; font-size: 11.5px; cursor: pointer; font-weight: 600;">🤖 Copiar Prompt de Correção para IA</button>
+                <button onclick="copiarPrompt({msg_js})" style="background: #2563eb; color: #fff; border: none; padding: 4px 10px; border-radius: 4px; font-size: 11.5px; cursor: pointer; font-weight: 600;">🤖 Copiar Prompt de Correção para IA</button>
             </div>
         </div>
         """

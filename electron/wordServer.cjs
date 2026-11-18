@@ -93,11 +93,49 @@ function formatarEntradasParaWord(entradas) {
     .join('');
 }
 
+function escaparHtml(str = '') {
+  return String(str || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function ehHostLocalPermitido(host = '') {
+  return /^(?:127\.0\.0\.1|localhost)(?::\d{1,5})?$/i.test(String(host || '').trim());
+}
+
+function ehOrigemLocalPermitida(origin = '') {
+  const o = String(origin || '').trim();
+  if (!o) return true; // Clientes nativos sem cabeçalho Origin (ex.: Word VBA COM, desktop local)
+  return /^https?:\/\/(?:127\.0\.0\.1|localhost)(?::\d{1,5})?$/i.test(o);
+}
+
+const MAX_BODY_BYTES = 15 * 1024 * 1024; // Limite de 15 MB por requisição local
+
 function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBiblioteca, aoSolicitarSeletorCitacao, porta = PORTA }) {
   const srv = http.createServer(async (req, res) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    const hostHeader = req.headers.host;
+    if (hostHeader && !ehHostLocalPermitido(hostHeader)) {
+      res.writeHead(403, { 'Content-Type': 'application/json; charset=utf-8', 'X-Content-Type-Options': 'nosniff' });
+      return res.end(JSON.stringify({ erro: 'Host não autorizado' }));
+    }
+
+    const originHeader = req.headers.origin;
+    if (originHeader && !ehOrigemLocalPermitida(originHeader)) {
+      res.writeHead(403, { 'Content-Type': 'application/json; charset=utf-8', 'Vary': 'Origin', 'X-Content-Type-Options': 'nosniff' });
+      return res.end(JSON.stringify({ erro: 'Origem CORS não autorizada' }));
+    }
+
+    if (originHeader) {
+      res.setHeader('Access-Control-Allow-Origin', originHeader);
+    }
+    res.setHeader('Vary', 'Origin');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('Cache-Control', 'no-store');
     if (req.method === 'OPTIONS') {
       res.writeHead(204);
       return res.end();
@@ -174,11 +212,19 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
         return enviarTexto(200, textoLinhas);
       }
 
-      // Lê corpo JSON de requisições POST
+      // Lê corpo JSON de requisições POST com limite de tamanho
       const lerCorpo = () =>
         new Promise((resolve, reject) => {
           let dados = '';
-          req.on('data', (c) => (dados += c));
+          let bytes = 0;
+          req.on('data', (c) => {
+            bytes += Buffer.byteLength(c);
+            if (bytes > MAX_BODY_BYTES) {
+              req.destroy();
+              return reject(new Error('Corpo da requisição excede o limite máximo permitido.'));
+            }
+            dados += c;
+          });
           req.on('end', () => {
             try {
               resolve(dados ? JSON.parse(dados) : {});
@@ -186,6 +232,7 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
               reject(e);
             }
           });
+          req.on('error', reject);
         });
 
       if (url.pathname === '/api/citar' && req.method === 'POST') {
@@ -486,7 +533,7 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
       if (url.pathname === '/painel-auditoria') {
         const ult = telemetriaWord.ultimaAuditoriaWord;
         const linhas = (ult?.alertas || [])
-          .map((a) => `<li><strong>[§${a.paragrafo}] ${a.tipo}</strong> — ${a.mensagem}</li>`)
+          .map((a) => `<li><strong>[§${escaparHtml(a.paragrafo)}] ${escaparHtml(a.tipo)}</strong> — ${escaparHtml(a.mensagem)}</li>`)
           .join('');
         const htmlPainel = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Diagnóstico Word — Bibliografia</title><style>body{font-family:Segoe UI,sans-serif;max-width:860px;margin:24px auto;padding:0 16px;color:#0f172a}h1{color:#991b1b}li{margin:8px 0;padding:8px 12px;background:#f8fafc;border-left:4px solid #b91c1c;border-radius:4px}</style></head><body><h1>Diagnóstico Word · Bibliografia Forense</h1><p>${ult ? `${ult.total_citacoes} citações verificadas · ${(ult.alertas || []).length} ocorrência(s)` : 'Nenhuma auditoria executada pelo Word ainda.'}</p><ul>${linhas || '<li>Nenhuma inconformidade pendente.</li>'}</ul></body></html>`;
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
