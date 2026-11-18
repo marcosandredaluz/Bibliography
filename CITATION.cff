@@ -5,8 +5,8 @@ authors:
     given-names: "Marcos André"
     affiliation: "Doctoral Researcher in Health Technology & Clinical Informatics"
 title: "Bibliography: Open-Source Academic Writing Assistant & Forensic Citation Verification Engine"
-version: 1.0.0
-date-released: 2026-11-16
+version: 1.0.1
+date-released: 2026-11-17
 url: "https://github.com/marcosandredaluz/Bibliography"
 repository-code: "https://github.com/marcosandredaluz/Bibliography"
 license: Apache-2.0

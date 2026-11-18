@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bibliography-engine"
-version = "1.0.0"
+version = "1.0.1"
 description = "Motor de Gestão Bibliográfica Forense, Anti-Alucinação e Integração com Processadores de Texto (.DOCX)"
 authors = ["Marcos André da Luz <https://www.linkedin.com/in/marcos-andre-da-luz-847039141>"]
 license = "Apache-2.0"

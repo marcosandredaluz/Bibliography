@@ -136,7 +136,7 @@ contextBridge.exposeInMainWorld('api', {
   },
   versao: {
     obterInfo: () => ({
-      app: '1.2.0',
+      app: '1.0.1',
       electron: process.versions.electron,
       node: process.versions.node,
       chrome: process.versions.chrome,

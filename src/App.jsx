@@ -1105,10 +1105,10 @@ function ConteudoApp() {
           <button
             className="rail-item-rodape"
             onClick={() => setModalVersaoAberto(true)}
-            title="Sobre o Bibliografia, Versão 1.0.0 & Diagnóstico do Sistema"
+            title={`Sobre o Bibliografia, Versão ${(typeof window !== 'undefined' && window.api?.versao?.obterInfo?.()?.app) || '1.0.1'} & Diagnóstico do Sistema`}
             style={{ fontWeight: 800, fontSize: '11px', letterSpacing: '0.2px' }}
           >
-            v1.0.0
+            v{(typeof window !== 'undefined' && window.api?.versao?.obterInfo?.()?.app) || '1.0.1'}
           </button>
           <button
             className="rail-item-rodape"

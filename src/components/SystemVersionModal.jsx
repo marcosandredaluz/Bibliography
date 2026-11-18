@@ -16,7 +16,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
         setInfoSistema(window.api.versao.obterInfo());
       } else {
         setInfoSistema({
-          app: '1.0.0',
+          app: '1.0.1',
           electron: '44.9.2',
           node: '20.x',
           chrome: '124.x',
@@ -25,7 +25,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
         });
       }
     } catch {
-      setInfoSistema({ app: '1.0.0', electron: 'N/D', node: 'N/D' });
+      setInfoSistema({ app: '1.0.1', electron: 'N/D', node: 'N/D' });
     }
 
     // Consulta status do servidor Word
@@ -125,7 +125,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
                   borderRadius: 99,
                 }}
               >
-                v1.0.0 LTS
+                v{infoSistema?.app || '1.0.1'}
               </span>
               <span
                 style={{
@@ -344,7 +344,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
         {/* ABA 2: CHANGELOG HISTÓRICO DE VERSÕES */}
         {abaAtiva === 'changelog' && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14, maxHeight: 380, overflowY: 'auto', paddingRight: 4 }}>
-            {/* VERSÃO 1.2.0 */}
+            {/* VERSÃO 1.0.1 */}
             <div
               style={{
                 padding: '12px 14px',
@@ -356,10 +356,34 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
                 <span style={{ background: 'var(--primaria)', color: '#fff', fontSize: 11, fontWeight: 800, padding: '2px 8px', borderRadius: 4 }}>
-                  v1.2.0
+                  v1.0.1
+                </span>
+                <strong style={{ fontSize: 13.5 }}>Novembro de 2026 — Extensão Word (.dotm), Calibração Forense &amp; Manifesto Open Source</strong>
+                <span style={{ fontSize: 11, color: 'var(--texto-suave)', marginLeft: 'auto' }}>Versão Atual</span>
+              </div>
+              <ul style={{ margin: '6px 0 0 18px', padding: 0, fontSize: 12, lineHeight: 1.6, color: 'var(--texto)' }}>
+                <li><strong>Extensão Nativa Microsoft Word (<code>.dotm</code> + Ribbon):</strong> Gerador de template com faixa OOXML (<code>customUI14.xml</code>), seletor rápido <code>Ctrl+Shift+B</code>, sincronização em lote de campos dinâmicos e leitor reverso <code>w:instrText</code>.</li>
+                <li><strong>Calibração Forense Geral:</strong> Disambiguação de coautores no mesmo ano, classificação LeNER-Br de sites institucionais e apostilas, reconstrução PDF multi-página, DeCS/MeSH e estilometria refinada.</li>
+                <li><strong>Resolução Direta na Auditoria Reversa:</strong> Botões nos cards para anexar apostila/PDF local ou confirmar site oficial diretamente na Biblioteca.</li>
+                <li><strong>Transparência Apache 2.0:</strong> Inclusão de <code>THIRD_PARTY_NOTICES.md</code> e seção de inspirações open source no README.</li>
+              </ul>
+            </div>
+
+            {/* MARCO INTERNO: ERGONOMIA MENDELEY */}
+            <div
+              style={{
+                padding: '12px 14px',
+                borderRadius: 8,
+                background: 'var(--painel)',
+                border: '1px solid var(--borda)',
+                borderLeft: '4px solid #64748b',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                <span style={{ background: '#64748b', color: '#fff', fontSize: 11, fontWeight: 800, padding: '2px 8px', borderRadius: 4 }}>
+                  Marco de Ergonomia
                 </span>
                 <strong style={{ fontSize: 13.5 }}>Novembro de 2026 — Ergonomia Mendeley &amp; Painel Forense</strong>
-                <span style={{ fontSize: 11, color: 'var(--texto-suave)', marginLeft: 'auto' }}>Versão Atual</span>
               </div>
               <ul style={{ margin: '6px 0 0 18px', padding: 0, fontSize: 12, lineHeight: 1.6, color: 'var(--texto)' }}>
                 <li><strong>Activity Rail Permanente (86px):</strong> Novo menu vertical estilo Mendeley Desktop e Zotero 7 substituindo abas horizontais quebradas.</li>

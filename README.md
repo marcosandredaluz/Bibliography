@@ -1,7 +1,7 @@
 # Bibliography 📚🔍
 
 [![CI Pipeline](https://github.com/marcosandredaluz/Bibliography/actions/workflows/ci.yml/badge.svg)](https://github.com/marcosandredaluz/Bibliography/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/badge/release-v1.0.0-blue.svg)](https://github.com/marcosandredaluz/Bibliography/releases)
+[![Release](https://img.shields.io/badge/release-v1.0.1-blue.svg)](https://github.com/marcosandredaluz/Bibliography/releases)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![Node.js 20+](https://img.shields.io/badge/node.js-20+-green.svg)](https://nodejs.org/)
@@ -190,7 +190,7 @@ If you use Bibliography in your academic research, systematic review, thesis, or
 @software{da_luz_bibliography_2026,
   author = {da Luz, Marcos André},
   title = {Bibliography: Open-Source Academic Writing Assistant & Forensic Citation Verification Engine},
-  version = {1.0.0},
+  version = {1.0.1},
   year = {2026},
   url = {https://github.com/marcosandredaluz/Bibliography},
   license = {Apache-2.0}

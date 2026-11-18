@@ -1,7 +1,7 @@
 {
   "name": "bibliography",
   "productName": "Bibliography",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Open-source academic writing assistant, federated literature search, PRISMA 2020 systematic review screening, and forensic citation verification engine",
   "author": "Marcos André da Luz <https://www.linkedin.com/in/marcos-andre-da-luz-847039141>",
   "license": "Apache-2.0",

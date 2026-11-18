@@ -11,7 +11,7 @@ from app.core.logger import app_logger
 app = FastAPI(
     title="Bibliography Engine",
     description="Motor local de auditoria de citações, anti-alucinação e integração com processadores de texto (.DOCX)",
-    version="1.0.0",
+    version="1.0.1",
     debug=settings.DEBUG
 )
 
