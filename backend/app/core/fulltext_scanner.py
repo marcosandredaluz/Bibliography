@@ -8,16 +8,7 @@ import os
 import re
 from typing import List, Dict, Any, Optional
 
-try:
-    import pypdf
-except ImportError:
-    pypdf = None
-
-try:
-    import fitz  # PyMuPDF
-except ImportError:
-    fitz = None
-
+from .pdf_layout_pipeline import extrair_layout_e_tabelas_pdf
 from .semantic_inference import MultilingualSemanticInference, extrair_entidades_numericas
 
 class FullTextEscalationScanner:
@@ -30,53 +21,9 @@ class FullTextEscalationScanner:
     def __init__(self):
         self.semantic_engine = MultilingualSemanticInference()
 
-    def extrair_texto_integral_pdf(self, caminho_pdf: str) -> Dict[str, Any]:
-        """Extrai texto de todas as páginas do PDF, identificando tabelas e seções."""
-        if not os.path.exists(caminho_pdf):
-            return {"sucesso": False, "erro": "Arquivo PDF não encontrado."}
-
-        paginas_texto = []
-        tabelas_detectadas = []
-
-        # 1. Tentativa com PyMuPDF (fitz)
-        if fitz:
-            try:
-                doc = fitz.open(caminho_pdf)
-                for num_pag, pag in enumerate(doc, start=1):
-                    txt = pag.get_text("text")
-                    paginas_texto.append({"pagina": num_pag, "texto": txt})
-                    # Busca padrões de tabelas
-                    for m in re.finditer(r'(?:Table|Tabela)\s+\d+[:.\s]+.*?(?=\n\n|\Z)', txt, re.DOTALL | re.IGNORECASE):
-                        tabelas_detectadas.append({"pagina": num_pag, "conteudo": m.group(0)[:800]})
-                doc.close()
-                return {
-                    "sucesso": True,
-                    "paginas": paginas_texto,
-                    "tabelas": tabelas_detectadas,
-                    "texto_completo": "\n".join(p["texto"] for p in paginas_texto)
-                }
-            except Exception:
-                pass
-
-        # 2. Tentativa com pypdf
-        if pypdf:
-            try:
-                reader = pypdf.PdfReader(caminho_pdf)
-                for num_pag, pag in enumerate(reader.pages, start=1):
-                    txt = pag.extract_text() or ""
-                    paginas_texto.append({"pagina": num_pag, "texto": txt})
-                    for m in re.finditer(r'(?:Table|Tabela)\s+\d+[:.\s]+.*?(?=\n\n|\Z)', txt, re.DOTALL | re.IGNORECASE):
-                        tabelas_detectadas.append({"pagina": num_pag, "conteudo": m.group(0)[:800]})
-                return {
-                    "sucesso": True,
-                    "paginas": paginas_texto,
-                    "tabelas": tabelas_detectadas,
-                    "texto_completo": "\n".join(p["texto"] for p in paginas_texto)
-                }
-            except Exception as e:
-                return {"sucesso": False, "erro": f"Erro pypdf: {e}"}
-
-        return {"sucesso": False, "erro": "Nenhum parser de PDF disponível (instale pypdf ou pymupdf)."}
+    def extrair_texto_integral_pdf(self, caminho_pdf: str, usar_docling: bool = False) -> Dict[str, Any]:
+        """Extrai texto multi-coluna, tabelas, rodapés e DOIs sem dependências AGPL (PyMuPDF/fitz removido)."""
+        return extrair_layout_e_tabelas_pdf(caminho_pdf, usar_docling=usar_docling)
 
     def validar_em_dois_estagios(
         self,

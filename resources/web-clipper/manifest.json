@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Bibliografia Forense Web Clipper",
+  "version": "1.0.0",
+  "description": "Captura local-first de metadados acadêmicos, DOIs e PDFs para o Bibliografia Forense (127.0.0.1:23119).",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["http://127.0.0.1:23119/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Enviar para Bibliografia"
+  }
+}

@@ -56,6 +56,8 @@ release/
 *.exe
 *.blockmap
 *.asar
+calibration_gate/custom-forensic-minilm/
+*.onnx
 
 # --- Arquivos Temporários de Processadores de Texto e Documentos ---
 ~$*

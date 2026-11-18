@@ -2,17 +2,25 @@
 Rotas e Controladores de Integração com Processador de Texto (.DOCX)
 Camada: Integration Word
 """
+import os
 import re
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 
 from app.core.citation_regex import CitationExtractorABNT
+from app.core.fulltext_scanner import FullTextEscalationScanner
 from app.validation_engine.open_detector import OpenDetectorStylometry
 from app.plugin_system.manager import BibliografiaPluginManager
 
 router = APIRouter(prefix="/api/word", tags=["Word Integration"])
 plugin_mgr = BibliografiaPluginManager()
+pdf_scanner = FullTextEscalationScanner()
+
+
+class PdfLayoutRequest(BaseModel):
+    caminho_pdf: str
+    usar_docling: bool = False
 
 class AuditoriaRequest(BaseModel):
     texto: str
@@ -120,3 +128,14 @@ async def auditar_manuscrito(req: AuditoriaRequest):
             "plugins": len(achados_plugins)
         }
     )
+
+
+@router.post("/extrair-layout-pdf")
+async def extrair_layout_pdf(req: PdfLayoutRequest):
+    caminho = (req.caminho_pdf or "").strip()
+    if not caminho or not caminho.lower().endswith(".pdf") or not os.path.isfile(caminho):
+        raise HTTPException(status_code=400, detail="Caminho de arquivo .pdf inválido ou inexistente.")
+    resultado = pdf_scanner.extrair_texto_integral_pdf(caminho, usar_docling=req.usar_docling)
+    if not resultado.get("sucesso"):
+        raise HTTPException(status_code=422, detail=resultado.get("erro", "Falha ao processar layout do PDF."))
+    return resultado

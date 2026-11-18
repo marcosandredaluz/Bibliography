@@ -83,6 +83,95 @@ function extrairTermosBuscaArtigoParecido({ fraseWord = '', tituloSugerido = '',
   return limpoRef || termosFrase || 'clinical study';
 }
 
+function agruparItensEmLinhasVisuaisPdf(itens = [], alturaDominante = 11) {
+  const buckets = [];
+  for (const it of itens) {
+    const tol = it.ehSobrescrito ? Math.max(4.5, alturaDominante * 0.65) : Math.max(2.5, it.h * 0.35);
+    const bucketExist = buckets.find((b) => Math.abs(b.y - it.y) <= tol);
+    if (bucketExist) {
+      bucketExist.itens.push(it);
+      if (!it.ehSobrescrito) {
+        bucketExist.y = (bucketExist.y + it.y) / 2;
+      }
+    } else {
+      buckets.push({ y: it.y, h: it.h, itens: [it] });
+    }
+  }
+  buckets.sort((a, b) => b.y - a.y);
+
+  return buckets
+    .map((b) => {
+      b.itens.sort((a, b2) => a.x - b2.x);
+      let linhaTexto = '';
+      let prevXEnd = null;
+      for (let idx = 0; idx < b.itens.length; idx++) {
+        const it = b.itens[idx];
+        const sTrim = it.str.trim();
+        const sobrescritoInline =
+          it.ehSobrescrito &&
+          idx > 0 &&
+          /^\d{1,3}(?:\s*[,;–—-]\s*\d{1,3})*$/.test(sTrim) &&
+          !(linhaTexto.trimEnd().endsWith('Figura') || linhaTexto.trimEnd().endsWith('Tabela'));
+        const textoEmitir = sobrescritoInline ? `[${sTrim}]` : sTrim;
+
+        if (linhaTexto && prevXEnd !== null) {
+          const gap = it.x - prevXEnd;
+          linhaTexto += sobrescritoInline ? ' ' : gap > Math.max(12, b.h * 1.4) ? '   ' : ' ';
+        }
+        linhaTexto += textoEmitir;
+        prevXEnd = it.x + it.largura;
+      }
+      return {
+        y: b.y,
+        x: b.itens[0]?.x ?? 0,
+        altura: b.h,
+        texto: linhaTexto.trim(),
+      };
+    })
+    .filter((l) => l.texto);
+}
+
+function ordenarItensComDeteccaoDeColunasPdf(itens = [], larguraPag = 595, alturaDominante = 11) {
+  if (!itens.length) return [];
+  const midX = larguraPag * 0.5;
+  const esq = itens.filter((it) => it.x + it.largura <= midX + 6);
+  const dir = itens.filter((it) => it.x >= midX - 6);
+  const cruzamCentro = itens.filter(
+    (it) => it.x < midX - 10 && it.x + it.largura > midX + 10 && it.str.trim().length >= 12
+  );
+
+  // Sem evidência clara de 2 colunas: ordenação linear tradicional
+  if (esq.length < 15 || dir.length < 15 || cruzamCentro.length > Math.max(8, Math.floor(itens.length * 0.08))) {
+    return agruparItensEmLinhasVisuaisPdf(itens, alturaDominante);
+  }
+
+  // Separa bandas contínuas entre spans largura-total (títulos, resumos, figuras) e blocos de 2 colunas
+  const porY = [...itens].sort((a, b) => b.y - a.y);
+  const resultado = [];
+  let bufEsq = [];
+  let bufDir = [];
+  const descarregarColunas = () => {
+    if (bufEsq.length) resultado.push(...agruparItensEmLinhasVisuaisPdf(bufEsq, alturaDominante));
+    if (bufDir.length) resultado.push(...agruparItensEmLinhasVisuaisPdf(bufDir, alturaDominante));
+    bufEsq = [];
+    bufDir = [];
+  };
+
+  for (const it of porY) {
+    const cruza = it.x < midX - 10 && it.x + it.largura > midX + 10 && it.str.trim().length >= 12;
+    if (cruza) {
+      descarregarColunas();
+      resultado.push(...agruparItensEmLinhasVisuaisPdf([it], alturaDominante));
+    } else if (it.x + it.largura / 2 < midX) {
+      bufEsq.push(it);
+    } else {
+      bufDir.push(it);
+    }
+  }
+  descarregarColunas();
+  return resultado;
+}
+
 async function extrairPaginasPdf(bytes) {
   const dados = bytes instanceof Uint8Array ? new Uint8Array(bytes) : new Uint8Array(bytes || []);
   const tarefa = pdfjs.getDocument({ data: dados, isEvalSupported: false });
@@ -91,45 +180,32 @@ async function extrairPaginasPdf(bytes) {
     const paginas = [];
     for (let i = 1; i <= docPdf.numPages; i++) {
       const pag = await docPdf.getPage(i);
+      const vp = pag.getViewport({ scale: 1.0 });
+      const larguraPag = Number(vp?.width) || 595;
       const txt = await pag.getTextContent();
       const bruto = txt.items.map((it) => it.str + (it.hasEOL ? '\n' : ' ')).join('');
 
-      // Agrupa itens em linhas visuais ordenadas por Y decrescente e X crescente para reconstrução fiel de manuscritos
-      const buckets = [];
+      const alturas = [];
+      const itensBrutos = [];
       for (const it of txt.items || []) {
         const s = String(it.str || '');
         if (!s.trim()) continue;
         const y = Array.isArray(it.transform) ? Number(it.transform[5]) : 0;
         const x = Array.isArray(it.transform) ? Number(it.transform[4]) : 0;
         const h = Number(it.height) || (Array.isArray(it.transform) ? Math.abs(Number(it.transform[3])) : 11) || 11;
-        const bucketExist = buckets.find((b) => Math.abs(b.y - y) <= Math.max(2.5, h * 0.35));
-        if (bucketExist) {
-          bucketExist.itens.push({ str: s, x, h });
-        } else {
-          buckets.push({ y, h, itens: [{ str: s, x, h }] });
-        }
+        const largura = Math.max(Number(it.width) || 0, s.length * Math.max(4, h * 0.45));
+        alturas.push(h);
+        itensBrutos.push({ str: s, x, y, h, largura });
       }
-      buckets.sort((a, b) => b.y - a.y);
-      const linhasVisuais = buckets.map((b) => {
-        b.itens.sort((a, b2) => a.x - b2.x);
-        let linhaTexto = '';
-        let prevXEnd = null;
-        for (const it of b.itens) {
-          if (linhaTexto && prevXEnd !== null) {
-            const gap = it.x - prevXEnd;
-            linhaTexto += gap > Math.max(12, b.h * 1.4) ? '   ' : ' ';
-          }
-          linhaTexto += it.str.trim();
-          prevXEnd = it.x + it.str.length * Math.max(4, b.h * 0.48);
-        }
-        return {
-          y: b.y,
-          x: b.itens[0]?.x ?? 0,
-          altura: b.h,
-          texto: linhaTexto.trim(),
-        };
-      }).filter((l) => l.texto);
+      alturas.sort((a, b) => a - b);
+      const alturaDominante = alturas.length ? alturas[Math.floor(alturas.length * 0.5)] : 11;
+      for (const it of itensBrutos) {
+        it.ehSobrescrito =
+          it.h <= alturaDominante * 0.80 &&
+          /^\d{1,3}(?:\s*[,;–—-]\s*\d{1,3})*$/.test(it.str.trim());
+      }
 
+      const linhasVisuais = ordenarItensComDeteccaoDeColunasPdf(itensBrutos, larguraPag, alturaDominante);
       paginas.push({ numero: i, bruto, norm: normalizar(bruto).replace(/\s+/g, ' '), linhasVisuais });
     }
     return paginas;

@@ -77,7 +77,15 @@ const refConforme = {
 const alertasConforme = auditarReferenciaAbntIndividual(refConforme);
 assert.strictEqual(alertasConforme.length, 0, 'Referência conforme de livro não deve gerar alertas');
 
-console.log('  ✓ 2. Elementos obrigatórios ABNT NBR 6023 (Local, Editora, Acesso em) validados.');
+const refVancouverConforme = {
+  textoOriginal: '1. Domingues CMAS, Teixeira AMS. Coberturas vacinais no Brasil. Epidemiol Serv Saúde [Internet]. 2013 jan-mar [citado 2018 set 6];22(1):9-27. Disponível em: http://scielo.iec.gov.br/artigo.pdf',
+  primeiroSobrenome: 'Domingues',
+  ano: '2013',
+};
+const alertasVancouver = auditarReferenciaAbntIndividual(refVancouverConforme);
+assert.strictEqual(alertasVancouver.length, 0, 'Referência Vancouver com [citado] e 22(1):9-27 não deve gerar falso positivo ABNT');
+
+console.log('  ✓ 2. Elementos obrigatórios ABNT NBR 6023 (Local, Editora, Acesso em) e tolerância Vancouver validados.');
 
 // ==========================================
 // 3. TESTE: CORRUPÇÃO GENÔMICA (ZIEMANN / HGNC)

@@ -72,7 +72,7 @@ export function TutorialEtapa({ idEtapa, titulo, resumo, passos = [], abertoPorP
 }
 
 /**
- * 6 Capítulos Oficiais do Manual Técnico e de Leitura (v1.2.0)
+ * 6 Capítulos Oficiais do Manual Técnico e de Leitura (v1.0.2)
  */
 const CAPITULOS_MANUAL = [
   {
@@ -102,7 +102,7 @@ const CAPITULOS_MANUAL = [
       {
         subtitulo: '2.1. O que é o Activity Rail e por que ele substituiu o menu horizontal',
         texto:
-          'Na versão v1.2.0, o menu superior horizontal com abas que sofriam cortes e problemas de rolagem foi definitivamente substituído por um Rail Vertical Permanente de 86px de largura, inspirado nas interfaces profissionais do Mendeley Desktop, Zotero 7 e VS Code. O rail fica fixo à esquerda, permitindo troca de contexto com 1 clique sem perda de dados.',
+          'Na arquitetura moderna (v1.0.2), o menu superior horizontal com abas que sofriam cortes e problemas de rolagem foi definitivamente substituído por um Rail Vertical Permanente de 86px de largura, inspirado nas interfaces profissionais do Mendeley Desktop, Zotero 7 e VS Code. O rail fica fixo à esquerda, permitindo troca de contexto com 1 clique sem perda de dados.',
       },
       {
         subtitulo: '2.2. Anatomia dos Módulos do Rail Vertical',
@@ -281,7 +281,7 @@ export default function HelpGuideView({
     } else {
       navigator.clipboard?.writeText(texto);
     }
-    alert('Manual Oficial v1.2.0 copiado para a área de transferência! Cole no Microsoft Word se desejar imprimir.');
+    alert('Manual Oficial v1.0.2 copiado para a área de transferência! Cole no Microsoft Word se desejar imprimir.');
   };
 
   return (
@@ -289,7 +289,7 @@ export default function HelpGuideView({
       {/* BANNER SUPERIOR COM SELETOR DE MODO */}
       <div className="guia-banner">
         <div>
-          <h2>📚 {tr('Manual de Operação & Tutorial Didático Interativo (v1.2.0)', 'Operations Manual & Interactive Walkthrough (v1.2.0)')}</h2>
+          <h2>📚 {tr('Manual de Operação & Tutorial Didático Interativo (v1.0.2)', 'Operations Manual & Interactive Walkthrough (v1.0.2)')}</h2>
           <p>
             {tr('Instruções completas cobrindo os 6 módulos essenciais do sistema: Sincronização na Nuvem, Activity Rail, Leitor de PDFs, Auditoria Reversa Forense, Citações Word e PRISMA 2020.', 'Complete instructions covering the 6 core modules: Cloud Sync, Activity Rail, PDF Reader, Forensic Reverse Audit, Word Citations, and PRISMA 2020.')}
           </p>
@@ -352,7 +352,7 @@ export default function HelpGuideView({
 
           <div className="manual-leitura-folha">
             <div className="manual-capa">
-              <h1>📖 MANUAL OFICIAL DO SISTEMA BIBLIOGRAFIA — v1.2.0 LTS</h1>
+              <h1>📖 MANUAL OFICIAL DO SISTEMA BIBLIOGRAFIA — v1.0.2</h1>
               <p>
                 Guia de referência para gerenciamento científico, leitura atômica de PDFs, auditoria forense anti-alucinação de IA, cópia CSL para o Microsoft Word e triagem sistemática PRISMA 2020.
               </p>

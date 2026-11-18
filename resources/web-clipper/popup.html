@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Bibliografia Clipper</title>
+  <style>
+    body { font-family: Segoe UI, sans-serif; width: 320px; margin: 12px; color: #0f172a; }
+    h3 { margin: 0 0 8px; font-size: 14px; }
+    label { display: block; font-size: 11.5px; font-weight: 600; margin-top: 8px; }
+    input { width: 100%; box-sizing: border-box; padding: 6px; border: 1px solid #cbd5e1; border-radius: 6px; margin-top: 3px; font-size: 12px; }
+    button { margin-top: 10px; width: 100%; padding: 8px; border: none; border-radius: 6px; background: #2563eb; color: #fff; font-weight: 700; cursor: pointer; }
+    button:disabled { opacity: 0.6; }
+    #status { margin-top: 10px; font-size: 12px; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <h3>Bibliografia Forense — Clipper Local</h3>
+  <label>Token Local (X-Bibliography-Local-Token)</label>
+  <input id="token" type="password" placeholder="Cole o token exibido no Diagnóstico do app" />
+  <button id="btnClip">📥 Capturar Página Atual</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

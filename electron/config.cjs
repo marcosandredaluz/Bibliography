@@ -3,6 +3,7 @@ const { app } = require('electron');
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
+const crypto = require('crypto');
 
 const arquivo = () => path.join(app.getPath('userData'), 'config.json');
 
@@ -139,4 +140,13 @@ function obterProjetosRecentes() {
   return lista.slice(0, 10);
 }
 
-module.exports = { carregar, salvar, registrarProjetoRecente, removerProjetoRecente, sugestoesDePasta, obterProjetosRecentes };
+function obterTokenApiLocal() {
+  const cfg = carregar();
+  if (!cfg.localApiToken || String(cfg.localApiToken).length < 24) {
+    cfg.localApiToken = crypto.randomBytes(24).toString('hex');
+    salvar(cfg);
+  }
+  return cfg.localApiToken;
+}
+
+module.exports = { carregar, salvar, registrarProjetoRecente, removerProjetoRecente, sugestoesDePasta, obterProjetosRecentes, obterTokenApiLocal };

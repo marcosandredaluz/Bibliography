@@ -23,6 +23,7 @@ const auditor = require('./auditor.cjs');
 const { injetarComentariosNoDocx } = require('./docx_comentarios_injector.cjs');
 const { gerarHtmlLaudoPericial } = require('./laudo_pericial_generator.cjs');
 const { executarCirurgiaDocx } = require('./docx_surgical_editor.cjs');
+const robAssessor = require('./rob_assessor.cjs');
 const { execFile } = require('child_process');
 const {
   iniciarServidorWord,
@@ -231,6 +232,40 @@ function registrarIpc() {
     return abrirBiblioteca(destino, nomeProjeto);
   });
   h('config:removerProjetoRecente', async (caminho) => config.removerProjetoRecente(caminho));
+  h('config:tokenLocal', async () => {
+    const tok = config.obterTokenApiLocal();
+    cfg.localApiToken = tok;
+    return { token: tok, endpointClip: `http://127.0.0.1:${PORTA}/api/v1/clip` };
+  });
+
+  h('bib:robSugerir', async ({ refId, tool = 'ROB2' }) => {
+    const b = exigirBiblioteca();
+    const ref = b.refs.get(refId);
+    if (!ref) throw new Error('Referência não encontrada.');
+    const sug = robAssessor.criarSugestaoAvaliacaoRob(ref, tool);
+    await robAssessor.registrarAuditTrailRob(b.raiz, {
+      ref_id: refId,
+      reviewer_id: 'system_suggestion',
+      action: 'create_suggestion',
+      previous_value: null,
+      new_value: JSON.stringify({ tool: sug.tool, suggested_overall: sug.suggested_overall, status: sug.status }),
+      evidence_sha256_refs: sug.domains.flatMap((d) => (d.evidence_anchors || []).map((a) => a.excerpt_sha256)),
+    });
+    await b.atualizar(refId, { robAssessment: sug });
+    return sug;
+  });
+
+  h('bib:robConfirmar', async ({ refId, reviewerId, domainJudgments, overallJudgment = null }) =>
+    robAssessor.confirmarAvaliacaoRobHumana({
+      bib: exigirBiblioteca(),
+      refId,
+      reviewerId,
+      domainJudgments,
+      overallJudgment,
+    })
+  );
+
+  h('bib:robHistorico', async () => robAssessor.lerAuditTrailRob(exigirBiblioteca().raiz));
 
   h('dialogo:escolherPasta', async () => {
     const r = await dialog.showOpenDialog(janela, {
@@ -1304,6 +1339,7 @@ if (!instanciaUnica) {
         biblioteca = null;
       }
     }
+    cfg.localApiToken = config.obterTokenApiLocal();
     iniciarServidorWord({
       obterBiblioteca: () => biblioteca,
       obterConfig: () => cfg,

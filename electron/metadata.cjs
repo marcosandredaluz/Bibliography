@@ -1,6 +1,6 @@
 // Busca de metadados: DOI (Crossref/DataCite), ISBN (Google Books/Open Library)
 // e busca por título (Crossref). Tudo é convertido para CSL-JSON.
-const UA = 'Bibliografia/1.0.1 (https://github.com/marcosandredaluz/Bibliography; mailto:pesquisa@bibliografia.local)';
+const UA = 'Bibliografia/1.0.2 (https://github.com/marcosandredaluz/Bibliography; mailto:pesquisa@bibliografia.local)';
 
 const CAMPOS_CSL = new Set([
   'type', 'title', 'title-short', 'container-title', 'container-title-short', 'collection-title',
@@ -415,4 +415,5 @@ module.exports = {
   verificarRetratacaoArtigo,
   normalizarDoi,
   separarNome,
+  limparCsl,
 };

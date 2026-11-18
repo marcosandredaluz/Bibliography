@@ -11,6 +11,7 @@ contextBridge.exposeInMainWorld('api', {
   config: {
     obter: () => chamar('config:obter'),
     definir: (patch) => chamar('config:definir', patch),
+    tokenLocal: () => chamar('config:tokenLocal'),
     definirBiblioteca: (caminho, nome) => chamar('config:definirBiblioteca', caminho, nome),
     projetosRecentes: () => chamar('config:projetosRecentes'),
     alternarProjeto: (caminho, nome) => chamar('config:alternarProjeto', caminho, nome),
@@ -41,6 +42,9 @@ contextBridge.exposeInMainWorld('api', {
     sincronizarWord: (d) => chamar('bib:sincronizarWord', d),
     padronizarNomesPdfs: () => chamar('bib:padronizarNomesPdfs'),
     verificarIntegridade: () => chamar('bib:verificarIntegridade'),
+    robSugerir: (opts) => chamar('bib:robSugerir', opts),
+    robConfirmar: (opts) => chamar('bib:robConfirmar', opts),
+    robHistorico: () => chamar('bib:robHistorico'),
     aoAtualizar: (cb) => {
       const fn = () => cb();
       ipcRenderer.on('bib:atualizado', fn);
@@ -136,7 +140,7 @@ contextBridge.exposeInMainWorld('api', {
   },
   versao: {
     obterInfo: () => ({
-      app: '1.0.1',
+      app: '1.0.2',
       electron: process.versions.electron,
       node: process.versions.node,
       chrome: process.versions.chrome,

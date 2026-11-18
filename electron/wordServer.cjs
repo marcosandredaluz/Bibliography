@@ -5,6 +5,9 @@ const fs = require('fs');
 const path = require('path');
 const citacoes = require('./citations.cjs');
 const auditor = require('./auditor.cjs');
+const metadata = require('./metadata.cjs');
+const { validarTokenLocal, processarRequisicaoClip } = require('./clipperRoute.cjs');
+const { resolverChavesPandoc, construirBibliografiaPandoc } = require('./citationsApiRoute.cjs');
 
 const PORTA = 23119;
 const DIR_ADDIN = path.join(__dirname, '..', 'resources', 'word-addin');
@@ -106,16 +109,19 @@ function ehHostLocalPermitido(host = '') {
   return /^(?:127\.0\.0\.1|localhost)(?::\d{1,5})?$/i.test(String(host || '').trim());
 }
 
-function ehOrigemLocalPermitida(origin = '') {
+function ehOrigemLocalPermitida(origin = '', pathname = '') {
   const o = String(origin || '').trim();
   if (!o) return true; // Clientes nativos sem cabeçalho Origin (ex.: Word VBA COM, desktop local)
-  return /^https?:\/\/(?:127\.0\.0\.1|localhost)(?::\d{1,5})?$/i.test(o);
+  if (/^https?:\/\/(?:127\.0\.0\.1|localhost)(?::\d{1,5})?$/i.test(o)) return true;
+  if (pathname === '/api/v1/clip' && /^(?:chrome|moz|edge)-extension:\/\/[a-z0-9-]+$/i.test(o)) return true;
+  return false;
 }
 
 const MAX_BODY_BYTES = 15 * 1024 * 1024; // Limite de 15 MB por requisição local
 
 function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBiblioteca, aoSolicitarSeletorCitacao, porta = PORTA }) {
   const srv = http.createServer(async (req, res) => {
+    const reqUrlPreview = new URL(req.url, `http://127.0.0.1:${PORTA}`);
     const hostHeader = req.headers.host;
     if (hostHeader && !ehHostLocalPermitido(hostHeader)) {
       res.writeHead(403, { 'Content-Type': 'application/json; charset=utf-8', 'X-Content-Type-Options': 'nosniff' });
@@ -123,7 +129,7 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
     }
 
     const originHeader = req.headers.origin;
-    if (originHeader && !ehOrigemLocalPermitida(originHeader)) {
+    if (originHeader && !ehOrigemLocalPermitida(originHeader, reqUrlPreview.pathname)) {
       res.writeHead(403, { 'Content-Type': 'application/json; charset=utf-8', 'Vary': 'Origin', 'X-Content-Type-Options': 'nosniff' });
       return res.end(JSON.stringify({ erro: 'Origem CORS não autorizada' }));
     }
@@ -133,7 +139,7 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
     }
     res.setHeader('Vary', 'Origin');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-Bibliography-Local-Token');
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('Cache-Control', 'no-store');
     if (req.method === 'OPTIONS') {
@@ -528,6 +534,53 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
             orfas: (resAudit.citacoesSemReferencia || []).length,
           },
         });
+      }
+
+      if (url.pathname === '/api/v1/clip' && req.method === 'POST') {
+        const tokenEsperado = cfg?.localApiToken || process.env.BIBLIOGRAPHY_LOCAL_TOKEN || '';
+        if (!validarTokenLocal(req, tokenEsperado)) {
+          return enviarJson(403, { erro: 'Token local inválido ou ausente (X-Bibliography-Local-Token).' });
+        }
+        const payload = await lerCorpo();
+        const resClip = await processarRequisicaoClip(payload, {
+          bib,
+          metadata,
+          aoAtualizarBiblioteca,
+        });
+        return enviarJson(200, resClip);
+      }
+
+      if (url.pathname === '/api/v1/citations/resolve' && req.method === 'POST') {
+        const tokenEsperado = cfg?.localApiToken || process.env.BIBLIOGRAPHY_LOCAL_TOKEN || '';
+        if (tokenEsperado && !validarTokenLocal(req, tokenEsperado)) {
+          return enviarJson(403, { erro: 'Token local inválido ou ausente (X-Bibliography-Local-Token).' });
+        }
+        const { keys = [], page = '', style } = await lerCorpo();
+        const out = resolverChavesPandoc({
+          keys,
+          page,
+          estiloId: style || cfg?.estilo,
+          idioma: cfg?.idioma,
+          bib,
+          citacoes,
+        });
+        return enviarJson(out.statusCode, out.body);
+      }
+
+      if (url.pathname === '/api/v1/citations/bibliography' && req.method === 'POST') {
+        const tokenEsperado = cfg?.localApiToken || process.env.BIBLIOGRAPHY_LOCAL_TOKEN || '';
+        if (tokenEsperado && !validarTokenLocal(req, tokenEsperado)) {
+          return enviarJson(403, { erro: 'Token local inválido ou ausente (X-Bibliography-Local-Token).' });
+        }
+        const { keys = [], style } = await lerCorpo();
+        const out = construirBibliografiaPandoc({
+          keys,
+          style: style || cfg?.estilo,
+          idioma: cfg?.idioma,
+          bib,
+          citacoes,
+        });
+        return enviarJson(out.statusCode, out.body);
       }
 
       if (url.pathname === '/painel-auditoria') {

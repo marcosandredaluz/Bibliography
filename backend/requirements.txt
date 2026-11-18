@@ -1,0 +1,11 @@
+# Dependências Python estritamente permissivas (MIT / Apache-2.0 / BSD)
+fastapi>=0.115.0
+pydantic>=2.0.0
+uvicorn>=0.30.0
+pdfplumber>=0.11.0
+pypdf>=7.0.0
+
+# Módulos opcionais (todos sob licenças permissivas):
+# spartan-tables>=0.1.0   # MIT (extração determinística de tabelas CPU-only)
+# docling>=2.0.0          # MIT (código); docling-models (Apache-2.0 / CDLA-Permissive-2.0)
+# panflute>=2.3.0         # BSD-3-Clause (filtro Pandoc/Quarto)

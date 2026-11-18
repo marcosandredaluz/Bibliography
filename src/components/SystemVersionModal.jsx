@@ -18,7 +18,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
         setInfoSistema(window.api.versao.obterInfo());
       } else {
         setInfoSistema({
-          app: '1.0.1',
+          app: '1.0.2',
           electron: '44.9.2',
           node: '20.x',
           chrome: '124.x',
@@ -27,7 +27,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
         });
       }
     } catch {
-      setInfoSistema({ app: '1.0.1', electron: 'N/D', node: 'N/D' });
+      setInfoSistema({ app: '1.0.2', electron: 'N/D', node: 'N/D' });
     }
 
     // Consulta status do servidor Word
@@ -46,9 +46,9 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
 
   const copiarDiagnostico = () => {
     const texto = [
-      `=== DIAGNÓSTICO DO SISTEMA BIBLIOGRAFIA (v${infoSistema?.app || '1.2.0'}) ===`,
+      `=== DIAGNÓSTICO DO SISTEMA BIBLIOGRAFIA (v${infoSistema?.app || '1.0.2'}) ===`,
       `Data/Hora: ${new Date().toLocaleString('pt-BR')}`,
-      `Versão do Aplicativo: ${infoSistema?.app || '1.2.0'}`,
+      `Versão do Aplicativo: ${infoSistema?.app || '1.0.2'}`,
       `Runtime Electron: ${infoSistema?.electron || 'N/D'}`,
       `Node.js: ${infoSistema?.node || 'N/D'}`,
       `Chromium: ${infoSistema?.chrome || 'N/D'}`,
@@ -127,7 +127,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
                   borderRadius: 99,
                 }}
               >
-                v{infoSistema?.app || '1.0.1'}
+                v{infoSistema?.app || '1.0.2'}
               </span>
               <span
                 style={{
@@ -369,6 +369,20 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: 6 }}>
+                  <button
+                    className="btn pequeno secundario"
+                    onClick={async () => {
+                      try {
+                        const infoTok = await window.api?.config?.tokenLocal?.();
+                        if (infoTok?.token) {
+                          await window.api?.sistema?.copiarTexto?.(infoTok.token);
+                        }
+                      } catch {}
+                    }}
+                    title={tr('Copia X-Bibliography-Local-Token para parear o Web Clipper MV3 e filtros Quarto/Pandoc em 127.0.0.1:23119', 'Copy X-Bibliography-Local-Token to pair the MV3 Web Clipper and Quarto/Pandoc filters on 127.0.0.1:23119')}
+                  >
+                    🔑 {tr('Copiar Token Local (Clipper / Pandoc)', 'Copy Local Token (Clipper / Pandoc)')}
+                  </button>
                   {bib?.raiz && (
                     <button
                       className="btn pequeno secundario"
@@ -387,7 +401,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
         {/* ABA 2: CHANGELOG HISTÓRICO DE VERSÕES */}
         {abaAtiva === 'changelog' && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14, maxHeight: 380, overflowY: 'auto', paddingRight: 4 }}>
-            {/* VERSÃO 1.0.1 */}
+            {/* VERSÃO 1.0.2 */}
             <div
               style={{
                 padding: '12px 14px',
@@ -399,10 +413,32 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
                 <span style={{ background: 'var(--primaria)', color: '#fff', fontSize: 11, fontWeight: 800, padding: '2px 8px', borderRadius: 4 }}>
+                  v1.0.2
+                </span>
+                <strong style={{ fontSize: 13.5 }}>Novembro de 2026 — Modelo ONNX Forense, Leitura PDF 2 Colunas &amp; Módulos Clean-Room</strong>
+                <span style={{ fontSize: 11, color: 'var(--texto-suave)', marginLeft: 'auto' }}>Versão Atual</span>
+              </div>
+              <ul style={{ margin: '6px 0 0 18px', padding: 0, fontSize: 12, lineHeight: 1.6, color: 'var(--texto)' }}>
+                <li><strong>Modelo Semântico ONNX Fine-Tuned (<code>custom-forensic-minilm</code> INT8):</strong> Suporte offline embarcado ao modelo ajustado via Colab para validação bilíngue PT↔EN.</li>
+                <li><strong>Leitura de PDFs em 2 Colunas &amp; Vancouver:</strong> Segmentação geométrica por calha central, detecção de sobrescritos numéricos e remoção total de dependências AGPL do backend Python (<code>pdfplumber</code> MIT + <code>pypdf</code> BSD).</li>
+                <li><strong>Módulos Clean-Room Integrados:</strong> Web Clipper Manifest V3 (<code>POST /api/v1/clip</code> com token local), Risco de Viés Cochrane RoB 2 / ROBINS-I com revisão humana obrigatória + trilha SHA-256 e API Pandoc/Quarto (<code>&gt;= 1.4.0</code> MIT).</li>
+              </ul>
+            </div>
+
+            {/* VERSÃO 1.0.1 */}
+            <div
+              style={{
+                padding: '12px 14px',
+                borderRadius: 8,
+                background: 'var(--fundo)',
+                border: '1px solid var(--borda)',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                <span style={{ background: '#475569', color: '#fff', fontSize: 11, fontWeight: 800, padding: '2px 8px', borderRadius: 4 }}>
                   v1.0.1
                 </span>
                 <strong style={{ fontSize: 13.5 }}>Novembro de 2026 — Extensão Word (.dotm), Calibração Forense &amp; Manifesto Open Source</strong>
-                <span style={{ fontSize: 11, color: 'var(--texto-suave)', marginLeft: 'auto' }}>Versão Atual</span>
               </div>
               <ul style={{ margin: '6px 0 0 18px', padding: 0, fontSize: 12, lineHeight: 1.6, color: 'var(--texto)' }}>
                 <li><strong>Extensão Nativa Microsoft Word (<code>.dotm</code> + Ribbon):</strong> Gerador de template com faixa OOXML (<code>customUI14.xml</code>), seletor rápido <code>Ctrl+Shift+B</code>, sincronização em lote de campos dinâmicos e leitor reverso <code>w:instrText</code>.</li>
@@ -438,7 +474,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
               </ul>
             </div>
 
-            {/* VERSÃO 1.1.0 */}
+            {/* MARCO INTERNO: AUDITORIA FORENSE E WORD SERVER */}
             <div
               style={{
                 padding: '12px 14px',
@@ -450,7 +486,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
                 <span style={{ background: '#2563eb', color: '#fff', fontSize: 11, fontWeight: 800, padding: '2px 8px', borderRadius: 4 }}>
-                  v1.1.0
+                  Marco Forense
                 </span>
                 <strong style={{ fontSize: 13.5 }}>Outubro de 2026 — Auditoria Forense, Word Server &amp; PRISMA 2020</strong>
               </div>

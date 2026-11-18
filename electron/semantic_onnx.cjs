@@ -7,12 +7,47 @@
  * Possui cache em memória de vetores de embeddings e degradação graciosa caso esteja offline.
  */
 
+const fs = require('fs');
 const path = require('path');
 const os = require('os');
 
+const CUSTOM_MODEL_ID = 'custom-forensic-minilm';
+const BASE_MODEL_ID = 'Xenova/paraphrase-multilingual-MiniLM-L12-v2';
+
 let extratorEmbeddingsPromise = null;
 let falhaCarregamentoOnnx = false;
+let modeloAtivoId = BASE_MODEL_ID;
 const cacheVetores = new Map();
+
+function resolverPastaCacheModelos() {
+  return process.env.BIBLIOGRAPHY_MODELS_DIR || path.join(os.homedir(), '.bibliografia_models_cache');
+}
+
+function resolverRaizesBuscaModeloLocal() {
+  const raizes = [resolverPastaCacheModelos()];
+  if (process.resourcesPath) {
+    raizes.push(path.join(process.resourcesPath, 'models'));
+  }
+  raizes.push(path.join(__dirname, '..', 'calibration_gate'));
+  return raizes;
+}
+
+function detectarModeloLocalCustomizado(cacheRoot) {
+  const dirCustom = path.join(cacheRoot, CUSTOM_MODEL_ID);
+  const quantizado = path.join(dirCustom, 'onnx', 'model_quantized.onnx');
+  const fp32 = path.join(dirCustom, 'onnx', 'model.onnx');
+  if (fs.existsSync(quantizado)) return { rootDir: cacheRoot, modelId: CUSTOM_MODEL_ID, dtype: 'q8' };
+  if (fs.existsSync(fp32)) return { rootDir: cacheRoot, modelId: CUSTOM_MODEL_ID, dtype: 'fp32' };
+  return null;
+}
+
+function localizarModeloCustomizadoNosCaminhos() {
+  for (const raiz of resolverRaizesBuscaModeloLocal()) {
+    const achado = detectarModeloLocalCustomizado(raiz);
+    if (achado) return achado;
+  }
+  return null;
+}
 
 async function obterExtratorOnnx() {
   if (falhaCarregamentoOnnx) return null;
@@ -21,16 +56,27 @@ async function obterExtratorOnnx() {
   extratorEmbeddingsPromise = (async () => {
     try {
       const transformers = await import('@huggingface/transformers');
+      const cacheRoot = resolverPastaCacheModelos();
+      const customLocal = localizarModeloCustomizadoNosCaminhos();
+
       if (transformers.env) {
-        transformers.env.cacheDir = path.join(os.homedir(), '.bibliografia_models_cache');
+        transformers.env.cacheDir = cacheRoot;
+        transformers.env.localModelPath = customLocal ? customLocal.rootDir : cacheRoot;
         transformers.env.allowLocalModels = true;
       }
-      const pipe = await transformers.pipeline(
-        'feature-extraction',
-        'Xenova/paraphrase-multilingual-MiniLM-L12-v2',
-        { quantized: true }
-      );
-      return pipe;
+
+      if (customLocal) {
+        modeloAtivoId = customLocal.modelId;
+        return await transformers.pipeline('feature-extraction', customLocal.modelId, {
+          dtype: customLocal.dtype,
+          local_files_only: true,
+        });
+      }
+
+      modeloAtivoId = BASE_MODEL_ID;
+      return await transformers.pipeline('feature-extraction', BASE_MODEL_ID, {
+        dtype: 'q8',
+      });
     } catch {
       falhaCarregamentoOnnx = true;
       return null;
@@ -95,4 +141,7 @@ async function calcularSimilaridadeSemanticaOnnx(fraseWord, textoArtigo, timeout
 module.exports = {
   obterExtratorOnnx,
   calcularSimilaridadeSemanticaOnnx,
+  resolverPastaCacheModelos,
+  detectarModeloLocalCustomizado,
+  obterModeloAtivoId: () => modeloAtivoId,
 };

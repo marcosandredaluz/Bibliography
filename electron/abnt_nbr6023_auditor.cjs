@@ -65,6 +65,11 @@ function auditarReferenciaAbntIndividual(ref, idx = 0) {
 
   const inconformidades = [];
   const tipologia = identificarTipologiaAbnt(texto, ref);
+  const ehEstiloVancouver =
+    /^\s*(?:\[\d{1,3}\]|\d{1,3}\.)\s+/.test(texto) &&
+    (/\[\s*(?:Internet|citado|cited)\b/i.test(texto) ||
+      /\b(?:19|20)\d{2}[^;]*;\s*\d+(?:\s*\([^)]+\))?\s*:\s*\d+/i.test(texto) ||
+      /\bAvailable\s+from\s*:/i.test(texto));
 
   // 1. Verificação de URL e data de acesso (Obrigatório para documentos eletrônicos via URL; pela ABNT NBR 6023:2018 o DOI substitui a exigência de "Disponível em / Acesso em")
   const temDoiOficial = /\bDOI\s*:?\s*(?:https?:\/\/(?:dx\.)?doi\.org\/)?10\.\d{4,9}\/[^\s]+/i.test(texto) ||
@@ -75,8 +80,11 @@ function auditarReferenciaAbntIndividual(ref, idx = 0) {
   const temUrlNaoDoi = /https?:\/\/[^\s]+/i.test(textoSemDoi);
 
   if (temUrlNaoDoi && !temDoiOficial) {
-    const temDisponivelEm = /Dispon[íi]vel\s+em\s*:\s*<?https?:\/\/[^\s>]+>?/i.test(texto);
+    const temDisponivelEm =
+      /Dispon[íi]vel\s+em\s*:\s*<?https?:\/\/[^\s>]+>?/i.test(texto) ||
+      (ehEstiloVancouver && /\bAvailable\s+from\s*:\s*<?https?:\/\/[^\s>]+>?/i.test(texto));
     const mAcessoEm = texto.match(/Acesso\s+em\s*:\s*(\d{1,2})\s+([a-zA-Zá-úÁ-Ú.]+)\s+(\d{4})/i);
+    const temCitadoVancouver = ehEstiloVancouver && /\[\s*(?:citado|cited)\s+\d{4}[^\]]+\]/i.test(texto);
 
     if (!temDisponivelEm && !/\bDispon[íi]vel\s+em\b/i.test(texto)) {
       inconformidades.push({
@@ -87,14 +95,14 @@ function auditarReferenciaAbntIndividual(ref, idx = 0) {
       });
     }
 
-    if (!mAcessoEm) {
+    if (!mAcessoEm && !temCitadoVancouver) {
       inconformidades.push({
         tipo: 'abnt_data_acesso_ausente',
         gravidade: 'alta',
         mensagem: 'Data de acesso ("Acesso em: DD mmm. AAAA.") ausente na referência eletrônica.',
         sugestao: 'Adicione a data da consulta no formato: "Acesso em: 10 out. 2024."'
       });
-    } else {
+    } else if (mAcessoEm) {
       const mesAbrev = mAcessoEm[2].toLowerCase();
       if (!MESES_ABNT_VALIDOS.has(mesAbrev) && !MESES_ABNT_VALIDOS.has(`${mesAbrev}.`)) {
         inconformidades.push({
@@ -126,14 +134,15 @@ function auditarReferenciaAbntIndividual(ref, idx = 0) {
     }
   }
 
-  // 3. Verificação de Artigos de Periódicos (preprints em repositórios oficiais dispensam volume/paginação)
+  // 3. Verificação de Artigos de Periódicos (preprints em repositórios oficiais e notação Vancouver válida dispensam v./n./p.)
   if (tipologia === 'artigo_periodico') {
     const ehPreprint = /\b(?:preprint|biorxiv|medrxiv|arxiv|scielo\s+preprints)\b/i.test(texto);
     const temVolume = /\b(?:v\.|vol\.)\s*\d+/i.test(texto);
     const temFasciculo = /\b(?:n\.|nº|no\.|fasc\.)\s*\d+/i.test(texto);
     const temPaginacao = /\bp\.\s*\d+(?:\s*[-–]\s*\d+)?\b/i.test(texto) || /\b(?:e\d{5,}|art\.\s*e\d+)\b/i.test(texto);
+    const temCompactoVancouver = ehEstiloVancouver && /;\s*\d+(?:\s*\([^)]+\))?\s*:\s*\d+(?:\s*[-–]\s*\d+)?/i.test(texto);
 
-    if (!ehPreprint && !temPaginacao && !temVolume && !temFasciculo) {
+    if (!ehPreprint && !temPaginacao && !temVolume && !temFasciculo && !temCompactoVancouver) {
       inconformidades.push({
         tipo: 'abnt_artigo_sem_volume_paginas',
         gravidade: 'alta',

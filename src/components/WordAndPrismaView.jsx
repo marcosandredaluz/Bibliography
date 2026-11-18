@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Icone, useAviso } from './ui.jsx';
 import { autoresResumo, ano, semHtml, normalizar, rotuloStatus } from '../lib/csl.js';
 import { useI18n } from '../i18n.jsx';
+import RiskOfBiasPanel from './RiskOfBiasPanel.jsx';
 
 const MOTIVOS_EXCLUSAO = [
   'Fora do escopo / PICO',
@@ -813,6 +814,23 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
             {citadas.length} {tr('incluídas', 'included')} · {consultadas.length} {tr('lidas', 'read')}
           </div>
         </div>
+
+        <div
+          className={`prisma-passo-card ${aba === 'rob' ? 'ativo' : ''}`}
+          onClick={() => setAba('rob')}
+        >
+          <strong>4. {tr('Risco de Viés (RoB 2 / ROBINS-I)', 'Risk of Bias (RoB 2 / ROBINS-I)')}</strong>
+          <span>{tr('Avaliação Cochrane com revisão humana obrigatória', 'Cochrane assessment with mandatory human sign-off')}</span>
+          <div
+            className="prisma-passo-badge"
+            style={{
+              background: '#dbeafe',
+              color: '#1e40af',
+            }}
+          >
+            {refs.filter((r) => r.robAssessment).length} {tr('avaliados', 'assessed')}
+          </div>
+        </div>
       </div>
 
       {/* ABA 1: DETECTOR DE DUPLICATAS */}
@@ -1248,6 +1266,9 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
           </div>
         </div>
       )}
+
+      {/* ABA 4: RISCO DE VIÉS (RoB 2 / ROBINS-I + REVISÃO HUMANA OBRIGATÓRIA) */}
+      {aba === 'rob' && <RiskOfBiasPanel refs={refs} onRecarregar={onRecarregar} />}
     </div>
   );
 }
