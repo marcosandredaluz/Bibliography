@@ -1,7 +1,7 @@
-# Bibliography (`v1.0.2`)
+# Bibliography (`v1.2.0`)
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/release-v1.0.2-blue.svg)](https://github.com/marcosandredaluz/Bibliography/releases)
+[![Version](https://img.shields.io/badge/release-v1.2.0-blue.svg)](https://github.com/marcosandredaluz/Bibliography/releases)
 
 Desktop, offline-first reference manager, systematic review screening workbench, and citation verification tool built for academic writing in health sciences and related fields.
 
@@ -83,7 +83,7 @@ Third-party licenses and open-source notices are listed in [THIRD_PARTY_NOTICES.
 @software{da_luz_bibliography_2026,
   author  = {da Luz, Marcos André},
   title   = {Bibliography: Offline-First Reference Manager and Forensic Citation Auditor},
-  version = {1.0.2},
+  version = {1.2.0},
   year    = {2026},
   url     = {https://github.com/marcosandredaluz/Bibliography},
   license = {Apache-2.0}

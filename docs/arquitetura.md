@@ -1,30 +1,22 @@
-# Arquitetura do Sistema e Clean Code
+# Arquitetura e Armazenamento
 
-O projeto adota Clean Architecture e os princípios SOLID para manter manutenibilidade de longo prazo:
+## Estrutura Principal
 
+```text
+├── electron/             # Processo principal Electron, wordServer (23119) e auditores
+├── src/                  # Interface React 19 + Vite, leitor PDF.js e i18n
+├── backend/              # Pipeline Python clean-room de layout PDF e adaptadores FastAPI
+├── resources/            # Estilos CSL, filtro Pandoc/Quarto, template .dotm e Web Clipper MV3
+├── training/             # Notebook e script Colab para fine-tuning e exportação ONNX
+├── calibration_gate/     # Verificação anti-overfitting e gates de calibração
+└── tests/                # Suítes unitárias, OpenXML, regressão e auditores
 ```
-backend/
-├── app/
-│   ├── core/              # Regras de Negócio e Algoritmos Fundamentais
-│   ├── integration_word/  # Adaptadores de Entrada/Saída para Processadores de Texto (.DOCX)
-│   ├── validation_engine/ # Motores de Verificação Forense
-│   ├── regional_extractors/ # Extratores de Dados de Fontes Externas
-│   └── plugin_system/     # Camada de Extensibilidade e Inversão de Controle (Pluggy)
-```
 
-## Diretrizes de Qualidade
-- **Tipagem Estática:** Código validado com `mypy`.
-- **Formatação Automatizada:** Padronizado com `black` e `ruff`.
-- **Análise Estática de Segurança:** Verificado via `bandit`.
-- **Privacidade de Logs:** Registros sanitizados via `loguru`, bloqueando a gravação de textos acadêmicos em texto claro.
+## Armazenamento Atômico em Disco
 
----
+Diferente de gerenciadores baseados em arquivo único SQLite (sujeitos a conflitos de sincronização em nuvem), cada registro bibliográfico é gravado como arquivo `.json` individual em `referencias/`:
 
-## ☁️ Armazenamento Atômico & Colaboração Multi-Autor em Nuvem
-
-Diferente de gerenciadores tradicionais que utilizam um único arquivo binário SQLite (`.sqlite`), o **Bibliografia** implementa um modelo de **armazenamento atômico e desacoplado**:
-
-1. **Isolamento por Referência:** Cada obra é persistida como um arquivo `.json` individual dentro de `referencias/`.
-2. **Prevenção de Corrupção em Nuvem:** Serviços como OneDrive, Google Drive e Dropbox frequentemente geram conflitos e corrompem bancos monolíticos quando múltiplos usuários salvam simultaneamente. O modelo atômico permite que coautores sincronizem apenas os artigos alterados.
-3. **Escrita Segura e Atômica:** Gravações utilizam escrita temporária seguida de rename atômico com retentativas, tolerando bloqueios transitórios de sincronizadores de nuvem.
-4. **Sincronização Contínua com BibTeX:** O arquivo `library.bib` é reconstruído na raiz a cada alteração, integrando-se perfeitamente a fluxos colaborativos em Overleaf e LaTeX.
+1. **Isolamento por registro:** alterações em um artigo modificam apenas seu respectivo `.json`.
+2. **Escrita atômica:** gravações utilizam arquivo temporário seguido de substituição atômica.
+3. **Sincronização BibTeX:** o arquivo `library.bib` na raiz da biblioteca é regenerado automaticamente após alterações para uso em LaTeX e Overleaf.
+4. **Logs seguros:** dados bibliográficos e respostas de API não registram conteúdo integral de manuscritos em texto claro nos logs do servidor.

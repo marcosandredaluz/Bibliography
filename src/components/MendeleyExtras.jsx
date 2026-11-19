@@ -473,10 +473,10 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
               title="Importa para a sua biblioteca e já tenta baixar o PDF oficial gratuito!"
             >
               {statusImport === 'salvando'
-                ? 'Salvando…'
+                ? tr('Salvando…', 'Saving…')
                 : statusImport === 'baixando_pdf'
-                ? 'Baixando PDF…'
-                : '📥 Adicionar ao Estudo (+ PDF)'}
+                ? tr('Baixando PDF…', 'Downloading PDF…')
+                : `📥 ${tr('Adicionar ao Estudo (+ PDF)', 'Add to Study (+ PDF)')}`}
             </button>
           )}
 
@@ -485,9 +485,9 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
             className="btn pequeno secundario"
             style={{ fontSize: 11 }}
             onClick={() => navegarParaNovaSemente(it)}
-            title="Torna este artigo a nova Semente para explorar a rede de quem o citou e quem ele citou (Snowballing)"
+            title={tr('Torna este artigo a nova Semente para explorar a rede de quem o citou e quem ele citou (Snowballing)', 'Set this paper as the new Seed to explore its citing and cited network (Snowballing)')}
           >
-            🎯 Explorar Rede Deste
+            🎯 {tr('Explorar Rede Deste', 'Explore Network')}
           </button>
 
           <button
@@ -495,9 +495,9 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
             className="btn pequeno fantasma"
             style={{ fontSize: 11, padding: '2px 6px' }}
             onClick={() => setNoSelecionado({ ...it, grupo: tipoRelacao })}
-            title="Ver resumo completo e metadados detalhados"
+            title={tr('Ver resumo completo e metadados detalhados', 'View full abstract and detailed metadata')}
           >
-            👁️ Resumo
+            👁️ {tr('Resumo', 'Abstract')}
           </button>
 
           <button
@@ -505,9 +505,9 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
             className="btn pequeno fantasma"
             style={{ fontSize: 11, padding: '2px 6px' }}
             onClick={() => copiarCitacaoAbnt(it)}
-            title="Copiar citação formatada"
+            title={tr('Copiar citação formatada', 'Copy formatted citation')}
           >
-            📋 Citar
+            📋 {tr('Citar', 'Cite')}
           </button>
 
           {it.doi && (
@@ -530,11 +530,11 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
     <div className="central-buscadores">
       <div className="topo-buscadores">
         <div>
-          <h2>🔗 {tr('Grafo de Citações e Linhagem Científica: O "Antes e Depois" da Literatura', 'Citation Graph & Scientific Lineage: "Before & After" Literature Mapping')}</h2>
+          <h2>{tr('Grafo de Citações e Caderno', 'Citation Graph & Notebook')}</h2>
           <p className="subtitulo">
             {tr(
-              'Explore a rede causal de citações: ⏪ O Antes (trabalhos anteriores e referências que deram base) e ⏩ O Depois (trabalhos posteriores e derivados que citaram a obra), com navegação recursiva e adição de fontes ao seu estudo em 1 clique.',
-              'Explore the causal citation network: ⏪ Prior Works (foundational references cited by this study) and ⏩ Derivative Works (subsequent studies citing this paper), with recursive snowballing and 1-click library import.'
+              'Explore referências anteriores e posteriores de qualquer artigo e organize suas notas de leitura.',
+              'Explore prior and citing papers around any study and organize your reading notes.'
             )}
           </p>
         </div>
@@ -671,18 +671,18 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
                   <div style={{ flex: 1, minWidth: 260 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
                       <span style={{ background: '#059669', color: '#fff', fontSize: 11, fontWeight: 800, padding: '2px 8px', borderRadius: 4 }}>
-                        🌱 ARTIGO SEMENTE ATIVO
+                        🌱 {tr('ARTIGO SEMENTE ATIVO', 'ACTIVE SEED PAPER')}
                       </span>
-                      <strong style={{ fontSize: 14, color: 'var(--texto)' }}>{redeRabbit.sementeTitulo}</strong>
+                      <strong style={{ fontSize: 14, color: 'var(--texto)' }}>{semHtml(redeRabbit.sementeTitulo)}</strong>
                     </div>
                     <div className="sub-meta" style={{ marginTop: 4 }}>
                       <strong>{redeRabbit.sementeAutorAno}</strong>
-                      {redeRabbit.sementeFonte && ` · ${redeRabbit.sementeFonte}`}
+                      {redeRabbit.sementeFonte && ` · ${semHtml(redeRabbit.sementeFonte)}`}
                       {redeRabbit.sementeDoi && ` · DOI: ${redeRabbit.sementeDoi}`}
                     </div>
                     {redeRabbit.sementeResumo && (
                       <p style={{ margin: '6px 0 0', fontSize: 12, color: 'var(--texto-suave)', lineHeight: 1.45 }}>
-                        <strong>Resumo:</strong> {redeRabbit.sementeResumo}
+                        <strong>{tr('Resumo:', 'Abstract:')}</strong> {semHtml(redeRabbit.sementeResumo)}
                       </p>
                     )}
                   </div>
@@ -695,21 +695,21 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
                         onClick={() => setModoVisualizacao('colunas')}
                         style={{ fontSize: 11.5, padding: '3px 8px' }}
                       >
-                        📊 3 Colunas
+                        📊 {tr('3 Colunas', '3 Columns')}
                       </button>
                       <button
                         className={`chip ${modoVisualizacao === 'timeline' ? 'ativo' : ''}`}
                         onClick={() => setModoVisualizacao('timeline')}
                         style={{ fontSize: 11.5, padding: '3px 8px' }}
                       >
-                        ⏱️ Linha do Tempo (Antes &amp; Depois)
+                        ⏱️ {tr('Linha do Tempo (Antes & Depois)', 'Timeline (Earlier & Later)')}
                       </button>
                       <button
                         className={`chip ${modoVisualizacao === 'grafo' ? 'ativo' : ''}`}
                         onClick={() => setModoVisualizacao('grafo')}
                         style={{ fontSize: 11.5, padding: '3px 8px' }}
                       >
-                        🕸 Grafo Visual
+                        🕸 {tr('Grafo Visual', 'Visual Graph')}
                       </button>
                     </div>
 
@@ -718,7 +718,7 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
                         type="text"
                         value={termoFiltro}
                         onChange={(e) => setTermoFiltro(e.target.value)}
-                        placeholder="Filtrar nesta rede…"
+                        placeholder={tr('Filtrar nesta rede…', 'Filter this network…')}
                         style={{ padding: '3px 8px', fontSize: 11.5, borderRadius: 4, border: '1px solid var(--borda)', width: 140 }}
                       />
                       <label style={{ fontSize: 11, display: 'flex', alignItems: 'center', gap: 3, cursor: 'pointer' }}>
@@ -727,7 +727,7 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
                           checked={filtroSoOa}
                           onChange={(e) => setFiltroSoOa(e.target.checked)}
                         />
-                        Só Open Access
+                        {tr('Só Open Access', 'Open Access only')}
                       </label>
                     </div>
                   </div>
@@ -905,15 +905,15 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
                     {/* Coluna 1: Trabalhos Anteriores (Earlier Work / O ANTES) */}
                     <div className="bloco-painel">
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <h4 style={{ color: '#2563eb', margin: 0 }}>⏪ O Antes ({anterioresFiltrados.length})</h4>
-                        <span style={{ fontSize: 11, color: '#2563eb', fontWeight: 700 }}>Referências Citadas</span>
+                        <h4 style={{ color: '#2563eb', margin: 0 }}>⏪ {tr('O Antes', 'Earlier Work')} ({anterioresFiltrados.length})</h4>
+                        <span style={{ fontSize: 11, color: '#2563eb', fontWeight: 700 }}>{tr('Referências Citadas', 'Cited References')}</span>
                       </div>
                       <p className="dica-texto" style={{ margin: '4px 0 8px' }}>
-                        Trabalhos fundamentais que o artigo semente usou como alicerce:
+                        {tr('Trabalhos fundamentais que o artigo semente usou como alicerce:', 'Foundational papers cited by the seed work:')}
                       </p>
                       <div className="lista-historico" style={{ maxHeight: 460, overflowY: 'auto' }}>
                         {anterioresFiltrados.length === 0 ? (
-                          <p className="dica-texto">Nenhuma referência anterior aberta localizada.</p>
+                          <p className="dica-texto">{tr('Nenhuma referência anterior aberta localizada.', 'No open earlier references found.')}</p>
                         ) : (
                           anterioresFiltrados.map((it) => renderCardArtigo(it, 'Antecessor'))
                         )}
@@ -923,15 +923,15 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
                     {/* Coluna 2: Trabalhos Posteriores (Later Work / O DEPOIS) */}
                     <div className="bloco-painel">
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <h4 style={{ color: '#7c3aed', margin: 0 }}>⏩ O Depois ({posterioresFiltrados.length})</h4>
-                        <span style={{ fontSize: 11, color: '#7c3aed', fontWeight: 700 }}>Citações Futuras</span>
+                        <h4 style={{ color: '#7c3aed', margin: 0 }}>⏩ {tr('O Depois', 'Later Work')} ({posterioresFiltrados.length})</h4>
+                        <span style={{ fontSize: 11, color: '#7c3aed', fontWeight: 700 }}>{tr('Citações Futuras', 'Citing Papers')}</span>
                       </div>
                       <p className="dica-texto" style={{ margin: '4px 0 8px' }}>
-                        Artigos mais recentes que citaram, replicaram ou expandiram a semente:
+                        {tr('Artigos mais recentes que citaram, replicaram ou expandiram a semente:', 'Recent papers that cited, replicated, or expanded the seed:')}
                       </p>
                       <div className="lista-historico" style={{ maxHeight: 460, overflowY: 'auto' }}>
                         {posterioresFiltrados.length === 0 ? (
-                          <p className="dica-texto">Nenhum artigo citante posterior encontrado ainda.</p>
+                          <p className="dica-texto">{tr('Nenhum artigo citante posterior encontrado ainda.', 'No citing papers found yet.')}</p>
                         ) : (
                           posterioresFiltrados.map((it) => renderCardArtigo(it, 'Derivado'))
                         )}
@@ -941,15 +941,15 @@ export default function MendeleyExtras({ refs, onImportarCsl, onImportarPdfs }) 
                     {/* Coluna 3: Artigos Similares (Similar Work) */}
                     <div className="bloco-painel">
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <h4 style={{ color: '#059669', margin: 0 }}>✨ Similares ({similaresFiltrados.length})</h4>
-                        <span style={{ fontSize: 11, color: '#059669', fontWeight: 700 }}>Co-citações</span>
+                        <h4 style={{ color: '#059669', margin: 0 }}>✨ {tr('Similares', 'Similar Work')} ({similaresFiltrados.length})</h4>
+                        <span style={{ fontSize: 11, color: '#059669', fontWeight: 700 }}>{tr('Co-citações', 'Co-citations')}</span>
                       </div>
                       <p className="dica-texto" style={{ margin: '4px 0 8px' }}>
-                        Estudos da mesma temática e com autores em comum no OpenAlex:
+                        {tr('Estudos da mesma temática e com autores em comum no OpenAlex:', 'Related studies sharing topics and co-citations on OpenAlex:')}
                       </p>
                       <div className="lista-historico" style={{ maxHeight: 460, overflowY: 'auto' }}>
                         {similaresFiltrados.length === 0 ? (
-                          <p className="dica-texto">Nenhum artigo similar listado.</p>
+                          <p className="dica-texto">{tr('Nenhum artigo similar listado.', 'No similar papers listed.')}</p>
                         ) : (
                           similaresFiltrados.map((it) => renderCardArtigo(it, 'Similar'))
                         )}

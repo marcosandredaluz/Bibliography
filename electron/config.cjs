@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const os = require('os');
 const crypto = require('crypto');
+const { escreverJsonAtomicoSync } = require('./atomicWrite.cjs');
 
 const arquivo = () => path.join(app.getPath('userData'), 'config.json');
 
@@ -30,8 +31,7 @@ function carregar() {
 }
 
 function salvar(cfg) {
-  fs.mkdirSync(path.dirname(arquivo()), { recursive: true });
-  fs.writeFileSync(arquivo(), JSON.stringify(cfg, null, 2), 'utf8');
+  escreverJsonAtomicoSync(arquivo(), cfg);
 }
 
 function registrarProjetoRecente(caminho, nomeCustomizado) {
@@ -83,14 +83,14 @@ function sugestoesDePasta() {
     }
   }
 
-  // 3. Pastas estritamente acadêmicas no OneDrive (apenas TCC, Mestrado, Esporotricose, etc.)
+  // 3. Pastas estritamente acadêmicas no OneDrive (TCC, Mestrado, Doutorado, Pesquisa, etc.)
   if (oneDrive && fs.existsSync(oneDrive)) {
     try {
       const entradas = fs.readdirSync(oneDrive, { withFileTypes: true });
       for (const e of entradas) {
         if (e.isDirectory()) {
           const nome = e.name;
-          if (/^(tcc|bibliografia|esporotricose|pesquisa|artigos|doutorado|mestrado)/i.test(nome)) {
+          if (/^(tcc|bibliografia|pesquisa|artigos|doutorado|mestrado)/i.test(nome)) {
             const cam = path.join(oneDrive, nome);
             if (!out.some((x) => x.caminho.toLowerCase() === cam.toLowerCase())) {
               out.push({ nome, caminho: cam });

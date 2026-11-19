@@ -1,7 +1,7 @@
 // Sincronização automática com arquivo library.bib para LaTeX, Typst e Overleaf.
 const fs = require('fs');
-const fsp = fs.promises;
 const path = require('path');
+const { escreverArquivoAtomico } = require('./atomicWrite.cjs');
 
 const MAPEAMENTO_TIPOS = {
   'article-journal': 'article',
@@ -59,7 +59,7 @@ async function sincronizarLibraryBib(raizBiblioteca, referencias) {
       .map(cslParaBibtexEntry)
       .join('\n\n');
     const cabecalho = `% Sincronizado automaticamente por Bibliografia\n% Data: ${new Date().toISOString()}\n\n`;
-    await fsp.writeFile(caminhoBib, cabecalho + entradas, 'utf8');
+    await escreverArquivoAtomico(caminhoBib, cabecalho + entradas, 'utf8');
   } catch (e) {
     // Falha silenciosa para não impedir salvar referência caso o arquivo esteja travado
   }

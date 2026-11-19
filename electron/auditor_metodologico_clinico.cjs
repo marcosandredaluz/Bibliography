@@ -65,7 +65,7 @@ function identificarDesenhoEstudo(texto) {
 /**
  * Audita os aspectos éticos da pesquisa com dados ou seres humanos.
  */
-function auditarAspectosEticos(texto) {
+function auditarAspectosEticos(texto, desenho = null) {
   const resultado = {
     aprovadoCep: false,
     mencaoCep: false,
@@ -108,10 +108,13 @@ function auditarAspectosEticos(texto) {
   }
 
   // Alertas éticos aplicáveis exclusivamente à redação do próprio manuscrito
+  const ehRevisaoSistematica =
+    desenho?.tipo === 'revisao_sistematica' ||
+    /\b(?:revis[ãa]o\s+sistem[áa]tica|systematic\s+review|meta[- ]an[áa]lise|metan[áa]lise|meta[- ]analysis|scoping\s+review|revis[ãa]o\s+de\s+escopo)\b/i.test(texto);
   const estudaHumanos = /\b(?:pacientes|participantes|indiv[íi]duos|volunt[áa]rios|prontu[áa]rios|dados\s+secund[áa]rios|human\s+subjects|patients)\b/i.test(texto);
   const estudaBancosPublicosAnonimos = /\b(?:dados\s+secund[áa]rios\s+de\s+dom[íi]nio\s+p[úu]blico|sinan|datasus|sim\s*\/\s*datasus|sinasc|censo\s+demogr[áa]fico|banco\s+de\s+dados\s+p[úu]blico|dados\s+agregados\s+sem\s+identifica[çc][ãa]o|projeto\s+de\s+interven[çc][ãa]o|diagn[óo]stico\s+situacional)\b/i.test(texto);
 
-  if (estudaHumanos && !estudaBancosPublicosAnonimos) {
+  if (estudaHumanos && !estudaBancosPublicosAnonimos && !ehRevisaoSistematica) {
     if (!resultado.mencaoCep && !resultado.caae) {
       resultado.alertas.push({
         tipo: 'ausencia_aprovacao_etica',
@@ -276,7 +279,7 @@ function auditarMetodologiaClinicaDoManuscrito(paragrafosCorpo = [], textoComple
   const textoTotal = textoCorpo || textoCompleto;
 
   const desenho = identificarDesenhoEstudo(textoTotal);
-  const etica = auditarAspectosEticos(textoTotal);
+  const etica = auditarAspectosEticos(textoTotal, desenho);
   const amostra = auditarElegibilidadeEAmostra(textoTotal, desenho);
   const transparencia = auditarTransparenciaERegistro(textoTotal, desenho);
   const descritores = auditarDescritoresDecsMesh(textoTotal);

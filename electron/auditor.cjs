@@ -6,7 +6,6 @@
 // 5. Separa Artigos Científicos de Periódicos vs. Leis, Normas Técnicas (ISO/HL7/IHE/RNDS), Protocolos e Livros (que não possuem abstract)
 // 6. Valida DOIs (detectando DOI inexistente e DOI trocado), recupera resumos bilíngues (PubMed XML + OpenAlex) e faz verificação semântica bilíngue PT↔EN + numérica.
 const fs = require('fs');
-const zlib = require('zlib');
 const {
   porDoi,
   porPmid,
@@ -17,14 +16,17 @@ const {
   normalizarDoi,
 } = require('./metadata.cjs');
 const { localizarUrlPdfAberto, baixarPdfParaArquivo } = require('./importers.cjs');
-const { extrairMetadadosCslEmbutidosNoXml } = require('./csl_mendeley_parser.cjs');
-const { classificarReferenciaHarmonizada } = require('./lener_br_classifier.cjs');
-const { calcularSimilaridadeSemanticaOnnx } = require('./semantic_onnx.cjs');
+const {
+  classificarReferenciaHarmonizada,
+} = require('./lener_br_classifier.cjs');
+const {
+  calcularSimilaridadeSemanticaOnnx,
+  localizarMelhorBlocoComPosicao,
+  selecionarTop3BlocosParaNli,
+  avaliarSustentacaoNliTop3,
+} = require('./semantic_onnx.cjs');
 const path = require('path');
 const os = require('os');
-const DiffMatchPatch = require('diff-match-patch');
-const { IndiceWinnowing } = require('./similarity_winnowing.cjs');
-const { executarGreedyStringTiling } = require('./similarity_tiling.cjs');
 const { auditarEstatisticaDoManuscrito } = require('./statcheck_forense.cjs');
 const { auditarRedeCitacoesDoManuscrito } = require('./rede_citacoes_forense.cjs');
 const { auditarMetodologiaClinicaDoManuscrito } = require('./auditor_metodologico_clinico.cjs');
@@ -37,308 +39,37 @@ const { auditarFomentoEAfiliacoes } = require('./fomento_afiliacoes_auditor.cjs'
 const { auditarClaimSupportDoManuscrito } = require('./tfidf_claim_support.cjs');
 const { auditarFigurasETabelasDoManuscrito } = require('./figuras_tabelas_auditor.cjs');
 
-// Mapa CSL-JSON extraído do último arquivo .docx aberto (Mendeley / Zotero / EndNote)
-let ultimoMapaCslEmbutidoDocx = null;
 
-// Instância oficial do Google Diff Match Patch para correspondência difusa e detecção de cópia literal
-const dmp = new DiffMatchPatch();
-dmp.Diff_Timeout = 0.5;
-dmp.Diff_EditCost = 4;
-dmp.Match_Distance = 1000;
-dmp.Match_Threshold = 0.6;
+const {
+  extrairArquivoDoZip,
+  sanitizarCamposGerenciadorBibliografia,
+  xmlParaTextoLimpo,
+  extrairTextoDocx,
+  obterUltimoMapaCslDocx,
+} = require('./audit/docx_extractor.cjs');
+const {
+  STOPWORDS_CIENTIFICAS_GERAIS,
+  decodificarEntidadesHtmlTexto,
+  verificarCompatibilidadeBilingue,
+  selecionarMelhorTrechoArtigo,
+  calcularSimilaridadeCossenoRadicais,
+  analisarPlagioComDiffMatchPatch,
+} = require('./audit/semantic_hybrid.cjs');
+const { analisarEstiloRedacaoIaOpenDetector } = require('./audit/stylometry_open_detector.cjs');
+const {
+  localizarPdfNoAcervoLocal,
+  extrairTextoPdfNoNode,
+  criarBibliotecaSnapshotSomenteLeitura,
+  verificarMatchComGrifoUsuario,
+} = require('./audit/pdf_snapshot.cjs');
+const { auditarPareamentoSimbolico } = require('./forensic_symbolic_guard.cjs');
+const { reconciliarIntraDocumento } = require('./intra_doc_reconciler.cjs');
+const { gerarRaioXBibliometrico } = require('./bibliometric_xray.cjs');
+const {
+  carregarDecisoesEditoriais,
+  filtrarAlertasComMemoria,
+} = require('./audit/decision_memory.cjs');
 
-// ---------- 1. Leitor nativo e resiliente de .DOCX (ZIP -> word/document.xml) ----------
-function extrairArquivoDoZip(buf, nomeAlvo) {
-  if (!buf || buf.length < 22) return null;
-  const nomeNormalizadoAlvo = nomeAlvo.replace(/\\/g, '/').toLowerCase();
-
-  // 1. TENTATIVA VIA CENTRAL DIRECTORY (O padrão oficial da especificação ZIP — resolve Bit 3 e streaming)
-  try {
-    let eocdOffset = -1;
-    // O EOCD tem no mínimo 22 bytes e no máximo 22 + 65535 (tamanho máximo de comentário)
-    const limiteBusca = Math.max(0, buf.length - 65557);
-    for (let i = buf.length - 22; i >= limiteBusca; i--) {
-      if (buf.readUInt32LE(i) === 0x06054b50) {
-        eocdOffset = i;
-        break;
-      }
-    }
-
-    if (eocdOffset !== -1) {
-      const offsetCentralDir = buf.readUInt32LE(eocdOffset + 16);
-      let cdOffset = offsetCentralDir;
-
-      while (cdOffset + 46 <= buf.length) {
-        if (buf.readUInt32LE(cdOffset) !== 0x02014b50) break;
-        const metodo = buf.readUInt16LE(cdOffset + 10);
-        const tamComp = buf.readUInt32LE(cdOffset + 20);
-        const tamNome = buf.readUInt16LE(cdOffset + 28);
-        const tamExtra = buf.readUInt16LE(cdOffset + 30);
-        const tamComent = buf.readUInt16LE(cdOffset + 32);
-        const offsetLocalHeader = buf.readUInt32LE(cdOffset + 42);
-
-        const nomeArquivo = buf.subarray(cdOffset + 46, cdOffset + 46 + tamNome).toString('utf8').replace(/\\/g, '/');
-
-        if (nomeArquivo.toLowerCase() === nomeNormalizadoAlvo || nomeArquivo.toLowerCase().endsWith('/' + nomeNormalizadoAlvo)) {
-          // Achou no Central Directory! Lê o Local File Header no offset exato
-          if (offsetLocalHeader + 30 <= buf.length && buf.readUInt32LE(offsetLocalHeader) === 0x04034b50) {
-            const tamNomeLocal = buf.readUInt16LE(offsetLocalHeader + 26);
-            const tamExtraLocal = buf.readUInt16LE(offsetLocalHeader + 28);
-            const inicioDados = offsetLocalHeader + 30 + tamNomeLocal + tamExtraLocal;
-            const fatia = buf.subarray(inicioDados, inicioDados + tamComp);
-
-            if (metodo === 0) return fatia;
-            if (metodo === 8) {
-              try {
-                return zlib.inflateRawSync(fatia);
-              } catch (eRaw) {
-                return zlib.inflateSync(fatia);
-              }
-            }
-          }
-        }
-
-        cdOffset += 46 + tamNome + tamExtra + tamComent;
-      }
-    }
-  } catch (e) {
-    // Continua para os fallbacks
-  }
-
-  // 2. TENTATIVA VIA LOCAL FILE HEADERS LINEAR (Com recuperação de sincronismo e Bit 3)
-  try {
-    let offset = 0;
-    while (offset + 30 <= buf.length) {
-      if (buf.readUInt32LE(offset) !== 0x04034b50) {
-        const prox = buf.indexOf(Buffer.from([0x50, 0x4b, 0x03, 0x04]), offset + 1);
-        if (prox === -1) break;
-        offset = prox;
-      }
-
-      const flags = buf.readUInt16LE(offset + 6);
-      const metodo = buf.readUInt16LE(offset + 8);
-      let tamComp = buf.readUInt32LE(offset + 18);
-      const tamNome = buf.readUInt16LE(offset + 26);
-      const tamExtra = buf.readUInt16LE(offset + 28);
-      const nome = buf.subarray(offset + 30, offset + 30 + tamNome).toString('utf8').replace(/\\/g, '/');
-      const inicioDados = offset + 30 + tamNome + tamExtra;
-
-      if (nome.toLowerCase() === nomeNormalizadoAlvo || nome.toLowerCase().endsWith('/' + nomeNormalizadoAlvo)) {
-        if (tamComp === 0 || (flags & 0x08)) {
-          // Bit 3 (data descriptor / streaming ZIP): descomprime até encontrar o fim do stream DEFLATE
-          try {
-            return zlib.inflateRawSync(buf.subarray(inicioDados));
-          } catch {}
-        } else {
-          const fatia = buf.subarray(inicioDados, inicioDados + tamComp);
-          if (metodo === 0) return fatia;
-          if (metodo === 8) {
-            try {
-              return zlib.inflateRawSync(fatia);
-            } catch {
-              return zlib.inflateSync(fatia);
-            }
-          }
-        }
-      }
-
-      offset = inicioDados + (tamComp > 0 ? tamComp : 1);
-    }
-  } catch (e) {
-    // Continua para o fallback de varredura
-  }
-
-  // 3. TENTATIVA VIA VARREDURA DIRETA DO NOME DO ARQUIVO (Emergency scan)
-  try {
-    const variantes = [nomeAlvo, nomeAlvo.replace(/\//g, '\\'), nomeNormalizadoAlvo];
-    for (const v of variantes) {
-      let pos = -1;
-      while ((pos = buf.indexOf(v, pos + 1)) !== -1) {
-        for (let recuo = 30; recuo <= 80; recuo++) {
-          const headerPos = pos - recuo;
-          if (headerPos >= 0 && buf.readUInt32LE(headerPos) === 0x04034b50) {
-            const tamNome = buf.readUInt16LE(headerPos + 26);
-            const tamExtra = buf.readUInt16LE(headerPos + 28);
-            const inicioDados = headerPos + 30 + tamNome + tamExtra;
-            const tamComp = buf.readUInt32LE(headerPos + 18);
-
-            if (inicioDados < buf.length) {
-              try {
-                if (tamComp > 0) {
-                  return zlib.inflateRawSync(buf.subarray(inicioDados, inicioDados + tamComp));
-                } else {
-                  return zlib.inflateRawSync(buf.subarray(inicioDados));
-                }
-              } catch {}
-            }
-          }
-        }
-      }
-    }
-  } catch (e) {}
-
-  return null;
-}
-
-/**
- * Remove instruções ocultas de campos de gerenciadores bibliográficos (Mendeley, Zotero, EndNote)
- * caso o texto bruto tenha sido colado com códigos ADDIN CSL_CITATION ou CSL_BIBLIOGRAPHY.
- */
-function sanitizarCamposGerenciadorBibliografia(texto) {
-  if (!texto) return '';
-  let s = String(texto);
-  // Remove blocos ADDIN CSL_CITATION {...} com chaves balanceadas
-  let idx = -1;
-  while ((idx = s.indexOf('ADDIN CSL_CITATION')) !== -1) {
-    const inicioJson = s.indexOf('{', idx);
-    if (inicioJson === -1) break;
-    let nivel = 0;
-    let emString = false;
-    let escape = false;
-    let fimJson = -1;
-    for (let i = inicioJson; i < s.length; i++) {
-      const ch = s[i];
-      if (escape) {
-        escape = false;
-        continue;
-      }
-      if (ch === '\\') {
-        escape = true;
-        continue;
-      }
-      if (ch === '"') {
-        emString = !emString;
-        continue;
-      }
-      if (!emString) {
-        if (ch === '{') nivel++;
-        else if (ch === '}') {
-          nivel--;
-          if (nivel === 0) {
-            fimJson = i;
-            break;
-          }
-        }
-      }
-    }
-    if (fimJson !== -1) {
-      let citFormatada = '';
-      try {
-        const obj = JSON.parse(s.slice(inicioJson, fimJson + 1));
-        citFormatada = String(obj?.mendeley?.plainTextFormattedCitation || obj?.properties?.formattedCitation || '')
-          .replace(/<[^>]+>/g, '')
-          .trim();
-      } catch {}
-      // Verifica se logo após o fimJson já consta a chamada numérica visível
-      const posBloco = s.slice(fimJson + 1, fimJson + 25);
-      if (citFormatada && /^\d+(?:\s*[,;–-]\s*\d+)*$/.test(citFormatada)) {
-        if (posBloco.startsWith(citFormatada)) {
-          s = s.slice(0, idx) + ` [${citFormatada}] ` + s.slice(fimJson + 1 + citFormatada.length);
-        } else {
-          s = s.slice(0, idx) + ` [${citFormatada}] ` + s.slice(fimJson + 1);
-        }
-      } else {
-        s = s.slice(0, idx) + s.slice(fimJson + 1);
-      }
-    } else {
-      // Fallback caso o JSON esteja truncado
-      s = s.replace(/ADDIN CSL_CITATION\s*\{[^\n]*/, '');
-      break;
-    }
-  }
-  return s
-    .replace(/ADDIN\s+Mendeley\s+Bibliography\s+CSL_BIBLIOGRAPHY\s*/gi, '')
-    .replace(/ADDIN\s+ZOTERO_BIBL[^\n]*\s*/gi, '')
-    .replace(/ADDIN\s+EN\.REFLIST\s*/gi, '')
-    .replace(/\bTOC\s+\\o\s+"[^"]*"[^\n]*?(?=\d+\.\s+[A-ZÀ-Ú])/g, '')
-    .replace(/\bPAGEREF\s+_Toc\d+\s+\\h\s*/g, ' ');
-}
-
-function xmlParaTextoLimpo(xmlStr) {
-  if (!xmlStr) return '';
-  // 1. Remove tags <w:instrText> (instruções ocultas de campos do Word, como ADDIN CSL_CITATION do Mendeley/Zotero, TOC e PAGEREF)
-  // 2. Marca runs <w:r> em sobrescrito (<w:vertAlign w:val="superscript"/>) com sentinelas \uE000...\uE001 antes de remover as tags XML
-  const comMarcadores = xmlStr
-    .replace(/<w:instrText\b[^>]*>[\s\S]*?<\/w:instrText>/g, '')
-    .replace(
-      /<w:r\b[^>]*>(?:(?!<\/w:r>)[\s\S])*?<w:vertAlign\b[^>]*w:val="superscript"[^>]*\/>(?:(?!<\/w:r>)[\s\S])*?<\/w:r>/g,
-      (runXml) => {
-        const t = runXml.replace(/<[^>]+>/g, '');
-        return `\uE000${t}\uE001`;
-      }
-    )
-    .replace(/<\/w:tc>/g, '\uE002\n')
-    .replace(/<\/w:p>/g, '\n')
-    .replace(/<w:tab\/>/g, ' ')
-    .replace(/<w:br[^/>]*\/>/g, '\n')
-    .replace(/<[^>]+>/g, '')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&nbsp;/g, ' ');
-
-  // 3. Une runs de sobrescrito adjacentes (mesmo quando havia <w:proofErr/> ou <w:bookmarkEnd/> entre eles no XML)
-  // e converte chamadas numéricas Vancouver em sobrescrito (ex.: 1, 3,4, 11–14, 3,12–14,23,25–28) para [1], [3,4], [11–14]
-  const textoSemSentinelas = comMarcadores
-    .replace(/\uE001\uE000/g, '')
-    .replace(/\uE000([^\uE001]+)\uE001/g, (_, conteudo) => {
-      const limpo = conteudo.trim();
-      if (/^\d+(?:\s*[,;–-]\s*\d+)*$/.test(limpo)) {
-        return ` [${limpo}] `;
-      }
-      return conteudo;
-    })
-    .replace(/[\uE000\uE001]/g, '');
-
-  return sanitizarCamposGerenciadorBibliografia(textoSemSentinelas);
-}
-
-function extrairTextoDocx(caminho) {
-  const buf = fs.readFileSync(caminho);
-
-  if (!buf || buf.length === 0) {
-    throw new Error('O arquivo selecionado está vazio.');
-  }
-
-  // Verifica se é formato binário antigo .doc (OLE CFBF: D0 CF 11 E0)
-  if (buf.length >= 4 && buf.readUInt32BE(0) === 0xd0cf11e0) {
-    throw new Error('Este arquivo está no formato Word 97-2003 antigo (.doc). Por favor, abra-o no Word e salve como .docx.');
-  }
-
-  // Extrai o documento principal
-  const xmlBuf = extrairArquivoDoZip(buf, 'word/document.xml');
-  if (!xmlBuf) {
-    throw new Error('Não foi possível ler word/document.xml dentro do arquivo .docx. O arquivo pode estar corrompido ou protegido por senha.');
-  }
-
-  const xmlPrincipalStr = xmlBuf.toString('utf8');
-  // Camada 1: Antes de limpar <w:instrText>, captura todos os metadados estruturados CSL-JSON do Mendeley/Zotero
-  try {
-    ultimoMapaCslEmbutidoDocx = extrairMetadadosCslEmbutidosNoXml(xmlPrincipalStr);
-  } catch {
-    ultimoMapaCslEmbutidoDocx = null;
-  }
-
-  let textoCompleto = xmlParaTextoLimpo(xmlPrincipalStr);
-
-  // Opcional: extrai também notas de rodapé (footnotes) e notas de fim (endnotes) se existirem
-  try {
-    const fnBuf = extrairArquivoDoZip(buf, 'word/footnotes.xml');
-    if (fnBuf) {
-      const fnTexto = xmlParaTextoLimpo(fnBuf.toString('utf8')).trim();
-      if (fnTexto) textoCompleto += '\n\n' + fnTexto;
-    }
-    const enBuf = extrairArquivoDoZip(buf, 'word/endnotes.xml');
-    if (enBuf) {
-      const enTexto = xmlParaTextoLimpo(enBuf.toString('utf8')).trim();
-      if (enTexto) textoCompleto += '\n\n' + enTexto;
-    }
-  } catch {}
-
-  return textoCompleto;
-}
 
 // ---------- 2. Normalização e Chaves Canônicas de Autores e Anos ----------
 function normalizarChave(s) {
@@ -1381,6 +1112,84 @@ function resolverRefPareadaPorCoautores(infoAutor, anoCompleto, anoBase, refsFin
   return candidatos[0].ref;
 }
 
+function separarCitacoesSobrescritasColadasPdf(texto, totalRefsNumeradas = 0, maxNumRef = 0) {
+  if (!texto || totalRefsNumeradas < 3 || maxNumRef <= 0) return texto;
+  const validarListaNums = (bruto) => {
+    const nums = String(bruto || '')
+      .split(/[,–—-]/)
+      .map((n) => parseInt(n.trim(), 10))
+      .filter((n) => Number.isFinite(n));
+    return nums.length > 0 && nums.every((n) => n >= 1 && n <= maxNumRef && n < 1900);
+  };
+
+  let out = String(texto);
+  // 1. Palavra em minusculas (>=3 letras) com indice sobrescrito colado antes de pontuacao ou espaco: ex.: "rates26." -> "rates [26]."
+  out = out.replace(
+    /\b([a-zà-ÿ]{3,})(\d{1,4}(?:[,–—-]\d{1,4})*)([.,;:])(?=\s|$)/g,
+    (match, palavra, nums, pont) => {
+      if (/^(?:covid|sars|mers|type|fase|phase|step|item|fig|tab|eq|vol|art|lei|res|port|cod|icd|cid)$/i.test(palavra)) {
+        return match;
+      }
+      if (!validarListaNums(nums)) return match;
+      return `${palavra} [${nums}]${pont}`;
+    }
+  );
+  // 2. Pontuacao seguida de numero sobrescrito colado antes de espaco/fim: ex.: "rates.26 " -> "rates [26]. "
+  out = out.replace(
+    /([a-zà-ÿ]{3,})([.,;])(\d{1,4}(?:[,–—-]\d{1,4})*)(?=\s|$)/g,
+    (match, palavra, pont, nums) => {
+      if (!validarListaNums(nums)) return match;
+      return `${palavra} [${nums}]${pont}`;
+    }
+  );
+  return out;
+}
+
+function separarReferenciasNumeradasConcatenadas(linhas = []) {
+  const resultado = [];
+  let ultimoNum = 0;
+  for (const linhaOriginal of linhas || []) {
+    const linha = String(linhaOriginal || '');
+    const mInicio = linha.trim().match(/^(\d{1,4})\.\s+/);
+    if (mInicio) {
+      const nIni = parseInt(mInicio[1], 10);
+      if (nIni >= 1 && nIni <= 2500) ultimoNum = nIni;
+    }
+
+    // Divide referencias concatenadas na mesma linha (ex.: ".../441. Merriam-Webster" ou "2020.442. Smith")
+    let restante = linha;
+    let guard = 0;
+    while (ultimoNum > 0 && guard < 10) {
+      guard++;
+      const proxEsperado = ultimoNum + 1;
+      const reProx = new RegExp(`([/.\\)\\s])(${proxEsperado})\\.\\s+(?=[A-ZÀ-Ú][A-Za-zÀ-ÿ'’-]{2,})`);
+      const mProx = reProx.exec(restante);
+      if (!mProx || mProx.index < 20) break;
+      const antes = restante.slice(0, mProx.index + mProx[1].length).trim();
+      const depois = restante.slice(mProx.index + mProx[1].length).trim();
+      if (antes) resultado.push(antes);
+      restante = depois;
+      ultimoNum = proxEsperado;
+    }
+    if (restante.trim()) resultado.push(restante);
+  }
+  return resultado;
+}
+
+function detectarEstiloBibliograficoLista(refsMapeadas = []) {
+  if (!Array.isArray(refsMapeadas) || refsMapeadas.length === 0) return 'abnt';
+  let totalNumeradasOuInternacionais = 0;
+  for (const r of refsMapeadas) {
+    const txt = String(r?.textoOriginal || '').trim();
+    const temNum = Boolean(r?.numeroRef) || /^\s*(?:\d{1,4}\.|\[\d{1,4}\])\s+/.test(txt);
+    const padraoNatureVancouver =
+      /\b\d+,\s*\d+[–-]\d+\s*\((?:19|20)\d{2}\)\.?\s*$/.test(txt) ||
+      /;\s*\d+(?:\(\d+\))?:\s*\d+/.test(txt);
+    if (temNum || padraoNatureVancouver) totalNumeradasOuInternacionais++;
+  }
+  return totalNumeradasOuInternacionais / refsMapeadas.length >= 0.5 ? 'vancouver_nature' : 'abnt';
+}
+
 // ---------- 4. Extração de Citações no Corpo do Texto (ABNT + Vancouver Numérico) e Alertas de Forma ----------
 function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
   const citacoes = [];
@@ -1440,7 +1249,8 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
       typeof paragrafos[idxPar] === 'string'
         ? { texto: paragrafos[idxPar], numParagrafo: idxPar + 1, numLinha: idxPar + 1, secao: 'Corpo do Texto' }
         : paragrafos[idxPar];
-    const par = normalizarSuperscriptUnicodeParaColchetes(objPar.texto);
+    const parBase = normalizarSuperscriptUnicodeParaColchetes(objPar.texto);
+    const par = separarCitacoesSobrescritasColadasPdf(parBase, refsPorNumero.size, maxRefNumerada);
 
     const frases = dividirEmFrasesSemQuebrarAbreviaturas(par);
     for (let idxFrase = 0; idxFrase < frases.length; idxFrase++) {
@@ -1449,10 +1259,22 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
         continue;
       }
       const chavesJaRegistradasNaFrase = new Set();
+      const ehFraseCurtaOuAnaforica =
+        idxFrase > 0 &&
+        (frase.trim().length < 130 ||
+          /^\s*(?:esses?|essas?|estes?|estas?|isso|isto|tal|tais|nesse|nessa|neste|nesta|dessa|desta|desse|deste|ele|ela|eles|elas|em\s+rela[cç][aã]o\s+a\s+isso|nesse\s+(?:cen[aá]rio|contexto|sentido)|these|this\s+(?:study|finding|result)|such|they|in\s+this\s+context)\b/i.test(
+            frase
+          ));
+      const fraseContextoSemantico = ehFraseCurtaOuAnaforica
+        ? `${frases[idxFrase - 1].trim()} ${frase.trim()}`.trim()
+        : frase.trim();
       const registrarCitacaoUnicaNaFrase = (itemCit) => {
         const chaveDedup = `${itemCit.chave}::${objPar.numParagrafo}::${idxFrase}`;
         if (chavesJaRegistradasNaFrase.has(chaveDedup)) return;
         chavesJaRegistradasNaFrase.add(chaveDedup);
+        if (!itemCit.fraseContextoSemantico) {
+          itemCit.fraseContextoSemantico = fraseContextoSemantico;
+        }
         if (!itemCit.intencao) {
           itemCit.intencao = classificarIntencaoCitacao(frase, itemCit.autor);
         }
@@ -1731,9 +1553,10 @@ function extrairCitacoesDoCorpo(paragrafos, refsFinais = []) {
 }
 
 /** Analisa cada entrada da seção final de Referências com extração precisa de ano de publicação, autor, número Vancouver, título e metadados CSL-JSON embutidos. */
-function analisarLinhasReferencias(linhas, mapaCslEmbutido = ultimoMapaCslEmbutidoDocx) {
+function analisarLinhasReferencias(linhas, mapaCslEmbutido = obterUltimoMapaCslDocx()) {
+  const linhasExpandidas = separarReferenciasNumeradasConcatenadas(linhas);
   const entradas = [];
-  for (const lBruta of linhas) {
+  for (const lBruta of linhasExpandidas) {
     const l = sanitizarCamposGerenciadorBibliografia(lBruta).trim();
     if (!ehLinhaReferenciaValida(l)) continue;
 
@@ -1819,480 +1642,6 @@ function analisarLinhasReferencias(linhas, mapaCslEmbutido = ultimoMapaCslEmbuti
   return entradas;
 }
 
-// ---------- 5. Dicionário Semântico Bilíngue (PT ↔ EN) para Verificação de Fidelidade Científica ----------
-function decodificarEntidadesHtmlTexto(str) {
-  const mapaNomeadas = {
-    aacute: 'á', aacute_u: 'Á', agrave: 'à', acirc: 'â', atilde: 'ã', auml: 'ä',
-    eacute: 'é', egrave: 'è', ecirc: 'ê', euml: 'ë',
-    iacute: 'í', igrave: 'ì', icirc: 'î', iuml: 'ï',
-    oacute: 'ó', ograve: 'ò', ocirc: 'ô', otilde: 'õ', ouml: 'ö',
-    uacute: 'ú', ugrave: 'ù', ucirc: 'û', uuml: 'ü',
-    ccedil: 'ç', ntilde: 'ñ', nbsp: ' ', amp: '&', lt: '<', gt: '>', quot: '"', apos: "'",
-  };
-  return String(str || '')
-    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => {
-      try {
-        return String.fromCodePoint(parseInt(hex, 16));
-      } catch {
-        return '';
-      }
-    })
-    .replace(/&#(\d+);/g, (_, dec) => {
-      try {
-        return String.fromCodePoint(parseInt(dec, 10));
-      } catch {
-        return '';
-      }
-    })
-    .replace(/&([a-z]+);/gi, (m, nome) => mapaNomeadas[nome.toLowerCase()] || m);
-}
-
-// Grupos de suporte genérico em saúde (ajudam no escore quando há pelo menos 1 conceito temático específico confirmado, mas sozinhos não validam atribuição cruzada entre agravos distintos)
-const EQUIVALENCIAS_SUPORTE_GENERICO_PT_EN = [
-  ['excede', 'exceder', 'superar', 'exceed', 'exceeded'],
-  ['esperado', 'esperados', 'expected'],
-  ['exames', 'exame', 'exams', 'examination', 'tests'],
-  ['populacao', 'populacional', 'population', 'women', 'mulheres', 'children', 'criancas', 'infants', 'childhood', 'infantil'],
-  ['publico', 'publica', 'publicos', 'public', 'sus', 'national health system', 'unified health system'],
-  ['tratamento', 'terapia', 'terapeutico', 'treatment', 'therapy', 'therapeutic'],
-  ['estabelecimentos', 'servicos', 'hospitais', 'unidades', 'services', 'hospitals', 'facilities', 'units', 'health centers', 'clinics'],
-  ['mortalidade', 'obitos', 'mortality', 'deaths', 'survival', 'sobrevida'],
-  ['revisao', 'sistematica', 'escopo', 'integrativa', 'systematic', 'review', 'scoping', 'meta-analysis'],
-  ['determinantes', 'determinante', 'fatores', 'condicionantes', 'determinants', 'factors', 'drivers', 'predictors', 'associated', 'correlates'],
-];
-
-// Grupos conceituais temáticos específicos (PT ↔ EN)
-const EQUIVALENCIAS_PT_EN = [
-  // Oncologia & Rastreamento Mamográfico
-  ['rastreamento', 'rastrear', 'rastreadas', 'screening', 'screened'],
-  ['mamografia', 'mamografico', 'mamograficos', 'mammography', 'mammographic', 'mammograms', 'mammogram', 'breast lesions', 'lesoes mamarias', 'cancer de mama', 'breast cancer'],
-  ['cobertura', 'coberturas', 'coverage', 'uptake', 'vaccination coverage', 'coverage rate'],
-  ['seguimento', 'acompanhamento', 'monitoramento', 'follow-up', 'followup', 'monitoring', 'surveillance', 'vigilancia'],
-  ['perda de seguimento', 'abandono', 'evasao', 'falha', 'loss to follow-up', 'loss to followup', 'lost to follow-up', 'dropout', 'delayed', 'failure', 'inadequate', 'incomplete', 'incompletude'],
-  ['benigna', 'benignas', 'benigno', 'benign'],
-  ['lesao', 'lesoes', 'lesion', 'lesions', 'abnormal', 'alterados'],
-  ['atraso', 'atrasos', 'demora', 'intervalo', 'oportunidade', 'delay', 'delays', 'time interval', 'waiting', 'timeliness', 'missed opportunities'],
-  ['itinerario', 'trajetoria', 'percurso', 'fluxo', 'pathway', 'pathways', 'flow', 'trajectories'],
-  ['agendamento', 'marcacao', 'regulado', 'regulacao', 'scheduling', 'regulation', 'appointment'],
-  ['encaminhamento', 'referencia', 'referral', 'refer', 'referred'],
-  ['contrarreferencia', 'retorno', 'devolucao', 'counter-referral', 'reply', 'feedback', 'returning'],
-  ['atencao primaria', 'unidade basica', 'primary care', 'primary health care', 'phc', 'family health'],
-  ['especializada', 'especialista', 'especialistas', 'specialized', 'specialist', 'specialists'],
-  ['coordenacao', 'continuidade', 'integralidade', 'coordination', 'continuity', 'integrality', 'comprehensive'],
-  ['tendencia', 'crescimento', 'espacial', 'temporal', 'trend', 'spatial', 'clusters', 'macrorregiao'],
-  ['estadio', 'avancado', 'avancados', 'stage', 'advanced'],
-  ['prontuario', 'alertas', 'comunicacao', 'records', 'alerts', 'miscommunication', 'retrieval', 'paper', 'phone'],
-
-  // Imunização, Vacinação, Epidemiologia & Determinantes Sociais/Comportamentais
-  ['vacina', 'vacinas', 'vacinacao', 'vacinal', 'vacinais', 'imunizacao', 'imunizacoes', 'imunobiologico', 'imunobiologicos', 'pni', 'vaccine', 'vaccines', 'vaccination', 'immunization', 'immunisation', 'inoculation', 'doses', 'booster', 'national immunization program'],
-  ['hesitacao', 'recusa', 'resistencia vacinal', 'adesao vacinal', 'adesao a vacinacao', 'adesao a imunizacao', 'aceitacao vacinal', '5as', 'hesitancy', 'refusal', 'reluctance', 'vaccine acceptance', 'vaccine adherence', 'immunization adherence', 'confidence', 'complacency', 'convenience'],
-  ['distais', 'intermediarios', 'proximais', 'determinantes distais', 'determinantes proximais', 'hierarquico', 'hierarquica', 'multinivel', 'modelo conceitual', 'conceptual framework', 'hierarchical', 'multilevel', 'distal determinants', 'proximal determinants', 'intermediate determinants', 'distal factors', 'proximal factors'],
-  ['socioeconomicos', 'socioeconomico', 'socioeconomica', 'demograficos', 'estruturais', 'renda', 'riqueza', 'pobreza', 'socioeconomic', 'demographic', 'structural', 'income', 'wealth', 'poverty', 'quintiles', 'social class', 'inequalities', 'disparities', 'desigualdades'],
-  ['escolaridade', 'educacao', 'instrucao', 'alfabetizacao', 'materna', 'pais', 'cuidadores', 'education', 'educational', 'literacy', 'schooling', 'maternal', 'mother', 'parents', 'parental', 'caregivers'],
-  ['moradia', 'habitacao', 'residencia', 'territorio', 'rural', 'urbana', 'indigena', 'indigenas', 'migrantes', 'imigrantes', 'housing', 'living', 'residence', 'household', 'urban', 'rural', 'indigenous', 'newcomers', 'immigrants', 'migrants', 'districts'],
-  ['gestao', 'governanca', 'politica', 'politicas', 'financiamento', 'orcamento', 'investimento', 'management', 'governance', 'policy', 'policies', 'political', 'financing', 'funding', 'health system', 'sistema de saude'],
-  ['acesso', 'acessibilidade', 'barreiras', 'obstaculos', 'disponibilidade', 'horario', 'transporte', 'access to', 'immunization access', 'healthcare access', 'service access', 'accessibility', 'barriers', 'obstacles', 'availability', 'convenience', 'opening hours', 'transport'],
-  ['desabastecimento', 'estoque', 'insumos', 'cadeia de frio', 'logistica', 'falta', 'shortage', 'shortages', 'supply', 'stockout', 'cold chain', 'logistics', 'distribution'],
-  ['profissionais', 'equipe', 'trabalhadores', 'capacitacao', 'treinamento', 'qualificacao', 'recomendacao', 'workforce', 'health workers', 'healthcare workers', 'providers', 'professionals', 'staff', 'training', 'recommendation', 'counseling'],
-  ['comportamentais', 'comportamento', 'culturais', 'cultural', 'estilo de vida', 'individual', 'individuais', 'crencas', 'atitudes', 'percepcao', 'salutismo', 'behavioral', 'behavioural', 'behavior', 'cultural', 'lifestyle', 'individual', 'beliefs', 'attitudes', 'perceptions', 'healthism', 'psychological'],
-  ['desinformacao', 'fake news', 'infodemia', 'redes sociais', 'midia', 'internet', 'medo', 'eventos adversos', 'seguranca', 'misinformation', 'disinformation', 'social media', 'media', 'fear', 'adverse events', 'side effects', 'safety', 'conspiracy', 'trust'],
-
-  // Metodologia de Planejamento, Matriz de Priorização & Avaliação de Programas (CDC / Saúde Coletiva)
-  ['priorizacao', 'priorizar', 'prioridades', 'matriz', 'criterios', 'pontuacao', 'escore', 'prioritization', 'priority', 'priorities', 'matrix', 'criteria', 'scoring', 'ranking', 'decision', 'problem'],
-  ['magnitude', 'transcendencia', 'vulnerabilidade', 'viabilidade', 'exequibilidade', 'aceitabilidade', 'sustentabilidade', 'custo', 'feasibility', 'acceptability', 'sustainability', 'vulnerability', 'severity', 'impact', 'cost', 'resources'],
-  ['avaliacao', 'avaliar', 'implementacao', 'fidelidade', 'teoria de mudanca', 'avaliacao de processo', 'intervencao', 'entrega do programa', 'evaluation', 'evaluate', 'implementation', 'fidelity', 'theory of change', 'process evaluation', 'health intervention', 'program intervention', 'intervention delivery', 'program delivery', 'service delivery', 'delivered'],
-
-  // Informática em Saúde, Interoperabilidade, Qualidade de Dados & Evidências Quantitativas
-  ['controle', 'grupo controle', 'comparacao', 'referencia', 'control', 'control group', 'baseline', 'comparison'],
-  ['aumentar', 'aumento', 'aumentaram', 'subir', 'subiram', 'elevacao', 'cair', 'queda', 'reduzir', 'reducao', 'increase', 'increased', 'increases', 'rise', 'rose', 'decrease', 'decreased', 'reduction'],
-  ['acuracia', 'completude', 'precisao', 'rigidez', 'tempo', 'sobrecarga', 'accuracy', 'completeness', 'precision', 'rigid', 'rigidity', 'time', 'workflow', 'burden'],
-  ['integrado', 'integracao', 'integrados', 'interoperabilidade', 'desatualizado', 'desatualizados', 'subnotificacao', 'sub-registrado', 'tempo real', 'heterogeneo', 'fragmentacao', 'fragmentados', 'integrated', 'integration', 'interoperability', 'outdated', 'underreported', 'underreporting', 'real-time', 'realtime', 'heterogeneous', 'fragmented', 'fragmentation'],
-];
-
-function contemTermoComFronteira(textoNorm, termo) {
-  const esc = String(termo || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const re = new RegExp(`(?:^|[^a-z0-9])${esc}(?:$|[^a-z0-9]|s\\b)`, 'i');
-  return re.test(textoNorm);
-}
-
-function verificarCompatibilidadeBilingue(fraseWord, textoArtigo) {
-  const fNorm = decodificarEntidadesHtmlTexto(fraseWord)
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase();
-  const aNorm = decodificarEntidadesHtmlTexto(textoArtigo)
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase();
-
-  if (!aNorm || aNorm.length < 40) {
-    return { compativel: true, score: 100, motivo: 'sem_texto_comparavel' };
-  }
-
-  // 1) Verifica números/percentuais/ORs citados na frase do Word (ex.: "25%", "54,5%", "48,7%", "40,8%", "7,2%", "33%", "27,3%", "71,6%", "600")
-  const numerosFrase = [...fNorm.matchAll(/\b\d+(?:[.,]\d+)?%?\b/g)]
-    .map((m) => m[0].replace(',', '.'))
-    .filter((n) => !/^(19\d\d|20\d\d|1|2|3)$/.test(n)); // ignora o próprio ano da citação ou números triviais
-
-  const aNormPonto = aNorm.replace(/,/g, '.');
-  let acertosNumericos = 0;
-  for (const num of numerosFrase) {
-    if (aNormPonto.includes(num)) acertosNumericos++;
-  }
-
-  // 2) Verifica conceitos temáticos específicos e conceitos de suporte presentes na frase do Word
-  const gruposEspecificosNaFrase = EQUIVALENCIAS_PT_EN.filter((grupo) =>
-    grupo.some((termo) => contemTermoComFronteira(fNorm, termo))
-  );
-  let gruposEspecificosConfirmados = 0;
-  for (const grupo of gruposEspecificosNaFrase) {
-    if (grupo.some((termo) => contemTermoComFronteira(aNorm, termo))) {
-      gruposEspecificosConfirmados++;
-    }
-  }
-
-  const gruposGenericosNaFrase = EQUIVALENCIAS_SUPORTE_GENERICO_PT_EN.filter((grupo) =>
-    grupo.some((termo) => contemTermoComFronteira(fNorm, termo))
-  );
-  let gruposGenericosConfirmados = 0;
-  for (const grupo of gruposGenericosNaFrase) {
-    if (grupo.some((termo) => contemTermoComFronteira(aNorm, termo))) {
-      gruposGenericosConfirmados++;
-    }
-  }
-
-  // Grupos genéricos só contam quando há pelo menos 1 conceito específico confirmado (ou quando a frase não contém nenhum conceito específico)
-  const gruposConfirmadosNoArtigo =
-    gruposEspecificosNaFrase.length > 0
-      ? gruposEspecificosConfirmados > 0
-        ? gruposEspecificosConfirmados + gruposGenericosConfirmados
-        : 0
-      : gruposGenericosConfirmados;
-
-  const totalGruposConsiderados =
-    gruposEspecificosNaFrase.length > 0
-      ? gruposEspecificosNaFrase.length + (gruposEspecificosConfirmados > 0 ? gruposGenericosNaFrase.length : 0)
-      : gruposGenericosNaFrase.length;
-
-  // 3) Radicais diretos (5 letras) com fronteira de palavra e exclusão de cognatos médicos genéricos
-  const palavrasArtigo = new Set(
-    aNorm
-      .replace(/[^a-z0-9\s]/g, ' ')
-      .split(/\s+/)
-      .filter((p) => p.length >= 5 && !STOPWORDS_CIENTIFICAS_GERAIS.has(p) && !/^\d+$/.test(p))
-      .map((p) => p.slice(0, 5))
-  );
-  const palavrasFrase = fNorm
-    .replace(/[^a-z0-9\s]/g, ' ')
-    .split(/\s+/)
-    .filter((p) => p.length >= 5 && !STOPWORDS_CIENTIFICAS_GERAIS.has(p) && !/^\d+$/.test(p));
-  const radicais = [...new Set(palavrasFrase.map((p) => p.slice(0, 5)))];
-  const acertosRadicais = radicais.filter((r) => palavrasArtigo.has(r)).length;
-
-  const pctConceitos = totalGruposConsiderados
-    ? Math.round((gruposConfirmadosNoArtigo / totalGruposConsiderados) * 100)
-    : 0;
-  const pctRadicais = radicais.length ? Math.round((acertosRadicais / radicais.length) * 100) : 0;
-  const bonusNumerico = numerosFrase.length > 0 && acertosNumericos > 0 ? Math.round((acertosNumericos / numerosFrase.length) * 100) : 0;
-
-  const scoreFinal = Math.max(pctConceitos, pctRadicais, bonusNumerico);
-  return {
-    compativel:
-      scoreFinal >= 25 ||
-      acertosNumericos >= 1 ||
-      gruposConfirmadosNoArtigo >= 1 ||
-      acertosRadicais >= 2,
-    score: scoreFinal,
-    acertosNumericos,
-    gruposConfirmadosNoArtigo,
-  };
-}
-
-/**
- * Seleciona a melhor sentença do artigo (resumo ou PDF) que sustenta a frase do Word,
- * usando correspondência bilíngue PT↔EN e âncoras numéricas.
- */
-function selecionarMelhorTrechoArtigo(fraseWord, sentencasArtigo) {
-  if (!sentencasArtigo?.length) return '';
-  let melhor = sentencasArtigo[0] || '';
-  let maiorScore = -1;
-  for (const sa of sentencasArtigo) {
-    const res = verificarCompatibilidadeBilingue(fraseWord, sa);
-    const pontos = res.score + res.acertosNumericos * 35 + res.gruposConfirmadosNoArtigo * 15;
-    if (pontos > maiorScore) {
-      maiorScore = pontos;
-      melhor = sa;
-    }
-  }
-  return melhor;
-}
-
-// Jargões acadêmicos e expressões metodológicas padronizadas que NÃO constituem plágio
-const JARGOES_METODOLOGICOS_COMUNS = [
-  'estudo transversal descritivo',
-  'estudo observacional retrospectivo',
-  'estudo de coorte prospectivo',
-  'estudo quantitativo descritivo',
-  'aprovado pelo comite de etica',
-  'comite de etica em pesquisa',
-  'resolucao numero 466',
-  'resolucao no 466',
-  'resolucao no 510',
-  'dados foram coletados por meio',
-  'dados foram coletados atraves',
-  'dados foram coletados entre os meses',
-  'analisados estatisticamente atraves',
-  'analise estatistica foi realizada',
-  'analisados por meio do software',
-  'media e desvio padrao',
-  'intervalo de confianca de 95',
-  'intervalo de confianca de noventa',
-  'nivel de significancia estatistica',
-  'p valor menor que 0',
-  'criterios de inclusao e exclusao',
-  'termo de consentimento livre e esclarecido',
-  'nao ha conflito de interesses',
-  'revisao integrativa da literatura',
-  'revisao sistematica da literatura',
-  'objetivo geral deste estudo',
-  'conclui se que sao necessarios',
-  'amostra por conveniencia',
-  'diferenca estatisticamente significativa',
-  'limitacoes quanto ao desenho',
-];
-
-const STOPWORDS_CIENTIFICAS_GERAIS = new Set(
-  'de da do das dos em no na nos nas para por com sem sobre entre como mais menos muito pouco tambem quando onde qual quais quem cujo cuja este esta estes estas esse essa esses essas aquele aquela aquilo isso isto um uma uns umas o a os as e ou mas se que nao sim ao aos pela pelo pelas pelos segundo conforme apud et al p pp pag v n dispoem apontam demonstram mostra mostram estudo estudos artigo artigos autor autores pesquisa trabalho trabalhos dados analise resultados resultado pacientes participante participantes amostra populacao populacional publico publica publicos servico servicos hospital hospitais clinica clinico clinicos associado associada associados associadas fator fatores sistema sistemas controle total adulto adultos grupo grupos nivel niveis the and for with from that this were was are have has had been between among within through during after before under above into onto upon about which their there these those other such more most less least very also only both each some many much study studies paper article author authors research data analysis results result patients patient participants sample population public health system systems clinical hospital hospitals service services associated factors factor control group groups level levels adult adults'.split(
-    ' '
-  )
-);
-
-function normalizarTextoPlagio(texto) {
-  return decodificarEntidadesHtmlTexto(texto)
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9\s]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
-
-function ehJargaoMetodologico(texto) {
-  const norm = normalizarTextoPlagio(texto);
-  return JARGOES_METODOLOGICOS_COMUNS.some((j) => norm.includes(j));
-}
-
-/**
- * Calcula a similaridade de cosseno baseada em radicais (5 letras) + projeção ponderada de conceitos bilíngues (PT↔EN)
- * com eliminação rigorosa de stopwords acadêmicas para detecção de citações falsas / desconectadas.
- */
-function calcularSimilaridadeCossenoRadicais(textoA, textoB) {
-  const extrairRadicaisEConceitos = (t) => {
-    const norm = normalizarTextoPlagio(t);
-    const radicais = norm
-      .split(' ')
-      .filter((w) => w.length >= 4 && !STOPWORDS_CIENTIFICAS_GERAIS.has(w) && !/^\d+$/.test(w))
-      .map((w) => w.slice(0, 5));
-    for (let idxG = 0; idxG < EQUIVALENCIAS_PT_EN.length; idxG++) {
-      const grupo = EQUIVALENCIAS_PT_EN[idxG];
-      if (grupo.some((termo) => contemTermoComFronteira(norm, termo))) {
-        // Pondera conceito bilíngue com peso 3 para compensar diferença de idioma entre radicais PT e EN
-        radicais.push(`__conc_${idxG}`, `__conc_${idxG}`, `__conc_${idxG}`);
-      }
-    }
-    return radicais;
-  };
-
-  const radA = extrairRadicaisEConceitos(textoA);
-  const radB = extrairRadicaisEConceitos(textoB);
-  if (!radA.length || !radB.length) return 0;
-
-  const tfA = new Map();
-  const tfB = new Map();
-  const vocab = new Set([...radA, ...radB]);
-
-  for (const r of radA) tfA.set(r, (tfA.get(r) || 0) + 1);
-  for (const r of radB) tfB.set(r, (tfB.get(r) || 0) + 1);
-
-  let dotProduct = 0;
-  let magA = 0;
-  let magB = 0;
-
-  for (const r of vocab) {
-    const vA = tfA.get(r) || 0;
-    const vB = tfB.get(r) || 0;
-    dotProduct += vA * vB;
-    magA += vA * vA;
-    magB += vB * vB;
-  }
-
-  if (magA === 0 || magB === 0) return 0;
-  return dotProduct / (Math.sqrt(magA) * Math.sqrt(magB));
-}
-
-/**
- * Analisa cópia literal e plágio usando o Google Diff Match Patch com inteligência forense:
- * - Detecta sobreposição idêntica contígua de 7+ palavras ou 32+ caracteres.
- * - Distingue cópia sem aspas vs plágio não atribuído vs plágio mosaico.
- * - Ignora jargões metodológicos comuns da saúde e citações diretas legítimas entre aspas.
- */
-async function analisarPlagioComDiffMatchPatch(paragrafosCorpo, corpusArtigos) {
-  const alertas = [];
-  const minPalavrasIdenticas = 10;
-
-  // Pré-processa e normaliza o corpus de artigos UMA ÚNICA VEZ para evitar milhões de chamadas redundantes
-  const corpusOtimizado = [];
-  for (const art of corpusArtigos) {
-    if (!art.sentencasOriginais?.length) continue;
-    const sentencas = [];
-    for (const sentArt of art.sentencasOriginais) {
-      if (sentArt.length < 35 || ehJargaoMetodologico(sentArt)) continue;
-      const norm = normalizarTextoPlagio(sentArt);
-      sentencas.push({ original: sentArt, norm });
-    }
-    if (sentencas.length > 0) {
-      corpusOtimizado.push({
-        ...art,
-        chaveAutor: art.chaveAutor || normalizarChave(art.autor || ''),
-        sentencas,
-      });
-    }
-  }
-
-  // Constrói o Índice Invertido Winnowing (MOSS) para triagem em O(1) com garantia matemática
-  const indiceWinnowing = IndiceWinnowing.construirDoCorpus(corpusOtimizado, 4, 7);
-
-  for (let pIdx = 0; pIdx < paragrafosCorpo.length; pIdx++) {
-    // Cede tempo para o Event Loop do Node.js a cada 5 parágrafos (mantém a interface responsiva)
-    if (pIdx % 5 === 0) {
-      await new Promise((resolve) => setImmediate(resolve));
-    }
-    const par = paragrafosCorpo[pIdx];
-    const textoProtegido = String(par.texto || '').replace(
-      /\b(et\s+al|v|vol|n|no|nº|p|pp|p[aá]g|fig|tab|dr|dra|prof|profa|art|inc|ed|org|orgs|coord|supl|cap|sec|sr|sra)\.\s+/gi,
-      '$1\u0000 '
-    );
-    const frases = textoProtegido
-      .split(/(?<=[.!?])\s+/)
-      .map((f) => f.replace(/\u0000/g, '.').trim())
-      .filter((f) => f.length >= 40);
-
-    for (const frase of frases) {
-      if (ehJargaoMetodologico(frase)) continue;
-      const temAspas = /["“][^"”]{20,}["”]/.test(frase) || /["“][^"”]{20,}["”]/.test(par.texto);
-      const fraseNorm = normalizarTextoPlagio(frase);
-      const frasePalavras = fraseNorm.split(/\s+/).filter((w) => w.length >= 2);
-      if (frasePalavras.length < minPalavrasIdenticas) continue;
-
-      // Consulta candidatos via Winnowing (MOSS) em tempo constante O(1)
-      const candidatosWinnowing = indiceWinnowing.consultarCandidatos(frasePalavras);
-      if (!candidatosWinnowing || candidatosWinnowing.size === 0) continue;
-
-      let detectouParaEstaFrase = false;
-
-      for (const [, cand] of candidatosWinnowing) {
-        if (detectouParaEstaFrase) break;
-        const art = corpusOtimizado[cand.docId];
-        const sent = art?.sentencas?.[cand.sentId];
-        if (!sent) continue;
-        const sentArtNorm = sent.norm;
-
-        // Executa Diff Match Patch para correspondência contígua e destaques de UI
-        const diffs = dmp.diff_main(fraseNorm, sentArtNorm);
-        dmp.diff_cleanupSemantic(diffs);
-
-        let maiorBlocoIdentico = '';
-        let totalPalavrasIguais = 0;
-        let blocosIguais = 0;
-
-        for (const [op, data] of diffs) {
-          if (op === 0) {
-            const palavrasBloco = data.trim().split(/\s+/).filter((w) => w.length >= 3);
-            if (palavrasBloco.length >= minPalavrasIdenticas) {
-              if (data.length > maiorBlocoIdentico.length) {
-                maiorBlocoIdentico = data.trim();
-              }
-              totalPalavrasIguais += palavrasBloco.length;
-              blocosIguais++;
-            }
-          }
-        }
-
-        // Avaliação complementar com Greedy String Tiling (RKR-GST / JPlag) para captura de fragmentos transpostos/mosaico
-        const resGst = executarGreedyStringTiling(fraseNorm, sentArtNorm, minPalavrasIdenticas);
-        if (resGst.maiorBlocoIdentico && resGst.maiorBlocoIdentico.length > maiorBlocoIdentico.length) {
-          maiorBlocoIdentico = resGst.maiorBlocoIdentico;
-        }
-        if (resGst.totalCoincidentWords > totalPalavrasIguais) {
-          totalPalavrasIguais = resGst.totalCoincidentWords;
-        }
-        if (resGst.isMosaic) {
-          blocosIguais = Math.max(blocosIguais, resGst.tilesCount);
-        }
-
-        if (maiorBlocoIdentico.length >= 40 && totalPalavrasIguais >= minPalavrasIdenticas) {
-            // Isenta nomes próprios de sociedades, diretrizes, periódicos, comitês e entidades institucionais
-            const ehEntidadePropria =
-              /\b(?:international\s+society|society\s+for\s+human\s+and\s+animal|world\s+health\s+organization|centers\s+for\s+disease\s+control|national\s+library\s+of\s+medicine|instituto\s+brasileiro\s+de\s+geografia|sistema\s+[uú]nico\s+de\s+sa[uú]de|rede\s+nacional\s+de\s+dados\s+em\s+sa[uú]de|conselho\s+nacional\s+de\s+sa[uú]de|comit[eê]\s+de\s+[eé]tica\s+em\s+pesquisa|termo\s+de\s+consentimento|guia\s+de\s+vigil[aâ]ncia|protocolo\s+cl[ií]nico|morbidity\s+and\s+mortality\s+weekly\s+report|guidelines\s+working\s+group)\b/i.test(
-                maiorBlocoIdentico.trim()
-              );
-            if (ehEntidadePropria) continue;
-
-            const citouAutorNoParagrafo =
-              (art.chaveAutor && normalizarChave(par.texto).includes(art.chaveAutor)) ||
-              /\[\d+(?:\s*[,;–—-]\s*\d+)*\]|\(\s*[A-ZÀ-Ú][^)]*\d{4}/.test(par.texto);
-            let tipo = 'plagio_sem_citacao';
-            let rotulo = '🚨 PLÁGIO DIRETO / CÓPIA LITERAL NÃO ATRIBUÍDA';
-
-            if (citouAutorNoParagrafo) {
-              if (temAspas) {
-                // Se tem aspas e citou a fonte (autor-data ou número Vancouver), é citação direta legítima! Ignora falso alarme!
-                continue;
-              } else if (blocosIguais >= 2) {
-                tipo = 'plagio_mosaico';
-                rotulo = '🚨 PLÁGIO MOSAICO (Cópia com Pequenas Alterações Sem Aspas)';
-              } else {
-                tipo = 'copia_sem_aspas';
-                rotulo = '🚨 CÓPIA LITERAL SEM ASPAS (Trecho Copiado Textualmente Sem Indicar Página)';
-              }
-            }
-
-            const palavrasFrase = fraseNorm.split(/\s+/).length;
-            const pctSimilaridade = Math.min(100, Math.round((totalPalavrasIguais / Math.max(palavrasFrase, 1)) * 100));
-
-            const trechoDestacado = diffs
-              .filter(([op]) => op === 0 || op === -1)
-              .map(([op, text]) => ({
-                tipo: op === 0 ? 'coincidente' : 'diferente',
-                texto: text,
-              }));
-
-            alertas.push({
-              numParagrafo: par.numParagrafo,
-              numLinha: par.numLinha,
-              secao: par.secao,
-              tipoPlagio: tipo,
-              rotulo,
-              similaridade: Math.max(pctSimilaridade, 85),
-              palavrasCoincidentes: totalPalavrasIguais,
-              autorFonte: `${art.autor} (${art.ano})`,
-              tituloFonte: art.titulo,
-              fraseNoWord: frase,
-              trechoCoincidente: maiorBlocoIdentico,
-              trechoOriginalArtigo: sent.original,
-              trechoDestacado,
-              mensagem: citouAutorNoParagrafo
-                ? `${rotulo} (${totalPalavrasIguais} palavras idênticas): No Parágrafo §${par.numParagrafo} (Linha ${par.numLinha}), você citou ${art.autor} (${art.ano}), mas copiou o trecho textualmente do PDF sem colocar entre "aspas" e sem indicar a página (p. X). Trecho copiado: "${maiorBlocoIdentico.slice(0, 85)}…"`
-                : `${rotulo} (${totalPalavrasIguais} palavras idênticas): No Parágrafo §${par.numParagrafo} (Linha ${par.numLinha}), este trecho é idêntico ao artigo de ${art.autor} (${art.ano}), mas você não citou a fonte neste parágrafo! Trecho copiado: "${maiorBlocoIdentico.slice(0, 85)}…"`,
-            });
-            detectouParaEstaFrase = true;
-            break;
-          }
-        }
-      }
-    }
-  return alertas;
-}
 
 /**
  * Verifica se há extrapolações finas ou imprecisões metodológicas conhecidas entre a frase do Word e o texto do artigo.
@@ -2499,158 +1848,61 @@ function verificarEscalaNarrativaFluxo(paragrafosCorpo, citacoes) {
  * Localiza no acervo local (pasta da biblioteca, pasta MIGRACAO/fontes_pdf ou Downloads)
  * o arquivo PDF já existente correspondente à obra auditada.
  */
-function localizarPdfNoAcervoLocal({ refBib, refDoc, bibliotecaRaiz }) {
-  const pastasAcervo = [
-    path.join(bibliotecaRaiz || '', 'pdfs'),
-    path.join(os.homedir(), 'OneDrive', 'Área de Trabalho', 'puc', 'MIGRACAO', 'fontes_pdf'),
-    path.join(os.homedir(), 'Downloads'),
-  ];
 
-  const autNorm = normalizarChave(refDoc?.primeiroSobrenome || refBib?.csl?.author?.[0]?.family || '');
-  const anoStr = String(refDoc?.anoBase || refBib?.csl?.issued?.['date-parts']?.[0]?.[0] || '');
-  const tituloNorm = normalizarChave(refDoc?.tituloBuscado || refBib?.csl?.title || '');
-  const palavrasTitulo = tituloNorm.match(/[a-z0-9]{4,}/g) || [];
-
-  const ehAutorGenerico = /^(brasil|ministerio|saude|parana|saopaulo|oms|who|cdc|governo|secretaria)$/i.test(autNorm);
-  const mAto = (refDoc?.textoOriginal || '').match(/\b(?:lei|decreto|portaria|nota\s*t[eé]cnica|resolu[cç][aã]o)\s*(?:n[º°.]?\s*)?(\d+)/i);
-  const numAto = mAto ? mAto[1] : null;
-
-  let melhorCaminho = null;
-  let melhorScore = 0;
-
-  for (const pasta of pastasAcervo) {
-    if (!pasta || !fs.existsSync(pasta)) continue;
-    try {
-      const arquivos = fs.readdirSync(pasta);
-      for (const arq of arquivos) {
-        if (!arq.toLowerCase().endsWith('.pdf')) continue;
-        const arqNorm = normalizarChave(arq);
-        const camCompleto = path.join(pasta, arq);
-
-        let score = 0;
-        if (numAto) {
-          if (arqNorm.includes(numAto)) {
-            score += 12;
-          } else {
-            // Se a obra declara um número de ato específico (ex: Lei 14.534, Decreto 12.007, Portaria 3.232, NT 13),
-            // desqualifica arquivos de outros atos ou documentos genéricos do mesmo órgão/ano
-            score -= 10;
-          }
-        }
-        if (anoStr && arqNorm.includes(anoStr)) score += ehAutorGenerico ? 2 : 3;
-        if (autNorm && autNorm.length >= 3 && arqNorm.includes(autNorm.slice(0, 7))) {
-          score += ehAutorGenerico ? 1 : 4;
-        }
-
-        let palavrasEncontradas = 0;
-        for (const p of palavrasTitulo) {
-          if (p.length >= 5 && arqNorm.includes(p)) {
-            score += 3;
-            palavrasEncontradas++;
-          }
-        }
-
-        if (refDoc?.doi && arqNorm.includes(normalizarChave(refDoc.doi).slice(-6))) score += 6;
-
-        // Para entes federativos e órgãos genéricos (Brasil, Santa Catarina, Paraná, etc.),
-        // impede colisão entre documentos distintos do mesmo ano (ex.: SC 2025a vs 2025b)
-        if (ehAutorGenerico && !numAto && palavrasEncontradas === 0) {
-          continue;
-        }
-
-        const thresholdMinimo = ehAutorGenerico ? 8 : 6;
-        if (score >= thresholdMinimo && score > melhorScore) {
-          try {
-            const st = fs.statSync(camCompleto);
-            if (st.size > 1000) {
-              melhorScore = score;
-              melhorCaminho = camCompleto;
-            }
-          } catch { /* continua */ }
-        }
+async function executarPoolLimitado(total, limite, workerFn, signal = null) {
+  if (!total || total <= 0) return;
+  let proximo = 0;
+  const qtdWorkers = Math.min(Math.max(1, Number(limite) || 1), total);
+  async function worker() {
+    while (proximo < total) {
+      if (signal?.aborted) {
+        const err = new Error('Auditoria cancelada pelo usuário.');
+        err.aborted = true;
+        throw err;
       }
-    } catch { /* continua */ }
-  }
-
-  return melhorCaminho;
-}
-
-// ---------- Marcadores de Redação Estilística de IA (Inspirado no Imalwayshere/Open-Detector) ----------
-const MARCADORES_ESTILISTICOS_IA = [
-  { termo: 'imperativo ressaltar', peso: 2 },
-  { termo: 'desempenha um papel crucial', peso: 2 },
-  { termo: 'desempenham um papel crucial', peso: 2 },
-  { termo: 'papel fundamental', peso: 1 },
-  { termo: 'em última análise', peso: 2 },
-  { termo: 'navegar pelas complexidades', peso: 3 },
-  { termo: 'navegar pelas nuances', peso: 3 },
-  { termo: 'tapeçaria multifacetada', peso: 3 },
-  { termo: 'tapeçaria rica', peso: 3 },
-  { termo: 'mergulhar nas nuances', peso: 3 },
-  { termo: 'mergulhar a fundo', peso: 2 },
-  { termo: 'no cenário contemporâneo', peso: 2 },
-  { termo: 'no panorama contemporâneo', peso: 2 },
-  { termo: 'serve como um testemunho', peso: 3 },
-  { termo: 'um testemunho de', peso: 2 },
-  { termo: 'lançar luz sobre', peso: 2 },
-  { termo: 'intrincada teia', peso: 3 },
-  { termo: 'ecossistema dinâmico', peso: 2 },
-  { termo: 'vital ressaltar', peso: 2 },
-  { termo: 'crucial destacar', peso: 2 },
-  { termo: 'em suma', peso: 1 },
-];
-
-function analisarEstiloRedacaoIaOpenDetector(paragrafosCorpo) {
-  const alertas = [];
-  for (const p of paragrafosCorpo) {
-    const textoLimpo = (p.texto || '').toLowerCase();
-    if (textoLimpo.length < 80) continue;
-
-    const achados = [];
-    let pontuacaoTotal = 0;
-
-    for (const m of MARCADORES_ESTILISTICOS_IA) {
-      if (textoLimpo.includes(m.termo)) {
-        achados.push(m.termo);
-        pontuacaoTotal += m.peso;
-      }
-    }
-
-    if (pontuacaoTotal >= 3) {
-      alertas.push({
-        tipo: 'estilo_redacao_ia',
-        numParagrafo: p.numLinha || 0,
-        numLinha: p.numLinha || 0,
-        secao: p.secao || 'Corpo do Trabalho',
-        autorCitado: 'Estilo de Redação',
-        fraseWord: p.texto.slice(0, 240) + (p.texto.length > 240 ? '…' : ''),
-        marcadores: achados,
-        pontuacaoIa: pontuacaoTotal,
-        mensagem: `🤖 Alerta de Redação Sintética de IA (Open-Detector): Parágrafo com alta densidade de clichês e cadência típica de LLMs (${achados.map((a) => `"${a}"`).join(', ')}). Recomenda-se reescrever com termos acadêmicos técnicos diretos ou incluir dados empíricos específicos.`,
-      });
+      const idx = proximo++;
+      await workerFn(idx);
     }
   }
-  return alertas;
+  await Promise.all(Array.from({ length: qtdWorkers }, () => worker()));
 }
 
 /**
  * Executa a auditoria reversa e forense completa no texto do manuscrito.
  */
-async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, pastaDestino = null, onProgresso = null, modulo = 'todos' }) {
+async function auditarManuscrito({
+  texto,
+  biblioteca: bibliotecaOriginal,
+  buscarEBaixar = true,
+  pastaDestino = null,
+  onProgresso = null,
+  modulo = 'todos',
+  somenteLeitura = false,
+  signal = null,
+  caminhoDocx = null,
+  xmlDocument = null,
+  autoresManuscrito = [],
+  anoReferencia = 2026,
+  pastaProjeto = null,
+  decisoesEditoriais = null,
+}) {
+  const biblioteca = somenteLeitura
+    ? criarBibliotecaSnapshotSomenteLeitura(bibliotecaOriginal)
+    : bibliotecaOriginal;
   if (typeof onProgresso === 'function') {
     onProgresso({
-      fase: 'fase1',
+      fase: 'etapa1',
       atual: 0,
       total: 0,
       porcentagem: 5,
       mensagem: modulo === 'chamadas'
-        ? 'Módulo 1/5 — Analisando citações no texto e referências finais…'
+        ? 'Etapa 1/1: Analisando citações no texto e referências finais…'
         : modulo === 'plagio'
-        ? 'Módulo 4/5 — Preparando análise de plágio com Google Diff Match Patch…'
+        ? 'Etapa 1/2: Preparando análise literal com Diff Match Patch…'
         : modulo === 'autenticidade'
-        ? 'Módulo 2/5 — Autenticando fontes nas bases científicas (Anti-Alucinação IA)…'
-        : 'Etapa 1/2 — Extraindo corpo do texto, seções e referências…',
-      detalhe: 'Separando citações narrativas e parentéticas…',
+        ? 'Etapa 1/2: Validando fontes nas bases científicas…'
+        : 'Etapa 1/6: Segmentando parágrafos, citações e referências do manuscrito…',
+      detalhe: 'Identificando chamadas autor-data, numéricas/Vancouver e campos CSL embutidos…',
     });
   }
 
@@ -2941,59 +2193,38 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
   const refsMapeadas = [];
   const chavesRefEncontradas = new Set();
   const totalRefsFinais = refsFinais.length;
-  let idxRefAtual = 0;
+  const CONCORRENCIA_REFS = 6;
+  const preResolucao = new Array(totalRefsFinais);
 
-  for (const refDoc of refsFinais) {
-    idxRefAtual++;
-    if (typeof onProgresso === 'function') {
-      const pct = Math.min(48, 5 + Math.round((idxRefAtual / Math.max(totalRefsFinais, 1)) * 43));
-      onProgresso({
-        fase: 'fase1',
-        atual: idxRefAtual,
-        total: totalRefsFinais,
-        porcentagem: pct,
-        mensagem: `Etapa 1/2 — Autenticando fontes e referências (${idxRefAtual}/${totalRefsFinais})`,
-        detalhe: `${refDoc.primeiroSobrenome} (${refDoc.anoBase || ''}) — ${refDoc.tituloBuscado || ''}`,
-      });
-    }
-
-    // 1. Pareamento preciso entre Referência Final e Grupo de Citação no Texto
+  // Pareia grupo no texto e referência inicial da biblioteca de forma pura (para permitir pré-busca paralela)
+  const contextosIniciais = refsFinais.map((refDoc) => {
     let grupo = gruposCitacao.get(refDoc.chave);
     if (!grupo) {
       for (const g of gruposCitacao.values()) {
-        // Se ambos têm sufixo de ano (ex.: 2023a vs 2023b), os anos completos DEVEM ser idênticos!
         const temSufixoRef = /[a-f]$/.test(refDoc.ano);
         const temSufixoCit = /[a-f]$/.test(g.ano);
         const anoCompativel =
           temSufixoRef || temSufixoCit ? refDoc.ano === g.ano : refDoc.anoBase === g.anoBase;
-
         if (!anoCompativel) continue;
-
         const aliasesRef = new Set(refDoc.chavesAutorAlias || [refDoc.chaveAutor]);
         const aliasesCit = g.chavesAutorAlias || [g.chaveAutor];
-        const autorCompativel = aliasesCit.some((ac) => ac && aliasesRef.has(ac));
-
-        if (autorCompativel) {
+        if (aliasesCit.some((ac) => ac && aliasesRef.has(ac))) {
           grupo = g;
           break;
         }
       }
     }
-    if (grupo) chavesRefEncontradas.add(grupo.chave);
 
-    // 2. Localiza na biblioteca existente (apenas se o DOI ou Autor+Ano realmente baterem!)
-    let refBib = refDoc.doi ? biblioteca.porDoi(refDoc.doi) : null;
-    // Se encontrou por DOI na biblioteca, mas o autor do refBib não bate com refDoc (caso de DOI trocado como Giovanella 2016 vs Reis 2016), desvincula!
-    if (refBib && refDoc.doi) {
+    let refBibInMem = refDoc.doi ? biblioteca.porDoi(refDoc.doi) : null;
+    if (refBibInMem && refDoc.doi) {
       const autBibNorm = normalizarChave(
-        (refBib.csl?.author || []).map((a) => a.family || a.literal || '').join(' ')
+        (refBibInMem.csl?.author || []).map((a) => a.family || a.literal || '').join(' ')
       );
       if (autBibNorm && !refDoc.chavesAutorAlias.some((al) => al.length >= 3 && autBibNorm.includes(al))) {
-        refBib = null;
+        refBibInMem = null;
       }
     }
-
-    if (!refBib) {
+    if (!refBibInMem) {
       for (const r of biblioteca.refs.values()) {
         const aBib = normalizarChave(r.csl?.author?.[0]?.family || r.csl?.author?.[0]?.literal || '');
         const anoBib = String(r.csl?.issued?.['date-parts']?.[0]?.[0] || '');
@@ -3004,39 +2235,283 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
           anoBib === refDoc.anoBase &&
           (!refDoc.sufixoAno || normalizarChave(r.csl?.title || '').includes(normalizarChave(refDoc.tituloBuscado.slice(0, 18))))
         ) {
-          refBib = r;
+          refBibInMem = r;
           break;
         }
       }
     }
+    return { grupo, refBibInMem };
+  });
 
-    let divergenciaMetadados = null;
-    let statusAutenticidade = 'nao_verificado';
-    let alertaAutenticidade = '';
-    const ehNormaLivroOuInstitucional = refDoc.natureza === 'norma_livro_institucional';
-    const ehPeriodicoRegionalSemDoi = refDoc.natureza === 'periodico_regional_sem_doi';
+  // Etapa 2A: Pré-resolução concorrente limitada (APIs, retratações e PDFs abertos em paralelo — 6x+ mais rápido)
+  let concluidasPrefetch = 0;
+  await executarPoolLimitado(
+    totalRefsFinais,
+    buscarEBaixar ? CONCORRENCIA_REFS : 1,
+    async (i) => {
+      const refDoc = refsFinais[i];
+      const { refBibInMem } = contextosIniciais[i];
+      let refBibRes = refBibInMem;
+      let divergenciaMetadados = null;
+      let statusAutenticidade = 'nao_verificado';
+      let alertaAutenticidade = '';
+      let retratadoInfo = null;
+      let csl = null;
+      let alertaRetratacaoMsg = null;
+      let alertaDivDoi = null;
+      let pdfTempPath = null;
 
-    // Regra R7 e R8: Verifica repositório institucional via URI / Handle (ex.: DSpace INCA 123456789/17914)
-    const infoHandle = verificarHandleRepositorio(refDoc.textoOriginal);
-    if (infoHandle) {
-      statusAutenticidade = infoHandle.statusAutenticidade;
-      alertaAutenticidade = infoHandle.alertaAutenticidade;
-      refDoc.infoRepositorio = infoHandle;
-    } else if (refDoc.codigoControlado) {
-      // Regra R36: Protocolo institucional controlado com código formal validado
-      statusAutenticidade = 'protocolo_controlado_aprovado';
-      alertaAutenticidade = `🏛 Protocolo Institucional Controlado (${refDoc.codigoControlado}) — Metadados Aprovados`;
-    } else if (ehNormaLivroOuInstitucional) {
-      statusAutenticidade = 'institucional_tese';
-      alertaAutenticidade =
-        refDoc.rotuloLener || '🏛 Norma Jurídica / Ato Normativo / Documento Técnico-Institucional Oficial / Livro';
-    } else if (ehPeriodicoRegionalSemDoi) {
-      statusAutenticidade = 'periodico_regional_sem_doi';
-      alertaAutenticidade =
-        refDoc.rotuloLener || '📚 Periódico Acadêmico Regional / Literatura Cinzenta (Sem indexação DOI Crossref)';
+      const ehNormaLivroOuInstitucional = refDoc.natureza === 'norma_livro_institucional';
+      const ehPeriodicoRegionalSemDoi = refDoc.natureza === 'periodico_regional_sem_doi';
+      const infoHandle = verificarHandleRepositorio(refDoc.textoOriginal);
+
+      if (infoHandle) {
+        statusAutenticidade = infoHandle.statusAutenticidade;
+        alertaAutenticidade = infoHandle.alertaAutenticidade;
+        refDoc.infoRepositorio = infoHandle;
+      } else if (refDoc.codigoControlado) {
+        statusAutenticidade = 'protocolo_controlado_aprovado';
+        alertaAutenticidade = `🏛 Protocolo Institucional Controlado (${refDoc.codigoControlado}) — Metadados Aprovados`;
+      } else if (ehNormaLivroOuInstitucional) {
+        statusAutenticidade = 'institucional_tese';
+        alertaAutenticidade =
+          refDoc.rotuloLener || '🏛 Norma Jurídica / Ato Normativo / Documento Técnico-Institucional Oficial / Livro';
+      } else if (ehPeriodicoRegionalSemDoi) {
+        statusAutenticidade = 'periodico_regional_sem_doi';
+        alertaAutenticidade =
+          refDoc.rotuloLener || '📚 Periódico Acadêmico Regional / Literatura Cinzenta (Sem indexação DOI Crossref)';
+      }
+
+      if (buscarEBaixar && !ehNormaLivroOuInstitucional && !ehPeriodicoRegionalSemDoi && !infoHandle) {
+        try {
+          if (refDoc.doi) {
+            try {
+              csl = await porDoi(refDoc.doi);
+              const autOficial = normalizarChave(
+                (csl.author || []).map((a) => a.family || a.literal || '').join(' ')
+              );
+              const titOficial = normalizarChave(csl.title || '');
+              const textoRefNorm = normalizarChave(refDoc.textoOriginal);
+              const autorBate = refDoc.chavesAutorAlias.some(
+                (al) => al.length >= 3 && autOficial.includes(al)
+              );
+              const tituloBate = titOficial.length >= 12 && textoRefNorm.includes(titOficial.slice(0, 16));
+
+              if (!autorBate && !tituloBate) {
+                const autoresReaisStr = (csl.author || [])
+                  .map((a) => `${a.given || ''} ${a.family || a.literal || ''}`.trim())
+                  .filter(Boolean)
+                  .join(', ');
+                statusAutenticidade = 'ia_doi_trocado';
+                alertaAutenticidade = `🚨 REFERÊNCIA NÃO LOCALIZÁVEL / DOI DE OUTRO ARTIGO: O DOI ${refDoc.doi} pertence na verdade ao artigo "${csl.title}" (${autoresReaisStr}), e a obra declarada (${refDoc.primeiroSobrenome}, ${refDoc.ano}) não foi localizada no fascículo/base!`;
+                divergenciaMetadados = alertaAutenticidade;
+                csl = null;
+                refBibRes = null;
+              } else {
+                const compCampos = compararCamposDoiOficial(refDoc, csl);
+                if (compCampos?.temDivergencia) {
+                  const detalheDiv = compCampos.divergencias.map((d) => d.mensagem).join(' ');
+                  statusAutenticidade = 'autenticada_com_divergencia_campos';
+                  alertaAutenticidade = `✅ DOI resolve (${refDoc.doi}), mas com divergência no campo ${compCampos.divergencias
+                    .map((d) => d.campo)
+                    .join(', ')}`;
+                  divergenciaMetadados = detalheDiv;
+                  alertaDivDoi = detalheDiv;
+                } else {
+                  statusAutenticidade = 'autenticada';
+                  alertaAutenticidade = `✅ Fonte Real Autenticada via DOI (${refDoc.doi})`;
+                }
+              }
+            } catch (errDoi) {
+              const eh404 = errDoi?.status === 404 || /não encontrado|404/i.test(errDoi?.message || '');
+              if (eh404) {
+                statusAutenticidade = 'ia_doi_inexistente';
+                alertaAutenticidade = `🚨 REFERÊNCIA NÃO LOCALIZÁVEL / DOI INEXISTENTE: O DOI "${refDoc.doi}" retorna "DOI Not Found" na International DOI Foundation e a obra (${refDoc.primeiroSobrenome}, ${refDoc.ano}) não consta no PubMed/Crossref/SciELO!`;
+              } else {
+                statusAutenticidade = 'autenticacao_indisponivel';
+                alertaAutenticidade = `⏳ Consulta online temporariamente instável para o DOI "${refDoc.doi}" (${errDoi?.message || 'timeout'}).`;
+              }
+              divergenciaMetadados = alertaAutenticidade;
+              refBibRes = null;
+            }
+          } else if (!refBibRes || (!refBibRes.csl?.DOI && !refBibRes.csl?.PMID && !refBibRes.csl?.PMCID)) {
+            if (refDoc.pmcid || refDoc.pmid) {
+              try {
+                if (refDoc.pmid) csl = await porPmid(refDoc.pmid);
+                else if (refDoc.pmcid) csl = await porPmc(refDoc.pmcid);
+                if (csl?.title) {
+                  statusAutenticidade = 'autenticada';
+                  alertaAutenticidade = `Fonte autenticada no PubMed/PMC (${refDoc.pmcid ? 'PMC' + refDoc.pmcid : 'PMID ' + refDoc.pmid})`;
+                }
+              } catch {}
+            }
+
+            if (!csl) {
+              const candidatos = await buscarTitulo(refDoc.tituloBuscado || refDoc.textoOriginal.slice(0, 140));
+              const melhor = (candidatos || []).find((cand) => {
+                if (!cand.ano || !refDoc.anoBase) return false;
+                if (!cand.doi && !cand.pmid) return false;
+                if (Math.abs(Number(cand.ano) - Number(refDoc.anoBase)) > 1) return false;
+                const autCand = normalizarChave(cand.autores || '');
+                const autorOk = refDoc.chavesAutorAlias.some((al) => al.length >= 3 && autCand.includes(al));
+                if (!autorOk) return false;
+                const titCand = normalizarChave(cand.titulo || '');
+                const titRef = normalizarChave(refDoc.tituloBuscado || '');
+                const titRefSemSub = normalizarChave((refDoc.tituloBuscado || '').split(/[:–—]/)[0].trim());
+                if (titCand.length < 12) return false;
+                return (
+                  titCand.includes(titRef.slice(0, 16)) ||
+                  titRef.includes(titCand.slice(0, 16)) ||
+                  (titRefSemSub.length >= 12 &&
+                    (titCand.includes(titRefSemSub.slice(0, 16)) || titRefSemSub.includes(titCand.slice(0, 16))))
+                );
+              });
+
+              if (melhor?.doi) {
+                csl = await porDoi(melhor.doi);
+                statusAutenticidade = 'autenticada';
+                alertaAutenticidade = `Fonte autenticada nas bases (DOI: ${melhor.doi})`;
+              } else if (melhor?.pmid) {
+                csl = await porPmid(melhor.pmid);
+                statusAutenticidade = 'autenticada';
+                alertaAutenticidade = `Fonte autenticada no PubMed (PMID: ${melhor.pmid})`;
+              } else if (candidatos?.erroRede) {
+                statusAutenticidade = 'autenticacao_indisponivel';
+                alertaAutenticidade =
+                  'Consulta online temporariamente instável ou limitada (429/timeout). Execute novamente para revalidar esta fonte.';
+                divergenciaMetadados = alertaAutenticidade;
+              } else {
+                statusAutenticidade = 'suspeita_ia_fantasma';
+                alertaAutenticidade =
+                  'Referência não localizada nas bases: nenhum artigo correspondente foi encontrado no PubMed/Crossref/OpenAlex.';
+                divergenciaMetadados = alertaAutenticidade;
+              }
+            }
+          } else if (refBibRes?.csl?.DOI) {
+            try {
+              csl = await porDoi(refBibRes.csl.DOI);
+              statusAutenticidade = 'autenticada';
+              alertaAutenticidade = `Fonte autenticada na biblioteca e bases (DOI: ${refBibRes.csl.DOI})`;
+            } catch {
+              statusAutenticidade = 'autenticada';
+              alertaAutenticidade = `Fonte autenticada (${refBibRes.csl.DOI})`;
+            }
+          }
+
+          if (!ehNormaLivroOuInstitucional && (refDoc.doi || csl?.DOI || refDoc.pmid || csl?.PMID || refBibRes?.csl?.DOI)) {
+            try {
+              const infoRetratacao = await verificarRetratacaoArtigo({
+                doi: refDoc.doi || csl?.DOI || refBibRes?.csl?.DOI,
+                pmid: refDoc.pmid || csl?.PMID || refBibRes?.csl?.PMID,
+                titulo: csl?.title || refBibRes?.csl?.title || refDoc.tituloBuscado,
+              });
+              if (infoRetratacao.retratado) {
+                retratadoInfo = infoRetratacao;
+                statusAutenticidade = 'artigo_retratado';
+                alertaAutenticidade = `🚨 ARTIGO CIENTÍFICO RETRATADO / DESPUBLICADO: A obra "${refDoc.primeiroSobrenome} (${refDoc.ano})" foi formalmente retratada na literatura (${infoRetratacao.fonte})! Motivo: ${infoRetratacao.motivo}`;
+                divergenciaMetadados = alertaAutenticidade;
+                alertaRetratacaoMsg = alertaAutenticidade;
+              }
+            } catch {}
+          }
+        } catch {}
+      }
+
+      if (statusAutenticidade === 'nao_verificado') {
+        if (ehNormaLivroOuInstitucional) {
+          statusAutenticidade = 'institucional_tese';
+          alertaAutenticidade = '🏛 Norma Jurídica / Padrão Técnico / Documento Institucional / Livro';
+        } else if (refBibRes?.csl?.DOI) {
+          statusAutenticidade = 'autenticada';
+          alertaAutenticidade = `✅ Fonte Real Autenticada (${refBibRes.csl.DOI})`;
+        }
+      }
+
+      const ehFonteInexistenteOuFalsa = ['ia_doi_inexistente', 'ia_doi_trocado', 'suspeita_ia_fantasma'].includes(
+        statusAutenticidade
+      );
+
+      // Pré-download paralelo do PDF aberto se ainda ausente localmente (respeitando cancelamento)
+      if (!signal?.aborted && buscarEBaixar && !ehFonteInexistenteOuFalsa && !refBibRes?.pdf) {
+        const arqLocal = refBibRes
+          ? localizarPdfNoAcervoLocal({ refBib: refBibRes, refDoc, bibliotecaRaiz: biblioteca.raiz })
+          : null;
+        if (!arqLocal) {
+          try {
+            const urlNaRef = refDoc.textoOriginal?.match(/https?:\/\/[^\s)>]+/i)?.[0] || refDoc.infoRepositorio?.url;
+            const achado = await localizarUrlPdfAberto({
+              doi: csl?.DOI || refBibRes?.csl?.DOI || refDoc.doi,
+              pmid: csl?.PMID || refBibRes?.csl?.PMID,
+              url: urlNaRef,
+              titulo: refDoc.tituloBuscado,
+              autor: refDoc.primeiroSobrenome,
+              ano: refDoc.anoBase,
+            });
+            if (achado?.urlPdf && !signal?.aborted) {
+              const temp = path.join(os.tmpdir(), `audit-${i}-${Date.now()}-${Math.random().toString(36).slice(2, 6)}.pdf`);
+              await baixarPdfParaArquivo(achado.urlPdf, temp);
+              pdfTempPath = temp;
+            }
+          } catch {}
+        }
+      }
+
+      preResolucao[i] = {
+        csl,
+        refBibRes,
+        divergenciaMetadados,
+        statusAutenticidade,
+        alertaAutenticidade,
+        ehNormaLivroOuInstitucional,
+        ehFonteInexistenteOuFalsa,
+        retratadoInfo,
+        alertaRetratacaoMsg,
+        alertaDivDoi,
+        pdfTempPath,
+      };
+
+      concluidasPrefetch++;
+      if (typeof onProgresso === 'function') {
+        const pct = Math.min(42, 8 + Math.round((concluidasPrefetch / Math.max(totalRefsFinais, 1)) * 34));
+        onProgresso({
+          fase: 'etapa2',
+          atual: concluidasPrefetch,
+          total: totalRefsFinais,
+          porcentagem: pct,
+          mensagem: `Etapa 2/6: Validando autenticidade de ${totalRefsFinais} referências (${concluidasPrefetch}/${totalRefsFinais})`,
+          detalhe: `${refDoc.primeiroSobrenome} (${refDoc.anoBase || ''}) — ${refDoc.tituloBuscado || ''}`,
+        });
+      }
+    },
+    signal
+  );
+
+  // Etapa 2B: Consolidação sequencial rigorosamente determinística (0 .. N-1)
+  for (let i = 0; i < totalRefsFinais; i++) {
+    if (signal?.aborted) {
+      const err = new Error('Auditoria cancelada pelo usuário.');
+      err.aborted = true;
+      throw err;
     }
+    const refDoc = refsFinais[i];
+    const { grupo } = contextosIniciais[i];
+    if (grupo) chavesRefEncontradas.add(grupo.chave);
 
-    // Regra R3: Alerta ABNT NBR 6023 quando a entrada da referência iniciar incorretamente com preposição (ex: "DOS SANTOS")
+    const pre = preResolucao[i] || {};
+    let {
+      csl,
+      refBibRes: refBib,
+      divergenciaMetadados,
+      statusAutenticidade,
+      alertaAutenticidade,
+      ehNormaLivroOuInstitucional,
+      ehFonteInexistenteOuFalsa,
+      retratadoInfo,
+      alertaRetratacaoMsg,
+      alertaDivDoi,
+      pdfTempPath,
+    } = pre;
+
     if (refDoc.defeitoPreposicaoEntrada) {
       const def = refDoc.defeitoPreposicaoEntrada;
       alertasPrecisao.push({
@@ -3050,177 +2525,40 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       });
     }
 
-    // 3. Autenticação forense online contra Crossref / DOI.org / OpenAlex
-    if (buscarEBaixar && !ehNormaLivroOuInstitucional && !ehPeriodicoRegionalSemDoi && !infoHandle) {
-      await new Promise((r) => setTimeout(r, 120));
-      try {
-        let csl = null;
-        if (refDoc.doi) {
-          try {
-            csl = await porDoi(refDoc.doi);
-            const autOficial = normalizarChave(
-              (csl.author || []).map((a) => a.family || a.literal || '').join(' ')
-            );
-            const titOficial = normalizarChave(csl.title || '');
-            const textoRefNorm = normalizarChave(refDoc.textoOriginal);
-            const autorBate = refDoc.chavesAutorAlias.some(
-              (al) => al.length >= 3 && autOficial.includes(al)
-            );
-            const tituloBate = titOficial.length >= 12 && textoRefNorm.includes(titOficial.slice(0, 16));
-
-            if (!autorBate && !tituloBate) {
-              const autoresReaisStr = (csl.author || [])
-                .map((a) => `${a.given || ''} ${a.family || a.literal || ''}`.trim())
-                .filter(Boolean)
-                .join(', ');
-              statusAutenticidade = 'ia_doi_trocado';
-              alertaAutenticidade = `🚨 REFERÊNCIA NÃO LOCALIZÁVEL / DOI DE OUTRO ARTIGO: O DOI ${refDoc.doi} pertence na verdade ao artigo "${csl.title}" (${autoresReaisStr}), e a obra declarada (${refDoc.primeiroSobrenome}, ${refDoc.ano}) não foi localizada no fascículo/base!`;
-              divergenciaMetadados = alertaAutenticidade;
-              csl = null;
-              refBib = null;
-            } else {
-              // Regra R9: Conferência campo a campo entre a referência declarada e o registro Crossref oficial
-              const compCampos = compararCamposDoiOficial(refDoc, csl);
-              if (compCampos?.temDivergencia) {
-                const detalheDiv = compCampos.divergencias.map((d) => d.mensagem).join(' ');
-                statusAutenticidade = 'autenticada_com_divergencia_campos';
-                alertaAutenticidade = `✅ DOI resolve (${refDoc.doi}), mas com divergência no campo ${compCampos.divergencias
-                  .map((d) => d.campo)
-                  .join(', ')}`;
-                divergenciaMetadados = detalheDiv;
-                alertasPrecisao.push({
-                  tipo: 'divergencia_metadados_doi',
-                  numParagrafo: grupo?.ocorrencias?.[0]?.numParagrafo || 0,
-                  numLinha: grupo?.ocorrencias?.[0]?.numLinha || 0,
-                  secao: 'Lista de Referências',
-                  autorCitado: `${refDoc.primeiroSobrenome} (${refDoc.ano})`,
-                  fraseWord: refDoc.textoOriginal,
-                  mensagem: `🔍 Divergência de Metadados via DOI (${refDoc.primeiroSobrenome}, ${refDoc.ano}): ${detalheDiv}`,
-                });
-              } else {
-                statusAutenticidade = 'autenticada';
-                alertaAutenticidade = `✅ Fonte Real Autenticada via DOI (${refDoc.doi})`;
-              }
-            }
-          } catch (errDoi) {
-            const eh404 = errDoi?.status === 404 || /não encontrado|404/i.test(errDoi?.message || '');
-            if (eh404) {
-              statusAutenticidade = 'ia_doi_inexistente';
-              alertaAutenticidade = `🚨 REFERÊNCIA NÃO LOCALIZÁVEL / DOI INEXISTENTE: O DOI "${refDoc.doi}" retorna "DOI Not Found" na International DOI Foundation e a obra (${refDoc.primeiroSobrenome}, ${refDoc.ano}) não consta no PubMed/Crossref/SciELO!`;
-            } else {
-              statusAutenticidade = 'autenticacao_indisponivel';
-              alertaAutenticidade = `⏳ Consulta online temporariamente instável para o DOI "${refDoc.doi}" (${errDoi?.message || 'timeout'}).`;
-            }
-            divergenciaMetadados = alertaAutenticidade;
-            refBib = null;
-          }
-        } else if (!refBib) {
-          // Se tiver PMCID ou PMID explícito, autentica diretamente no PubMed Central / NCBI!
-          if (refDoc.pmcid || refDoc.pmid) {
-            try {
-              if (refDoc.pmid) {
-                csl = await porPmid(refDoc.pmid);
-              } else if (refDoc.pmcid) {
-                csl = await porPmc(refDoc.pmcid);
-              }
-              if (csl?.title) {
-                statusAutenticidade = 'autenticada';
-                alertaAutenticidade = `✅ Fonte Real Autenticada no PubMed/PMC (${refDoc.pmcid ? ('PMC' + refDoc.pmcid) : ('PMID ' + refDoc.pmid)})`;
-              }
-            } catch {
-              /* continua para busca por título */
-            }
-          }
-
-          if (!csl) {
-            // Sem DOI explícito: busca pelo título extraído, mas EXIGE correspondência estrita de Autor + Ano + Título!
-            const candidatos = await buscarTitulo(refDoc.tituloBuscado || refDoc.textoOriginal.slice(0, 140));
-            const melhor = (candidatos || []).find((cand) => {
-              if (!cand.ano || !refDoc.anoBase) return false;
-              if (!cand.doi && !cand.pmid) return false;
-              if (Math.abs(Number(cand.ano) - Number(refDoc.anoBase)) > 1) return false;
-              const autCand = normalizarChave(cand.autores || '');
-              const autorOk = refDoc.chavesAutorAlias.some((al) => al.length >= 3 && autCand.includes(al));
-              if (!autorOk) return false;
-              const titCand = normalizarChave(cand.titulo || '');
-              const titRef = normalizarChave(refDoc.tituloBuscado || '');
-              const titRefSemSub = normalizarChave((refDoc.tituloBuscado || '').split(/[:–—]/)[0].trim());
-              if (titCand.length < 12) return false;
-              return titCand.includes(titRef.slice(0, 16)) || titRef.includes(titCand.slice(0, 16)) ||
-                     (titRefSemSub.length >= 12 && (titCand.includes(titRefSemSub.slice(0, 16)) || titRefSemSub.includes(titCand.slice(0, 16))));
-            });
-
-            if (melhor?.doi) {
-              csl = await porDoi(melhor.doi);
-              statusAutenticidade = 'autenticada';
-              alertaAutenticidade = `✅ Fonte Real Autenticada nas bases (DOI localizado: ${melhor.doi})`;
-            } else if (melhor?.pmid) {
-              csl = await porPmid(melhor.pmid);
-              statusAutenticidade = 'autenticada';
-              alertaAutenticidade = `✅ Fonte Real Autenticada no PubMed (PMID: ${melhor.pmid})`;
-            } else {
-              statusAutenticidade = 'suspeita_ia_fantasma';
-              alertaAutenticidade =
-                '🚨 REFERÊNCIA NÃO LOCALIZADA NAS BASES: Nenhum artigo científico com este título, autor e ano foi encontrado no PubMed/Crossref/OpenAlex!';
-              divergenciaMetadados = alertaAutenticidade;
-            }
-          }
-      }
-
-        if (csl && !refBib && statusAutenticidade === 'autenticada') {
-          refBib =
-            (csl.DOI && biblioteca.porDoi(csl.DOI)) ||
-            (await biblioteca.criar({
-              csl,
-              status: grupo ? 'citada' : 'consultada',
-            }));
-        }
-
-        // Triagem ativa de retratações científicas (Inspirado no RefChecker)
-        if (!ehNormaLivroOuInstitucional && (refDoc.doi || csl?.DOI || refDoc.pmid || csl?.PMID || refBib?.csl?.DOI)) {
-          try {
-            const infoRetratacao = await verificarRetratacaoArtigo({
-              doi: refDoc.doi || csl?.DOI || refBib?.csl?.DOI,
-              pmid: refDoc.pmid || csl?.PMID || refBib?.csl?.PMID,
-              titulo: csl?.title || refBib?.csl?.title || refDoc.tituloBuscado,
-            });
-            if (infoRetratacao.retratado) {
-              refDoc.retratado = true;
-              if (refBib) refBib.retratado = true;
-              statusAutenticidade = 'artigo_retratado';
-              alertaAutenticidade = `🚨 ARTIGO CIENTÍFICO RETRATADO / DESPUBLICADO: A obra "${refDoc.primeiroSobrenome} (${refDoc.ano})" foi formalmente retratada na literatura (${infoRetratacao.fonte})! Motivo: ${infoRetratacao.motivo}`;
-              divergenciaMetadados = alertaAutenticidade;
-              alertasPrecisao.push({
-                tipo: 'artigo_cientifico_retratado',
-                numParagrafo: grupo?.ocorrencias?.[0]?.numParagrafo || 0,
-                numLinha: grupo?.ocorrencias?.[0]?.numLinha || 0,
-                secao: 'Lista de Referências',
-                autorCitado: `${refDoc.primeiroSobrenome} (${refDoc.ano})`,
-                fraseWord: refDoc.textoOriginal,
-                mensagem: alertaAutenticidade,
-              });
-            }
-          } catch {}
-        }
-      } catch {
-        /* continua se offline */
-      }
+    if (alertaDivDoi) {
+      alertasPrecisao.push({
+        tipo: 'divergencia_metadados_doi',
+        numParagrafo: grupo?.ocorrencias?.[0]?.numParagrafo || 0,
+        numLinha: grupo?.ocorrencias?.[0]?.numLinha || 0,
+        secao: 'Lista de Referências',
+        autorCitado: `${refDoc.primeiroSobrenome} (${refDoc.ano})`,
+        fraseWord: refDoc.textoOriginal,
+        mensagem: `🔍 Divergência de Metadados via DOI (${refDoc.primeiroSobrenome}, ${refDoc.ano}): ${alertaDivDoi}`,
+      });
     }
 
-    if (statusAutenticidade === 'nao_verificado') {
-      if (ehNormaLivroOuInstitucional) {
-        statusAutenticidade = 'institucional_tese';
-        alertaAutenticidade = '🏛 Norma Jurídica / Padrão Técnico / Documento Institucional / Livro';
-      } else if (refBib?.csl?.DOI) {
-        statusAutenticidade = 'autenticada';
-        alertaAutenticidade = `✅ Fonte Real Autenticada (${refBib.csl.DOI})`;
-      }
+    if (retratadoInfo) {
+      refDoc.retratado = true;
+      if (refBib) refBib.retratado = true;
+      alertasPrecisao.push({
+        tipo: 'artigo_cientifico_retratado',
+        numParagrafo: grupo?.ocorrencias?.[0]?.numParagrafo || 0,
+        numLinha: grupo?.ocorrencias?.[0]?.numLinha || 0,
+        secao: 'Lista de Referências',
+        autorCitado: `${refDoc.primeiroSobrenome} (${refDoc.ano})`,
+        fraseWord: refDoc.textoOriginal,
+        mensagem: alertaRetratacaoMsg,
+      });
     }
 
-    // Só cria ou atualiza item na biblioteca se NÃO for uma referência inexistente/DOI trocado
-    const ehFonteInexistenteOuFalsa = ['ia_doi_inexistente', 'ia_doi_trocado', 'suspeita_ia_fantasma'].includes(
-      statusAutenticidade
-    );
+    if (csl && !refBib && statusAutenticidade === 'autenticada') {
+      refBib =
+        (csl.DOI && biblioteca.porDoi(csl.DOI)) ||
+        (await biblioteca.criar({
+          csl,
+          status: grupo ? 'citada' : 'consultada',
+        }));
+    }
 
     if (!refBib && !ehFonteInexistenteOuFalsa) {
       const cslManual = {
@@ -3237,7 +2575,6 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
         notas: `Referência extraída do Word:\n${refDoc.textoOriginal}`,
       });
     } else if (refBib && !ehFonteInexistenteOuFalsa) {
-      // Corrige títulos que eventualmente tenham ficado truncados em 1 letra ("V", "F") em execuções anteriores
       if ((refBib.csl?.title || '').trim().length <= 3 && refDoc.tituloBuscado.length > 5) {
         refBib = await biblioteca.atualizar(refBib.id, {
           csl: { ...refBib.csl, title: refDoc.tituloBuscado },
@@ -3245,60 +2582,52 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       }
     }
 
+    let grifosGroundTruth = [];
+    let ocorrenciasEnriquecidas = null;
+
     if (refBib && !ehFonteInexistenteOuFalsa) {
-      // 1. Procura primeiro no acervo local (biblioteca/pdfs, MIGRACAO/fontes_pdf, Downloads)
       if (!refBib.pdf) {
         try {
           const arqLocal = localizarPdfNoAcervoLocal({ refBib, refDoc, bibliotecaRaiz: biblioteca.raiz });
           if (arqLocal) {
             refBib = await biblioteca.anexarPdf(refBib.id, arqLocal);
           }
-        } catch { /* continua */ }
+        } catch {}
       }
 
-      // 2. Se ainda sem PDF e busca ativa, faz download via OpenAlex / SciELO / Unpaywall / Repositório institucional
-      if (!refBib.pdf && buscarEBaixar) {
-        if (typeof onProgresso === 'function') {
-          onProgresso({
-            fase: 'fase1',
-            atual: idxRefAtual,
-            total: totalRefsFinais,
-            porcentagem: Math.min(49, 5 + Math.round((idxRefAtual / Math.max(totalRefsFinais, 1)) * 43)),
-            mensagem: `Etapa 1/2 — Buscando e baixando PDF (${idxRefAtual}/${totalRefsFinais}): ${refDoc.primeiroSobrenome}`,
-            detalhe: refDoc.tituloBuscado || '',
-          });
-        }
+      if (!refBib.pdf && pdfTempPath && fs.existsSync(pdfTempPath)) {
         try {
-          const urlNaRef = refDoc.textoOriginal?.match(/https?:\/\/[^\s)>]+/i)?.[0] || refDoc.infoRepositorio?.url;
-          const achado = await localizarUrlPdfAberto({
-            doi: refBib.csl?.DOI || refDoc.doi,
-            pmid: refBib.csl?.PMID,
-            url: urlNaRef,
-            titulo: refDoc.tituloBuscado,
-            autor: refDoc.primeiroSobrenome,
-            ano: refDoc.anoBase,
-          });
-          if (achado?.urlPdf) {
-            const temp = path.join(os.tmpdir(), `audit-${Date.now()}-${Math.random().toString(36).slice(2, 6)}.pdf`);
-            await baixarPdfParaArquivo(achado.urlPdf, temp);
-            refBib = await biblioteca.anexarPdf(refBib.id, temp);
-            if (pastaDestino && fs.existsSync(pastaDestino) && refBib.pdf) {
-              try {
-                const destinoPdf = path.join(pastaDestino, refBib.pdf);
-                if (!fs.existsSync(destinoPdf)) {
-                  await fs.promises.copyFile(temp, destinoPdf);
-                }
-              } catch {}
-            }
-            await fs.promises.rm(temp, { force: true });
+          refBib = await biblioteca.anexarPdf(refBib.id, pdfTempPath);
+          if (!somenteLeitura && pastaDestino && fs.existsSync(pastaDestino) && refBib.pdf) {
+            try {
+              const destinoPdf = path.join(pastaDestino, refBib.pdf);
+              if (!fs.existsSync(destinoPdf)) {
+                await fs.promises.copyFile(pdfTempPath, destinoPdf);
+              }
+            } catch {}
           }
-        } catch {
-          /* PDF fechado / paywall ou restrição institucional */
-        }
+        } catch {}
+      }
+      if (pdfTempPath && fs.existsSync(pdfTempPath)) {
+        await fs.promises.rm(pdfTempPath, { force: true }).catch(() => {});
       }
 
-      // Se o PDF já existe no acervo e o usuário escolheu uma pasta de destino, garante a cópia
-      if (refBib.pdf && pastaDestino && fs.existsSync(pastaDestino)) {
+      // Garante consistência de ciclo único: extrai o texto integral do PDF ainda na Etapa 2 se ausente
+      if (refBib.pdf && !refBib.textoExtraido) {
+        try {
+          const camPdf = typeof biblioteca.caminhoPdf === 'function'
+            ? biblioteca.caminhoPdf(refBib.id)
+            : biblioteca.p('pdfs', refBib.pdf);
+          if (camPdf && fs.existsSync(camPdf)) {
+            const textoExtraidoCiclo = await extrairTextoPdfNoNode(camPdf);
+            if (textoExtraidoCiclo) {
+              refBib = await biblioteca.atualizar(refBib.id, { textoExtraido: textoExtraidoCiclo });
+            }
+          }
+        } catch {}
+      }
+
+      if (!somenteLeitura && refBib.pdf && pastaDestino && fs.existsSync(pastaDestino)) {
         try {
           const origemPdf = biblioteca.p('pdfs', refBib.pdf);
           const destinoPdf = path.join(pastaDestino, refBib.pdf);
@@ -3308,7 +2637,6 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
         } catch {}
       }
 
-      // 3. Atualiza status e tags para que o artigo conste automaticamente no rol de trabalho da tela principal
       const tagsConjunto = new Set(refBib.tags || []);
       tagsConjunto.add('Auditado');
       tagsConjunto.add('Conforme');
@@ -3319,20 +2647,25 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
         tags: Array.from(tagsConjunto),
       });
 
-      // Remove cabeçalhos sintéticos de Insights/PICO antes de extrair sentenças reais do resumo
+      const grifosAtuais = await biblioteca.lerGrifos(refBib.id);
+      grifosGroundTruth = grifosAtuais.filter(
+        (g) => g && g.trecho && !g.origemAutoAuditor && (g.citadoNoTexto === true || g.cor === 'azul')
+      );
+      refBib._grifosGroundTruth = grifosGroundTruth;
+
       const resumoRealLimpo = String(refBib.csl?.abstract || '')
         .replace(/^📊\s*\[INSIGHTS[\s\S]*?─+\s*\n*/m, '')
         .replace(/^Síntese PICO:[\s\S]*$/m, '')
         .replace(/^\[Documento normativo[\s\S]*$/m, '')
         .trim();
 
-      const textoBaseArtigo = `${resumoRealLimpo} ${(refBib.textoExtraido || '').slice(0, 25000)}`.trim();
+      const textoBaseArtigo = `${resumoRealLimpo} ${(refBib.textoExtraido || '').slice(0, 120000)}`.trim();
       const sentencasArtigo = textoBaseArtigo
         .split(/(?<=[.!?])\s+/)
         .map((s) => s.trim())
         .filter((s) => s.length >= 25 && !s.startsWith('Síntese PICO:'));
 
-      const ocorrenciasEnriquecidas = (grupo ? grupo.ocorrencias : []).map((oc) => {
+      ocorrenciasEnriquecidas = (grupo ? grupo.ocorrencias : []).map((oc) => {
         const melhorSentenca = sentencasArtigo.length
           ? selecionarMelhorTrechoArtigo(oc.trechoDireto || oc.fraseContexto, sentencasArtigo)
           : '';
@@ -3348,44 +2681,52 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
           ocorrenciasWord: ocorrenciasEnriquecidas,
         });
 
-        const grifosAtuais = await biblioteca.lerGrifos(refBib.id);
-        const novosGrifos = [...grifosAtuais];
-        for (const oc of ocorrenciasEnriquecidas) {
-          const locWord = `Parágrafo §${oc.numParagrafo} · Linha ${oc.numLinha}${oc.secao ? ` (${oc.secao})` : ''}`;
-          const jaExiste = novosGrifos.some(
-            (g) => g.fraseWord === oc.fraseContexto || g.trecho === (oc.trechoDireto || oc.fraseContexto)
-          );
-          if (!jaExiste) {
-            novosGrifos.unshift({
-              id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
-              pagina: oc.paginaDeclarada || 1,
-              cor: 'azul',
-              trecho: oc.trechoDireto || oc.trechoArtigoResumo || oc.fraseContexto,
-              fraseWord: oc.fraseContexto,
-              paragrafoWord: oc.paragrafoCompleto,
-              numParagrafo: oc.numParagrafo,
-              numLinha: oc.numLinha,
-              secaoWord: oc.secao,
-              ondeCitei: locWord,
-              nota: oc.trechoArtigoResumo ? `Trecho no artigo: "${oc.trechoArtigoResumo}"` : '',
-              citadoNoTexto: true,
-              criadoEm: new Date().toISOString(),
-            });
+        if (!somenteLeitura) {
+          const novosGrifos = [...grifosAtuais];
+          for (const oc of ocorrenciasEnriquecidas) {
+            const locWord = `Parágrafo §${oc.numParagrafo} · Linha ${oc.numLinha}${oc.secao ? ` (${oc.secao})` : ''}`;
+            const jaExiste = novosGrifos.some(
+              (g) => g.fraseWord === oc.fraseContexto || g.trecho === (oc.trechoDireto || oc.fraseContexto)
+            );
+            if (!jaExiste) {
+              novosGrifos.unshift({
+                id: `${oc.numParagrafo}_${oc.numLinha}_${normalizarChave(oc.fraseContexto).slice(0, 12)}`,
+                pagina: oc.paginaDeclarada || 1,
+                cor: 'azul',
+                trecho: oc.trechoDireto || oc.trechoArtigoResumo || oc.fraseContexto,
+                fraseWord: oc.fraseContexto,
+                paragrafoWord: oc.paragrafoCompleto,
+                numParagrafo: oc.numParagrafo,
+                numLinha: oc.numLinha,
+                secaoWord: oc.secao,
+                ondeCitei: locWord,
+                nota: oc.trechoArtigoResumo ? `Trecho no artigo: "${oc.trechoArtigoResumo}"` : '',
+                citadoNoTexto: true,
+                origemAutoAuditor: true,
+                criadoEm: new Date().toISOString(),
+              });
+            }
           }
+          await biblioteca.salvarGrifos(refBib.id, novosGrifos);
         }
-        await biblioteca.salvarGrifos(refBib.id, novosGrifos);
       }
+      if (somenteLeitura && refBib._caminhoPdfTemp && fs.existsSync(refBib._caminhoPdfTemp)) {
+        try { await fs.promises.rm(refBib._caminhoPdfTemp, { force: true }); } catch {}
+      }
+    } else if (pdfTempPath && fs.existsSync(pdfTempPath)) {
+      await fs.promises.rm(pdfTempPath, { force: true }).catch(() => {});
     }
 
     refsMapeadas.push({
       ...refDoc,
       citadaNoTexto: !!grupo,
       ocorrenciasNoTexto:
-        !ehFonteInexistenteOuFalsa && refBib?.ocorrenciasWord?.length
-          ? refBib.ocorrenciasWord
+        !ehFonteInexistenteOuFalsa && typeof ocorrenciasEnriquecidas !== 'undefined' && grupo
+          ? ocorrenciasEnriquecidas
           : grupo
           ? grupo.ocorrencias
           : [],
+      grifosGroundTruth,
       refBibId: !ehFonteInexistenteOuFalsa ? refBib?.id || null : null,
       tituloOficial: !ehFonteInexistenteOuFalsa ? refBib?.csl?.title || refDoc.tituloBuscado : null,
       doiOficial: !ehFonteInexistenteOuFalsa ? refBib?.csl?.DOI || refDoc.doi || null : refDoc.doi || null,
@@ -3456,16 +2797,16 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
 
   if (typeof onProgresso === 'function') {
     onProgresso({
-      fase: 'fase1',
-      atual: totalRefsFinais,
-      total: totalRefsFinais,
-      porcentagem: 50,
-      mensagem: 'Etapa 1/2 — Conferindo fidelidade científica, DOIs e detector de plágio…',
-      detalhe: 'Consolidando base de referências mapeadas…',
+      fase: 'etapa4',
+      atual: 0,
+      total: refsMapeadas.length,
+      porcentagem: 52,
+      mensagem: 'Etapa 4/6: Indexando texto integral e grifos Ground Truth para aderência semântica…',
+      detalhe: `Consolidando corpus de ${refsMapeadas.length} referências mapeadas…`,
     });
   }
 
-  // ---------- 6. Verificação de Fidelidade de Conteúdo (SOMENTE em Artigos Reais Autenticados que possuem Resumo ou Texto Completo) ----------
+  // ---------- 6. Verificação de Fidelidade de Conteúdo (Artigos Autenticados ou com Grifos Ground Truth) ----------
   const corpusArtigos = [...biblioteca.refs.values()].map((r) => {
     const aut = r.csl?.author?.[0]?.family || r.csl?.author?.[0]?.literal || 'Autor';
     const anoRef = String(r.csl?.issued?.['date-parts']?.[0]?.[0] || '');
@@ -3475,8 +2816,10 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       .replace(/^Síntese PICO:[\s\S]*$/m, '')
       .replace(/^\[Documento normativo[\s\S]*$/m, '')
       .trim();
-    const textoTotal = `${r.csl?.title || ''} ${resumoLimpo} ${(r.textoExtraido || '').slice(0, 35000)}`.trim();
-    const sentencasOriginais = `${resumoLimpo}. ${(r.textoExtraido || '').slice(0, 20000)}`
+    const grifosUser = Array.isArray(r._grifosGroundTruth) ? r._grifosGroundTruth : [];
+    const textoGrifos = grifosUser.map((g) => g.trecho).join(' ').trim();
+    const textoTotal = `${r.csl?.title || ''} ${resumoLimpo} ${textoGrifos} ${(r.textoExtraido || '').slice(0, 120000)}`.trim();
+    const sentencasOriginais = `${resumoLimpo}. ${textoGrifos}. ${(r.textoExtraido || '').slice(0, 50000)}`
       .split(/(?<=[.!?])\s+/)
       .map((s) => s.trim())
       .filter((s) => s.length >= 25 && !s.startsWith('Síntese PICO:'));
@@ -3487,6 +2830,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       ano: anoRef,
       titulo: r.csl?.title || '',
       resumoLimpo,
+      grifosGroundTruth: grifosUser,
       textoTotal,
       sentencasOriginais,
     };
@@ -3511,7 +2855,43 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     return rawParts.length > 0 ? rawParts : [f];
   }
 
+  let idxSemAtual = 0;
+  const totalSemRefs = refsMapeadas.length;
+  const alertasGuardiaoSimbolico = [];
+  const alertasNliContradicao = [];
+  const ocorrenciasPorSentenca = new Map();
+  const registrarOcorrenciaGrupo = (rmRef, ocRef, { sustentada, motivo = null, scorePct = 0 }) => {
+    const fraseNorm = String(ocRef?.fraseContexto || '').replace(/\s+/g, ' ').trim();
+    if (!fraseNorm) return;
+    const chaveSent = `${ocRef.numParagrafo}::${fraseNorm}`;
+    if (!ocorrenciasPorSentenca.has(chaveSent)) {
+      ocorrenciasPorSentenca.set(chaveSent, {
+        ocRef,
+        membrosPorChave: new Map(),
+      });
+    }
+    const slot = ocorrenciasPorSentenca.get(chaveSent);
+    slot.membrosPorChave.set(rmRef.chave || `${rmRef.primeiroSobrenome}:${rmRef.ano}`, {
+      chave: rmRef.chave || `${rmRef.primeiroSobrenome}:${rmRef.ano}`,
+      autorCitado: `${rmRef.primeiroSobrenome} (${rmRef.ano})`,
+      sustentada: Boolean(sustentada),
+      motivo,
+      scorePct: Number(scorePct) || 0,
+    });
+  };
   for (const rm of refsMapeadas) {
+    idxSemAtual++;
+    if (typeof onProgresso === 'function' && totalSemRefs > 0) {
+      const pctSem = Math.min(78, 54 + Math.round((idxSemAtual / totalSemRefs) * 24));
+      onProgresso({
+        fase: 'etapa5',
+        atual: idxSemAtual,
+        total: totalSemRefs,
+        porcentagem: pctSem,
+        mensagem: `Etapa 5/6: Triagem léxica BM25 + Inferência Neural ONNX INT8 [${idxSemAtual}/${totalSemRefs}]`,
+        detalhe: `${rm.primeiroSobrenome || 'Fonte'} (${rm.ano || 's.d.'})`,
+      });
+    }
     // Regra R35: Verificação de prescrição sistêmica em fontes normativas e protocolos locais
     const ehProtocoloLocal =
       rm.chaveAutor === 'curitiba' ||
@@ -3562,13 +2942,25 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     }
 
     const artCitado = corpusArtigos.find((a) => a.id === rm.refBibId);
-    if (!artCitado || (!artCitado.resumoLimpo && artCitado.textoTotal.length < 150)) {
+    if (!artCitado || (!artCitado.resumoLimpo && artCitado.textoTotal.length < 150 && !(artCitado.grifosGroundTruth?.length))) {
       continue;
     }
 
     for (const oc of rm.ocorrenciasNoTexto || []) {
       const textoAlvoArtigo = `${rm.tituloOficial || rm.tituloBuscado || ''} ${artCitado.textoTotal}`.trim();
-      const textoContextoWord = `${oc.trechoDireto || oc.fraseContexto} ${oc.paragrafoCompleto || ''}`.trim();
+      const textoContextoWord = `${oc.trechoDireto || oc.fraseContextoSemantico || oc.fraseContexto} ${oc.paragrafoCompleto || ''}`.trim();
+
+      // Prioridade máxima: Trecho Citado salvo manualmente pelo pesquisador no Leitor PDF ("grifos/" Ground Truth)
+      const grifoMatch = verificarMatchComGrifoUsuario(oc, artCitado.grifosGroundTruth || rm.grifosGroundTruth || []);
+      if (grifoMatch) {
+        oc.confirmadoPorGrifoUsuario = true;
+        oc.paginaConfirmadaPorGrifo = grifoMatch.pagina || oc.paginaDeclarada || null;
+        oc.trechoArtigoResumo = oc.trechoArtigoResumo || grifoMatch.trecho;
+        oc.compatibilidadeTexto = Math.max(oc.compatibilidadeTexto || 0, 95);
+        oc.scoreCosseno = Math.max(oc.scoreCosseno || 0, 0.95);
+        registrarOcorrenciaGrupo(rm, oc, { sustentada: true, scorePct: oc.compatibilidadeTexto });
+        continue;
+      }
 
       // Verifica alertas finos de precisão metodológica / escopo (ex.: Reece 17 estudos, Tomazelli lesões benignas, Oliveira planilhas/telas)
       const avisosFinos = verificarPrecisaoMetodologicaFina(oc, rm, textoAlvoArtigo);
@@ -3584,13 +2976,13 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
         textoContextoWord,
         textoAlvoArtigo
       );
-      // Camada 4: Se os métodos léxicos ficarem na zona cinzenta, aciona o motor neural ONNX multilíngue (`Xenova/paraphrase-multilingual-MiniLM-L12-v2`)
+      // Camada 4: Motor neural ONNX multilíngue (`custom-forensic-minilm`) com folga de inicialização e avaliação em proposições atômicas
       let scoreOnnx = null;
-      if (!verBilingue.compativel && scoreCosseno < 0.15) {
+      if (!verBilingue.compativel || scoreCosseno < 0.25) {
         scoreOnnx = await calcularSimilaridadeSemanticaOnnx(
           textoContextoWord,
           textoAlvoArtigo,
-          2000
+          8000
         );
       }
       const scoreCossenoEfetivo = scoreOnnx !== null ? Math.max(scoreCosseno, scoreOnnx) : scoreCosseno;
@@ -3598,7 +2990,7 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
       oc.compatibilidadeTexto = scoreFinal;
       oc.scoreCosseno = scoreCossenoEfetivo;
 
-      // Decomposição Atômica de Proposições estilo RefChecker (Amazon Science)
+      // Decomposição Atômica de Proposições (RefChecker) apoiada também pelo modelo ONNX PT<->EN
       const props = decomporEmProposicoesAtomicas(oc.fraseContexto || oc.trechoDireto || '');
       const proposicoesAuditadas = [];
       for (const prop of props) {
@@ -3612,11 +3004,16 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
         if (tokensConteudoProp.length < 4) continue;
         const scoreProp = calcularSimilaridadeCossenoRadicais(prop, textoAlvoArtigo);
         const verProp = verificarCompatibilidadeBilingue(prop, textoAlvoArtigo);
-        const sustentada = verProp.compativel || scoreProp >= 0.12;
+        let scorePropOnnx = null;
+        if (!verProp.compativel && scoreProp < 0.12) {
+          scorePropOnnx = await calcularSimilaridadeSemanticaOnnx(prop, textoAlvoArtigo, 4000);
+        }
+        const scorePropEfetivo = scorePropOnnx !== null ? Math.max(scoreProp, scorePropOnnx) : scoreProp;
+        const sustentada = verProp.compativel || scoreProp >= 0.12 || (scorePropOnnx !== null && scorePropOnnx >= 0.42);
         proposicoesAuditadas.push({
           proposicao: prop,
           sustentada,
-          score: Math.max(verProp.score, Math.round(scoreProp * 100)),
+          score: Math.max(verProp.score, Math.round(scorePropEfetivo * 100)),
         });
       }
       oc.proposicoesAtomicas = proposicoesAuditadas;
@@ -3636,12 +3033,17 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
           secao: oc.secao,
           autorCitado: `${rm.primeiroSobrenome} (${rm.ano})`,
           fraseWord: oc.fraseContexto,
-          mensagem: `⚠️ Afirmação Parcialmente Sustentada (${rm.primeiroSobrenome}, ${rm.ano}): No Parágrafo §${oc.numParagrafo}, parte da afirmação possui respaldo na fonte, mas a seguinte proposição atômica não foi confirmada no documento citado: ${detalheProps}`,
+          mensagem: `Afirmação parcialmente sustentada (${rm.primeiroSobrenome}, ${rm.ano}): no §${oc.numParagrafo}, parte da afirmação possui respaldo na fonte, mas esta proposição não foi confirmada no texto consultado: ${detalheProps}`,
         });
       }
 
+      const aderenciaInsuficiente =
+        !verBilingue.compativel &&
+        scoreCosseno < 0.10 &&
+        (scoreOnnx === null || scoreOnnx < 0.35);
+
       if (!verBilingue.compativel && scoreCossenoEfetivo < 0.10 && (scoreOnnx === null || scoreOnnx < 0.35)) {
-        const msg = `🚨 ALERTA DE ATRIBUIÇÃO FALSA / CITAÇÃO DESCONECTADA (${Math.round(scoreCossenoEfetivo * 100)}% de correspondência temática): No Parágrafo §${oc.numParagrafo} (Linha ${oc.numLinha}), a afirmação atribuída a ${rm.primeiroSobrenome} (${rm.ano}) não guarda correlação temática com o conteúdo do estudo original. Verifique se esta afirmação pertence a outro estudo ou se foi gerada por alucinação da IA.`;
+        const msg = `Possível desconexão temática (${Math.round(scoreCossenoEfetivo * 100)}% de aderência): no §${oc.numParagrafo} (Linha ${oc.numLinha}), a afirmação atribuída a ${rm.primeiroSobrenome} (${rm.ano}) apresenta baixa correspondência com o conteúdo recuperado desta fonte.`;
         oc.alertaFidelidade = msg;
         alertasAtribuicaoFalsa.push({
           numParagrafo: oc.numParagrafo,
@@ -3653,7 +3055,124 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
           scoreCosseno: Math.round(scoreCosseno * 100),
           outroArtigoSugerido: null,
         });
+        registrarOcorrenciaGrupo(rm, oc, {
+          sustentada: false,
+          scorePct: scoreFinal,
+          motivo: `baixa aderência temática (${Math.round(scoreCossenoEfetivo * 100)}%)`,
+        });
+      } else {
+        let falhaSimbolicaAlta = null;
+        if (
+          artCitado.textoTotal &&
+          artCitado.textoTotal.length >= 120 &&
+          ((scoreOnnx !== null && scoreOnnx >= 0.42) || scoreCossenoEfetivo >= 0.25)
+        ) {
+          // Guardiao Simbolico Forense (aditivo: avalia apenas pareamentos ja aprovados sem alterar escores base)
+          const melhorBloco = localizarMelhorBlocoComPosicao(
+            oc.trechoDireto || oc.fraseContextoSemantico || oc.fraseContexto,
+            textoAlvoArtigo
+          );
+          if (melhorBloco?.texto) {
+            const alertasSimb = auditarPareamentoSimbolico({
+              fraseManuscrito: oc.fraseContexto || oc.trechoDireto || '',
+              blocoPdf: melhorBloco.texto,
+              posicaoRelativaNoTexto: artCitado.textoTotal.length >= 1500 ? melhorBloco.posicaoRelativaNoTexto : 0.5,
+            });
+            if (alertasSimb.length > 0) {
+              oc.alertasSimbolicos = alertasSimb;
+              for (const asb of alertasSimb) {
+                if (asb.severidade === 'alta' && !falhaSimbolicaAlta) {
+                  falhaSimbolicaAlta = asb.mensagem;
+                }
+                const itemSimb = {
+                  tipo: `guardiao_${asb.codigo.toLowerCase()}`,
+                  codigo: asb.codigo,
+                  severidade: asb.severidade,
+                  numParagrafo: oc.numParagrafo,
+                  numLinha: oc.numLinha,
+                  secao: oc.secao,
+                  autorCitado: `${rm.primeiroSobrenome} (${rm.ano})`,
+                  fraseWord: oc.fraseContexto,
+                  trechoArtigoResumo: melhorBloco.texto.slice(0, 260),
+                  mensagem: `🛡️ Guardião Simbólico (${rm.primeiroSobrenome}, ${rm.ano} · §${oc.numParagrafo}): ${asb.mensagem}`,
+                };
+                alertasGuardiaoSimbolico.push(itemSimb);
+                alertasPrecisao.push(itemSimb);
+              }
+            }
+          }
+          // Fase 3: Cross-Encoder NLI em cascata (2o estagio aditivo quando Bi-Encoder >= 0.42 ou lexico >= 0.25)
+          if ((scoreOnnx !== null && scoreOnnx >= 0.42) || scoreCosseno >= 0.25) {
+            const top3Nli = await selecionarTop3BlocosParaNli(
+              oc.trechoDireto || oc.fraseContextoSemantico || oc.fraseContexto,
+              textoAlvoArtigo
+            );
+            const resNli = await avaliarSustentacaoNliTop3(
+              oc.fraseContexto || oc.trechoDireto || '',
+              top3Nli
+            );
+            if (resNli?.disponivel && resNli.melhorBloco) {
+              oc.avaliacaoNli = resNli;
+              if (resNli.melhorBloco.probabilidades.contradiction >= 0.72) {
+                const pctContra = Math.round(resNli.melhorBloco.probabilidades.contradiction * 100);
+                const itemNli = {
+                  tipo: 'contradicao_logica_nli',
+                  codigo: 'CONTRADICAO_LOGICA_NLI',
+                  severidade: 'alta',
+                  numParagrafo: oc.numParagrafo,
+                  numLinha: oc.numLinha,
+                  secao: oc.secao,
+                  autorCitado: `${rm.primeiroSobrenome} (${rm.ano})`,
+                  fraseWord: oc.fraseContexto,
+                  trechoArtigoResumo: resNli.melhorBloco.texto.slice(0, 260),
+                  probabilidadesNli: resNli.melhorBloco.probabilidades,
+                  mensagem: `🧠 Contradição Lógica NLI (${rm.primeiroSobrenome}, ${rm.ano} · §${oc.numParagrafo}): o Cross-Encoder NLI detectou contradição lógica (${pctContra}%) entre a afirmação do manuscrito e o trecho mais aderente da fonte.`,
+                };
+                if (!falhaSimbolicaAlta) falhaSimbolicaAlta = itemNli.mensagem;
+                alertasNliContradicao.push(itemNli);
+                alertasPrecisao.push(itemNli);
+              }
+            }
+          }
+        }
+        const sustentadaNoGrupo = !falhaSimbolicaAlta && !aderenciaInsuficiente;
+        const motivoGrupo =
+          falhaSimbolicaAlta ||
+          (aderenciaInsuficiente ? `baixa aderência temática (${scoreFinal}%)` : null);
+        registrarOcorrenciaGrupo(rm, oc, {
+          sustentada: sustentadaNoGrupo,
+          scorePct: scoreFinal,
+          motivo: motivoGrupo,
+        });
       }
+    }
+  }
+
+  // ---------- 6b. Auditoria Individualizada de Citações Múltiplas (Fase 2 - Aditivo) ----------
+  const alertasCitacoesMultiplas = [];
+  for (const grupo of ocorrenciasPorSentenca.values()) {
+    const membros = [...grupo.membrosPorChave.values()];
+    if (membros.length < 2) continue;
+    const sustentados = membros.filter((m) => m.sustentada);
+    const intrusos = membros.filter((m) => !m.sustentada);
+    if (sustentados.length >= 1 && intrusos.length >= 1) {
+      const refOc = grupo.ocRef;
+      const listaSustentam = sustentados.map((s) => `${s.autorCitado} (${s.scorePct}%)`).join(', ');
+      const listaIntrusos = intrusos.map((i) => i.autorCitado).join(', ');
+      const motivos = intrusos.map((i) => i.motivo || 'sem respaldo confirmado').join('; ');
+      const alertaGrupo = {
+        tipo: 'citacao_multipla_intruso',
+        numParagrafo: refOc.numParagrafo,
+        numLinha: refOc.numLinha,
+        secao: refOc.secao,
+        autorCitado: listaIntrusos,
+        fraseWord: refOc.fraseContexto,
+        obrasSustentam: sustentados.map((s) => `${s.autorCitado} (${s.scorePct}%)`),
+        obrasIntrusas: intrusos.map((i) => i.autorCitado),
+        mensagem: `Citação múltipla com obra intrusa (§${refOc.numParagrafo}): enquanto ${listaSustentam} sustenta(m) a afirmação, ${listaIntrusos} diverge ou carece de lastro (${motivos}).`,
+      };
+      alertasCitacoesMultiplas.push(alertaGrupo);
+      alertasPrecisao.push(alertaGrupo);
     }
   }
 
@@ -3940,7 +3459,16 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
   }
 
   // ---------- 8g. Auditoria de Completude Normativa ABNT NBR 6023:2018 (Livros, Artigos, Web) ----------
-  const auditoriaAbnt6023 = auditarCompletudeAbnt6023(refsMapeadas);
+  const estiloBibliograficoDetectado = detectarEstiloBibliograficoLista(refsMapeadas);
+  const auditoriaAbnt6023 =
+    estiloBibliograficoDetectado === 'vancouver_nature'
+      ? {
+          totalReferenciasAvaliadas: refsMapeadas.length,
+          totalAlertasAbnt6023: 0,
+          alertasAbnt6023: [],
+          isentoPorEstilo: 'vancouver_nature',
+        }
+      : auditarCompletudeAbnt6023(refsMapeadas);
   const alertasAbnt6023 = auditoriaAbnt6023.alertasAbnt6023 || [];
   if (alertasAbnt6023.length > 0) {
     for (const aa of alertasAbnt6023) {
@@ -4024,15 +3552,84 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     }
   }
 
+  // ---------- 8l. Reconciliador Intra-Documento & Raio-X Bibliométrico (Fase 2 - Aditivo) ----------
+  const reconciliacaoIntra = reconciliarIntraDocumento({
+    bufferDocx: caminhoDocx,
+    xmlDocument,
+    textoCompleto: texto,
+    paragrafosCorpo,
+  });
+  const alertasIntraDocumento = reconciliacaoIntra.alertas || [];
+  for (const aid of alertasIntraDocumento) {
+    alertasPrecisao.push({
+      tipo: aid.tipo,
+      codigo: aid.codigo,
+      severidade: aid.severidade,
+      numParagrafo: aid.numParagrafo,
+      numLinha: aid.numLinha,
+      secao: aid.secao,
+      autorCitado: aid.tabelaNumero ? `Tabela ${aid.tabelaNumero}` : aid.sigla || 'Intra-Texto',
+      fraseWord: aid.fraseWord,
+      mensagem: aid.mensagem,
+    });
+  }
+  const resumoIntraDocumento = {
+    tabelasDetectadas: reconciliacaoIntra.tabelasDetectadas,
+    totalAlertasTabelas: reconciliacaoIntra.alertasTabelas.length,
+    totalAlertasResumo: reconciliacaoIntra.alertasResumo.length,
+    totalAlertasSiglas: reconciliacaoIntra.alertasSiglas.length,
+  };
+  const raioXBibliometrico = gerarRaioXBibliometrico({
+    refsMapeadas,
+    biblioteca,
+    autoresManuscrito,
+    anoReferencia,
+  });
+
+  // ---------- 8m. Memória de Decisão Editorial (Fase 4 - Supressão por SHA-256) ----------
+  const memoriaDecisoes =
+    decisoesEditoriais || (pastaProjeto ? carregarDecisoesEditoriais(pastaProjeto) : null);
+  const alertasSuprimidosDecisaoEditorial = [];
+  const filtrarListaEditorial = (lista) => {
+    if (!memoriaDecisoes || !Array.isArray(lista) || lista.length === 0) return lista;
+    const { ativos, suprimidos } = filtrarAlertasComMemoria(lista, memoriaDecisoes);
+    for (const s of suprimidos) {
+      alertasSuprimidosDecisaoEditorial.push({
+        hash: s.decisao.hash,
+        codigoAlerta: s.decisao.codigoAlerta,
+        referenciaId: s.decisao.referenciaId,
+        justificativa: s.decisao.justificativa,
+        atualizadoEm: s.decisao.atualizadoEm,
+      });
+    }
+    return ativos;
+  };
+
+  const alertasAtribuicaoFalsaFinal = filtrarListaEditorial(alertasAtribuicaoFalsa);
+  const alertasPlagioFinal = filtrarListaEditorial(alertasPlagio);
+  const alertasPrecisaoFinal = filtrarListaEditorial(alertasPrecisao);
+  const alertasIntraDocumentoFinal = filtrarListaEditorial(alertasIntraDocumento);
+  const alertasCitacoesMultiplasFinal = filtrarListaEditorial(alertasCitacoesMultiplas);
+  const alertasGuardiaoSimbolicoFinal = filtrarListaEditorial(alertasGuardiaoSimbolico);
+  const alertasNliContradicaoFinal = filtrarListaEditorial(alertasNliContradicao);
+
+  // Deduplica contagem de alertas suprimidos por hash único (evita contar 2x quando alerta aparece em lista específica + alertasPrecisao)
+  const suprimidosUnicosMap = new Map();
+  for (const s of alertasSuprimidosDecisaoEditorial) {
+    if (!suprimidosUnicosMap.has(s.hash)) suprimidosUnicosMap.set(s.hash, s);
+  }
+  const suprimidosUnicos = [...suprimidosUnicosMap.values()];
+
   return {
     totalCitacoesOcorrencias: citacoes.length,
     totalAutoresCitadosUnicos: gruposCitacao.size,
     totalReferenciasListaFinal: refsFinais.length,
+    estiloBibliograficoDetectado,
     citacoesSemReferencia,
     refsMapeadas,
-    alertasAtribuicaoFalsa,
-    alertasPlagio,
-    alertasPrecisao,
+    alertasAtribuicaoFalsa: alertasAtribuicaoFalsaFinal,
+    alertasPlagio: alertasPlagioFinal,
+    alertasPrecisao: alertasPrecisaoFinal,
     alertasEstiloIa,
     alertasEstatisticos,
     alertasRede,
@@ -4045,6 +3642,14 @@ async function auditarManuscrito({ texto, biblioteca, buscarEBaixar = true, past
     alertasFomento,
     alertasDesvioTematico,
     alertasFigurasTabelas,
+    alertasGuardiaoSimbolico: alertasGuardiaoSimbolicoFinal,
+    alertasNliContradicao: alertasNliContradicaoFinal,
+    alertasCitacoesMultiplas: alertasCitacoesMultiplasFinal,
+    alertasIntraDocumento: alertasIntraDocumentoFinal,
+    alertasSuprimidosDecisaoEditorial: suprimidosUnicos,
+    totalAlertasSuprimidosEditorial: suprimidosUnicos.length,
+    resumoIntraDocumento,
+    raioXBibliometrico,
     resumoEstatistico: auditoriaEstatistica,
     resumoRede: auditoriaRede,
     resumoMetodologiaClinica: auditoriaMetodologica,
@@ -4094,5 +3699,8 @@ module.exports = {
   auditarCorrupcaoBiomedicaDoManuscrito,
   auditarFomentoEAfiliacoes,
   auditarClaimSupportDoManuscrito,
+  auditarPareamentoSimbolico,
+  reconciliarIntraDocumento,
+  gerarRaioXBibliometrico,
   auditarManuscrito,
 };

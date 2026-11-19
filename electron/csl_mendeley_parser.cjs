@@ -30,15 +30,15 @@ function normalizarChaveSimples(s) {
  */
 function extrairBlocosJsonCslDeString(textoOuXml) {
   if (!textoOuXml) return [];
-  // Primeiro junta tags <w:instrText> contíguas do Word (pois o Word frequentemente divide um JSON longo em vários <w:instrText>)
+  // Junta tags <w:instrText> contíguas do Word E extrai atributos <w:fldSimple w:instr="...">
   let limpo = String(textoOuXml);
-  if (limpo.includes('<w:instrText')) {
+  if (limpo.includes('<w:instrText') || limpo.includes('<w:fldSimple')) {
     const trechosInstr = [];
     const reParagrafo = /<w:p\b[^>]*>([\s\S]*?)<\/w:p>/g;
     let mPar;
     while ((mPar = reParagrafo.exec(limpo)) !== null) {
       const pXml = mPar[1];
-      if (!pXml.includes('CSL_CITATION')) continue;
+      if (!pXml.includes('CSL_CITATION') && !pXml.includes('BIBLIOGRAFIA_ITEM') && !pXml.includes('BIB_REF:')) continue;
       const instrConcat = [...pXml.matchAll(/<w:instrText\b[^>]*>([\s\S]*?)<\/w:instrText>/g)]
         .map((m) => m[1])
         .join('')
@@ -49,6 +49,15 @@ function extrairBlocosJsonCslDeString(textoOuXml) {
         .replace(/&#39;/g, "'");
       if (instrConcat.includes('CSL_CITATION')) {
         trechosInstr.push(instrConcat);
+      }
+      for (const mf of pXml.matchAll(/<w:fldSimple\b[^>]*\bw:instr="([^"]+)"/g)) {
+        const dec = mf[1]
+          .replace(/&quot;/g, '"')
+          .replace(/&amp;/g, '&')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&#39;/g, "'");
+        if (dec.includes('CSL_CITATION')) trechosInstr.push(dec);
       }
     }
     limpo = trechosInstr.join('\n');
@@ -105,11 +114,34 @@ function extrairBlocosJsonCslDeString(textoOuXml) {
 }
 
 /**
- * Constrói um Mapa de Metadados CSL-JSON a partir dos campos embutidos pelo Mendeley/Zotero no `.docx`.
- * Permite consultar por título normalizado, por DOI, por autor+ano ou por número de citação quando unitário.
+ * Extrai metadados nativos do suplemento Bibliografia.dotm (`BIB_REF:id` / `BIBLIOGRAFIA_ITEM id=...`)
+ * presentes em `<w:tag>` e `<w:instrText>` / `<w:fldSimple>`.
+ */
+function extrairIdsNativosBibliografiaDoXml(xmlStr = '') {
+  const mapaNativos = new Map();
+  const s = String(xmlStr || '');
+  for (const m of s.matchAll(/BIB_REF:([a-zA-Z0-9_,-]+)/g)) {
+    for (const id of m[1].split(',').map((x) => x.trim()).filter(Boolean)) {
+      mapaNativos.set(id, (mapaNativos.get(id) || 0) + 1);
+    }
+  }
+  for (const m of s.matchAll(/BIBLIOGRAFIA_ITEM\s+([^<\r\n"]+)/g)) {
+    const seg = m[1];
+    const idMatch = seg.match(/\bid=([a-zA-Z0-9_-]+)/);
+    if (idMatch) {
+      mapaNativos.set(idMatch[1], (mapaNativos.get(idMatch[1]) || 0) + 1);
+    }
+  }
+  return mapaNativos;
+}
+
+/**
+ * Constrói um Mapa de Metadados CSL-JSON a partir dos campos embutidos pelo Mendeley/Zotero/Bibliografia no `.docx`.
+ * Permite consultar por título normalizado, por DOI, por autor+ano, por número de citação ou ID nativo.
  */
 function extrairMetadadosCslEmbutidosNoXml(xmlStr) {
   const blocos = extrairBlocosJsonCslDeString(xmlStr);
+  const idsNativosBib = extrairIdsNativosBibliografiaDoXml(xmlStr);
   const porTitulo = new Map();
   const porDoi = new Map();
   const porNumero = new Map();
@@ -166,6 +198,7 @@ function extrairMetadadosCslEmbutidosNoXml(xmlStr) {
     porTitulo,
     porDoi,
     porNumero,
+    idsNativosBib,
     todosItens,
     buscarParaReferencia(refDoc) {
       if (!refDoc) return null;

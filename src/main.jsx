@@ -7,6 +7,22 @@ import './styles.css';
 window.addEventListener('dragover', (e) => e.preventDefault());
 window.addEventListener('drop', (e) => e.preventDefault());
 
+// Remoção segura da splash screen sem script inline no index.html (CSP estrito).
+window.__removerSplash = function removerSplash() {
+  const s = document.getElementById('splash-screen');
+  if (s && !s.classList.contains('splash-oculto')) {
+    s.classList.add('splash-oculto');
+    setTimeout(() => {
+      try {
+        s.remove();
+      } catch {}
+    }, 450);
+  }
+};
+setTimeout(() => {
+  window.__removerSplash?.();
+}, 2500);
+
 class ErrorBoundary extends Component {
   constructor(props) {
     super(props);

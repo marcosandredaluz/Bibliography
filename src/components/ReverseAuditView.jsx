@@ -5,6 +5,10 @@ import { normalizar } from '../lib/csl.js';
 import { useI18n } from '../i18n.jsx';
 import AuditResolutionModal, { AcoesResolucaoAlerta, BadgeAlvoAlerta } from './AuditResolutionModal.jsx';
 import SplitViewWordPdfModal from './SplitViewWordPdfModal.jsx';
+import AuditReportViewer from './audit/AuditReportViewer.jsx';
+import AuditUploadPanel from './audit/AuditUploadPanel.jsx';
+import AuditProgressBar from './audit/AuditProgressBar.jsx';
+import AuditMetricsGrid from './audit/AuditMetricsGrid.jsx';
 
 const STOPWORDS = new Set(
   'de da do das dos em no na nos nas para por com sem sobre entre como mais menos muito pouco tambem quando onde qual quais quem cujo cuja este esta estes estas esse essa esses essas aquele aquela aquilo isso isto um uma uns umas o a os as e ou mas se que nao sim ao aos pela pelo pelas pelos segundo conforme apud et al p pp pag v n dispõem apontam demonstram mostra mostram estudo estudos artigo artigos autor autores'.split(
@@ -286,24 +290,58 @@ function ehLinhaEstruturalNova(linha, emReferencias = false) {
   return false;
 }
 
+function normalizarCabecalhoRodapePdf(texto) {
+  return String(texto || '')
+    .toLowerCase()
+    .replace(/\b\d+\b/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function reconstruirTextoPdfManuscrito(paginas = []) {
   if (!Array.isArray(paginas) || !paginas.length) return '';
   const todasLinhas = [];
   let emReferencias = false;
 
-  for (const pag of paginas) {
-    const rawLines = Array.isArray(pag.linhasVisuais) && pag.linhasVisuais.length > 0
+  // Detecta cabeçalhos e rodapés recorrentes (ex.: título corrente da revista / ISSN / nº página)
+  const contagemExtremos = new Map();
+  const linhasPorPagina = paginas.map((pag) =>
+    Array.isArray(pag.linhasVisuais) && pag.linhasVisuais.length > 0
       ? [...pag.linhasVisuais]
       : String(pag.bruto || '')
           .split(/\r?\n/)
           .map((t, idx) => ({ texto: t.trim(), y: 1000 - idx * 14, x: 0, altura: 11 }))
-          .filter((l) => l.texto);
+          .filter((l) => l.texto)
+  );
+  if (linhasPorPagina.length >= 4) {
+    for (const rawLines of linhasPorPagina) {
+      const vistasNaPag = new Set();
+      rawLines.forEach((l, idx) => {
+        if ((idx <= 1 || idx >= rawLines.length - 2) && l.texto.length <= 130) {
+          const norm = normalizarCabecalhoRodapePdf(l.texto);
+          if (norm.length >= 8 && !vistasNaPag.has(norm)) {
+            vistasNaPag.add(norm);
+            contagemExtremos.set(norm, (contagemExtremos.get(norm) || 0) + 1);
+          }
+        }
+      });
+    }
+  }
+  const limiarRecorrente = Math.max(3, Math.ceil(linhasPorPagina.length * 0.35));
 
-    // Remove números de página isolados no topo (2 primeiras linhas) ou rodapé (2 últimas linhas) da página
+  for (let pIdx = 0; pIdx < paginas.length; pIdx++) {
+    const pag = paginas[pIdx];
+    const rawLines = linhasPorPagina[pIdx];
+
+    // Remove números de página isolados e cabeçalhos/rodapés repetitivos no topo/base da página
     const filtradas = rawLines.filter((l, idx) => {
       const noExtremo = idx <= 1 || idx >= rawLines.length - 2;
       if (noExtremo && /^\d{1,4}$/.test(l.texto)) return false;
       if (/^\d{1,4}$/.test(l.texto) && Number(l.texto) === pag.numero) return false;
+      if (noExtremo && l.texto.length <= 130) {
+        const norm = normalizarCabecalhoRodapePdf(l.texto);
+        if ((contagemExtremos.get(norm) || 0) >= limiarRecorrente) return false;
+      }
       return true;
     });
     if (!filtradas.length) continue;
@@ -352,6 +390,9 @@ function reconstruirTextoPdfManuscrito(paginas = []) {
     if (novaPorInicioRef || paginaTerminouSentenca || separadorPorFonteOuCaption) {
       paragrafos.push(buf.trim());
       buf = item.texto;
+    } else if (/[a-zà-ÿ]{2}-$/.test(buf.trimEnd()) && /^[a-zà-ÿ]{2,}/i.test(item.texto.trimStart())) {
+      // Deshifeniza palavras divididas em quebra de linha no PDF (equivalente à leitura contínua do Word)
+      buf = buf.trimEnd().slice(0, -1) + item.texto.trimStart();
     } else {
       buf = `${buf} ${item.texto}`;
     }
@@ -570,6 +611,7 @@ export default function ReverseAuditView({
     caminhoArquivo: '',
     textoManuscrito: '',
     buscarEBaixar: true,
+    somenteLeitura: false,
     resultado: null,
     dataHora: null,
     mostrarCaixaTexto: true,
@@ -578,11 +620,21 @@ export default function ReverseAuditView({
   const estado = estadoAuditoria || estadoLocal;
   const atualizarEstado = setEstadoAuditoria || setEstadoLocal;
 
-  const { nomeArquivo, caminhoArquivo, textoManuscrito, buscarEBaixar, resultado, dataHora, mostrarCaixaTexto } = estado;
+  const {
+    nomeArquivo,
+    caminhoArquivo,
+    textoManuscrito,
+    buscarEBaixar,
+    somenteLeitura = false,
+    resultado,
+    dataHora,
+    mostrarCaixaTexto,
+  } = estado;
 
   const setNomeArquivo = (v) => atualizarEstado((ant) => ({ ...ant, nomeArquivo: v }));
   const setTextoManuscrito = (v) => atualizarEstado((ant) => ({ ...ant, textoManuscrito: v }));
   const setBuscarEBaixar = (v) => atualizarEstado((ant) => ({ ...ant, buscarEBaixar: v }));
+  const setSomenteLeitura = (v) => atualizarEstado((ant) => ({ ...ant, somenteLeitura: v }));
   const setMostrarCaixaTexto = (v) => atualizarEstado((ant) => ({ ...ant, mostrarCaixaTexto: v }));
   const setResultado = (atualizador) =>
     atualizarEstado((ant) => ({
@@ -591,6 +643,35 @@ export default function ReverseAuditView({
     }));
 
   const [rodando, setRodando] = useState(false);
+  const [perfilEditorialId, setPerfilEditorialId] = useState('saude_coletiva_br');
+  const [preflightEditorial, setPreflightEditorial] = useState(null);
+  const [limitesCustom, setLimitesCustom] = useState({
+    maxPalavrasResumo: 300,
+    maxPalavrasCorpo: 5000,
+    maxReferencias: 50,
+    maxTabelasFiguras: 6,
+  });
+
+  useEffect(() => {
+    if (!resultado || !textoManuscrito || typeof window.api?.audit?.executarPreflightEditorial !== 'function') {
+      return;
+    }
+    let cancelado = false;
+    window.api.audit
+      .executarPreflightEditorial({
+        texto: textoManuscrito,
+        totalReferencias: resultado.totalReferenciasListaFinal,
+        perfilId: perfilEditorialId,
+        limitesPersonalizados: perfilEditorialId === 'personalizado' ? limitesCustom : {},
+      })
+      .then((res) => {
+        if (!cancelado && res?.resultado) setPreflightEditorial(res.resultado);
+      })
+      .catch(() => {});
+    return () => {
+      cancelado = true;
+    };
+  }, [resultado, textoManuscrito, perfilEditorialId, limitesCustom]);
   const atualizarRodando = (valor) => {
     setRodando(valor);
     if (typeof aoMudarRodando === 'function') {
@@ -1205,9 +1286,53 @@ export default function ReverseAuditView({
       if (!arq) return;
       let novoTexto = '';
       if (arq.tipo === 'pdf') {
-        setEtapa('Extraindo e reconstruindo parágrafos e DOIs do PDF do manuscrito…');
-        const pags = await extrairPaginasPdf(arq.bytes);
-        novoTexto = reconstruirTextoPdfManuscrito(pags) || pags.map((p) => p.bruto).join('\n\n');
+        setEtapa('Extraindo layout geométrico, colunas e tabelas do PDF…');
+        let layoutPy = null;
+        try {
+          if (arq.caminho && window.api?.audit?.extrairLayoutPdf) {
+            layoutPy = await window.api.audit.extrairLayoutPdf(arq.caminho);
+          }
+        } catch {}
+        if (layoutPy?.sucesso && layoutPy?.texto_completo) {
+          novoTexto = layoutPy.texto_completo;
+        } else {
+          const pags = await extrairPaginasPdf(arq.bytes);
+          novoTexto = reconstruirTextoPdfManuscrito(pags) || pags.map((p) => p.bruto).join('\n\n');
+        }
+        // Sanitiza referências numeradas concatenadas (ex.: ".../441. Merriam-Webster") e sobrescritos colados em PDFs Nature/Vancouver
+        if (novoTexto) {
+          const linhasPdf = novoTexto.split(/\r?\n/);
+          let emRefs = false;
+          let ultimoNumRef = 0;
+          const linhasLimpas = [];
+          for (const l of linhasPdf) {
+            if (/^(?:\d+\.?\s*)?(?:refer[êe]ncias(?:\s+bibliogr[áa]ficas)?|bibliografia|references)\s*$/i.test(l.trim())) {
+              emRefs = true;
+              linhasLimpas.push(l);
+              continue;
+            }
+            if (emRefs) {
+              const mIni = l.trim().match(/^(\d{1,4})\.\s+/);
+              if (mIni) ultimoNumRef = parseInt(mIni[1], 10);
+              let rest = l;
+              let g = 0;
+              while (ultimoNumRef > 0 && g < 10) {
+                g++;
+                const prox = ultimoNumRef + 1;
+                const reProx = new RegExp(`([/.\\)\\s])(${prox})\\.\\s+(?=[A-ZÀ-Ú][A-Za-zÀ-ÿ'’-]{2,})`);
+                const mP = reProx.exec(rest);
+                if (!mP || mP.index < 20) break;
+                linhasLimpas.push(rest.slice(0, mP.index + mP[1].length).trim());
+                rest = rest.slice(mP.index + mP[1].length).trim();
+                ultimoNumRef = prox;
+              }
+              linhasLimpas.push(rest);
+            } else {
+              linhasLimpas.push(l);
+            }
+          }
+          novoTexto = linhasLimpas.join('\n');
+        }
         setEtapa('');
       } else {
         novoTexto = arq.texto || '';
@@ -1272,13 +1397,15 @@ export default function ReverseAuditView({
       const resBase = await window.api.audit.executar({
         texto: textoManuscrito,
         buscarEBaixar,
-        pastaDestino,
+        pastaDestino: somenteLeitura ? null : pastaDestino,
         modulo: moduloExec,
+        somenteLeitura,
+        caminhoDocx: caminhoArquivo || null,
       });
 
       // Se executou um módulo específico rápido, finaliza na hora!
       if (resBase?.moduloExecutado && resBase.moduloExecutado !== 'todos') {
-        await onRecarregar?.();
+        if (!somenteLeitura) await onRecarregar?.();
         const agoraStr = new Date().toLocaleString('pt-BR', {
           day: '2-digit',
           month: '2-digit',
@@ -1355,19 +1482,29 @@ export default function ReverseAuditView({
             const novosGrifos = [...grifosAtuais];
 
             item.verificacoesPdf = item.ocorrenciasNoTexto.map((oc) => {
+              if (oc.confirmadoPorGrifoUsuario && oc.paginaConfirmadaPorGrifo) {
+                return {
+                  ocorrencia: oc,
+                  status: oc.trechoDireto ? 'confirmado_direto' : 'confirmado',
+                  paginaPdf: Number(oc.paginaConfirmadaPorGrifo) || 1,
+                  compatibilidade: 95,
+                  trechoPdf: oc.trechoArtigoResumo || oc.trechoDireto || oc.fraseContexto,
+                  mensagem: `Confirmado pelo "Trecho Citado" salvo na biblioteca (pág. ${oc.paginaConfirmadaPorGrifo}).`,
+                };
+              }
               const ver = localizarOcorrenciaNoPdf(oc, paginas);
 
-              // Detecção Forense de Citação Direta Fabricada (trecho entre aspas inexistente no PDF)
+              // Detecção de citação direta entre aspas não localizada no PDF
               if (oc.trechoDireto && !ver.paginaPdf) {
                 ver.status = 'aspas_nao_localizadas';
-                ver.mensagem = `🚨 CITAÇÃO DIRETA FABRICADA / NÃO LOCALIZADA: O trecho colocado entre aspas atribuído a ${item.primeiroSobrenome} (${item.ano}) não foi localizado em nenhuma página do PDF original.`;
+                ver.mensagem = `Citação direta entre aspas atribuída a ${item.primeiroSobrenome} (${item.ano}) não foi localizada no PDF original.`;
               }
-              // Detecção Forense de Página Impossível / Fora do Range do PDF
+              // Detecção de página declarada fora do alcance total do PDF
               if (oc.paginaDeclarada && paginas.length > 0) {
                 const numDeclarado = parseInt(oc.paginaDeclarada, 10);
                 if (numDeclarado > paginas.length && numDeclarado < 500) {
                   ver.status = 'pagina_fora_do_range';
-                  ver.mensagem = `⚠️ PÁGINA IMPOSSÍVEL / FORA DO RANGE: A citação declarou p. ${oc.paginaDeclarada}, mas o artigo original possui apenas ${paginas.length} página(s) no PDF.`;
+                  ver.mensagem = `Página incompatível: a citação declarou p. ${oc.paginaDeclarada}, mas o PDF possui ${paginas.length} página(s).`;
                 }
               }
 
@@ -1388,6 +1525,7 @@ export default function ReverseAuditView({
                     nota: ver.trechoPdf ? `No PDF (p. ${ver.paginaPdf}): "${ver.trechoPdf}"` : '',
                     ondeCitei: `${nomeArquivo ? nomeArquivo + ' — ' : ''}${locWord}`,
                     citadoNoTexto: true,
+                    origemAutoAuditor: true,
                     criadoEm: new Date().toISOString(),
                   });
                 }
@@ -1412,16 +1550,18 @@ export default function ReverseAuditView({
               }
             }
 
-            await window.api.bib.salvarGrifos(item.refBibId, novosGrifos);
-            await window.api.bib.atualizar(item.refBibId, {
-              ocorrenciasWord: item.verificacoesPdf.map((v) => ({
-                ...v.ocorrencia,
-                paginaPdf: v.paginaPdf,
-                trechoPdf: v.trechoPdf,
-                statusPdf: v.status,
-                mensagemPdf: v.mensagem,
-              })),
-            });
+            if (!somenteLeitura) {
+              await window.api.bib.salvarGrifos(item.refBibId, novosGrifos);
+              await window.api.bib.atualizar(item.refBibId, {
+                ocorrenciasWord: item.verificacoesPdf.map((v) => ({
+                  ...v.ocorrencia,
+                  paginaPdf: v.paginaPdf,
+                  trechoPdf: v.trechoPdf,
+                  statusPdf: v.status,
+                  mensagemPdf: v.mensagem,
+                })),
+              });
+            }
           } catch {
             /* continua */
           }
@@ -1432,13 +1572,13 @@ export default function ReverseAuditView({
         ativo: true,
         porcentagem: 100,
         fase: 'concluido',
-        mensagem: '✓ Auditoria concluída com sucesso! Consolidando relatório forense…',
+        mensagem: '✓ Auditoria concluída com sucesso. Consolidando relatório…',
         detalhe: 'Métricas, citações e referências prontas na tela.',
         atual: totalPdfs,
         total: totalPdfs,
       });
 
-      await onRecarregar?.();
+      if (!somenteLeitura) await onRecarregar?.();
       const agoraStr = new Date().toLocaleString('pt-BR', {
         day: '2-digit',
         month: '2-digit',
@@ -1457,13 +1597,71 @@ export default function ReverseAuditView({
         'ok'
       );
     } catch (e) {
-      avisar('Falha na auditoria: ' + e.message, 'erro');
+      if (e?.aborted || /cancelada/i.test(e?.message || '')) {
+        avisar(tr('Auditoria interrompida pelo usuário.', 'Audit cancelled by user.'), 'info');
+      } else {
+        avisar('Falha na auditoria: ' + e.message, 'erro');
+      }
     } finally {
       atualizarRodando(false);
       setEtapa('');
       setTimeout(() => {
         setProgresso((ant) => ({ ...ant, ativo: false }));
       }, 1500);
+    }
+  };
+
+  const cancelarAuditoriaAtual = async () => {
+    const ok = window.confirm(
+      tr(
+        '⚠️ ATENÇÃO: Auditoria em andamento!\n\nUma verificação de manuscrito está em execução neste projeto.\nSe você encerrar agora, o progresso atual será interrompido.\n\nDeseja realmente fechar a auditoria em curso?',
+        '⚠️ WARNING: Audit in progress!\n\nA manuscript audit is currently running in this project.\nIf you stop it now, current progress will be lost.\n\nDo you really want to cancel the running audit?'
+      )
+    );
+    if (!ok) return;
+    try {
+      await window.api?.audit?.cancelar?.();
+    } catch {}
+    atualizarRodando(false);
+    setEtapa('');
+    setProgresso((ant) => ({ ...ant, ativo: false }));
+    avisar(tr('Auditoria interrompida pelo usuário.', 'Audit cancelled by user.'), 'info');
+  };
+
+  // Ponte direta Auditoria <-> Biblioteca: salva trecho como Ground Truth ("Trecho Citado")
+  const salvarTrechoCitadoNaBiblioteca = async ({ refItem, pagina = 1, trecho = '', ondeCitei = '' }) => {
+    if (!refItem?.id || !trecho.trim()) return false;
+    if (somenteLeitura) {
+      avisar('Desative "Auditoria Isolada (Somente Leitura)" para gravar trechos na Biblioteca.', 'aviso');
+      return false;
+    }
+    try {
+      const atuais = (await window.api?.bib?.lerGrifos?.(refItem.id)) || [];
+      const trechoLimpo = String(trecho).trim();
+      const pagNum = Math.max(1, Number(pagina) || 1);
+      const jaExiste = atuais.some(
+        (g) => g && !g.origemAutoAuditor && Number(g.pagina) === pagNum && String(g.trecho || '').trim() === trechoLimpo
+      );
+      if (!jaExiste) {
+        const novoItem = {
+          id: `${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 6)}`,
+          pagina: pagNum,
+          cor: 'azul',
+          trecho: trechoLimpo,
+          nota: 'Salvo diretamente pela Auditoria Reversa',
+          ondeCitei: String(ondeCitei || '').trim(),
+          citadoNoTexto: true,
+          criadoEm: new Date().toISOString(),
+        };
+        await window.api.bib.salvarGrifos(refItem.id, [novoItem, ...atuais]);
+      }
+      await window.api?.bib?.atualizar?.(refItem.id, { status: 'citada' });
+      await onRecarregar?.();
+      avisar(`Trecho citado salvo na Biblioteca (Pág. ${pagNum})!`, 'ok');
+      return true;
+    } catch (e) {
+      avisar(`Erro ao salvar trecho citado: ${e.message}`, 'erro');
+      return false;
     }
   };
 
@@ -1571,7 +1769,16 @@ export default function ReverseAuditView({
   const alertasFigurasTabelasAtivos = alertasFigurasTabelas.filter((ft, i) => !itensResolvidos.has(`figtab_${ft.numParagrafo}_${ft.tipo}_${ft.numero || i}`));
   const citacoesSemReferenciaAtivas = citacoesSemReferencia.filter((c) => !itensResolvidos.has(`orfa_${c.chave}`));
   const refsNaoCitadasNoTextoAtivas = refsNaoCitadasNoTexto.filter((r) => !itensResolvidos.has(`sobr_${r.refBibId || r.textoOriginal}`));
-  const alertasMetadadosAbntAtivos = alertasMetadadosAbnt.filter((ap) => !itensResolvidos.has(`meta_${ap.numParagrafo}_${ap.numLinha}_${ap.tipo}`));
+  const obterIdAlertaMeta = (ap) => {
+    const sufixoUnico =
+      ap.tipo === 'citacao_multipla_intruso' ||
+      String(ap.tipo || '').startsWith('intra_') ||
+      String(ap.tipo || '').startsWith('guardiao_')
+        ? `_${ap.autorCitado || ''}`
+        : '';
+    return `meta_${ap.numParagrafo}_${ap.numLinha}_${ap.tipo}${sufixoUnico}`;
+  };
+  const alertasMetadadosAbntAtivos = alertasMetadadosAbnt.filter((ap) => !itensResolvidos.has(obterIdAlertaMeta(ap)));
   const alertasPdfAtivos = alertasPdf.filter((ap) => !itensResolvidos.has(`pdf_${ap.ref?.refBibId}_${ap.paginaPdf}_${ap.status}`));
   const alertasMetodologicosAtivos = alertasMetodologicos.filter((ap) => !itensResolvidos.has(`metodologico_${ap.numParagrafo}_${ap.tipo}`));
   const alertasEstiloIaAtivos = alertasEstiloIa.filter((ap) => !itensResolvidos.has(`estiloia_${ap.numParagrafo}_${ap.numLinha}`));
@@ -1638,280 +1845,280 @@ export default function ReverseAuditView({
     }
   };
 
-  // Gerador do Prompt Completo Estruturado para colar na IA (ChatGPT / Claude / Gemini)
+  // Gerador do Relatório Estruturado & Assertivo (exclui estritamente itens marcados como resolvidos/ignorados)
   const gerarTextoPromptParaIa = () => {
     if (!resultado) return '';
+
+    const fmtLoc = (par, linha, sec) => {
+      const partes = [];
+      if (par) partes.push(`§${par}`);
+      if (linha) partes.push(`L.${linha}`);
+      if (sec) partes.push(sec);
+      return partes.length ? partes.join(' · ') : 'Documento';
+    };
+
+    const qtdResolvidos = itensResolvidos.size;
+    const estiloLabel =
+      resultado.estiloBibliograficoDetectado === 'vancouver_nature'
+        ? 'Vancouver / Nature (Numérico)'
+        : 'ABNT / Autor-Data';
+
     const blocos = [
-      `# 🤖 PROMPT DE AUDITORIA E REVISÃO CIENTÍFICA DO MEU MANUSCRITO (${nomeArquivo || 'Trabalho Acadêmico'})`,
+      `# RELATÓRIO DE AUDITORIA FORENSE — ${nomeArquivo || 'Manuscrito Acadêmico'}`,
       ``,
-      `## 📌 INSTRUÇÃO PARA A IA:`,
-      instrucaoExtraIa,
-      ``,
-      `Por favor, responda de forma estruturada para cada ponto listado abaixo:`,
-      `1. **O que está certo ou errado** na citação e na referência apontada;`,
-      `2. **Como corrigir ou reescrever o parágrafo (§)** citado (forneça o texto já corrigido pronto para copiar para o Word);`,
-      `3. **Para fontes não localizáveis ou citações com ressalva**, confirme qual é o estudo real correto ou como ajustar a afirmação ao que o artigo verdadeiro realmente demonstra.`,
-      ``,
-      `================================================================================`,
-      `## 📊 RESUMO EXECUTIVO DA AUDITORIA FORENSE`,
-      `• Documento auditado: ${nomeArquivo || 'Manuscrito colado'} (${dataHora || 'agora'})`,
-      `• Citações no corpo do Word: ${resultado.totalCitacoesOcorrencias} ocorrências (${resultado.totalAutoresCitadosUnicos} obras distintas)`,
-      `• Obras listadas na seção final de Referências: ${resultado.totalReferenciasListaFinal}${
-        resultado.linhasPosReferenciasIgnoradas
-          ? ` (isolados ${resultado.linhasPosReferenciasIgnoradas} parágrafos pós-referências como Notas/Anexos)`
-          : ''
-      }`,
-      `• 🚨 Referências Não Localizáveis / DOI Inexistente ou de Outro Artigo: ${refsSuspeitasIa.length}`,
-      `• 🚨 Citações que NÃO constam no artigo ou Atribuição Trocada: ${alertasAtribuicaoFalsa.length}`,
-      `• 🔍 Alertas de Plágio / Cópia Literal sem Aspas: ${alertasPlagio.length}`,
-      `• ❌ Citadas no texto mas AUSENTES nas Referências finais: ${resultado.citacoesSemReferencia.length}`,
-      `• ⚠ Listadas nas Referências mas NUNCA citadas no texto: ${refsNaoCitadasNoTexto.length}`,
-      `• 📐 Ajustes Finos de Norma ABNT NBR 10520, Escopo e Precisão: ${alertasPrecisao.length}`,
-      `================================================================================`,
-      ``,
+      `## RESUMO EXECUTIVO`,
+      `- **Documento:** ${nomeArquivo || 'Manuscrito colado'} (${dataHora || 'agora'})`,
+      `- **Estilo Bibliográfico Detectado:** ${estiloLabel}`,
+      `- **Escopo Auditado:** ${resultado.totalCitacoesOcorrencias} citações (${resultado.totalAutoresCitadosUnicos} obras únicas) · ${resultado.totalReferenciasListaFinal} referências finais`,
+      `- **Pendências Ativas para Ação:** **${totalInconformidades}**${qtdResolvidos > 0 ? ` _(${qtdResolvidos} item(ns) marcado(s) como resolvido/ignorado omitido(s) deste relatório)_` : ''}`,
     ];
 
-    if (refsSuspeitasIa.length > 0) {
-      blocos.push(`## 🤖 PONTO CRÍTICO A — FONTES COM SUSPEITA DE ALUCINAÇÃO PELA IA / NÃO LOCALIZADAS NAS BASES (${refsSuspeitasIa.length}):`);
-      refsSuspeitasIa.forEach((r, idx) => {
-        blocos.push(`### [Fonte Suspeita A.${idx + 1}]`);
-        blocos.push(`- **Referência na minha lista final:** ${r.textoOriginal}`);
-        blocos.push(`- **Diagnóstico do Auditor Forense:** ${r.alertaAutenticidade}`);
-        if (r.ocorrenciasNoTexto?.length) {
-          r.ocorrenciasNoTexto.forEach((oc) => {
-            blocos.push(
-              `- **Onde citei no Word:** Parágrafo §${oc.numParagrafo} · Linha ${oc.numLinha}${oc.secao ? ` (${oc.secao})` : ''}`
-            );
-            blocos.push(`- **Frase exata no meu Word:** "${oc.fraseContexto}"`);
-          });
-        }
-        blocos.push(
-          `- **Pergunta para a IA:** Esta referência existe mesmo ou foi alucinada? Se estiver errada ou inventada, qual artigo científico real (com autores, ano, periódico e DOI verdadeiros) comprova essa mesma afirmação do Parágrafo acima?`
-        );
-        blocos.push(``);
-      });
+    if (resultado.raioXBibliometrico?.totalReferencias > 0) {
+      const rx = resultado.raioXBibliometrico;
+      blocos.push(
+        `- **Raio-X Bibliométrico:** ${rx.percentualRecentes5Anos}% recentes (≤5 anos) · Autocitação: ${rx.taxaAutocitacaoPct}% · Retratações: ${rx.retratacoes}`
+      );
+    }
+    if (resultado.totalAlertasSuprimidosEditorial > 0) {
+      blocos.push(
+        `- **Memória Editorial (SHA-256):** ${resultado.totalAlertasSuprimidosEditorial} alerta(s) suprimido(s) por decisão justificada`
+      );
     }
 
-    if (alertasAtribuicaoFalsa.length > 0) {
-      blocos.push(`## 🚨 PONTO CRÍTICO B — CITAÇÕES QUE NÃO CONSTAM NO ARTIGO OU FORAM ATRIBUÍDAS AO ARTIGO ERRADO (${alertasAtribuicaoFalsa.length}):`);
-      alertasAtribuicaoFalsa.forEach((a, idx) => {
-        blocos.push(`### [Divergência de Conteúdo B.${idx + 1}]`);
-        blocos.push(`- **Diagnóstico:** ${a.mensagem}`);
-        blocos.push(`- **Local no Word:** Parágrafo §${a.numParagrafo} · Linha ${a.numLinha}`);
-        blocos.push(`- **Frase escrita no meu Word:** "${a.fraseWord}"`);
-        if (a.outroArtigoSugerido) {
-          blocos.push(`- **Artigo da minha biblioteca onde o assunto realmente aparece:** ${a.outroArtigoSugerido}`);
-        }
-        blocos.push(
-          `- **Pergunta para a IA:** Como devo corrigir a citação ou reescrever esta frase do Parágrafo §${a.numParagrafo} para que fique 100% fiel à fonte correta?`
-        );
-        blocos.push(``);
-      });
+    if (totalInconformidades === 0) {
+      blocos.push(
+        ``,
+        `> **Status: CONFORME.** Nenhuma pendência ativa permanece aberta neste manuscrito.`,
+        ``
+      );
+    } else {
+      blocos.push(
+        ``,
+        `## DIRETRIZ DE REVISÃO`,
+        instrucaoExtraIa,
+        `Para cada pendência ativa abaixo, forneça: **(1) Diagnóstico objetivo**, **(2) Redação corrigida pronta para colar** e **(3) Fonte substituta/ajuste normativo** quando aplicável.`,
+        ``
+      );
     }
 
-    if (alertasPlagio.length > 0) {
-      blocos.push(`## 🔍 PONTO CRÍTICO C — ALERTAS DE PLÁGIO / CÓPIA LITERAL SEM ASPAS (${alertasPlagio.length}):`);
-      alertasPlagio.forEach((p, idx) => {
-        blocos.push(`### [Alerta de Similaridade C.${idx + 1}]`);
-        blocos.push(`- **Diagnóstico:** ${p.mensagem}`);
-        blocos.push(`- **Local no Word:** Parágrafo §${p.numParagrafo} · Linha ${p.numLinha}`);
-        blocos.push(`- **Texto atual no meu Word:** "${p.fraseNoWord}"`);
-        blocos.push(`- **Trecho original na fonte (${p.autorFonte}):** "${p.trechoOriginalArtigo}"`);
-        blocos.push(
-          `- **Pergunta para a IA:** Reescreva este trecho do Parágrafo §${p.numParagrafo} em formato de paráfrase acadêmica original (sem plágio) OU formate como citação direta com aspas conforme a norma.`
-        );
-        blocos.push(``);
-      });
-    }
+    const adicionarSecao = (titulo, linhasItens) => {
+      if (!linhasItens || linhasItens.length === 0) return;
+      blocos.push(`---`, `## ${titulo}`, ``, ...linhasItens, ``);
+    };
 
-    if (alertasEstatisticos.length > 0) {
-      blocos.push(`## 📊 PONTO CRÍTICO C2 — INCONSISTÊNCIAS ESTATÍSTICAS E VALIDAÇÃO MATEMÁTICA / STATCHECK (${alertasEstatisticos.length}):`);
-      alertasEstatisticos.forEach((st, idx) => {
-        blocos.push(`### [Alerta Estatístico C2.${idx + 1}]`);
-        blocos.push(`- **Diagnóstico:** ${st.mensagem}`);
-        blocos.push(`- **Local no Word:** Parágrafo §${st.numParagrafo} · Linha ${st.numLinha} (${st.secao})`);
-        blocos.push(`- **Texto no meu Word:** "${st.fraseWord}"`);
-        blocos.push(`- **Teste Reportado:** ${st.textoBruto}`);
-        blocos.push(`- **Confronto:** p relatado = ${st.pRelatado} vs p recalculado pela distribuição exata = ${st.pRecalculado}`);
-        blocos.push(`- **Pergunta para a IA:** Corrija os valores estatísticos ou graus de liberdade relatados no texto para que a matemática relatada seja rigorosamente consistente.`);
-        blocos.push(``);
-      });
-    }
+    // 1. INTEGRIDADE & AUTENTICIDADE DE FONTES
+    const itensIntegridade = [];
+    refsSuspeitasIaAtivas.forEach((r, idx) => {
+      const oc0 = r.ocorrenciasNoTexto?.[0];
+      itensIntegridade.push(
+        `### [INT-${idx + 1}] ${r.primeiroSobrenome || 'Referência'} (${r.ano || 's.d.'}) — ${fmtLoc(oc0?.numParagrafo, oc0?.numLinha, oc0?.secao || 'Referências')}`,
+        `- **Referência:** ${r.textoOriginal}`,
+        `- **Achado:** ${r.alertaAutenticidade}`,
+        ...(oc0?.fraseContexto ? [`- **Trecho no texto:** "${oc0.fraseContexto}"`] : []),
+        `- **Ação:** Confirmar existência/DOI real ou substituir por fonte verificada.`,
+        ``
+      );
+    });
+    alertasPredatoriosAtivos.forEach((ap, idx) => {
+      itensIntegridade.push(
+        `### [PRED-${idx + 1}] Periódico Suspeito — ${ap.chaveAutorAno}`,
+        `- **Referência:** ${ap.textoReferencia}`,
+        `- **Achado:** ${ap.mensagem} (${ap.motivo || 'critério editorial'})`,
+        `- **Ação:** Substituir por publicação indexada (PubMed/Scopus/SciELO).`,
+        ``
+      );
+    });
+    adicionarSecao(`1. INTEGRIDADE & AUTENTICIDADE DE FONTES (${refsSuspeitasIaAtivas.length + alertasPredatoriosAtivos.length})`, itensIntegridade);
 
-    if (alertasRede.length > 0) {
-      blocos.push(`## 🕸️ PONTO CRÍTICO C3 — CONCENTRAÇÃO DE AUTORIA E REDES DE CITAÇÃO / COPE (${alertasRede.length}):`);
-      alertasRede.forEach((ar, idx) => {
-        blocos.push(`### [Alerta de Rede C3.${idx + 1}]`);
-        blocos.push(`- **Diagnóstico:** ${ar.mensagem}`);
-        blocos.push(`- **Pergunta para a IA:** Diversifique as fontes bibliográficas reduzindo a dependência excessiva em um único autor ou periódico.`);
-        blocos.push(``);
-      });
-    }
-
-    if (alertasMetodologiaClinica.length > 0) {
-      blocos.push(`## 🔬 PONTO CRÍTICO C4 — AUDITORIA METODOLÓGICA E ÉTICA / STROBE / CONSORT (${alertasMetodologiaClinica.length}):`);
-      alertasMetodologiaClinica.forEach((mc, idx) => {
-        blocos.push(`### [Alerta Metodológico C4.${idx + 1}]`);
-        blocos.push(`- **Critério:** ${mc.tipo}`);
-        blocos.push(`- **Diagnóstico:** ${mc.mensagem}`);
-        blocos.push(`- **Pergunta para a IA:** Indique os ajustes textuais necessários no método/metodologia para atender a este requisito editorial.`);
-        blocos.push(``);
-      });
-    }
-
-    if (alertasFrasesTorturadas.length > 0) {
-      blocos.push(`## 🧟 PONTO CRÍTICO C5 — FRASES TORTURADAS E PARAFRASEAMENTO ROBÓTICO / CABANAC (${alertasFrasesTorturadas.length}):`);
-      alertasFrasesTorturadas.forEach((ft, idx) => {
-        blocos.push(`### [Frase Torturada C5.${idx + 1}]`);
-        blocos.push(`- **Diagnóstico:** ${ft.mensagem}`);
-        blocos.push(`- **Local no Word:** Parágrafo §${ft.numParagrafo} · Linha ${ft.numLinha} (${ft.secao || 'Corpo'})`);
-        blocos.push(`- **Expressão Detectada:** "${ft.termoDetectado}" -> Termo Canônico Real: "${ft.termoCanonica}"`);
-        blocos.push(`- **Texto no meu Word:** "${ft.fraseWord}"`);
-        blocos.push(`- **Pergunta para a IA:** Substitua o jargão bizarro pelo termo consagrado "${ft.termoCanonica}" e restaure a linguagem acadêmica formal.`);
-        blocos.push(``);
-      });
-    }
-
-    if (alertasEstilometricos.length > 0) {
-      blocos.push(`## 📐 PONTO CRÍTICO C6 — ANÁLISE ESTILOMÉTRICA E VARIAÇÃO RÍTMICA / TTR / BURSTINESS (${alertasEstilometricos.length}):`);
-      alertasEstilometricos.forEach((es, idx) => {
-        blocos.push(`### [Alerta Estilométrico C6.${idx + 1}]`);
-        blocos.push(`- **Diagnóstico:** ${es.mensagem}`);
-        blocos.push(`- **Local no Word:** Parágrafo §${es.numParagrafo} · Linha ${es.numLinha} (${es.secao || 'Corpo'})`);
-        blocos.push(`- **Texto no meu Word:** "${es.fraseWord}"`);
-        blocos.push(`- **Pergunta para a IA:** Diversifique as estruturas sintáticas deste parágrafo, alternando períodos curtos e compostos para eliminar a monotonia sintática.`);
-        blocos.push(``);
-      });
-    }
-
-    if (alertasPredatorios.length > 0) {
-      blocos.push(`## 🚨 PONTO CRÍTICO C7 — PERIÓDICOS PREDATÓRIOS E CLONADOS / BEALL / RETRACTION WATCH (${alertasPredatorios.length}):`);
-      alertasPredatorios.forEach((ap, idx) => {
-        blocos.push(`### [Revista Suspeita C7.${idx + 1}]`);
-        blocos.push(`- **Referência:** ${ap.chaveAutorAno} — ${ap.textoReferencia}`);
-        blocos.push(`- **Diagnóstico:** ${ap.mensagem}`);
-        blocos.push(`- **Motivo:** ${ap.motivo}`);
-        blocos.push(`- **Pergunta para a IA:** Substitua esta referência por um artigo científico idôneo indexado no Scopus / Web of Science / SciELO que comprove a mesma premissa.`);
-        blocos.push(``);
-      });
-    }
-
-    if (alertasAbnt6023.length > 0) {
-      blocos.push(`## 📋 PONTO CRÍTICO C8 — ELEMENTOS OBRIGATÓRIOS ABNT NBR 6023:2018 (${alertasAbnt6023.length}):`);
-      alertasAbnt6023.forEach((ab, idx) => {
-        blocos.push(`### [Inconformidade ABNT 6023 C8.${idx + 1}]`);
-        blocos.push(`- **Obra:** ${ab.chaveRef} — ${ab.textoReferencia}`);
-        blocos.push(`- **Diagnóstico:** ${ab.mensagem}`);
-        blocos.push(`- **Sugestão Normativa:** ${ab.sugestao}`);
-        blocos.push(`- **Pergunta para a IA:** Complete e formate esta referência rigorosamente conforme a ABNT NBR 6023:2018 com todos os elementos obrigatórios.`);
-        blocos.push(``);
-      });
-    }
-
-    if (alertasCorrupcaoGene.length > 0) {
-      blocos.push(`## 🧬 PONTO CRÍTICO C9 — CORRUPÇÃO DE NOMENCLATURA GENÔMICA POR PLANILHA / HGNC (${alertasCorrupcaoGene.length}):`);
-      alertasCorrupcaoGene.forEach((cg, idx) => {
-        blocos.push(`### [Corrupção Genômica C9.${idx + 1}]`);
-        blocos.push(`- **Local no Word:** Parágrafo §${cg.numParagrafo} · Linha ${cg.numLinha} (${cg.secao || 'Corpo'})`);
-        blocos.push(`- **Termo Detectado:** "${cg.termoDetectado}" -> Gene Original: "${cg.geneCorrompido}" (Nome Atual HGNC: "${cg.geneAtualHgnc}")`);
-        blocos.push(`- **Diagnóstico:** ${cg.mensagem}`);
-        blocos.push(`- **Texto no meu Word:** "${cg.fraseWord}"`);
-        blocos.push(`- **Pergunta para a IA:** Corrija o texto substituindo a data espúria pelo símbolo oficial do gene "${cg.geneAtualHgnc}".`);
-        blocos.push(``);
-      });
-    }
-
-    if (alertasFomento.length > 0) {
-      blocos.push(`## 🏛️ PONTO CRÍTICO C10 — FOMENTO, BOLSAS E AFILIAÇÕES / PORTARIA CAPES 206/2018 (${alertasFomento.length}):`);
-      alertasFomento.forEach((af, idx) => {
-        blocos.push(`### [Alerta de Fomento C10.${idx + 1}]`);
-        blocos.push(`- **Diagnóstico:** ${af.mensagem}`);
-        blocos.push(`- **Sugestão:** ${af.sugestao}`);
-        blocos.push(`- **Pergunta para a IA:** Redija o parágrafo canônico de agradecimentos e financiamento para atender a esta exigência regulamentar.`);
-        blocos.push(``);
-      });
-    }
-
-    if (alertasDesvioTematico.length > 0) {
-      blocos.push(`## ⚠️ PONTO CRÍTICO C11 — DESVIO TEMÁTICO DE CITAÇÃO / CLAIM-SUPPORT TF-IDF (${alertasDesvioTematico.length}):`);
-      alertasDesvioTematico.forEach((dt, idx) => {
-        blocos.push(`### [Desvio Temático C11.${idx + 1}]`);
-        blocos.push(`- **Citação:** ${dt.autorCitado}`);
-        blocos.push(`- **Local no Word:** Parágrafo §${dt.numParagrafo} · Linha ${dt.numLinha} (${dt.secao || 'Corpo'})`);
-        blocos.push(`- **Afirmação no Word:** "${dt.fraseWord}"`);
-        blocos.push(`- **Similaridade Vetorial (TF-IDF Cosseno):** ${dt.similaridadeCosseno}`);
-        blocos.push(`- **Diagnóstico:** ${dt.mensagem}`);
-        blocos.push(`- **Pergunta para a IA:** Esta citação realmente dá respaldo à afirmação feita? Se não, indique uma referência autêntica da área que fundamente essa mesma tese.`);
-        blocos.push(``);
-      });
-    }
-
-    if (resultado.citacoesSemReferencia.length > 0) {
-      blocos.push(`## ❌ PONTO D — AUTORES CITADOS NO CORPO DO TEXTO MAS AUSENTES NA LISTA FINAL DE REFERÊNCIAS (${resultado.citacoesSemReferencia.length}):`);
-      resultado.citacoesSemReferencia.forEach((c, idx) => {
-        blocos.push(
-          `- **D.${idx + 1}:** ${c.autor} (${c.ano}) — citado ${c.ocorrencias.length}x no texto (ex. §${c.ocorrencias[0]?.numParagrafo}, Linha ${c.ocorrencias[0]?.numLinha}: "${c.ocorrencias[0]?.fraseContexto}")`
+    // 2. FIDELIDADE SEMÂNTICA, LÓGICA (NLI / GUARDIÃO) & PLÁGIO
+    const itensFidelidade = [];
+    let qtdFidelidade = 0;
+    alertasAtribuicaoFalsaAtivos.forEach((a, idx) => {
+      qtdFidelidade++;
+      itensFidelidade.push(
+        `### [SEM-${idx + 1}] Divergência de Conteúdo — ${a.autorCitado || 'Fonte'} (${fmtLoc(a.numParagrafo, a.numLinha, a.secao)})`,
+        `- **Frase:** "${a.fraseWord}"`,
+        `- **Achado:** ${a.mensagem}`,
+        ...(a.outroArtigoSugerido ? [`- **Fonte compatível na biblioteca:** ${a.outroArtigoSugerido}`] : []),
+        `- **Ação:** Alinhar a afirmação ao conteúdo real da fonte ou corrigir a citação.`,
+        ``
+      );
+    });
+    alertasMetadadosAbntAtivos
+      .filter(
+        (ap) =>
+          ap.tipo === 'contradicao_logica_nli' ||
+          ap.tipo === 'citacao_multipla_intruso' ||
+          ap.tipo === 'afirmacao_parcialmente_sustentada' ||
+          String(ap.tipo || '').startsWith('guardiao_')
+      )
+      .forEach((ap, idx) => {
+        qtdFidelidade++;
+        itensFidelidade.push(
+          `### [LOG-${idx + 1}] ${String(ap.codigo || ap.tipo || 'MERITO').toUpperCase()} — ${ap.autorCitado || 'Fonte'} (${fmtLoc(ap.numParagrafo, ap.numLinha, ap.secao)})`,
+          ...(ap.fraseWord ? [`- **Frase:** "${ap.fraseWord}"`] : []),
+          `- **Achado:** ${ap.mensagem}`,
+          `- **Ação:** Revisar polaridade, valor numérico ou vínculo da obra citada.`,
+          ``
         );
       });
-      blocos.push(``);
-    }
+    alertasPlagioAtivos.forEach((p, idx) => {
+      qtdFidelidade++;
+      itensFidelidade.push(
+        `### [PLAG-${idx + 1}] Similaridade Literal sem Aspas — ${p.autorFonte || 'Fonte'} (${fmtLoc(p.numParagrafo, p.numLinha)})`,
+        `- **Texto no manuscrito:** "${p.fraseNoWord}"`,
+        `- **Trecho na fonte:** "${p.trechoOriginalArtigo}"`,
+        `- **Ação:** Reescrever em paráfrase autoral ou aplicar aspas + página (citação direta).`,
+        ``
+      );
+    });
+    alertasDesvioTematicoAtivos.forEach((dt, idx) => {
+      qtdFidelidade++;
+      itensFidelidade.push(
+        `### [TEMA-${idx + 1}] Desvio Temático — ${dt.autorCitado} (${fmtLoc(dt.numParagrafo, dt.numLinha, dt.secao)})`,
+        `- **Frase:** "${dt.fraseWord}"`,
+        `- **Achado:** ${dt.mensagem} (cosseno TF-IDF: ${dt.similaridadeCosseno})`,
+        `- **Ação:** Verificar aderência temática ou trocar pela fonte pertinente.`,
+        ``
+      );
+    });
+    alertasPdfAtivos.forEach((ap, idx) => {
+      qtdFidelidade++;
+      itensFidelidade.push(
+        `### [PDF-${idx + 1}] Divergência de Página/Trecho — ${ap.ref.primeiroSobrenome} (${ap.ref.ano}) (${fmtLoc(ap.ocorrencia?.numParagrafo, ap.ocorrencia?.numLinha)})`,
+        `- **Frase:** "${ap.ocorrencia?.fraseContexto || ''}"`,
+        ...(ap.trechoPdf ? [`- **Trecho no PDF (p. ${ap.paginaPdf}):** "${ap.trechoPdf}"`] : []),
+        `- **Achado:** ${ap.mensagem}`,
+        `- **Ação:** Ajustar número de página ou fidelidade do trecho citado.`,
+        ``
+      );
+    });
+    adicionarSecao(`2. FIDELIDADE SEMÂNTICA, LÓGICA & PLÁGIO (${qtdFidelidade})`, itensFidelidade);
 
-    if (refsNaoCitadasNoTexto.length > 0) {
-      blocos.push(`## ⚠ PONTO E — REFERÊNCIAS LISTADAS AO FINAL MAS NUNCA CITADAS NO CORPO DO TEXTO (${refsNaoCitadasNoTexto.length}):`);
-      refsNaoCitadasNoTexto.forEach((r, idx) => {
-        blocos.push(`- **E.${idx + 1}:** ${r.textoOriginal}`);
+    // 3. CONSISTÊNCIA INTERNA, ESTATÍSTICA & METODOLOGIA
+    const itensConsistencia = [];
+    let qtdConsistencia = 0;
+    alertasEstatisticosAtivos.forEach((st, idx) => {
+      qtdConsistencia++;
+      itensConsistencia.push(
+        `### [EST-${idx + 1}] StatCheck / Matemática (${fmtLoc(st.numParagrafo, st.numLinha, st.secao)})`,
+        `- **Teste reportado:** ${st.textoBruto} (p relatado = ${st.pRelatado} vs. recalculado = ${st.pRecalculado})`,
+        `- **Achado:** ${st.mensagem}`,
+        `- **Ação:** Conferir estatística de teste, graus de liberdade e p-valor.`,
+        ``
+      );
+    });
+    alertasMetadadosAbntAtivos
+      .filter((ap) => String(ap.tipo || '').startsWith('intra_'))
+      .forEach((ap, idx) => {
+        qtdConsistencia++;
+        itensConsistencia.push(
+          `### [INTRA-${idx + 1}] ${ap.autorCitado || 'Consistência Interna'} (${fmtLoc(ap.numParagrafo, ap.numLinha, ap.secao)})`,
+          `- **Achado:** ${ap.mensagem}`,
+          ...(ap.fraseWord ? [`- **Trecho:** "${ap.fraseWord}"`] : []),
+          `- **Ação:** Reconciliar valores entre Resumo, Resultados e Tabelas ou definir a sigla na 1ª menção.`,
+          ``
+        );
       });
-      blocos.push(``);
-    }
+    alertasMetodologiaClinicaAtivos.forEach((mc, idx) => {
+      qtdConsistencia++;
+      itensConsistencia.push(
+        `### [MET-${idx + 1}] ${mc.tipo}`,
+        `- **Achado:** ${mc.mensagem}`,
+        `- **Ação:** Adequar a seção Métodos/Ética ao checklist editorial aplicável.`,
+        ``
+      );
+    });
+    alertasCorrupcaoGeneAtivos.forEach((cg, idx) => {
+      qtdConsistencia++;
+      itensConsistencia.push(
+        `### [GENE-${idx + 1}] Nomenclatura Genômica (${fmtLoc(cg.numParagrafo, cg.numLinha, cg.secao)})`,
+        `- **Detectado:** "${cg.termoDetectado}" → Símbolo HGNC: "${cg.geneAtualHgnc}"`,
+        `- **Achado:** ${cg.mensagem}`,
+        ``
+      );
+    });
+    alertasFomentoAtivos.forEach((af, idx) => {
+      qtdConsistencia++;
+      itensConsistencia.push(
+        `### [FOM-${idx + 1}] Fomento / Afiliação`,
+        `- **Achado:** ${af.mensagem}`,
+        ...(af.sugestao ? [`- **Sugestão:** ${af.sugestao}`] : []),
+        ``
+      );
+    });
+    alertasRedeAtivos.forEach((ar, idx) => {
+      qtdConsistencia++;
+      itensConsistencia.push(
+        `### [REDE-${idx + 1}] Concentração de Rede / COPE`,
+        `- **Achado:** ${ar.mensagem}`,
+        ``
+      );
+    });
+    adicionarSecao(`3. CONSISTÊNCIA INTERNA, ESTATÍSTICA & METODOLOGIA (${qtdConsistencia})`, itensConsistencia);
 
-    if (alertasPrecisao.length > 0) {
-      blocos.push(`## 📐 PONTO F — AJUSTES FINOS DE NORMA ABNT NBR 10520, ESCOPO METODOLÓGICO E SUBMISSÃO (${alertasPrecisao.length}):`);
-      alertasPrecisao.forEach((ap, idx) => {
-        blocos.push(`- **F.${idx + 1}:** ${ap.mensagem}`);
-        if (ap.fraseWord) blocos.push(`  Trecho no Word (§${ap.numParagrafo}, Linha ${ap.numLinha}): "${ap.fraseWord}"`);
-      });
-      blocos.push(``);
-    }
+    // 4. RASTREABILIDADE BIDIRECIONAL (TEXTO ↔ REFERÊNCIAS)
+    const itensRastreabilidade = [];
+    citacoesSemReferenciaAtivas.forEach((c, idx) => {
+      const oc0 = c.ocorrencias?.[0];
+      itensRastreabilidade.push(
+        `- **[ÓRFÃ-${idx + 1}]** \`${c.autor} (${c.ano})\` — citada ${c.ocorrencias?.length || 1}x (${fmtLoc(oc0?.numParagrafo, oc0?.numLinha)}) sem entrada nas Referências finais.${oc0?.fraseContexto ? ` Trecho: "${oc0.fraseContexto}"` : ''}`
+      );
+    });
+    refsNaoCitadasNoTextoAtivas.forEach((r, idx) => {
+      itensRastreabilidade.push(`- **[NÃO-CITADA-${idx + 1}]** ${r.textoOriginal}`);
+    });
+    adicionarSecao(`4. RASTREABILIDADE BIDIRECIONAL (TEXTO ↔ REFERÊNCIAS) (${citacoesSemReferenciaAtivas.length + refsNaoCitadasNoTextoAtivas.length})`, itensRastreabilidade);
 
-    if (alertasPdf.length > 0) {
-      blocos.push(`## 📄 PONTO G — DIVERGÊNCIAS DE CONTEÚDO E PÁGINAS NO PDF (${alertasPdf.length}):`);
-      alertasPdf.forEach((ap, idx) => {
-        blocos.push(`### [Divergência de PDF G.${idx + 1}]`);
-        blocos.push(`- **Diagnóstico:** ${ap.mensagem}`);
-        blocos.push(`- **Local no Word:** Parágrafo §${ap.ocorrencia.numParagrafo} · Linha ${ap.ocorrencia.numLinha}`);
-        blocos.push(`- **Frase escrita no Word:** "${ap.ocorrencia.fraseContexto}"`);
-        if (ap.trechoPdf) blocos.push(`- **Trecho no PDF (pág. ${ap.paginaPdf}):** "${ap.trechoPdf}"`);
-        blocos.push(`- **Obra:** ${ap.ref.primeiroSobrenome} (${ap.ref.ano})`);
-        blocos.push(`- **Pergunta para a IA:** Como devo ajustar a afirmação ou o número de página para ficar 100% fiel ao PDF?`);
-        blocos.push(``);
+    // 5. NORMAS, ILUSTRAÇÕES & REDAÇÃO
+    const itensNormas = [];
+    alertasAbnt6023Ativos.forEach((ab, idx) => {
+      itensNormas.push(
+        `- **[ABNT-${idx + 1}]** \`${ab.chaveRef}\` — ${ab.mensagem}${ab.sugestao ? ` _(${ab.sugestao})_` : ''}`
+      );
+    });
+    alertasFigurasTabelasAtivos.forEach((ft, idx) => {
+      itensNormas.push(
+        `- **[FIG/TAB-${idx + 1}]** (${fmtLoc(ft.numParagrafo, ft.numLinha, ft.secao)}) ${ft.mensagem}`
+      );
+    });
+    alertasMetadadosAbntAtivos
+      .filter(
+        (ap) =>
+          ap.tipo !== 'contradicao_logica_nli' &&
+          ap.tipo !== 'citacao_multipla_intruso' &&
+          ap.tipo !== 'afirmacao_parcialmente_sustentada' &&
+          !String(ap.tipo || '').startsWith('guardiao_') &&
+          !String(ap.tipo || '').startsWith('intra_')
+      )
+      .forEach((ap, idx) => {
+        itensNormas.push(
+          `- **[NORMA-${idx + 1}]** (${fmtLoc(ap.numParagrafo, ap.numLinha, ap.secao)}) ${ap.mensagem}`
+        );
       });
-    }
+    alertasMetodologicosAtivos.forEach((am, idx) => {
+      itensNormas.push(`- **[ESTRUT-${idx + 1}]** (${fmtLoc(am.numParagrafo, am.numLinha)}) ${am.mensagem}`);
+    });
+    alertasFrasesTorturadasAtivos.forEach((ft, idx) => {
+      itensNormas.push(
+        `- **[TORT-${idx + 1}]** (${fmtLoc(ft.numParagrafo, ft.numLinha)}) "${ft.termoDetectado}" → "${ft.termoCanonica}". ${ft.mensagem}`
+      );
+    });
+    alertasEstilometricosAtivos.forEach((es, idx) => {
+      itensNormas.push(`- **[ESTILO-${idx + 1}]** (${fmtLoc(es.numParagrafo, es.numLinha)}) ${es.mensagem}`);
+    });
+    alertasEstiloIaAtivos.forEach((ia, idx) => {
+      itensNormas.push(`- **[IA-TXT-${idx + 1}]** (${fmtLoc(ia.numParagrafo, ia.numLinha)}) ${ia.mensagem}`);
+    });
+    adicionarSecao(`5. NORMAS BIBLIOGRÁFICAS, ILUSTRAÇÕES & REDAÇÃO (${itensNormas.length})`, itensNormas);
 
     if (resultado.errosParsingConflito?.length > 0) {
-      blocos.push(`## ⚠️ ERROS DE PARSING E CONFLITOS D-E NEUTRALIZADOS (Regra R5 — ${resultado.errosParsingConflito.length}):`);
-      resultado.errosParsingConflito.forEach((ep, idx) => {
-        blocos.push(`- **R5.${idx + 1}:** ${ep.mensagem}`);
-        blocos.push(`  Entrada de Referência: ${ep.referenciaLista}`);
-      });
-      blocos.push(``);
-    }
-
-    if (resultado.resumoVerificacaoConteudo) {
-      const rvc = resultado.resumoVerificacaoConteudo;
       blocos.push(
-        `## 📋 STATUS DE VERIFICAÇÃO DE CONTEÚDO DE TODAS AS OBRAS CITADAS (Regra R6 — ${rvc.totalObrasVerificadas}/${rvc.totalObrasCitadas} verificadas):`
+        `---`,
+        `## NOTAS DE PARSING NEUTRALIZADAS (${resultado.errosParsingConflito.length})`,
+        ...resultado.errosParsingConflito.map((ep, idx) => `- **[R5-${idx + 1}]** ${ep.mensagem}`),
+        ``
       );
-      blocos.push(`• Total de Obras Citadas no Texto: ${rvc.totalObrasCitadas}`);
-      blocos.push(`• Obras com Conteúdo Auditado (Resumo/PDF/Repositório/Norma): ${rvc.totalObrasVerificadas}`);
-      blocos.push(`• Obras Não Verificadas: ${rvc.totalObrasNaoVerificadas}`);
-      if (rvc.obras?.length) {
-        rvc.obras.forEach((ob, idx) => {
-          blocos.push(
-            `   ${idx + 1}. **${ob.autor} (${ob.ano})** [${ob.status}]: ${ob.motivo} (${ob.ocorrencias} passagem(ns) citada(s))`
-          );
-        });
-      }
-      blocos.push(``);
     }
 
     blocos.push(`## 📥 PARTE 2 — ROL DE OBRAS EM CONFORMIDADE & ADICIONADAS À BIBLIOTECA (${obrasConformes.length} obras · ${totalConformesComPdf} com PDF baixado):`);
@@ -2281,682 +2488,303 @@ export default function ReverseAuditView({
     >
       <div className="topo-buscadores">
         <div>
-          <h2>{tr('Auditoria Forense de Manuscrito (.DOCX/PDF): Anti-IA, Anti-Plágio, Citações Falsas & Páginas', 'Forensic Manuscript Audit (.DOCX/PDF): Anti-Hallucination, Plagiarism & Claim Verification')}</h2>
+          <h2>{tr('Auditoria de Manuscrito', 'Manuscript Audit')}</h2>
           <p className="subtitulo">
-            {tr('Verifica:', 'Verifies:')} <strong>1)</strong> {tr('Se alguma fonte foi inventada pela IA (referência fantasma / DOI falso);', 'Phantom / AI-fabricated citations and hijacked DOIs;')}{' '}
-            <strong>2)</strong> {tr('Se uma citação não existe no artigo ou foi atribuída ao artigo errado;', 'Claim-to-source semantic support against full-text PDFs;')}{' '}
-            <strong>3)</strong> {tr('Se há plágio / cópia sem aspas;', 'Unquoted literal/mosaic overlap;')} <strong>4)</strong> {tr('Em qual Parágrafo, Linha do Word e Página do PDF está cada citação.', 'Exact Paragraph, Line, and PDF Page provenance.')}
+            {tr(
+              'Confira citações, integridade de DOIs, referências faltantes e aderência semântica aos PDFs.',
+              'Check citations, DOI integrity, missing references, and semantic adherence to source PDFs.'
+            )}
           </p>
         </div>
         <div className="acoes-topo-buscadores" style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
           <button className="btn secundario" onClick={escolherArquivo} disabled={rodando}>
-            <Icone nome="upload" tam={14} /> {tr('Carregar Arquivo (.DOCX, .PDF, .TXT)', 'Load File (.DOCX, .PDF, .TXT)')}
+            <Icone nome="upload" tam={14} /> {tr('Carregar Arquivo (.docx, .pdf, .txt)', 'Load File (.docx, .pdf, .txt)')}
           </button>
           {resultado && (
             <>
               <button
                 className="btn primario"
                 onClick={copiarPromptCompletoIa}
-                title={tr('Copia um relatório estruturado em formato de Prompt para você colar no ChatGPT, Claude ou Gemini e questionar o que está certo ou errado', 'Copy structured audit prompt for external AI review')}
+                title={tr('Copia o relatório estruturado para revisão externa', 'Copy structured audit report')}
               >
-                🤖 {tr('Copiar Relatório p/ Colar na IA', 'Copy Audit Prompt')}
+                {tr('Copiar Relatório', 'Copy Report')}
               </button>
               <button
                 className="btn secundario"
                 onClick={() => setMostrarPainelPromptIa((v) => !v)}
-                title={tr('Visualizar e personalizar o relatório antes de copiar para a IA', 'Preview and customize audit report before copying')}
+                title={tr('Visualizar e personalizar o relatório antes de copiar', 'Preview and edit report before copying')}
               >
-                {mostrarPainelPromptIa ? tr('Ocultar Prévia do Relatório IA', 'Hide Prompt Preview') : tr('👁️ Ver / Editar Relatório p/ IA', '👁️ Edit Audit Prompt')}
+                {mostrarPainelPromptIa ? tr('Ocultar Relatório', 'Hide Report') : tr('Editar Relatório', 'Edit Report')}
               </button>
             </>
           )}
         </div>
       </div>
 
-      {/* BARRA DE SESSÃO FIXADA: Garante que a auditoria nunca suma ao consultar PDFs ou mudar de aba! */}
+      {/* Sessão ativa com ações rápidas */}
       {resultado && (
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: 10,
-            padding: '10px 14px',
-            marginBottom: 12,
-            borderRadius: 9,
-            background: 'linear-gradient(90deg, rgba(37, 99, 235, 0.11) 0%, rgba(16, 185, 129, 0.10) 100%)',
-            border: '1.5px solid rgba(37, 99, 235, 0.35)',
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
-            <span
-              style={{
-                background: '#1d4ed8',
-                color: '#fff',
-                padding: '3px 10px',
-                borderRadius: 999,
-                fontSize: 11.8,
-                fontWeight: 800,
-              }}
-            >
-              📌 {tr('AUDITORIA FIXADA NA TELA', 'PINNED AUDIT SESSION')}
-            </span>
-            <strong style={{ fontSize: 13 }}>
-              {nomeArquivo || tr('Manuscrito auditado', 'Audited manuscript')} {dataHora ? `· ${tr('Concluída em', 'Completed at')} ${dataHora}` : ''}
-            </strong>
-            <span style={{ fontSize: 12, color: 'var(--texto-suave)' }}>
-              {tr('(Permanece salva mesmo ao abrir PDFs ou trocar de aba!)', '(Persists while inspecting PDFs or switching tabs)')}
-            </span>
+        <div className="audit-session-bar">
+          <div className="audit-session-info">
+            <span className="audit-session-dot" />
+            <strong>{nomeArquivo || tr('Manuscrito auditado', 'Audited manuscript')}</strong>
+            {dataHora && <span className="audit-session-time">{dataHora}</span>}
           </div>
 
           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
             <button
-              className="btn pequeno secundario"
+              className="btn pequeno fantasma"
               onClick={() => setMostrarCaixaTexto(!mostrarCaixaTexto)}
             >
-              {mostrarCaixaTexto ? tr('🔼 Recolher Caixa de Texto', '🔼 Collapse Input') : tr('📝 Ver / Editar Texto', '📝 View / Edit Text')}
+              {mostrarCaixaTexto ? tr('Recolher Opções', 'Hide Setup') : tr('Configurar / Texto', 'Setup / Input')}
             </button>
             <button
               className="btn pequeno primario"
               onClick={executarAuditoria}
               disabled={rodando}
-              title={tr('Roda novamente a auditoria sobre o texto atualizado', 'Re-run audit on current text')}
             >
-              🔄 {tr('Refazer Auditoria', 'Re-run Audit')}
+              {tr('Refazer', 'Re-run')}
             </button>
             <button
               className="btn pequeno secundario"
               onClick={exportarWordComComentarios}
               disabled={rodando}
-              title={tr('Salva uma cópia do arquivo .DOCX com todas as inconformidades ativas inseridas como balões de comentário nativos do Word', 'Export .DOCX copy with native Word review comments')}
             >
-              💬 {tr('Anotar no Word (.DOCX)', 'Comment in .DOCX')}
+              {tr('Anotar .DOCX', 'Comment .DOCX')}
             </button>
             <button
               className="btn pequeno secundario"
               onClick={emitirLaudoPericial}
               disabled={rodando}
-              title={tr('Gera Dossiê / Laudo Pericial Técnico formatado para impressão ou salvar em PDF', 'Generate printable Forensic Audit Report (HTML/PDF)')}
             >
-              ⚖️ {tr('Laudo Pericial (PDF)', 'Forensic Report (PDF)')}
+              {tr('Laudo (PDF)', 'Report (PDF)')}
             </button>
             {caminhoArquivo && (
               <button
                 className="btn pequeno fantasma"
                 onClick={() => abrirNoWordAtalho('')}
                 disabled={rodando}
-                title={tr('Abrir arquivo original no Microsoft Word', 'Open original file in Word')}
               >
-                📂 {tr('Abrir Word', 'Open Word')}
+                {tr('Abrir no Word', 'Open in Word')}
               </button>
             )}
             <button
-              className="btn pequeno secundario"
-              onClick={escolherArquivo}
-              disabled={rodando}
-              title={tr('Escolher outro arquivo .DOCX ou .PDF para uma nova auditoria', 'Choose another .DOCX or .PDF file')}
-            >
-              📂 {tr('Carregar Novo Arquivo', 'Load Another File')}
-            </button>
-            <button
-              className="btn pequeno perigo"
+              className="btn pequeno fantasma"
               onClick={limparAuditoriaAtual}
               disabled={rodando}
-              title={tr('Limpa a auditoria atual para começar uma nova do zero', 'Clear current audit session')}
             >
-              🗑️ {tr('Limpar Auditoria', 'Clear Audit')}
+              {tr('Limpar', 'Clear')}
             </button>
           </div>
         </div>
       )}
 
-      {/* PAINEL EXPANSÍVEL DO RELATÓRIO / PROMPT PARA COLAR NA IA */}
-      {resultado && mostrarPainelPromptIa && (
-        <div
-          className="bloco-cofre"
-          style={{
-            borderLeft: '4px solid #2563eb',
-            background: 'rgba(37, 99, 235, 0.04)',
-            marginBottom: 14,
-          }}
-        >
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8, marginBottom: 8, flexWrap: 'wrap' }}>
-            <div>
-              <h4 style={{ margin: 0, color: '#1d4ed8' }}>
-                🤖 Relatório Forense Estruturado para Colar na IA (ChatGPT, Claude, Gemini, Perplexity)
-              </h4>
-              <p className="dica-texto" style={{ margin: '2px 0 0 0' }}>
-                Este relatório já inclui todas as citações, parágrafos (§), linhas, diagnósticos de IA/plágio e perguntas para a IA te responder o que está certo ou errado e como corrigir.
-              </p>
-            </div>
-            <div style={{ display: 'flex', gap: 6 }}>
-              <button className="btn pequeno primario" onClick={copiarPromptCompletoIa}>
-                <Icone nome="copy" tam={13} /> Copiar Tudo p/ Colar na IA
-              </button>
-              <button className="btn pequeno fantasma" onClick={() => setMostrarPainelPromptIa(false)}>
-                Fechar ×
-              </button>
-            </div>
-          </div>
+      {/* PAINEL EXPANSÍVEL DO RELATÓRIO ESTRUTURADO */}
+      <AuditReportViewer
+        visivel={Boolean(resultado && mostrarPainelPromptIa)}
+        instrucaoExtraIa={instrucaoExtraIa}
+        setInstrucaoExtraIa={setInstrucaoExtraIa}
+        textoRelatorio={resultado && mostrarPainelPromptIa ? gerarTextoPromptParaIa() : ''}
+        onCopiarTudo={copiarPromptCompletoIa}
+        onFechar={() => setMostrarPainelPromptIa(false)}
+      />
 
-          <label className="campo" style={{ marginBottom: 8 }}>
-            <span className="campo-rotulo">Sua pergunta/comando principal para a IA no topo do relatório (editável):</span>
-            <input
-              value={instrucaoExtraIa}
-              onChange={(e) => setInstrucaoExtraIa(e.target.value)}
-            />
-          </label>
+      <AuditUploadPanel
+        visivel={!resultado || mostrarCaixaTexto}
+        pastaDestino={pastaDestino}
+        escolherPastaDestino={escolherPastaDestino}
+        resultado={resultado}
+        baixarTodosPdfsParaPasta={baixarTodosPdfsParaPasta}
+        baixandoLotePdfs={baixandoLotePdfs}
+        nomeArquivo={nomeArquivo}
+        textoManuscrito={textoManuscrito}
+        setTextoManuscrito={setTextoManuscrito}
+        moduloAuditoria={moduloAuditoria}
+        setModuloAuditoria={setModuloAuditoria}
+        buscarEBaixar={buscarEBaixar}
+        setBuscarEBaixar={setBuscarEBaixar}
+        somenteLeitura={somenteLeitura}
+        setSomenteLeitura={setSomenteLeitura}
+        executarAuditoria={executarAuditoria}
+        rodando={rodando}
+      />
 
-          <textarea
-            rows={12}
-            readOnly
-            value={gerarTextoPromptParaIa()}
-            style={{
-              width: '100%',
-              fontFamily: 'monospace',
-              fontSize: 12,
-              lineHeight: 1.5,
-              padding: 10,
-              borderRadius: 6,
-              border: '1px solid var(--borda)',
-              background: 'var(--painel)',
-              color: 'var(--texto)',
-            }}
-          />
-        </div>
-      )}
-
-      {(!resultado || mostrarCaixaTexto) && (
-        <div className="bloco-proxy">
-          {/* Seletor de Pasta de Destino para PDFs e Obras */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              flexWrap: 'wrap',
-              gap: 10,
-              padding: '10px 14px',
-              marginBottom: 12,
-              background: 'var(--painel)',
-              borderRadius: 8,
-              border: '1px solid var(--borda)',
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, flex: 1, minWidth: 260 }}>
-              <span style={{ fontSize: 20 }}>📁</span>
-              <div>
-                <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--mutado)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                  Pasta de Destino dos Artigos &amp; PDFs (OneDrive ou PC)
-                </div>
-                <div style={{ fontSize: 12.5, fontWeight: 600, color: 'var(--texto)', wordBreak: 'break-all' }}>
-                  {pastaDestino || 'Pasta padrão do projeto (biblioteca/pdfs)'}
-                </div>
-              </div>
-            </div>
-            <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-              <button
-                type="button"
-                className="btn secundario pequeno"
-                onClick={escolherPastaDestino}
-                title="Escolha uma pasta no seu computador ou no OneDrive para salvar os PDFs e bibliografias"
-              >
-                📂 Escolher Pasta no OneDrive / PC…
-              </button>
-              {resultado?.refsMapeadas?.length > 0 && (
-                <button
-                  type="button"
-                  className="btn primario pequeno"
-                  onClick={baixarTodosPdfsParaPasta}
-                  disabled={baixandoLotePdfs}
-                  title="Baixa ou copia todos os PDFs encontrados diretamente para a pasta selecionada"
-                >
-                  ⬇ {baixandoLotePdfs ? 'Baixando…' : 'Salvar PDFs na Pasta'}
-                </button>
-              )}
-            </div>
-          </div>
-
-          <label className="campo">
-            <span className="campo-rotulo">
-              {nomeArquivo
-                ? `Texto carregado de: ${nomeArquivo} (você também pode editar ou colar outro texto abaixo)`
-                : 'Escolha um arquivo (.DOCX, .PDF, .TXT) acima ou cole diretamente aqui o texto do seu artigo/capítulo (incluindo a seção final de Referências):'}
-            </span>
-            <textarea
-              rows={6}
-              value={textoManuscrito}
-              onChange={(e) => setTextoManuscrito(e.target.value)}
-              placeholder="Cole o texto com as citações (ex.: Segundo Silva (2020, p. 4)...) e a lista de REFERÊNCIAS ao final, ou clique em 'Carregar Arquivo (.DOCX, .PDF, .TXT)' acima…"
-            />
-          </label>
-
-          {/* Seletor Modular de Tipo de Problema */}
-          <div style={{ marginTop: 10, marginBottom: 8, padding: '10px 14px', background: 'var(--fundo)', borderRadius: 8, border: '1px solid var(--borda)' }}>
-            <span style={{ fontSize: 11.8, fontWeight: 700, color: 'var(--texto-suave)', textTransform: 'uppercase', letterSpacing: 0.5, display: 'block', marginBottom: 6 }}>
-              🔍 {tr('Modo de Execução da Auditoria Forense:', 'Forensic Audit Execution Mode:')}
-            </span>
-            <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-              {[
-                { id: 'todos', label: tr('🎯 Todos os Níveis (Completa)', '🎯 All Tiers (Full Audit)'), desc: tr('Auditoria forense em todas as 6 frentes: chamadas, autenticidade em 8 bases, páginas, plágio, semântica e redação IA', 'Full 6-tier audit: calls vs refs, 8-database authenticity, pages, plagiarism, claim semantics, AI writing') },
-                { id: 'chamadas', label: tr('1️⃣ Citações x Referências (< 1s)', '1️⃣ Citations vs. Refs (< 1s)'), desc: tr('Nível 1: Cruza citações no corpo do texto x lista final (órfãs e sobrando) sem baixar PDFs', 'Tier 1: Cross-check body citations vs. reference list') },
-                { id: 'autenticidade', label: tr('2️⃣ Autenticidade em 8 Bases & Anti-IA', '2️⃣ Authenticity & Anti-Hallucination'), desc: tr('Nível 2: Autentica referências e DOIs (Crossref, PubMed, OpenAlex, Handles) contra alucinação de IA', 'Tier 2: Verify DOIs/PMIDs against Crossref, PubMed, OpenAlex') },
-                { id: 'paginas', label: tr('3️⃣ Citações Diretas & Páginas', '3️⃣ Direct Quotes & PDF Pages'), desc: tr('Nível 3: Confere páginas indicadas (ex. p. 14) e frases entre aspas contra os PDFs originais', 'Tier 3: Verify quoted text and page numbers against PDFs') },
-                { id: 'plagio', label: tr('4️⃣ Detector de Plágio (Google Diff)', '4️⃣ Plagiarism Check (Diff/Winnowing)'), desc: tr('Nível 4: Google Diff Match Patch para detectar blocos idênticos de 7+ palavras nos PDFs', 'Tier 4: Literal & mosaic overlap screening against PDFs') },
-                { id: 'semantica', label: tr('5️⃣ Fidelidade Semântica (Amazon Science)', '5️⃣ Semantic Claim Support'), desc: tr('Nível 5: TF-IDF e Similaridade de Cosseno para avaliar se a ideia atribuída existe no artigo citado', 'Tier 5: Bilingual TF-IDF/BM25/ONNX claim support audit') },
-                { id: 'estilo_ia', label: tr('6️⃣ Marcadores de Redação IA (Open-Detector)', '6️⃣ AI Writing & Stylometry'), desc: tr('Nível 6: Open-Detector para flagrar parágrafos com jargões e cadência típica de LLMs', 'Tier 6: Syntactic monotony and AI-phrase patterns') },
-              ].map((m) => (
-                <button
-                  key={m.id}
-                  type="button"
-                  className={`btn pequeno ${moduloAuditoria === m.id ? 'primario' : 'secundario'}`}
-                  onClick={() => setModuloAuditoria(m.id)}
-                  title={m.desc}
-                >
-                  {m.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="linha-opcoes-rapido">
-            <label className="campo-inline" style={{ cursor: 'pointer' }}>
-              <input
-                type="checkbox"
-                checked={buscarEBaixar}
-                onChange={(e) => setBuscarEBaixar(e.target.checked)}
-                disabled={moduloAuditoria === 'chamadas' || moduloAuditoria === 'estilo_ia'}
-              />
-              <span style={{ opacity: moduloAuditoria === 'chamadas' || moduloAuditoria === 'estilo_ia' ? 0.6 : 1 }}>
-                {tr('Buscar automaticamente nas bases (Crossref/OpenAlex) os artigos que ainda não estão na biblioteca e baixar os PDFs gratuitos', 'Automatically search online databases (Crossref/OpenAlex) for missing works and fetch Open Access PDFs')}
-              </span>
-            </label>
-            <button className="btn primario" onClick={() => executarAuditoria(moduloAuditoria)} disabled={rodando}>
-              <Icone nome="search" tam={15} />{' '}
-              {rodando
-                ? tr('Auditando em tempo real…', 'Running forensic audit…')
-                : moduloAuditoria === 'chamadas'
-                ? tr('⚡ Executar Nível 1: Citações x Referências (< 1s)', '⚡ Run Tier 1: Citations vs. Refs (< 1s)')
-                : moduloAuditoria === 'autenticidade'
-                ? tr('🛡️ Executar Nível 2: Autenticidade em 8 Bases & Anti-IA', '🛡️ Run Tier 2: Source Authenticity & Anti-IA')
-                : moduloAuditoria === 'paginas'
-                ? tr('📄 Executar Nível 3: Citações Diretas & Páginas', '📄 Run Tier 3: Direct Quotes & Pages')
-                : moduloAuditoria === 'plagio'
-                ? tr('🔍 Executar Nível 4: Detector de Plágio (Google Diff)', '🔍 Run Tier 4: Plagiarism Check')
-                : moduloAuditoria === 'semantica'
-                ? tr('🧠 Executar Nível 5: Fidelidade Semântica (Amazon Science)', '🧠 Run Tier 5: Semantic Claim Verification')
-                : moduloAuditoria === 'estilo_ia'
-                ? tr('🤖 Executar Nível 6: Redação IA (Open-Detector)', '🤖 Run Tier 6: AI Writing & Stylometry')
-                : tr('Executar Auditoria Reversa Completa (6 Níveis)', 'Run Full Reverse Audit (6 Tiers)')}
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* Barra de Progresso Real-time em Alto Destaque da Auditoria Forense */}
-      {rodando && (
-        <div className="card-progresso-auditoria" role="progressbar" aria-valuenow={progresso.porcentagem || 5} aria-valuemin="0" aria-valuemax="100">
-          <div className="progresso-cabecalho">
-            <div className="progresso-fase-titulo">
-              <span className="progresso-pulse-ativo" />
-              <span>
-                {progresso.mensagem || etapa || tr('Executando auditoria forense do manuscrito…', 'Running forensic manuscript audit…')}
-              </span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              {progresso.total > 0 && (
-                <span
-                  className="tag-mini"
-                  style={{
-                    fontSize: 12,
-                    fontWeight: 700,
-                    background: 'rgba(59, 130, 246, 0.15)',
-                    color: 'var(--primaria)',
-                    border: '1px solid rgba(59, 130, 246, 0.3)',
-                    padding: '3px 8px',
-                    borderRadius: 6,
-                  }}
-                >
-                  {progresso.atual} / {progresso.total} {tr('referências', 'references')}
-                </span>
-              )}
-              <span className="progresso-badge-porcentagem">
-                {progresso.porcentagem || 5}%
-              </span>
-            </div>
-          </div>
-
-          <div className="progresso-trilho">
-            <div
-              className="progresso-preenchimento"
-              style={{ width: `${Math.max(5, Math.min(100, progresso.porcentagem || 5))}%` }}
-            />
-          </div>
-
-          <div className="progresso-rodape">
-            <div className="progresso-detalhe-item" title={progresso.detalhe}>
-              {progresso.detalhe ? (
-                <>📖 <span>{progresso.detalhe}</span></>
-              ) : (
-                <span>⚡ {tr('Processando ativamente na sua máquina (sem travar)…', 'Processing locally on your machine…')}</span>
-              )}
-            </div>
-            <div style={{ fontStyle: 'italic', opacity: 0.85, fontSize: 11.5 }}>
-              {tr('Auditoria em tempo real · Por favor, aguarde', 'Live forensic verification · Please wait')}
-            </div>
-          </div>
-        </div>
-      )}
+      <AuditProgressBar rodando={rodando} progresso={progresso} etapa={etapa} onCancelar={cancelarAuditoriaAtual} />
 
       {resultado && (
         <>
-          {/* Painel Compacto, Intuitivo e Responsivo de Filtros por Métrica */}
-          <div className="grade-metricas-auditoria">
-            {/* 1. Total de Citações */}
-            <div
-              className={`card-metrica-filtro ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'todas' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo('todas'); }}
-              title={tr('Clique para ver todas as citações e inconformidades', 'View all citations and findings')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Total de Citações', 'Total Citations')}</span>
-                <span>📚</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: 'var(--primaria, #2563eb)' }}>
-                {resultado.totalCitacoesOcorrencias}
-              </div>
-              <div className="sub-card-filtro">{resultado.totalAutoresCitadosUnicos} {tr('obras citadas', 'unique works')}</div>
-            </div>
+          <AuditMetricsGrid
+            resultado={resultado}
+            abaVisualizacao={abaVisualizacao}
+            setAbaVisualizacao={setAbaVisualizacao}
+            grupoIntercorrenciaAtivo={grupoIntercorrenciaAtivo}
+            setGrupoIntercorrenciaAtivo={setGrupoIntercorrenciaAtivo}
+            refsSuspeitasIaAtivas={refsSuspeitasIaAtivas}
+            alertasAtribuicaoFalsaAtivos={alertasAtribuicaoFalsaAtivos}
+            alertasPlagioAtivos={alertasPlagioAtivos}
+            alertasEstatisticosAtivos={alertasEstatisticosAtivos}
+            alertasRedeAtivos={alertasRedeAtivos}
+            alertasMetodologiaClinicaAtivos={alertasMetodologiaClinicaAtivos}
+            alertasFrasesTorturadasAtivos={alertasFrasesTorturadasAtivos}
+            alertasEstilometricosAtivos={alertasEstilometricosAtivos}
+            alertasPredatoriosAtivos={alertasPredatoriosAtivos}
+            alertasAbnt6023Ativos={alertasAbnt6023Ativos}
+            alertasCorrupcaoGeneAtivos={alertasCorrupcaoGeneAtivos}
+            alertasFomentoAtivos={alertasFomentoAtivos}
+            alertasDesvioTematicoAtivos={alertasDesvioTematicoAtivos}
+            citacoesSemReferenciaAtivas={citacoesSemReferenciaAtivas}
+            refsNaoCitadasNoTextoAtivas={refsNaoCitadasNoTextoAtivas}
+            alertasFigurasTabelasAtivos={alertasFigurasTabelasAtivos}
+            totalInconformidades={totalInconformidades}
+            totalConformesComPdf={totalConformesComPdf}
+            obrasConformes={obrasConformes}
+          />
 
-            {/* 2. Obras Fantasmas / IA */}
-            <div
-              className={`card-metrica-filtro ${refsSuspeitasIaAtivas.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'ia' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'ia' ? 'todas' : 'ia'); }}
-              title={tr('Clique para filtrar obras inexistentes ou com suspeita de alucinação por IA', 'Filter unverified or suspected phantom sources')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Obras Fantasmas (IA)', 'Unverified / Phantom')}</span>
-                <span>🤖</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: refsSuspeitasIaAtivas.length ? '#dc2626' : '#16a34a' }}>
-                {refsSuspeitasIaAtivas.length}
-              </div>
-              <div className="sub-card-filtro">{refsSuspeitasIaAtivas.length ? tr('DOI falso / inexistente', 'Unverified / invalid DOI') : tr('Todas autênticas', 'All authenticated')}</div>
+          {resultado.raioXBibliometrico?.totalReferencias > 0 && (
+            <div className="raiox-bibliometrico-strip">
+              <span className="raiox-titulo">
+                📊 {tr('Raio-X Bibliométrico', 'Bibliometric X-Ray')}
+              </span>
+              <span className="raiox-chip">
+                {tr('Últimos 5 anos', 'Last 5y')}:{' '}
+                <strong>{resultado.raioXBibliometrico.percentualRecentes5Anos}%</strong> (
+                {resultado.raioXBibliometrico.recentes5Anos}/{resultado.raioXBibliometrico.totalReferencias})
+              </span>
+              {resultado.raioXBibliometrico.autocitacoes > 0 && (
+                <span className="raiox-chip">
+                  {tr('Autocitação', 'Self-citation')}:{' '}
+                  <strong>{resultado.raioXBibliometrico.taxaAutocitacaoPct}%</strong>
+                </span>
+              )}
+              {resultado.raioXBibliometrico.retratacoes > 0 && (
+                <span className="raiox-chip raiox-chip-alerta">
+                  ⚠ {tr('Retratações', 'Retractions')}:{' '}
+                  <strong>{resultado.raioXBibliometrico.retratacoes}</strong>
+                </span>
+              )}
+              {(resultado.raioXBibliometrico.distribuicaoEvidencia || [])
+                .filter((ev) => ev.quantidade > 0)
+                .slice(0, 4)
+                .map((ev) => (
+                  <span key={ev.nivel} className="raiox-chip" title={ev.rotulo}>
+                    N{ev.nivel} ({ev.rotulo.split('/')[0].trim()}): <strong>{ev.quantidade}</strong>
+                  </span>
+                ))}
+              {resultado.resumoIntraDocumento?.tabelasDetectadas > 0 && (
+                <span className="raiox-chip">
+                  {tr('Tabelas XML', 'XML Tables')}:{' '}
+                  <strong>{resultado.resumoIntraDocumento.tabelasDetectadas}</strong>
+                </span>
+              )}
+              {resultado.totalAlertasSuprimidosEditorial > 0 && (
+                <span
+                  className="raiox-chip"
+                  title={tr('Alertas suprimidos automaticamente via auditoria_decisoes.json (SHA-256)', 'Alerts automatically suppressed via auditoria_decisoes.json (SHA-256)')}
+                >
+                  🛡️ {tr('Alertas suprimidos por decisão editorial', 'Alerts suppressed by editorial decision')}:{' '}
+                  <strong>{resultado.totalAlertasSuprimidosEditorial}</strong>
+                </span>
+              )}
             </div>
+          )}
 
-            {/* 3. Atribuição Trocada */}
-            <div
-              className={`card-metrica-filtro ${alertasAtribuicaoFalsaAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'atribuicao' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'atribuicao' ? 'todas' : 'atribuicao'); }}
-              title={tr('Clique para filtrar citações cujo conteúdo não consta no artigo citado', 'Filter misattributed claims')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Atribuição Trocada', 'Misattribution')}</span>
-                <span>🚨</span>
+          {/* PRE-FLIGHT EDITORIAL (PERFIL DE PERIÓDICO ALVO) */}
+          {preflightEditorial && (
+            <div className="preflight-editorial-strip">
+              <div className="preflight-topo">
+                <span className="raiox-titulo">
+                  🛫 {tr('Pre-Flight Editorial', 'Editorial Pre-Flight')}
+                </span>
+                <select
+                  value={perfilEditorialId}
+                  onChange={(e) => setPerfilEditorialId(e.target.value)}
+                  className="preflight-select"
+                >
+                  <option value="saude_coletiva_br">Saúde Coletiva Brasil (CSP / RSP / C&amp;SC)</option>
+                  <option value="icmje_vancouver">Padrão ICMJE / Vancouver</option>
+                  <option value="personalizado">Perfil Personalizado</option>
+                </select>
+                {perfilEditorialId === 'personalizado' && (
+                  <div className="preflight-custom-inputs">
+                    <label>
+                      Resumo:{' '}
+                      <input
+                        type="number"
+                        min={50}
+                        value={limitesCustom.maxPalavrasResumo}
+                        onChange={(e) => setLimitesCustom((c) => ({ ...c, maxPalavrasResumo: Number(e.target.value) || 300 }))}
+                      />
+                    </label>
+                    <label>
+                      Corpo:{' '}
+                      <input
+                        type="number"
+                        min={500}
+                        value={limitesCustom.maxPalavrasCorpo}
+                        onChange={(e) => setLimitesCustom((c) => ({ ...c, maxPalavrasCorpo: Number(e.target.value) || 5000 }))}
+                      />
+                    </label>
+                    <label>
+                      Refs:{' '}
+                      <input
+                        type="number"
+                        min={5}
+                        value={limitesCustom.maxReferencias}
+                        onChange={(e) => setLimitesCustom((c) => ({ ...c, maxReferencias: Number(e.target.value) || 50 }))}
+                      />
+                    </label>
+                    <label>
+                      Tab/Fig:{' '}
+                      <input
+                        type="number"
+                        min={1}
+                        value={limitesCustom.maxTabelasFiguras}
+                        onChange={(e) => setLimitesCustom((c) => ({ ...c, maxTabelasFiguras: Number(e.target.value) || 6 }))}
+                      />
+                    </label>
+                  </div>
+                )}
+                <span className={`raiox-chip ${preflightEditorial.resumo?.aprovado ? '' : 'raiox-chip-alerta'}`}>
+                  {preflightEditorial.resumo?.aprovado
+                    ? `✓ ${tr('Pronto para submissão', 'Ready for submission')}`
+                    : `⚠ ${preflightEditorial.resumo?.totalPendencias} ${tr('pendência(s)', 'issue(s)')}`}
+                  {' '}({preflightEditorial.resumo?.totalAprovados}/{preflightEditorial.resumo?.totalChecks})
+                </span>
               </div>
-              <div className="valor-card-filtro" style={{ color: alertasAtribuicaoFalsaAtivos.length ? '#dc2626' : '#16a34a' }}>
-                {alertasAtribuicaoFalsaAtivos.length}
+              <div className="preflight-itens">
+                {(preflightEditorial.itens || []).map((it) => {
+                  const rotulosEn = {
+                    palavras_resumo: 'Abstract Words',
+                    palavras_corpo: 'Manuscript Body Words',
+                    max_referencias: 'Total References',
+                    max_tabelas_figuras: 'Tables & Figures',
+                    declaracao_cep_caae: 'Ethics Approval (IRB/CEP)',
+                    declaracao_conflito: 'Conflict of Interest',
+                    declaracao_financiamento: 'Funding Statement',
+                    disponibilidade_dados: 'Data Availability',
+                  };
+                  const valTrad = (v) => {
+                    const s = String(v);
+                    if (s === 'Presente') return tr('Presente', 'Present');
+                    if (s === 'Ausente') return tr('Ausente', 'Missing');
+                    if (s === 'Mencionado') return tr('Mencionado', 'Mentioned');
+                    return s;
+                  };
+                  return (
+                    <span
+                      key={it.id}
+                      className={`raiox-chip ${it.status === 'excedido' ? 'raiox-chip-alerta' : ''}`}
+                      title={it.mensagem}
+                    >
+                      {it.status === 'ok' ? '✓' : it.status === 'alerta' ? 'ℹ' : '✕'}{' '}
+                      {tr(it.rotulo, rotulosEn[it.id] || it.rotulo)}:{' '}
+                      <strong>{valTrad(it.valorAtual)}</strong>
+                      {typeof it.limite === 'number' ? `/${it.limite}` : ''}
+                    </span>
+                  );
+                })}
               </div>
-              <div className="sub-card-filtro">{alertasAtribuicaoFalsaAtivos.length ? tr('Não diz o que foi citado', 'Unsupported claim') : tr('Conteúdo compatível', 'Claims supported')}</div>
             </div>
-
-            {/* 4. Plágio sem Aspas */}
-            <div
-              className={`card-metrica-filtro ${alertasPlagioAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'plagio' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'plagio' ? 'todas' : 'plagio'); }}
-              title={tr('Clique para filtrar trechos com cópia literal sem aspas normativas', 'Filter unquoted literal overlap')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Plágio sem Aspas', 'Unquoted Overlap')}</span>
-                <span>🔍</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: alertasPlagioAtivos.length ? '#dc2626' : '#16a34a' }}>
-                {alertasPlagioAtivos.length}
-              </div>
-              <div className="sub-card-filtro">{alertasPlagioAtivos.length ? tr('Cópia literal detectada', 'Literal overlap flagged') : tr('Nenhum plágio', 'No plagiarism')}</div>
-            </div>
-
-            {/* 5. Contas & Estatísticas */}
-            <div
-              className={`card-metrica-filtro ${alertasEstatisticosAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'estatistica' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'estatistica' ? 'todas' : 'estatistica'); }}
-              title={tr('Clique para filtrar erros matemáticos em testes e valores p', 'Filter statistical inconsistencies (Statcheck)')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Erros em Contas', 'Statcheck Errors')}</span>
-                <span>📊</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: alertasEstatisticosAtivos.length ? '#dc2626' : '#16a34a' }}>
-                {alertasEstatisticosAtivos.length}
-              </div>
-              <div className="sub-card-filtro">{alertasEstatisticosAtivos.length ? tr('p-hacking / inconsistência', 'Stat inconsistency') : tr('Matemática correta', 'Stats consistent')}</div>
-            </div>
-
-            {/* 6. Concentração de Autores/Revistas */}
-            <div
-              className={`card-metrica-filtro ${alertasRedeAtivos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'rede' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'rede' ? 'todas' : 'rede'); }}
-              title={tr('Clique para filtrar concentração excessiva em um mesmo autor ou periódico', 'Filter excessive author/journal concentration')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Monopólio de Fontes', 'Citation Concentration')}</span>
-                <span>🕸️</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: alertasRedeAtivos.length ? '#d97706' : '#16a34a' }}>
-                {alertasRedeAtivos.length}
-              </div>
-              <div className="sub-card-filtro">{alertasRedeAtivos.length ? tr('Mesmo autor/revista repetido', 'High concentration') : tr('Fontes diversificadas', 'Diverse sources')}</div>
-            </div>
-
-            {/* 7. Comitê de Ética & Método */}
-            <div
-              className={`card-metrica-filtro ${alertasMetodologiaClinicaAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'metodologia_clinica' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'metodologia_clinica' ? 'todas' : 'metodologia_clinica'); }}
-              title={tr('Clique para filtrar pendências de CEP, TCLE, amostra N ou checklist STROBE/CONSORT', 'Filter ethics, consent, and clinical checklist items')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Ética & Método', 'Ethics & Method')}</span>
-                <span>🔬</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: alertasMetodologiaClinicaAtivos.length ? '#dc2626' : '#16a34a' }}>
-                {alertasMetodologiaClinicaAtivos.length}
-              </div>
-              <div className="sub-card-filtro">{alertasMetodologiaClinicaAtivos.length ? tr('Ressalvas metodológicas', 'Methodological notes') : tr('Protocolos conformes', 'Checklist compliant')}</div>
-            </div>
-
-            {/* 8. Sinônimos Robóticos */}
-            <div
-              className={`card-metrica-filtro ${alertasFrasesTorturadasAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'frases_torturadas' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'frases_torturadas' ? 'todas' : 'frases_torturadas'); }}
-              title={tr('Clique para filtrar frases torturadas e termos artificiais de spin-bot', 'Filter paraphrasing "tortured phrases"')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Sinônimos Robóticos', 'Tortured Phrases')}</span>
-                <span>🧟</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: alertasFrasesTorturadasAtivos.length ? '#dc2626' : '#16a34a' }}>
-                {alertasFrasesTorturadasAtivos.length}
-              </div>
-              <div className="sub-card-filtro">{alertasFrasesTorturadasAtivos.length ? tr('Jargões bizarros de IA', 'Spin-bot artifacts') : tr('Vocabulário natural', 'Natural phrasing')}</div>
-            </div>
-
-            {/* 9. Ritmo da Escrita */}
-            <div
-              className={`card-metrica-filtro ${alertasEstilometricosAtivos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'estilometria' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'estilometria' ? 'todas' : 'estilometria'); }}
-              title={tr('Clique para filtrar períodos monótonos ou repetições mecânicas de vocabulário', 'Filter syntactic monotony & trigram repetition')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Ritmo da Escrita', 'Stylometry')}</span>
-                <span>📐</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: alertasEstilometricosAtivos.length ? '#d97706' : '#16a34a' }}>
-                {alertasEstilometricosAtivos.length}
-              </div>
-              <div className="sub-card-filtro">{alertasEstilometricosAtivos.length ? tr('Frases monótonas', 'Monotonous rhythm') : tr('Fluidez humana normal', 'Natural rhythm')}</div>
-            </div>
-
-            {/* 10. Revistas Suspeitas */}
-            <div
-              className={`card-metrica-filtro ${alertasPredatoriosAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'predatorias' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'predatorias' ? 'todas' : 'predatorias'); }}
-              title={tr('Clique para filtrar citações em editoras de vaidade ou periódicos predatórios', 'Filter predatory or hijacked journals')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Revistas Suspeitas', 'Predatory Venues')}</span>
-                <span>🚨</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: alertasPredatoriosAtivos.length ? '#dc2626' : '#16a34a' }}>
-                {alertasPredatoriosAtivos.length}
-              </div>
-              <div className="sub-card-filtro">{alertasPredatoriosAtivos.length ? tr('Editora duvidosa (Beall)', 'Flagged publisher') : tr('Periódicos idôneos', 'Verified venues')}</div>
-            </div>
-
-            {/* 11. Regras ABNT 6023 */}
-            <div
-              className={`card-metrica-filtro ${alertasAbnt6023Ativos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'abnt6023' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'abnt6023' ? 'todas' : 'abnt6023'); }}
-              title={tr('Clique para filtrar referências com falta de editora, cidade ou paginação', 'Filter missing bibliography metadata fields')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Formatação ABNT', 'Style Metadata')}</span>
-                <span>📋</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: alertasAbnt6023Ativos.length ? '#d97706' : '#16a34a' }}>
-                {alertasAbnt6023Ativos.length}
-              </div>
-              <div className="sub-card-filtro">{alertasAbnt6023Ativos.length ? tr('Falta cidade/editora/pág.', 'Missing metadata') : tr('Formatação completa', 'Complete fields')}</div>
-            </div>
-
-            {/* 12. Nomes de Genes (Excel) */}
-            <div
-              className={`card-metrica-filtro ${alertasCorrupcaoGeneAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'genomica' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'genomica' ? 'todas' : 'genomica'); }}
-              title={tr('Clique para filtrar símbolos de genes que o Excel converteu em datas', 'Filter HGNC gene symbols corrupted by spreadsheets')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Genes Trocados p/ Data', 'Gene Symbol Errors')}</span>
-                <span>🧬</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: alertasCorrupcaoGeneAtivos.length ? '#dc2626' : '#16a34a' }}>
-                {alertasCorrupcaoGeneAtivos.length}
-              </div>
-              <div className="sub-card-filtro">{alertasCorrupcaoGeneAtivos.length ? tr('Erro de planilha (Ziemann)', 'Spreadsheet artifact') : tr('Símbolos corretos', 'Valid symbols')}</div>
-            </div>
-
-            {/* 13. Bolsas & Apoio CAPES */}
-            <div
-              className={`card-metrica-filtro ${alertasFomentoAtivos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'fomento' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'fomento' ? 'todas' : 'fomento'); }}
-              title={tr('Clique para filtrar pendências de Código CAPES 001 ou números de processo', 'Filter funding acknowledgment & grant number checks')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Apoio & Bolsas CAPES', 'Funding & Grants')}</span>
-                <span>🏛️</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: alertasFomentoAtivos.length ? '#d97706' : '#16a34a' }}>
-                {alertasFomentoAtivos.length}
-              </div>
-              <div className="sub-card-filtro">{alertasFomentoAtivos.length ? tr('Falta código 001 / CNPq', 'Missing grant disclosure') : tr('Agradecimento conforme', 'Compliant')}</div>
-            </div>
-
-            {/* 14. Tema vs Artigo Citado */}
-            <div
-              className={`card-metrica-filtro ${alertasDesvioTematicoAtivos.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'desvio_tematico' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'desvio_tematico' ? 'todas' : 'desvio_tematico'); }}
-              title={tr('Clique para filtrar afirmações que não têm respaldo temático no resumo do artigo', 'Filter off-topic citation claims vs. abstract')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Assunto Divergente', 'Topic Drift')}</span>
-                <span>⚠️</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: alertasDesvioTematicoAtivos.length ? '#dc2626' : '#16a34a' }}>
-                {alertasDesvioTematicoAtivos.length}
-              </div>
-              <div className="sub-card-filtro">{alertasDesvioTematicoAtivos.length ? tr('Frase difere do abstract', 'Differs from abstract') : tr('Tema coerente', 'On-topic')}</div>
-            </div>
-
-            {/* 15. Falta nas Referências */}
-            <div
-              className={`card-metrica-filtro ${citacoesSemReferenciaAtivas.length ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'orfa' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'orfa' ? 'todas' : 'orfa'); }}
-              title={tr('Clique para filtrar autores citados no texto que não estão na lista final', 'Filter in-text citations missing from References')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Falta nas Referências', 'Missing in Refs')}</span>
-                <span>❌</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: citacoesSemReferenciaAtivas.length ? '#dc2626' : '#16a34a' }}>
-                {citacoesSemReferenciaAtivas.length}
-              </div>
-              <div className="sub-card-filtro">{citacoesSemReferenciaAtivas.length ? tr('Citou e não listou', 'Orphan citations') : tr('Todas listadas', 'All listed')}</div>
-            </div>
-
-            {/* 16. Não Citadas no Texto */}
-            <div
-              className={`card-metrica-filtro ${refsNaoCitadasNoTextoAtivas.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'sobrando' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'sobrando' ? 'todas' : 'sobrando'); }}
-              title={tr('Clique para filtrar obras presentes na lista final que nunca foram citadas no texto', 'Filter bibliography entries never cited in text')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Listada s/ Citação', 'Uncited in Text')}</span>
-                <span>⏳</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: refsNaoCitadasNoTextoAtivas.length ? '#d97706' : '#16a34a' }}>
-                {refsNaoCitadasNoTextoAtivas.length}
-              </div>
-              <div className="sub-card-filtro">{refsNaoCitadasNoTextoAtivas.length ? tr('Sobrando nas referências', 'Unused entries') : tr('Todas citadas', 'All cited')}</div>
-            </div>
-
-            {/* 17. Figuras & Tabelas (ABNT 14724 / IBGE) */}
-            <div
-              className={`card-metrica-filtro ${alertasFigurasTabelasAtivos.length ? 'com-aviso' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'figuras_tabelas' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo(prev => prev === 'figuras_tabelas' ? 'todas' : 'figuras_tabelas'); }}
-              title={tr('Clique para filtrar falta de chamada no texto ou linha de Fonte em Figuras, Quadros e Tabelas', 'Filter Figure/Table callout and source line checks')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Figuras & Tabelas', 'Figures & Tables')}</span>
-                <span>🖼️</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: alertasFigurasTabelasAtivos.length ? '#d97706' : '#16a34a' }}>
-                {alertasFigurasTabelasAtivos.length}
-              </div>
-              <div className="sub-card-filtro">{alertasFigurasTabelasAtivos.length ? tr('Falta Fonte / Chamada', 'Missing Source / Callout') : tr('ABNT 14724 / IBGE ok', 'ABNT 14724 / IBGE ok')}</div>
-            </div>
-
-            {/* 18. Total a Corrigir */}
-            <div
-              className={`card-metrica-filtro ${totalInconformidades > 0 ? 'com-alerta' : ''} ${abaVisualizacao === 'inconformidades' && grupoIntercorrenciaAtivo === 'todas' ? 'ativo' : ''}`}
-              onClick={() => { setAbaVisualizacao('inconformidades'); setGrupoIntercorrenciaAtivo('todas'); }}
-              title={tr('Clique para exibir todos os pontos a corrigir', 'Click to display all items to fix')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Alertas a Corrigir', 'Alerts to Fix')}</span>
-                <span>🎯</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: totalInconformidades > 0 ? '#dc2626' : '#16a34a' }}>
-                {totalInconformidades}
-              </div>
-              <div className="sub-card-filtro">{totalInconformidades > 0 ? tr('Pontos a ajustar', 'Items to adjust') : tr('100% Conforme', '100% Compliant')}</div>
-            </div>
-
-            {/* 18. Obras com PDF no Acervo */}
-            <div
-              className={`card-metrica-filtro ${abaVisualizacao === 'conformes' ? 'ativo' : ''}`}
-              onClick={() => setAbaVisualizacao('conformes')}
-              title={tr('Clique para ver o rol de obras autênticas e os PDFs disponíveis no acervo', 'Click to see verified works and PDFs available in the repository')}
-            >
-              <div className="topo-card-filtro">
-                <span className="titulo-card-filtro">{tr('Obras no Acervo', 'Works in Library')}</span>
-                <span>📥</span>
-              </div>
-              <div className="valor-card-filtro" style={{ color: '#16a34a' }}>
-                {totalConformesComPdf} / {obrasConformes.length}
-              </div>
-              <div className="sub-card-filtro">{totalConformesComPdf} {tr('PDFs baixados', 'PDFs downloaded')}</div>
-            </div>
-          </div>
+          )}
 
           {/* BARRA DE SELEÇÃO DOS DOIS PILARES DA AUDITORIA REVERSA */}
           <div
@@ -3019,10 +2847,10 @@ export default function ReverseAuditView({
               }}
             >
               <h3 style={{ color: '#15803d', margin: '0 0 6px 0' }}>
-                🎉 {tr('Nenhuma Inconformidade Encontrada!', 'No Issues Found!')}
+                ✓ {tr('Nenhuma inconformidade encontrada', 'No issues found')}
               </h3>
               <p style={{ margin: 0, color: 'var(--texto-suave)', fontSize: 13 }}>
-                {tr('Todas as citações no texto possuem referências correspondentes, todos os DOIs e fontes foram autenticados nas bases oficiais e nenhum plágio ou alucinação foi detectado no manuscrito.', 'All in-text citations have matching references, all DOIs and sources were verified against official databases, and no plagiarism or hallucinations were detected in the manuscript.')}
+                {tr('Todas as citações no texto possuem referências correspondentes e as fontes avaliadas foram confirmadas sem divergências de conteúdo ou similaridade literal.', 'All in-text citations match reference entries and evaluated sources were verified without content mismatches or literal overlap.')}
               </p>
             </div>
           )}
@@ -3045,7 +2873,7 @@ export default function ReverseAuditView({
                 }}
               >
                 <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--texto-suave)', marginRight: 4 }}>
-                  🗂️ {tr('Agrupar / Filtrar Intercorrências:', 'Group / Filter Issues:')}
+                  {tr('Filtrar apontamentos:', 'Filter findings:')}
                 </span>
                 <button
                   className={`chip ${grupoIntercorrenciaAtivo === 'todas' ? 'ativo' : ''}`}
@@ -3066,7 +2894,7 @@ export default function ReverseAuditView({
                       background: grupoIntercorrenciaAtivo === 'ia' ? '#dc2626' : 'transparent',
                     }}
                   >
-                    🤖 {tr('IA / DOI Falso', 'AI / Fake DOI')} ({refsSuspeitasIaAtivas.length})
+                    {tr('Não localizadas / DOI', 'Unverified / DOI')} ({refsSuspeitasIaAtivas.length})
                   </button>
                 )}
                 {alertasAtribuicaoFalsaAtivos.length > 0 && (
@@ -3481,7 +3309,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -3582,7 +3410,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -3675,7 +3503,7 @@ export default function ReverseAuditView({
                             })
                           }
                         >
-                          🤖 Copiar p/ IA
+                          Copiar prompt
                         </button>
                       </div>
                     </div>
@@ -3750,7 +3578,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -3807,7 +3635,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -3873,7 +3701,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -3947,7 +3775,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4023,7 +3851,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4087,7 +3915,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4158,7 +3986,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4232,7 +4060,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4298,7 +4126,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4385,7 +4213,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4455,7 +4283,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4540,7 +4368,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4630,7 +4458,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4646,17 +4474,21 @@ export default function ReverseAuditView({
           {(grupoIntercorrenciaAtivo === 'todas' || grupoIntercorrenciaAtivo === 'metadados') && (mostrarResolvidos ? alertasMetadadosAbnt.length > 0 : alertasMetadadosAbntAtivos.length > 0) && (
             <div className="bloco-cofre" style={{ borderLeft: '4px solid #2563eb', background: 'rgba(37, 99, 235, 0.04)' }}>
               <h4 style={{ color: '#1d4ed8', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
-                <span>📐 Chamadas de Citação no Seu Texto &amp; ABNT NBR 10520 ({alertasMetadadosAbntAtivos.length})</span>
+                <span>📐 {tr('Chamadas de Citação no Seu Texto & ABNT NBR 10520', 'In-Text Citations & Formatting Standards')} ({alertasMetadadosAbntAtivos.length})</span>
                 <BadgeAlvoAlerta alvo="manuscrito" />
               </h4>
               <div className="lista-historico">
                 {alertasMetadadosAbnt
-                  .filter((ap) => mostrarResolvidos || !itensResolvidos.has(`meta_${ap.numParagrafo}_${ap.numLinha}_${ap.tipo}`))
+                  .filter((ap) => mostrarResolvidos || !itensResolvidos.has(obterIdAlertaMeta(ap)))
                   .map((ap, i) => {
-                    const idItem = `meta_${ap.numParagrafo}_${ap.numLinha}_${ap.tipo}`;
+                    const idItem = obterIdAlertaMeta(ap);
                     const stItem = statusItens[idItem] || null;
                     const resolvido = !!stItem;
-                    const ehParcial = ap.tipo === 'afirmacao_parcialmente_sustentada';
+                    const ehParcial =
+                      ap.tipo === 'afirmacao_parcialmente_sustentada' ||
+                      ap.tipo === 'citacao_multipla_intruso' ||
+                      String(ap.tipo || '').startsWith('intra_') ||
+                      String(ap.tipo || '').startsWith('guardiao_');
                     return (
                       <div key={i} className="card-historico" style={{ borderLeft: ehParcial ? '3px solid #d97706' : '3px solid #2563eb', opacity: resolvido ? 0.6 : 1 }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
@@ -4701,7 +4533,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4805,7 +4637,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4872,7 +4704,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4948,7 +4780,7 @@ export default function ReverseAuditView({
                                 })
                               }
                             >
-                              🤖 Copiar p/ IA
+                              Copiar prompt
                             </button>
                           </div>
                         </div>
@@ -4983,11 +4815,18 @@ export default function ReverseAuditView({
               >
                 <div>
                   <h4 style={{ color: '#15803d', margin: 0 }}>
-                    📥 Rol de Obras em Conformidade &amp; Injeção Automática no Rol de Artigos da Área de Trabalho ({obrasConformes.length})
+                    📥 {tr('Rol de Obras em Conformidade & Injeção Automática no Rol de Artigos da Área de Trabalho', 'Compliant Works & Automatic Library Sync')} ({obrasConformes.length})
                   </h4>
                   <p className="dica-texto" style={{ margin: '3px 0 0 0' }}>
-                    Todas as {obrasConformes.length} obras validadas foram adicionadas ou atualizadas na sua biblioteca com metadados CSL estruturados.
-                    {totalConformesComPdf > 0 && ` Foram vinculados ${totalConformesComPdf} PDFs de texto completo disponíveis no acervo/acesso aberto.`}
+                    {tr(
+                      `Todas as ${obrasConformes.length} obras validadas foram adicionadas ou atualizadas na sua biblioteca com metadados CSL estruturados.`,
+                      `All ${obrasConformes.length} validated works were added or updated in your library with structured CSL metadata.`
+                    )}
+                    {totalConformesComPdf > 0 &&
+                      tr(
+                        ` Foram vinculados ${totalConformesComPdf} PDFs de texto completo disponíveis no acervo/acesso aberto.`,
+                        ` ${totalConformesComPdf} full-text PDFs were linked from your vault or open access.`
+                      )}
                   </p>
                 </div>
                 {onIrParaBiblioteca && (
@@ -4995,9 +4834,9 @@ export default function ReverseAuditView({
                     className="btn pequeno primario"
                     style={{ background: '#16a34a', borderColor: '#15803d' }}
                     onClick={() => onIrParaBiblioteca('Auditado')}
-                    title="Abre a tela principal de artigos filtrando pelas obras auditadas"
+                    title={tr('Abre a tela principal de artigos filtrando pelas obras auditadas', 'Open main library filtered by audited works')}
                   >
-                    📂 Abrir Rol de Artigos na Biblioteca Principal
+                    📂 {tr('Abrir Rol de Artigos na Biblioteca Principal', 'Open Works in Main Library')}
                   </button>
                 )}
               </div>
@@ -5042,7 +4881,7 @@ export default function ReverseAuditView({
                                 fontWeight: 700,
                               }}
                             >
-                              ✓ Em Conformidade (Autenticada)
+                              ✓ {tr('Em Conformidade (Autenticada)', 'Compliant (Verified)')}
                             </span>
                             {r.citadaNoTexto ? (
                               <span
@@ -5055,7 +4894,7 @@ export default function ReverseAuditView({
                                   fontWeight: 600,
                                 }}
                               >
-                                § Citada {r.ocorrenciasNoTexto.length}x no texto
+                                § {tr(`Citada ${r.ocorrenciasNoTexto.length}x no texto`, `Cited ${r.ocorrenciasNoTexto.length}x in text`)}
                               </span>
                             ) : (
                               <span
@@ -5068,7 +4907,7 @@ export default function ReverseAuditView({
                                   fontWeight: 600,
                                 }}
                               >
-                                Na lista final (Consultada)
+                                {tr('Na lista final (Consultada)', 'In reference list (Consulted)')}
                               </span>
                             )}
                             {temPdf ? (
@@ -5082,7 +4921,7 @@ export default function ReverseAuditView({
                                   fontWeight: 700,
                                 }}
                               >
-                                📄 PDF Completo Disponível ({r.nomeArquivoPdf || refObj?.pdf})
+                                📄 {tr('PDF Completo Disponível', 'Full-Text PDF Available')} ({r.nomeArquivoPdf || refObj?.pdf})
                               </span>
                             ) : (
                               <span
@@ -5094,14 +4933,14 @@ export default function ReverseAuditView({
                                   fontSize: 11,
                                 }}
                               >
-                                🔒 PDF Fechado / Paywall (Metadados Indexados)
+                                🔒 {tr('PDF Fechado / Paywall (Metadados Indexados)', 'Closed PDF / Paywall (Indexed Metadata)')}
                               </span>
                             )}
                           </div>
 
                           {primOc && (
                             <div style={{ fontSize: 11.8, marginTop: 5, color: 'var(--texto)' }}>
-                              <strong>📍 Exemplo de citação (§{primOc.numParagrafo}, Linha {primOc.numLinha}):</strong>{' '}
+                              <strong>📍 {tr(`Exemplo de citação (§${primOc.numParagrafo}, Linha ${primOc.numLinha}):`, `Citation example (§${primOc.numParagrafo}, Line ${primOc.numLinha}):`)}</strong>{' '}
                               <em>"{primOc.fraseContexto}"</em>
                             </div>
                           )}
@@ -5112,25 +4951,25 @@ export default function ReverseAuditView({
                             <button
                               className="btn pequeno primario"
                               onClick={() => onAbrirPdfNaPagina(refObj)}
-                              title="Abrir o PDF no leitor interno"
+                              title={tr('Abrir o PDF no leitor interno', 'Open PDF in internal reader')}
                             >
-                              <Icone nome="book" tam={13} /> Abrir PDF
+                              <Icone nome="book" tam={13} /> {tr('Abrir PDF', 'Open PDF')}
                             </button>
                           ) : (
                             <>
                               <button
                                 className="btn pequeno secundario"
                                 onClick={() => buscarPdfNaWebManual(r)}
-                                title="Pesquisar PDF no Google Acadêmico"
+                                title={tr('Pesquisar PDF no Google Acadêmico', 'Search PDF on Google Scholar')}
                               >
-                                🌐 Buscar PDF
+                                🌐 {tr('Buscar PDF', 'Find PDF')}
                               </button>
                               <button
                                 className="btn pequeno fantasma"
                                 onClick={() => anexarPdfEVerificarCard(r, i)}
-                                title="Anexar PDF baixado no seu PC"
+                                title={tr('Anexar PDF baixado no seu PC', 'Attach local PDF from your computer')}
                               >
-                                📎 Anexar PDF
+                                📎 {tr('Anexar PDF', 'Attach PDF')}
                               </button>
                             </>
                           )}
@@ -5293,11 +5132,14 @@ export default function ReverseAuditView({
           idioma={idioma}
           caminhoDocx={caminhoArquivo}
           textoManuscrito={textoManuscrito}
+          somenteLeitura={somenteLeitura}
           onAplicarCirurgiaNoDocx={aplicarCirurgiaNoDocx}
           onAtualizarTextoLocal={atualizarTextoLocal}
           onDefinirStatus={definirStatusItem}
           onImportarCsl={onImportarCsl}
           onAbrirNoWord={(q) => abrirNoWordAtalho(q)}
+          onAbrirPdfLeitor={(refObj, pag) => onAbrirPdfNaPagina?.(refObj, pag)}
+          onSalvarTrechoCitado={salvarTrechoCitadoNaBiblioteca}
           onAbrirSplitView={
             itemEmResolucao?.refBibItem?.pdf
               ? () =>
@@ -5331,8 +5173,11 @@ export default function ReverseAuditView({
       {dadosSplitView && (
         <SplitViewWordPdfModal
           dadosComparacao={dadosSplitView}
+          somenteLeitura={somenteLeitura}
           onFechar={() => setDadosSplitView(null)}
           onAbrirNoWord={() => abrirNoWordAtalho(dadosSplitView.fraseWord || '')}
+          onAbrirPdfLeitor={(refObj, pag) => onAbrirPdfNaPagina?.(refObj, pag)}
+          onSalvarTrechoCitado={salvarTrechoCitadoNaBiblioteca}
           onAbrirEditorResolucao={() =>
             setItemEmResolucao({
               idItem: dadosSplitView.idItem || `split_${Date.now()}`,

@@ -8,6 +8,9 @@ export default function SplitViewWordPdfModal({
   onFechar,
   onAbrirEditorResolucao,
   onAbrirNoWord,
+  onAbrirPdfLeitor,
+  onSalvarTrechoCitado,
+  somenteLeitura = false,
   onMarcarResolvido,
   onMarcarIgnorado,
 }) {
@@ -25,6 +28,8 @@ export default function SplitViewWordPdfModal({
   const [termoBuscaPdf, setTermoBuscaPdf] = useState('');
   const [resultadosBusca, setResultadosBusca] = useState([]); // [{ pagina, trecho }]
   const [buscandoNoPdf, setBuscandoNoPdf] = useState(false);
+  const [salvandoTrecho, setSalvandoTrecho] = useState(false);
+  const [trechoSalvoOk, setTrechoSalvoOk] = useState(false);
 
   // Carrega o PDF via IPC
   useEffect(() => {
@@ -181,7 +186,20 @@ export default function SplitViewWordPdfModal({
             </div>
           </div>
 
-          <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
+          <div style={{ display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap' }}>
+            {onAbrirPdfLeitor && refItem?.id && (
+              <button
+                type="button"
+                className="btn pequeno secundario"
+                onClick={() => {
+                  onFechar();
+                  onAbrirPdfLeitor(refItem, paginaAtual);
+                }}
+                title={tr('Abrir este PDF completo no leitor interno direto nesta página', 'Open full PDF in internal reader at this page')}
+              >
+                📄 {tr(`Abrir PDF (Pág. ${paginaAtual})`, `Open PDF (P. ${paginaAtual})`)}
+              </button>
+            )}
             {onAbrirEditorResolucao && (
               <button
                 type="button"
@@ -217,6 +235,7 @@ export default function SplitViewWordPdfModal({
 
         {/* Corpo Lado a Lado */}
         <div
+          className="split-view-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: '42% 58%',
@@ -335,6 +354,46 @@ export default function SplitViewWordPdfModal({
             )}
 
             <div style={{ marginTop: 'auto', paddingTop: 12, borderTop: '1px solid var(--borda)', display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              {onSalvarTrechoCitado && refItem?.id && (
+                <button
+                  type="button"
+                  className="btn pequeno"
+                  disabled={salvandoTrecho || somenteLeitura}
+                  title={
+                    somenteLeitura
+                      ? tr('Desative o modo Somente Leitura para gravar Trecho Citado na Biblioteca', 'Disable Read-Only mode to save Cited Excerpt to Library')
+                      : tr('Salva o trecho do PDF nesta página como Trecho Citado (Ground Truth) na Biblioteca', 'Save this excerpt and page as Cited Excerpt Ground Truth in Library')
+                  }
+                  style={{
+                    background: trechoSalvoOk ? '#dbeafe' : 'rgba(37, 99, 235, 0.1)',
+                    color: '#1d4ed8',
+                    borderColor: 'rgba(37, 99, 235, 0.35)',
+                    fontWeight: 700,
+                  }}
+                  onClick={async () => {
+                    const txt = dadosComparacao.trechoPdf || dadosComparacao.fraseWord || dadosComparacao.paragrafoCompleto || '';
+                    if (!txt.trim()) return;
+                    setSalvandoTrecho(true);
+                    try {
+                      const ok = await onSalvarTrechoCitado({
+                        refItem,
+                        pagina: paginaAtual,
+                        trecho: txt,
+                        ondeCitei: dadosComparacao.locWord || '',
+                      });
+                      if (ok) setTrechoSalvoOk(true);
+                    } finally {
+                      setSalvandoTrecho(false);
+                    }
+                  }}
+                >
+                  {trechoSalvoOk
+                    ? `✓ ${tr(`Trecho Salvo (Pág. ${paginaAtual})`, `Excerpt Saved (P. ${paginaAtual})`)}`
+                    : salvandoTrecho
+                    ? tr('Salvando…', 'Saving…')
+                    : `📌 ${tr(`Salvar Trecho Citado (Pág. ${paginaAtual})`, `Save Cited Excerpt (P. ${paginaAtual})`)}`}
+                </button>
+              )}
               {onMarcarResolvido && (
                 <button
                   type="button"

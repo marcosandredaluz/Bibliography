@@ -15,6 +15,8 @@
 const fs = require('fs');
 const path = require('path');
 const JSZip = require('jszip');
+const { injetarComentariosNoDocx } = require('./docx_comentarios_injector.cjs');
+const { escreverArquivoAtomico, copiarArquivoAtomico } = require('./atomicWrite.cjs');
 
 /**
  * Decodifica entidades XML básicas
@@ -461,19 +463,19 @@ async function executarCirurgiaDocx(caminhoDocx, operacao) {
   const caminhoBackup = path.join(dir, `${base}.backup_pre_auditoria.docx`);
   if (!fs.existsSync(caminhoBackup)) {
     try {
-      await fs.promises.copyFile(caminhoDocx, caminhoBackup);
+      await copiarArquivoAtomico(caminhoDocx, caminhoBackup);
     } catch { /* ignora erro de backup se permissão falhar */ }
   }
 
   let caminhoSalvo = caminhoDocx;
   let salvoEmCopia = false;
   try {
-    await fs.promises.writeFile(caminhoDocx, novoBuffer);
+    await escreverArquivoAtomico(caminhoDocx, novoBuffer, 'utf8', 2);
   } catch (err) {
     // EBUSY / EPERM se o documento estiver aberto no Microsoft Word
     if (err.code === 'EBUSY' || err.code === 'EPERM' || err.code === 'EACCES') {
       caminhoSalvo = path.join(dir, `${base}_revisado.docx`);
-      await fs.promises.writeFile(caminhoSalvo, novoBuffer);
+      await escreverArquivoAtomico(caminhoSalvo, novoBuffer, 'utf8', 3);
       salvoEmCopia = true;
     } else {
       throw err;
@@ -491,6 +493,33 @@ async function executarCirurgiaDocx(caminhoDocx, operacao) {
   };
 }
 
+/**
+ * Motor unificado de anotação de comentários OpenXML em .docx (independe do Word estar aberto).
+ * Garante backup prévio e cópia segura se o arquivo estiver bloqueado pelo Word (EBUSY/EPERM).
+ */
+async function injetarComentariosCirurgicosDocx(caminhoDocx, caminhoSaida, inconformidades = []) {
+  if (!caminhoDocx || !fs.existsSync(caminhoDocx)) {
+    throw new Error('Arquivo .docx original não localizado no disco.');
+  }
+  const dir = path.dirname(caminhoDocx);
+  const base = path.basename(caminhoDocx, '.docx');
+  const caminhoBackup = path.join(dir, `${base}.backup_pre_auditoria.docx`);
+  if (!fs.existsSync(caminhoBackup)) {
+    try {
+      await fs.promises.copyFile(caminhoDocx, caminhoBackup);
+    } catch {}
+  }
+  try {
+    return await injetarComentariosNoDocx(caminhoDocx, caminhoSaida, inconformidades);
+  } catch (err) {
+    if (err && ['EBUSY', 'EPERM', 'EACCES'].includes(err.code)) {
+      const copiaFallback = path.join(path.dirname(caminhoSaida), `${path.basename(caminhoSaida, '.docx')}_copia.docx`);
+      return await injetarComentariosNoDocx(caminhoDocx, copiaFallback, inconformidades);
+    }
+    throw err;
+  }
+}
+
 module.exports = {
   extrairParagrafosXml,
   analisarRunsParagrafo,
@@ -499,4 +528,5 @@ module.exports = {
   removerReferenciaEmDocumentXml,
   limparPontuacaoResidual,
   executarCirurgiaDocx,
+  injetarComentariosCirurgicosDocx,
 };

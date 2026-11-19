@@ -34,14 +34,27 @@ function calcularHashIntegridade(conteudo = '') {
  * Formata data e hora no padrão brasileiro
  */
 function formatarDataHora(data = new Date()) {
-  const d = data instanceof Date ? data : new Date(data);
+  if (typeof data === 'string' && data.trim()) {
+    const tentativa = new Date(data);
+    if (!Number.isNaN(tentativa.getTime())) {
+      return tentativa.toLocaleString('pt-BR', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+      });
+    }
+    // Se já veio formatada em pt-BR (ex.: "18/11, 22:39"), preserva sem gerar "Invalid Date"
+    if (/\d{1,2}\/\d{1,2}/.test(data)) return data.trim();
+  }
+  const d = data instanceof Date && !Number.isNaN(data.getTime()) ? data : new Date();
   return d.toLocaleString('pt-BR', {
     day: '2-digit',
     month: '2-digit',
     year: 'numeric',
     hour: '2-digit',
     minute: '2-digit',
-    second: '2-digit',
   });
 }
 
@@ -63,17 +76,212 @@ function gerarHtmlLaudoPericial(resultado = {}, opcoes = {}) {
   const totalAutenticadas = refsMapeadas.filter((r) => r.encontradoNasBases || r.doi || r.doiOficial || r.pdfBaixado).length;
 
   const alertasPrecisao = resultado.alertasPrecisao || [];
+  const alertasAtribuicaoFalsa = resultado.alertasAtribuicaoFalsa || [];
+  const alertasPlagio = resultado.alertasPlagio || [];
+  const alertasEstatisticos = resultado.alertasEstatisticos || resultado.resumoEstatistico?.alertasEstatisticos || [];
+  const alertasRede = resultado.alertasRede || resultado.resumoRede?.alertasRede || [];
+  const alertasMetodologiaClinica = resultado.alertasMetodologiaClinica || resultado.resumoMetodologiaClinica?.alertas || [];
+  const alertasFrasesTorturadas = resultado.alertasFrasesTorturadas || resultado.resumoFrasesTorturadas?.alertas || [];
+  const alertasEstilometricos = resultado.alertasEstilometricos || resultado.resumoEstilometria?.alertasEstilometricos || [];
+  const alertasPredatorios = resultado.alertasPredatorios || resultado.resumoPredatorias?.alertas || [];
+  const alertasAbnt6023 = resultado.alertasAbnt6023 || resultado.resumoAbnt6023?.alertas || [];
+  const alertasCorrupcaoGene = resultado.alertasCorrupcaoGene || resultado.resumoCorrupcaoGene?.alertas || [];
+  const alertasFomento = resultado.alertasFomento || resultado.resumoFomento?.alertas || [];
+  const alertasDesvioTematico = resultado.alertasDesvioTematico || resultado.resumoClaimSupport?.alertas || [];
   const alertasFigurasTabelas = resultado.alertasFigurasTabelas || [];
   const citacoesSemReferencia = resultado.citacoesSemReferencia || [];
-  const refsNaoCitadas = resultado.refsNaoCitadasNoTexto || [];
+  const refsNaoCitadas =
+    resultado.refsNaoCitadasNoTexto ||
+    refsMapeadas.filter((r) => r.citadaNoTexto === false && !r.conflitoParsingNeutralizado);
 
-  // Alertas ativos (excluindo os sanados/resolvidos pelo usuário)
-  const inconformidadesAtivas = [
-    ...alertasPrecisao.filter((a) => !resolvidosSet.has(a.id || a.mensagem)),
-    ...citacoesSemReferencia.filter((c) => !resolvidosSet.has(`orfa-${c.autor}-${c.ano}`)),
-    ...refsNaoCitadas.filter((r) => !resolvidosSet.has(`sobrando-${r.id || r.chave}`)),
-  ];
+  const estaResolvido = (chaves = []) => chaves.some((k) => k && resolvidosSet.has(k));
 
+  const obterIdMeta = (ap) => {
+    const sufixoUnico =
+      ap.tipo === 'citacao_multipla_intruso' ||
+      String(ap.tipo || '').startsWith('intra_') ||
+      String(ap.tipo || '').startsWith('guardiao_')
+        ? `_${ap.autorCitado || ''}`
+        : '';
+    return `meta_${ap.numParagrafo}_${ap.numLinha}_${ap.tipo}${sufixoUnico}`;
+  };
+
+  // Filtra estritamente apenas itens ATIVOS (tudo marcado como resolvido/ignorado fica fora do laudo)
+  const refsSuspeitasIaAtivas = refsMapeadas.filter(
+    (r) =>
+      (r.suspeitaAlucinacaoIa ||
+        ['ia_doi_trocado', 'ia_doi_inexistente', 'ia_autor_adulterado', 'suspeita_ia_fantasma', 'artigo_retratado'].includes(
+          r.statusAutenticidade
+        )) &&
+      !estaResolvido([`ia_${r.refBibId || r.id || r.primeiroSobrenome}`, r.id, r.chave])
+  );
+  const atribuicaoFalsaAtivos = alertasAtribuicaoFalsa.filter(
+    (a) => !estaResolvido([`atrib_${a.numParagrafo}_${a.numLinha}`, a.id, a.mensagem])
+  );
+  const plagioAtivos = alertasPlagio.filter(
+    (p) => !estaResolvido([`plagio_${p.numParagrafo}_${p.numLinha}`, p.id, p.mensagem])
+  );
+  const estatisticosAtivos = alertasEstatisticos.filter(
+    (e) => !estaResolvido([`estat_${e.numParagrafo}_${e.numLinha}`, e.id, e.mensagem])
+  );
+  const redeAtivos = alertasRede.filter(
+    (r) => !estaResolvido([`rede_${r.autor || r.periodico}`, r.id, r.mensagem])
+  );
+  const metodologiaAtivos = alertasMetodologiaClinica.filter(
+    (m) => !estaResolvido([`metod_${m.tipo}`, m.id, m.mensagem])
+  );
+  const torturadasAtivos = alertasFrasesTorturadas.filter(
+    (f, i) => !estaResolvido([`tort_${f.numParagrafo}_${f.termoDetectado || i}`, f.id, f.mensagem])
+  );
+  const estilometriaAtivos = alertasEstilometricos.filter(
+    (e) => !estaResolvido([`estilo_${e.numParagrafo}_${e.tipo}`, e.id, e.mensagem])
+  );
+  const predatoriosAtivos = alertasPredatorios.filter(
+    (p) => !estaResolvido([`pred_${p.refBibId || p.chaveAutorAno}`, p.id, p.mensagem])
+  );
+  const abnt6023Ativos = alertasAbnt6023.filter(
+    (a) => !estaResolvido([`abnt6023_${a.idxRef}_${a.tipo}`, a.id, a.mensagem])
+  );
+  const geneAtivos = alertasCorrupcaoGene.filter(
+    (c, i) => !estaResolvido([`gene_${c.numParagrafo}_${c.termoDetectado || i}`, c.id, c.mensagem])
+  );
+  const fomentoAtivos = alertasFomento.filter(
+    (f) => !estaResolvido([`fom_${f.tipo}`, f.id, f.mensagem])
+  );
+  const desvioAtivos = alertasDesvioTematico.filter(
+    (d) => !estaResolvido([`desvio_${d.numParagrafo}_${d.refBibId}`, d.id, d.mensagem])
+  );
+  const figTabAtivos = alertasFigurasTabelas.filter(
+    (ft, i) => !estaResolvido([`figtab_${ft.numParagrafo}_${ft.tipo}_${ft.numero || i}`, ft.id, ft.mensagem])
+  );
+  const orfasAtivas = citacoesSemReferencia.filter(
+    (c) => !estaResolvido([`orfa_${c.chave}`, `orfa-${c.autor}-${c.ano}`, c.chave])
+  );
+  const naoCitadasAtivas = refsNaoCitadas.filter(
+    (r) => !estaResolvido([`sobr_${r.refBibId || r.textoOriginal}`, `sobrando-${r.id || r.chave}`, r.id, r.chave])
+  );
+
+  // Alertas de precisão exclusivos (evita duplicação com os blocos específicos acima)
+  const tiposJaEmBlocosEspecificos = new Set([
+    'inconsistencia_estatistica_grave', 'inconsistencia_estatistica_numerica',
+    'alta_concentracao_autoria', 'concentracao_periodico',
+    'ausencia_aprovacao_etica', 'ausencia_mencao_tcle', 'ausencia_criterios_elegibilidade',
+    'ensaio_sem_registro_icmje', 'ausencia_declaracao_conflitos', 'poucos_descritores',
+    'frase_torturada', 'monotonia_sintatica_estilometrica', 'pobreza_lexical_anomala', 'repeticao_trigramas_mecanica',
+    'periodico_predatorio_suspeito', 'abnt_formula_disponivel_em', 'abnt_data_acesso_ausente',
+    'abnt_mes_acesso_fora_padrao', 'abnt_livro_sem_local_editora', 'abnt_artigo_sem_volume_paginas',
+    'corrupcao_gene_excel', 'capes_falta_codigo_001', 'fomento_sem_numero_processo', 'ausencia_declaracao_fomento',
+    'desvio_tematico_citacao', 'ilustracao_sem_fonte', 'ilustracao_sem_chamada', 'chamada_ilustracao_orfa',
+    'ilustracao_salto_numeracao', 'tabela_vs_quadro_ibge', 'estilo_redacao_ia',
+  ]);
+  const precisaoAtivos = alertasPrecisao.filter((ap) => {
+    if (tiposJaEmBlocosEspecificos.has(ap.tipo)) return false;
+    return !estaResolvido([
+      obterIdMeta(ap),
+      `metodologico_${ap.numParagrafo}_${ap.tipo}`,
+      ap.id,
+      ap.mensagem,
+    ]);
+  });
+
+  // Categorias organizadas para exibição assertiva na Seção 3 (apenas categorias com itens ativos)
+  const categoriasInconformidades = [
+    {
+      titulo: '1. Integridade & Autenticidade de Fontes',
+      cor: '#dc2626',
+      itens: [
+        ...refsSuspeitasIaAtivas.map((r) => ({
+          tipo: r.statusAutenticidade || 'fonte_nao_autenticada',
+          numParagrafo: r.ocorrenciasNoTexto?.[0]?.numParagrafo,
+          numLinha: r.ocorrenciasNoTexto?.[0]?.numLinha,
+          secao: r.ocorrenciasNoTexto?.[0]?.secao || 'Referências',
+          autorCitado: `${r.primeiroSobrenome || 'Fonte'} (${r.ano || 's.d.'})`,
+          fraseWord: r.textoOriginal,
+          mensagem: r.alertaAutenticidade || 'Fonte não confirmada nas bases indexadas.',
+        })),
+        ...predatoriosAtivos.map((p) => ({
+          tipo: 'periodico_predatorio_suspeito',
+          secao: 'Referências',
+          autorCitado: p.chaveAutorAno,
+          fraseWord: p.textoReferencia,
+          mensagem: p.mensagem,
+        })),
+      ],
+    },
+    {
+      titulo: '2. Fidelidade Semântica, Lógica (NLI / Guardião) & Plágio',
+      cor: '#b91c1c',
+      itens: [
+        ...atribuicaoFalsaAtivos.map((a) => ({ ...a, tipo: a.tipo || 'atribuicao_falsa' })),
+        ...plagioAtivos.map((p) => ({ ...p, tipo: p.tipo || 'plagio_literal', fraseWord: p.fraseNoWord || p.fraseWord })),
+        ...desvioAtivos.map((d) => ({ ...d, tipo: d.tipo || 'desvio_tematico_citacao' })),
+        ...precisaoAtivos.filter(
+          (a) =>
+            a.tipo === 'atribuicao_falsa' ||
+            a.tipo === 'mismatch_conteudo' ||
+            a.tipo === 'contradicao_logica_nli' ||
+            a.tipo === 'citacao_multipla_intruso' ||
+            a.tipo === 'afirmacao_parcialmente_sustentada' ||
+            String(a.tipo || '').startsWith('guardiao_')
+        ),
+      ],
+    },
+    {
+      titulo: '3. Consistência Intra-Documento, Estatística & Metodologia',
+      cor: '#d97706',
+      itens: [
+        ...estatisticosAtivos,
+        ...precisaoAtivos.filter((a) => String(a.tipo || '').startsWith('intra_')),
+        ...metodologiaAtivos,
+        ...geneAtivos,
+        ...fomentoAtivos,
+        ...redeAtivos,
+      ],
+    },
+    {
+      titulo: '4. Rastreabilidade Bidirecional (Texto ↔ Referências)',
+      cor: '#ea580c',
+      itens: [
+        ...orfasAtivas.map((c) => ({
+          tipo: 'citacao_sem_referencia',
+          numParagrafo: c.ocorrencias?.[0]?.numParagrafo,
+          numLinha: c.ocorrencias?.[0]?.numLinha,
+          autorCitado: `${c.autor} (${c.ano})`,
+          fraseWord: c.ocorrencias?.[0]?.fraseContexto || '',
+          mensagem: `Citada ${c.ocorrencias?.length || 1}x no corpo do texto sem entrada correspondente nas Referências finais.`,
+        })),
+        ...naoCitadasAtivas.map((r) => ({
+          tipo: 'referencia_nao_citada',
+          secao: 'Referências',
+          autorCitado: `${r.primeiroSobrenome || 'Obra'} (${r.ano || 's.d.'})`,
+          fraseWord: r.textoOriginal,
+          mensagem: 'Entrada listada nas Referências finais sem chamada identificada no corpo do texto.',
+        })),
+      ],
+    },
+    {
+      titulo: '5. Normas Bibliográficas, Ilustrações & Redação',
+      cor: '#2563eb',
+      itens: [
+        ...abnt6023Ativos.map((a) => ({ ...a, secao: 'Referências', autorCitado: a.chaveRef, fraseWord: a.textoReferencia })),
+        ...figTabAtivos,
+        ...torturadasAtivos,
+        ...estilometriaAtivos,
+        ...precisaoAtivos.filter(
+          (a) =>
+            a.tipo !== 'atribuicao_falsa' &&
+            a.tipo !== 'mismatch_conteudo' &&
+            a.tipo !== 'contradicao_logica_nli' &&
+            a.tipo !== 'citacao_multipla_intruso' &&
+            a.tipo !== 'afirmacao_parcialmente_sustentada' &&
+            !String(a.tipo || '').startsWith('guardiao_') &&
+            !String(a.tipo || '').startsWith('intra_')
+        ),
+      ],
+    },
+  ].filter((cat) => cat.itens.length > 0);
+
+  const inconformidadesAtivas = categoriasInconformidades.flatMap((c) => c.itens);
   const totalInconformidades = inconformidadesAtivas.length;
 
   // Cálculo do Índice de Integridade
@@ -83,116 +291,117 @@ function gerarHtmlLaudoPericial(resultado = {}, opcoes = {}) {
     indiceIntegridade = Math.max(0, 100 - penalidade);
   }
 
-  let statusGeral = 'CONFORME / EXCELENTE';
-  let corStatus = '#16a34a';
-  let badgeClass = 'status-conforme';
-  if (totalInconformidades > 8 || indiceIntegridade < 70) {
-    statusGeral = 'CRÍTICO / REQUER ADEQUAÇÃO URGENTE';
-    corStatus = '#dc2626';
-    badgeClass = 'status-critico';
-  } else if (totalInconformidades > 0 || indiceIntegridade < 95) {
-    statusGeral = 'APTO COM RESSALVAS NORMATIVAS';
-    corStatus = '#d97706';
-    badgeClass = 'status-ressalvas';
+  let statusGeral = 'Pronto para submissão (sem pendências ativas)';
+  let corStatus = '#15803d';
+  if (totalInconformidades > 5 || indiceIntegridade < 70) {
+    statusGeral = 'Revisão recomendada antes da submissão';
+    corStatus = '#b45309';
+  } else if (totalInconformidades > 0) {
+    statusGeral = `Pequenos ajustes sugeridos (${totalInconformidades} ponto${totalInconformidades > 1 ? 's' : ''})`;
+    corStatus = '#0369a1';
   }
 
-  // Matriz de Dimensões Forenses
+  // Métricas informativas reais para enriquecer cada dimensão do relatório do autor
+  const totalComPdf = refsMapeadas.filter((r) => r.temPdf || r.pdfBaixado || r.nomeArquivoPdf).length;
+  const totalInstitucionais = refsMapeadas.filter(
+    (r) =>
+      r.natureza === 'norma_livro_institucional' ||
+      r.statusAutenticidade === 'institucional_tese' ||
+      r.statusAutenticidade === 'protocolo_controlado_aprovado'
+  ).length;
+  const totalComDoi = refsMapeadas.filter((r) => r.doiOficial || r.doi).length;
+  const estiloLabel =
+    resultado.estiloBibliograficoDetectado === 'vancouver_nature'
+      ? 'Vancouver / Nature (Numérico)'
+      : 'ABNT (Autor-Data)';
+  const rvc = resultado.resumoVerificacaoConteudo || {};
+  const rx = resultado.raioXBibliometrico || null;
+  const intra = resultado.resumoIntraDocumento || null;
+  const clin = resultado.resumoMetodologiaClinica || {};
+  const est = resultado.resumoEstatistico || {};
+  const figTabRes = resultado.resumoFigurasTabelas || {};
+  const totalResolvidosOmitidos = resolvidosSet.size;
+  const mapaEvidenciaPorChave = new Map(
+    (rx?.classificacoesPorRef || []).map((c) => [c.chave || `${c.autor}:${c.ano}`, c])
+  );
+
+  // Panorama Informativo por Dimensão (traz dados concretos do manuscrito + pendências ativas)
   const dimensoes = [
     {
-      nome: 'Autenticidade de Fontes & Detecção de IA',
-      norma: 'Crossref, OpenAlex, Handles, DOI',
-      alertas: refsMapeadas.filter((r) => r.suspeitaAlucinacaoIa).length,
-      descricao: 'Verificação cruzada contra alucinações de LLM e obras fabricadas',
+      nome: 'Autenticidade & Fontes Primárias',
+      norma: 'Crossref, OpenAlex, PubMed, Handles',
+      alertas: refsSuspeitasIaAtivas.length,
+      detalhe: `${totalAutenticadas} de ${totalObras} obras confirmadas em bases (${totalComDoi} com DOI; ${totalComPdf} com PDF; ${totalInstitucionais} institucionais/normas).`,
     },
     {
-      nome: 'Fidelidade de Citação e Mismatch de Conteúdo',
-      norma: 'NBR 10520 & Comparação Semântica',
-      alertas: alertasPrecisao.filter((a) => a.tipo === 'atribuicao_falsa' || a.tipo === 'mismatch_conteudo').length,
-      descricao: 'Conferência entre a ideia atribuída e o conteúdo real da obra',
+      nome: 'Fidelidade Semântica, NLI & Guardião',
+      norma: 'Bi/Cross-Encoder ONNX + NegEx',
+      alertas:
+        atribuicaoFalsaAtivos.length +
+        precisaoAtivos.filter(
+          (a) =>
+            a.tipo === 'atribuicao_falsa' ||
+            a.tipo === 'mismatch_conteudo' ||
+            a.tipo === 'contradicao_logica_nli' ||
+            a.tipo === 'citacao_multipla_intruso' ||
+            String(a.tipo || '').startsWith('guardiao_')
+        ).length,
+      detalhe: `${rvc.totalObrasVerificadas ?? totalAutenticadas} de ${rvc.totalObrasCitadas ?? totalObras} obras citadas com conteúdo auditado; ${(resultado.alertasNliContradicao || []).length} contradição(ões) NLI e ${(resultado.alertasCitacoesMultiplas || []).length} intruso(s) em citações múltiplas.`,
     },
     {
-      nome: 'Plágio e Cópia Literal sem Aspas',
-      norma: 'Google Diff Match & NBR 10520 §5',
-      alertas: alertasPrecisao.filter((a) => a.tipo === 'plagio_literal' || a.tipo === 'copia_sem_aspas').length,
-      descricao: 'Identificação de blocos idênticos de 7+ palavras sem aspas',
+      nome: 'Consistência Interna (Tabelas, Resumo & Siglas)',
+      norma: 'Reconciliação XML <w:tbl> & Acrônimos',
+      alertas: precisaoAtivos.filter((a) => String(a.tipo || '').startsWith('intra_')).length,
+      detalhe: `${intra?.tabelasDetectadas ?? 0} tabela(s) XML extraída(s); confronto Resumo × Resultados e rastreio de siglas na 1ª menção aplicados.`,
     },
     {
-      nome: 'Consistência Estatística (GRIM / p-values)',
-      norma: 'Brown & Heathers (2016) / APA StatCheck',
-      alertas: (resultado.resumoEstatistico?.alertasEstatisticos || []).length,
-      descricao: 'Verificação matemática de granularidade amostral e teste de hipóteses',
+      nome: 'Originalidade & Cópia Literal',
+      norma: 'Diff Match Patch & NBR 10520',
+      alertas: plagioAtivos.length,
+      detalhe:
+        plagioAtivos.length === 0
+          ? 'Nenhum bloco literal extenso sem aspas detectado frente aos textos completos disponíveis.'
+          : `${plagioAtivos.length} trecho(s) com sobreposição literal sem aspas para revisão de paráfrase.`,
     },
     {
-      nome: 'Concentração de Rede & Autocitação',
-      norma: 'COPE Guidelines / Índice de Gini',
-      alertas: (resultado.resumoRede?.alertasRede || []).length,
-      descricao: 'Análise de distribuição equilibrada de periódicos e autores citados',
+      nome: 'Estatística & Matemática (StatCheck)',
+      norma: 'GRIM / Distribuições Exatas',
+      alertas: estatisticosAtivos.length,
+      detalhe: `${est.totalTestesAnalisados ?? 0} teste(s) estatístico(s) verificado(s) no corpo do texto.`,
     },
     {
-      nome: 'Metodologia Clínica & Conformidade Ética',
-      norma: 'CONSORT, PRISMA, Res. CNS 510/2016',
-      alertas: (resultado.resumoMetodologiaClinica?.alertas || []).length,
-      descricao: 'Verificação de declaração de CEP, TCLE, cálculo amostral e checklist',
+      nome: 'Metodologia, Desenho & Ética',
+      norma: clin.desenhoEstudo?.checklist || 'STROBE / CONSORT / PRISMA',
+      alertas: metodologiaAtivos.length,
+      detalhe: `Desenho identificado: ${clin.desenhoEstudo?.descricao || 'Não especificado'}${clin.etica?.caae ? ` · CAAE ${clin.etica.caae}` : ''}${clin.descritores?.descritoresEncontrados?.length ? ` · ${clin.descritores.descritoresEncontrados.length} descritor(es)` : ''}.`,
     },
     {
-      nome: 'Frases Torturadas & Spin-Botting',
-      norma: 'Cabanac, Labbé & Magazinov (2021)',
-      alertas: (resultado.resumoFrasesTorturadas?.alertas || []).length,
-      descricao: 'Detecção de sinônimos bizarros gerados por parafraseadores automáticos',
+      nome: 'Rastreabilidade (Texto ↔ Referências)',
+      norma: estiloLabel,
+      alertas: orfasAtivas.length + naoCitadasAtivas.length,
+      detalhe: `${totalCitacoes} chamadas no corpo cruzadas com ${resultado.totalReferenciasListaFinal || refsMapeadas.length} referências finais (${orfasAtivas.length} órfã(s), ${naoCitadasAtivas.length} não citada(s)).`,
     },
     {
-      nome: 'Estilometria Textual & Variação Rítmica',
-      norma: 'Índice Guiraud, TTR & Burstiness Frasal',
-      alertas: (resultado.resumoEstilometria?.alertasEstilometricos || []).length,
-      descricao: 'Análise de cadência sintática, monotonia mecânica e riqueza vocabular',
+      nome: 'Normas Bibliográficas & Ilustrações',
+      norma: resultado.estiloBibliograficoDetectado === 'vancouver_nature' ? 'Vancouver / Nature' : 'ABNT NBR 6023 & 14724 / IBGE',
+      alertas: abnt6023Ativos.length + figTabAtivos.length,
+      detalhe:
+        resultado.estiloBibliograficoDetectado === 'vancouver_nature'
+          ? `Estilo internacional Vancouver/Nature detectado (regras estritas ABNT 6023 isentas); ${figTabRes.totalElementos ?? 0} figura(s)/tabela(s) auditada(s).`
+          : `${refsMapeadas.length} referência(s) conferida(s) na NBR 6023 e ${figTabRes.totalElementos ?? 0} figura(s)/tabela(s) verificada(s).`,
     },
     {
-      nome: 'Revistas e Editoras Predatórias',
-      norma: 'Critérios de Beall / Stop Predatory Hub',
-      alertas: (resultado.resumoPredatorias?.alertas || []).length,
-      descricao: 'Triagem de periódicos suspeitos de publicação predatória ou vaidade',
-    },
-    {
-      nome: 'Completude de Metadados ABNT NBR 6023',
-      norma: 'ABNT NBR 6023:2018 / 2020',
-      alertas: (resultado.resumoAbnt6023?.alertas || []).length,
-      descricao: 'Exigência de autoria completa, título, edição, cidade, editora e ano',
-    },
-    {
-      nome: 'Corrupção Genômica de Nomenclatura',
-      norma: 'Ziemann et al. (2016) / HUGO HGNC',
-      alertas: (resultado.resumoCorrupcaoGene?.alertas || []).length,
-      descricao: 'Identificação de símbolos de genes convertidos indevidamente em datas',
-    },
-    {
-      nome: 'Fomento, Agências e Conflito de Interesses',
-      norma: 'Portaria CAPES 206 / CNPq / ICMJE',
-      alertas: (resultado.resumoFomento?.alertas || []).length,
-      descricao: 'Declaração formal de código CAPES 001, processos e isenção de conflito',
-    },
-    {
-      nome: 'Relevância Temática & Claim Support',
-      norma: 'TF-IDF & Vetores Esparsos BM25',
-      alertas: (resultado.resumoClaimSupport?.alertas || []).length,
-      descricao: 'Avaliação de pertinência entre a afirmação do texto e o resumo oficial',
-    },
-    {
-      nome: 'Figuras, Quadros e Tabelas',
-      norma: 'ABNT NBR 14724 & Normas Tabulares IBGE',
-      alertas: alertasFigurasTabelas.length,
-      descricao: 'Auditoria de chamadas no corpo (§), linha obrigatória de Fonte e numeração',
-    },
-    {
-      nome: 'Citações Órfãs (Citadas sem Referência)',
-      norma: 'Rastreabilidade Textual Bidirecional',
-      alertas: citacoesSemReferencia.length,
-      descricao: 'Autores invocados no corpo que não constam nas referências finais',
-    },
-    {
-      nome: 'Obras não Citadas (Sobrando na Lista)',
-      norma: 'ABNT NBR 10520 & 14724',
-      alertas: refsNaoCitadas.length,
-      descricao: 'Obras listadas nas referências que não receberam citação no texto',
+      nome: 'Qualidade Editorial, Rede & Redação',
+      norma: 'COPE, Beall, Cabanac, Estilometria & Fomento',
+      alertas:
+        redeAtivos.length +
+        predatoriosAtivos.length +
+        torturadasAtivos.length +
+        estilometriaAtivos.length +
+        geneAtivos.length +
+        fomentoAtivos.length +
+        desvioAtivos.length,
+      detalhe: `Verificação de periódicos predatórios (${predatoriosAtivos.length}), concentração de rede (${redeAtivos.length}), frases torturadas (${torturadasAtivos.length}), estilometria (${estilometriaAtivos.length}) e fomento (${fomentoAtivos.length}).`,
     },
   ];
 
@@ -427,116 +636,129 @@ function gerarHtmlLaudoPericial(resultado = {}, opcoes = {}) {
         display: none !important;
       }
     }
+    .barra-acoes-topo {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+    }
     .btn-imprimir {
-      position: fixed;
-      top: 16px;
-      right: 16px;
       background: #0f172a;
       color: #ffffff;
       border: none;
       border-radius: 6px;
-      padding: 8px 16px;
-      font-size: 10pt;
+      padding: 6px 14px;
+      font-size: 9pt;
       font-weight: 600;
       cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
     .btn-imprimir:hover {
       background: #1e293b;
     }
+    .faixa-resumo {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 16px;
+      padding: 10px 14px;
+      border-radius: 7px;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      margin-bottom: 12px;
+      font-size: 9pt;
+      color: #1e293b;
+    }
+    .faixa-resumo .metrica-inline strong {
+      color: #0f172a;
+    }
+    .faixa-status-suave {
+      border-left: 3.5px solid ${corStatus};
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+      font-size: 9pt;
+      color: #334155;
+    }
   </style>
 </head>
 <body>
-  <button class="btn-imprimir no-print" onclick="window.print()">🖨️ Imprimir Laudo / Salvar como PDF</button>
+  <div class="barra-acoes-topo no-print">
+    <button class="btn-imprimir" onclick="window.print()">🖨️ Imprimir / Salvar como PDF</button>
+  </div>
 
-  <header class="cabecalho-laudo">
+  <header class="cabecalho-laudo" style="padding-bottom: 10px; margin-bottom: 12px;">
     <div>
-      <h1 class="titulo-principal">Laudo Pericial de Auditoria Bibliográfica</h1>
-      <p class="subtitulo-laudo">Dossiê Forense de Integridade Científica, Autenticidade de Fontes Primárias e Rastreabilidade Normativa</p>
+      <h1 class="titulo-principal" style="font-size: 14pt; text-transform: none; letter-spacing: 0;">Relatório de Revisão Bibliográfica</h1>
+      <p class="subtitulo-laudo" style="font-size: 9pt;">Síntese informativa de referências, consistência textual e pontos de melhoria para o autor</p>
     </div>
-    <div class="metadados-laudo">
-      <strong>Documento:</strong> ${escaparHtml(nomeArquivo)}<br>
-      <strong>Data da Perícia:</strong> ${escaparHtml(dataHora)}<br>
-      <strong>Motor Forense:</strong> Auditoria Reversa v2.5<br>
-      <strong>Protocolo:</strong> #${Math.floor(100000 + Math.random() * 900000)}
+    <div class="metadados-laudo" style="font-size: 8.5pt;">
+      <strong>Arquivo:</strong> ${escaparHtml(nomeArquivo)}<br>
+      <strong>Gerado em:</strong> ${escaparHtml(dataHora)}<br>
+      <strong>Estilo detectado:</strong> ${escaparHtml(estiloLabel)}
     </div>
   </header>
 
-  <!-- RESUMO EXECUTIVO -->
-  <div class="painel-resumo">
-    <div class="card-kpi">
-      <div class="rotulo">Total de Citações</div>
-      <div class="valor" style="color: #2563eb;">${totalCitacoes}</div>
-      <div style="font-size: 8pt; color: #64748b;">ocorrências no manuscrito</div>
-    </div>
-    <div class="card-kpi">
-      <div class="rotulo">Obras Distintas</div>
-      <div class="valor" style="color: #0f172a;">${totalObras}</div>
-      <div style="font-size: 8pt; color: #64748b;">referências examinadas</div>
-    </div>
-    <div class="card-kpi">
-      <div class="rotulo">Fontes Autenticadas</div>
-      <div class="valor" style="color: #16a34a;">${totalAutenticadas} / ${totalObras}</div>
-      <div style="font-size: 8pt; color: #64748b;">validadas em bases oficiais</div>
-    </div>
-    <div class="card-kpi">
-      <div class="rotulo">Índice de Integridade</div>
-      <div class="valor" style="color: ${corStatus};">${indiceIntegridade}%</div>
-      <div style="font-size: 8pt; color: #64748b;">${totalInconformidades} inconformidades ativas</div>
-    </div>
+  <!-- FAIXA COMPACTA DE RESUMO -->
+  <div class="faixa-resumo">
+    <span class="metrica-inline"><strong>Citações no texto:</strong> ${totalCitacoes}</span>
+    <span class="metrica-inline"><strong>Obras mapeadas:</strong> ${totalObras}</span>
+    <span class="metrica-inline"><strong>Confirmadas em bases:</strong> ${totalAutenticadas}/${totalObras} (${totalComPdf} com PDF)</span>
+    <span class="metrica-inline"><strong>Pendências ativas:</strong> <span style="color: ${corStatus}; font-weight: 700;">${totalInconformidades}</span></span>
+    ${rx && rx.totalReferencias > 0 ? `<span class="metrica-inline"><strong>Recentes (≤5 anos):</strong> ${rx.percentualRecentes5Anos}%</span>` : ''}
+    ${totalResolvidosOmitidos > 0 ? `<span class="metrica-inline" style="color: #64748b;"><em>(${totalResolvidosOmitidos} resolvido(s)/ignorado(s) omitido(s))</em></span>` : ''}
   </div>
 
-  <!-- BANNER DE PARECER TÉCNICO -->
-  <div class="banner-parecer">
-    <div>
-      <div class="titulo-parecer">Parecer Técnico: ${statusGeral}</div>
-      <p class="desc-parecer">
-        O manuscrito foi submetido a auditoria automatizada em profundidade cobrindo normas ABNT (NBR 10520, 6023, 14724), integridade de bases de dados (Crossref, PubMed, OpenAlex), análise de plágio literal sem aspas, consistência matemática e marcadores estilométricos.
-      </p>
-    </div>
+  <!-- RESUMO INTERPRETATIVO PARA O AUTOR -->
+  <div class="faixa-status-suave">
+    <strong style="color: ${corStatus};">${escaparHtml(statusGeral)}</strong> —
+    ${totalInconformidades === 0
+      ? 'Todas as referências, citações e verificações ativas estão alinhadas.'
+      : `Foram encontrados ${totalInconformidades} ponto(s) ativo(s) detalhados na Seção 3 abaixo para revisão pontual antes da entrega ou submissão.`}
+    ${rx && (rx.distribuicaoEvidencia || []).some((e) => e.quantidade > 0)
+      ? `<div style="margin-top: 5px; font-size: 8.3pt; color: #475569;"><strong>Perfil das fontes (Pirâmide de Evidência):</strong> ${(rx.distribuicaoEvidencia || []).filter((e) => e.quantidade > 0).map((e) => `${escaparHtml(e.rotulo)}: ${e.quantidade}`).join(' · ')}</div>`
+      : ''}
   </div>
 
-  <!-- MATRIZ FORENSE DE CONFORMIDADE -->
-  <h2 class="secao-titulo">1. Matriz de Conformidade Forense (16 Dimensões de Integridade)</h2>
+  <!-- PANORAMA DAS DIMENSÕES ANALISADAS -->
+  <h2 class="secao-titulo" style="font-size: 10.5pt; margin: 14px 0 8px 0;">1. Panorama Detalhado por Dimensão Analisada</h2>
   <table class="tabela-laudo">
     <thead>
       <tr>
-        <th style="width: 30%;">Dimensão Forense</th>
-        <th style="width: 25%;">Norma / Base Técnica</th>
-        <th style="width: 15%; text-align: center;">Status</th>
-        <th style="width: 30%;">Diagnóstico Resumido</th>
+        <th style="width: 24%;">Dimensão</th>
+        <th style="width: 20%;">Referência / Motor</th>
+        <th style="width: 14%; text-align: center;">Situação</th>
+        <th style="width: 42%;">Resumo Informativo do Manuscrito</th>
       </tr>
     </thead>
     <tbody>
       ${dimensoes.map((d) => `
         <tr>
           <td><strong>${escaparHtml(d.nome)}</strong></td>
-          <td style="color: #475569;">${escaparHtml(d.norma)}</td>
+          <td style="color: #475569; font-size: 8.3pt;">${escaparHtml(d.norma)}</td>
           <td style="text-align: center;">
             ${d.alertas === 0
-              ? '<span class="badge-conforme">✓ Conforme</span>'
-              : `<span class="badge-alerta">⚠ ${d.alertas} alerta(s)</span>`}
+              ? '<span class="badge-conforme">✓ Sem pendências</span>'
+              : `<span class="badge-alerta">${d.alertas} ponto(s)</span>`}
           </td>
-          <td style="font-size: 8.5pt; color: #334155;">
-            ${d.alertas === 0
-              ? 'Conformidade plena assegurada sem divergências.'
-              : escaparHtml(d.descricao)}
-          </td>
+          <td style="font-size: 8.5pt; color: #334155;">${escaparHtml(d.detalhe)}</td>
         </tr>
       `).join('')}
     </tbody>
   </table>
 
-  <!-- ROL DE OBRAS AUTENTICADAS -->
-  <h2 class="secao-titulo">2. Rol de Obras Autenticadas e Rastreabilidade de Fontes Primárias (${refsMapeadas.length})</h2>
+  <!-- ROL DE OBRAS MAPEADAS -->
+  <h2 class="secao-titulo" style="font-size: 10.5pt; margin: 16px 0 8px 0;">2. Mapeamento das Referências do Manuscrito (${refsMapeadas.length})</h2>
   <table class="tabela-laudo">
     <thead>
       <tr>
-        <th style="width: 20%;">Autor / Entrada</th>
-        <th style="width: 8%; text-align: center;">Ano</th>
-        <th style="width: 42%;">Título da Obra / Artigo</th>
-        <th style="width: 18%;">Identificador / DOI</th>
-        <th style="width: 12%; text-align: center;">Autenticação</th>
+        <th style="width: 18%;">Autor / Ano</th>
+        <th style="width: 38%;">Título &amp; Identificador</th>
+        <th style="width: 14%; text-align: center;">Citações no Texto</th>
+        <th style="width: 18%;">Categoria / Evidência</th>
+        <th style="width: 12%; text-align: center;">Acervo</th>
       </tr>
     </thead>
     <tbody>
@@ -548,18 +770,28 @@ function gerarHtmlLaudoPericial(resultado = {}, opcoes = {}) {
         const tit = r.tituloOficial || r.tituloBuscado || r.textoOriginal || 'Título não identificado';
         const doi = r.doiOficial || r.doi || '';
         const autenticada = r.encontradoNasBases || !!doi;
+        const ocs = r.ocorrenciasNoTexto || [];
+        const parsResumo = ocs.length
+          ? `${ocs.length}x (${[...new Set(ocs.map((o) => `§${o.numParagrafo}`))].slice(0, 4).join(', ')})`
+          : 'Lista final';
+        const evInfo = mapaEvidenciaPorChave.get(r.chave || `${aut}:${a}`);
+        const catEv = evInfo ? `N${evInfo.nivel} · ${evInfo.categoria.split('/')[0].trim()}` : (r.natureza === 'norma_livro_institucional' ? 'Normativo / Oficial' : 'Artigo / Obra');
+        const temPdf = Boolean(r.temPdf || r.pdfBaixado || r.nomeArquivoPdf);
         return `
           <tr>
-            <td><strong>${escaparHtml(aut.toUpperCase())}</strong></td>
-            <td style="text-align: center;">${escaparHtml(a)}</td>
-            <td style="font-size: 8.5pt;">${escaparHtml(tit.slice(0, 120))}${tit.length > 120 ? '…' : ''}</td>
-            <td style="font-size: 8pt; font-family: monospace;">
-              ${doi ? `<a href="https://doi.org/${escaparHtml(doi)}" target="_blank" style="color: #2563eb; text-decoration: none;">${escaparHtml(doi)}</a>` : '<span style="color: #94a3b8;">Não indexado</span>'}
+            <td><strong>${escaparHtml(aut.toUpperCase())}</strong><br><span style="color:#64748b;font-size:8pt;">${escaparHtml(a)}</span></td>
+            <td style="font-size: 8.4pt;">
+              ${escaparHtml(tit.slice(0, 125))}${tit.length > 125 ? '…' : ''}
+              ${doi ? `<br><a href="https://doi.org/${escaparHtml(doi)}" target="_blank" style="color: #2563eb; text-decoration: none; font-family: monospace; font-size: 7.8pt;">DOI: ${escaparHtml(doi)}</a>` : ''}
             </td>
-            <td style="text-align: center;">
-              ${autenticada
-                ? '<span class="badge-conforme">✓ Autêntica</span>'
-                : '<span class="badge-alerta" style="background: #fef3c7; color: #b45309;">Manual</span>'}
+            <td style="text-align: center; font-size: 8.2pt; color: #334155;">${escaparHtml(parsResumo)}</td>
+            <td style="font-size: 8.1pt; color: #475569;">${escaparHtml(catEv)}</td>
+            <td style="text-align: center; font-size: 8pt;">
+              ${temPdf
+                ? '<span class="badge-conforme">PDF local</span>'
+                : autenticada
+                ? '<span class="badge-conforme">Indexada</span>'
+                : '<span style="color: #64748b;">Referência local</span>'}
             </td>
           </tr>
         `;
@@ -567,46 +799,48 @@ function gerarHtmlLaudoPericial(resultado = {}, opcoes = {}) {
     </tbody>
   </table>
 
-  <!-- APONTAMENTOS DE INCONFORMIDADES -->
-  <h2 class="secao-titulo">3. Relatório Circunstanciado de Inconformidades e Recomendações (${totalInconformidades})</h2>
+  <!-- APONTAMENTOS DE INCONFORMIDADES CATEGORIZADOS (APENAS PENDÊNCIAS ATIVAS) -->
+  <h2 class="secao-titulo">3. Relatório Circunstanciado de Inconformidades Ativas por Categoria (${totalInconformidades})</h2>
   ${totalInconformidades === 0 ? `
     <div style="padding: 16px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; color: #166534; font-size: 9.5pt;">
-      <strong>✓ Nenhuma inconformidade ativa detectada.</strong> O manuscrito atende com rigor aos parâmetros auditados.
+      <strong>✓ Nenhuma pendência ativa.</strong> Todos os critérios auditados encontram-se em conformidade (itens previamente sanados ou justificados não acompanham este relatório).
     </div>
   ` : `
     <div>
-      ${inconformidadesAtivas.map((inc, idx) => {
-        const tipoRotulo = inc.tipo || 'INCONFORMIDADE NORMATIVA';
-        const parLinha = `§${inc.numParagrafo || '?'}${inc.numLinha ? `, Linha ${inc.numLinha}` : ''}`;
-        const secao = inc.secao ? ` · Seção: ${inc.secao}` : '';
-        const autor = inc.autorCitado ? ` · ${inc.autorCitado}` : '';
-        const trecho = inc.fraseWord || inc.textoOriginal || '';
-        const msg = inc.mensagem || inc.diagnostico || 'Recomenda-se revisão e ajuste da redação.';
-        return `
-          <div class="item-inconformidade ${tipoRotulo.includes('aviso') ? 'aviso' : ''}">
-            <div class="topo">
-              <span class="rotulo-tipo">#${idx + 1} — ${escaparHtml(tipoRotulo.toUpperCase().replace(/_/g, ' '))}</span>
-              <span class="local">${escaparHtml(parLinha)}${escaparHtml(secao)}${escaparHtml(autor)}</span>
-            </div>
-            ${trecho ? `<div class="trecho-citado">"${escaparHtml(trecho.slice(0, 300))}${trecho.length > 300 ? '…' : ''}"</div>` : ''}
-            <div class="diagnostico"><strong>Apontamento Forense:</strong> ${escaparHtml(msg)}</div>
-          </div>
-        `;
-      }).join('')}
+      ${categoriasInconformidades.map((cat) => `
+        <div style="margin-bottom: 14px;">
+          <h3 style="font-size: 10pt; font-weight: 700; color: ${cat.cor}; margin: 10px 0 6px 0; padding-bottom: 3px; border-bottom: 1px solid #e2e8f0;">
+            ${escaparHtml(cat.titulo)} (${cat.itens.length})
+          </h3>
+          ${cat.itens.map((inc, idx) => {
+            const tipoRotulo = inc.tipo || 'INCONFORMIDADE NORMATIVA';
+            const parLinha = inc.numParagrafo ? `§${inc.numParagrafo}${inc.numLinha ? `, Linha ${inc.numLinha}` : ''}` : '';
+            const secao = inc.secao ? `${parLinha ? ' · ' : ''}${inc.secao}` : '';
+            const autor = inc.autorCitado ? `${parLinha || secao ? ' · ' : ''}${inc.autorCitado}` : '';
+            const trecho = inc.fraseWord || inc.textoOriginal || '';
+            const msg = inc.mensagem || inc.diagnostico || 'Recomenda-se revisão e ajuste da redação.';
+            return `
+              <div class="item-inconformidade ${tipoRotulo.includes('aviso') ? 'aviso' : ''}" style="border-left-color: ${cat.cor};">
+                <div class="topo">
+                  <span class="rotulo-tipo">#${idx + 1} — ${escaparHtml(tipoRotulo.toUpperCase().replace(/_/g, ' '))}</span>
+                  <span class="local">${escaparHtml(parLinha)}${escaparHtml(secao)}${escaparHtml(autor)}</span>
+                </div>
+                ${trecho ? `<div class="trecho-citado">"${escaparHtml(trecho.slice(0, 280))}${trecho.length > 280 ? '…' : ''}"</div>` : ''}
+                <div class="diagnostico"><strong>Ação / Diagnóstico:</strong> ${escaparHtml(msg)}</div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `).join('')}
     </div>
   `}
 
-  <!-- TERMO PERICIAL E ASSINATURA -->
-  <footer class="rodape-pericial">
-    <div>
-      <div style="font-size: 8.5pt; font-weight: 700; color: #0f172a; margin-bottom: 2px;">Assinatura Digital de Integridade Forense:</div>
-      <div class="hash-integridade">SHA-256: ${calcularHashIntegridade(JSON.stringify(resultado))}</div>
-      <div style="font-size: 7.5pt; color: #94a3b8; margin-top: 4px;">Gerado eletronicamente por Sistema de Auditoria Bibliográfica e Integridade Acadêmica.</div>
+  <!-- RODAPÉ DISCRETO DE RASTREABILIDADE -->
+  <footer class="rodape-pericial" style="margin-top: 24px; padding-top: 10px;">
+    <div style="font-size: 7.8pt; color: #64748b;">
+      Gerado pelo Bibliografia v1.2.0 · Relatório de apoio à revisão autoral
     </div>
-    <div class="assinatura-box">
-      <strong>Auditor / Responsável Técnico</strong>
-      Perícia de Integridade Científica & Bibliografia
-    </div>
+    <div class="hash-integridade" style="text-align: right;">SHA-256: ${calcularHashIntegridade(JSON.stringify(resultado))}</div>
   </footer>
 </body>
 </html>`;

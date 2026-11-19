@@ -4,6 +4,7 @@
 const { app, safeStorage, clipboard } = require('electron');
 const fs = require('fs');
 const path = require('path');
+const { escreverJsonAtomicoSync } = require('./atomicWrite.cjs');
 
 const arquivo = () => path.join(app.getPath('userData'), 'cofre.json');
 
@@ -16,8 +17,7 @@ function ler() {
 }
 
 function gravar(dados) {
-  fs.mkdirSync(path.dirname(arquivo()), { recursive: true });
-  fs.writeFileSync(arquivo(), JSON.stringify(dados, null, 2), 'utf8');
+  escreverJsonAtomicoSync(arquivo(), dados);
 }
 
 function disponivel() {

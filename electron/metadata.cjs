@@ -1,6 +1,66 @@
 // Busca de metadados: DOI (Crossref/DataCite), ISBN (Google Books/Open Library)
-// e busca por título (Crossref). Tudo é convertido para CSL-JSON.
-const UA = 'Bibliografia/1.0.2 (https://github.com/marcosandredaluz/Bibliography; mailto:pesquisa@bibliografia.local)';
+// e busca por título (Crossref/OpenAlex/Semantic Scholar) com cache determinístico local.
+const fs = require('fs');
+const os = require('os');
+const path = require('path');
+const { escreverArquivoAtomicoSync } = require('./atomicWrite.cjs');
+
+const UA = 'Bibliografia/1.1.0 (https://github.com/marcosandredaluz/Bibliography; mailto:pesquisa@bibliografia.local)';
+
+const CACHE_TTL_OK_MS = 7 * 24 * 60 * 60 * 1000;
+const CACHE_TTL_404_MS = 24 * 60 * 60 * 1000;
+const ARQ_CACHE_API = path.join(os.homedir(), '.bibliografia_api_cache.json');
+let cacheDiscoCarregado = false;
+const cacheApiMem = new Map();
+let timerFlushCache = null;
+
+function carregarCacheDisco() {
+  if (cacheDiscoCarregado) return;
+  cacheDiscoCarregado = true;
+  try {
+    if (!fs.existsSync(ARQ_CACHE_API)) return;
+    const raw = JSON.parse(fs.readFileSync(ARQ_CACHE_API, 'utf8'));
+    const agora = Date.now();
+    for (const [k, v] of Object.entries(raw || {})) {
+      if (v && typeof v.exp === 'number' && v.exp > agora) {
+        cacheApiMem.set(k, v);
+      }
+    }
+  } catch {
+    /* cache corrompido ou inacessível é ignorado com segurança */
+  }
+}
+
+function obterDoCache(chave) {
+  carregarCacheDisco();
+  const hit = cacheApiMem.get(chave);
+  if (!hit) return undefined;
+  if (hit.exp <= Date.now()) {
+    cacheApiMem.delete(chave);
+    return undefined;
+  }
+  return hit;
+}
+
+function salvarNoCache(chave, payload, ttlMs = CACHE_TTL_OK_MS) {
+  carregarCacheDisco();
+  if (cacheApiMem.size > 3000) {
+    const primeiraChave = cacheApiMem.keys().next().value;
+    if (primeiraChave) cacheApiMem.delete(primeiraChave);
+  }
+  cacheApiMem.set(chave, { ...payload, exp: Date.now() + ttlMs });
+  if (timerFlushCache) clearTimeout(timerFlushCache);
+  timerFlushCache = setTimeout(() => {
+    try {
+      const obj = {};
+      for (const [k, v] of cacheApiMem.entries()) obj[k] = v;
+      escreverArquivoAtomicoSync(ARQ_CACHE_API, JSON.stringify(obj), 'utf8');
+    } catch {
+      /* ignora falha de escrita em disco */
+    }
+  }, 400);
+  if (timerFlushCache.unref) timerFlushCache.unref();
+}
 
 const CAMPOS_CSL = new Set([
   'type', 'title', 'title-short', 'container-title', 'container-title-short', 'collection-title',
@@ -9,8 +69,22 @@ const CAMPOS_CSL = new Set([
   'abstract', 'language', 'genre', 'number', 'event-title', 'event-place', 'section', 'medium', 'note',
 ]);
 
+function decodificarEntidadesHtml(s) {
+  return String(s || '')
+    .replace(/&amp;/gi, '&')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#0*39;|&apos;/gi, "'")
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&#x([0-9a-f]+);/gi, (_m, hex) => String.fromCodePoint(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_m, dec) => String.fromCodePoint(parseInt(dec, 10)));
+}
+
 function semTags(s) {
-  return String(s).replace(/<\/?(jats:)?[a-z][^>]*>/gi, (t) => (/^<\/?(i|b|sup|sub)>$/i.test(t) ? t : ' '))
+  return decodificarEntidadesHtml(
+    String(s).replace(/<\/?(jats:)?[a-z][^>]*>/gi, (t) => (/^<\/?(i|b|sup|sub)>$/i.test(t) ? t : ' '))
+  )
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -92,16 +166,61 @@ async function buscarJson(url, headers = {}, retries = 3) {
   }
 }
 
+function extrairRetratacaoCrossref(bruto = {}) {
+  if (!bruto || typeof bruto !== 'object') return { retratado: false, motivo: null, fonte: null };
+  if (bruto['is-retracted'] === true || bruto.is_retracted === true) {
+    return {
+      retratado: true,
+      fonte: 'Crossref (is-retracted)',
+      motivo: 'Registro Crossref sinalizado com is-retracted = true.',
+    };
+  }
+  const updates = bruto['update-to'] || bruto.update_to;
+  if (Array.isArray(updates)) {
+    const ret = updates.find((u) => /retract/i.test(`${u?.type || ''} ${u?.label || ''}`));
+    if (ret) {
+      return {
+        retratado: true,
+        fonte: 'Crossref Crossmark (update-to)',
+        motivo: `Aviso Crossmark (${ret.label || ret.type || 'Retraction'}${ret.DOI ? `: ${ret.DOI}` : ''}).`,
+      };
+    }
+  }
+  const tit = Array.isArray(bruto.title) ? bruto.title[0] : bruto.title;
+  if (tit && /^RETRACTED\b/i.test(String(tit).trim())) {
+    return {
+      retratado: true,
+      fonte: 'Registro Oficial Crossref',
+      motivo: `Artigo com marcação de retratação no título oficial: "${tit}".`,
+    };
+  }
+  return { retratado: false, motivo: null, fonte: null };
+}
+
 async function porDoi(entrada) {
   const doi = normalizarDoi(entrada);
   if (!doi) throw new Error('DOI inválido. Exemplo: 10.1038/nature12373');
+  const chave = `doi:${doi.toLowerCase()}`;
+  const emCache = obterDoCache(chave);
+  if (emCache) {
+    if (emCache.notFound) {
+      const err404 = new Error(`DOI não encontrado: ${doi}`);
+      err404.status = 404;
+      throw err404;
+    }
+    return emCache.retratado ? { ...emCache.csl, _retratado: true } : { ...emCache.csl };
+  }
   try {
     const bruto = await buscarJson(`https://doi.org/${encodeURI(doi)}`, { Accept: 'application/vnd.citationstyles.csl+json' });
     const csl = limparCsl(bruto);
     csl.DOI = doi;
-    return csl;
+    const infoRet = extrairRetratacaoCrossref(bruto);
+    const retratado = Boolean(infoRet.retratado);
+    salvarNoCache(chave, { csl, retratado }, CACHE_TTL_OK_MS);
+    return retratado ? { ...csl, _retratado: true } : csl;
   } catch (e) {
     if (e.status === 404) {
+      salvarNoCache(chave, { notFound: true }, CACHE_TTL_404_MS);
       const err404 = new Error(`DOI não encontrado: ${doi}`);
       err404.status = 404;
       throw err404;
@@ -116,6 +235,10 @@ const SUFIXOS = /^(filho|filha|neto|neta|junior|júnior|jr\.?|sobrinho|segundo|t
 async function porPmid(entrada) {
   const pmid = String(entrada || '').match(/\d{1,9}/)?.[0];
   if (!pmid) throw new Error('PMID inválido.');
+  const chave = `pmid:${pmid}`;
+  const emCache = obterDoCache(chave);
+  if (emCache?.csl) return { ...emCache.csl };
+
   let bruto;
   try {
     bruto = await buscarJson(`https://api.ncbi.nlm.nih.gov/lit/ctxp/v1/pubmed/?format=csl&id=${pmid}`);
@@ -130,6 +253,7 @@ async function porPmid(entrada) {
   if (bruto.PMCID) csl.PMCID = bruto.PMCID;
   if (csl.DOI) csl.DOI = normalizarDoi(csl.DOI) || csl.DOI;
   if (csl['container-title-short'] && !csl['container-title']) csl['container-title'] = csl['container-title-short'];
+  salvarNoCache(chave, { csl }, CACHE_TTL_OK_MS);
   return csl;
 }
 
@@ -137,6 +261,10 @@ async function porPmid(entrada) {
 async function porPmc(entrada) {
   const pmcid = String(entrada || '').replace(/[^0-9]/g, '');
   if (!pmcid) throw new Error('PMCID inválido.');
+  const chave = `pmcid:${pmcid}`;
+  const emCache = obterDoCache(chave);
+  if (emCache?.csl) return { ...emCache.csl };
+
   const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pmc&id=${pmcid}&retmode=json`;
   const dados = await buscarJson(url);
   const doc = dados.result?.[pmcid];
@@ -164,7 +292,9 @@ async function porPmc(entrada) {
     const pmidObj = doc.articleids.find((i) => i.idtype === 'pmid');
     if (pmidObj?.value) csl.PMID = pmidObj.value;
   }
-  return limparCsl(csl);
+  const limpo = limparCsl(csl);
+  salvarNoCache(chave, { csl: limpo }, CACHE_TTL_OK_MS);
+  return limpo;
 }
 
 /** "João da Silva Filho" -> { family: "Silva Filho", given: "João da" }; "Silva, João" também. */
@@ -227,11 +357,21 @@ async function porIsbn(entrada) {
 async function buscarTitulo(consulta) {
   const q = String(consulta || '').trim();
   if (q.length < 3) throw new Error('Digite pelo menos 3 caracteres.');
+  const chave = `titulo:${q.toLowerCase().replace(/\s+/g, ' ').slice(0, 180)}`;
+  const emCache = obterDoCache(chave);
+  if (emCache && Array.isArray(emCache.itens)) {
+    return emCache.itens.map((x) => ({ ...x }));
+  }
+
   const itens = [];
+  let crossrefOk = false;
+  let openAlexOk = false;
+
   try {
     const url = `https://api.crossref.org/works?rows=10&query.bibliographic=${encodeURIComponent(q)}` +
       '&select=DOI,title,author,issued,container-title,type,publisher';
     const dados = await buscarJson(url);
+    crossrefOk = true;
     for (const it of dados.message?.items || []) {
       itens.push({
         doi: it.DOI,
@@ -241,6 +381,7 @@ async function buscarTitulo(consulta) {
         ano: it.issued?.['date-parts']?.[0]?.[0] || '',
         fonte: semTags(it['container-title']?.[0] || it.publisher || ''),
         tipo: it.type,
+        retratado: extrairRetratacaoCrossref(it).retratado,
       });
     }
   } catch {}
@@ -251,6 +392,7 @@ async function buscarTitulo(consulta) {
       const qLimpa = q.split(/[:–—]/)[0].trim().slice(0, 100);
       const urlOa = `https://api.openalex.org/works?per-page=5&search=${encodeURIComponent(qLimpa)}`;
       const dadosOa = await buscarJson(urlOa);
+      openAlexOk = true;
       for (const r of dadosOa.results || []) {
         itens.push({
           doi: r.doi ? r.doi.replace(/^https?:\/\/doi\.org\//i, '') : null,
@@ -261,12 +403,13 @@ async function buscarTitulo(consulta) {
           ano: r.publication_year || '',
           fonte: r.primary_location?.source?.display_name || '',
           tipo: r.type || 'article',
+          retratado: Boolean(r.is_retracted),
         });
       }
     } catch {}
   }
 
-  // Fallback complementar no Semantic Scholar (Inspirado no RefChecker)
+  // Fallback complementar no Semantic Scholar
   if (itens.length === 0) {
     try {
       const qLimpa = q.split(/[:–—]/)[0].trim().slice(0, 100);
@@ -286,6 +429,13 @@ async function buscarTitulo(consulta) {
         });
       }
     } catch {}
+  }
+
+  if (itens.length === 0 && !crossrefOk && !openAlexOk) {
+    // Todas as APIs primárias falharam por timeout/rede/429: nunca confundir com "alucinação" nem gravar em cache
+    itens.erroRede = true;
+  } else {
+    salvarNoCache(chave, { itens }, itens.length > 0 ? CACHE_TTL_OK_MS : CACHE_TTL_404_MS);
   }
 
   return itens;
@@ -348,6 +498,28 @@ async function verificarRetratacaoArtigo({ doi, pmid, titulo } = {}) {
   const doiNorm = doi ? normalizarDoi(doi) : null;
   const pmidNorm = pmid ? String(pmid).replace(/\D/g, '') : null;
 
+  const chaveRet = doiNorm ? `retract:${doiNorm.toLowerCase()}` : pmidNorm ? `retract_pmid:${pmidNorm}` : null;
+  if (chaveRet) {
+    const cachedRet = obterDoCache(chaveRet);
+    if (cachedRet && typeof cachedRet.retratado === 'boolean') {
+      return {
+        retratado: cachedRet.retratado,
+        motivo: cachedRet.motivo || null,
+        fonte: cachedRet.fonte || null,
+      };
+    }
+  }
+  if (doiNorm) {
+    const cachedDoi = obterDoCache(`doi:${doiNorm.toLowerCase()}`);
+    if (cachedDoi?.retratado) {
+      return {
+        retratado: true,
+        fonte: 'Crossref Cache',
+        motivo: 'Registro em cache sinalizado como retratado (is-retracted / update-to).',
+      };
+    }
+  }
+
   // 1. Verificação via OpenAlex (Catálogo Retraction Watch de mais de 250M de trabalhos)
   if (doiNorm || pmidNorm) {
     try {
@@ -360,12 +532,26 @@ async function verificarRetratacaoArtigo({ doi, pmid, titulo } = {}) {
         resultado.motivo = dadosOa.title?.startsWith('RETRACTED')
           ? dadosOa.title
           : 'Artigo formalmente retratado/despublicado pela revista científica conforme indexação do Retraction Watch.';
+        if (chaveRet) salvarNoCache(chaveRet, resultado, CACHE_TTL_OK_MS);
         return resultado;
       }
     } catch {}
   }
 
-  // 2. Verificação via PubMed (PubType: 'Retracted Publication')
+  // 2. Verificação via Crossref REST (update-to / is-retracted)
+  if (doiNorm) {
+    try {
+      const urlCr = `https://api.crossref.org/works/${encodeURIComponent(doiNorm)}`;
+      const dadosCr = await buscarJson(urlCr, {}, 2);
+      const infoCr = extrairRetratacaoCrossref(dadosCr?.message || {});
+      if (infoCr.retratado) {
+        if (chaveRet) salvarNoCache(chaveRet, infoCr, CACHE_TTL_OK_MS);
+        return infoCr;
+      }
+    } catch {}
+  }
+
+  // 3. Verificação via PubMed (PubType: 'Retracted Publication')
   if (pmidNorm) {
     try {
       const urlPm = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id=${pmidNorm}`;
@@ -375,20 +561,22 @@ async function verificarRetratacaoArtigo({ doi, pmid, titulo } = {}) {
         resultado.retratado = true;
         resultado.fonte = 'PubMed / National Library of Medicine';
         resultado.motivo = 'Artigo classificado formalmente pelo PubMed/NLM como "Retracted Publication".';
+        if (chaveRet) salvarNoCache(chaveRet, resultado, CACHE_TTL_OK_MS);
         return resultado;
       }
     } catch {}
   }
 
-  // 3. Verificação no título oficial de Crossref/CSL
+  // 4. Verificação no título oficial de Crossref/CSL
   if (titulo && /^RETRACTED\b/i.test(titulo.trim())) {
     resultado.retratado = true;
     resultado.fonte = 'Registro Oficial Crossref';
     resultado.motivo = `Artigo com marcação de retratação no título oficial: "${titulo}".`;
+    if (chaveRet) salvarNoCache(chaveRet, resultado, CACHE_TTL_OK_MS);
     return resultado;
   }
 
-  // 4. Verificação complementar no Semantic Scholar (com tolerância a 429)
+  // 5. Verificação complementar no Semantic Scholar (com tolerância a 429)
   if (doiNorm) {
     try {
       const urlS2 = `https://api.semanticscholar.org/graph/v1/paper/DOI:${encodeURIComponent(doiNorm)}?fields=isRetracted,title`;
@@ -397,11 +585,13 @@ async function verificarRetratacaoArtigo({ doi, pmid, titulo } = {}) {
         resultado.retratado = true;
         resultado.fonte = 'Semantic Scholar';
         resultado.motivo = 'Artigo identificado como retratado no índice do Semantic Scholar.';
+        if (chaveRet) salvarNoCache(chaveRet, resultado, CACHE_TTL_OK_MS);
         return resultado;
       }
     } catch {}
   }
 
+  if (chaveRet) salvarNoCache(chaveRet, resultado, CACHE_TTL_OK_MS);
   return resultado;
 }
 
@@ -413,6 +603,7 @@ module.exports = {
   porIsbn,
   buscarTitulo,
   verificarRetratacaoArtigo,
+  extrairRetratacaoCrossref,
   normalizarDoi,
   separarNome,
   limparCsl,

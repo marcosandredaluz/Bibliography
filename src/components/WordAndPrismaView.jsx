@@ -30,6 +30,34 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
   const [instalandoExtensao, setInstalandoExtensao] = useState(false);
   const [atualizandoCampos, setAtualizandoCampos] = useState(false);
   const [avisoTrustVba, setAvisoTrustVba] = useState(false);
+  const [filtroStatusLista, setFiltroStatusLista] = useState('todas'); // 'todas' | 'citada' | 'consultada'
+  const [mostrarPacoteSubmissao, setMostrarPacoteSubmissao] = useState(false);
+  const [exportandoPacote, setExportandoPacote] = useState(false);
+  const [opcoesPacote, setOpcoesPacote] = useState({
+    limparDocxCego: true,
+    incluirPrismaRobSvg: true,
+    incluirResumoAuditoria: true,
+  });
+
+  const exportarPacoteSubmissaoZip = async () => {
+    setExportandoPacote(true);
+    try {
+      const res = await window.api.word.exportarPacoteSubmissao({
+        ...opcoesPacote,
+        nomeBase: nomeDoc || 'Manuscrito_Submissao',
+      });
+      if (res?.cancelado) return;
+      avisar(
+        `✓ Pacote de submissão gerado (${res.arquivosIncluidos?.length || 0} arquivo(s) em .zip)!`,
+        'ok'
+      );
+      setMostrarPacoteSubmissao(false);
+    } catch (e) {
+      avisar(e.message || 'Erro ao exportar pacote de submissão.', 'erro');
+    } finally {
+      setExportandoPacote(false);
+    }
+  };
 
   const carregarInfoWord = () => window.api.word.info().then(setInfoWord).catch(() => {});
 
@@ -52,8 +80,9 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
     const q = normalizar(busca);
     return refs
       .filter((r) => r.status !== 'descartada')
+      .filter((r) => filtroStatusLista === 'todas' || r.status === filtroStatusLista)
       .filter((r) => !q || normalizar(`${r.csl?.title || ''} ${autoresResumo(r.csl)} ${ano(r.csl)}`).includes(q));
-  }, [refs, busca]);
+  }, [refs, busca, filtroStatusLista]);
 
   const toggleSelecaoComposta = (id) => {
     setSelecionadasComposta((ant) => {
@@ -240,49 +269,105 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
     <div className="central-buscadores">
       <div className="topo-buscadores">
         <div>
-          <h2>{tr('Integração Nativa com o Microsoft Word (ABNT, APA 7ª ed., Vancouver)', 'Native Microsoft Word Integration (APA 7th, Vancouver, ABNT)')}</h2>
+          <h2>{tr('Escrever & Citar no Word', 'Write & Cite in Word')}</h2>
           <p className="subtitulo">
-            {tr('Injete citações direto no cursor do Word como', 'Inject citations directly at the Word cursor as')} <strong>{tr('Campos dinâmicos (estilo Zotero/Mendeley)', 'dynamic fields (Zotero/Mendeley style)')}</strong> {tr('ou copie via ponte local na porta', 'or sync via local HTTP bridge on port')} <code>{infoWord?.porta || 23119}</code>.
+            {tr(
+              'Enquanto escreve no Word, envie citações para o cursor e gere suas listas finais já formatadas.',
+              'While writing in Word, send citations to your cursor and generate formatted reference lists.'
+            )}
           </p>
         </div>
-        <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
-          <span
-            style={{
-              fontSize: 12,
-              padding: '4px 10px',
-              borderRadius: 999,
-              background: '#dcfce7',
-              color: '#166534',
-              fontWeight: 600,
-              border: '1px solid #86efac',
-            }}
-            title={infoWord?.telemetria?.ultimaAtividadeEm ? `${tr('Última comunicação Word:', 'Last Word activity:')} ${infoWord.telemetria.ultimaAtividadeEm}` : tr('Servidor HTTP local pronto', 'Local HTTP bridge ready')}
+        <div style={{ display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap' }}>
+          <button
+            className="btn pequeno primario"
+            onClick={() => window.api.word.abrirSeletorRapido()}
+            title={tr('Abre o Seletor Rápido flutuante sobre o Word (Ctrl+Shift+B)', 'Open Quick Citation Picker over Word (Ctrl+Shift+B)')}
           >
-            ● {tr('Ponte Word', 'Word Bridge')} :{infoWord?.porta || 23119} {tr('Ativa', 'Online')}
-          </span>
-          <button className="btn fantasma" onClick={() => setMostrarPlugIns((v) => !v)}>
-            🔌 {mostrarPlugIns ? tr('Ocultar Extensão Word (.dotm / Office.js)', 'Hide Word Extension (.dotm / Office.js)') : dotmInstalado ? tr('✓ Extensão Word (.dotm) Ativa', '✓ Word Extension (.dotm) Active') : tr('Instalar Extensão no Word (.dotm)', 'Install Word Extension (.dotm)')}
+            {tr('Seletor Rápido', 'Quick Picker')} ({infoWord?.atalhoGlobal || 'Ctrl+Shift+B'})
+          </button>
+          <button className={`btn pequeno ${sempreNoTopo ? 'primario' : 'secundario'}`} onClick={alternarTopo}>
+            <Icone nome="external" tam={13} />{' '}
+            {sempreNoTopo ? tr('Fixada no Topo', 'Pinned on Top') : tr('Fixar ao lado do Word', 'Pin Next to Word')}
           </button>
           <button
-            className="btn secundario"
-            onClick={() => window.api.word.abrirSeletorRapido()}
-            title={tr('Abre o Seletor Rápido de Citações (também acessível direto do Word com Ctrl+Shift+B)', 'Open Quick Citation Picker (global hotkey Ctrl+Shift+B)')}
+            className={`btn pequeno ${mostrarPacoteSubmissao ? 'primario' : 'secundario'}`}
+            onClick={() => setMostrarPacoteSubmissao((v) => !v)}
+            title={tr('Empacota cópia limpa para revisão cega (.docx), diagramas PRISMA/RoB em SVG e resumo técnico em .zip', 'Packages blind-review clean .docx, PRISMA/RoB SVG diagrams, and compliance summary in .zip')}
           >
-            ⚡ {tr('Seletor Rápido', 'Quick Citator')} ({infoWord?.atalhoGlobal || 'Ctrl+Shift+B'})
+            📦 {tr('Exportar Pacote de Submissão (.zip)', 'Export Submission Package (.zip)')}
           </button>
-          <button className={`btn ${sempreNoTopo ? 'primario' : 'secundario'}`} onClick={alternarTopo}>
-            <Icone nome="external" tam={14} />{' '}
-            {sempreNoTopo ? tr('Fixado no Topo (Ativo)', 'Always on Top (Active)') : tr('Fixar janela ao lado do Word', 'Pin Window Side-by-Side')}
+          <button className="btn pequeno fantasma" onClick={() => setMostrarPlugIns((v) => !v)}>
+            {mostrarPlugIns
+              ? tr('Ocultar opções', 'Hide options')
+              : dotmInstalado
+              ? tr('⚙ Extensão Word (Ativa)', '⚙ Word Add-in (Active)')
+              : tr('⚙ Configurar Word (.dotm)', '⚙ Word Setup (.dotm)')}
           </button>
         </div>
       </div>
 
+      {/* Resumo visual de 3 passos para entender na hora como usar */}
+      <div className="word-passos-inline">
+        <span><strong>1.</strong> {tr('Clique em "Citar" em qualquer artigo abaixo (ou use Ctrl+Shift+B) para colar no Word.', 'Click "Cite" below (or press Ctrl+Shift+B) to insert at Word cursor.')}</span>
+        <span><strong>2.</strong> {tr('No fim do texto, gere a lista de Referências (Citadas) ou Consultadas.', 'At the end, insert or copy your Cited References or Consulted Bibliography.')}</span>
+        <span><strong>3.</strong> {tr('Se trocar de revista, mude a Norma e clique em Atualizar no Word — ou exporte o Pacote de Submissão (.zip) para revisão cega.', 'Changing journals? Pick a style and click Update Open Word — or export the blind-review Submission Package (.zip).')}</span>
+      </div>
+
+      {mostrarPacoteSubmissao && (
+        <div className="bloco-proxy" style={{ borderLeft: '4px solid var(--primaria)', marginBottom: 10 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10 }}>
+            <div>
+              <strong>📦 {tr('Exportar Pacote de Submissão Editorial (.zip)', 'Export Editorial Submission Package (.zip)')}</strong>
+              <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginTop: 8, fontSize: 12.2 }}>
+                <label style={{ display: 'inline-flex', alignItems: 'center', gap: 6, cursor: 'pointer' }}>
+                  <input
+                    type="checkbox"
+                    checked={opcoesPacote.limparDocxCego}
+                    onChange={(e) => setOpcoesPacote((p) => ({ ...p, limparDocxCego: e.target.checked }))}
+                  />
+                  <span>{tr('Limpar .docx para revisão cega (texto plano + remover autor)', 'Blind-review clean .docx (flatten fields + strip author metadata)')}</span>
+                </label>
+                <label style={{ display: 'inline-flex', alignItems: 'center', gap: 6, cursor: 'pointer' }}>
+                  <input
+                    type="checkbox"
+                    checked={opcoesPacote.incluirPrismaRobSvg}
+                    onChange={(e) => setOpcoesPacote((p) => ({ ...p, incluirPrismaRobSvg: e.target.checked }))}
+                  />
+                  <span>{tr('Incluir PRISMA 2020 e RoB 2 / ROBINS-I (SVG)', 'Include PRISMA 2020 & RoB 2 / ROBINS-I (SVG)')}</span>
+                </label>
+                <label style={{ display: 'inline-flex', alignItems: 'center', gap: 6, cursor: 'pointer' }}>
+                  <input
+                    type="checkbox"
+                    checked={opcoesPacote.incluirResumoAuditoria}
+                    onChange={(e) => setOpcoesPacote((p) => ({ ...p, incluirResumoAuditoria: e.target.checked }))}
+                  />
+                  <span>{tr('Incluir resumo técnico de conformidade', 'Include audit compliance summary')}</span>
+                </label>
+              </div>
+            </div>
+            <div style={{ display: 'flex', gap: 6 }}>
+              <button
+                type="button"
+                className="btn pequeno primario"
+                onClick={exportarPacoteSubmissaoZip}
+                disabled={exportandoPacote || (!opcoesPacote.limparDocxCego && !opcoesPacote.incluirPrismaRobSvg && !opcoesPacote.incluirResumoAuditoria)}
+              >
+                {exportandoPacote ? tr('Gerando .zip…', 'Generating .zip…') : tr('Gerar Pacote (.zip)', 'Generate Package (.zip)')}
+              </button>
+              <button type="button" className="btn pequeno fantasma" onClick={() => setMostrarPacoteSubmissao(false)}>
+                {tr('Fechar', 'Close')}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {mostrarPlugIns && infoWord && (
-        <div className="bloco-proxy" style={{ borderLeft: `4px solid ${dotmInstalado ? '#16a34a' : '#2563eb'}`, background: '#f8fafc' }}>
+        <div className="bloco-proxy" style={{ borderLeft: `4px solid ${dotmInstalado ? '#16a34a' : '#2563eb'}` }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 12 }}>
             <div style={{ flex: 1, minWidth: 280 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
-                <strong>{tr('Extensão Nativa no Microsoft Word (Aba "Bibliografia Forense" estilo Zotero & Mendeley)', 'Native Microsoft Word Extension (Fluent Ribbon Tab)')}</strong>
+                <strong>{tr('Extensão Nativa no Word (.dotm) e Opções do Documento', 'Native Word Extension (.dotm) & Document Options')}</strong>
                 <span
                   className="pill-contagem"
                   style={{
@@ -290,69 +375,70 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
                     color: dotmInstalado ? '#166534' : '#92400e',
                   }}
                 >
-                  {dotmInstalado ? tr('✓ Instalada no STARTUP do Word', '✓ Installed in Word STARTUP') : tr('Ainda não instalada no Word', 'Not yet installed in Word')}
+                  {dotmInstalado ? tr('✓ Instalada', '✓ Installed') : tr('Não instalada', 'Not installed')}
+                </span>
+                <span className="pill-contagem" style={{ background: '#f1f5f9', color: '#475569' }}>
+                  {tr('Porta local', 'Local port')}: {infoWord?.porta || 23119}
                 </span>
               </div>
-              <div style={{ fontSize: 12.5, color: '#475569', marginTop: 6, lineHeight: 1.45 }}>
-                • <strong>{tr('Aba Ribbon no Word', 'Word Ribbon Tab')} (<code>Bibliografia.dotm</code>):</strong> {tr('instala na pasta de inicialização do Word', 'installs in the Word startup folder')} (<code>{infoWord.pastaStartupWord || '%APPDATA%\\Microsoft\\Word\\STARTUP'}</code>) {tr('para adicionar botões nativos de Citar, Atualizar Norma, Inserir Referências e Grifar Erros/IA dentro do Word.', 'to add native buttons for Cite, Update Standard, Insert References, and Highlight Errors/AI inside Word.')}<br />
-                • <strong>{tr('Atalho Instantâneo Sem Macro', 'Instant Macro-Free Shortcut')} (<code>{infoWord.atalhoGlobal || 'Ctrl+Shift+B'}</code>):</strong>{' '}
+              <div style={{ fontSize: 12, color: 'var(--texto-suave)', marginTop: 6, lineHeight: 1.45 }}>
+                • <strong>{tr('Aba no Word:', 'Word Ribbon:')}</strong> {tr('Instala', 'Installs')} <code>Bibliografia.dotm</code> em <code>{infoWord.pastaStartupWord || '%APPDATA%\\Microsoft\\Word\\STARTUP'}</code>.<br />
+                • <strong>{tr('Atalho sem macro', 'Macro-free hotkey')} (<code>{infoWord.atalhoGlobal || 'Ctrl+Shift+B'}</code>):</strong>{' '}
                 <button
                   type="button"
                   onClick={alternarAtalhoZotero}
                   style={{ border: 'none', background: 'none', color: '#2563eb', fontWeight: 600, cursor: 'pointer', padding: 0, textDecoration: 'underline' }}
                 >
                   {infoWord.atalhoAtivo ? tr('Ativo (clique p/ desativar)', 'Active (click to disable)') : tr('Desativado (clique p/ ativar)', 'Disabled (click to enable)')}
-                </button>{' '}
-                — {tr('funciona dentro do Word mesmo se sua instituição bloquear macros VBA!', 'works inside Word even if your institution blocks VBA macros!')}
+                </button>
+              </div>
+              <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center', marginTop: 8 }}>
+                <label className="campo-inline" style={{ fontSize: 12 }}>
+                  <span>{tr('Nome do documento:', 'Document name:')}</span>
+                  <input value={nomeDoc} onChange={(e) => setNomeDoc(e.target.value)} style={{ padding: '4px 8px' }} />
+                </label>
+                <label className="campo-inline" style={{ fontSize: 12, cursor: 'pointer' }}>
+                  <input type="checkbox" checked={usarCampoNativo} onChange={(e) => setUsarCampoNativo(e.target.checked)} />
+                  <span>{tr('Inserir como campo dinâmico atualizável no Word', 'Insert as dynamic updatable Word field')}</span>
+                </label>
               </div>
 
               {avisoTrustVba && (
-                <div style={{ marginTop: 10, padding: '8px 10px', borderRadius: 6, background: '#fffbeb', border: '1px solid #f59e0b', fontSize: 12.5, color: '#78350f' }}>
-                  <strong>{tr('Permissão necessária no Word para compilar o', 'Permission needed in Word to compile')} <code>.dotm</code> {tr('automaticamente:', 'automatically:')}</strong><br />
+                <div style={{ marginTop: 8, padding: '8px 10px', borderRadius: 6, background: '#fffbeb', border: '1px solid #f59e0b', fontSize: 12, color: '#78350f' }}>
+                  <strong>{tr('Permissão necessária no Word:', 'Permission needed in Word:')}</strong>{' '}
                   {tr(
-                    'No Microsoft Word, acesse Arquivo → Opções → Central de Confiabilidade → Configurações da Central de Confiabilidade → Configurações de Macro e marque "Confiar no acesso ao modelo de objeto do projeto do VBA". Depois clique novamente em "🔨 Compilar & Instalar no Word" (ou importe manualmente Bibliografia.bas via Alt+F11, salve como Bibliografia.dotm e clique em "Selecionar .dotm pronto").',
-                    'In Microsoft Word, go to File → Options → Trust Center → Trust Center Settings → Macro Settings and check "Trust access to the VBA project object model". Then click "🔨 Generate & Install Extension (.dotm)" again (or manually import Bibliografia.bas via Alt+F11, save as Bibliografia.dotm, and click "Select ready .dotm").'
+                    'Acesse Arquivo → Opções → Central de Confiabilidade → Configurações de Macro e marque "Confiar no acesso ao modelo de objeto do projeto do VBA".',
+                    'Go to File → Options → Trust Center → Macro Settings and check "Trust access to the VBA project object model".'
                   )}
                 </div>
               )}
             </div>
 
-            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
               <button className="btn pequeno primario" onClick={instalarExtensaoWord} disabled={instalandoExtensao}>
-                {instalandoExtensao ? tr('Gerando .dotm…', 'Generating .dotm…') : dotmInstalado ? tr('🔄 Reinstalar / Atualizar .dotm no Word', '🔄 Reinstall / Update .dotm in Word') : tr('🔨 Gerar & Instalar Extensão (.dotm)', '🔨 Generate & Install Extension (.dotm)')}
+                {instalandoExtensao ? tr('Gerando .dotm…', 'Generating .dotm…') : dotmInstalado ? tr('Atualizar .dotm', 'Update .dotm') : tr('Instalar no Word (.dotm)', 'Install in Word (.dotm)')}
               </button>
               <button className="btn pequeno secundario" onClick={importarDotmPronto}>
-                📥 {tr('Selecionar .dotm pronto', 'Select ready .dotm')}
+                {tr('Selecionar .dotm pronto', 'Select ready .dotm')}
               </button>
               {dotmInstalado && (
                 <button className="btn pequeno fantasma" onClick={removerExtensaoDoWord} style={{ color: '#b91c1c' }}>
-                  🗑️ {tr('Remover do Word', 'Remove from Word')}
+                  {tr('Remover', 'Remove')}
                 </button>
               )}
               <button className="btn pequeno fantasma" onClick={() => window.api.word.abrirPastaVba()}>
-                <Icone nome="folder" tam={13} /> {tr('Pasta VBA (.bas / customUI)', 'VBA Folder (.bas / customUI)')}
-              </button>
-              <button className="btn pequeno fantasma" onClick={() => window.api.word.mostrarManifesto()}>
-                <Icone nome="folder" tam={13} /> {tr('Manifesto Office.js', 'Office.js Manifest')}
+                <Icone nome="folder" tam={12} /> VBA
               </button>
             </div>
           </div>
         </div>
       )}
 
-      {/* Barra de configuração do documento e exportação/injeção em 1 clique */}
-      <div className="bloco-proxy">
-        <div className="grade-3">
+      {/* Barra compacta de norma + ações no Word */}
+      <div className="bloco-proxy word-actions-bar">
+        <div className="word-controls-grid">
           <label className="campo">
-            <span className="campo-rotulo">{tr('Documento / Manuscrito ativo', 'Active Document / Manuscript')}</span>
-            <input
-              value={nomeDoc}
-              onChange={(e) => setNomeDoc(e.target.value)}
-              placeholder={tr('Ex.: Dissertação - Cap. 2', 'e.g. Thesis - Ch. 2')}
-            />
-          </label>
-          <label className="campo">
-            <span className="campo-rotulo">{tr('Norma de formatação do documento', 'Document formatting standard')}</span>
+            <span className="campo-rotulo">{tr('Norma das referências', 'Citation style')}</span>
             <select value={estilo} onChange={(e) => onMudarEstilo(e.target.value)}>
               {estilos.map((e) => (
                 <option key={e.id} value={e.id}>
@@ -362,39 +448,27 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
             </select>
           </label>
           <label className="campo">
-            <span className="campo-rotulo">{tr('Página p/ citação direta (opcional)', 'Page for direct quote (optional)')}</span>
+            <span className="campo-rotulo">{tr('Página (para citação direta)', 'Page (optional)')}</span>
             <input
               value={pagina}
               onChange={(e) => setPagina(e.target.value)}
-              placeholder={tr('Ex.: 45 (gera SILVA, 2023, p. 45)', 'e.g. 45 (produces SILVA, 2023, p. 45)')}
+              placeholder={tr('Ex.: 45 → (SILVA, 2023, p. 45)', 'e.g. 45')}
             />
           </label>
-        </div>
-
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10, marginTop: 8 }}>
-          <div className="barra-pdf">
+          <div className="word-action-buttons">
             <button className="btn primario" onClick={() => inserirOuCopiarListaWord('citadas')}>
-              <Icone nome="copy" tam={14} /> 1. {tr('Inserir/Copiar REFERÊNCIAS', 'Insert/Copy REFERENCES')} ({citadasCount} {tr('Citadas', 'Cited')})
+              <Icone nome="copy" tam={14} /> {tr('Referências Citadas', 'Cited References')} ({citadasCount})
             </button>
             <button className="btn secundario" onClick={() => inserirOuCopiarListaWord('consultadas')}>
-              <Icone nome="copy" tam={14} /> 2. {tr('Inserir/Copiar CONSULTADAS', 'Insert/Copy CONSULTED')} ({consultadasCount})
+              <Icone nome="copy" tam={14} /> {tr('Consultadas', 'Consulted')} ({consultadasCount})
             </button>
             <button className="btn secundario" onClick={atualizarCamposWordAberto} disabled={atualizandoCampos}>
-              🔄 {atualizandoCampos ? tr('Atualizando Campos no Word…', 'Updating Word Fields…') : tr('Atualizar Campos & Norma no Word Aberto', 'Update Fields & Style in Open Word')}
+              {atualizandoCampos ? tr('Atualizando…', 'Updating…') : tr('Atualizar Word Aberto', 'Update Open Word')}
             </button>
-            <button className="btn fantasma" onClick={abrirExtratorDocx} disabled={extraindoDocx} style={{ border: '1px solid #cbd5e1' }}>
-              🔍 {extraindoDocx ? tr('Extraindo XML do Word…', 'Extracting Word XML…') : tr('Extrair Citações / Campos de .DOCX (Ref-Extractor)', 'Extract Citations / Fields from .DOCX (Ref-Extractor)')}
+            <button className="btn fantasma" onClick={abrirExtratorDocx} disabled={extraindoDocx} title={tr('Importar citações existentes de um arquivo .DOCX', 'Extract citations from a .DOCX file')}>
+              {extraindoDocx ? tr('Lendo .DOCX…', 'Reading .DOCX…') : tr('Ler citações de .DOCX', 'Extract from .DOCX')}
             </button>
           </div>
-
-          <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12.5, color: '#334155', cursor: 'pointer' }}>
-            <input
-              type="checkbox"
-              checked={usarCampoNativo}
-              onChange={(e) => setUsarCampoNativo(e.target.checked)}
-            />
-            {tr('Inserir como Campo protegido no Word aberto', 'Insert as protected Field in open Word')} (<code>wdFieldAddin</code>)
-          </label>
         </div>
       </div>
 
@@ -463,37 +537,52 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
         </div>
       )}
 
-      {/* Lista rápida para citar em 1 clique (com suporte a multi-citação composta) */}
+      {/* Lista rápida para citar em 1 clique */}
       <div className="bloco-cofre">
-        <div className="barra-lista" style={{ marginBottom: 10, flexWrap: 'wrap', gap: 8 }}>
-          <strong>{tr('Clique em "⚡ Citar no Word" para injetar no cursor / copiar e já marcar como Citada:', 'Click "⚡ Cite in Word" to inject at cursor / copy and mark as Cited:')}</strong>
+        <div className="barra-lista" style={{ marginBottom: 8, flexWrap: 'wrap', gap: 8 }}>
+          <div className="chips-categorias">
+            {[
+              { id: 'todas', label: `${tr('Todas', 'All')} (${refs.filter((r) => r.status !== 'descartada').length})` },
+              { id: 'citada', label: `${tr('Citadas', 'Cited')} (${citadasCount})` },
+              { id: 'consultada', label: `${tr('Consultadas', 'Consulted')} (${consultadasCount})` },
+            ].map((f) => (
+              <button
+                key={f.id}
+                type="button"
+                className={`chip ${filtroStatusLista === f.id ? 'ativo' : ''}`}
+                onClick={() => setFiltroStatusLista(f.id)}
+              >
+                {f.label}
+              </button>
+            ))}
+          </div>
           <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
             {selecionadasComposta.size >= 2 && (
               <button
                 className="btn pequeno primario"
                 onClick={() => citarIdsNoWord([...selecionadasComposta])}
               >
-                ⚡ {tr('Citar', 'Cite')} {selecionadasComposta.size} {tr('juntas no Word', 'together in Word')}
+                {tr('Citar', 'Cite')} {selecionadasComposta.size} {tr('juntas', 'together')}
               </button>
             )}
             <input
-              style={{ width: 320, padding: '5px 10px', borderRadius: 6, border: '1px solid #cbd5e1' }}
+              style={{ width: 260, padding: '5px 10px', borderRadius: 6, border: '1px solid var(--borda)', background: 'var(--painel)', color: 'var(--texto)' }}
               value={busca}
               onChange={(e) => setBusca(e.target.value)}
-              placeholder={tr('Buscar por autor, título ou ano…', 'Search by author, title, or year…')}
+              placeholder={tr('Filtrar por autor, título ou ano…', 'Filter by author, title, or year…')}
             />
           </div>
         </div>
 
-        <div className="lista-artigos-inline">
+        <div className="lista-artigos-inline lista-compacta-word">
           {refsFiltradas.map((r) => (
-            <div key={r.id} className="item-artigo-inline">
+            <div key={r.id} className="item-artigo-inline item-word-compacto">
               <div style={{ display: 'flex', alignItems: 'center', gap: 10, flex: 1, minWidth: 0 }}>
                 <input
                   type="checkbox"
                   checked={selecionadasComposta.has(r.id)}
                   onChange={() => toggleSelecaoComposta(r.id)}
-                  title="Marque 2+ artigos para gerar citação composta única: (Autor A, 2020; Autor B, 2022)"
+                  title={tr('Marque 2+ artigos para gerar citação composta única', 'Select 2+ items for a combined citation')}
                 />
                 <div className="item-artigo-info">
                   <h4>{semHtml(r.csl?.title)}</h4>
@@ -514,7 +603,7 @@ export function WordHubView({ refs, documentos = [], estilo, estilos, idioma, on
                   {r.status === 'citada' ? tr('✓ Citada', '✓ Cited') : r.status === 'consultada' ? tr('Consultada', 'Consulted') : tr('A ler', 'To Read')}
                 </span>
                 <button className="btn pequeno primario" onClick={() => citarIdsNoWord([r.id])}>
-                  <Icone nome="copy" tam={13} /> ⚡ {tr('Citar no Word', 'Cite in Word')}
+                  <Icone nome="copy" tam={12} /> {tr('Citar no Word', 'Cite')}
                 </button>
               </div>
             </div>
@@ -535,7 +624,7 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
   const [buscaDuplicatas, setBuscaDuplicatas] = useState('');
   const [processandoMescla, setProcessandoMescla] = useState(false);
   const [resumosAbertos, setResumosAbertos] = useState(new Set());
-  const [mostrarExplicacaoSeguranca, setMostrarExplicacaoSeguranca] = useState(true);
+  const [mostrarExplicacaoSeguranca, setMostrarExplicacaoSeguranca] = useState(false);
 
   useEffect(() => {
     window.api.busc.historico().then(setHistoricoBuscas).catch(() => {});
@@ -747,9 +836,9 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
       {/* Topo informativo */}
       <div className="topo-buscadores">
         <div>
-          <h2>{tr('Triagem Sistemática em Duplo-Cego, Deduplicação Segura & Fluxograma PRISMA 2020', 'Double-Blind Systematic Screening, Safe Deduplication & PRISMA 2020 Flowchart')}</h2>
+          <h2>{tr('Triagem e Fluxo PRISMA 2020', 'PRISMA 2020 Screening & Flow')}</h2>
           <p className="subtitulo">
-            {tr('Gestão metodológica completa da sua revisão: remova duplicatas sem perder notas e PDFs, faça a triagem rápida de resumos e gere o fluxograma oficial para publicação.', 'Complete methodological management for your review: remove duplicates without losing notes and PDFs, screen abstracts rapidly, and generate the official flowchart for publication.')}
+            {tr('Remova duplicatas sem perder PDFs, faça a triagem de resumos e exporte o fluxograma oficial.', 'Deduplicate safely, screen abstracts, and export the PRISMA 2020 flowchart.')}
           </p>
         </div>
         <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
@@ -840,7 +929,7 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
           <div className="banner-didatico-prisma">
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <h4 style={{ margin: 0 }}>
-                🛡️ {tr('Como funciona a Deduplicação e o que acontece ao Mesclar?', 'How Deduplication works and what happens when you Merge?')}
+                {tr('Como funciona a Deduplicação e o que acontece ao Mesclar', 'How Deduplication works and what happens when you Merge')}
               </h4>
               <button
                 className="btn fantasma pequeno"
@@ -871,8 +960,8 @@ export function PrismaAndScreeningView({ refs, onAtualizarRef, onRecarregar }) {
 
           {gruposDuplicados.length === 0 ? (
             <div className="bloco-painel" style={{ textAlign: 'center', padding: '36px 20px' }}>
-              <div style={{ fontSize: 32, marginBottom: 8 }}>🎉</div>
-              <h3 style={{ margin: '0 0 6px', color: '#166534' }}>{tr('Nenhuma Duplicata Detectada!', 'No Duplicates Detected!')}</h3>
+              <div style={{ fontSize: 24, fontWeight: 700, color: '#166534', marginBottom: 8 }}>✓</div>
+              <h3 style={{ margin: '0 0 6px', color: '#166534' }}>{tr('Nenhuma duplicata detectada', 'No duplicates detected')}</h3>
               <p style={{ color: 'var(--texto-suave)', maxWidth: 520, margin: '0 auto', fontSize: 13 }}>
                 {tr('Todos os registros da sua biblioteca possuem DOIs, PMIDs e títulos únicos. Você pode prosseguir com segurança para a fase de Triagem Rápida ou consultar o Fluxograma PRISMA 2020.', 'All records in your library have unique DOIs, PMIDs, and titles. You can safely proceed to Abstract Screening or inspect the PRISMA 2020 Flowchart.')}
               </p>

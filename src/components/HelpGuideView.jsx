@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useI18n } from '../i18n.jsx';
 
 /**
- * Faixa de Tutorial Passo a Passo Contextual para o topo de telas/etapas do sistema.
- * Pode ser recolhida/expandida pelo usuário e lembra a preferência no localStorage.
+ * Faixa de tutorial contextual recolhível para o topo das telas principais.
+ * Mantém a preferência de exibição salva em localStorage.
  */
 export function TutorialEtapa({ idEtapa, titulo, resumo, passos = [], abertoPorPadrao = true, acoesExtras = null }) {
   const { tr } = useI18n();
@@ -28,12 +28,12 @@ export function TutorialEtapa({ idEtapa, titulo, resumo, passos = [], abertoPorP
     <div className={`tutorial-etapa-box ${aberto ? 'aberto' : 'fechado'}`}>
       <div className="tutorial-etapa-cabecalho" onClick={alternar}>
         <div className="tutorial-etapa-titulo">
-          <span className="badge-tutorial-etapa">📖 {tr('TUTORIAL DESTA ETAPA', 'STEP-BY-STEP GUIDE')}</span>
+          <span className="badge-tutorial-etapa">{tr('ROTEIRO DA ETAPA', 'STEP-BY-STEP GUIDE')}</span>
           <strong>{titulo}</strong>
           {!aberto && <span className="tutorial-etapa-resumo">— {resumo}</span>}
         </div>
         <button type="button" className="btn-toggle-tutorial">
-          {aberto ? tr('▲ Ocultar passo a passo', '▲ Hide step-by-step') : tr('▼ Ver passo a passo desta tela', '▼ Show screen walkthrough')}
+          {aberto ? tr('▲ Ocultar passo a passo', '▲ Hide walkthrough') : tr('▼ Ver passo a passo', '▼ Show walkthrough')}
         </button>
       </div>
 
@@ -57,7 +57,7 @@ export function TutorialEtapa({ idEtapa, titulo, resumo, passos = [], abertoPorP
                         p.acao();
                       }}
                     >
-                      {p.rotuloAcao || tr('⚡ Fazer agora', '⚡ Do this now')}
+                      {p.rotuloAcao || tr('Executar agora', 'Run now')}
                     </button>
                   )}
                 </div>
@@ -72,151 +72,242 @@ export function TutorialEtapa({ idEtapa, titulo, resumo, passos = [], abertoPorP
 }
 
 /**
- * 6 Capítulos Oficiais do Manual Técnico e de Leitura (v1.0.2)
+ * 6 Capítulos do Manual de Uso e Referência (v1.2.0)
  */
 const CAPITULOS_MANUAL = [
   {
     id: 'cap1',
-    titulo: 'Capítulo 1 — Conexão, Arquitetura, Seletor de Projetos e Sincronização na Nuvem (OneDrive / Google Drive)',
+    titulo: 'Capítulo 1 — Estrutura em Nuvem, Seletor de Projetos e Armazenamento Atômico',
     conteudo: [
       {
-        subtitulo: '1.1. Persistência Atômica Desacoplada e Imunidade a Corrupção',
+        subtitulo: '1.1. Por que cada referência fica em um arquivo separado',
         texto:
-          'Diferente de gerenciadores tradicionais que utilizam um único arquivo de banco de dados SQLite (que corrompe facilmente quando sincronizado em pastas de nuvem como OneDrive, Dropbox ou Google Drive), o Bibliografia utiliza arquitetura de persistência atômica. Cada obra é armazenada em um arquivo .json individual na pasta "referencias/", seus arquivos de texto integral residem na pasta "storage/" (ou "pdfs/"), e todos os grifos e notas clínicas ficam isolados em "grifos/".',
+          'Para evitar conflitos e corrupção comuns em bancos monolíticos SQLite sincronizados em nuvem (OneDrive, Google Drive ou Dropbox), o Bibliografia armazena cada referência em um arquivo .json próprio dentro de "referencias/". Os PDFs ficam organizados em "pdfs/" (ou "storage/") e as marcações de leitura permanecem isoladas por obra.',
       },
       {
-        subtitulo: '1.2. Seletor de Projetos e Topo com PROJETO ATIVO em Destaque',
+        subtitulo: '1.2. Troca rápida de projetos e sincronização BibTeX',
         itens: [
-          'Badge PROJETO ATIVO: O topo da tela exibe com clareza o nome da pasta e a contagem exata de obras do projeto ativo atual (ex.: "TCC UFMA SEIDIGI (29 obras)").',
-          'Menu de 10 Projetos Recentes: Ao clicar no seletor, o sistema lista automaticamente até 10 projetos e bibliotecas acessados ou autodetectados no OneDrive e no computador (#1, #2, ... #10) para alternância instantânea com 1 clique.',
-          'Regra de Ouro da Nuvem: No Windows Explorer, clique com o botão direito na pasta do projeto no OneDrive e selecione "Sempre manter neste dispositivo" para evitar atrasos de download do Windows.',
-          'Catálogo Unificado BibTeX: O sistema mantém o arquivo "library.bib" atualizado automaticamente na raiz para integração com LaTeX, Overleaf e Python/R.',
+          'Indicador de Projeto Ativo: o cabeçalho exibe a pasta em uso e a quantidade exata de referências carregadas no projeto atual.',
+          'Seletor de Projetos Recentes: clique no botão de pasta para alternar rapidamente entre bibliotecas detectadas no computador ou na nuvem.',
+          'Sincronização em nuvem: no Windows Explorer, marque "Sempre manter neste dispositivo" na pasta da biblioteca no OneDrive para manter os PDFs acessíveis offline.',
+          'Arquivo library.bib: atualizado automaticamente na raiz da pasta após cada edição para uso contínuo em LaTeX e Overleaf.',
         ],
       },
     ],
   },
   {
     id: 'cap2',
-    titulo: 'Capítulo 2 — Operação da Barra Lateral Vertical Permanente (Activity Rail Mendeley/Zotero)',
+    titulo: 'Capítulo 2 — Navegação pela Barra Lateral Permanente',
     conteudo: [
       {
-        subtitulo: '2.1. O que é o Activity Rail e por que ele substituiu o menu horizontal',
+        subtitulo: '2.1. Organização dos módulos na barra esquerda',
         texto:
-          'Na arquitetura moderna (v1.0.2), o menu superior horizontal com abas que sofriam cortes e problemas de rolagem foi definitivamente substituído por um Rail Vertical Permanente de 86px de largura, inspirado nas interfaces profissionais do Mendeley Desktop, Zotero 7 e VS Code. O rail fica fixo à esquerda, permitindo troca de contexto com 1 clique sem perda de dados.',
+          'A barra lateral fixa concentra os sete ambientes do fluxo de trabalho acadêmico, permitindo alternar entre pesquisa, leitura, redação e revisão sem perder os filtros abertos.',
       },
       {
-        subtitulo: '2.2. Anatomia dos Módulos do Rail Vertical',
+        subtitulo: '2.2. Descrição de cada módulo',
         itens: [
-          '📚 Biblioteca: Painel principal com árvore de coleções à esquerda, tabela ordenável com colunas de status (A Ler, Consultada, Citada) ao centro e inspetor CSL/PICO à direita.',
-          '🔍 Buscadores: Hub científico com conexão direta ao PubMed, SciELO, CAPES Periódicos, Europe PMC, OpenAlex e cofre criptografado de credenciais.',
-          '📝 Manuscrito: Painel de controle de citações ativas, vinculação de arquivos .docx e integração com o servidor local HTTP na porta 23119.',
-          '🔬 Auditoria: Motor de auditoria reversa forense para validação de manuscritos .docx/.pdf contra alucinações de IA, plágio e citações falsas.',
-          '📊 PRISMA: Ambiente de triagem sistemática de artigos em 4 fases e geração automática do diagrama de fluxo PRISMA 2020.',
-          '🔗 Grafo: Exploração de grafos de citação, linhagem científica e caderno de notas.',
-          '❓ Tutorial: Este guia de treinamento interativo e manual completo.',
-          'v1.2 & Tema: No rodapé do rail, acesse o Painel de Diagnóstico do Sistema e alterne entre os Modos Claro e Escuro.',
+          'Biblioteca: árvore de coleções e filtros à esquerda, tabela ordenável com status (A ler, Consultada, Citada) ao centro e inspetor CSL/PICO à direita.',
+          'Buscadores: consulta integrada ao PubMed, Europe PMC, Crossref, OpenAlex, SciELO com botões claros ("Ir ao site" para abrir o portal externo e "Importar" quando houver resultados pela API).',
+          'Manuscrito: controle de obras Consultadas vs. Citadas, vínculo com o Microsoft Word (porta 23119) e exportação do Pacote de Submissão (.zip) com revisão cega e SVGs PRISMA/RoB.',
+          'Auditoria: revisão reversa com Guardião Simbólico, Cross-Encoder NLI (2º estágio), reconciliação de tabelas XML/Resumo/siglas, citações múltiplas, Raio-X Bibliométrico, Memória de Decisão SHA-256 e Pre-Flight Editorial.',
+          'PRISMA: deduplicação, triagem de títulos e resumos, fluxograma PRISMA 2020 e painel de Risco de Viés (Cochrane RoB 2 / ROBINS-I).',
+          'Grafo: navegação por referências citadas e citantes (citation chaining) e caderno de síntese.',
+          'Tutorial: roteiro interativo e manual textual do sistema.',
+          'Rodapé: seletor de idioma (PT/EN), alternância de tema Claro/Escuro e janela de Diagnóstico / Versão v1.2.0 (incluindo Token Local do Web Clipper).',
         ],
       },
     ],
   },
   {
     id: 'cap3',
-    titulo: 'Capítulo 3 — Leitor de Artigo PDF com Rolagem Livre, Zoom e Grifos Coloridos',
+    titulo: 'Capítulo 3 — Leitor de PDF, Zoom e Marcação de Trechos Citados',
     conteudo: [
       {
-        subtitulo: '3.1. Navegação Sem Cortes: Barras de Rolagem Vertical e Horizontal',
+        subtitulo: '3.1. Leitura em abas com rolagem completa',
         texto:
-          'O leitor de PDF possui barras de rolagem vertical e horizontal completas e de alto contraste. Mesmo com níveis elevados de ampliação (Zoom ＋ até 250%), a página permanece perfeitamente navegável sem cortes nas bordas ou no cabeçalho.',
+          'Ao dar duplo-clique em qualquer artigo com PDF anexado, o documento abre em uma aba própria no topo da janela. A barra de zoom vai até 250% mantendo rolagem vertical e horizontal sem cortes.',
       },
       {
-        subtitulo: '3.2. Seleção Direta no PDF, Barra Flutuante e Resumo Consolidado',
+        subtitulo: '3.2. Grifos coloridos e registro de página exata',
         itens: [
-          'Seleção com o Mouse: Selecione frases diretamente sobre o PDF graças à camada TextLayer integrada do PDF.js.',
-          'Barra Flutuante de Cores: Ao selecionar um trecho, uma barra de marcação surge sobre o texto para grifar em Amarelo (Conceito), Verde (PICO), Azul (Citação no Word) ou Rosa (Crítica/Limitação).',
-          'Exportação com 1 Clique: O botão "Copiar Resumo de Comentários (Word)" compila todas as anotações organizadas por página com status de citação para colar imediatamente no seu documento.',
+          'Seleção direta: selecione frases sobre a página usando a camada de texto do PDF.js.',
+          'Marca-texto por categoria: escolha entre Amarelo (Conceito), Verde (PICO), Azul (Citação) ou Rosa (Limitação/Crítica).',
+          'Trecho Citado com página: ao marcar um trecho como citação, o sistema salva o texto original com o número exato da página e altera o status da obra para "Citada".',
+          'Exportação de notas: copie os comentários organizados por página diretamente para colar no documento de texto.',
         ],
       },
     ],
   },
   {
     id: 'cap4',
-    titulo: 'Capítulo 4 — Auditoria Reversa e Forense (.DOCX e .PDF) & Detecção Anti-IA',
+    titulo: 'Capítulo 4 — Auditoria Reversa de Manuscritos (.DOCX e .PDF)',
     conteudo: [
       {
-        subtitulo: '4.1. Algoritmo Determinístico de Cruzamento Citação × Referência',
+        subtitulo: '4.1. Conferência determinística entre texto, lista final e bases',
         texto:
-          'A Auditoria Reversa Forense utiliza processamento determinístico estruturado (inspirado em algoritmos acadêmicos de n-grams, índice invertido e análise sintática NBR 10520:2023 / NBR 6023). O motor agrupa parágrafos do corpo do texto e entradas completas de referências sem cortar leis nem periódicos, eliminando os falsos alarmes de pós-referências e de citações ausentes.',
+          'A Auditoria Reversa extrai citações no corpo do texto (ABNT Autor-Data e Vancouver numérico/sobrescrito, inclusive após pontuação) e cruza com a lista final de referências, consultando Crossref, PubMed e OpenAlex com cache local para manter consistência entre execuções.',
       },
       {
-        subtitulo: '4.2. Seletor de Pasta de Destino dos PDFs & Download Automático',
+        subtitulo: '4.2. Recursos específicos para PDFs e validação semântica',
         itens: [
-          'Escolha da Pasta de Destino: O usuário pode selecionar qualquer pasta local ou no OneDrive para armazenar os artigos e PDFs autenticados.',
-          'Download em Lote: Com o botão "Salvar PDFs na Pasta", o sistema baixa ou sincroniza todos os artigos reais autenticados diretamente para a pasta escolhida.',
-          'Validação de DOIs e Anti-Alucinação: Consulta Crossref, PubMed e OpenAlex para assegurar que cada fonte é real e não inventada por modelos generativos (ChatGPT/Claude).',
-          'Prompt Estruturado para IA: O botão "🤖 Copiar Relatório p/ Colar na IA" gera um relatório técnico com parágrafo (§), linha e diagnóstico para você colar na IA solicitando reescrita pontual.',
+          'Layout em 2 colunas e figuras rotacionadas: detecta calha central para evitar mistura entre colunas e preserva textos rotacionados a 90°, removendo cabeçalhos repetidos de página.',
+          'Validação em cascata offline (Bi-Encoder + Cross-Encoder NLI + Guardião Simbólico): combina triagem BM25, modelo ONNX custom-forensic-minilm, Cross-Encoder NLI custom-forensic-nli-int8 (detecção de contradição lógica) e checagem simbólica de polaridade NegEx, divergência numérica e apud oculto.',
+          'Reconciliador Intra-Documento, Citações Múltiplas e Raio-X Bibliométrico: confronta tabelas XML (<w:tbl>) × texto, Resumo × Resultados, siglas sem definição, detecta obra intrusa em citações compostas e exibe a Pirâmide de Evidência em 7 níveis.',
+          'Memória de Decisão Editorial (SHA-256) e Pre-Flight Editorial: salve falsos positivos justificados em auditoria_decisoes.json (reativa automaticamente se 1 palavra mudar) e valide limites de palavras, referências, tabelas e ética para perfis ICMJE/Vancouver, Saúde Coletiva Brasil (CSP/RSP/C&SC) ou Personalizado.',
+          'Download em lote de PDFs e detecção de retratações: salva PDFs abertos em pasta local e sinaliza artigos retratados no Crossref e OpenAlex.',
         ],
       },
     ],
   },
   {
     id: 'cap5',
-    titulo: 'Capítulo 5 — Citações no Texto e Formatação CSL para Microsoft Word (Porta 23119)',
+    titulo: 'Capítulo 5 — Formatação CSL, Microsoft Word e Pandoc / Quarto',
     conteudo: [
       {
-        subtitulo: '5.1. Mecanismo CSL Oficial (citeproc-js) e Normas Acadêmicas',
+        subtitulo: '5.1. Processamento CSL (citeproc-js)',
         texto:
-          'O Bibliografia processa referências utilizando o padrão internacional Citation Style Language (CSL) através da biblioteca oficial citeproc-js. O sistema vem configurado de fábrica com ABNT NBR 6023 / 10520 (Autor-Data e Numérico), APA 7ª Edição, Vancouver, Harvard, Chicago e Nature, com repositório online para instalar mais de 10.000 estilos de revistas científicas.',
+          'As citações e listas finais seguem o padrão Citation Style Language (CSL), com suporte nativo a ABNT NBR 6023/10520, Vancouver, APA 7ª ed., Harvard, Chicago e Nature, além de instalação sob demanda de estilos adicionais.',
       },
       {
-        subtitulo: '5.2. Modal de Bibliografia Formatada Expandido (1080px)',
+        subtitulo: '5.2. Exportação e integrações locais',
         itens: [
-          'Seletor de Escopo: Exporte referências filtrando apenas pelas "Citadas no Manuscrito", "Consultadas", "Selecionadas" ou "Todas as Obras".',
-          'Cópia Rica Formatada: O botão "📋 Copiar Referências Formatadas para o Word" transfere o texto com formatação HTML/RTF completa (itálico em títulos de periódicos, negrito conforme a norma e recuo francês).',
-          'Servidor Local Word: O backend mantém o servidor HTTP local na porta 23119 ativo para integração via suplemento XML dentro do Microsoft Word.',
+          'Modal Criar Bibliografia: selecione apenas "Citadas", "Consultadas", uma "Coleção" ou "Todas" e copie mantendo itálico e recuo para colar no Word.',
+          'Servidor local (porta 23119): comunica-se exclusivamente em loopback (127.0.0.1) com o suplemento .dotm do Microsoft Word, Web Clipper Manifest V3 e filtro Pandoc/Quarto (>= 1.4.0).',
+          'Pacote de Submissão Editorial (.zip): na aba Manuscrito, exporte um .zip com cópia limpa do .docx para revisão cega (campos dinâmicos convertidos em texto plano e metadados do autor removidos), diagramas vetoriais SVG (PRISMA 2020 e RoB 2 / ROBINS-I) e resumo técnico de conformidade.',
         ],
       },
     ],
   },
   {
     id: 'cap6',
-    titulo: 'Capítulo 6 — Triagem Sistemática e Fluxograma PRISMA 2020',
+    titulo: 'Capítulo 6 — Triagem Sistemática (PRISMA 2020) e Risco de Viés',
     conteudo: [
       {
-        subtitulo: '6.1. Metodologia de Revisão Sistemática e Escopo PRISMA',
+        subtitulo: '6.1. Pipeline de revisão sistemática',
         texto:
-          'Para revisões sistemáticas da literatura e scoping reviews, o módulo PRISMA permite gerenciar o pipeline de inclusão e exclusão de artigos científicos conforme as diretrizes internacionais PRISMA 2020.',
+          'O módulo PRISMA reúne ferramentas para deduplicação, triagem de títulos e resumos, seleção de texto completo e geração do diagrama de fluxo PRISMA 2020.',
       },
       {
-        subtitulo: '6.2. As 4 Etapas do Fluxo PRISMA',
+        subtitulo: '6.2. Etapas e avaliação de Risco de Viés',
         itens: [
-          '1. Identificação: Registro de resultados brutos extraídos de bases de dados (PubMed, Scopus, Web of Science, Embase, SciELO, Lilacs) e remoção automática de duplicatas por DOI.',
-          '2. Triagem (Screening): Avaliação rápida de títulos e resumos com marcação de "Incluir", "Dúvida" ou "Excluir com Motivo".',
-          '3. Elegibilidade: Avaliação aprofundada dos textos completos dos artigos pré-selecionados.',
-          '4. Inclusão & Diagrama: Geração visual interativa do fluxograma oficial PRISMA 2020 com exportação em alta resolução para inclusão direta em sua publicação.',
+          '1. Deduplicação segura: compara DOI, PMID e título mesclando registros duplicados sem descartar PDFs ou anotações.',
+          '2. Triagem e Elegibilidade: registra decisões (Incluir, Dúvida, Excluir) com motivos padronizados e calcula o fluxograma em tempo real.',
+          '3. Risco de Viés (RoB 2 / ROBINS-I): gera sugestões iniciais por domínio ancoradas ao texto, exigindo confirmação explícita de um revisor humano e gravando trilha encadeada por SHA-256.',
+        ],
+      },
+    ],
+  },
+];
+
+const CAPITULOS_MANUAL_EN = [
+  {
+    id: 'cap1',
+    titulo: 'Chapter 1 — Cloud Storage, Project Switcher & Atomic Persistence',
+    conteudo: [
+      {
+        subtitulo: '1.1. Why each reference is stored in an independent JSON file',
+        texto:
+          'To prevent database locks and corruption common in monolithic SQLite files synced over cloud drives (OneDrive, Google Drive, Dropbox), Bibliography saves each reference as an atomic .json file inside "referencias/". PDFs live in "pdfs/" (or "storage/") and reading annotations remain isolated per work.',
+      },
+      {
+        subtitulo: '1.2. Fast project switching and continuous BibTeX sync',
+        itens: [
+          'Active Project Indicator: the top bar displays the active folder and exact reference count.',
+          'Recent Projects Switcher: switch between thesis, manuscript, or team libraries in one click.',
+          'Offline Cloud Sync: on Windows OneDrive, mark the library folder as "Always keep on this device" for instant PDF loading.',
+          'library.bib: continuously updated at the library root for LaTeX and Overleaf workflows.',
         ],
       },
     ],
   },
   {
-    id: 'cap7',
-    titulo: 'Capítulo 7 — Manual de Elaboração do Projeto de Intervenção (UFMA / UNA-SUS / SEIDIGI)',
+    id: 'cap2',
+    titulo: 'Chapter 2 — Permanent Sidebar Navigation',
     conteudo: [
       {
-        subtitulo: '7.1. Diretrizes Estruturais do Módulo 17 (UFMA)',
+        subtitulo: '2.1. Seven integrated academic workspaces',
         texto:
-          'O Projeto de Intervenção para o SUS Digital é o Trabalho de Conclusão de Curso (TCC) voltado à resolução de um problema concreto de saúde pública, fundamentado no Módulo 17 da Universidade Federal do Maranhão (UFMA / UNA-SUS / SEIDIGI). O manual completo detalhado está registrado no arquivo MANUAL_PROJETO_INTERVENCAO_UFMA.md.',
+          'The left navigation rail keeps all seven modules one click away without losing active filters or open PDF tabs.',
       },
       {
-        subtitulo: '7.2. Os 7 Elementos Obrigatórios do Projeto de Intervenção',
+        subtitulo: '2.2. Module overview',
         itens: [
-          '1. Tema e Objeto: Delimitação de um problema real de saúde na APS ou na rede de atenção (ex.: rastreamento e confirmação diagnóstica de câncer de mama).',
-          '2. Problematização e Justificativa: Diagnóstico epidemiológico local apoiado em dados do SUS (SISCAN, e-SUS APS, SIA/SIH) e literatura científica.',
-          '3. Objetivos Geral e Específicos: Ações resolutivas mensuráveis com verbos no infinitivo (implantar, padronizar, integrar, capacitar).',
-          '4. Fundamentação Teórica / Revisão: Artigos de periódicos qualificados, portarias do Ministério da Saúde e protocolos clínicos autenticados.',
-          '5. Metodologia e Plano Operativo: Descrição de etapas, atores envolvidos, instrumentos de coleta e fluxo de intervenção tecnológica.',
-          '6. Cronograma e Recursos: Distribuição temporal realista de atividades e orçamento detalhado.',
-          '7. Referências ABNT NBR 6023/10520: Alinhamento estrito à margem esquerda, espaço simples e conferência de todas as citações feitas no texto.',
+          'Library: collections & filters on the left, sortable table (To read, Consulted, Cited) in the center, and CSL/PICO inspector on the right.',
+          'Search Hub: parallel queries across PubMed, Europe PMC, Crossref, OpenAlex, and SciELO with clear "Go to site" vs. "Import" actions.',
+          'Manuscript: Cited vs. Consulted tracking, Microsoft Word bridge (port 23119), and Blind-Review Submission Package (.zip) export.',
+          'Forensic Audit: reverse audit with Symbolic Guardian, 2nd-stage Cross-Encoder NLI, XML table/abstract/acronym reconciler, multiple-citation intruder detection, Bibliometric X-Ray, SHA-256 Decision Memory, and Editorial Pre-Flight.',
+          'PRISMA: safe deduplication, title/abstract screening, PRISMA 2020 flow diagram, and Risk of Bias (RoB 2 / ROBINS-I).',
+          'Citation Graph: earlier, later, and similar paper exploration (OpenAlex) plus synthesis notebook.',
+          'Tutorial: interactive walkthrough and searchable reference manual (v1.2.0).',
         ],
+      },
+    ],
+  },
+  {
+    id: 'cap3',
+    titulo: 'Chapter 3 — Tabbed PDF Reader, Highlights & Cited Excerpts',
+    conteudo: [
+      {
+        subtitulo: '3.1. Multi-tab reading with full zoom',
+        texto:
+          'Double-click any work with an attached PDF to open it in a dedicated top tab with zoom up to 250% and smooth scrolling.',
+      },
+      {
+        subtitulo: '3.2. Color highlights and Ground-Truth cited pages',
+        itens: [
+          'Direct text selection via PDF.js text layer.',
+          'Color categories: Yellow (Concept), Green (PICO), Blue (Citation), and Pink (Limitation/Critique).',
+          'Cited Excerpt: saves exact passage + page number as Ground Truth for Forensic Audit and marks the work as Cited.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'cap4',
+    titulo: 'Chapter 4 — Forensic Reverse Audit (.DOCX and .PDF)',
+    conteudo: [
+      {
+        subtitulo: '4.1. Deterministic verification across text, references, and databases',
+        texto:
+          'Extracts in-text citations (ABNT Author-Date and Vancouver/Nature numeric/superscript), cross-checks the reference list, and verifies sources against Crossref, PubMed, and OpenAlex with local caching.',
+      },
+      {
+        subtitulo: '4.2. Cascade AI, Symbolic Guardian, Intra-Doc & Pre-Flight',
+        itens: [
+          'Offline Cascade Validation: combines BM25 retrieval, Bi-Encoder ONNX (custom-forensic-minilm), Cross-Encoder NLI (custom-forensic-nli-int8) for logical contradiction detection, and Symbolic Guardian (NegEx polarity, numeric checks, hidden apud).',
+          'Intra-Document Reconciler & Bibliometric X-Ray: checks XML <w:tbl> tables vs. prose, Abstract vs. Results, undefined acronyms, multiple-citation intruders, and 7-level Evidence Pyramid.',
+          'SHA-256 Editorial Decision Memory & Pre-Flight: suppress justified false positives in auditoria_decisoes.json (auto-reactivates if 1 word changes) and validate ICMJE/Vancouver, Public Health Brazil, or Custom journal limits.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'cap5',
+    titulo: 'Chapter 5 — CSL Formatting, Microsoft Word & Submission Package',
+    conteudo: [
+      {
+        subtitulo: '5.1. Citation Style Language (citeproc-js)',
+        texto:
+          'Native support for ABNT NBR 6023/10520, Vancouver, APA 7th, Harvard, Chicago, and Nature, plus on-demand CSL style installation.',
+      },
+      {
+        subtitulo: '5.2. Local bridge (port 23119) & Blind-Review .zip export',
+        itens: [
+          'Loopback-only local server (127.0.0.1:23119) for the Word .dotm add-in, Chrome/Edge Web Clipper, and Pandoc/Quarto.',
+          'Submission Package (.zip): flattens dynamic Word fields, strips author metadata for double-blind review, and bundles PRISMA 2020 & RoB SVG figures plus compliance summary.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'cap6',
+    titulo: 'Chapter 6 — Systematic Screening (PRISMA 2020) & Risk of Bias',
+    conteudo: [
+      {
+        subtitulo: '6.1. End-to-end systematic review workflow',
+        texto:
+          'Combines safe deduplication, dual-blind title/abstract screening, real-time PRISMA 2020 diagram generation, and human-verified RoB 2 / ROBINS-I assessments with SHA-256 audit trail.',
       },
     ],
   },
@@ -232,6 +323,8 @@ export default function HelpGuideView({
   aoAbrirModalCadastro,
 }) {
   const { tr } = useI18n();
+  const ehEn = tr('pt', 'en') === 'en';
+  const capitulosAtivos = ehEn ? CAPITULOS_MANUAL_EN : CAPITULOS_MANUAL;
   const [modoGuia, setModoGuia] = useState('tutorial'); // 'tutorial' | 'manual'
   const [etapaAtiva, setEtapaAtiva] = useState('etapa-nuvem');
   const [buscaManual, setBuscaManual] = useState('');
@@ -251,7 +344,7 @@ export default function HelpGuideView({
     } catch {}
   };
 
-  const capitulosFiltrados = CAPITULOS_MANUAL.filter((cap) => {
+  const capitulosFiltrados = capitulosAtivos.filter((cap) => {
     if (!buscaManual.trim()) return true;
     const q = buscaManual.toLowerCase();
     if (cap.titulo.toLowerCase().includes(q)) return true;
@@ -264,7 +357,7 @@ export default function HelpGuideView({
   });
 
   const copiarManualCompleto = () => {
-    const texto = CAPITULOS_MANUAL.map((cap) => {
+    const texto = capitulosAtivos.map((cap) => {
       const blocos = cap.conteudo
         .map((c) => {
           const linhas = [c.subtitulo];
@@ -281,7 +374,7 @@ export default function HelpGuideView({
     } else {
       navigator.clipboard?.writeText(texto);
     }
-    alert('Manual Oficial v1.0.2 copiado para a área de transferência! Cole no Microsoft Word se desejar imprimir.');
+    alert(tr('Manual de uso (v1.2.0) copiado para a área de transferência.', 'User manual (v1.2.0) copied to clipboard.'));
   };
 
   return (
@@ -289,9 +382,12 @@ export default function HelpGuideView({
       {/* BANNER SUPERIOR COM SELETOR DE MODO */}
       <div className="guia-banner">
         <div>
-          <h2>📚 {tr('Manual de Operação & Tutorial Didático Interativo (v1.0.2)', 'Operations Manual & Interactive Walkthrough (v1.0.2)')}</h2>
+          <h2>{tr('Guia de Operação e Manual de Referência (v1.2.0)', 'User Guide & Reference Manual (v1.2.0)')}</h2>
           <p>
-            {tr('Instruções completas cobrindo os 6 módulos essenciais do sistema: Sincronização na Nuvem, Activity Rail, Leitor de PDFs, Auditoria Reversa Forense, Citações Word e PRISMA 2020.', 'Complete instructions covering the 6 core modules: Cloud Sync, Activity Rail, PDF Reader, Forensic Reverse Audit, Word Citations, and PRISMA 2020.')}
+            {tr(
+              'Instruções práticas cobrindo armazenamento em nuvem, navegação lateral, leitor de PDFs, auditoria reversa, integração com Word e triagem PRISMA 2020.',
+              'Practical guide covering cloud storage, sidebar navigation, PDF reader, reverse audit, Word integration, and PRISMA 2020 screening.'
+            )}
           </p>
         </div>
         <div className="guia-banner-acoes" style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
@@ -300,14 +396,14 @@ export default function HelpGuideView({
             className={modoGuia === 'tutorial' ? 'aba-modo-guia ativa' : 'aba-modo-guia'}
             onClick={() => setModoGuia('tutorial')}
           >
-            🎯 1. {tr('Roteiro Passo a Passo Interativo', 'Interactive Step-by-Step Guide')}
+            {tr('1. Roteiro Interativo', '1. Interactive Walkthrough')}
           </button>
           <button
             type="button"
             className={modoGuia === 'manual' ? 'aba-modo-guia ativa' : 'aba-modo-guia'}
             onClick={() => setModoGuia('manual')}
           >
-            📖 2. {tr('Manual Completo para Leitura', 'Full Reference Manual')}
+            {tr('2. Manual de Leitura', '2. Reference Manual')}
           </button>
           <button
             type="button"
@@ -322,7 +418,7 @@ export default function HelpGuideView({
             }}
             onClick={() => irParaAba('biblioteca')}
           >
-            📚 {tr('Abrir Minha Biblioteca', 'Open My Library')}
+            {tr('Abrir Biblioteca', 'Open Library')}
           </button>
         </div>
       </div>
@@ -332,11 +428,11 @@ export default function HelpGuideView({
         <div className="manual-leitura-container">
           <div className="manual-leitura-topo">
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, flex: 1 }}>
-              <strong>🔍 {tr('Buscar no Manual:', 'Search Manual:')}</strong>
+              <strong>{tr('Buscar no Manual:', 'Search Manual:')}</strong>
               <input
                 value={buscaManual}
                 onChange={(e) => setBuscaManual(e.target.value)}
-                placeholder={tr('Ex.: nuvem, rail, PDF, ABNT, reversa, plágio, Word, PRISMA…', 'e.g. cloud, rail, PDF, ABNT, audit, plagiarism, Word, PRISMA…')}
+                placeholder={tr('Ex.: nuvem, PDF, ABNT, Vancouver, auditoria, Word, PRISMA…', 'e.g. cloud, PDF, ABNT, Vancouver, audit, Word, PRISMA…')}
                 style={{ flex: 1, maxWidth: 440, padding: '7px 12px', borderRadius: 6, border: '1px solid var(--borda)' }}
               />
               {buscaManual && (
@@ -346,20 +442,23 @@ export default function HelpGuideView({
               )}
             </div>
             <button type="button" className="btn secundario" onClick={copiarManualCompleto}>
-              📋 {tr('Copiar Manual Completo (para Word / Impressão)', 'Copy Full Manual (for Word / Print)')}
+              {tr('Copiar Manual Completo', 'Copy Full Manual')}
             </button>
           </div>
 
           <div className="manual-leitura-folha">
             <div className="manual-capa">
-              <h1>📖 MANUAL OFICIAL DO SISTEMA BIBLIOGRAFIA — v1.0.2</h1>
+              <h1>{tr('MANUAL DE USO — BIBLIOGRAFIA CIENTÍFICA (v1.2.0)', 'USER MANUAL — SCIENTIFIC BIBLIOGRAPHY (v1.2.0)')}</h1>
               <p>
-                Guia de referência para gerenciamento científico, leitura atômica de PDFs, auditoria forense anti-alucinação de IA, cópia CSL para o Microsoft Word e triagem sistemática PRISMA 2020.
+                {tr(
+                  'Guia de referência para organização bibliográfica, leitura de PDFs com marcação de páginas citadas, auditoria reversa de manuscritos, formatação CSL para Word e revisão sistemática PRISMA 2020.',
+                  'Reference guide for bibliographic management, tabbed PDF reading with cited pages, forensic manuscript auditing, CSL Word formatting, and PRISMA 2020 systematic reviews.'
+                )}
               </p>
               <div className="manual-indice">
-                <strong>Índice dos 6 Capítulos Oficiais:</strong>
+                <strong>{tr('Índice dos 6 Capítulos:', 'Table of Contents (6 Chapters):')}</strong>
                 <div className="manual-indice-links">
-                  {CAPITULOS_MANUAL.map((c) => (
+                  {capitulosAtivos.map((c) => (
                     <a key={c.id} href={`#${c.id}`} className="link-indice-manual">
                       {c.titulo}
                     </a>
@@ -389,7 +488,7 @@ export default function HelpGuideView({
           </div>
         </div>
       ) : (
-        /* MODO 1: ROTEIRO DIDÁTICO INTERATIVO (6 ETAPAS ESSENCIAIS) */
+        /* MODO 1: ROTEIRO INTERATIVO (6 ETAPAS) */
         <div className="guia-corpo">
           <aside className="guia-menu">
             <button
@@ -397,10 +496,10 @@ export default function HelpGuideView({
               className={`guia-menu-item ${etapaAtiva === 'etapa-nuvem' ? 'ativo' : ''}`}
               onClick={() => setEtapaAtiva('etapa-nuvem')}
             >
-              <span className="guia-menu-icone">☁️</span>
+              <span className="guia-menu-icone">1</span>
               <div className="guia-menu-texto">
-                <strong>Etapa 1: Nuvem &amp; Projetos</strong>
-                <span>Sincronização atômica OneDrive/Drive e seletor de pastas.</span>
+                <strong>{tr('Etapa 1: Nuvem e Projetos', 'Step 1: Cloud & Projects')}</strong>
+                <span>{tr('Armazenamento atômico e troca de pastas.', 'Atomic storage and folder switching.')}</span>
               </div>
             </button>
 
@@ -409,10 +508,10 @@ export default function HelpGuideView({
               className={`guia-menu-item ${etapaAtiva === 'etapa-rail' ? 'ativo' : ''}`}
               onClick={() => setEtapaAtiva('etapa-rail')}
             >
-              <span className="guia-menu-icone">🧭</span>
+              <span className="guia-menu-icone">2</span>
               <div className="guia-menu-texto">
-                <strong>Etapa 2: Activity Rail Mendeley</strong>
-                <span>Navegação vertical permanente e paleta sóbria grafite.</span>
+                <strong>{tr('Etapa 2: Barra Lateral', 'Step 2: Sidebar Navigation')}</strong>
+                <span>{tr('Navegação entre módulos e tema claro/escuro.', 'Module switching and light/dark theme.')}</span>
               </div>
             </button>
 
@@ -421,10 +520,10 @@ export default function HelpGuideView({
               className={`guia-menu-item ${etapaAtiva === 'etapa-pdf' ? 'ativo' : ''}`}
               onClick={() => setEtapaAtiva('etapa-pdf')}
             >
-              <span className="guia-menu-icone">🖍</span>
+              <span className="guia-menu-icone">3</span>
               <div className="guia-menu-texto">
-                <strong>Etapa 3: Leitura &amp; Grifos em PDF</strong>
-                <span>Abas superiores, marca-texto, trechos citados com página e PICO.</span>
+                <strong>{tr('Etapa 3: Leitura e Grifos em PDF', 'Step 3: PDF Reading & Highlights')}</strong>
+                <span>{tr('Abas superiores, marca-texto e página citada.', 'Top tabs, highlights, and cited pages.')}</span>
               </div>
             </button>
 
@@ -433,10 +532,10 @@ export default function HelpGuideView({
               className={`guia-menu-item ${etapaAtiva === 'etapa-auditoria' ? 'ativo' : ''}`}
               onClick={() => setEtapaAtiva('etapa-auditoria')}
             >
-              <span className="guia-menu-icone">🔬</span>
+              <span className="guia-menu-icone">4</span>
               <div className="guia-menu-texto">
-                <strong>Etapa 4: Auditoria Reversa Anti-IA</strong>
-                <span>Conferência de .docx/.pdf contra alucinações, plágio e citações falsas.</span>
+                <strong>{tr('Etapa 4: Auditoria Reversa', 'Step 4: Forensic Reverse Audit')}</strong>
+                <span>{tr('Conferência de .docx/.pdf nas bases e nos PDFs.', 'Verify .docx/.pdf against databases & PDFs.')}</span>
               </div>
             </button>
 
@@ -445,10 +544,10 @@ export default function HelpGuideView({
               className={`guia-menu-item ${etapaAtiva === 'etapa-word' ? 'ativo' : ''}`}
               onClick={() => setEtapaAtiva('etapa-word')}
             >
-              <span className="guia-menu-icone">📝</span>
+              <span className="guia-menu-icone">5</span>
               <div className="guia-menu-texto">
-                <strong>Etapa 5: Citações &amp; Word (Porta 23119)</strong>
-                <span>Modal expandido (1080px), normas CSL e servidor local do Word.</span>
+                <strong>{tr('Etapa 5: Citações e Word (23119)', 'Step 5: Citations & Word (23119)')}</strong>
+                <span>{tr('Normas CSL, .dotm e Pacote .zip.', 'CSL styles, .dotm add-in & .zip package.')}</span>
               </div>
             </button>
 
@@ -457,10 +556,10 @@ export default function HelpGuideView({
               className={`guia-menu-item ${etapaAtiva === 'etapa-prisma' ? 'ativo' : ''}`}
               onClick={() => setEtapaAtiva('etapa-prisma')}
             >
-              <span className="guia-menu-icone">📊</span>
+              <span className="guia-menu-icone">6</span>
               <div className="guia-menu-texto">
-                <strong>Etapa 6: Triagem PRISMA 2020</strong>
-                <span>Pipeline sistemático em 4 fases e geração de fluxograma exportável.</span>
+                <strong>{tr('Etapa 6: PRISMA 2020 e Viés', 'Step 6: PRISMA 2020 & Bias')}</strong>
+                <span>{tr('Triagem sistemática e avaliação RoB 2 / ROBINS-I.', 'Systematic screening & RoB 2 / ROBINS-I.')}</span>
               </div>
             </button>
           </aside>
@@ -469,9 +568,12 @@ export default function HelpGuideView({
             {/* ETAPA 1: NUVEM E PROJETOS */}
             {etapaAtiva === 'etapa-nuvem' && (
               <div className="guia-secao">
-                <h3>☁️ Etapa 1: Conexão e Sincronização na Nuvem (OneDrive / Google Drive)</h3>
+                <h3>{tr('Etapa 1: Organização na Nuvem e Seletor de Projetos', 'Step 1: Cloud Organization & Project Switcher')}</h3>
                 <p className="guia-intro">
-                  Aprenda como seus arquivos científicos ficam salvos com segurança, sem risco de corromper banco de dados na nuvem, e como gerenciar múltiplos projetos acadêmicos.
+                  {tr(
+                    'Entenda como as referências são gravadas sem risco de conflito na nuvem e como alternar entre múltiplos projetos.',
+                    'Learn how references are saved atomically without cloud sync conflicts and how to switch between projects.'
+                  )}
                 </p>
 
                 <div className="guia-passos-lista">
@@ -483,15 +585,18 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['nuvem_1']}
                           onChange={() => alternarChecklist('nuvem_1')}
                         />
-                        <strong>1.1. Localização da Biblioteca e Pastas Atômicas</strong>
+                        <strong>{tr('1.1. Estrutura das pastas da biblioteca', '1.1. Library folder structure')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      Sua biblioteca principal fica em <code>C:\Users\Marcos\OneDrive\Bibliografia</code>. Dentro dela, a subpasta <code>referencias/</code> guarda cada artigo em um arquivo JSON individual, a pasta <code>storage/</code> (ou <code>pdfs/</code>) armazena os PDFs completos, e o arquivo <code>library.bib</code> mantém o catálogo sincronizado para LaTeX.
+                      {tr(
+                        'Na pasta escolhida para a sua biblioteca, a subpasta referencias/ armazena cada obra em um arquivo JSON independente, a pasta pdfs/ (ou storage/) guarda os textos integrais e library.bib é atualizado continuamente para uso em LaTeX.',
+                        'Inside your library folder, referencias/ stores each work in an independent atomic JSON file, pdfs/ (or storage/) holds full-text PDFs, and library.bib stays synced for LaTeX.'
+                      )}
                     </p>
                     <div style={{ margin: '8px 0 0 28px', display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                       <button className="btn pequeno primario" onClick={() => window.api?.bib?.abrirPasta?.()}>
-                        📂 Abrir Pasta da Biblioteca no Windows Explorer
+                        {tr('Abrir Pasta da Biblioteca no Explorer', 'Open Library Folder in Explorer')}
                       </button>
                     </div>
                   </div>
@@ -504,11 +609,14 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['nuvem_2']}
                           onChange={() => alternarChecklist('nuvem_2')}
                         />
-                        <strong>1.2. Regra de Ouro: "Sempre Manter Neste Dispositivo"</strong>
+                        <strong>{tr('1.2. Manter cópia local no OneDrive / Drive', '1.2. Keep local copy on OneDrive / Drive')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      No Windows Explorer, clique com o botão direito na pasta do OneDrive da Bibliografia e marque <strong>"Sempre manter neste dispositivo"</strong>. Isso evita que o Windows descarregue os arquivos para economizar espaço e garante abertura instantânea de todos os PDFs.
+                      {tr(
+                        'Se usar OneDrive no Windows, clique com o botão direito sobre a pasta da biblioteca e selecione "Sempre manter neste dispositivo" para evitar atrasos ao abrir PDFs em modo Arquivos Sob Demanda.',
+                        'When using Windows OneDrive, right-click your library folder and select "Always keep on this device" to prevent Files On-Demand delays when opening PDFs.'
+                      )}
                     </p>
                   </div>
 
@@ -520,23 +628,29 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['nuvem_3']}
                           onChange={() => alternarChecklist('nuvem_3')}
                         />
-                        <strong>1.3. Gestão de Múltiplos Projetos &amp; Pastas Independentes</strong>
+                        <strong>{tr('1.3. Múltiplos projetos e bibliotecas independentes', '1.3. Multiple independent project libraries')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      Para criar uma nova biblioteca isolada (ex: para outro projeto ou artigo específico), clique no botão <code>Pasta: [Nome] ▾</code> no topo da tela e selecione <em>"📂 Abrir Pasta Existente…"</em> ou <em>"Criar Novo Projeto"</em>.
+                      {tr(
+                        'Use o seletor de pasta no cabeçalho superior para abrir outra biblioteca existente ou criar uma nova pasta separada por tese, artigo ou equipe.',
+                        'Use the project selector in the top header to switch to another existing library or create a separate folder per thesis, paper, or team.'
+                      )}
                     </p>
                   </div>
                 </div>
               </div>
             )}
 
-            {/* ETAPA 2: ACTIVITY RAIL MENDELEY */}
+            {/* ETAPA 2: BARRA LATERAL */}
             {etapaAtiva === 'etapa-rail' && (
               <div className="guia-secao">
-                <h3>🧭 Etapa 2: Operação do Novo Rail Vertical Permanente (Estilo Mendeley)</h3>
+                <h3>{tr('Etapa 2: Navegação pela Barra Lateral', 'Step 2: Sidebar Navigation')}</h3>
                 <p className="guia-intro">
-                  Conheça o menu lateral ergonômico de 86px projetado para acesso direto a todos os módulos com alta legibilidade e paleta sóbria grafite.
+                  {tr(
+                    'A barra vertical à esquerda mantém todos os módulos acessíveis sem quebrar rótulos em telas menores.',
+                    'The left vertical rail keeps all modules accessible without breaking layout on smaller screens.'
+                  )}
                 </p>
 
                 <div className="guia-passos-lista">
@@ -548,18 +662,21 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['rail_1']}
                           onChange={() => alternarChecklist('rail_1')}
                         />
-                        <strong>2.1. Troca de Contexto com 1 Clique</strong>
+                        <strong>{tr('2.1. Troca direta entre módulos', '2.1. Instant switching across modules')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      O Rail Vertical substitui definitivamente as abas horizontais quebradas. Ele abriga os botões ampliados (74px × 66px) com tipografia destacada e ícones de 22px: Biblioteca, Buscadores Saúde, Manuscrito, Auditoria Reversa, PRISMA, Grafo e Tutorial.
+                      {tr(
+                        'Alterna rapidamente entre Biblioteca, Buscadores, Manuscrito, Auditoria, PRISMA, Grafo e Tutorial mantendo seu trabalho ativo.',
+                        'Quickly switch between Library, Search Hub, Manuscript, Forensic Audit, PRISMA, Citation Graph, and Tutorial without losing active work.'
+                      )}
                     </p>
                     <div style={{ margin: '8px 0 0 28px', display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                       <button className="btn pequeno primario" onClick={() => irParaAba('biblioteca')}>
-                        📚 Ir para Biblioteca
+                        {tr('Ir para Biblioteca', 'Go to Library')}
                       </button>
                       <button className="btn pequeno secundario" onClick={() => irParaAba('buscadores')}>
-                        🔍 Ir para Buscadores Saúde
+                        {tr('Ir para Buscadores', 'Go to Search Hub')}
                       </button>
                     </div>
                   </div>
@@ -572,11 +689,14 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['rail_2']}
                           onChange={() => alternarChecklist('rail_2')}
                         />
-                        <strong>2.2. Paleta Sóbria Grafite &amp; Carmim Mendeley</strong>
+                        <strong>{tr('2.2. Idioma, Tema e Diagnóstico do Sistema', '2.2. Language, Theme & System Diagnostics')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      Inspirado nas diretrizes editoriais da Elsevier e Mendeley, o sistema utiliza fundo ardósia grafite (<code>#141b24</code>) e realce em carmim acadêmico (<code>#a81c24</code>). Clique no botão do sol/lua no rodapé do rail para alternar entre Modo Escuro e Claro.
+                      {tr(
+                        'No rodapé da barra lateral ficam os controles de idioma (PT/EN), alternância entre tema claro e escuro e o botão de versão (v1.2.0) com diagnóstico local e token do Web Clipper.',
+                        'At the bottom of the sidebar you can toggle language (PT/EN), switch Light/Dark mode, and open the v1.2.0 Diagnostics & Web Clipper Token modal.'
+                      )}
                     </p>
                   </div>
                 </div>
@@ -586,9 +706,12 @@ export default function HelpGuideView({
             {/* ETAPA 3: LEITURA E GRIFOS EM PDF */}
             {etapaAtiva === 'etapa-pdf' && (
               <div className="guia-secao">
-                <h3>🖍 Etapa 3: Leitura Multitasking, Grifos Coloridos e Anotações PICO</h3>
+                <h3>{tr('Etapa 3: Leitura em Abas, Grifos e Trechos Citados', 'Step 3: Tabbed PDF Reading, Highlights & Cited Excerpts')}</h3>
                 <p className="guia-intro">
-                  Aprenda a abrir múltiplos artigos em abas, aplicar marca-texto semântico e salvar a página exata das passagens que você vai citar no manuscrito.
+                  {tr(
+                    'Abra múltiplos artigos em paralelo, destaque passagens relevantes e registre o número exato da página citada.',
+                    'Open multiple papers side by side in tabs, highlight key passages, and record exact cited page numbers.'
+                  )}
                 </p>
 
                 <div className="guia-passos-lista">
@@ -600,11 +723,14 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['pdf_1']}
                           onChange={() => alternarChecklist('pdf_1')}
                         />
-                        <strong>3.1. Abertura de Artigos em Abas no Topo</strong>
+                        <strong>{tr('3.1. Abertura de artigos em abas', '3.1. Opening papers in tabs')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      Dê duplo-clique sobre qualquer artigo da tabela que tenha o selo PDF. Ele se abrirá em uma aba dedicada na barra superior. Você pode manter vários artigos abertos simultaneamente sem perder o ponto de leitura.
+                      {tr(
+                        'Dê duplo-clique sobre qualquer item da tabela que possua PDF anexado. Cada arquivo abre em uma aba própria no topo da tela.',
+                        'Double-click any table row with an attached PDF to open it in its own tab at the top of the window.'
+                      )}
                     </p>
                   </div>
 
@@ -616,23 +742,29 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['pdf_2']}
                           onChange={() => alternarChecklist('pdf_2')}
                         />
-                        <strong>3.2. Marcação com Página e Citação Automática</strong>
+                        <strong>{tr('3.2. Registro de trecho citado e página', '3.2. Saving cited excerpt & exact page')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      Ao selecionar o trecho que fundamenta seu trabalho no PDF, clique em <strong>"❝ Marcar como Trecho Citado"</strong>. O programa grava o texto exato, vincula o número da página (ex: p. 4) e muda o status da obra para "Citada" automaticamente.
+                      {tr(
+                        'Selecione a frase desejada no PDF e clique em "Marcar como Trecho Citado". O sistema salva a citação vinculada à página exata e altera o status da obra para "Citada".',
+                        'Select a passage in the PDF and click "Mark as Cited Excerpt". The system saves it with the exact page number as Ground Truth and marks the work as Cited.'
+                      )}
                     </p>
                   </div>
                 </div>
               </div>
             )}
 
-            {/* ETAPA 4: AUDITORIA REVERSA FORENSE */}
+            {/* ETAPA 4: AUDITORIA REVERSA */}
             {etapaAtiva === 'etapa-auditoria' && (
               <div className="guia-secao">
-                <h3>🔬 Etapa 4: Auditoria Reversa Forense (.DOCX/.PDF) &amp; Detecção Anti-IA</h3>
+                <h3>{tr('Etapa 4: Auditoria Reversa de Manuscritos (.DOCX e .PDF)', 'Step 4: Forensic Reverse Audit (.DOCX and .PDF)')}</h3>
                 <p className="guia-intro">
-                  Blindagem científica para seu trabalho: identifique alucinações de inteligência artificial, citações trocadas, plágio e confira as páginas no PDF.
+                  {tr(
+                    'Confira citações órfãs, referências não localizadas nas bases científicas, páginas de citações diretas e compatibilidade semântica com as fontes.',
+                    'Verify orphan citations, unindexed references, direct quote pages, logical consistency, and semantic alignment with source papers.'
+                  )}
                 </p>
 
                 <div className="guia-passos-lista">
@@ -644,15 +776,18 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['audit_1']}
                           onChange={() => alternarChecklist('audit_1')}
                         />
-                        <strong>4.1. Como Executar a Auditoria em um Arquivo .DOCX ou .PDF</strong>
+                        <strong>{tr('4.1. Carregar arquivo .DOCX ou .PDF', '4.1. Load a .DOCX or .PDF manuscript')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      Abra o módulo <strong>Auditoria</strong> no rail lateral, carregue o arquivo do seu trabalho ou cole o texto. O motor lê os parágrafos, identifica as citações (ex: "Silva (2020)"), cruza com as Referências finais e baixa os PDFs disponíveis.
+                      {tr(
+                        'Abra o módulo Auditoria, selecione seu arquivo .docx ou .pdf (ou cole o texto) e execute a conferência. Arquivos .docx preservam tabelas XML e parágrafos originais; PDFs publicados passam por segmentação de 2 colunas.',
+                        'Open Forensic Audit, load your .docx or .pdf file (or paste text), and run the audit. .docx files preserve XML tables and original paragraphs; published PDFs use 2-column layout extraction.'
+                      )}
                     </p>
                     <div style={{ margin: '8px 0 0 28px', display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                       <button className="btn pequeno primario" onClick={() => irParaAba('auditoria')}>
-                        🔬 Abrir Auditoria Reversa Forense
+                        {tr('Abrir Auditoria Reversa', 'Open Forensic Audit')}
                       </button>
                     </div>
                   </div>
@@ -665,11 +800,14 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['audit_2']}
                           onChange={() => alternarChecklist('audit_2')}
                         />
-                        <strong>4.2. Agrupamento Inteligente por Tipo de Intercorrência</strong>
+                        <strong>{tr('4.2. Filtros forenses, NLI em cascata, Raio-X e Pre-Flight Editorial', '4.2. Forensic filters, Cascade NLI, X-Ray & Editorial Pre-Flight')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      Os resultados são classificados em chips de filtro: <strong>🤖 IA / DOI Falso</strong>, <strong>🚨 Citação Trocada / Inexistente</strong>, <strong>🔍 Plágio / Cópia sem Aspas</strong>, <strong>❌ Citações Órfãs</strong> e <strong>📐 Metadados &amp; ABNT</strong>.
+                      {tr(
+                        'Os apontamentos combinam triagem ONNX Bi-Encoder + Cross-Encoder NLI (contradição lógica), Guardião Simbólico (polaridade/números/apud), reconciliação de tabelas XML/Resumo/siglas, detecção de obra intrusa em citações múltiplas, Raio-X Bibliométrico, Pre-Flight Editorial (ICMJE/Saúde Coletiva) e Memória de Decisão SHA-256 ("Ignorar / Falso Positivo Justificado").',
+                        'Findings combine ONNX Bi-Encoder + Cross-Encoder NLI (logical contradiction), Symbolic Guardian (polarity/numbers/apud), XML table/Abstract/acronym reconciliation, multiple-citation intruder detection, Bibliometric X-Ray, Editorial Pre-Flight (ICMJE/Public Health), and SHA-256 Decision Memory ("Ignore / Justified False Positive").'
+                      )}
                     </p>
                   </div>
                 </div>
@@ -679,9 +817,12 @@ export default function HelpGuideView({
             {/* ETAPA 5: CITAÇÕES E WORD */}
             {etapaAtiva === 'etapa-word' && (
               <div className="guia-secao">
-                <h3>📝 Etapa 5: Citações no Texto &amp; Formatação CSL para Microsoft Word</h3>
+                <h3>{tr('Etapa 5: Citações e Integração com Word (Porta 23119)', 'Step 5: Citations & Microsoft Word Integration (Port 23119)')}</h3>
                 <p className="guia-intro">
-                  Exporte sua bibliografia completa com formatação ABNT NBR 6023, Vancouver ou APA 7ª e conecte o Word ao acervo bibliográfico.
+                  {tr(
+                    'Gere listas bibliográficas conforme ABNT NBR 6023, Vancouver ou APA 7ª ed. e conecte o Microsoft Word ao acervo local.',
+                    'Generate formatted reference lists (ABNT, Vancouver, APA 7th) and connect Microsoft Word directly to your local library.'
+                  )}
                 </p>
 
                 <div className="guia-passos-lista">
@@ -693,11 +834,14 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['word_1']}
                           onChange={() => alternarChecklist('word_1')}
                         />
-                        <strong>5.1. Modal de Bibliografia Formatada Expandido (1080px)</strong>
+                        <strong>{tr('5.1. Exportação de bibliografia formatada', '5.1. Formatted bibliography export')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      Na barra de ferramentas da Biblioteca, clique em <strong>"📄 Criar Bibliografia"</strong>. O modal de 1080px permite escolher o escopo (Citadas, Consultadas, Selecionadas ou Todas) e copiar em texto formatado para colar direto no final do Word.
+                      {tr(
+                        'Na barra de ferramentas da Biblioteca, clique em "Criar Bibliografia" para filtrar por Citadas, Consultadas, Selecionadas ou Todas e copiar mantendo formatação rica para o Word.',
+                        'From the Library toolbar, click "Create Bibliography" to filter Cited, Consulted, Selected, or All works and copy rich formatting into Word.'
+                      )}
                     </p>
                   </div>
 
@@ -709,15 +853,18 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['word_2']}
                           onChange={() => alternarChecklist('word_2')}
                         />
-                        <strong>5.2. Servidor Local HTTP na Porta 23119</strong>
+                        <strong>{tr('5.2. Suplemento .dotm, API local (23119) e Pacote de Submissão (.zip)', '5.2. Word .dotm Add-in, Local API (23119) & Submission Package (.zip)')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      O aplicativo mantém um servidor HTTP ativo na porta 23119. Acesse o módulo <strong>Word</strong> no rail lateral para verificar a comunicação ou instalar o manifesto XML do suplemento.
+                      {tr(
+                        'No módulo Manuscrito, instale o modelo .dotm na pasta STARTUP do Word, acione o seletor rápido com Ctrl+Shift+B ou clique em Exportar Pacote de Submissão (.zip) para gerar uma cópia limpa do .docx para revisão cega acompanhada dos diagramas SVG PRISMA 2020 e RoB.',
+                        'In the Manuscript module, install the .dotm add-in into Word STARTUP, invoke the Quick Picker with Ctrl+Shift+B, or click Export Submission Package (.zip) for a blind-review .docx plus PRISMA 2020 & RoB SVG figures.'
+                      )}
                     </p>
                     <div style={{ margin: '8px 0 0 28px', display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                       <button className="btn pequeno primario" onClick={() => irParaAba('word')}>
-                        📝 Abrir Painel Word
+                        {tr('Abrir Painel Manuscrito / Word', 'Open Manuscript / Word Hub')}
                       </button>
                     </div>
                   </div>
@@ -728,9 +875,12 @@ export default function HelpGuideView({
             {/* ETAPA 6: TRIAGEM PRISMA 2020 */}
             {etapaAtiva === 'etapa-prisma' && (
               <div className="guia-secao">
-                <h3>📊 Etapa 6: Triagem Sistemática e Fluxograma PRISMA 2020</h3>
+                <h3>{tr('Etapa 6: Triagem Sistemática PRISMA 2020 e Risco de Viés', 'Step 6: PRISMA 2020 Systematic Screening & Risk of Bias')}</h3>
                 <p className="guia-intro">
-                  Conduza revisões sistemáticas e scoping reviews com rigor metodológico, desduplicação e exportação do diagrama oficial PRISMA 2020.
+                  {tr(
+                    'Organize deduplicação, triagem de estudos, diagrama PRISMA 2020 e avaliação humana de Risco de Viés (RoB 2 / ROBINS-I).',
+                    'Manage deduplication, study screening, PRISMA 2020 flow diagrams, and human-verified Risk of Bias (RoB 2 / ROBINS-I) assessments.'
+                  )}
                 </p>
 
                 <div className="guia-passos-lista">
@@ -742,15 +892,18 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['prisma_1']}
                           onChange={() => alternarChecklist('prisma_1')}
                         />
-                        <strong>6.1. Pipeline de 4 Fases PRISMA 2020</strong>
+                        <strong>{tr('6.1. Deduplicação, triagem e fluxograma', '6.1. Deduplication, screening & flow diagram')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      Importe listas de buscas de diferentes bases de dados (PubMed, Scopus, Web of Science). O sistema faz a desduplicação automática e permite triar títulos/resumos (Screening) e textos integrais (Elegibilidade).
+                      {tr(
+                        'Remova duplicatas sem perder PDFs nem notas, registre inclusões/exclusões por título e resumo e gere o diagrama PRISMA 2020 atualizado.',
+                        'Merge duplicates without losing PDFs or notes, record title/abstract inclusion/exclusion reasons, and generate an up-to-date PRISMA 2020 diagram.'
+                      )}
                     </p>
                     <div style={{ margin: '8px 0 0 28px', display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                       <button className="btn pequeno primario" onClick={() => irParaAba('prisma')}>
-                        📊 Abrir Triagem PRISMA 2020
+                        {tr('Abrir Módulo PRISMA 2020', 'Open PRISMA 2020 Module')}
                       </button>
                     </div>
                   </div>
@@ -763,11 +916,14 @@ export default function HelpGuideView({
                           checked={!!passosConcluidos['prisma_2']}
                           onChange={() => alternarChecklist('prisma_2')}
                         />
-                        <strong>6.2. Diagrama de Fluxo Visual Exportável</strong>
+                        <strong>{tr('6.2. Avaliação RoB 2 / ROBINS-I com validação humana', '6.2. Human-verified RoB 2 / ROBINS-I assessment')}</strong>
                       </label>
                     </div>
                     <p style={{ margin: '6px 0 0 28px', fontSize: 13, lineHeight: 1.5 }}>
-                      O diagrama oficial PRISMA 2020 é recalculado em tempo real conforme você inclui ou exclui artigos, pronto para cópia ou exportação para o artigo final.
+                      {tr(
+                        'Na aba de Risco de Viés dentro do módulo PRISMA, revise cada domínio e registre a decisão final do revisor em trilha auditável SHA-256.',
+                        'Inside the PRISMA Risk of Bias tab, review each domain and record the human reviewer decision on a SHA-256 audit trail.'
+                      )}
                     </p>
                   </div>
                 </div>

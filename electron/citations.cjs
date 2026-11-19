@@ -3,6 +3,7 @@
 const CSL = require('citeproc');
 const fs = require('fs');
 const path = require('path');
+const { escreverArquivoAtomico } = require('./atomicWrite.cjs');
 
 const RECURSOS = path.join(__dirname, '..', 'resources');
 
@@ -203,7 +204,7 @@ async function instalarEstiloOnline(id, raizBiblioteca) {
   const dir = path.join(raizBiblioteca, 'estilos');
   await fs.promises.mkdir(dir, { recursive: true });
   const destino = path.join(dir, `${limpo}.csl`);
-  await fs.promises.writeFile(destino, xml, 'utf8');
+  await escreverArquivoAtomico(destino, xml, 'utf8');
   return { id: limpo, nome: tituloDoCsl(xml) || limpo };
 }
 
@@ -218,7 +219,7 @@ async function importarArquivoCsl(caminhoOrigem, raizBiblioteca) {
     ? path.basename(caminhoOrigem)
     : `${path.basename(caminhoOrigem)}.csl`;
   const destino = path.join(dir, nomeArq);
-  await fs.promises.writeFile(destino, xml, 'utf8');
+  await escreverArquivoAtomico(destino, xml, 'utf8');
   const id = nomeArq.slice(0, -4);
   return { id, nome: tituloDoCsl(xml) || id };
 }

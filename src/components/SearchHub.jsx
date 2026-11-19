@@ -3,10 +3,10 @@ import { Icone, Modal, useAviso } from './ui.jsx';
 import { useI18n } from '../i18n.jsx';
 
 const ROTULO_LOGIN = {
-  livre: { texto: 'Acesso livre', textoEn: 'Open access', classe: 'badge-livre' },
-  parcial: { texto: 'Parcialmente aberto', textoEn: 'Partially open', classe: 'badge-parcial' },
-  cadastro: { texto: 'Requer cadastro gratuito', textoEn: 'Free account required', classe: 'badge-parcial' },
-  cafe: { texto: 'CAPES / CAFe / Instituição', textoEn: 'Institutional / Federated Login', classe: 'badge-cafe' },
+  livre: { texto: 'Livre', textoEn: 'Open', classe: 'badge-livre' },
+  parcial: { texto: 'Parcial', textoEn: 'Partial', classe: 'badge-parcial' },
+  cadastro: { texto: 'Cadastro', textoEn: 'Free Account', classe: 'badge-parcial' },
+  cafe: { texto: 'CAPES/CAFe', textoEn: 'Institutional', classe: 'badge-cafe' },
   assinatura: { texto: 'Assinatura', textoEn: 'Subscription', classe: 'badge-assinatura' },
 };
 
@@ -35,6 +35,7 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
   const [modalConta, setModalConta] = useState(null); // buscador selecionado para editar login/senha
   const [modalNovoBuscador, setModalNovoBuscador] = useState(null); // null ou objeto do buscador
   const [filtroCategoria, setFiltroCategoria] = useState('todas');
+  const [modoVisual, setModoVisual] = useState('grade'); // 'grade' | 'lista'
 
   const carregarTudo = async () => {
     try {
@@ -212,17 +213,17 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
       {/* Barra de busca unificada */}
       <div className="topo-buscadores">
         <div>
-          <h2>{tr('Central de Buscadores Científicos (Saúde & Multidisciplinar)', 'Federated Scientific Search Hub')}</h2>
+          <h2>{tr('Central de Buscas', 'Search Hub')}</h2>
           <p className="subtitulo">
             {tr(
-              'Compare resultados entre bases automaticamente, abra qualquer buscador com sua estratégia de busca em 1 clique e gerencie seus logins.',
-              'Compare hit counts across scientific databases in parallel, open any database with your query in one click, and manage credentials.'
+              'Pesquise bases científicas em paralelo, importe artigos e acesse portais assinados.',
+              'Query scientific databases in parallel, import articles, and manage portal accounts.'
             )}
           </p>
         </div>
         <div className="acoes-topo-buscadores">
           <button className="btn secundario" onClick={() => setModalNovoBuscador({ novo: true })}>
-            <Icone nome="plus" tam={14} /> {tr('Novo redirecionador / buscador', 'New Search Provider')}
+            <Icone nome="plus" tam={14} /> {tr('Adicionar Base', 'Add Provider')}
           </button>
         </div>
       </div>
@@ -297,131 +298,260 @@ export default function SearchHub({ refs, proxy, onMudarProxy, onImportarCsl }) 
                   className={`chip ${filtroCategoria === c ? 'ativo' : ''}`}
                   onClick={() => setFiltroCategoria(c)}
                 >
-                  {c === 'todas' ? tr('Todas as categorias', 'All categories') : c === 'favoritos' ? tr('★ Favoritos', '★ Favorites') : c}
+                  {c === 'todas' ? tr('Todas', 'All') : c === 'favoritos' ? tr('★ Favoritos', '★ Favorites') : c}
                 </button>
               ))}
             </div>
-            {Object.keys(contagens).length > 0 && (
-              <div className="salvar-busca-inline">
-                <input
-                  value={notasBusca}
-                  onChange={(e) => setNotasBusca(e.target.value)}
-                  placeholder={tr('Observação desta busca (ex.: Filtro 2019–2026)…', 'Search notes (e.g., Filter 2019–2026)…')}
-                />
-                <button className="btn pequeno primario" onClick={registrarNoHistorico}>
-                  {tr('Salvar no Histórico / PRISMA', 'Save to History / PRISMA')}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
+              {Object.keys(contagens).length > 0 && (
+                <div className="salvar-busca-inline">
+                  <input
+                    value={notasBusca}
+                    onChange={(e) => setNotasBusca(e.target.value)}
+                    placeholder={tr('Nota da busca (ex.: Filtro 2019–2026)…', 'Search note…')}
+                  />
+                  <button className="btn pequeno primario" onClick={registrarNoHistorico}>
+                    {tr('Salvar PRISMA', 'Save PRISMA')}
+                  </button>
+                </div>
+              )}
+              <div className="grupo-toggle-visual" role="group" aria-label={tr('Visualização das bases', 'Database layout')}>
+                <button
+                  type="button"
+                  className={`btn pequeno ${modoVisual === 'grade' ? 'primario' : 'fantasma'}`}
+                  onClick={() => setModoVisual('grade')}
+                  title={tr('Grade compacta (todas as bases visíveis)', 'Compact grid view')}
+                >
+                  {tr('Grade', 'Grid')}
+                </button>
+                <button
+                  type="button"
+                  className={`btn pequeno ${modoVisual === 'lista' ? 'primario' : 'fantasma'}`}
+                  onClick={() => setModoVisual('lista')}
+                  title={tr('Tabela condensada em 1 linha por base', 'Dense table view')}
+                >
+                  {tr('Tabela', 'Table')}
                 </button>
               </div>
-            )}
+            </div>
           </div>
 
-          <div className="grade-buscadores">
-            {buscadoresVisiveis.map((b) => {
-              const infoLogin = ROTULO_LOGIN[b.login] || ROTULO_LOGIN.livre;
-              const rotuloInfoLogin = ehEn ? (infoLogin.textoEn || infoLogin.texto) : infoLogin.texto;
-              const conta = contas[b.id];
-              const cont = contagens[b.id];
-              return (
-                <div key={b.id} className="card-buscador">
-                  <div className="card-buscador-topo">
-                    <div>
-                      <h4>{b.nome}</h4>
-                      <span className="cat-label">{b.categoria}</span>
+          {modoVisual === 'lista' ? (
+            <div className="tabela-buscadores-wrap">
+              <table className="tabela-buscadores-compacta">
+                <thead>
+                  <tr>
+                    <th>{tr('Base Científica', 'Database')}</th>
+                    <th>{tr('Acesso', 'Access')}</th>
+                    <th>{tr('Resultados', 'Hits')}</th>
+                    <th style={{ textAlign: 'right' }}>{tr('Ações', 'Actions')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {buscadoresVisiveis.map((b) => {
+                    const infoLogin = ROTULO_LOGIN[b.login] || ROTULO_LOGIN.livre;
+                    const rotuloInfoLogin = ehEn ? (infoLogin.textoEn || infoLogin.texto) : infoLogin.texto;
+                    const conta = contas[b.id];
+                    const cont = contagens[b.id];
+                    const temConsulta = Boolean(consulta.trim());
+                    const semResultados = cont?.status === 'ok' && Number(cont.valor) === 0;
+                    const temResultadosApi = cont?.status === 'ok' && Number(cont.valor) > 0;
+                    const podeImportarAqui = ['pubmed', 'europepmc', 'openalex'].includes(b.contagem) && !semResultados;
+                    return (
+                      <tr key={b.id} title={`${b.categoria} — ${b.descricao}`}>
+                        <td>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                            <button
+                              type="button"
+                              className={`btn-icone ${b.favorito ? 'favorito-ativo' : ''}`}
+                              onClick={() => alternarFavorito(b.id)}
+                              title={tr('Favorito', 'Favorite')}
+                            >
+                              <Icone nome="star" cheio={b.favorito} tam={13} />
+                            </button>
+                            <strong>{b.nome}</strong>
+                            <span className="cat-label-inline">{b.categoria}</span>
+                          </div>
+                        </td>
+                        <td>
+                          <span className={`badge-login ${infoLogin.classe}`}>{rotuloInfoLogin}</span>
+                          {conta?.usuario && (
+                            <span className="badge-conta" style={{ marginLeft: 4 }}>
+                              <Icone nome="key" tam={10} /> {conta.usuario}
+                            </span>
+                          )}
+                        </td>
+                        <td>
+                          {b.contagem ? (
+                            <strong className="valor-contagem-inline">
+                              {!cont
+                                ? '—'
+                                : cont.status === 'loading'
+                                ? '…'
+                                : cont.status === 'ok'
+                                ? cont.valor.toLocaleString(ehEn ? 'en-US' : 'pt-BR')
+                                : tr('erro', 'n/a')}
+                            </strong>
+                          ) : (
+                            <input
+                              type="number"
+                              min="0"
+                              placeholder="Qtd."
+                              className="input-contagem-compacto"
+                              title={tr('Anote quantos resultados encontrou no site para o PRISMA', 'Note result count from website for PRISMA')}
+                              value={contagensManuais[b.id] ?? ''}
+                              onChange={(e) =>
+                                setContagensManuais((ant) => ({ ...ant, [b.id]: e.target.value }))
+                              }
+                            />
+                          )}
+                        </td>
+                        <td style={{ textAlign: 'right' }}>
+                          <div style={{ display: 'inline-flex', gap: 4, alignItems: 'center' }}>
+                            <button
+                              className="btn pequeno secundario"
+                              onClick={() => abrirBuscador(b, false)}
+                              title={temConsulta
+                                ? tr(`Abrir o site de ${b.nome} já com sua busca preenchida`, `Search on ${b.nome} website`)
+                                : tr(`Acessar o site oficial de ${b.nome}`, `Open ${b.nome} website`)}
+                            >
+                              <Icone nome="external" tam={12} /> {temConsulta ? tr('No site', 'On site') : tr('Site', 'Site')}
+                            </button>
+                            {podeImportarAqui && (
+                              <button
+                                className={`btn pequeno ${temResultadosApi ? 'primario' : 'secundario'}`}
+                                onClick={() => buscarResultadosInline(b.contagem)}
+                                title={tr('Ver lista e importar artigos direto no app', 'Import articles into library')}
+                              >
+                                {tr('Importar', 'Import')}
+                              </button>
+                            )}
+                            <button className="btn-icone" onClick={() => setModalConta(b)} title={tr('Conta / Login', 'Account')}>
+                              <Icone nome="key" tam={13} />
+                            </button>
+                            <button className="btn-icone" onClick={() => setModalNovoBuscador(b)} title={tr('Editar', 'Edit')}>
+                              <Icone nome="edit" tam={13} />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          ) : (
+            <div className="grade-buscadores">
+              {buscadoresVisiveis.map((b) => {
+                const infoLogin = ROTULO_LOGIN[b.login] || ROTULO_LOGIN.livre;
+                const rotuloInfoLogin = ehEn ? (infoLogin.textoEn || infoLogin.texto) : infoLogin.texto;
+                const conta = contas[b.id];
+                const cont = contagens[b.id];
+                const temConsulta = Boolean(consulta.trim());
+                const semResultados = cont?.status === 'ok' && Number(cont.valor) === 0;
+                const temResultadosApi = cont?.status === 'ok' && Number(cont.valor) > 0;
+                const podeImportarAqui = ['pubmed', 'europepmc', 'openalex'].includes(b.contagem) && !semResultados;
+                return (
+                  <div key={b.id} className="card-buscador" title={`${b.categoria} — ${b.descricao}`}>
+                    <div className="card-buscador-topo">
+                      <h4 title={b.nome}>{b.nome}</h4>
+                      <div className="acoes-card-icone">
+                        <button
+                          className={`btn-icone ${b.favorito ? 'favorito-ativo' : ''}`}
+                          onClick={() => alternarFavorito(b.id)}
+                          title={tr('Marcar/desmarcar favorito', 'Toggle favorite')}
+                        >
+                          <Icone nome="star" cheio={b.favorito} tam={13} />
+                        </button>
+                        <button
+                          className="btn-icone"
+                          onClick={() => setModalNovoBuscador(b)}
+                          title={tr('Editar URL ou categoria', 'Edit URL or category')}
+                        >
+                          <Icone nome="edit" tam={12} />
+                        </button>
+                      </div>
                     </div>
-                    <div className="acoes-card-icone">
-                      <button
-                        className={`btn-icone ${b.favorito ? 'favorito-ativo' : ''}`}
-                        onClick={() => alternarFavorito(b.id)}
-                        title={tr('Marcar/desmarcar como favorito', 'Toggle favorite')}
-                      >
-                        <Icone nome="star" cheio={b.favorito} tam={15} />
-                      </button>
-                      <button
-                        className="btn-icone"
-                        onClick={() => setModalNovoBuscador(b)}
-                        title={tr('Editar URL ou configurações deste buscador', 'Edit search provider URL or settings')}
-                      >
-                        <Icone nome="edit" tam={14} />
-                      </button>
-                    </div>
-                  </div>
 
-                  <p className="card-buscador-desc">{b.descricao}</p>
+                    <div className="card-buscador-linha-status">
+                      <div className="card-buscador-meta">
+                        <span className={`badge-login ${infoLogin.classe}`}>{rotuloInfoLogin}</span>
+                        {conta?.usuario && (
+                          <span className="badge-conta" title={`${tr('Usuário salvo', 'Saved user')}: ${conta.usuario}`}>
+                            <Icone nome="key" tam={10} />
+                          </span>
+                        )}
+                      </div>
 
-                  <div className="card-buscador-meta">
-                    <span className={`badge-login ${infoLogin.classe}`}>{rotuloInfoLogin}</span>
-                    {conta?.usuario && (
-                      <span className="badge-conta" title={`${tr('Usuário salvo', 'Saved user')}: ${conta.usuario}`}>
-                        <Icone nome="key" tam={11} /> {conta.usuario}
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Contagem automática ou anotação manual para comparação */}
-                  <div className="card-buscador-contagem">
-                    {b.contagem ? (
-                      <div className="contagem-auto">
-                        <span>{tr('Resultados na base:', 'Database hits:')}</span>
-                        <strong>
+                      {b.contagem ? (
+                        <span
+                          className={`contagem-pill-compacta ${temResultadosApi ? 'com-hits' : ''}`}
+                          title={tr('Total de resultados nesta base', 'Total hits in this database')}
+                        >
                           {!cont
                             ? '—'
                             : cont.status === 'loading'
-                            ? tr('Contando…', 'Counting…')
+                            ? '…'
                             : cont.status === 'ok'
                             ? cont.valor.toLocaleString(ehEn ? 'en-US' : 'pt-BR')
-                            : tr('indisponível', 'unavailable')}
-                        </strong>
-                      </div>
-                    ) : (
-                      <div className="contagem-manual">
-                        <span>{tr('Nº de resultados (anotar):', 'Result count (note):')}</span>
+                            : tr('indisp.', 'n/a')}
+                        </span>
+                      ) : (
                         <input
                           type="number"
                           min="0"
-                          placeholder="—"
+                          placeholder="Qtd."
+                          className="input-contagem-compacto"
+                          title={tr('Anote aqui o nº de resultados visto no site para o histórico PRISMA', 'Note hit count from the website for PRISMA')}
                           value={contagensManuais[b.id] ?? ''}
                           onChange={(e) =>
                             setContagensManuais((ant) => ({ ...ant, [b.id]: e.target.value }))
                           }
                         />
-                      </div>
-                    )}
-                  </div>
+                      )}
+                    </div>
 
-                  <div className="card-buscador-rodape">
-                    <button className="btn pequeno primario" onClick={() => abrirBuscador(b, false)}>
-                      <Icone nome="external" tam={13} /> {tr('Abrir busca', 'Open search')}
-                    </button>
-                    {proxy && (b.login === 'cafe' || b.login === 'assinatura') && (
+                    <div className="card-buscador-rodape">
                       <button
                         className="btn pequeno secundario"
-                        onClick={() => abrirBuscador(b, true)}
-                        title={tr('Abrir passando pelo proxy da universidade/CAPES', 'Open via institutional proxy')}
+                        onClick={() => abrirBuscador(b, false)}
+                        title={temConsulta
+                          ? tr(`Acessar o site de ${b.nome} já pesquisando seus termos`, `Search "${consulta.trim()}" on ${b.nome} website`)
+                          : tr(`Acessar o site externo de ${b.nome}`, `Open ${b.nome} website`)}
                       >
-                        {tr('Via Proxy', 'Via Proxy')}
+                        <Icone nome="external" tam={12} /> {temConsulta ? tr('Ir ao site', 'Search site') : tr('Acessar site', 'Website')}
                       </button>
-                    )}
-                    {['pubmed', 'europepmc', 'openalex'].includes(b.contagem) && (
+                      {proxy && (b.login === 'cafe' || b.login === 'assinatura') && (
+                        <button
+                          className="btn pequeno secundario"
+                          onClick={() => abrirBuscador(b, true)}
+                          title={tr('Acessar site via proxy institucional', 'Open website via institutional proxy')}
+                        >
+                          Proxy
+                        </button>
+                      )}
+                      {podeImportarAqui && (
+                        <button
+                          className={`btn pequeno ${temResultadosApi ? 'primario' : 'secundario'}`}
+                          onClick={() => buscarResultadosInline(b.contagem)}
+                          title={tr('Listar e importar artigos sem sair do programa', 'Browse & import articles inside the app')}
+                        >
+                          {tr('Importar', 'Import')}
+                        </button>
+                      )}
                       <button
-                        className="btn pequeno secundario"
-                        onClick={() => buscarResultadosInline(b.contagem)}
-                        title={tr('Listar e importar artigos sem sair do programa', 'Browse & import results inside the app')}
+                        className="btn pequeno fantasma"
+                        onClick={() => setModalConta(b)}
+                        title={tr('Configurar login/senha desta base', 'Configure credentials')}
                       >
-                        {tr('Importar aqui', 'Import here')}
+                        <Icone nome="key" tam={12} />
                       </button>
-                    )}
-                    <button
-                      className="btn pequeno fantasma"
-                      onClick={() => setModalConta(b)}
-                      title={tr('Configurar usuário e senha para este buscador', 'Configure saved account credentials')}
-                    >
-                      <Icone nome="key" tam={13} /> {tr('Conta', 'Account')}
-                    </button>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          )}
         </>
       )}
 

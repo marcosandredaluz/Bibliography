@@ -57,7 +57,9 @@ release/
 *.blockmap
 *.asar
 calibration_gate/custom-forensic-minilm/
+calibration_gate/custom-forensic-nli-int8/
 *.onnx
+*.log
 
 # --- Arquivos Temporários de Processadores de Texto e Documentos ---
 ~$*

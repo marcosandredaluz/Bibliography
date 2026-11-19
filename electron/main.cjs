@@ -20,11 +20,21 @@ const buscadores = require('./searchers.cjs');
 const cofre = require('./vault.cjs');
 const importadores = require('./importers.cjs');
 const auditor = require('./auditor.cjs');
+const semanticOnnx = require('./semantic_onnx.cjs');
+const pythonBridge = require('./pythonBridge.cjs');
 const { injetarComentariosNoDocx } = require('./docx_comentarios_injector.cjs');
 const { gerarHtmlLaudoPericial } = require('./laudo_pericial_generator.cjs');
-const { executarCirurgiaDocx } = require('./docx_surgical_editor.cjs');
+const { executarCirurgiaDocx, injetarComentariosCirurgicosDocx } = require('./docx_surgical_editor.cjs');
 const robAssessor = require('./rob_assessor.cjs');
+const {
+  carregarDecisoesEditoriais,
+  salvarDecisaoEditorial,
+  removerDecisaoEditorial,
+} = require('./audit/decision_memory.cjs');
+const { PERFIS_EDITORIAIS, executarPreflightEditorial } = require('./editorial_preflight.cjs');
+const { gerarPacoteSubmissaoZip } = require('./submission_packager.cjs');
 const { execFile } = require('child_process');
+const { escreverArquivoAtomico, escreverJsonAtomico } = require('./atomicWrite.cjs');
 const {
   iniciarServidorWord,
   PORTA,
@@ -50,6 +60,8 @@ protocol.registerSchemesAsPrivileged([
 ]);
 
 let janela = null;
+let fechamentoAutorizadoComAuditoria = false;
+let auditoriaAtivaAbortController = null;
 let cfg = config.carregar();
 let biblioteca = null;
 
@@ -118,6 +130,7 @@ function criarJanela() {
       preload: path.join(__dirname, 'preload.cjs'),
       contextIsolation: true,
       nodeIntegration: false,
+      sandbox: true,
     },
   });
 
@@ -153,7 +166,30 @@ function criarJanela() {
       estadoJanela.bounds = janela.getBounds();
     }
   });
-  janela.on('close', () => {
+  janela.on('close', (e) => {
+    if (auditoriaAtivaAbortController && !fechamentoAutorizadoComAuditoria) {
+      const escolha = dialog.showMessageBoxSync(janela, {
+        type: 'warning',
+        buttons: ['Continuar auditoria', 'Encerrar e fechar'],
+        defaultId: 0,
+        cancelId: 0,
+        title: 'Auditoria em andamento',
+        message: '⚠️ ATENÇÃO: Auditoria em andamento!',
+        detail:
+          'Uma verificação de manuscrito está em execução neste projeto.\n' +
+          'Se você fechar o aplicativo agora, a auditoria atual será interrompida.\n\n' +
+          'Deseja realmente fechar?',
+      });
+      if (escolha === 0) {
+        e.preventDefault();
+        return;
+      }
+      fechamentoAutorizadoComAuditoria = true;
+      try {
+        auditoriaAtivaAbortController.abort();
+      } catch {}
+      auditoriaAtivaAbortController = null;
+    }
     salvarEstadoJanela();
   });
 
@@ -235,7 +271,18 @@ function registrarIpc() {
   h('config:tokenLocal', async () => {
     const tok = config.obterTokenApiLocal();
     cfg.localApiToken = tok;
-    return { token: tok, endpointClip: `http://127.0.0.1:${PORTA}/api/v1/clip` };
+    const candidatosClipper = [
+      path.join(process.resourcesPath || '', 'web-clipper'),
+      path.join(__dirname, '..', 'resources', 'web-clipper'),
+    ];
+    const caminhoWebClipper =
+      candidatosClipper.find((p) => p && fs.existsSync(p)) ||
+      path.join(__dirname, '..', 'resources', 'web-clipper');
+    return {
+      token: tok,
+      endpointClip: `http://127.0.0.1:${PORTA}/api/v1/clip`,
+      caminhoWebClipper,
+    };
   });
 
   h('bib:robSugerir', async ({ refId, tool = 'ROB2' }) => {
@@ -385,7 +432,7 @@ function registrarIpc() {
     });
     if (r.canceled || !r.filePath) return null;
     const conteudo = formato === 'bib' ? importadores.exportarBibtex(lista) : importadores.exportarRis(lista);
-    await fs.promises.writeFile(r.filePath, conteudo, 'utf8');
+    await escreverArquivoAtomico(r.filePath, conteudo, 'utf8');
     return r.filePath;
   });
 
@@ -471,17 +518,16 @@ function registrarIpc() {
     if (process.platform === 'win32') {
       const txtB64 = Buffer.from(citacaoTexto, 'utf8').toString('base64');
       const codeB64 = Buffer.from(codigoCampo, 'utf8').toString('base64');
-      const usarCampo = comCampoNativo ? '$true' : '$false';
       const psScript = `
         $OutputEncoding = [System.Text.Encoding]::UTF8
         try {
           $word = [Runtime.InteropServices.Marshal]::GetActiveObject("Word.Application")
           if ($word.Documents.Count -gt 0 -and $word.Selection) {
-            $txt = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${txtB64}"))
-            $codigo = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${codeB64}"))
+            $txt = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($env:BIB_TXT_B64))
+            $codigo = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($env:BIB_CODE_B64))
             $sel = $word.Selection
             $rng = $sel.Range
-            if (${usarCampo}) {
+            if ($env:BIB_USE_FIELD -eq '1') {
               $fld = $word.ActiveDocument.Fields.Add($rng, 81, $codigo, $true)
               $fld.Result.Text = $txt
             } else {
@@ -495,9 +541,22 @@ function registrarIpc() {
         }
       `;
       const out = await new Promise((resolve) => {
-        execFile('powershell', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript], { timeout: 5000 }, (_e, stdout) => {
-          resolve(String(stdout || '').trim());
-        });
+        execFile(
+          'powershell',
+          ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript],
+          {
+            timeout: 5000,
+            env: {
+              ...process.env,
+              BIB_TXT_B64: txtB64,
+              BIB_CODE_B64: codeB64,
+              BIB_USE_FIELD: comCampoNativo ? '1' : '0',
+            },
+          },
+          (_e, stdout) => {
+            resolve(String(stdout || '').trim());
+          }
+        );
       });
       if (out.startsWith('OK:')) {
         injetadoDireto = true;
@@ -822,14 +881,14 @@ function registrarIpc() {
       $OutputEncoding = [System.Text.Encoding]::UTF8
       $word = [Runtime.InteropServices.Marshal]::GetActiveObject("Word.Application")
       $doc = $word.ActiveDocument
-      $updsJson = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${updB64}"))
+      $updsJson = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($env:BIB_UPDS_B64))
       $upds = $updsJson | ConvertFrom-Json
       foreach ($u in $upds) {
         if ($u.idx -ge 1 -and $u.idx -le $doc.Fields.Count) {
           $doc.Fields.Item([int]$u.idx).Result.Text = [string]$u.texto
         }
       }
-      $bib = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${bibB64}"))
+      $bib = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($env:BIB_TEXT_B64))
       if ($bib.Length -gt 0 -and $doc.Bookmarks.Exists("BIBLIOGRAFIA_REFERENCIAS_FINAL")) {
         $rng = $doc.Bookmarks("BIBLIOGRAFIA_REFERENCIAS_FINAL").Range
         $rng.Text = $bib
@@ -838,10 +897,15 @@ function registrarIpc() {
       Write-Output ("ATUALIZADO:" + $upds.Count)
     `;
     await new Promise((resolve, reject) => {
-      execFile('powershell', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psAplicar], { timeout: 10000 }, (err) => {
-        if (err) return reject(err);
-        resolve();
-      });
+      execFile(
+        'powershell',
+        ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psAplicar],
+        { timeout: 10000, env: { ...process.env, BIB_UPDS_B64: updB64, BIB_TEXT_B64: bibB64 } },
+        (err) => {
+          if (err) return reject(err);
+          resolve();
+        }
+      );
     });
 
     if (janela && !janela.isDestroyed()) {
@@ -890,12 +954,13 @@ function registrarIpc() {
           $word = [Runtime.InteropServices.Marshal]::GetActiveObject("Word.Application")
           if ($word.Documents.Count -gt 0) {
             $doc = $word.ActiveDocument
-            $bib = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${bibB64}"))
-            $tit = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("${titB64}"))
-            if ($doc.Bookmarks.Exists("${marcador}")) {
-              $rng = $doc.Bookmarks("${marcador}").Range
+            $bib = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($env:BIB_TEXT_B64))
+            $tit = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($env:BIB_TIT_B64))
+            $marcador = $env:BIB_BOOKMARK
+            if ($doc.Bookmarks.Exists($marcador)) {
+              $rng = $doc.Bookmarks($marcador).Range
               $rng.Text = $bib
-              $doc.Bookmarks.Add("${marcador}", $rng) | Out-Null
+              $doc.Bookmarks.Add($marcador, $rng) | Out-Null
             } else {
               $rng = $doc.Content
               $rng.Collapse(0)
@@ -903,7 +968,7 @@ function registrarIpc() {
               $rng.InsertAfter($tit + "\r\n")
               $rng.Collapse(0)
               $rng.Text = $bib
-              $doc.Bookmarks.Add("${marcador}", $rng) | Out-Null
+              $doc.Bookmarks.Add($marcador, $rng) | Out-Null
             }
             Write-Output ("OK:" + $doc.Name)
           }
@@ -912,9 +977,14 @@ function registrarIpc() {
         }
       `;
       const out = await new Promise((resolve) => {
-        execFile('powershell', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript], { timeout: 6000 }, (_e, stdout) => {
-          resolve(String(stdout || '').trim());
-        });
+        execFile(
+          'powershell',
+          ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript],
+          { timeout: 6000, env: { ...process.env, BIB_TEXT_B64: bibB64, BIB_TIT_B64: titB64, BIB_BOOKMARK: marcador } },
+          (_e, stdout) => {
+            resolve(String(stdout || '').trim());
+          }
+        );
       });
       if (out.startsWith('OK:')) {
         injetadoDireto = true;
@@ -949,24 +1019,54 @@ function registrarIpc() {
     return { nome: path.basename(caminho), caminho, tipo: 'txt', texto: await fs.promises.readFile(caminho, 'utf8') };
   });
 
-  h('audit:executar', async ({ texto, buscarEBaixar = true, pastaDestino = null, modulo = 'todos' }) => {
-    const b = exigirBiblioteca();
-    const res = await auditor.auditarManuscrito({
-      texto,
-      biblioteca: b,
-      buscarEBaixar,
-      pastaDestino,
-      modulo,
-      onProgresso: (p) => {
-        if (janela && !janela.isDestroyed()) {
-          janela.webContents.send('audit:progresso', p);
-        }
-      },
-    });
-    if (janela && !janela.isDestroyed()) {
-      janela.webContents.send('bib:atualizado');
+  h('audit:extrairLayoutPdf', async (caminhoPdf) => {
+    return await pythonBridge.extrairLayoutPdfComBackend(caminhoPdf);
+  });
+
+  h('audit:cancelar', async () => {
+    if (auditoriaAtivaAbortController) {
+      auditoriaAtivaAbortController.abort();
+      auditoriaAtivaAbortController = null;
     }
-    return res;
+    return { ok: true };
+  });
+
+  h('audit:executar', async ({ texto, buscarEBaixar = true, pastaDestino = null, modulo = 'todos', somenteLeitura = false, caminhoDocx = null }) => {
+    const b = exigirBiblioteca();
+    if (auditoriaAtivaAbortController) auditoriaAtivaAbortController.abort();
+    fechamentoAutorizadoComAuditoria = false;
+    auditoriaAtivaAbortController = new AbortController();
+    const signalAtual = auditoriaAtivaAbortController.signal;
+    const caminhoDocxValido =
+      typeof caminhoDocx === 'string' && /\.docx$/i.test(caminhoDocx) && fs.existsSync(caminhoDocx)
+        ? caminhoDocx
+        : null;
+    try {
+      const res = await auditor.auditarManuscrito({
+        texto,
+        biblioteca: b,
+        buscarEBaixar,
+        pastaDestino,
+        modulo,
+        somenteLeitura,
+        caminhoDocx: caminhoDocxValido,
+        pastaProjeto: path.dirname(b.p('caderno.json')),
+        signal: signalAtual,
+        onProgresso: (p) => {
+          if (janela && !janela.isDestroyed()) {
+            janela.webContents.send('audit:progresso', p);
+          }
+        },
+      });
+      if (!somenteLeitura && janela && !janela.isDestroyed()) {
+        janela.webContents.send('bib:atualizado');
+      }
+      return res;
+    } finally {
+      if (auditoriaAtivaAbortController?.signal === signalAtual) {
+        auditoriaAtivaAbortController = null;
+      }
+    }
   });
 
   h('audit:baixarPdfsParaPasta', async ({ pastaDestino, refs }) => {
@@ -1058,29 +1158,36 @@ function registrarIpc() {
       clipboard.writeText(trechoCurto);
     }
 
-    let arquivo = caminhoDocx;
-    if (!arquivo || !fs.existsSync(arquivo)) {
+    let arquivo = null;
+    if (typeof caminhoDocx === 'string' && caminhoDocx.trim() && !/[\0\r\n]/.test(caminhoDocx)) {
+      const resolvido = path.resolve(caminhoDocx);
+      const ext = path.extname(resolvido).toLowerCase();
+      if (path.isAbsolute(resolvido) && ['.docx', '.doc', '.rtf', '.odt'].includes(ext) && fs.existsSync(resolvido)) {
+        arquivo = resolvido;
+      }
+    }
+    if (!arquivo) {
       return {
         ok: false,
         trechoCopiado: trechoCurto,
         mensagem: trechoCurto
           ? `Trecho copiado para a área de transferência! Pressione Ctrl+L e Ctrl+V no seu Word para ir direto ao ponto.`
-          : 'Arquivo original não vinculado; carregue o .docx para abrir direto pelo atalho.',
+          : 'Arquivo original inválido ou não vinculado; carregue um .docx válido para abrir direto pelo atalho.',
       };
     }
 
     // Tenta automação Word.Application via PowerShell no Windows para abrir e selecionar o trecho exato na tela
     if (process.platform === 'win32') {
-      const arquivoEsc = arquivo.replace(/'/g, "''");
-      const buscaEsc = trechoCurto.slice(0, 50).replace(/'/g, "''").replace(/[\r\n]+/g, ' ');
+      const queryB64 = Buffer.from(trechoCurto.slice(0, 50).replace(/[\r\n]+/g, ' '), 'utf8').toString('base64');
       const psScript = `
+        $OutputEncoding = [System.Text.Encoding]::UTF8
         try {
           $word = [Runtime.InteropServices.Marshal]::GetActiveObject("Word.Application")
         } catch {
           $word = New-Object -ComObject Word.Application
         }
         $word.Visible = $true
-        $alvoFull = [System.IO.Path]::GetFullPath('${arquivoEsc}')
+        $alvoFull = [System.IO.Path]::GetFullPath($env:BIB_DOC_PATH)
         $doc = $null
         foreach ($d in $word.Documents) {
           if ($d.FullName -ieq $alvoFull) { $doc = $d; break }
@@ -1090,7 +1197,7 @@ function registrarIpc() {
         }
         $doc.Activate()
         $word.Activate()
-        $q = '${buscaEsc}'
+        $q = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($env:BIB_QUERY_B64))
         if ($q.Length -gt 5) {
           $rng = $doc.Content
           $rng.Find.ClearFormatting()
@@ -1100,7 +1207,12 @@ function registrarIpc() {
       `;
       try {
         await new Promise((resolve) => {
-          execFile('powershell', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript], { timeout: 6000 }, () => resolve());
+          execFile(
+            'powershell',
+            ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript],
+            { timeout: 6000, env: { ...process.env, BIB_DOC_PATH: arquivo, BIB_QUERY_B64: queryB64 } },
+            () => resolve()
+          );
         });
         return {
           ok: true,
@@ -1147,7 +1259,7 @@ function registrarIpc() {
     });
     if (rSave.canceled || !rSave.filePath) return { ok: false, cancelado: true };
 
-    const res = await injetarComentariosNoDocx(origem, rSave.filePath, inconformidades);
+    const res = await injetarComentariosCirurgicosDocx(origem, rSave.filePath, inconformidades);
     return res;
   });
 
@@ -1168,10 +1280,116 @@ function registrarIpc() {
       webPreferences: {
         nodeIntegration: false,
         contextIsolation: true,
+        sandbox: true,
       },
     });
     janelaLaudo.loadURL('data:text/html;charset=utf-8,' + encodeURIComponent(html));
     return { ok: true };
+  });
+
+  // Fase 4: Memória de Decisão Editorial (SHA-256)
+  h('audit:listarDecisoesEditoriais', async () => {
+    const b = exigirBiblioteca();
+    const pastaProjeto = path.dirname(b.p('caderno.json'));
+    return carregarDecisoesEditoriais(pastaProjeto);
+  });
+
+  h('audit:salvarDecisaoEditorial', async (dados = {}) => {
+    const b = exigirBiblioteca();
+    const pastaProjeto = path.dirname(b.p('caderno.json'));
+    return salvarDecisaoEditorial(pastaProjeto, dados);
+  });
+
+  h('audit:removerDecisaoEditorial', async ({ hash }) => {
+    const b = exigirBiblioteca();
+    const pastaProjeto = path.dirname(b.p('caderno.json'));
+    return removerDecisaoEditorial(pastaProjeto, hash);
+  });
+
+  // Fase 4: Perfil de Periódico Alvo / Pre-Flight Editorial
+  h('audit:executarPreflightEditorial', async (opts = {}) => {
+    return {
+      perfis: PERFIS_EDITORIAIS,
+      resultado: executarPreflightEditorial(opts),
+    };
+  });
+
+  // Fase 4: Gerador de Pacote de Submissão (.zip)
+  h('word:exportarPacoteSubmissao', async ({
+    caminhoDocx = null,
+    limparDocxCego = true,
+    incluirPrismaRobSvg = true,
+    incluirResumoAuditoria = true,
+    resumoAuditoria = {},
+    nomeBase = 'Manuscrito_Submissao',
+  } = {}) => {
+    const b = exigirBiblioteca();
+    let docxAlvo =
+      typeof caminhoDocx === 'string' && /\.docx$/i.test(caminhoDocx) && fs.existsSync(caminhoDocx)
+        ? caminhoDocx
+        : null;
+
+    if (!docxAlvo && limparDocxCego) {
+      const rOpen = await dialog.showOpenDialog(janela, {
+        title: 'Selecionar Manuscrito (.docx) para incluir no Pacote de Submissão (ou Cancelar para exportar apenas figuras/relatório)',
+        properties: ['openFile'],
+        filters: [{ name: 'Documento Word (.docx)', extensions: ['docx'] }],
+      });
+      if (!rOpen.canceled && rOpen.filePaths?.[0]) {
+        docxAlvo = rOpen.filePaths[0];
+      }
+    }
+
+    const rSave = await dialog.showSaveDialog(janela, {
+      title: 'Salvar Pacote de Submissão (.zip)',
+      defaultPath: path.join(
+        docxAlvo ? path.dirname(docxAlvo) : path.dirname(b.p('caderno.json')),
+        `${String(nomeBase || 'Pacote_Submissao').replace(/[<>:"/\\|?*]+/g, '_')}.zip`
+      ),
+      filters: [{ name: 'Pacote ZIP de Submissão (.zip)', extensions: ['zip'] }],
+    });
+    if (rSave.canceled || !rSave.filePath) {
+      return { ok: false, cancelado: true };
+    }
+
+    const todasRefs = [...b.refs.values()];
+    const metricasPrisma = {
+      identificados: todasRefs.length,
+      duplicatasRemovidas: 0,
+      triados: todasRefs.length,
+      excluidos: todasRefs.filter((r) => r.status === 'descartada').length,
+      incluidos: todasRefs.filter((r) => ['citada', 'consultada'].includes(r.status)).length,
+    };
+
+    let avaliacoesRob = [];
+    try {
+      const hist = await robAssessor.listarAvaliacoesRoB?.(path.dirname(b.p('caderno.json')));
+      if (Array.isArray(hist)) avaliacoesRob = hist;
+    } catch {}
+
+    const res = gerarPacoteSubmissaoZip({
+      caminhoDocx: docxAlvo,
+      caminhoSaidaZip: rSave.filePath,
+      limparDocxCego,
+      incluirPrismaRobSvg,
+      incluirResumoAuditoria,
+      metricasPrisma,
+      avaliacoesRob,
+      resumoAuditoria: {
+        totalReferencias: todasRefs.filter((r) => r.status === 'citada').length,
+        ...resumoAuditoria,
+      },
+      nomeBase: docxAlvo ? path.basename(docxAlvo, '.docx') : nomeBase,
+    });
+
+    shell.showItemInFolder(rSave.filePath);
+    return {
+      ok: true,
+      caminhoSaidaZip: res.caminhoSaidaZip,
+      arquivosIncluidos: res.arquivosIncluidos,
+      tamanhoBytes: res.tamanhoBytes,
+      detalhesLimpeza: res.detalhesLimpeza,
+    };
   });
 
   // Recursos estilo Mendeley: Caderno (Notebook) e Pasta Monitorada (Downloads)
@@ -1185,7 +1403,7 @@ function registrarIpc() {
   });
   h('bib:salvarCaderno', async (paginas) => {
     const b = exigirBiblioteca();
-    await fs.promises.writeFile(b.p('caderno.json'), JSON.stringify({ paginas }, null, 2), 'utf8');
+    await escreverJsonAtomico(b.p('caderno.json'), { paginas });
     return paginas;
   });
   h('dialogo:listarPdfsDownloads', async () => {
@@ -1357,12 +1575,16 @@ if (!instanciaUnica) {
     }
     criarJanela();
     destacarJanela();
+    // Pre-warming singleton da sessão ONNX e inicialização silenciosa do pipeline auxiliar Python em background
+    semanticOnnx.prewarmOnnx().catch(() => {});
+    pythonBridge.iniciarBackendPythonSilencioso().catch(() => {});
     logBoot('criarJanela concluído');
   }).catch((e) => {
     logBoot('Erro fatal no whenReady: ' + (e && e.stack || e));
   });
 
   app.on('will-quit', () => {
+    pythonBridge.encerrarBackendPython();
     try {
       globalShortcut.unregisterAll();
     } catch {}

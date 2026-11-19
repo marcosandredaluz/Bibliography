@@ -658,7 +658,7 @@ export default function ReferenceDetail({
                     </span>
                   </div>
                   <div className="card-score-principal">
-                    {insights.nomeRevista || csl['container-title'] || 'Periódico científico'}
+                    {semHtml(insights.nomeRevista || csl['container-title'] || '') || 'Periódico científico'}
                   </div>
                   <div className="card-score-metricas">
                     <span className="chip-metrica-qualidade">
@@ -878,7 +878,7 @@ export default function ReferenceDetail({
                     </span>
                   </div>
                   <div className="card-score-principal">
-                    {insights.nomeRevista || csl['container-title'] || 'Periódico científico'}
+                    {semHtml(insights.nomeRevista || csl['container-title'] || '') || 'Periódico científico'}
                   </div>
                   <div className="card-score-metricas">
                     <span className="chip-metrica-qualidade">

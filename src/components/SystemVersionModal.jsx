@@ -6,7 +6,9 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
   const { tr, ehEn, mudarIdioma } = useI18n();
   const [infoSistema, setInfoSistema] = useState(null);
   const [infoWord, setInfoWord] = useState(null);
+  const [infoToken, setInfoToken] = useState(null);
   const [copiado, setCopiado] = useState(false);
+  const [copiadoClipper, setCopiadoClipper] = useState('');
   const [abaAtiva, setAbaAtiva] = useState('diagnostico'); // 'diagnostico' | 'changelog'
 
   useEffect(() => {
@@ -18,7 +20,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
         setInfoSistema(window.api.versao.obterInfo());
       } else {
         setInfoSistema({
-          app: '1.0.2',
+          app: '1.2.0',
           electron: '44.9.2',
           node: '20.x',
           chrome: '124.x',
@@ -27,7 +29,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
         });
       }
     } catch {
-      setInfoSistema({ app: '1.0.2', electron: 'N/D', node: 'N/D' });
+      setInfoSistema({ app: '1.2.0', electron: 'N/D', node: 'N/D' });
     }
 
     // Consulta status do servidor Word
@@ -36,6 +38,14 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
         .info()
         .then((dados) => setInfoWord(dados))
         .catch(() => setInfoWord({ erro: 'Servidor Word inativo ou indisponível' }));
+    }
+
+    // Obtém token local e caminho do Web Clipper
+    if (window.api?.config?.tokenLocal) {
+      window.api.config
+        .tokenLocal()
+        .then((dados) => setInfoToken(dados))
+        .catch(() => {});
     }
   }, [aberto]);
 
@@ -46,9 +56,9 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
 
   const copiarDiagnostico = () => {
     const texto = [
-      `=== DIAGNÓSTICO DO SISTEMA BIBLIOGRAFIA (v${infoSistema?.app || '1.0.2'}) ===`,
+      `=== DIAGNÓSTICO DO SISTEMA BIBLIOGRAFIA (v${infoSistema?.app || '1.2.0'}) ===`,
       `Data/Hora: ${new Date().toLocaleString('pt-BR')}`,
-      `Versão do Aplicativo: ${infoSistema?.app || '1.0.2'}`,
+      `Versão do Aplicativo: ${infoSistema?.app || '1.2.0'}`,
       `Runtime Electron: ${infoSistema?.electron || 'N/D'}`,
       `Node.js: ${infoSistema?.node || 'N/D'}`,
       `Chromium: ${infoSistema?.chrome || 'N/D'}`,
@@ -127,7 +137,7 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
                   borderRadius: 99,
                 }}
               >
-                v{infoSistema?.app || '1.0.2'}
+                v{infoSistema?.app || '1.2.0'}
               </span>
               <span
                 style={{
@@ -395,13 +405,74 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
                 </div>
               </div>
             </div>
+
+            {/* Assistente Guiado do Web Clipper (Chrome / Edge MV3) */}
+            <div
+              style={{
+                padding: '12px 14px',
+                borderRadius: 8,
+                background: 'var(--fundo)',
+                border: '1px solid var(--borda)',
+                borderLeft: '4px solid #2563eb',
+                fontSize: 12,
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 6 }}>
+                <strong style={{ fontSize: 12.8, color: 'var(--texto)' }}>
+                  🧩 {tr('Web Clipper para Chrome / Edge (Captura em 1 Clique)', 'Web Clipper for Chrome / Edge (1-Click Capture)')}
+                </strong>
+                <span className="tag-mini" style={{ fontWeight: 600 }}>Manifest V3 · Localhost</span>
+              </div>
+              <div style={{ fontSize: 11.8, color: 'var(--texto-suave)', lineHeight: 1.5, marginBottom: 8 }}>
+                <strong>1.</strong> Abra <code>chrome://extensions</code> (ou <code>edge://extensions</code>) e ative o <strong>Modo do desenvolvedor</strong>.<br />
+                <strong>2.</strong> Clique em <strong>Carregar sem compactação</strong> e cole o caminho abaixo.<br />
+                <strong>3.</strong> Abra o popup da extensão e cole o <strong>Token Local</strong> para parear na porta <code>23119</code>.
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, flexWrap: 'wrap', background: 'var(--painel)', padding: '6px 10px', borderRadius: 6, border: '1px solid var(--borda)' }}>
+                <code style={{ fontSize: 11.2, wordBreak: 'break-all', flex: 1 }}>
+                  {infoToken?.caminhoWebClipper || 'resources\\web-clipper'}
+                </code>
+                <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                  <button
+                    type="button"
+                    className="btn pequeno secundario"
+                    onClick={async () => {
+                      const caminho = infoToken?.caminhoWebClipper || 'resources/web-clipper';
+                      try {
+                        await window.api?.sistema?.copiarTexto?.(caminho);
+                        setCopiadoClipper('caminho');
+                        setTimeout(() => setCopiadoClipper(''), 2000);
+                      } catch {}
+                    }}
+                  >
+                    {copiadoClipper === 'caminho' ? '✓ Caminho Copiado' : '📋 Copiar Caminho'}
+                  </button>
+                  <button
+                    type="button"
+                    className="btn pequeno primario"
+                    onClick={async () => {
+                      try {
+                        const tok = infoToken?.token ? infoToken : await window.api?.config?.tokenLocal?.();
+                        if (tok?.token) {
+                          await window.api?.sistema?.copiarTexto?.(tok.token);
+                          setCopiadoClipper('token');
+                          setTimeout(() => setCopiadoClipper(''), 2000);
+                        }
+                      } catch {}
+                    }}
+                  >
+                    {copiadoClipper === 'token' ? '✓ Token Copiado' : '🔑 Copiar Token Local'}
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         )}
 
         {/* ABA 2: CHANGELOG HISTÓRICO DE VERSÕES */}
         {abaAtiva === 'changelog' && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14, maxHeight: 380, overflowY: 'auto', paddingRight: 4 }}>
-            {/* VERSÃO 1.0.2 */}
+            {/* VERSÃO 1.2.0 */}
             <div
               style={{
                 padding: '12px 14px',
@@ -413,10 +484,56 @@ export function SystemVersionModal({ aberto, aoFechar, bib, refs = [] }) {
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
                 <span style={{ background: 'var(--primaria)', color: '#fff', fontSize: 11, fontWeight: 800, padding: '2px 8px', borderRadius: 4 }}>
+                  v1.2.0
+                </span>
+                <strong style={{ fontSize: 13.5 }}>Novembro de 2026 — Guardião Simbólico, Cross-Encoder NLI, Raio-X &amp; Submissão</strong>
+                <span style={{ fontSize: 11, color: 'var(--texto-suave)', marginLeft: 'auto' }}>Versão Atual</span>
+              </div>
+              <ul style={{ margin: '6px 0 0 18px', padding: 0, fontSize: 12, lineHeight: 1.6, color: 'var(--texto)' }}>
+                <li><strong>Guardião Simbólico Forense &amp; Retratações:</strong> Detecção de inversão de polaridade (NegEx PT/EN), divergência numérica tipada, <em>apud</em> oculto na Introdução e artigos retratados (Crossref/OpenAlex).</li>
+                <li><strong>Reconciliador Intra-Documento, Citações Múltiplas &amp; Raio-X Bibliométrico:</strong> Confronto de tabelas XML (<code>&lt;w:tbl&gt;</code>) × texto, Resumo × Resultados, rastreio de siglas, detecção de obra intrusa em citações compostas e Pirâmide de Evidência em 7 níveis.</li>
+                <li><strong>Cross-Encoder NLI em Cascata (2º Estágio):</strong> Inferência opcional com <code>custom-forensic-nli-int8</code> sobre Top-3 blocos do Bi-Encoder para detecção de contradição lógica (<code>CONTRADICAO_LOGICA_NLI</code>) com fallback determinístico seguro.</li>
+                <li><strong>Fluxo Editorial Contínuo &amp; Pacote de Submissão (.zip):</strong> Memória de decisão editorial SHA-256 (<code>auditoria_decisoes.json</code>), Pre-Flight Editorial (ICMJE / Saúde Coletiva Brasil / Personalizado) e exportação <code>.zip</code> com <code>.docx</code> limpo para revisão cega + SVGs PRISMA 2020 e RoB.</li>
+              </ul>
+            </div>
+
+            {/* VERSÃO 1.1.0 */}
+            <div
+              style={{
+                padding: '12px 14px',
+                borderRadius: 8,
+                background: 'var(--fundo)',
+                border: '1px solid var(--borda)',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                <span style={{ background: '#475569', color: '#fff', fontSize: 11, fontWeight: 800, padding: '2px 8px', borderRadius: 4 }}>
+                  v1.1.0
+                </span>
+                <strong style={{ fontSize: 13.5 }}>Novembro de 2026 — Determinismo 100%, Cobertura Integral ONNX &amp; Segurança</strong>
+              </div>
+              <ul style={{ margin: '6px 0 0 18px', padding: 0, fontSize: 12, lineHeight: 1.6, color: 'var(--texto)' }}>
+                <li><strong>Triagem BM25 + Top-12 ONNX em Todo o PDF:</strong> Cobertura integral de artigos de 30.000+ caracteres com pré-aquecimento singleton do modelo ONNX INT8 e janela de contexto anafórico entre sentenças do Word.</li>
+                <li><strong>Auditoria de Ciclo Único, Normas SUS &amp; Ground Truth:</strong> Reconhecimento direto de CONITEC, Portarias MS, ANVISA, ANS, CFM e HL7 FHIR/RNDS, modo <em>Auditoria Isolada (Somente Leitura)</em> e consulta prioritária a <em>Trechos Citados</em> da Biblioteca.</li>
+                <li><strong>Ponte Python PDF Layout, OpenXML Nativo &amp; Cirurgia .DOCX:</strong> Extração silenciosa de múltiplas colunas e tabelas via Python com fallback calibrado em PDF.js, leitura de campos CSL/Mendeley/Zotero e editor cirúrgico unificado de comentários.</li>
+                <li><strong>UI Modular, Segurança Electron &amp; Escrita Atômica:</strong> Submódulos coesos na auditoria, pontes de 1 clique para Leitor/Biblioteca, CSP sem script inline, <code>sandbox: true</code>, sanitização PowerShell e gravação atômica completa em OneDrive/nuvem.</li>
+              </ul>
+            </div>
+
+            {/* VERSÃO 1.0.2 */}
+            <div
+              style={{
+                padding: '12px 14px',
+                borderRadius: 8,
+                background: 'var(--fundo)',
+                border: '1px solid var(--borda)',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                <span style={{ background: '#475569', color: '#fff', fontSize: 11, fontWeight: 800, padding: '2px 8px', borderRadius: 4 }}>
                   v1.0.2
                 </span>
                 <strong style={{ fontSize: 13.5 }}>Novembro de 2026 — Modelo ONNX Forense, Leitura PDF 2 Colunas &amp; Módulos Clean-Room</strong>
-                <span style={{ fontSize: 11, color: 'var(--texto-suave)', marginLeft: 'auto' }}>Versão Atual</span>
               </div>
               <ul style={{ margin: '6px 0 0 18px', padding: 0, fontSize: 12, lineHeight: 1.6, color: 'var(--texto)' }}>
                 <li><strong>Modelo Semântico ONNX Fine-Tuned (<code>custom-forensic-minilm</code> INT8):</strong> Suporte offline embarcado ao modelo ajustado via Colab para validação bilíngue PT↔EN.</li>

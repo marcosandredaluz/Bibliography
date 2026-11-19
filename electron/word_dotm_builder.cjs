@@ -15,6 +15,7 @@ const fs = require('fs');
 const path = require('path');
 const { execFile } = require('child_process');
 const JSZip = require('jszip');
+const { escreverArquivoAtomico } = require('./atomicWrite.cjs');
 
 const REL_TYPE_CUSTOM_UI_14 = 'http://schemas.microsoft.com/office/2007/relationships/ui/extensibility';
 
@@ -96,8 +97,7 @@ async function injetarRibbonCustomUiEmDotm(caminhoEntradaDotm, caminhoSaidaDotm,
   }
 
   const outBuf = await zip.generateAsync({ type: 'nodebuffer', compression: 'DEFLATE' });
-  await fs.promises.mkdir(path.dirname(caminhoSaidaDotm), { recursive: true });
-  await fs.promises.writeFile(caminhoSaidaDotm, outBuf);
+  await escreverArquivoAtomico(caminhoSaidaDotm, outBuf);
   return { caminhoSaidaDotm, tamanhoBytes: outBuf.length };
 }
 
@@ -132,6 +132,26 @@ async function removerDotmDoStartup() {
   return { removido: false, destino };
 }
 
+function validarCaminhoSeguroPs(caminho, extensoesPermitidas = [], exigirExistencia = false) {
+  if (typeof caminho !== 'string' || !caminho.trim()) {
+    throw new Error('Caminho inválido ou vazio para automação Word.');
+  }
+  if (/[\0\r\n]/.test(caminho)) {
+    throw new Error('Caminho contém caracteres de controle não permitidos.');
+  }
+  const resolvido = path.resolve(caminho);
+  if (!path.isAbsolute(resolvido)) {
+    throw new Error('Caminho deve ser absoluto.');
+  }
+  if (extensoesPermitidas.length > 0 && !extensoesPermitidas.includes(path.extname(resolvido).toLowerCase())) {
+    throw new Error(`Extensão de arquivo não permitida: ${path.extname(resolvido)}`);
+  }
+  if (exigirExistencia && !fs.existsSync(resolvido)) {
+    throw new Error(`Arquivo não encontrado: ${resolvido}`);
+  }
+  return resolvido;
+}
+
 /**
  * Compila `Bibliografia.bas` + `customUI14.xml` em um `.dotm` usando Microsoft Word COM legítimo.
  * Não altera chaves de registro nem contorna permissões da Central de Confiabilidade:
@@ -142,20 +162,18 @@ async function compilarDotmViaWordCom({ caminhoBas, caminhoCustomUi, caminhoSaid
   if (process.platform !== 'win32') {
     return { ok: false, mensagem: 'Compilação COM do Word disponível apenas no Windows.' };
   }
-  if (!fs.existsSync(caminhoBas)) {
-    throw new Error(`Módulo VBA não encontrado em: ${caminhoBas}`);
-  }
-  const tmpDotm = `${caminhoSaidaDotm}.tmp.dotm`;
+  const basSeguro = validarCaminhoSeguroPs(caminhoBas, ['.bas'], true);
+  const dotmSeguro = validarCaminhoSeguroPs(caminhoSaidaDotm, ['.dotm'], false);
+  const tmpDotm = `${dotmSeguro}.tmp.dotm`;
   if (fs.existsSync(tmpDotm)) await fs.promises.unlink(tmpDotm).catch(() => {});
-
-  const basEsc = caminhoBas.replace(/'/g, "''");
-  const outEsc = tmpDotm.replace(/'/g, "''");
 
   const psScript = `
     $ErrorActionPreference = "Stop"
     $word = $null
     $doc = $null
     try {
+      $basPath = [System.IO.Path]::GetFullPath($env:BIB_BAS_PATH)
+      $outPath = [System.IO.Path]::GetFullPath($env:BIB_OUT_PATH)
       $word = New-Object -ComObject Word.Application
       $word.Visible = $false
       $word.DisplayAlerts = 0
@@ -167,8 +185,8 @@ async function compilarDotmViaWordCom({ caminhoBas, caminhoCustomUi, caminhoSaid
         exit 0
       }
       $vbProj.Name = "BibliografiaForenseProject"
-      $vbProj.VBComponents.Import('${basEsc}') | Out-Null
-      $doc.SaveAs2('${outEsc}', 15)
+      $vbProj.VBComponents.Import($basPath) | Out-Null
+      $doc.SaveAs2($outPath, 15)
       $doc.Close($false)
       $doc = $null
       Write-Output "OK_DOTM"
@@ -181,10 +199,15 @@ async function compilarDotmViaWordCom({ caminhoBas, caminhoCustomUi, caminhoSaid
   `;
 
   const stdout = await new Promise((resolve, reject) => {
-    execFile('powershell', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript], { timeout: 25000 }, (err, out) => {
-      if (err && !out) return reject(err);
-      resolve(String(out || '').trim());
-    });
+    execFile(
+      'powershell',
+      ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', psScript],
+      { timeout: 25000, env: { ...process.env, BIB_BAS_PATH: basSeguro, BIB_OUT_PATH: tmpDotm } },
+      (err, out) => {
+        if (err && !out) return reject(err);
+        resolve(String(out || '').trim());
+      }
+    );
   });
 
   if (stdout.includes('ERR_TRUST_VBA:')) {
@@ -204,12 +227,12 @@ async function compilarDotmViaWordCom({ caminhoBas, caminhoCustomUi, caminhoSaid
   }
 
   try {
-    await injetarRibbonCustomUiEmDotm(tmpDotm, caminhoSaidaDotm, caminhoCustomUi);
+    await injetarRibbonCustomUiEmDotm(tmpDotm, dotmSeguro, caminhoCustomUi);
   } finally {
     if (fs.existsSync(tmpDotm)) await fs.promises.unlink(tmpDotm).catch(() => {});
   }
 
-  return { ok: true, caminhoDotm: caminhoSaidaDotm };
+  return { ok: true, caminhoDotm: dotmSeguro };
 }
 
 module.exports = {

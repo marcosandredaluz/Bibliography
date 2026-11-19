@@ -7,6 +7,7 @@ const fsp = fs.promises;
 const path = require('path');
 const { gerarInsightsCompletos } = require('./insights.cjs');
 const { sincronizarLibraryBib } = require('./bibtexSync.cjs');
+const { escreverJsonAtomico, copiarArquivoAtomico } = require('./atomicWrite.cjs');
 
 const PASTAS = ['referencias', 'pdfs', 'grifos', 'documentos', 'estilos', 'lixeira'];
 
@@ -27,24 +28,9 @@ OneDrive ou no Google Drive: a sincronização é feita pela própria nuvem.
 Os arquivos são texto comum e continuam legíveis mesmo sem o programa.
 `;
 
-const espera = (ms) => new Promise((r) => setTimeout(r, ms));
-
 /** Escrita "atômica" com novas tentativas (o OneDrive às vezes trava o arquivo por instantes). */
 async function escreverJson(arquivo, dados) {
-  const tmp = `${arquivo}.${process.pid}.tmp`;
-  await fsp.writeFile(tmp, JSON.stringify(dados, null, 2), 'utf8');
-  for (let i = 0; ; i++) {
-    try {
-      await fsp.rename(tmp, arquivo);
-      return;
-    } catch (e) {
-      if (i >= 8 || !['EPERM', 'EBUSY', 'EACCES'].includes(e.code)) {
-        await fsp.rm(tmp, { force: true });
-        throw e;
-      }
-      await espera(150 * (i + 1));
-    }
-  }
+  return escreverJsonAtomico(arquivo, dados);
 }
 
 function slug(texto, max = 40) {
@@ -254,7 +240,7 @@ class Biblioteca {
     for (let n = 2; fs.existsSync(this.p('pdfs', nome)) && nome !== ref.pdf; n++) nome = `${id}-${n}.pdf`;
     const destino = this.p('pdfs', nome);
     if (path.resolve(origem).toLowerCase() !== path.resolve(destino).toLowerCase()) {
-      await fsp.copyFile(origem, destino);
+      await copiarArquivoAtomico(origem, destino);
     }
     if (ref.pdf && ref.pdf !== nome && fs.existsSync(this.p('pdfs', ref.pdf))) {
       await this.mover(this.p('pdfs', ref.pdf), this.p('lixeira'));

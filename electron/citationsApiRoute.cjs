@@ -11,6 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const { cslParaBibtexEntry } = require('./bibtexSync.cjs');
+const { escreverArquivoAtomicoSync } = require('./atomicWrite.cjs');
 
 function normalizarChaveCitacao(k = '') {
   return String(k || '').trim().replace(/^@/, '');
@@ -175,7 +176,7 @@ function construirBibliografiaPandoc({ keys = [], style, idioma, bib, citacoes, 
   if (pastaDestino && fs.existsSync(bib.raiz || pastaDestino)) {
     fs.mkdirSync(pastaDestino, { recursive: true });
     bibFilePath = path.join(pastaDestino, 'cited-only.bib');
-    fs.writeFileSync(bibFilePath, bibtexContent, 'utf8');
+    escreverArquivoAtomicoSync(bibFilePath, bibtexContent, 'utf8');
   }
 
   return {

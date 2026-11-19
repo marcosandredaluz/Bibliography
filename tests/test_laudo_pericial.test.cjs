@@ -65,6 +65,22 @@ const hash = calcularHashIntegridade('conteudo de teste');
 assert.strictEqual(hash.length, 64, 'Hash SHA-256 deve ter 64 caracteres hexadecimais');
 console.log('✓ 2. Cálculo determinístico de integridade criptográfica SHA-256 validado com sucesso.');
 
+// 3. Itens marcados como resolvidos/ignorados NÃO acompanham o relatório
+const htmlComResolvido = gerarHtmlLaudoPericial(mockResultado, {
+  nomeArquivo: 'Teste_Artigo_Academico.docx',
+  dataHora: new Date(),
+  inconformidadesResolvidas: ['meta_4_22_atribuicao_falsa'],
+});
+assert(
+  !htmlComResolvido.includes('Afirmação não condiz com os resultados do estudo citado.'),
+  'Item marcado como resolvido não deve aparecer no Laudo Pericial'
+);
+assert(
+  htmlComResolvido.includes('Nenhuma pendência ativa'),
+  'Laudo com todas as pendências resolvidas deve indicar conformidade sem pendências ativas'
+);
+console.log('✓ 3. Exclusão de itens marcados como resolvidos no Laudo Pericial validada com sucesso.');
+
 console.log('\n================================================================');
 console.log('🎉 TODOS OS TESTES DE LAUDO PERICIAL PASSARAM COM SUCESSO!');
 console.log('================================================================');

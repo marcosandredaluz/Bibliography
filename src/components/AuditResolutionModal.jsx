@@ -180,12 +180,15 @@ export default function AuditResolutionModal({
   idioma = 'pt-BR',
   caminhoDocx = '',
   textoManuscrito = '',
+  somenteLeitura = false,
   onAplicarCirurgiaNoDocx,
   onAtualizarTextoLocal,
   onDefinirStatus,
   onImportarCsl,
   onAbrirNoWord,
   onAbrirSplitView,
+  onAbrirPdfLeitor,
+  onSalvarTrechoCitado,
   onCopiarPromptIa,
   onFechar,
   avisar,
@@ -213,6 +216,36 @@ export default function AuditResolutionModal({
   const [novaChamadaTexto, setNovaChamadaTexto] = useState('');
   const [declaracaoTexto, setDeclaracaoTexto] = useState('');
   const [salvando, setSalvando] = useState(false);
+  const [salvandoTrecho, setSalvandoTrecho] = useState(false);
+  const [trechoSalvoOk, setTrechoSalvoOk] = useState(false);
+  const [justificativaEditorial, setJustificativaEditorial] = useState('');
+  const [salvandoDecisao, setSalvandoDecisao] = useState(false);
+
+  const salvarFalsoPositivoJustificado = async () => {
+    setSalvandoDecisao(true);
+    try {
+      const fraseAlvo = itemResolucao?.fraseWord || itemResolucao?.paragrafoCompleto || itemResolucao?.textoReferencia || '';
+      const referenciaAlvo = itemResolucao?.refBibItem?.id || itemResolucao?.chaveCitacao || itemResolucao?.autorCitado || '';
+      const codigoAlvo = itemResolucao?.codigoAlerta || itemResolucao?.tipoAlerta || itemResolucao?.categoria || 'alerta';
+      if (typeof window.api?.audit?.salvarDecisaoEditorial === 'function') {
+        await window.api.audit.salvarDecisaoEditorial({
+          fraseManuscrito: fraseAlvo,
+          referenciaId: referenciaAlvo,
+          codigoAlerta: codigoAlvo,
+          justificativa: justificativaEditorial.trim() || 'Falso positivo justificado pelo pesquisador.',
+          idItem: itemResolucao?.idItem || '',
+          diagnostico: itemResolucao?.diagnostico || '',
+        });
+      }
+      onDefinirStatus?.(itemResolucao.idItem, 'ignorado');
+      avisar?.('Decisão editorial salva (SHA-256). Este alerta ficará suprimido enquanto a frase não for alterada.', 'ok');
+      onFechar?.();
+    } catch (e) {
+      avisar?.(e.message || 'Erro ao salvar decisão editorial.', 'erro');
+    } finally {
+      setSalvandoDecisao(false);
+    }
+  };
 
   // Carrega template sugerido de declaração quando for alerta metodológico / fomento / ética
   useEffect(() => {
@@ -595,6 +628,55 @@ export default function AuditResolutionModal({
           </div>
 
           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+            {onAbrirPdfLeitor && itemResolucao?.refBibItem?.pdf && (
+              <button
+                type="button"
+                className="btn pequeno secundario"
+                onClick={() => {
+                  onFechar();
+                  onAbrirPdfLeitor(itemResolucao.refBibItem, itemResolucao.paginaPdf || 1);
+                }}
+                title={tr('Abrir PDF completo no leitor interno nesta página', 'Open PDF in internal reader at this page')}
+              >
+                📄 Abrir PDF (Pág. {itemResolucao.paginaPdf || 1})
+              </button>
+            )}
+            {onSalvarTrechoCitado && itemResolucao?.refBibItem?.id && (itemResolucao?.trechoOriginalArtigo || textoBaseOriginal) && (
+              <button
+                type="button"
+                className="btn pequeno secundario"
+                disabled={salvandoTrecho || somenteLeitura}
+                style={{
+                  borderColor: 'rgba(37, 99, 235, 0.35)',
+                  color: '#1d4ed8',
+                  background: trechoSalvoOk ? '#dbeafe' : undefined,
+                  fontWeight: 600,
+                }}
+                title={
+                  somenteLeitura
+                    ? tr('Desative Somente Leitura para salvar grifos na Biblioteca', 'Disable Read-Only mode to save highlights')
+                    : tr('Salvar passagem como Trecho Citado (Ground Truth) na Biblioteca', 'Save passage as Cited Excerpt Ground Truth in Library')
+                }
+                onClick={async () => {
+                  const txt = itemResolucao?.trechoOriginalArtigo || textoBaseOriginal;
+                  if (!txt.trim()) return;
+                  setSalvandoTrecho(true);
+                  try {
+                    const ok = await onSalvarTrechoCitado({
+                      refItem: itemResolucao.refBibItem,
+                      pagina: itemResolucao.paginaPdf || 1,
+                      trecho: txt,
+                      ondeCitei: itemResolucao.locWord || '',
+                    });
+                    if (ok) setTrechoSalvoOk(true);
+                  } finally {
+                    setSalvandoTrecho(false);
+                  }
+                }}
+              >
+                {trechoSalvoOk ? '✓ Trecho Citado Salvo' : salvandoTrecho ? 'Salvando…' : '📌 Salvar Trecho Citado'}
+              </button>
+            )}
             {onAbrirSplitView && itemResolucao?.refBibItem?.pdf && (
               <button
                 type="button"
@@ -916,6 +998,33 @@ export default function AuditResolutionModal({
               </div>
             </div>
           )}
+
+          {/* MEMÓRIA DE DECISÃO EDITORIAL (SHA-256) */}
+          <div className="barra-decisao-editorial">
+            <div style={{ flex: 1, minWidth: 220 }}>
+              <label style={{ display: 'block', fontSize: 11.5, fontWeight: 700, color: 'var(--texto-suave)', marginBottom: 4 }}>
+                {tr('Memória de Decisão Editorial (justificativa opcional — reativa se a frase mudar):', 'Editorial Decision Memory (optional justification — reactivates if sentence changes):')}
+              </label>
+              <input
+                type="text"
+                value={justificativaEditorial}
+                onChange={(e) => setJustificativaEditorial(e.target.value)}
+                placeholder={tr('Ex.: Termo técnico consagrado na área ou citação contextual intencional...', 'E.g., Established domain term or intentional contextual citation...')}
+                style={{ width: '100%', padding: '5px 8px', borderRadius: 5, border: '1px solid var(--borda)', fontSize: 12 }}
+              />
+            </div>
+            <button
+              type="button"
+              className="btn pequeno secundario"
+              onClick={salvarFalsoPositivoJustificado}
+              disabled={salvandoDecisao}
+              title={tr('Salva assinatura SHA-256 em auditoria_decisoes.json e suprime nas próximas auditorias', 'Saves SHA-256 signature to auditoria_decisoes.json and suppresses in future audits')}
+            >
+              {salvandoDecisao
+                ? tr('Salvando…', 'Saving…')
+                : `🛡️ ${tr('Ignorar / Falso Positivo Justificado', 'Ignore / Justified False Positive')}`}
+            </button>
+          </div>
         </div>
       </div>
     </div>

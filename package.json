@@ -1,7 +1,7 @@
 {
   "name": "bibliography",
   "productName": "Bibliography",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "Open-source academic writing assistant, federated literature search, PRISMA 2020 systematic review screening, and forensic citation verification engine",
   "author": "Marcos André da Luz <https://www.linkedin.com/in/marcos-andre-da-luz-847039141>",
   "license": "Apache-2.0",
@@ -17,7 +17,8 @@
     "build": "vite build",
     "start": "vite build && electron .",
     "dist": "vite build && electron-builder --win nsis",
-    "test:calibracao": "node test-calibracao-massiva.mjs && node test-redteam-bateria-03.mjs && node test-licao-01.mjs"
+    "test:calibracao": "node test-calibracao-massiva.mjs && node test-redteam-bateria-03.mjs && node test-licao-01.mjs",
+    "test:benchmark": "node tests/run_golden_benchmark.cjs"
   },
   "dependencies": {
     "@citation-js/core": "^0.9.0",
@@ -51,10 +52,19 @@
       "src/locales/**",
       "package.json"
     ],
+    "asarUnpack": [
+      "node_modules/onnxruntime-node/**",
+      "node_modules/@huggingface/transformers/**",
+      "node_modules/pdfjs-dist/**"
+    ],
     "extraResources": [
       {
         "from": "calibration_gate/custom-forensic-minilm",
         "to": "models/custom-forensic-minilm"
+      },
+      {
+        "from": "calibration_gate/custom-forensic-nli-int8",
+        "to": "models/custom-forensic-nli-int8"
       }
     ],
     "win": {

@@ -1,23 +1,17 @@
-# Bibliografia Forense 📚🔍
+# Documentação Técnica — Bibliografia Científica
 
-Bem-vindo à documentação oficial do **Bibliografia Forense**, um ecossistema desacoplado e *offline-first* para **Gestão Bibliográfica, Auditoria Forense de Citações e Integração Nativa com Processadores de Texto (.DOCX)**.
+Documentação de arquitetura e módulos internos do aplicativo desktop (`v1.1.0`).
 
----
+## Visão Geral
 
-## 🎯 Objetivos do Projeto
+- **Interface Desktop (Electron + React 19 / Vite):** Gerenciamento de biblioteca, leitor `PDF.js`, triagem PRISMA 2020, painel de Risco de Viés (RoB 2 / ROBINS-I) e Auditoria Reversa de `.docx` / `.pdf`.
+- **Motor Local Node (`electron/`):** Persistência atômica em JSON, serviço HTTP loopback na porta `23119`, resolvedor de metadados (Crossref, PubMed, OpenAlex, SciELO, Semantic Scholar), formatação CSL (`citeproc-js`) e inferência semântica offline via ONNX (`custom-forensic-minilm` INT8).
+- **Pipeline Auxiliar Python (`backend/`):** Extração geométrica de layout PDF (`pdfplumber` MIT + `pypdf` BSD-3-Clause, sem dependências AGPL) e adaptador REST opcional para integração Word.
 
-1. **Anti-Alucinação:** Detectar citações fabricadas por Inteligências Artificiais generativas (LLMs) e citações *Frankenstein* (onde o DOI pertence a um artigo, mas o texto cita outro).
-2. **Integração com Processadores de Texto:** Comunicação local via HTTP localhost e automação de documentos (.dotm / Ribbon), permitindo auditoria visual no próprio arquivo.
-3. **Extensibilidade por Domínio:** Sistema de plugins baseado em `pluggy` permitindo que pesquisadores de áreas específicas (como Saúde Pública, Direito ou Engenharia) instalem pacotes especializados sem poluir o núcleo universal.
-4. **Resolução de Fontes Regionais:** Translators dedicados para bases latino-americanas (SciELO e BVS / LILACS).
+## Seções
 
----
-
-## ⚡ Início Rápido
-
-Consulte as seções:
-- [Arquitetura & Clean Code](arquitetura.md)
-- [Desenvolvimento de Plugins com Pluggy](plugins.md)
-- [Extratores Regionais (SciELO / BVS)](extratores.md)
-- [Motor de Auditoria Forense](auditoria.md)
-- [Integração com Processadores de Texto (.DOCX)](integracao-word.md)
+- [Arquitetura e Armazenamento](arquitetura.md)
+- [Motor de Auditoria e Validação](auditoria.md)
+- [Extratores Regionais (SciELO e BVS / LILACS)](extratores.md)
+- [Integração Word, Web Clipper e Pandoc](integracao-word.md)
+- [Sistema de Plugins Python](plugins.md)

@@ -141,6 +141,8 @@ function iniciarServidorWord({ obterBiblioteca, obterConfig, aoAtualizarBibliote
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-Bibliography-Local-Token');
     res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('X-Frame-Options', 'DENY');
+    res.setHeader('Referrer-Policy', 'no-referrer');
     res.setHeader('Cache-Control', 'no-store');
     if (req.method === 'OPTIONS') {
       res.writeHead(204);

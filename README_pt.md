@@ -1,7 +1,7 @@
-# Bibliografia Científica (`v1.0.2`)
+# Bibliografia Científica (`v1.1.0`)
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/release-v1.0.2-blue.svg)](https://github.com/marcosandredaluz/Bibliography/releases)
+[![Version](https://img.shields.io/badge/release-v1.1.0-blue.svg)](https://github.com/marcosandredaluz/Bibliography/releases)
 
 Gerenciador de referências desktop (*offline-first*), bancada de triagem para revisões sistemáticas e auditor de citações para escrita acadêmica em ciências da saúde e áreas afins.
 

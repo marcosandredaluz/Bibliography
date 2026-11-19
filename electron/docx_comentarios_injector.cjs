@@ -11,6 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const JSZip = require('jszip');
+const { escreverArquivoAtomicoSync } = require('./atomicWrite.cjs');
 
 /**
  * Escapa caracteres especiais para XML
@@ -56,7 +57,7 @@ async function injetarComentariosNoDocx(docxEntrada, docxSaida, inconformidades 
 
   if (alertasValidos.length === 0) {
     // Se não há inconformidades, apenas salva cópia
-    fs.writeFileSync(docxSaida, bufferEntrada);
+    escreverArquivoAtomicoSync(docxSaida, bufferEntrada);
     return { ok: true, totalComentarios: 0, caminhoSaida: docxSaida };
   }
 
@@ -200,7 +201,7 @@ async function injetarComentariosNoDocx(docxEntrada, docxSaida, inconformidades 
     compressionOptions: { level: 6 },
   });
 
-  fs.writeFileSync(docxSaida, bufferSaida);
+  escreverArquivoAtomicoSync(docxSaida, bufferSaida);
 
   return {
     ok: true,

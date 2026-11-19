@@ -87,15 +87,22 @@ contextBridge.exposeInMainWorld('api', {
     importarExtraidas: (opts) => chamar('word:importarExtraidas', opts),
     inserirCitacaoWordAtivo: (opts) => chamar('word:inserirCitacaoWordAtivo', opts),
     inserirBibliografiaWordAtivo: (opts) => chamar('word:inserirBibliografiaWordAtivo', opts),
+    exportarPacoteSubmissao: (opts) => chamar('word:exportarPacoteSubmissao', opts),
   },
   audit: {
     escolherArquivo: () => chamar('audit:escolherArquivo'),
+    extrairLayoutPdf: (caminhoPdf) => chamar('audit:extrairLayoutPdf', caminhoPdf),
     executar: (opts) => chamar('audit:executar', opts),
+    cancelar: () => chamar('audit:cancelar'),
     baixarPdfsParaPasta: (opts) => chamar('audit:baixarPdfsParaPasta', opts),
     cirurgiaDocx: (opts) => chamar('audit:cirurgiaDocx', opts),
     abrirNoWord: (opts) => chamar('audit:abrirNoWord', opts),
     exportarDocxComentarios: (opts) => chamar('audit:exportarDocxComentarios', opts),
     gerarLaudoPericial: (opts) => chamar('audit:gerarLaudoPericial', opts),
+    listarDecisoesEditoriais: () => chamar('audit:listarDecisoesEditoriais'),
+    salvarDecisaoEditorial: (dados) => chamar('audit:salvarDecisaoEditorial', dados),
+    removerDecisaoEditorial: (hash) => chamar('audit:removerDecisaoEditorial', { hash }),
+    executarPreflightEditorial: (opts) => chamar('audit:executarPreflightEditorial', opts),
     aoProgresso: (cb) => {
       const fn = (_e, dados) => cb(dados);
       ipcRenderer.on('audit:progresso', fn);
@@ -140,7 +147,7 @@ contextBridge.exposeInMainWorld('api', {
   },
   versao: {
     obterInfo: () => ({
-      app: '1.0.2',
+      app: '1.2.0',
       electron: process.versions.electron,
       node: process.versions.node,
       chrome: process.versions.chrome,

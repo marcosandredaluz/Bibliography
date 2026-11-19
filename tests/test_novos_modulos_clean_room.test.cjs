@@ -23,6 +23,10 @@ const {
   lerAuditTrailRob,
 } = require('../electron/rob_assessor.cjs');
 const { extrairCitacoesDoCorpo } = require('../electron/auditor.cjs');
+const {
+  calcularSimilaridadeSemanticaOnnx,
+  detectarModeloLocalCustomizado,
+} = require('../electron/semantic_onnx.cjs');
 
 function reqJson(porta, rota, payload, headers = {}) {
   return new Promise((resolve, reject) => {
@@ -256,7 +260,25 @@ function reqJson(porta, rota, payload, headers = {}) {
     assert.strictEqual(citsVanc.citacoes.some((c) => Number(c.numeroRef) === 65), false, 'p. 65-78 não pode gerar falso positivo');
     console.log('✓ 4. Extrator Vancouver pós-pontuação (.1-3, ),4, :10-12) e trava anti-falso-positivo validados.');
 
-    console.log('\n🎉 TODOS OS TESTES DOS MÓDULOS CLEAN-ROOM 2, 3 E 4 PASSARAM COM 100%!');
+    // 5. MOTOR SEMÂNTICO ONNX EM JANELAS DESLIZANTES (detecta trecho equivalente após char 2.000)
+    if (detectarModeloLocalCustomizado()) {
+      const preenchimento = 'Background logistics regarding hardware procurement and server cabling in administrative offices. '.repeat(30);
+      const artigoLongo = `${preenchimento} The childhood immunization registry achieved 89.4% timeliness for hepatitis B vaccine across municipalities in 2017.`;
+      const simJanela = await calcularSimilaridadeSemanticaOnnx(
+        'O registro infantil de imunização alcançou 89,4% de oportunidade na vacina contra hepatite B nos municípios em 2017.',
+        artigoLongo,
+        12000
+      );
+      const simIrrelevante = await calcularSimilaridadeSemanticaOnnx(
+        'O registro infantil de imunização alcançou 89,4% de oportunidade na vacina contra hepatite B nos municípios em 2017.',
+        preenchimento,
+        12000
+      );
+      assert.ok(simJanela !== null && simJanela >= 0.65 && simJanela > (simIrrelevante || 0) + 0.25, `ONNX multi-janela deve localizar trecho após char 2000 (sim=${simJanela}, base=${simIrrelevante})`);
+      console.log(`✓ 5. Modelo ONNX em janelas deslizantes PT↔EN validado (sim=${simJanela.toFixed(4)} vs base=${Number(simIrrelevante).toFixed(4)}).`);
+    }
+
+    console.log('\n🎉 TODOS OS TESTES DOS MÓDULOS CLEAN-ROOM E AUDITOR PASSARAM COM 100%!');
   } finally {
     srv.close();
     fs.rmSync(tmpRaiz, { recursive: true, force: true });

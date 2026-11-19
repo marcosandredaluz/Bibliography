@@ -129,7 +129,7 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
   const confirmarSePodeTrocarProjeto = () => {
     if (auditoriaEmExecucao) {
       return window.confirm(
-        '⚠️ ATENÇÃO: Auditoria em andamento!\n\nUma verificação forense de manuscrito está em execução neste projeto.\nSe você trocar ou criar outro projeto agora, a auditoria atual será interrompida.\n\nDeseja realmente trocar de projeto?'
+        '⚠️ ATENÇÃO: Auditoria em andamento!\n\nUma verificação de manuscrito está em execução neste projeto.\nSe você trocar ou criar outro projeto agora, a auditoria atual será interrompida.\n\nDeseja realmente trocar de projeto?'
       );
     }
     return true;
@@ -820,7 +820,7 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
   const listaPeriodicos = useMemo(() => {
     const m = new Map();
     for (const r of refs) {
-      const p = r.csl?.['container-title'];
+      const p = semHtml(r.csl?.['container-title'] || '').trim();
       if (p) m.set(p, (m.get(p) || 0) + 1);
     }
     return [...m.entries()].sort((a, b) => b[1] - a[1]);
@@ -835,7 +835,7 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
       if (visao === 'revisao' && !(r.metadadosIncompletos || !r.csl?.author?.length || !ano(r.csl))) return false;
       if (visao === 'lidos_recentes' && !(r.ultimoAbertoEm || r.lido)) return false;
       if (visao.startsWith('autor:') && !(r.csl?.author || []).some((a) => (a.family || a.literal) === visao.slice(6))) return false;
-      if (visao.startsWith('per:') && r.csl?.['container-title'] !== visao.slice(4)) return false;
+      if (visao.startsWith('per:') && semHtml(r.csl?.['container-title'] || '').trim() !== visao.slice(4)) return false;
       if (visao.startsWith('status:') && r.status !== visao.slice(7)) return false;
       if (visao.startsWith('col:') && !(r.colecoes || []).includes(visao.slice(4))) return false;
       if (visao.startsWith('tag:') && !(r.tags || []).includes(visao.slice(4))) return false;
@@ -1091,7 +1091,7 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
             onClick={() => setAbaSuperior('biblioteca')}
             title={tr('Minha Biblioteca de Referências', 'My Reference Library')}
           >
-            <span className="rail-icone">📚</span>
+            <span className="rail-icone"><Icone nome="library" tam={20} /></span>
             <span className="rail-rotulo">{t('menu.library')}</span>
             <span className="rail-badge">{refs.length}</span>
           </button>
@@ -1099,9 +1099,9 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
           <button
             className={`rail-item ${abaSuperior === 'buscadores' ? 'ativo' : ''}`}
             onClick={() => setAbaSuperior('buscadores')}
-            title={tr('Buscadores Saúde & Contas de Acesso', 'Scientific Search Hub & Accounts')}
+            title={tr('Buscadores Científicos e Credenciais', 'Scientific Search Hub & Accounts')}
           >
-            <span className="rail-icone">🔍</span>
+            <span className="rail-icone"><Icone nome="search" tam={20} /></span>
             <span className="rail-rotulo">{t('menu.searchers')}</span>
           </button>
 
@@ -1110,16 +1110,16 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
             onClick={() => setAbaSuperior('word')}
             title={tr('Manuscrito (.DOCX - Consultadas × Citadas)', 'Manuscript (.DOCX - Consulted vs. Cited)')}
           >
-            <span className="rail-icone">📝</span>
+            <span className="rail-icone"><Icone nome="edit" tam={20} /></span>
             <span className="rail-rotulo">{t('menu.manuscript')}</span>
           </button>
 
           <button
             className={`rail-item ${abaSuperior === 'auditoria' ? 'ativo' : ''}`}
             onClick={() => setAbaSuperior('auditoria')}
-            title={tr('Auditoria Reversa (.DOCX/PDF)', 'Forensic Reverse Audit (.DOCX/PDF)')}
+            title={tr('Auditoria Reversa (.DOCX/PDF)', 'Reverse Audit (.DOCX/PDF)')}
           >
-            <span className="rail-icone">🔬</span>
+            <span className="rail-icone"><Icone nome="audit" tam={20} /></span>
             <span className="rail-rotulo">{t('menu.auditing')}</span>
           </button>
 
@@ -1128,7 +1128,7 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
             onClick={() => setAbaSuperior('prisma')}
             title={tr('Triagem Sistemática & Fluxograma PRISMA 2020', 'Systematic Screening & PRISMA 2020 Flowchart')}
           >
-            <span className="rail-icone">📊</span>
+            <span className="rail-icone"><Icone nome="chart" tam={20} /></span>
             <span className="rail-rotulo">{t('menu.prisma')}</span>
           </button>
 
@@ -1137,16 +1137,16 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
             onClick={() => setAbaSuperior('mendeley')}
             title={tr('Grafo de Citações & Caderno de Síntese', 'Citation Graph & Research Notebook')}
           >
-            <span className="rail-icone">🔗</span>
+            <span className="rail-icone"><Icone nome="link" tam={20} /></span>
             <span className="rail-rotulo">{t('menu.graph')}</span>
           </button>
 
           <button
             className={`rail-item ${abaSuperior === 'ajuda' ? 'ativo' : ''}`}
             onClick={() => setAbaSuperior('ajuda')}
-            title={tr('Manual & Tutorial Passo a Passo Interativo', 'User Guide & Interactive Tutorial')}
+            title={tr('Manual & Roteiro Passo a Passo', 'User Guide & Walkthrough')}
           >
-            <span className="rail-icone">❓</span>
+            <span className="rail-icone"><Icone nome="help" tam={20} /></span>
             <span className="rail-rotulo">{t('menu.tutorial')}</span>
           </button>
         </div>
@@ -1158,15 +1158,15 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
             title={tr('Idioma da interface: Português (Brasil) — clique para mudar para English', 'Interface language: English — click to switch to Português (Brasil)')}
             style={{ fontWeight: 800, fontSize: '11px', letterSpacing: '0.2px' }}
           >
-            {ehEn ? '🇺🇸 EN' : '🇧🇷 PT'}
+            {ehEn ? 'EN' : 'PT'}
           </button>
           <button
             className="rail-item-rodape"
             onClick={() => setModalVersaoAberto(true)}
-            title={`${tr('Sobre o Bibliografia, Versão', 'About Bibliography, Version')} ${(typeof window !== 'undefined' && window.api?.versao?.obterInfo?.()?.app) || '1.0.1'} & ${t('menu.diagnostics')}`}
+            title={`${tr('Sobre o Bibliografia, Versão', 'About Bibliography, Version')} ${(typeof window !== 'undefined' && window.api?.versao?.obterInfo?.()?.app) || '1.2.0'} & ${t('menu.diagnostics')}`}
             style={{ fontWeight: 800, fontSize: '11px', letterSpacing: '0.2px' }}
           >
-            v{(typeof window !== 'undefined' && window.api?.versao?.obterInfo?.()?.app) || '1.0.1'}
+            v{(typeof window !== 'undefined' && window.api?.versao?.obterInfo?.()?.app) || '1.2.0'}
           </button>
           <button
             className="rail-item-rodape"
@@ -1192,7 +1192,7 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
             }}
             title={`${tr('Projeto ativo', 'Active project')}: ${bib?.raiz || tr('Pasta de trabalho', 'Workspace folder')}\n${tr('Clique para alternar entre pastas de projetos ou abrir outro diretório.', 'Click to switch between project folders or open another directory.')}`}
           >
-            <span className="icone-pasta-proj">📁</span>
+            <span className="icone-pasta-proj"><Icone nome="folder" tam={15} /></span>
             <div className="badge-projeto-meta">
               <span className="rotulo-proj-topo">{tr('PROJETO ATIVO')}</span>
               <span className="nome-proj-atual">
@@ -1208,10 +1208,10 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
             <div className="menu-dropdown-projetos">
               <div className="cabecalho-dropdown-proj">
                 <div className="cabecalho-dropdown-titulo">
-                  <span>📚 {tr('Projetos & Bibliotecas', 'Projects & Libraries')}</span>
+                  <span>{tr('Projetos & Bibliotecas', 'Projects & Libraries')}</span>
                   <span className="badge-total-proj">{Math.min(10, projetosRecentes.length)} {tr('recentes', 'recent')}</span>
                 </div>
-                <div className="subtitulo-dropdown-proj">{tr('Selecione para alternar instantaneamente:', 'Select to switch immediately:')}</div>
+                <div className="subtitulo-dropdown-proj">{tr('Selecione para alternar imediatamente:', 'Select to switch immediately:')}</div>
               </div>
               <div className="lista-projetos-recentes">
                 {projetosRecentes.slice(0, 10).map((p, idx) => {
@@ -1238,7 +1238,7 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
               </div>
               <div className="divisor-dropdown-proj" />
               <button className="btn-acao-proj" onClick={escolherOutroProjeto}>
-                📂 {tr('Abrir Outra Pasta no Computador ou OneDrive…', 'Open Another Folder on PC or Cloud…')}
+                {tr('Abrir outra pasta no computador ou nuvem…', 'Open another folder on PC or cloud…')}
               </button>
               <button
                 className="btn-acao-proj destaque"
@@ -1247,7 +1247,7 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
                   setModalNovoProjeto(true);
                 }}
               >
-                ➕ {tr('Criar Nova Pasta de Projeto Acadêmico…', 'Create New Academic Project Folder…')}
+                + {tr('Criar nova pasta de projeto…', 'Create new project folder…')}
               </button>
             </div>
           )}
@@ -1266,7 +1266,7 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
                 onClick={() => setAbaSuperior(`pdf:${idPdf}`)}
                 title={semHtml(r.csl?.title)}
               >
-                <span>📄 {rotulo}</span>
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}><Icone nome="file" tam={12} /> {rotulo}</span>
                 <span className="fechar-aba-zotero" onClick={(e) => fecharAbaPdf(idPdf, e)}>
                   ×
                 </span>
@@ -1281,29 +1281,13 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
             onClick={() => window.api.bib.abrirPasta()}
             title={`${tr('Abrir pasta sincronizada', 'Open synced folder')}: ${bib.raiz}`}
           >
-            ☁ {tr('Pasta sincronizada', 'Cloud folder synced')}
+            {tr('Pasta sincronizada', 'Folder synced')}
           </span>
-          <button
-            type="button"
-            className="btn-icone"
-            onClick={alternarIdioma}
-            title={tr('Alternar idioma (Português / English)', 'Switch language (Português / English)')}
-            style={{ fontSize: 11.5, fontWeight: 700, paddingInline: 6 }}
-          >
-            {ehEn ? '🇺🇸 EN' : '🇧🇷 PT'}
-          </button>
-          <button
-            className="btn-icone"
-            onClick={alternarTema}
-            title={cfg.tema === 'escuro' ? tr('Modo Claro', 'Light Mode') : tr('Modo Escuro', 'Dark Mode')}
-          >
-            <Icone nome={cfg.tema === 'escuro' ? 'sun' : 'moon'} tam={16} />
-          </button>
         </div>
       </div>
 
-      {/* 2. BARRA DE FERRAMENTAS REFINADA (AGRUPADA, SEM EMPILHAMENTO) */}
-      {!refPdfAba && (
+      {/* 2. BARRA DE FERRAMENTAS (Exibida apenas na Biblioteca) */}
+      {!refPdfAba && abaSuperior === 'biblioteca' && (
         <div className="toolbar-zotero">
         <div className="grupo-toolbar-esq">
           {/* Menu Consolidado: "+ Adicionar" */}
@@ -1318,23 +1302,23 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
             {menuNovoItem && (
               <div className="menu-flutuante-zotero">
                 <button onClick={() => { setMenuNovoItem(false); setVarinhaAberta(true); }}>
-                  🪄 <strong>{tr('Colar DOI / PMID / ISBN…', 'Paste DOI / PMID / ISBN…')}</strong>
+                  <strong>{tr('Adicionar por DOI / PMID / ISBN…', 'Add by DOI / PMID / ISBN…')}</strong>
                 </button>
                 <button onClick={async () => { setMenuNovoItem(false); const c = await window.api.dialogo.escolherPdfs(); if (c?.length) await importarPdfs(c, 'a_ler'); }}>
-                  📎 {tr('Adicionar Arquivos PDF…', 'Add PDF Files…')}
+                  {tr('Anexar arquivos PDF…', 'Attach PDF files…')}
                 </button>
                 <button onClick={() => { setMenuNovoItem(false); importarPastaDePdfsDireto(); }}>
-                  📁 {tr('Importar Pasta de PDFs…', 'Import PDF Folder…')}
+                  {tr('Importar pasta de PDFs…', 'Import PDF folder…')}
                 </button>
                 <button onClick={() => { setMenuNovoItem(false); importarArquivoRisBib(); }}>
-                  📥 {tr('Importar RIS / BibTeX (.ris, .bib)…', 'Import RIS / BibTeX (.ris, .bib)…')}
+                  {tr('Importar RIS / BibTeX (.ris, .bib)…', 'Import RIS / BibTeX (.ris, .bib)…')}
                 </button>
                 <button onClick={() => { setMenuNovoItem(false); importarMendeley(); }}>
-                  📦 {tr('Importar do Mendeley (SQLite)…', 'Import from Mendeley (SQLite)…')}
+                  {tr('Importar do Mendeley (SQLite)…', 'Import from Mendeley (SQLite)…')}
                 </button>
                 <div className="divisor-menu" />
                 <button onClick={() => { setMenuNovoItem(false); setModalAdicionar(true); }}>
-                  🔍 {tr('Busca Completa (Online)…', 'Full Search / Manual Entry…')}
+                  {tr('Busca online / cadastro manual…', 'Online search / manual entry…')}
                 </button>
               </div>
             )}
@@ -1354,25 +1338,25 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
             </form>
           )}
 
-          {/* Menu "Ações Inteligentes" */}
+          {/* Menu de Ações */}
           <div style={{ position: 'relative' }} onClick={(e) => e.stopPropagation()}>
             <button
               className="btn-toolbar-zotero"
               onClick={() => setMenuAcoesRapidas((v) => !v)}
-              title={tr('Ações automatizadas com IA e nuvem', 'Automated retrieval & analysis actions')}
+              title={tr('Ações em lote', 'Batch actions')}
             >
-              ⚡ {t('actions.quickActions')} ▾
+              {t('actions.quickActions')} ▾
             </button>
             {menuAcoesRapidas && (
               <div className="menu-flutuante-zotero">
                 <button onClick={() => { setMenuAcoesRapidas(false); baixarPdfsEmLote(); }} disabled={baixandoLote}>
-                  ⬇ {tr('Buscar PDFs Gratuitos (Unpaywall)', 'Fetch Free PDFs (Unpaywall)')}
+                  {tr('Buscar PDFs em acesso aberto (Unpaywall)', 'Fetch open-access PDFs (Unpaywall)')}
                 </button>
                 <button onClick={() => { setMenuAcoesRapidas(false); gerarInsightsPicosEmLote(); }} disabled={gerandoInsightsLote}>
-                  ✨ {tr('Fichamento, PICO & Insights (IA)', 'Reading Notes, PICO & Insights')}
+                  {tr('Extrair resumo PICO e fichamento', 'Extract PICO summary & reading notes')}
                 </button>
                 <button onClick={() => { setMenuAcoesRapidas(false); setAbaSuperior('word'); }}>
-                  📝 {tr('Sincronizar Citações com Word', 'Sync Citations with Word')}
+                  {tr('Sincronizar citações com Word', 'Sync citations with Word')}
                 </button>
               </div>
             )}
@@ -1437,68 +1421,19 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
       </div>
       )}
 
-      {/* 3. FAIXA DE TUTORIAL PASSO A PASSO CONTEXTUAL DE CADA ETAPA */}
-      {refPdfAba && (
-        <TutorialEtapa
-          idEtapa="pdf"
-          abertoPorPadrao={true}
-          titulo={tr('Como Ler o PDF, Navegar com Rolagem Livre e Marcar Trechos Citados', 'How to Read PDFs, Scroll Freely, and Highlight Cited Excerpts')}
-          resumo={tr('Navegue pelas páginas com barras de rolagem vertical e horizontal, use zoom sem cortes e selecione frases diretamente no texto para grifar ou citar no Word.', 'Scroll pages smoothly, zoom without clipping, and select sentences directly to highlight or cite in Word.')}
-          passos={[
-            {
-              titulo: tr('Navegação e Rolagem Livre', 'Navigation & Free Scrolling'),
-              texto: tr('Utilize as barras de rolagem vertical e horizontal acessíveis nas bordas do leitor. Ajuste o zoom com Zoom + / Zoom − mantendo a página centralizada e totalmente visível.', 'Use vertical and horizontal scrollbars along the viewer edges and Zoom + / Zoom − to keep pages centered.'),
-            },
-            {
-              titulo: tr('Grifar com a Barra Flutuante', 'Highlight with Floating Bar'),
-              texto: tr('Selecione qualquer trecho no PDF com o mouse. Uma barra de cores surge instantaneamente sobre o texto para grifar com Amarelo (Conceito), Verde (PICO), Azul (Citação) ou Rosa (Crítica).', 'Select any text in the PDF to open the floating highlight bar: Yellow (Concept), Green (PICO), Blue (Citation), or Pink (Critique).'),
-            },
-            {
-              titulo: tr('Marcar Página e Copiar para o Word', 'Save Page & Copy to Word'),
-              texto: tr('Ao selecionar uma frase citada, clique em "✔ Salvar". O sistema indexa a página exata (ex: p. 4) e disponibiliza o botão "Copiar Resumo de Comentários" para colar no Word.', 'Select a cited quote and click "✔ Save" to index its exact page number and copy formatted notes to Word.'),
-            },
-          ]}
-        />
-      )}
-
-      {!refPdfAba && abaSuperior === 'biblioteca' && (
+      {/* Guia inicial limpo exibido apenas quando a biblioteca estiver vazia */}
+      {!refPdfAba && abaSuperior === 'biblioteca' && refs.length === 0 && (
         <div className="banner-cockpit-projeto">
           <div className="cockpit-linha-superior">
             <div className="cockpit-bloco-identificacao">
-              <div className="cockpit-tag-com-caminho">
-                <span className="cockpit-badge-status">{tr('PROJETO ATIVO')}</span>
-                <span className="cockpit-caminho-projeto" title={bib?.raiz}>
-                  📍 <code>{bib?.raiz || tr('Pasta de trabalho', 'Workspace folder')}</code>
-                </span>
-                <button
-                  type="button"
-                  className="btn-abrir-pasta-mini"
-                  onClick={() => window.api.bib.abrirPasta()}
-                  title={tr('Abrir esta pasta no Windows Explorer', 'Open this folder in Explorer')}
-                >
-                  {t('actions.openFolder')} ↗
-                </button>
-              </div>
               <h2 className="cockpit-titulo-projeto">
-                📁 {bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : tr('Minha Biblioteca', 'My Library')}
+                {bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : tr('Minha Biblioteca', 'My Library')}
               </h2>
+              <span className="cockpit-caminho-projeto" title={bib?.raiz}>
+                <code>{bib?.raiz || tr('Pasta de trabalho', 'Workspace folder')}</code>
+              </span>
             </div>
-
             <div className="cockpit-bloco-metricas">
-              <div className="cockpit-metrica-card">
-                <span className="cockpit-metrica-num">{refs.length}</span>
-                <span className="cockpit-metrica-legenda">{tr('Obras', 'Items')}</span>
-              </div>
-              <div className="cockpit-metrica-card">
-                <span className="cockpit-metrica-num">
-                  {refs.filter((r) => r.anexos?.some((a) => a.tipo === 'pdf')).length}
-                </span>
-                <span className="cockpit-metrica-legenda">{tr('Com PDF', 'With PDF')}</span>
-              </div>
-              <div className="cockpit-metrica-card">
-                <span className="cockpit-metrica-num">{contagens.citada || 0}</span>
-                <span className="cockpit-metrica-legenda">{tr('Citadas', 'Cited')}</span>
-              </div>
               <button
                 type="button"
                 className="btn-cockpit-alternar"
@@ -1506,225 +1441,50 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
                   atualizarProjetosRecentes();
                   setMenuProjetosAberto(true);
                 }}
-                title={tr('Trocar para outro projeto acadêmico ou pasta', 'Switch to another project or folder')}
               >
                 ⇄ {t('actions.switchProject')}
-              </button>
-              <button
-                type="button"
-                className="btn-cockpit-recolher"
-                onClick={alternarCockpit}
-                title={mostrarCockpit ? tr('Recolher Central de Início Rápido', 'Collapse Quick Actions') : tr('Expandir Central de Início Rápido', 'Expand Quick Actions')}
-              >
-                {mostrarCockpit ? tr('▲ Recolher Ações', '▲ Collapse') : tr('▼ Ações Rápidas', '▼ Quick Actions')}
               </button>
             </div>
           </div>
 
-          {mostrarCockpit && (
-            <div className="cockpit-grid-acoes">
-              <div className="cockpit-card-acao" onClick={() => setAbaSuperior('buscadores')}>
-                <div className="cockpit-card-icone">🔍</div>
-                <div className="cockpit-card-conteudo">
-                  <strong>{tr('1. Buscadores de Literatura', '1. Federated Literature Search')}</strong>
-                  <p>{tr('PubMed, Europe PMC, SciELO, OpenAlex, Cochrane. Importe com 1 clique.', 'PubMed, Europe PMC, SciELO, OpenAlex, ClinicalTrials. One-click import.')}</p>
-                </div>
-                <span className="cockpit-card-seta">→</span>
+          <div className="cockpit-grid-acoes">
+            <div className="cockpit-card-acao" onClick={() => setAbaSuperior('buscadores')}>
+              <div className="cockpit-card-icone">🔍</div>
+              <div className="cockpit-card-conteudo">
+                <strong>{tr('1. Buscadores de Literatura', '1. Literature Search')}</strong>
+                <p>{tr('PubMed, Europe PMC, SciELO, OpenAlex. Importe com 1 clique.', 'PubMed, Europe PMC, SciELO, OpenAlex. One-click import.')}</p>
               </div>
-
-              <div className="cockpit-card-acao" onClick={() => setVarinhaAberta(true)}>
-                <div className="cockpit-card-icone">🪄</div>
-                <div className="cockpit-card-conteudo">
-                  <strong>{tr('2. Inserir via DOI / PMID', '2. Add by DOI / PMID')}</strong>
-                  <p>{tr('Cole DOI/PMID para preenchimento de metadados e download de PDF.', 'Paste DOI/PMID for automatic metadata enrichment and PDF retrieval.')}</p>
-                </div>
-                <span className="cockpit-card-seta">→</span>
-              </div>
-
-              <div className="cockpit-card-acao" onClick={() => setAbaSuperior('prisma')}>
-                <div className="cockpit-card-icone">📊</div>
-                <div className="cockpit-card-conteudo">
-                  <strong>{tr('3. Triagem PRISMA 2020', '3. PRISMA 2020 Screening')}</strong>
-                  <p>{tr('Seleção duplo-cega de artigos, desduplicação e diagrama de fluxo.', 'Double-blind title/abstract screening, deduplication, and flowchart.')}</p>
-                </div>
-                <span className="cockpit-card-seta">→</span>
-              </div>
-
-              <div className="cockpit-card-acao" onClick={() => setModalExportarWord(true)}>
-                <div className="cockpit-card-icone">📝</div>
-                <div className="cockpit-card-conteudo">
-                  <strong>{tr('4. Citar no Manuscrito .DOCX', '4. Cite in .DOCX Manuscript')}</strong>
-                  <p>{tr('Exportar normas ABNT/Vancouver e auditar referências contra alucinações.', 'Format in 2,800+ CSL styles and audit manuscripts for AI hallucinations.')}</p>
-                </div>
-                <span className="cockpit-card-seta">→</span>
-              </div>
+              <span className="cockpit-card-seta">→</span>
             </div>
-          )}
+
+            <div className="cockpit-card-acao" onClick={() => setVarinhaAberta(true)}>
+              <div className="cockpit-card-icone">🪄</div>
+              <div className="cockpit-card-conteudo">
+                <strong>{tr('2. Inserir via DOI / PMID', '2. Add by DOI / PMID')}</strong>
+                <p>{tr('Cole DOI/PMID para preencher metadados e baixar PDF.', 'Paste DOI/PMID to enrich metadata and fetch PDF.')}</p>
+              </div>
+              <span className="cockpit-card-seta">→</span>
+            </div>
+
+            <div className="cockpit-card-acao" onClick={() => setAbaSuperior('prisma')}>
+              <div className="cockpit-card-icone">📊</div>
+              <div className="cockpit-card-conteudo">
+                <strong>{tr('3. Triagem PRISMA 2020', '3. PRISMA 2020 Screening')}</strong>
+                <p>{tr('Seleção de artigos, desduplicação e fluxograma.', 'Title/abstract screening, deduplication, and flowchart.')}</p>
+              </div>
+              <span className="cockpit-card-seta">→</span>
+            </div>
+
+            <div className="cockpit-card-acao" onClick={() => setModalExportarWord(true)}>
+              <div className="cockpit-card-icone">📝</div>
+              <div className="cockpit-card-conteudo">
+                <strong>{tr('4. Citar no Word', '4. Cite in Word')}</strong>
+                <p>{tr('Formate referências em ABNT, APA ou Vancouver.', 'Format references in ABNT, APA, Vancouver, or 2,800+ styles.')}</p>
+              </div>
+              <span className="cockpit-card-seta">→</span>
+            </div>
+          </div>
         </div>
-      )}
-
-      {!refPdfAba && abaSuperior === 'biblioteca' && (
-        <TutorialEtapa
-          idEtapa="biblioteca"
-          abertoPorPadrao={true}
-          titulo={tr('Passo a Passo da Minha Biblioteca (Baixar PDFs → Ler/Grifar → Marcar Uso → Exportar Word)', 'Library Quick Guide (Fetch PDFs → Read/Highlight → Track Usage → Export to Word)')}
-          resumo={tr('Siga os 4 passos abaixo para usar sua biblioteca ou clique em \'❓ Manual & Tutorial Passo a Passo\' lá no topo para abrir o manual completo.', 'Follow these 4 steps or open Tutorial on the left rail for the complete guide.')}
-          passos={[
-            {
-              titulo: tr('Baixar Artigos e PDFs', 'Fetch Papers & PDFs'),
-              texto: tr('Cole um DOI/PMID na "🪄 Varinha Mágica", pesquise temas em "🔍 Buscadores Saúde" ou clique em "⬇ Buscar PDFs Gratuitos" para baixar os PDFs automaticamente.', 'Paste a DOI/PMID in the Magic Wand, query databases in Search Hub, or fetch Open Access PDFs automatically.'),
-              rotuloAcao: tr('⬇ Buscar PDFs Gratuitos', '⬇ Fetch Free PDFs'),
-              acao: baixarPdfsEmLote,
-            },
-            {
-              titulo: tr('Ler PDF e Marcar Trecho Citado', 'Read PDF & Mark Cited Quotes'),
-              texto: tr('Dê 2 cliques em qualquer artigo com botão azul "PDF" na tabela para abrir o PDF em aba, grifar e clicar em "❝ Marcar como Trecho Citado" (salva a página!).', 'Double-click any item with a blue PDF badge to open the reader, highlight passages, and save page numbers.'),
-              rotuloAcao: tr('📎 Adicionar PDFs do PC', '📎 Add PDFs from PC'),
-              acao: async () => {
-                const p = await window.api.dialogo.escolherPdfs();
-                if (p?.length) await importarPdfs(p, 'a_ler');
-              },
-            },
-            {
-              titulo: tr('Marcar o que Vai Usar (Coluna Uso/Status)', 'Track Usage (Status Column)'),
-              texto: tr('Na tabela abaixo, mude o status do artigo entre "A ler" (separado), "Consultada" (lido/estudado) ou "Citada" (usado no texto do Word).', 'Set each reference status between "To read", "Consulted", or "Cited" directly in the table.'),
-              rotuloAcao: tr('📖 Ver Manual Completo', '📖 Open Full Guide'),
-              acao: () => setAbaSuperior('ajuda'),
-            },
-            {
-              titulo: tr('Exportar para o Word ou Auditar .DOCX', 'Export to Word or Audit .DOCX'),
-              texto: tr('Selecione um artigo e clique em "📋 Citar" ou "📄 Criar Bibliografia" na barra acima — ou use a aba "✔ Auditoria Reversa" para conferir um Word pronto!', 'Select items and click Cite or Bibliography above — or switch to Forensic Audit to verify a .DOCX/.PDF draft.'),
-              rotuloAcao: tr('📄 Criar Bibliografia p/ Word', '📄 Create Bibliography for Word'),
-              acao: () => setModalExportarWord(true),
-            },
-          ]}
-        />
-      )}
-
-      {!refPdfAba && abaSuperior === 'buscadores' && (
-        <TutorialEtapa
-          idEtapa="buscadores"
-          abertoPorPadrao={true}
-          titulo={tr('Passo a Passo: Como Pesquisar Artigos na Saúde e Importar Direto para o App', 'Quick Guide: Federated Literature Search & Direct Import')}
-          resumo={tr('Pesquise em 28 bases científicas (PubMed, Europe PMC, OpenAlex, SciELO, LILACS) sem sair do programa.', 'Search major scientific databases (PubMed, Europe PMC, OpenAlex, Crossref, SciELO) without leaving the app.')}
-          passos={[
-            {
-              titulo: tr('Digite o tema da pesquisa', 'Enter your search query'),
-              texto: tr('Escreva as palavras-chave na barra abaixo (ex.: "diabetes exercise") para ver na hora quantos artigos existem em cada base.', 'Type keywords below to count and compare hits across scientific databases in real time.'),
-            },
-            {
-              titulo: tr('Busque e importe dentro do próprio App', 'Fetch & import right inside the app'),
-              texto: tr('Nos cartões do PubMed, Europe PMC, OpenAlex ou Crossref, clique em "⚡ Buscar Artigos Aqui no App" e depois em "+ Biblioteca".', 'On open API cards (PubMed, Europe PMC, OpenAlex, Crossref), fetch results and click "+ Library".'),
-            },
-            {
-              titulo: tr('Baixe os PDFs gratuitos', 'Download Open Access PDFs'),
-              texto: tr('Depois de importar os artigos para a Biblioteca, clique em "⬇ Buscar PDFs Gratuitos" na Biblioteca para baixar os PDFs Open Access.', 'After importing references, fetch free Open Access PDFs directly from your Library.'),
-              rotuloAcao: tr('📚 Voltar à Biblioteca e Baixar PDFs', '📚 Go to Library & Fetch PDFs'),
-              acao: () => {
-                setAbaSuperior('biblioteca');
-                baixarPdfsEmLote();
-              },
-            },
-          ]}
-        />
-      )}
-
-      {!refPdfAba && abaSuperior === 'word' && (
-        <TutorialEtapa
-          idEtapa="word"
-          abertoPorPadrao={true}
-          titulo={tr('Passo a Passo: Como Exportar Citações e Referências (Consultadas × Citadas) para o Word', 'Quick Guide: Word Integration, Citations & Consulted vs. Cited Lists')}
-          resumo={tr('Gere separadamente a lista de Referências Citadas no texto e a Bibliografia Consultada em ABNT, Vancouver ou APA.', 'Generate Cited References and Consulted Bibliography separately in ABNT, Vancouver, APA, or 2,800+ CSL styles.')}
-          passos={[
-            {
-              titulo: tr('Escolha a norma de formatação', 'Choose your citation style'),
-              texto: tr('Selecione ABNT, Vancouver, APA 7ª ed. ou instale normas de mais de 2.800 revistas e universidades brasileiras.', 'Select APA, Vancouver, ABNT, or install styles from 2,800+ journals and universities.'),
-              rotuloAcao: tr('+ Instalar Outros Estilos', '+ Install More Styles'),
-              acao: () => setModalEstilos(true),
-            },
-            {
-              titulo: tr('Copie as Citadas ou as Consultadas', 'Copy Cited or Consulted lists'),
-              texto: tr('Clique em "📋 Copiar Bibliografia das Citadas" (obras que entraram no texto) ou "📋 Copiar Bibliografia das Consultadas" e dê Ctrl+V no Word.', 'Copy formatted Cited or Consulted bibliographies with rich italics directly into Word.'),
-            },
-            {
-              titulo: tr('Vincule um .DOCX ou use o Painel no Word', 'Use the .DOCX Sync or Native Word Ribbon'),
-              texto: tr('Você também pode escolher um arquivo .docx para sincronizar o que já foi citado ou instalar o suplemento lateral dentro do Microsoft Word.', 'Install the .dotm Word Ribbon extension or scan any .docx manuscript directly.'),
-            },
-          ]}
-        />
-      )}
-
-      {!refPdfAba && abaSuperior === 'auditoria' && (
-        <TutorialEtapa
-          idEtapa="auditoria"
-          abertoPorPadrao={true}
-          titulo={tr('Passo a Passo da Auditoria Reversa e Forense (.DOCX, .PDF ou Texto)', 'Quick Guide: Forensic Reverse Citation Auditing (.DOCX, .PDF, or Text)')}
-          resumo={tr('Audite citações no texto × referências com conferência determinística, eliminação de falsos alarmes, download de PDFs em pasta à sua escolha e relatório forense para IA.', 'Audit in-text citations against reference lists, verify DOIs against Crossref/PubMed/OpenAlex, detect AI hallucinations, and check claim-to-PDF support.')}
-          passos={[
-            {
-              titulo: tr('1. Carregar Arquivo ou Colar Texto', '1. Load File or Paste Text'),
-              texto: tr('Clique em "Carregar Arquivo (.DOCX, .PDF, .TXT)" ou cole o manuscrito. O algoritmo analisa o corpo do texto e a seção de REFERÊNCIAS mantendo cada entrada completa sem fragmentação.', 'Load a .DOCX, .PDF, or .TXT manuscript. The parser segments body text, References, and post-reference appendices.'),
-            },
-            {
-              titulo: tr('2. Escolher Pasta de Destino (OneDrive / PC)', '2. Active Library / PDF Folder'),
-              texto: tr('Defina a pasta onde os artigos e PDFs autenticados devem ser salvos. Você pode apontar para sua pasta do OneDrive ou qualquer diretório do seu computador.', 'Authenticated articles and downloaded Open Access PDFs are stored cleanly in your active project folder.'),
-            },
-            {
-              titulo: tr('3. Executar a Auditoria Completa', '3. Run Full Forensic Audit'),
-              texto: tr('O sistema cruza as citações narrativas e parentéticas (norma ABNT NBR 10520:2023), autentica DOIs no Crossref/PubMed, elimina alucinações de IA e baixa os PDFs gratuitos.', 'Cross-checks in-text citations vs. references, authenticates DOIs/PMIDs, screens retractions, and verifies claims via semantic/BM25/TF-IDF matching.'),
-            },
-            {
-              titulo: tr('4. Relatório Forense e Assistente de IA', '4. Forensic Report & Correction Export'),
-              texto: tr('Veja o diagnóstico de cada citação com Parágrafo (§), Linha e Página do PDF. Clique em "🤖 Copiar Relatório p/ Colar na IA" para obter assistência direta de reescrita no ChatGPT ou Claude.', 'Inspect every finding by Paragraph (§), Line, and PDF Page, apply surgical Word fixes, or copy structured prompts for revision.'),
-            },
-          ]}
-        />
-      )}
-
-      {!refPdfAba && abaSuperior === 'prisma' && (
-        <TutorialEtapa
-          idEtapa="prisma"
-          abertoPorPadrao={true}
-          titulo={tr('Passo a Passo: Como Fazer Remoção de Duplicatas, Triagem Cega e Fluxograma PRISMA 2020', 'Quick Guide: Deduplication, Blind Screening & PRISMA 2020 Flowchart')}
-          resumo={tr('Ideal para revisões sistemáticas, integrativas e de escopo na área da saúde.', 'Designed for systematic, scoping, and integrative literature reviews.')}
-          passos={[
-            {
-              titulo: tr('1. Detectar e Mesclar Duplicatas', '1. Detect & Merge Duplicates'),
-              texto: tr('Na primeira sub-aba, veja pares de artigos repetidos vindos de bases diferentes e clique em "Mesclar" sem perder notas nem PDFs.', 'Identify duplicate records across databases and merge them without losing notes or PDFs.'),
-            },
-            {
-              titulo: tr('2. Triagem Cega (Estilo Rayyan)', '2. Double-Blind Screening'),
-              texto: tr('Na sub-aba Triagem, leia título/resumo e clique em "✅ Incluir", "❓ Talvez" ou "❌ Excluir (informando o motivo para o PRISMA)".', 'Screen titles and abstracts with Include, Maybe, or Exclude + structured PRISMA reasons.'),
-            },
-            {
-              titulo: tr('3. Exportar Fluxograma PRISMA 2020', '3. Export PRISMA 2020 Diagram'),
-              texto: tr('Na sub-aba PRISMA 2020, os números são preenchidos automaticamente a partir da sua biblioteca e você pode copiar o fluxograma oficial.', 'Counts populate automatically from your library ready for PRISMA 2020 flowchart export.'),
-            },
-          ]}
-        />
-      )}
-
-      {!refPdfAba && abaSuperior === 'mendeley' && (
-        <TutorialEtapa
-          idEtapa="mendeley"
-          abertoPorPadrao={true}
-          titulo={tr('Passo a Passo: Caderno de Síntese, Sugestões por IA e Pasta Downloads Monitorada', 'Quick Guide: Research Notebook, Similar Papers & Watched Downloads')}
-          resumo={tr('Recursos clássicos do Mendeley Desktop & Reference Manager integrados à sua biblioteca.', 'Reading synthesis notebook, OpenAlex paper discovery, and quick Downloads folder watcher.')}
-          passos={[
-            {
-              titulo: tr('📓 Caderno de Leitura (Notebook)', '📓 Reading Notebook'),
-              texto: tr('Anote sínteses comparando vários artigos ao mesmo tempo e insira citações clicáveis direto nas suas notas.', 'Write synthesis notes across multiple studies with clickable inline citations.'),
-            },
-            {
-              titulo: tr('✨ Sugestões de Artigos Parecidos', '✨ Related Paper Discovery'),
-              texto: tr('Escolha qualquer artigo da sua biblioteca para o programa buscar na base OpenAlex outros estudos semelhantes.', 'Select any paper in your library to explore related literature and citation graphs via OpenAlex.'),
-            },
-            {
-              titulo: tr('📥 Pasta Downloads do Windows', '📥 Watched Downloads Folder'),
-              texto: tr('Veja todos os PDFs que você baixou recentemente no navegador e traga para sua biblioteca com 1 único clique!', 'Inspect recently downloaded PDFs from your browser and import them into your project in 1 click.'),
-            },
-          ]}
-        />
       )}
 
       {/* 4. CORPO PRINCIPAL: OU UMA ABA DE PDF/FERRAMENTA, OU OS 3 PAINÉIS CLÁSSICOS DO ZOTERO/MENDELEY */}
@@ -1813,40 +1573,12 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
           {/* PAINEL 1 (ESQUERDA): Árvore de Coleções em cima + Seletor de Tags/Autores embaixo */}
           <aside className="painel-esquerdo-zotero">
             <div className="arvore-colecoes-zotero">
-              {/* Card de Identificação em Destaque do Projeto Ativo */}
-              <div className="card-projeto-ativo-sidebar">
-                <div className="card-proj-topo-linha">
-                  <span className="card-proj-etiqueta">{tr('PROJETO ATIVO')}</span>
-                  <button
-                    type="button"
-                    className="btn-trocar-proj-sidebar"
-                    onClick={() => {
-                      atualizarProjetosRecentes();
-                      setMenuProjetosAberto(true);
-                    }}
-                    title={tr('Alternar entre pastas de projetos ou criar novo', 'Switch between project folders or create new')}
-                  >
-                    ⇄ {tr('Alternar', 'Switch')}
-                  </button>
-                </div>
-                <div className="card-proj-nome-linha" title={bib?.raiz || tr('Pasta do projeto', 'Project folder')}>
-                  <span className="icone-pasta-sidebar">📁</span>
-                  <strong className="nome-pasta-sidebar">
-                    {bib?.raiz ? bib.raiz.split(/[\\/]/).pop() : tr('Minha Biblioteca', 'My Library')}
-                  </strong>
-                </div>
-                <div className="card-proj-caminho-linha" title={bib?.raiz}>
-                  📍 {bib?.raiz ? (bib.raiz.length > 28 ? '…' + bib.raiz.slice(-25) : bib.raiz) : tr('Pasta local', 'Local folder')}
-                </div>
-                <div className="card-proj-meta-linha">
-                  <span className="badge-obras-sidebar">📚 {refs.length} {refs.length === 1 ? tr('obra', 'item') : tr('obras', 'items')}</span>
-                  {contagens.citada > 0 && (
-                    <span className="badge-citadas-sidebar">✅ {contagens.citada} {tr('citadas', 'cited')}</span>
-                  )}
-                </div>
+              <div className="cabecalho-secao-zotero" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <span>{tr('MINHA BIBLIOTECA', 'MY LIBRARY')}</span>
+                <span style={{ fontSize: 10.5, fontWeight: 600, color: 'var(--texto-suave)' }}>
+                  {refs.length}{contagens.citada > 0 ? ` · ${contagens.citada} ${tr('cit.', 'cited')}` : ''}
+                </span>
               </div>
-
-              <div className="cabecalho-secao-zotero">{tr('MINHA BIBLIOTECA')}</div>
 
               <button
                 className={`no-arvore ${visao === 'todas' ? 'ativo' : ''}`}
@@ -2294,7 +2026,7 @@ function ConteudoApp({ aoSincronizarIdiomaCfg }) {
 
                             <td className="cel-truncada">{autoresResumo(r.csl) || '—'}</td>
                             <td>{ano(r.csl) || '—'}</td>
-                            <td className="cel-truncada">{r.csl?.['container-title'] || r.csl?.publisher || '—'}</td>
+                            <td className="cel-truncada">{semHtml(r.csl?.['container-title'] || r.csl?.publisher || '') || '—'}</td>
 
                             {/* Coluna Nível de Evidência + Nota da Revista & Artigo */}
                             <td
